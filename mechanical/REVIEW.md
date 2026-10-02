@@ -1,3 +1,11 @@
+# Revision 0.0.10-alpha.0 visualization update
+
+Motor raised +65 mm along Z; actual controller shown below in an exploded view.
+No separate cover is modeled. This is inspection spacing, not mounting geometry.
+Board close-up temporarily hides the motor. Rear mounting/encoder qualification
+remains blocked as described below. Official STEP and supplier definitions are
+unchanged. Evidence: `evidence/rev-0.0.10-alpha.0/`.
+
 # STEPPERONLINE 14HM11-0404S mechanical review
 
 Revision 0.0.9-alpha.0, 2026-10-03. **Mount unqualified; routing disabled.**

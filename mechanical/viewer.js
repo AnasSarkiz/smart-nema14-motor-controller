@@ -18,15 +18,21 @@ const encodedGlb = document.getElementById("assembly-model").textContent.trim()
 const binaryGlb = Uint8Array.from(atob(encodedGlb), (character) =>
   character.charCodeAt(0),
 )
+let motorMesh
 const views = {
-  complete: { position: [85, 45, 85], target: [0, -30, 0] },
-  front: { position: [90, -122, 90], target: [0, -35, 0] },
-  rear: { position: [42, 35, 42], target: [0, -8, 0] },
-  side: { position: [75, -8, 0], target: [0, -9, 0] },
+  complete: { position: [100, 55, 110], target: [0, 30, 0] },
+  front: { position: [95, -45, 95], target: [0, 35, 0] },
+  rear: { position: [70, 125, 70], target: [0, 35, 0] },
+  side: { position: [130, 30, 0], target: [0, 30, 0] },
+  board: { position: [48, 54, 48], target: [0, 0, 0] },
 }
 
 function setView(name) {
   const view = views[name]
+  if (motorMesh) {
+    motorMesh.visible = name !== "board"
+    document.getElementById("motor").checked = motorMesh.visible
+  }
   camera.position.set(...view.position)
   controls.target.set(...view.target)
   controls.update()
@@ -37,6 +43,9 @@ new GLTFLoader().parse(
   "",
   ({ scene: assemblyScene }) => {
     scene.add(assemblyScene)
+    motorMesh = assemblyScene.getObjectByName(
+      "OfficialStepperOnline14hm11Motor",
+    )
     document.getElementById("loading").hidden = true
     setView("complete")
   },
@@ -49,6 +58,10 @@ new GLTFLoader().parse(
 for (const button of document.querySelectorAll("[data-view]")) {
   button.addEventListener("click", () => setView(button.dataset.view))
 }
+
+document.getElementById("motor").addEventListener("change", (event) => {
+  if (motorMesh) motorMesh.visible = event.target.checked
+})
 
 function renderFrame() {
   const width = canvas.clientWidth

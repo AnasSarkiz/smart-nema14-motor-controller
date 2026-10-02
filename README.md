@@ -1,6 +1,6 @@
 # Smart NEMA 14 Motor Controller
 
-Revision `0.0.9-alpha.0`, 2026-10-03 Europe/Tirane. **Incomplete prototype; not fabrication ready. Routing disabled.**
+Revision `0.0.10-alpha.0`, 2026-10-03 Europe/Tirane. **Incomplete prototype; not fabrication ready. Routing disabled.**
 
 The user selected **STEPPERONLINE 14HM11-0404S**, replacing Phidgets 3323_0.
 Its unchanged official drawing and STEP are stored in
@@ -14,14 +14,14 @@ for stepper operation. Open-loop operation is recommended for the first prototyp
 the user has not yet decided whether to omit feedback. The existing optional
 encoder electrical draft remains; it is not a mechanically qualified location.
 
-`assembly.circuit.tsx` now renders **only the exact selected motor reference**.
-The previous two M1.6 PCB holes, posts and rear magnet are absent from the active
-preview. `controller-preview.circuit.tsx` separately renders the unmounted
-57-part diagnostic PCB (56 draft supplier parts plus the official programmer
-connector envelope). No rear bracket or four-post attachment is approved:
-the drawing specifies front 4×M3 / 26 mm mounting, but does not specify rear
-fastener engagement, replacement length or permissible preload. A manufacturer
-specification or separate qualified carrier is needed before mounting the PCB.
+`assembly.circuit.tsx` now shows the actual unrouted controller and unchanged
+selected motor in an exploded inspection view. The motor is lifted **+65 mm in Z**
+so the PCB is visible. This display separation is not an operating assembly or
+approved mount. Use the viewer's **Board close-up** button to hide the motor and
+inspect the PCB; **Exploded assembly** restores both. No separate PCB cover exists.
+The previous two M1.6 holes, posts and rear magnet remain absent. Rear fastener
+details or a qualified carrier are still needed; front 4×M3 holes do not establish
+rear attachment details. Independent `controller-preview.circuit.tsx` is retained.
 
 The installed versions remain tscircuit 0.0.2736, CLI 0.1.2232 and EasyEDA
 0.0.368. Imported electronic definitions are unchanged. USB connector
@@ -49,7 +49,7 @@ bun run preview:viewer
 node scripts/run-mechanical-checks.mjs
 ```
 
-The interactive [motor reference](mechanical/assembly-preview.html) embeds the
+The interactive [exploded preview](mechanical/assembly-preview.html) embeds the
 native `dist/assembly/3d.glb`. It is a render, not a physical prototype photo.
 The historical Phidgets-only analysis/hardware scripts refuse the new target.
 No routing, Gerbers, drill files, assembly BOM/CPL, fabrication order or physical

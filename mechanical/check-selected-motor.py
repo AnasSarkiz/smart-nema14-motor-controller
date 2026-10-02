@@ -17,9 +17,10 @@ bounds = shape.BoundingBox()
 assert abs(bounds.zmin + 24) < 1e-5
 assert abs(bounds.zmax - 28.2) < 1e-5
 circuit = json.loads(Path("dist/assembly/circuit.json").read_text())
-cad = next(item for item in circuit if item["type"] == "cad_component")
+motor_source = next(item for item in circuit if item["type"] == "source_component" and item["name"] == "OfficialStepperOnline14hm11Motor")
+cad = next(item for item in circuit if item["type"] == "cad_component" and item["source_component_id"] == motor_source["source_component_id"])
 assert cad["model_origin_position"] == {"x": 0, "y": 0, "z": 28.2}
-assert cad["position"] == {"x": 0, "y": 0, "z": 0}
+assert cad["position"] == {"x": 0, "y": 0, "z": 65}
 assert cad["rotation"] == {"x": 0, "y": 0, "z": 0}
 report = {
     "motor": "STEPPERONLINE 14HM11-0404S",
@@ -28,11 +29,11 @@ report = {
     "solid_count": len(shape.Solids()),
     "reference_datum_checks": "passed",
     "source_z_bounds_mm": [bounds.zmin, bounds.zmax],
-    "native_world_z_bounds_mm": [bounds.zmin - 28.2, bounds.zmax - 28.2],
+    "native_world_z_bounds_mm": [bounds.zmin - 28.2 + 65, bounds.zmax - 28.2 + 65],
     "assembly_fit": "blocked: no qualified rear attachment",
     "encoder_decision": "pending",
     "drawing_and_step_revision_compatibility": "physical hardware confirmation pending",
     "fabrication_ready": False,
 }
-Path("evidence/rev-0.0.9-alpha.0/STEP-REFERENCE-VERIFICATION.json").write_text(json.dumps(report, indent=2) + "\n")
+Path("evidence/rev-0.0.10-alpha.0/STEP-REFERENCE-VERIFICATION.json").write_text(json.dumps(report, indent=2) + "\n")
 print("Exact manufacturer STEP: checksum, valid solid and selected datums verified. Assembly fit remains blocked.")

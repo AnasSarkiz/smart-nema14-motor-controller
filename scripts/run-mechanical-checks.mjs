@@ -1,7 +1,7 @@
 import { spawnSync } from "node:child_process"
 import { writeFileSync } from "node:fs"
 
-const evidenceDirectory = "evidence/rev-0.0.9-alpha.0"
+const evidenceDirectory = "evidence/rev-0.0.10-alpha.0"
 const checks = [
   {
     name: "format-check",

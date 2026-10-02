@@ -1,3 +1,39 @@
+# Current revision 0.0.10-alpha.0 — exploded inspection preview
+
+2026-10-03 Europe/Tirane. User requested lifting the cover toward +Z to see the
+board. The current official motor model is a single solid with no separate PCB
+cover. The whole unchanged motor is translated **+65 mm in Z**, and the actual
+unrouted controller is included below it. This is an exploded visualization;
+no bracket, fastening, sensor position or mounted fit is approved. Board close-up
+hides the motor; returning to Exploded assembly restores it. Browser controls
+and the resulting views were inspected and saved in `evidence/rev-0.0.10-alpha.0/`.
+
+Completed step: expose the PCB in the native TSX/GLB and interactive preview.
+Formatting, TypeScript, existing assembly regression, exact STEP checksum/solid/
+datum verification, assembly netlist and unrouted placement checks pass. Requested
+PNG/GLB files exist. Same supplier parts/footprints and routing-disabled state are
+retained. Existing electrical/import warnings and fabrication blockers remain.
+The previous revision's electrical connectivity checks remain applicable because
+no schematic connections or component definitions changed. Previous full-board
+mechanical qualification was blocked and remains blocked.
+
+| Stage | Status |
+| --- | --- |
+| 1. Requirements | blocked |
+| 2. Schematic/BOM | blocked |
+| 3. Unrouted placement and mechanical fit | blocked |
+| 4. Routed copper | not started |
+| 5. Routed automated/visual checks | not started |
+| 6. Fabrication approval | not started |
+| 7. Physical tests | not started |
+| 8. Store release | not started |
+
+Current source/dependency/artifact hashes: `evidence/rev-0.0.10-alpha.0/MANIFEST.json`.
+GitHub repository/branch remain unconfigured (B018). No GitHub push or tscircuit
+publication succeeded. This visual change does not resolve that blocker.
+
+## Previous revision 9 record — mechanical/electrical blockers still apply
+
 # Validation — Smart NEMA 14 Motor Controller
 
 Revision **0.0.9-alpha.0**, 2026-10-03 Europe/Tirane. **Mechanics and schematic
