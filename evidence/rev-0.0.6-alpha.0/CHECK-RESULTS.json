@@ -1,0 +1,57 @@
+[
+  {
+    "name": "format-check",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.13,
+    "log": "evidence/rev-0.0.6-alpha.0/format-check.log"
+  },
+  {
+    "name": "typecheck",
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.25,
+    "log": "evidence/rev-0.0.6-alpha.0/typecheck.log"
+  },
+  {
+    "name": "critical-import-audit",
+    "command": [
+      "bun",
+      "run",
+      "validate:imports"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.25,
+    "log": "evidence/rev-0.0.6-alpha.0/critical-import-audit.log"
+  },
+  {
+    "name": "draft-connectivity",
+    "command": [
+      "bun",
+      "run",
+      "test:draft"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.08,
+    "log": "evidence/rev-0.0.6-alpha.0/draft-connectivity.log"
+  },
+  {
+    "name": "released-import-audit",
+    "command": [
+      "bun",
+      "run",
+      "test:imports"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.11,
+    "log": "evidence/rev-0.0.6-alpha.0/released-import-audit.log"
+  }
+]

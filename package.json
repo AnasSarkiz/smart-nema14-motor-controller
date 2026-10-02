@@ -1,0 +1,45 @@
+{
+  "name": "@tsci/AnasSarkiz.smart-nema14-motor-controller--01a0fd9b",
+  "version": "0.0.9-alpha.0",
+  "description": "STEPPERONLINE 14HM11-0404S controller prototype; mounting and encoder decisions unresolved, routing disabled",
+  "main": "index.circuit.tsx",
+  "keywords": [
+    "tscircuit",
+    "circuit",
+    "pcb",
+    "electronics"
+  ],
+  "scripts": {
+    "dev": "tsci dev",
+    "validate:imports": "node scripts/check-critical-import-pins.mjs",
+    "build": "bun run validate:imports && tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs",
+    "snapshot": "bun run validate:imports && tsci snapshot index.circuit.tsx",
+    "format": "biome format --write index.circuit.tsx assembly.circuit.tsx controller-preview.circuit.tsx src scripts mechanical/viewer.js mechanical/design-constraints.json package.json tsconfig.json tscircuit.config.json biome.json",
+    "format:check": "biome format index.circuit.tsx assembly.circuit.tsx controller-preview.circuit.tsx src scripts mechanical/viewer.js mechanical/design-constraints.json package.json tsconfig.json tscircuit.config.json biome.json",
+    "typecheck": "tsc --noEmit",
+    "preview:schematic": "bun run validate:imports && tsci build index.circuit.tsx --disable-pcb --schematic-svgs --schematic-png && node scripts/render-schematic-sheets.mjs",
+    "test:draft": "node scripts/check-draft-connectivity.mjs",
+    "preview:imports": "tsci build scripts/import-audit.circuit.tsx --pcb-png --pcb-svgs",
+    "test:imports": "node scripts/check-released-imports.mjs",
+    "test:usb-imports": "node scripts/check-usb-imports.mjs",
+    "preview:usb-imports": "tsci build scripts/usb-import-audit.circuit.tsx --pcb-png --pcb-svgs",
+    "preview:assembly": "tsci build assembly.circuit.tsx --3d-png --glbs",
+    "test:assembly": "node scripts/check-mechanical-assembly.mjs",
+    "preview:viewer": "bun build mechanical/viewer.js --target browser --minify --outfile mechanical/viewer.bundle.js && .mechanical-venv/bin/python mechanical/build-viewer.py",
+    "preview:controller": "tsci build controller-preview.circuit.tsx --pcb-png --pcb-svgs --3d-png --glbs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@tscircuit/cli": "0.1.2232",
+    "circuit-to-svg": "0.0.437",
+    "easyeda": "0.0.368",
+    "sharp": "0.32.6",
+    "tscircuit": "0.0.2736",
+    "typescript": "5.9.3"
+  },
+  "author": "AnasSarkiz",
+  "dependencies": {
+    "@tsci/tscircuit.standard-jst-programmer": "0.8.0"
+  },
+  "private": true
+}

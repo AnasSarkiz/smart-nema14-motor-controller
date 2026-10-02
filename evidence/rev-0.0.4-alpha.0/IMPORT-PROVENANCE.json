@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-02",
+  "revision": "0.0.4-alpha.0",
+  "converter": "easyeda@0.0.366",
+  "cli": "@tscircuit/cli@0.1.2230",
+  "manual_component_edits": false,
+  "use_exact_footprint": true,
+  "parts": [
+    {
+      "part_number": "C5127775",
+      "supplier_title": "HoLRT1206-1W-180mR-1%",
+      "raw_path": "evidence/rev-0.0.4-alpha.0/C5127775.raweasy.json",
+      "raw_sha256": "7aa949d61d3e317d26587e7742a089d590139c19319f3be40eaa1cb895d8d9b9",
+      "output_path": "imports/HoLRT1206_1W_180mR_1_.tsx",
+      "output_sha256": "32bbbbc7fad9c2822d3b2cdd3dc96c513708983c40c3500281fc2cbda0704b53",
+      "reproduced_path": "evidence/rev-0.0.4-alpha.0/reproduced/C5127775.tsx",
+      "released_converter_reproduction_matches_cli": true,
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.4-alpha.0/C5127775.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.4-alpha.0/reproduced/C5127775.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "import_command": [
+        "node_modules/.bin/tsci",
+        "import",
+        "C5127775",
+        "--jlcpcb",
+        "--use-exact-footprint"
+      ],
+      "usage": "instantiated draft"
+    },
+    {
+      "part_number": "C5127776",
+      "supplier_title": "HoLRT1206-1W-150mR-1%",
+      "raw_path": "evidence/rev-0.0.4-alpha.0/C5127776.raweasy.json",
+      "raw_sha256": "b5d3e03b5518df6aba43a8b5ccc4d74ba103db514ae97ae27bf0787c8d47352c",
+      "output_path": "imports/HoLRT1206_1W_150mR_1_.tsx",
+      "output_sha256": "643293931a26ef1cdcbd7f795bb561eb3f78f8bc353d093909413a83ef40a995",
+      "reproduced_path": "evidence/rev-0.0.4-alpha.0/reproduced/C5127776.tsx",
+      "released_converter_reproduction_matches_cli": true,
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.4-alpha.0/C5127776.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.4-alpha.0/reproduced/C5127776.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "import_command": [
+        "node_modules/.bin/tsci",
+        "import",
+        "C5127776",
+        "--jlcpcb",
+        "--use-exact-footprint"
+      ],
+      "usage": "unused 150 m\u03a9 candidate; AEC-Q200 unestablished"
+    },
+    {
+      "part_number": "C19947652",
+      "supplier_title": "SRN6028C-3R9M",
+      "raw_path": "evidence/rev-0.0.4-alpha.0/C19947652.raweasy.json",
+      "raw_sha256": "e098f1af5ca06a39e775bb42f9a8b8809ccb2bb91fdf26b71a2ddcb244df2bcd",
+      "output_path": "imports/SRN6028C_3R9M.tsx",
+      "output_sha256": "7669e97e9bc955d82bf23b373c98a120bb5902e3e3014b01d4c5a5df3a4e5a30",
+      "reproduced_path": "evidence/rev-0.0.4-alpha.0/reproduced/C19947652.tsx",
+      "released_converter_reproduction_matches_cli": true,
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.4-alpha.0/C19947652.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.4-alpha.0/reproduced/C19947652.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "import_command": [
+        "node_modules/.bin/tsci",
+        "import",
+        "C19947652",
+        "--jlcpcb",
+        "--use-exact-footprint"
+      ],
+      "usage": "instantiated draft"
+    },
+    {
+      "part_number": "C2847904",
+      "supplier_title": "STM32G0B1CBT6",
+      "raw_path": "evidence/rev-0.0.4-alpha.0/C2847904.raweasy.json",
+      "raw_sha256": "8c2d2455c363ae6dcf0b8f11e844ff1777debfafe97b91c80ac0184cbe7ecd66",
+      "output_path": "imports/STM32G0B1CBT6/STM32G0B1CBT6.tsx",
+      "output_sha256": "d3a1131c27f3436feed6d722e182ce033592c4a98469cc7ee44bda110fe70381",
+      "reproduced_path": "evidence/rev-0.0.4-alpha.0/reproduced/C2847904.tsx",
+      "released_converter_reproduction_matches_cli": false,
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.4-alpha.0/C2847904.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.4-alpha.0/reproduced/C2847904.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "import_command": [
+        "node_modules/.bin/tsci",
+        "import",
+        "C2847904",
+        "--jlcpcb",
+        "--use-exact-footprint"
+      ],
+      "usage": "instantiated draft",
+      "direct_converter_difference": "Official CLI adds fetched datasheet pin attributes and serializes through circuit-json-to-tscircuit. Direct converter bytes differ; raw-to-port/pad audit and unchanged critical labels pass. Official CLI reproduction recorded separately.",
+      "official_cli_reproduction_matches": true,
+      "official_cli_reproduction_path": "evidence/rev-0.0.4-alpha.0/reproduced/C2847904-official-cli.tsx",
+      "official_cli_reproduction_sha256": "d3a1131c27f3436feed6d722e182ce033592c4a98469cc7ee44bda110fe70381"
+    },
+    {
+      "part_number": "C1121848",
+      "supplier_title": "TCPP01-M12",
+      "raw_path": "evidence/rev-0.0.4-alpha.0/C1121848.raweasy.json",
+      "raw_sha256": "de7a73e7da69c1f78a0c26ea983b1fc9623b52d31dccb19953124ed9bfcd5dfb",
+      "output_path": "imports/TCPP01_M12/TCPP01_M12.tsx",
+      "output_sha256": "ca848784f9c549bea16144a112afbdd4cc67b113ad9be11ea8407d3652900f01",
+      "reproduced_path": "evidence/rev-0.0.4-alpha.0/reproduced/C1121848.tsx",
+      "released_converter_reproduction_matches_cli": true,
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.4-alpha.0/C1121848.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.4-alpha.0/reproduced/C1121848.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "import_command": [
+        "node_modules/.bin/tsci",
+        "import",
+        "C1121848",
+        "--jlcpcb",
+        "--use-exact-footprint"
+      ],
+      "usage": "imported TCPP; power path not implemented"
+    }
+  ],
+  "prior_failures": "Original C2046441/C5127782/C723743 remain library-unavailable; C5127775 converter bug is resolved, preserved historical bad output is excluded"
+}

@@ -1,0 +1,11 @@
+$ bun run validate:imports && tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs
+$ node scripts/check-critical-import-pins.mjs
+BLOCKED C2847904 pin6: imported []; datasheet requires VDD (ST DS13560 Rev 6, Table 12, pp. 47 and 52)
+BLOCKED C2847904 pin7: imported []; datasheet requires VSS (ST DS13560 Rev 6, Table 12, pp. 47 and 52)
+BLOCKED C2847904 pin33: imported []; datasheet requires PA11 (ST DS13560 Rev 6, Table 12, pp. 47 and 52)
+BLOCKED C2847904 pin34: imported []; datasheet requires PA12 (ST DS13560 Rev 6, Table 12, pp. 47 and 52)
+BLOCKED C1121848 pin10: imported ["pin10"]; datasheet requires DB (ST DS12900 Rev 7, Table 1, p. 2)
+BLOCKED C1121848 pin11: imported ["pin11"]; datasheet requires FLT (ST DS12900 Rev 7, Table 1, p. 2)
+6 critical pin-label discrepancies. Build blocked.
+error: script "validate:imports" exited with code 1
+error: script "build" exited with code 1

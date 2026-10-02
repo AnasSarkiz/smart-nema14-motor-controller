@@ -1,0 +1,29 @@
+Critical import-label audit passed. Full schematic, BOM, mechanical and fabrication validation remains mandatory.
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/index/circuit.json
+U4 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+Generating preview images...
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+[index] Generating schematic PNG...
+[index] Written schematic.png
+
+Build complete
+  Circuits  1 passed
+  Options   schematic-png, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully
+Rendered MCU: dist/index/schematic-MCU.svg and .png
+Rendered Encoder: dist/index/schematic-Encoder.svg and .png
+Rendered CAN: dist/index/schematic-CAN.svg and .png
+Rendered LogicPower: dist/index/schematic-LogicPower.svg and .png
+Rendered MotorDriver: dist/index/schematic-MotorDriver.svg and .png
+
+--- stderr ---
+$ bun run validate:imports && tsci build index.circuit.tsx --disable-pcb --schematic-svgs --schematic-png && node scripts/render-schematic-sheets.mjs
+$ node scripts/check-critical-import-pins.mjs

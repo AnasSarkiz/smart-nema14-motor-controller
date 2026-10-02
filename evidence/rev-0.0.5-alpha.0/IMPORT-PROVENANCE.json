@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-02",
+  "revision": "0.0.5-alpha.0",
+  "converter": "easyeda@0.0.366",
+  "cli": "@tscircuit/cli@0.1.2230",
+  "manual_component_edits": false,
+  "refreshed_parts": [
+    {
+      "part_number": "C79815",
+      "output_path": "imports/AS5600_ASOM/AS5600_ASOM.tsx",
+      "output_sha256": "eada04618697f1974efbd94d998616e9a1d25e9794e2a7dd7e8000b45e8cac87",
+      "raw_path": "evidence/rev-0.0.5-alpha.0/C79815.raweasy.json",
+      "raw_sha256": "d44c8cf4f2915f2ae34a50c684fc05711641ba4249f600869ccaa5f0b540f834",
+      "conversion_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.5-alpha.0/C79815.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.5-alpha.0/reproduced/C79815.tsx"
+      ],
+      "conversion_exit_code": 0,
+      "direct_converter_matches_cli": true
+    },
+    {
+      "part_number": "C465949",
+      "output_path": "imports/TMC2209_LA/TMC2209_LA.tsx",
+      "output_sha256": "83341cd7e224a2da71d048b419ceaeee293a522dc19ed7786b9944b7dc3185d9",
+      "raw_path": "evidence/rev-0.0.5-alpha.0/C465949.raweasy.json",
+      "raw_sha256": "77519252caf7f7450d518c65782964121eb630d417a871ec9284dabd860c572a",
+      "conversion_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.5-alpha.0/C465949.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.5-alpha.0/reproduced/C465949.tsx"
+      ],
+      "conversion_exit_code": 0,
+      "direct_converter_matches_cli": true
+    }
+  ],
+  "baseline_parts": "Five prior verified official CLI definitions unchanged; raw records copied byte-for-byte from rev-0.0.4 for the current seven-part geometry fixture",
+  "original_unavailable_parts": [
+    "C2046441",
+    "C5127782",
+    "C723743"
+  ],
+  "verified_unchanged_baseline_parts": [
+    {
+      "part_number": "C5127775",
+      "output_path": "imports/HoLRT1206_1W_180mR_1_.tsx",
+      "output_sha256": "32bbbbc7fad9c2822d3b2cdd3dc96c513708983c40c3500281fc2cbda0704b53",
+      "raw_path": "evidence/rev-0.0.5-alpha.0/C5127775.raweasy.json",
+      "raw_sha256": "7aa949d61d3e317d26587e7742a089d590139c19319f3be40eaa1cb895d8d9b9",
+      "origin": "Official CLI import verified in immutable rev-0.0.4; unchanged current component and raw JSON"
+    },
+    {
+      "part_number": "C5127776",
+      "output_path": "imports/HoLRT1206_1W_150mR_1_.tsx",
+      "output_sha256": "643293931a26ef1cdcbd7f795bb561eb3f78f8bc353d093909413a83ef40a995",
+      "raw_path": "evidence/rev-0.0.5-alpha.0/C5127776.raweasy.json",
+      "raw_sha256": "b5d3e03b5518df6aba43a8b5ccc4d74ba103db514ae97ae27bf0787c8d47352c",
+      "origin": "Official CLI import verified in immutable rev-0.0.4; unchanged current component and raw JSON"
+    },
+    {
+      "part_number": "C19947652",
+      "output_path": "imports/SRN6028C_3R9M.tsx",
+      "output_sha256": "7669e97e9bc955d82bf23b373c98a120bb5902e3e3014b01d4c5a5df3a4e5a30",
+      "raw_path": "evidence/rev-0.0.5-alpha.0/C19947652.raweasy.json",
+      "raw_sha256": "e098f1af5ca06a39e775bb42f9a8b8809ccb2bb91fdf26b71a2ddcb244df2bcd",
+      "origin": "Official CLI import verified in immutable rev-0.0.4; unchanged current component and raw JSON"
+    },
+    {
+      "part_number": "C2847904",
+      "output_path": "imports/STM32G0B1CBT6/STM32G0B1CBT6.tsx",
+      "output_sha256": "d3a1131c27f3436feed6d722e182ce033592c4a98469cc7ee44bda110fe70381",
+      "raw_path": "evidence/rev-0.0.5-alpha.0/C2847904.raweasy.json",
+      "raw_sha256": "8c2d2455c363ae6dcf0b8f11e844ff1777debfafe97b91c80ac0184cbe7ecd66",
+      "origin": "Official CLI import verified in immutable rev-0.0.4; unchanged current component and raw JSON"
+    },
+    {
+      "part_number": "C1121848",
+      "output_path": "imports/TCPP01_M12/TCPP01_M12.tsx",
+      "output_sha256": "ca848784f9c549bea16144a112afbdd4cc67b113ad9be11ea8407d3652900f01",
+      "raw_path": "evidence/rev-0.0.5-alpha.0/C1121848.raweasy.json",
+      "raw_sha256": "de7a73e7da69c1f78a0c26ea983b1fc9623b52d31dccb19953124ed9bfcd5dfb",
+      "origin": "Official CLI import verified in immutable rev-0.0.4; unchanged current component and raw JSON"
+    }
+  ]
+}

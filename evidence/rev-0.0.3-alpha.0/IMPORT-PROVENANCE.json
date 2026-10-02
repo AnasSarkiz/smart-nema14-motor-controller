@@ -1,0 +1,289 @@
+{
+  "revision": "0.0.3-alpha.0",
+  "date": "2026-10-02",
+  "converter": "easyeda@0.0.360",
+  "workflow": "Released easyeda download and convert; conversion reproduced offline from preserved supplier JSON",
+  "manual_component_edits": false,
+  "prior_imports_unchanged": {
+    "imports/AS5600_ASOM/AS5600_ASOM.obj": true,
+    "imports/AS5600_ASOM/AS5600_ASOM.step": true,
+    "imports/AS5600_ASOM/AS5600_ASOM.tsx": true,
+    "imports/C12084.tsx": true,
+    "imports/C1525.tsx": true,
+    "imports/C23733.tsx": true,
+    "imports/C25744.tsx": true,
+    "imports/C25900.tsx": true,
+    "imports/C52923.tsx": true,
+    "imports/STM32G0B1CBT6/STM32G0B1CBT6.obj": true,
+    "imports/STM32G0B1CBT6/STM32G0B1CBT6.step": true,
+    "imports/STM32G0B1CBT6/STM32G0B1CBT6.tsx": true,
+    "imports/TCPP01_M12/TCPP01_M12.obj": true,
+    "imports/TCPP01_M12/TCPP01_M12.step": true,
+    "imports/TCPP01_M12/TCPP01_M12.tsx": true,
+    "imports/TMC2209_LA/TMC2209_LA.obj": true,
+    "imports/TMC2209_LA/TMC2209_LA.step": true,
+    "imports/TMC2209_LA/TMC2209_LA.tsx": true
+  },
+  "critical_audit_unchanged": true,
+  "parts": [
+    {
+      "part_number": "C11702",
+      "raw_path": "evidence/rev-0.0.3-alpha.0/C11702.raweasy.json",
+      "raw_sha256": "f9fe2c81c32c18cd3f3090e8897aa2a948d8d1913060202799a173d947307db3",
+      "output_path": "imports/C11702.tsx",
+      "output_sha256": "713a551becf6400801525d62f8dd4443fb853b5fd993c2a90ca3749037e28835",
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.3-alpha.0/C11702.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.3-alpha.0/reproduced/C11702.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "reproduced_path": "evidence/rev-0.0.3-alpha.0/reproduced/C11702.tsx",
+      "byte_identical_reproduction": true,
+      "state": "instantiated draft; full package/application qualification pending"
+    },
+    {
+      "part_number": "C13585",
+      "raw_path": "evidence/rev-0.0.3-alpha.0/C13585.raweasy.json",
+      "raw_sha256": "84ef3101291fdf9288f9680451357633fce65f455a6f79823e4c8debde9e613c",
+      "output_path": "imports/C13585.tsx",
+      "output_sha256": "4d04352d003f455d74abe0a1c5228c17495162d72a8a8a423919f814e088374b",
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.3-alpha.0/C13585.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.3-alpha.0/reproduced/C13585.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "reproduced_path": "evidence/rev-0.0.3-alpha.0/reproduced/C13585.tsx",
+      "byte_identical_reproduction": true,
+      "state": "instantiated draft; full package/application qualification pending"
+    },
+    {
+      "part_number": "C14663",
+      "raw_path": "evidence/rev-0.0.3-alpha.0/C14663.raweasy.json",
+      "raw_sha256": "2b02b30b94c2d51ad872f948f8ed5c3f8b24cd50bbef0d98464ef1587793c039",
+      "output_path": "imports/C14663.tsx",
+      "output_sha256": "083dd3753a12fcd7a79757256ffc1e2da11f108fcefbdfb5d3d4c429127bcf15",
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.3-alpha.0/C14663.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.3-alpha.0/reproduced/C14663.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "reproduced_path": "evidence/rev-0.0.3-alpha.0/reproduced/C14663.tsx",
+      "byte_identical_reproduction": true,
+      "state": "instantiated draft; full package/application qualification pending"
+    },
+    {
+      "part_number": "C167251",
+      "raw_path": "evidence/rev-0.0.3-alpha.0/C167251.raweasy.json",
+      "raw_sha256": "7f9e1c15dc5f36b6a24c4deba4c79e906552b6fd65e9c0f7c2f5a88932226ad2",
+      "state": "rejected incorrect raw identity; no component conversion"
+    },
+    {
+      "part_number": "C178585",
+      "raw_path": "evidence/rev-0.0.3-alpha.0/C178585.raweasy.json",
+      "raw_sha256": "c53107e8c5ba85b320039523b4664a34d5a425e0e0a21f66afd8335d7cfb774e",
+      "output_path": "imports/C178585.tsx",
+      "output_sha256": "8c8d0856d7f28d0632146b51d2b8eaf9364b51877f98b6b56e909f8963eff97c",
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.3-alpha.0/C178585.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.3-alpha.0/reproduced/C178585.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "reproduced_path": "evidence/rev-0.0.3-alpha.0/reproduced/C178585.tsx",
+      "byte_identical_reproduction": true,
+      "state": "instantiated draft; full package/application qualification pending"
+    },
+    {
+      "part_number": "C25767",
+      "raw_path": "evidence/rev-0.0.3-alpha.0/C25767.raweasy.json",
+      "raw_sha256": "b15d2193031bb350158d402b394e032c7240e3a00324a7e169a420756b49d9ac",
+      "output_path": "imports/C25767.tsx",
+      "output_sha256": "fa1871b4637bf80861a23dd93b1e06199aa5c1b86f89254fd69b2b70041d4486",
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.3-alpha.0/C25767.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.3-alpha.0/reproduced/C25767.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "reproduced_path": "evidence/rev-0.0.3-alpha.0/reproduced/C25767.tsx",
+      "byte_identical_reproduction": true,
+      "state": "unused candidate"
+    },
+    {
+      "part_number": "C307335",
+      "raw_path": "evidence/rev-0.0.3-alpha.0/C307335.raweasy.json",
+      "raw_sha256": "b28c93779765202cd085ae874cb25e29ab7e7cbf759801ddba1815f48c4786e4",
+      "output_path": "imports/C307335.tsx",
+      "output_sha256": "0e98a0a5e8f43b1c6a0218256ac712aedc67024c8b5fec2b9dc51b998f51f8aa",
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.3-alpha.0/C307335.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.3-alpha.0/reproduced/C307335.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "reproduced_path": "evidence/rev-0.0.3-alpha.0/reproduced/C307335.tsx",
+      "byte_identical_reproduction": true,
+      "state": "instantiated draft; full package/application qualification pending"
+    },
+    {
+      "part_number": "C3662793",
+      "raw_path": "evidence/rev-0.0.3-alpha.0/C3662793.raweasy.json",
+      "raw_sha256": "af9f015b0526921ca14a05c0c079cf15ebfa6638dc42a0355975bf616d3bc7ce",
+      "output_path": "imports/C3662793.tsx",
+      "output_sha256": "0f2f25f384dd5e0c3ddb7e75b5bd968c7cfca7e1ddbe9bcec8c49f0a5fab38a0",
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.3-alpha.0/C3662793.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.3-alpha.0/reproduced/C3662793.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "reproduced_path": "evidence/rev-0.0.3-alpha.0/reproduced/C3662793.tsx",
+      "byte_identical_reproduction": true,
+      "state": "unused candidate"
+    },
+    {
+      "part_number": "C45783",
+      "raw_path": "evidence/rev-0.0.3-alpha.0/C45783.raweasy.json",
+      "raw_sha256": "cf1c75b07b42038714e34cc59833f9fe3be8a30b944175f452646580534c01df",
+      "output_path": "imports/C45783.tsx",
+      "output_sha256": "e62d011c8fafdc94d918ee8475a4c210ad204ac13d330ab8505e5491a0b04429",
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.3-alpha.0/C45783.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.3-alpha.0/reproduced/C45783.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "reproduced_path": "evidence/rev-0.0.3-alpha.0/reproduced/C45783.tsx",
+      "byte_identical_reproduction": true,
+      "state": "instantiated draft; full package/application qualification pending"
+    },
+    {
+      "part_number": "C5127775",
+      "raw_path": "evidence/rev-0.0.3-alpha.0/C5127775.raweasy.json",
+      "raw_sha256": "7aa949d61d3e317d26587e7742a089d590139c19319f3be40eaa1cb895d8d9b9",
+      "output_path": "imports/C5127775.tsx",
+      "output_sha256": "6b76bd4ff46b1683ace03e06d8cf4f26f28f4baf8eae609bccd10db171fb66fb",
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.3-alpha.0/C5127775.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.3-alpha.0/reproduced/C5127775.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "reproduced_path": "evidence/rev-0.0.3-alpha.0/reproduced/C5127775.tsx",
+      "byte_identical_reproduction": true,
+      "state": "blocked generic chip; not instantiated"
+    },
+    {
+      "part_number": "C57269",
+      "raw_path": "evidence/rev-0.0.3-alpha.0/C57269.raweasy.json",
+      "raw_sha256": "a5d6fc1ee732c057958157b77d3b50e33bf2b5149e0190d5c134823048f873b2",
+      "output_path": "imports/C57269.tsx",
+      "output_sha256": "97eae25318fd0c0205c9a49e505fc575e18dc0c64ddfbec472a823458ca64276",
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.3-alpha.0/C57269.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.3-alpha.0/reproduced/C57269.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "reproduced_path": "evidence/rev-0.0.3-alpha.0/reproduced/C57269.tsx",
+      "byte_identical_reproduction": true,
+      "state": "instantiated draft; full package/application qualification pending"
+    },
+    {
+      "part_number": "C723709",
+      "raw_path": "evidence/rev-0.0.3-alpha.0/C723709.raweasy.json",
+      "raw_sha256": "9aa016399e57e6c6a7bec586551249bcedc23eea618d71b25067bf5f57bd77d6",
+      "output_path": "imports/C723709.tsx",
+      "output_sha256": "90a6e3d5d356edac4e21bda74387ef5aec009a28770488f33c9939cccf1e9db0",
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.3-alpha.0/C723709.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.3-alpha.0/reproduced/C723709.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "reproduced_path": "evidence/rev-0.0.3-alpha.0/reproduced/C723709.tsx",
+      "byte_identical_reproduction": true,
+      "state": "instantiated draft; full package/application qualification pending"
+    },
+    {
+      "part_number": "C780769",
+      "raw_path": "evidence/rev-0.0.3-alpha.0/C780769.raweasy.json",
+      "raw_sha256": "f27f4c7874c9bc341616dc95477a5f77258f340b6a03094eb1471b63abe10b55",
+      "output_path": "imports/C780769.tsx",
+      "output_sha256": "9e0d4d4d4cb0cc94f5a054441ce3ad4d1eeee2aef865b9afcce8795247a2254a",
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.3-alpha.0/C780769.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.3-alpha.0/reproduced/C780769.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "reproduced_path": "evidence/rev-0.0.3-alpha.0/reproduced/C780769.tsx",
+      "byte_identical_reproduction": true,
+      "state": "instantiated draft; full package/application qualification pending"
+    },
+    {
+      "part_number": "C98192",
+      "raw_path": "evidence/rev-0.0.3-alpha.0/C98192.raweasy.json",
+      "raw_sha256": "19cb7219f0b91b73976cea561449152988defae50bad00be4c3f4fa56bad24b4",
+      "output_path": "imports/C98192.tsx",
+      "output_sha256": "db16d27ee0eb4d7dd441e976a0a4f245df6f37e82a792e94cef0c49637f33020",
+      "reproduction_command": [
+        "node_modules/.bin/easyeda",
+        "convert",
+        "-i",
+        "evidence/rev-0.0.3-alpha.0/C98192.raweasy.json",
+        "-o",
+        "evidence/rev-0.0.3-alpha.0/reproduced/C98192.tsx"
+      ],
+      "reproduction_exit_code": 0,
+      "reproduced_path": "evidence/rev-0.0.3-alpha.0/reproduced/C98192.tsx",
+      "byte_identical_reproduction": true,
+      "state": "instantiated draft; full package/application qualification pending"
+    }
+  ],
+  "failed_downloads": [
+    "C2046441",
+    "C5127782",
+    "C723743"
+  ],
+  "failure_detail": "IMPORT-BLOCKERS.md; no raw data/component for failed downloads; some CLI failures returned exit 0"
+}

@@ -1,0 +1,106 @@
+$ tsci build controller-preview.circuit.tsx --pcb-png --pcb-svgs --3d-png --glbs
+Building 1 file(s)...
+Building controller-preview.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/controller-preview/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+All pins on Q_PD are underspecified (no pinAttributes set)
+All pins on D_VBUS are underspecified (no pinAttributes set)
+U4 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+J_USB has no pin with requires_power=true
+Q_PD has no pin with requires_power=true
+D_USB has no pin with requires_power=true
+D_VBUS has no pin with requires_power=true
+J_USB has no pin with requires_ground=true
+Q_PD has no pin with requires_ground=true
+D_VBUS has no pin with requires_ground=true
+Q_PD is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_USB is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_VBUS is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Failed to fetch supplier footprint for <capacitor#353(.UsbPd>.C27) /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#350(.UsbPd>.R18) /> (jlcpcb:C11702): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#347(.UsbPd>.R17) /> (jlcpcb:C25744): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#344(.UsbPd>.R16) /> (jlcpcb:C25767): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#341(.UsbPd>.R15) /> (jlcpcb:C852895): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#338(.UsbPd>.R14) /> (jlcpcb:C11702): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#335(.UsbPd>.R13) /> (jlcpcb:C852472): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#332(.UsbPd>.R12) /> (jlcpcb:C25744): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#329(.UsbPd>.C24) /> (jlcpcb:C5448795): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#326(.UsbPd>.C23) /> (jlcpcb:C5448795): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#323(.UsbPd>.C22) /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#320(.UsbPd>.C26) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#317(.UsbPd>.C25) /> (jlcpcb:C268016): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#316(.UsbPd>.D_VBUS) /> (jlcpcb:C1974707): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#315(.UsbPd>.D_USB) /> (jlcpcb:C94934): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#314(.UsbPd>.Q_PD) /> (jlcpcb:C2965326): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#297(.UsbPd>.U3) /> (jlcpcb:C1121848): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#280(.UsbPd>.J_USB) /> (jlcpcb:C165948): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#273(.MotorDriver>.C21) /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#270(.MotorDriver>.R11) /> (jlcpcb:C25744): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#267(.MotorDriver>.R10) /> (jlcpcb:C25744): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#264(.MotorDriver>.R9) /> (jlcpcb:C25744): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#261(.MotorDriver>.R8) /> (jlcpcb:C25744): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#258(.MotorDriver>.R7) /> (jlcpcb:C25744): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#255(.MotorDriver>.R4) /> (jlcpcb:C11702): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#252(.MotorDriver>.R6) /> (jlcpcb:C5127775): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#249(.MotorDriver>.R5) /> (jlcpcb:C5127775): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#246(.MotorDriver>.C20) /> (jlcpcb:C178585): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#243(.MotorDriver>.C19) /> (jlcpcb:C178585): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#240(.MotorDriver>.C18) /> (jlcpcb:C13585): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#237(.MotorDriver>.C17) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#234(.MotorDriver>.C16) /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#231(.MotorDriver>.C15) /> (jlcpcb:C98192): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#228(.MotorDriver>.C14) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#225(.MotorDriver>.C13) /> (jlcpcb:C307335): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#195(.MotorDriver>.U2) /> (jlcpcb:C465949): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#187(.LogicPower>.C12) /> (jlcpcb:C45783): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#184(.LogicPower>.C11) /> (jlcpcb:C45783): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <inductor#181(.LogicPower>.L1) /> (jlcpcb:C19947652): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#178(.LogicPower>.C10) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#175(.LogicPower>.C9) /> (jlcpcb:C14663): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#172(.LogicPower>.C8) /> (jlcpcb:C13585): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#165(.LogicPower>.U5) /> (jlcpcb:C780769): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#158(.CAN>.C7) /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#149(.CAN>.U6) /> (jlcpcb:C12084): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#141(.Encoder>.R3) /> (jlcpcb:C25900): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#138(.Encoder>.R2) /> (jlcpcb:C25900): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#135(.Encoder>.C6) /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#126(.Encoder>.U4) /> (jlcpcb:C79815): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#118(.MCU>.C5) /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#115(.MCU>.R1) /> (jlcpcb:C25744): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#112(.MCU>.C4) /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#109(.MCU>.C3) /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#106(.MCU>.C2) /> (jlcpcb:C23733): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#103(.MCU>.C1) /> (jlcpcb:C1525): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#54(.MCU>.U1) /> (jlcpcb:C2847904): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <connector#0(.MechanicalConnector>.J_SWD_ENVELOPE) /> (jlcpcb:C136657): Unable to connect. Is the computer able to access the url?
+Generating preview images...
+[controller-preview] Generating PCB SVG...
+[controller-preview] Written pcb.svg
+[controller-preview] Generating PCB PNG...
+[controller-preview] Written pcb.png
+[controller-preview] Generating 3D PNG...
+[controller-preview] Failed to generate 3D PNG: error: Unable to connect. Is the computer able to access the url?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C136657.obj?uuid=50fdec209daa46e6a009eae73d7d93b4&cachebust_origin=",
+ errno: 0,
+  code: "ConnectionRefused"
+
+
+Generating GLB models for all builds...
+[controller-preview] Converting circuit to GLB...
+[controller-preview] Failed to generate GLB: error: Was there a typo in the url or port?
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C136657.obj?uuid=50fdec209daa46e6a009eae73d7d93b4&cachebust_origin=",
+ errno: 0,
+  code: "FailedToOpenSocket"
+
+
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, 3d-png, glbs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

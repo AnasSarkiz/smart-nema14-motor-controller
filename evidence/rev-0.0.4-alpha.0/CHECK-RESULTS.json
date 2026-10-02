@@ -1,0 +1,208 @@
+[
+  {
+    "name": "typecheck",
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.97,
+    "log": "evidence/rev-0.0.4-alpha.0/typecheck.log"
+  },
+  {
+    "name": "critical-import-audit",
+    "command": [
+      "bun",
+      "run",
+      "validate:imports"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.25,
+    "log": "evidence/rev-0.0.4-alpha.0/critical-import-audit.log"
+  },
+  {
+    "name": "netlist",
+    "command": [
+      "node_modules/.bin/tsci",
+      "check",
+      "netlist",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.99,
+    "log": "evidence/rev-0.0.4-alpha.0/netlist.log"
+  },
+  {
+    "name": "pin-specification",
+    "command": [
+      "node_modules/.bin/tsci",
+      "check",
+      "pin_specification",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.83,
+    "log": "evidence/rev-0.0.4-alpha.0/pin-specification.log"
+  },
+  {
+    "name": "source",
+    "command": [
+      "node_modules/.bin/tsci",
+      "check",
+      "source",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.44,
+    "log": "evidence/rev-0.0.4-alpha.0/source.log"
+  },
+  {
+    "name": "schematic-placement",
+    "command": [
+      "node_modules/.bin/tsci",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.42,
+    "log": "evidence/rev-0.0.4-alpha.0/schematic-placement.log"
+  },
+  {
+    "name": "schematic-build",
+    "command": [
+      "bun",
+      "run",
+      "preview:schematic"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 5.91,
+    "log": "evidence/rev-0.0.4-alpha.0/schematic-build.log"
+  },
+  {
+    "name": "draft-connectivity",
+    "command": [
+      "bun",
+      "run",
+      "test:draft"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.06,
+    "log": "evidence/rev-0.0.4-alpha.0/draft-connectivity.log"
+  },
+  {
+    "name": "import-fixture-build",
+    "command": [
+      "bun",
+      "run",
+      "preview:imports"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.4-alpha.0/import-fixture-build.log",
+    "scope": "Separated imported component geometry fixture only, not 35 mm motor board"
+  },
+  {
+    "name": "import-fixture-placement",
+    "command": [
+      "node_modules/.bin/tsci",
+      "check",
+      "placement",
+      "scripts/import-audit.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.4-alpha.0/import-fixture-placement.log",
+    "scope": "Separated imported component geometry fixture only, not 35 mm motor board"
+  },
+  {
+    "name": "upgrade",
+    "command": [
+      "tsci",
+      "upgrade"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.4-alpha.0/upgrade.log"
+  },
+  {
+    "name": "official-import-C5127775",
+    "command": [
+      "node_modules/.bin/tsci",
+      "import",
+      "C5127775",
+      "--jlcpcb",
+      "--use-exact-footprint"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.4-alpha.0/import-C5127775.log"
+  },
+  {
+    "name": "official-import-C5127776",
+    "command": [
+      "node_modules/.bin/tsci",
+      "import",
+      "C5127776",
+      "--jlcpcb",
+      "--use-exact-footprint"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.4-alpha.0/import-C5127776.log"
+  },
+  {
+    "name": "official-import-C19947652",
+    "command": [
+      "node_modules/.bin/tsci",
+      "import",
+      "C19947652",
+      "--jlcpcb",
+      "--use-exact-footprint"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.4-alpha.0/import-C19947652.log"
+  },
+  {
+    "name": "official-import-C2847904",
+    "command": [
+      "node_modules/.bin/tsci",
+      "import",
+      "C2847904",
+      "--jlcpcb",
+      "--use-exact-footprint"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.4-alpha.0/import-C2847904.log"
+  },
+  {
+    "name": "official-import-C1121848",
+    "command": [
+      "node_modules/.bin/tsci",
+      "import",
+      "C1121848",
+      "--jlcpcb",
+      "--use-exact-footprint"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.4-alpha.0/import-C1121848.log"
+  },
+  {
+    "name": "format-check",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.3,
+    "log": "evidence/rev-0.0.4-alpha.0/format-check.log"
+  },
+  {
+    "name": "released-import-audit",
+    "command": [
+      "bun",
+      "run",
+      "test:imports"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.11,
+    "log": "evidence/rev-0.0.4-alpha.0/released-import-audit.log"
+  }
+]

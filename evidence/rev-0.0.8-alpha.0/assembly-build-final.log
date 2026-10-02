@@ -1,0 +1,39 @@
+$ tsci build assembly.circuit.tsx --pcb-png --pcb-svgs --3d-png --glbs
+Building 1 file(s)...
+Building assembly.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/assembly/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+All pins on Q_PD are underspecified (no pinAttributes set)
+All pins on D_VBUS are underspecified (no pinAttributes set)
+U4 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+J_USB has no pin with requires_power=true
+Q_PD has no pin with requires_power=true
+D_USB has no pin with requires_power=true
+D_VBUS has no pin with requires_power=true
+J_USB has no pin with requires_ground=true
+Q_PD has no pin with requires_ground=true
+D_VBUS has no pin with requires_ground=true
+Q_PD is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_USB is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_VBUS is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Generating preview images...
+[assembly] Generating PCB SVG...
+[assembly] Written pcb.svg
+[assembly] Generating PCB PNG...
+[assembly] Written pcb.png
+[assembly] Generating 3D PNG...
+[assembly] Written 3d.png
+Generating GLB models for all builds...
+[assembly] Converting circuit to GLB...
+[assembly] Written 3d.glb
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, 3d-png, glbs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

@@ -1,0 +1,41 @@
+{
+  "units": "mm",
+  "motor": "STEPPERONLINE 14HM11-0404S",
+  "drawing": "A0217, revision 1, 2025-07-31",
+  "rear_face_z_mm": 0,
+  "body_length_maximum_mm": 28.2,
+  "frame_width_maximum_mm": 35.2,
+  "shaft_configuration": "single_shaft",
+  "front_shaft_diameter_mm": 5,
+  "front_shaft_projection_mm": [23, 25],
+  "front_mount": {
+    "count": 4,
+    "thread": "M3",
+    "square_spacing_mm": 26,
+    "spacing_tolerance_mm": 0.2,
+    "minimum_thread_depth_mm": 4
+  },
+  "rear_mount": {
+    "qualification": "BLOCKED: drawing does not specify rear fastener thread, engagement, replacement length or permissible preload",
+    "model_corner_centers_mm": [[-13, -13], [-13, 13], [13, -13], [13, 13]],
+    "pcb_holes": null,
+    "hardware": null
+  },
+  "encoder": {
+    "decision": "pending",
+    "previous_rear_shaft_magnet": "incompatible",
+    "optional_electrical_draft_retained": true
+  },
+  "pcb": {
+    "width_mm": 35,
+    "height_mm": 35,
+    "thickness_mm": 1.6,
+    "mounting_qualified": false,
+    "hole_diameter_mm": null
+  },
+  "routing": "disabled",
+  "rated_current_per_phase_a": 0.4,
+  "phase_resistance_ohms": 25,
+  "step_angle_degrees": 0.9,
+  "full_steps_per_revolution": 400
+}

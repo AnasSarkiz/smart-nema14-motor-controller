@@ -1,0 +1,31 @@
+{
+  "scope": "Preliminary static screen, not protection qualification",
+  "temperature_screen_C": [
+    -40,
+    85
+  ],
+  "nominal_ovp_V": 22.506754966887417,
+  "screened_min_ovp_V": 21.158403891770853,
+  "screened_max_ovp_V": 23.868318956466023,
+  "margin_to_TCPP_absolute_24V_V": 0.1316810435339768,
+  "unverified_assumption": "R14 C11702 100 ppm/C bound used only as a screen; exact TCR, threshold loading/leakage, aging and dynamic overshoot not qualified",
+  "cc_external_pf_nominal": 330,
+  "cc_external_pf_tolerance_only_range": [
+    313.5,
+    346.5
+  ],
+  "cc_total_pf_generic_table_screen": [
+    413.5,
+    536.5
+  ],
+  "cc_limits_pf": [
+    200,
+    600
+  ],
+  "cc_remaining_work": "Exact STM32 CC capacitance, C0G temperature/voltage bounds and PCB/cable parasitics not qualified",
+  "vbus_adc_division_nominal": 23,
+  "vbus_adc_V_at_21V": 0.9130434782608695,
+  "adc_filter_time_constant_ms": 1.0565217391304347,
+  "unpowered_adc_injection": "Not qualified; protected input can be present while MCU VDD is absent",
+  "verdict": "BLOCKED: dynamic protection, startup and unpowered sequencing remain unresolved"
+}

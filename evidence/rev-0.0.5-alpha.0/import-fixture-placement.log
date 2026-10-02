@@ -1,0 +1,21 @@
+placement summary: no placement issues
+
+board top-layer utilization:
+- occupied: 9.965% (279.028mm^2 of 2800mm^2)
+- empty spaces over 5% of board area:
+  - 35% (980.006mm^2); bounds=(minX=-40mm, maxX=40mm, minY=-17.5mm, maxY=-5.25mm)
+  - 19.6% (548.803mm^2); bounds=(minX=-4.8mm, maxX=40mm, minY=5.25mm, maxY=17.5mm)
+  - 7.497% (209.913mm^2); bounds=(minX=-24.3mm, maxX=-11.5mm, minY=1.101mm, maxY=17.5mm)
+
+board-edge status:
+- R180: 10.917mm inside left edge
+- R150: 16.649mm inside top edge
+- L39: 14.25mm inside top edge
+- U_MCU: 12.5mm inside top edge
+- U_TCPP: 12.26mm inside right edge
+- U_ENCODER: 4.82mm inside bottom edge
+- U_DRIVER: 5.55mm inside bottom edge
+
+placement drc:
+Errors: 0
+Warnings: 0

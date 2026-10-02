@@ -1,0 +1,35 @@
+Building 1 file(s)...
+Building evidence/rev-0.0.4-alpha.0/import-audit.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/evidence/rev-0.0.4-alpha.0/import-audit/circuit.json
+Port pin1 on R180 is missing a trace
+Port pin2 on R180 is missing a trace
+Port pin1 on R150 is missing a trace
+Port pin2 on R150 is missing a trace
+Port pin1 on L39 is missing a trace
+Port pin2 on L39 is missing a trace
+Port VBAT on U_MCU is missing a trace
+Port VDD on U_MCU is missing a trace
+Port VSS on U_MCU is missing a trace
+Port GND on U_TCPP is missing a trace
+Port VCC on U_TCPP is missing a trace
+Failed to fetch supplier footprint for <resistor#0(.ImportAudit>.R180) /> (jlcpcb:C5127775): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <chip#58(.ImportAudit>.U_TCPP) /> (jlcpcb:C1121848): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#9(.ImportAudit>.U_MCU) /> (jlcpcb:C2847904): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <inductor#6(.ImportAudit>.L39) /> (jlcpcb:C19947652): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#3(.ImportAudit>.R150) /> (jlcpcb:C5127776): Unable to connect. Is the computer able to access the url?
+Port VDD on U_MCU must be connected but is floating
+Port VSS on U_MCU must be connected but is floating
+Generating preview images...
+[evidence/rev-0.0.4-alpha.0/import-audit] Generating PCB SVG...
+[evidence/rev-0.0.4-alpha.0/import-audit] Written pcb.svg
+[evidence/rev-0.0.4-alpha.0/import-audit] Generating PCB PNG...
+[evidence/rev-0.0.4-alpha.0/import-audit] Written pcb.png
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

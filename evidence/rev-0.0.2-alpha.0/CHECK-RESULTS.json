@@ -1,0 +1,105 @@
+[
+  {
+    "check": "format-check",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.2-alpha.0/format-check.log",
+    "scope": "Implemented schematic draft only; not full board qualification"
+  },
+  {
+    "check": "typecheck",
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.2-alpha.0/typecheck.log",
+    "scope": "Implemented schematic draft only; not full board qualification"
+  },
+  {
+    "check": "critical-import-audit",
+    "command": [
+      "bun",
+      "run",
+      "validate:imports"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.2-alpha.0/critical-import-audit.log",
+    "scope": "Implemented schematic draft only; not full board qualification"
+  },
+  {
+    "check": "netlist",
+    "command": [
+      "node_modules/.bin/tsci",
+      "check",
+      "netlist",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.2-alpha.0/netlist.log",
+    "scope": "Implemented schematic draft only; not full board qualification"
+  },
+  {
+    "check": "pin-specification",
+    "command": [
+      "node_modules/.bin/tsci",
+      "check",
+      "pin_specification",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.2-alpha.0/pin-specification.log",
+    "scope": "Implemented schematic draft only; not full board qualification"
+  },
+  {
+    "check": "source",
+    "command": [
+      "node_modules/.bin/tsci",
+      "check",
+      "source",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.2-alpha.0/source.log",
+    "scope": "Implemented schematic draft only; not full board qualification"
+  },
+  {
+    "check": "schematic-placement",
+    "command": [
+      "node_modules/.bin/tsci",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.2-alpha.0/schematic-placement.log",
+    "scope": "Implemented schematic draft only; not full board qualification"
+  },
+  {
+    "check": "schematic-build",
+    "command": [
+      "bun",
+      "run",
+      "preview:schematic"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.2-alpha.0/schematic-build.log",
+    "scope": "Implemented schematic draft only; not full board qualification"
+  },
+  {
+    "check": "draft-connectivity",
+    "command": [
+      "bun",
+      "run",
+      "test:draft"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.2-alpha.0/draft-connectivity.log",
+    "scope": "Implemented schematic draft only; not full board qualification"
+  }
+]

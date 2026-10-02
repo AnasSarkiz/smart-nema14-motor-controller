@@ -1,0 +1,22 @@
+placement summary: no placement issues
+
+board top-layer utilization:
+- occupied: 5.086% (122.058mm^2 of 2400mm^2)
+- empty spaces over 5% of board area:
+  - 33.376% (801.021mm^2); bounds=(minX=-22.825mm, maxX=40mm, minY=-15mm, maxY=-2.25mm)
+  - 26.908% (645.79mm^2); bounds=(minX=-40mm, maxX=10.65mm, minY=2.25mm, maxY=15mm)
+  - 16.079% (385.892mm^2); bounds=(minX=13.35mm, maxX=40mm, minY=0.52mm, maxY=15mm)
+
+board-edge status:
+- J_USB: 1.926mm inside top edge
+- Q_PD: 13mm inside top edge
+- D_USB: 14.55mm inside top edge
+- D_VBUS: 14.55mm inside top edge
+- C_CC: 14.73mm inside top edge
+- R_TOP: 14.73mm inside top edge
+- R_BOTTOM: 11.284mm inside right edge
+- C_INPUT: 6.55mm inside bottom edge
+
+placement drc:
+Errors: 0
+Warnings: 0

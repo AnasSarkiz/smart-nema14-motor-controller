@@ -1,0 +1,44 @@
+Building 1 file(s)...
+Building assembly.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/assembly/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+All pins on Q_PD are underspecified (no pinAttributes set)
+All pins on D_VBUS are underspecified (no pinAttributes set)
+U4 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+J_USB has no pin with requires_power=true
+Q_PD has no pin with requires_power=true
+D_USB has no pin with requires_power=true
+D_VBUS has no pin with requires_power=true
+J_USB has no pin with requires_ground=true
+Q_PD has no pin with requires_ground=true
+D_VBUS has no pin with requires_ground=true
+Q_PD is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_USB is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_VBUS is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+C10 overlaps R13: 1 footprint overlap, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+J_USB overlaps D_USB: 1 footprint overlap, 1 courtyard conflict. Move the components apart.
+J_USB overlaps C26: 2 footprint overlaps, 1 pad clearance violation. Move the components apart.
+pcb_plated_hole J_USB.EH3 overlaps with pcb_courtyard_outline [pcb_courtyard_outline_47]
+J_USB overlaps R16: 3 footprint overlaps, 2 pad clearance violations. Move the components apart.
+C26 overlaps C22: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+Courtyard of U1 overlaps with courtyard of R18
+Courtyard of U5 overlaps with courtyard of L1
+Courtyard of C8 overlaps with courtyard of U3
+Courtyard of C26 overlaps with courtyard of R16
+Generating preview images...
+[assembly] Generating PCB SVG...
+[assembly] Written pcb.svg
+[assembly] Generating PCB PNG...
+[assembly] Written pcb.png
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

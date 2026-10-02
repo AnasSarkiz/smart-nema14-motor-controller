@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# tscircuit cache
+.tscircuit/
+
+# Board-local mechanical analysis runtime
+.mechanical-venv/
+.mechanical-cache/
+
+# Generated interactive assembly viewer
+mechanical/viewer.bundle.js
+mechanical/assembly-preview.html
+mechanical/__pycache__/
+
+# Historical generated STEP exports exceed GitHub file limits; retained locally.
+evidence/rev-0.0.8-alpha.0/diagnostic-assembly.step
+evidence/rev-0.0.8-alpha.0/previous-jst-orientation/diagnostic-assembly.step

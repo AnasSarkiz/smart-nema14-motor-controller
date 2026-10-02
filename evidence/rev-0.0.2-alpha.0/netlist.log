@@ -1,0 +1,189 @@
+Errors: 0
+Warnings: 0
+
+Readable Netlist:
+COMPONENTS:
+ - U1: STM32G0B1CBT6
+ - C1: 100nF capacitor
+ - C2: 4.7uF capacitor
+ - C3: 100nF capacitor
+ - C4: 100nF capacitor
+ - R1: 10kΩ resistor
+ - C5: 100nF capacitor
+ - U4: AS5600-ASOM
+ - C6: 100nF capacitor
+ - R2: 4.7kΩ resistor
+ - R3: 4.7kΩ resistor
+ - U6: SN65HVD230DR
+ - C7: 100nF capacitor
+
+NET: NRST
+  - C5 pin1
+  - R1 pin2
+  - U1 PF2_NRST
+
+NET: I2C_SCL
+  - R2 pin2
+  - U4 SCL
+  - U1 PB8
+
+NET: I2C_SDA
+  - R3 pin2
+  - U4 SDA
+  - U1 PB9
+
+NET: CAN_TX
+  - U6 D
+  - U1 PB6
+
+NET: CAN_RX
+  - U6 R
+  - U1 PB5
+
+NET: V3V3
+  - C7 pin1
+  - U6 VCC
+  - R3 pin1
+  - R2 pin1
+  - C6 pin1
+  - U4 VDD3V3
+  - U4 VDD5V
+  - R1 pin1
+  - C4 pin1
+  - C3 pin1
+  - C2 pin1
+  - C1 pin1
+  - U1 VREF_POS
+  - U1 VBAT
+  - U1 VDD (VDDA)
+
+NET: GND
+  - C7 pin2
+  - U6 RS
+  - U6 GND
+  - C6 pin2
+  - U4 DIR
+  - U4 GND
+  - C5 pin2
+  - C4 pin2
+  - C3 pin2
+  - C2 pin2
+  - C1 pin2
+  - U1 VSS
+
+
+EMPTY NET PINS:
+  - U6 CANH
+  - U6 CANL
+
+COMPONENT_PINS:
+U1 (STM32G0B1CBT6)
+- pin1(PC13): NOT_CONNECTED
+- pin2(PC14_OSC32_IN): NOT_CONNECTED
+- pin3(PC15_OSC32_OUT): NOT_CONNECTED
+- pin4(VBAT): NETS(V3V3)
+- pin5(VREF_POS): NETS(V3V3)
+- pin6(VDD, VDDA): NETS(V3V3)
+- pin7(VSS, VSSA): NETS(GND)
+- pin8(PF0_OSC_IN): NOT_CONNECTED
+- pin9(PF1_OSC_OUT): NOT_CONNECTED
+- pin10(PF2_NRST): NETS(NRST)
+- pin11(PA0): NOT_CONNECTED
+- pin12(PA1): NOT_CONNECTED
+- pin13(PA2): NOT_CONNECTED
+- pin14(PA3): NOT_CONNECTED
+- pin15(PA4): NOT_CONNECTED
+- pin16(PA5): NOT_CONNECTED
+- pin17(PA6): NOT_CONNECTED
+- pin18(PA7): NOT_CONNECTED
+- pin19(PB0): NOT_CONNECTED
+- pin20(PB1): NOT_CONNECTED
+- pin21(PB2): NOT_CONNECTED
+- pin22(PB10): NOT_CONNECTED
+- pin23(PB11): NOT_CONNECTED
+- pin24(PB12): NOT_CONNECTED
+- pin25(PB13): NOT_CONNECTED
+- pin26(PB14): NOT_CONNECTED
+- pin27(PB15): NOT_CONNECTED
+- pin28(PA8): NOT_CONNECTED
+- pin29(PA9): NOT_CONNECTED
+- pin30(PC6): NOT_CONNECTED
+- pin31(PC7): NOT_CONNECTED
+- pin32(PA10): NOT_CONNECTED
+- pin33(PA11_PA9_): NOT_CONNECTED
+- pin34(PA12_PA10_): NOT_CONNECTED
+- pin35(PA13): NOT_CONNECTED
+- pin36(PA14_BOOT0): NOT_CONNECTED
+- pin37(PA15): NOT_CONNECTED
+- pin38(PD0): NOT_CONNECTED
+- pin39(PD1): NOT_CONNECTED
+- pin40(PD2): NOT_CONNECTED
+- pin41(PD3): NOT_CONNECTED
+- pin42(PB3): NOT_CONNECTED
+- pin43(PB4): NOT_CONNECTED
+- pin44(PB5): NETS(CAN_RX)
+- pin45(PB6): NETS(CAN_TX)
+- pin46(PB7): NOT_CONNECTED
+- pin47(PB8): NETS(I2C_SCL)
+- pin48(PB9): NETS(I2C_SDA)
+
+C1 (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+C2 (4.7uF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+C3 (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+C4 (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+R1 (10kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(NRST)
+
+C5 (100nF undefined)
+- pin1: NETS(NRST)
+- pin2: NETS(GND)
+
+U4 (AS5600-ASOM)
+- pin1(VDD5V): NETS(V3V3)
+- pin2(VDD3V3): NETS(V3V3)
+- pin3(OUT): NOT_CONNECTED
+- pin4(GND): NETS(GND)
+- pin5(PGO): NOT_CONNECTED
+- pin6(SDA): NETS(I2C_SDA)
+- pin7(SCL): NETS(I2C_SCL)
+- pin8(DIR): NETS(GND)
+
+C6 (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+
+R2 (4.7kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(I2C_SCL)
+
+R3 (4.7kΩ undefined)
+- pin1(anode, pos, left): NETS(V3V3)
+- pin2(cathode, neg, right): NETS(I2C_SDA)
+
+U6 (SN65HVD230DR)
+- pin1(D): NETS(CAN_TX)
+- pin2(GND): NETS(GND)
+- pin3(VCC): NETS(V3V3)
+- pin4(R): NETS(CAN_RX)
+- pin5(VREF): NOT_CONNECTED
+- pin6(CANL): NETS(CAN_L)
+- pin7(CANH): NETS(CAN_H)
+- pin8(RS): NETS(GND)
+
+C7 (100nF undefined)
+- pin1: NETS(V3V3)
+- pin2: NETS(GND)
+

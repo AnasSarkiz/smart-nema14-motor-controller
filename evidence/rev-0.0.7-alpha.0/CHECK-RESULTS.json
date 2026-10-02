@@ -1,0 +1,146 @@
+{
+  "scope": "Draft and isolated fixtures only; schematic-placement reports an unresolved issue despite exit 0; not full placement/routing/fabrication validation",
+  "results": [
+    {
+      "command": [
+        "bun",
+        "run",
+        "format:check"
+      ],
+      "exit_code": 0,
+      "log": "format-check.log"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "typecheck"
+      ],
+      "exit_code": 0,
+      "log": "typecheck.log"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "validate:imports"
+      ],
+      "exit_code": 0,
+      "log": "critical-pin-audit.log"
+    },
+    {
+      "command": [
+        "node_modules/.bin/tsci",
+        "check",
+        "netlist",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "netlist.log"
+    },
+    {
+      "command": [
+        "node_modules/.bin/tsci",
+        "check",
+        "pin_specification",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "pin-specification.log"
+    },
+    {
+      "command": [
+        "node_modules/.bin/tsci",
+        "check",
+        "source",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "source-check.log"
+    },
+    {
+      "command": [
+        "node_modules/.bin/tsci",
+        "check",
+        "schematic-placement",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "schematic-placement.log"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "test:draft"
+      ],
+      "exit_code": 0,
+      "log": "draft-check.log"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "test:imports"
+      ],
+      "exit_code": 0,
+      "log": "import-geometry-check.log"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "test:usb-imports"
+      ],
+      "exit_code": 0,
+      "log": "usb-import-geometry-check.log"
+    },
+    {
+      "command": [
+        "node_modules/.bin/tsci",
+        "check",
+        "placement",
+        "scripts/import-audit.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "import-fixture-placement.log"
+    },
+    {
+      "command": [
+        "node_modules/.bin/tsci",
+        "check",
+        "placement",
+        "scripts/usb-import-audit.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "usb-fixture-placement.log",
+      "diagnostics": "Errors 0 / Warnings 0; isolated fixture only"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "preview:schematic"
+      ],
+      "exit_code": 0,
+      "log": "schematic-build.log",
+      "diagnostics": "PCB disabled; 11 pin metadata + three missing imported custom-symbol reference warnings remain"
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "preview:usb-imports"
+      ],
+      "exit_code": 0,
+      "log": "usb-import-fixture-build.log",
+      "diagnostics": "Latest rerun after fixture cable-access correction; zero generated DRC errors"
+    }
+  ],
+  "not_performed": [
+    "Motor-board PCB placement (gated)",
+    "Routed build/shorts/snapshot (gated)",
+    "Fabrication export/assembler approval (gated)",
+    "Physical tests (no hardware)"
+  ]
+}
