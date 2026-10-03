@@ -43,3 +43,5 @@ The private source repository is [AnasSarkiz/smart-nema14-motor-controller](http
 The registry distribution contains the circuit sources, exact CAD assets and current audit evidence. Downloaded reference PDFs/ZIPs are preserved in the full GitHub repository; manufacturer links remain in references/SOURCES.md. The earlier full-reference upload encountered HTTP 413 for two large PDFs, recorded in VALIDATION.md.
 
 Private release **0.0.13-alpha.0** is uploaded; all 422 initial source/CAD/evidence files passed SHA256 readback. See evidence/rev-0.0.13-alpha.0/PUBLICATION-RECEIPT.json. Its hosted build failed before code execution because the cloud sandbox exceeded its running-container limit. The receipt/documentation follow-up retains the same validated circuit revision.
+
+Private release **0.0.14-alpha.0** is uploaded and all **483** committed source/CAD/evidence files passed SHA256 readback. The source is d0a374a; current publication proof is [the revision-14 receipt](evidence/rev-0.0.14-alpha.0/PUBLICATION-RECEIPT.json). Hosted build success is separate and fabrication remains unapproved.

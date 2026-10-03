@@ -14,7 +14,7 @@ This step creates a concrete carrier study for the exact 14HM11-0404S and native
 | 5. Routed checks | not started | No routed DRC, layer or snapshot approval. |
 | 6. Prototype fabrication | not started | No validated fabrication package or assembler feedback. |
 | 7. Physical prototype | not started | No hardware tests. |
-| 8. Store release | in progress | Matching private source/package checkpoint to be published; hosted success tracked separately. |
+| 8. Store release | in progress | Private source and 483-file source/CAD release verified; hosted build success tracked separately. |
 
 ## Current implementation and evidence
 
@@ -27,6 +27,10 @@ Pinned tscircuit 0.0.2742 / CLI 0.1.2237 / EasyEDA 0.0.369 remain current projec
 `BOM-CATALOG-AUDIT.json` records exact matches and displayed inventory for all 44 active part identities using the installed CLI's supported public JLCPCB catalogue backend. This is indexed stock, not live assembler inventory or a reservation. TMC2209/C465949 displays one unit; motor connector/C189895 displays six. Review BOM remains 111 references / 108 default fitted. Optional encoder and endpoint termination choices are unchanged.
 
 Current artifacts and logs are in `evidence/rev-0.0.14-alpha.0/`. The inspected mounted 3D rendering is saved there as a rendering, not a hardware photograph. See `mechanical/FRONT-CARRIER-REVIEW.md` for intended dimensions and incomplete qualification. Git/registry publication receipt will identify the completed source commit and exact uploaded bytes. Revision 13's cloud build failed before code execution because its sandbox container capacity was exhausted; that infrastructure failure does not explain or remove local board qualification gates.
+
+## Verified revision-14 publication
+
+Implementation source [d0a374a](https://github.com/AnasSarkiz/smart-nema14-motor-controller/commit/d0a374a3a69e1baa8f96a5564a6482a97507c695) was pushed to main and its remote SHA verified. Private registry version **0.0.14-alpha.0** received **483 exact committed files**, including all manufacturer CAD bytes and the authored carrier. Every file passed SHA256 readback; PUBLICATION-RECEIPT.json records source commit, exclusions, upload and verification results. Readback resumed after interruption through the official direct-download API, preserving prior checks. `ready_to_build=true` was set only after complete readback. A triggered cloud build is not evidence of hosted success or fabrication readiness. This receipt/documentation checkpoint does not change circuit sources, imports, placement, dependencies or CAD.
 
 ## Earlier records — historical evidence only
 
