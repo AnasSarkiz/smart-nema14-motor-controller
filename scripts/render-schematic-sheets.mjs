@@ -6,7 +6,23 @@ const circuitJson = JSON.parse(readFileSync("dist/index/circuit.json", "utf8"))
 const sheets = circuitJson.filter(
   (element) => element.type === "schematic_sheet",
 )
-if (sheets.length !== 6) throw new Error("Expected six draft schematic sheets")
+const expectedSheets = [
+  "MCU",
+  "Encoder",
+  "CAN",
+  "LogicPower",
+  "MotorDriver",
+  "UsbPd",
+  "Programming",
+  "Interfaces",
+  "InputPower",
+]
+if (
+  sheets.length !== expectedSheets.length ||
+  expectedSheets.some((name) => !sheets.some((sheet) => sheet.name === name))
+) {
+  throw new Error("Missing required A4 schematic sheet")
+}
 for (const sheet of sheets) {
   const svg = convertCircuitJsonToSchematicSvg(circuitJson, {
     schematicSheetId: sheet.schematic_sheet_id,

@@ -1,0 +1,16 @@
+<SchematicSheet name="Programming" id="schematic_sheet_6">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U7" positionAnchor="center" schX="-3" schY="0" width="1.58" height="2" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<SchematicPinPaddingToEdgeTooLarge message="Move schematic pins closer to the box edge or change the schematic box width" componentName="U7" pinSides="top" edgeSides="left,right" suggestedSchWidth="0.98" />
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="UsbPd" id="schematic_sheet_5">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="D_VBUS" positionAnchor="center" schX="6.9" schY="6" width="0.2" height="0.28" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<TwoPinComponentShouldBeVertical componentName="D_VBUS" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate D_VBUS by -90° so its power-connected pin faces up and the component is vertical" />
+</SchematicPlacementIssues>
+</SchematicSheet>

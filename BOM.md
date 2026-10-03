@@ -1,3 +1,26 @@
+# Current review BOM — 0.0.11-alpha.0
+
+**Design review only; not an approved fabrication BOM.** All 111 instantiated components have exact JLCPCB identities. The generated [per-reference review BOM](evidence/rev-0.0.11-alpha.0/REVIEW-BOM.csv) and [JSON record](evidence/rev-0.0.11-alpha.0/REVIEW-BOM.json) come from the current schematic.
+
+The default open-loop review assembly fits 108 parts and omits U4/C6 (optional encoder) and R50 (CAN termination link). Retain R2/R3: the temperature sensor still requires I²C pull-ups. Manufacturing exports must apply the same population manifest to both BOM and placement files; that fabrication export has not been performed.
+
+Changes superseding every historical proposal below:
+
+- R5/R6: **C513714**, Yageo RT1206BRD071RL, 1 Ω, ±0.1%, 25 ppm/°C, 0.25 W. The 180 mΩ sense pair is no longer active. R10/R11 are both 10 kΩ.
+- J_USB: **C5143397**, GCT USB4110-GF-A. B4 manufacturer footprint audit passes; genuine 3D model is missing.
+- J_MOTOR: **C189895**, JST SM04B-GHS-TB(LF)(SN), GH 1.25 mm, 1 A with AWG26. Mates with GHR-04V-S and SSHL-002T-P0.2 contacts. Search showed only six supplier units on 2026-10-03; stock must be rechecked before ordering. C265102/C265332/C157926 are excluded following footprint review.
+- J_IO: **C160409**, JST SM10B-SRSS-TB(LF)(SN), SH ten-position side entry. Full footprint/model and mating harness qualification remains pending.
+- J_SWD: **C136657**, official package 0.8.0. Pin 1 VOUT is intentionally disconnected; signal voltage must be 3.3 V. USB powers the board.
+- U7: **C2673275**, TMUX1511RSVR, isolates programmer signals and the VBUS ADC while unpowered.
+- U8: **C5218924**, TLV803EA30DBZR, 3.0 V supervisor with 200 ms reset delay; GND1/RESET2/VDD3. C53283913 is excluded because its released import loses the rotated centre-pad geometry.
+- U9: **C28927**, TMP112AIDRLR, board temperature at I²C address 0x48.
+- U10: **C3662793**, TPS259470LRPWR, protected VM feeding both buck and motor. Controlled charging and reverse blocking do not provide a regenerative brake.
+- D_IO1/D_IO2: **C138714**; D_CAN: **C12067**; Q_ILIM: **C82045**; three LEDs: **C965805**.
+
+Current imports and physical-pin connectivity pass their limited audit scopes. Availability of the complete assembly, effective capacitance, startup budget, transient protection, thermal ratings and all mechanical interfaces remain unqualified. No generic or manually patched component definitions are used.
+
+## Historical BOM proposals — superseded by the current per-reference record
+
 # Current revision 0.0.9-alpha.0 update
 
 Selected motor: STEPPERONLINE 14HM11-0404S; 0.4 A/phase, 25 ohms,

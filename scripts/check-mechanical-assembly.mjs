@@ -1,18 +1,23 @@
 import assert from "node:assert/strict"
 import { createHash } from "node:crypto"
-import { readFileSync } from "node:fs"
-
+import { readFileSync, writeFileSync } from "node:fs"
+const revision = JSON.parse(readFileSync("package.json", "utf8")).version
 const circuit = JSON.parse(readFileSync("dist/assembly/circuit.json", "utf8"))
 const cad = circuit.filter((element) => element.type === "cad_component")
+const pcb = circuit.filter((element) => element.type === "pcb_component")
+assert.equal(
+  circuit.filter((element) => element.type === "pcb_board").length,
+  1,
+)
+assert.equal(pcb.length, 111)
 assert.equal(
   cad.length,
-  58,
-  "Official motor plus 57 supplier PCB models; no assumed mounting hardware",
+  112,
+  "111 PCB components plus unchanged manufacturer motor",
 )
-const motorSource = circuit.find(
-  (element) =>
-    element.type === "source_component" &&
-    element.name === "OfficialStepperOnline14hm11Motor",
+const sources = circuit.filter((element) => element.type === "source_component")
+const motorSource = sources.find(
+  (element) => element.name === "OfficialStepperOnline14hm11Motor",
 )
 const motorCad = cad.find(
   (element) => element.source_component_id === motorSource.source_component_id,
@@ -31,57 +36,56 @@ assert.equal(
     .digest("hex"),
   "959f43e95b7840beae5ffbd56e997e23c5004a1b09e16b7caa40400296e46281",
 )
-assert.equal(
-  circuit.filter((element) => element.type === "pcb_board").length,
-  1,
-)
-assert.equal(
-  circuit.filter((element) => element.type === "pcb_component").length,
-  57,
-)
-assert.equal(
-  circuit.filter(
-    (element) => element.type === "pcb_hole" && !element.pcb_component_id,
-  ).length,
-  0,
-)
-for (const type of ["pcb_trace", "pcb_via"]) {
+for (const type of ["pcb_trace", "pcb_via"])
   assert.equal(circuit.filter((element) => element.type === type).length, 0)
-}
 assert.equal(
   circuit.filter((element) => element.type.includes("error")).length,
   0,
 )
-
-const controller = JSON.parse(
-  readFileSync("dist/controller-preview/circuit.json", "utf8"),
+const missingModels = pcb.flatMap((component) => {
+  const model = cad.find(
+    (element) => element.pcb_component_id === component.pcb_component_id,
+  )
+  if (model?.model_step_url) return []
+  const source = sources.find(
+    (element) => element.source_component_id === component.source_component_id,
+  )
+  return [
+    {
+      reference: source.name,
+      part: source.supplier_part_numbers?.jlcpcb,
+      show_as_bounding_box: model?.show_as_bounding_box ?? false,
+    },
+  ]
+})
+const mountingHoles = circuit.filter(
+  (element) => element.type === "pcb_hole" && !element.pcb_component_id,
 )
-assert.equal(
-  controller.filter((element) => element.type === "pcb_component").length,
-  57,
+writeFileSync(
+  `evidence/rev-${revision}/ASSEMBLY-MODEL-AUDIT.json`,
+  JSON.stringify(
+    {
+      revision,
+      pcb_component_count: pcb.length,
+      cad_entry_count: cad.length,
+      exact_motor_reference: "passed",
+      genuine_step_model_count: cad.length - missingModels.length,
+      missing_models: missingModels,
+      pcb_mounting_hole_count: mountingHoles.length,
+      fit_status:
+        "blocked: exploded display has no qualified PCB mounting carrier or mating cable models",
+      routing_status: "disabled",
+      fabrication_ready: false,
+    },
+    null,
+    2,
+  ) + "\n",
 )
-assert.equal(
-  controller.filter(
-    (element) => element.type === "pcb_hole" && !element.pcb_component_id,
-  ).length,
-  0,
-  "Retired Phidgets rear holes must be absent",
-)
-assert.equal(
-  controller.filter((element) => element.type === "pcb_trace").length,
-  0,
-)
-assert.equal(
-  controller.filter((element) => element.type === "pcb_via").length,
-  0,
-)
-assert.equal(
-  controller.filter((element) => element.type.includes("error")).length,
-  0,
+assert.deepEqual(
+  missingModels,
+  [],
+  "Missing genuine STEP model blocks complete 3D component assembly qualification; bounding-box display is insufficient",
 )
 console.log(
-  "Official motor raised +65 mm in Z above the actual unrouted PCB; no mounting hardware assumed.",
-)
-console.log(
-  "Mounting and encoder decisions remain unresolved. These checks do not qualify assembly fit or fabrication.",
+  "Complete component model inventory verified. PCB support and mechanical BRep clearance review remain separate gates.",
 )

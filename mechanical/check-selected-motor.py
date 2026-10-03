@@ -35,5 +35,5 @@ report = {
     "drawing_and_step_revision_compatibility": "physical hardware confirmation pending",
     "fabrication_ready": False,
 }
-Path("evidence/rev-0.0.10-alpha.0/STEP-REFERENCE-VERIFICATION.json").write_text(json.dumps(report, indent=2) + "\n")
+Path(f"evidence/rev-{json.loads(Path("package.json").read_text())["version"]}/STEP-REFERENCE-VERIFICATION.json").write_text(json.dumps(report, indent=2) + "\n")
 print("Exact manufacturer STEP: checksum, valid solid and selected datums verified. Assembly fit remains blocked.")

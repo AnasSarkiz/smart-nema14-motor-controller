@@ -1,3 +1,5 @@
+import objPath from "./AS5600_ASOM.obj"
+import stepPath from "./AS5600_ASOM.step"
 import type { ChipProps } from "@tscircuit/props"
 
 const pinLabels = {
@@ -46,8 +48,8 @@ export const AS5600_ASOM = (props: ChipProps<typeof pinLabels>) => {
 <courtyardoutline outline={[{"x":-2.700007800000094,"y":3.9302059999999983},{"x":2.6999823999999535,"y":3.9302059999999983},{"x":2.6999823999999535,"y":-3.9302059999999983},{"x":-2.700007800000094,"y":-3.9302059999999983},{"x":-2.700007800000094,"y":3.9302059999999983}]} />
       </footprint>}
       cadModel={{
-        objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C79815.obj?uuid=7abc64c95a1a4a04a4ef38f9097c870b",
-        stepUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C79815.step?uuid=7abc64c95a1a4a04a4ef38f9097c870b",
+        objUrl: objPath,
+        stepUrl: stepPath,
         pcbRotationOffset: 0,
         modelOriginPosition: { x: 0.000012700000070253736, y: 0, z: 0 },
       }}

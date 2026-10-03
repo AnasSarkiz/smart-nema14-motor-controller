@@ -1,11 +1,11 @@
-import { TYPE_C_31_M_12 } from "../imports/TYPE_C_31_M_12"
-import { STL11N3LLH6 } from "../imports/STL11N3LLH6"
-import { TPD2EUSB30ADRTR } from "../imports/TPD2EUSB30ADRTR"
-import { ESDA25P35_1U1M } from "../imports/ESDA25P35_1U1M"
-import { TCC0402COG331J500AT } from "../imports/TCC0402COG331J500AT"
-import { RT0402BRD07100KL } from "../imports/RT0402BRD07100KL"
-import { RT0402BRD076K04L } from "../imports/RT0402BRD076K04L"
-import { UMK107BBJ225KA_T } from "../imports/UMK107BBJ225KA_T"
+import { USB4110_GF_A } from "../imports/USB4110_GF_A/USB4110_GF_A"
+import { STL11N3LLH6 } from "../imports/STL11N3LLH6/STL11N3LLH6"
+import { TPD2EUSB30ADRTR } from "../imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR"
+import { ESDA25P35_1U1M } from "../imports/ESDA25P35_1U1M/ESDA25P35_1U1M"
+import { TCC0402COG331J500AT } from "../imports/TCC0402COG331J500AT/TCC0402COG331J500AT"
+import { RT0402BRD07100KL } from "../imports/RT0402BRD07100KL/RT0402BRD07100KL"
+import { RT0402BRD076K04L } from "../imports/RT0402BRD076K04L/RT0402BRD076K04L"
+import { UMK107BBJ225KA_T } from "../imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T"
 
 // Isolated supplier geometry only; these coordinates are not motor-board placement.
 export default function UsbImportAudit() {
@@ -20,7 +20,7 @@ export default function UsbImportAudit() {
       <net name="AUDIT_DRAIN" />
       <net name="AUDIT_SOURCE" />
       <schematicsheet name="UsbImportAudit" sheetSize="A4">
-        <TYPE_C_31_M_12
+        <USB4110_GF_A
           name="J_USB"
           pcbX={-28}
           pcbY={-9.4}

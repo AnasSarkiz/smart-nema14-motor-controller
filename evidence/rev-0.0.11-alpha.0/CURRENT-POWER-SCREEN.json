@@ -1,0 +1,62 @@
+{
+  "revision": "0.0.11-alpha.0",
+  "scope": "Conservative electrical screens, not a validated operating envelope or physical test",
+  "motor": "14HM11-0404S",
+  "shunts": {
+    "part": "C513714",
+    "nominal_ohms": 1,
+    "tolerance_fraction": 0.001,
+    "tcr_ppm_per_c": 25,
+    "temperature_screen_c": [
+      25,
+      125
+    ],
+    "internal_driver_resistance_ohms": 0.02,
+    "reference_v": 0.325,
+    "internal_reference_tolerance_fraction": 0.05,
+    "vref_scale_upper_bound": 1,
+    "minimum_shunt_ohms": 0.9965025000000001,
+    "maximum_phase_peak_a": 0.33570994660613235,
+    "motor_rated_phase_a": 0.4,
+    "dissipation_upper_bound_w": 0.11309590409208886,
+    "resistor_rating_w_at_70c": 0.25,
+    "qualification_remaining": [
+      "Manufacturer resistor derating/pulse curve and local hotspot temperature",
+      "TMC reference/resistance temperature dependence and regulation overshoot",
+      "Kelvin sense/ground layout and physical current measurement"
+    ]
+  },
+  "adc": {
+    "measures": "VBUS_PROTECTED upstream of eFuse; does not measure regenerative VM",
+    "nominal_divider_gain": 0.039323633503735744,
+    "at_20v": 0.7864726700747149,
+    "at_28v": 1.1010617381046008,
+    "tmux_powered_off_signal_limit_v": 3.6,
+    "programmer_signal_v": 3.3
+  },
+  "efuse": {
+    "nominal_ovp_v": 21.464900662251654,
+    "nominal_low_current_a": 0.5007518796992482,
+    "nominal_high_current_a": 1.0015037593984963,
+    "low_current_tolerance_a": [
+      0.42526315789473684,
+      0.5759398496240602
+    ],
+    "high_current_control_requirement": "Valid PD contract >=1.5 A before PB14 high; 5 V bootstrap motor disabled",
+    "dvdt_cap_f": 1e-07,
+    "dvdt_series_ohms": 100,
+    "reverse_blocking_is_not_a_brake": true
+  },
+  "regeneration_example": {
+    "example_only_unloaded_speed_rpm": 300,
+    "rotor_inertia_kg_m2": 1e-06,
+    "motor_inductance_max_h": 0.0288,
+    "two_phase_magnetic_energy_j": 0.0032457936456084164,
+    "rotor_energy_j": 0.0004934802200544678,
+    "minimum_bulk_capacitance_f": 0.00016,
+    "external_load_energy_j": null,
+    "load_envelope_status": "blocked pending application load, speed, inertia, deceleration and backdrive limits",
+    "formula": "VM_final=sqrt(VM_initial^2 + 2*returned_energy/C_min); transient ESR and switching overshoot must also be qualified"
+  },
+  "fabrication_ready": false
+}

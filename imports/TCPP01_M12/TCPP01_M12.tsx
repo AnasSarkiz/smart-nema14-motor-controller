@@ -1,3 +1,5 @@
+import objPath from "./TCPP01_M12.obj"
+import stepPath from "./TCPP01_M12.step"
 import type { ChipProps } from "@tscircuit/props"
 
 const pinLabels = {
@@ -55,8 +57,8 @@ export const TCPP01_M12 = (props: ChipProps<typeof pinLabels>) => {
 <courtyardoutline outline={[{"x":-1.9899127000001045,"y":1.9899127000001045},{"x":1.9899126999999908,"y":1.9899127000001045},{"x":1.9899126999999908,"y":-1.9899126999999908},{"x":-1.9899127000001045,"y":-1.9899126999999908},{"x":-1.9899127000001045,"y":1.9899127000001045}]} />
       </footprint>}
       cadModel={{
-        objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C1121848.obj?uuid=6c26bbed11554b33978d7932714a6d9d",
-        stepUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C1121848.step?uuid=6c26bbed11554b33978d7932714a6d9d",
+        objUrl: objPath,
+        stepUrl: stepPath,
         pcbRotationOffset: 0,
         modelOriginPosition: { x: 0, y: -0.000012700000070253736, z: 0 },
       }}

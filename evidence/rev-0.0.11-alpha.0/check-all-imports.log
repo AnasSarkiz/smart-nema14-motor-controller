@@ -1,0 +1,173 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Isolated imports contain build errors
++ actual - expected
+
++ [
++   {
++     error_type: 'pcb_footprint_overlap_error',
++     message: 'AUDIT_C98192 overlaps AUDIT_C513714: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.',
++     pcb_component_ids: [
++       'pcb_component_42',
++       'pcb_component_43'
++     ],
++     pcb_error_id: 'pcb_component_overlap_pcb_component_42_pcb_component_43',
++     pcb_footprint_overlap_error_id: 'pcb_footprint_overlap_error_0',
++     pcb_smtpad_ids: [
++       'pcb_smtpad_257',
++       'pcb_smtpad_258',
++       'pcb_smtpad_259',
++       'pcb_smtpad_260'
++     ],
++     related_errors: [
++       {
++         error_type: 'pcb_footprint_overlap_error',
++         message: 'pcb_smtpad AUDIT_C98192.pin2 overlaps with pcb_smtpad AUDIT_C513714.pin2',
++         pcb_component_ids: [
++           'pcb_component_42',
++           'pcb_component_43'
++         ],
++         pcb_error_id: 'pcb_footprint_overlap_pcb_smtpad_257_pcb_smtpad_259',
++         pcb_smtpad_ids: [
++           'pcb_smtpad_257',
++           'pcb_smtpad_259'
++         ],
++         type: 'pcb_footprint_overlap_error'
++       },
++       {
++         error_type: 'pcb_footprint_overlap_error',
++         message: 'pcb_smtpad AUDIT_C98192.pin1 overlaps with pcb_smtpad AUDIT_C513714.pin1',
++         pcb_component_ids: [
++           'pcb_component_42',
++           'pcb_component_43'
++         ],
++         pcb_error_id: 'pcb_footprint_overlap_pcb_smtpad_258_pcb_smtpad_260',
++         pcb_smtpad_ids: [
++           'pcb_smtpad_258',
++           'pcb_smtpad_260'
++         ],
++         type: 'pcb_footprint_overlap_error'
++       },
++       {
++         actual_clearance: 0,
++         center: {
++           x: -82.760607,
++           y: 72
++         },
++         error_type: 'pcb_pad_pad_clearance_error',
++         message: 'Pads pcb_port[.AUDIT_C98192 > .pin2] and pcb_port[.AUDIT_C513714 > .pin2] are too close (clearance: 0mm, minimum: 0.1mm)',
++         minimum_clearance: 0.1,
++         pcb_pad_ids: [
++           'pcb_smtpad_257',
++           'pcb_smtpad_259'
++         ],
++         pcb_pad_pad_clearance_error_id: 'pad_pad_clearance_pcb_smtpad_257_pcb_smtpad_259',
++         type: 'pcb_pad_pad_clearance_error'
++       },
++       {
++         actual_clearance: 0,
++         center: {
++           x: -85.239393,
++           y: 72
++         },
++         error_type: 'pcb_pad_pad_clearance_error',
++         message: 'Pads pcb_port[.AUDIT_C98192 > .pin1] and pcb_port[.AUDIT_C513714 > .pin1] are too close (clearance: 0mm, minimum: 0.1mm)',
++         minimum_clearance: 0.1,
++         pcb_pad_ids: [
++           'pcb_smtpad_258',
++           'pcb_smtpad_260'
++         ],
++         pcb_pad_pad_clearance_error_id: 'pad_pad_clearance_pcb_smtpad_258_pcb_smtpad_260',
++         type: 'pcb_pad_pad_clearance_error'
++       },
++       {
++         error_type: 'pcb_courtyard_overlap_error',
++         message: 'Courtyard of AUDIT_C98192 overlaps with courtyard of AUDIT_C513714',
++         pcb_component_ids: [
++           'pcb_component_42',
++           'pcb_component_43'
++         ],
++         pcb_error_id: 'pcb_courtyard_overlap_pcb_component_42_pcb_component_43',
++         type: 'pcb_courtyard_overlap_error'
++       }
++     ],
++     type: 'pcb_footprint_overlap_error'
++   }
++ ]
+- []
+
+    at file:///Users/anassarkiz/tsci/tscircuit-store/boards/smart-nema14-motor-controller--01a0fd9b/scripts/check-all-imports.mjs:9:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:655:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [
+    {
+      type: 'pcb_footprint_overlap_error',
+      pcb_footprint_overlap_error_id: 'pcb_footprint_overlap_error_0',
+      error_type: 'pcb_footprint_overlap_error',
+      pcb_error_id: 'pcb_component_overlap_pcb_component_42_pcb_component_43',
+      pcb_component_ids: [ 'pcb_component_42', 'pcb_component_43' ],
+      message: 'AUDIT_C98192 overlaps AUDIT_C513714: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.',
+      related_errors: [
+        {
+          type: 'pcb_footprint_overlap_error',
+          pcb_error_id: 'pcb_footprint_overlap_pcb_smtpad_257_pcb_smtpad_259',
+          error_type: 'pcb_footprint_overlap_error',
+          message: 'pcb_smtpad AUDIT_C98192.pin2 overlaps with pcb_smtpad AUDIT_C513714.pin2',
+          pcb_component_ids: [ 'pcb_component_42', 'pcb_component_43' ],
+          pcb_smtpad_ids: [ 'pcb_smtpad_257', 'pcb_smtpad_259' ]
+        },
+        {
+          type: 'pcb_footprint_overlap_error',
+          pcb_error_id: 'pcb_footprint_overlap_pcb_smtpad_258_pcb_smtpad_260',
+          error_type: 'pcb_footprint_overlap_error',
+          message: 'pcb_smtpad AUDIT_C98192.pin1 overlaps with pcb_smtpad AUDIT_C513714.pin1',
+          pcb_component_ids: [ 'pcb_component_42', 'pcb_component_43' ],
+          pcb_smtpad_ids: [ 'pcb_smtpad_258', 'pcb_smtpad_260' ]
+        },
+        {
+          type: 'pcb_pad_pad_clearance_error',
+          pcb_pad_pad_clearance_error_id: 'pad_pad_clearance_pcb_smtpad_257_pcb_smtpad_259',
+          error_type: 'pcb_pad_pad_clearance_error',
+          message: 'Pads pcb_port[.AUDIT_C98192 > .pin2] and pcb_port[.AUDIT_C513714 > .pin2] are too close (clearance: 0mm, minimum: 0.1mm)',
+          pcb_pad_ids: [ 'pcb_smtpad_257', 'pcb_smtpad_259' ],
+          minimum_clearance: 0.1,
+          actual_clearance: 0,
+          center: { x: -82.760607, y: 72 }
+        },
+        {
+          type: 'pcb_pad_pad_clearance_error',
+          pcb_pad_pad_clearance_error_id: 'pad_pad_clearance_pcb_smtpad_258_pcb_smtpad_260',
+          error_type: 'pcb_pad_pad_clearance_error',
+          message: 'Pads pcb_port[.AUDIT_C98192 > .pin1] and pcb_port[.AUDIT_C513714 > .pin1] are too close (clearance: 0mm, minimum: 0.1mm)',
+          pcb_pad_ids: [ 'pcb_smtpad_258', 'pcb_smtpad_260' ],
+          minimum_clearance: 0.1,
+          actual_clearance: 0,
+          center: { x: -85.239393, y: 72 }
+        },
+        {
+          type: 'pcb_courtyard_overlap_error',
+          pcb_error_id: 'pcb_courtyard_overlap_pcb_component_42_pcb_component_43',
+          error_type: 'pcb_courtyard_overlap_error',
+          message: 'Courtyard of AUDIT_C98192 overlaps with courtyard of AUDIT_C513714',
+          pcb_component_ids: [ 'pcb_component_42', 'pcb_component_43' ]
+        }
+      ],
+      pcb_smtpad_ids: [
+        'pcb_smtpad_257',
+        'pcb_smtpad_258',
+        'pcb_smtpad_259',
+        'pcb_smtpad_260'
+      ]
+    }
+  ],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v25.6.0

@@ -1,0 +1,63 @@
+$ bun run validate:imports && tsci build index.circuit.tsx --disable-pcb --schematic-svgs --schematic-png && node scripts/render-schematic-sheets.mjs
+$ node scripts/check-critical-import-pins.mjs
+Critical import-label audit passed. Full schematic, BOM, mechanical and fabrication validation remains mandatory.
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+All pins on Q_PD are underspecified (no pinAttributes set)
+All pins on D_VBUS are underspecified (no pinAttributes set)
+All pins on J_IO are underspecified (no pinAttributes set)
+All pins on J_MOTOR are underspecified (no pinAttributes set)
+All pins on D_CAN are underspecified (no pinAttributes set)
+U4 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+J_USB has no pin with requires_power=true
+Q_PD has no pin with requires_power=true
+D_USB has no pin with requires_power=true
+D_VBUS has no pin with requires_power=true
+J_IO has no pin with requires_power=true
+J_MOTOR has no pin with requires_power=true
+U9 has no pin with requires_power=true
+D_IO1 has no pin with requires_power=true
+D_IO2 has no pin with requires_power=true
+D_CAN has no pin with requires_power=true
+J_USB has no pin with requires_ground=true
+Q_PD has no pin with requires_ground=true
+D_VBUS has no pin with requires_ground=true
+J_IO has no pin with requires_ground=true
+J_MOTOR has no pin with requires_ground=true
+D_CAN has no pin with requires_ground=true
+Q_PD is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_USB is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_VBUS is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_CAN is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Generating preview images...
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+[index] Generating schematic PNG...
+[index] Written schematic.png
+
+Build complete
+  Circuits  1 passed
+  Options   schematic-png, schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully
+file:///Users/anassarkiz/tsci/tscircuit-store/boards/smart-nema14-motor-controller--01a0fd9b/scripts/render-schematic-sheets.mjs:9
+if (sheets.length !== 6) throw new Error("Expected six draft schematic sheets")
+                               ^
+
+Error: Expected six draft schematic sheets
+    at file:///Users/anassarkiz/tsci/tscircuit-store/boards/smart-nema14-motor-controller--01a0fd9b/scripts/render-schematic-sheets.mjs:9:32
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:655:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v25.6.0
+error: script "preview:schematic" exited with code 1

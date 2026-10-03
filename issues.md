@@ -1,3 +1,45 @@
+# Current blockers — 0.0.11-alpha.0
+
+The electrical draft now contains 111 parts on nine A4 sheets. Native placement has zero reported errors/warnings; routing is disabled until the earlier gates pass.
+
+## B011 — Selected USB footprint mismatch: resolved for C5143397
+
+GCT USB4110-GF-A B4 (2024-05-22) agrees with all 16 native lands, physical signals and both Ø0.65 NPTH holes. See USB-MANUFACTURER-FOOTPRINT-AUDIT.json. Old C165948/C3020560 discrepancies remain historical and those components are unselected. This does not resolve the missing selected CAD model or full cable/mount clearance.
+
+## B012 — Imported symbol rendering: BLOCKING stage 2
+
+C1974707 / ESDA25P35 ignores native schRotation=270: both zero-angle and rotated port vectors remain (0.8, 0) instead of the required (0, -0.8). An unchanged-import reproducer and failing regression are preserved. Core's React-symbol transform applies translation without rotation. C2965326/C94934/C1974707/C12067/C82045 also lack internal reference designator text; native board annotations identify them without editing definitions. A proper released importer/core fix is needed; rotation checks are not suppressed.
+
+## B013/B006 — Startup, transient and braking qualification: BLOCKING stages 1/2
+
+TPS259470L and unpowered SWD/ADC isolation are implemented. Current shunts are now 1 Ω, with a conservative peak-current screen about 0.336 A rather than the obsolete 180 mΩ proposals. Remaining work: bootstrap current budget, capacitor effective values/ripple, thermal/pulse ratings, protection tolerances/transients, contract-aware fault behavior and regenerative energy. The VBUS ADC measures upstream of the eFuse, not regenerative VM. Load, maximum speed, inertia, deceleration and backdrive limits were requested but are not yet supplied. Reverse blocking is not a brake.
+
+## B016 — Rear encoder arrangement: closed for the default open-loop review assembly
+
+The selected motor has no rear shaft. The brief permits an unpopulated encoder; the review BOM now explicitly omits U4/C6. Their footprints remain optional, with no qualified magnet location or feedback claim. Relocating or enabling an encoder would require a new mechanical review.
+
+## B017 — PCB/motor attachment: BLOCKING stages 1/3
+
+The exact manufacturer's STEP is valid and unchanged. No rear thread/engagement/preload qualification is supplied for the structural fasteners. The PCB still has no mounting features or qualified carrier. A front-flange wraparound carrier using the known 4×M3 front pattern, or an independently qualified body clamp, can avoid altering rear structural screws; neither has been designed/approved for this assembly. Connector bodies, mating harnesses and support clearances must be checked together. Exploded +65 mm motor separation is display-only.
+
+## B019 — Selected USB CAD model: BLOCKING full stage 3 assembly review
+
+C5143397 supplies a correct footprint but no genuine STEP/OBJ model. The renderer creates a display bounding box. The strict assembly audit fails on this absence. GCT's public model service requires account access for CAD download; the alternate embedded viewer did not expose a usable download. No login was bypassed and no generic connector body substituted. Obtain the manufacturer's exact model or a qualified official supplier alternative, then validate full assembled/cable geometry.
+
+## B020 — New supervisor and motor-connector import findings: avoided through official alternatives
+
+C53283913's pin-3 square loses its 45° rotation; it is excluded and replaced by audited C5218924. Motor connector C265102 has 1.80 mm hold-down lands versus JST 1.50 ±0.10; C265332 and C157926 alternatives also differ from their reference layouts. These are excluded. C189895 uses its own unaltered footprint and passes the catalogue's specified dimensions. Mating harness/model placement and stock freeze remain pending.
+
+## B018 — Publication destination: still blocked
+
+The local board Git repository has no configured remote. No GitHub repository/branch is invented and no remote update or package publication is claimed.
+
+## B007/B008 — Stackup and remaining qualification
+
+Select the target JLCPCB four-layer stackup, copper weight, impedance construction and manufacturing rules. Review every footprint/model, critical power loop, silkscreen, test-point access, and final placement against the actual mounting design. These checks are incomplete even though the native placement algorithm reports no violations.
+
+## Historical issue records — superseded where stated above
+
 # Current revision 0.0.9-alpha.0 issues
 
 User-selected STEPPERONLINE 14HM11-0404S replaces Phidgets 3323_0.

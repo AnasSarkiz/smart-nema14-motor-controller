@@ -2,11 +2,11 @@ import {
   type BoardViewProps,
   previewPlacement,
 } from "../mechanics/preview-placement"
-import { CC0603KRX7R9BB104 } from "../../imports/C14663"
-import { CL31A106KBHNNNE } from "../../imports/C13585"
-import { CL21A226MAQNNNE } from "../../imports/C45783"
-import { SRN6028C_3R9M } from "../../imports/SRN6028C_3R9M"
-import { AP63203WU_7 } from "../../imports/C780769"
+import { CC0603KRX7R9BB104 } from "../../imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104"
+import { CL31A106KBHNNNE } from "../../imports/CL31A106KBHNNNE/CL31A106KBHNNNE"
+import { CL21A226MAQNNNE } from "../../imports/CL21A226MAQNNNE/CL21A226MAQNNNE"
+import { SRN6028C_3R9M } from "../../imports/SRN6028C_3R9M/SRN6028C_3R9M"
+import { AP63203WU_7 } from "../../imports/AP63203WU_7/AP63203WU_7"
 
 export function LogicBuckSheet({
   mechanicalPreview = false,
@@ -30,8 +30,8 @@ export function LogicBuckSheet({
         schX={-4}
         schY={0}
         connections={{
-          VIN: "net.VBUS_INRUSH_OUT",
-          EN: "net.VBUS_INRUSH_OUT",
+          VIN: "net.VM",
+          EN: "net.VM",
           GND: "net.GND",
           FB: "net.V3V3",
           SW: "net.BUCK_SW",
@@ -44,7 +44,7 @@ export function LogicBuckSheet({
         schX={-8}
         schY={4}
         schRotation={270}
-        connections={{ pin1: "net.VBUS_INRUSH_OUT", pin2: "net.GND" }}
+        connections={{ pin1: "net.VM", pin2: "net.GND" }}
       />
       <CC0603KRX7R9BB104
         name="C9"
@@ -52,7 +52,7 @@ export function LogicBuckSheet({
         schX={-4}
         schY={4}
         schRotation={270}
-        connections={{ pin1: "net.VBUS_INRUSH_OUT", pin2: "net.GND" }}
+        connections={{ pin1: "net.VM", pin2: "net.GND" }}
       />
       <CC0603KRX7R9BB104
         name="C10"
@@ -98,7 +98,7 @@ export function LogicBuckSheet({
       />
       <schematictext
         fontSize={0.22}
-        text="DO NOT connect the 10 uF buck input directly to USB-C: protected power path unfinished"
+        text="Buck and motor bulk capacitors are behind the TPS259470L controlled-slew, reverse-blocking input."
         schX={0}
         schY={-8}
       />

@@ -1,57 +1,36 @@
 # Smart NEMA 14 Motor Controller
 
-Revision `0.0.10-alpha.0`, 2026-10-03 Europe/Tirane. **Incomplete prototype; not fabrication ready. Routing disabled.**
+Revision `0.0.11-alpha.0`, 2026-10-03 Europe/Tirane. **Work-in-progress prototype. Unrouted and not fabrication ready.**
 
-The user selected **STEPPERONLINE 14HM11-0404S**, replacing Phidgets 3323_0.
-Its unchanged official drawing and STEP are stored in
-`references/motor/14hm11-0404s/`. The drawing was rendered and inspected;
-the STEP imports as one valid solid. See [mechanical review](mechanical/REVIEW.md).
+The controller targets the user-selected **STEPPERONLINE 14HM11-0404S**, using its unchanged official STEP and drawing A0217 revision 0. It is a 35 × 35 mm, four-layer design with 111 supplier components on nine native A4 schematic sheets. STM32G0B1 provides USB, UCPD and classical CAN; TMC2209 drives the motor. Power protection, self-powered SWD isolation, external STEP/DIR/ENABLE, two limits, temperature sensing and three LEDs are implemented as an unqualified electrical draft.
 
-The selected motor is 0.9° (400 full steps/revolution), 0.4 A/phase,
-25 ohms and 24 mH, with a single Ø5 mm front shaft. It has no projecting
-rear shaft for the previous AS5600/magnet arrangement. An encoder is optional
-for stepper operation. Open-loop operation is recommended for the first prototype;
-the user has not yet decided whether to omit feedback. The existing optional
-encoder electrical draft remains; it is not a mechanically qualified location.
+The current released tools are tscircuit **0.0.2742**, CLI **0.1.2235** and EasyEDA **0.0.368**. Component definitions were regenerated through the official importer without manual corrections. The isolated import audit checks 44 imports and 261 pin-to-pad mappings. The board uses 44 unique supplier identities: 43 of those are in that fixture; C136657 comes from the official standard programmer package. The fixture additionally retains the upstream 180 mΩ resistor regression.
 
-`assembly.circuit.tsx` now shows the actual unrouted controller and unchanged
-selected motor in an exploded inspection view. The motor is lifted **+65 mm in Z**
-so the PCB is visible. This display separation is not an operating assembly or
-approved mount. Use the viewer's **Board close-up** button to hide the motor and
-inspect the PCB; **Exploded assembly** restores both. No separate PCB cover exists.
-The previous two M1.6 holes, posts and rear magnet remain absent. Rear fastener
-details or a qualified carrier are still needed; front 4×M3 holes do not establish
-rear attachment details. Independent `controller-preview.circuit.tsx` is retained.
+The motor has a single front shaft and no rear shaft for the former magnet arrangement. The default open-loop review BOM omits U4/C6; their optional footprints remain. R50 is omitted except at CAN bus endpoints. This population choice follows the brief's allowance for an unpopulated encoder; no feedback or lost-step detection is claimed.
 
-The installed versions remain tscircuit 0.0.2736, CLI 0.1.2232 and EasyEDA
-0.0.368. Imported electronic definitions are unchanged. USB connector
-footprint blockers B011 and incomplete electrical qualification B012/B013 remain.
-Six native A4 electrical sheets and their partial connectivity audits are retained.
+R5/R6 now use official 1 Ω precision parts C513714. The 10 kΩ/10 kΩ VREF divider avoids operation below the driver's recommended reference range. A conservative current screen is about **0.336 A peak**, below the motor's 0.4 A/phase rating; current regulation, thermal limits and torque remain untested. The eFuse has nominal 0.50 A bootstrap and 1.00 A contract-enabled limits. These are circuit calculations, not verified operating ratings.
 
-Read [VALIDATION.md](VALIDATION.md), [issues.md](issues.md), [BOM.md](BOM.md),
-[ARCHITECTURE.md](ARCHITECTURE.md) and [original brief](references/USER-BRIEF.md).
-The current motor selection supersedes the brief's prior motor geometry.
-Revision 8's Phidgets sources, assembly and checks remain archived in its evidence;
-they do not qualify this motor or mount.
+Selected connectors are GCT USB4110-GF-A (C5143397), JST GH motor header (C189895), JST SH ten-pin I/O (C160409), and the official JST SWD header (C136657). The USB-C manufacturer's B4 drawing agrees with all 16 imported lands and two locating holes. The replacement motor header passes the dimensions specified in JST's catalogue; its mating harness and complete 3D fit still need review. Supplier stock is not reserved.
 
-Run commands from this board directory:
+The native placement checker reports zero errors and warnings. **Routing remains disabled** because schematic/BOM and mechanical gates have not passed. In particular, the imported C1974707 TVS symbol ignores rotation, the USB-C import has only a display bounding box instead of a genuine CAD model, the PCB has no qualified attachment/carrier, and startup/regeneration/load limits remain unresolved. Do not export or order this revision as fabrication-ready hardware.
+
+`assembly.circuit.tsx` shows the actual PCB beneath the unchanged motor, lifted **+65 mm in Z** for inspection. The offline viewer at `mechanical/assembly-preview.html` offers a **Board close-up** view. Exploded separation is not an operating assembly. The old Phidgets holes, two posts and rear magnet are absent.
+
+Run commands from this directory:
 
 ```sh
 bun run format:check
 bun run typecheck
-bun run validate:imports
 bun run preview:schematic
 bun run test:draft
+bun run test:all-imports
+bun run test:usb-footprint
+bun run test:motor-footprint
 bun run preview:assembly
-bun run preview:controller
 bun run test:assembly
 bun run preview:viewer
-node scripts/run-mechanical-checks.mjs
 ```
 
-The interactive [exploded preview](mechanical/assembly-preview.html) embeds the
-native `dist/assembly/3d.glb`. It is a render, not a physical prototype photo.
-The historical Phidgets-only analysis/hardware scripts refuse the new target.
-No routing, Gerbers, drill files, assembly BOM/CPL, fabrication order or physical
-test has been completed. Publication is blocked: no destination GitHub repository
-or branch is configured (B018); neither remote update has succeeded.
+Fixture tests require the matching generated fixture. `test:assembly` currently fails on the missing USB-C model; `test:symbol-rotation` intentionally exposes the unresolved runtime defect. Neither failure is suppressed. See [VALIDATION.md](VALIDATION.md), [issues.md](issues.md), [BOM.md](BOM.md), and [the original brief](references/USER-BRIEF.md). Current evidence is in `evidence/rev-0.0.11-alpha.0/`.
+
+No fabrication package, order, hardware test or publication is claimed. The board repository has no configured GitHub remote; publication is recorded as blocker B018.

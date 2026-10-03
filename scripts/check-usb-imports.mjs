@@ -7,7 +7,7 @@ const circuitJson = JSON.parse(
   readFileSync("dist/scripts/usb-import-audit/circuit.json", "utf8"),
 )
 const checks = [
-  { ref: "J_USB", part: "C165948", pads: 16 },
+  { ref: "J_USB", part: "C5143397", pads: 16 },
   { ref: "Q_PD", part: "C2965326", pads: 9 },
   { ref: "D_USB", part: "C94934", pads: 3 },
   { ref: "D_VBUS", part: "C1974707", pads: 2 },
@@ -120,8 +120,8 @@ assert.equal(
 )
 writeFileSync(
   `${evidenceDirectory}/USB-IMPORT-PIN-PAD-AUDIT.json`,
-  `${JSON.stringify({ scope: "Supplier pin/pad preservation only; C165948 land-pattern discrepancy remains unresolved; not motor-board placement or fabrication qualification", results }, null, 2)}\n`,
+  `${JSON.stringify({ scope: "Selected supplier identities and pin/pad preservation; manufacturer geometry is independently checked by check-usb-manufacturer-footprint.mjs. Not full assembly or fabrication qualification.", results }, null, 2)}\n`,
 )
 console.log(
-  "USB import audit passed: eight supplier identities, 38 physical pin-to-pad mappings and component values; fixture remains unrouted. Manufacturer land-pattern qualification is separate and incomplete.",
+  "USB import audit passed: eight supplier identities, 38 physical pin-to-pad mappings and component values; fixture remains unrouted. Full connector/PCB assembly qualification remains pending.",
 )

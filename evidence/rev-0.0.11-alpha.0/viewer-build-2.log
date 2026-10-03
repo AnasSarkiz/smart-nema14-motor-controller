@@ -1,0 +1,6 @@
+$ bun build mechanical/viewer.js --target browser --minify --outfile mechanical/viewer.bundle.js && .mechanical-venv/bin/python mechanical/build-viewer.py
+Bundled 6 modules in 21ms
+
+  viewer.bundle.js  0.59 MB  (entry point)
+
+Built portable offline assembly-preview.html from the actual native GLB.

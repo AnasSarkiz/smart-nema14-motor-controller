@@ -1,0 +1,362 @@
+                                                                                                      SM712
+                                                                   Asymmetrical TVS Diode for
+                                                              Extended Common-Mode RS-485
+PROTECTION PRODUCTS
+Description                                                  Features
+The SM712 transient voltage suppressor (TVS) diode is         400 watts peak pulse power (tp = 8/20µs)
+designed for asymmetrical (12V to -7V ) protection in         Transient protection for asymmetrical data lines to
+multi-point data transmission standard RS-485 applica-         IEC 61000-4-2 (ESD) ±15kV (air), ±8kV (contact)
+tions. The SM712 may be used to protect devices                IEC 61000-4-4 (EFT) 40A (5/50ns)
+from transient voltages resulting from electrostatic           IEC 61000-4-5 (Lightning) 12A (8/20µs)
+discharge (ESD), electrical fast transients (EFT), and        Protects two +12V to -7V lines
+lightning.                                                    Low capacitance
+                                                              Low clamping voltage
+The SM712 features 400 Watts (tp = 8/20µs) of
+power handling capability to accommodate the higher           Solid-state silicon avalanche technology
+transient voltage levels which may be expected in
+extended common mode applications. This provides             Mechanical Characteristics
+higher equipment reliability and eliminates the “guess        JEDEC SOT23 package
+work” required when using zener diodes that are not           Molding compound flammability rating: UL 94V-0
+rated to handle such transient conditions.
+                                                              Marking : 712
+The SM712 replaces four discrete components by                Packaging : Tape and Reel per EIA 481
+integrating two 12V and two 7V TVS diodes in a single
+package. The integrated design aids in reducing
+                                                             Applications
+voltage over-shoot associated with trace inductance.          Protection of RS-485 transceivers with extended
+The low clamping voltage of the SM712 minimizes the            common-mode range
+stress on the protected transceiver. The SOT23                Security systems
+package allows flexibility in the design of “crowded”         Automatic Teller Machines
+circuit boards.                                               HFC systems
+                                                              Networks
+
+
+
+
+ Circuit Diagram                                              Schematic & PIN Configuration
+
+
+
+
+                                                                              SOT23 (Top View)
+
+Revision 11/17/04                                        1                                          www.semtech.com
+                                                                                                                  SM712
+
+PROTECTION PRODUCTS
+Absolute Maximum Rating
+
+                              R ating                                   Symbol                  Value                 Units
+
+Peak Pulse Power (tp = 8/20µs)                                            Pp k                   400                  Watts
+
+Peak Pulse Current (tp = 8/20µs)                                          IP P                    17                   A
+
+Lead Soldering Temp erature                                               TL                 260 (10 sec.)             °C
+
+Op erating Temp erature                                                    TJ                -55 to +125               °C
+
+Storage Temp erature                                                      TSTG               -55 to +150               °C
+
+
+
+Electrical Characteristics
+
+SM712
+
+                                                                         Pins 1 to 3 and          Pins 3 to 1 and
+                                                                              2 to 3                   3 to 2
+                                                                            (12V T VS)               (7V T VS)
+
+Parameter                          Symbol          Conditions           MI N     T YP   MAX      MI N   T YP    MAX     Units
+
+Reverse Stand-Off Voltage           VRWM     Pin 3 to 1 or Pin 2 to 1                   12                       7          V
+
+Reverse Breakdown Voltage           V BR            IPT = 1mA           13.3                     7.5                        V
+
+Reverse Leakage Current                 IR          VR = VRWM                            1                       20         µA
+
+Clamp ing Voltage                    VC             IPP = 5A,                           20                       10         V
+                                                  tp = 8/20µs
+
+Clamp ing Voltage                    VC             IPP = 17A,                          26                       12         V
+                                                  tp = 8/20µs
+
+Junction Cap acitance                Cj        VR = 0V, f = 1MHz                        75                       75         pF
+
+                                              VR = VRWM, f = 1MHz                45                        45               pF
+
+
+
+
+ 2004 Semtech Corp.                                             2                                              www.semtech.com
+                                                                                                                                                                                                                                                   SM712
+
+PROTECTION PRODUCTS
+Typical Characteristics
+      Non-Repetitive Peak Pulse Power vs. Pulse Time                                                                                                                                                     Power Derating Curve
+
+                                               10                                                                                                                                  110
+                                                                                                                                                                                   100
+
+
+
+
+            Peak Pulse Power - Ppk (kW)
+                                                                                                                                                                                    90
+
+
+
+
+                                                                                                                                                       % of Rated Power or IPP
+                                                                                                                                                                                    80
+                                               1
+                                                                                                                                                                                    70
+                                                                                                                                                                                    60
+                                                                                                                                                                                    50
+                                                                                                                                                                                    40
+                                           0.1
+                                                                                                                                                                                    30
+                                                                                                                                                                                    20
+                                                                                                                                                                                    10
+                                          0.01                                                                                                                                          0
+                                                    0.1               1                        10                      100                 1000                                             0       25        50       75       100        125        150          175
+                                                                                Pulse Duration - tp (µs)                                                                                                      Ambient Temperature - TA (oC)
+
+
+
+
+                                                                      Pulse Waveform                                                                                                Clamping Voltage vs. Peak Pulse Current
+
+                                  110
+                                                                                                                             W aveform
+                                                                                                                                                                                   24
+                                  100                                                                                        Parameters:                                           22
+                                          90                                                                                   tr = 8µs                                            20
+                                                                                                                              td = 20µs
+
+
+
+
+                                                                                                                                                       Clamping Voltage - VC (V)
+                                          80                                                                                                                                       18
+                                                                                                                                                                                                                                           Pin 1 to 3 and 2 to 3
+                                          70                                                                                                                                       16
+
+
+
+ Percent of IPP
+                                                                                  e -t
+                                          60
+                                                                                                                                                                                   14
+                                                                                                                                                                                   12
+                                          50
+                                                                                                                                                                                   10
+                                          40                                               td = I PP /2                                                                                                                                    Pin 3 to 1 and 3 to
+                                                                                                                                                                                    8
+                                          30                                                                                                                                        6
+                                                                                                                                                                                                                                                     Waveform
+                                          20                                                                                                                                        4                                                               Parameters:
+                                                                                                                                                                                                                                                      tr = 8µs
+                                          10                                                                                                                                        2                                                                td = 20µs
+                                           0                                                                                                                                        0
+                                                0             5           10                  15              20              25              30                                        0       2         4        6        8         10      12       14          16
+                                                                                         T im e (µs)                                                                                                          Peak Pulse Current - IPP (A)
+
+
+
+
+                                                          Capacitance vs. Reverse Voltage
+
+                                          80
+
+                                          70
+
+                                          60
+
+
+
+
+      Capacitance - Cj (pF)
+                                          50
+
+                                          40
+
+                                          30
+
+                                          20
+
+                                          10
+                                                                                                                                   f = 1MHz
+                                           0
+                                               0          1   2   3       4      5        6        7      8        9    10     11     12      13
+                                                                              Reverse Voltage - VR (V)
+
+
+
+
+ 2004 Semtech Corp.                                                                                                                               3                                                                                             www.semtech.com
+                                                                                              SM712
+
+PROTECTION PRODUCTS
+Applications Information
+Device Connection for Protection of Two RS-485 Data             RS-485 Common Mode Voltages
+Lines
+EIA RS-485 specifies a ±7V ground difference between
+devices on the bus. This permits the bus voltage to
+range from +12V (5V + 7V) to -7V (0 - 7V).
+
+The SM712 is designed to protect two RS-485 data
+lines in extended common mode applications. The
+SM712 may be used to protect devices from transient
+voltages resulting from ESD, EFT, and lightning. The
+device is designed with asymmetrical operating volt-
+ages for optimum protection. The TVS diodes at pins 1
+and 2 have a working voltage of 12 volts. These pins
+                                                                  RS-485 Protection Circuit
+are connected to the differential data line pairs. The
+TVS diodes at pin 3 have a working voltage of 7 volts.
+Pin 3 is connected to ground. The internal TVS diodes
+of the SM712 will protect the transceiver input from
+positive transient voltage spikes greater than 12V and
+negative spikes greater than 7V.
+
+A series current limiting resistor may be added in
+applications requiring enhanced surge immunity.
+
+Circuit Board Layout Recommendations.
+Good circuit board layout is critical for the suppression
+of fast rise-time transients such as ESD. The following
+guidelines are recommended:
+
+z   Place the SM712 near the input terminals or
+    connectors to restrict electromagnetic coupling.
+z   Minimize the path length between the SM712 and
+    the protected line. This minimizes voltage over-
+    shoot due to parasitic inductance of board traces.
+z   Use ground planes whenever possible.
+z   Long, single trace ground conductors should be
+    avoided. The ground pin (Pin 3) should be con-
+    nected directly to a ground plane on the circuit
+    board for best results.
+z   Minimize all conductive loops including power and
+    ground loops.
+z   Never run critical signals near board edges.
+
+
+
+
+ 2004 Semtech Corp.                                        4                             www.semtech.com
+                                                                                                                                                                          SM712
+
+PROTECTION PRODUCTS
+Outline Drawing - SOT23
+
+
+                       D                  A                                                                                                                DIMENSIONS
+                                                                                                                                                        INCHES     MILLIMETERS
+                           e1                                                                                                                  DIM
+                                                                                                                                                     MIN NOM MAX MIN NOM MAX
+                                                                                                                                                A    .035     -    .044   0.89      -  1.12
+                                                                                                       H
+                   3                                                                                                                           A1    .000     -    .004   0.01     -   0.10
+                                              B                                                                                                A2    .035   .037   .040   0.88 0.95 1.02
+                                                                                                                                                 b   .012     -    .020   0.30     -   0.51
+                                                                                          GAUGE                            0      c              c   .003     -    .007   0.08     -   0.18
+                                                                            SEATING       PLANE                                                 D    .110   .114   .120   2.80 2.90 3.04
+                                                       E                     PLANE                                                              E    .082   .093   .104   2.10 2.37 2.64
+                                           E1                                                 0.25                                             E1    .047   .051   .055   1.20 1.30 1.40
+                                                                                      C                                                          e          .075              1.90 BSC
+                                                                                                                    L                           e1          .037              0.95 BSC
+                                                                                                                   L1                            L   .015   .020   .024   0.40 0.50 0.60
+                                                                                                                                                L1          .022                (0.55)
+                                                                                                     DETAIL A
+                                                                                                                                                N             3                    3
+         1                  2                                                                                                                    0   0°       -     8°     0°      -    8°
+                                                                                                                                               aaa          .004                 0.10
+                                     bxN                                                                                                       bbb          .008                 0.20
+
+                       e                   bbb         C A B
+
+
+
+
+  A                                               A2            aaa C
+                                                           3X                                                                  SEE DETAIL A
+                                                                                                SIDE VIEW
+                                                                SEATING PLANE
+                                              A1            C
+
+
+NOTES:
+  1. CONTROLLING DIMENSIONS ARE IN MILLIMETERS (ANGLES IN DEGREES).
+  2. DATUMS -A- AND -B-    TO BE DETERMINED AT DATUM PLANE -H-
+  3. DIMENSIONS "E1" AND "D" DO NOT INCLUDE MOLD FLASH, PROTRUSIONS
+     OR GATE BURRS.
+
+
+
+
+Land Pattern - SOT23
+
+
+                                                                  X
+
+
+
+
+                                      Y
+                                                                                                                    DIMENSIONS
+                                                                                                           DIM   INCHES   MILLIMETERS
+                                                                                                           C      (.087)              (2.20)
+                                 Z                                                              C          E       .037                0.95
+                                                                                          G
+                                                                                                           E1      .075                1.90
+                                                                                                           G       .031                0.80
+                                                                                                           X       .039                1.00
+                                                                                                           Y       .055                1.40
+                                                                                                           Z       .141                3.60
+                                      Y
+
+
+
+
+                                                                        E
+
+                                                                  E1
+                                NOTES:
+                                 1. THIS LAND PATTERN IS FOR REFERENCE PURPOSES ONLY
+                                    CONSULT YOUR MANUFACTURING GROUP TO ENSURE YOUR
+                                    COMPANY'S MANUFACTURING GUIDELINES ARE MET.
+                                 2. REFERENCE IPC-SM-782A.
+
+
+
+
+ 2004 Semtech Corp.                                                                      5                                                                         www.semtech.com
+                                                                          SM712
+
+PROTECTION PRODUCTS
+Ordering Information
+                               Qty per
+ Part Number     Lead Finish             R eel Size
+                                Reel
+
+  SM712.TC             PbSn    3,000      7 Inch
+
+                   Pb-Free
+  SM712.TCT                    3,000      7 Inch
+                   Matte Sn
+
+
+
+
+Contact Information
+                                          Semtech Corporation
+                                       Protection Products Division
+                                  200 Flynn Road, Camarillo, CA 93012
+                               Phone: (805)498-2111 FAX (805)498-3804
+
+
+ 2004 Semtech Corp.                                  6                 www.semtech.com
+

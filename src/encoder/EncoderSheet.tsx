@@ -3,8 +3,8 @@ import {
   previewPlacement,
 } from "../mechanics/preview-placement"
 import { AS5600_ASOM } from "../../imports/AS5600_ASOM/AS5600_ASOM"
-import { CL05B104KO5NNNC } from "../../imports/C1525"
-import { A_0402WGF4701TCE } from "../../imports/C25900"
+import { CL05B104KO5NNNC } from "../../imports/CL05B104KO5NNNC/CL05B104KO5NNNC"
+import { A_0402WGF4701TCE } from "../../imports/A_0402WGF4701TCE/A_0402WGF4701TCE"
 
 export function EncoderSheet({
   mechanicalPreview = false,
@@ -77,7 +77,7 @@ export function EncoderSheet({
       />
       <schematictext
         fontSize={0.22}
-        text="14HM11-0404S has no rear shaft. Encoder location/population decision pending; draft retained."
+        text="14HM11-0404S has no rear shaft. Open-loop review default: U4/C6 unpopulated; no magnet or feedback qualified."
         schX={0}
         schY={-7}
       />

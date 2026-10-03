@@ -1,3 +1,73 @@
+# Current revision 0.0.11-alpha.0 — electrical expansion and unrouted checks
+
+**Work-in-progress prototype: NOT routed, NOT fabrication ready, NOT hardware tested.**
+
+2026-10-03 Europe/Tirane. This record supersedes all historical component selections, motor limits and stage descriptions below. Board sources remain isolated in this task directory. Source basis: local commit `4ee632f` plus this revision's changes; exact final files are recorded by SOURCE-MANIFEST.json and the local implementation commit.
+
+| Stage | Status | Current evidence / remaining gate |
+| --- | --- | --- |
+| 1. Requirements | blocked | Exact 14HM11-0404S motor drawing/STEP and 35 × 35 mm/four-layer PCB specified. Load, speed, braking/backdrive, thermal envelope, qualified carrier and ordered stackup unresolved. |
+| 2. Schematic/BOM | blocked | 111 official supplier components, nine A4 sheets, physical-pin connectivity passed. Imported-symbol rotation/refdes B012, full transient/startup/thermal/capacitor/stock qualification remain open. |
+| 3. Unrouted placement/mechanics | blocked | Native placement reports zero errors/warnings. Full mechanical fit is blocked by absent support geometry and genuine selected USB CAD model B017/B019; mating cable and critical-loop review incomplete. |
+| 4. Routing/copper validation | not started | routingDisabled; no routes or vias exist to preserve or repair. |
+| 5. Routed automated/visual checks | not started | Unrouted checks and visual review below are preliminary; no routed shorts/snapshots/layer inspection. |
+| 6. Prototype fabrication approval | not started | No validated Gerbers/drills/assembly BOM/CPL or assembler feedback. |
+| 7. Physical prototype | not started | No physical board, firmware or measurements. |
+| 8. Store release | not started | Prototype only; no configured GitHub remote, B018. |
+
+## Requirements and implemented circuit
+
+Motor lock: **STEPPERONLINE 14HM11-0404S**, manufacturer drawing **A0217 revision 0, 2025-07-31**, unchanged official STEP SHA256 `959f43e95b7840beae5ffbd56e997e23c5004a1b09e16b7caa40400296e46281`. Single front shaft Ø5 mm, 24 ±1 mm projection; frame/body maxima 35.2/28.2 mm; front 4×M3 on 26 ±0.2 square, minimum thread depth 4 mm. Rear structural fasteners are not qualified PCB attachment points. The STEP is one valid solid; the exact reference/datum audit passes. Exploded display raises the motor +65 mm only for visibility.
+
+Electrical draft: STM32G0B1 + TMC2209, native UCPD with TCPP01, USB full-speed data, classical CAN, external STEP/DIR/ENABLE, two normally closed dry-contact limits, TMP112 temperature, three indicators and official Standard JST SWD package 0.8.0. Five-volt USB bootstrap must keep the motor disabled. Programmer VOUT is unconnected; guarded signals must be 3.3 V. TMUX1511 + TLV803EA30DBZR isolate SWD/NRST/ADC until the rail is qualified.
+
+The default **review** population omits U4/C6 (optional AS5600; this motor has no rear shaft) and R50 (CAN termination link except at bus endpoints). This follows the original brief's explicit support for an unpopulated encoder. No magnet, feedback or lost-step detection is claimed. Review BOM has 111 references/44 unique supplier parts, 108 fitted defaults; inventory and assembly exports are not frozen.
+
+R5/R6 are now official **C513714 / 1 Ω ±0.1% / 0.25 W**; R10/R11 are both 10 kΩ. The former 180 mΩ shunts and low-VREF divider are superseded. CURRENT-POWER-SCREEN.json bounds phase peak at about 0.336 A under its stated assumptions, below 0.4 A rated phase current; local dissipation screen is about 0.113 W. Actual current, temperature, pulse rating and regulation overshoot are not measured. Full rated motor torque is not claimed.
+
+TPS259470L supplies both buck and VM with controlled charging, reverse blocking, nominal 21.46 V OVP, 0.50 A bootstrap limit and 1.00 A GPIO-selected limit after a valid ≥1.5 A PD contract. Reverse blocking is not a brake. ADC gain is nominal 0.0393236 and measures VBUS_PROTECTED upstream of the eFuse, so it does not detect regenerative VM rise. Full USB bootstrap budget, resistor/capacitor temperature and DC-bias/ripple, ESD/surge and returned-energy qualification remain pending. Intended load and maximum speed were requested during this revision; no response is recorded.
+
+Manufacturer: JLCPCB target, four layers/1.6 mm proposed. Trace/space/via rules and impedance stackup below remain proposals rather than verified current copper or ordered stackup. No routing is enabled merely because packing passes.
+
+## Tooling and official component audits
+
+Global upgrade ran successfully. Exact board dependencies: tscircuit **0.0.2742**, @tscircuit/cli **0.1.2235**, easyeda **0.0.368**, core **0.0.2056**, props **0.0.677**, circuit-json **0.0.510**, TypeScript **5.9.3**, Biome **2.5.15**, Bun **1.3.9**. Upgrade logs and pinned package/bun lock identify the versions.
+
+Official imports were regenerated using `tsci import --jlcpcb … --download --use-exact-footprint`; no definition was hand-created or patched. Raw supplier identities were verified after downloads; exit zero alone did not establish successful network retrieval.
+
+- ALL-IMPORTS-AUDIT.json: **44 imports / 261 physical pin-to-pad mappings**, zero raw rectangular/polygon discrepancies; supplier-origin translation is normalized, relative geometry/rotation is preserved. This covers 43 active local supplier definitions plus the historical fixed C5127775 regression. The 44th active supplier identity, C136657, is provided by the official standard programmer package and checked separately by physical-pin connectivity. This audit does not replace every manufacturer's package drawing.
+- Original seven-part released-converter regression: passed, 104 mappings and native 0.18 Ω/0.15 Ω values retained. Those historical shunts are not the active 1 Ω motor-current pair.
+- C53283913 loses the 45° centre-pad rotation and is excluded unchanged. Official replacement **C5218924** passes the raw geometry and GND1/RESET2/VDD3 audit. See RETIRED-SUPERVISOR-IMPORT-ISSUE.json.
+- GCT **C5143397 / USB4110-GF-A** B4: independent manufacturer audit passes all 16 lands, their physical signals and two Ø0.65 NPTH locating holes. The earlier C165948/C3020560 mismatches are unselected. The selected CAD model remains absent; manufacturer footprint agreement alone does not qualify assembly.
+- Motor header **C189895 / JST GH**: catalogue-specified contact pitch/width, hold-down width/length/offset and 5.4 mm vertical span pass. It is rated 1 A with AWG26; mating GHR-04V-S/SSHL-002T-P0.2 harness is still unqualified. Only six units appeared in supplier search; no reservation. C265102/C265332/C157926 are excluded following discrepancies recorded in MOTOR-CONNECTOR-ALTERNATIVES.json. No land/drill dimensions were manually resized.
+
+## Current checks and visual evidence
+
+All paths below are under `evidence/rev-0.0.11-alpha.0/` unless they name dist.
+
+- Formatting, TypeScript, critical import labels and physical-pin draft connectivity pass. `test:draft` validates the schematic-only output, 111 exact suppliers, nine A4 sheets, current/protection values and separate power rails.
+- `tsci check netlist index.circuit.tsx`: exit 0.
+- `tsci check pin_specification index.circuit.tsx`: exit 0, **27 visible metadata warnings**. These concern absent imported pin attributes/power/ground classifications on passives, protection, FETs/connectors and some ICs. Independent physical-pin checks verify actual connections. Warnings are accepted only for this draft audit; they do not establish manufacturer or fabrication qualification and are not suppressed.
+- `tsci check source index.circuit.tsx`: zero errors/warnings after removal of deprecated, ignored schPinSpacing.
+- `tsci check schematic-placement index.circuit.tsx`: exit 0 can still carry semantic findings. The final native U7 box/pin margins clear its layout findings; **D_VBUS rotation remains blocking**, as recorded by check-schematic-placement-5.log. The Programming PNG was inspected after this change.
+- `tsci check placement index.circuit.tsx`: exit 0, **zero placement issues, zero DRC errors/warnings**, after official motor-header substitution and native passive rotations. PCB/motor/support/plug qualification still incomplete.
+- Builds of isolated imports, the selected USB fixture and controller preview pass with routing disabled. Native controller geometry contains no pcb_trace or pcb_via. Schematic-only builds and connectivity pass.
+- Native assembly build passes but `test:assembly` **fails**: selected J_USB C5143397 has only show_as_bounding_box, not a genuine STEP model. ASSEMBLY-MODEL-AUDIT.json records 111 PCB components/112 CAD entries, 111 actual STEP references including the motor, and zero PCB mounting holes. This is not a complete assembly fit test.
+- `test:symbol-rotation` **fails**: C1974707's port vector remains (0.8, 0) at 270°. Reproducer and root cause are in references/TOOLING-ROTATION-BLOCKER.md and IMPORTED-SYMBOL-ROTATION.json. The canonical dependency needs a proper fix; no installed package or imported symbol is patched.
+- `CHECK-RESULTS.json`: final aggregate unrouted checks exit 1 for the failed missing-model assembly check and D_VBUS semantic finding. The runner records both native exit codes and semantic issues, so the schematic check's exit zero cannot be mistaken for approval. All failures remain visible.
+
+Visually inspected nine current A4 sheet PNGs (MCU, Encoder, CAN, LogicPower, MotorDriver, UsbPd, Programming, Interfaces, InputPower), controller-preview PCB PNG, native assembly PNG, GCT B4 drawing and JST PH/GH layout pages. Programming was reinspected after the final U7 layout change; Encoder was reinspected after its default-population annotation update. The live Board close-up control hides the motor and exposes the PCB; board-close-up.png records the inspected result. GCT model absence and dense overlapping silkscreen in the combined PCB view remain evident; no silkscreen/paste/mask/copper visual approval is claimed. The full 3D viewer remains an exploded diagnostic.
+
+The final schematic-only build contains the final source annotations/pin margins. The earlier controller/assembly geometry remains applicable to PCB positions, official models and pin connectivity: subsequent changes affect schematic-only styling/annotations and audit scripts, not supplier definitions, electrical nets or PCB geometry. SOURCE-MANIFEST.json records the individual source, evidence and generated-output checksums; reviewed-schematics preserves the final nine rendered sheets. These independent artifact scopes do not establish a fabrication revision.
+
+## Publication and later work
+
+GitHub remote is absent; branch is local master. Under standing workspace authorization the implementation is preserved locally, but neither GitHub push nor matching tscircuit publication can be claimed without a configured destination (B018). No upstream message/issue/PR, fabrication order or hardware test is performed.
+
+Before routing: resolve B012 with the canonical released tool fix; obtain a genuine selected USB model; design and qualify motor/PCB support and mating harnesses; establish load/speed/braking and startup/protection/thermal limits; finish stackup, complete footprint/BOM/loop/test-point review. Only after stages 1–3 pass may native routing, generated-copper shorts/DRC, snapshot/layer inspection and the linked fabrication package proceed.
+
+## Historical validation records — superseded where stated above
+
 # Current revision 0.0.10-alpha.0 — exploded inspection preview
 
 2026-10-03 Europe/Tirane. User requested lifting the cover toward +Z to see the

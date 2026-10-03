@@ -1,0 +1,67 @@
+$ tsci build assembly.circuit.tsx --3d-png --glbs
+Building 1 file(s)...
+Building assembly.circuit.tsx...
+Generating circuit JSON...
+Error fetching model metadata for C25744: error: The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()
+  path: "https://modelcdn.tscircuit.com/easyeda_models/assets/C25744.obj?uuid=026a4a15ab5c4a92ac0e421d6d013717",
+ errno: 0,
+  code: "ECONNRESET"
+
+
+Circuit JSON written to dist/assembly/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+schPinSpacing is deprecated and will be ignored. Pin spacing is always 0.2.
+All pins on Q_PD are underspecified (no pinAttributes set)
+All pins on D_VBUS are underspecified (no pinAttributes set)
+All pins on J_IO are underspecified (no pinAttributes set)
+All pins on J_MOTOR are underspecified (no pinAttributes set)
+All pins on D_CAN are underspecified (no pinAttributes set)
+All pins on Q_ILIM are underspecified (no pinAttributes set)
+U4 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+J_USB has no pin with requires_power=true
+Q_PD has no pin with requires_power=true
+D_USB has no pin with requires_power=true
+D_VBUS has no pin with requires_power=true
+J_IO has no pin with requires_power=true
+J_MOTOR has no pin with requires_power=true
+U9 has no pin with requires_power=true
+D_IO1 has no pin with requires_power=true
+D_IO2 has no pin with requires_power=true
+D_CAN has no pin with requires_power=true
+U10 has no pin with requires_power=true
+Q_ILIM has no pin with requires_power=true
+J_USB has no pin with requires_ground=true
+Q_PD has no pin with requires_ground=true
+D_VBUS has no pin with requires_ground=true
+J_IO has no pin with requires_ground=true
+J_MOTOR has no pin with requires_ground=true
+D_CAN has no pin with requires_ground=true
+Q_ILIM has no pin with requires_ground=true
+Q_PD is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_USB is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_VBUS is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_CAN is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q_ILIM is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Generating preview images...
+[assembly] Generating PCB SVG...
+[assembly] Written pcb.svg
+[assembly] Generating schematic SVG...
+[assembly] Written schematic.svg
+[assembly] Generating 3D PNG...
+[assembly] Written 3d.png
+Generating GLB models for all builds...
+[assembly] Converting circuit to GLB...
+[assembly] Written 3d.glb
+
+Build complete
+  Circuits  1 passed
+  Options   3d-png, glbs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

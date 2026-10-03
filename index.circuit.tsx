@@ -1,15 +1,17 @@
 import { type BoardViewProps } from "./src/mechanics/preview-placement"
-import { ProgrammingConnectorPreview } from "./src/mechanics/ProgrammingConnectorPreview"
+import { InterfacesSheet } from "./src/interfaces/InterfacesSheet"
+import { ProgrammingSheet } from "./src/programming/ProgrammingSheet"
 import { CanSheet } from "./src/can/CanSheet"
 import { EncoderSheet } from "./src/encoder/EncoderSheet"
 import { McuSheet } from "./src/mcu/McuSheet"
 import { MotorDriverSheet } from "./src/motor-driver/MotorDriverSheet"
 import { UsbPdSheet } from "./src/usb-pd/UsbPdSheet"
+import { InputPowerSheet } from "./src/power/InputPowerSheet"
 import { LogicBuckSheet } from "./src/power/LogicBuckSheet"
 
-/** Schematic development only. Mechanics and full circuit review gate placement. */
+/** Unrouted development board. Fixed placement is shared with the assembly preview. */
 export default function SmartNema14MotorController({
-  mechanicalPreview = false,
+  mechanicalPreview = true,
 }: BoardViewProps = {}) {
   return (
     <board
@@ -20,7 +22,6 @@ export default function SmartNema14MotorController({
       routingDisabled
       schLayout={{ layoutMode: "none" }}
     >
-      {mechanicalPreview && <ProgrammingConnectorPreview />}
       <net name="GND" isGroundNet />
       <net name="V3V3" isPowerNet />
       <net name="NRST" />
@@ -30,7 +31,6 @@ export default function SmartNema14MotorController({
       <net name="CAN_RX" />
       <net name="CAN_H" />
       <net name="CAN_L" />
-      <net name="VBUS_INRUSH_OUT" isPowerNet />
       <net name="BUCK_SW" />
       <net name="BUCK_BST" />
       <net name="VM" isPowerNet />
@@ -66,12 +66,53 @@ export default function SmartNema14MotorController({
       <net name="PD_FLT" />
       <net name="VBUS_DIV" />
       <net name="VBUS_ADC" />
+      <net name="SWDIO_GUARDED" />
+      <net name="SWCLK_GUARDED" />
+      <net name="NRST_GUARDED" />
+      <net name="SWDIO" />
+      <net name="SWCLK" />
+      <net name="SWDIO_CONN" />
+      <net name="SWCLK_CONN" />
+      <net name="NRST_CONN" />
+      <net name="POWER_GOOD" />
+      <net name="VBUS_ADC_PRE_GUARD" />
+      <net name="TEMP_ALERT_N" />
+      <net name="EXT_STEP_CONN" />
+      <net name="EXT_DIR_CONN" />
+      <net name="EXT_ENABLE_N_CONN" />
+      <net name="EXT_STEP" />
+      <net name="EXT_DIR" />
+      <net name="EXT_ENABLE_N" />
+      <net name="LIMIT1_CONN" />
+      <net name="LIMIT2_CONN" />
+      <net name="LIMIT1" />
+      <net name="LIMIT2" />
+      <net name="LED_POWER_A" />
+      <net name="LED_STATUS_A" />
+      <net name="LED_FAULT_A" />
+      <net name="LED_STATUS_DRIVE" />
+      <net name="LED_FAULT_DRIVE" />
+      <net name="CAN_RS" />
+      <net name="EFUSE_FLT_N" />
+      <net name="POWER_HIGH_CURRENT" />
+      <net name="EFUSE_EN" />
+      <net name="EFUSE_OVP_TOP_1" />
+      <net name="EFUSE_OVP_TOP_2" />
+      <net name="EFUSE_OVP" />
+      <net name="EFUSE_ILIM" />
+      <net name="EFUSE_ILIM_SWITCH" />
+      <net name="EFUSE_DVDT" />
+      <net name="EFUSE_DVDT_CAP" />
+      <net name="CAN_TERM_LINK" />
       <McuSheet mechanicalPreview={mechanicalPreview} />
       <EncoderSheet mechanicalPreview={mechanicalPreview} />
       <CanSheet mechanicalPreview={mechanicalPreview} />
       <LogicBuckSheet mechanicalPreview={mechanicalPreview} />
       <MotorDriverSheet mechanicalPreview={mechanicalPreview} />
       <UsbPdSheet mechanicalPreview={mechanicalPreview} />
+      <ProgrammingSheet mechanicalPreview={mechanicalPreview} />
+      <InterfacesSheet mechanicalPreview={mechanicalPreview} />
+      <InputPowerSheet mechanicalPreview={mechanicalPreview} />
     </board>
   )
 }

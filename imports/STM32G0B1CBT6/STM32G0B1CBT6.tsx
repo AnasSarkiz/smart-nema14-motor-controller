@@ -1,3 +1,5 @@
+import objPath from "./STM32G0B1CBT6.obj"
+import stepPath from "./STM32G0B1CBT6.step"
 import { type ChipProps } from "tscircuit"
 const pinLabels = {
   "pin1": [
@@ -882,8 +884,8 @@ export const STM32G0B1CBT6 = (props: ChipProps<typeof pinLabels>) => (
 }}
     manufacturerPartNumber="STM32G0B1CBT6"
     cadModel={{
-        objUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2847904.obj?uuid=a4b96ad857dc48c08dab3d0efdf20aec",
-        stepUrl: "https://modelcdn.tscircuit.com/easyeda_models/assets/C2847904.step?uuid=a4b96ad857dc48c08dab3d0efdf20aec",
+        objUrl: objPath,
+        stepUrl: stepPath,
         pcbRotationOffset: 0,
         modelOriginPosition: {"x":0,"y":0,"z":0.000795},
     }}

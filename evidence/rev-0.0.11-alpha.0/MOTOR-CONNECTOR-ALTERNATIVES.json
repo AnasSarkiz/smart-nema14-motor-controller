@@ -1,0 +1,24 @@
+{
+  "stage": 2,
+  "status": "retired imports; no definitions changed",
+  "selected_alternative": "C189895 JST SM04B-GHS-TB(LF)(SN)",
+  "selected_evidence": "MOTOR-CONNECTOR-FOOTPRINT-AUDIT.json",
+  "rejected": [
+    {
+      "part": "C265102",
+      "mpn": "S4B-PH-SM4-TB(LF)(SN)",
+      "issue": "Hold-down lands 1.80 mm vs JST 1.50 +/-0.10 mm; native board rotation also faced cable inward"
+    },
+    {
+      "part": "C265332",
+      "mpn": "S4B-PH-SM4-K-TB(LF)(SN)",
+      "issue": "Hold-down width 2.0 mm vs JST 1.50 +/-0.10; contact length 3.0 mm vs JST 3.4 +/-0.1"
+    },
+    {
+      "part": "C157926",
+      "mpn": "S4B-PH-K-S(LF)(SN)",
+      "issue": "Imported finished drill 1.0 mm vs JST reference 0.7 +0.1/-0.0; not selected"
+    }
+  ],
+  "qualification_note": "Reference layouts require manufacturer clarification for deviations. No imported geometry was resized to compensate."
+}

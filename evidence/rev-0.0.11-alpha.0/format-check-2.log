@@ -1,0 +1,110 @@
+$ biome format index.circuit.tsx assembly.circuit.tsx controller-preview.circuit.tsx src scripts mechanical/viewer.js mechanical/design-constraints.json package.json tsconfig.json tscircuit.config.json biome.json
+scripts/generate-review-bom.mjs format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     3  3 │   const revision = JSON.parse(readFileSync("package.json", "utf8")).version
+     4  4 │   const circuit = JSON.parse(readFileSync("dist/index/circuit.json", "utf8"))
+     5    │ - const·components·=·circuit.filter((element)·=>·element.type·===·"source_component")
+     6    │ - assert.equal(components.length,111)
+        5 │ + const·components·=·circuit.filter(
+        6 │ + ··(element)·=>·element.type·===·"source_component",
+        7 │ + )
+        8 │ + assert.equal(components.length,·111)
+     7  9 │   const optionalPopulation = {
+     8    │ - ··U4:"Default·open-loop·assembly:·selected·motor·has·no·rear·shaft·for·AS5600·magnet",
+     9    │ - ··C6:"Supply·bypass·for·optional·U4;·omit·with·encoder",
+    10    │ - ··R50:"CAN·termination·link:·omit·except·on·bus·endpoints",
+       10 │ + ··U4:·"Default·open-loop·assembly:·selected·motor·has·no·rear·shaft·for·AS5600·magnet",
+       11 │ + ··C6:·"Supply·bypass·for·optional·U4;·omit·with·encoder",
+       12 │ + ··R50:·"CAN·termination·link:·omit·except·on·bus·endpoints",
+    11 13 │   }
+    12    │ - const·records·=·components.map((component)·=>·{
+    13    │ - ··const·parts·=·component.supplier_part_numbers?.jlcpcb
+    14    │ - ··assert.equal(parts?.length,1,`Missing·exact·supplier·identity:·${component.name}`)
+    15    │ - ··return·{reference:component.name,manufacturer_part_number:component.manufacturer_part_number,jlcpcb_part_number:parts[0],resistance_ohms:component.resistance·??·null,capacitance_f:component.capacitance·??·null,inductance_h:component.inductance·??·null,fit_default:!Object.hasOwn(optionalPopulation,component.name),optional_reason:optionalPopulation[component.name]·??·null}
+    16    │ - }).sort((left,right)=>left.reference.localeCompare(right.reference,undefined,{numeric:true}))
+    17    │ - assert.equal(records.filter((component)=>!component.fit_default).length,3)
+       14 │ + const·records·=·components
+       15 │ + ··.map((component)·=>·{
+       16 │ + ····const·parts·=·component.supplier_part_numbers?.jlcpcb
+       17 │ + ····assert.equal(
+       18 │ + ······parts?.length,
+       19 │ + ······1,
+       20 │ + ······`Missing·exact·supplier·identity:·${component.name}`,
+       21 │ + ····)
+       22 │ + ····return·{
+       23 │ + ······reference:·component.name,
+       24 │ + ······manufacturer_part_number:·component.manufacturer_part_number,
+       25 │ + ······jlcpcb_part_number:·parts[0],
+       26 │ + ······resistance_ohms:·component.resistance·??·null,
+       27 │ + ······capacitance_f:·component.capacitance·??·null,
+       28 │ + ······inductance_h:·component.inductance·??·null,
+       29 │ + ······fit_default:·!Object.hasOwn(optionalPopulation,·component.name),
+       30 │ + ······optional_reason:·optionalPopulation[component.name]·??·null,
+       31 │ + ····}
+       32 │ + ··})
+       33 │ + ··.sort((left,·right)·=>
+       34 │ + ····left.reference.localeCompare(right.reference,·undefined,·{·numeric:·true·}),
+       35 │ + ··)
+       36 │ + assert.equal(records.filter((component)·=>·!component.fit_default).length,·3)
+    18 37 │   const directory = `evidence/rev-${revision}`
+    19    │ - ...bus·endpoints.",pcb_component_count:records.length,default_fitted_count:records.filter((component)=>...
+    20    │ - function·csvCell(cell)·{·return·'"'+String(cell??'').replaceAll('"','""')+'"'·}
+    21    │ - const·columns·=·["reference","manufacturer_part_number","jlcpcb_part_number","resistance_ohms","capacitance_f","inductance_h","fit_default","optional_reason"]
+    22    │ - writeFileSync(`${directory}/REVIEW-BOM.csv`,[columns.join(','),...records.map((record)=>columns.map((column)=>csvCell(record[column])).join(','))].join('\n')+'\n')
+    23    │ - console.log(`${records.length}·exact·supplier·identities·recorded;·${records.filter((component)=>component.fit_default).length}·fitted·in·default·open-loop·review·assembly.·Not·approved·for·fabrication.`)
+       38 │ + writeFileSync(
+       39 │ + ··`${directory}/REVIEW-BOM.json`,
+       40 │ + ··JSON.stringify(
+       41 │ + ····{
+       42 │ + ······revision,
+       43 │ + ······status:
+       44 │ + ········"Design·review·only;·supplier·availability,·footprints·and·assembly·remain·unqualified.·Not·a·fabrication·BOM.",
+       45 │ + ······population_basis:
+       46 │ + ········"Optional·unpopulated·encoder·is·permitted·by·USER-BRIEF.md;·no·rear-shaft·feedback·for·this·motor.·R50·is·fitted·only·at·CAN·bus·endpoints.",
+       47 │ + ······pcb_component_count:·records.length,
+       48 │ + ······default_fitted_count:·records.filter((component)·=>·component.fit_default)
+       49 │ + ········.length,
+       50 │ + ······records,
+       51 │ + ····},
+       52 │ + ····null,
+       53 │ + ····2,
+       54 │ + ··)·+·"\n",
+       55 │ + )
+       56 │ + function·csvCell(cell)·{
+       57 │ + ··return·'"'·+·String(cell·??·"").replaceAll('"',·'""')·+·'"'
+       58 │ + }
+       59 │ + const·columns·=·[
+       60 │ + ··"reference",
+       61 │ + ··"manufacturer_part_number",
+       62 │ + ··"jlcpcb_part_number",
+       63 │ + ··"resistance_ohms",
+       64 │ + ··"capacitance_f",
+       65 │ + ··"inductance_h",
+       66 │ + ··"fit_default",
+       67 │ + ··"optional_reason",
+       68 │ + ]
+       69 │ + writeFileSync(
+       70 │ + ··`${directory}/REVIEW-BOM.csv`,
+       71 │ + ··[
+       72 │ + ····columns.join(","),
+       73 │ + ····...records.map((record)·=>
+       74 │ + ······columns.map((column)·=>·csvCell(record[column])).join(","),
+       75 │ + ····),
+       76 │ + ··].join("\n")·+·"\n",
+       77 │ + )
+       78 │ + console.log(
+       79 │ + ··`${records.length}·exact·supplier·identities·recorded;·${records.filter((component)·=>·component.fit_default).length}·fitted·in·default·open-loop·review·assembly.·Not·approved·for·fabrication.`,
+       80 │ + )
+    24 81 │   
+  
+
+Checked 36 files in 16ms. No fixes applied.
+Found 1 error.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+error: script "format:check" exited with code 1

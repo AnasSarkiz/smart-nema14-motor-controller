@@ -1,0 +1,105 @@
+Building 1 file(s)...
+Building controller-preview.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/controller-preview/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+schPinSpacing is deprecated and will be ignored. Pin spacing is always 0.2.
+component is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face y+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+All pins on Q_PD are underspecified (no pinAttributes set)
+All pins on D_VBUS are underspecified (no pinAttributes set)
+All pins on J_IO are underspecified (no pinAttributes set)
+All pins on J_MOTOR are underspecified (no pinAttributes set)
+All pins on D_CAN are underspecified (no pinAttributes set)
+All pins on Q_ILIM are underspecified (no pinAttributes set)
+U4 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+J_USB has no pin with requires_power=true
+Q_PD has no pin with requires_power=true
+D_USB has no pin with requires_power=true
+D_VBUS has no pin with requires_power=true
+J_IO has no pin with requires_power=true
+J_MOTOR has no pin with requires_power=true
+U9 has no pin with requires_power=true
+D_IO1 has no pin with requires_power=true
+D_IO2 has no pin with requires_power=true
+D_CAN has no pin with requires_power=true
+U10 has no pin with requires_power=true
+Q_ILIM has no pin with requires_power=true
+J_USB has no pin with requires_ground=true
+Q_PD has no pin with requires_ground=true
+D_VBUS has no pin with requires_ground=true
+J_IO has no pin with requires_ground=true
+J_MOTOR has no pin with requires_ground=true
+D_CAN has no pin with requires_ground=true
+Q_ILIM has no pin with requires_ground=true
+Q_PD is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_USB is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_VBUS is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_CAN is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q_ILIM is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+R43 overlaps U4: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+R44 overlaps U4: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+J_MOTOR overlaps R2: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+R3 overlaps J_MOTOR: 2 footprint overlaps, 2 pad clearance violations, 1 courtyard conflict. Move the components apart.
+U5 overlaps C8: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+C8 overlaps R10: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+U2 overlaps R7: 2 footprint overlaps, 4 pad clearance violations, 1 courtyard conflict. Move the components apart.
+U7 overlaps C28: 2 footprint overlaps, 5 pad clearance violations, 1 courtyard conflict. Move the components apart.
+R19 overlaps R53: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+C29 overlaps R51: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+D_IO1 overlaps C30: 1 footprint overlap, 3 pad clearance violations, 1 courtyard conflict. Move the components apart.
+D_IO1 overlaps C31: 1 footprint overlap, 3 pad clearance violations, 1 courtyard conflict. Move the components apart.
+D_IO2 overlaps R25: 1 footprint overlap, 4 pad clearance violations, 1 courtyard conflict. Move the components apart.
+D_IO2 overlaps R26: 1 footprint overlap, 4 pad clearance violations, 1 courtyard conflict. Move the components apart.
+R41 overlaps R31: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+R45 overlaps R35: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+R42 overlaps Q_ILIM: 1 footprint overlap, 1 pad clearance violation, 1 courtyard conflict. Move the components apart.
+Pads pcb_port[.U5 > .VIN] and pcb_port[.R11 > .pin2] are too close (clearance: 0.059mm, minimum: 0.1mm)
+Pads pcb_port[.C8 > .pin2] and pcb_port[.R11 > .pin1] are too close (clearance: 0mm, minimum: 0.1mm)
+Pads pcb_port[.R17 > .pin1] and pcb_port[.C27 > .pin2] are too close (clearance: 0.06mm, minimum: 0.1mm)
+Pads pcb_port[.R19 > .pin2] and pcb_port[.R52 > .pin1] are too close (clearance: 0.069mm, minimum: 0.1mm)
+Courtyard of U1 overlaps with courtyard of LED_FAULT
+Courtyard of C2 overlaps with courtyard of C4
+Courtyard of U4 overlaps with courtyard of R38
+Courtyard of U4 overlaps with courtyard of R39
+Courtyard of U4 overlaps with courtyard of R40
+Courtyard of U4 overlaps with courtyard of R41
+Courtyard of U4 overlaps with courtyard of R42
+Courtyard of U4 overlaps with courtyard of R45
+Courtyard of R2 overlaps with courtyard of LED_FAULT
+Courtyard of U5 overlaps with courtyard of R10
+Courtyard of U5 overlaps with courtyard of R11
+Courtyard of C8 overlaps with courtyard of C12
+Courtyard of C8 overlaps with courtyard of R11
+Courtyard of C9 overlaps with courtyard of C13
+Courtyard of C11 overlaps with courtyard of C12
+Courtyard of U2 overlaps with courtyard of C15
+Courtyard of C15 overlaps with courtyard of R4
+Courtyard of C17 overlaps with courtyard of R8
+Courtyard of R17 overlaps with courtyard of C27
+Courtyard of R19 overlaps with courtyard of R52
+Courtyard of J_IO overlaps with courtyard of R26
+Courtyard of J_IO overlaps with courtyard of R30
+Courtyard of J_IO overlaps with courtyard of R34
+Courtyard of J_MOTOR overlaps with courtyard of LED_POWER
+Courtyard of J_MOTOR overlaps with courtyard of LED_STATUS
+Courtyard of J_MOTOR overlaps with courtyard of LED_FAULT
+Courtyard of Q_ILIM overlaps with courtyard of R38
+Courtyard of Q_ILIM overlaps with courtyard of R46
+Generating preview images...
+[controller-preview] Generating PCB SVG...
+[controller-preview] Written pcb.svg
+[controller-preview] Generating PCB PNG...
+[controller-preview] Written pcb.png
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

@@ -1,8 +1,8 @@
 import { AS5600_ASOM } from "../imports/AS5600_ASOM/AS5600_ASOM"
 import { TMC2209_LA } from "../imports/TMC2209_LA/TMC2209_LA"
-import { HoLRT1206_1W_180mR_1_ } from "../imports/HoLRT1206_1W_180mR_1_"
+import { HoLRT1206_1W_180mR_1_ } from "../imports/HoLRT1206_1W_180mR_1_/HoLRT1206_1W_180mR_1_"
 import { HoLRT1206_1W_150mR_1_ } from "../imports/HoLRT1206_1W_150mR_1_"
-import { SRN6028C_3R9M } from "../imports/SRN6028C_3R9M"
+import { SRN6028C_3R9M } from "../imports/SRN6028C_3R9M/SRN6028C_3R9M"
 import { STM32G0B1CBT6 } from "../imports/STM32G0B1CBT6/STM32G0B1CBT6"
 import { TCPP01_M12 } from "../imports/TCPP01_M12/TCPP01_M12"
 

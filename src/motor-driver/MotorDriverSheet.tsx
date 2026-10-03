@@ -2,15 +2,15 @@ import {
   type BoardViewProps,
   previewPlacement,
 } from "../mechanics/preview-placement"
-import { A_0402WGF1001TCE } from "../../imports/C11702"
-import { CL31A106KBHNNNE } from "../../imports/C13585"
-import { CC0603KRX7R9BB104 } from "../../imports/C14663"
-import { CL05B104KO5NNNC } from "../../imports/C1525"
-import { EEEFPV101XAP } from "../../imports/C178585"
-import { A_0402WGF1002TCE } from "../../imports/C25744"
-import { CL05B223KB5VPNC } from "../../imports/C307335"
-import { HoLRT1206_1W_180mR_1_ } from "../../imports/HoLRT1206_1W_180mR_1_"
-import { CL21A475KBQNNNE } from "../../imports/C98192"
+import { A_0402WGF1001TCE } from "../../imports/A_0402WGF1001TCE/A_0402WGF1001TCE"
+import { CL31A106KBHNNNE } from "../../imports/CL31A106KBHNNNE/CL31A106KBHNNNE"
+import { CC0603KRX7R9BB104 } from "../../imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104"
+import { CL05B104KO5NNNC } from "../../imports/CL05B104KO5NNNC/CL05B104KO5NNNC"
+import { EEEFPV101XAP } from "../../imports/EEEFPV101XAP/EEEFPV101XAP"
+import { A_0402WGF1002TCE } from "../../imports/A_0402WGF1002TCE/A_0402WGF1002TCE"
+import { CL05B223KB5VPNC } from "../../imports/CL05B223KB5VPNC/CL05B223KB5VPNC"
+import { RT1206BRD071RL } from "../../imports/RT1206BRD071RL/RT1206BRD071RL"
+import { CL21A475KBQNNNE } from "../../imports/CL21A475KBQNNNE/CL21A475KBQNNNE"
 import { TMC2209_LA } from "../../imports/TMC2209_LA/TMC2209_LA"
 
 export function MotorDriverSheet({
@@ -25,7 +25,7 @@ export function MotorDriverSheet({
     >
       <schematictext
         fontSize={0.22}
-        text="VM power switch, regenerative-energy clamp and motor connector pending; no 5 V motor operation"
+        text="VM from TPS259470L; motor connector fitted. Regenerative energy qualification pending; ENN high during 5 V bootstrap."
         schX={0}
         schY={9}
       />
@@ -134,7 +134,7 @@ export function MotorDriverSheet({
         schRotation={270}
         connections={{ pin1: "net.VM", pin2: "net.GND" }}
       />
-      <HoLRT1206_1W_180mR_1_
+      <RT1206BRD071RL
         name="R5"
         {...previewPlacement("R5", mechanicalPreview)}
         schX={0}
@@ -142,7 +142,7 @@ export function MotorDriverSheet({
         schRotation={270}
         connections={{ pin1: "net.TMC_SENSE_A", pin2: "net.GND" }}
       />
-      <HoLRT1206_1W_180mR_1_
+      <RT1206BRD071RL
         name="R6"
         {...previewPlacement("R6", mechanicalPreview)}
         schX={4}
@@ -208,7 +208,7 @@ export function MotorDriverSheet({
       />
       <schematictext
         fontSize={0.22}
-        text="180 mOhm / 1 W sense pair: nominal full scale 1.149 A RMS; proposed firmware cap 1.0 A, bring-up 0.3 A"
+        text="1 ohm / 0.25 W precision sense pair: about 0.32 A peak at full scale; 10k/10k VREF avoids low-reference operation."
         schX={0}
         schY={-9}
       />

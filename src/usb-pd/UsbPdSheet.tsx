@@ -2,20 +2,20 @@ import {
   type BoardViewProps,
   previewPlacement,
 } from "../mechanics/preview-placement"
-import { TYPE_C_31_M_12 } from "../../imports/TYPE_C_31_M_12"
+import { USB4110_GF_A } from "../../imports/USB4110_GF_A/USB4110_GF_A"
 import { TCPP01_M12 } from "../../imports/TCPP01_M12/TCPP01_M12"
-import { STL11N3LLH6 } from "../../imports/STL11N3LLH6"
-import { TPD2EUSB30ADRTR } from "../../imports/TPD2EUSB30ADRTR"
-import { ESDA25P35_1U1M } from "../../imports/ESDA25P35_1U1M"
-import { TCC0402COG331J500AT } from "../../imports/TCC0402COG331J500AT"
-import { RT0402BRD07100KL } from "../../imports/RT0402BRD07100KL"
-import { RT0402BRD076K04L } from "../../imports/RT0402BRD076K04L"
-import { UMK107BBJ225KA_T } from "../../imports/UMK107BBJ225KA_T"
-import { CC0603KRX7R9BB104 } from "../../imports/C14663"
-import { CL05B104KO5NNNC } from "../../imports/C1525"
-import { A_0402WGF1002TCE } from "../../imports/C25744"
-import { A_0402WGF1001TCE } from "../../imports/C11702"
-import { A_0402WGF2203TCE } from "../../imports/C25767"
+import { STL11N3LLH6 } from "../../imports/STL11N3LLH6/STL11N3LLH6"
+import { TPD2EUSB30ADRTR } from "../../imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR"
+import { ESDA25P35_1U1M } from "../../imports/ESDA25P35_1U1M/ESDA25P35_1U1M"
+import { TCC0402COG331J500AT } from "../../imports/TCC0402COG331J500AT/TCC0402COG331J500AT"
+import { RT0402BRD07100KL } from "../../imports/RT0402BRD07100KL/RT0402BRD07100KL"
+import { RT0402BRD076K04L } from "../../imports/RT0402BRD076K04L/RT0402BRD076K04L"
+import { UMK107BBJ225KA_T } from "../../imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T"
+import { CC0603KRX7R9BB104 } from "../../imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104"
+import { CL05B104KO5NNNC } from "../../imports/CL05B104KO5NNNC/CL05B104KO5NNNC"
+import { A_0402WGF1002TCE } from "../../imports/A_0402WGF1002TCE/A_0402WGF1002TCE"
+import { A_0402WGF1001TCE } from "../../imports/A_0402WGF1001TCE/A_0402WGF1001TCE"
+import { A_0402WGF2203TCE } from "../../imports/A_0402WGF2203TCE/A_0402WGF2203TCE"
 
 export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
   return (
@@ -29,19 +29,19 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schX={0}
         schY={8.5}
         fontSize={0.22}
-        text="DRAFT: protected output NOT yet connected to buck or motor; inrush/reverse blocking pending"
+        text="TCPP01 protects CC and drives Q_PD; TPS259470L limits inrush and supplies the buck and motor rail."
       />
-      <TYPE_C_31_M_12
+      <USB4110_GF_A
         name="J_USB"
         {...previewPlacement("J_USB", mechanicalPreview)}
         schX={-10}
         schY={2}
         noConnect={["SBU1", "SBU2"]}
         connections={{
-          EH1: "net.GND",
-          EH2: "net.GND",
-          EH3: "net.GND",
-          EH4: "net.GND",
+          SHELL1: "net.GND",
+          SHELL2: "net.GND",
+          SHELL3: "net.GND",
+          SHELL4: "net.GND",
           GND1: "net.GND",
           GND2: "net.GND",
           VBUS1: "net.VBUS_CONN",
@@ -222,7 +222,7 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schRotation={270}
         schX={2}
         schY={-8.5}
-        connections={{ pin1: "net.VBUS_DIV", pin2: "net.VBUS_ADC" }}
+        connections={{ pin1: "net.VBUS_DIV", pin2: "net.VBUS_ADC_PRE_GUARD" }}
       />
       <CL05B104KO5NNNC
         name="C27"
@@ -242,7 +242,7 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schX={0}
         schY={-11.5}
         fontSize={0.2}
-        text="OVP static screen: 22.51 V nominal; narrow transient margin still BLOCKS protection qualification."
+        text="TCPP OVP: 22.51 V nominal. Downstream eFuse OVP: 21.46 V nominal; transient qualification remains pending."
       />
       <schematictext
         schX={0}

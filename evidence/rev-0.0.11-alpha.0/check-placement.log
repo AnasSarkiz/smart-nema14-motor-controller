@@ -1,0 +1,923 @@
+placement summary: 4066 pad overlaps, 506 connector-body intrusions, 908 footprint intrusions, 6 suboptimal orientations
+
+worst issues:
+1. U1 intrudes 9.575mm into J_MOTOR connector body. Suggested move: move U1 9.575mm down.
+2. L1 intrudes 6.5mm into J_MOTOR connector body. Suggested move: move L1 6.5mm down.
+3. U1 intrudes 6.08mm into J_USB connector body. Suggested move: move U1 6.08mm down.
+4. L1 intrudes 6.08mm into J_USB connector body. Suggested move: move L1 6.08mm down.
+5. J_MOTOR intrudes 6.08mm into J_USB connector body. Suggested move: move J_MOTOR 6.08mm down.
+
+likely bad clusters:
+- D_USB cluster: D_USB, J_IO, J_MOTOR, J_SWD, J_USB, U2, Q_PD, U3, C11, C12, C15, C9, C10, C14, C17, C25, C26, C33, D_VBUS, R1, R2, R3, R4, R7, R8, R9, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R20, R21, R22, R23, R24, R25, R26, R27, R28, R29, R30, R31, R32, R33, R34, R35, R36, R37, R38, R39, R40, R41, R42, R43, R44, R45, R46, R47, R48, U10, C1, C2, C3, C4, C5, C7, C13, C16, C21, C22, C23, C24, C27, C28, C29, C30, C31, C32, LED_POWER, LED_STATUS, LED_FAULT, U1, D_CAN, L1, U9, Q_ILIM, D_IO1, D_IO2, U6, C8, C18, U5, R5, R6, C19, C20, U7, U8
+
+board top-layer utilization:
+- occupied: 11.242% (137.709mm^2 of 1225mm^2)
+- empty spaces over 5% of board area:
+  - 35% (428.753mm^2); bounds=(minX=-17.5mm, maxX=17.5mm, minY=-17.5mm, maxY=-5.25mm)
+  - 35% (428.753mm^2); bounds=(minX=-17.5mm, maxX=17.5mm, minY=5.25mm, maxY=17.5mm)
+
+board-edge status:
+- U1: 12.5mm inside right edge
+- C1: 16.83mm inside left edge
+- C2: 16.83mm inside left edge
+- C3: 16.83mm inside left edge
+- C4: 16.83mm inside left edge
+- R1: 16.784mm inside left edge
+- C5: 16.83mm inside left edge
+- U4: 13.82mm inside top edge
+- C6: 16.83mm inside left edge
+- R2: 16.784mm inside left edge
+- R3: 16.784mm inside left edge
+- U6: 14mm inside top edge
+- C7: 16.83mm inside left edge
+- U5: 15.75mm inside top edge
+- C8: 15.165mm inside left edge
+- C9: 16.4mm inside left edge
+- C10: 16.4mm inside left edge
+- L1: 14.25mm inside left edge
+- C11: 15.795mm inside left edge
+- C12: 15.795mm inside left edge
+- U2: 14.55mm inside left edge
+- C13: 16.83mm inside left edge
+- C14: 16.4mm inside left edge
+- C15: 15.795mm inside left edge
+- C16: 16.83mm inside left edge
+- C17: 16.4mm inside left edge
+- C18: 15.165mm inside left edge
+- C19: 13.08mm inside left edge
+- C20: 13.08mm inside left edge
+- R5: 15.417mm inside left edge
+- R6: 15.417mm inside left edge
+- R4: 16.784mm inside left edge
+- R7: 16.784mm inside left edge
+- R8: 16.784mm inside left edge
+- R9: 16.784mm inside left edge
+- R10: 16.784mm inside left edge
+- R11: 16.784mm inside left edge
+- C21: 16.83mm inside left edge
+- J_USB: 11.3mm inside left edge
+- U3: 15.76mm inside left edge
+- Q_PD: 15.5mm inside top edge
+- D_USB: 16.85mm inside left edge
+- D_VBUS: 16.675mm inside left edge
+- C25: 16.4mm inside left edge
+- C26: 16.4mm inside left edge
+- C22: 16.83mm inside left edge
+- C23: 16.83mm inside left edge
+- C24: 16.83mm inside left edge
+- R12: 16.784mm inside left edge
+- R13: 16.784mm inside left edge
+- R14: 16.784mm inside left edge
+- R15: 16.784mm inside left edge
+- R16: 16.784mm inside left edge
+- R17: 16.784mm inside left edge
+- R18: 16.784mm inside left edge
+- C27: 16.83mm inside left edge
+- J_SWD: 13.6mm inside left edge
+- U7: 15.935mm inside left edge
+- U8: 17.33mm inside left edge
+- R19: 16.784mm inside left edge
+- C28: 16.83mm inside left edge
+- C29: 16.83mm inside left edge
+- R20: 16.784mm inside left edge
+- R21: 16.784mm inside left edge
+- R22: 16.784mm inside left edge
+- J_IO: 11.1mm inside left edge
+- J_MOTOR: 11.25mm inside left edge
+- U9: 16.45mm inside left edge
+- D_IO1: 16.4mm inside left edge
+- D_IO2: 16.4mm inside left edge
+- D_CAN: 15.88mm inside left edge
+- R23: 16.784mm inside left edge
+- R24: 16.784mm inside left edge
+- R25: 16.784mm inside left edge
+- R26: 16.784mm inside left edge
+- R27: 16.784mm inside left edge
+- R28: 16.784mm inside left edge
+- R29: 16.784mm inside left edge
+- R30: 16.784mm inside left edge
+- R31: 16.784mm inside left edge
+- R32: 16.784mm inside left edge
+- R33: 16.784mm inside left edge
+- R34: 16.784mm inside left edge
+- C30: 16.83mm inside left edge
+- C31: 16.83mm inside left edge
+- C32: 16.83mm inside left edge
+- R35: 16.784mm inside left edge
+- LED_POWER: 16.301mm inside left edge
+- R36: 16.784mm inside left edge
+- LED_STATUS: 16.301mm inside left edge
+- R37: 16.784mm inside left edge
+- LED_FAULT: 16.301mm inside left edge
+- U10: 16.295mm inside left edge
+- Q_ILIM: 15.73mm inside left edge
+- R38: 16.784mm inside left edge
+- R39: 16.784mm inside left edge
+- R40: 16.784mm inside left edge
+- R41: 16.784mm inside left edge
+- R42: 16.784mm inside left edge
+- R43: 16.784mm inside left edge
+- R44: 16.784mm inside left edge
+- R45: 16.784mm inside left edge
+- R46: 16.784mm inside left edge
+- R47: 16.784mm inside left edge
+- C33: 16.4mm inside left edge
+- R48: 16.784mm inside left edge
+
+flagged components:
+- U1
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on top; bounds=(minX=-5mm, maxX=5mm, minY=-5mm, maxY=5mm); size=(width=10mm, height=10mm); anchor_alignment="center"
+  board edge status: 12.5mm inside right edge
+  issues:
+  - U1 intrudes 9.575mm into J_MOTOR connector body. Suggested move: move U1 9.575mm down.
+  - U1 intrudes 6.08mm into J_USB connector body. Suggested move: move U1 6.08mm down.
+  - U1 intrudes 5.626mm into J_IO connector body. Suggested move: move U1 5.626mm down.
+  - U1 intrudes 5.55mm into J_SWD connector body. Suggested move: move U1 5.55mm down.
+  - U1 and L1 footprint intrusion by 6.5mm. Suggested move: move L1 6.5mm down.
+  - U1 and U2 footprint intrusion by 5.9mm. Suggested move: move U2 5.9mm left.
+  - U1 and U3 footprint intrusion by 3.48mm. Suggested move: move U3 3.48mm left.
+  - U1 and Q_PD footprint intrusion by 2.6mm. Suggested move: move Q_PD 2.6mm left.
+  - U1 and Q_ILIM footprint intrusion by 2.5mm. Suggested move: move Q_ILIM 2.5mm down.
+  - U1 and U5 footprint intrusion by 2.45mm. Suggested move: move U5 2.45mm left.
+  - U1 and D_CAN footprint intrusion by 2.432mm. Suggested move: move D_CAN 2.432mm down.
+  - U1 and U10 footprint intrusion by 2.4mm. Suggested move: move U10 2.4mm down.
+  - U1 and U7 footprint intrusion by 2.201mm. Suggested move: move U7 2.201mm down.
+  - U1 intrudes 0.9mm into D_USB connector body. Suggested move: move U1 0.9mm down.
+  - U1 and C8 footprint intrusion by 1.728mm. Suggested move: move C8 1.728mm down.
+  - U1 and C18 footprint intrusion by 1.728mm. Suggested move: move C18 1.728mm down.
+  - U1 and R5 footprint intrusion by 1.701mm. Suggested move: move R5 1.701mm down.
+  - U1 and R6 footprint intrusion by 1.701mm. Suggested move: move R6 1.701mm down.
+  - U1 and D_IO1 footprint intrusion by 1.365mm. Suggested move: move D_IO1 1.365mm down.
+  - U1 and D_IO2 footprint intrusion by 1.365mm. Suggested move: move D_IO2 1.365mm down.
+  - U1 and C11 footprint intrusion by 1.35mm. Suggested move: move C11 1.35mm down.
+  - U1 and C12 footprint intrusion by 1.35mm. Suggested move: move C12 1.35mm down.
+  - U1 and C15 footprint intrusion by 1.35mm. Suggested move: move C15 1.35mm down.
+  - U1 and U9 footprint intrusion by 1.3mm. Suggested move: move U9 1.3mm down.
+  - U1 and C19 pad overlap by 0.27mm. Suggested move: move C19 0.27mm down.
+  - U1 and C20 pad overlap by 0.27mm. Suggested move: move C20 0.27mm down.
+  - U1 and J_USB pad overlap by 0.27mm. Suggested move: move U1 0.27mm down.
+  - U1 and J_SWD pad overlap by 0.27mm. Suggested move: move U1 0.27mm down.
+  - U1 and J_IO pad overlap by 0.27mm. Suggested move: move U1 0.27mm down.
+  - U1 and J_MOTOR pad overlap by 0.27mm. Suggested move: move U1 0.27mm right.
+  - U1 and C9 footprint intrusion by 0.9mm. Suggested move: move C9 0.9mm down.
+  - U1 and C10 footprint intrusion by 0.9mm. Suggested move: move C10 0.9mm down.
+  - U1 and C14 footprint intrusion by 0.9mm. Suggested move: move C14 0.9mm down.
+  - U1 and C17 footprint intrusion by 0.9mm. Suggested move: move C17 0.9mm down.
+  - U1 and D_VBUS footprint intrusion by 0.9mm. Suggested move: move D_VBUS 0.9mm down.
+  - U1 and C25 footprint intrusion by 0.9mm. Suggested move: move C25 0.9mm down.
+  - U1 and C26 footprint intrusion by 0.9mm. Suggested move: move C26 0.9mm down.
+  - U1 and C33 footprint intrusion by 0.9mm. Suggested move: move C33 0.9mm down.
+  - U1 and U6 pad overlap by 0mm. Suggested move: move U6 0mm down.
+  - U1 and LED_POWER footprint intrusion by 0.807mm. Suggested move: move LED_POWER 0.807mm down.
+  - U1 and LED_STATUS footprint intrusion by 0.807mm. Suggested move: move LED_STATUS 0.807mm down.
+  - U1 and LED_FAULT footprint intrusion by 0.807mm. Suggested move: move LED_FAULT 0.807mm down.
+  - U1 and C1 footprint intrusion by 0.54mm. Suggested move: move C1 0.54mm down.
+  - U1 and C2 footprint intrusion by 0.54mm. Suggested move: move C2 0.54mm down.
+  - U1 and C3 footprint intrusion by 0.54mm. Suggested move: move C3 0.54mm down.
+  - U1 and C4 footprint intrusion by 0.54mm. Suggested move: move C4 0.54mm down.
+  - U1 and R1 footprint intrusion by 0.54mm. Suggested move: move R1 0.54mm down.
+  - U1 and C5 footprint intrusion by 0.54mm. Suggested move: move C5 0.54mm down.
+  - U1 and R2 footprint intrusion by 0.54mm. Suggested move: move R2 0.54mm down.
+  - U1 and R3 footprint intrusion by 0.54mm. Suggested move: move R3 0.54mm down.
+  - U1 and C7 footprint intrusion by 0.54mm. Suggested move: move C7 0.54mm down.
+  - U1 and C13 footprint intrusion by 0.54mm. Suggested move: move C13 0.54mm down.
+  - U1 and C16 footprint intrusion by 0.54mm. Suggested move: move C16 0.54mm down.
+  - U1 and R4 footprint intrusion by 0.54mm. Suggested move: move R4 0.54mm down.
+  - U1 and R7 footprint intrusion by 0.54mm. Suggested move: move R7 0.54mm down.
+  - U1 and R8 footprint intrusion by 0.54mm. Suggested move: move R8 0.54mm down.
+  - U1 and R9 footprint intrusion by 0.54mm. Suggested move: move R9 0.54mm down.
+  - U1 and R10 footprint intrusion by 0.54mm. Suggested move: move R10 0.54mm down.
+  - U1 and R11 footprint intrusion by 0.54mm. Suggested move: move R11 0.54mm down.
+  - U1 and C21 footprint intrusion by 0.54mm. Suggested move: move C21 0.54mm down.
+  - U1 and C22 footprint intrusion by 0.54mm. Suggested move: move C22 0.54mm down.
+  - U1 and C23 footprint intrusion by 0.54mm. Suggested move: move C23 0.54mm down.
+  - U1 and C24 footprint intrusion by 0.54mm. Suggested move: move C24 0.54mm down.
+  - U1 and R12 footprint intrusion by 0.54mm. Suggested move: move R12 0.54mm down.
+  - U1 and R13 footprint intrusion by 0.54mm. Suggested move: move R13 0.54mm down.
+  - U1 and R14 footprint intrusion by 0.54mm. Suggested move: move R14 0.54mm down.
+  - U1 and R15 footprint intrusion by 0.54mm. Suggested move: move R15 0.54mm down.
+  - U1 and R16 footprint intrusion by 0.54mm. Suggested move: move R16 0.54mm down.
+  - U1 and R17 footprint intrusion by 0.54mm. Suggested move: move R17 0.54mm down.
+  - U1 and R18 footprint intrusion by 0.54mm. Suggested move: move R18 0.54mm down.
+  - U1 and C27 footprint intrusion by 0.54mm. Suggested move: move C27 0.54mm down.
+  - U1 and R19 footprint intrusion by 0.54mm. Suggested move: move R19 0.54mm down.
+  - U1 and C28 footprint intrusion by 0.54mm. Suggested move: move C28 0.54mm down.
+  - U1 and C29 footprint intrusion by 0.54mm. Suggested move: move C29 0.54mm down.
+  - U1 and R20 footprint intrusion by 0.54mm. Suggested move: move R20 0.54mm down.
+  - U1 and R21 footprint intrusion by 0.54mm. Suggested move: move R21 0.54mm down.
+  - U1 and R22 footprint intrusion by 0.54mm. Suggested move: move R22 0.54mm down.
+  - U1 and R23 footprint intrusion by 0.54mm. Suggested move: move R23 0.54mm down.
+  - U1 and R24 footprint intrusion by 0.54mm. Suggested move: move R24 0.54mm down.
+  - U1 and R25 footprint intrusion by 0.54mm. Suggested move: move R25 0.54mm down.
+  - U1 and R26 footprint intrusion by 0.54mm. Suggested move: move R26 0.54mm down.
+  - U1 and R27 footprint intrusion by 0.54mm. Suggested move: move R27 0.54mm down.
+  - U1 and R28 footprint intrusion by 0.54mm. Suggested move: move R28 0.54mm down.
+  - U1 and R29 footprint intrusion by 0.54mm. Suggested move: move R29 0.54mm down.
+  - U1 and R30 footprint intrusion by 0.54mm. Suggested move: move R30 0.54mm down.
+  - U1 and R31 footprint intrusion by 0.54mm. Suggested move: move R31 0.54mm down.
+  - U1 and R32 footprint intrusion by 0.54mm. Suggested move: move R32 0.54mm down.
+  - U1 and R33 footprint intrusion by 0.54mm. Suggested move: move R33 0.54mm down.
+  - U1 and R34 footprint intrusion by 0.54mm. Suggested move: move R34 0.54mm down.
+  - U1 and C30 footprint intrusion by 0.54mm. Suggested move: move C30 0.54mm down.
+  - U1 and C31 footprint intrusion by 0.54mm. Suggested move: move C31 0.54mm down.
+  - U1 and C32 footprint intrusion by 0.54mm. Suggested move: move C32 0.54mm down.
+  - U1 and R35 footprint intrusion by 0.54mm. Suggested move: move R35 0.54mm down.
+  - U1 and R36 footprint intrusion by 0.54mm. Suggested move: move R36 0.54mm down.
+  - U1 and R37 footprint intrusion by 0.54mm. Suggested move: move R37 0.54mm down.
+  - U1 and R38 footprint intrusion by 0.54mm. Suggested move: move R38 0.54mm down.
+  - U1 and R39 footprint intrusion by 0.54mm. Suggested move: move R39 0.54mm down.
+  - U1 and R40 footprint intrusion by 0.54mm. Suggested move: move R40 0.54mm down.
+  - U1 and R41 footprint intrusion by 0.54mm. Suggested move: move R41 0.54mm down.
+  - U1 and R42 footprint intrusion by 0.54mm. Suggested move: move R42 0.54mm down.
+  - U1 and R43 footprint intrusion by 0.54mm. Suggested move: move R43 0.54mm down.
+  - U1 and R44 footprint intrusion by 0.54mm. Suggested move: move R44 0.54mm down.
+  - U1 and R45 footprint intrusion by 0.54mm. Suggested move: move R45 0.54mm down.
+  - U1 and R46 footprint intrusion by 0.54mm. Suggested move: move R46 0.54mm down.
+  - U1 and R47 footprint intrusion by 0.54mm. Suggested move: move R47 0.54mm down.
+  - U1 and R48 footprint intrusion by 0.54mm. Suggested move: move R48 0.54mm down.
+  - U1 and U8 footprint intrusion by 0.22mm. Suggested move: move U8 0.22mm down.
+- C1
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on top; bounds=(minX=-0.67mm, maxX=0.67mm, minY=-0.27mm, maxY=0.27mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 16.83mm inside left edge
+  issues:
+  - C1 and C2 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C1 and C3 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C1 and C4 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C1 and R1 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and C5 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C1 and R2 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R3 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and C7 pad overlap by 0.5mm. Suggested move: move C7 0.5mm right.
+  - C1 and U2 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and C13 pad overlap by 0.5mm. Suggested move: move C13 0.5mm right.
+  - C1 and C16 pad overlap by 0.5mm. Suggested move: move C16 0.5mm right.
+  - C1 and R4 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R7 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R8 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R9 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R10 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R11 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and C21 pad overlap by 0.5mm. Suggested move: move C21 0.5mm right.
+  - C1 and U3 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and Q_PD pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and C22 pad overlap by 0.5mm. Suggested move: move C22 0.5mm right.
+  - C1 and C23 pad overlap by 0.5mm. Suggested move: move C23 0.5mm right.
+  - C1 and C24 pad overlap by 0.5mm. Suggested move: move C24 0.5mm right.
+  - C1 and R12 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R13 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R14 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R15 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R16 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R17 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R18 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and C27 pad overlap by 0.5mm. Suggested move: move C27 0.5mm right.
+  - C1 and R19 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and C28 pad overlap by 0.5mm. Suggested move: move C28 0.5mm right.
+  - C1 and C29 pad overlap by 0.5mm. Suggested move: move C29 0.5mm right.
+  - C1 and R20 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R21 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R22 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R23 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R24 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R25 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R26 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R27 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R28 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R29 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R30 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R31 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R32 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R33 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R34 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and C30 pad overlap by 0.5mm. Suggested move: move C30 0.5mm right.
+  - C1 and C31 pad overlap by 0.5mm. Suggested move: move C31 0.5mm right.
+  - C1 and C32 pad overlap by 0.5mm. Suggested move: move C32 0.5mm right.
+  - C1 and R35 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R36 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R37 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R38 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R39 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R40 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R41 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R42 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R43 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R44 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R45 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R46 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R47 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and R48 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C1 and D_VBUS pad overlap by 0.445mm. Suggested move: move C1 0.445mm right.
+  - C1 and C11 pad overlap by 0.375mm. Suggested move: move C1 0.375mm right.
+  - C1 and C12 pad overlap by 0.375mm. Suggested move: move C1 0.375mm right.
+  - C1 and C15 pad overlap by 0.375mm. Suggested move: move C1 0.375mm right.
+  - C1 and C9 pad overlap by 0.37mm. Suggested move: move C1 0.37mm right.
+  - C1 and C10 pad overlap by 0.37mm. Suggested move: move C1 0.37mm right.
+  - C1 and C14 pad overlap by 0.37mm. Suggested move: move C1 0.37mm right.
+  - C1 and C17 pad overlap by 0.37mm. Suggested move: move C1 0.37mm right.
+  - C1 and C25 pad overlap by 0.37mm. Suggested move: move C1 0.37mm right.
+  - C1 and C26 pad overlap by 0.37mm. Suggested move: move C1 0.37mm right.
+  - C1 and C33 pad overlap by 0.37mm. Suggested move: move C1 0.37mm right.
+  - C1 intrudes 0.54mm into J_USB connector body. Suggested move: move C1 0.54mm down.
+  - C1 intrudes 0.54mm into D_USB connector body. Suggested move: move C1 0.54mm down.
+  - C1 intrudes 0.54mm into J_SWD connector body. Suggested move: move C1 0.54mm down.
+  - C1 intrudes 0.54mm into J_IO connector body. Suggested move: move C1 0.54mm down.
+  - C1 intrudes 0.54mm into J_MOTOR connector body. Suggested move: move C1 0.54mm down.
+  - C1 and LED_POWER pad overlap by 0.271mm. Suggested move: move C1 0.271mm right.
+  - C1 and LED_STATUS pad overlap by 0.271mm. Suggested move: move C1 0.271mm right.
+  - C1 and LED_FAULT pad overlap by 0.271mm. Suggested move: move C1 0.271mm right.
+  - C1 and U10 pad overlap by 0.245mm. Suggested move: move C1 0.245mm right.
+  - C1 and U9 pad overlap by 0.22mm. Suggested move: move C1 0.22mm right.
+  - C1 and D_USB pad overlap by 0.2mm. Suggested move: move C1 0.2mm down.
+  - C1 and D_IO1 pad overlap by 0.153mm. Suggested move: move C1 0.153mm down.
+  - C1 and D_IO2 pad overlap by 0.153mm. Suggested move: move C1 0.153mm down.
+  - C1 and D_CAN pad overlap by 0.088mm. Suggested move: move C1 0.088mm right.
+  - U1 and C1 footprint intrusion by 0.54mm. Suggested move: move C1 0.54mm down.
+  - C1 and U6 footprint intrusion by 0.54mm. Suggested move: move C1 0.54mm down.
+  - C1 and U5 footprint intrusion by 0.54mm. Suggested move: move C1 0.54mm down.
+  - C1 and C8 footprint intrusion by 0.54mm. Suggested move: move C1 0.54mm down.
+  - C1 and L1 footprint intrusion by 0.54mm. Suggested move: move C1 0.54mm down.
+  - C1 and C18 footprint intrusion by 0.54mm. Suggested move: move C1 0.54mm down.
+  - C1 and C19 footprint intrusion by 0.54mm. Suggested move: move C1 0.54mm down.
+  - C1 and C20 footprint intrusion by 0.54mm. Suggested move: move C1 0.54mm down.
+  - C1 and R5 footprint intrusion by 0.54mm. Suggested move: move C1 0.54mm down.
+  - C1 and R6 footprint intrusion by 0.54mm. Suggested move: move C1 0.54mm down.
+  - C1 and U7 footprint intrusion by 0.54mm. Suggested move: move C1 0.54mm down.
+  - C1 and Q_ILIM footprint intrusion by 0.54mm. Suggested move: move C1 0.54mm down.
+  - C1 and U8 footprint intrusion by 0.22mm. Suggested move: move U8 0.22mm down.
+- C2
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on top; bounds=(minX=-0.67mm, maxX=0.67mm, minY=-0.27mm, maxY=0.27mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 16.83mm inside left edge
+  issues:
+  - C1 and C2 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and C3 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C2 and C4 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C2 and R1 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and C5 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C2 and R2 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R3 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and C7 pad overlap by 0.5mm. Suggested move: move C7 0.5mm right.
+  - C2 and U2 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and C13 pad overlap by 0.5mm. Suggested move: move C13 0.5mm right.
+  - C2 and C16 pad overlap by 0.5mm. Suggested move: move C16 0.5mm right.
+  - C2 and R4 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R7 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R8 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R9 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R10 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R11 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and C21 pad overlap by 0.5mm. Suggested move: move C21 0.5mm right.
+  - C2 and U3 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and Q_PD pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and C22 pad overlap by 0.5mm. Suggested move: move C22 0.5mm right.
+  - C2 and C23 pad overlap by 0.5mm. Suggested move: move C23 0.5mm right.
+  - C2 and C24 pad overlap by 0.5mm. Suggested move: move C24 0.5mm right.
+  - C2 and R12 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R13 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R14 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R15 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R16 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R17 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R18 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and C27 pad overlap by 0.5mm. Suggested move: move C27 0.5mm right.
+  - C2 and R19 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and C28 pad overlap by 0.5mm. Suggested move: move C28 0.5mm right.
+  - C2 and C29 pad overlap by 0.5mm. Suggested move: move C29 0.5mm right.
+  - C2 and R20 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R21 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R22 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R23 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R24 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R25 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R26 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R27 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R28 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R29 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R30 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R31 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R32 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R33 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R34 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and C30 pad overlap by 0.5mm. Suggested move: move C30 0.5mm right.
+  - C2 and C31 pad overlap by 0.5mm. Suggested move: move C31 0.5mm right.
+  - C2 and C32 pad overlap by 0.5mm. Suggested move: move C32 0.5mm right.
+  - C2 and R35 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R36 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R37 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R38 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R39 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R40 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R41 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R42 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R43 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R44 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R45 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R46 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R47 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and R48 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C2 and D_VBUS pad overlap by 0.445mm. Suggested move: move C2 0.445mm right.
+  - C2 and C11 pad overlap by 0.375mm. Suggested move: move C2 0.375mm right.
+  - C2 and C12 pad overlap by 0.375mm. Suggested move: move C2 0.375mm right.
+  - C2 and C15 pad overlap by 0.375mm. Suggested move: move C2 0.375mm right.
+  - C2 and C9 pad overlap by 0.37mm. Suggested move: move C2 0.37mm right.
+  - C2 and C10 pad overlap by 0.37mm. Suggested move: move C2 0.37mm right.
+  - C2 and C14 pad overlap by 0.37mm. Suggested move: move C2 0.37mm right.
+  - C2 and C17 pad overlap by 0.37mm. Suggested move: move C2 0.37mm right.
+  - C2 and C25 pad overlap by 0.37mm. Suggested move: move C2 0.37mm right.
+  - C2 and C26 pad overlap by 0.37mm. Suggested move: move C2 0.37mm right.
+  - C2 and C33 pad overlap by 0.37mm. Suggested move: move C2 0.37mm right.
+  - C2 intrudes 0.54mm into J_USB connector body. Suggested move: move C2 0.54mm down.
+  - C2 intrudes 0.54mm into D_USB connector body. Suggested move: move C2 0.54mm down.
+  - C2 intrudes 0.54mm into J_SWD connector body. Suggested move: move C2 0.54mm down.
+  - C2 intrudes 0.54mm into J_IO connector body. Suggested move: move C2 0.54mm down.
+  - C2 intrudes 0.54mm into J_MOTOR connector body. Suggested move: move C2 0.54mm down.
+  - C2 and LED_POWER pad overlap by 0.271mm. Suggested move: move C2 0.271mm right.
+  - C2 and LED_STATUS pad overlap by 0.271mm. Suggested move: move C2 0.271mm right.
+  - C2 and LED_FAULT pad overlap by 0.271mm. Suggested move: move C2 0.271mm right.
+  - C2 and U10 pad overlap by 0.245mm. Suggested move: move C2 0.245mm right.
+  - C2 and U9 pad overlap by 0.22mm. Suggested move: move C2 0.22mm right.
+  - C2 and D_USB pad overlap by 0.2mm. Suggested move: move C2 0.2mm down.
+  - C2 and D_IO1 pad overlap by 0.153mm. Suggested move: move C2 0.153mm down.
+  - C2 and D_IO2 pad overlap by 0.153mm. Suggested move: move C2 0.153mm down.
+  - C2 and D_CAN pad overlap by 0.088mm. Suggested move: move C2 0.088mm right.
+  - U1 and C2 footprint intrusion by 0.54mm. Suggested move: move C2 0.54mm down.
+  - C2 and U6 footprint intrusion by 0.54mm. Suggested move: move C2 0.54mm down.
+  - C2 and U5 footprint intrusion by 0.54mm. Suggested move: move C2 0.54mm down.
+  - C2 and C8 footprint intrusion by 0.54mm. Suggested move: move C2 0.54mm down.
+  - C2 and L1 footprint intrusion by 0.54mm. Suggested move: move C2 0.54mm down.
+  - C2 and C18 footprint intrusion by 0.54mm. Suggested move: move C2 0.54mm down.
+  - C2 and C19 footprint intrusion by 0.54mm. Suggested move: move C2 0.54mm down.
+  - C2 and C20 footprint intrusion by 0.54mm. Suggested move: move C2 0.54mm down.
+  - C2 and R5 footprint intrusion by 0.54mm. Suggested move: move C2 0.54mm down.
+  - C2 and R6 footprint intrusion by 0.54mm. Suggested move: move C2 0.54mm down.
+  - C2 and U7 footprint intrusion by 0.54mm. Suggested move: move C2 0.54mm down.
+  - C2 and Q_ILIM footprint intrusion by 0.54mm. Suggested move: move C2 0.54mm down.
+  - C2 and U8 footprint intrusion by 0.22mm. Suggested move: move U8 0.22mm down.
+- C3
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on top; bounds=(minX=-0.67mm, maxX=0.67mm, minY=-0.27mm, maxY=0.27mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 16.83mm inside left edge
+  issues:
+  - C1 and C3 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C2 and C3 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and C4 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C3 and R1 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and C5 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C3 and R2 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R3 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and C7 pad overlap by 0.5mm. Suggested move: move C7 0.5mm right.
+  - C3 and U2 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and C13 pad overlap by 0.5mm. Suggested move: move C13 0.5mm right.
+  - C3 and C16 pad overlap by 0.5mm. Suggested move: move C16 0.5mm right.
+  - C3 and R4 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R7 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R8 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R9 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R10 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R11 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and C21 pad overlap by 0.5mm. Suggested move: move C21 0.5mm right.
+  - C3 and U3 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and Q_PD pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and C22 pad overlap by 0.5mm. Suggested move: move C22 0.5mm right.
+  - C3 and C23 pad overlap by 0.5mm. Suggested move: move C23 0.5mm right.
+  - C3 and C24 pad overlap by 0.5mm. Suggested move: move C24 0.5mm right.
+  - C3 and R12 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R13 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R14 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R15 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R16 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R17 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R18 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and C27 pad overlap by 0.5mm. Suggested move: move C27 0.5mm right.
+  - C3 and R19 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and C28 pad overlap by 0.5mm. Suggested move: move C28 0.5mm right.
+  - C3 and C29 pad overlap by 0.5mm. Suggested move: move C29 0.5mm right.
+  - C3 and R20 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R21 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R22 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R23 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R24 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R25 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R26 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R27 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R28 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R29 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R30 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R31 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R32 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R33 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R34 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and C30 pad overlap by 0.5mm. Suggested move: move C30 0.5mm right.
+  - C3 and C31 pad overlap by 0.5mm. Suggested move: move C31 0.5mm right.
+  - C3 and C32 pad overlap by 0.5mm. Suggested move: move C32 0.5mm right.
+  - C3 and R35 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R36 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R37 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R38 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R39 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R40 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R41 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R42 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R43 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R44 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R45 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R46 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R47 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and R48 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C3 and D_VBUS pad overlap by 0.445mm. Suggested move: move C3 0.445mm right.
+  - C3 and C11 pad overlap by 0.375mm. Suggested move: move C3 0.375mm right.
+  - C3 and C12 pad overlap by 0.375mm. Suggested move: move C3 0.375mm right.
+  - C3 and C15 pad overlap by 0.375mm. Suggested move: move C3 0.375mm right.
+  - C3 and C9 pad overlap by 0.37mm. Suggested move: move C3 0.37mm right.
+  - C3 and C10 pad overlap by 0.37mm. Suggested move: move C3 0.37mm right.
+  - C3 and C14 pad overlap by 0.37mm. Suggested move: move C3 0.37mm right.
+  - C3 and C17 pad overlap by 0.37mm. Suggested move: move C3 0.37mm right.
+  - C3 and C25 pad overlap by 0.37mm. Suggested move: move C3 0.37mm right.
+  - C3 and C26 pad overlap by 0.37mm. Suggested move: move C3 0.37mm right.
+  - C3 and C33 pad overlap by 0.37mm. Suggested move: move C3 0.37mm right.
+  - C3 intrudes 0.54mm into J_USB connector body. Suggested move: move C3 0.54mm down.
+  - C3 intrudes 0.54mm into D_USB connector body. Suggested move: move C3 0.54mm down.
+  - C3 intrudes 0.54mm into J_SWD connector body. Suggested move: move C3 0.54mm down.
+  - C3 intrudes 0.54mm into J_IO connector body. Suggested move: move C3 0.54mm down.
+  - C3 intrudes 0.54mm into J_MOTOR connector body. Suggested move: move C3 0.54mm down.
+  - C3 and LED_POWER pad overlap by 0.271mm. Suggested move: move C3 0.271mm right.
+  - C3 and LED_STATUS pad overlap by 0.271mm. Suggested move: move C3 0.271mm right.
+  - C3 and LED_FAULT pad overlap by 0.271mm. Suggested move: move C3 0.271mm right.
+  - C3 and U10 pad overlap by 0.245mm. Suggested move: move C3 0.245mm right.
+  - C3 and U9 pad overlap by 0.22mm. Suggested move: move C3 0.22mm right.
+  - C3 and D_USB pad overlap by 0.2mm. Suggested move: move C3 0.2mm down.
+  - C3 and D_IO1 pad overlap by 0.153mm. Suggested move: move C3 0.153mm down.
+  - C3 and D_IO2 pad overlap by 0.153mm. Suggested move: move C3 0.153mm down.
+  - C3 and D_CAN pad overlap by 0.088mm. Suggested move: move C3 0.088mm right.
+  - U1 and C3 footprint intrusion by 0.54mm. Suggested move: move C3 0.54mm down.
+  - C3 and U6 footprint intrusion by 0.54mm. Suggested move: move C3 0.54mm down.
+  - C3 and U5 footprint intrusion by 0.54mm. Suggested move: move C3 0.54mm down.
+  - C3 and C8 footprint intrusion by 0.54mm. Suggested move: move C3 0.54mm down.
+  - C3 and L1 footprint intrusion by 0.54mm. Suggested move: move C3 0.54mm down.
+  - C3 and C18 footprint intrusion by 0.54mm. Suggested move: move C3 0.54mm down.
+  - C3 and C19 footprint intrusion by 0.54mm. Suggested move: move C3 0.54mm down.
+  - C3 and C20 footprint intrusion by 0.54mm. Suggested move: move C3 0.54mm down.
+  - C3 and R5 footprint intrusion by 0.54mm. Suggested move: move C3 0.54mm down.
+  - C3 and R6 footprint intrusion by 0.54mm. Suggested move: move C3 0.54mm down.
+  - C3 and U7 footprint intrusion by 0.54mm. Suggested move: move C3 0.54mm down.
+  - C3 and Q_ILIM footprint intrusion by 0.54mm. Suggested move: move C3 0.54mm down.
+  - C3 and U8 footprint intrusion by 0.22mm. Suggested move: move U8 0.22mm down.
+- C4
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on top; bounds=(minX=-0.67mm, maxX=0.67mm, minY=-0.27mm, maxY=0.27mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 16.83mm inside left edge
+  issues:
+  - C1 and C4 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C2 and C4 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C3 and C4 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R1 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and C5 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C4 and R2 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R3 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and C7 pad overlap by 0.5mm. Suggested move: move C7 0.5mm right.
+  - C4 and U2 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and C13 pad overlap by 0.5mm. Suggested move: move C13 0.5mm right.
+  - C4 and C16 pad overlap by 0.5mm. Suggested move: move C16 0.5mm right.
+  - C4 and R4 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R7 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R8 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R9 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R10 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R11 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and C21 pad overlap by 0.5mm. Suggested move: move C21 0.5mm right.
+  - C4 and U3 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and Q_PD pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and C22 pad overlap by 0.5mm. Suggested move: move C22 0.5mm right.
+  - C4 and C23 pad overlap by 0.5mm. Suggested move: move C23 0.5mm right.
+  - C4 and C24 pad overlap by 0.5mm. Suggested move: move C24 0.5mm right.
+  - C4 and R12 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R13 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R14 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R15 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R16 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R17 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R18 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and C27 pad overlap by 0.5mm. Suggested move: move C27 0.5mm right.
+  - C4 and R19 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and C28 pad overlap by 0.5mm. Suggested move: move C28 0.5mm right.
+  - C4 and C29 pad overlap by 0.5mm. Suggested move: move C29 0.5mm right.
+  - C4 and R20 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R21 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R22 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R23 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R24 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R25 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R26 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R27 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R28 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R29 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R30 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R31 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R32 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R33 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R34 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and C30 pad overlap by 0.5mm. Suggested move: move C30 0.5mm right.
+  - C4 and C31 pad overlap by 0.5mm. Suggested move: move C31 0.5mm right.
+  - C4 and C32 pad overlap by 0.5mm. Suggested move: move C32 0.5mm right.
+  - C4 and R35 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R36 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R37 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R38 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R39 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R40 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R41 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R42 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R43 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R44 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R45 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R46 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R47 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and R48 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - C4 and D_VBUS pad overlap by 0.445mm. Suggested move: move C4 0.445mm right.
+  - C4 and C11 pad overlap by 0.375mm. Suggested move: move C4 0.375mm right.
+  - C4 and C12 pad overlap by 0.375mm. Suggested move: move C4 0.375mm right.
+  - C4 and C15 pad overlap by 0.375mm. Suggested move: move C4 0.375mm right.
+  - C4 and C9 pad overlap by 0.37mm. Suggested move: move C4 0.37mm right.
+  - C4 and C10 pad overlap by 0.37mm. Suggested move: move C4 0.37mm right.
+  - C4 and C14 pad overlap by 0.37mm. Suggested move: move C4 0.37mm right.
+  - C4 and C17 pad overlap by 0.37mm. Suggested move: move C4 0.37mm right.
+  - C4 and C25 pad overlap by 0.37mm. Suggested move: move C4 0.37mm right.
+  - C4 and C26 pad overlap by 0.37mm. Suggested move: move C4 0.37mm right.
+  - C4 and C33 pad overlap by 0.37mm. Suggested move: move C4 0.37mm right.
+  - C4 intrudes 0.54mm into J_USB connector body. Suggested move: move C4 0.54mm down.
+  - C4 intrudes 0.54mm into D_USB connector body. Suggested move: move C4 0.54mm down.
+  - C4 intrudes 0.54mm into J_SWD connector body. Suggested move: move C4 0.54mm down.
+  - C4 intrudes 0.54mm into J_IO connector body. Suggested move: move C4 0.54mm down.
+  - C4 intrudes 0.54mm into J_MOTOR connector body. Suggested move: move C4 0.54mm down.
+  - C4 and LED_POWER pad overlap by 0.271mm. Suggested move: move C4 0.271mm right.
+  - C4 and LED_STATUS pad overlap by 0.271mm. Suggested move: move C4 0.271mm right.
+  - C4 and LED_FAULT pad overlap by 0.271mm. Suggested move: move C4 0.271mm right.
+  - C4 and U10 pad overlap by 0.245mm. Suggested move: move C4 0.245mm right.
+  - C4 and U9 pad overlap by 0.22mm. Suggested move: move C4 0.22mm right.
+  - C4 and D_USB pad overlap by 0.2mm. Suggested move: move C4 0.2mm down.
+  - C4 and D_IO1 pad overlap by 0.153mm. Suggested move: move C4 0.153mm down.
+  - C4 and D_IO2 pad overlap by 0.153mm. Suggested move: move C4 0.153mm down.
+  - C4 and D_CAN pad overlap by 0.088mm. Suggested move: move C4 0.088mm right.
+  - U1 and C4 footprint intrusion by 0.54mm. Suggested move: move C4 0.54mm down.
+  - C4 and U6 footprint intrusion by 0.54mm. Suggested move: move C4 0.54mm down.
+  - C4 and U5 footprint intrusion by 0.54mm. Suggested move: move C4 0.54mm down.
+  - C4 and C8 footprint intrusion by 0.54mm. Suggested move: move C4 0.54mm down.
+  - C4 and L1 footprint intrusion by 0.54mm. Suggested move: move C4 0.54mm down.
+  - C4 and C18 footprint intrusion by 0.54mm. Suggested move: move C4 0.54mm down.
+  - C4 and C19 footprint intrusion by 0.54mm. Suggested move: move C4 0.54mm down.
+  - C4 and C20 footprint intrusion by 0.54mm. Suggested move: move C4 0.54mm down.
+  - C4 and R5 footprint intrusion by 0.54mm. Suggested move: move C4 0.54mm down.
+  - C4 and R6 footprint intrusion by 0.54mm. Suggested move: move C4 0.54mm down.
+  - C4 and U7 footprint intrusion by 0.54mm. Suggested move: move C4 0.54mm down.
+  - C4 and Q_ILIM footprint intrusion by 0.54mm. Suggested move: move C4 0.54mm down.
+  - C4 and U8 footprint intrusion by 0.22mm. Suggested move: move U8 0.22mm down.
+- R1
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on top; bounds=(minX=-0.716mm, maxX=0.716mm, minY=-0.27mm, maxY=0.27mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 16.784mm inside left edge
+  issues:
+  - R1 and R2 pad overlap by 0.54mm. Suggested move: move R2 0.54mm down.
+  - R1 and R3 pad overlap by 0.54mm. Suggested move: move R3 0.54mm down.
+  - R1 and U2 pad overlap by 0.54mm. Suggested move: move R1 0.54mm down.
+  - R1 and R4 pad overlap by 0.54mm. Suggested move: move R4 0.54mm down.
+  - R1 and R7 pad overlap by 0.54mm. Suggested move: move R7 0.54mm down.
+  - R1 and R8 pad overlap by 0.54mm. Suggested move: move R8 0.54mm down.
+  - R1 and R9 pad overlap by 0.54mm. Suggested move: move R9 0.54mm down.
+  - R1 and R10 pad overlap by 0.54mm. Suggested move: move R10 0.54mm down.
+  - R1 and R11 pad overlap by 0.54mm. Suggested move: move R11 0.54mm down.
+  - R1 and U3 pad overlap by 0.54mm. Suggested move: move R1 0.54mm down.
+  - R1 and Q_PD pad overlap by 0.54mm. Suggested move: move R1 0.54mm down.
+  - R1 and R12 pad overlap by 0.54mm. Suggested move: move R12 0.54mm down.
+  - R1 and R13 pad overlap by 0.54mm. Suggested move: move R13 0.54mm down.
+  - R1 and R14 pad overlap by 0.54mm. Suggested move: move R14 0.54mm down.
+  - R1 and R15 pad overlap by 0.54mm. Suggested move: move R15 0.54mm down.
+  - R1 and R16 pad overlap by 0.54mm. Suggested move: move R16 0.54mm down.
+  - R1 and R17 pad overlap by 0.54mm. Suggested move: move R17 0.54mm down.
+  - R1 and R18 pad overlap by 0.54mm. Suggested move: move R18 0.54mm down.
+  - R1 and R19 pad overlap by 0.54mm. Suggested move: move R19 0.54mm down.
+  - R1 and R20 pad overlap by 0.54mm. Suggested move: move R20 0.54mm down.
+  - R1 and R21 pad overlap by 0.54mm. Suggested move: move R21 0.54mm down.
+  - R1 and R22 pad overlap by 0.54mm. Suggested move: move R22 0.54mm down.
+  - R1 and R23 pad overlap by 0.54mm. Suggested move: move R23 0.54mm down.
+  - R1 and R24 pad overlap by 0.54mm. Suggested move: move R24 0.54mm down.
+  - R1 and R25 pad overlap by 0.54mm. Suggested move: move R25 0.54mm down.
+  - R1 and R26 pad overlap by 0.54mm. Suggested move: move R26 0.54mm down.
+  - R1 and R27 pad overlap by 0.54mm. Suggested move: move R27 0.54mm down.
+  - R1 and R28 pad overlap by 0.54mm. Suggested move: move R28 0.54mm down.
+  - R1 and R29 pad overlap by 0.54mm. Suggested move: move R29 0.54mm down.
+  - R1 and R30 pad overlap by 0.54mm. Suggested move: move R30 0.54mm down.
+  - R1 and R31 pad overlap by 0.54mm. Suggested move: move R31 0.54mm down.
+  - R1 and R32 pad overlap by 0.54mm. Suggested move: move R32 0.54mm down.
+  - R1 and R33 pad overlap by 0.54mm. Suggested move: move R33 0.54mm down.
+  - R1 and R34 pad overlap by 0.54mm. Suggested move: move R34 0.54mm down.
+  - R1 and R35 pad overlap by 0.54mm. Suggested move: move R35 0.54mm down.
+  - R1 and R36 pad overlap by 0.54mm. Suggested move: move R36 0.54mm down.
+  - R1 and R37 pad overlap by 0.54mm. Suggested move: move R37 0.54mm down.
+  - R1 and R38 pad overlap by 0.54mm. Suggested move: move R38 0.54mm down.
+  - R1 and R39 pad overlap by 0.54mm. Suggested move: move R39 0.54mm down.
+  - R1 and R40 pad overlap by 0.54mm. Suggested move: move R40 0.54mm down.
+  - R1 and R41 pad overlap by 0.54mm. Suggested move: move R41 0.54mm down.
+  - R1 and R42 pad overlap by 0.54mm. Suggested move: move R42 0.54mm down.
+  - R1 and R43 pad overlap by 0.54mm. Suggested move: move R43 0.54mm down.
+  - R1 and R44 pad overlap by 0.54mm. Suggested move: move R44 0.54mm down.
+  - R1 and R45 pad overlap by 0.54mm. Suggested move: move R45 0.54mm down.
+  - R1 and R46 pad overlap by 0.54mm. Suggested move: move R46 0.54mm down.
+  - R1 and R47 pad overlap by 0.54mm. Suggested move: move R47 0.54mm down.
+  - R1 and R48 pad overlap by 0.54mm. Suggested move: move R48 0.54mm down.
+  - C1 and R1 pad overlap by 0.5mm. Suggested move: move C1 0.5mm right.
+  - C2 and R1 pad overlap by 0.5mm. Suggested move: move C2 0.5mm right.
+  - C3 and R1 pad overlap by 0.5mm. Suggested move: move C3 0.5mm right.
+  - C4 and R1 pad overlap by 0.5mm. Suggested move: move C4 0.5mm right.
+  - R1 and C5 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - R1 and C7 pad overlap by 0.5mm. Suggested move: move C7 0.5mm right.
+  - R1 and C13 pad overlap by 0.5mm. Suggested move: move C13 0.5mm right.
+  - R1 and C16 pad overlap by 0.5mm. Suggested move: move C16 0.5mm right.
+  - R1 and C21 pad overlap by 0.5mm. Suggested move: move C21 0.5mm right.
+  - R1 and C22 pad overlap by 0.5mm. Suggested move: move C22 0.5mm right.
+  - R1 and C23 pad overlap by 0.5mm. Suggested move: move C23 0.5mm right.
+  - R1 and C24 pad overlap by 0.5mm. Suggested move: move C24 0.5mm right.
+  - R1 and C27 pad overlap by 0.5mm. Suggested move: move C27 0.5mm right.
+  - R1 and C28 pad overlap by 0.5mm. Suggested move: move C28 0.5mm right.
+  - R1 and C29 pad overlap by 0.5mm. Suggested move: move C29 0.5mm right.
+  - R1 and C30 pad overlap by 0.5mm. Suggested move: move C30 0.5mm right.
+  - R1 and C31 pad overlap by 0.5mm. Suggested move: move C31 0.5mm right.
+  - R1 and C32 pad overlap by 0.5mm. Suggested move: move C32 0.5mm right.
+  - R1 and D_VBUS pad overlap by 0.491mm. Suggested move: move R1 0.491mm right.
+  - R1 and C11 pad overlap by 0.421mm. Suggested move: move R1 0.421mm right.
+  - R1 and C12 pad overlap by 0.421mm. Suggested move: move R1 0.421mm right.
+  - R1 and C15 pad overlap by 0.421mm. Suggested move: move R1 0.421mm right.
+  - R1 and C9 pad overlap by 0.416mm. Suggested move: move R1 0.416mm right.
+  - R1 and C10 pad overlap by 0.416mm. Suggested move: move R1 0.416mm right.
+  - R1 and C14 pad overlap by 0.416mm. Suggested move: move R1 0.416mm right.
+  - R1 and C17 pad overlap by 0.416mm. Suggested move: move R1 0.416mm right.
+  - R1 and C25 pad overlap by 0.416mm. Suggested move: move R1 0.416mm right.
+  - R1 and C26 pad overlap by 0.416mm. Suggested move: move R1 0.416mm right.
+  - R1 and C33 pad overlap by 0.416mm. Suggested move: move R1 0.416mm right.
+  - R1 intrudes 0.54mm into J_USB connector body. Suggested move: move R1 0.54mm down.
+  - R1 intrudes 0.54mm into D_USB connector body. Suggested move: move R1 0.54mm down.
+  - R1 intrudes 0.54mm into J_SWD connector body. Suggested move: move R1 0.54mm down.
+  - R1 intrudes 0.54mm into J_IO connector body. Suggested move: move R1 0.54mm down.
+  - R1 intrudes 0.54mm into J_MOTOR connector body. Suggested move: move R1 0.54mm down.
+  - R1 and LED_POWER pad overlap by 0.316mm. Suggested move: move R1 0.316mm right.
+  - R1 and LED_STATUS pad overlap by 0.316mm. Suggested move: move R1 0.316mm right.
+  - R1 and LED_FAULT pad overlap by 0.316mm. Suggested move: move R1 0.316mm right.
+  - R1 and U9 pad overlap by 0.266mm. Suggested move: move R1 0.266mm right.
+  - R1 and U10 pad overlap by 0.265mm. Suggested move: move R1 0.265mm right.
+  - R1 and D_USB pad overlap by 0.2mm. Suggested move: move R1 0.2mm down.
+  - R1 and D_IO1 pad overlap by 0.153mm. Suggested move: move R1 0.153mm down.
+  - R1 and D_IO2 pad overlap by 0.153mm. Suggested move: move R1 0.153mm down.
+  - R1 and D_CAN pad overlap by 0.133mm. Suggested move: move R1 0.133mm right.
+  - R1 and Q_ILIM pad overlap by 0.016mm. Suggested move: move R1 0.016mm right.
+  - U1 and R1 footprint intrusion by 0.54mm. Suggested move: move R1 0.54mm down.
+  - R1 and U6 footprint intrusion by 0.54mm. Suggested move: move R1 0.54mm down.
+  - R1 and U5 footprint intrusion by 0.54mm. Suggested move: move R1 0.54mm down.
+  - R1 and C8 footprint intrusion by 0.54mm. Suggested move: move R1 0.54mm down.
+  - R1 and L1 footprint intrusion by 0.54mm. Suggested move: move R1 0.54mm down.
+  - R1 and C18 footprint intrusion by 0.54mm. Suggested move: move R1 0.54mm down.
+  - R1 and C19 footprint intrusion by 0.54mm. Suggested move: move R1 0.54mm down.
+  - R1 and C20 footprint intrusion by 0.54mm. Suggested move: move R1 0.54mm down.
+  - R1 and R5 footprint intrusion by 0.54mm. Suggested move: move R1 0.54mm down.
+  - R1 and R6 footprint intrusion by 0.54mm. Suggested move: move R1 0.54mm down.
+  - R1 and U7 footprint intrusion by 0.54mm. Suggested move: move R1 0.54mm down.
+  - R1 and U8 footprint intrusion by 0.22mm. Suggested move: move U8 0.22mm down.
+- C5
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on top; bounds=(minX=-0.67mm, maxX=0.67mm, minY=-0.27mm, maxY=0.27mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 16.83mm inside left edge
+  issues:
+  - C1 and C5 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C2 and C5 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C3 and C5 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C4 and C5 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - R1 and C5 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R2 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R3 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and C7 pad overlap by 0.5mm. Suggested move: move C7 0.5mm right.
+  - C5 and U2 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and C13 pad overlap by 0.5mm. Suggested move: move C13 0.5mm right.
+  - C5 and C16 pad overlap by 0.5mm. Suggested move: move C16 0.5mm right.
+  - C5 and R4 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R7 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R8 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R9 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R10 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R11 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and C21 pad overlap by 0.5mm. Suggested move: move C21 0.5mm right.
+  - C5 and U3 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and Q_PD pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and C22 pad overlap by 0.5mm. Suggested move: move C22 0.5mm right.
+  - C5 and C23 pad overlap by 0.5mm. Suggested move: move C23 0.5mm right.
+  - C5 and C24 pad overlap by 0.5mm. Suggested move: move C24 0.5mm right.
+  - C5 and R12 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R13 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R14 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R15 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R16 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R17 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R18 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and C27 pad overlap by 0.5mm. Suggested move: move C27 0.5mm right.
+  - C5 and R19 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and C28 pad overlap by 0.5mm. Suggested move: move C28 0.5mm right.
+  - C5 and C29 pad overlap by 0.5mm. Suggested move: move C29 0.5mm right.
+  - C5 and R20 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R21 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R22 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R23 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R24 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R25 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R26 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R27 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R28 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R29 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R30 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R31 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R32 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R33 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R34 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and C30 pad overlap by 0.5mm. Suggested move: move C30 0.5mm right.
+  - C5 and C31 pad overlap by 0.5mm. Suggested move: move C31 0.5mm right.
+  - C5 and C32 pad overlap by 0.5mm. Suggested move: move C32 0.5mm right.
+  - C5 and R35 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R36 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R37 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R38 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R39 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R40 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R41 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R42 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R43 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R44 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R45 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R46 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R47 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and R48 pad overlap by 0.5mm. Suggested move: move C5 0.5mm right.
+  - C5 and D_VBUS pad overlap by 0.445mm. Suggested move: move C5 0.445mm right.
+  - C5 and C11 pad overlap by 0.375mm. Suggested move: move C5 0.375mm right.
+  - C5 and C12 pad overlap by 0.375mm. Suggested move: move C5 0.375mm right.
+  - C5 and C15 pad overlap by 0.375mm. Suggested move: move C5 0.375mm right.
+  - C5 and C9 pad overlap by 0.37mm. Suggested move: move C5 0.37mm right.
+  - C5 and C10 pad overlap by 0.37mm. Suggested move: move C5 0.37mm right.
+  - C5 and C14 pad overlap by 0.37mm. Suggested move: move C5 0.37mm right.
+  - C5 and C17 pad overlap by 0.37mm. Suggested move: move C5 0.37mm right.
+  - C5 and C25 pad overlap by 0.37mm. Suggested move: move C5 0.37mm right.
+  - C5 and C26 pad overlap by 0.37mm. Suggested move: move C5 0.37mm right.
+  - C5 and C33 pad overlap by 0.37mm. Suggested move: move C5 0.37mm right.
+  - C5 intrudes 0.54mm into J_USB connector body. Suggested move: move C5 0.54mm down.
+  - C5 intrudes 0.54mm into D_USB connector body. Suggested move: move C5 0.54mm down.
+  - C5 intrudes 0.54mm into J_SWD connector body. Suggested move: move C5 0.54mm down.
+  - C5 intrudes 0.54mm into J_IO connector body. Suggested move: move C5 0.54mm down.
+  - C5 intrudes 0.54mm into J_MOTOR connector body. Suggested move: move C5 0.54mm down.
+  - C5 and LED_POWER pad overlap by 0.271mm. Suggested move: move C5 0.271mm right.
+  - C5 and LED_STATUS pad overlap by 0.271mm. Suggested move: move C5 0.271mm right.
+  - C5 and LED_FAULT pad overlap by 0.271mm. Suggested move: move C5 0.271mm right.
+  - C5 and U10 pad overlap by 0.245mm. Suggested move: move C5 0.245mm right.
+  - C5 and U9 pad overlap by 0.22mm. Suggested move: move C5 0.22mm right.
+  - C5 and D_USB pad overlap by 0.2mm. Suggested move: move C5 0.2mm down.
+  - C5 and D_IO1 pad overlap by 0.153mm. Suggested move: move C5 0.153mm down.
+  - C5 and D_IO2 pad overlap by 0.153mm. Suggested move: move C5 0.153mm down.
+  - C5 and D_CAN pad overlap by 0.088mm. Suggested move: move C5 0.088mm right.
+  - U1 and C5 footprint intrusion by 0.54mm. Suggested move: move C5 0.54mm down.
+  - C5 and U6 footprint intrusion by 0.54mm. Suggested move: move C5 0.54mm down.
+  - C5 and U5 footprint intrusion by 0.54mm. Suggested move: move C5 0.54mm down.
+  - C5 and C8 footprint intrusion by 0.54mm. Suggested move: move C5 0.54mm down.
+  - C5 and L1 footprint intrusion by 0.54mm. Suggested move: move C5 0.54mm down.
+  - C5 and C18 footprint intrusion by 0.54mm. Suggested move: move C5 0.54mm down.
+  - C5 and C19 footprint intrusion by 0.54mm. Suggested move: move C5 0.54mm down.
+  - C5 and C20 footprint intrusion by 0.54mm. Suggested move: move C5 0.54mm down.
+  - C5 and R5 footprint intrusion by 0.54mm. Suggested move: move C5 0.54mm down.
+  - C5 and R6 footprint intrusion by 0.54mm. Suggested move: move C5 0.54mm down.
+  - C5 and U7 footprint intrusion by 0.54mm. Suggested move: move C5 0.54mm down.
+  - C5 and Q_ILIM footprint intrusion by 0.54mm. Suggested move: move C5 0.54mm down.
+  - C5 and U8 footprint intrusion by 0.22mm. Suggested move: move U8 0.22mm down.
+- U4
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on bottom; bounds=(minX=-2.189mm, maxX=2.189mm, minY=-3.68mm, maxY=3.68mm); size=(width=4.378mm, height=7.36mm); anchor_alignment="center"
+  board edge status: 13.82mm inside top edge
+  issues:
+  - C6 intrudes 0.54mm into U4 connector body. Suggested move: move C6 0.54mm down.
+- C6
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on bottom; bounds=(minX=-0.67mm, maxX=0.67mm, minY=-0.27mm, maxY=0.27mm); size=(width=1.34mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 16.83mm inside left edge
+  issues:
+  - C6 intrudes 0.54mm into U4 connector body. Suggested move: move C6 0.54mm down.
+- R2
+  source placement: placement_mode=none
+  resolved placement: center=(0mm, 0mm) on top; bounds=(minX=-0.716mm, maxX=0.716mm, minY=-0.27mm, maxY=0.27mm); size=(width=1.431mm, height=0.54mm); anchor_alignment="center"
+  board edge status: 16.784mm inside left edge
+  issues:
+  - R1 and R2 pad overlap by 0.54mm. Suggested move: move R2 0.54mm down.
+  - R2 and R3 pad overlap by 0.54mm. Suggested move: move R3 0.54mm down.
+  - R2 and U2 pad overlap by 0.54mm. Suggested move: move R2 0.54mm down.
+  - R2 and R4 pad overlap by 0.54mm. Suggested move: move R4 0.54mm down.
+  - R2 and R7 pad overlap by 0.54mm. Suggested move: move R7 0.54mm down.
+  - R2 and R8 pad overlap by 0.54mm. Suggested move: move R8 0.54mm down.
+  - R2 and R9 pad overlap by 0.54mm. Suggested move: move R9 0.54mm down.
+  - R2 and R10 pad overlap by 0.54mm. Suggested move: move R10 0.54mm down.
+  - R2 and R11 pad overlap by 0.54mm. Suggested move: move R11 0.54mm down.
+  - R2 and U3 pad overlap by 0.54mm. Suggested move: move R2 0.54mm down.
+  - R2 and Q_PD pad overlap by 0.54mm. Suggested move: move R2 0.54mm down.
+  - R2 and R12 pad overlap by 0.54mm. Suggested move: move R12 0.54mm down.
+  - R2 a

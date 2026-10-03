@@ -1,7 +1,7 @@
 {
   "name": "@tsci/AnasSarkiz.smart-nema14-motor-controller--01a0fd9b",
-  "version": "0.0.10-alpha.0",
-  "description": "STEPPERONLINE 14HM11-0404S controller prototype; mounting and encoder decisions unresolved, routing disabled",
+  "version": "0.0.11-alpha.0",
+  "description": "STEPPERONLINE 14HM11-0404S controller work-in-progress prototype; 111 parts on nine A4 sheets, mounting and protection blocked, routing disabled",
   "main": "index.circuit.tsx",
   "keywords": [
     "tscircuit",
@@ -26,15 +26,20 @@
     "preview:assembly": "tsci build assembly.circuit.tsx --3d-png --glbs",
     "test:assembly": "node scripts/check-mechanical-assembly.mjs",
     "preview:viewer": "bun build mechanical/viewer.js --target browser --minify --outfile mechanical/viewer.bundle.js && .mechanical-venv/bin/python mechanical/build-viewer.py",
-    "preview:controller": "tsci build controller-preview.circuit.tsx --pcb-png --pcb-svgs --3d-png --glbs"
+    "preview:controller": "tsci build controller-preview.circuit.tsx --pcb-png --pcb-svgs --3d-png --glbs",
+    "test:all-imports": "node scripts/check-all-imports.mjs",
+    "test:usb-footprint": "node scripts/check-usb-manufacturer-footprint.mjs",
+    "test:motor-footprint": "node scripts/check-motor-connector-footprint.mjs",
+    "test:symbol-rotation": "node scripts/check-imported-symbol-rotation.mjs",
+    "bom:review": "node scripts/generate-review-bom.mjs"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",
-    "@tscircuit/cli": "0.1.2232",
+    "@tscircuit/cli": "0.1.2235",
     "circuit-to-svg": "0.0.437",
     "easyeda": "0.0.368",
     "sharp": "0.32.6",
-    "tscircuit": "0.0.2736",
+    "tscircuit": "0.0.2742",
     "typescript": "5.9.3"
   },
   "author": "AnasSarkiz",

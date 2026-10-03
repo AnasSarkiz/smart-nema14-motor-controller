@@ -2,9 +2,9 @@ import {
   type BoardViewProps,
   previewPlacement,
 } from "../mechanics/preview-placement"
-import { CL05B104KO5NNNC } from "../../imports/C1525"
-import { CL05A475MP5NRNC } from "../../imports/C23733"
-import { A_0402WGF1002TCE } from "../../imports/C25744"
+import { CL05B104KO5NNNC } from "../../imports/CL05B104KO5NNNC/CL05B104KO5NNNC"
+import { CL05A475MP5NRNC } from "../../imports/CL05A475MP5NRNC/CL05A475MP5NRNC"
+import { A_0402WGF1002TCE } from "../../imports/A_0402WGF1002TCE/A_0402WGF1002TCE"
 import { STM32G0B1CBT6 } from "../../imports/STM32G0B1CBT6/STM32G0B1CBT6"
 
 export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
@@ -17,7 +17,7 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
     >
       <schematictext
         fontSize={0.22}
-        text="DRAFT: USB/CC frontend connected; downstream power, SWD and external IO pending"
+        text="STM32G0B1: native UCPD/USB, TMC UART, SWD, classical CAN, temperature and control inputs."
         schX={0}
         schY={8}
       />
@@ -38,8 +38,6 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           "PD1",
           "PD2",
           "PD3",
-          "PB3",
-          "PB4",
           "PB7",
         ]}
         connections={{
@@ -67,6 +65,19 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           PB12: "net.PD_DB",
           PB13: "net.PD_FLT",
           PA0: "net.VBUS_ADC",
+          PA1: "net.TEMP_ALERT_N",
+          PA13: "net.SWDIO",
+          PA14_BOOT0: "net.SWCLK",
+          PB0: "net.EXT_STEP",
+          PB1: "net.EXT_DIR",
+          PB2: "net.EXT_ENABLE_N",
+          PB10: "net.LIMIT1",
+          PB11: "net.LIMIT2",
+          PB14: "net.POWER_HIGH_CURRENT",
+          PC6: "net.LED_STATUS_DRIVE",
+          PC7: "net.LED_FAULT_DRIVE",
+          PB3: "net.CAN_RS",
+          PB4: "net.EFUSE_FLT_N",
         }}
       />
       <CL05B104KO5NNNC
