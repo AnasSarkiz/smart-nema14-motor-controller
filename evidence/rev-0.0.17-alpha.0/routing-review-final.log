@@ -1,0 +1,255 @@
+Building 1 file(s)...
+Building routing-review.circuit.tsx...
+Generating circuit JSON...
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `SmartNema14MotorController`. It was passed a child from UsbReference. See https://react.dev/link/warning-keys for more information.
+Could not save autorouting paths for subcircuit_source_group_1: PCB port selector is not unique: .D_CAN > port.pin1
+Circuit JSON written to dist/routing-review/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+All pins on Q_PD are underspecified (no pinAttributes set)
+All pins on D_VBUS are underspecified (no pinAttributes set)
+All pins on J_IO are underspecified (no pinAttributes set)
+All pins on J_MOTOR are underspecified (no pinAttributes set)
+All pins on D_CAN are underspecified (no pinAttributes set)
+All pins on Q_ILIM are underspecified (no pinAttributes set)
+U4 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+J_USB has no pin with requires_power=true
+Q_PD has no pin with requires_power=true
+D_USB has no pin with requires_power=true
+D_VBUS has no pin with requires_power=true
+J_IO has no pin with requires_power=true
+J_MOTOR has no pin with requires_power=true
+U9 has no pin with requires_power=true
+D_IO1 has no pin with requires_power=true
+D_IO2 has no pin with requires_power=true
+D_CAN has no pin with requires_power=true
+U10 has no pin with requires_power=true
+Q_ILIM has no pin with requires_power=true
+J_USB has no pin with requires_ground=true
+Q_PD has no pin with requires_ground=true
+D_VBUS has no pin with requires_ground=true
+J_IO has no pin with requires_ground=true
+J_MOTOR has no pin with requires_ground=true
+D_CAN has no pin with requires_ground=true
+Q_ILIM has no pin with requires_ground=true
+Q_PD is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_USB is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_VBUS is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_CAN is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q_ILIM is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Failed to fetch supplier footprint for <resistor#190(.Encoder>.R2) /> (jlcpcb:C25900): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#355(.UsbPd>.U3) /> (jlcpcb:C1121848): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#283(.MotorDriver>.C13) /> (jlcpcb:C307335): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#161(.MCU>.C3) /> (jlcpcb:C1525): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#295(.MotorDriver>.C17) /> (jlcpcb:C14663): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#286(.MotorDriver>.C14) /> (jlcpcb:C14663): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#106(.MCU>.U1) /> (jlcpcb:C2847904): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#338(.UsbPd>.J_USB) /> (jlcpcb:C5143397): Failed to search for the component (HTTP 429)
+Port [U1.VSS] is not connected to net [GND] by a PCB trace.
+Port [U1.PB9] is not connected to net [I2C_SDA] by a PCB trace.
+Port [U1.PB6] is not connected to net [CAN_TX] by a PCB trace.
+Port [U1.PA2] is not connected to net [TMC_UART_TX] by a PCB trace.
+Port [U1.PB15] is not connected to net [PD_CC2_MCU] by a PCB trace.
+Port [U1.PA9] is not connected to net [GND] by a PCB trace.
+Port [U1.PA10] is not connected to net [GND] by a PCB trace.
+Port [U1.PB13] is not connected to net [PD_FLT] by a PCB trace.
+Port [U1.PA13] is not connected to net [SWDIO] by a PCB trace.
+Port [U1.PB2] is not connected to net [EXT_ENABLE_N] by a PCB trace.
+Port [U1.PB4] is not connected to net [EFUSE_FLT_N] by a PCB trace.
+Port [C1.pin2] is not connected to net [GND] by a PCB trace.
+Port [C2.pin2] is not connected to net [GND] by a PCB trace.
+Port [C3.pin2] is not connected to net [GND] by a PCB trace.
+Port [C4.pin2] is not connected to net [GND] by a PCB trace.
+Port [C5.pin2] is not connected to net [GND] by a PCB trace.
+Port [U4.GND] is not connected to net [GND] by a PCB trace.
+Port [U4.DIR] is not connected to net [GND] by a PCB trace.
+Port [U4.SDA] is not connected to net [I2C_SDA] by a PCB trace.
+Port [C6.pin2] is not connected to net [GND] by a PCB trace.
+Port [R3.pin2] is not connected to net [I2C_SDA] by a PCB trace.
+Port [U6.D] is not connected to net [CAN_TX] by a PCB trace.
+Port [U6.GND] is not connected to net [GND] by a PCB trace.
+Port [C7.pin2] is not connected to net [GND] by a PCB trace.
+Port [U5.VIN] is not connected to net [VM] by a PCB trace.
+Port [U5.EN] is not connected to net [VM] by a PCB trace.
+Port [U5.GND] is not connected to net [GND] by a PCB trace.
+Port [C8.pin1] is not connected to net [VM] by a PCB trace.
+Port [C8.pin2] is not connected to net [GND] by a PCB trace.
+Port [C9.pin1] is not connected to net [VM] by a PCB trace.
+Port [C9.pin2] is not connected to net [GND] by a PCB trace.
+Port [C11.pin2] is not connected to net [GND] by a PCB trace.
+Port [C12.pin2] is not connected to net [GND] by a PCB trace.
+Port [U2.OB1] is not connected to net [MOTOR_B1] by a PCB trace.
+Port [U2.GND1] is not connected to net [GND] by a PCB trace.
+Port [U2.GND2] is not connected to net [GND] by a PCB trace.
+Port [U2.EP] is not connected to net [GND] by a PCB trace.
+Port [U2._NEG] is not connected to net [GND] by a PCB trace.
+Port [U2.SPREAD] is not connected to net [GND] by a PCB trace.
+Port [U2.MS1_AD0] is not connected to net [GND] by a PCB trace.
+Port [U2.MS2_AD1] is not connected to net [GND] by a PCB trace.
+Port [U2.CLK] is not connected to net [GND] by a PCB trace.
+Port [U2.STDBY] is not connected to net [GND] by a PCB trace.
+Port [U2.VS1] is not connected to net [VM] by a PCB trace.
+Port [U2.VS2] is not connected to net [VM] by a PCB trace.
+Port [C14.pin2] is not connected to net [VM] by a PCB trace.
+Port [C15.pin2] is not connected to net [GND] by a PCB trace.
+Port [C16.pin2] is not connected to net [GND] by a PCB trace.
+Port [C17.pin1] is not connected to net [VM] by a PCB trace.
+Port [C17.pin2] is not connected to net [GND] by a PCB trace.
+Port [C18.pin1] is not connected to net [VM] by a PCB trace.
+Port [C18.pin2] is not connected to net [GND] by a PCB trace.
+Port [C19.pin1] is not connected to net [VM] by a PCB trace.
+Port [C19.pin2] is not connected to net [GND] by a PCB trace.
+Port [C20.pin1] is not connected to net [VM] by a PCB trace.
+Port [C20.pin2] is not connected to net [GND] by a PCB trace.
+Port [R5.pin2] is not connected to net [GND] by a PCB trace.
+Port [R6.pin2] is not connected to net [GND] by a PCB trace.
+Port [R4.pin1] is not connected to net [TMC_UART_TX] by a PCB trace.
+Port [R8.pin2] is not connected to net [GND] by a PCB trace.
+Port [R9.pin2] is not connected to net [GND] by a PCB trace.
+Port [R11.pin2] is not connected to net [GND] by a PCB trace.
+Port [C21.pin2] is not connected to net [GND] by a PCB trace.
+Port [J_USB.SHELL1] is not connected to net [GND] by a PCB trace.
+Port [J_USB.SHELL2] is not connected to net [GND] by a PCB trace.
+Port [J_USB.SHELL3] is not connected to net [GND] by a PCB trace.
+Port [J_USB.SHELL4] is not connected to net [GND] by a PCB trace.
+Port [J_USB.GND1] is not connected to net [GND] by a PCB trace.
+Port [J_USB.GND2] is not connected to net [GND] by a PCB trace.
+Port [J_USB.VBUS1] is not connected to net [VBUS_CONN] by a PCB trace.
+Port [J_USB.VBUS2] is not connected to net [VBUS_CONN] by a PCB trace.
+Port [J_USB.CC1] is not connected to net [PD_CC1_CONN] by a PCB trace.
+Port [J_USB.CC2] is not connected to net [PD_CC2_CONN] by a PCB trace.
+Port [U3.CC1c] is not connected to net [PD_CC1_CONN] by a PCB trace.
+Port [U3.CC2c] is not connected to net [PD_CC2_CONN] by a PCB trace.
+Port [U3.CC2] is not connected to net [PD_CC2_MCU] by a PCB trace.
+Port [U3.SOURCE] is not connected to net [VBUS_PROTECTED] by a PCB trace.
+Port [U3.GATE] is not connected to net [PD_GATE] by a PCB trace.
+Port [U3.IN_GD] is not connected to net [VBUS_CONN] by a PCB trace.
+Port [U3.CTRLVBUS] is not connected to net [PD_OVP] by a PCB trace.
+Port [U3.FLT] is not connected to net [PD_FLT] by a PCB trace.
+Port [U3.GND] is not connected to net [GND] by a PCB trace.
+Port [U3.EP] is not connected to net [GND] by a PCB trace.
+Port [Q_PD.pin1] is not connected to net [VBUS_PROTECTED] by a PCB trace.
+Port [Q_PD.pin2] is not connected to net [VBUS_PROTECTED] by a PCB trace.
+Port [Q_PD.pin3] is not connected to net [VBUS_PROTECTED] by a PCB trace.
+Port [Q_PD.pin4] is not connected to net [PD_GATE] by a PCB trace.
+Port [Q_PD.pin8] is not connected to net [VBUS_CONN] by a PCB trace.
+Port [Q_PD.pin7] is not connected to net [VBUS_CONN] by a PCB trace.
+Port [Q_PD.pin6] is not connected to net [VBUS_CONN] by a PCB trace.
+Port [Q_PD.pin5] is not connected to net [VBUS_CONN] by a PCB trace.
+Port [Q_PD.pin9] is not connected to net [VBUS_CONN] by a PCB trace.
+Port [D_VBUS.pin1] is not connected to net [VBUS_CONN] by a PCB trace.
+Port [D_VBUS.pin2] is not connected to net [GND] by a PCB trace.
+Port [C25.pin1] is not connected to net [VBUS_CONN] by a PCB trace.
+Port [C25.pin2] is not connected to net [GND] by a PCB trace.
+Port [C26.pin1] is not connected to net [VBUS_CONN] by a PCB trace.
+Port [C26.pin2] is not connected to net [GND] by a PCB trace.
+Port [C22.pin2] is not connected to net [GND] by a PCB trace.
+Port [C23.pin1] is not connected to net [PD_CC1_CONN] by a PCB trace.
+Port [C23.pin2] is not connected to net [GND] by a PCB trace.
+Port [C24.pin1] is not connected to net [PD_CC2_CONN] by a PCB trace.
+Port [C24.pin2] is not connected to net [GND] by a PCB trace.
+Port [R12.pin2] is not connected to net [PD_FLT] by a PCB trace.
+Port [R13.pin1] is not connected to net [VBUS_CONN] by a PCB trace.
+Port [R14.pin2] is not connected to net [PD_OVP] by a PCB trace.
+Port [R15.pin1] is not connected to net [PD_OVP] by a PCB trace.
+Port [R15.pin2] is not connected to net [GND] by a PCB trace.
+Port [R16.pin1] is not connected to net [VBUS_PROTECTED] by a PCB trace.
+Port [R17.pin2] is not connected to net [GND] by a PCB trace.
+Port [J_SWD.GND] is not connected to net [GND] by a PCB trace.
+Port [U7.GND] is not connected to net [GND] by a PCB trace.
+Port [U7.D1] is not connected to net [SWDIO_GUARDED] by a PCB trace.
+Port [U7.D3] is not connected to net [NRST_GUARDED] by a PCB trace.
+Port [U8.GND] is not connected to net [GND] by a PCB trace.
+Port [C28.pin2] is not connected to net [GND] by a PCB trace.
+Port [C29.pin2] is not connected to net [GND] by a PCB trace.
+Port [R20.pin1] is not connected to net [SWDIO_GUARDED] by a PCB trace.
+Port [R20.pin2] is not connected to net [SWDIO] by a PCB trace.
+Port [R22.pin1] is not connected to net [NRST_GUARDED] by a PCB trace.
+Port [R51.pin2] is not connected to net [GND] by a PCB trace.
+Port [R52.pin1] is not connected to net [SWDIO] by a PCB trace.
+Port [R52.pin2] is not connected to net [GND] by a PCB trace.
+Port [R53.pin2] is not connected to net [GND] by a PCB trace.
+Port [J_IO.pin1] is not connected to net [GND] by a PCB trace.
+Port [J_IO.pin4] is not connected to net [GND] by a PCB trace.
+Port [J_IO.pin6] is not connected to net [EXT_DIR_CONN] by a PCB trace.
+Port [J_IO.pin7] is not connected to net [EXT_ENABLE_N_CONN] by a PCB trace.
+Port [J_IO.pin8] is not connected to net [LIMIT1_CONN] by a PCB trace.
+Port [J_IO.pin10] is not connected to net [GND] by a PCB trace.
+Port [J_IO.pin11] is not connected to net [GND] by a PCB trace.
+Port [J_IO.pin12] is not connected to net [GND] by a PCB trace.
+Port [J_MOTOR.pin3] is not connected to net [MOTOR_B1] by a PCB trace.
+Port [J_MOTOR.pin5] is not connected to net [GND] by a PCB trace.
+Port [J_MOTOR.pin6] is not connected to net [GND] by a PCB trace.
+Port [U9.SDA] is not connected to net [I2C_SDA] by a PCB trace.
+Port [U9.GND] is not connected to net [GND] by a PCB trace.
+Port [U9.ADD0] is not connected to net [GND] by a PCB trace.
+Port [D_IO1.D1_NEG] is not connected to net [EXT_DIR_CONN] by a PCB trace.
+Port [D_IO1.D2_POS] is not connected to net [EXT_ENABLE_N_CONN] by a PCB trace.
+Port [D_IO1.D2_NEG] is not connected to net [LIMIT1_CONN] by a PCB trace.
+Port [D_IO1.GND1] is not connected to net [GND] by a PCB trace.
+Port [D_IO1.GND2] is not connected to net [GND] by a PCB trace.
+Port [D_IO2.GND1] is not connected to net [GND] by a PCB trace.
+Port [D_IO2.GND2] is not connected to net [GND] by a PCB trace.
+Port [D_CAN.pin3] is not connected to net [GND] by a PCB trace.
+Port [R24.pin1] is not connected to net [EXT_DIR_CONN] by a PCB trace.
+Port [R25.pin1] is not connected to net [EXT_ENABLE_N_CONN] by a PCB trace.
+Port [R25.pin2] is not connected to net [EXT_ENABLE_N] by a PCB trace.
+Port [R26.pin1] is not connected to net [LIMIT1_CONN] by a PCB trace.
+Port [R28.pin2] is not connected to net [GND] by a PCB trace.
+Port [R29.pin2] is not connected to net [GND] by a PCB trace.
+Port [R30.pin2] is not connected to net [EXT_ENABLE_N] by a PCB trace.
+Port [C30.pin2] is not connected to net [GND] by a PCB trace.
+Port [C31.pin2] is not connected to net [GND] by a PCB trace.
+Port [C32.pin2] is not connected to net [GND] by a PCB trace.
+Port [LED_POWER.cathode] is not connected to net [GND] by a PCB trace.
+Port [LED_STATUS.cathode] is not connected to net [GND] by a PCB trace.
+Port [LED_FAULT.cathode] is not connected to net [GND] by a PCB trace.
+Port [U10.IN1] is not connected to net [VBUS_PROTECTED] by a PCB trace.
+Port [U10.IN2] is not connected to net [VBUS_PROTECTED] by a PCB trace.
+Port [U10.OUT1] is not connected to net [VM] by a PCB trace.
+Port [U10.OUT2] is not connected to net [VM] by a PCB trace.
+Port [U10.GND] is not connected to net [GND] by a PCB trace.
+Port [U10.RTN] is not connected to net [EFUSE_RTN] by a PCB trace.
+Port [U10.MODE] is not connected to net [EFUSE_RTN] by a PCB trace.
+Port [U10.EP] is not connected to net [EFUSE_RTN] by a PCB trace.
+Port [U10.UVLO] is not connected to net [EFUSE_EN] by a PCB trace.
+Port [U10.OVP] is not connected to net [EFUSE_OVP] by a PCB trace.
+Port [U10.N_FLT] is not connected to net [EFUSE_FLT_N] by a PCB trace.
+Port [Q_ILIM.pin2] is not connected to net [EFUSE_RTN] by a PCB trace.
+Port [R38.pin1] is not connected to net [VBUS_PROTECTED] by a PCB trace.
+Port [R38.pin2] is not connected to net [EFUSE_EN] by a PCB trace.
+Port [R39.pin1] is not connected to net [EFUSE_EN] by a PCB trace.
+Port [R39.pin2] is not connected to net [EFUSE_RTN] by a PCB trace.
+Port [R40.pin1] is not connected to net [VBUS_PROTECTED] by a PCB trace.
+Port [R41.pin2] is not connected to net [EFUSE_OVP_TOP_2] by a PCB trace.
+Port [R42.pin1] is not connected to net [EFUSE_OVP_TOP_2] by a PCB trace.
+Port [R42.pin2] is not connected to net [EFUSE_OVP] by a PCB trace.
+Port [R43.pin1] is not connected to net [EFUSE_OVP] by a PCB trace.
+Port [R43.pin2] is not connected to net [EFUSE_RTN] by a PCB trace.
+Port [R44.pin2] is not connected to net [EFUSE_RTN] by a PCB trace.
+Port [R46.pin2] is not connected to net [GND] by a PCB trace.
+Port [C33.pin2] is not connected to net [EFUSE_RTN] by a PCB trace.
+Port [C34.pin1] is not connected to net [VBUS_PROTECTED] by a PCB trace.
+Port [C34.pin2] is not connected to net [GND] by a PCB trace.
+Port [R48.pin2] is not connected to net [EFUSE_FLT_N] by a PCB trace.
+Generating preview images...
+[routing-review] Generating PCB SVG...
+[routing-review] Written pcb.svg
+[routing-review] Generating PCB PNG...
+[routing-review] Written pcb.png
+[routing-review] Generating schematic SVG...
+[routing-review] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

@@ -1,0 +1,50 @@
+2026-10-03 19:04:39.962 INFO   Freerouting v2.4.1 (build-date: 2026-09-03)
+2026-10-03 19:04:41.119 INFO   Loading DSN file for DRC: evidence/rev-0.0.17-alpha.0/manual-usb/kicad-native.dsn
+2026-10-03 19:04:41.128 INFO   [2513A9\B5F8DD] Loading board file 'kicad-native.dsn'...
+2026-10-03 19:04:41.164 WARN   Simplex.cutout_from only implemented for 2-dim simplex
+2026-10-03 19:04:41.164 ERROR  [2513A9\B5F8DD] There was an error while reading DSN file.
+java.lang.NullPointerException: Cannot read the array length because "resultPieces" is null
+	at app.freerouting.geometry.planar.PolylineArea.cutoutHolePiece(PolylineArea.java:30)
+	at app.freerouting.geometry.planar.PolylineArea.splitToConvex(PolylineArea.java:192)
+	at app.freerouting.geometry.planar.PolylineArea.splitToConvex(PolylineArea.java:159)
+	at app.freerouting.board.model.items.ObstacleArea.splitToConvex(ObstacleArea.java:338)
+	at app.freerouting.board.searchtree.ShapeSearchTree.calculateTreeShapes(ShapeSearchTree.java:912)
+	at app.freerouting.board.model.items.ObstacleArea.calculateTreeShapes(ObstacleArea.java:184)
+	at app.freerouting.board.model.items.Item.getPrecalculatedTreeShapes(Item.java:234)
+	at app.freerouting.board.model.items.Item.treeShapeCount(Item.java:208)
+	at app.freerouting.datastructures.ShapeTree.insert(ShapeTree.java:33)
+	at app.freerouting.board.searchtree.SearchTreeManager.insert(SearchTreeManager.java:41)
+	at app.freerouting.board.facade.BoardItemRepository.insertItem(BoardItemRepository.java:161)
+	at app.freerouting.board.facade.BasicBoard.insertItem(BasicBoard.java:1220)
+	at app.freerouting.board.facade.BasicBoard.insertConductionArea(BasicBoard.java:571)
+	at app.freerouting.io.specctra.parser.Structure.readScope(Structure.java:1108)
+	at app.freerouting.io.specctra.parser.ScopeKeyword.readScope(ScopeKeyword.java:71)
+	at app.freerouting.io.specctra.DsnReader.readBoard(DsnReader.java:126)
+	at app.freerouting.management.HeadlessBoardManager.loadFromSpecctraDsn(HeadlessBoardManager.java:696)
+	at app.freerouting.management.BoardLoader.loadBoardIfNeeded(BoardLoader.java:48)
+	at app.freerouting.Freerouting.initializeDrc(Freerouting.java:287)
+	at app.freerouting.Freerouting.main(Freerouting.java:1490)
+2026-10-03 19:04:41.164 ERROR  [2513A9\B5F8DD] There was an error while reading DSN file.
+java.lang.NullPointerException: Cannot read the array length because "resultPieces" is null
+	at app.freerouting.geometry.planar.PolylineArea.cutoutHolePiece(PolylineArea.java:30)
+	at app.freerouting.geometry.planar.PolylineArea.splitToConvex(PolylineArea.java:192)
+	at app.freerouting.geometry.planar.PolylineArea.splitToConvex(PolylineArea.java:159)
+	at app.freerouting.board.model.items.ObstacleArea.splitToConvex(ObstacleArea.java:338)
+	at app.freerouting.board.searchtree.ShapeSearchTree.calculateTreeShapes(ShapeSearchTree.java:912)
+	at app.freerouting.board.model.items.ObstacleArea.calculateTreeShapes(ObstacleArea.java:184)
+	at app.freerouting.board.model.items.Item.getPrecalculatedTreeShapes(Item.java:234)
+	at app.freerouting.board.model.items.Item.treeShapeCount(Item.java:208)
+	at app.freerouting.datastructures.ShapeTree.insert(ShapeTree.java:33)
+	at app.freerouting.board.searchtree.SearchTreeManager.insert(SearchTreeManager.java:41)
+	at app.freerouting.board.facade.BoardItemRepository.insertItem(BoardItemRepository.java:161)
+	at app.freerouting.board.facade.BasicBoard.insertItem(BasicBoard.java:1220)
+	at app.freerouting.board.facade.BasicBoard.insertConductionArea(BasicBoard.java:571)
+	at app.freerouting.io.specctra.parser.Structure.readScope(Structure.java:1108)
+	at app.freerouting.io.specctra.parser.ScopeKeyword.readScope(ScopeKeyword.java:71)
+	at app.freerouting.io.specctra.DsnReader.readBoard(DsnReader.java:126)
+	at app.freerouting.management.HeadlessBoardManager.loadFromSpecctraDsn(HeadlessBoardManager.java:696)
+	at app.freerouting.management.BoardLoader.loadBoardIfNeeded(BoardLoader.java:48)
+	at app.freerouting.Freerouting.initializeDrc(Freerouting.java:287)
+	at app.freerouting.Freerouting.main(Freerouting.java:1490)
+2026-10-03 19:04:41.165 ERROR  Failed to load board for DRC check
+2026-10-03 19:04:41.165 ERROR  Failed to load board for DRC check

@@ -1,0 +1,44 @@
+{
+  "circuit_sha256": "e6ca691920a3bb29dfa3c6a7fb2f98e87ceeea1e89b12d5e38fdec71ff7f1082",
+  "raw_router_traces": 289,
+  "endpoint_layer_mismatches": [
+    {
+      "connection": "source_net_34",
+      "end": {
+        "route_type": "wire",
+        "x": -9.500128,
+        "y": -7.592586,
+        "width": 0.15,
+        "layer": "top"
+      },
+      "expected_ports": [
+        "pcb_port_193",
+        "pcb_port_176"
+      ]
+    },
+    {
+      "connection": "source_net_12",
+      "end": {
+        "route_type": "wire",
+        "x": -6.432816,
+        "y": -5,
+        "width": 0.15,
+        "layer": "inner1"
+      },
+      "expected_ports": [
+        "pcb_port_158",
+        "pcb_port_14"
+      ]
+    }
+  ],
+  "native_errors": {
+    "pcb_port_not_connected_error": 1,
+    "pcb_trace_error": 324,
+    "pcb_pad_trace_clearance_error": 55,
+    "pcb_via_trace_clearance_error": 305,
+    "pcb_pad_pad_clearance_error": 205,
+    "pcb_via_clearance_error": 154,
+    "pcb_placement_error": 46
+  },
+  "fabrication_ready": false
+}

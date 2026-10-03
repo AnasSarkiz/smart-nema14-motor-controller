@@ -1,0 +1,106 @@
+{
+  "revision": "0.0.17-alpha.0",
+  "checked_at": "2026-10-03T21:02:28.053753+00:00",
+  "scope": "Source, imported pin mappings, schematic and component placement. Does not pass routed-copper or fabrication gates.",
+  "results": [
+    {
+      "check": "format",
+      "command": [
+        "bun",
+        "run",
+        "format:check"
+      ],
+      "exit_code": 0,
+      "log": "evidence/rev-0.0.17-alpha.0/final-format.log",
+      "sha256": "4c84d56786fd15b5d93f1760711b0e7c89da342fc6e7a334832ad99ef16d4a8e"
+    },
+    {
+      "check": "typecheck",
+      "command": [
+        "bun",
+        "run",
+        "typecheck"
+      ],
+      "exit_code": 0,
+      "log": "evidence/rev-0.0.17-alpha.0/final-typecheck.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    {
+      "check": "critical-imports",
+      "command": [
+        "bun",
+        "run",
+        "validate:imports"
+      ],
+      "exit_code": 0,
+      "log": "evidence/rev-0.0.17-alpha.0/final-critical-imports.log",
+      "sha256": "cab7bc1d295e3e75503d73f9e3844c65624457dc44dca9e3aba3f4cf5ff296f7"
+    },
+    {
+      "check": "netlist",
+      "command": [
+        "bun",
+        "node_modules/@tscircuit/cli/dist/cli/main.js",
+        "check",
+        "netlist",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/rev-0.0.17-alpha.0/final-netlist.log",
+      "sha256": "578bc4136d09dc4722d33398685c8b55282fee58c35191c6fc386b6dbc73ef34"
+    },
+    {
+      "check": "pin_specification",
+      "command": [
+        "bun",
+        "node_modules/@tscircuit/cli/dist/cli/main.js",
+        "check",
+        "pin_specification",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/rev-0.0.17-alpha.0/final-pin_specification.log",
+      "sha256": "c883ca9a69fb766e0318f2c0309aaeec68c72818953a279e639cebf525a03f99"
+    },
+    {
+      "check": "source",
+      "command": [
+        "bun",
+        "node_modules/@tscircuit/cli/dist/cli/main.js",
+        "check",
+        "source",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/rev-0.0.17-alpha.0/final-source.log",
+      "sha256": "a58c3134f56b6c39672a9c9e06d70ad467a4dd51a98f67fa0f2d1e6a441567c3"
+    },
+    {
+      "check": "schematic-placement",
+      "command": [
+        "bun",
+        "node_modules/@tscircuit/cli/dist/cli/main.js",
+        "check",
+        "schematic-placement",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/rev-0.0.17-alpha.0/final-schematic-placement.log",
+      "sha256": "42a957be926b660d0a17bbc6b87b451e4e5ebf35d6e903c123767d9136199bda"
+    },
+    {
+      "check": "placement",
+      "command": [
+        "bun",
+        "node_modules/@tscircuit/cli/dist/cli/main.js",
+        "check",
+        "placement",
+        "index.circuit.tsx"
+      ],
+      "exit_code": 0,
+      "log": "evidence/rev-0.0.17-alpha.0/final-placement.log",
+      "sha256": "18e2205ee5f57912f72248dba130007ad5fef73b9ef3dd692ccb740d7264af22"
+    }
+  ],
+  "all_exit_zero": true
+}

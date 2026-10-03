@@ -1,0 +1,57 @@
+{
+  "revision": "0.0.17-alpha.0",
+  "input": "dist/index/circuit.json",
+  "input_sha256": "11fcff8c56e5afa29be883d2e0762c695786782f381dc620f8a35cc8e5b40993",
+  "scope": "Actual tracks, drills and component/test pads. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 7,
+  "segment_count": 47,
+  "via_count": 5,
+  "usb_path_lengths_mm": {
+    "DP": 25.135511012709678,
+    "DM": 24.754074722132565
+  },
+  "usb_length_skew_mm": 0.38143629057711337,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": {
+      "via": "pcb_via_2",
+      "reference": "D_USB",
+      "pad": "pcb_smtpad_207",
+      "same_net": false,
+      "actual_mm": 0.36478856839534624,
+      "required_mm": 0.35
+    },
+    "track_to_pad_mm": {
+      "track": "USB_DM_DUPLICATE_CONTACT",
+      "segment": 1,
+      "pad": "pcb_smtpad_179",
+      "reference": "J_USB",
+      "actual_mm": 0.1331509999999998,
+      "required_mm": 0.1
+    },
+    "track_to_track_mm": {
+      "first": "USB_DP_CONNECTOR_ESD",
+      "first_segment": 3,
+      "second": "USB_ESD_GROUND_ESCAPE",
+      "second_segment": 0,
+      "layer": "top",
+      "actual_mm": 0.19816199999999903,
+      "required_mm": 0.15
+    },
+    "via_to_track_mm": {
+      "via": "pcb_via_2",
+      "track": "USB_DP_ESD_MCU",
+      "segment": 1,
+      "layer": "top",
+      "actual_mm": 0.17314999999999936,
+      "required_mm": 0.15
+    },
+    "via_to_via_mm": {
+      "first": "pcb_via_0",
+      "second": "pcb_via_3",
+      "actual_mm": 0.19022469073824322,
+      "required_mm": 0.15
+    }
+  },
+  "violations": [],
+  "passed": true
+}

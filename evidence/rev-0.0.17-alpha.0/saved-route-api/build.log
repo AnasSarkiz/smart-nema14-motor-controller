@@ -1,0 +1,120 @@
+Building 1 file(s)...
+Building scripts/saved-route-api.circuit.tsx...
+Generating circuit JSON...
+Saved autorouting paths to .tscircuit/autorouting-artifacts/saved-route-api-circuit-tsx-3b56aa4fa8/subcircuit_source_group_0-phase-default-order-0.pcb-trace-paths.json (import this JSON into <autoroutingphase pcbTracePaths={...} />).
+Circuit JSON written to dist/scripts/saved-route-api/circuit.json
+Port pin2 on C_TEST1 is missing a trace
+Port pin2 on C_TEST2 is missing a trace
+Port pin2 on C_TEST3 is missing a trace
+Could not create autoroutingphase "Saved TEST copper". Invalid props for autoroutingphase "Saved TEST copper": pcbTracePaths ({"1":{"_errors":[],"route":{"_errors":["A fanout trace path must use vias for layer changes","A fanout trace path must use vias for layer changes"]}},"_errors":[]}) Details: Props: {
+  "name": "Saved TEST copper",
+  "connections": [
+    "net.TEST"
+  ],
+  "pcbTracePaths": [
+    {
+      "connection": ".C_TEST2 > .pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 0,
+          "y": 5.420116,
+          "layer": "bottom",
+          "width": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 0,
+          "y": 6,
+          "layer": "bottom",
+          "width": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 1,
+          "y": 6,
+          "layer": "bottom",
+          "width": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 1,
+          "y": 0,
+          "layer": "bottom",
+          "width": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 0,
+          "y": 0,
+          "layer": "bottom",
+          "width": 0.2
+        },
+        {
+          "route_type": "via",
+          "x": 0,
+          "y": 0,
+          "from_layer": "bottom",
+          "to_layer": "top",
+          "via_diameter": 0.6,
+          "via_hole_diameter": 0.3
+        },
+        {
+          "route_type": "wire",
+          "x": -4.579884,
+          "y": 0,
+          "layer": "top",
+          "width": 0.2
+        }
+      ]
+    },
+    {
+      "connection": ".C_TEST3 > .pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 5.420116,
+          "y": 0,
+          "layer": "bottom",
+          "width": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 6,
+          "y": 0,
+          "layer": "bottom",
+          "width": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 6,
+          "y": -1,
+          "layer": "bottom",
+          "width": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 0,
+          "y": -1,
+          "layer": "bottom",
+          "width": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 0,
+          "y": 0,
+          "layer": "bottom",
+          "w…
+Generating preview images...
+[scripts/saved-route-api] Generating PCB SVG...
+[scripts/saved-route-api] Written pcb.svg
+[scripts/saved-route-api] Generating PCB PNG...
+[scripts/saved-route-api] Written pcb.png
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

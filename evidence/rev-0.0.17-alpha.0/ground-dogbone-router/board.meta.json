@@ -1,0 +1,33 @@
+{
+  "type": "autorouter_debug_summary",
+  "generatedAt": "2026-10-03T16:46:03.930Z",
+  "phaseCount": 1,
+  "phases": [
+    {
+      "subcircuit_id": "subcircuit_source_group_1",
+      "componentDisplayName": "<board#657 />",
+      "phaseName": "Ground plane escapes",
+      "phaseStageIndex": 0,
+      "phaseStageCount": 2,
+      "routingPhaseIndex": 0,
+      "phaseOrdinal": 1,
+      "phaseCount": 3,
+      "connectionCount": 91,
+      "obstacleCount": 595,
+      "previousTraceCount": 0,
+      "autorouterName": "dogbone",
+      "solverName": "DogboneFanoutSolver",
+      "effort": 5,
+      "cacheStatus": "disabled",
+      "cacheDisabledReason": "strategy_not_cacheable",
+      "elapsedMs": 32,
+      "error": {
+        "message": "Dogbone fanout requires a two-dimensional pad grid"
+      },
+      "startedAt": "2026-10-03T16:46:01.566Z",
+      "completedAt": "2026-10-03T16:46:01.598Z"
+    }
+  ],
+  "circuitJsonElementCount": 4938,
+  "targetPhaseReached": false
+}

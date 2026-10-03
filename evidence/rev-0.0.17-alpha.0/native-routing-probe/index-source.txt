@@ -1,0 +1,757 @@
+import { type BoardViewProps } from "./src/mechanics/preview-placement"
+import { InterfacesSheet } from "./src/interfaces/InterfacesSheet"
+import { ProgrammingSheet } from "./src/programming/ProgrammingSheet"
+import { CanSheet } from "./src/can/CanSheet"
+import { EncoderSheet } from "./src/encoder/EncoderSheet"
+import { McuSheet } from "./src/mcu/McuSheet"
+import { MotorDriverSheet } from "./src/motor-driver/MotorDriverSheet"
+import { UsbPdSheet } from "./src/usb-pd/UsbPdSheet"
+import { InputPowerSheet } from "./src/power/InputPowerSheet"
+import { LogicBuckSheet } from "./src/power/LogicBuckSheet"
+import { ControllerMount } from "./src/mechanics/ControllerMount"
+import { UsbRoutes } from "./src/usb-pd/UsbRoutes"
+import { UsbReference } from "./src/usb-pd/UsbReference"
+import { SavedRoutes, savedRoutingPhaseIndex } from "./src/routing/SavedRoutes"
+
+/** Routing-stage prototype. Shared placement is qualified in revision 16. */
+export default function SmartNema14MotorController({
+  mechanicalPreview = true,
+  usbRoutesEnabled = true,
+  savedRoutesEnabled = false,
+  routeRemaining,
+  routingProbeNet,
+}: BoardViewProps & {
+  usbRoutesEnabled?: boolean
+  savedRoutesEnabled?: boolean
+  routeRemaining?: boolean
+  routingProbeNet?: string
+} = {}) {
+  return (
+    <board
+      width="35mm"
+      height="35mm"
+      layers={4}
+      thickness="1.6mm"
+      routeRemaining={routeRemaining}
+      pcbStyle={{ viaHoleDiameter: "0.30mm", viaPadDiameter: "0.60mm" }}
+      autorouterEffortLevel="5x"
+      defaultTraceWidth="0.15mm"
+      autorouter={{
+        preset: "auto_local",
+        traceClearance: "0.15mm",
+        allowViaInPad: false,
+      }}
+      minTraceWidth="0.15mm"
+      minTraceToPadEdgeClearance="0.10mm"
+      minPadEdgeToPadEdgeClearance="0.15mm"
+      minBoardEdgeClearance="0.30mm"
+      minViaEdgeToPadEdgeClearance="0.15mm"
+      minTraceToHoleEdgeClearance="0.35mm"
+      minViaHoleEdgeToViaHoleEdgeClearance="0.35mm"
+      minPlatedHoleDrillEdgeToDrillEdgeClearance="0.35mm"
+      minViaHoleDiameter="0.30mm"
+      minViaPadDiameter="0.60mm"
+      schLayout={{ layoutMode: "none" }}
+    >
+      <net
+        name="GND"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("GND", routingProbeNet)
+            : undefined
+        }
+        nominalTraceWidth="0.5mm"
+        isGroundNet
+      />
+      <net
+        name="V3V3"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("V3V3", routingProbeNet)
+            : undefined
+        }
+        nominalTraceWidth="0.35mm"
+        isPowerNet
+      />
+      <net
+        name="NRST"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("NRST", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="I2C_SCL"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("I2C_SCL", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="I2C_SDA"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("I2C_SDA", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="CAN_TX"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("CAN_TX", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="CAN_RX"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("CAN_RX", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="CAN_H"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("CAN_H", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="CAN_L"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("CAN_L", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="BUCK_SW"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("BUCK_SW", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="BUCK_BST"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("BUCK_BST", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="VM"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("VM", routingProbeNet)
+            : undefined
+        }
+        nominalTraceWidth="0.8mm"
+        isPowerNet
+      />
+      <net
+        name="TMC_ENABLE_N"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("TMC_ENABLE_N", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="TMC_STEP"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("TMC_STEP", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="TMC_DIR"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("TMC_DIR", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="TMC_DIAG"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("TMC_DIAG", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="TMC_UART_TX"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("TMC_UART_TX", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="TMC_UART_RX"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("TMC_UART_RX", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="TMC_CPO"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("TMC_CPO", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="TMC_CPI"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("TMC_CPI", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="TMC_VCP"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("TMC_VCP", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="TMC_5VOUT"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("TMC_5VOUT", routingProbeNet)
+            : undefined
+        }
+        isPowerNet
+      />
+      <net
+        name="TMC_VREF"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("TMC_VREF", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="TMC_SENSE_A"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("TMC_SENSE_A", routingProbeNet)
+            : undefined
+        }
+        nominalTraceWidth="0.5mm"
+      />
+      <net
+        name="TMC_SENSE_B"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("TMC_SENSE_B", routingProbeNet)
+            : undefined
+        }
+        nominalTraceWidth="0.5mm"
+      />
+      <net
+        name="MOTOR_A1"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("MOTOR_A1", routingProbeNet)
+            : undefined
+        }
+        nominalTraceWidth="0.5mm"
+      />
+      <net
+        name="MOTOR_A2"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("MOTOR_A2", routingProbeNet)
+            : undefined
+        }
+        nominalTraceWidth="0.5mm"
+      />
+      <net
+        name="MOTOR_B1"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("MOTOR_B1", routingProbeNet)
+            : undefined
+        }
+        nominalTraceWidth="0.5mm"
+      />
+      <net
+        name="MOTOR_B2"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("MOTOR_B2", routingProbeNet)
+            : undefined
+        }
+        nominalTraceWidth="0.5mm"
+      />
+      <net
+        name="VBUS_CONN"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("VBUS_CONN", routingProbeNet)
+            : undefined
+        }
+        nominalTraceWidth="0.8mm"
+        isPowerNet
+      />
+      <net
+        name="VBUS_PROTECTED"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("VBUS_PROTECTED", routingProbeNet)
+            : undefined
+        }
+        nominalTraceWidth="0.8mm"
+        isPowerNet
+      />
+      <net
+        name="USB_DP"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("USB_DP", routingProbeNet)
+            : undefined
+        }
+        nominalTraceWidth="0.1537mm"
+      />
+      <net
+        name="USB_DM"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("USB_DM", routingProbeNet)
+            : undefined
+        }
+        nominalTraceWidth="0.1537mm"
+      />
+      <net
+        name="PD_CC1_CONN"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("PD_CC1_CONN", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="PD_CC2_CONN"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("PD_CC2_CONN", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="PD_CC1_MCU"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("PD_CC1_MCU", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="PD_CC2_MCU"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("PD_CC2_MCU", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="PD_GATE"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("PD_GATE", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="PD_OVP_SERIES"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("PD_OVP_SERIES", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="PD_OVP"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("PD_OVP", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="PD_DB"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("PD_DB", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="PD_FLT"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("PD_FLT", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="VBUS_DIV"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("VBUS_DIV", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="VBUS_ADC"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("VBUS_ADC", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="SWDIO_GUARDED"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("SWDIO_GUARDED", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="SWCLK_GUARDED"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("SWCLK_GUARDED", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="NRST_GUARDED"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("NRST_GUARDED", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="SWDIO"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("SWDIO", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="SWCLK"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("SWCLK", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="SWDIO_CONN"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("SWDIO_CONN", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="SWCLK_CONN"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("SWCLK_CONN", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="NRST_CONN"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("NRST_CONN", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="POWER_GOOD"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("POWER_GOOD", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="VBUS_ADC_PRE_GUARD"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("VBUS_ADC_PRE_GUARD", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="TEMP_ALERT_N"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("TEMP_ALERT_N", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EXT_STEP_CONN"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EXT_STEP_CONN", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EXT_DIR_CONN"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EXT_DIR_CONN", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EXT_ENABLE_N_CONN"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EXT_ENABLE_N_CONN", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EXT_STEP"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EXT_STEP", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EXT_DIR"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EXT_DIR", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EXT_ENABLE_N"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EXT_ENABLE_N", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="LIMIT1_CONN"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("LIMIT1_CONN", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="LIMIT2_CONN"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("LIMIT2_CONN", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="LIMIT1"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("LIMIT1", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="LIMIT2"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("LIMIT2", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="LED_POWER_A"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("LED_POWER_A", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="LED_STATUS_A"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("LED_STATUS_A", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="LED_FAULT_A"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("LED_FAULT_A", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="LED_STATUS_DRIVE"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("LED_STATUS_DRIVE", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="LED_FAULT_DRIVE"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("LED_FAULT_DRIVE", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="CAN_RS"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("CAN_RS", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EFUSE_FLT_N"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EFUSE_FLT_N", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="POWER_HIGH_CURRENT"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("POWER_HIGH_CURRENT", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EFUSE_EN"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EFUSE_EN", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EFUSE_OVP_TOP_1"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EFUSE_OVP_TOP_1", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EFUSE_OVP_TOP_2"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EFUSE_OVP_TOP_2", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EFUSE_OVP"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EFUSE_OVP", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EFUSE_ILIM"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EFUSE_ILIM", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EFUSE_ILIM_SWITCH"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EFUSE_ILIM_SWITCH", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EFUSE_DVDT"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EFUSE_DVDT", routingProbeNet)
+            : undefined
+        }
+      />
+      <net
+        name="EFUSE_RTN"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("EFUSE_RTN", routingProbeNet)
+            : undefined
+        }
+        nominalTraceWidth="0.5mm"
+        isGroundNet
+      />
+      <net
+        name="CAN_TERM_LINK"
+        routingPhaseIndex={
+          savedRoutesEnabled
+            ? savedRoutingPhaseIndex("CAN_TERM_LINK", routingProbeNet)
+            : undefined
+        }
+      />
+      {usbRoutesEnabled && <UsbRoutes />}
+      {usbRoutesEnabled && <UsbReference />}
+      {savedRoutesEnabled && <SavedRoutes probeNet={routingProbeNet} />}
+      <copperpour
+        name="L2_GND_REFERENCE"
+        layer="inner1"
+        connectsTo="net.GND"
+        clearance="0.15mm"
+        boardEdgeMargin="0.3mm"
+        cutoutMargin="0.3mm"
+        useThermalReliefs={false}
+      />
+      <ControllerMount />
+      <McuSheet mechanicalPreview={mechanicalPreview} />
+      <EncoderSheet mechanicalPreview={mechanicalPreview} />
+      <CanSheet mechanicalPreview={mechanicalPreview} />
+      <LogicBuckSheet mechanicalPreview={mechanicalPreview} />
+      <MotorDriverSheet mechanicalPreview={mechanicalPreview} />
+      <UsbPdSheet mechanicalPreview={mechanicalPreview} />
+      <ProgrammingSheet mechanicalPreview={mechanicalPreview} />
+      <InterfacesSheet mechanicalPreview={mechanicalPreview} />
+      <InputPowerSheet mechanicalPreview={mechanicalPreview} />
+    </board>
+  )
+}

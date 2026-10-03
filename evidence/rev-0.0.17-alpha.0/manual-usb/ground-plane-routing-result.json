@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-03T17:23:05.770812Z",
+  "app_version": "2.4.1",
+  "git_sha": "unknown",
+  "fixture": {
+    "filename": "kicad-ground-plane.dsn",
+    "sha256": "5fed089330714e5214499c4655173ef09cc9f0e031821ed3adddc3ac62458234"
+  },
+  "settings_snapshot": {
+    "enabled": true,
+    "algorithm": "freerouting-router",
+    "fanout": {
+      "enabled": false,
+      "max_passes": 20,
+      "max_items": 2147483647,
+      "max_milliseconds_per_pin": 10000,
+      "ripup_allowed": true,
+      "min_escape_length_mm": 2.5,
+      "max_escape_length_mm": 4.5,
+      "start_via_diameter_mm": 0.25,
+      "end_via_diameter_mm": 0.25,
+      "pin_sorting_order": "outer_first",
+      "fallback_to_board_vias": true
+    },
+    "copper_to_edge_clearance_um": 500.0,
+    "hole_clearance_um": 0.0,
+    "neck_width_um": 0.0,
+    "strict_drc": false,
+    "job_timeout": "12:00:00",
+    "max_passes": 100,
+    "trace_pull_tight_accuracy": 500,
+    "allowed_via_types": true,
+    "automatic_neckdown": true,
+    "optimizer": {
+      "enabled": true,
+      "algorithm": "freerouting-optimizer",
+      "max_passes": 5,
+      "max_items": 2147483647,
+      "max_threads": 9,
+      "improvement_threshold": 0.01,
+      "max_consecutive_failures": 50,
+      "additional_ripup_cost_factor_at_start": 10,
+      "trace_ripup_cost_factor": 0.6,
+      "max_autoroute_passes": 6
+    },
+    "scoring": {
+      "default_preferred_direction_trace_cost": 1.0,
+      "default_undesired_direction_trace_cost": 1.0,
+      "via_costs": 50,
+      "plane_via_costs": 5,
+      "start_ripup_costs": 100,
+      "unrouted_net_penalty": 5000000.0,
+      "clearance_violation_penalty": 1000000.0,
+      "bend_penalty": 10.0,
+      "default_bend_cost": 0.0
+    },
+    "max_threads": 9,
+    "result_json": "evidence/rev-0.0.17-alpha.0/manual-usb/ground-plane-routing-result.json"
+  },
+  "phases": {
+    "fanout": {},
+    "autorouter": {
+      "duration_seconds": 317.801,
+      "passes_completed": 1
+    },
+    "optimizer": {}
+  },
+  "board_statistics": {
+    "host": "KiCad's Pcbnew,10.0.3",
+    "unit": "mm",
+    "board": {
+      "bounding_box": {
+        "x": 1176.0,
+        "y": -824.0,
+        "width": 824.0,
+        "height": -1176.0
+      },
+      "size": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 352.0,
+        "height": 352.0
+      }
+    },
+    "layers": {
+      "total_count": 4,
+      "signal_count": 4
+    },
+    "items": {
+      "total_count": 2368,
+      "trace_count": 603,
+      "via_count": 84,
+      "conduction_area_count": 1,
+      "drill_item_count": 0,
+      "pin_count": 423,
+      "component_count": 1216,
+      "other_count": 41
+    },
+    "components": {
+      "total_count": 115
+    },
+    "pads": {
+      "total_count": 423
+    },
+    "nets": {
+      "total_count": 82,
+      "class_count": 1
+    },
+    "connections": {
+      "maximum_count": 297,
+      "incomplete_count": 48
+    },
+    "traces": {
+      "total_count": 603,
+      "total_segment_count": 1130,
+      "total_length": 15000.71,
+      "total_length_mm": 1500.071,
+      "total_weighted_length": 3.1060496E7,
+      "average_length": 24.876799,
+      "total_vertical_length": 3795.662,
+      "total_horizontal_length": 4162.976,
+      "total_angled_length": 3943.427
+    },
+    "bends": {
+      "total_count": 527,
+      "90_degree_count": 4,
+      "45_degree_count": 523,
+      "other_angle_count": 0
+    },
+    "vias": {
+      "total_count": 84,
+      "through_hole_count": 84,
+      "blind_count": 0,
+      "buried_count": 0
+    },
+    "clearance_violations": {
+      "total_count": 10,
+      "min_violation_um": 4.973602294921875,
+      "max_violation_um": 184.906005859375,
+      "avg_violation_um": 117.4859619140625
+    },
+    "fanout": {
+      "total_smd_pins": 378,
+      "pins_to_escape": 204,
+      "escaped_count": 322
+    }
+  },
+  "normalized_score": 831.6424,
+  "resource_usage": {
+    "cpu_time": 309.1225,
+    "max_memory": 3742957.0,
+    "peak_memory": 734.916,
+    "io_read": 0.0,
+    "io_written": 0.0
+  },
+  "final_state": "COMPLETED",
+  "exit_code": 0,
+  "output_written": true
+}

@@ -1,0 +1,200 @@
+{
+  "input_sha256": "e6a89dcd7380a585203f701087756efff3417721bcf68eec150b7d9ef7673e9e",
+  "reason": "Move the two shared corner escapes outside the mounting keepout bounding rectangles with extra copper clearance. Original circular keepouts, board holes and all supplier footprints remain unchanged. Native and independent geometry checks are required before accepting these edits.",
+  "points": [
+    {
+      "from": {
+        "x": -12.7695,
+        "y": -13.1669
+      },
+      "to": {
+        "x": -12.55,
+        "y": -13.55
+      },
+      "expected_points": 100
+    },
+    {
+      "from": {
+        "x": -12.9368,
+        "y": -13.1669
+      },
+      "to": {
+        "x": -12.55,
+        "y": -12.527
+      },
+      "expected_points": 46
+    },
+    {
+      "from": {
+        "x": -13.5767,
+        "y": -12.527
+      },
+      "to": {
+        "x": -13.5767,
+        "y": -12.527
+      },
+      "expected_points": 46
+    },
+    {
+      "from": {
+        "x": 12.9398,
+        "y": -12.9537
+      },
+      "to": {
+        "x": 13.5,
+        "y": -12.1
+      },
+      "expected_points": 2
+    },
+    {
+      "from": {
+        "x": 12.9398,
+        "y": -12.9713
+      },
+      "to": {
+        "x": 13.5,
+        "y": -12.1
+      },
+      "expected_points": 4
+    },
+    {
+      "from": {
+        "x": 12.4328,
+        "y": -12.4467
+      },
+      "to": {
+        "x": 13.5,
+        "y": -12.1
+      },
+      "expected_points": 2
+    },
+    {
+      "from": {
+        "x": 12.5428,
+        "y": -13.3683
+      },
+      "to": {
+        "x": 12.5428,
+        "y": -12.1
+      },
+      "expected_points": 2
+    }
+  ],
+  "segments": [
+    {
+      "from": {
+        "x": -12.7695,
+        "y": -9.7571
+      },
+      "to": {
+        "x": -12.55,
+        "y": -13.55
+      },
+      "bends": [
+        {
+          "x": -12.55,
+          "y": -12.4
+        }
+      ],
+      "expected_segments": 2
+    },
+    {
+      "from": {
+        "x": 12.5428,
+        "y": -12.1
+      },
+      "to": {
+        "x": 7.3744,
+        "y": -13.3683
+      },
+      "bends": [
+        {
+          "x": 12.1,
+          "y": -13.3683
+        }
+      ],
+      "expected_segments": 1
+    }
+  ],
+  "additions": [
+    {
+      "net": "CAN_TX",
+      "connections": [
+        ".U1 > .PB6",
+        ".U6 > .D"
+      ],
+      "path": {
+        "connection": ".U1 > .PB6",
+        "route": [
+          {
+            "route_type": "wire",
+            "x": 4.250072,
+            "y": 0.050066,
+            "layer": "top",
+            "width": 0.15
+          },
+          {
+            "route_type": "wire",
+            "x": 3.4,
+            "y": 0.050066,
+            "layer": "top",
+            "width": 0.15
+          },
+          {
+            "route_type": "via",
+            "x": 3.4,
+            "y": 0.050066,
+            "from_layer": "top",
+            "to_layer": "inner1",
+            "via_diameter": 0.6,
+            "via_hole_diameter": 0.3
+          },
+          {
+            "route_type": "wire",
+            "x": 3.4,
+            "y": 0.050066,
+            "layer": "inner1",
+            "width": 0.15
+          },
+          {
+            "route_type": "wire",
+            "x": 3.4,
+            "y": 8.45,
+            "layer": "inner1",
+            "width": 0.15
+          },
+          {
+            "route_type": "wire",
+            "x": 8.405,
+            "y": 8.45,
+            "layer": "inner1",
+            "width": 0.15
+          },
+          {
+            "route_type": "via",
+            "x": 8.405,
+            "y": 8.45,
+            "from_layer": "inner1",
+            "to_layer": "bottom",
+            "via_diameter": 0.6,
+            "via_hole_diameter": 0.3
+          },
+          {
+            "route_type": "wire",
+            "x": 8.405,
+            "y": 8.45,
+            "layer": "bottom",
+            "width": 0.15
+          },
+          {
+            "route_type": "wire",
+            "x": 8.405,
+            "y": 9.400056,
+            "layer": "bottom",
+            "width": 0.15
+          }
+        ]
+      }
+    }
+  ]
+}

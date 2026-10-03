@@ -1,0 +1,30 @@
+{
+  "type": "autorouter_debug_summary",
+  "generatedAt": "2026-10-03T14:58:27.634Z",
+  "phaseCount": 1,
+  "phases": [
+    {
+      "subcircuit_id": "subcircuit_source_group_0",
+      "componentDisplayName": "<board#649 />",
+      "routingPhaseIndex": 0,
+      "phaseOrdinal": 1,
+      "phaseCount": 1,
+      "connectionCount": 82,
+      "obstacleCount": 433,
+      "previousTraceCount": 0,
+      "autorouterName": "tscircuit",
+      "solverName": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+      "effort": 5,
+      "cacheStatus": "miss",
+      "cacheKey": "routes:core@0.0.2055:solver:0f4f0038670a785b:srj:9c8afbe4f1114a43",
+      "elapsedMs": 416106,
+      "error": {
+        "message": "Pipeline9: differential pair connection \"source_net_31\" must resolve to exactly one final point-pair connection, got 3 (capacity-autorouter@0.0.953)"
+      },
+      "startedAt": "2026-10-03T14:51:30.976Z",
+      "completedAt": "2026-10-03T14:58:27.083Z"
+    }
+  ],
+  "circuitJsonElementCount": 4928,
+  "targetPhaseReached": false
+}

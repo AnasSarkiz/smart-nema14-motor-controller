@@ -1,0 +1,20 @@
+{
+  "revision": "0.0.17-alpha.0",
+  "reviewed_at": "2026-10-03T22:06:29.674374+00:00",
+  "input_sha256": "858daabf1693ad8faf075d50b5e6c4044ba10a2ea1d1038baf71215a5faee05b",
+  "inspected_artifacts": [
+    "evidence/rev-0.0.17-alpha.0/routing-review/top.png",
+    "evidence/rev-0.0.17-alpha.0/routing-review/inner1.png",
+    "evidence/rev-0.0.17-alpha.0/routing-review/inner2.png",
+    "evidence/rev-0.0.17-alpha.0/routing-review/bottom.png"
+  ],
+  "findings": [
+    "Saved corner escapes clear the native mounting keepout bounds after manual corrections.",
+    "All four physical layers were inspected as a partial-copper review.",
+    "Full native connectivity is unfinished: 187 missing ports in this subset.",
+    "Top and bottom reference silkscreen is crowded and still needs fabrication review/correction.",
+    "Saved power traces include 0.15 mm sections; targets alone do not qualify current capacity.",
+    "USB reference continuity, final ground islands, switching loops and thermal paths remain unqualified."
+  ],
+  "status": "partial review; fabrication gates not passed"
+}

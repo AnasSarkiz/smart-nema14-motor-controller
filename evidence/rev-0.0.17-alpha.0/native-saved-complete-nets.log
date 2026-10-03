@@ -1,0 +1,33 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Each child in a list should have a unique "key" prop.
+
+Check the render method of `SmartNema14MotorController`. It was passed a child from UsbReference. See https://react.dev/link/warning-keys for more information.
+Could not save autorouting paths for subcircuit_source_group_1: PCB port selector is not unique: .D_CAN > port.pin1
+Autorouting phase 2/2 has been running for 160.4s; enabling phase diagnostics. Re-run with --autorouter-debug for full autorouter logs from the start.
+Autorouting <board#662 /> phase 2/2 long-running start: connections=28, obstacles=13616, previous_traces=0, router=tscircuit, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, effort=5x, cache=miss, cache_id=0f4f0038/9caa2489
+  connections: net.GND, net.I2C_SDA, net.CAN_TX, net.VM, net.TMC_UART_TX, net.MOTOR_B1, net.VBUS_CONN, net.VBUS_PROTECTED, net.USB_DP, net.USB_DM, net.PD_CC1_CONN, net.PD_CC2_CONN, net.PD_CC2_MCU, net.PD_GATE, net.PD_OVP, net.PD_FLT, net.SWDIO_GUARDED, net.NRST_GUARDED, net.SWDIO, net.EXT_DIR_CONN, net.EXT_ENABLE_N_CONN, net.EXT_ENABLE_N, net.LIMIT1_CONN, net.EFUSE_FLT_N, net.EFUSE_EN, net.EFUSE_OVP_TOP_2, net.EFUSE_OVP, net.EFUSE_RTN
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=nodeDimensionSubdivisionSolver steps=26 progress=24% iterations_per_second=2 elapsed=160.5s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=edgeSolver steps=27 progress=28% iterations_per_second=0 elapsed=192.0s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=availableSegmentPointSolver steps=33 progress=32% iterations_per_second=97 elapsed=236.1s
+time: command terminated abnormally
+      333.79 real       208.01 user        88.04 sys
+          3905601536  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            41600843  page reclaims
+                2161  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                1001  messages sent
+                1051  messages received
+                   0  signals received
+                4732  voluntary context switches
+             1099448  involuntary context switches
+       3533790931233  instructions retired
+        988070168328  cycles elapsed
+         13507555760  peak memory footprint
+time: signal: Invalid argument

@@ -1,0 +1,38 @@
+node:internal/modules/esm/resolve:263
+    throw new ERR_UNSUPPORTED_DIR_IMPORT(path, basePath, String(resolved));
+          ^
+
+Error [ERR_UNSUPPORTED_DIR_IMPORT]: Directory import '/Users/anassarkiz/tsci/tscircuit-store/boards/smart-nema14-motor-controller--01a0fd9b/node_modules/calculate-elbow/lib' is not supported resolving ES modules imported from /Users/anassarkiz/tsci/tscircuit-store/boards/smart-nema14-motor-controller--01a0fd9b/node_modules/@tscircuit/cli/dist/cli/main.js
+    at finalizeResolution (node:internal/modules/esm/resolve:263:11)
+    at moduleResolve (node:internal/modules/esm/resolve:865:10)
+    at defaultResolve (node:internal/modules/esm/resolve:991:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:713:20)
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:730:38)
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:52)
+    at #resolve (node:internal/modules/esm/loader:695:17)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:615:35)
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:160:33)
+    at ModuleJob.link (node:internal/modules/esm/module_job:245:17) {
+  code: 'ERR_UNSUPPORTED_DIR_IMPORT',
+  url: 'file:///Users/anassarkiz/tsci/tscircuit-store/boards/smart-nema14-motor-controller--01a0fd9b/node_modules/calculate-elbow/lib'
+}
+
+Node.js v25.6.0
+        0.94 real         0.90 user         0.13 sys
+           724156416  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               45913  page reclaims
+                1267  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 572  voluntary context switches
+                1938  involuntary context switches
+         12847544650  instructions retired
+          3990535840  cycles elapsed
+           725462416  peak memory footprint

@@ -9,7 +9,11 @@ import { selectedMotor } from "./src/mechanics/selected-motor"
 export default function SmartNema14Assembly() {
   return (
     <assembly.device name="StepperOnline14hm11ExplodedController">
-      <SmartNema14MotorController mechanicalPreview />
+      <SmartNema14MotorController
+        mechanicalPreview
+        usbRoutesEnabled={false}
+        savedRoutesEnabled={false}
+      />
       <assembly.subassembly
         name="OfficialStepperOnline14hm11Motor"
         cadModel={{

@@ -1,0 +1,1174 @@
+(pcb ./converted_dsn.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer In1.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (layer In2.Cu
+      (type signal)
+      (property
+        (index 2)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 3)
+      )
+    )
+    (boundary
+      (path pcb 0  -17500 -17500 17500 -17500 17500 17500 -17500 17500 -17500 -17500)
+    )
+    (via "Via[0-3]_600:300_um")
+    (rule
+      (width 200)
+      (clearance 150)
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component "simple_chip:9.9999x9.9999_mm"
+      (place U1_source_component_0 8500.000000000015 1299.9999999999998 front 0)
+    )
+    (component "simple_capacitor:1.3402x0.5400_mm"
+      (place C1_source_component_1 8000 -4600 front 0 (PN "0.100uF"))
+      (place C2_source_component_2 8000 -6750 front 0 (PN "4.7uF"))
+      (place C3_source_component_3 5750 -4600 front 0 (PN "0.100uF"))
+      (place C4_source_component_4 6000 -6750 front 0 (PN "0.100uF"))
+      (place C5_source_component_6 15000 -3500 front 0 (PN "0.100uF"))
+      (place C6_source_component_8 1500 4750 front 0 (PN "0.100uF"))
+      (place C7_source_component_12 5800 7600 front 0 (PN "0.100uF"))
+      (place C13_source_component_23 -8750 -3500 front 0 (PN "0.022uF"))
+      (place C16_source_component_26 -5350 4750 front 0 (PN "0.100uF"))
+      (place C22_source_component_47 -13500 -9000 front 0 (PN "0.100uF"))
+      (place C23_source_component_48 -1250 -11250 front 0 (PN "0.000uF"))
+      (place C24_source_component_49 1250 -11250 front 0 (PN "0.000uF"))
+      (place C27_source_component_57 4250 -6500 front 0 (PN "0.100uF"))
+      (place C28_source_component_62 10200 -10600 front 0 (PN "0.100uF"))
+      (place C29_source_component_63 4250 -5000 front 0 (PN "0.100uF"))
+      (place C30_source_component_88 10250 11500 front 0 (PN "0.100uF"))
+      (place C31_source_component_89 9250 -1250 front 0 (PN "0.100uF"))
+      (place C32_source_component_90 -7000 8050.000000000001 front 0 (PN "0.100uF"))
+    )
+    (component "simple_resistor:1.4313x0.5400_mm"
+      (place R1_source_component_5 10250 -5000 front 0 (PN "10k"))
+      (place R2_source_component_9 1000 -3000 front 0 (PN "4.7k"))
+      (place R3_source_component_10 1000 -5000 front 0 (PN "4.7k"))
+      (place R49_source_component_13 10750 12750 front 0 (PN "120"))
+      (place R50_source_component_14 7000 16500 front 0 (PN "0"))
+      (place R4_source_component_33 -4000 3000 front 0 (PN "1k"))
+      (place R7_source_component_34 -6000 -5000 front 0 (PN "10k"))
+      (place R8_source_component_35 -3000 5000 front 0 (PN "10k"))
+      (place R9_source_component_36 -750 5500 front 0 (PN "10k"))
+      (place R10_source_component_37 -5250 6000 front 0 (PN "10k"))
+      (place R11_source_component_38 -3000 6250 front 0 (PN "10k"))
+      (place R12_source_component_50 -15500 -7750 front 0 (PN "10k"))
+      (place R13_source_component_51 -4000 0 front 0 (PN "100k"))
+      (place R14_source_component_52 2000 -5250 front 0 (PN "1k"))
+      (place R15_source_component_53 4250 -7750 front 0 (PN "6.04k"))
+      (place R16_source_component_54 2000 -12500 front 0 (PN "220k"))
+      (place R17_source_component_55 4500 -12000 front 0 (PN "10k"))
+      (place R18_source_component_56 3000 -13750 front 0 (PN "1k"))
+      (place R19_source_component_61 9250 -2750 front 0 (PN "10k"))
+      (place R20_source_component_64 12250 -10000 front 0 (PN "1k"))
+      (place R21_source_component_65 12000 -12000 front 0 (PN "1k"))
+      (place R22_source_component_66 11750 -13750 front 0 (PN "1k"))
+      (place R51_source_component_67 5000 -3750 front 0 (PN "100k"))
+      (place R52_source_component_68 8500 -4000 front 0 (PN "100k"))
+      (place R53_source_component_69 10750 -4750 front 0 (PN "100k"))
+      (place R23_source_component_76 5750 6000 front 0 (PN "1k"))
+      (place R24_source_component_77 5750 4000 front 0 (PN "1k"))
+      (place R25_source_component_78 6250 2000 front 0 (PN "1k"))
+      (place R26_source_component_79 6250 0 front 0 (PN "1k"))
+      (place R27_source_component_80 7000 -2000 front 0 (PN "1k"))
+      (place R28_source_component_81 3500 6000 front 0 (PN "10k"))
+      (place R29_source_component_82 4000 2750 front 0 (PN "10k"))
+      (place R30_source_component_83 4000 1500 front 0 (PN "10k"))
+      (place R31_source_component_84 4000 0 front 0 (PN "10k"))
+      (place R32_source_component_85 4750 -2000 front 0 (PN "10k"))
+      (place R33_source_component_86 -4500 6000 front 0 (PN "10k"))
+      (place R34_source_component_87 3750 7500 front 0 (PN "10k"))
+      (place R35_source_component_91 -1000 4750 front 0 (PN "1k"))
+      (place R36_source_component_93 -1000 6000 front 0 (PN "1k"))
+      (place R37_source_component_95 1250 6000 front 0 (PN "1k"))
+      (place R38_source_component_99 -5750 -11250 front 0 (PN "100k"))
+      (place R39_source_component_100 -4250 -12500 front 0 (PN "47k"))
+      (place R40_source_component_101 -13250 -7500 front 0 (PN "100k"))
+      (place R41_source_component_102 -6000 -1250 front 0 (PN "1k"))
+      (place R42_source_component_103 0 -9750 front 0 (PN "4.7k"))
+      (place R43_source_component_104 0 -12500 front 0 (PN "6.04k"))
+      (place R44_source_component_105 -2000 -12500 front 0 (PN "24k"))
+      (place R45_source_component_106 -250 -5250 front 0 (PN "24k"))
+      (place R46_source_component_107 -7000 0 front 0 (PN "10k"))
+      (place R48_source_component_110 -2000 -13750 front 0 (PN "10k"))
+    )
+    (component "simple_chip:4.3784x7.3604_mm"
+      (place U4_source_component_7 0 0 front 0)
+    )
+    (component "simple_chip:4.3980x6.9999_mm"
+      (place U6_source_component_11 6500 12000 front 0)
+    )
+    (component "simple_chip:2.4499x3.4998_mm"
+      (place U5_source_component_15 -15500 -6000 front 0)
+    )
+    (component "simple_capacitor:1.7280x4.6702_mm"
+      (place C8_source_component_16 -14000 -4250 front 0 (PN "10uF"))
+    )
+    (component "simple_capacitor:2.2000x0.9000_mm"
+      (place C9_source_component_17 -15500 -3000 front 0 (PN "0.100uF"))
+      (place C10_source_component_18 -15500 -9750 front 0 (PN "0.100uF"))
+      (place C14_source_component_24 -5750 -3500 front 0 (PN "0.100uF"))
+      (place C17_source_component_27 -14000 -750 front 0 (PN "0.100uF"))
+      (place C25_source_component_45 -10000 -13500 front 0 (PN "2.2uF"))
+      (place C26_source_component_46 -10000 -6125 front 0 (PN "0.100uF"))
+      (place C33_source_component_108 0 -6750 front 0 (PN "2.2uF"))
+      (place C34_source_component_109 -8250 -11875 front 0 (PN "2.2uF"))
+    )
+    (component "simple_inductor:6.5000x6.5001_mm"
+      (place L1_source_component_19 -10150 -9150 front 0)
+    )
+    (component "simple_capacitor:3.4100x1.3500_mm"
+      (place C11_source_component_20 -9500 -14000 front 0 (PN "22uF"))
+      (place C12_source_component_21 -9500 -15750 front 0 (PN "22uF"))
+    )
+    (component "simple_chip:5.9000x5.9000_mm"
+      (place U2_source_component_22 -9000 700 front 0)
+    )
+    (component "simple_capacitor:1.3500x3.4100_mm"
+      (place C15_source_component_25 -4500 -500.0000000000001 front 0 (PN "4.7uF"))
+    )
+    (component "simple_capacitor:4.6702x1.7280_mm"
+      (place C18_source_component_28 -14000 3500 front 0 (PN "10uF"))
+    )
+    (component "simple_capacitor:8.8401x1.2000_mm"
+      (place C19_source_component_29 -11100 8500 front 0 (PN "100uF"))
+      (place C20_source_component_30 7750 11500 front 0 (PN "100uF"))
+    )
+    (component "simple_resistor:4.1651x1.7010_mm"
+      (place R5_source_component_31 -14849.999999999998 2400 front 0 (PN "1"))
+      (place R6_source_component_32 -14849.999999999998 -200 front 0 (PN "1"))
+    )
+    (component "simple_capacitor:0.5400x1.3402_mm"
+      (place C21_source_component_39 -9000 3250 front 0 (PN "0.100uF"))
+    )
+    (component "simple_chip:12.4000x6.0800_mm"
+      (place J_USB_source_component_40 0 -12700 front 0)
+    )
+    (component "simple_chip:3.4798x3.4798_mm"
+      (place U3_source_component_41 -10000 -9000 front 0)
+    )
+    (component "simple_chip:2.6000x3.9999_mm"
+      (place Q_PD_source_component_42 -10000 -3000 front 0)
+    )
+    (component "simple_chip:1.3000x0.9000_mm"
+      (place D_USB_source_component_43 2000 -7000 front 0)
+    )
+    (component "simple_chip:1.6498x0.9000_mm"
+      (place D_VBUS_source_component_44 -6500 -13500 front 0)
+    )
+    (component "simple_connector:5.5498x7.8002_mm"
+      (place J_SWD_source_component_58 14400 -8400 front 0)
+    )
+    (component "simple_chip:3.1293x2.2010_mm"
+      (place U7_source_component_59 7200 -10000 front 0)
+    )
+    (component "simple_chip:3.0000x2.5499_mm"
+      (place U8_source_component_60 7200.000000000001 -6500 front 0)
+    )
+    (component "simple_chip:5.6255x12.8004_mm"
+      (place J_IO_source_component_70 14000 4000 front 0)
+    )
+    (component "simple_chip:8.4493x5.3991_mm"
+      (place J_MOTOR_source_component_71 -1749.9999999999995 11900.000000000002 front 0)
+    )
+    (component "simple_chip:2.1000x1.3000_mm"
+      (place U9_source_component_72 -7000 6000 front 0)
+    )
+    (component "simple_chip:2.2000x1.3650_mm"
+      (place D_IO1_source_component_73 9000 2500 front 0)
+      (place D_IO2_source_component_74 9000 500 front 0)
+    )
+    (component "simple_chip:3.2402x2.4319_mm"
+      (place D_CAN_source_component_75 8750 5500 front 0)
+    )
+    (component "simple_led:2.3989x0.8069_mm"
+      (place LED_POWER_source_component_92 -1000 2000 front 0)
+      (place LED_STATUS_source_component_94 1000 4000 front 0)
+      (place LED_FAULT_source_component_96 1000 0 front 0)
+    )
+    (component "simple_chip:5.4801x4.4801_mm"
+      (place U10_source_component_97 -4500 -7750 front 0)
+    )
+    (component "simple_chip:1.8100x1.4000_mm"
+      (place Q_ILIM_source_component_98 -5000 -3000 front 0)
+    )
+  )
+  (library
+    (image "simple_chip:9.9999x9.9999_mm"
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 1 -2750.05800000001 -4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 2 -2249.931999999987 -4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 3 -1750.0599999999763 -4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 4 -1249.9340000000102 -4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 5 -750.0619999999998 -4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 6 -249.93600000000527 -4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 7 249.93600000000527 -4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 8 750.0619999999998 -4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 9 1249.9340000000388 -4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 10 1750.060000000005 -4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 11 2249.9320000000153 -4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 12 2750.05800000001 -4249.927999999997)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 13 4249.927999999997 -2750.0580000000027)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 14 4249.927999999997 -2249.932000000001)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 15 4249.927999999997 -1750.0600000000047)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 16 4249.927999999997 -1249.9340000000102)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 17 4249.927999999997 -750.0619999999996)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 18 4249.927999999997 -249.93600000001214)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 19 4249.927999999997 249.9359999999984)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 20 4249.927999999997 750.0619999999856)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 21 4249.927999999997 1249.933999999996)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 22 4249.927999999997 1750.0599999999977)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 23 4249.927999999997 2249.931999999994)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 24 4249.927999999997 2750.0579999999954)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 25 2750.05800000001 4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 26 2249.9320000000153 4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 27 1750.060000000005 4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 28 1249.9340000000388 4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 29 750.0619999999998 4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 30 249.93600000000527 4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 31 -249.93600000000527 4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 32 -750.0619999999998 4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 33 -1249.9340000000102 4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 34 -1750.0599999999763 4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 35 -2249.931999999987 4249.927999999997)
+      (pin RoundRect[T]Pad_270.00199999999995x1499.997_um 36 -2750.05800000001 4249.927999999997)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 37 -4249.927999999997 2750.0579999999954)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 38 -4249.927999999997 2249.931999999994)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 39 -4249.927999999997 1750.0599999999977)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 40 -4249.927999999997 1249.933999999996)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 41 -4249.927999999997 750.0619999999856)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 42 -4249.927999999997 249.9359999999984)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 43 -4249.927999999997 -249.93600000001214)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 44 -4249.927999999997 -750.0619999999996)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 45 -4249.927999999997 -1249.9340000000102)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 46 -4249.927999999997 -1750.0600000000047)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 47 -4249.927999999997 -2249.932000000001)
+      (pin RoundRect[T]Pad_1499.997x270.00199999999995_um 48 -4249.927999999997 -2750.0580000000027)
+    )
+    (image "simple_capacitor:1.3402x0.5400_mm"
+      (pin RoundRect[T]Pad_499.999x540.004_um 2 -420.11600000000016 0)
+      (pin RoundRect[T]Pad_499.999x540.004_um 1 420.11600000000016 0)
+    )
+    (image "simple_resistor:1.4313x0.5400_mm"
+      (pin RoundRect[T]Pad_565.658x540.004_um 2 432.81600000000077 0)
+      (pin RoundRect[T]Pad_565.658x540.004_um 1 -432.81600000000077 0)
+    )
+    (image "simple_chip:4.3784x7.3604_mm"
+      (pin RoundRect[B]Pad_568.4012x1950.212_um 1 1905 -2705.1)
+      (pin RoundRect[B]Pad_568.4012x1950.212_um 2 635 -2705.1)
+      (pin RoundRect[B]Pad_568.4012x1950.212_um 3 -635 -2705.1)
+      (pin RoundRect[B]Pad_568.4012x1950.212_um 4 -1905 -2705.1)
+      (pin RoundRect[B]Pad_568.4012x1950.212_um 8 1905 2705.1)
+      (pin RoundRect[B]Pad_568.4012x1950.212_um 7 635 2705.1)
+      (pin RoundRect[B]Pad_568.4012x1950.212_um 6 -635 2705.1)
+      (pin RoundRect[B]Pad_568.4012x1950.212_um 5 -1905 2705.1)
+    )
+    (image "simple_chip:4.3980x6.9999_mm"
+      (pin RoundRect[B]Pad_588.01x1799.9964_um 5 -1905.0000000000002 2599.944000000001)
+      (pin RoundRect[B]Pad_588.01x1799.9964_um 6 -634.9999999999998 2599.944000000001)
+      (pin RoundRect[B]Pad_588.01x1799.9964_um 7 634.9999999999998 2599.944000000001)
+      (pin RoundRect[B]Pad_588.01x1799.9964_um 8 1904.9999999999993 2599.944000000001)
+      (pin RoundRect[B]Pad_588.01x1799.9964_um 4 -1905.0000000000002 -2599.944000000001)
+      (pin RoundRect[B]Pad_588.01x1799.9964_um 3 -634.9999999999998 -2599.944000000001)
+      (pin RoundRect[B]Pad_588.01x1799.9964_um 2 634.9999999999998 -2599.944000000001)
+      (pin RoundRect[B]Pad_588.01x1799.9964_um 1 1904.9999999999993 -2599.944000000001)
+    )
+    (image "simple_chip:2.4499x3.4998_mm"
+      (pin RoundRect[T]Pad_550.0116x1099.9977999999999_um 6 949.9600000000008 -1199.8960000000006)
+      (pin RoundRect[T]Pad_550.0116x1099.9977999999999_um 5 0 -1199.896)
+      (pin RoundRect[T]Pad_550.0116x1099.9977999999999_um 4 -949.9600000000008 -1199.896)
+      (pin RoundRect[T]Pad_550.0116x1099.9977999999999_um 3 -949.9600000000008 1199.8960000000006)
+      (pin RoundRect[T]Pad_550.0116x1099.9977999999999_um 2 0 1199.896)
+      (pin RoundRect[T]Pad_550.0116x1099.9977999999999_um 1 949.9600000000008 1199.896)
+    )
+    (image "simple_capacitor:1.7280x4.6702_mm"
+      (pin RoundRect[B]Pad_1727.9874x1485.011_um 2 0 -1592.58)
+      (pin RoundRect[B]Pad_1727.9874x1485.011_um 1 0 1592.58)
+    )
+    (image "simple_capacitor:2.2000x0.9000_mm"
+      (pin RoundRect[T]Pad_799.9984x899.9982_um 2 700.0239999999991 0)
+      (pin RoundRect[T]Pad_799.9984x899.9982_um 1 -700.0239999999991 0)
+    )
+    (image "simple_inductor:6.5000x6.5001_mm"
+      (pin RoundRect[T]Pad_6499.987x1999.996_um 1 0 2250.059)
+      (pin RoundRect[T]Pad_6499.987x1999.996_um 2 0 -2250.059)
+    )
+    (image "simple_capacitor:3.4100x1.3500_mm"
+      (pin RoundRect[T]Pad_1410.0048000000002x1350.01_um 2 999.9979999999997 0)
+      (pin RoundRect[T]Pad_1410.0048000000002x1350.01_um 1 -999.9979999999997 0)
+    )
+    (image "simple_chip:5.9000x5.9000_mm"
+      (pin RoundRect[T]Pad_3499.993x3499.993_um 29 -0.1270000000008764 -0.12699999999998823)
+      (pin RoundRect[T]Pad_899.9982x280.00960000000003_um 28 -2499.9950000000003 -1501.2669999999998)
+      (pin RoundRect[T]Pad_899.9982x280.00960000000003_um 27 -2499.9950000000003 -1000.8870000000001)
+      (pin RoundRect[T]Pad_899.9982x280.00960000000003_um 26 -2499.9950000000003 -500.50700000000006)
+      (pin RoundRect[T]Pad_899.9982x280.00960000000003_um 25 -2499.9950000000003 -0.12699999999998823)
+      (pin RoundRect[T]Pad_899.9982x280.00960000000003_um 24 -2499.9950000000003 500.25300000000004)
+      (pin RoundRect[T]Pad_899.9982x280.00960000000003_um 23 -2499.9950000000003 1000.6330000000002)
+      (pin RoundRect[T]Pad_899.9982x280.00960000000003_um 22 -2499.9950000000003 1501.0129999999997)
+      (pin RoundRect[T]Pad_280.00960000000003x899.9982_um 21 -1501.2670000000003 2499.9950000000003)
+      (pin RoundRect[T]Pad_280.00960000000003x899.9982_um 20 -1000.8870000000005 2499.9950000000003)
+      (pin RoundRect[T]Pad_280.00960000000003x899.9982_um 19 -500.5070000000007 2499.9950000000003)
+      (pin RoundRect[T]Pad_280.00960000000003x899.9982_um 18 -0.1270000000008764 2499.9950000000003)
+      (pin RoundRect[T]Pad_280.00960000000003x899.9982_um 17 500.2530000000007 2499.9950000000003)
+      (pin RoundRect[T]Pad_280.00960000000003x899.9982_um 16 1000.6330000000005 2499.9950000000003)
+      (pin RoundRect[T]Pad_280.00960000000003x899.9982_um 15 1501.0130000000004 2499.9950000000003)
+      (pin RoundRect[T]Pad_899.9982x280.00960000000003_um 14 2499.9950000000003 1501.0129999999997)
+      (pin RoundRect[T]Pad_899.9982x280.00960000000003_um 13 2499.9950000000003 1000.6330000000002)
+      (pin RoundRect[T]Pad_899.9982x280.00960000000003_um 12 2499.9950000000003 500.25300000000004)
+      (pin RoundRect[T]Pad_899.9982x280.00960000000003_um 11 2499.9950000000003 -0.12699999999998823)
+      (pin RoundRect[T]Pad_899.9982x280.00960000000003_um 10 2499.9950000000003 -500.50700000000006)
+      (pin RoundRect[T]Pad_899.9982x280.00960000000003_um 9 2499.9950000000003 -1000.8870000000001)
+      (pin RoundRect[T]Pad_899.9982x280.00960000000003_um 8 2499.9950000000003 -1501.2669999999998)
+      (pin RoundRect[T]Pad_280.00960000000003x899.9982_um 7 1501.0130000000004 -2499.9950000000003)
+      (pin RoundRect[T]Pad_280.00960000000003x899.9982_um 6 1000.6330000000005 -2499.9950000000003)
+      (pin RoundRect[T]Pad_280.00960000000003x899.9982_um 5 500.2530000000007 -2499.9950000000003)
+      (pin RoundRect[T]Pad_280.00960000000003x899.9982_um 4 -0.1270000000008764 -2499.9950000000003)
+      (pin RoundRect[T]Pad_280.00960000000003x899.9982_um 3 -500.5070000000007 -2499.9950000000003)
+      (pin RoundRect[T]Pad_280.00960000000003x899.9982_um 2 -1000.8870000000005 -2499.9950000000003)
+      (pin RoundRect[T]Pad_280.00960000000003x899.9982_um 1 -1501.2670000000003 -2499.9950000000003)
+    )
+    (image "simple_capacitor:1.3500x3.4100_mm"
+      (pin RoundRect[T]Pad_1350.01x1410.0048000000002_um 2 0 999.9980000000002)
+      (pin RoundRect[T]Pad_1350.01x1410.0048000000002_um 1 0 -999.998)
+    )
+    (image "simple_capacitor:4.6702x1.7280_mm"
+      (pin RoundRect[B]Pad_1485.011x1727.9874_um 2 1592.58 0)
+      (pin RoundRect[B]Pad_1485.011x1727.9874_um 1 -1592.58 0)
+    )
+    (image "simple_capacitor:8.8401x1.2000_mm"
+      (pin RoundRect[T]Pad_3499.993x1199.9976000000001_um 2 2670.0479999999993 0)
+      (pin RoundRect[T]Pad_3499.993x1199.9976000000001_um 1 -2670.0479999999993 0)
+    )
+    (image "simple_resistor:4.1651x1.7010_mm"
+      (pin RoundRect[T]Pad_1207.516x1701.0126_um 2 -1478.7880000000016 0)
+      (pin RoundRect[T]Pad_1207.516x1701.0126_um 1 1478.787999999998 0)
+    )
+    (image "simple_capacitor:0.5400x1.3402_mm"
+      (pin RoundRect[B]Pad_540.004x499.999_um 2 0 -420.11600000000016)
+      (pin RoundRect[B]Pad_540.004x499.999_um 1 0 420.11600000000016)
+    )
+    (image "simple_chip:12.4000x6.0800_mm"
+      (pin RoundRect[T]Pad_2180.0058x1999.996_um 11 5109.9974 -2040.0010000000002)
+      (pin RoundRect[T]Pad_2180.0058x1999.996_um 10 -5109.9974 -2040.0010000000002)
+      (pin RoundRect[T]Pad_2180.0058x1999.996_um 9 5109.9974 1889.9886000000006)
+      (pin RoundRect[T]Pad_2180.0058x1999.996_um 8 -5109.9974 1889.9886000000006)
+      (pin RoundRect[T]Pad_299.99940000000004x1150.0104_um 12 249.93599999999998 2464.9938)
+      (pin RoundRect[T]Pad_299.99940000000004x1150.0104_um 13 750.062 2464.9938)
+      (pin RoundRect[T]Pad_299.99940000000004x1150.0104_um 14 1249.9340000000002 2464.9938)
+      (pin RoundRect[T]Pad_299.99940000000004x1150.0104_um 15 1750.06 2464.9938)
+      (pin RoundRect[T]Pad_299.99940000000004x1150.0104_um 16 -249.93599999999998 2464.9938)
+      (pin RoundRect[T]Pad_299.99940000000004x1150.0104_um 17 -750.062 2464.9938)
+      (pin RoundRect[T]Pad_299.99940000000004x1150.0104_um 18 -1249.9340000000002 2464.9938)
+      (pin RoundRect[T]Pad_299.99940000000004x1150.0104_um 19 -1750.06 2464.9938)
+      (pin RoundRect[T]Pad_599.9988000000001x1150.0104_um 20 2399.9952000000003 2464.9938)
+      (pin RoundRect[T]Pad_599.9988000000001x1150.0104_um 21 -2399.9952000000003 2464.9938)
+      (pin RoundRect[T]Pad_599.9988000000001x1150.0104_um 22 3199.9936 2464.9938)
+      (pin RoundRect[T]Pad_599.9988000000001x1150.0104_um 23 -3199.9936 2464.9938)
+    )
+    (image "simple_chip:3.4798x3.4798_mm"
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 1 499.87199999999984 -1407.4139999999993)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 2 0 -1407.4139999999993)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 3 -500.12599999999986 -1407.4139999999993)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 4 -1407.4139999999993 -500.12599999999986)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 5 -1407.4139999999993 0)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 6 -1407.4139999999993 499.87199999999984)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 7 -500.12599999999986 1407.4140000000002)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 8 0 1407.4140000000002)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 9 499.87199999999984 1407.4140000000002)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 10 1407.4139999999993 499.87199999999984)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 11 1407.4139999999993 0)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 12 1407.4139999999993 -500.12599999999986)
+      (pin RoundRect[B]Pad_1499.997x1499.997_um 13 0 0)
+    )
+    (image "simple_chip:2.6000x3.9999_mm"
+      (pin RoundRect[B]Pad_399.9992x799.9984_um 1 970.5340000000007 -1599.9460000000001)
+      (pin RoundRect[B]Pad_399.9992x799.9984_um 2 320.04000000000053 -1599.9460000000001)
+      (pin RoundRect[B]Pad_399.9992x799.9984_um 3 -329.69199999999967 -1599.9460000000001)
+      (pin RoundRect[B]Pad_399.9992x799.9984_um 4 -979.6779999999999 -1599.9460000000001)
+      (pin RoundRect[B]Pad_399.9992x799.9984_um 8 970.5340000000007 1599.9460000000001)
+      (pin RoundRect[B]Pad_399.9992x799.9984_um 7 320.29400000000055 1599.9460000000001)
+      (pin RoundRect[B]Pad_399.9992x799.9984_um 6 -329.69199999999967 1599.9460000000001)
+      (pin RoundRect[B]Pad_399.9992x799.9984_um 5 -979.6779999999999 1599.9460000000001)
+      (pin RoundRect[B]Pad_2599.9948x1999.996_um 9 0 350.012)
+    )
+    (image "simple_chip:1.3000x0.9000_mm"
+      (pin RoundRect[T]Pad_299.99940000000004x199.9996_um 1 499.99899999999985 -350.01199999999955)
+      (pin RoundRect[T]Pad_299.99940000000004x199.9996_um 2 499.99899999999985 350.01199999999955)
+      (pin RoundRect[T]Pad_299.99940000000004x199.9996_um 3 -499.9990000000001 0)
+    )
+    (image "simple_chip:1.6498x0.9000_mm"
+      (pin RoundRect[B]Pad_599.9988000000001x899.9982_um 2 -524.8910000000002 0)
+      (pin RoundRect[B]Pad_599.9988000000001x899.9982_um 1 524.8910000000002 0)
+    )
+    (image "simple_connector:5.5498x7.8002_mm"
+      (pin RoundRect[T]Pad_1550.0096x599.9988000000001_um 1 -1999.8816999999995 -1999.6150000000005)
+      (pin RoundRect[T]Pad_1550.0096x599.9988000000001_um 2 -1999.8816999999995 -998.8550000000007)
+      (pin RoundRect[T]Pad_1550.0096x599.9988000000001_um 3 -1999.8816999999995 0.6350000000008293)
+      (pin RoundRect[T]Pad_1550.0096x599.9988000000001_um 4 -1999.8816999999995 1000.1250000000006)
+      (pin RoundRect[T]Pad_1550.0096x599.9988000000001_um 5 -1999.8816999999995 2000.8850000000002)
+    )
+    (image "simple_chip:3.1293x2.2010_mm"
+      (pin RoundRect[B]Pad_210.0072x664.9974_um 1 600.2020000000003 -767.9943999999991)
+      (pin RoundRect[B]Pad_210.0072x664.9974_um 2 200.1520000000001 -767.9943999999991)
+      (pin RoundRect[B]Pad_210.0072x664.9974_um 3 -199.64400000000015 -767.9943999999991)
+      (pin RoundRect[B]Pad_210.0072x664.9974_um 4 -599.6940000000004 -767.9943999999991)
+      (pin RoundRect[B]Pad_664.9974x210.0072_um 5 -1231.6460000000004 -599.9479999999995)
+      (pin RoundRect[B]Pad_664.9974x210.0072_um 6 -1232.1540000000005 -199.89799999999923)
+      (pin RoundRect[B]Pad_664.9974x210.0072_um 7 -1232.1540000000005 199.89799999999923)
+      (pin RoundRect[B]Pad_664.9974x210.0072_um 8 -1232.1540000000005 599.9479999999995)
+      (pin RoundRect[B]Pad_210.0072x664.9974_um 9 -599.6940000000004 767.9943999999991)
+      (pin RoundRect[B]Pad_210.0072x664.9974_um 10 -199.64400000000015 767.9943999999991)
+      (pin RoundRect[B]Pad_210.0072x664.9974_um 11 200.1520000000001 767.9943999999991)
+      (pin RoundRect[B]Pad_210.0072x664.9974_um 12 600.2020000000003 767.9943999999991)
+      (pin RoundRect[B]Pad_664.9974x210.0072_um 13 1232.1540000000005 599.9479999999995)
+      (pin RoundRect[B]Pad_664.9974x210.0072_um 14 1232.1540000000005 199.89799999999923)
+      (pin RoundRect[B]Pad_664.9974x210.0072_um 15 1232.1540000000005 -199.89799999999923)
+      (pin RoundRect[B]Pad_664.9974x210.0072_um 16 1232.1540000000005 -599.9479999999995)
+    )
+    (image "simple_chip:3.0000x2.5499_mm"
+      (pin RoundRect[B]Pad_999.998x650.0114_um 1 -999.9980000000006 -949.9599999999999)
+      (pin RoundRect[B]Pad_999.998x650.0114_um 2 -999.9980000000006 949.9599999999999)
+      (pin RoundRect[B]Pad_999.998x650.0114_um 3 999.9979999999997 0)
+    )
+    (image "simple_chip:5.6255x12.8004_mm"
+      (pin RoundRect[B]Pad_1699.9966x599.9988000000001_um 2 -1962.7659499999997 3499.993)
+      (pin RoundRect[B]Pad_1699.9966x599.9988000000001_um 1 -1962.7659499999997 4499.991)
+      (pin RoundRect[B]Pad_1699.9966x599.9988000000001_um 10 -1962.2579499999997 -4500.245)
+      (pin RoundRect[B]Pad_1699.9966x599.9988000000001_um 9 -1962.2579499999997 -3500.247)
+      (pin RoundRect[B]Pad_1699.9966x599.9988000000001_um 8 -1962.2579499999997 -2500.2490000000003)
+      (pin RoundRect[B]Pad_1699.9966x599.9988000000001_um 7 -1962.2579499999997 -1500.2509999999995)
+      (pin RoundRect[B]Pad_1699.9966x599.9988000000001_um 6 -1962.2579499999997 -500.2529999999998)
+      (pin RoundRect[B]Pad_1699.9966x599.9988000000001_um 5 -1962.2579499999997 499.7449999999999)
+      (pin RoundRect[B]Pad_1699.9966x599.9988000000001_um 4 -1962.2579499999997 1499.7430000000004)
+      (pin RoundRect[B]Pad_1699.9966x599.9988000000001_um 3 -1962.2579499999997 2499.741)
+      (pin RoundRect[B]Pad_1799.9964x1199.9976000000001_um 12 1912.7660500000002 5800.217)
+      (pin RoundRect[B]Pad_1799.9964x1199.9976000000001_um 11 1912.7660500000002 -5800.217)
+    )
+    (image "simple_chip:8.4493x5.3991_mm"
+      (pin RoundRect[T]Pad_999.998x2699.9946_um 6 3724.6559999999995 1349.565499999997)
+      (pin RoundRect[T]Pad_999.998x2699.9946_um 5 -3724.656 1349.5654999999988)
+      (pin RoundRect[T]Pad_599.9988000000001x1699.9966_um 4 -1874.520000000001 -1849.5645000000013)
+      (pin RoundRect[T]Pad_599.9988000000001x1699.9966_um 3 -624.5860000000007 -1849.5645000000013)
+      (pin RoundRect[T]Pad_599.9988000000001x1699.9966_um 2 625.6019999999993 -1849.5645000000013)
+      (pin RoundRect[T]Pad_599.9988000000001x1699.9966_um 1 1875.5359999999994 -1849.5645000000013)
+    )
+    (image "simple_chip:2.1000x1.3000_mm"
+      (pin RoundRect[B]Pad_599.9988000000001x299.99940000000004_um 5 749.9858000000002 -0.12699999999998823)
+      (pin RoundRect[B]Pad_599.9988000000001x299.99940000000004_um 2 -749.9858000000002 -0.12699999999998823)
+      (pin RoundRect[B]Pad_599.9988000000001x299.99940000000004_um 3 -749.9858000000002 499.99899999999985)
+      (pin RoundRect[B]Pad_599.9988000000001x299.99940000000004_um 1 -749.9858000000002 -499.99899999999985)
+      (pin RoundRect[B]Pad_599.9988000000001x299.99940000000004_um 4 749.9858000000002 499.99899999999985)
+      (pin RoundRect[B]Pad_599.9988000000001x299.99940000000004_um 6 749.9858000000002 -499.99899999999985)
+    )
+    (image "simple_chip:2.2000x1.3650_mm"
+      (pin RoundRect[B]Pad_199.9996x564.9976_um 6 -999.9979999999997 399.99919999999986)
+      (pin RoundRect[B]Pad_199.9996x564.9976_um 7 -500.12599999999986 399.99919999999986)
+      (pin RoundRect[B]Pad_399.9992x564.9976_um 8 0 399.99919999999986)
+      (pin RoundRect[B]Pad_199.9996x564.9976_um 9 499.87199999999984 399.99919999999986)
+      (pin RoundRect[B]Pad_199.9996x564.9976_um 10 999.9979999999997 399.99919999999986)
+      (pin RoundRect[B]Pad_199.9996x564.9976_um 5 -999.9979999999997 -399.99919999999986)
+      (pin RoundRect[B]Pad_199.9996x564.9976_um 4 -500.12599999999986 -399.99919999999986)
+      (pin RoundRect[B]Pad_399.9992x564.9976_um 3 0 -399.99919999999986)
+      (pin RoundRect[B]Pad_199.9996x564.9976_um 2 499.87199999999984 -399.99919999999986)
+      (pin RoundRect[B]Pad_199.9996x564.9976_um 1 999.9979999999997 -399.99919999999986)
+    )
+    (image "simple_chip:3.2402x2.4319_mm"
+      (pin RoundRect[B]Pad_1037.4884x532.003_um 1 -1101.344 -949.9599999999999)
+      (pin RoundRect[B]Pad_1037.4884x532.003_um 2 -1101.344 949.9599999999999)
+      (pin RoundRect[B]Pad_1037.4884x532.003_um 3 1101.344000000001 0)
+    )
+    (image "simple_led:2.3989x0.8069_mm"
+      (pin RoundRect[T]Pad_799.9984x799.9984_um 1 -799.4650000000001 -3.4289999999999043)
+      (pin RoundRect[T]Pad_799.9984x799.9984_um 2 799.465 3.4290000000001264)
+    )
+    (image "simple_chip:5.4801x4.4801_mm"
+      (pin RoundRect[B]Pad_3650.0054x2650.0074_um 25 -0.12699999999998823 0)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 24 2407.5389999999998 -999.9979999999997)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 23 2407.5389999999998 -500.12599999999986)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 22 2407.5389999999998 0)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 21 2407.5389999999998 499.87199999999984)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 20 2407.5389999999998 999.9979999999997)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 19 1499.997 1907.54)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 18 999.8709999999998 1907.54)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 17 499.99899999999985 1907.54)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 16 -0.12699999999998823 1907.54)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 15 -499.99899999999985 1907.54)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 14 -1000.1249999999997 1907.54)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 13 -1499.9970000000005 1907.54)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 12 -2407.5389999999998 999.9979999999997)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 11 -2407.5389999999998 499.87199999999984)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 10 -2407.5389999999998 0)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 9 -2407.5389999999998 -500.12599999999986)
+      (pin RoundRect[B]Pad_664.9974x280.00960000000003_um 8 -2407.5389999999998 -999.9979999999997)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 7 -1499.9970000000005 -1907.5400000000009)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 6 -1000.1249999999997 -1907.5400000000009)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 5 -499.99899999999985 -1907.5400000000009)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 4 -0.12699999999998823 -1907.5400000000009)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 3 499.99899999999985 -1907.5400000000009)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 2 999.8709999999998 -1907.5400000000009)
+      (pin RoundRect[B]Pad_280.00960000000003x664.9974_um 1 1499.997 -1907.5400000000009)
+    )
+    (image "simple_chip:1.8100x1.4000_mm"
+      (pin RoundRect[B]Pad_510.0066x399.9992_um 3 649.9860000000002 -0.12699999999998823)
+      (pin RoundRect[B]Pad_510.0066x399.9992_um 1 -649.9860000000002 -499.99899999999985)
+      (pin RoundRect[B]Pad_510.0066x399.9992_um 2 -649.9860000000002 499.99899999999985)
+    )
+    (padstack "Via[0-3]_600:300_um"
+      (shape (circle F.Cu 600))
+      (shape (circle In1.Cu 600))
+      (shape (circle In2.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_270.00199999999995x1499.997_um"
+      (shape (polygon F.Cu 0 -135.00099999999998 749.9985 135.00099999999998 749.9985 135.00099999999998 -749.9985 -135.00099999999998 -749.9985 -135.00099999999998 749.9985))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_1499.997x270.00199999999995_um"
+      (shape (polygon F.Cu 0 -749.9985 135.00099999999998 749.9985 135.00099999999998 749.9985 -135.00099999999998 -749.9985 -135.00099999999998 -749.9985 135.00099999999998))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_499.999x540.004_um"
+      (shape (polygon F.Cu 0 -249.9995 270.002 249.9995 270.002 249.9995 -270.002 -249.9995 -270.002 -249.9995 270.002))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_565.658x540.004_um"
+      (shape (polygon F.Cu 0 -282.829 270.002 282.829 270.002 282.829 -270.002 -282.829 -270.002 -282.829 270.002))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_568.4012x1950.212_um"
+      (shape (polygon B.Cu 0 -284.2006 975.106 284.2006 975.106 284.2006 -975.106 -284.2006 -975.106 -284.2006 975.106))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_588.01x1799.9964_um"
+      (shape (polygon B.Cu 0 -294.005 899.9982 294.005 899.9982 294.005 -899.9982 -294.005 -899.9982 -294.005 899.9982))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_550.0116x1099.9977999999999_um"
+      (shape (polygon F.Cu 0 -275.0058 549.9988999999999 275.0058 549.9988999999999 275.0058 -549.9988999999999 -275.0058 -549.9988999999999 -275.0058 549.9988999999999))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_1727.9874x1485.011_um"
+      (shape (polygon B.Cu 0 -863.9937 742.5055 863.9937 742.5055 863.9937 -742.5055 -863.9937 -742.5055 -863.9937 742.5055))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_799.9984x899.9982_um"
+      (shape (polygon F.Cu 0 -399.9992 449.9991 399.9992 449.9991 399.9992 -449.9991 -399.9992 -449.9991 -399.9992 449.9991))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_6499.987x1999.996_um"
+      (shape (polygon F.Cu 0 -3249.9935 999.998 3249.9935 999.998 3249.9935 -999.998 -3249.9935 -999.998 -3249.9935 999.998))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_1410.0048000000002x1350.01_um"
+      (shape (polygon F.Cu 0 -705.0024000000001 675.005 705.0024000000001 675.005 705.0024000000001 -675.005 -705.0024000000001 -675.005 -705.0024000000001 675.005))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_3499.993x3499.993_um"
+      (shape (polygon F.Cu 0 -1749.9965 1749.9965 1749.9965 1749.9965 1749.9965 -1749.9965 -1749.9965 -1749.9965 -1749.9965 1749.9965))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_899.9982x280.00960000000003_um"
+      (shape (polygon F.Cu 0 -449.9991 140.00480000000002 449.9991 140.00480000000002 449.9991 -140.00480000000002 -449.9991 -140.00480000000002 -449.9991 140.00480000000002))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_280.00960000000003x899.9982_um"
+      (shape (polygon F.Cu 0 -140.00480000000002 449.9991 140.00480000000002 449.9991 140.00480000000002 -449.9991 -140.00480000000002 -449.9991 -140.00480000000002 449.9991))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_1350.01x1410.0048000000002_um"
+      (shape (polygon F.Cu 0 -675.005 705.0024000000001 675.005 705.0024000000001 675.005 -705.0024000000001 -675.005 -705.0024000000001 -675.005 705.0024000000001))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_1485.011x1727.9874_um"
+      (shape (polygon B.Cu 0 -742.5055 863.9937 742.5055 863.9937 742.5055 -863.9937 -742.5055 -863.9937 -742.5055 863.9937))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_3499.993x1199.9976000000001_um"
+      (shape (polygon F.Cu 0 -1749.9965 599.9988000000001 1749.9965 599.9988000000001 1749.9965 -599.9988000000001 -1749.9965 -599.9988000000001 -1749.9965 599.9988000000001))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_1207.516x1701.0126_um"
+      (shape (polygon F.Cu 0 -603.758 850.5063 603.758 850.5063 603.758 -850.5063 -603.758 -850.5063 -603.758 850.5063))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_540.004x499.999_um"
+      (shape (polygon B.Cu 0 -270.002 249.9995 270.002 249.9995 270.002 -249.9995 -270.002 -249.9995 -270.002 249.9995))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_2180.0058x1999.996_um"
+      (shape (polygon F.Cu 0 -1090.0029 999.998 1090.0029 999.998 1090.0029 -999.998 -1090.0029 -999.998 -1090.0029 999.998))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_299.99940000000004x1150.0104_um"
+      (shape (polygon F.Cu 0 -149.99970000000002 575.0052 149.99970000000002 575.0052 149.99970000000002 -575.0052 -149.99970000000002 -575.0052 -149.99970000000002 575.0052))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_599.9988000000001x1150.0104_um"
+      (shape (polygon F.Cu 0 -299.99940000000004 575.0052 299.99940000000004 575.0052 299.99940000000004 -575.0052 -299.99940000000004 -575.0052 -299.99940000000004 575.0052))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_280.00960000000003x664.9974_um"
+      (shape (polygon B.Cu 0 -140.00480000000002 332.4987 140.00480000000002 332.4987 140.00480000000002 -332.4987 -140.00480000000002 -332.4987 -140.00480000000002 332.4987))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_664.9974x280.00960000000003_um"
+      (shape (polygon B.Cu 0 -332.4987 140.00480000000002 332.4987 140.00480000000002 332.4987 -140.00480000000002 -332.4987 -140.00480000000002 -332.4987 140.00480000000002))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_1499.997x1499.997_um"
+      (shape (polygon B.Cu 0 -749.9985 749.9985 749.9985 749.9985 749.9985 -749.9985 -749.9985 -749.9985 -749.9985 749.9985))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_399.9992x799.9984_um"
+      (shape (polygon B.Cu 0 -199.9996 399.9992 199.9996 399.9992 199.9996 -399.9992 -199.9996 -399.9992 -199.9996 399.9992))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_2599.9948x1999.996_um"
+      (shape (polygon B.Cu 0 -1299.9974 999.998 1299.9974 999.998 1299.9974 -999.998 -1299.9974 -999.998 -1299.9974 999.998))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_299.99940000000004x199.9996_um"
+      (shape (polygon F.Cu 0 -149.99970000000002 99.9998 149.99970000000002 99.9998 149.99970000000002 -99.9998 -149.99970000000002 -99.9998 -149.99970000000002 99.9998))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_599.9988000000001x899.9982_um"
+      (shape (polygon B.Cu 0 -299.99940000000004 449.9991 299.99940000000004 449.9991 299.99940000000004 -449.9991 -299.99940000000004 -449.9991 -299.99940000000004 449.9991))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_1550.0096x599.9988000000001_um"
+      (shape (polygon F.Cu 0 -775.0048 299.99940000000004 775.0048 299.99940000000004 775.0048 -299.99940000000004 -775.0048 -299.99940000000004 -775.0048 299.99940000000004))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_1799.9964x1199.9976000000001_um"
+      (shape (polygon F.Cu 0 -899.9982 599.9988000000001 899.9982 599.9988000000001 899.9982 -599.9988000000001 -899.9982 -599.9988000000001 -899.9982 599.9988000000001))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_210.0072x664.9974_um"
+      (shape (polygon B.Cu 0 -105.0036 332.4987 105.0036 332.4987 105.0036 -332.4987 -105.0036 -332.4987 -105.0036 332.4987))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_664.9974x210.0072_um"
+      (shape (polygon B.Cu 0 -332.4987 105.0036 332.4987 105.0036 332.4987 -105.0036 -332.4987 -105.0036 -332.4987 105.0036))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_999.998x650.0114_um"
+      (shape (polygon B.Cu 0 -499.999 325.0057 499.999 325.0057 499.999 -325.0057 -499.999 -325.0057 -499.999 325.0057))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_1699.9966x599.9988000000001_um"
+      (shape (polygon B.Cu 0 -849.9983 299.99940000000004 849.9983 299.99940000000004 849.9983 -299.99940000000004 -849.9983 -299.99940000000004 -849.9983 299.99940000000004))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_1799.9964x1199.9976000000001_um"
+      (shape (polygon B.Cu 0 -899.9982 599.9988000000001 899.9982 599.9988000000001 899.9982 -599.9988000000001 -899.9982 -599.9988000000001 -899.9982 599.9988000000001))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_999.998x2699.9946_um"
+      (shape (polygon F.Cu 0 -499.999 1349.9973 499.999 1349.9973 499.999 -1349.9973 -499.999 -1349.9973 -499.999 1349.9973))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_599.9988000000001x1699.9966_um"
+      (shape (polygon F.Cu 0 -299.99940000000004 849.9983 299.99940000000004 849.9983 299.99940000000004 -849.9983 -299.99940000000004 -849.9983 -299.99940000000004 849.9983))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_599.9988000000001x299.99940000000004_um"
+      (shape (polygon B.Cu 0 -299.99940000000004 149.99970000000002 299.99940000000004 149.99970000000002 299.99940000000004 -149.99970000000002 -299.99940000000004 -149.99970000000002 -299.99940000000004 149.99970000000002))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_199.9996x564.9976_um"
+      (shape (polygon B.Cu 0 -99.9998 282.4988 99.9998 282.4988 99.9998 -282.4988 -99.9998 -282.4988 -99.9998 282.4988))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_399.9992x564.9976_um"
+      (shape (polygon B.Cu 0 -199.9996 282.4988 199.9996 282.4988 199.9996 -282.4988 -199.9996 -282.4988 -199.9996 282.4988))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_1037.4884x532.003_um"
+      (shape (polygon B.Cu 0 -518.7442 266.0015 518.7442 266.0015 518.7442 -266.0015 -518.7442 -266.0015 -518.7442 266.0015))
+      (attach off)
+    )
+    (padstack "RoundRect[T]Pad_799.9984x799.9984_um"
+      (shape (polygon F.Cu 0 -399.9992 399.9992 399.9992 399.9992 399.9992 -399.9992 -399.9992 -399.9992 -399.9992 399.9992))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_3650.0054x2650.0074_um"
+      (shape (polygon B.Cu 0 -1825.0027 1325.0037 1825.0027 1325.0037 1825.0027 -1325.0037 -1825.0027 -1325.0037 -1825.0027 1325.0037))
+      (attach off)
+    )
+    (padstack "RoundRect[B]Pad_510.0066x399.9992_um"
+      (shape (polygon B.Cu 0 -255.0033 199.9996 255.0033 199.9996 255.0033 -199.9996 -255.0033 -199.9996 -255.0033 199.9996))
+      (attach off)
+    )
+  )
+  (network
+    (net "Net-(D_USB_source_component_43-Pad1)"
+      (pins D_USB_source_component_43-1 U1_source_component_0-34)
+    )
+    (net "Net-(D_USB_source_component_43-Pad2)"
+      (pins D_USB_source_component_43-2 U1_source_component_0-33)
+    )
+    (net "Net-(D_USB_source_component_43-Pad3)"
+      (pins D_USB_source_component_43-3 C27_source_component_57-2)
+    )
+    (net "Net-(J_USB_source_component_40-Pad12)"
+      (pins J_USB_source_component_40-12 D_USB_source_component_43-2)
+    )
+    (net "Net-(J_USB_source_component_40-Pad13)"
+      (pins J_USB_source_component_40-13 D_USB_source_component_43-1)
+    )
+    (net "Net-(J_USB_source_component_40-Pad16)"
+      (pins J_USB_source_component_40-16 J_USB_source_component_40-13)
+    )
+    (net "Net-(J_USB_source_component_40-Pad17)"
+      (pins J_USB_source_component_40-17 J_USB_source_component_40-12)
+    )
+    (net "BUCK_BST_source_net_10"
+      (pins U5_source_component_15-6 C10_source_component_18-1)
+    )
+    (net "BUCK_SW_source_net_9"
+      (pins U5_source_component_15-5 C10_source_component_18-2 L1_source_component_19-1)
+    )
+    (net "CAN_H_source_net_7"
+      (pins U6_source_component_11-7 R49_source_component_13-1 J_IO_source_component_70-2 D_CAN_source_component_75-1)
+    )
+    (net "CAN_L_source_net_8"
+      (pins U6_source_component_11-6 R50_source_component_14-2 J_IO_source_component_70-3 D_CAN_source_component_75-2)
+    )
+    (net "CAN_RS_source_net_70"
+      (pins U1_source_component_0-42 U6_source_component_11-8 R34_source_component_87-2)
+    )
+    (net "CAN_RX_source_net_6"
+      (pins U1_source_component_0-44 U6_source_component_11-4)
+    )
+    (net "CAN_TERM_LINK_source_net_81"
+      (pins R49_source_component_13-2 R50_source_component_14-1)
+    )
+    (net "CAN_TX_source_net_5"
+      (pins U1_source_component_0-45 U6_source_component_11-1)
+    )
+    (net "EFUSE_DVDT_source_net_79"
+      (pins U10_source_component_97-20 C33_source_component_108-1)
+    )
+    (net "EFUSE_EN_source_net_73"
+      (pins U10_source_component_97-10 R38_source_component_99-2 R39_source_component_100-1)
+    )
+    (net "EFUSE_FLT_N_source_net_71"
+      (pins U1_source_component_0-43 U10_source_component_97-22 R48_source_component_110-2)
+    )
+    (net "EFUSE_ILIM_source_net_77"
+      (pins U10_source_component_97-19 R44_source_component_105-1 R45_source_component_106-1)
+    )
+    (net "EFUSE_ILIM_SWITCH_source_net_78"
+      (pins Q_ILIM_source_component_98-3 R45_source_component_106-2)
+    )
+    (net "EFUSE_OVP_source_net_76"
+      (pins U10_source_component_97-12 R42_source_component_103-2 R43_source_component_104-1)
+    )
+    (net "EFUSE_OVP_TOP_1_source_net_74"
+      (pins R40_source_component_101-2 R41_source_component_102-1)
+    )
+    (net "EFUSE_OVP_TOP_2_source_net_75"
+      (pins R41_source_component_102-2 R42_source_component_103-1)
+    )
+    (net "EFUSE_RTN_source_net_80"
+      (pins U10_source_component_97-15 U10_source_component_97-13 U10_source_component_97-25 Q_ILIM_source_component_98-2 R39_source_component_100-2 R43_source_component_104-2 R44_source_component_105-2 C33_source_component_108-2)
+    )
+    (net "EXT_DIR_CONN_source_net_56"
+      (pins J_IO_source_component_70-6 D_IO1_source_component_73-2 R24_source_component_77-1)
+    )
+    (net "EXT_DIR_source_net_59"
+      (pins U1_source_component_0-20 R24_source_component_77-2 R29_source_component_82-1)
+    )
+    (net "EXT_ENABLE_N_CONN_source_net_57"
+      (pins J_IO_source_component_70-7 D_IO1_source_component_73-4 R25_source_component_78-1)
+    )
+    (net "EXT_ENABLE_N_source_net_60"
+      (pins U1_source_component_0-21 R25_source_component_78-2 R30_source_component_83-2)
+    )
+    (net "EXT_STEP_CONN_source_net_55"
+      (pins J_IO_source_component_70-5 D_IO1_source_component_73-1 R23_source_component_76-1)
+    )
+    (net "EXT_STEP_source_net_58"
+      (pins U1_source_component_0-19 R23_source_component_76-2 R28_source_component_81-1)
+    )
+    (net "GND_source_net_0"
+      (pins U1_source_component_0-7 U1_source_component_0-29 U1_source_component_0-32 C1_source_component_1-2 C2_source_component_2-2 C3_source_component_3-2 C4_source_component_4-2 C5_source_component_6-2 U4_source_component_7-4 U4_source_component_7-8 C6_source_component_8-2 U6_source_component_11-2 C7_source_component_12-2 U5_source_component_15-4 C8_source_component_16-2 C9_source_component_17-2 C11_source_component_20-2 C12_source_component_21-2 U2_source_component_22-18 U2_source_component_22-3 U2_source_component_22-29 U2_source_component_22-25 U2_source_component_22-7 U2_source_component_22-9 U2_source_component_22-10 U2_source_component_22-13 U2_source_component_22-20 C15_source_component_25-2 C16_source_component_26-2 C17_source_component_27-2 C18_source_component_28-2 C19_source_component_29-2 C20_source_component_30-2 R5_source_component_31-2 R6_source_component_32-2 R8_source_component_35-2 R9_source_component_36-2 R11_source_component_38-2 C21_source_component_39-2 J_USB_source_component_40-11 J_USB_source_component_40-10 J_USB_source_component_40-9 J_USB_source_component_40-8 J_USB_source_component_40-22 J_USB_source_component_40-23 U3_source_component_41-2 U3_source_component_41-13 D_USB_source_component_43-3 D_VBUS_source_component_44-2 C25_source_component_45-2 C26_source_component_46-2 C22_source_component_47-2 C23_source_component_48-2 C24_source_component_49-2 R15_source_component_53-2 R17_source_component_55-2 C27_source_component_57-2 J_SWD_source_component_58-3 U7_source_component_59-8 U8_source_component_60-1 C28_source_component_62-2 C29_source_component_63-2 R51_source_component_67-2 R52_source_component_68-2 R53_source_component_69-2 J_IO_source_component_70-1 J_IO_source_component_70-4 J_IO_source_component_70-10 J_IO_source_component_70-11 J_IO_source_component_70-12 J_MOTOR_source_component_71-5 J_MOTOR_source_component_71-6 U9_source_component_72-2 U9_source_component_72-4 D_IO1_source_component_73-8 D_IO1_source_component_73-3 D_IO2_source_component_74-8 D_IO2_source_component_74-3 D_CAN_source_component_75-3 R28_source_component_81-2 R29_source_component_82-2 C30_source_component_88-2 C31_source_component_89-2 C32_source_component_90-2 LED_POWER_source_component_92-1 LED_STATUS_source_component_94-1 LED_FAULT_source_component_96-1 U10_source_component_97-17 R46_source_component_107-2 C34_source_component_109-2)
+    )
+    (net "I2C_SCL_source_net_3"
+      (pins U1_source_component_0-47 U4_source_component_7-7 R2_source_component_9-2 U9_source_component_72-1)
+    )
+    (net "I2C_SDA_source_net_4"
+      (pins U1_source_component_0-48 U4_source_component_7-6 R3_source_component_10-2 U9_source_component_72-6)
+    )
+    (net "LED_FAULT_A_source_net_67"
+      (pins R37_source_component_95-2 LED_FAULT_source_component_96-2)
+    )
+    (net "LED_FAULT_DRIVE_source_net_69"
+      (pins U1_source_component_0-31 R37_source_component_95-1)
+    )
+    (net "LED_POWER_A_source_net_65"
+      (pins R35_source_component_91-2 LED_POWER_source_component_92-2)
+    )
+    (net "LED_STATUS_A_source_net_66"
+      (pins R36_source_component_93-2 LED_STATUS_source_component_94-2)
+    )
+    (net "LED_STATUS_DRIVE_source_net_68"
+      (pins U1_source_component_0-30 R36_source_component_93-1)
+    )
+    (net "LIMIT1_CONN_source_net_61"
+      (pins J_IO_source_component_70-8 D_IO1_source_component_73-5 R26_source_component_79-1)
+    )
+    (net "LIMIT1_source_net_63"
+      (pins U1_source_component_0-22 R26_source_component_79-2 R31_source_component_84-2 C30_source_component_88-1)
+    )
+    (net "LIMIT2_CONN_source_net_62"
+      (pins J_IO_source_component_70-9 D_IO2_source_component_74-1 R27_source_component_80-1)
+    )
+    (net "LIMIT2_source_net_64"
+      (pins U1_source_component_0-23 R27_source_component_80-2 R32_source_component_85-2 C31_source_component_89-1)
+    )
+    (net "MOTOR_A1_source_net_25"
+      (pins U2_source_component_22-24 J_MOTOR_source_component_71-1)
+    )
+    (net "MOTOR_A2_source_net_26"
+      (pins U2_source_component_22-21 J_MOTOR_source_component_71-2)
+    )
+    (net "MOTOR_B1_source_net_27"
+      (pins U2_source_component_22-26 J_MOTOR_source_component_71-3)
+    )
+    (net "MOTOR_B2_source_net_28"
+      (pins U2_source_component_22-1 J_MOTOR_source_component_71-4)
+    )
+    (net "NRST_CONN_source_net_51"
+      (pins J_SWD_source_component_58-5 U7_source_component_59-10)
+    )
+    (net "NRST_GUARDED_source_net_46"
+      (pins U7_source_component_59-9 R22_source_component_66-1)
+    )
+    (net "NRST_source_net_2"
+      (pins U1_source_component_0-10 R1_source_component_5-2 C5_source_component_6-1 R22_source_component_66-2)
+    )
+    (net "PD_CC1_CONN_source_net_33"
+      (pins J_USB_source_component_40-18 U3_source_component_41-7 C23_source_component_48-1)
+    )
+    (net "PD_CC1_MCU_source_net_35"
+      (pins U1_source_component_0-28 U3_source_component_41-3)
+    )
+    (net "PD_CC2_CONN_source_net_34"
+      (pins J_USB_source_component_40-15 U3_source_component_41-9 C24_source_component_49-1)
+    )
+    (net "PD_CC2_MCU_source_net_36"
+      (pins U1_source_component_0-27 U3_source_component_41-1)
+    )
+    (net "PD_DB_source_net_40"
+      (pins U1_source_component_0-24 U3_source_component_41-10)
+    )
+    (net "PD_FLT_source_net_41"
+      (pins U1_source_component_0-25 U3_source_component_41-11 R12_source_component_50-2)
+    )
+    (net "PD_GATE_source_net_37"
+      (pins U3_source_component_41-5 Q_PD_source_component_42-4)
+    )
+    (net "PD_OVP_SERIES_source_net_38"
+      (pins R13_source_component_51-2 R14_source_component_52-1)
+    )
+    (net "PD_OVP_source_net_39"
+      (pins U3_source_component_41-6 R14_source_component_52-2 R15_source_component_53-1)
+    )
+    (net "POWER_GOOD_source_net_52"
+      (pins U7_source_component_59-1 U7_source_component_59-4 U7_source_component_59-11 U7_source_component_59-15 U8_source_component_60-2 R19_source_component_61-2)
+    )
+    (net "POWER_HIGH_CURRENT_source_net_72"
+      (pins U1_source_component_0-26 Q_ILIM_source_component_98-1 R46_source_component_107-1)
+    )
+    (net "SWCLK_CONN_source_net_50"
+      (pins J_SWD_source_component_58-4 U7_source_component_59-5)
+    )
+    (net "SWCLK_GUARDED_source_net_45"
+      (pins U7_source_component_59-6 R21_source_component_65-1)
+    )
+    (net "SWCLK_source_net_48"
+      (pins U1_source_component_0-36 R21_source_component_65-2 R53_source_component_69-1)
+    )
+    (net "SWDIO_CONN_source_net_49"
+      (pins J_SWD_source_component_58-2 U7_source_component_59-2)
+    )
+    (net "SWDIO_GUARDED_source_net_44"
+      (pins U7_source_component_59-3 R20_source_component_64-1)
+    )
+    (net "SWDIO_source_net_47"
+      (pins U1_source_component_0-35 R20_source_component_64-2 R52_source_component_68-1)
+    )
+    (net "TEMP_ALERT_N_source_net_54"
+      (pins U1_source_component_0-12 U9_source_component_72-3 R33_source_component_86-2)
+    )
+    (net "TMC_5VOUT_source_net_21"
+      (pins U2_source_component_22-8 C15_source_component_25-1 R10_source_component_37-1)
+    )
+    (net "TMC_CPI_source_net_19"
+      (pins U2_source_component_22-5 C13_source_component_23-2)
+    )
+    (net "TMC_CPO_source_net_18"
+      (pins U2_source_component_22-4 C13_source_component_23-1)
+    )
+    (net "TMC_DIAG_source_net_15"
+      (pins U1_source_component_0-16 U2_source_component_22-11)
+    )
+    (net "TMC_DIR_source_net_14"
+      (pins U1_source_component_0-18 U2_source_component_22-19 R9_source_component_36-1)
+    )
+    (net "TMC_ENABLE_N_source_net_12"
+      (pins U1_source_component_0-15 U2_source_component_22-2 R7_source_component_34-2)
+    )
+    (net "TMC_SENSE_A_source_net_23"
+      (pins U2_source_component_22-23 R5_source_component_31-1)
+    )
+    (net "TMC_SENSE_B_source_net_24"
+      (pins U2_source_component_22-27 R6_source_component_32-1)
+    )
+    (net "TMC_STEP_source_net_13"
+      (pins U1_source_component_0-17 U2_source_component_22-16 R8_source_component_35-1)
+    )
+    (net "TMC_UART_RX_source_net_17"
+      (pins U1_source_component_0-14 U2_source_component_22-14 R4_source_component_33-2)
+    )
+    (net "TMC_UART_TX_source_net_16"
+      (pins U1_source_component_0-13 R4_source_component_33-1)
+    )
+    (net "TMC_VCP_source_net_20"
+      (pins U2_source_component_22-6 C14_source_component_24-1)
+    )
+    (net "TMC_VREF_source_net_22"
+      (pins U2_source_component_22-17 R10_source_component_37-2 R11_source_component_38-1 C21_source_component_39-1)
+    )
+    (net "unconnected-(D_IO1_source_component_73-Pad10)"
+      (pins D_IO1_source_component_73-10)
+    )
+    (net "unconnected-(D_IO1_source_component_73-Pad6)"
+      (pins D_IO1_source_component_73-6)
+    )
+    (net "unconnected-(D_IO1_source_component_73-Pad7)"
+      (pins D_IO1_source_component_73-7)
+    )
+    (net "unconnected-(D_IO1_source_component_73-Pad9)"
+      (pins D_IO1_source_component_73-9)
+    )
+    (net "unconnected-(D_IO2_source_component_74-Pad10)"
+      (pins D_IO2_source_component_74-10)
+    )
+    (net "unconnected-(D_IO2_source_component_74-Pad2)"
+      (pins D_IO2_source_component_74-2)
+    )
+    (net "unconnected-(D_IO2_source_component_74-Pad4)"
+      (pins D_IO2_source_component_74-4)
+    )
+    (net "unconnected-(D_IO2_source_component_74-Pad5)"
+      (pins D_IO2_source_component_74-5)
+    )
+    (net "unconnected-(D_IO2_source_component_74-Pad6)"
+      (pins D_IO2_source_component_74-6)
+    )
+    (net "unconnected-(D_IO2_source_component_74-Pad7)"
+      (pins D_IO2_source_component_74-7)
+    )
+    (net "unconnected-(D_IO2_source_component_74-Pad9)"
+      (pins D_IO2_source_component_74-9)
+    )
+    (net "unconnected-(J_SWD_source_component_58-Pad1)"
+      (pins J_SWD_source_component_58-1)
+    )
+    (net "unconnected-(J_USB_source_component_40-Pad14)"
+      (pins J_USB_source_component_40-14)
+    )
+    (net "unconnected-(J_USB_source_component_40-Pad19)"
+      (pins J_USB_source_component_40-19)
+    )
+    (net "unconnected-(U1_source_component_0-Pad1)"
+      (pins U1_source_component_0-1)
+    )
+    (net "unconnected-(U1_source_component_0-Pad2)"
+      (pins U1_source_component_0-2)
+    )
+    (net "unconnected-(U1_source_component_0-Pad3)"
+      (pins U1_source_component_0-3)
+    )
+    (net "unconnected-(U1_source_component_0-Pad37)"
+      (pins U1_source_component_0-37)
+    )
+    (net "unconnected-(U1_source_component_0-Pad38)"
+      (pins U1_source_component_0-38)
+    )
+    (net "unconnected-(U1_source_component_0-Pad39)"
+      (pins U1_source_component_0-39)
+    )
+    (net "unconnected-(U1_source_component_0-Pad40)"
+      (pins U1_source_component_0-40)
+    )
+    (net "unconnected-(U1_source_component_0-Pad41)"
+      (pins U1_source_component_0-41)
+    )
+    (net "unconnected-(U1_source_component_0-Pad46)"
+      (pins U1_source_component_0-46)
+    )
+    (net "unconnected-(U1_source_component_0-Pad8)"
+      (pins U1_source_component_0-8)
+    )
+    (net "unconnected-(U1_source_component_0-Pad9)"
+      (pins U1_source_component_0-9)
+    )
+    (net "unconnected-(U10_source_component_97-Pad1)"
+      (pins U10_source_component_97-1)
+    )
+    (net "unconnected-(U10_source_component_97-Pad11)"
+      (pins U10_source_component_97-11)
+    )
+    (net "unconnected-(U10_source_component_97-Pad14)"
+      (pins U10_source_component_97-14)
+    )
+    (net "unconnected-(U10_source_component_97-Pad16)"
+      (pins U10_source_component_97-16)
+    )
+    (net "unconnected-(U10_source_component_97-Pad18)"
+      (pins U10_source_component_97-18)
+    )
+    (net "unconnected-(U10_source_component_97-Pad2)"
+      (pins U10_source_component_97-2)
+    )
+    (net "unconnected-(U10_source_component_97-Pad21)"
+      (pins U10_source_component_97-21)
+    )
+    (net "unconnected-(U10_source_component_97-Pad3)"
+      (pins U10_source_component_97-3)
+    )
+    (net "unconnected-(U10_source_component_97-Pad4)"
+      (pins U10_source_component_97-4)
+    )
+    (net "unconnected-(U10_source_component_97-Pad5)"
+      (pins U10_source_component_97-5)
+    )
+    (net "unconnected-(U10_source_component_97-Pad6)"
+      (pins U10_source_component_97-6)
+    )
+    (net "unconnected-(U10_source_component_97-Pad7)"
+      (pins U10_source_component_97-7)
+    )
+    (net "unconnected-(U2_source_component_22-Pad12)"
+      (pins U2_source_component_22-12)
+    )
+    (net "unconnected-(U4_source_component_7-Pad3)"
+      (pins U4_source_component_7-3)
+    )
+    (net "unconnected-(U4_source_component_7-Pad5)"
+      (pins U4_source_component_7-5)
+    )
+    (net "unconnected-(U6_source_component_11-Pad5)"
+      (pins U6_source_component_11-5)
+    )
+    (net "unconnected-(U7_source_component_59-Pad12)"
+      (pins U7_source_component_59-12)
+    )
+    (net "unconnected-(U7_source_component_59-Pad7)"
+      (pins U7_source_component_59-7)
+    )
+    (net "USB_DM_source_net_32"
+      (pins U1_source_component_0-33 J_USB_source_component_40-12 J_USB_source_component_40-17 D_USB_source_component_43-2)
+    )
+    (net "USB_DP_source_net_31"
+      (pins U1_source_component_0-34 J_USB_source_component_40-16 J_USB_source_component_40-13 D_USB_source_component_43-1)
+    )
+    (net "V3V3_source_net_1"
+      (pins U1_source_component_0-6 U1_source_component_0-4 U1_source_component_0-5 C1_source_component_1-1 C2_source_component_2-1 C3_source_component_3-1 C4_source_component_4-1 R1_source_component_5-1 U4_source_component_7-1 U4_source_component_7-2 C6_source_component_8-1 R2_source_component_9-1 R3_source_component_10-1 U6_source_component_11-3 C7_source_component_12-1 U5_source_component_15-1 L1_source_component_19-2 C11_source_component_20-1 C12_source_component_21-1 U2_source_component_22-15 C16_source_component_26-1 R7_source_component_34-1 U3_source_component_41-12 C22_source_component_47-1 R12_source_component_50-1 U7_source_component_59-16 U8_source_component_60-3 R19_source_component_61-1 C28_source_component_62-1 C29_source_component_63-1 U9_source_component_72-5 R30_source_component_83-1 R31_source_component_84-1 R32_source_component_85-1 R33_source_component_86-1 R34_source_component_87-1 C32_source_component_90-1 R35_source_component_91-1 R48_source_component_110-1)
+    )
+    (net "VBUS_ADC_PRE_GUARD_source_net_53"
+      (pins R18_source_component_56-2 U7_source_component_59-14)
+    )
+    (net "VBUS_ADC_source_net_43"
+      (pins U1_source_component_0-11 C27_source_component_57-1 U7_source_component_59-13 R51_source_component_67-1)
+    )
+    (net "VBUS_CONN_source_net_29"
+      (pins J_USB_source_component_40-20 J_USB_source_component_40-21 U3_source_component_41-8 Q_PD_source_component_42-8 Q_PD_source_component_42-7 Q_PD_source_component_42-6 Q_PD_source_component_42-5 Q_PD_source_component_42-9 D_VBUS_source_component_44-1 C25_source_component_45-1 C26_source_component_46-1 R13_source_component_51-1)
+    )
+    (net "VBUS_DIV_source_net_42"
+      (pins R16_source_component_54-2 R17_source_component_55-1 R18_source_component_56-1)
+    )
+    (net "VBUS_PROTECTED_source_net_30"
+      (pins U3_source_component_41-4 Q_PD_source_component_42-1 Q_PD_source_component_42-2 Q_PD_source_component_42-3 R16_source_component_54-1 U10_source_component_97-9 U10_source_component_97-8 R38_source_component_99-1 R40_source_component_101-1 C34_source_component_109-1)
+    )
+    (net "VM_source_net_11"
+      (pins U5_source_component_15-3 U5_source_component_15-2 C8_source_component_16-1 C9_source_component_17-1 U2_source_component_22-28 U2_source_component_22-22 C14_source_component_24-2 C17_source_component_27-1 C18_source_component_28-1 C19_source_component_29-1 C20_source_component_30-1 U10_source_component_97-24 U10_source_component_97-23)
+    )
+    (class "kicad_default" "" "BUCK_BST_source_net_10" "BUCK_SW_source_net_9" "CAN_H_source_net_7" "CAN_L_source_net_8" "CAN_RS_source_net_70" "CAN_RX_source_net_6" "CAN_TERM_LINK_source_net_81" "CAN_TX_source_net_5" "EFUSE_DVDT_source_net_79" "EFUSE_EN_source_net_73" "EFUSE_FLT_N_source_net_71" "EFUSE_ILIM_source_net_77" "EFUSE_ILIM_SWITCH_source_net_78" "EFUSE_OVP_source_net_76" "EFUSE_OVP_TOP_1_source_net_74" "EFUSE_OVP_TOP_2_source_net_75" "EFUSE_RTN_source_net_80" "EXT_DIR_CONN_source_net_56" "EXT_DIR_source_net_59" "EXT_ENABLE_N_CONN_source_net_57" "EXT_ENABLE_N_source_net_60" "EXT_STEP_CONN_source_net_55" "EXT_STEP_source_net_58" "GND_source_net_0" "I2C_SCL_source_net_3" "I2C_SDA_source_net_4" "LED_FAULT_A_source_net_67" "LED_FAULT_DRIVE_source_net_69" "LED_POWER_A_source_net_65" "LED_STATUS_A_source_net_66" "LED_STATUS_DRIVE_source_net_68" "LIMIT1_CONN_source_net_61" "LIMIT1_source_net_63" "LIMIT2_CONN_source_net_62" "LIMIT2_source_net_64" "MOTOR_A1_source_net_25" "MOTOR_A2_source_net_26" "MOTOR_B1_source_net_27" "MOTOR_B2_source_net_28" "NRST_CONN_source_net_51" "NRST_GUARDED_source_net_46" "NRST_source_net_2" "PD_CC1_CONN_source_net_33" "PD_CC1_MCU_source_net_35" "PD_CC2_CONN_source_net_34" "PD_CC2_MCU_source_net_36" "PD_DB_source_net_40" "PD_FLT_source_net_41" "PD_GATE_source_net_37" "PD_OVP_SERIES_source_net_38" "PD_OVP_source_net_39" "POWER_GOOD_source_net_52" "POWER_HIGH_CURRENT_source_net_72" "SWCLK_CONN_source_net_50" "SWCLK_GUARDED_source_net_45" "SWCLK_source_net_48" "SWDIO_CONN_source_net_49" "SWDIO_GUARDED_source_net_44" "SWDIO_source_net_47" "TEMP_ALERT_N_source_net_54" "TMC_5VOUT_source_net_21" "TMC_CPI_source_net_19" "TMC_CPO_source_net_18" "TMC_DIAG_source_net_15" "TMC_DIR_source_net_14" "TMC_ENABLE_N_source_net_12" "TMC_SENSE_A_source_net_23" "TMC_SENSE_B_source_net_24" "TMC_STEP_source_net_13" "TMC_UART_RX_source_net_17" "TMC_UART_TX_source_net_16" "TMC_VCP_source_net_20" "TMC_VREF_source_net_22" "unconnected-(D_IO1_source_component_73-Pad10)" "unconnected-(D_IO1_source_component_73-Pad6)" "unconnected-(D_IO1_source_component_73-Pad7)" "unconnected-(D_IO1_source_component_73-Pad9)" "unconnected-(D_IO2_source_component_74-Pad10)" "unconnected-(D_IO2_source_component_74-Pad2)" "unconnected-(D_IO2_source_component_74-Pad4)" "unconnected-(D_IO2_source_component_74-Pad5)" "unconnected-(D_IO2_source_component_74-Pad6)" "unconnected-(D_IO2_source_component_74-Pad7)" "unconnected-(D_IO2_source_component_74-Pad9)" "unconnected-(J_SWD_source_component_58-Pad1)" "unconnected-(J_USB_source_component_40-Pad14)" "unconnected-(J_USB_source_component_40-Pad19)" "unconnected-(U1_source_component_0-Pad1)" "unconnected-(U1_source_component_0-Pad2)" "unconnected-(U1_source_component_0-Pad3)" "unconnected-(U1_source_component_0-Pad37)" "unconnected-(U1_source_component_0-Pad38)" "unconnected-(U1_source_component_0-Pad39)" "unconnected-(U1_source_component_0-Pad40)" "unconnected-(U1_source_component_0-Pad41)" "unconnected-(U1_source_component_0-Pad46)" "unconnected-(U1_source_component_0-Pad8)" "unconnected-(U1_source_component_0-Pad9)" "unconnected-(U10_source_component_97-Pad1)" "unconnected-(U10_source_component_97-Pad11)" "unconnected-(U10_source_component_97-Pad14)" "unconnected-(U10_source_component_97-Pad16)" "unconnected-(U10_source_component_97-Pad18)" "unconnected-(U10_source_component_97-Pad2)" "unconnected-(U10_source_component_97-Pad21)" "unconnected-(U10_source_component_97-Pad3)" "unconnected-(U10_source_component_97-Pad4)" "unconnected-(U10_source_component_97-Pad5)" "unconnected-(U10_source_component_97-Pad6)" "unconnected-(U10_source_component_97-Pad7)" "unconnected-(U2_source_component_22-Pad12)" "unconnected-(U4_source_component_7-Pad3)" "unconnected-(U4_source_component_7-Pad5)" "unconnected-(U6_source_component_11-Pad5)" "unconnected-(U7_source_component_59-Pad12)" "unconnected-(U7_source_component_59-Pad7)" "USB_DM_source_net_32" "USB_DP_source_net_31" "V3V3_source_net_1" "VBUS_ADC_PRE_GUARD_source_net_53" "VBUS_ADC_source_net_43" "VBUS_CONN_source_net_29" "VBUS_DIV_source_net_42" "VBUS_PROTECTED_source_net_30" "VM_source_net_11"
+      (circuit
+        (use_via "Via[0-3]_600:300_um")
+      )
+      (rule
+        (width 150)
+        (clearance 150)
+      )
+    )
+    (class "trace_width_153.70000000000002um" "Trace width 153.70000000000002μm" "Net-(D_USB_source_component_43-Pad1)" "Net-(D_USB_source_component_43-Pad2)" "Net-(J_USB_source_component_40-Pad12)" "Net-(J_USB_source_component_40-Pad13)" "Net-(J_USB_source_component_40-Pad16)" "Net-(J_USB_source_component_40-Pad17)"
+      (circuit
+        (use_via "Via[0-1]_600:300_um")
+      )
+      (rule
+        (width 153.70000000000002)
+        (clearance 200)
+      )
+    )
+    (class "trace_width_150um" "Trace width 150μm" "Net-(D_USB_source_component_43-Pad3)"
+      (circuit
+        (use_via "Via[0-1]_600:300_um")
+      )
+      (rule
+        (width 150)
+        (clearance 200)
+      )
+    )
+  )
+  (wiring
+    (wire       (path F.Cu 153.70000000000002  750.062 -10235.0062 750.062 -9200 1153.6 -8796.462 1153.6 -7350.012000000001 2499.999 -7350.012)(net "source_trace_0--PadDP2_J_USB_source_component_40--Pad1_D_USB_source_component_43")(type route))
+    (wire       (path F.Cu 153.70000000000002  249.93599999999998 -10235.0062 249.93599999999998 -9200 800 -8649.936 800 -6649.987999999999 2499.999 -6649.988)(net "source_trace_1--PadDN1_J_USB_source_component_40--Pad2_D_USB_source_component_43")(type route))
+    (wire       (path F.Cu 153.70000000000002  2499.999 -7350.012 2850 -7600 3350 -7600 3700 -7250 3700 -6750 3350 -6400 2853.6000000000004 -6400 2853.6000000000004 6126.799999999999 3750 7023.199999999999 5926.8 7023.199999999999 6823.2 6126.799999999999 6749.940000000038 5549.927999999997)(net "source_trace_2--Pad1_D_USB_source_component_43--PadPA12_PA10__U1_source_component_0")(type route))
+    (wire       (path F.Cu 153.70000000000002  2499.999 -6649.988 2500 -6200 2500 6273.199999999999 3603.6000000000004 7376.799999999999 6073.2 7376.799999999999 7176.8 6273.199999999999 7250.066000000004 5549.927999999997)(net "source_trace_3--Pad2_D_USB_source_component_43--PadPA11_PA9__U1_source_component_0")(type route))
+    (wire       (path F.Cu 153.70000000000002  -249.93599999999998 -10235.0062 -249.93599999999998 -9200 -450 -9000.064 -450 -8750)(net "source_trace_4--PadDP1_J_USB_source_component_40--PadDP2_J_USB_source_component_40")(type route))
+    (via       (path F.Cu 600  -450 -8750)(net "source_trace_4--PadDP1_J_USB_source_component_40--PadDP2_J_USB_source_component_40"))
+    (wire       (path B.Cu 153.70000000000002  1000 -8833.653846000001 2150 -8900)(net "source_trace_4--PadDP1_J_USB_source_component_40--PadDP2_J_USB_source_component_40")(type route))
+    (via       (path B.Cu 600  2150 -8900)(net "source_trace_4--PadDP1_J_USB_source_component_40--PadDP2_J_USB_source_component_40"))
+    (wire       (path F.Cu 153.70000000000002  1153.6 -8900 1153.6 -8796.462 750.062 -9200 750.062 -10235.0062)(net "source_trace_4--PadDP1_J_USB_source_component_40--PadDP2_J_USB_source_component_40")(type route))
+    (wire       (path F.Cu 150  1500.001 -7000 3100 -7000)(net "source_trace_5--Pad3_D_USB_source_component_43--Pad2_C27_source_component_57")(type route))
+    (via       (path F.Cu 600  3100 -7000)(net "source_trace_5--Pad3_D_USB_source_component_43--Pad2_C27_source_component_57"))
+    (wire       (path B.Cu 150  3500 -6725.98457 3829.884 -6500)(net "source_trace_5--Pad3_D_USB_source_component_43--Pad2_C27_source_component_57")(type route))
+    (wire       (path F.Cu 153.70000000000002  -750.062 -10235.0062 -750.062 -9450 -1150 -9450 -1150 -8200)(net "source_trace_6--PadDN2_J_USB_source_component_40--PadDN1_J_USB_source_component_40")(type route))
+    (via       (path F.Cu 600  -1150 -8200)(net "source_trace_6--PadDN2_J_USB_source_component_40--PadDN1_J_USB_source_component_40"))
+    (wire       (path B.Cu 153.70000000000002  -1150 -7700 0 -7700 0 -7900)(net "source_trace_6--PadDN2_J_USB_source_component_40--PadDN1_J_USB_source_component_40")(type route))
+    (via       (path B.Cu 600  0 -7900)(net "source_trace_6--PadDN2_J_USB_source_component_40--PadDN1_J_USB_source_component_40"))
+    (wire       (path F.Cu 153.70000000000002  800 -7900 800 -8649.936 249.93599999999998 -9200 249.93599999999998 -10235.0062)(net "source_trace_6--PadDN2_J_USB_source_component_40--PadDN1_J_USB_source_component_40")(type route))
+  )
+)
