@@ -1,6 +1,6 @@
 # Smart NEMA 14 Motor Controller
 
-Revision **0.0.17-alpha.0**, 2026-10-03. **Routing development prototype; not fabrication ready; not hardware tested.**
+Revision **0.0.17-alpha.1**, 2026-10-04. **Routing development prototype; not fabrication ready; not hardware tested.**
 
 35 ×35 mm, four layers, 111 electronic references /108 default fitted, nine native A4 schematic sheets. The exact motor is **STEPPERONLINE 14HM11-0404S**: 0.4 A phase rating, 25 Ω, 24 mH, 0.9°, single front shaft. Default assembly is open-loop: U4/C6 encoder and R50 CAN endpoint link are DNP. No rear shaft or generic NEMA geometry is assumed.
 
@@ -25,4 +25,6 @@ Pinned tools: tscircuit 0.0.2742, CLI 0.1.2237, EasyEDA 0.0.369. Run board comma
 
 Private source: [GitHub](https://github.com/AnasSarkiz/smart-nema14-motor-controller), branch main. Private package: [tscircuit](https://tscircuit.com/AnasSarkiz/smart-nema14-motor-controller--01a0fd9b). Last source-upload-verified release is **0.0.16-alpha.0**: **651** exact files, source [533fbab](https://github.com/AnasSarkiz/smart-nema14-motor-controller/commit/533fbab83d42f0477bec143738c837f658aaf984), release ID 5a50b240-c618-41c7-9c2a-026305bd8a59. Hosted build success is tracked separately. The hosted revision-15 build remains pending at its latest check. Public visibility remains awaiting the earlier explicit approval; both destinations stay private.
 
-Registry distributions preserve exact source, supplier CAD and audit evidence. Large reference PDFs/ZIPs remain in GitHub with manufacturer links in references/SOURCES.md. Publication never means fabrication or hardware-test approval.
+Revision 0.0.17-alpha.0 upload failed at the registry database size limit and is incomplete. Patch 0.0.17-alpha.1 republishes the same checked copper with a smaller source distribution; its verified receipt is pending. Large failed-trial artifacts and duplicate downloaded supplier-model caches remain in private GitHub with checksum links. All imported definitions and their CAD, the selected motor model, and current partial-copper evidence are retained.
+
+Registry distributions preserve exact source, supplier CAD and current audit evidence. Large reference PDFs/ZIPs remain in GitHub with manufacturer links in references/SOURCES.md. Publication never means fabrication or hardware-test approval.

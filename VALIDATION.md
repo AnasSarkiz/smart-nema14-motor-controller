@@ -1,4 +1,10 @@
-# Current revision 0.0.17-alpha.0 — routing development prototype
+# Current publication patch 0.0.17-alpha.1 — same checked partial copper
+
+**Work in progress; NOT fabrication ready; NOT hardware tested.** 2026-10-04 Europe/Tirane. The circuit, placement, imported definitions, routing controls and saved copper are unchanged from source commit 062585ebee9135a57c5ee93879bf55cc45eaa4aa. Revision 17 pre-routing checks and bounded partial-copper reviews remain applicable. This patch only changes package metadata and publication scope. Stage 4 remains in progress; stages 5/6 remain pending.
+
+**Publication failure preserved:** GitHub revision 062585e was pushed and its remote SHA verified. Registry revision 0.0.17-alpha.0, release 2c69ebb2-d74b-423c-a089-562042c7b72f, failed during upload with `total size of jsonb object elements exceeds the maximum of 268435455 bytes`. It was never fully read back or approved. A slow partial-draft cleanup was stopped; no older release was deleted. Patch 0.0.17-alpha.1 uses a smaller distribution. Required sources, all imported definitions and their CAD, selected motor models, current checked partial copper and validation summaries remain included. Large historical trial outputs and duplicate supplier-download caches remain in the private Git source, with exact hashes recorded in PACKAGE-SCOPE.json. Exclusion changes distribution size only; every failing validation result remains explicit and accessible. Exact patch publication/readback receipt is pending. Hosted build success is separately required.
+
+# Historical circuit revision 0.0.17-alpha.0 — routing development prototype
 
 **Work in progress; NOT fabrication ready; NOT hardware tested.** 2026-10-03 Europe/Tirane. Source basis: e4c6c61fd0c8d31fb06813afca02547697d4ffd3. This revision is local and unpublished until its publication receipt is recorded. Routing is enabled. The main design now retains the 54 checked complete saved nets by default and keeps native automatic completion enabled. `routing-review.circuit.tsx` explicitly stops after this partial copper for inspection; it retains the 187 native missing-port errors and is not the manufacturing entry.
 
