@@ -13,7 +13,7 @@
 | 5. Routed checks | not started | No routed copper approval. |
 | 6. Prototype fabrication | not started | No validated Gerber/drill/assembly package. |
 | 7. Physical prototype | not started | No physical tests. |
-| 8. Store release | in progress | Private revision-15 publication pending; prototype label mandatory. |
+| 8. Store release | in progress | Private revision 15 uploaded and 584 exact files verified; hosted build tracked separately. Prototype label mandatory. |
 
 TPS26600RHFR/C2155767 has 60 V operating OUT rating independently of VIN, closing the old TPS25947 disconnect rating concern. This is not a 60 V rating for the controller. MODE connects to isolated RTN for current-limit/autoretry operation. RTN and GND remain separate. The genuine manufacturer RHF0024A CAD has 25 matching contacts. C25769 gives native 24 kΩ current-limit resistors; C20512 DMG1012T-7 preserves G1/S2/D3 and is specified for 2.5 V gate drive. C33/C34 use C268016 2.2 µF/50 V; old R47 is removed. C852665 (lost native resistor value) and C181406 (exposed-pad mismatch) are rejected alternatives, not patched or selected. The selected fixture passes **3 parts / 30 physical pin-to-pad maps**, with no raw geometry discrepancies. Earlier fixture definitions remain unchanged.
 
@@ -22,6 +22,10 @@ The current review BOM is **111 references / 108 default fitted / 43 supplier id
 The power calculation uses zero credit for internal driver sense resistance, peak 0.34245 A, rotor plus at most 0.25×10⁻⁶ kg·m² external reflected inertia at 300 RPM, and no overhauling/backdrive. Combined phase/kinetic screen is 3.994 mJ. Bulk minimum is 100.8 µF after tolerance, reflow and manufacturer endurance allowances. Calculated VM is 22.809 V lossless / 24.972 V with a conservative LF resistive screen, below 29 V; HF parasitic overshoot remains unqualified. MLCC effective values use typical manufacturer curves and explicit aging allowances, not guaranteed combined limits. Initial source scope is a PD charger/dock advertising at least 1.5 A at 5 V; legacy/default-current USB operation is not established or advertised. Firmware is not delivered or hardware tested. See mechanical/POWER-CORNER-REVIEW.md.
 
 Native source, netlist, pin-specification, schematic-placement and PCB placement are rerun using the installed CLI. The unchanged TVS rotation defect remains visible in the schematic output and failing dedicated regression. The user accepted it as cosmetic after verified physical mappings; the aggregate retains the semantic failure. No electrical error is waived. Final logs and actual generated check records are under evidence/rev-0.0.15-alpha.0/. Exact source/CAD hashes and inspected image records identify this step. Routing remains disabled pending stages 1–3.
+
+## Verified revision-15 publication
+
+Source [252d18a](https://github.com/AnasSarkiz/smart-nema14-motor-controller/commit/252d18a00f2d67b2b83b7c67b0a176d908c457ce) is pushed to main and the exact remote SHA verified. Private tscircuit **0.0.15-alpha.0**, release ID 5f610381-0e9e-4855-b307-6c82759ea5f5, received **584** exact committed source/CAD/evidence files. Every file passed SHA256 readback through the official direct-download API. ready_to_build was set after complete readback. See PUBLICATION-RECEIPT.json. This documentation checkpoint changes no circuit sources, geometry, imports, dependencies or CAD.
 
 ## Historical revision 14 — evidence remains scoped to that revision
 
