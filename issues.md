@@ -32,9 +32,9 @@ The B4 drawing envelope, both locating pegs and all 20 physical landings align w
 
 C53283913's pin-3 square loses its 45° rotation; it is excluded and replaced by audited C5218924. Motor connector C265102 has 1.80 mm hold-down lands versus JST 1.50 ±0.10; C265332 and C157926 alternatives also differ from their reference layouts. These are excluded. C189895 uses its own unaltered footprint and passes the catalogue's specified dimensions. Mating harness/model placement and stock freeze remain pending.
 
-## B018 — Publication destination resolved; upload verification in progress
+## B018 — Private source/CAD publication verified; hosted build pending
 
-The user authorized creation. Private GitHub repository `AnasSarkiz/smart-nema14-motor-controller`, branch `main`, received commit 9eb6e1a. The private tscircuit package is `AnasSarkiz/smart-nema14-motor-controller--01a0fd9b`. Its official CLI upload encountered HTTP 413 and uncertain request timeouts; supported gzip archive retries and exact-byte readback are required before declaring the release published. Current receipts will be recorded in VALIDATION.md.
+The user authorized creation. Private GitHub repository `AnasSarkiz/smart-nema14-motor-controller`, branch `main`, received commit 9eb6e1a. The private tscircuit package is `AnasSarkiz/smart-nema14-motor-controller--01a0fd9b`. The initial full-reference CLI upload encountered HTTP 413 and timeouts. The scoped revision-13 source/CAD distribution uploaded through the supported compressed archive API, and all 422 initial files passed exact SHA256 readback. Release 1b9388cf-42f9-40d2-8097-17158935154e is latest and ready to build; hosted jobs were still pending at the metadata check. PUBLICATION-RECEIPT.json preserves the proof.
 
 ## B022 — Large reference PDF transport limitation
 

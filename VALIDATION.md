@@ -86,6 +86,26 @@ explicit authorization. Both destinations remain private pending the specific
 public-visibility question. No order, merge, public disclosure or physical test
 is claimed. Publication does not approve fabrication.
 
+## Verified publication receipt — 0.0.13-alpha.0
+
+[GitHub source commit 54fd682](https://github.com/AnasSarkiz/smart-nema14-motor-controller/commit/54fd68291fc3eeb4891f824229fe7c6fe762a639)
+was pushed to `main` and verified through the repository API. Private tscircuit
+release **0.0.13-alpha.0**, ID `1b9388cf-42f9-40d2-8097-17158935154e`, received
+**422 source/CAD/evidence files**; every file was downloaded through the official
+registry APIs and its SHA256 matched the committed distribution. The motor STEP
+contained non-UTF8 bytes; readback caught the initial text-encoding change and a
+supported binary transfer restored its original manufacturer checksum. No local
+STEP or supplier definition was changed. The release reports `is_latest=true`
+and `ready_to_build=true`. Hosted transpilation/circuit/image jobs were still
+**pending** at the recorded metadata check; their success is not claimed.
+
+`PUBLICATION-RECEIPT.json` contains per-file hashes, uploads, exclusions and remote
+metadata. This documentation checkpoint is pushed and mirrored to the same
+private design release; circuit validation remains applicable because all circuit
+sources, dependencies, supplier definitions, placement and CAD bytes are unchanged.
+Public store visibility remains pending explicit approval. Stage 1–3 blockers and
+all fabrication/physical-testing limits above remain in force.
+
 ## Historical validation records — superseded where stated above
 
 # Historical revision 0.0.12-alpha.0 — external exact-part USB STEP registration
