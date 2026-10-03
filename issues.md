@@ -1,4 +1,4 @@
-# Current blockers — 0.0.12-alpha.0
+# Current blockers — 0.0.13-alpha.0
 
 The electrical draft now contains 111 parts on nine A4 sheets. Native placement has zero reported errors/warnings; routing is disabled until the earlier gates pass.
 
@@ -12,7 +12,7 @@ C1974707 / ESDA25P35 ignores native schRotation=270: both zero-angle and rotated
 
 ## B013/B006 — Startup, transient and braking qualification: BLOCKING stages 1/2
 
-TPS259470L and unpowered SWD/ADC isolation are implemented. Current shunts are now 1 Ω, with a conservative peak-current screen about 0.336 A rather than the obsolete 180 mΩ proposals. Remaining work: bootstrap current budget, capacitor effective values/ripple, thermal/pulse ratings, protection tolerances/transients, contract-aware fault behavior and regenerative energy. The VBUS ADC measures upstream of the eFuse, not regenerative VM. Load, maximum speed, inertia, deceleration and backdrive limits were requested but are not yet supplied. Reverse blocking is not a brake.
+TPS259470L and unpowered SWD/ADC isolation are implemented. Current shunts are now 1 Ω, with a conservative peak-current screen about 0.336 A rather than the obsolete 180 mΩ proposals. Remaining work: bootstrap current budget, capacitor effective values/ripple, thermal/pulse ratings, protection tolerances/transients, contract-aware fault behavior and regenerative energy. The VBUS ADC measures upstream of the eFuse, not regenerative VM. The user reconfirmed the exact store motor rather than an external load envelope. The motor SKU alone does not bound load inertia, maximum speed, deceleration or backdrive energy; those operating limits remain unqualified. Reverse blocking is not a brake.
 
 ## B016 — Rear encoder arrangement: closed for the default open-loop review assembly
 
@@ -32,9 +32,17 @@ The B4 drawing envelope, both locating pegs and all 20 physical landings align w
 
 C53283913's pin-3 square loses its 45° rotation; it is excluded and replaced by audited C5218924. Motor connector C265102 has 1.80 mm hold-down lands versus JST 1.50 ±0.10; C265332 and C157926 alternatives also differ from their reference layouts. These are excluded. C189895 uses its own unaltered footprint and passes the catalogue's specified dimensions. Mating harness/model placement and stock freeze remain pending.
 
-## B018 — Publication destination: still blocked
+## B018 — Publication destination resolved; upload verification in progress
 
-The local board Git repository has no configured remote. No GitHub repository/branch is invented and no remote update or package publication is claimed.
+The user authorized creation. Private GitHub repository `AnasSarkiz/smart-nema14-motor-controller`, branch `main`, received commit 9eb6e1a. The private tscircuit package is `AnasSarkiz/smart-nema14-motor-controller--01a0fd9b`. Its official CLI upload encountered HTTP 413 and uncertain request timeouts; supported gzip archive retries and exact-byte readback are required before declaring the release published. Current receipts will be recorded in VALIDATION.md.
+
+## B022 — Large reference PDF transport limitation
+
+The revision-12 full-reference upload cannot transfer references/TPS25947.pdf and references/TPS2660.pdf through the registry's request-limited inline/archive API. The original PDFs remain in GitHub and were used for validation. Revision 13 uses an explicitly scoped source/CAD registry distribution with downloaded reference PDFs/ZIPs kept in the full GitHub repository. This is not a fabrication-check exception. Exact current CAD assets must all upload and match before the source release is declared complete.
+
+## B021 — Public store visibility pending explicit approval
+
+Automatic approval review rejected the public-visibility choice as public disclosure without explicit authorization. Both resources remain private; the user has been asked to approve making the concrete prototype destinations public. No public release is claimed.
 
 ## B007/B008 — Stackup and remaining qualification
 

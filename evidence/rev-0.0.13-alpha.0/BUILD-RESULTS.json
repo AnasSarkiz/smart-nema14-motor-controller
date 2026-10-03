@@ -1,0 +1,72 @@
+[
+  {
+    "command": [
+      "bun",
+      "node_modules/@tscircuit/cli/dist/cli/main.js",
+      "version",
+      "--verbose"
+    ],
+    "log": "evidence/rev-0.0.13-alpha.0/tool-versions.log",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bun",
+      "run",
+      "preview:schematic"
+    ],
+    "log": "evidence/rev-0.0.13-alpha.0/schematic-build.log",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bun",
+      "node_modules/@tscircuit/cli/dist/cli/main.js",
+      "build",
+      "scripts/all-imports-audit.circuit.tsx",
+      "--pcb-png",
+      "--pcb-svgs"
+    ],
+    "log": "evidence/rev-0.0.13-alpha.0/all-imports-build.log",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bun",
+      "run",
+      "preview:usb-imports"
+    ],
+    "log": "evidence/rev-0.0.13-alpha.0/usb-import-build.log",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bun",
+      "node_modules/@tscircuit/cli/dist/cli/main.js",
+      "build",
+      "scripts/imported-symbol-rotation.circuit.tsx",
+      "--disable-pcb",
+      "--schematic-svgs"
+    ],
+    "log": "evidence/rev-0.0.13-alpha.0/symbol-rotation-build.log",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bun",
+      "run",
+      "preview:assembly"
+    ],
+    "log": "evidence/rev-0.0.13-alpha.0/assembly-build.log",
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "bun",
+      "run",
+      "preview:controller"
+    ],
+    "log": "evidence/rev-0.0.13-alpha.0/controller-build.log",
+    "exit_code": 0
+  }
+]

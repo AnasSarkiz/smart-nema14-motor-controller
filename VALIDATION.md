@@ -1,4 +1,94 @@
-# Current revision 0.0.12-alpha.0 — external exact-part USB STEP registration
+# Current revision 0.0.13-alpha.0 — released-tooling audit and private publication
+
+**Work-in-progress prototype: NOT routed, NOT fabrication ready, NOT hardware tested.**
+
+2026-10-03 Europe/Tirane. Source basis: `9eb6e1a17c7c7583a48fdbaf6d33d729faec5d31`.
+The user authorized creation of missing GitHub and tscircuit destinations and
+reconfirmed STEPPERONLINE 14HM11-0404S as the store target. A motor SKU does not
+supply an external load, maximum speed, braking or backdrive energy envelope.
+Those operating limits remain unqualified. The motor drawing identification is
+corrected in mechanical/REVIEW.md to A0217 revision 0, 2025-07-31.
+
+| Stage | Status | Current evidence / remaining gate |
+| --- | --- | --- |
+| 1. Requirements | blocked | Exact motor locked; qualified carrier, load/braking/thermal envelope and ordered stackup remain unresolved. |
+| 2. Schematic/BOM | blocked | Fresh official imports and all 261 physical pin mappings pass; C1974707 rotation B012 and electrical protection qualification remain open. |
+| 3. Unrouted placement/mechanics | blocked | Native placement and exact USB CAD registration pass their limited scopes. Carrier, mating harness/cable, tolerances and full access remain unqualified. |
+| 4. Routing/copper validation | not started | Routing disabled; zero traces/vias. |
+| 5. Routed automated/visual checks | not started | Current checks are unrouted only. No routed shorts/snapshot/layer approval. |
+| 6. Prototype fabrication approval | not started | No validated fabrication package or assembler feedback. |
+| 7. Physical prototype | not started | No physical test evidence. |
+| 8. Store release | in progress | Private source/package destinations created; public visibility pending explicit approval. Prototype labeling retained. |
+
+## Current tooling and repeated checks
+
+The official `tsci upgrade` workflow completed. Project dependencies are pinned
+to tscircuit 0.0.2742, CLI 0.1.2237 and EasyEDA 0.0.369. `tsci version --verbose`
+reports core 0.0.2056 and runframe 0.0.2887. The short version command reports
+the top-level tscircuit version; it is not evidence of the CLI package version.
+No core override or installed-package patch was applied.
+
+All 44 imports were regenerated with native `tsci import --jlcpcb <part>
+--download --use-exact-footprint`. They are byte-identical to revision 12.
+Fresh raw supplier libraries were downloaded with the released EasyEDA
+`fetchEasyEDAComponent` export; their exact supplier identities were checked.
+IMPORT-REGENERATION-RESULTS.json and RAW-SOURCE-PROVENANCE.json record this work.
+A transient disk-full failure interrupted C3662793; that import and the remaining
+parts were retried successfully. Supplier library retrieval is not a stock check.
+
+All-imports audit: **44 parts / 261 physical pin-to-pad mappings pass**. The USB
+fixture and selected manufacturer footprint audits pass. C5127775 still produces
+a native **0.18 ohm** resistor with both pads. STM32 and TCPP labels remain
+verified without manual changes. Current sources, nets, board placement and
+selected exact motor/USB models are unchanged; only tooling and records changed.
+
+Formatting, TypeScript, critical imports, physical-pin connectivity, assembly
+inventory and actual USB GLB registration pass. All five mandatory Stage 3 CLI
+checks were executed. Netlist, pin specification, source and PCB placement exit
+zero; schematic placement still emits an actionable D_VBUS rotation finding
+while exiting zero. The dedicated rotation regression **fails**: C1974707's
+270-degree symbol keeps its (0.8, 0) port vector instead of (0, -0.8). CHECK-RESULTS
+preserves the semantic failure; no check is weakened or suppressed. The aggregate
+check exits 1. Routing remains disabled.
+
+Native assembly/controller builds wrote fresh PNG and GLB files. The current
+controller PNG was visually inspected; the USB body is horizontal and sits at
+the edge. All nine A4 schematic PNGs are byte-identical to the previously reviewed
+revision-11 sheets; SCHEMATIC-EQUIVALENCE.json records their checksums. Their
+previous review remains applicable because the actual images are unchanged.
+The 111-reference / 108-default-fit BOM remains a review BOM, not a fabrication BOM.
+Current evidence is under `evidence/rev-0.0.13-alpha.0/`.
+
+## Destinations and publication scope
+
+The user authorized new repositories. Private GitHub repository
+[AnasSarkiz/smart-nema14-motor-controller](https://github.com/AnasSarkiz/smart-nema14-motor-controller)
+was created with branch `main`; commit 9eb6e1a was pushed and the remote checked.
+The private tscircuit package is
+[AnasSarkiz/smart-nema14-motor-controller--01a0fd9b](https://tscircuit.com/AnasSarkiz/smart-nema14-motor-controller--01a0fd9b).
+The revision-12 CLI upload encountered HTTP 413 and uncertain timeouts. Exact CAD
+bytes can be uploaded through the same official gzip archive endpoint in bounded
+requests; duplicate responses are checked by readback rather than assumed failed.
+The full-reference revision-12 upload remains incomplete because TPS25947.pdf and
+TPS2660.pdf exceed the registry request limit. It is not claimed as fully published.
+
+The revision-13 registry package is a source/CAD distribution: it includes all
+circuit sources, unchanged supplier definitions/models, current raw audit inputs,
+current evidence, configuration and documentation. Downloaded reference PDFs/ZIPs
+remain in the full GitHub source repository; SOURCES.md retains manufacturer links.
+The distribution manifest explicitly records these exclusions and exact checksums.
+This separates an unavailable document transport from board verification; no design
+check is skipped, and no manufacturer geometry is compressed or edited on disk.
+Publication receipts record upload/readback and remote build outcomes separately.
+
+Automatic approval review rejected public visibility as public disclosure without
+explicit authorization. Both destinations remain private pending the specific
+public-visibility question. No order, merge, public disclosure or physical test
+is claimed. Publication does not approve fabrication.
+
+## Historical validation records — superseded where stated above
+
+# Historical revision 0.0.12-alpha.0 — external exact-part USB STEP registration
 
 **Work-in-progress prototype: NOT routed, NOT fabrication ready, NOT hardware tested.**
 

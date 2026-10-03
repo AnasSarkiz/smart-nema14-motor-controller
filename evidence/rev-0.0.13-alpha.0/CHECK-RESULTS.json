@@ -1,0 +1,133 @@
+[
+  {
+    "name": "format-check",
+    "executable": "bun",
+    "arguments": [
+      "run",
+      "format:check"
+    ],
+    "exit_code": 0,
+    "semantic_issues_present": false,
+    "log_path": "evidence/rev-0.0.13-alpha.0/check-format-check.log"
+  },
+  {
+    "name": "typecheck",
+    "executable": "bun",
+    "arguments": [
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0,
+    "semantic_issues_present": false,
+    "log_path": "evidence/rev-0.0.13-alpha.0/check-typecheck.log"
+  },
+  {
+    "name": "critical-imports",
+    "executable": "bun",
+    "arguments": [
+      "run",
+      "validate:imports"
+    ],
+    "exit_code": 0,
+    "semantic_issues_present": false,
+    "log_path": "evidence/rev-0.0.13-alpha.0/check-critical-imports.log"
+  },
+  {
+    "name": "draft-connectivity",
+    "executable": "bun",
+    "arguments": [
+      "run",
+      "test:draft"
+    ],
+    "exit_code": 0,
+    "semantic_issues_present": false,
+    "log_path": "evidence/rev-0.0.13-alpha.0/check-draft-connectivity.log"
+  },
+  {
+    "name": "mechanical-regression",
+    "executable": "bun",
+    "arguments": [
+      "run",
+      "test:assembly"
+    ],
+    "exit_code": 0,
+    "semantic_issues_present": false,
+    "log_path": "evidence/rev-0.0.13-alpha.0/check-mechanical-regression.log"
+  },
+  {
+    "name": "usb-model-registration",
+    "executable": "bun",
+    "arguments": [
+      "run",
+      "test:usb-model"
+    ],
+    "exit_code": 0,
+    "semantic_issues_present": false,
+    "log_path": "evidence/rev-0.0.13-alpha.0/check-usb-model-registration.log"
+  },
+  {
+    "name": "netlist",
+    "executable": "bunx",
+    "arguments": [
+      "tsci",
+      "check",
+      "netlist",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "semantic_issues_present": false,
+    "log_path": "evidence/rev-0.0.13-alpha.0/check-netlist.log"
+  },
+  {
+    "name": "pin-specification",
+    "executable": "bunx",
+    "arguments": [
+      "tsci",
+      "check",
+      "pin_specification",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "semantic_issues_present": false,
+    "log_path": "evidence/rev-0.0.13-alpha.0/check-pin-specification.log"
+  },
+  {
+    "name": "source",
+    "executable": "bunx",
+    "arguments": [
+      "tsci",
+      "check",
+      "source",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "semantic_issues_present": false,
+    "log_path": "evidence/rev-0.0.13-alpha.0/check-source.log"
+  },
+  {
+    "name": "schematic-placement",
+    "executable": "bunx",
+    "arguments": [
+      "tsci",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "semantic_issues_present": true,
+    "log_path": "evidence/rev-0.0.13-alpha.0/check-schematic-placement.log"
+  },
+  {
+    "name": "controller-placement",
+    "executable": "bunx",
+    "arguments": [
+      "tsci",
+      "check",
+      "placement",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "semantic_issues_present": false,
+    "log_path": "evidence/rev-0.0.13-alpha.0/check-controller-placement.log"
+  }
+]

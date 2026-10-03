@@ -1,3 +1,21 @@
+# Current mechanical scope — revision 0.0.13-alpha.0
+
+The selected motor remains STEPPERONLINE **14HM11-0404S**. Its drawing is
+**A0217 revision 0, 2025-07-31**; the historical revision-1 statement below
+was incorrect. No manufacturer geometry was changed. The default review BOM
+omits U4/C6 and makes no encoder-feedback claim. USB4110-GF-A C5143397 now
+passes the manufacturer footprint and exact external-model registration checks;
+old USB alternatives below remain unselected historical findings.
+
+The exported native connector CAD and unchanged official motor STEP were
+rebuilt with CLI 0.1.2237 and EasyEDA 0.0.369. All 112 CAD objects are present,
+and the actual USB GLB vertices pass registration checks. These limited checks
+do not approve a mounting carrier, mating cable, harness, tolerances or thermal
+fit. The motor remains lifted +65 mm for inspection; the board is unmounted.
+Routing remains disabled. Current evidence: `evidence/rev-0.0.13-alpha.0/`.
+
+## Historical mechanical records — superseded where stated above
+
 # Revision 0.0.10-alpha.0 visualization update
 
 Motor raised +65 mm along Z; actual controller shown below in an exploded view.

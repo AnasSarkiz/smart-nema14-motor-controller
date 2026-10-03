@@ -1,0 +1,47 @@
+[
+  {
+    "command": [
+      "bun",
+      "run",
+      "test:all-imports"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.13-alpha.0/all-imports-audit.log"
+  },
+  {
+    "command": [
+      "bun",
+      "run",
+      "test:usb-imports"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.13-alpha.0/usb-import-audit.log"
+  },
+  {
+    "command": [
+      "bun",
+      "run",
+      "test:usb-footprint"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.13-alpha.0/usb-footprint-audit.log"
+  },
+  {
+    "command": [
+      "bun",
+      "run",
+      "test:motor-footprint"
+    ],
+    "exit_code": 0,
+    "log": "evidence/rev-0.0.13-alpha.0/motor-footprint-audit.log"
+  },
+  {
+    "command": [
+      "bun",
+      "run",
+      "test:symbol-rotation"
+    ],
+    "exit_code": 1,
+    "log": "evidence/rev-0.0.13-alpha.0/symbol-rotation-audit.log"
+  }
+]

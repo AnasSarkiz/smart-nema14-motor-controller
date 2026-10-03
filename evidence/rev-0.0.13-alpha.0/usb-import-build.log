@@ -1,0 +1,42 @@
+$ tsci build scripts/usb-import-audit.circuit.tsx --pcb-png --pcb-svgs
+Building 1 file(s)...
+Building scripts/usb-import-audit.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/scripts/usb-import-audit/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+Port pin3 on D_USB is missing a trace
+Port pin1 on C_CC is missing a trace
+Port pin2 on C_CC is missing a trace
+Port pin1 on R_TOP is missing a trace
+Port pin2 on R_TOP is missing a trace
+Port pin1 on R_BOTTOM is missing a trace
+Port pin2 on R_BOTTOM is missing a trace
+Port pin1 on C_INPUT is missing a trace
+Port pin2 on C_INPUT is missing a trace
+All pins on J_USB are underspecified (no pinAttributes set)
+All pins on Q_PD are underspecified (no pinAttributes set)
+All pins on D_VBUS are underspecified (no pinAttributes set)
+J_USB has no pin with requires_power=true
+Q_PD has no pin with requires_power=true
+D_USB has no pin with requires_power=true
+D_VBUS has no pin with requires_power=true
+J_USB has no pin with requires_ground=true
+Q_PD has no pin with requires_ground=true
+D_VBUS has no pin with requires_ground=true
+Q_PD is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_USB is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_VBUS is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Generating preview images...
+[scripts/usb-import-audit] Generating PCB SVG...
+[scripts/usb-import-audit] Written pcb.svg
+[scripts/usb-import-audit] Generating PCB PNG...
+[scripts/usb-import-audit] Written pcb.png
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully
