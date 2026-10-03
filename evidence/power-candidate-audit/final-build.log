@@ -1,0 +1,25 @@
+Building 1 file(s)...
+Building scripts/power-candidate-audit.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/scripts/power-candidate-audit/circuit.json
+Component AUDIT_C25769 has ftype="simple_resistor" but reference designator should start with R
+Port GND on AUDIT_C2155767 is missing a trace
+Port pin1 on AUDIT_C25769 is missing a trace
+Port pin2 on AUDIT_C25769 is missing a trace
+No <schematicsheet> was found. Add a <schematicsheet> to define the schematic drawing area.
+All pins on AUDIT_C20512 are underspecified (no pinAttributes set)
+AUDIT_C2155767 has no pin with requires_power=true
+AUDIT_C20512 has no pin with requires_power=true
+AUDIT_C20512 has no pin with requires_ground=true
+AUDIT_C20512 is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Generating GLB models for all builds...
+[scripts/power-candidate-audit] Converting circuit to GLB...
+[scripts/power-candidate-audit] Written 3d.glb
+
+Build complete
+  Circuits  1 passed
+  Options   glbs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

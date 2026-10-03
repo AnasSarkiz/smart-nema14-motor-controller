@@ -1,0 +1,28 @@
+Building 1 file(s)...
+Building scripts/power-candidate-audit.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/scripts/power-candidate-audit/circuit.json
+Port GND on AUDIT_C2155767 is missing a trace
+No <schematicsheet> was found. Add a <schematicsheet> to define the schematic drawing area.
+All pins on AUDIT_C852665 are underspecified (no pinAttributes set)
+AUDIT_C2155767 has no pin with requires_power=true
+AUDIT_C852665 has no pin with requires_power=true
+AUDIT_C852665 has no pin with requires_ground=true
+Failed to fetch supplier footprint for <chip#0 name=".AUDIT_C2155767" /> (jlcpcb:C2155767): Was there a typo in the url or port?
+Failed to fetch supplier footprint for <chip#26 name=".AUDIT_C852665" /> (jlcpcb:C852665): Unable to connect. Is the computer able to access the url?
+Generating preview images...
+[scripts/power-candidate-audit] Generating PCB SVG...
+[scripts/power-candidate-audit] Written pcb.svg
+[scripts/power-candidate-audit] Generating 3D PNG...
+[scripts/power-candidate-audit] Written 3d.png
+Generating GLB models for all builds...
+[scripts/power-candidate-audit] Converting circuit to GLB...
+[scripts/power-candidate-audit] Written 3d.glb
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs, 3d-png, glbs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

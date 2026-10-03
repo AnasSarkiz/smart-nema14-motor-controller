@@ -25,7 +25,7 @@ export function MotorDriverSheet({
     >
       <schematictext
         fontSize={0.22}
-        text="VM from TPS259470L; motor connector fitted. Regenerative energy qualification pending; ENN high during 5 V bootstrap."
+        text="VM from TPS26600; motor connector fitted. Regenerative energy qualification pending; ENN high during 5 V bootstrap."
         schX={0}
         schY={9}
       />

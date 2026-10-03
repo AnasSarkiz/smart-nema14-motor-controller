@@ -1,7 +1,7 @@
 {
   "name": "@tsci/AnasSarkiz.smart-nema14-motor-controller--01a0fd9b",
-  "version": "0.0.14-alpha.0",
-  "description": "STEPPERONLINE 14HM11-0404S controller prototype; front-flange carrier study and four PCB supports; routing disabled, protection qualification pending",
+  "version": "0.0.15-alpha.0",
+  "description": "STEPPERONLINE 14HM11-0404S controller prototype with 60 V reverse-blocking input eFuse; unrouted, electrical and mechanical qualification in progress",
   "main": "index.circuit.tsx",
   "keywords": [
     "tscircuit",
@@ -36,7 +36,10 @@
     "preview:mounted": "tsci build mounted-assembly.circuit.tsx --pcb-png --pcb-svgs --3d-png --glbs",
     "test:front-carrier": ".mechanical-venv/bin/python mechanical/check-front-carrier.py",
     "test:bom-catalog": "node scripts/check-bom-catalog.mjs",
-    "bom:table": "node scripts/generate-bom-table.mjs"
+    "bom:table": "node scripts/generate-bom-table.mjs",
+    "test:power-model": ".mechanical-venv/bin/python mechanical/check-tps26600-model.py",
+    "test:power-imports": "node scripts/check-power-imports.mjs",
+    "test:power-corners": "python3 scripts/check-power-corners.py"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",

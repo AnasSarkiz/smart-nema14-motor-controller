@@ -29,7 +29,7 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schX={0}
         schY={8.5}
         fontSize={0.22}
-        text="TCPP01 protects CC and drives Q_PD; TPS259470L limits inrush and supplies the buck and motor rail."
+        text="TCPP01 protects CC and drives Q_PD; TPS26600 limits inrush and supplies the buck and motor rail."
       />
       <USB4110_GF_A
         name="J_USB"
@@ -249,7 +249,7 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schX={0}
         schY={-11.5}
         fontSize={0.2}
-        text="TCPP OVP: 22.51 V nominal. Downstream eFuse OVP: 21.46 V nominal; transient qualification remains pending."
+        text="TCPP OVP: 22.51 V nominal. Downstream eFuse OVP: 22.02 V nominal; transient qualification remains pending."
       />
       <schematictext
         schX={0}

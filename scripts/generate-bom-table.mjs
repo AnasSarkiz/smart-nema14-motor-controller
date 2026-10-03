@@ -28,6 +28,12 @@ const references = {
     "https://www.diodes.com/datasheet/download/AP63200-AP63201-AP63203-AP63205.pdf",
   C19947652: "https://bourns.com/docs/Product-Datasheets/SRN6028C.pdf",
   C3662793: "https://www.ti.com/lit/ds/symlink/tps25947.pdf",
+  C20512: "https://www.diodes.com/datasheet/download/DMG1012T.pdf",
+  C2155767: "https://www.ti.com/lit/ds/symlink/tps2660.pdf",
+  C178585:
+    "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1184.pdf",
+  C268016:
+    "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MSASU168BB5225KTNA01&u=M",
   C189895: "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
   C160409: "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
   C136657: "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
@@ -48,7 +54,11 @@ const rows = bom.records.map((component) => {
       ? null
       : JSON.parse(
           readFileSync(
-            `evidence/rev-0.0.13-alpha.0/${component.jlcpcb_part_number}.raweasy.json`,
+            ["C2155767", "C25769", "C20512"].includes(
+              component.jlcpcb_part_number,
+            )
+              ? `evidence/power-candidate-audit/${component.jlcpcb_part_number}.raweasy.json`
+              : `evidence/rev-0.0.13-alpha.0/${component.jlcpcb_part_number}.raweasy.json`,
             "utf8",
           ),
         )

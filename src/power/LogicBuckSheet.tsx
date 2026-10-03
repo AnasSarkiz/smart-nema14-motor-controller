@@ -98,7 +98,7 @@ export function LogicBuckSheet({
       />
       <schematictext
         fontSize={0.22}
-        text="Buck and motor bulk capacitors are behind the TPS259470L controlled-slew, reverse-blocking input."
+        text="Buck and motor bulk capacitors are behind the TPS26600 controlled-slew, reverse-blocking input."
         schX={0}
         schY={-8}
       />

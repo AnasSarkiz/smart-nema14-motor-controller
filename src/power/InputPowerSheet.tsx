@@ -1,13 +1,13 @@
-import { TPS259470LRPWR } from "../../imports/TPS259470LRPWR/TPS259470LRPWR"
-import { BSS138LT1G } from "../../imports/BSS138LT1G/BSS138LT1G"
+import { TPS26600RHFR } from "../../imports/TPS26600RHFR/TPS26600RHFR"
+import { DMG1012T_7 } from "../../imports/DMG1012T_7/DMG1012T_7"
 import { RT0402BRD07100KL } from "../../imports/RT0402BRD07100KL/RT0402BRD07100KL"
 import { RT0402BRD076K04L } from "../../imports/RT0402BRD076K04L/RT0402BRD076K04L"
-import { A_0402WGF6651TCE } from "../../imports/A_0402WGF6651TCE/A_0402WGF6651TCE"
+import { A_0402WGF2402TCE } from "../../imports/A_0402WGF2402TCE/A_0402WGF2402TCE"
 import { A_0402WGF4702TCE } from "../../imports/A_0402WGF4702TCE/A_0402WGF4702TCE"
-import { A_0402WGF1000TCE } from "../../imports/A_0402WGF1000TCE/A_0402WGF1000TCE"
+import { A_0402WGF4701TCE } from "../../imports/A_0402WGF4701TCE/A_0402WGF4701TCE"
+import { UMK107BBJ225KA_T } from "../../imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T"
 import { A_0402WGF1001TCE } from "../../imports/A_0402WGF1001TCE/A_0402WGF1001TCE"
 import { A_0402WGF1002TCE } from "../../imports/A_0402WGF1002TCE/A_0402WGF1002TCE"
-import { CC0603KRX7R9BB104 } from "../../imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104"
 import {
   type BoardViewProps,
   previewPlacement,
@@ -29,20 +29,53 @@ export function InputPowerSheet({
         fontSize={0.22}
         text="Autonomous USB bootstrap; GPIO high-current mode requires a validated >=1.5 A PD contract. Motor ENN stays high at 5 V."
       />
-      <TPS259470LRPWR
+      <TPS26600RHFR
         name="U10"
         {...previewPlacement("U10", mechanicalPreview)}
         schX={-5}
         schY={0}
-        noConnect={["AUXOFF", "ITIMER"]}
+        schWidth={2.8}
+        schHeight={4.4}
+        schPinArrangement={{
+          leftSide: [8, 9, 10, 12, 13, 14, 1, 2, 3, 4, 5],
+          rightSide: [24, 23, 22, 20, 19, 18, 6, 7, 11, 16, 21],
+          bottomSide: [25, 15],
+          topSide: [17],
+        }}
+        cadModel={{
+          stepUrl: "./references/tps26600-cad/RHF0024A.stp",
+          modelOriginPosition: { x: 0, y: 0, z: 0 },
+          rotationOffset: { x: 0, y: 0, z: 90 },
+          modelBoardNormalDirection: "z+",
+          modelUnitToMmScale: 1,
+        }}
+        noConnect={[
+          "N_C1",
+          "N_C2",
+          "N_C3",
+          "N_C4",
+          "N_C5",
+          "N_C6",
+          "N_C7",
+          "N_C8",
+          "N_C9",
+          "N_C10",
+          "N_SHDN",
+          "IMON",
+        ]}
         connections={{
-          IN: "net.VBUS_PROTECTED",
-          OUT: "net.VM",
+          IN1: "net.VBUS_PROTECTED",
+          IN2: "net.VBUS_PROTECTED",
+          OUT1: "net.VM",
+          OUT2: "net.VM",
           GND: "net.GND",
-          EN: "net.EFUSE_EN",
-          OVLO: "net.EFUSE_OVP",
-          ILM: "net.EFUSE_ILIM",
-          DVDT: "net.EFUSE_DVDT",
+          RTN: "net.EFUSE_RTN",
+          MODE: "net.EFUSE_RTN",
+          EP: "net.EFUSE_RTN",
+          UVLO: "net.EFUSE_EN",
+          OVP: "net.EFUSE_OVP",
+          ILIM: "net.EFUSE_ILIM",
+          dVdT: "net.EFUSE_DVDT",
           N_FLT: "net.EFUSE_FLT_N",
         }}
       />
@@ -50,16 +83,16 @@ export function InputPowerSheet({
         schX={6}
         schY={-0.8}
         fontSize={0.2}
-        text="Q_ILIM - BSS138LT1G"
+        text="Q_ILIM - DMG1012T-7"
       />
-      <BSS138LT1G
+      <DMG1012T_7
         name="Q_ILIM"
         {...previewPlacement("Q_ILIM", mechanicalPreview)}
         schX={6}
         schY={-3}
         connections={{
           G: "net.POWER_HIGH_CURRENT",
-          S: "net.GND",
+          S: "net.EFUSE_RTN",
           D: "net.EFUSE_ILIM_SWITCH",
         }}
       />
@@ -77,7 +110,7 @@ export function InputPowerSheet({
         schX={-12}
         schY={0}
         schRotation={270}
-        connections={{ pin1: "net.EFUSE_EN", pin2: "net.GND" }}
+        connections={{ pin1: "net.EFUSE_EN", pin2: "net.EFUSE_RTN" }}
       />
       <RT0402BRD07100KL
         name="R40"
@@ -100,7 +133,7 @@ export function InputPowerSheet({
           pin2: "net.EFUSE_OVP_TOP_2",
         }}
       />
-      <A_0402WGF1001TCE
+      <A_0402WGF4701TCE
         name="R42"
         {...previewPlacement("R42", mechanicalPreview)}
         schX={-1}
@@ -113,17 +146,17 @@ export function InputPowerSheet({
         schX={3}
         schY={-6}
         schRotation={270}
-        connections={{ pin1: "net.EFUSE_OVP", pin2: "net.GND" }}
+        connections={{ pin1: "net.EFUSE_OVP", pin2: "net.EFUSE_RTN" }}
       />
-      <A_0402WGF6651TCE
+      <A_0402WGF2402TCE
         name="R44"
         {...previewPlacement("R44", mechanicalPreview)}
         schX={2}
         schY={3}
         schRotation={270}
-        connections={{ pin1: "net.EFUSE_ILIM", pin2: "net.GND" }}
+        connections={{ pin1: "net.EFUSE_ILIM", pin2: "net.EFUSE_RTN" }}
       />
-      <A_0402WGF6651TCE
+      <A_0402WGF2402TCE
         name="R45"
         {...previewPlacement("R45", mechanicalPreview)}
         schX={6}
@@ -139,20 +172,21 @@ export function InputPowerSheet({
         schRotation={270}
         connections={{ pin1: "net.POWER_HIGH_CURRENT", pin2: "net.GND" }}
       />
-      <A_0402WGF1000TCE
-        name="R47"
-        {...previewPlacement("R47", mechanicalPreview)}
-        schX={-5}
-        schY={-9}
-        connections={{ pin1: "net.EFUSE_DVDT", pin2: "net.EFUSE_DVDT_CAP" }}
-      />
-      <CC0603KRX7R9BB104
+      <UMK107BBJ225KA_T
         name="C33"
         {...previewPlacement("C33", mechanicalPreview)}
         schX={0}
         schY={-9}
         schRotation={270}
-        connections={{ pin1: "net.EFUSE_DVDT_CAP", pin2: "net.GND" }}
+        connections={{ pin1: "net.EFUSE_DVDT", pin2: "net.EFUSE_RTN" }}
+      />
+      <UMK107BBJ225KA_T
+        name="C34"
+        {...previewPlacement("C34", mechanicalPreview)}
+        schX={-5}
+        schY={-9}
+        schRotation={270}
+        connections={{ pin1: "net.VBUS_PROTECTED", pin2: "net.GND" }}
       />
       <A_0402WGF1002TCE
         name="R48"
@@ -166,13 +200,13 @@ export function InputPowerSheet({
         schX={0}
         schY={-11.5}
         fontSize={0.2}
-        text="100 nF dVdt capacitor + 100 ohm series: nominal slew 0.020 V/ms. 6.65k gives 0.50 A; parallel branch gives about 1.01 A."
+        text="2.2 uF dVdT to isolated RTN: nominal slew 0.0526 V/ms. 24k gives 0.50 A; parallel branch gives 1.00 A. Firmware must limit USB bootstrap draw."
       />
       <schematictext
         schX={0}
         schY={-12.2}
         fontSize={0.2}
-        text="Latch-off faults require power cycle or UVLO toggle. Reverse blocking is not a regenerative brake; motor energy limits still require qualification."
+        text="MODE to RTN: current limit with automatic retry; SHDN internal pull-up enables startup. Hold ENN high on fault. RTN must remain separate from GND. Reverse blocking is not a brake."
       />
     </schematicsheet>
   )

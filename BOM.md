@@ -1,6 +1,6 @@
-# Current review BOM — 0.0.14-alpha.0
+# Current review BOM — 0.0.15-alpha.0
 
-**Design review only; not an approved fabrication BOM.** All 111 instantiated components have exact JLCPCB identities. The generated [per-reference review BOM](evidence/rev-0.0.14-alpha.0/REVIEW-BOM.csv) and [JSON record](evidence/rev-0.0.14-alpha.0/REVIEW-BOM.json) come from the current schematic.
+**Design review only; not an approved fabrication BOM.** All 111 instantiated components have exact JLCPCB identities. The generated [per-reference review BOM](evidence/rev-0.0.15-alpha.0/REVIEW-BOM.csv) and [JSON record](evidence/rev-0.0.15-alpha.0/REVIEW-BOM.json) come from the current schematic.
 
 The default open-loop review assembly fits 108 parts and omits U4/C6 (optional encoder) and R50 (CAN termination link). Retain R2/R3: the temperature sensor still requires I²C pull-ups. Manufacturing exports must apply the same population manifest to both BOM and placement files; that fabrication export has not been performed.
 
@@ -16,10 +16,15 @@ Changes superseding every historical proposal below:
 - U7: **C2673275**, TMUX1511RSVR, isolates programmer signals and the VBUS ADC while unpowered.
 - U8: **C5218924**, TLV803EA30DBZR, 3.0 V supervisor with 200 ms reset delay; GND1/RESET2/VDD3. C53283913 is excluded because its released import loses the rotated centre-pad geometry.
 - U9: **C28927**, TMP112AIDRLR, board temperature at I²C address 0x48.
-- U10: **C3662793**, TPS259470LRPWR, protected VM feeding both buck and motor. Controlled charging and reverse blocking do not provide a regenerative brake.
-- D_IO1/D_IO2: **C138714**; D_CAN: **C12067**; Q_ILIM: **C82045**; three LEDs: **C965805**.
+- U10: **C2155767**, TPS26600RHFR, protected VM feeding both buck and motor. Controlled charging and reverse blocking do not provide a regenerative brake.
+- D_IO1/D_IO2: **C138714**; D_CAN: **C12067**; Q_ILIM: **C20512**, DMG1012T-7; three LEDs: **C965805**.
 
 Current imports and physical-pin connectivity pass their limited audit scopes. Availability of the complete assembly, effective capacitance, startup budget, transient protection, thermal ratings and all mechanical interfaces remain unqualified. No generic or manually patched component definitions are used.
+
+
+- R44/R45: **C25769**, 24 kΩ ±1%, official native resistor import. R42 is 4.7 kΩ C25900; MODE connects to isolated EFUSE_RTN for current limiting with automatic retry.
+- C33/C34: **C268016**, 2.2 µF/50 V X5R. C33 controls dV/dt and C34 bypasses the protected input. C25 uses the same part. R47 is removed.
+- C852665 and C181406 are rejected alternatives, excluded from the active board because their imports failed value/footprint review. No definition was repaired manually.
 
 ## Historical BOM proposals — superseded by the current per-reference record
 

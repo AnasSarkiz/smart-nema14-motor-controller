@@ -239,14 +239,26 @@ for (const [ref, pin, net] of [
   ["U9", 4, "GND"],
   ["U9", 5, "V3V3"],
   ["U9", 6, "I2C_SDA"],
-  ["U10", 1, "EFUSE_EN"],
-  ["U10", 2, "EFUSE_OVP"],
-  ["U10", 4, "EFUSE_FLT_N"],
-  ["U10", 5, "VBUS_PROTECTED"],
-  ["U10", 6, "VM"],
-  ["U10", 7, "EFUSE_DVDT"],
-  ["U10", 8, "GND"],
-  ["U10", 9, "EFUSE_ILIM"],
+  ["U10", 8, "VBUS_PROTECTED"],
+  ["U10", 9, "VBUS_PROTECTED"],
+  ["U10", 10, "EFUSE_EN"],
+  ["U10", 12, "EFUSE_OVP"],
+  ["U10", 13, "EFUSE_RTN"],
+  ["U10", 15, "EFUSE_RTN"],
+  ["U10", 17, "GND"],
+  ["U10", 19, "EFUSE_ILIM"],
+  ["U10", 20, "EFUSE_DVDT"],
+  ["U10", 22, "EFUSE_FLT_N"],
+  ["U10", 23, "VM"],
+  ["U10", 24, "VM"],
+  ["U10", 25, "EFUSE_RTN"],
+  ["C33", 1, "EFUSE_DVDT"],
+  ["C33", 2, "EFUSE_RTN"],
+  ["C34", 1, "VBUS_PROTECTED"],
+  ["C34", 2, "GND"],
+  ["R39", 2, "EFUSE_RTN"],
+  ["R43", 2, "EFUSE_RTN"],
+  ["R44", 2, "EFUSE_RTN"],
   ["J_SWD", 2, "SWDIO_CONN"],
   ["J_SWD", 3, "GND"],
   ["J_SWD", 4, "SWCLK_CONN"],
@@ -282,7 +294,7 @@ for (const [ref, pin, net] of [
   ["D_CAN", 2, "CAN_L"],
   ["D_CAN", 3, "GND"],
   ["Q_ILIM", 1, "POWER_HIGH_CURRENT"],
-  ["Q_ILIM", 2, "GND"],
+  ["Q_ILIM", 2, "EFUSE_RTN"],
   ["Q_ILIM", 3, "EFUSE_ILIM_SWITCH"],
   ["LED_POWER", 1, "GND"],
   ["LED_POWER", 2, "LED_POWER_A"],
@@ -343,6 +355,7 @@ assert.notEqual(
 )
 const distinctPowerNets = [
   "GND",
+  "EFUSE_RTN",
   "V3V3",
   "VM",
   "TMC_5VOUT",
@@ -407,11 +420,10 @@ for (const [ref, expectedOhms] of [
   ["R11", 10000],
   ["R40", 100000],
   ["R41", 1000],
-  ["R42", 1000],
+  ["R42", 4700],
   ["R43", 6040],
-  ["R44", 6650],
-  ["R45", 6650],
-  ["R47", 100],
+  ["R44", 24000],
+  ["R45", 24000],
   ["R49", 120],
   ["R50", 0],
   ["R51", 100000],
@@ -424,6 +436,16 @@ for (const [ref, expectedOhms] of [
     `${ref} reviewed value`,
   )
 }
+assert.deepEqual(
+  components.find((c) => c.name === "U10")?.supplier_part_numbers.jlcpcb,
+  ["C2155767"],
+)
+assert.equal(components.find((c) => c.name === "C33")?.capacitance, 2.2e-6)
+assert.equal(components.find((c) => c.name === "C34")?.capacitance, 2.2e-6)
+assert.deepEqual(
+  components.find((c) => c.name === "Q_ILIM")?.supplier_part_numbers.jlcpcb,
+  ["C20512"],
+)
 assert.deepEqual(
   components.find((c) => c.name === "J_USB")?.supplier_part_numbers.jlcpcb,
   ["C5143397"],

@@ -103,7 +103,7 @@ export default function SmartNema14MotorController({
       <net name="EFUSE_ILIM" />
       <net name="EFUSE_ILIM_SWITCH" />
       <net name="EFUSE_DVDT" />
-      <net name="EFUSE_DVDT_CAP" />
+      <net name="EFUSE_RTN" isGroundNet />
       <net name="CAN_TERM_LINK" />
       <ControllerMount />
       <McuSheet mechanicalPreview={mechanicalPreview} />

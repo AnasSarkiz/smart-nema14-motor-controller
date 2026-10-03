@@ -1,4 +1,4 @@
-# Current blockers — 0.0.14-alpha.0
+# Current blockers — 0.0.15-alpha.0
 
 The electrical draft now contains 111 parts on nine A4 sheets. Native placement has zero reported errors/warnings; routing is disabled until the earlier gates pass.
 
@@ -12,7 +12,7 @@ C1974707 / ESDA25P35 ignores native schRotation=270: both zero-angle and rotated
 
 ## B013/B006 — Startup, transient and braking qualification: BLOCKING stages 1/2
 
-TPS259470L and unpowered SWD/ADC isolation are implemented. Current shunts are now 1 Ω, with a conservative peak-current screen about 0.336 A rather than the obsolete 180 mΩ proposals. Remaining work: bootstrap current budget, capacitor effective values/ripple, thermal/pulse ratings, protection tolerances/transients, contract-aware fault behavior and regenerative energy. The VBUS ADC measures upstream of the eFuse, not regenerative VM. The user reconfirmed the exact store motor rather than an external load envelope. The motor SKU alone does not bound load inertia, maximum speed, deceleration or backdrive energy; those operating limits remain unqualified. Reverse blocking is not a brake.
+TPS26600 and unpowered SWD/ADC isolation are implemented. Current shunts are now 1 Ω, with a conservative peak-current screen about 0.34245 A rather than the obsolete 180 mΩ proposals. Remaining work: bootstrap current budget, capacitor effective values/ripple, thermal/pulse ratings, protection tolerances/transients, contract-aware fault behavior and regenerative energy. The VBUS ADC measures upstream of the eFuse, not regenerative VM. The user reconfirmed the exact store motor rather than an external load envelope. The motor SKU alone does not bound load inertia, maximum speed, deceleration or backdrive energy; those operating limits remain unqualified. Reverse blocking is not a brake.
 
 ## B016 — Rear encoder arrangement: closed for the default open-loop review assembly
 
@@ -20,7 +20,7 @@ The selected motor has no rear shaft. The brief permits an unpopulated encoder; 
 
 ## B017 — PCB/motor attachment: BLOCKING stages 1/3
 
-The exact manufacturer's STEP is valid and unchanged. No rear thread/engagement/preload qualification is supplied for the structural fasteners. The PCB now has four Ø2.5 mm controller/carrier holes and all-layer fastener keepouts. The proposed front-flange carrier has been generated and checked against the exact motor BRep and all 111 actual exported component mesh envelopes; no nominal collisions were found (minimum 0.85 mm component clearance). A front-flange wraparound carrier using the known 4×M3 front pattern, or an independently qualified body clamp, can avoid altering rear structural screws; the front-flange carrier is now a concrete prototype study, with production tolerances, strength and mating cable/harness qualification still pending. Connector bodies, mating harnesses and support clearances must be checked together. Exploded +65 mm motor separation is display-only.
+The exact manufacturer's STEP is valid and unchanged. No rear thread/engagement/preload qualification is supplied for the structural fasteners. The PCB now has four Ø2.5 mm controller/carrier holes and all-layer fastener keepouts. The proposed front-flange carrier has been generated and checked against the exact motor BRep and all 111 actual exported component mesh envelopes; no nominal collisions were found (minimum 1.00 mm component clearance). A front-flange wraparound carrier using the known 4×M3 front pattern, or an independently qualified body clamp, can avoid altering rear structural screws; the front-flange carrier is now a concrete prototype study, with production tolerances, strength and mating cable/harness qualification still pending. Connector bodies, mating harnesses and support clearances must be checked together. Exploded +65 mm motor separation is display-only.
 
 ## B019 — Selected USB CAD inventory/registration: resolved; full assembly remains blocked
 
@@ -48,9 +48,9 @@ Automatic approval review rejected the public-visibility choice as public disclo
 
 JLC04161H-3313 and conservative manufacturer rules are selected in mechanical/manufacturing-rules.json. Native routing rules, actual copper and USB impedance construction still need verification. Review every footprint/model, critical power loop, silkscreen, test-point access, and final placement against the actual mounting design. These checks are incomplete even though the native placement algorithm reports no violations.
 
-## B023 — eFuse output/input rating during USB disconnect: BLOCKING stage 2
+## B023 — eFuse output rating during disconnect: resolved by revision 15
 
-TPS259470L has a recommended OUT limit of min(23 V, VIN+20 V), and an absolute OUT limit of min(28 V, VIN+21 V) over its full temperature range. With USB input absent, the permissible output is lower than its powered-input headline rating. A conservative two-phase plus rotor energy screen can place the VM rail above 22 V from a 21 V initial condition. This is not a measured failure; the screen bounds both phases independently and ignores losses. It shows that the existing design lacks a robust disconnect/regeneration margin. A higher-voltage reverse-blocking TPS26600RHFR/C2155767 is being assessed; it has not yet been imported, implemented or qualified. See mechanical/POWER-CORNER-REVIEW.md. Do not route dependent power circuitry before resolution.
+TPS26600RHFR/C2155767 replaces TPS259470L using its own official footprint and exact manufacturer CAD. Its independently specified 60 V operating OUT / 62 V absolute rating removes the former VIN-relative rating concern. All 25 physical pads match supplier geometry and manufacturer package dimensions. This does not raise the board's 29 V driver limit. Selected current-limit, dV/dt, isolated RTN and switch mappings pass audit; startup/HF/thermal/firmware qualification remains under B013.
 
 ## Historical issue records — superseded where stated above
 
