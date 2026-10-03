@@ -1,8 +1,10 @@
-# Current review BOM — 0.0.13-alpha.0
+# Current review BOM — 0.0.14-alpha.0
 
-**Design review only; not an approved fabrication BOM.** All 111 instantiated components have exact JLCPCB identities. The generated [per-reference review BOM](evidence/rev-0.0.13-alpha.0/REVIEW-BOM.csv) and [JSON record](evidence/rev-0.0.13-alpha.0/REVIEW-BOM.json) come from the current schematic.
+**Design review only; not an approved fabrication BOM.** All 111 instantiated components have exact JLCPCB identities. The generated [per-reference review BOM](evidence/rev-0.0.14-alpha.0/REVIEW-BOM.csv) and [JSON record](evidence/rev-0.0.14-alpha.0/REVIEW-BOM.json) come from the current schematic.
 
 The default open-loop review assembly fits 108 parts and omits U4/C6 (optional encoder) and R50 (CAN termination link). Retain R2/R3: the temperature sensor still requires I²C pull-ups. Manufacturing exports must apply the same population manifest to both BOM and placement files; that fabrication export has not been performed.
+
+See [the complete 111-reference candidate table](BOM-CURRENT.md) for values, manufacturer identities, circuit roles and current catalogue evidence. Indexed stock is not an assembler reservation.
 
 Changes superseding every historical proposal below:
 

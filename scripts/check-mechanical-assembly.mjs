@@ -61,6 +61,12 @@ const missingModels = pcb.flatMap((component) => {
 const mountingHoles = circuit.filter(
   (element) => element.type === "pcb_hole" && !element.pcb_component_id,
 )
+assert.equal(
+  mountingHoles.length,
+  4,
+  "Four independent controller/carrier holes are required",
+)
+assert.ok(mountingHoles.every((hole) => hole.hole_diameter === 2.5))
 writeFileSync(
   `evidence/rev-${revision}/ASSEMBLY-MODEL-AUDIT.json`,
   JSON.stringify(
@@ -73,7 +79,7 @@ writeFileSync(
       missing_models: missingModels,
       pcb_mounting_hole_count: mountingHoles.length,
       fit_status:
-        "blocked: exploded display has no qualified PCB mounting carrier or mating cable models",
+        "Exploded display only; nominal mounted carrier audit is separate. Production mounting/harness qualification pending",
       routing_status: "disabled",
       fabrication_ready: false,
     },

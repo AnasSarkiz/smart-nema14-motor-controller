@@ -8,6 +8,7 @@ import { MotorDriverSheet } from "./src/motor-driver/MotorDriverSheet"
 import { UsbPdSheet } from "./src/usb-pd/UsbPdSheet"
 import { InputPowerSheet } from "./src/power/InputPowerSheet"
 import { LogicBuckSheet } from "./src/power/LogicBuckSheet"
+import { ControllerMount } from "./src/mechanics/ControllerMount"
 
 /** Unrouted development board. Fixed placement is shared with the assembly preview. */
 export default function SmartNema14MotorController({
@@ -104,6 +105,7 @@ export default function SmartNema14MotorController({
       <net name="EFUSE_DVDT" />
       <net name="EFUSE_DVDT_CAP" />
       <net name="CAN_TERM_LINK" />
+      <ControllerMount />
       <McuSheet mechanicalPreview={mechanicalPreview} />
       <EncoderSheet mechanicalPreview={mechanicalPreview} />
       <CanSheet mechanicalPreview={mechanicalPreview} />

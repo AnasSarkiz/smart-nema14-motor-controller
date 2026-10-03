@@ -11,7 +11,8 @@ export const selectedMotor = {
   shaftConfiguration: "single_shaft",
   rearEncoderMountStatus: "incompatible_with_previous_rear_shaft_magnet",
   encoderDecision: "open_loop_review_default_AS5600_unpopulated",
-  mountingStatus: "rear_fastener_engagement_unqualified",
+  mountingStatus:
+    "front_flange_carrier_nominal_fit_only_unqualified_tolerances",
   ratedCurrentPerPhaseAmps: 0.4,
   phaseResistanceOhms: 25,
   phaseInductanceMilliHenries: 24,

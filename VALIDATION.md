@@ -1,3 +1,35 @@
+# Current revision 0.0.14-alpha.0 — front-flange carrier and PCB support clearance
+
+**Work-in-progress prototype: NOT routed, NOT fabrication ready, NOT hardware tested.**
+
+2026-10-03 Europe/Tirane. Source basis: d01ca428602400d429e7cdb02ec5abece8d5cde3.
+This step creates a concrete carrier study for the exact 14HM11-0404S and native PCB mounting features. Supplier definitions, electrical nets, dependencies, and manufacturer motor/USB CAD bytes are unchanged. Imported-symbol rotation remains a visible software failure; the user accepted continuing electrical/PCB work after cathode/anode and physical-pad mappings were verified. This is not a waiver of electrical protection or fabrication checks.
+
+| Stage | Status | Current gate |
+| --- | --- | --- |
+| 1. Requirements | in progress | Exact motor and proposed carrier defined; bounded operating limits and manufacturing rules still need electrical qualification. |
+| 2. Schematic/BOM | blocked | Native connectivity and unchanged imported pins pass; power/startup/regenerative/transient qualification remains unfinished. Cosmetic TVS finding is recorded separately. |
+| 3. Placement/mechanics | in progress | Four controller mount holes and native keepouts implemented. Nominal carrier, motor and 111 component mesh envelopes pass. Mating cable/harness, tolerances, thermal loops and full placement review remain. |
+| 4. Routing | not started | Disabled; zero copper traces/vias. |
+| 5. Routed checks | not started | No routed DRC, layer or snapshot approval. |
+| 6. Prototype fabrication | not started | No validated fabrication package or assembler feedback. |
+| 7. Physical prototype | not started | No hardware tests. |
+| 8. Store release | in progress | Matching private source/package checkpoint to be published; hosted success tracked separately. |
+
+## Current implementation and evidence
+
+`mounted-assembly.circuit.tsx` positions the unmodified official motor rear at Z=-10 mm relative to the PCB midplane, and adds the authored mechanical carrier and explicitly labeled fastener envelopes. The original exploded view remains available. These mechanical parts are not supplier electronic definitions.
+
+Four Ø2.5 mm NPTH controller holes are at X/Y=±15.25 mm. They mate with the proposed carrier, not motor rear screws. Each has a 2.5 mm radius native keepout on top, inner1, inner2 and bottom. Component coordinates were revised to clear them; imported footprints were not edited. The body/fastener model, every actual component mesh envelope and the unchanged official motor are checked by `mechanical/check-front-carrier.py`. Conservative component AABBs clear the exact carrier and fastener BReps; nominal minimum clearance is 0.849987 mm. The carrier/motor intersection volume is zero and their front flange datum is in contact. Production tolerances and physical fit/strength are not approved by this nominal check.
+
+Pinned tscircuit 0.0.2742 / CLI 0.1.2237 / EasyEDA 0.0.369 remain current project tools. `UNCHANGED-IMPORTS.json` checks all 44 imported definition hashes against revision 13; no new regeneration is claimed. Prior all-imports and selected manufacturer footprint audits remain applicable because definitions and audit fixtures are unchanged. Native mounted/exploded builds, formatting, TypeScript, critical pins, physical-pin connectivity, model inventory, USB registration and all five mandatory Stage 3 CLI commands were run. PCB placement reports zero errors/warnings. The schematic checker still emits the known D_VBUS vertical-orientation finding while exiting zero. The aggregate remains exit 1 and preserves that finding; no failure is hidden. Nine electrical schematic sheets are unchanged by native mechanical features.
+
+`BOM-CATALOG-AUDIT.json` records exact matches and displayed inventory for all 44 active part identities using the installed CLI's supported public JLCPCB catalogue backend. This is indexed stock, not live assembler inventory or a reservation. TMC2209/C465949 displays one unit; motor connector/C189895 displays six. Review BOM remains 111 references / 108 default fitted. Optional encoder and endpoint termination choices are unchanged.
+
+Current artifacts and logs are in `evidence/rev-0.0.14-alpha.0/`. The inspected mounted 3D rendering is saved there as a rendering, not a hardware photograph. See `mechanical/FRONT-CARRIER-REVIEW.md` for intended dimensions and incomplete qualification. Git/registry publication receipt will identify the completed source commit and exact uploaded bytes. Revision 13's cloud build failed before code execution because its sandbox container capacity was exhausted; that infrastructure failure does not explain or remove local board qualification gates.
+
+## Earlier records — historical evidence only
+
 # Current revision 0.0.13-alpha.0 — released-tooling audit and private publication
 
 **Work-in-progress prototype: NOT routed, NOT fabrication ready, NOT hardware tested.**

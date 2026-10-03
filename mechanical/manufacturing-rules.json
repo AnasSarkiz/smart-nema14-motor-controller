@@ -1,0 +1,41 @@
+{
+  "status": "Selected design targets; routed geometry and fabricator CAM not yet approved",
+  "manufacturer": "JLCPCB",
+  "capabilities_reference": "https://jlcpcb.com/capabilities/pcb-capabilities",
+  "stackup_reference": "https://jlcpcb.com/impedance",
+  "checked_date": "2026-10-03",
+  "stackup": {
+    "name": "JLC04161H-3313",
+    "layers": 4,
+    "finished_thickness_mm": 1.6,
+    "finished_thickness_tolerance_fraction": 0.1,
+    "outer_copper_mm": 0.035,
+    "inner_copper_mm": 0.0152,
+    "top_bottom_prepreg_mm": 0.0994,
+    "core_mm": 1.265,
+    "layer_intent": ["top: components, motor/power and signals", "inner1: continuous GND reference", "inner2: power and slow signals", "bottom: signals and components"],
+    "ordered_and_cam_confirmed": false
+  },
+  "design_targets": {
+    "ordinary_trace_width_mm": 0.15,
+    "ordinary_copper_clearance_mm": 0.15,
+    "fine_pitch_fanout_minimum_width_mm": 0.1,
+    "fine_pitch_pad_to_track_clearance_mm": 0.1,
+    "different_net_smd_pad_to_pad_clearance_mm": 0.15,
+    "through_via_drill_mm": 0.3,
+    "through_via_pad_mm": 0.7,
+    "through_via_annular_ring_mm": 0.2,
+    "ordinary_hole_to_track_clearance_mm": 0.35,
+    "npth_to_copper_clearance_mm": 0.3,
+    "copper_to_board_edge_mm": 0.3,
+    "silkscreen_line_width_mm": 0.15,
+    "silkscreen_text_height_mm": 1,
+    "usb_differential_impedance_ohms": 90,
+    "usb_impedance_tolerance_fraction": 0.1,
+    "usb_pair_width_spacing": "Requires fabricator calculator and actual native pair routing validation"
+  },
+  "exceptions": "Imported pads are retained unchanged. Thermal vias in exposed ground pads require separate explicit geometry, paste and assembler review. No ordinary-drill same-net exception is assumed.",
+  "native_routing_configuration_applied": false,
+  "actual_copper_measurements": "pending: board is unrouted",
+  "fabrication_ready": false
+}

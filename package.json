@@ -1,7 +1,7 @@
 {
   "name": "@tsci/AnasSarkiz.smart-nema14-motor-controller--01a0fd9b",
-  "version": "0.0.13-alpha.0",
-  "description": "STEPPERONLINE 14HM11-0404S controller work-in-progress prototype; 111 parts on nine A4 sheets, mounting and protection blocked, routing disabled",
+  "version": "0.0.14-alpha.0",
+  "description": "STEPPERONLINE 14HM11-0404S controller prototype; front-flange carrier study and four PCB supports; routing disabled, protection qualification pending",
   "main": "index.circuit.tsx",
   "keywords": [
     "tscircuit",
@@ -14,8 +14,8 @@
     "validate:imports": "node scripts/check-critical-import-pins.mjs",
     "build": "bun run validate:imports && tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs",
     "snapshot": "bun run validate:imports && tsci snapshot index.circuit.tsx",
-    "format": "biome format --write index.circuit.tsx assembly.circuit.tsx controller-preview.circuit.tsx src scripts mechanical/viewer.js mechanical/design-constraints.json package.json tsconfig.json tscircuit.config.json biome.json",
-    "format:check": "biome format index.circuit.tsx assembly.circuit.tsx controller-preview.circuit.tsx src scripts mechanical/viewer.js mechanical/design-constraints.json package.json tsconfig.json tscircuit.config.json biome.json",
+    "format": "biome format --write index.circuit.tsx assembly.circuit.tsx mounted-assembly.circuit.tsx controller-preview.circuit.tsx src scripts mechanical/viewer.js mechanical/design-constraints.json package.json tsconfig.json tscircuit.config.json biome.json",
+    "format:check": "biome format index.circuit.tsx assembly.circuit.tsx mounted-assembly.circuit.tsx controller-preview.circuit.tsx src scripts mechanical/viewer.js mechanical/design-constraints.json package.json tsconfig.json tscircuit.config.json biome.json",
     "typecheck": "tsc --noEmit",
     "preview:schematic": "bun run validate:imports && tsci build index.circuit.tsx --disable-pcb --schematic-svgs --schematic-png && node scripts/render-schematic-sheets.mjs",
     "test:draft": "node scripts/check-draft-connectivity.mjs",
@@ -32,7 +32,11 @@
     "test:usb-footprint": "node scripts/check-usb-manufacturer-footprint.mjs",
     "test:motor-footprint": "node scripts/check-motor-connector-footprint.mjs",
     "test:symbol-rotation": "node scripts/check-imported-symbol-rotation.mjs",
-    "bom:review": "node scripts/generate-review-bom.mjs"
+    "bom:review": "node scripts/generate-review-bom.mjs",
+    "preview:mounted": "tsci build mounted-assembly.circuit.tsx --pcb-png --pcb-svgs --3d-png --glbs",
+    "test:front-carrier": ".mechanical-venv/bin/python mechanical/check-front-carrier.py",
+    "test:bom-catalog": "node scripts/check-bom-catalog.mjs",
+    "bom:table": "node scripts/generate-bom-table.mjs"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",

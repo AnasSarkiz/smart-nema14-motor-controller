@@ -31,11 +31,33 @@
     "height_mm": 35,
     "thickness_mm": 1.6,
     "mounting_qualified": false,
-    "hole_diameter_mm": null
+    "hole_diameter_mm": 2.5,
+    "mounting_centers_mm": [
+      [-15.25, -15.25],
+      [-15.25, 15.25],
+      [15.25, -15.25],
+      [15.25, 15.25]
+    ]
   },
   "routing": "disabled",
   "rated_current_per_phase_a": 0.4,
   "phase_resistance_ohms": 25,
   "step_angle_degrees": 0.9,
-  "full_steps_per_revolution": 400
+  "full_steps_per_revolution": 400,
+  "carrier": {
+    "type": "Proposed front-flange carrier; rear motor structural fasteners untouched",
+    "motor_rear_z_mm": -10,
+    "front_mount_thread": "4xM3",
+    "front_mount_square_spacing_mm": 26,
+    "pcb_pattern_is_motor_rear_pattern": false,
+    "status": "Nominal exact-BRep and component envelope checks; not physical qualification",
+    "material_proposal": "Machined 6061-T6 aluminum",
+    "support_boss_outer_diameter_mm": 4.5,
+    "support_top_z_mm": -0.8,
+    "return_rail_top_z_mm": -4.8,
+    "front_plate_thickness_mm": 3,
+    "front_clearance_hole_diameter_mm": 3.8,
+    "machining_tolerance_mm": 0.05,
+    "prototype_load_limit_proposal_n": 5
+  }
 }

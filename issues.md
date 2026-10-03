@@ -1,4 +1,4 @@
-# Current blockers — 0.0.13-alpha.0
+# Current blockers — 0.0.14-alpha.0
 
 The electrical draft now contains 111 parts on nine A4 sheets. Native placement has zero reported errors/warnings; routing is disabled until the earlier gates pass.
 
@@ -6,9 +6,9 @@ The electrical draft now contains 111 parts on nine A4 sheets. Native placement 
 
 GCT USB4110-GF-A B4 (2024-05-22) agrees with all 16 native lands, physical signals and both Ø0.65 NPTH holes. See USB-MANUFACTURER-FOOTPRINT-AUDIT.json. Old C165948/C3020560 discrepancies remain historical and those components are unselected. The external exact-part STEP now passes nominal registration; full cable/mount clearance remains blocked under B017.
 
-## B012 — Imported symbol rendering: BLOCKING stage 2
+## B012 — Known imported-symbol drawing defect; electrical/PCB work may continue
 
-C1974707 / ESDA25P35 ignores native schRotation=270: both zero-angle and rotated port vectors remain (0.8, 0) instead of the required (0, -0.8). An unchanged-import reproducer and failing regression are preserved. Core's React-symbol transform applies translation without rotation. C2965326/C94934/C1974707/C12067/C82045 also lack internal reference designator text; native board annotations identify them without editing definitions. A proper released importer/core fix is needed; rotation checks are not suppressed.
+C1974707 / ESDA25P35 ignores native schRotation=270: both zero-angle and rotated port vectors remain (0.8, 0) instead of the required (0, -0.8). An unchanged-import reproducer and failing regression are preserved. Core's React-symbol transform applies translation without rotation. C2965326/C94934/C1974707/C12067/C82045 also lack internal reference designator text; native board annotations identify them without editing definitions. The user accepted continuing electrical and PCB work because pin 1/cathode is VBUS, pin 2/anode is GND, and both physical pads match. ST recommends this TVS in the TCPP01 reference design (DS12900 §6.6.2); its pulse clamp is not a continuous-voltage limit or a regenerative brake. A released runtime fix is still needed for rotation; the failing regression and semantic CLI finding remain visible.
 
 ## B013/B006 — Startup, transient and braking qualification: BLOCKING stages 1/2
 
@@ -20,7 +20,7 @@ The selected motor has no rear shaft. The brief permits an unpopulated encoder; 
 
 ## B017 — PCB/motor attachment: BLOCKING stages 1/3
 
-The exact manufacturer's STEP is valid and unchanged. No rear thread/engagement/preload qualification is supplied for the structural fasteners. The PCB still has no mounting features or qualified carrier. A front-flange wraparound carrier using the known 4×M3 front pattern, or an independently qualified body clamp, can avoid altering rear structural screws; neither has been designed/approved for this assembly. Connector bodies, mating harnesses and support clearances must be checked together. Exploded +65 mm motor separation is display-only.
+The exact manufacturer's STEP is valid and unchanged. No rear thread/engagement/preload qualification is supplied for the structural fasteners. The PCB now has four Ø2.5 mm controller/carrier holes and all-layer fastener keepouts. The proposed front-flange carrier has been generated and checked against the exact motor BRep and all 111 actual exported component mesh envelopes; no nominal collisions were found (minimum 0.85 mm component clearance). A front-flange wraparound carrier using the known 4×M3 front pattern, or an independently qualified body clamp, can avoid altering rear structural screws; the front-flange carrier is now a concrete prototype study, with production tolerances, strength and mating cable/harness qualification still pending. Connector bodies, mating harnesses and support clearances must be checked together. Exploded +65 mm motor separation is display-only.
 
 ## B019 — Selected USB CAD inventory/registration: resolved; full assembly remains blocked
 
@@ -32,9 +32,9 @@ The B4 drawing envelope, both locating pegs and all 20 physical landings align w
 
 C53283913's pin-3 square loses its 45° rotation; it is excluded and replaced by audited C5218924. Motor connector C265102 has 1.80 mm hold-down lands versus JST 1.50 ±0.10; C265332 and C157926 alternatives also differ from their reference layouts. These are excluded. C189895 uses its own unaltered footprint and passes the catalogue's specified dimensions. Mating harness/model placement and stock freeze remain pending.
 
-## B018 — Private source/CAD publication verified; hosted build pending
+## B018 — Private source/CAD publication verified; hosted infrastructure failed
 
-The user authorized creation. Private GitHub repository `AnasSarkiz/smart-nema14-motor-controller`, branch `main`, received commit 9eb6e1a. The private tscircuit package is `AnasSarkiz/smart-nema14-motor-controller--01a0fd9b`. The initial full-reference CLI upload encountered HTTP 413 and timeouts. The scoped revision-13 source/CAD distribution uploaded through the supported compressed archive API, and all 422 initial files passed exact SHA256 readback. Release 1b9388cf-42f9-40d2-8097-17158935154e is latest and ready to build; hosted jobs were still pending at the metadata check. PUBLICATION-RECEIPT.json preserves the proof.
+The user authorized creation. Private GitHub repository `AnasSarkiz/smart-nema14-motor-controller`, branch `main`, received commit 9eb6e1a. The private tscircuit package is `AnasSarkiz/smart-nema14-motor-controller--01a0fd9b`. The initial full-reference CLI upload encountered HTTP 413 and timeouts. The scoped revision-13 source/CAD distribution uploaded through the supported compressed archive API, and all 422 initial files passed exact SHA256 readback. Release 1b9388cf-42f9-40d2-8097-17158935154e is latest and ready to build; the later hosted job failed before code execution after eleven sandbox-capacity retries. The source/readback receipt remains valid; a new revision must be checked separately.
 
 ## B022 — Large reference PDF transport limitation
 
@@ -46,7 +46,11 @@ Automatic approval review rejected the public-visibility choice as public disclo
 
 ## B007/B008 — Stackup and remaining qualification
 
-Select the target JLCPCB four-layer stackup, copper weight, impedance construction and manufacturing rules. Review every footprint/model, critical power loop, silkscreen, test-point access, and final placement against the actual mounting design. These checks are incomplete even though the native placement algorithm reports no violations.
+JLC04161H-3313 and conservative manufacturer rules are selected in mechanical/manufacturing-rules.json. Native routing rules, actual copper and USB impedance construction still need verification. Review every footprint/model, critical power loop, silkscreen, test-point access, and final placement against the actual mounting design. These checks are incomplete even though the native placement algorithm reports no violations.
+
+## B023 — eFuse output/input rating during USB disconnect: BLOCKING stage 2
+
+TPS259470L has a recommended OUT limit of min(23 V, VIN+20 V), and an absolute OUT limit of min(28 V, VIN+21 V) over its full temperature range. With USB input absent, the permissible output is lower than its powered-input headline rating. A conservative two-phase plus rotor energy screen can place the VM rail above 22 V from a 21 V initial condition. This is not a measured failure; the screen bounds both phases independently and ignores losses. It shows that the existing design lacks a robust disconnect/regeneration margin. A higher-voltage reverse-blocking TPS26600RHFR/C2155767 is being assessed; it has not yet been imported, implemented or qualified. See mechanical/POWER-CORNER-REVIEW.md. Do not route dependent power circuitry before resolution.
 
 ## Historical issue records — superseded where stated above
 
