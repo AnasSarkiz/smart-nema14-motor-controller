@@ -34,6 +34,13 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
       <USB4110_GF_A
         name="J_USB"
         {...previewPlacement("J_USB", mechanicalPreview)}
+        cadModel={{
+          stepUrl: "./references/usb4110-external-model/usb4110-gf-a.stp",
+          modelOriginPosition: { x: 0, y: 0, z: -4.89 },
+          rotationOffset: { x: 90, y: 0, z: 0 },
+          modelUnitToMmScale: 1,
+          modelBoardNormalDirection: "z+",
+        }}
         schX={-10}
         schY={2}
         noConnect={["SBU1", "SBU2"]}

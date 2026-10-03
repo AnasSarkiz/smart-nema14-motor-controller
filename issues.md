@@ -1,10 +1,10 @@
-# Current blockers — 0.0.11-alpha.0
+# Current blockers — 0.0.12-alpha.0
 
 The electrical draft now contains 111 parts on nine A4 sheets. Native placement has zero reported errors/warnings; routing is disabled until the earlier gates pass.
 
 ## B011 — Selected USB footprint mismatch: resolved for C5143397
 
-GCT USB4110-GF-A B4 (2024-05-22) agrees with all 16 native lands, physical signals and both Ø0.65 NPTH holes. See USB-MANUFACTURER-FOOTPRINT-AUDIT.json. Old C165948/C3020560 discrepancies remain historical and those components are unselected. This does not resolve the missing selected CAD model or full cable/mount clearance.
+GCT USB4110-GF-A B4 (2024-05-22) agrees with all 16 native lands, physical signals and both Ø0.65 NPTH holes. See USB-MANUFACTURER-FOOTPRINT-AUDIT.json. Old C165948/C3020560 discrepancies remain historical and those components are unselected. The external exact-part STEP now passes nominal registration; full cable/mount clearance remains blocked under B017.
 
 ## B012 — Imported symbol rendering: BLOCKING stage 2
 
@@ -22,9 +22,11 @@ The selected motor has no rear shaft. The brief permits an unpopulated encoder; 
 
 The exact manufacturer's STEP is valid and unchanged. No rear thread/engagement/preload qualification is supplied for the structural fasteners. The PCB still has no mounting features or qualified carrier. A front-flange wraparound carrier using the known 4×M3 front pattern, or an independently qualified body clamp, can avoid altering rear structural screws; neither has been designed/approved for this assembly. Connector bodies, mating harnesses and support clearances must be checked together. Exploded +65 mm motor separation is display-only.
 
-## B019 — Selected USB CAD model: BLOCKING full stage 3 assembly review
+## B019 — Selected USB CAD inventory/registration: resolved; full assembly remains blocked
 
-C5143397 supplies a correct footprint but no genuine STEP/OBJ model. The renderer creates a display bounding box. The strict assembly audit fails on this absence. GCT's public model service requires account access for CAD download; the alternate embedded viewer did not expose a usable download. No login was bypassed and no generic connector body substituted. Obtain the manufacturer's exact model or a qualified official supplier alternative, then validate full assembled/cable geometry.
+C5143397's official footprint is unchanged. The board attaches a byte-exact USB4110-GF-A TraceParts AP242 STEP from the public mjbots/fdcanusb mirror. GCT and Ultra Librarian require sign-in for the offered downloads; no account or access gate was bypassed. SOURCE.json records the public source, Git blob and checksum. The model is not claimed to be a direct authenticated GCT download.
+
+The B4 drawing envelope, both locating pegs and all 20 physical landings align with the generated supplier holes/lands. Native rotation/origin is checked against actual GLB vertices as well as the BRep. `test:assembly` now passes the 112-model inventory and `test:usb-model` passes nominal connector registration. This closes model absence and nominal registration only. Carrier/support, mating-cable envelope, tolerance stack and physical assembly remain unqualified under B017.
 
 ## B020 — New supervisor and motor-connector import findings: avoided through official alternatives
 

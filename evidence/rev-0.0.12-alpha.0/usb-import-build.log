@@ -1,0 +1,47 @@
+Building 1 file(s)...
+Building scripts/usb-import-audit.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/scripts/usb-import-audit/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+Port pin3 on D_USB is missing a trace
+Port pin1 on C_CC is missing a trace
+Port pin2 on C_CC is missing a trace
+Port pin1 on R_TOP is missing a trace
+Port pin2 on R_TOP is missing a trace
+Port pin1 on R_BOTTOM is missing a trace
+Port pin2 on R_BOTTOM is missing a trace
+Port pin1 on C_INPUT is missing a trace
+Port pin2 on C_INPUT is missing a trace
+All pins on J_USB are underspecified (no pinAttributes set)
+All pins on Q_PD are underspecified (no pinAttributes set)
+All pins on D_VBUS are underspecified (no pinAttributes set)
+J_USB has no pin with requires_power=true
+Q_PD has no pin with requires_power=true
+D_USB has no pin with requires_power=true
+D_VBUS has no pin with requires_power=true
+J_USB has no pin with requires_ground=true
+Q_PD has no pin with requires_ground=true
+D_VBUS has no pin with requires_ground=true
+Q_PD is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_USB is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_VBUS is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Failed to fetch supplier footprint for <capacitor#31(.UsbImportAudit>.C_INPUT) /> (jlcpcb:C268016): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#28(.UsbImportAudit>.R_BOTTOM) /> (jlcpcb:C852895): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <resistor#25(.UsbImportAudit>.R_TOP) /> (jlcpcb:C852472): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <capacitor#22(.UsbImportAudit>.C_CC) /> (jlcpcb:C5448795): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#21(.UsbImportAudit>.D_VBUS) /> (jlcpcb:C1974707): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#20(.UsbImportAudit>.D_USB) /> (jlcpcb:C94934): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#19(.UsbImportAudit>.Q_PD) /> (jlcpcb:C2965326): Unable to connect. Is the computer able to access the url?
+Failed to fetch supplier footprint for <chip#2(.UsbImportAudit>.J_USB) /> (jlcpcb:C5143397): Unable to connect. Is the computer able to access the url?
+Generating preview images...
+[scripts/usb-import-audit] Generating PCB SVG...
+[scripts/usb-import-audit] Written pcb.svg
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

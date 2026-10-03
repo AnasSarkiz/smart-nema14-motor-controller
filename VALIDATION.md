@@ -1,4 +1,55 @@
-# Current revision 0.0.11-alpha.0 — electrical expansion and unrouted checks
+# Current revision 0.0.12-alpha.0 — external exact-part USB STEP registration
+
+**Work-in-progress prototype: NOT routed, NOT fabrication ready, NOT hardware tested.**
+
+2026-10-03 Europe/Tirane. Completed implementation step: attach and check the exact USB4110-GF-A external STEP through native board CAD properties, preserving the official C5143397 definition. Source basis: local commit `ed4366e`; the implementation commit containing this record and SOURCE-MANIFEST.json identifies the completed revision. Electrical nets, supplier definitions, PCB positions, motor STEP and routing controls are unchanged from revision 11. Historical records below remain evidence for their stated scopes only.
+
+| Stage | Status | Current evidence / remaining gate |
+| --- | --- | --- |
+| 1. Requirements | blocked | Motor fixed to 14HM11-0404S; load/speed/braking/thermal limits, mounting carrier and ordered stackup unresolved. |
+| 2. Schematic/BOM | blocked | 111 supplier references, nine A4 sheets and physical-pin connectivity pass; C1974707 rotation B012 and remaining protection/thermal/availability qualification remain open. |
+| 3. Unrouted placement/mechanics | blocked | Native placement has zero errors/warnings. USB STEP inventory and nominal registration pass; full carrier, mating plug/harness and tolerance/clearance qualification B017 remain incomplete. |
+| 4. Routing/copper validation | not started | Routing disabled; no PCB traces or vias. |
+| 5. Routed automated/visual checks | not started | Only unrouted/preliminary checks have run; no routed shorts, snapshots or copper-layer approval. |
+| 6. Prototype fabrication approval | not started | No validated fabrication package or assembler feedback. |
+| 7. Physical prototype | not started | No board or physical test evidence. |
+| 8. Store release | not started | Prototype only; no configured GitHub remote, B018. |
+
+## Exact connector model and measured registration
+
+The preferred GCT generator and Ultra Librarian exact-part export require sign-in; Component Search Engine advertises registration. No account or access gate was bypassed. A public exact-part STEP was downloaded from [mjbots/fdcanusb](https://github.com/mjbots/fdcanusb/blob/master/hw/3d/usb4110-gf-a.stp). Its header identifies a TraceParts AP242 export dated 2022-09-26 and PRODUCT usb4110-gf-a. It is not represented as a direct authenticated GCT portal download. SOURCE.json records Git blob `d8bdf965651880a271beaacef1826183181c93ba`, file size and SHA256 `fb802f14dd0a87ca59b246036d7a6365de3ea32b20a7896a02ade42b9f35d799`. The original STEP bytes/header are retained.
+
+`imports/USB4110_GF_A/USB4110_GF_A.tsx` remains byte-exact, SHA256 `4e4d79a0a7b9406e39c5dbd6a6484f6ccd56e3ef3906ccf3e7357b94ae86cf05`. No symbol, pad, pin mapping, hole or supplier CAD definition was edited. Native `cadModel.stepUrl`, origin `{0,0,-4.89}`, X rotation +90°, scale 1 and modelBoardNormalDirection z+ register the external source using the installed renderer's STEP Y/Z remap and Scene3D rotation convention. The rendered geometry is checked independently; inspecting JSON properties alone is insufficient.
+
+The STEP imports as one valid BRep solid. Its dimensions agree with GCT USB4110 B4 (2024-05-22): 8.94 mm mouth, 7.35 mm body length, 7.70 mm tail envelope, 11.30 mm tab width, about 3.26 mm height and Ø0.50 mm locating pegs on 5.78 mm centres. Both pegs align with the generated Ø0.65 mm NPTH holes: centre error 0.00001588 mm, nominal radial clearance 0.074977 mm. All 16 physical contacts plus four shell feet land inside their unchanged 16 copper lands; paired power/ground contacts share the wide lands. Rear shell-foot coplanarity is about 0.04 mm, within the drawing's 0.10 mm limit.
+
+The actual generated GLB's connector bounds agree with the registered BRep within 0.001 mm; every audited contact-face vertex agrees within 0.0001 mm (measured maximum about 0.000000204 mm). The mouth is at PCB Y=-17.59 mm, projecting about 0.09 mm beyond the nominal -17.5 mm board edge. This is nominal registration, not tolerance-stack, plug-access or full-assembly approval.
+
+## Checks and reviewed evidence
+
+Paths below are under `evidence/rev-0.0.12-alpha.0/` unless stated otherwise. Exact pinned tooling remains tscircuit 0.0.2742, CLI 0.1.2235, EasyEDA 0.0.368, core 0.0.2056, props 0.0.677, circuit-json 0.0.510, TypeScript 5.9.3, Biome 2.5.15 and Bun 1.3.9; circuit-json-to-gltf is 0.0.141. No dependency/import regeneration was needed for this CAD-only change. Mechanical runtime is identified by mechanical/requirements.lock.txt (CadQuery 2.8.0, OCP 7.9.3.1.1, NumPy 2.5.3).
+
+- Formatting, TypeScript, critical imported labels and physical-pin draft connectivity pass.
+- `preview:assembly` produces fresh circuit JSON, PNG and GLB. The first sandboxed attempt reported FailedToOpenSocket and left old 3D artifacts despite exit 0; that output was rejected. The final socket-enabled rebuild logged Written 3d.png/3d.glb and the actual exported vertices pass the geometry audit. `assembly-build.log` preserves the failure; `assembly-build-renderer.log` records the final build.
+- `test:usb-model`: passes exact identity/checksums, BRep validity, drawing envelope, two pegs, 20 physical landings and actual GLB contact/bounds checks. USB-EXTERNAL-MODEL-AUDIT.json records the geometry and GLB checksum.
+- `test:assembly`: passes 111 PCB components / 112 genuine STEP references including the official motor. There are zero mounting holes and zero PCB routes/vias. Full mounting/cable BRep clearance remains blocked; model inventory is not a fit test.
+- `test:usb-footprint`: passes all 16 drawing lands/signals and both locating holes using the unchanged isolated importer fixture. Its cad_model_available=false describes the supplier fixture; the separately audited board-level external model is present.
+- Fresh schematic-only build and review BOM generation pass: 111 references, 44 active supplier identities, 108 default fitted parts. All nine rendered sheet PNGs are byte-identical to revision 11's visually reviewed sheets; SCHEMATIC-EQUIVALENCE.json records the comparison. Those visual reviews remain applicable.
+- Mandatory native checks `netlist`, `pin_specification`, `source`, `schematic-placement` and `placement` were rerun on index.circuit.tsx. Native command exits are zero; pin_specification retains 27 draft-only metadata warnings. Source/PCB placement have zero errors/warnings. Schematic placement still reports D_VBUS TwoPinComponentShouldBeVertical even with native exit zero. CHECK-RESULTS.json preserves this as a semantic failure; aggregate exit 1 remains.
+- `test:symbol-rotation` remains failed: unchanged C1974707's requested 270° port vector is (0.8,0), expected (0,-0.8). No imported symbol, dependency, validator or snapshot is patched or suppressed.
+- Fresh assembly and board-only native PNGs were inspected (assembly-native.png, controller-native.png and controller-placement.png). The board-only preview has 111 components, zero pcb_trace/pcb_via and zero circuit error entries. Combined placement silkscreen remains dense/unapproved. In the 3D render: USB body sits on the PCB with its opening at the edge, and the official motor remains lifted +65 mm for inspection. assembly-native.png is a render, not a physical board photograph. No full motor/PCB support, mating-cable, silkscreen, mask, paste or copper approval is claimed.
+- The offline assembly viewer was regenerated from the fresh GLB. Live IAB reload returned connection refused even though the local-only HTTP server responded to curl; the live browser view was not accepted as updated visual evidence. The native PNG and audited GLB are the reviewed outputs. Automatic approval review rejected marking the browser tab a deliverable due to remaining board blockers; no such mark was applied.
+- The 44-import/261-mapping and eight-part USB supplier audits were rebuilt and rerun: zero geometry discrepancies. Byte-exact raw supplier inputs and import manifest from revision 11 were copied after verifying every definition checksum; SUPPLIER-BASELINE-PROVENANCE.json records their origin. These are reused audit inputs, not new downloads or import regeneration. Prior electrical screens remain applicable only to their stated limited scopes because pinned dependencies and wiring are unchanged. SOURCE-MANIFEST.json identifies the exact current sources, new model and generated/evidence checksums. Authored-source whitespace review excludes byte-exact supplier STEP/generated files, whose upstream CRLF/spacing is retained.
+
+## Remaining gates and publication
+
+B019 model absence and nominal connector registration are resolved. B012 imported TVS rendering, B017 mounting/plug/harness qualification, B013/B006 load/startup/transient/thermal/regeneration work and B007/B008 ordered stackup/full footprint/loop/test-point/stock review remain open. Routing stays disabled until stages 1–3 pass. Fabrication exports and physical tests remain pending.
+
+The board Git repository still has no configured remote; local master has no configured publication branch. The desired tscircuit package name is recorded in package.json, but the required matching GitHub destination is missing. Under the standing publish instruction, B018 remains a blocking issue: **neither GitHub push nor tscircuit publication succeeded or was claimed**. This implementation is preserved in a local commit only; no upstream communication, merge or fabrication order was performed.
+
+## Historical validation records — superseded where stated above
+
+# Historical revision 0.0.11-alpha.0 — electrical expansion and unrouted checks
 
 **Work-in-progress prototype: NOT routed, NOT fabrication ready, NOT hardware tested.**
 

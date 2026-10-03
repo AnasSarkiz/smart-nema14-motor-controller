@@ -26,6 +26,11 @@ const checks = [
     arguments: ["run", "test:assembly"],
   },
   {
+    name: "usb-model-registration",
+    executable: "bun",
+    arguments: ["run", "test:usb-model"],
+  },
+  {
     name: "netlist",
     executable: "bunx",
     arguments: ["tsci", "check", "netlist", "index.circuit.tsx"],

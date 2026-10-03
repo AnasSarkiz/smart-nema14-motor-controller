@@ -1,6 +1,6 @@
 {
   "name": "@tsci/AnasSarkiz.smart-nema14-motor-controller--01a0fd9b",
-  "version": "0.0.11-alpha.0",
+  "version": "0.0.12-alpha.0",
   "description": "STEPPERONLINE 14HM11-0404S controller work-in-progress prototype; 111 parts on nine A4 sheets, mounting and protection blocked, routing disabled",
   "main": "index.circuit.tsx",
   "keywords": [
@@ -25,6 +25,7 @@
     "preview:usb-imports": "tsci build scripts/usb-import-audit.circuit.tsx --pcb-png --pcb-svgs",
     "preview:assembly": "tsci build assembly.circuit.tsx --3d-png --glbs",
     "test:assembly": "node scripts/check-mechanical-assembly.mjs",
+    "test:usb-model": ".mechanical-venv/bin/python mechanical/check-usb-connector-model.py",
     "preview:viewer": "bun build mechanical/viewer.js --target browser --minify --outfile mechanical/viewer.bundle.js && .mechanical-venv/bin/python mechanical/build-viewer.py",
     "preview:controller": "tsci build controller-preview.circuit.tsx --pcb-png --pcb-svgs --3d-png --glbs",
     "test:all-imports": "node scripts/check-all-imports.mjs",
