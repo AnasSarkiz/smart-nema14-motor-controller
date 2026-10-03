@@ -1,0 +1,70 @@
+{
+  "revision": "0.0.16-alpha.0",
+  "scope": "Unrouted schematic and mounted mechanical visual review; no copper approval",
+  "sheets": [
+    {
+      "artifact": "evidence/rev-0.0.16-alpha.0/schematic-CAN.png",
+      "sha256": "3d4ae57d5239a5877555ea5c320fcb8a9df676a3e59d632bd5312499da5bc52e",
+      "review": "Byte-identical to visually reviewed revision 15 image; same review applies",
+      "byte_identical_to_revision_15": true
+    },
+    {
+      "artifact": "evidence/rev-0.0.16-alpha.0/schematic-Encoder.png",
+      "sha256": "68796688dcd4c3919eaf6b50ae3c5ff749cf3c40fa701ce106ee1672f7bdf4eb",
+      "review": "Byte-identical to visually reviewed revision 15 image; same review applies",
+      "byte_identical_to_revision_15": true
+    },
+    {
+      "artifact": "evidence/rev-0.0.16-alpha.0/schematic-InputPower.png",
+      "sha256": "c28e265f748f49e0eef906a0e8d8f1248ffed0f99ae26e1e1107cd94a834e45f",
+      "review": "Visually inspected corrected eFuse drawing",
+      "byte_identical_to_revision_15": false
+    },
+    {
+      "artifact": "evidence/rev-0.0.16-alpha.0/schematic-Interfaces.png",
+      "sha256": "2d25ef2bddbf5cdc5f9074a7db535d1a208dbf2ddab2ebe2b60ea276b4fdc3cc",
+      "review": "Byte-identical to visually reviewed revision 15 image; same review applies",
+      "byte_identical_to_revision_15": true
+    },
+    {
+      "artifact": "evidence/rev-0.0.16-alpha.0/schematic-LogicPower.png",
+      "sha256": "ae2b4ca6fbafe9a6154d5d9b1f4e8642c060690107ef921baf03f16f80584f6b",
+      "review": "Byte-identical to visually reviewed revision 15 image; same review applies",
+      "byte_identical_to_revision_15": true
+    },
+    {
+      "artifact": "evidence/rev-0.0.16-alpha.0/schematic-MCU.png",
+      "sha256": "4a00fcba9c3f6d0f1009b949cd911cc9b6f159ee14a20472c86c752f5f195102",
+      "review": "Byte-identical to visually reviewed revision 15 image; same review applies",
+      "byte_identical_to_revision_15": true
+    },
+    {
+      "artifact": "evidence/rev-0.0.16-alpha.0/schematic-MotorDriver.png",
+      "sha256": "e8cf7e88a805ef8207ce1d9a8f081791230395013b99dafd03e421f809508e64",
+      "review": "Byte-identical to visually reviewed revision 15 image; same review applies",
+      "byte_identical_to_revision_15": true
+    },
+    {
+      "artifact": "evidence/rev-0.0.16-alpha.0/schematic-Programming.png",
+      "sha256": "c6aa8e429114c162a13f82ef5e1d29ebd74e867b2a2fdad037eee9029b03e9e1",
+      "review": "Byte-identical to visually reviewed revision 15 image; same review applies",
+      "byte_identical_to_revision_15": true
+    },
+    {
+      "artifact": "evidence/rev-0.0.16-alpha.0/schematic-UsbPd.png",
+      "sha256": "fc0feaacf43797c1e1bbccb45066c9072bbfff646d8a87d9c432af60a4633ac2",
+      "review": "Byte-identical to visually reviewed revision 15 image; same review applies",
+      "byte_identical_to_revision_15": true
+    }
+  ],
+  "mounted_render": {
+    "artifact": "evidence/rev-0.0.16-alpha.0/mounted-3d.png",
+    "sha256": "d360e9f77f0c4cd53ba264355e57a9d163ccfe855bae9fed220d2546fa2015ab",
+    "review": "Inspected: board exposed above exact motor, four independent carrier rails/supports, USB and JST mouths accessible; rendered image, not a hardware photo"
+  },
+  "unrouted_pcb": {
+    "artifact": "evidence/rev-0.0.16-alpha.0/unrouted-pcb.png",
+    "sha256": "71c51c3cb110730ab36599df975ba32819c46b5cec620d328dc4fa5b82a6a53c",
+    "review": "Inspected combined-layer placement image; silkscreen needs routed-stage review; no copper traces or vias"
+  }
+}

@@ -12,23 +12,23 @@ import cadquery as cq
 
 mount_centers = [(x, y) for x in (-15.25, 15.25) for y in (-15.25, 15.25)]
 front_z_mm = -38.2
-front_plate = cq.Workplane("XY").box(43.2, 35, 3, centered=(True, True, False)).translate((0, 0, front_z_mm - 3))
+front_plate = cq.Workplane("XY").box(49.2, 36.5, 3, centered=(True, True, False)).translate((0, 0, front_z_mm - 3))
 front_plate = front_plate.cut(cq.Workplane("XY").circle(12).extrude(5).translate((0, 0, front_z_mm - 4)))
 for x in (-13, 13):
     for y in (-13, 13):
         front_plate = front_plate.cut(cq.Workplane("XY").circle(1.9).extrude(5).translate((x, y, front_z_mm - 4)))
 
 carrier = front_plate
-for x in (-20.1, 20.1):
-    rail = cq.Workplane("XY").box(3, 5, 37.4, centered=(True, True, False)).translate((x, 15.25, front_z_mm - 3))
-    # Both rails occupy the motor-connector edge; side-entry plugs stay outward.
-    carrier = carrier.union(rail)
+for x in (-21.6, 21.6):
+    for y in (-15.25, 15.25):
+        rail = cq.Workplane("XY").box(6, 6, 37.4, centered=(True, True, False)).translate((x, y, front_z_mm - 3))
+        carrier = carrier.union(rail)
 for x, y in mount_centers:
-    x_rail = -20.1 if x < 0 else 20.1
-    arm = cq.Workplane("XY").box(abs(x_rail - x) + 3, 5, 3, centered=(True, True, False)).translate(((x_rail + x) / 2, y, -7.8))
+    x_rail = -21.6 if x < 0 else 21.6
+    arm = cq.Workplane("XY").box(abs(x_rail - x) + 5, 5, 4, centered=(True, True, False)).translate(((x_rail + x) / 2, y, -8.8))
     # A vertical return at the far edge connects both PCB supports to each rail.
-    return_rail = cq.Workplane("XY").box(3, 35.5, 3, centered=(True, True, False)).translate((x_rail, 0, -7.8))
-    boss = cq.Workplane("XY").circle(2.25).extrude(7).translate((x, y, -7.8))
+    return_rail = cq.Workplane("XY").box(5, 35.5, 4, centered=(True, True, False)).translate((x_rail, 0, -8.8))
+    boss = cq.Workplane("XY").circle(2.25).extrude(8).translate((x, y, -8.8))
     thread_envelope = cq.Workplane("XY").circle(1).extrude(4.5).translate((x, y, -5.3))
     carrier = carrier.union(arm).union(return_rail).union(boss.cut(thread_envelope))
 

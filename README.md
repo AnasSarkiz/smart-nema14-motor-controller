@@ -1,47 +1,28 @@
 # Smart NEMA 14 Motor Controller
 
-Revision `0.0.15-alpha.0`, 2026-10-03 Europe/Tirane. **Work-in-progress prototype. Unrouted and not fabrication ready.**
+Revision **0.0.16-alpha.0**, 2026-10-03. **Untested prototype; unrouted; not fabrication ready.**
 
-The controller targets the user-selected **STEPPERONLINE 14HM11-0404S**, using its unchanged official STEP and drawing A0217 revision 0. It is a 35 × 35 mm, four-layer design with 111 supplier components on nine native A4 schematic sheets. STM32G0B1 provides USB, UCPD and classical CAN; TMC2209 drives the motor. Power protection, self-powered SWD isolation, external STEP/DIR/ENABLE, two limits, temperature sensing and three LEDs are implemented as an unqualified electrical draft.
+35 ×35 mm, four layers, 111 electronic references /108 default fitted, nine native A4 schematic sheets. The exact motor is **STEPPERONLINE 14HM11-0404S**: 0.4 A phase rating, 25 Ω, 24 mH, 0.9°, single front shaft. Default assembly is open-loop: U4/C6 encoder and R50 CAN endpoint link are DNP. No rear shaft or generic NEMA geometry is assumed.
 
-The pinned tools are tscircuit **0.0.2742**, CLI **0.1.2237** and EasyEDA **0.0.369**. All electronic definitions are official imports without manual corrections. The active BOM has **43** supplier identities: 39 covered by the unchanged earlier fixture, three selected power imports with 30 physical pin/pad mappings, and C136657 from the official programmer package. Historical and rejected alternatives remain explicitly excluded.
+STM32G0B1 provides USB FS, native UCPD, classical CAN, STEP/DIR/ENABLE, limit inputs, SWD and temperature monitoring. TMC2209 drives the motor. TCPP01 protects the USB frontend; TPS26600 supplies reverse-blocking inrush/current limiting, and AP63203 generates 3.3 V. Firmware is not delivered or physically tested. Hardware defaults keep the motor disabled and CAN in standby.
 
-The motor has a single front shaft and no rear shaft for the former magnet arrangement. The default open-loop review BOM omits U4/C6; their optional footprints remain. R50 is omitted except at CAN bus endpoints. This population choice follows the brief's allowance for an unpopulated encoder; no feedback or lost-step detection is claimed.
+The pre-routing paper and placement review passes for the explicitly bounded prototype. Routing controls are configured but **routing remains disabled in this revision**. The unchanged TVS symbol rotation issue is accepted as cosmetic by the user after physical pin/pad checks; its regression and semantic finding remain visible. No electrical failure is waived. See [validation](VALIDATION.md), [power review](mechanical/POWER-CORNER-REVIEW.md) and [carrier review](mechanical/FRONT-CARRIER-REVIEW.md).
 
-R5/R6 now use official 1 Ω precision parts C513714. The 10 kΩ/10 kΩ VREF divider avoids operation below the driver's recommended reference range. A conservative current screen is about **0.34245 A peak**, below the motor's 0.4 A/phase rating; current regulation, thermal limits and torque remain untested. The eFuse has nominal 0.50 A bootstrap and 1.00 A contract-enabled limits. These are circuit calculations, not verified operating ratings.
+Proposed limits, not hardware-tested ratings:
 
-Selected connectors are GCT USB4110-GF-A (C5143397), JST GH motor header (C189895), JST SH ten-pin I/O (C160409), and the official JST SWD header (C136657). The USB-C manufacturer's B4 drawing agrees with all 16 imported lands and two locating holes. Its exact-part TraceParts STEP from the public mjbots mirror is attached through native board-level CAD properties, leaving C5143397 unchanged. The two pegs and 20 physical landings pass nominal registration, including a check of the exported GLB vertices. Full plug/carrier clearance remains unqualified. The replacement motor header passes the dimensions specified in JST's catalogue; its mating harness and complete 3D fit still need review. Supplier stock is not reserved.
+- PD charger/dock advertises ≥1.5 A at initial 5 V. Motion only after a qualified 9/12/15/20 V contract, source ≤21 V and ≥1.5 A; prefer 12/15 V. Legacy/default-current USB hosts are not qualified.
+- Bootstrap 3.3 V allocation ≤150 mA, motor disabled/CAN standby; normal logic ≤0.3 A. Nominal input limits are 0.50 A bootstrap /1.00 A after contract. Phase peak screen is 0.34245 A with 1 Ω sense resistors.
+- Maximum 300 RPM, external reflected inertia ≤0.25×10⁻⁶ kg·m², no continuous backdrive or overhauling. Arbitrary braking loads are not qualified.
+- Front-flange machined carrier with four independent PCB supports, constrained screw/washer and plug envelopes, board/cable load ≤20 N. Physical fit, retention, cold-start, high-frequency transients and temperatures remain prototype tests.
 
-The native placement checker reports zero errors and warnings. **Routing remains disabled** because schematic/BOM and mechanical gates have not passed. The proposed carrier passes nominal clearance, but mating harnesses, production tolerances, critical power loops and startup/regeneration limits remain unresolved. The TVS rotation is a documented drawing defect with verified electrical mapping. Do not export or order this revision as fabrication-ready hardware.
+The GCT USB4110-GF-A/C5143397 imported footprint matches its manufacturer drawing. Its exact-part external STEP is registered against actual exported contact geometry. JST GH motor, JST SH I/O and the official standard JST programmer header retain their own imported footprints. All electronic definitions remain unmodified official JLCPCB imports. [BOM-CURRENT.md](BOM-CURRENT.md) lists all 111 references and 43 supplier identities; indexed inventory is not assembler stock reservation.
 
-`assembly.circuit.tsx` shows the actual PCB beneath the unchanged motor, lifted **+65 mm in Z** for inspection. The offline viewer at `mechanical/assembly-preview.html` offers a **Board close-up** view. Exploded separation is not an operating assembly. The old Phidgets holes, two posts and rear magnet are absent.
+The selected manufacturing stackup is JLC04161H-3313, ordered 1.6 mm /calculator-finished 1.56 mm ±10%, outer 1 oz and inner 0.5 oz. Manufacturer-calculated top-layer USB geometry is 0.1537 mm width /0.1999 mm gap for 90 Ω with L2 GND reference. These are targets; actual routing, impedance geometry, Gerbers, drills and assembly outputs remain unapproved. No fabrication order is placed.
 
-Run commands from this directory:
+`mounted-assembly.circuit.tsx` shows the exact motor, current board and carrier together. `assembly.circuit.tsx` lifts the motor +65 mm for inspection. Both show rendered models, not physical photographs. The [original brief](references/USER-BRIEF.md) and historical evidence remain available; the current motor/assembly decisions supersede earlier Phidgets and encoder proposals.
 
-```sh
-bun run format:check
-bun run typecheck
-bun run preview:schematic
-bun run test:draft
-bun run test:all-imports
-bun run test:usb-footprint
-bun run test:motor-footprint
-bun run preview:assembly
-bun run test:assembly
-bun run test:usb-model
-bun run preview:viewer
-```
+Pinned tools: tscircuit 0.0.2742, CLI 0.1.2237, EasyEDA 0.0.369. Run board commands from this directory. `bun run preview:schematic` generates the schematic-only input expected by `test:draft`; fixture/model tests require their matching builds. The aggregate records every native command and preserves the accepted TVS finding, so it still exits one. Do not reinterpret that as copper approval.
 
-Fixture tests require the matching generated fixture. `test:assembly` checks the complete STEP inventory; `test:usb-model` checks the exact connector and rendered registration. Both pass their limited scopes. `test:symbol-rotation` still exposes the unresolved runtime defect, and the aggregate placement checks remain blocked. No failure is suppressed. See [VALIDATION.md](VALIDATION.md), [issues.md](issues.md), [BOM.md](BOM.md), and [the original brief](references/USER-BRIEF.md). Current carrier/CAD and catalogue evidence is in `evidence/rev-0.0.15-alpha.0/`; unchanged supplier definitions retain the revision-13 import evidence. The complete current 111-reference candidate table is [BOM-CURRENT.md](BOM-CURRENT.md).
+Private source: [GitHub](https://github.com/AnasSarkiz/smart-nema14-motor-controller), branch main. Private package: [tscircuit](https://tscircuit.com/AnasSarkiz/smart-nema14-motor-controller--01a0fd9b). Last fully verified release is **0.0.15-alpha.0** /source [252d18a](https://github.com/AnasSarkiz/smart-nema14-motor-controller/commit/252d18a00f2d67b2b83b7c67b0a176d908c457ce), 584 initial exact files plus a verified documentation checkpoint. Revision 16 publication is pending until its receipt is recorded. The hosted revision-15 build remains pending at its latest check. Public visibility remains awaiting the earlier explicit approval; both destinations stay private.
 
-The new [mounted assembly](mounted-assembly.circuit.tsx) adds a proposed front-flange carrier and four separate M2 PCB supports. The PCB holes are Ø2.5 mm on a 30.5 mm square, with 2.5 mm radius keepouts on every copper layer. These are controller/carrier holes, not motor rear holes. The carrier uses the documented front 4×M3 / 26 mm pattern, leaves the rear structural screws untouched, and keeps the exact motor rear face 10 mm behind the PCB midplane. Its nominal BRep and all 111 exported component envelope checks pass, with minimum 1.00 mm clearance. Material, hardware, cable envelopes, production tolerances and strength remain prototype design work. See [carrier review](mechanical/FRONT-CARRIER-REVIEW.md).
-
-All 43 active BOM identities now have exact catalogue matches and displayed stock; this is not an assembler reservation. The catalogue displays only one TMC2209 and six motor connectors. The TVS rotation remains a reproduced drawing defect with correct electrical pin/pad mappings; the user accepted continuing the electrical/PCB work while keeping that finding visible.
-
-The private source repository is [AnasSarkiz/smart-nema14-motor-controller](https://github.com/AnasSarkiz/smart-nema14-motor-controller), branch `main`. The private registry destination is [AnasSarkiz/smart-nema14-motor-controller--01a0fd9b](https://tscircuit.com/AnasSarkiz/smart-nema14-motor-controller--01a0fd9b). Publication receipts in VALIDATION.md distinguish successful updates from unfinished uploads. Public store visibility requires the explicit approval requested after automatic approval review rejected public disclosure. No fabrication package, order or hardware test is claimed.
-
-The registry distribution contains the circuit sources, exact CAD assets and current audit evidence. Downloaded reference PDFs/ZIPs are preserved in the full GitHub repository; manufacturer links remain in references/SOURCES.md. The earlier full-reference upload encountered HTTP 413 for two large PDFs, recorded in VALIDATION.md.
-
-Private release **0.0.13-alpha.0** is uploaded; all 422 initial source/CAD/evidence files passed SHA256 readback. See evidence/rev-0.0.13-alpha.0/PUBLICATION-RECEIPT.json. Its hosted build failed before code execution because the cloud sandbox exceeded its running-container limit. The receipt/documentation follow-up retains the same validated circuit revision.
-
-Revision 15 replaces U10 with TPS26600RHFR/C2155767 and its official TI package CAD, uses 24 kΩ C25769 current-limit resistors, and replaces the control transistor with DMG1012T-7/C20512, specified at 2.5 V gate drive. C33 and the new C34 use official C268016 capacitors; R47 is removed. Independent 60 V OUT rating resolves the former eFuse disconnect concern. The complete board is **not rated for 60 V**. Proposed bounded power calculations are in mechanical/POWER-CORNER-REVIEW.md; startup, HF overshoot and routing remain unfinished. Private version **0.0.15-alpha.0** is uploaded: all **584** committed source/CAD/evidence files passed SHA256 readback. Source commit [252d18a](https://github.com/AnasSarkiz/smart-nema14-motor-controller/commit/252d18a00f2d67b2b83b7c67b0a176d908c457ce), release ID 5f610381-0e9e-4855-b307-6c82759ea5f5. Hosted build success remains separate.
+Registry distributions preserve exact source, supplier CAD and audit evidence. Large reference PDFs/ZIPs remain in GitHub with manufacturer links in references/SOURCES.md. Publication never means fabrication or hardware-test approval.

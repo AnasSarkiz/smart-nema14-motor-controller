@@ -1,3 +1,13 @@
+# Current architecture — revision 16
+
+Exact 14HM11-0404S, open-loop default. USB4110/C5143397 → TCPP01/C1121848 and STL11N3LLH6 → TPS26600RHFR/C2155767 → VM → TMC2209 and AP63203 3.3 V buck. Independent OUT rating allows reverse-blocked motor rail on USB removal; board is not rated 60 V. Isolated EFUSE_RTN is distinct from GND. Two 24 kΩ resistors select 0.50 A bootstrap /1.00 A contract-enabled current screen via low-voltage-specified DMG1012T-7. Motor sense pair is 1 Ω, 0.25 W; 10k/10k VREF yields about 0.32 A peak, conservative 0.34245 A screen. Two Panasonic 100 µF/35 V bulk capacitors, manufacturer-recommended buck capacitors and close bypass sites are retained.
+
+Hardware pulls ENN high and CAN RS high at reset. Native MCU UCPD firmware is required for PD; TCPP only protects the port. Bootstrap allocation ≤150 mA at 3.3 V from a PD charger/dock advertising ≥1.5 A at 5 V. Motion only after qualified ≥1.5 A contract at 9/12/15/20 V, max source 21 V. External ports export signals/grounds, not 3.3 V power. SWD and VBUS sensing use powered-off-safe TMUX1511 gated by supply supervisor. U4/C6 and CAN termination link R50 are DNP by default. No rear encoder or rear screw mounting is claimed.
+
+Four-layer 35×35 mm PCB mounts to four separate front-flange carrier supports. Exact official motor/USB models and unmodified supplier electronics are preserved. The configured native routing targets remain disabled in revision 16; actual copper is the next review. See VALIDATION.md, BOM-CURRENT.md and mechanical/POWER-CORNER-REVIEW.md for current limits/evidence. Firmware and physical tests remain pending.
+
+## Historical architecture notes — earlier draft values and unresolved paths below are superseded by the current source
+
 # Current revision 0.0.9-alpha.0 update
 
 Selected motor: STEPPERONLINE 14HM11-0404S; 0.4 A/phase, 25 ohms,

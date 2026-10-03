@@ -21,10 +21,26 @@ export default function SmartNema14MotorController({
       layers={4}
       thickness="1.6mm"
       routingDisabled
+      defaultTraceWidth="0.15mm"
+      autorouter={{
+        preset: "auto_local",
+        traceClearance: "0.15mm",
+        allowViaInPad: false,
+      }}
+      minTraceWidth="0.15mm"
+      minTraceToPadEdgeClearance="0.10mm"
+      minPadEdgeToPadEdgeClearance="0.15mm"
+      minBoardEdgeClearance="0.30mm"
+      minViaEdgeToPadEdgeClearance="0.15mm"
+      minTraceToHoleEdgeClearance="0.35mm"
+      minViaHoleEdgeToViaHoleEdgeClearance="0.35mm"
+      minPlatedHoleDrillEdgeToDrillEdgeClearance="0.35mm"
+      minViaHoleDiameter="0.30mm"
+      minViaPadDiameter="0.70mm"
       schLayout={{ layoutMode: "none" }}
     >
-      <net name="GND" isGroundNet />
-      <net name="V3V3" isPowerNet />
+      <net name="GND" nominalTraceWidth="0.5mm" isGroundNet />
+      <net name="V3V3" nominalTraceWidth="0.35mm" isPowerNet />
       <net name="NRST" />
       <net name="I2C_SCL" />
       <net name="I2C_SDA" />
@@ -34,7 +50,7 @@ export default function SmartNema14MotorController({
       <net name="CAN_L" />
       <net name="BUCK_SW" />
       <net name="BUCK_BST" />
-      <net name="VM" isPowerNet />
+      <net name="VM" nominalTraceWidth="0.8mm" isPowerNet />
       <net name="TMC_ENABLE_N" />
       <net name="TMC_STEP" />
       <net name="TMC_DIR" />
@@ -46,16 +62,16 @@ export default function SmartNema14MotorController({
       <net name="TMC_VCP" />
       <net name="TMC_5VOUT" isPowerNet />
       <net name="TMC_VREF" />
-      <net name="TMC_SENSE_A" />
-      <net name="TMC_SENSE_B" />
-      <net name="MOTOR_A1" />
-      <net name="MOTOR_A2" />
-      <net name="MOTOR_B1" />
-      <net name="MOTOR_B2" />
-      <net name="VBUS_CONN" isPowerNet />
-      <net name="VBUS_PROTECTED" isPowerNet />
-      <net name="USB_DP" />
-      <net name="USB_DM" />
+      <net name="TMC_SENSE_A" nominalTraceWidth="0.5mm" />
+      <net name="TMC_SENSE_B" nominalTraceWidth="0.5mm" />
+      <net name="MOTOR_A1" nominalTraceWidth="0.5mm" />
+      <net name="MOTOR_A2" nominalTraceWidth="0.5mm" />
+      <net name="MOTOR_B1" nominalTraceWidth="0.5mm" />
+      <net name="MOTOR_B2" nominalTraceWidth="0.5mm" />
+      <net name="VBUS_CONN" nominalTraceWidth="0.8mm" isPowerNet />
+      <net name="VBUS_PROTECTED" nominalTraceWidth="0.8mm" isPowerNet />
+      <net name="USB_DP" nominalTraceWidth="0.1537mm" />
+      <net name="USB_DM" nominalTraceWidth="0.1537mm" />
       <net name="PD_CC1_CONN" />
       <net name="PD_CC2_CONN" />
       <net name="PD_CC1_MCU" />
@@ -103,7 +119,7 @@ export default function SmartNema14MotorController({
       <net name="EFUSE_ILIM" />
       <net name="EFUSE_ILIM_SWITCH" />
       <net name="EFUSE_DVDT" />
-      <net name="EFUSE_RTN" isGroundNet />
+      <net name="EFUSE_RTN" nominalTraceWidth="0.5mm" isGroundNet />
       <net name="CAN_TERM_LINK" />
       <ControllerMount />
       <McuSheet mechanicalPreview={mechanicalPreview} />

@@ -50,7 +50,7 @@
     "front_mount_thread": "4xM3",
     "front_mount_square_spacing_mm": 26,
     "pcb_pattern_is_motor_rear_pattern": false,
-    "status": "Nominal exact-BRep and component envelope checks; not physical qualification",
+    "status": "Nominal geometry, drawing-based mating envelopes and analytical tolerance/load screen; physical fit and retention pending",
     "material_proposal": "Machined 6061-T6 aluminum",
     "support_boss_outer_diameter_mm": 4.5,
     "support_top_z_mm": -0.8,
@@ -58,6 +58,8 @@
     "front_plate_thickness_mm": 3,
     "front_clearance_hole_diameter_mm": 3.8,
     "machining_tolerance_mm": 0.05,
-    "prototype_load_limit_proposal_n": 5
+    "prototype_load_limit_proposal_n": 20,
+    "direct_rail_count": 4,
+    "rail_section_mm": [6, 6]
   }
 }

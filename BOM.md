@@ -1,3 +1,7 @@
+# Current BOM revision 16
+
+111 references /108 default fitted /43 active exact JLCPCB identities. Current authoritative candidate table: BOM-CURRENT.md and evidence/rev-0.0.16-alpha.0/REVIEW-BOM.json. U4/C6/R50 DNP; all electronics retain official definitions. Indexed catalogue checks passed 2026-10-03; not reserved assembler inventory. U10=C2155767, R44/R45=C25769, Q_ILIM=C20512, C33/C34/C25=C268016. Fabrication BOM/CPL remain pending actual routed revision. Historical selections below are superseded where different.
+
 # Current review BOM — 0.0.15-alpha.0
 
 **Design review only; not an approved fabrication BOM.** All 111 instantiated components have exact JLCPCB identities. The generated [per-reference review BOM](evidence/rev-0.0.15-alpha.0/REVIEW-BOM.csv) and [JSON record](evidence/rev-0.0.15-alpha.0/REVIEW-BOM.json) come from the current schematic.

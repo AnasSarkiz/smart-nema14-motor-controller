@@ -1,0 +1,31 @@
+{
+  "checked_date": "2026-10-03",
+  "source": "https://jlcpcb.com/pcb-impedance-calculator",
+  "verification": "Operated live manufacturer calculator; AX and screenshot inspected",
+  "inputs": {
+    "layers": 4,
+    "ordered_thickness_mm": 1.6,
+    "outer_copper_oz": 1,
+    "inner_copper_oz": 0.5,
+    "signal_layer": "L1",
+    "reference_layer": "L2",
+    "type": "Differential Pair (Non coplanar), with solder mask",
+    "target_ohms": 90,
+    "spacing_mm": 0.2
+  },
+  "selected_stackup": "JLC04161H-3313",
+  "displayed_finished_thickness_mm": 1.56,
+  "displayed_finished_thickness_tolerance_fraction": 0.1,
+  "displayed_result": {
+    "trace_width_mm": 0.1537,
+    "trace_spacing_mm": 0.1999,
+    "outer_copper_mm": 0.035,
+    "reference_dielectric_mm": 0.0994,
+    "inner_copper_mm": 0.0152,
+    "core_mm": 1.265
+  },
+  "calculator_solution_tolerance_percent": 0.5,
+  "fabricator_impedance_tolerance_percent": 10,
+  "actual_copper_or_CAM_approved": false,
+  "requirements": "Use solid L2 GND, keep coplanar copper/other signals away from the coupled run, verify actual routed width/spacing/skew and order specified stackup with 90-ohm impedance control. Calculation does not prove routed geometry."
+}

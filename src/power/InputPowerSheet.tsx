@@ -34,8 +34,8 @@ export function InputPowerSheet({
         {...previewPlacement("U10", mechanicalPreview)}
         schX={-5}
         schY={0}
-        schWidth={2.8}
-        schHeight={4.4}
+        schWidth={1.445}
+        schHeight={2.77}
         schPinArrangement={{
           leftSide: [8, 9, 10, 12, 13, 14, 1, 2, 3, 4, 5],
           rightSide: [24, 23, 22, 20, 19, 18, 6, 7, 11, 16, 21],
@@ -81,7 +81,7 @@ export function InputPowerSheet({
       />
       <schematictext
         schX={6}
-        schY={-0.8}
+        schY={-0.4}
         fontSize={0.2}
         text="Q_ILIM - DMG1012T-7"
       />

@@ -1,3 +1,34 @@
+# Current revision 0.0.16-alpha.0 — complete pre-routing prototype review
+
+**Untested prototype. Routing disabled; NOT fabrication ready.** Date: 2026-10-03 Europe/Tirane. Source basis: 43e98f50a0f3392ad9289d5b662d08a447b3022b. The implementation commit and publication receipt will identify the exact revision. Pinned tscircuit 0.0.2742 /CLI 0.1.2237 /EasyEDA 0.0.369 unchanged.
+
+| Stage | Status | Evidence and scope |
+| --- | --- | --- |
+| 1. Requirements | passed | Bounded programmable prototype: exact 14HM11-0404S, selected four-layer JLC stackup/rules, constrained front carrier, PD/load/temperature and harness assumptions stated below. |
+| 2. Schematic/BOM | passed | Manufacturer pin/value/pad reviews, correct decoupling, startup states, supply allocation, reverse-blocking and bounded regeneration screens; 43 exact catalogue identities/111 references/108 fitted. Accepted cosmetic TVS finding only. Physical performance and firmware remain Stage 7. |
+| 3. Unrouted placement | passed | All five required native checks exit zero, placement has zero errors/warnings; all 111 actual model envelopes, four supports, mating envelopes and tolerance/load screens pass. Corrected eFuse schematic visually inspected; other eight sheets byte-identical to reviewed revision 15. |
+| 4. Routing | not started | Native tolerances/width targets configured, routing still disabled. Actual copper is the next gate. |
+| 5. Routed automated/visual checks | not started | Silkscreen, four copper layers, shorts and snapshots pending routed output. |
+| 6. Prototype fabrication | not started | Same-revision Gerber/drill/BOM/CPL and CAM/assembly review pending. No fabrication approval/order. |
+| 7. Physical prototype | not started | Firmware, fit, retention, cold-start, motion, transients, temperatures and protection tests unperformed. |
+| 8. Store release | in progress | Private revision 16 source/package publication pending; previous 15 verified. Prototype labeling retained. |
+
+Requirements are design targets, not guaranteed measured operating ratings. PD source must advertise ≥1.5 A initially at 5 V; bootstrap logic ≤150 mA with ENN high/CAN RS high, encoder DNP and no connector supply export. Motion requires a qualified 9/12/15/20 V ≥1.5 A contract, maximum source 21 V, preferably 12/15 V. Legacy/default-current USB hosts are outside scope. Normal logic allocation ≤0.3 A. Sense resistors bound phase peak at 0.34245 A. Speed ≤300 RPM, external reflected inertia ≤0.25×10⁻⁶ kg·m², no continuous backdrive/overhauling. Scope remains an untested programmable hardware prototype; firmware is not delivered. Intended ambient 0–50 °C with actual device/junction temperatures to be measured, not certified thermal limits.
+
+The current power screen gives bootstrap demand 0.24973 A against 0.41667 A low limit; 60% converter efficiency is an engineering allowance, not a guaranteed minimum. Regeneration screen returns 3.99424 mJ into 100.8 µF end-of-life bulk allowance, giving 22.809 V lossless /24.972 V with LF resistive screen versus driver 29 V. High-frequency parasitics and actual heat remain Stage 4 layout and Stage 7 measurement requirements. Typical MLCC curves are explicitly not guaranteed combined production limits. The independent TPS26600 OUT rating resolves USB removal rating concerns. RTN and GND must remain separate in copper. Input TVS is not an arbitrary surge/braking clamp; no USB/ESD certification is claimed.
+
+The native carrier now has four direct 6×6 mm rails. Exact motor/USB STEP bytes and all imported definitions are unchanged. The JLC calculator shows 1.56 mm finished thickness for an ordered 1.6 mm board; mechanical calculations include 1.404–1.716 mm and the rendering nominal offset. A 20 N single-rail load screen gives 0.1357 mm combined deflection and stress factor 10.81; FR4 modulus is an engineering allowance. Conservative drawing-based plug checks pass, smallest remaining clearance 0.1643 mm. Exact mating CAD was unavailable; hardware and cables must stay within the documented envelopes. This passes the design-stage clearance screen, not physical assembly/strength qualification. See mechanical/FRONT-CARRIER-REVIEW.md and the three actual mechanical reports.
+
+Current logs are evidence/rev-0.0.16-alpha.0/. All eleven aggregate commands exit zero. CHECK-RESULTS.json retains the semantic TVS finding and the aggregate exits one. GATE-REVIEW.json records the specific user-accepted cosmetic exception; it does not edit or override machine results. Native eFuse box padding and Q_ILIM text collision were corrected; the only remaining schematic finding is D_VBUS rotation. Original C1974707 definitions and its failing rotation regression are preserved. No electrical error or placement failure is accepted.
+
+Fresh schematic-only and PCB builds, format, TypeScript, critical pins, draft connections, assembly inventory, actual USB model registration, native netlist/pin/source/schematic-placement/placement and live indexed catalogue checks were run. The nominal mounted model was rebuilt with supplier access and inspected. UNCHANGED-IMPORTS.json records every original definition hash against revision 15; prior raw-library/fixture audits remain applicable to identical definitions. Eight schematic PNGs match the previously visually reviewed images byte-for-byte; the corrected InputPower sheet was inspected. Actual routed widths, ordinary drill/pad clearances including same-net cases, intentional thermal-via geometry and assembler paste/fill review are still required. No normal drill exception is assumed.
+
+Native manufacturer tolerances are applied directly as supported board props; power, phase and USB net widths are targets only. The live JLC 90 Ω top/L2 calculator result is 0.1537 mm width /0.1999 mm gap on JLC04161H-3313; actual pair coupling/skew and continuous ground reference must be checked after routing. Stackup is selected, not ordered/CAM-confirmed.
+
+Both destinations remain private under standing publication authorization. Revision 16 publication is not yet claimed. Revision 15 hosted status checked 2026-10-03T14:30:34Z is still pending, with no reported code/build error and has_transpiled=false. This is separate from local board validation. Physical prototype tests remain unperformed.
+
+## Historical revision 15 — superseded where current review resolves its gates
+
 # Current revision 0.0.15-alpha.0 — reverse-blocking power replacement and placement
 
 **Work-in-progress prototype: NOT routed, NOT fabrication ready, NOT hardware tested.**

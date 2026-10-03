@@ -1,3 +1,7 @@
+# Current revision 16 issue disposition
+
+Pre-routing requirements, paper schematic/BOM and placement design gates pass for the bounded untested prototype recorded in VALIDATION.md. B017's design-stage carrier/tolerance/mating screen is resolved by four direct rails and measured envelopes. B013's paper bootstrap/load and reverse-blocking review is resolved within the explicit PD/load limits. Physical performance, actual copper/HF layout, thermal paths, silkscreen, manufacturing outputs/CAM, firmware and prototype tests remain unfinished. B012 is the user-accepted cosmetic TVS symbol rotation defect; physical mapping is verified, the original import/regression/finding are preserved. These dispositions do not approve fabrication or operation. Both destinations remain private. Earlier issue descriptions below are historical and retain their original evidence scopes.
+
 # Current blockers — 0.0.15-alpha.0
 
 The electrical draft now contains 111 parts on nine A4 sheets. Native placement has zero reported errors/warnings; routing is disabled until the earlier gates pass.

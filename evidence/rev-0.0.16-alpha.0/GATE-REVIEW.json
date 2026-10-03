@@ -1,0 +1,9 @@
+{
+  "revision": "0.0.16-alpha.0",
+  "stages_1_2_3": "passed for bounded untested prototype design; authorizes routing, not fabrication or operation",
+  "checks": "All eleven commands exit zero. CHECK-RESULTS retains the semantic finding and aggregate exits one.",
+  "accepted_cosmetic_finding": "<TwoPinComponentShouldBeVertical componentName=\"D_VBUS\" railPin=\"pin1\" railType=\"power\" deltaSchRotation=\"-90\" suggestedRailFacingDirection=\"up\" message=\"rotate D_VBUS by -90\u00b0 so its power-connected pin faces up and the component is vertical\" />",
+  "authorization": "User: this is not like a blocked issue; it is TVS symbol. Physical mappings verified; imported definition unchanged.",
+  "remaining": "Actual copper, USB pair geometry, ordinary drill/pad clearance, thermal vias, silkscreen, fabrication outputs, CAM, firmware and physical tests",
+  "scope_limits": "PD source >=1.5 A at 5 V; bootstrap logic <=150 mA, motor disabled/CAN standby; exact 14HM11-0404S, phase peak screen 0.34245 A, 300 RPM, external reflected inertia <=0.25e-6 kg m2, no backdrive; connector/hardware envelopes and 20 N board load only."
+}

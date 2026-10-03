@@ -2,19 +2,25 @@
   "status": "Selected design targets; routed geometry and fabricator CAM not yet approved",
   "manufacturer": "JLCPCB",
   "capabilities_reference": "https://jlcpcb.com/capabilities/pcb-capabilities",
-  "stackup_reference": "https://jlcpcb.com/impedance",
+  "stackup_reference": "https://jlcpcb.com/pcb-impedance-calculator",
   "checked_date": "2026-10-03",
   "stackup": {
     "name": "JLC04161H-3313",
     "layers": 4,
-    "finished_thickness_mm": 1.6,
+    "finished_thickness_mm": 1.56,
     "finished_thickness_tolerance_fraction": 0.1,
     "outer_copper_mm": 0.035,
     "inner_copper_mm": 0.0152,
     "top_bottom_prepreg_mm": 0.0994,
     "core_mm": 1.265,
-    "layer_intent": ["top: components, motor/power and signals", "inner1: continuous GND reference", "inner2: power and slow signals", "bottom: signals and components"],
-    "ordered_and_cam_confirmed": false
+    "layer_intent": [
+      "top: components, motor/power and signals",
+      "inner1: continuous GND reference",
+      "inner2: power and slow signals",
+      "bottom: signals and components"
+    ],
+    "ordered_and_cam_confirmed": false,
+    "ordered_nominal_thickness_mm": 1.6
   },
   "design_targets": {
     "ordinary_trace_width_mm": 0.15,
@@ -32,10 +38,14 @@
     "silkscreen_text_height_mm": 1,
     "usb_differential_impedance_ohms": 90,
     "usb_impedance_tolerance_fraction": 0.1,
-    "usb_pair_width_spacing": "Requires fabricator calculator and actual native pair routing validation"
+    "usb_pair_width_spacing": {
+      "width_mm": 0.1537,
+      "spacing_mm": 0.1999,
+      "scope": "Manufacturer calculator nominal geometry; actual routes and CAM confirmation pending"
+    }
   },
   "exceptions": "Imported pads are retained unchanged. Thermal vias in exposed ground pads require separate explicit geometry, paste and assembler review. No ordinary-drill same-net exception is assumed.",
-  "native_routing_configuration_applied": false,
+  "native_routing_configuration_applied": true,
   "actual_copper_measurements": "pending: board is unrouted",
   "fabrication_ready": false
 }
