@@ -1,0 +1,4701 @@
+{
+  "revision": "0.0.16-alpha.0",
+  "source_commit": "533fbab83d42f0477bec143738c837f658aaf984",
+  "package_name": "AnasSarkiz/smart-nema14-motor-controller--01a0fd9b",
+  "is_private": true,
+  "scope": "Exact committed bounded untested prototype sources, unmodified supplier CAD, four-support carrier, current pre-routing evidence and prior audit inputs; reference PDFs/ZIPs in private GitHub only",
+  "excluded_reference_documents": [
+    "references/AP63203.pdf",
+    "references/BSS138LT1G.pdf",
+    "references/ESDA25P35-1U1M.pdf",
+    "references/JST-GH.pdf",
+    "references/JST-PH.pdf",
+    "references/JST-SH.pdf",
+    "references/SM712-TCT.pdf",
+    "references/SRN6028C.pdf",
+    "references/STL11N3LLH6.pdf",
+    "references/TLV803E.pdf",
+    "references/TMP112.pdf",
+    "references/TMUX1511.pdf",
+    "references/TPD2EUSB30A.pdf",
+    "references/TPD4E05U06.pdf",
+    "references/TPS25947.pdf",
+    "references/TPS2660.pdf",
+    "references/TYPE-C-31-M-12.pdf",
+    "references/USB4105-GF-A.pdf",
+    "references/USB4110-GF-A-current.pdf",
+    "references/USB4110-GF-A.pdf",
+    "references/capacitors/Panasonic-FP-2025.pdf",
+    "references/motor/14hm11-0404s/14HM11-0404S_Full_Datasheet.pdf",
+    "references/motor/3323_0_3D.zip",
+    "references/motor/3323_0_Mechanical.pdf",
+    "references/motor/AS5600-supplier.pdf"
+  ],
+  "upload_results": [
+    {
+      "files": [
+        ".gitignore",
+        ".npmrc",
+        "ARCHITECTURE.md",
+        "BOM-CURRENT.md",
+        "BOM.md",
+        "README.md",
+        "VALIDATION.md",
+        "assembly.circuit.tsx",
+        "biome.json",
+        "bun.lock",
+        "controller-preview.circuit.tsx",
+        "evidence/power-candidate-audit/ALL-IMPORTS-AUDIT.json",
+        "evidence/power-candidate-audit/C181406.raweasy.json",
+        "evidence/power-candidate-audit/C20512-official-import.log",
+        "evidence/power-candidate-audit/C20512-raw-fetch.log",
+        "evidence/power-candidate-audit/C20512.raweasy.json",
+        "evidence/power-candidate-audit/C2155767.raweasy.json",
+        "evidence/power-candidate-audit/C25769.raweasy.json",
+        "evidence/power-candidate-audit/C852665.raweasy.json",
+        "evidence/power-candidate-audit/CANDIDATE-CATALOG.json",
+        "evidence/power-candidate-audit/IMPORT-BLOCKERS.md",
+        "evidence/power-candidate-audit/MANUFACTURER-MODEL-AUDIT.json",
+        "evidence/power-candidate-audit/REGENERATED-SOURCE-MANIFEST.json",
+        "evidence/power-candidate-audit/alternate-build.log",
+        "evidence/power-candidate-audit/alternate-import-check.log",
+        "evidence/power-candidate-audit/build.log",
+        "evidence/power-candidate-audit/final-build.log",
+        "evidence/power-candidate-audit/model-check.log",
+        "evidence/power-candidate-audit/selected-import-audit.log",
+        "evidence/rev-0.0.13-alpha.0/ALL-IMPORTS-AUDIT.json",
+        "evidence/rev-0.0.13-alpha.0/ASSEMBLY-MODEL-AUDIT.json",
+        "evidence/rev-0.0.13-alpha.0/AUDIT-RESULTS.json",
+        "evidence/rev-0.0.13-alpha.0/BUILD-RESULTS.json",
+        "evidence/rev-0.0.13-alpha.0/C1121848.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C11702.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C12067.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C12084.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C13585.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C138714.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C14663.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C1525.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C160409.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C17168.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C178585.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C189895.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C1974707.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C19947652.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C23733.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C25076.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C25079.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C25744.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C25767.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C25792.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C25900.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C2673275.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C268016.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C2847904.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C28927.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C2965326.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C307335.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C3662793.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C45194.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C45783.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C465949.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C5127775.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C513714.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C5143397.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C5218924.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C5448795.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C780769.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C79815.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C82045.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C852472.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C852895.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C94934.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C965805.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/C98192.raweasy.json",
+        "evidence/rev-0.0.13-alpha.0/CHECK-RESULTS.json",
+        "evidence/rev-0.0.13-alpha.0/IMPORT-REGENERATION-RESULTS.json",
+        "evidence/rev-0.0.13-alpha.0/IMPORTED-SYMBOL-ROTATION.json",
+        "evidence/rev-0.0.13-alpha.0/MOTOR-CONNECTOR-FOOTPRINT-AUDIT.json",
+        "evidence/rev-0.0.13-alpha.0/RAW-SOURCE-PROVENANCE.json",
+        "evidence/rev-0.0.13-alpha.0/REGENERATED-SOURCE-MANIFEST.json",
+        "evidence/rev-0.0.13-alpha.0/REVIEW-BOM.csv",
+        "evidence/rev-0.0.13-alpha.0/REVIEW-BOM.json",
+        "evidence/rev-0.0.13-alpha.0/SCHEMATIC-EQUIVALENCE.json",
+        "evidence/rev-0.0.13-alpha.0/SOURCE-MANIFEST.json",
+        "evidence/rev-0.0.13-alpha.0/USB-EXTERNAL-MODEL-AUDIT.json",
+        "evidence/rev-0.0.13-alpha.0/USB-IMPORT-PIN-PAD-AUDIT.json",
+        "evidence/rev-0.0.13-alpha.0/USB-MANUFACTURER-FOOTPRINT-AUDIT.json",
+        "evidence/rev-0.0.13-alpha.0/all-imports-audit.log",
+        "evidence/rev-0.0.13-alpha.0/all-imports-build.log",
+        "evidence/rev-0.0.13-alpha.0/assembly-build.log",
+        "evidence/rev-0.0.13-alpha.0/assembly-native.png",
+        "evidence/rev-0.0.13-alpha.0/check-controller-placement.log",
+        "evidence/rev-0.0.13-alpha.0/check-critical-imports.log",
+        "evidence/rev-0.0.13-alpha.0/check-draft-connectivity.log",
+        "evidence/rev-0.0.13-alpha.0/check-format-check.log",
+        "evidence/rev-0.0.13-alpha.0/check-mechanical-regression.log",
+        "evidence/rev-0.0.13-alpha.0/check-netlist.log",
+        "evidence/rev-0.0.13-alpha.0/check-pin-specification.log",
+        "evidence/rev-0.0.13-alpha.0/check-schematic-placement.log",
+        "evidence/rev-0.0.13-alpha.0/check-source.log",
+        "evidence/rev-0.0.13-alpha.0/check-typecheck.log",
+        "evidence/rev-0.0.13-alpha.0/check-usb-model-registration.log",
+        "evidence/rev-0.0.13-alpha.0/controller-build.log",
+        "evidence/rev-0.0.13-alpha.0/controller-native.png",
+        "evidence/rev-0.0.13-alpha.0/controller-placement.png",
+        "evidence/rev-0.0.13-alpha.0/import-C1121848.log",
+        "evidence/rev-0.0.13-alpha.0/import-C11702.log",
+        "evidence/rev-0.0.13-alpha.0/import-C12067.log",
+        "evidence/rev-0.0.13-alpha.0/import-C12084.log",
+        "evidence/rev-0.0.13-alpha.0/import-C13585.log",
+        "evidence/rev-0.0.13-alpha.0/import-C138714.log",
+        "evidence/rev-0.0.13-alpha.0/import-C14663.log",
+        "evidence/rev-0.0.13-alpha.0/import-C1525.log",
+        "evidence/rev-0.0.13-alpha.0/import-C160409.log",
+        "evidence/rev-0.0.13-alpha.0/import-C17168.log",
+        "evidence/rev-0.0.13-alpha.0/import-C178585.log",
+        "evidence/rev-0.0.13-alpha.0/import-C189895.log",
+        "evidence/rev-0.0.13-alpha.0/import-C1974707.log",
+        "evidence/rev-0.0.13-alpha.0/import-C19947652.log",
+        "evidence/rev-0.0.13-alpha.0/import-C23733.log",
+        "evidence/rev-0.0.13-alpha.0/import-C25076.log",
+        "evidence/rev-0.0.13-alpha.0/import-C25079.log",
+        "evidence/rev-0.0.13-alpha.0/import-C25744.log",
+        "evidence/rev-0.0.13-alpha.0/import-C25767.log",
+        "evidence/rev-0.0.13-alpha.0/import-C25792.log",
+        "evidence/rev-0.0.13-alpha.0/import-C25900.log",
+        "evidence/rev-0.0.13-alpha.0/import-C2673275.log",
+        "evidence/rev-0.0.13-alpha.0/import-C268016.log",
+        "evidence/rev-0.0.13-alpha.0/import-C2847904.log",
+        "evidence/rev-0.0.13-alpha.0/import-C28927.log",
+        "evidence/rev-0.0.13-alpha.0/import-C2965326.log",
+        "evidence/rev-0.0.13-alpha.0/import-C307335.log",
+        "evidence/rev-0.0.13-alpha.0/import-C3662793.log",
+        "evidence/rev-0.0.13-alpha.0/import-C45194.log",
+        "evidence/rev-0.0.13-alpha.0/import-C45783.log",
+        "evidence/rev-0.0.13-alpha.0/import-C465949.log",
+        "evidence/rev-0.0.13-alpha.0/import-C5127775.log",
+        "evidence/rev-0.0.13-alpha.0/import-C513714.log",
+        "evidence/rev-0.0.13-alpha.0/import-C5143397.log",
+        "evidence/rev-0.0.13-alpha.0/import-C5218924.log",
+        "evidence/rev-0.0.13-alpha.0/import-C5448795.log",
+        "evidence/rev-0.0.13-alpha.0/import-C780769.log",
+        "evidence/rev-0.0.13-alpha.0/import-C79815.log",
+        "evidence/rev-0.0.13-alpha.0/import-C82045.log",
+        "evidence/rev-0.0.13-alpha.0/import-C852472.log",
+        "evidence/rev-0.0.13-alpha.0/import-C852895.log",
+        "evidence/rev-0.0.13-alpha.0/import-C94934.log",
+        "evidence/rev-0.0.13-alpha.0/import-C965805.log",
+        "evidence/rev-0.0.13-alpha.0/import-C98192.log",
+        "evidence/rev-0.0.13-alpha.0/motor-footprint-audit.log",
+        "evidence/rev-0.0.13-alpha.0/schematic-CAN.png",
+        "evidence/rev-0.0.13-alpha.0/schematic-Encoder.png",
+        "evidence/rev-0.0.13-alpha.0/schematic-InputPower.png",
+        "evidence/rev-0.0.13-alpha.0/schematic-Interfaces.png",
+        "evidence/rev-0.0.13-alpha.0/schematic-LogicPower.png",
+        "evidence/rev-0.0.13-alpha.0/schematic-MCU.png",
+        "evidence/rev-0.0.13-alpha.0/schematic-MotorDriver.png",
+        "evidence/rev-0.0.13-alpha.0/schematic-Programming.png",
+        "evidence/rev-0.0.13-alpha.0/schematic-UsbPd.png",
+        "evidence/rev-0.0.13-alpha.0/schematic-build.log",
+        "evidence/rev-0.0.13-alpha.0/symbol-rotation-audit.log",
+        "evidence/rev-0.0.13-alpha.0/symbol-rotation-build.log",
+        "evidence/rev-0.0.13-alpha.0/tool-versions.log",
+        "evidence/rev-0.0.13-alpha.0/toolchain-update.log",
+        "evidence/rev-0.0.13-alpha.0/usb-footprint-audit.log",
+        "evidence/rev-0.0.13-alpha.0/usb-import-audit.log",
+        "evidence/rev-0.0.13-alpha.0/usb-import-build.log",
+        "evidence/rev-0.0.14-alpha.0/ASSEMBLY-MODEL-AUDIT.json",
+        "evidence/rev-0.0.14-alpha.0/BOM-CATALOG-AUDIT.json",
+        "evidence/rev-0.0.14-alpha.0/BOM-TABLE.json",
+        "evidence/rev-0.0.14-alpha.0/CHECK-RESULTS.json",
+        "evidence/rev-0.0.14-alpha.0/FRONT-CARRIER-AUDIT.json",
+        "evidence/rev-0.0.14-alpha.0/IMPORTED-SYMBOL-ROTATION.json",
+        "evidence/rev-0.0.14-alpha.0/PLACEMENT-PROPOSAL.json",
+        "evidence/rev-0.0.14-alpha.0/REVIEW-BOM.csv",
+        "evidence/rev-0.0.14-alpha.0/REVIEW-BOM.json",
+        "evidence/rev-0.0.14-alpha.0/SCHEMATIC-EQUIVALENCE.json",
+        "evidence/rev-0.0.14-alpha.0/SOURCE-MANIFEST.json",
+        "evidence/rev-0.0.14-alpha.0/UNCHANGED-IMPORTS.json",
+        "evidence/rev-0.0.14-alpha.0/USB-EXTERNAL-MODEL-AUDIT.json",
+        "evidence/rev-0.0.14-alpha.0/VISUAL-REVIEW.json",
+        "evidence/rev-0.0.14-alpha.0/assembly-inventory-final.log",
+        "evidence/rev-0.0.14-alpha.0/assembly-inventory.log",
+        "evidence/rev-0.0.14-alpha.0/bom-catalog-check.log",
+        "evidence/rev-0.0.14-alpha.0/catalog-C13585.json",
+        "evidence/rev-0.0.14-alpha.0/check-controller-placement.log",
+        "evidence/rev-0.0.14-alpha.0/check-critical-imports.log",
+        "evidence/rev-0.0.14-alpha.0/check-draft-connectivity.log",
+        "evidence/rev-0.0.14-alpha.0/check-format-check.log",
+        "evidence/rev-0.0.14-alpha.0/check-mechanical-regression.log",
+        "evidence/rev-0.0.14-alpha.0/check-netlist.log",
+        "evidence/rev-0.0.14-alpha.0/check-pin-specification.log",
+        "evidence/rev-0.0.14-alpha.0/check-schematic-placement.log",
+        "evidence/rev-0.0.14-alpha.0/check-source.log",
+        "evidence/rev-0.0.14-alpha.0/check-summary.log",
+        "evidence/rev-0.0.14-alpha.0/check-typecheck.log",
+        "evidence/rev-0.0.14-alpha.0/check-usb-model-registration.log",
+        "evidence/rev-0.0.14-alpha.0/controller-placement-build.log",
+        "evidence/rev-0.0.14-alpha.0/exploded-build-final.log",
+        "evidence/rev-0.0.14-alpha.0/exploded-build.log",
+        "evidence/rev-0.0.14-alpha.0/format.log",
+        "evidence/rev-0.0.14-alpha.0/front-carrier-check-final.log",
+        "evidence/rev-0.0.14-alpha.0/front-carrier-check.log",
+        "evidence/rev-0.0.14-alpha.0/mount-placement-proposal.log",
+        "evidence/rev-0.0.14-alpha.0/mounted-build-final.log",
+        "evidence/rev-0.0.14-alpha.0/mounted-build.log",
+        "evidence/rev-0.0.14-alpha.0/mounted-render.png",
+        "evidence/rev-0.0.14-alpha.0/schematic-build.log",
+        "evidence/rev-0.0.14-alpha.0/schematic-render.log",
+        "evidence/rev-0.0.14-alpha.0/symbol-rotation.log",
+        "evidence/rev-0.0.14-alpha.0/typecheck.log",
+        "evidence/rev-0.0.14-alpha.0/usb-model-check-final.log",
+        "evidence/rev-0.0.14-alpha.0/usb-model-check.log",
+        "evidence/rev-0.0.15-alpha.0/ASSEMBLY-MODEL-AUDIT.json",
+        "evidence/rev-0.0.15-alpha.0/BOM-CATALOG-AUDIT.json",
+        "evidence/rev-0.0.15-alpha.0/BOM-TABLE.json",
+        "evidence/rev-0.0.15-alpha.0/CHECK-RESULTS.json",
+        "evidence/rev-0.0.15-alpha.0/FRONT-CARRIER-AUDIT.json",
+        "evidence/rev-0.0.15-alpha.0/IMPORTED-SYMBOL-ROTATION.json",
+        "evidence/rev-0.0.15-alpha.0/PLACEMENT-PROPOSAL.json",
+        "evidence/rev-0.0.15-alpha.0/POWER-CORNER-SCREEN.json",
+        "evidence/rev-0.0.15-alpha.0/PUBLICATION-RECEIPT.json",
+        "evidence/rev-0.0.15-alpha.0/RENDER-REVIEW.json",
+        "evidence/rev-0.0.15-alpha.0/REVIEW-BOM.csv",
+        "evidence/rev-0.0.15-alpha.0/REVIEW-BOM.json",
+        "evidence/rev-0.0.15-alpha.0/SOURCE-MANIFEST.json",
+        "evidence/rev-0.0.15-alpha.0/USB-EXTERNAL-MODEL-AUDIT.json",
+        "evidence/rev-0.0.15-alpha.0/all-checks.log",
+        "evidence/rev-0.0.15-alpha.0/bom-catalog.log",
+        "evidence/rev-0.0.15-alpha.0/bom-review.log",
+        "evidence/rev-0.0.15-alpha.0/build-assembly.log",
+        "evidence/rev-0.0.15-alpha.0/build-mounted-final.log",
+        "evidence/rev-0.0.15-alpha.0/build-mounted-network.log",
+        "evidence/rev-0.0.15-alpha.0/build-mounted-retry.log",
+        "evidence/rev-0.0.15-alpha.0/build-mounted.log",
+        "evidence/rev-0.0.15-alpha.0/build-schematic-final.log",
+        "evidence/rev-0.0.15-alpha.0/build-schematic.log",
+        "evidence/rev-0.0.15-alpha.0/check-controller-placement.log",
+        "evidence/rev-0.0.15-alpha.0/check-critical-imports.log",
+        "evidence/rev-0.0.15-alpha.0/check-draft-connectivity.log",
+        "evidence/rev-0.0.15-alpha.0/check-format-check.log",
+        "evidence/rev-0.0.15-alpha.0/check-mechanical-regression.log",
+        "evidence/rev-0.0.15-alpha.0/check-netlist.log",
+        "evidence/rev-0.0.15-alpha.0/check-pin-specification.log",
+        "evidence/rev-0.0.15-alpha.0/check-schematic-placement.log",
+        "evidence/rev-0.0.15-alpha.0/check-source.log",
+        "evidence/rev-0.0.15-alpha.0/check-typecheck.log",
+        "evidence/rev-0.0.15-alpha.0/check-usb-model-registration.log",
+        "evidence/rev-0.0.15-alpha.0/controller-before-placement.log",
+        "evidence/rev-0.0.15-alpha.0/controller-critical-proposal-build.log",
+        "evidence/rev-0.0.15-alpha.0/controller-initial-build.log",
+        "evidence/rev-0.0.15-alpha.0/critical-placement-build.log",
+        "evidence/rev-0.0.15-alpha.0/critical-placement-proposal.log",
+        "evidence/rev-0.0.15-alpha.0/draft-check.log",
+        "evidence/rev-0.0.15-alpha.0/draft-connectivity.log",
+        "evidence/rev-0.0.15-alpha.0/format-final.log",
+        "evidence/rev-0.0.15-alpha.0/format.log",
+        "evidence/rev-0.0.15-alpha.0/front-carrier-check.log",
+        "evidence/rev-0.0.15-alpha.0/mounted-build.log",
+        "evidence/rev-0.0.15-alpha.0/mounted-render.png",
+        "evidence/rev-0.0.15-alpha.0/placement-proposal.log",
+        "evidence/rev-0.0.15-alpha.0/schematic-CAN.png",
+        "evidence/rev-0.0.15-alpha.0/schematic-Encoder.png"
+      ],
+      "compressed_payload_bytes": 2719796,
+      "status": 200
+    },
+    {
+      "files": [
+        "evidence/rev-0.0.15-alpha.0/schematic-InputPower.png",
+        "evidence/rev-0.0.15-alpha.0/schematic-Interfaces.png",
+        "evidence/rev-0.0.15-alpha.0/schematic-LogicPower.png",
+        "evidence/rev-0.0.15-alpha.0/schematic-MCU.png",
+        "evidence/rev-0.0.15-alpha.0/schematic-MotorDriver.png",
+        "evidence/rev-0.0.15-alpha.0/schematic-Programming.png",
+        "evidence/rev-0.0.15-alpha.0/schematic-UsbPd.png",
+        "evidence/rev-0.0.15-alpha.0/schematic-build.log",
+        "evidence/rev-0.0.15-alpha.0/symbol-rotation-regression.log",
+        "evidence/rev-0.0.15-alpha.0/typecheck.log",
+        "evidence/rev-0.0.16-alpha.0/ASSEMBLY-MODEL-AUDIT.json",
+        "evidence/rev-0.0.16-alpha.0/BOM-CATALOG-AUDIT.json",
+        "evidence/rev-0.0.16-alpha.0/BOM-TABLE.json",
+        "evidence/rev-0.0.16-alpha.0/CARRIER-TOLERANCE-SCREEN.json",
+        "evidence/rev-0.0.16-alpha.0/CHECK-RESULTS.json",
+        "evidence/rev-0.0.16-alpha.0/FRONT-CARRIER-AUDIT.json",
+        "evidence/rev-0.0.16-alpha.0/GATE-REVIEW.json",
+        "evidence/rev-0.0.16-alpha.0/MATING-ENVELOPE-AUDIT.json",
+        "evidence/rev-0.0.16-alpha.0/PLACEMENT-PROPOSAL.json",
+        "evidence/rev-0.0.16-alpha.0/POWER-CORNER-SCREEN.json",
+        "evidence/rev-0.0.16-alpha.0/RENDER-REVIEW.json",
+        "evidence/rev-0.0.16-alpha.0/REVIEW-BOM.csv",
+        "evidence/rev-0.0.16-alpha.0/REVIEW-BOM.json",
+        "evidence/rev-0.0.16-alpha.0/SOURCE-MANIFEST.json",
+        "evidence/rev-0.0.16-alpha.0/UNCHANGED-IMPORTS.json",
+        "evidence/rev-0.0.16-alpha.0/USB-EXTERNAL-MODEL-AUDIT.json",
+        "evidence/rev-0.0.16-alpha.0/USB-IMPEDANCE-CALCULATOR.json",
+        "evidence/rev-0.0.16-alpha.0/bom-catalog.log",
+        "evidence/rev-0.0.16-alpha.0/bom-review.log",
+        "evidence/rev-0.0.16-alpha.0/bom-table.log",
+        "evidence/rev-0.0.16-alpha.0/carrier-generation.log",
+        "evidence/rev-0.0.16-alpha.0/carrier-tolerance.log",
+        "evidence/rev-0.0.16-alpha.0/check-controller-placement.log",
+        "evidence/rev-0.0.16-alpha.0/check-critical-imports.log",
+        "evidence/rev-0.0.16-alpha.0/check-draft-connectivity.log",
+        "evidence/rev-0.0.16-alpha.0/check-format-check.log",
+        "evidence/rev-0.0.16-alpha.0/check-mechanical-regression.log",
+        "evidence/rev-0.0.16-alpha.0/check-netlist.log",
+        "evidence/rev-0.0.16-alpha.0/check-pin-specification.log",
+        "evidence/rev-0.0.16-alpha.0/check-schematic-placement.log",
+        "evidence/rev-0.0.16-alpha.0/check-source.log",
+        "evidence/rev-0.0.16-alpha.0/check-typecheck.log",
+        "evidence/rev-0.0.16-alpha.0/check-usb-model-registration.log",
+        "evidence/rev-0.0.16-alpha.0/decoupling-initial-build.log",
+        "evidence/rev-0.0.16-alpha.0/exploded-build.log",
+        "evidence/rev-0.0.16-alpha.0/format.log",
+        "evidence/rev-0.0.16-alpha.0/front-carrier-check.log",
+        "evidence/rev-0.0.16-alpha.0/index-schematic-build.log",
+        "evidence/rev-0.0.16-alpha.0/index-unrouted-build.log",
+        "evidence/rev-0.0.16-alpha.0/mating-envelope-check.log",
+        "evidence/rev-0.0.16-alpha.0/mounted-3d.png",
+        "evidence/rev-0.0.16-alpha.0/mounted-build-final.log",
+        "evidence/rev-0.0.16-alpha.0/mounted-build-four-rails.log",
+        "evidence/rev-0.0.16-alpha.0/mounted-build-stiffened.log",
+        "evidence/rev-0.0.16-alpha.0/mounted-build.log",
+        "evidence/rev-0.0.16-alpha.0/native-checks-summary.log",
+        "evidence/rev-0.0.16-alpha.0/native-placement.log",
+        "evidence/rev-0.0.16-alpha.0/placement-decoupling-proposal.log",
+        "evidence/rev-0.0.16-alpha.0/placement-initial-build.log",
+        "evidence/rev-0.0.16-alpha.0/placement-proposal.log",
+        "evidence/rev-0.0.16-alpha.0/power-corners.log",
+        "evidence/rev-0.0.16-alpha.0/schematic-CAN.png",
+        "evidence/rev-0.0.16-alpha.0/schematic-Encoder.png",
+        "evidence/rev-0.0.16-alpha.0/schematic-InputPower.png",
+        "evidence/rev-0.0.16-alpha.0/schematic-Interfaces.png",
+        "evidence/rev-0.0.16-alpha.0/schematic-LogicPower.png",
+        "evidence/rev-0.0.16-alpha.0/schematic-MCU.png",
+        "evidence/rev-0.0.16-alpha.0/schematic-MotorDriver.png"
+      ],
+      "compressed_payload_bytes": 2789380,
+      "status": 200
+    },
+    {
+      "files": [
+        "evidence/rev-0.0.16-alpha.0/schematic-Programming.png",
+        "evidence/rev-0.0.16-alpha.0/schematic-UsbPd.png",
+        "evidence/rev-0.0.16-alpha.0/schematic-layout-followup.log",
+        "evidence/rev-0.0.16-alpha.0/schematic-render.log",
+        "evidence/rev-0.0.16-alpha.0/typecheck.log",
+        "evidence/rev-0.0.16-alpha.0/unrouted-pcb.png",
+        "imports/AP63203WU_7/AP63203WU_7.obj",
+        "imports/AP63203WU_7/AP63203WU_7.step",
+        "imports/AP63203WU_7/AP63203WU_7.tsx",
+        "imports/AS5600_ASOM.tsx",
+        "imports/AS5600_ASOM/AS5600_ASOM.obj",
+        "imports/AS5600_ASOM/AS5600_ASOM.step",
+        "imports/AS5600_ASOM/AS5600_ASOM.tsx",
+        "imports/A_0402WGF0000TCE/A_0402WGF0000TCE.obj",
+        "imports/A_0402WGF0000TCE/A_0402WGF0000TCE.step",
+        "imports/A_0402WGF0000TCE/A_0402WGF0000TCE.tsx",
+        "imports/A_0402WGF1000TCE/A_0402WGF1000TCE.obj",
+        "imports/A_0402WGF1000TCE/A_0402WGF1000TCE.step",
+        "imports/A_0402WGF1000TCE/A_0402WGF1000TCE.tsx",
+        "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+        "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+        "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.tsx",
+        "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+        "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+        "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.tsx",
+        "imports/A_0402WGF1200TCE/A_0402WGF1200TCE.obj",
+        "imports/A_0402WGF1200TCE/A_0402WGF1200TCE.step",
+        "imports/A_0402WGF1200TCE/A_0402WGF1200TCE.tsx",
+        "imports/A_0402WGF2203TCE/A_0402WGF2203TCE.obj",
+        "imports/A_0402WGF2203TCE/A_0402WGF2203TCE.step",
+        "imports/A_0402WGF2203TCE/A_0402WGF2203TCE.tsx",
+        "imports/A_0402WGF2402TCE/A_0402WGF2402TCE.obj"
+      ],
+      "compressed_payload_bytes": 2603128,
+      "status": 200
+    },
+    {
+      "files": [
+        "imports/A_0402WGF2402TCE/A_0402WGF2402TCE.step",
+        "imports/A_0402WGF2402TCE/A_0402WGF2402TCE.tsx",
+        "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.obj",
+        "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.step",
+        "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.tsx",
+        "imports/A_0402WGF4702TCE/A_0402WGF4702TCE.obj",
+        "imports/A_0402WGF4702TCE/A_0402WGF4702TCE.step",
+        "imports/A_0402WGF4702TCE/A_0402WGF4702TCE.tsx",
+        "imports/A_0402WGF6651TCE/A_0402WGF6651TCE.obj",
+        "imports/A_0402WGF6651TCE/A_0402WGF6651TCE.step",
+        "imports/A_0402WGF6651TCE/A_0402WGF6651TCE.tsx",
+        "imports/BSS138LT1G/BSS138LT1G.obj",
+        "imports/BSS138LT1G/BSS138LT1G.step",
+        "imports/BSS138LT1G/BSS138LT1G.tsx",
+        "imports/C11702.tsx",
+        "imports/C12084.tsx",
+        "imports/C13585.tsx",
+        "imports/C14663.tsx",
+        "imports/C1525.tsx",
+        "imports/C178585.tsx",
+        "imports/C23733.tsx",
+        "imports/C25744.tsx",
+        "imports/C25767.tsx",
+        "imports/C25900.tsx",
+        "imports/C307335.tsx",
+        "imports/C3662793.tsx",
+        "imports/C45783.tsx",
+        "imports/C5127775.tsx",
+        "imports/C52923.tsx",
+        "imports/C57269.tsx",
+        "imports/C723709.tsx",
+        "imports/C780769.tsx",
+        "imports/C98192.tsx",
+        "imports/CC0402KRX7R9BB331.tsx",
+        "imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.obj",
+        "imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.step",
+        "imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.tsx",
+        "imports/CL05A475MP5NRNC/CL05A475MP5NRNC.obj",
+        "imports/CL05A475MP5NRNC/CL05A475MP5NRNC.step",
+        "imports/CL05A475MP5NRNC/CL05A475MP5NRNC.tsx",
+        "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+        "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+        "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.tsx",
+        "imports/CL05B223KB5VPNC/CL05B223KB5VPNC.obj"
+      ],
+      "compressed_payload_bytes": 2494744,
+      "status": 200
+    },
+    {
+      "files": [
+        "imports/CL05B223KB5VPNC/CL05B223KB5VPNC.step",
+        "imports/CL05B223KB5VPNC/CL05B223KB5VPNC.tsx",
+        "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.obj",
+        "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.step",
+        "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.tsx",
+        "imports/CL21A475KBQNNNE/CL21A475KBQNNNE.obj",
+        "imports/CL21A475KBQNNNE/CL21A475KBQNNNE.step",
+        "imports/CL21A475KBQNNNE/CL21A475KBQNNNE.tsx",
+        "imports/CL31A106KBHNNNE/CL31A106KBHNNNE.obj",
+        "imports/CL31A106KBHNNNE/CL31A106KBHNNNE.step",
+        "imports/CL31A106KBHNNNE/CL31A106KBHNNNE.tsx",
+        "imports/DMG1012T_7/DMG1012T_7.obj",
+        "imports/DMG1012T_7/DMG1012T_7.step",
+        "imports/DMG1012T_7/DMG1012T_7.tsx",
+        "imports/EEEFPV101XAP/EEEFPV101XAP.obj",
+        "imports/EEEFPV101XAP/EEEFPV101XAP.step",
+        "imports/EEEFPV101XAP/EEEFPV101XAP.tsx",
+        "imports/ESDA25P35_1U1M.tsx",
+        "imports/ESDA25P35_1U1M/ESDA25P35_1U1M.obj",
+        "imports/ESDA25P35_1U1M/ESDA25P35_1U1M.step",
+        "imports/ESDA25P35_1U1M/ESDA25P35_1U1M.tsx",
+        "imports/HoLRT1206_1W_150mR_1_.tsx",
+        "imports/HoLRT1206_1W_180mR_1_.tsx",
+        "imports/HoLRT1206_1W_180mR_1_/HoLRT1206_1W_180mR_1_.obj",
+        "imports/HoLRT1206_1W_180mR_1_/HoLRT1206_1W_180mR_1_.step",
+        "imports/HoLRT1206_1W_180mR_1_/HoLRT1206_1W_180mR_1_.tsx",
+        "imports/RT0402BRD07100KL.tsx",
+        "imports/RT0402BRD07100KL/RT0402BRD07100KL.obj"
+      ],
+      "compressed_payload_bytes": 2750744,
+      "status": 200
+    },
+    {
+      "files": [
+        "imports/RT0402BRD07100KL/RT0402BRD07100KL.step",
+        "imports/RT0402BRD07100KL/RT0402BRD07100KL.tsx",
+        "imports/RT0402BRD0724KL/RT0402BRD0724KL.obj",
+        "imports/RT0402BRD0724KL/RT0402BRD0724KL.step",
+        "imports/RT0402BRD0724KL/RT0402BRD0724KL.tsx",
+        "imports/RT0402BRD076K04L.tsx",
+        "imports/RT0402BRD076K04L/RT0402BRD076K04L.obj",
+        "imports/RT0402BRD076K04L/RT0402BRD076K04L.step",
+        "imports/RT0402BRD076K04L/RT0402BRD076K04L.tsx",
+        "imports/RT1206BRD071RL/RT1206BRD071RL.obj",
+        "imports/RT1206BRD071RL/RT1206BRD071RL.step",
+        "imports/RT1206BRD071RL/RT1206BRD071RL.tsx",
+        "imports/S4B_PH_K_S_LF__SN_/S4B_PH_K_S_LF__SN_.obj",
+        "imports/S4B_PH_K_S_LF__SN_/S4B_PH_K_S_LF__SN_.step",
+        "imports/S4B_PH_K_S_LF__SN_/S4B_PH_K_S_LF__SN_.tsx",
+        "imports/S4B_PH_SM4_K_TB_LF__SN_/S4B_PH_SM4_K_TB_LF__SN_.obj",
+        "imports/S4B_PH_SM4_K_TB_LF__SN_/S4B_PH_SM4_K_TB_LF__SN_.step",
+        "imports/S4B_PH_SM4_K_TB_LF__SN_/S4B_PH_SM4_K_TB_LF__SN_.tsx",
+        "imports/S4B_PH_SM4_TB_LF__SN_/S4B_PH_SM4_TB_LF__SN_.obj",
+        "imports/S4B_PH_SM4_TB_LF__SN_/S4B_PH_SM4_TB_LF__SN_.step",
+        "imports/S4B_PH_SM4_TB_LF__SN_/S4B_PH_SM4_TB_LF__SN_.tsx",
+        "imports/SM04B_GHS_TB_LF__SN_/SM04B_GHS_TB_LF__SN_.obj"
+      ],
+      "compressed_payload_bytes": 2687220,
+      "status": 200
+    },
+    {
+      "files": [
+        "imports/SM04B_GHS_TB_LF__SN_/SM04B_GHS_TB_LF__SN_.step",
+        "imports/SM04B_GHS_TB_LF__SN_/SM04B_GHS_TB_LF__SN_.tsx",
+        "imports/SM10B_SRSS_TB_LF__SN_/SM10B_SRSS_TB_LF__SN_.obj",
+        "imports/SM10B_SRSS_TB_LF__SN_/SM10B_SRSS_TB_LF__SN_.step",
+        "imports/SM10B_SRSS_TB_LF__SN_/SM10B_SRSS_TB_LF__SN_.tsx",
+        "imports/SM712_TCT/SM712_TCT.obj",
+        "imports/SM712_TCT/SM712_TCT.step",
+        "imports/SM712_TCT/SM712_TCT.tsx",
+        "imports/SN65HVD230DR/SN65HVD230DR.obj",
+        "imports/SN65HVD230DR/SN65HVD230DR.step",
+        "imports/SN65HVD230DR/SN65HVD230DR.tsx",
+        "imports/SRN6028C_3R9M.tsx",
+        "imports/SRN6028C_3R9M/SRN6028C_3R9M.obj",
+        "imports/SRN6028C_3R9M/SRN6028C_3R9M.step",
+        "imports/SRN6028C_3R9M/SRN6028C_3R9M.tsx",
+        "imports/STL11N3LLH6.tsx",
+        "imports/STL11N3LLH6/STL11N3LLH6.obj"
+      ],
+      "compressed_payload_bytes": 2504544,
+      "status": 200
+    },
+    {
+      "files": [
+        "imports/STL11N3LLH6/STL11N3LLH6.step",
+        "imports/STL11N3LLH6/STL11N3LLH6.tsx",
+        "imports/STM32G0B1CBT6.tsx",
+        "imports/STM32G0B1CBT6/STM32G0B1CBT6.obj"
+      ],
+      "compressed_payload_bytes": 1430248,
+      "status": 200
+    },
+    {
+      "files": [
+        "imports/STM32G0B1CBT6/STM32G0B1CBT6.step",
+        "imports/STM32G0B1CBT6/STM32G0B1CBT6.tsx",
+        "imports/TCC0402COG331J500AT.tsx",
+        "imports/TCC0402COG331J500AT/TCC0402COG331J500AT.obj",
+        "imports/TCC0402COG331J500AT/TCC0402COG331J500AT.step",
+        "imports/TCC0402COG331J500AT/TCC0402COG331J500AT.tsx",
+        "imports/TCPP01_M12.tsx",
+        "imports/TCPP01_M12/TCPP01_M12.obj"
+      ],
+      "compressed_payload_bytes": 2617972,
+      "status": 200
+    },
+    {
+      "files": [
+        "imports/TCPP01_M12/TCPP01_M12.step",
+        "imports/TCPP01_M12/TCPP01_M12.tsx",
+        "imports/TLV803EA30DBZR/TLV803EA30DBZR.obj",
+        "imports/TLV803EA30DBZR/TLV803EA30DBZR.step",
+        "imports/TLV803EA30DBZR/TLV803EA30DBZR.tsx",
+        "imports/TLV803EA30DPWR/TLV803EA30DPWR.obj",
+        "imports/TLV803EA30DPWR/TLV803EA30DPWR.step",
+        "imports/TLV803EA30DPWR/TLV803EA30DPWR.tsx",
+        "imports/TMC2209_LA.tsx",
+        "imports/TMC2209_LA/TMC2209_LA.obj"
+      ],
+      "compressed_payload_bytes": 2198060,
+      "status": 200
+    },
+    {
+      "files": [
+        "imports/TMC2209_LA/TMC2209_LA.step",
+        "imports/TMC2209_LA/TMC2209_LA.tsx",
+        "imports/TMP112AIDRLR/TMP112AIDRLR.obj",
+        "imports/TMP112AIDRLR/TMP112AIDRLR.step",
+        "imports/TMP112AIDRLR/TMP112AIDRLR.tsx",
+        "imports/TMUX1511RSVR/TMUX1511RSVR.obj",
+        "imports/TMUX1511RSVR/TMUX1511RSVR.step",
+        "imports/TMUX1511RSVR/TMUX1511RSVR.tsx",
+        "imports/TPD2EUSB30ADRTR.tsx",
+        "imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR.obj",
+        "imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR.step",
+        "imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR.tsx",
+        "imports/TPD4E05U06DQAR/TPD4E05U06DQAR.obj",
+        "imports/TPD4E05U06DQAR/TPD4E05U06DQAR.step",
+        "imports/TPD4E05U06DQAR/TPD4E05U06DQAR.tsx",
+        "imports/TPS259470LRPWR/TPS259470LRPWR.obj"
+      ],
+      "compressed_payload_bytes": 2546400,
+      "status": 200
+    },
+    {
+      "files": [
+        "imports/TPS259470LRPWR/TPS259470LRPWR.step",
+        "imports/TPS259470LRPWR/TPS259470LRPWR.tsx",
+        "imports/TPS26600RHFR/TPS26600RHFR.tsx",
+        "imports/TPS26600RHFT/TPS26600RHFT.obj",
+        "imports/TPS26600RHFT/TPS26600RHFT.step",
+        "imports/TPS26600RHFT/TPS26600RHFT.tsx",
+        "imports/TYPE_C_31_M_12.tsx",
+        "imports/UMK107BBJ225KA_T.tsx",
+        "imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T.obj",
+        "imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T.step",
+        "imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T.tsx",
+        "imports/USB4105_GF_A.tsx",
+        "imports/USB4110_GF_A/USB4110_GF_A.tsx",
+        "imports/XL_1608SYGC_06/XL_1608SYGC_06.obj",
+        "imports/XL_1608SYGC_06/XL_1608SYGC_06.step",
+        "imports/XL_1608SYGC_06/XL_1608SYGC_06.tsx",
+        "index.circuit.tsx",
+        "issues.md",
+        "mechanical/FRONT-CARRIER-REVIEW.md",
+        "mechanical/POWER-CORNER-REVIEW.md",
+        "mechanical/REVIEW.md",
+        "mechanical/assets/carrier-fastener-envelopes.step",
+        "mechanical/assets/diametric-magnet.step",
+        "mechanical/assets/front-flange-carrier.step",
+        "mechanical/assets/retaining-cup.step",
+        "mechanical/assets/standoffs.step",
+        "mechanical/build-viewer.py",
+        "mechanical/check-assembly.py",
+        "mechanical/check-carrier-tolerance.py",
+        "mechanical/check-front-carrier.py",
+        "mechanical/check-mating-envelopes.py",
+        "mechanical/check-selected-motor.py",
+        "mechanical/check-tps26600-model.py",
+        "mechanical/check-usb-connector-model.py",
+        "mechanical/design-constraints.json",
+        "mechanical/download-supplier-models.py",
+        "mechanical/generate-front-carrier.py",
+        "mechanical/generate-hardware.py",
+        "mechanical/manufacturing-rules.json",
+        "mechanical/requirements.lock.txt",
+        "mechanical/viewer.js",
+        "mounted-assembly.circuit.tsx",
+        "package.json",
+        "references/MCU-PIN-PLAN.md",
+        "references/POWER-AND-MOTOR-REVIEW.md",
+        "references/SM712-TCT.txt",
+        "references/SOURCES.md",
+        "references/TCPP01-M12-download-error.html",
+        "references/TLV803E.txt",
+        "references/TMP112.txt",
+        "references/TMUX1511.txt",
+        "references/TOOLING-ROTATION-BLOCKER.md",
+        "references/TPS25947.txt",
+        "references/USB-PD-REVIEW.md",
+        "references/USB4110-GF-A-current.txt",
+        "references/USER-BRIEF.md",
+        "references/capacitors/Panasonic-FP-2025.txt",
+        "references/capacitors/SOURCE.json",
+        "references/capacitors/UMK107BBJ225KA-dc-bias.json",
+        "references/capacitors/UMK107BBJ225KA-temperature.json",
+        "references/mechanical-supplier-models/C1121848.step",
+        "references/mechanical-supplier-models/C11702.step",
+        "references/mechanical-supplier-models/C12084.step"
+      ],
+      "compressed_payload_bytes": 2598336,
+      "status": 200
+    },
+    {
+      "files": [
+        "references/mechanical-supplier-models/C13585.step",
+        "references/mechanical-supplier-models/C136657.step",
+        "references/mechanical-supplier-models/C14663.step",
+        "references/mechanical-supplier-models/C1525.step",
+        "references/mechanical-supplier-models/C165948.step",
+        "references/mechanical-supplier-models/C178585.step",
+        "references/mechanical-supplier-models/C1974707.step"
+      ],
+      "compressed_payload_bytes": 2631576,
+      "status": 200
+    },
+    {
+      "files": [
+        "references/mechanical-supplier-models/C19947652.step",
+        "references/mechanical-supplier-models/C23733.step",
+        "references/mechanical-supplier-models/C25744.step",
+        "references/mechanical-supplier-models/C25767.step",
+        "references/mechanical-supplier-models/C25900.step",
+        "references/mechanical-supplier-models/C268016.step"
+      ],
+      "compressed_payload_bytes": 1954892,
+      "status": 200
+    },
+    {
+      "files": [
+        "references/mechanical-supplier-models/C2847904.step",
+        "references/mechanical-supplier-models/C2965326.step"
+      ],
+      "compressed_payload_bytes": 2634808,
+      "status": 200
+    },
+    {
+      "files": [
+        "references/mechanical-supplier-models/C307335.step",
+        "references/mechanical-supplier-models/C45783.step",
+        "references/mechanical-supplier-models/C465949.step",
+        "references/mechanical-supplier-models/C5127775.step",
+        "references/mechanical-supplier-models/C5448795.step",
+        "references/mechanical-supplier-models/C780769.step",
+        "references/mechanical-supplier-models/C79815.step",
+        "references/mechanical-supplier-models/C852472.step"
+      ],
+      "compressed_payload_bytes": 2635800,
+      "status": 200
+    },
+    {
+      "files": [
+        "references/mechanical-supplier-models/C852895.step",
+        "references/mechanical-supplier-models/C94934.step",
+        "references/mechanical-supplier-models/C98192.step",
+        "references/motor/14hm11-0404s/14HM11-0404S.STEP",
+        "references/motor/3323_0.stp",
+        "references/tps26600-cad/RHF0024A.stp",
+        "references/tps26600-cad/SOURCE.json",
+        "references/tps26600-cad/ti-rhf-cad-listing.html",
+        "references/usb4110-external-model/SOURCE.json",
+        "references/usb4110-external-model/usb4110-gf-a.stp",
+        "scripts/all-imports-audit.circuit.tsx",
+        "scripts/check-all-imports.mjs",
+        "scripts/check-bom-catalog.mjs",
+        "scripts/check-critical-import-pins.mjs",
+        "scripts/check-draft-connectivity.mjs",
+        "scripts/check-imported-symbol-rotation.mjs",
+        "scripts/check-mechanical-assembly.mjs",
+        "scripts/check-motor-connector-footprint.mjs",
+        "scripts/check-power-corners.py",
+        "scripts/check-power-imports.mjs",
+        "scripts/check-released-imports.mjs",
+        "scripts/check-usb-imports.mjs",
+        "scripts/check-usb-manufacturer-footprint.mjs",
+        "scripts/generate-bom-table.mjs",
+        "scripts/generate-review-bom.mjs",
+        "scripts/import-audit.circuit.tsx",
+        "scripts/imported-symbol-rotation.circuit.tsx",
+        "scripts/legalize-unrouted-placement.py",
+        "scripts/place-controller-mount.py",
+        "scripts/power-candidate-audit.circuit.tsx",
+        "scripts/render-schematic-sheets.mjs",
+        "scripts/run-mechanical-checks.mjs",
+        "scripts/usb-import-audit.circuit.tsx",
+        "src/can/CanSheet.tsx",
+        "src/encoder/EncoderSheet.tsx",
+        "src/interfaces/InterfacesSheet.tsx",
+        "src/mcu/McuSheet.tsx",
+        "src/mechanics/ControllerMount.tsx",
+        "src/mechanics/ProgrammingConnectorPreview.tsx",
+        "src/mechanics/RearMountHoles.tsx",
+        "src/mechanics/motor-lock.ts",
+        "src/mechanics/preview-placement.ts",
+        "src/mechanics/selected-motor.ts",
+        "src/motor-driver/MotorDriverSheet.tsx",
+        "src/power/InputPowerSheet.tsx",
+        "src/power/LogicBuckSheet.tsx",
+        "src/programming/ProgrammingSheet.tsx",
+        "src/usb-pd/UsbPdSheet.tsx",
+        "tscircuit.config.json",
+        "tsconfig.json"
+      ],
+      "compressed_payload_bytes": 1813252,
+      "status": 200
+    }
+  ],
+  "verification": [
+    {
+      "path": ".gitignore",
+      "sha256": "b61f04af50a5061d67716f8f7ce69d48c1206ba923f19285d9d19dc1ba93f6c2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": ".npmrc",
+      "sha256": "aa5229e8ba9836aaa12b83d0b0ef38c3dea2e432bcbcd6296dfdd6e9c5b75670",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "sha256": "eebcebf16b8abe00efcab92dddfc1b865ffca7ec08858accbbeda9014443b937",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "BOM-CURRENT.md",
+      "sha256": "cf43aec0f37e06c30c6e5c56ba9516f6e6ebb352bce153ae6062630222c45747",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "BOM.md",
+      "sha256": "8df12dc00814277592fb12bab6471fd232f9e66206fe8e78eafb3251477a4562",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "README.md",
+      "sha256": "85990445819fe9a5d6fb9ae3cb43eb82b69c89e8188b73000c397b96f60f23c8",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "961e78cb1c838def6333f81955412d527b66ea18b6dce14e7134694034bcdfc3",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "assembly.circuit.tsx",
+      "sha256": "ba8221606733d94a7548939366cbc8d0f52939c86ed3b4b82b79b852d436a47f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "biome.json",
+      "sha256": "01daff404e24483f2670720cd1e14604cef6b059a35fff07cad5ca0fe55856ec",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "bun.lock",
+      "sha256": "22202b00b65e644ab29014815619d9f6d1875f57132c52d033abf0f0c59576cb",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "controller-preview.circuit.tsx",
+      "sha256": "bef46448d3e8e8380ca19dfeb5f7592401e28402ff40a23d3c05c4ea72dbad09",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/ALL-IMPORTS-AUDIT.json",
+      "sha256": "fc247d14dc1611ada0e7c8eeae51dd2b880243b3431f47887a1640443fabc971",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/C181406.raweasy.json",
+      "sha256": "a5db13462a7342e775d1b0bd87e1b1aa8b7352ae5a4f6bbd80c6d5a0e7de9493",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/C20512-official-import.log",
+      "sha256": "5bcb318b23d25cfaa07df2a21a774e607fa85ee00955eb0b3c820d5c7afdb3a9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/C20512-raw-fetch.log",
+      "sha256": "52bdb437636e9cc9041162d22e0fa9aa0e4f15090f8537252fc0704d3502fd10",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/C20512.raweasy.json",
+      "sha256": "48c9d639affa4b40cf9812ce3531715758a4fc0f803bedf5e6c37af9fd76358b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/C2155767.raweasy.json",
+      "sha256": "ca1973a3f94db2aca596158622b2037e9b9091c229ce820c714c5f8430ce748a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/C25769.raweasy.json",
+      "sha256": "ef81e2033d79f3e63193df0814cea730983349973f841b6abfecb7086f4cc162",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/C852665.raweasy.json",
+      "sha256": "d6474b96f380ab5f451f683185956f7b6281491cd33c4ff5e5d072fa0dc6892b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/CANDIDATE-CATALOG.json",
+      "sha256": "f2aa6a35523051733a30a7802f044e7075309d4b1eef127f4d6c3e9d268c583b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/IMPORT-BLOCKERS.md",
+      "sha256": "8380b6642193439e250027259fca30366960af335579b44e0e1f4d5edea59e7b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/MANUFACTURER-MODEL-AUDIT.json",
+      "sha256": "88ce62dd05bf34d11b337fad2916e4bb711c9c94de243e548f33aac63042c35a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/REGENERATED-SOURCE-MANIFEST.json",
+      "sha256": "2781547701145fb7c337cb9158721e8516ff4e60e45cc4ea8cc693bd5a56527b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/alternate-build.log",
+      "sha256": "2c73e6b2fbf2f054f3c44f7649c39cf80d5ed88b1de81171c73b8a7b021819a7",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/alternate-import-check.log",
+      "sha256": "87059c08bb5de791a7c5c524bfdf552175e717e5996921106274b2d39f6fa81e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/build.log",
+      "sha256": "167eab1e6bc64f2eaccdead6c2fd86b27f1f298ed797ac8bdaef6d8840664c59",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/final-build.log",
+      "sha256": "ea4da87961b62193f2f449d5b684ae134b0e04b7dc41e7fb540a0bb1c12cdac6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/model-check.log",
+      "sha256": "4e3f85650f3554ecbc82cf3141c0ad617286bc912ea27a6cc36eb5fa88cb6346",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/power-candidate-audit/selected-import-audit.log",
+      "sha256": "5ac4d5d30cdd98ae2ab83abd7feccc0c14c21dda31e8cc2b214e78bf202bfd61",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/ALL-IMPORTS-AUDIT.json",
+      "sha256": "12b12ac0c9e512c06c2ba32bb357cc1df1281ab11f45929796157179016a5fc2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/ASSEMBLY-MODEL-AUDIT.json",
+      "sha256": "a1c96db166fe59a2e5860c0bd817b5326acc51b186ca55e149c12d9d8ce89785",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/AUDIT-RESULTS.json",
+      "sha256": "014f31319db39dbda9aac12603bc963b36c2f241c31643d9f876897c3c50d3cf",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/BUILD-RESULTS.json",
+      "sha256": "e36910b72ff52b81ec42efe59e752d240dc35df0ecb5f11193dfc764ef16feb9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C1121848.raweasy.json",
+      "sha256": "8eaa9876d467cecdbea79c560d0c4ea521482e12cb762d9e2011dcc979288a0a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C11702.raweasy.json",
+      "sha256": "f39dc20b2ca166470af9bee69b932a2aa9027e207f0bad3f8f0da72305fae573",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C12067.raweasy.json",
+      "sha256": "a8549fe7d70edd2440c98112b88b6cc3b4d7f863f53ae963ee8f078aa2eb98f5",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C12084.raweasy.json",
+      "sha256": "ff928ae4772e4959ee0e5708177acce168de44f3652bddd46b3f95d8fc41ebde",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C13585.raweasy.json",
+      "sha256": "6d58f0d09778155fae731fba23568bc5319a6d1ed001b7f01534e5d7ba0c36aa",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C138714.raweasy.json",
+      "sha256": "826a9fd6a6c63092abeee824b2c5c7d8b0884791c16057ba243a61cec738fa94",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C14663.raweasy.json",
+      "sha256": "a7073ed0acaf0e2fee2e8a4fc690c180d000e0f92a320b506e0e49e8c0f8d23e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C1525.raweasy.json",
+      "sha256": "92507e400c5145a40bac7a7068b8b34019e8357fda400af6ecefae4d851e3673",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C160409.raweasy.json",
+      "sha256": "0dfa82cd3e2a12b99b1912e1438321eea9e6aadbcb3c1e76fef29c85e871f2d0",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C17168.raweasy.json",
+      "sha256": "d03cbc7ecbc4b2f509eae85e2a85d8e01bafe9509ba52c10a6c1609451a071e7",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C178585.raweasy.json",
+      "sha256": "60057d4455adb51c081834f92b8569f499c220a12261b3def6264bb5d0251657",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C189895.raweasy.json",
+      "sha256": "b5fe02eda5f25cba0b75ad299b97db1fb32a375e8e5bc22cd8489c8d7d2c1963",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C1974707.raweasy.json",
+      "sha256": "1a419d2fe711a9c06b6884c046ea198500f68f689e16b9e808edc5840e27d2fa",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C19947652.raweasy.json",
+      "sha256": "d6d401a4d31728fd28d2559f8f16da698c8119a364c3a1a533cfe4ef9bdc0425",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C23733.raweasy.json",
+      "sha256": "d115d5cbe492a3c33de5e32e1a734e6258d1576ac0e8d32b80f2efd4d25e86d1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C25076.raweasy.json",
+      "sha256": "67f1b5361cd13cecc056cc8e50faae69ee92010de301d8d8853c2f0fba1d079b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C25079.raweasy.json",
+      "sha256": "2cbf1b180d36977c91e89fe518ca50b58ef1dce70005afb860941b7a3da8a7f1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C25744.raweasy.json",
+      "sha256": "a8e10882407943cbcb134d8c34525800c39b86ceb00227e66e4996d914d6ecb1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C25767.raweasy.json",
+      "sha256": "4bfb366ac6bc52d0ad3a51b40b08bb1bfebbe2813ab7a9f3b2b14dc94cadb55b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C25792.raweasy.json",
+      "sha256": "1f1044f8f1ec4c3edb97e5704a48fd61723212373c7cfd01a84ebbbd0cf24cea",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C25900.raweasy.json",
+      "sha256": "daffc8c90ffc0cdfa27f4784394aa51eec9f3dcf2e431cb35cb05d81c0b49043",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C2673275.raweasy.json",
+      "sha256": "5090777ffc27d59c068fbf8bbc2d4ab9f660a8d989a11faa423fb942986cbe2f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C268016.raweasy.json",
+      "sha256": "5a4e60c424208ee7d6a03c519ee22dd7048ea47671f3db9e3dac08bdf4ac8b93",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C2847904.raweasy.json",
+      "sha256": "f014d662826a17458ce82b662d4dd09e5eac7952f173bb114c204dcd48af1a2d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C28927.raweasy.json",
+      "sha256": "f42d683cff72e7c9c677943b9ec2f775cc5473f10b886b0fa10022aca67bcf96",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C2965326.raweasy.json",
+      "sha256": "fcc1d196273899649c03f3fc51d7f960be6444a0af32d42c098db84e582c388a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C307335.raweasy.json",
+      "sha256": "8f2f53fc114dd7bfb6b18693a7bb8ee11904a4ce3aac885558f37274b2c1becd",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C3662793.raweasy.json",
+      "sha256": "5df6ac14f1c4c8f80c1bdd9dffc96028da44e785d2eb110a5edf9d311abcc41e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C45194.raweasy.json",
+      "sha256": "1be116299b1b9ac036839f96bd0542f4dad76777f6d27371ca1605d7cb6a946a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C45783.raweasy.json",
+      "sha256": "3eefff61a6001ff3603e84a695e70cb53d0742b013488c55905e5f1a4e4f575b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C465949.raweasy.json",
+      "sha256": "e2ca37e3badd16964f75921ba7ea654ae7000fc740697e2a85423a6ee7fb91b9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C5127775.raweasy.json",
+      "sha256": "60c5b9a53bf75e79cea198627094c5319a22e656e879dd83ab892bbec22aef6e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C513714.raweasy.json",
+      "sha256": "c0b959a970b233119a4bd5f0881220a75c93e467e85bce16a4fe43b5b42f61c5",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C5143397.raweasy.json",
+      "sha256": "045bb3dbd608d1cd9f9673d6362355b9d647bfd06029275b7790f3ac73f8af4b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C5218924.raweasy.json",
+      "sha256": "5acaf2132babf9d9d89d15cf47b6cfb62f3ad7524cb437dc6345c02d9601610a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C5448795.raweasy.json",
+      "sha256": "29fba54d345f11780e7a787ebc8011c169c72e53c8ea72928058ee5f757e7c02",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C780769.raweasy.json",
+      "sha256": "b0ff63cd437438eac16deb9a1482174c828fc0b5aff57d5423b72dcdffd7d170",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C79815.raweasy.json",
+      "sha256": "200e7aa5c7cb3c05248669c859da857fca9c4c364a8fe29cf3ce57b28f948d1c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C82045.raweasy.json",
+      "sha256": "542b36385fe236f1478469b353ecbcc984cf5a86fdf63ced80ceeb9b08001a77",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C852472.raweasy.json",
+      "sha256": "b1a23a8527be76cf696831ff7cf01bbe6ad681212861436fc0ca4a2563d27aa2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C852895.raweasy.json",
+      "sha256": "c683bb621a2ce8735328ae3880b0f906fa0b0a778e1f4524caf4cd1cc2ad4d4a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C94934.raweasy.json",
+      "sha256": "118b29966f116a0755ff415b1db6247d386f613b90f07a22b9eec35bde29a2ff",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C965805.raweasy.json",
+      "sha256": "73672bd7d6367c52c5c5842392edab6fc8e6bd68cdd4224eb9b0584698d71a0a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C98192.raweasy.json",
+      "sha256": "071543ea44bfb904b196ac92e52d9545078ef82eb029a5513e80aa03850abee4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/CHECK-RESULTS.json",
+      "sha256": "39f07ef108dcaa599a427a9d897bc2a4031c195a878d59739b5f1d38ac6ddf08",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/IMPORT-REGENERATION-RESULTS.json",
+      "sha256": "99b603d7f53a1639a207dfd370c125cdf61cb718f2c3532438d0e8c29ee31eee",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/IMPORTED-SYMBOL-ROTATION.json",
+      "sha256": "6280ee0e12caa1aef336ddd0fe87d9306113590a852412fc43684838cdad7dd6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/MOTOR-CONNECTOR-FOOTPRINT-AUDIT.json",
+      "sha256": "3292b4845d8b9bfd382e772bd104652e0d2bd394543683936031f97a1107a9dd",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/RAW-SOURCE-PROVENANCE.json",
+      "sha256": "c6dd30adb7d3ee13bc483b1f0f8d1e22ac3b2d2052192c0db29f0c2e3b3f9f67",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/REGENERATED-SOURCE-MANIFEST.json",
+      "sha256": "c31a2d48a049022ae1b766085e98b2efda609444bc50ede1ba1fbd01d4ef5b09",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/REVIEW-BOM.csv",
+      "sha256": "df887b08750b7c64ce99d881ce1a20b589bf64b8dd62edfea8beaa2dbec98c49",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/REVIEW-BOM.json",
+      "sha256": "8973f6f1a74c6e095edd637f1c7a6dad04c2764cec1f28f7d53579f76331e53f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/SCHEMATIC-EQUIVALENCE.json",
+      "sha256": "3d1fe13c99aa0924254c99a5dc872dcfd123b761e03e488fa5abf76bd7981f3c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/SOURCE-MANIFEST.json",
+      "sha256": "bf42cbafe1891d5d2c878a694719a5e1ab330607e9d9eec5dfb0230da386fbd1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/USB-EXTERNAL-MODEL-AUDIT.json",
+      "sha256": "aac1fc11b099f18bef32a95efac1b8d5df0d85b365baa48a59fb61a371798501",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/USB-IMPORT-PIN-PAD-AUDIT.json",
+      "sha256": "66ea2a42d570f6f2209016718dd974c6bf8e6ed3d866e4e4815da6d8c569c0fe",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/USB-MANUFACTURER-FOOTPRINT-AUDIT.json",
+      "sha256": "9a161ee24e478b7891f631957c8a93ef415ee11c78f96ef38f41860469de0e41",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/all-imports-audit.log",
+      "sha256": "0f365dac3141ce1cb76da5f82f9afc59c3870983c1c5f444c05ce649e15f5b53",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/all-imports-build.log",
+      "sha256": "1ce7a6914d938212d3ebe0e58d7f5222fdb77100108bc3b44554005fe0b477c3",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/assembly-build.log",
+      "sha256": "985dcc417a539997978f38eda84ed85ae479b4a11b2ace8fb4f08fbac593d759",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/assembly-native.png",
+      "sha256": "f96b36d34bc458c39d91d4635b1ba7cea12765709b3bf1f443fbaf6ca9cf0653",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/check-controller-placement.log",
+      "sha256": "5cb878767740bb9eed1f608f18a1418e5bc1881e2666bac16df54d7fded9f51f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/check-critical-imports.log",
+      "sha256": "d2fbe261f653e02cf8b30245e08c35929b9247f959b74e662169f2d0458d32d9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/check-draft-connectivity.log",
+      "sha256": "bd7f028161c37cec7e6065b9f859ab5843c2c00471a817eb06e5ff1fafd47fd9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/check-format-check.log",
+      "sha256": "0a2d6b07331ddf5a7e3cf1689cb824f3b0718d3d942ea90e5fc5d23c724ea1e8",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/check-mechanical-regression.log",
+      "sha256": "4b700319cd6b0f729c1c048394b2233b8dffb4e5f0d8caf21ae16acadd4e74ec",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/check-netlist.log",
+      "sha256": "94eff8185d1576c06072db37be2f5d79e6b8358aee3a5e9096f5173b0fd96832",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/check-pin-specification.log",
+      "sha256": "25746d215c75940bda2ef407170294c704d5268bc30fa3b18fc332045532d91d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/check-schematic-placement.log",
+      "sha256": "d7515c839b2803ecae72a88ecc3038c1066f75812a9cf437981a78cb73c1b543",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/check-source.log",
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/check-typecheck.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/check-usb-model-registration.log",
+      "sha256": "c1e910a6bcab14e4ad132972c1073ced41d6dae5ab58f44e96d089a328c09028",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/controller-build.log",
+      "sha256": "a7f66d11dab351495a310e4ca793357b99eea4b140458a1319e725874dea8299",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/controller-native.png",
+      "sha256": "81a7055cd647caea160e7399b9dab2d4c85c8138231ad24a1fdf61165a1d78c0",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/controller-placement.png",
+      "sha256": "4d4c40f2b18bc2951db264b84e7ed15afa4b0bb9cce90c89c28243aa476d69bc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C1121848.log",
+      "sha256": "4ef4ef7a222c3a4abd3849b1fc83be67d075a3eee0cdfb0892d3d3c1d32e8f86",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C11702.log",
+      "sha256": "4e5beddbb628c6a9c5555212f834a43a11a8fff9299bd4615725d5c8711e5de9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C12067.log",
+      "sha256": "cd96a40520794037618b11071e9147a56cb7d1db6194070b61a310e77dd77888",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C12084.log",
+      "sha256": "189f09fb9983ca878bcdc4f5cc85d118d2a2b4c4831ead38cf40fcec5c3c5455",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C13585.log",
+      "sha256": "f5e6119818d494ca22fa0db8dc759d1470d05341d563b52bdde0ab7911ba8692",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C138714.log",
+      "sha256": "9069623b29063c061d9f2172da840669c2b6aa48a0f3913476f6b7bb784e4b4f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C14663.log",
+      "sha256": "8f87d5bcb91b44df51d4f34e35d6a9705cdfa22298ddab7fd0c21363f8dbe13c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C1525.log",
+      "sha256": "65995798610291d6867c4ef307ed06bef321ca0699238ccb5518717d92dc3aa1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C160409.log",
+      "sha256": "99c24959ccc272946d1445fcb225fcbbb1d99c386fed9dd9b10a59cd8c3bb6d3",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C17168.log",
+      "sha256": "893624307e6778183a7189e0586f4d058540096268c7b406fe85e0765dbb0e11",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C178585.log",
+      "sha256": "f09215388930c9cc3aec4cee2598d8fb9f8f48aa4e1d5126333b368093f7a6e0",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C189895.log",
+      "sha256": "f5a4916b2ab164e785a30a5b3801058328e87f06748b125a40212d4ca0412937",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C1974707.log",
+      "sha256": "bd8f483f4d570cc12417bb735e6f27945637e2577860e6850d197d2d2d1946b2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C19947652.log",
+      "sha256": "3c3570c1b005ad9d0ada0ea9bb8639886226d9c939e3df1bb66ad6b066d9cfd4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C23733.log",
+      "sha256": "4bd1b3cc0cc3bb526d5ba233bb8edc9ea7ef5329051aab16df3b0eb9e18ff1f8",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C25076.log",
+      "sha256": "27ed26b012a09c4112d5ffff6978b25f9dfe78239654bd872a56dcabfa5c0b02",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C25079.log",
+      "sha256": "51eb645f789c49be22ebf9043e94a8347ad9a8cfe34cb966ee9c37644081c34d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C25744.log",
+      "sha256": "1621870ac58292ec9c986ccaeb507e87e02504e8b2a0e6b8700206dbd9f21ea5",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C25767.log",
+      "sha256": "36ca0295370139167f57c406197c64ebbbe0c83131f83bd65b00749bfc727921",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C25792.log",
+      "sha256": "28dab03a985588a5cb55b903d64f261699f007cd7d59b6cae8cb9a6fed7cbe6e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C25900.log",
+      "sha256": "cca5052badd02a2e8b24fac3f5b098d9a519001739f64df12e0a2ef378161f1e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C2673275.log",
+      "sha256": "ef27e57574899a7b0a093c03f824e550cfca9406122b6185096d69b56c8e59c2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C268016.log",
+      "sha256": "7f6f4663720f7b0b0596cc2819ec3570b044a325f5f2a305bc5c96ad550cfc4e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C2847904.log",
+      "sha256": "fdf7470a0fb1adfaa114797b83e128f46664912b0664d95c43c0de23b629b836",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C28927.log",
+      "sha256": "cc4a996b06d76b41037406120305cbe3e73bb6c369d5e665646ac76e950e0eaf",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C2965326.log",
+      "sha256": "e100ead218fd923893ba77d17e2e00664ba0155cb7ea0f6289d9ca96d3be4cb5",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C307335.log",
+      "sha256": "f27f4d052b48a23bef70c0797a82e44459fcecb194f6d326e831bfcecf2f4adb",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C3662793.log",
+      "sha256": "d978087b8140f26d513bd496eb64a9cab5957e20adaa3227caf178a3d5d8f23b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C45194.log",
+      "sha256": "8af5aa02ce29b31ba2d769459713c0195f2cab34dc4f6c1e67a579db3cb1852f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C45783.log",
+      "sha256": "5e6f2164b765b8661af81a4875de9e0dadfc3d981c02b8543715e9a680850d3c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C465949.log",
+      "sha256": "126d5a890ad6ae8770ecc869d151b22a0c83b6afa305f54683288a1ffcbb14c7",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C5127775.log",
+      "sha256": "3c65400aa20552c226b7b7bc672b62a096327e581b86656def0d1b78016535b7",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C513714.log",
+      "sha256": "19226a2a97eb1b7277e90d954175e57fa4e55f0751fb2a1d9bc2a69320217911",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C5143397.log",
+      "sha256": "fff16a04508b37f7d72dddb60f781e7d36286a2b1840bb2a474cf994f5704098",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C5218924.log",
+      "sha256": "a1e6a186557bbbeef41d569bfaa375f6ed30825700fefde2810af38a71ab7149",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C5448795.log",
+      "sha256": "3e8582dbfa9147c61de8ee1e4e14498e976a48196d548caaaa94b92788a7d3a4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C780769.log",
+      "sha256": "4343c7c61c551c6a614adc05536fad7a098ec60ff76231809c57a005b9504e3b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C79815.log",
+      "sha256": "764cc574712a8953e7ca52101f04cc0f93dd5357161fdc676314f33710b072b8",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C82045.log",
+      "sha256": "87d503a54076c4caf2b47ac34b26202559758dd0358b12bfa49eaa5ac2ae4131",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C852472.log",
+      "sha256": "645055df059971001eedf83e1d526dde37923e96027b92943e8b1d87cde20190",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C852895.log",
+      "sha256": "adf3d980ebb6dd2bf5761b3b8751330dc424058a9013fff081915840cd5d2f66",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C94934.log",
+      "sha256": "2db2e33a4a32d85778c584b9b1ce248637bdafc67ad25171d0af461c4611c988",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C965805.log",
+      "sha256": "119d08efcdba8b4c50e2797a1a9226cbb181d360165819fc78de6296b7c9ff5d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/import-C98192.log",
+      "sha256": "9baf99fdc1aa72d97bb30130ec1a40207747b043ee51957013ea3db4b0fba6f8",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/motor-footprint-audit.log",
+      "sha256": "a82cac33d3326175101543ac075090fa771fe5438810aebd44d70920e25c1c05",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-CAN.png",
+      "sha256": "3d4ae57d5239a5877555ea5c320fcb8a9df676a3e59d632bd5312499da5bc52e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-Encoder.png",
+      "sha256": "68796688dcd4c3919eaf6b50ae3c5ff749cf3c40fa701ce106ee1672f7bdf4eb",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-InputPower.png",
+      "sha256": "03f98bba288b937d358746643a16123a06fd20b6c04f1309c7e5021554d8a7fb",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-Interfaces.png",
+      "sha256": "2d25ef2bddbf5cdc5f9074a7db535d1a208dbf2ddab2ebe2b60ea276b4fdc3cc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-LogicPower.png",
+      "sha256": "a30a482bf504ed11eb707d2a712acc366cb5006a706f2ec36cbf588f9706a915",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-MCU.png",
+      "sha256": "4a00fcba9c3f6d0f1009b949cd911cc9b6f159ee14a20472c86c752f5f195102",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-MotorDriver.png",
+      "sha256": "b58c615494a2618fccd9e1b4f3de824dfef26aaf176c69d00021f620927e9755",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-Programming.png",
+      "sha256": "c6aa8e429114c162a13f82ef5e1d29ebd74e867b2a2fdad037eee9029b03e9e1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-UsbPd.png",
+      "sha256": "214c90738ef6e58bf22274136432c2ae1942234b79cf2156df666076db22fd1c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-build.log",
+      "sha256": "9ed602d6d73182b99ef73fdca1a5769d366d362b8862585f490f1102ca6cb8b6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/symbol-rotation-audit.log",
+      "sha256": "0d203bbf49c5b79b10967839232ca8bcbf95630e3c8d3d5627ffdc65074f6b2e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/symbol-rotation-build.log",
+      "sha256": "0c1ad481a17def27ad725c8a72e81d705999118c0a768877613483d65521edde",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/tool-versions.log",
+      "sha256": "39aa75485f46f4d73e270c1612b96f041516cc6e57628c68d3e770ac928503fd",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/toolchain-update.log",
+      "sha256": "1b6260310aa190bf5bd9bae1f6211b0fb70afe813540ab24f3f57caa04227ae5",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/usb-footprint-audit.log",
+      "sha256": "740d67a9f15fa65839ef2d3c2a911dd7e7b6695dd050be18ae8111b4f44e6d23",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/usb-import-audit.log",
+      "sha256": "8028d8da71318dcc8362db3ea19819cd53a7cc39758ad336729e811f8cfe3a9b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/usb-import-build.log",
+      "sha256": "f9fbc2d91ad8cb0e73d60cd9bb02f6af6224234f77d9b0304bd1797cb51cbe60",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/ASSEMBLY-MODEL-AUDIT.json",
+      "sha256": "ffb23706dc2a6205fc27db8b199026bf2f532232581a06ef11aa0c266294109f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/BOM-CATALOG-AUDIT.json",
+      "sha256": "5e3e9c10947445b232e3d26b0d4350b17bf5c3e2709e7aeb348a5a9f6b509c8f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/BOM-TABLE.json",
+      "sha256": "68648d234e7144e458d9587112f383424ce0ea51db4e656b0cd732f5bc406fae",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/CHECK-RESULTS.json",
+      "sha256": "4e43a31e7314dedc3f37de4fbd0f8d7e47aaa4c76a8942cd3866d008f2135488",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/FRONT-CARRIER-AUDIT.json",
+      "sha256": "5d1523d049a2c799800d55742c82b20eb49681757c7486218eb5d6ed215bae9c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/IMPORTED-SYMBOL-ROTATION.json",
+      "sha256": "6280ee0e12caa1aef336ddd0fe87d9306113590a852412fc43684838cdad7dd6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/PLACEMENT-PROPOSAL.json",
+      "sha256": "c7a880176eb4bbc4a889ed60f488f38ba7ce0c396658079ce310b6e3675a94c3",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/REVIEW-BOM.csv",
+      "sha256": "df887b08750b7c64ce99d881ce1a20b589bf64b8dd62edfea8beaa2dbec98c49",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/REVIEW-BOM.json",
+      "sha256": "bfd2e58a65c32caddc298b6c3c929a59570a9eaf68993c85c0fe86a43107ada1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/SCHEMATIC-EQUIVALENCE.json",
+      "sha256": "4b470a344475da6e52f54ece532a182e1e93b505a78c10f1c5d76273280e3bb7",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/SOURCE-MANIFEST.json",
+      "sha256": "bccdeffd666c89d9e1ba6d68ee8bc729f435d6d4ca62517c61b414e2f321371e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/UNCHANGED-IMPORTS.json",
+      "sha256": "6f2bba91d544810829564c1e56885c0c92f80be3753ca77a62cc93c8047b8dea",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/USB-EXTERNAL-MODEL-AUDIT.json",
+      "sha256": "76fe92a77e0dde8e547f9734e53db489e185b1b5e736c86e92b2bd9f676e6f24",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/VISUAL-REVIEW.json",
+      "sha256": "dde37265619d165ed4b5409c3ed86aeaec62590363b3b562b4aa60d435f1dbb1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/assembly-inventory-final.log",
+      "sha256": "1764262b1d80fd168ba6864ed9968a9210fb8237facccad5ed214296df08f86d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/assembly-inventory.log",
+      "sha256": "1764262b1d80fd168ba6864ed9968a9210fb8237facccad5ed214296df08f86d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/bom-catalog-check.log",
+      "sha256": "a8499365472a0437bedece8d7a6906259834b94c09ae9f9de042e0152738f588",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/catalog-C13585.json",
+      "sha256": "81c1f104926fd96a87b62807ed868a8c4f50e02663d6dcc0786a488cfab92332",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/check-controller-placement.log",
+      "sha256": "54b88be6b071ebab247d369078f9550b73033e2b3b77559bb4354aeb9bc53a4b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/check-critical-imports.log",
+      "sha256": "d2fbe261f653e02cf8b30245e08c35929b9247f959b74e662169f2d0458d32d9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/check-draft-connectivity.log",
+      "sha256": "bd7f028161c37cec7e6065b9f859ab5843c2c00471a817eb06e5ff1fafd47fd9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/check-format-check.log",
+      "sha256": "58a74dcadaa222f229567b7998636527db808f3ecaa617b01cee571cfc55bc1c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/check-mechanical-regression.log",
+      "sha256": "4b700319cd6b0f729c1c048394b2233b8dffb4e5f0d8caf21ae16acadd4e74ec",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/check-netlist.log",
+      "sha256": "94eff8185d1576c06072db37be2f5d79e6b8358aee3a5e9096f5173b0fd96832",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/check-pin-specification.log",
+      "sha256": "25746d215c75940bda2ef407170294c704d5268bc30fa3b18fc332045532d91d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/check-schematic-placement.log",
+      "sha256": "d7515c839b2803ecae72a88ecc3038c1066f75812a9cf437981a78cb73c1b543",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/check-source.log",
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/check-summary.log",
+      "sha256": "c4f7eee9a6d02689c96f8a6de66c7c760571d39fa49906b9fc0ac77b271a3085",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/check-typecheck.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/check-usb-model-registration.log",
+      "sha256": "c1e910a6bcab14e4ad132972c1073ced41d6dae5ab58f44e96d089a328c09028",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/controller-placement-build.log",
+      "sha256": "4e9de28450359adbfe01e2e60c48e32f3df559a5e52bad3b8f0c6e31289cb772",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/exploded-build-final.log",
+      "sha256": "b77d813f4993f8dbd3dc2533286617fb9971dfa260148078c9906683ba75c255",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/exploded-build.log",
+      "sha256": "b77d813f4993f8dbd3dc2533286617fb9971dfa260148078c9906683ba75c255",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/format.log",
+      "sha256": "6e9db8115c184174e25b71e868795b73549fe5d67e70ac3b4f36470f2a9f8307",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/front-carrier-check-final.log",
+      "sha256": "aa57284217abfe1517babb7463a046c15aa7566068540aef7d86befd65ddd881",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/front-carrier-check.log",
+      "sha256": "aa57284217abfe1517babb7463a046c15aa7566068540aef7d86befd65ddd881",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/mount-placement-proposal.log",
+      "sha256": "2006681d5829b585ad576be27e6a4dc3b1ac3659f904b43b6ddcc6e757661c71",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/mounted-build-final.log",
+      "sha256": "ae9d741c7f15713327a816f79f9c203adb0f9930a7cf322ac8cce7622ce7178b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/mounted-build.log",
+      "sha256": "f975c672630aa893e7d17f3416cab8df8c489de7d0fba14569d00b20eff51764",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/mounted-render.png",
+      "sha256": "11626959b0586f5ccaa67770c1ffc58833bf76f91f52e4fae9754faddf8cef0b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/schematic-build.log",
+      "sha256": "b9dca908ee4163e38f637197700ad49fae3da68ddb986b2dc1e145e3359c411b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/schematic-render.log",
+      "sha256": "010797160e13e0cd3845a9ea5a7c7c263368b9fc72ef24542d73180567d54807",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/symbol-rotation.log",
+      "sha256": "0d203bbf49c5b79b10967839232ca8bcbf95630e3c8d3d5627ffdc65074f6b2e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/typecheck.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/usb-model-check-final.log",
+      "sha256": "392f57608f703cac20cb64dfbccecd8a4b477557a9b99f0b7b7245e8a7a7e7e6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.14-alpha.0/usb-model-check.log",
+      "sha256": "392f57608f703cac20cb64dfbccecd8a4b477557a9b99f0b7b7245e8a7a7e7e6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/ASSEMBLY-MODEL-AUDIT.json",
+      "sha256": "1b40e1a1175185f60b72ec75b731d47caa98f33a9b72093f36b8a8d3ec8ee8f9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/BOM-CATALOG-AUDIT.json",
+      "sha256": "e4e880e17addb0214588910cc0c9b9a83ebddb2c5af1cdeb2ae0e2bad8b31eb2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/BOM-TABLE.json",
+      "sha256": "47b94d9ece031b6ed7a48871f2e8fba71ea0b44ece53c2269a36aebdc7ff378c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/CHECK-RESULTS.json",
+      "sha256": "03f029d615dfbcbbc701d1e839872e5194a8952bad0db452394510f70b962d28",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/FRONT-CARRIER-AUDIT.json",
+      "sha256": "d09c7c9bdb3be5922761d4d35d8462571fed043953ba28e7d809f737bc08e526",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/IMPORTED-SYMBOL-ROTATION.json",
+      "sha256": "6280ee0e12caa1aef336ddd0fe87d9306113590a852412fc43684838cdad7dd6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/PLACEMENT-PROPOSAL.json",
+      "sha256": "54769d6598e254317d975869dea27d90508dda0252f80110dd8f326292ccb9e4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/POWER-CORNER-SCREEN.json",
+      "sha256": "db0c247b40b23021e87acf7cb2f57a762b56476065203b3ab051bbd00b43ab40",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/PUBLICATION-RECEIPT.json",
+      "sha256": "55d7ed5d1f4245abc07e9001de0c4177e3af7f95bbdb0b1da6dfa16cd65dfed1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/RENDER-REVIEW.json",
+      "sha256": "55ab69f64aecbaa5524088df4be89725d34ccc8f82fe9ee17ba738451b89b771",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/REVIEW-BOM.csv",
+      "sha256": "e10b470a03d140342639d300bd6a5852f429b6012e9cdf7202bf9309ee9430f2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/REVIEW-BOM.json",
+      "sha256": "2acdf8cbc7de5b8cf38b35a2164fcf3b6441ee94c580b716698adbf8daa7e681",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/SOURCE-MANIFEST.json",
+      "sha256": "6693f5bb18ab74b9178d4c8a11182e601d5498d9c4fd720c8db7dc6eab10541b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/USB-EXTERNAL-MODEL-AUDIT.json",
+      "sha256": "295d196c5ab86ff8338caaa156014a00a9cb74a9aa1ba259992236c70c20772b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/all-checks.log",
+      "sha256": "4e795176b78742f327e459caa21d7700ba13844a12f306c8cbcec6ce69492b13",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/bom-catalog.log",
+      "sha256": "a5f224001eaa7244e1efb2793d1af76465806e93bd896e8d5b8ae89ab526e79a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/bom-review.log",
+      "sha256": "ff8f15b42e392c64ecf01ae27dcbafeaed7b79c8fea6075296d6451f864a5270",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/build-assembly.log",
+      "sha256": "e9a4a3c75b65f360dd51259a4566526c6ec86fb091d2c0fb531929f29544e1a6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/build-mounted-final.log",
+      "sha256": "ee17465de36f98751e2ba6f7c8d241722d63a34f4b68dbfe680caa500e1272ab",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/build-mounted-network.log",
+      "sha256": "9e55eab114d1ef96694df090d185f4cc32f99dcd5864fa84f0069a858c28e993",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/build-mounted-retry.log",
+      "sha256": "f724841e53333b9055ec64a09eed12e7a863b5346af7834e68699eec7c9387a6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/build-mounted.log",
+      "sha256": "ef522e17c2ef54bf794e6bf5985f5848a31d8715ff2af35ca2b3dbcde9cabee5",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/build-schematic-final.log",
+      "sha256": "85f0075a9e23325c30fe233b186deacc905aa32ece100a7e1033c3c97e441839",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/build-schematic.log",
+      "sha256": "85f0075a9e23325c30fe233b186deacc905aa32ece100a7e1033c3c97e441839",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/check-controller-placement.log",
+      "sha256": "6800c8d6ba8c234c29b4fd30e76af4a4e9aa1a4032346986218840a8e1a93fdd",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/check-critical-imports.log",
+      "sha256": "d2fbe261f653e02cf8b30245e08c35929b9247f959b74e662169f2d0458d32d9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/check-draft-connectivity.log",
+      "sha256": "bd7f028161c37cec7e6065b9f859ab5843c2c00471a817eb06e5ff1fafd47fd9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/check-format-check.log",
+      "sha256": "5585411b9a78bfdde6832c364b50d22786b4d05a59ab302695d34efe5722599e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/check-mechanical-regression.log",
+      "sha256": "4b700319cd6b0f729c1c048394b2233b8dffb4e5f0d8caf21ae16acadd4e74ec",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/check-netlist.log",
+      "sha256": "f809887223552fd3858ec20e6e556ea5616e0af0c0f14cb64f8e54bdb6d4e2a1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/check-pin-specification.log",
+      "sha256": "25746d215c75940bda2ef407170294c704d5268bc30fa3b18fc332045532d91d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/check-schematic-placement.log",
+      "sha256": "a9ef05ce9d3bb6a5f5c5a08019c12d61244520fcfbfd675b6b9d35d3df41a82c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/check-source.log",
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/check-typecheck.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/check-usb-model-registration.log",
+      "sha256": "c1e910a6bcab14e4ad132972c1073ced41d6dae5ab58f44e96d089a328c09028",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/controller-before-placement.log",
+      "sha256": "5cd2fe301b7454044a962d7317ecf8b7958ca0243549282beba83918b240b225",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/controller-critical-proposal-build.log",
+      "sha256": "c64c7f5b5cda7dfabd2f585c5c4914cd3070af22dce9a896b56e6b4812680de0",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/controller-initial-build.log",
+      "sha256": "3edab7b5a4823a79855908a6c6d5bd6cd6be5fa4b6ae8d2558e77f2cc3de87a1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/critical-placement-build.log",
+      "sha256": "d936e6c8db0a9c63a09da1cc6f03d171afb1625ef3ef4ca039f5d76292f0fa4b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/critical-placement-proposal.log",
+      "sha256": "e81fdf444d10c3c7254eea2d6f3bbfd5f8fb1c62b2397d85cbdcb859d8fb9967",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/draft-check.log",
+      "sha256": "3035214a58768de15fdc15cc1b7bf8e58128ffaec3c2f9288e07023af65b1bf4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/draft-connectivity.log",
+      "sha256": "3035214a58768de15fdc15cc1b7bf8e58128ffaec3c2f9288e07023af65b1bf4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/format-final.log",
+      "sha256": "833bbc6a08351c9a329a6b15a80ec9782f564c0977f19d59656fada04a09f28e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/format.log",
+      "sha256": "9f6e45b8216f6fbd53ca2e76d6156a06c263ee78cfa19147b0d3c4845d346f0b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/front-carrier-check.log",
+      "sha256": "23fccd289a108027516299c672dee1d16e406a41d6f19805601257848e03e663",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/mounted-build.log",
+      "sha256": "57646b56c8c5ea58214a9e851fe961e54b1c834a846404a6df3e9d3a4d474ded",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/mounted-render.png",
+      "sha256": "3f991a988381d098e029177bd09b8de799f3a62cc3bb4185626dad1108113eb6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/placement-proposal.log",
+      "sha256": "7566750233eec05fb639dd534df4c1ac066cd6a79e8ae12e2ba01312f8d47b97",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-CAN.png",
+      "sha256": "3d4ae57d5239a5877555ea5c320fcb8a9df676a3e59d632bd5312499da5bc52e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-Encoder.png",
+      "sha256": "68796688dcd4c3919eaf6b50ae3c5ff749cf3c40fa701ce106ee1672f7bdf4eb",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-InputPower.png",
+      "sha256": "793a0d23780f4f7f2a6686b33907ca64fac9c356901011340b8ad7ecf05db38f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-Interfaces.png",
+      "sha256": "2d25ef2bddbf5cdc5f9074a7db535d1a208dbf2ddab2ebe2b60ea276b4fdc3cc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-LogicPower.png",
+      "sha256": "ae2b4ca6fbafe9a6154d5d9b1f4e8642c060690107ef921baf03f16f80584f6b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-MCU.png",
+      "sha256": "4a00fcba9c3f6d0f1009b949cd911cc9b6f159ee14a20472c86c752f5f195102",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-MotorDriver.png",
+      "sha256": "e8cf7e88a805ef8207ce1d9a8f081791230395013b99dafd03e421f809508e64",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-Programming.png",
+      "sha256": "c6aa8e429114c162a13f82ef5e1d29ebd74e867b2a2fdad037eee9029b03e9e1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-UsbPd.png",
+      "sha256": "fc0feaacf43797c1e1bbccb45066c9072bbfff646d8a87d9c432af60a4633ac2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-build.log",
+      "sha256": "9ed602d6d73182b99ef73fdca1a5769d366d362b8862585f490f1102ca6cb8b6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/symbol-rotation-regression.log",
+      "sha256": "0d203bbf49c5b79b10967839232ca8bcbf95630e3c8d3d5627ffdc65074f6b2e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/typecheck.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/ASSEMBLY-MODEL-AUDIT.json",
+      "sha256": "cede0bce38cf9e1f27197b1acd9fbaa0bbf00b708e3233329eb5e2c348085578",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/BOM-CATALOG-AUDIT.json",
+      "sha256": "26c083034e6b8c3f0e93c85968cd9a5a193cd9c7f200c121afde84c64df8d82c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/BOM-TABLE.json",
+      "sha256": "b058075da461bbc3bc56324a01910bc73bd437080bf7356f25fccbd8968e2aa3",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/CARRIER-TOLERANCE-SCREEN.json",
+      "sha256": "4612af917f8eeb8b8bbf11d03153d2fe09235aa5f385fb80b045345ce93618c1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/CHECK-RESULTS.json",
+      "sha256": "e4f48a1d81894346cc986e948fe2bb8d56bfe37bc71131008bf200b10ceed5ff",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/FRONT-CARRIER-AUDIT.json",
+      "sha256": "53ffb20d2a7fdd29cf9bf9c681766be4a848fa9a4296e5de345bb9efd1f2274e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/GATE-REVIEW.json",
+      "sha256": "ad19c8542364858ba3791881cc7ddaa077b31dc440b4e9c3dd4d4ae02a6f968f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/MATING-ENVELOPE-AUDIT.json",
+      "sha256": "37c5ee6635f2c434070b6c6d56202b94b67f1f0f9a9e487f0e931cec535e1559",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/PLACEMENT-PROPOSAL.json",
+      "sha256": "172e166df76f06eed82741e1b27c5e213dee124e1a1e160dc86f51a28a6cc425",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/POWER-CORNER-SCREEN.json",
+      "sha256": "bc02ca18eb4000401cfbc678a3d826dafa8cb5193a93f5aa2661dfc138bd642b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/RENDER-REVIEW.json",
+      "sha256": "5b1d6eb7c95ff279af70c0c2de409eceade64b03cdc22b44e31a10d6621a6649",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/REVIEW-BOM.csv",
+      "sha256": "e10b470a03d140342639d300bd6a5852f429b6012e9cdf7202bf9309ee9430f2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/REVIEW-BOM.json",
+      "sha256": "bad40a3ca90e3c226e8adb0a51257b211283cf5c08d9642806bdf7ef4d25cfe9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/SOURCE-MANIFEST.json",
+      "sha256": "74d16cedadd6923a634681f225198eb9ff830ff3c4a7177404e0b97aba08a994",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/UNCHANGED-IMPORTS.json",
+      "sha256": "dfebe7bc361fe61f7951a5b08d0d54d4c95a37af1987310d1674150a6643c4f9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/USB-EXTERNAL-MODEL-AUDIT.json",
+      "sha256": "2f67726485ede35c5725dfae2a18f4978f86ca2cda2511f76e46a98e08284ed1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/USB-IMPEDANCE-CALCULATOR.json",
+      "sha256": "1af3dae21a966dba595928faea00279ee44c585cca24b4bc450a302f77306f63",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/bom-catalog.log",
+      "sha256": "0268598c1916aa71c2590546b06d344ec6265a38b1789b91de0b83d68d388d99",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/bom-review.log",
+      "sha256": "15edfa9af11c175c53d224627f500d992173f7e2de7e63d1c4af8ba2a4122435",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/bom-table.log",
+      "sha256": "531d61518b097ab242f29a7e3310fbf70433050c437c65d380cc9a34e4e74c7e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/carrier-generation.log",
+      "sha256": "3e7fb03d0e9b9592eb940e344fbab41905c38cba0eae1b86523e491efbef2caa",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/carrier-tolerance.log",
+      "sha256": "9d52fd9d27808e3a3543a0a69cb27b7a35a888bd8bc62361447f3206dfc83ced",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/check-controller-placement.log",
+      "sha256": "008c1def32d270e831e0f97e0c191fdae6f8809f399ddf95fdbeba197e7c80f7",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/check-critical-imports.log",
+      "sha256": "d2fbe261f653e02cf8b30245e08c35929b9247f959b74e662169f2d0458d32d9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/check-draft-connectivity.log",
+      "sha256": "bd7f028161c37cec7e6065b9f859ab5843c2c00471a817eb06e5ff1fafd47fd9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/check-format-check.log",
+      "sha256": "da914c74f96fed7db1fca692d2dcf1dff772addeff4b0a11b20706a9507c9bb8",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/check-mechanical-regression.log",
+      "sha256": "4b700319cd6b0f729c1c048394b2233b8dffb4e5f0d8caf21ae16acadd4e74ec",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/check-netlist.log",
+      "sha256": "f809887223552fd3858ec20e6e556ea5616e0af0c0f14cb64f8e54bdb6d4e2a1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/check-pin-specification.log",
+      "sha256": "25746d215c75940bda2ef407170294c704d5268bc30fa3b18fc332045532d91d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/check-schematic-placement.log",
+      "sha256": "d7515c839b2803ecae72a88ecc3038c1066f75812a9cf437981a78cb73c1b543",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/check-source.log",
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/check-typecheck.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/check-usb-model-registration.log",
+      "sha256": "c1e910a6bcab14e4ad132972c1073ced41d6dae5ab58f44e96d089a328c09028",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/decoupling-initial-build.log",
+      "sha256": "b3d89347c629944f969cde474c537d9e4b21c6fd5656a05d23ca4debd2c188d7",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/exploded-build.log",
+      "sha256": "b77d813f4993f8dbd3dc2533286617fb9971dfa260148078c9906683ba75c255",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/format.log",
+      "sha256": "833bbc6a08351c9a329a6b15a80ec9782f564c0977f19d59656fada04a09f28e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/front-carrier-check.log",
+      "sha256": "aa57284217abfe1517babb7463a046c15aa7566068540aef7d86befd65ddd881",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/index-schematic-build.log",
+      "sha256": "b9dca908ee4163e38f637197700ad49fae3da68ddb986b2dc1e145e3359c411b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/index-unrouted-build.log",
+      "sha256": "0ced5792ddb0160b0c64611b43da79e0b91b76d5bba2ad9bda48949004a3a131",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/mating-envelope-check.log",
+      "sha256": "dd0ee695be7495a522e71a40ddcc905123ae878320a41cfea3bc2ca6e0d8745a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/mounted-3d.png",
+      "sha256": "d360e9f77f0c4cd53ba264355e57a9d163ccfe855bae9fed220d2546fa2015ab",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/mounted-build-final.log",
+      "sha256": "ae9d741c7f15713327a816f79f9c203adb0f9930a7cf322ac8cce7622ce7178b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/mounted-build-four-rails.log",
+      "sha256": "ee17465de36f98751e2ba6f7c8d241722d63a34f4b68dbfe680caa500e1272ab",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/mounted-build-stiffened.log",
+      "sha256": "ee17465de36f98751e2ba6f7c8d241722d63a34f4b68dbfe680caa500e1272ab",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/mounted-build.log",
+      "sha256": "ae9d741c7f15713327a816f79f9c203adb0f9930a7cf322ac8cce7622ce7178b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/native-checks-summary.log",
+      "sha256": "4e795176b78742f327e459caa21d7700ba13844a12f306c8cbcec6ce69492b13",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/native-placement.log",
+      "sha256": "ec576481a059f5998493b1c7a5123f9d6751fd20ba4b02c9c95b2cca97c6e25c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/placement-decoupling-proposal.log",
+      "sha256": "1cda67413f283490cda6a07d9bd921a3f611850ae4fee2b2df3f471621aa3544",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/placement-initial-build.log",
+      "sha256": "cbb2edb38b024cf326b14ff52def12a7bde74d409f39b9c59fa72653e3516d08",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/placement-proposal.log",
+      "sha256": "ec01aef5776a80f46b741f9782df3466db48c6f980eb6ce8f492834abaa31457",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/power-corners.log",
+      "sha256": "0bb5a2c1539038ae5813657fb4769171f8a2d71573e49dba72fa71c22930df92",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-CAN.png",
+      "sha256": "3d4ae57d5239a5877555ea5c320fcb8a9df676a3e59d632bd5312499da5bc52e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-Encoder.png",
+      "sha256": "68796688dcd4c3919eaf6b50ae3c5ff749cf3c40fa701ce106ee1672f7bdf4eb",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-InputPower.png",
+      "sha256": "c28e265f748f49e0eef906a0e8d8f1248ffed0f99ae26e1e1107cd94a834e45f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-Interfaces.png",
+      "sha256": "2d25ef2bddbf5cdc5f9074a7db535d1a208dbf2ddab2ebe2b60ea276b4fdc3cc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-LogicPower.png",
+      "sha256": "ae2b4ca6fbafe9a6154d5d9b1f4e8642c060690107ef921baf03f16f80584f6b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-MCU.png",
+      "sha256": "4a00fcba9c3f6d0f1009b949cd911cc9b6f159ee14a20472c86c752f5f195102",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-MotorDriver.png",
+      "sha256": "e8cf7e88a805ef8207ce1d9a8f081791230395013b99dafd03e421f809508e64",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-Programming.png",
+      "sha256": "c6aa8e429114c162a13f82ef5e1d29ebd74e867b2a2fdad037eee9029b03e9e1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-UsbPd.png",
+      "sha256": "fc0feaacf43797c1e1bbccb45066c9072bbfff646d8a87d9c432af60a4633ac2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-layout-followup.log",
+      "sha256": "d7515c839b2803ecae72a88ecc3038c1066f75812a9cf437981a78cb73c1b543",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-render.log",
+      "sha256": "010797160e13e0cd3845a9ea5a7c7c263368b9fc72ef24542d73180567d54807",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/typecheck.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/unrouted-pcb.png",
+      "sha256": "71c51c3cb110730ab36599df975ba32819c46b5cec620d328dc4fa5b82a6a53c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/AP63203WU_7/AP63203WU_7.obj",
+      "sha256": "6bf633f38ffa66eddae4e52f2e0134e27604a77f2e70a2a65f73e02b6c5d5d69",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/AP63203WU_7/AP63203WU_7.step",
+      "sha256": "4420c424f4a2941b36f28b622f6950c965439c7c9525e1961bb8384ef58a6dd9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/AP63203WU_7/AP63203WU_7.tsx",
+      "sha256": "50cbe913767d982339cd5bf2bbdfa6d15ee3f4dea5189cb6a1ee6b4011509435",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/AS5600_ASOM.tsx",
+      "sha256": "eada04618697f1974efbd94d998616e9a1d25e9794e2a7dd7e8000b45e8cac87",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/AS5600_ASOM/AS5600_ASOM.obj",
+      "sha256": "18c8f36579d4dc6d93c51d3556539c69f8f75cd557fdba6d9cf73cbf0e23d278",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/AS5600_ASOM/AS5600_ASOM.step",
+      "sha256": "70f46697efa1daced22df982a5fd03c112d6cf25207f9a1afdf37b49a391ab84",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/AS5600_ASOM/AS5600_ASOM.tsx",
+      "sha256": "3e46ad6cb6c4331c117e0f4aee35090a3b7a15aa68623edbbcfe283b7b779530",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF0000TCE/A_0402WGF0000TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF0000TCE/A_0402WGF0000TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF0000TCE/A_0402WGF0000TCE.tsx",
+      "sha256": "098394fd57fc7b24f1addee3c696244fe5966a0f70eae96a431eda183a646891",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF1000TCE/A_0402WGF1000TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF1000TCE/A_0402WGF1000TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF1000TCE/A_0402WGF1000TCE.tsx",
+      "sha256": "94e8eca58f755ecafad87f2d34407c688d1e782a585f16d01366db2349a4e4dd",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.tsx",
+      "sha256": "5d4e2456b3c797bd63d3d3f5bea84bee62adf18a1023446198f713f1e23decb1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.tsx",
+      "sha256": "429ea96cbb887656a284f2ad0d35f16643b5d4497c02c58690b27043c08edcfd",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF1200TCE/A_0402WGF1200TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF1200TCE/A_0402WGF1200TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF1200TCE/A_0402WGF1200TCE.tsx",
+      "sha256": "e8fa962142e37183950d32ca0a1146066f78413b15e3075a363d50d14dc281e4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF2203TCE/A_0402WGF2203TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF2203TCE/A_0402WGF2203TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF2203TCE/A_0402WGF2203TCE.tsx",
+      "sha256": "26ed8dff3beb53e0fc0d058e215ef96783c0c57b6bc396d399e095a3d1a58d25",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF2402TCE/A_0402WGF2402TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF2402TCE/A_0402WGF2402TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF2402TCE/A_0402WGF2402TCE.tsx",
+      "sha256": "70def62a4f3fba3f2096a4a20cef27235b726a3921911fcc015772c057cb8aab",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.tsx",
+      "sha256": "12ea4d84494dc68a32cac0bbdd8258a4cf159664e2b41dac92e26bb49c932191",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF4702TCE/A_0402WGF4702TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF4702TCE/A_0402WGF4702TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF4702TCE/A_0402WGF4702TCE.tsx",
+      "sha256": "be5836ff65621ac0b47b80278cae7c929756b2f57df2876028ceff82b77ed943",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF6651TCE/A_0402WGF6651TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF6651TCE/A_0402WGF6651TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/A_0402WGF6651TCE/A_0402WGF6651TCE.tsx",
+      "sha256": "97de3e4acfedc5c790952b48dc855bfb784724ef4ac0d2e84499c87c5fa98e28",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/BSS138LT1G/BSS138LT1G.obj",
+      "sha256": "eba3fbb208f2c1a7432380919e93350a471d50f840cc10ec11fdb1f59812c7b2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/BSS138LT1G/BSS138LT1G.step",
+      "sha256": "c9a82c26510eaf3f266d1d61eb7c4addbfd4f1bef9c428b719678ad8455821cc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/BSS138LT1G/BSS138LT1G.tsx",
+      "sha256": "9d6f7903d16ae1f44678313c1e1f8bffaa93c70a8c428945e9e2d6aa41fa2308",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C11702.tsx",
+      "sha256": "713a551becf6400801525d62f8dd4443fb853b5fd993c2a90ca3749037e28835",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C12084.tsx",
+      "sha256": "eee29e39db256fad9281791fdc5003b47650cab173b5df3dd32a0b5a8c2d8616",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C13585.tsx",
+      "sha256": "4d04352d003f455d74abe0a1c5228c17495162d72a8a8a423919f814e088374b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C14663.tsx",
+      "sha256": "083dd3753a12fcd7a79757256ffc1e2da11f108fcefbdfb5d3d4c429127bcf15",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C1525.tsx",
+      "sha256": "7c454636e1126d24164ca3e4d4d9a510b018b3c0c65c90378b4e289cdd4e07c7",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C178585.tsx",
+      "sha256": "8c8d0856d7f28d0632146b51d2b8eaf9364b51877f98b6b56e909f8963eff97c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C23733.tsx",
+      "sha256": "ef019d96e4106ee3546271e765d390f56c330dad019c92024f9a3b6460cb9b1f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C25744.tsx",
+      "sha256": "84d1c6c8bd4085220305c65a59b79b3673223e17cf482ee2a2bad01d9a1d2424",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C25767.tsx",
+      "sha256": "fa1871b4637bf80861a23dd93b1e06199aa5c1b86f89254fd69b2b70041d4486",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C25900.tsx",
+      "sha256": "8401aafdd558dfa99ad0cc6438488a7e0ec349779684fc35538937bb569bd6d0",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C307335.tsx",
+      "sha256": "0e98a0a5e8f43b1c6a0218256ac712aedc67024c8b5fec2b9dc51b998f51f8aa",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C3662793.tsx",
+      "sha256": "0f2f25f384dd5e0c3ddb7e75b5bd968c7cfca7e1ddbe9bcec8c49f0a5fab38a0",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C45783.tsx",
+      "sha256": "e62d011c8fafdc94d918ee8475a4c210ad204ac13d330ab8505e5491a0b04429",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C5127775.tsx",
+      "sha256": "6b76bd4ff46b1683ace03e06d8cf4f26f28f4baf8eae609bccd10db171fb66fb",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C52923.tsx",
+      "sha256": "5d8f4cca2aba63b5813b8947a7e7f1a012087b901c354d90f408a2d4fef84a15",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C57269.tsx",
+      "sha256": "97eae25318fd0c0205c9a49e505fc575e18dc0c64ddfbec472a823458ca64276",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C723709.tsx",
+      "sha256": "90a6e3d5d356edac4e21bda74387ef5aec009a28770488f33c9939cccf1e9db0",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C780769.tsx",
+      "sha256": "9e0d4d4d4cb0cc94f5a054441ce3ad4d1eeee2aef865b9afcce8795247a2254a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/C98192.tsx",
+      "sha256": "db16d27ee0eb4d7dd441e976a0a4f245df6f37e82a792e94cef0c49637f33020",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CC0402KRX7R9BB331.tsx",
+      "sha256": "fe865b49518148d0da1b807d13926b336bb27659638705b623e64528f32b271d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.obj",
+      "sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.step",
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.tsx",
+      "sha256": "ca379dd866f2034a44d04bea75067c8ee99a9f3acde73454b2323d23bf6b43c0",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL05A475MP5NRNC/CL05A475MP5NRNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL05A475MP5NRNC/CL05A475MP5NRNC.step",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL05A475MP5NRNC/CL05A475MP5NRNC.tsx",
+      "sha256": "dbfdb50722685d3f20fb199bfaabfc1cbfc6dd134e4ed8da08d9b6c84cf60068",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.tsx",
+      "sha256": "1ba70c3511d7f56920fbdbc787348ea1c348e006be560bd387cfeedbf4b94374",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL05B223KB5VPNC/CL05B223KB5VPNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL05B223KB5VPNC/CL05B223KB5VPNC.step",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL05B223KB5VPNC/CL05B223KB5VPNC.tsx",
+      "sha256": "925be2df10ddb92e17118d9452ddffbaf86172498033dccb296bc525733bf4fe",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.obj",
+      "sha256": "a6ecf4d78195d1f061b045e187fdff13726b03dc2475a4f11803b44d86adebc1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.step",
+      "sha256": "67f86cfc9ebba2ff889d65b12f5d49d5a90b265b73635a931d68c6a27d34e11f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.tsx",
+      "sha256": "6a1d0d39089308ba4719d9b899a045a2ff79080850fd5891afffcc4b78c4f648",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL21A475KBQNNNE/CL21A475KBQNNNE.obj",
+      "sha256": "a6ecf4d78195d1f061b045e187fdff13726b03dc2475a4f11803b44d86adebc1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL21A475KBQNNNE/CL21A475KBQNNNE.step",
+      "sha256": "67f86cfc9ebba2ff889d65b12f5d49d5a90b265b73635a931d68c6a27d34e11f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL21A475KBQNNNE/CL21A475KBQNNNE.tsx",
+      "sha256": "f3bd5aac709c03e442eeecbacabb495b125ddd2137f5a72373f3f00c1d18bf37",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL31A106KBHNNNE/CL31A106KBHNNNE.obj",
+      "sha256": "d725fdbb4ab326035448275626e2022faef2bcdf473e3b7654e25f6308d096c0",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL31A106KBHNNNE/CL31A106KBHNNNE.step",
+      "sha256": "a3b636a587c98bf5baa4dcd6af15732c43a5f396ec40d2b987bd6db5417c8265",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/CL31A106KBHNNNE/CL31A106KBHNNNE.tsx",
+      "sha256": "4f86abd9dd3867049419b6bd29e4a01e1d566db240cba11e08d4c57d4f3d52dc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/DMG1012T_7/DMG1012T_7.obj",
+      "sha256": "c500f5faa8090cbb23c8d31b37400f56588265a266d18bf34752d1baed01aff7",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/DMG1012T_7/DMG1012T_7.step",
+      "sha256": "ae69ee72f295d977932aab0d244465261eb61f2c031805f1d289d0cf85806849",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/DMG1012T_7/DMG1012T_7.tsx",
+      "sha256": "34461f0fb75b34d8e025946cb9920f61a3da9185b699aefc54b4f1ea3870ea71",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/EEEFPV101XAP/EEEFPV101XAP.obj",
+      "sha256": "d2a82f339551bccf8ac1358cc8f9756f50a5d9d445ffb49c9395fe01969b4225",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/EEEFPV101XAP/EEEFPV101XAP.step",
+      "sha256": "0520d085e6aa1b712b8127b1de76907f64951f608caa5f1d495a693c6ae742fb",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/EEEFPV101XAP/EEEFPV101XAP.tsx",
+      "sha256": "ed725099799971ad41fef6df856cf7db452d0345383c5feafdd895f9f31fc011",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/ESDA25P35_1U1M.tsx",
+      "sha256": "00ec17c9474d8d42264fc562286df5e5781ae5c9ae78ea1ed1c57a1d26e6c456",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/ESDA25P35_1U1M/ESDA25P35_1U1M.obj",
+      "sha256": "3a3868fa6cd1ad408ed014d97373e6102bff1712afbddedbb25583579f7e605d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/ESDA25P35_1U1M/ESDA25P35_1U1M.step",
+      "sha256": "6dc8861569f43539ad8557144a2f787ca151d7df0d3f29aa2f6375b8dbd48b04",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/ESDA25P35_1U1M/ESDA25P35_1U1M.tsx",
+      "sha256": "fcb9d07b050652a99afa813fe63a7926b3ba33830da8e578f4c72f989aaa5041",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/HoLRT1206_1W_150mR_1_.tsx",
+      "sha256": "643293931a26ef1cdcbd7f795bb561eb3f78f8bc353d093909413a83ef40a995",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/HoLRT1206_1W_180mR_1_.tsx",
+      "sha256": "32bbbbc7fad9c2822d3b2cdd3dc96c513708983c40c3500281fc2cbda0704b53",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/HoLRT1206_1W_180mR_1_/HoLRT1206_1W_180mR_1_.obj",
+      "sha256": "bb7ca81e5a381483c7fb7f3a472cf27ffa6f321494823911b0dae819cd352cc1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/HoLRT1206_1W_180mR_1_/HoLRT1206_1W_180mR_1_.step",
+      "sha256": "ca0f6c898b6c5ac572fcabb6f326264b985a8cd3c0f7fa407526b8d2ce209713",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/HoLRT1206_1W_180mR_1_/HoLRT1206_1W_180mR_1_.tsx",
+      "sha256": "c304971fd847b33c7305cbd0e534ff929a06fa83de8723fea55b7ccc6b077fa3",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/RT0402BRD07100KL.tsx",
+      "sha256": "f44d08fbf34b19bc73ab44292411df3500c26d73beb8717dd5b0153324e0e6d4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/RT0402BRD07100KL/RT0402BRD07100KL.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/RT0402BRD07100KL/RT0402BRD07100KL.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/RT0402BRD07100KL/RT0402BRD07100KL.tsx",
+      "sha256": "92542fb302f4465f9dc839ea1030a094ab5f5bfa5797c55d1a1cbee0bd4eeb7f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/RT0402BRD0724KL/RT0402BRD0724KL.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/RT0402BRD0724KL/RT0402BRD0724KL.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/RT0402BRD0724KL/RT0402BRD0724KL.tsx",
+      "sha256": "98e5686941223a229b0334fb1d4bf50f531f14e90a17859a0fc1771c9ac6034e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/RT0402BRD076K04L.tsx",
+      "sha256": "e35c2e5903adc48c1c9ad8728c7db3fdd3e3d101ec29de755e10bd94fe843282",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/RT0402BRD076K04L/RT0402BRD076K04L.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/RT0402BRD076K04L/RT0402BRD076K04L.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/RT0402BRD076K04L/RT0402BRD076K04L.tsx",
+      "sha256": "81a07290b879f79f125637ec949768337547631ea29ef23cde10233c14bbbe2e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/RT1206BRD071RL/RT1206BRD071RL.obj",
+      "sha256": "bb7ca81e5a381483c7fb7f3a472cf27ffa6f321494823911b0dae819cd352cc1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/RT1206BRD071RL/RT1206BRD071RL.step",
+      "sha256": "ca0f6c898b6c5ac572fcabb6f326264b985a8cd3c0f7fa407526b8d2ce209713",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/RT1206BRD071RL/RT1206BRD071RL.tsx",
+      "sha256": "0c6c1ee55ff8642d0e2fa469b30063559f0a38000d057c0615503de5d0ae74aa",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/S4B_PH_K_S_LF__SN_/S4B_PH_K_S_LF__SN_.obj",
+      "sha256": "98ae325e726fc69855350e84476506cc22d468270291ad06bfcf3592161df37e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/S4B_PH_K_S_LF__SN_/S4B_PH_K_S_LF__SN_.step",
+      "sha256": "a724d16fa46b1d2bd2d39ca8cfc1f7f455315c85dbc30582eeb789a9f75219fe",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/S4B_PH_K_S_LF__SN_/S4B_PH_K_S_LF__SN_.tsx",
+      "sha256": "2c7478eaba60c13135c15718158272ade565455888167cc89fc1ba81bf98462d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/S4B_PH_SM4_K_TB_LF__SN_/S4B_PH_SM4_K_TB_LF__SN_.obj",
+      "sha256": "bca64f44867ba10f2345f877cebe0070f4697e9ec43b9206d5eedfa81b818981",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/S4B_PH_SM4_K_TB_LF__SN_/S4B_PH_SM4_K_TB_LF__SN_.step",
+      "sha256": "1b8eb61c9f40eab30ade2cf79f008e466ba5c09d4271035724825acb074323cc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/S4B_PH_SM4_K_TB_LF__SN_/S4B_PH_SM4_K_TB_LF__SN_.tsx",
+      "sha256": "28f9f70973b69733273c846ae370ff69d40df8469249430930de3984732a1bb5",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/S4B_PH_SM4_TB_LF__SN_/S4B_PH_SM4_TB_LF__SN_.obj",
+      "sha256": "bca64f44867ba10f2345f877cebe0070f4697e9ec43b9206d5eedfa81b818981",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/S4B_PH_SM4_TB_LF__SN_/S4B_PH_SM4_TB_LF__SN_.step",
+      "sha256": "1b8eb61c9f40eab30ade2cf79f008e466ba5c09d4271035724825acb074323cc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/S4B_PH_SM4_TB_LF__SN_/S4B_PH_SM4_TB_LF__SN_.tsx",
+      "sha256": "2b7d081b757a5782d1bdd7460f25141d47c4f02036267ee74f85a16f52236912",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SM04B_GHS_TB_LF__SN_/SM04B_GHS_TB_LF__SN_.obj",
+      "sha256": "4c1fa5348a19ac90841e87279be118fcd49bef63cf89509dd47a17aa07647523",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SM04B_GHS_TB_LF__SN_/SM04B_GHS_TB_LF__SN_.step",
+      "sha256": "bbc0cf3000b7277d362a6e283c6a20283067c70e697083b91b1c095bcfefae1a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SM04B_GHS_TB_LF__SN_/SM04B_GHS_TB_LF__SN_.tsx",
+      "sha256": "6ef9d0b9cc427cc347c17be53d129bf69c6e9298d7fd455f854fcdbf3296fbc3",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SM10B_SRSS_TB_LF__SN_/SM10B_SRSS_TB_LF__SN_.obj",
+      "sha256": "432880d70e8f76d275c21ddd1e1578c8e026d3655d22044eeb0ea9a2f135dc89",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SM10B_SRSS_TB_LF__SN_/SM10B_SRSS_TB_LF__SN_.step",
+      "sha256": "14c1101e1628b886b8bed802295e99a3705a2033365fe7882d62a089ff261c36",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SM10B_SRSS_TB_LF__SN_/SM10B_SRSS_TB_LF__SN_.tsx",
+      "sha256": "8c9a9ff71d862529d62a98c6ad6c836c77477c7941f9f1e65ebabf65101240e6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SM712_TCT/SM712_TCT.obj",
+      "sha256": "eba3fbb208f2c1a7432380919e93350a471d50f840cc10ec11fdb1f59812c7b2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SM712_TCT/SM712_TCT.step",
+      "sha256": "c9a82c26510eaf3f266d1d61eb7c4addbfd4f1bef9c428b719678ad8455821cc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SM712_TCT/SM712_TCT.tsx",
+      "sha256": "2cf031e17ad5deeef8db1b1d83425d5c996ec30f9f67dbecb9de9c1b1f0df35b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SN65HVD230DR/SN65HVD230DR.obj",
+      "sha256": "18c8f36579d4dc6d93c51d3556539c69f8f75cd557fdba6d9cf73cbf0e23d278",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SN65HVD230DR/SN65HVD230DR.step",
+      "sha256": "70f46697efa1daced22df982a5fd03c112d6cf25207f9a1afdf37b49a391ab84",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SN65HVD230DR/SN65HVD230DR.tsx",
+      "sha256": "f6efe76c28565aec4b4c03777afc9a65460081fa15087570ed91ab88bfa5d423",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SRN6028C_3R9M.tsx",
+      "sha256": "7669e97e9bc955d82bf23b373c98a120bb5902e3e3014b01d4c5a5df3a4e5a30",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SRN6028C_3R9M/SRN6028C_3R9M.obj",
+      "sha256": "e756a1d16edc5f2da4c3734b9d423c61337e8ce7ea6c160a2301c2b374c38412",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SRN6028C_3R9M/SRN6028C_3R9M.step",
+      "sha256": "2e7b3c5a5b2134ac7076ec5d2237a22e8d51341107a053fb0640ead10e22e729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/SRN6028C_3R9M/SRN6028C_3R9M.tsx",
+      "sha256": "498414f29bf81207de09d59f9d65006218263a10b2427b0ec355523173751bd9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/STL11N3LLH6.tsx",
+      "sha256": "637dce940b932b094701c02b11bee672403fbf41f13864db63a52cd2ebc3ebe3",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/STL11N3LLH6/STL11N3LLH6.obj",
+      "sha256": "36eed239d5fa35628a4da66b523b0663515280461b35c03e3521ffdacc33053f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/STL11N3LLH6/STL11N3LLH6.step",
+      "sha256": "7ef034c4afa8348b3e6bd4814d87e4057187ebd051df9c9201bc90ab463ea1da",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/STL11N3LLH6/STL11N3LLH6.tsx",
+      "sha256": "30ab11c5cef3e219d38766b68a6e4e08724ce178329c12b8b24834daa5299f68",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/STM32G0B1CBT6.tsx",
+      "sha256": "d3a1131c27f3436feed6d722e182ce033592c4a98469cc7ee44bda110fe70381",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/STM32G0B1CBT6/STM32G0B1CBT6.obj",
+      "sha256": "0aaf09e94ac8622460deff54c72c9eea9f73640ee1ce58b900400257ce7e1f06",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/STM32G0B1CBT6/STM32G0B1CBT6.step",
+      "sha256": "fc1048bca8e51a9c5785281973849107ef5d8bc9b0d7531644412a5bb760b998",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/STM32G0B1CBT6/STM32G0B1CBT6.tsx",
+      "sha256": "f04e9b505a410f0508c9b8f59757d379430796f78db41e15e98be0e357befb90",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TCC0402COG331J500AT.tsx",
+      "sha256": "fd47e790d5a94c80db5895ff8c4e6e0e96db321060d600af49ea546d65b88d9a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TCC0402COG331J500AT/TCC0402COG331J500AT.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TCC0402COG331J500AT/TCC0402COG331J500AT.step",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TCC0402COG331J500AT/TCC0402COG331J500AT.tsx",
+      "sha256": "e1e8011e1c4ae6b8af3ae70cb649122b5dbba32cf7e018440a5fc7a3b4576203",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TCPP01_M12.tsx",
+      "sha256": "ca848784f9c549bea16144a112afbdd4cc67b113ad9be11ea8407d3652900f01",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TCPP01_M12/TCPP01_M12.obj",
+      "sha256": "1a53bb48fcd9ac7b2f81c8c98b2c65d18c1527d4a73d0e2496f881cc53abcc47",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TCPP01_M12/TCPP01_M12.step",
+      "sha256": "7ec2f4a9d4f871673975070d5ec8ae81a302829848994476214ef610a680aa9e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TCPP01_M12/TCPP01_M12.tsx",
+      "sha256": "981714fbc2f309a2b9b363715c82a955e3acb8865122733c0a1e6c04b18f4ee7",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TLV803EA30DBZR/TLV803EA30DBZR.obj",
+      "sha256": "b579ed36991ffc8657e2b5bba0fd00fea2f2aa889925092ca9c543ce88ba8199",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TLV803EA30DBZR/TLV803EA30DBZR.step",
+      "sha256": "404e2c1e10e1ebdc38126eb298c04d95ad998039e4ddaf854293dcb8b285a876",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TLV803EA30DBZR/TLV803EA30DBZR.tsx",
+      "sha256": "31e04c3b2c5aaf82fcbd0458e560630b14aee9f3522c81148e2cd0a72a91c6bc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TLV803EA30DPWR/TLV803EA30DPWR.obj",
+      "sha256": "05bbdb8565aba167feacd0e5e1ba75d5a68ce526f3e163b1551c7158c7af1eb9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TLV803EA30DPWR/TLV803EA30DPWR.step",
+      "sha256": "38144219a425cadbfb813d9aace0a26ea4bf8d381396c6a80dfe83f9f3d7ab75",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TLV803EA30DPWR/TLV803EA30DPWR.tsx",
+      "sha256": "0d441f14373102419f4851a6aee65e8653cb1eb2935c91c8a470cc42a3a0cbe7",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TMC2209_LA.tsx",
+      "sha256": "83341cd7e224a2da71d048b419ceaeee293a522dc19ed7786b9944b7dc3185d9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TMC2209_LA/TMC2209_LA.obj",
+      "sha256": "81eca268ddbbf49f48818b62a569d0fe618ea425448a3cc702038f04796094f0",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TMC2209_LA/TMC2209_LA.step",
+      "sha256": "54b729c0ec691ec6e6cb3991eae11d774b0f962083e959a0bd899470bf65c45d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TMC2209_LA/TMC2209_LA.tsx",
+      "sha256": "866fbe3ea23282859c7aac229c617438bda092f58122984405a22cb93efae8e7",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TMP112AIDRLR/TMP112AIDRLR.obj",
+      "sha256": "bc86540062da17394ffedde912df61cf4e9388c732bf220ad4f3237430ae3c59",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TMP112AIDRLR/TMP112AIDRLR.step",
+      "sha256": "2fa2e0f7cefa8b58279161303b6e060e28345b91cc712c9c548aa9b06a56d4b6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TMP112AIDRLR/TMP112AIDRLR.tsx",
+      "sha256": "e7be52cba83b369f83b59939e80393e64b2e8b2e776524a270093203632373cc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TMUX1511RSVR/TMUX1511RSVR.obj",
+      "sha256": "2324708e69ab92f94f40c7d651b31d37ae715d2cd0262d758822852f465e1afd",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TMUX1511RSVR/TMUX1511RSVR.step",
+      "sha256": "cffb323aa76b68e2c36677424bf06875c7d086e519d5d401b8ea42114bae75dc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TMUX1511RSVR/TMUX1511RSVR.tsx",
+      "sha256": "81b6d7413ecdfcbd19bb40c76e6dae4364bc6a40420803e16f465460d78d469e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TPD2EUSB30ADRTR.tsx",
+      "sha256": "99975c538939d1c2607eaff0dd196fbaa7fa9a854252afb1ffec79992f6589c4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR.obj",
+      "sha256": "64afcb69c763513e646acc334b022c87a47c31c49bc12629bcc854f0ebf307aa",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR.step",
+      "sha256": "28e3a78293047c869953f184a2426f9c22e9d7ccc6db3301b5b9af92ce239444",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR.tsx",
+      "sha256": "d49eb8fb6faaabf5cf5c9e5a1130ea2f2dff0aecdf401b7847e5950c9c991560",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TPD4E05U06DQAR/TPD4E05U06DQAR.obj",
+      "sha256": "59dd839f715dc4fd87af40d250d0723142795e42b2a4ac98514521b49176554f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TPD4E05U06DQAR/TPD4E05U06DQAR.step",
+      "sha256": "657a205108be41e11084cf5694452e8e2f63cd4d15665350a6d022d98d6719a8",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TPD4E05U06DQAR/TPD4E05U06DQAR.tsx",
+      "sha256": "22af791ac1381ad160305b9f2f5cbe3e61ceb17a9e058f3d4e9276da7de48f6c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TPS259470LRPWR/TPS259470LRPWR.obj",
+      "sha256": "906e299ffa34a390c458b5664c2ac7e88431eb1c7f51fc33e0b5053284d4f138",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TPS259470LRPWR/TPS259470LRPWR.step",
+      "sha256": "2cc166f3b0fc4aa31d02f669ac22bad9c41301cc21475875d64a6bdc2d5d16df",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TPS259470LRPWR/TPS259470LRPWR.tsx",
+      "sha256": "c207af6418d78a426e7e4cefec2454bcdc46bf24f2f15f0c2faf49bf8b934a2d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TPS26600RHFR/TPS26600RHFR.tsx",
+      "sha256": "07bfe0d76fc262088b0f324a4d34f8d7285cf0a29f21b7317766ebbc1565fdaa",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TPS26600RHFT/TPS26600RHFT.obj",
+      "sha256": "5f2f18bd972667d79bf5b61bfcac4e240161edbd923df2616f700148614aa59a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TPS26600RHFT/TPS26600RHFT.step",
+      "sha256": "790e210ea0c850989b13df0d49c39875a2703a9d34435ff051eccb2aa39729a1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TPS26600RHFT/TPS26600RHFT.tsx",
+      "sha256": "6b045b50df40d2e3e92a5d3e9ed0253e77be0eae5a5e0858c5eab89e4ae13cab",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/TYPE_C_31_M_12.tsx",
+      "sha256": "cd9c6d214938f7fe823eee6712b29385880a27ca906e115392b1c6bbe215bcaa",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/UMK107BBJ225KA_T.tsx",
+      "sha256": "c04909605cbe23ff35609449f5c55146982d6c7eb6ebd1ef29fdb2815442fec4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T.obj",
+      "sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T.step",
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T.tsx",
+      "sha256": "71bbbf25b858505646b6fb61bc36fdf349d61f77d4f946a024403306f4e0a274",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/USB4105_GF_A.tsx",
+      "sha256": "9990e0baccb231e06483b643cc1d934cb2e57dafeeb87f35f760ae4cce723c1c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/USB4110_GF_A/USB4110_GF_A.tsx",
+      "sha256": "4e4d79a0a7b9406e39c5dbd6a6484f6ccd56e3ef3906ccf3e7357b94ae86cf05",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/XL_1608SYGC_06/XL_1608SYGC_06.obj",
+      "sha256": "637004ba79bbe8f5a027e0f6ad201573d59b26c70393dc4d1bf8bbe3c6aff4d1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/XL_1608SYGC_06/XL_1608SYGC_06.step",
+      "sha256": "960e9b081492a26215d1668d977990f322ae71831f05f070d38a476f2cf1b5d4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "imports/XL_1608SYGC_06/XL_1608SYGC_06.tsx",
+      "sha256": "9dac56a9ec0df445e4346ec8698e695662a00b0f6d1ce81a1f78af6d98c022f6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "index.circuit.tsx",
+      "sha256": "abfb78e09e5bbc7c9bf7fc41a7961d5b3499657938a49bf7e68cc563c9c20a6b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "issues.md",
+      "sha256": "ddcc75a0f2bbe637ef2843d51383342020ddf52c97b60f97af39505b02d4e285",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/FRONT-CARRIER-REVIEW.md",
+      "sha256": "055e169f9ddcc29f925cf71b31d7e5290a28172f349958b9c4a4cd6005c72f52",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/POWER-CORNER-REVIEW.md",
+      "sha256": "4fbb689d997dc2b413f558949492de09703fce50568591b919f40afcc9aca63e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/REVIEW.md",
+      "sha256": "ae0383ce033715b59175d24543492497f306b27d1a94cee0afd5d1ff0d49a546",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/assets/carrier-fastener-envelopes.step",
+      "sha256": "c0cedb4963573cb9c6f2f48da053b339b3442f80d202471ccec5b353ce465b38",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/assets/diametric-magnet.step",
+      "sha256": "7d23a2de70fe982f5c893b23b8676fff2fa30ecef5930f5a0dbe03347465207a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/assets/front-flange-carrier.step",
+      "sha256": "1a1f9fad9c65e6270a6c0d127b0d99fe8085d0ddac25c23c33482dc81bb312e2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/assets/retaining-cup.step",
+      "sha256": "5b05b26b4d151384e1de0a6c92cde8990534c68cbedd03fe6a2d3f8c4fa5087e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/assets/standoffs.step",
+      "sha256": "f1e3ed531ef190bc21015c1d20c0bc0768afbf76b1e8d0dfec56853bd842366b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/build-viewer.py",
+      "sha256": "0298f5b3b697f5f012871f0c699678a18c3260765043526108e568683f2286d2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/check-assembly.py",
+      "sha256": "c36bb5b40ae215a35e3194a82aa90bd3172d228d5d0549a7d65d456549818d95",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/check-carrier-tolerance.py",
+      "sha256": "e0fdc7662012e1a8aeb31a644cffecd37c2d104b9f46b2926014281d9c8c383d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/check-front-carrier.py",
+      "sha256": "89e4b0a3adb5d5dbb650fbc8b0203c525cbea1365acdc42e450463911ff33c8c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/check-mating-envelopes.py",
+      "sha256": "c7ec098193676d44e326dc0d88dcdc4e28e064f41a332497e06e1f88ccab2eb9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/check-selected-motor.py",
+      "sha256": "f1f166b51ca7a782cfe85b25e75d4914a0187a4f0c61cf6097a1cf2dbd359b7b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/check-tps26600-model.py",
+      "sha256": "98cd1c2527f0c75e85c90217d5c4b0ee6b498971da1e66cf4cce72d960317ea4",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/check-usb-connector-model.py",
+      "sha256": "2def0cd4a01de15f2f930f57f57ab7b9fa8052a5cb4065d23aa16bc77ec6b90f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/design-constraints.json",
+      "sha256": "c1e87ece85d19b727cf1d28b2a9c3587a1465633ee7a65b1690377e3981ee838",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/download-supplier-models.py",
+      "sha256": "366a5d34797bf4244b0a51ceebe801a078428a24ca699522c222175e432f9464",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/generate-front-carrier.py",
+      "sha256": "ff3bb4bdeb14a2dcbd39f03daa1d9a569ff734ac2f75018c2db80732a6a23d2b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/generate-hardware.py",
+      "sha256": "8bf8b6e646271ccd35dea4dc578b6655dae26e7f76e58548c1adbfb058777574",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/manufacturing-rules.json",
+      "sha256": "62ca5e0be3176e349dec1adf144d7fdbbfedacaf065d16dfff761ede4620bb50",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/requirements.lock.txt",
+      "sha256": "afd4da16b1b9cd5454e020886c2465774203fbca982ba64211e1cbefc358ce5d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mechanical/viewer.js",
+      "sha256": "5a57739889d69c14ed65dc4d96016888e055cb9ec221f0c42ef741a930110146",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "mounted-assembly.circuit.tsx",
+      "sha256": "48ade5d8fb2c55fb4311a9a8932faf399806520e875cdb4e2eeee770e28542aa",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "package.json",
+      "sha256": "7967d3a2b9e3ffdf33f6398913e17a2bc5d5f80327613cc1c31b93e007efe2b3",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/MCU-PIN-PLAN.md",
+      "sha256": "66239463603a41d86db58fe48d5c334a062889049e2a299fc5c35ae2a86dd8ff",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/POWER-AND-MOTOR-REVIEW.md",
+      "sha256": "93be31c3b0dc48dac5cb1e32f533a3321bc4e5ba02e7a87928b62d5843630043",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/SM712-TCT.txt",
+      "sha256": "ea6ddcd0708029e7b8fcc229d5ad055be94420db7b49aab6c62bc61ae65a8234",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/SOURCES.md",
+      "sha256": "2ec77eeccb9596ac8248e009dd092bb5988b5842964ea4b5293646318ea27f73",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/TCPP01-M12-download-error.html",
+      "sha256": "539185935cb71abebbd89aae7c47321f071d606a6d000fed5cad5fb97d7722cc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/TLV803E.txt",
+      "sha256": "765dae66a0705aee49b1c88eea059eff472c7741a3819aca3aa1e41ab9cec1d9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/TMP112.txt",
+      "sha256": "6d30a165d1604ea1bac5323d7cb1d6e4e2571c67c7702e4039c394ff3b28aee1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/TMUX1511.txt",
+      "sha256": "c4ceccee78b1b5b264842a4cb247e15b2ec854a36c2b4409e8dca5bf7eba52c8",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/TOOLING-ROTATION-BLOCKER.md",
+      "sha256": "5434050bb785486ec781fafdda80150474117cb69a662b1dcd9284e8f3a6e2b9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/TPS25947.txt",
+      "sha256": "cc202c616f094b4ae7e0784b2c1175b8e2cee6fe049b5fd0a95a88b1b52b9bf2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/USB-PD-REVIEW.md",
+      "sha256": "ffb981d2245fb07a40bbea497f89b949200760ce665e2796f238db40c64cf1dc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/USB4110-GF-A-current.txt",
+      "sha256": "277dbacbaee40d6f035ab56c5fc9184f10f4ca5582a878412f09167398031528",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/USER-BRIEF.md",
+      "sha256": "6c55902f9fe4852a9d793129ba4c4bf271deb78943aad5a7b9c682df11fef445",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/capacitors/Panasonic-FP-2025.txt",
+      "sha256": "9b7ab0d72406dd0c7a9ad5ce0e807d282ec22ee1c69344c25842142b0340e004",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/capacitors/SOURCE.json",
+      "sha256": "04edd3a07775d9b1d656bf413250880988ef3e97847f0ad6e37e74188f6403dd",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/capacitors/UMK107BBJ225KA-dc-bias.json",
+      "sha256": "2ca456d8bbaf75676c2b1d03a4942205d84d7ad9addc4403f996574026de0ec7",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/capacitors/UMK107BBJ225KA-temperature.json",
+      "sha256": "6fce6256f27f57dd6ad72e6e29faa896b0f032cdcf0dce3cba3ac9f243726c42",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C1121848.step",
+      "sha256": "7ec2f4a9d4f871673975070d5ec8ae81a302829848994476214ef610a680aa9e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C11702.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C12084.step",
+      "sha256": "70f46697efa1daced22df982a5fd03c112d6cf25207f9a1afdf37b49a391ab84",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C13585.step",
+      "sha256": "a3b636a587c98bf5baa4dcd6af15732c43a5f396ec40d2b987bd6db5417c8265",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C136657.step",
+      "sha256": "ab33b622e6a54b6ebafffcb21fec230bef83d56353a914c847e89a277b40f8a6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C14663.step",
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C1525.step",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C165948.step",
+      "sha256": "3806dacd6082a75cfb24d3ba4b86b3d0c96213134c67e1385eb1599a89b2c461",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C178585.step",
+      "sha256": "0520d085e6aa1b712b8127b1de76907f64951f608caa5f1d495a693c6ae742fb",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C1974707.step",
+      "sha256": "6dc8861569f43539ad8557144a2f787ca151d7df0d3f29aa2f6375b8dbd48b04",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C19947652.step",
+      "sha256": "2e7b3c5a5b2134ac7076ec5d2237a22e8d51341107a053fb0640ead10e22e729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C23733.step",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C25744.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C25767.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C25900.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C268016.step",
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C2847904.step",
+      "sha256": "fc1048bca8e51a9c5785281973849107ef5d8bc9b0d7531644412a5bb760b998",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C2965326.step",
+      "sha256": "7ef034c4afa8348b3e6bd4814d87e4057187ebd051df9c9201bc90ab463ea1da",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C307335.step",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C45783.step",
+      "sha256": "67f86cfc9ebba2ff889d65b12f5d49d5a90b265b73635a931d68c6a27d34e11f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C465949.step",
+      "sha256": "54b729c0ec691ec6e6cb3991eae11d774b0f962083e959a0bd899470bf65c45d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C5127775.step",
+      "sha256": "ca0f6c898b6c5ac572fcabb6f326264b985a8cd3c0f7fa407526b8d2ce209713",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C5448795.step",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C780769.step",
+      "sha256": "4420c424f4a2941b36f28b622f6950c965439c7c9525e1961bb8384ef58a6dd9",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C79815.step",
+      "sha256": "70f46697efa1daced22df982a5fd03c112d6cf25207f9a1afdf37b49a391ab84",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C852472.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C852895.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C94934.step",
+      "sha256": "28e3a78293047c869953f184a2426f9c22e9d7ccc6db3301b5b9af92ce239444",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/mechanical-supplier-models/C98192.step",
+      "sha256": "67f86cfc9ebba2ff889d65b12f5d49d5a90b265b73635a931d68c6a27d34e11f",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/motor/14hm11-0404s/14HM11-0404S.STEP",
+      "sha256": "959f43e95b7840beae5ffbd56e997e23c5004a1b09e16b7caa40400296e46281",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/motor/3323_0.stp",
+      "sha256": "e16e8e7d84c9ecbc3fd27bfcf26959762dbfe7868b44c42c6dc1977ba5f6db04",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/tps26600-cad/RHF0024A.stp",
+      "sha256": "3b1cdf1034f9434010f7c2a32ca0686c80f56c0328a38be2e6f7f67ed7f78a41",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/tps26600-cad/SOURCE.json",
+      "sha256": "0d90f5e4071154c9e9c70790ecc3f9398140d6171f6cacca8541272348c98bae",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/tps26600-cad/ti-rhf-cad-listing.html",
+      "sha256": "d400ddec7f3e3b19f9c6c54796a19e950a4f247c3288c5a148d224c6598b2f52",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/usb4110-external-model/SOURCE.json",
+      "sha256": "b3d68664df3a96ecd966f18700d215cf4538f5f133965080aa8c2eda1f3eeb6b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "references/usb4110-external-model/usb4110-gf-a.stp",
+      "sha256": "fb802f14dd0a87ca59b246036d7a6365de3ea32b20a7896a02ade42b9f35d799",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/all-imports-audit.circuit.tsx",
+      "sha256": "50bf10e3a2d114d6b0bee41043ffa94b744cb91ef403a78cdb4b409a61532618",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/check-all-imports.mjs",
+      "sha256": "718e68124768cfd3e8445fb400c6c88f7dd8456622da81b0bad992f1874bc01d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/check-bom-catalog.mjs",
+      "sha256": "3a550d55a262c86d48d179795bd4d761113e708adaafdb52b86f8a51bfa8b8f8",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/check-critical-import-pins.mjs",
+      "sha256": "f4c35815357126c89e6fc1a0b3bcda5f50f2bed8abbd8b443e25b39a31dfd698",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/check-draft-connectivity.mjs",
+      "sha256": "81ee4bd589b15ed86a5556b0f689941af5e1b9731350af4a9e6f503b27af8380",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/check-imported-symbol-rotation.mjs",
+      "sha256": "d684369ea71d135c809ec671cea3ab6da15884c3ee6cdf4dc1d87634133c413d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/check-mechanical-assembly.mjs",
+      "sha256": "966a258273e46ec4a32acee303608e41aeb507c4881b2b5153cb1951e8279a4d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/check-motor-connector-footprint.mjs",
+      "sha256": "7444a695213c5351368bf6dcb5b7c3b8a2db4af1f50e2c16d62b46351d1f3ec2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/check-power-corners.py",
+      "sha256": "22373ac0d42c0535752501e468d016253e637d03ad5a980665ce523e39db6d76",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/check-power-imports.mjs",
+      "sha256": "0dc6848e2497739262c1b35f43f89d877d563b9d709a4456360b1aa098cb4e99",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/check-released-imports.mjs",
+      "sha256": "475f4526afc78523885f30bba7ff2e60f00845075dacfcac282402abc1013f51",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/check-usb-imports.mjs",
+      "sha256": "6fe890f2eb1118c9bd78643f565bace0a1402a9a68c63f250b8337eef7592e88",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/check-usb-manufacturer-footprint.mjs",
+      "sha256": "84202159f9b20e5ae0327294ce8e5395502035b7a52058e17efe13f187fd4f5c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/generate-bom-table.mjs",
+      "sha256": "94180860f1624ec48b7637c92f13e6c9f0af72b6953c7594f3ff8129e3f90c81",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/generate-review-bom.mjs",
+      "sha256": "c16bcc6a38f26211370eb0b681aebf51e8681be7aeaf3e1c6b9a2a8fe587477d",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/import-audit.circuit.tsx",
+      "sha256": "4f87d9bbe8767b1ca88d434590c55f6b3f5e05f729ac8a18a38d2baecde753a8",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/imported-symbol-rotation.circuit.tsx",
+      "sha256": "0c5f21fa9a88ff567fb59d2328c19d21b3cd6d6229b2ba967321fc6c7aea3b38",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/legalize-unrouted-placement.py",
+      "sha256": "c979e21b75c85dc0a4f95d8c666dc498792caed6dd671d936ea07284461c8f5c",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/place-controller-mount.py",
+      "sha256": "0f70f935fe326dc4ef02552c99f340c416be52e2e1170e9dd3a2b992adea8b52",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/power-candidate-audit.circuit.tsx",
+      "sha256": "94bbf90e4c1698d80ac44c507c4818d18747da97ddc3e0ff3276e8e8d65a2cf1",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/render-schematic-sheets.mjs",
+      "sha256": "85d329dae4b08f2e4e9e920321a3c160040d3b85b0bfcb1dda048e40f16b7e47",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/run-mechanical-checks.mjs",
+      "sha256": "3d47593e5f0efd74b7c7ea7cfe97d743e63655d91cc7007511a0550e4ef450b2",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "scripts/usb-import-audit.circuit.tsx",
+      "sha256": "5be591a46ffdfe36bddb3aecfaacfce2411ea17904d36b3f8703af48f46f9b3a",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/can/CanSheet.tsx",
+      "sha256": "2b3a0741928be487f7b63434a74e4081295c4ad7c3d0ca22d831d73854267f3e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/encoder/EncoderSheet.tsx",
+      "sha256": "6dd48ea0e8ce6453e30ba940111bd97518462658a8994be606a1b15d9a5c33d7",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/interfaces/InterfacesSheet.tsx",
+      "sha256": "c0aaafcc652a1d7d6cdd31b85fa77d8b55d98cffd2b6c003ce6b36237aed9d8b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/mcu/McuSheet.tsx",
+      "sha256": "500a6ade422d39ab07e8aece68e17294dba98352dc7e802a29e7d92040144a51",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/mechanics/ControllerMount.tsx",
+      "sha256": "e8e137852e2f4964fc6bd8b480f00190748886494a6c954fb279dd7cea1328a5",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/mechanics/ProgrammingConnectorPreview.tsx",
+      "sha256": "47b76f4f787bb0363eda984ac725fe0c8ff9e1385c513ab984d4596dd47fdded",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/mechanics/RearMountHoles.tsx",
+      "sha256": "b5f6698de0e4d29d8ad255d75e9c4535f483ac946df60a96942e6b691c4a3a29",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/mechanics/motor-lock.ts",
+      "sha256": "dd015dd20a39daf04cd5842522a4a4bff665fdc9f5788f3d77bd60e25b89c3fe",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/mechanics/preview-placement.ts",
+      "sha256": "85cbeebb01e137b618b5b52a4e15b40284112036e69524c2994b15ee9c1d27cc",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/mechanics/selected-motor.ts",
+      "sha256": "3b3a6142eb11a329d3f29c20d8d52981c91107b30596ac61707bb9ab6b9fe808",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/motor-driver/MotorDriverSheet.tsx",
+      "sha256": "740bfe45dca0d7990232f879595102da02adc31295922e852f58148946803d38",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/power/InputPowerSheet.tsx",
+      "sha256": "f4fbd6d453f99e58362b3a2b922121b5d87884ccc79c2454fe5820d6f2724c5e",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/power/LogicBuckSheet.tsx",
+      "sha256": "4588196fcf57b519ef57f9a31cfa3def4f6b68ab548da61c7b270b77e58f7fd6",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/programming/ProgrammingSheet.tsx",
+      "sha256": "d8c82dbeee775e6b6e1f848278aae4d6f7118977acbe3c74981796866dbc7aa8",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "src/usb-pd/UsbPdSheet.tsx",
+      "sha256": "fb1f7a420d1637acac56f7517e072b08f97c198e99cc6a32e030546a7435097b",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "tscircuit.config.json",
+      "sha256": "caf8371813110f447404c036ef66b657bbff8cce5885784f09fe15bd53048bfb",
+      "verified": true,
+      "method": "official direct download"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "b7656834a123f23ffafa0bde27b9008440e78977bf59dd7d8a3ea193d98ad629",
+      "verified": true,
+      "method": "official direct download"
+    }
+  ],
+  "started_at": "2026-10-03T14:41:39.177Z",
+  "package_release_id": "5a50b240-c618-41c7-9c2a-026305bd8a59",
+  "ready_to_build": true,
+  "completed_at": "2026-10-03T14:53:43.977Z"
+}

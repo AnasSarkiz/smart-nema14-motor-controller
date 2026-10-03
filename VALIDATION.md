@@ -11,7 +11,7 @@
 | 5. Routed automated/visual checks | not started | Silkscreen, four copper layers, shorts and snapshots pending routed output. |
 | 6. Prototype fabrication | not started | Same-revision Gerber/drill/BOM/CPL and CAM/assembly review pending. No fabrication approval/order. |
 | 7. Physical prototype | not started | Firmware, fit, retention, cold-start, motion, transients, temperatures and protection tests unperformed. |
-| 8. Store release | in progress | Private revision 16 source/package publication pending; previous 15 verified. Prototype labeling retained. |
+| 8. Store release | in progress | Private revision 16 pushed and 651 exact files uploaded/read back; hosted build pending verification. Prototype labeling retained. |
 
 Requirements are design targets, not guaranteed measured operating ratings. PD source must advertise ≥1.5 A initially at 5 V; bootstrap logic ≤150 mA with ENN high/CAN RS high, encoder DNP and no connector supply export. Motion requires a qualified 9/12/15/20 V ≥1.5 A contract, maximum source 21 V, preferably 12/15 V. Legacy/default-current USB hosts are outside scope. Normal logic allocation ≤0.3 A. Sense resistors bound phase peak at 0.34245 A. Speed ≤300 RPM, external reflected inertia ≤0.25×10⁻⁶ kg·m², no continuous backdrive/overhauling. Scope remains an untested programmable hardware prototype; firmware is not delivered. Intended ambient 0–50 °C with actual device/junction temperatures to be measured, not certified thermal limits.
 
@@ -25,7 +25,7 @@ Fresh schematic-only and PCB builds, format, TypeScript, critical pins, draft co
 
 Native manufacturer tolerances are applied directly as supported board props; power, phase and USB net widths are targets only. The live JLC 90 Ω top/L2 calculator result is 0.1537 mm width /0.1999 mm gap on JLC04161H-3313; actual pair coupling/skew and continuous ground reference must be checked after routing. Stackup is selected, not ordered/CAM-confirmed.
 
-Both destinations remain private under standing publication authorization. Revision 16 publication is not yet claimed. Revision 15 hosted status checked 2026-10-03T14:30:34Z is still pending, with no reported code/build error and has_transpiled=false. This is separate from local board validation. Physical prototype tests remain unperformed.
+Both destinations remain private under standing publication authorization. Revision 16 source [533fbab](https://github.com/AnasSarkiz/smart-nema14-motor-controller/commit/533fbab83d42f0477bec143738c837f658aaf984) is pushed to main with exact remote SHA verified. Private tscircuit **0.0.16-alpha.0**, release ID 5a50b240-c618-41c7-9c2a-026305bd8a59, contains **651** exact committed source/CAD/evidence files; every SHA256 matches official direct-download readback. ready_to_build was set only after complete verification. PUBLICATION-RECEIPT.json records the result. This documentation checkpoint changes no circuit, imported definition, placement, routing controls or CAD. Git whitespace checking reports exporter-generated STEP trailing whitespace; source formatting and TypeScript checks pass, and the STEP geometry remains valid. No automated copper approval is implied. Revision 15 hosted status checked 2026-10-03T14:30:34Z is still pending, with no reported code/build error and has_transpiled=false. This is separate from local board validation. Physical prototype tests remain unperformed.
 
 ## Historical revision 15 — superseded where current review resolves its gates
 
