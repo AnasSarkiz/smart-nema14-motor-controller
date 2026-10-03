@@ -46,6 +46,7 @@ Official imports were regenerated using `tsci import --jlcpcb … --download --u
 All paths below are under `evidence/rev-0.0.11-alpha.0/` unless they name dist.
 
 - Formatting, TypeScript, critical import labels and physical-pin draft connectivity pass. `test:draft` validates the schematic-only output, 111 exact suppliers, nine A4 sheets, current/protection values and separate power rails.
+- Git's full whitespace review flags supplier STEP CRLF/trailing spaces, generated SVG spacing and captured raw CLI log spacing. Those byte-exact upstream/generated evidence files are preserved rather than manually rewritten. Authored-source/document diff whitespace review passes; these textual warnings do not resolve or waive any electrical, mechanical or DRC finding.
 - `tsci check netlist index.circuit.tsx`: exit 0.
 - `tsci check pin_specification index.circuit.tsx`: exit 0, **27 visible metadata warnings**. These concern absent imported pin attributes/power/ground classifications on passives, protection, FETs/connectors and some ICs. Independent physical-pin checks verify actual connections. Warnings are accepted only for this draft audit; they do not establish manufacturer or fabrication qualification and are not suppressed.
 - `tsci check source index.circuit.tsx`: zero errors/warnings after removal of deprecated, ignored schPinSpacing.
