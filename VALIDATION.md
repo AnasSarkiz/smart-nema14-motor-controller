@@ -1,3 +1,11 @@
+# Public visibility and checked build artifact — 0.0.19-alpha.0
+
+2026-10-04 Europe/Tirane. The user explicitly requested public GitHub and tscircuit visibility and the circuit JSON in the build. GitHub AnasSarkiz/smart-nema14-motor-controller is PUBLIC. The package is public and listed with public distribution enabled; anonymous package metadata was verified. Historical private receipts remain historical evidence.
+
+The exact checked partial output is committed under `build/routing-review/circuit.json`, with `BUILD-STATUS.json` provenance. SHA256 is 38bd6ae875aa963ffed135e8cb85d749997855ab7ec81f8771d4236edfdb4b17: 139 traces, 107 through vias, 24 pours, 111 CAD entries and all 88 missing-port errors preserved. Its original native build exits one; this is an incomplete diagnostic preview, not a successful main build or fabrication file. The supported registry output path is `dist/routing-review/circuit.json`; the official `get_preview_circuit_json` route resolves it via `previewComponentPath: routing-review.circuit.tsx`. `mainEntrypoint: index.circuit.tsx` and full-board native completion remain enabled. No electronic source, import, geometry or routing changed; earlier physical and native checks remain applicable.
+
+Artifact digest/error inventory, native shorts, formatting and TypeScript are checked for this publication step. Exact Git and anonymous registry readback checks and the preview API result are recorded in PUBLIC-BUILD-PUBLICATION.json after publication. Stage 4 remains in progress, stages 5/6 unapproved, stage 7 physical tests pending. Current hosted build result is failed after a 30-minute timeout, recorded in public-build/HOSTED-BUILD-STATUS.json. Neither public visibility nor uploaded build artifacts changes that failure or approves fabrication.
+
 # Current revision 0.0.19-alpha.0 — checked manual eFuse-enable copper
 
 ## Connector orientation follow-up — current 0.0.19-alpha.0

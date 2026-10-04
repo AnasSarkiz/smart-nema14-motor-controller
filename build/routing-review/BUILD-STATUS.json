@@ -1,0 +1,40 @@
+{
+  "revision": "0.0.19-alpha.0",
+  "status": "incomplete routing prototype",
+  "artifact_kind": "checked local partial-routing diagnostic; not successful full-main build",
+  "source_entrypoint": "routing-review.circuit.tsx",
+  "main_entrypoint": "index.circuit.tsx",
+  "main_native_completion_enabled": true,
+  "preview_props": {
+    "savedRoutesEnabled": true,
+    "routeRemaining": false
+  },
+  "original_checked_artifact": "evidence/rev-0.0.19-alpha.0/current-partial/circuit.json",
+  "circuit_sha256": "38bd6ae875aa963ffed135e8cb85d749997855ab7ec81f8771d4236edfdb4b17",
+  "bytes": 3457805,
+  "circuit_source_commit": "da326ab9adcdbd3c623e665cc7e01b6d9529c7fc",
+  "checked_source_basis": "8ff7c62cd1a8defa96945dacaa33099677b02678",
+  "native_build_exit_code": 1,
+  "error_counts": {
+    "pcb_port_not_connected_error": 88
+  },
+  "pcb_traces": 139,
+  "pcb_vias": 107,
+  "pcb_copper_pours": 24,
+  "supplier_cad_entries": 111,
+  "package_build_artifact_path": "dist/routing-review/circuit.json",
+  "fabrication_ready": false,
+  "hardware_tested": false,
+  "hosted_build_success": false,
+  "remaining_checks": [
+    "88 missing copper connections",
+    "power/thermal paths",
+    "USB impedance and return qualification",
+    "silkscreen",
+    "Gerber/drill/BOM/CPL and assembler review",
+    "physical prototype tests"
+  ],
+  "prepared_at": "2026-10-04T11:48:49.218605+00:00",
+  "hosted_build_result": "failed: timed out after 30 minutes; uploaded diagnostic does not change the build status",
+  "hosted_status_evidence": "evidence/rev-0.0.19-alpha.0/public-build/HOSTED-BUILD-STATUS.json"
+}

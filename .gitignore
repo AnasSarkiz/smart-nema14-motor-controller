@@ -3,7 +3,11 @@ node_modules/
 
 # Build output
 dist/
-build/
+build/*
+!build/routing-review/
+build/routing-review/*
+!build/routing-review/circuit.json
+!build/routing-review/BUILD-STATUS.json
 
 # Environment variables
 .env
