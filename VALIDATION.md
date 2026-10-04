@@ -1,3 +1,30 @@
+# Current revision 0.0.19-alpha.0 — checked manual eFuse-enable copper
+
+**Work in progress; NOT fabrication ready; NOT hardware tested.** 2026-10-04 Europe/Tirane. Source basis: published private Git/main 240c7325ab0161e7de132c54259ecce02cf104e0. This step remains unpublished until its source push and full registry readback are verified.
+
+The retained source adds two native saved real-port paths joining U10 UVLO pin 10, R38 pin 2 and R39 pin 1. Two physical 0.60/0.30 mm through vias span all four layers. Guarded bends in existing PD_DB and V3V3 copper clear the new vias. No imported definitions, footprints, pin mappings, purchased placements, electronic wiring, BOM or mechanical dimensions changed. The TVS symbol rotation remains user accepted cosmetic feedback.
+
+The fresh current-source partial output SHA256 is **38bd6ae875aa963ffed135e8cb85d749997855ab7ec81f8771d4236edfdb4b17**. It contains **139 traces /107 physical through vias /24 filled pours**, with **88 missing-port errors and no other native errors**. The build exits one because those connections remain unfinished. It is diagnostic output, not manufacturing approval. Saved copper covers 57 complete nets with 135 real-port paths. Main automatic completion remains enabled and unchanged.
+
+Native shorts pass. Independent generated-track/drill geometry has zero violations; filled-copper checks retain zero violations and one physical GND network containing all 90 pads, plus one separate RTN network containing all eight pads. The physical connectivity checker now subtracts actual manufacturing drill voids from every conductor before joining metal; this strengthens the earlier audit. USB primary path lengths and 0.381441 mm skew remain unchanged. Four generated copper layers were inspected for the checked route; crowded reference silkscreen remains unapproved. Current pin/placement checks, formatting and TypeScript pass. The 27 pin metadata warnings are identical to revision 18 and retained; independent physical mapping checks remain applicable. Native schematic-placement advisory for D_VBUS remains visible.
+
+| Stage | Status | Evidence and remaining work |
+| --- | --- | --- |
+| 1. Requirements | passed | Existing bounded motor, PD/load, stackup and manufacturing requirements unchanged. |
+| 2. Schematic/BOM | passed | All 191 imported source/CAD files byte-identical; exact pin/pad and manufacturer audits remain applicable. |
+| 3. Placement | passed | Required five checks rerun. No physical placement, holes or mechanical geometry changed. |
+| 4. Routing | in progress | 88 missing connections; checked eFuse route retained. Failed I/O copper was rejected, including 51 geometry violations and three GND islands. |
+| 5. Full checks/visual approval | not started | Partial checks pass; full current/thermal/USB/silkscreen qualification and accepted snapshots remain pending. |
+| 6. Prototype fabrication | not started | Same-source CAM/BOM/CPL/assembler review pending; no order placed. |
+| 7. Hardware tests | not started | No physical prototype or delivered/tested firmware. |
+| 8. Store release | in progress | Private prototype publication pending; last fully readback-verified release is 0.0.18-alpha.0. |
+
+Native pipeline 9 full diagnostic finishes with a static reachability error on five GND/RTN paths; its failed output drops the saved traces and is never adopted. Single-net I2C diagnostic timed out. A 23-signal-net diagnostic was stopped below 2 GiB available disk, with no fresh output. The latest free space fell to about 1.1 GiB; no task-owned routing process remains. Only this task's redundant published cache was removed after complete readback verification. The user has been asked to free 8–10 GB; unrelated applications and files are untouched. The lightweight OVP bus-lane trial fails with no collision-free dogbone assignment and is rejected.
+
+Automatic approval review rejected assigning GND/RTN to phase zero to exclude them from native completion because it could hide unresolved connectivity. The action was not applied or bypassed. Native main and ground/RTN gates remain unchanged. Actual physical copper, not assigned net names, remains the basis for continuity checks.
+
+Evidence: `evidence/rev-0.0.19-alpha.0/`. Rejected routes, logs, native errors and resource stops remain preserved. Full signal/power routing, thermal spreading, USB impedance/return quality, readable silkscreen, same-source native checks/snapshots and final fabrication exports must pass before prototype fabrication approval. Earlier source publication receipts remain historical evidence below.
+
 # Current revision 0.0.18-alpha.0 — connected ground and isolated eFuse return
 
 **Work-in-progress routing prototype; NOT fabrication ready; NOT hardware tested.** 2026-10-04 Europe/Tirane. Published circuit source: private Git/main ace862f130c25a5aa3e33bdd00d59e6c790d317a. Private release c2c21533-6762-49ba-8bc5-57f77a5ffbff contains 1,073 exact files (129,019,703 raw bytes), all SHA256 verified through official downloads on 2026-10-04T01:52:28Z. PUBLICATION-RECEIPT.json records the source/upload result; hosted build success remains separately unverified.

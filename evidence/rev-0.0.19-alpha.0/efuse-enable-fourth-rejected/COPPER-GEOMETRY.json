@@ -1,0 +1,101 @@
+{
+  "revision": "0.0.18-alpha.0",
+  "input": "dist/scripts/efuse-enable-trial/circuit.json",
+  "input_sha256": "3ceff84931afe12b2e15bd15c3a8bbeb92016292cd70e1b07e29dde9e8bdbf1c",
+  "scope": "Actual tracks, drills, component/test pads, board edges, NPTH and mechanical keepouts. USB path length is independently measured by measure-usb-paths.py; absent legacy trace-name lengths below are not a USB pass. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 139,
+  "segment_count": 1191,
+  "via_count": 107,
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": {
+      "via": "pcb_via_105",
+      "reference": "L1",
+      "pad": "pcb_smtpad_100",
+      "same_net": false,
+      "actual_mm": -0.15,
+      "required_mm": 0.35
+    },
+    "track_to_pad_mm": {
+      "track": "saved_phase_null_0_125",
+      "segment": 1,
+      "pad": "pcb_smtpad_76",
+      "reference": "U6",
+      "actual_mm": 0.10054982373235043,
+      "required_mm": 0.1
+    },
+    "track_to_track_mm": {
+      "first": "saved_phase_null_0_56",
+      "first_segment": 9,
+      "second": "saved_phase_null_0_77",
+      "second_segment": 12,
+      "layer": "inner2",
+      "actual_mm": 0.15169999999999906,
+      "required_mm": 0.15
+    },
+    "via_to_track_mm": {
+      "via": "pcb_via_105",
+      "track": "saved_phase_null_0_13",
+      "segment": 9,
+      "layer": "inner1",
+      "actual_mm": -0.05459999999999904,
+      "required_mm": 0.15
+    },
+    "via_to_via_mm": {
+      "first": "pcb_via_28",
+      "second": "pcb_via_33",
+      "actual_mm": 0.15246853090345247,
+      "required_mm": 0.15
+    }
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 45261,
+    "track_to_pad_mm": 211018,
+    "track_to_track_mm": 241448,
+    "via_to_track_mm": 124124,
+    "via_to_via_mm": 5671
+  },
+  "violations": [
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_105",
+      "reference": "L1",
+      "pad": "pcb_smtpad_100",
+      "same_net": false,
+      "actual_mm": -0.15,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_annulus_to_other_net_pad",
+      "via": "pcb_via_105",
+      "pad": "pcb_smtpad_100",
+      "reference": "L1"
+    },
+    {
+      "check": "via_to_track_mm",
+      "via": "pcb_via_105",
+      "track": "saved_phase_null_0_13",
+      "segment": 9,
+      "layer": "inner1",
+      "actual_mm": -0.05459999999999904,
+      "required_mm": 0.15
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_106",
+      "reference": "C11",
+      "pad": "pcb_smtpad_102",
+      "same_net": false,
+      "actual_mm": 0.17499499999999948,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_annulus_to_other_net_pad",
+      "via": "pcb_via_106",
+      "pad": "pcb_smtpad_102",
+      "reference": "C11"
+    }
+  ],
+  "passed": false
+}

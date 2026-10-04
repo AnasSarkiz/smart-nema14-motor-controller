@@ -1347,27 +1347,6 @@
         {
           "route_type": "wire",
           "x": -8.1204,
-          "y": -8,
-          "layer": "inner1",
-          "width": 0.15
-        },
-        {
-          "route_type": "wire",
-          "x": -8.5,
-          "y": -8.4,
-          "layer": "inner1",
-          "width": 0.15
-        },
-        {
-          "route_type": "wire",
-          "x": -8.5,
-          "y": -9.15,
-          "layer": "inner1",
-          "width": 0.15
-        },
-        {
-          "route_type": "wire",
-          "x": -8.1204,
           "y": -9.3377,
           "layer": "inner1",
           "width": 0.15
@@ -7160,15 +7139,8 @@
         },
         {
           "route_type": "wire",
-          "x": -8.5,
+          "x": -8.0834,
           "y": -8.5001,
-          "layer": "bottom",
-          "width": 0.15
-        },
-        {
-          "route_type": "wire",
-          "x": -8.5,
-          "y": -6.9,
           "layer": "bottom",
           "width": 0.15
         },
@@ -11895,57 +11867,29 @@
         },
         {
           "route_type": "wire",
-          "x": -4,
+          "x": -5.2,
           "y": -11.25,
           "layer": "bottom",
           "width": 0.15
         },
         {
           "route_type": "wire",
-          "x": -4,
-          "y": -12,
+          "x": -5.2,
+          "y": -16.3,
           "layer": "bottom",
           "width": 0.15
         },
         {
           "route_type": "wire",
-          "x": -4.4,
-          "y": -12,
-          "layer": "bottom",
-          "width": 0.15
-        },
-        {
-          "route_type": "wire",
-          "x": -4.682816,
-          "y": -12.5,
-          "layer": "bottom",
-          "width": 0.15
-        },
-        {
-          "route_type": "wire",
-          "x": -4.682816,
-          "y": -13.1,
-          "layer": "bottom",
-          "width": 0.15
-        },
-        {
-          "route_type": "wire",
-          "x": -3.6,
-          "y": -13.1,
-          "layer": "bottom",
-          "width": 0.15
-        },
-        {
-          "route_type": "wire",
-          "x": -3.3,
-          "y": -13.4,
+          "x": -7.8,
+          "y": -16.3,
           "layer": "bottom",
           "width": 0.15
         },
         {
           "route_type": "via",
-          "x": -3.3,
-          "y": -13.4,
+          "x": -7.8,
+          "y": -16.3,
           "from_layer": "bottom",
           "to_layer": "inner2",
           "via_diameter": 0.6,
@@ -11953,36 +11897,29 @@
         },
         {
           "route_type": "wire",
-          "x": -3.3,
-          "y": -13.4,
+          "x": -7.8,
+          "y": -16.3,
           "layer": "inner2",
           "width": 0.15
         },
         {
           "route_type": "wire",
-          "x": -6.75,
-          "y": -13.4,
+          "x": -6.5,
+          "y": -15,
           "layer": "inner2",
           "width": 0.15
         },
         {
           "route_type": "wire",
-          "x": -6.75,
-          "y": -9.3,
-          "layer": "inner2",
-          "width": 0.15
-        },
-        {
-          "route_type": "wire",
-          "x": -7.75,
-          "y": -8.9,
+          "x": -6.5,
+          "y": -10.5,
           "layer": "inner2",
           "width": 0.15
         },
         {
           "route_type": "via",
-          "x": -7.75,
-          "y": -8.9,
+          "x": -6.5,
+          "y": -10.5,
           "from_layer": "inner2",
           "to_layer": "bottom",
           "via_diameter": 0.6,
@@ -11990,15 +11927,29 @@
         },
         {
           "route_type": "wire",
-          "x": -7.75,
-          "y": -8.9,
+          "x": -6.5,
+          "y": -10.5,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": -7.4,
+          "y": -10.5,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": -7.4,
+          "y": -9,
           "layer": "bottom",
           "width": 0.15
         },
         {
           "route_type": "wire",
           "x": -7.55,
-          "y": -8.9,
+          "y": -8.6,
           "layer": "bottom",
           "width": 0.15
         },
@@ -12432,7 +12383,10 @@
   },
   "manual_ground_stitch_bends": {
     "source_sha256": "9ee174568a0eb310114edc0ff8b5ef78d8e8c2e9cbbc1e8e88238f14ff325b52",
-    "through_via_mm": [-4, -5],
+    "through_via_mm": [
+      -4,
+      -5
+    ],
     "changes": [
       {
         "connection": ".R3 > .pin1",
@@ -12453,10 +12407,22 @@
           }
         ],
         "bends_mm": [
-          [-3.25, -5.1448],
-          [-3.5, -5.8],
-          [-4.5, -5.8],
-          [-4.75, -5.1448]
+          [
+            -3.25,
+            -5.1448
+          ],
+          [
+            -3.5,
+            -5.8
+          ],
+          [
+            -4.5,
+            -5.8
+          ],
+          [
+            -4.75,
+            -5.1448
+          ]
         ]
       },
       {
@@ -12468,7 +12434,20 @@
           "layer": "inner2",
           "width": 0.15
         },
-        "bends_mm": [[-4.6837, -5.75], [-3.4, -5.75], [-3.4, -5.0167]]
+        "bends_mm": [
+          [
+            -4.6837,
+            -5.75
+          ],
+          [
+            -3.4,
+            -5.75
+          ],
+          [
+            -3.4,
+            -5.0167
+          ]
+        ]
       }
     ],
     "scope": "Explicit manual route changes, validation required. Imported definitions unchanged."

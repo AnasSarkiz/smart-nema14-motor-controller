@@ -141,6 +141,11 @@ for pour in pours:
         if distance < radius-.00002:
             violations.append({'check':'pour_mount_circle',**measurement})
 
+# Apply actual manufacturing drill removal before physical connectivity.
+drill_voids = unary_union([Point(via['x'],via['y']).buffer(via['hole_diameter']/2,quad_segs=64) for via,_,_ in vias])
+for conductor in conductors:
+    conductor['shape'] = conductor['shape'].difference(drill_voids)
+
 island_reports = {}
 for net_name in ('GND','EFUSE_RTN'):
     net = next(key for key,name in net_names.items() if name==net_name)

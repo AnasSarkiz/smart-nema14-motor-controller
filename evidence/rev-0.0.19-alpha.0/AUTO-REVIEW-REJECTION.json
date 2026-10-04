@@ -1,0 +1,6 @@
+{
+  "action": "Assign GND and EFUSE_RTN to phase zero so native completion excludes them",
+  "applied": false,
+  "reason": "Automatic approval review rejected the action because it could suppress unresolved connectivity and hide routing failures. No workaround or indirect execution of the rejected action was used.",
+  "safer_work": "Retain checked eFuse copper, unchanged main and ground-routing gates. Rejected signal trials retain their native/independent failures."
+}

@@ -56,7 +56,10 @@
     "VBUS_ADC",
     "VBUS_ADC_PRE_GUARD",
     "VBUS_DIV",
-    "EFUSE_EN"
+    "EFUSE_EN",
+    "EXT_DIR_CONN",
+    "EXT_ENABLE_N_CONN",
+    "LIMIT1_CONN"
   ],
   "connections": [
     ".U1 > .pin4",
@@ -250,7 +253,16 @@
     ".D_USB > .pin2",
     ".R39 > .pin1",
     ".R38 > .pin2",
-    ".U10 > .pin10"
+    ".U10 > .pin10",
+    ".R24 > .pin1",
+    ".D_IO1 > .pin2",
+    ".J_IO > .pin6",
+    ".R25 > .pin1",
+    ".D_IO1 > .pin4",
+    ".J_IO > .pin7",
+    ".R26 > .pin1",
+    ".D_IO1 > .pin5",
+    ".J_IO > .pin8"
   ],
   "paths": [
     {
@@ -12017,6 +12029,246 @@
           "width": 0.15
         }
       ]
+    },
+    {
+      "connection": ".R24 > .pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 6.182816,
+          "y": 4,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 5.3,
+          "y": 4,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 5.3,
+          "y": 3.3,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 9.499872,
+          "y": 3.3,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 9.499872,
+          "y": 2.1000008,
+          "layer": "bottom",
+          "width": 0.15
+        }
+      ]
+    },
+    {
+      "connection": ".D_IO1 > .pin2",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 9.499872,
+          "y": 2.1000008,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 9.499872,
+          "y": 3.3,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 11.2,
+          "y": 3.3,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 11.4,
+          "y": 3.499747,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 12.03774205,
+          "y": 3.499747,
+          "layer": "bottom",
+          "width": 0.15
+        }
+      ]
+    },
+    {
+      "connection": ".R25 > .pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 6.682816,
+          "y": 2,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 7.3,
+          "y": 2,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 7.3,
+          "y": 2.65,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 8.499874,
+          "y": 2.65,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 8.499874,
+          "y": 2.1000008,
+          "layer": "bottom",
+          "width": 0.15
+        }
+      ]
+    },
+    {
+      "connection": ".D_IO1 > .pin4",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 8.499874,
+          "y": 2.1000008,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 8.499874,
+          "y": 1.4,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 11,
+          "y": 1.4,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 11,
+          "y": 2.499749,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 12.03774205,
+          "y": 2.499749,
+          "layer": "bottom",
+          "width": 0.15
+        }
+      ]
+    },
+    {
+      "connection": ".R26 > .pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 6.682816,
+          "y": 0,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 7.4,
+          "y": 0,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 7.4,
+          "y": 1.1,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 8.000002,
+          "y": 1.1,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 8.000002,
+          "y": 2.1000008,
+          "layer": "bottom",
+          "width": 0.15
+        }
+      ]
+    },
+    {
+      "connection": ".D_IO1 > .pin5",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 8.000002,
+          "y": 2.1000008,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 8.000002,
+          "y": 1.1,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 11.35,
+          "y": 1.1,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 11.35,
+          "y": 1.499751,
+          "layer": "bottom",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": 12.03774205,
+          "y": 1.499751,
+          "layer": "bottom",
+          "width": 0.15
+        }
+      ]
     }
   ],
   "manual_edit_basis": {
@@ -12432,7 +12684,10 @@
   },
   "manual_ground_stitch_bends": {
     "source_sha256": "9ee174568a0eb310114edc0ff8b5ef78d8e8c2e9cbbc1e8e88238f14ff325b52",
-    "through_via_mm": [-4, -5],
+    "through_via_mm": [
+      -4,
+      -5
+    ],
     "changes": [
       {
         "connection": ".R3 > .pin1",
@@ -12453,10 +12708,22 @@
           }
         ],
         "bends_mm": [
-          [-3.25, -5.1448],
-          [-3.5, -5.8],
-          [-4.5, -5.8],
-          [-4.75, -5.1448]
+          [
+            -3.25,
+            -5.1448
+          ],
+          [
+            -3.5,
+            -5.8
+          ],
+          [
+            -4.5,
+            -5.8
+          ],
+          [
+            -4.75,
+            -5.1448
+          ]
         ]
       },
       {
@@ -12468,7 +12735,20 @@
           "layer": "inner2",
           "width": 0.15
         },
-        "bends_mm": [[-4.6837, -5.75], [-3.4, -5.75], [-3.4, -5.0167]]
+        "bends_mm": [
+          [
+            -4.6837,
+            -5.75
+          ],
+          [
+            -3.4,
+            -5.75
+          ],
+          [
+            -3.4,
+            -5.0167
+          ]
+        ]
       }
     ],
     "scope": "Explicit manual route changes, validation required. Imported definitions unchanged."

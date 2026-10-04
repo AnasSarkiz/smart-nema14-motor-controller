@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "source_entry": "scripts/pipeline9-full.circuit.tsx",
+  "result_json_sha256": "5d96d57fc45d5427fa8abeb805f14278694fce9affe833f95871e4e46bc34b9b",
+  "error_counts": {
+    "pcb_autorouting_error": 1,
+    "pcb_port_not_connected_error": 280
+  },
+  "non_connectivity_errors": [
+    {
+      "type": "pcb_autorouting_error",
+      "pcb_autorouting_error_id": "pcb_autorouting_error_0",
+      "pcb_error_id": "pcb_autorouter_error_subcircuit_subcircuit_source_group_0",
+      "error_type": "pcb_autorouting_error",
+      "message": "Static reachability precheck failed: 5 route(s) have no legal path under the current reservation and start-region rules source_net_0_mst34 (pcb_port_22->pcb_port_370), source_net_0_mst63 (pcb_port_99->escape-via:source_net_0:pcb_port_47:inner1:4), source_net_0_mst66 (pcb_port_99->pcb_port_91), source_net_80_mst0 (pcb_port_397->pcb_port_399), source_net_80_mst4 (pcb_port_397->pcb_port_411) (capacity-autorouter@0.0.956)"
+    }
+  ],
+  "scope": "Rejected diagnostic output. The existing saved copper was not retained after the native autorouting failure; this is not an approved manufacturing output."
+}

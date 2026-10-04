@@ -1,0 +1,544 @@
+{
+  "revision": "0.0.18-alpha.0",
+  "input": "dist/scripts/io-control-trial/circuit.json",
+  "input_sha256": "688d5ca84fa4f1de890b3258054d44ea66131bc5a0035e54992fc1cf250e65d2",
+  "scope": "Actual tracks, drills, component/test pads, board edges, NPTH and mechanical keepouts. USB path length is independently measured by measure-usb-paths.py; absent legacy trace-name lengths below are not a USB pass. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 145,
+  "segment_count": 1223,
+  "via_count": 107,
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": {
+      "via": "pcb_via_69",
+      "reference": "J_MOTOR",
+      "pad": "pcb_smtpad_298",
+      "same_net": true,
+      "actual_mm": 0.35393720000000106,
+      "required_mm": 0.35
+    },
+    "track_to_pad_mm": {
+      "track": "saved_phase_null_0_135",
+      "segment": 0,
+      "pad": "pcb_smtpad_309",
+      "reference": "D_IO1",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    "track_to_track_mm": {
+      "first": "saved_phase_null_0_109",
+      "first_segment": 5,
+      "second": "saved_phase_null_0_138",
+      "second_segment": 1,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    "via_to_track_mm": {
+      "via": "pcb_via_73",
+      "track": "saved_phase_null_0_140",
+      "segment": 2,
+      "layer": "bottom",
+      "actual_mm": -0.3,
+      "required_mm": 0.15
+    },
+    "via_to_via_mm": {
+      "first": "pcb_via_28",
+      "second": "pcb_via_33",
+      "actual_mm": 0.15246853090345247,
+      "required_mm": 0.15
+    }
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 45261,
+    "track_to_pad_mm": 218181,
+    "track_to_track_mm": 258237,
+    "via_to_track_mm": 127523,
+    "via_to_via_mm": 5671
+  },
+  "violations": [
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_135",
+      "segment": 0,
+      "pad": "pcb_smtpad_309",
+      "reference": "D_IO1",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_135",
+      "segment": 1,
+      "pad": "pcb_smtpad_306",
+      "reference": "D_IO1",
+      "actual_mm": 0.04250199999999982,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_135",
+      "segment": 1,
+      "pad": "pcb_smtpad_307",
+      "reference": "D_IO1",
+      "actual_mm": 0.04250199999999982,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_135",
+      "segment": 1,
+      "pad": "pcb_smtpad_308",
+      "reference": "D_IO1",
+      "actual_mm": 0.04250199999999982,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_135",
+      "segment": 1,
+      "pad": "pcb_smtpad_309",
+      "reference": "D_IO1",
+      "actual_mm": 0.04250199999999982,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_135",
+      "segment": 2,
+      "pad": "pcb_smtpad_331",
+      "reference": "R24",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_135",
+      "segment": 3,
+      "pad": "pcb_smtpad_331",
+      "reference": "R24",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_136",
+      "segment": 2,
+      "pad": "pcb_smtpad_309",
+      "reference": "D_IO1",
+      "actual_mm": 0.04250199999999982,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_136",
+      "segment": 2,
+      "pad": "pcb_smtpad_310",
+      "reference": "D_IO1",
+      "actual_mm": 0.042501999999999825,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_136",
+      "segment": 3,
+      "pad": "pcb_smtpad_309",
+      "reference": "D_IO1",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_137",
+      "segment": 0,
+      "pad": "pcb_smtpad_307",
+      "reference": "D_IO1",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_137",
+      "segment": 1,
+      "pad": "pcb_smtpad_306",
+      "reference": "D_IO1",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_137",
+      "segment": 1,
+      "pad": "pcb_smtpad_307",
+      "reference": "D_IO1",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_139",
+      "segment": 0,
+      "pad": "pcb_smtpad_316",
+      "reference": "D_IO2",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_139",
+      "segment": 1,
+      "pad": "pcb_smtpad_316",
+      "reference": "D_IO2",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_140",
+      "segment": 2,
+      "pad": "pcb_smtpad_316",
+      "reference": "D_IO2",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_140",
+      "segment": 2,
+      "pad": "pcb_smtpad_317",
+      "reference": "D_IO2",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_140",
+      "segment": 2,
+      "pad": "pcb_smtpad_318",
+      "reference": "D_IO2",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_140",
+      "segment": 2,
+      "pad": "pcb_smtpad_319",
+      "reference": "D_IO2",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_140",
+      "segment": 2,
+      "pad": "pcb_smtpad_320",
+      "reference": "D_IO2",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_140",
+      "segment": 3,
+      "pad": "pcb_smtpad_316",
+      "reference": "D_IO2",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_109",
+      "first_segment": 5,
+      "second": "saved_phase_null_0_138",
+      "second_segment": 1,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_109",
+      "first_segment": 6,
+      "second": "saved_phase_null_0_138",
+      "second_segment": 2,
+      "layer": "bottom",
+      "actual_mm": 0.09080000000000021,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_109",
+      "first_segment": 7,
+      "second": "saved_phase_null_0_138",
+      "second_segment": 2,
+      "layer": "bottom",
+      "actual_mm": 0.09080000000000021,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_109",
+      "first_segment": 8,
+      "second": "saved_phase_null_0_138",
+      "second_segment": 2,
+      "layer": "bottom",
+      "actual_mm": 0.09080000000000021,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_113",
+      "first_segment": 0,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 2,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_113",
+      "first_segment": 0,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 3,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_113",
+      "first_segment": 1,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 2,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_113",
+      "first_segment": 1,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 3,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_113",
+      "first_segment": 2,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 1,
+      "layer": "bottom",
+      "actual_mm": 0.10329999999999993,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_113",
+      "first_segment": 2,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 2,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_113",
+      "first_segment": 2,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 3,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_113",
+      "first_segment": 3,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 1,
+      "layer": "bottom",
+      "actual_mm": 0.016947911038144227,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_113",
+      "first_segment": 3,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 2,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_114",
+      "first_segment": 20,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 1,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_114",
+      "first_segment": 21,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 1,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_114",
+      "first_segment": 21,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 2,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_114",
+      "first_segment": 22,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 1,
+      "layer": "bottom",
+      "actual_mm": 0.1048,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_114",
+      "first_segment": 22,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 2,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_114",
+      "first_segment": 22,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 3,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_114",
+      "first_segment": 23,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 2,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_114",
+      "first_segment": 23,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 3,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_114",
+      "first_segment": 24,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 2,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_114",
+      "first_segment": 24,
+      "second": "saved_phase_null_0_135",
+      "second_segment": 3,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "via_to_track_mm",
+      "via": "pcb_via_48",
+      "track": "saved_phase_null_0_135",
+      "segment": 1,
+      "layer": "bottom",
+      "actual_mm": -0.25960000000000044,
+      "required_mm": 0.15
+    },
+    {
+      "check": "via_to_track_mm",
+      "via": "pcb_via_73",
+      "track": "saved_phase_null_0_138",
+      "segment": 1,
+      "layer": "bottom",
+      "actual_mm": 0.09432919332935757,
+      "required_mm": 0.15
+    },
+    {
+      "check": "via_to_track_mm",
+      "via": "pcb_via_73",
+      "track": "saved_phase_null_0_138",
+      "segment": 2,
+      "layer": "bottom",
+      "actual_mm": -0.06920000000000012,
+      "required_mm": 0.15
+    },
+    {
+      "check": "via_to_track_mm",
+      "via": "pcb_via_73",
+      "track": "saved_phase_null_0_140",
+      "segment": 2,
+      "layer": "bottom",
+      "actual_mm": -0.3,
+      "required_mm": 0.15
+    },
+    {
+      "check": "via_to_track_mm",
+      "via": "pcb_via_88",
+      "track": "saved_phase_null_0_136",
+      "segment": 2,
+      "layer": "bottom",
+      "actual_mm": -0.08690000000000014,
+      "required_mm": 0.15
+    },
+    {
+      "check": "via_to_track_mm",
+      "via": "pcb_via_90",
+      "track": "saved_phase_null_0_135",
+      "segment": 1,
+      "layer": "bottom",
+      "actual_mm": -0.2350000000000005,
+      "required_mm": 0.15
+    },
+    {
+      "check": "via_to_track_mm",
+      "via": "pcb_via_90",
+      "track": "saved_phase_null_0_135",
+      "segment": 2,
+      "layer": "bottom",
+      "actual_mm": -0.003693516379174533,
+      "required_mm": 0.15
+    }
+  ],
+  "passed": false
+}

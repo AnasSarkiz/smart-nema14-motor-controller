@@ -1,0 +1,30 @@
+{
+  "input_sha256": "ef0015996f32b7ac072eb6ea2ddf01577c1ccb4291856d9b597f1dd39371149d",
+  "layers_inspected": [
+    "top",
+    "inner1",
+    "inner2",
+    "bottom"
+  ],
+  "findings": [
+    "New through vias and existing-trace bends inspected on all four layers; independent track/drill/fill checks pass.",
+    "Crowded automatic reference silkscreen remains unapproved.",
+    "Nine electronic schematic sheets and all imported component definitions/placements are unchanged from revision 18."
+  ],
+  "status": "partial_copper_review_only",
+  "fabrication_approved": false,
+  "current_source_partial_sha256": "38bd6ae875aa963ffed135e8cb85d749997855ab7ec81f8771d4236edfdb4b17",
+  "current_source_geometry_exactly_matches_reviewed_candidate": true,
+  "compared_physical_primitive_types": [
+    "pcb_board",
+    "pcb_component",
+    "pcb_copper_pour",
+    "pcb_hole",
+    "pcb_keepout",
+    "pcb_silkscreen_line",
+    "pcb_silkscreen_text",
+    "pcb_smtpad",
+    "pcb_trace",
+    "pcb_via"
+  ]
+}

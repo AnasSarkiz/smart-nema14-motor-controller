@@ -1,0 +1,46 @@
+{
+  "revision": "0.0.19-alpha.0",
+  "checks": [
+    {
+      "command": "tsci check netlist index.circuit.tsx",
+      "log": "check-netlist.log",
+      "sha256": "ed81ba6b739cc86e3893765e600d1777d9bc85ef9614b86b769f620ccb6499d6",
+      "errors": 0,
+      "warnings": 0,
+      "semantic_finding": null
+    },
+    {
+      "command": "tsci check pin_specification index.circuit.tsx",
+      "log": "check-pin-specification.log",
+      "sha256": "25746d215c75940bda2ef407170294c704d5268bc30fa3b18fc332045532d91d",
+      "errors": 0,
+      "warnings": 27,
+      "semantic_finding": "27 imported metadata warnings identical to revision 18; independently checked physical pin/pad mappings. Not a fabrication waiver."
+    },
+    {
+      "command": "tsci check source index.circuit.tsx",
+      "log": "check-source.log",
+      "sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3",
+      "errors": 0,
+      "warnings": 0,
+      "semantic_finding": null
+    },
+    {
+      "command": "tsci check schematic-placement index.circuit.tsx",
+      "log": "check-schematic-placement.log",
+      "sha256": "d7515c839b2803ecae72a88ecc3038c1066f75812a9cf437981a78cb73c1b543",
+      "errors": 0,
+      "warnings": 0,
+      "semantic_finding": "C1974707 D_VBUS rotation advisory remains user-accepted cosmetic finding; preserved, not suppressed."
+    },
+    {
+      "command": "tsci check placement index.circuit.tsx",
+      "log": "check-placement.log",
+      "sha256": "38df5e053a3984d90bb1403e0a86b01da9b246d9c56980f76ccf7ef0917cbc3c",
+      "errors": 0,
+      "warnings": 0,
+      "semantic_finding": null
+    }
+  ],
+  "scope": "Unchanged electronic definitions/wiring/placement, checked new saved copper; full-board routing remains incomplete."
+}

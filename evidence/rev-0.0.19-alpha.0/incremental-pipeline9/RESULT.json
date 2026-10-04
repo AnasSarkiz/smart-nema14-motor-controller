@@ -1,0 +1,19 @@
+{
+  "command": [
+    "bun",
+    "node_modules/@tscircuit/cli/dist/cli/main.js",
+    "build",
+    "scripts/incremental-i2c-pipeline9.circuit.tsx",
+    "--autorouter-timeout",
+    "90s",
+    "--disable-parts-engine",
+    "--pcb-png",
+    "--pcb-svgs"
+  ],
+  "started_unix": 1791079287.99754,
+  "elapsed_seconds": 102.40974283218384,
+  "exit_code": 1,
+  "stopped_reason": null,
+  "fresh_circuit_output": false,
+  "scope": "Official native routing with unchanged DRC; bounded resource use is not fabrication validation."
+}

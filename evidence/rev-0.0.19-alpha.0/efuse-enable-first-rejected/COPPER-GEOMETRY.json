@@ -1,0 +1,158 @@
+{
+  "revision": "0.0.18-alpha.0",
+  "input": "dist/scripts/efuse-enable-trial/circuit.json",
+  "input_sha256": "c6d57e329d916a278e6b84be04d6a89bf811f8271f9a90c668c9084a2be20529",
+  "scope": "Actual tracks, drills, component/test pads, board edges, NPTH and mechanical keepouts. USB path length is independently measured by measure-usb-paths.py; absent legacy trace-name lengths below are not a USB pass. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 139,
+  "segment_count": 1189,
+  "via_count": 105,
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": {
+      "via": "pcb_via_69",
+      "reference": "J_MOTOR",
+      "pad": "pcb_smtpad_298",
+      "same_net": true,
+      "actual_mm": 0.35393720000000106,
+      "required_mm": 0.35
+    },
+    "track_to_pad_mm": {
+      "track": "EFUSE_ENABLE_DIVIDER_JOIN",
+      "segment": 0,
+      "pad": "pcb_smtpad_400",
+      "reference": "R38",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    "track_to_track_mm": {
+      "first": "EFUSE_ENABLE_TO_PULLUP",
+      "first_segment": 2,
+      "second": "saved_phase_null_0_13",
+      "second_segment": 19,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    "via_to_track_mm": {
+      "via": "pcb_via_19",
+      "track": "EFUSE_ENABLE_TO_PULLUP",
+      "segment": 2,
+      "layer": "bottom",
+      "actual_mm": -0.3,
+      "required_mm": 0.15
+    },
+    "via_to_via_mm": {
+      "first": "pcb_via_28",
+      "second": "pcb_via_33",
+      "actual_mm": 0.15246853090345247,
+      "required_mm": 0.15
+    }
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 44415,
+    "track_to_pad_mm": 211263,
+    "track_to_track_mm": 241693,
+    "via_to_track_mm": 121561,
+    "via_to_via_mm": 5460
+  },
+  "violations": [
+    {
+      "check": "track_to_pad_mm",
+      "track": "EFUSE_ENABLE_DIVIDER_JOIN",
+      "segment": 0,
+      "pad": "pcb_smtpad_400",
+      "reference": "R38",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "EFUSE_ENABLE_DIVIDER_JOIN",
+      "segment": 1,
+      "pad": "pcb_smtpad_400",
+      "reference": "R38",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "EFUSE_ENABLE_DIVIDER_JOIN",
+      "segment": 5,
+      "pad": "pcb_smtpad_400",
+      "reference": "R38",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "EFUSE_ENABLE_TO_PULLUP",
+      "first_segment": 2,
+      "second": "saved_phase_null_0_13",
+      "second_segment": 19,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "EFUSE_ENABLE_TO_PULLUP",
+      "first_segment": 2,
+      "second": "saved_phase_null_0_13",
+      "second_segment": 20,
+      "layer": "bottom",
+      "actual_mm": 0.03059999999999974,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "EFUSE_ENABLE_TO_PULLUP",
+      "first_segment": 2,
+      "second": "saved_phase_null_0_32",
+      "second_segment": 13,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "EFUSE_ENABLE_TO_PULLUP",
+      "first_segment": 2,
+      "second": "saved_phase_null_0_32",
+      "second_segment": 14,
+      "layer": "bottom",
+      "actual_mm": 0.03059999999999974,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "EFUSE_ENABLE_TO_PULLUP",
+      "first_segment": 2,
+      "second": "saved_phase_null_0_33",
+      "second_segment": 9,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "EFUSE_ENABLE_TO_PULLUP",
+      "first_segment": 2,
+      "second": "saved_phase_null_0_33",
+      "second_segment": 10,
+      "layer": "bottom",
+      "actual_mm": 0.03059999999999974,
+      "required_mm": 0.15
+    },
+    {
+      "check": "via_to_track_mm",
+      "via": "pcb_via_19",
+      "track": "EFUSE_ENABLE_TO_PULLUP",
+      "segment": 2,
+      "layer": "bottom",
+      "actual_mm": -0.3,
+      "required_mm": 0.15
+    }
+  ],
+  "passed": false
+}

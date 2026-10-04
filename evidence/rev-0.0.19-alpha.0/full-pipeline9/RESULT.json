@@ -1,0 +1,18 @@
+{
+  "command": [
+    "bun",
+    "node_modules/@tscircuit/cli/dist/cli/main.js",
+    "build",
+    "scripts/pipeline9-full.circuit.tsx",
+    "--autorouter-timeout",
+    "10m",
+    "--pcb-png",
+    "--pcb-svgs"
+  ],
+  "started_unix": 1791079477.131274,
+  "elapsed_seconds": 150.6173539161682,
+  "exit_code": 1,
+  "stopped_reason": null,
+  "fresh_circuit_output": true,
+  "scope": "Official native routing with unchanged DRC; bounded resource use is not fabrication validation."
+}

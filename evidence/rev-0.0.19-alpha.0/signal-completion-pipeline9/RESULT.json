@@ -1,0 +1,18 @@
+{
+  "command": [
+    "bun",
+    "node_modules/@tscircuit/cli/dist/cli/main.js",
+    "build",
+    "scripts/signal-completion-pipeline9.circuit.tsx",
+    "--autorouter-timeout",
+    "10m",
+    "--pcb-png",
+    "--pcb-svgs"
+  ],
+  "started_unix": 1791079779.151187,
+  "elapsed_seconds": 55.51356601715088,
+  "exit_code": -9,
+  "stopped_reason": "Stopped before disk exhaustion: less than 2 GiB available",
+  "fresh_circuit_output": false,
+  "scope": "Official native routing with unchanged DRC; bounded resource use is not fabrication validation."
+}
