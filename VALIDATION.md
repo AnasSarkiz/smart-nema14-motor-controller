@@ -1,6 +1,6 @@
 # Current revision 0.0.18-alpha.0 — connected ground and isolated eFuse return
 
-**Work-in-progress routing prototype; NOT fabrication ready; NOT hardware tested.** 2026-10-04 Europe/Tirane. Source basis: private Git/main 1ce8ae1ec56230643649e88294bb7ba3654c133c. Publication is pending until a receipt identifies the pushed circuit source revision and complete registry readback.
+**Work-in-progress routing prototype; NOT fabrication ready; NOT hardware tested.** 2026-10-04 Europe/Tirane. Published circuit source: private Git/main ace862f130c25a5aa3e33bdd00d59e6c790d317a. Private release c2c21533-6762-49ba-8bc5-57f77a5ffbff contains 1,073 exact files (129,019,703 raw bytes), all SHA256 verified through official downloads on 2026-10-04T01:52:28Z. PUBLICATION-RECEIPT.json records the source/upload result; hosted build success remains separately unverified.
 
 | Stage | Status | Current evidence and remaining work |
 | --- | --- | --- |
@@ -11,7 +11,7 @@
 | 5. Full automated/visual approval | not started | Partial native shorts and independent actual tracks/drills/fills pass; four current layers reviewed. Full-board connectivity, power/thermal/USB qualification, silkscreen correction and accepted snapshots remain required. |
 | 6. Prototype fabrication | not started | Same-source approved Gerbers/drills/108-fitted BOM/CPL, CAM and assembler review remain pending. No order placed. |
 | 7. Physical prototype | not started | No hardware measurements or delivered/tested firmware. |
-| 8. Store release | in progress | Current revision will remain a private prototype. Last source-readback-verified package is 0.0.17-alpha.1; hosted success is unverified. |
+| 8. Store release | in progress | Private prototype 0.0.18-alpha.0 is fully source-upload/readback verified; hosted build success is unverified. |
 
 Pinned released dependencies: CLI 0.1.2237, tscircuit 0.0.2743, core 0.0.2074, props 0.0.684, checks 0.0.238, capacity-autorouter 0.0.956, circuit-json 0.0.514, EasyEDA 0.0.370 and runframe 0.0.2897. Official upgrade and registry version evidence are retained. No dependency patch, custom router, manufactured net port or imported definition edit is used.
 
