@@ -1,0 +1,227 @@
+{
+  "version": "0.0.19-alpha.0",
+  "source_commit": "45ef75776d472373224b4cb9902775e099f7e107",
+  "package_name": "AnasSarkiz/smart-nema14-motor-controller--01a0fd9b",
+  "package_release_id": "8aae13ac-f696-41ef-af35-75d8e16237da",
+  "scope": "Public incomplete prototype, exact checked local diagnostic build artifacts; native errors retained and cloud success not claimed",
+  "verification": [
+    {
+      "file_path": ".gitignore",
+      "sha256": "d95bdaf265178637eca75e6beff490b6e50c515fdeac05d7a201f8afc48f72bc",
+      "verified_anonymously": true
+    },
+    {
+      "file_path": "README.md",
+      "sha256": "b365fbfff917ea80cf70d4d07528c2e61c0c8049f013a963872762d3c3e26b9a",
+      "verified_anonymously": true
+    },
+    {
+      "file_path": "VALIDATION.md",
+      "sha256": "14240a94b70645cd8ff504d3b8dd887ae21c8253f924589e9df27c58344011ea",
+      "verified_anonymously": true
+    },
+    {
+      "file_path": "build/routing-review/BUILD-STATUS.json",
+      "sha256": "ce2306308d038306553bad04907e58a7a24e59935b1708bec0d20a1b9f8af3f9",
+      "verified_anonymously": true
+    },
+    {
+      "file_path": "build/routing-review/circuit.json",
+      "sha256": "38bd6ae875aa963ffed135e8cb85d749997855ab7ec81f8771d4236edfdb4b17",
+      "verified_anonymously": true
+    },
+    {
+      "file_path": "evidence/rev-0.0.19-alpha.0/PUBLIC-VISIBILITY.json",
+      "sha256": "d57f8b2a99f6756d205c4c04f74113aba559c6a49ab339ce994bdcb56dbe91ea",
+      "verified_anonymously": true
+    },
+    {
+      "file_path": "evidence/rev-0.0.19-alpha.0/public-build/HOSTED-BUILD-STATUS.json",
+      "sha256": "cc938ba3abc532d69c0ec698958aa86e85de3c506dd9d10460ba62c46452a775",
+      "verified_anonymously": true
+    },
+    {
+      "file_path": "evidence/rev-0.0.19-alpha.0/public-build/LOCAL-CHECKS.json",
+      "sha256": "0af349791e927d47099d6872ed9230f7011788cf12d7f8fa748bd8bbd3d536ef",
+      "verified_anonymously": true
+    },
+    {
+      "file_path": "evidence/rev-0.0.19-alpha.0/public-build/format.log",
+      "sha256": "95210fd096d4742f25281f07b23654d7028feb6b1dc80453d9d3f7106fd16314",
+      "verified_anonymously": true
+    },
+    {
+      "file_path": "evidence/rev-0.0.19-alpha.0/public-build/shorts.log",
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca",
+      "verified_anonymously": true
+    },
+    {
+      "file_path": "evidence/rev-0.0.19-alpha.0/public-build/typecheck.log",
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92",
+      "verified_anonymously": true
+    },
+    {
+      "file_path": "tscircuit.config.json",
+      "sha256": "5945f682b0af43f2c6531b8744d08fd2603098d9e0a9fa74c5b34b9d0dd4a407",
+      "verified_anonymously": true
+    },
+    {
+      "file_path": "dist/routing-review/circuit.json",
+      "sha256": "38bd6ae875aa963ffed135e8cb85d749997855ab7ec81f8771d4236edfdb4b17",
+      "verified_anonymously": true
+    },
+    {
+      "file_path": "dist/routing-review/BUILD-STATUS.json",
+      "sha256": "ce2306308d038306553bad04907e58a7a24e59935b1708bec0d20a1b9f8af3f9",
+      "verified_anonymously": true
+    }
+  ],
+  "files": [
+    {
+      "file_path": ".gitignore",
+      "bytes": 908,
+      "sha256": "d95bdaf265178637eca75e6beff490b6e50c515fdeac05d7a201f8afc48f72bc"
+    },
+    {
+      "file_path": "README.md",
+      "bytes": 8871,
+      "sha256": "b365fbfff917ea80cf70d4d07528c2e61c0c8049f013a963872762d3c3e26b9a"
+    },
+    {
+      "file_path": "VALIDATION.md",
+      "bytes": 115746,
+      "sha256": "14240a94b70645cd8ff504d3b8dd887ae21c8253f924589e9df27c58344011ea"
+    },
+    {
+      "file_path": "build/routing-review/BUILD-STATUS.json",
+      "bytes": 1593,
+      "sha256": "ce2306308d038306553bad04907e58a7a24e59935b1708bec0d20a1b9f8af3f9"
+    },
+    {
+      "file_path": "build/routing-review/circuit.json",
+      "bytes": 3457805,
+      "sha256": "38bd6ae875aa963ffed135e8cb85d749997855ab7ec81f8771d4236edfdb4b17"
+    },
+    {
+      "file_path": "evidence/rev-0.0.19-alpha.0/PUBLIC-VISIBILITY.json",
+      "bytes": 277,
+      "sha256": "d57f8b2a99f6756d205c4c04f74113aba559c6a49ab339ce994bdcb56dbe91ea"
+    },
+    {
+      "file_path": "evidence/rev-0.0.19-alpha.0/public-build/HOSTED-BUILD-STATUS.json",
+      "bytes": 543,
+      "sha256": "cc938ba3abc532d69c0ec698958aa86e85de3c506dd9d10460ba62c46452a775"
+    },
+    {
+      "file_path": "evidence/rev-0.0.19-alpha.0/public-build/LOCAL-CHECKS.json",
+      "bytes": 840,
+      "sha256": "0af349791e927d47099d6872ed9230f7011788cf12d7f8fa748bd8bbd3d536ef"
+    },
+    {
+      "file_path": "evidence/rev-0.0.19-alpha.0/public-build/format.log",
+      "bytes": 313,
+      "sha256": "95210fd096d4742f25281f07b23654d7028feb6b1dc80453d9d3f7106fd16314"
+    },
+    {
+      "file_path": "evidence/rev-0.0.19-alpha.0/public-build/shorts.log",
+      "bytes": 35,
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    },
+    {
+      "file_path": "evidence/rev-0.0.19-alpha.0/public-build/typecheck.log",
+      "bytes": 15,
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    {
+      "file_path": "tscircuit.config.json",
+      "bytes": 195,
+      "sha256": "5945f682b0af43f2c6531b8744d08fd2603098d9e0a9fa74c5b34b9d0dd4a407"
+    },
+    {
+      "file_path": "dist/routing-review/circuit.json",
+      "bytes": 3457805,
+      "sha256": "38bd6ae875aa963ffed135e8cb85d749997855ab7ec81f8771d4236edfdb4b17"
+    },
+    {
+      "file_path": "dist/routing-review/BUILD-STATUS.json",
+      "bytes": 1593,
+      "sha256": "ce2306308d038306553bad04907e58a7a24e59935b1708bec0d20a1b9f8af3f9"
+    }
+  ],
+  "started_at": "2026-10-04T11:52:51.603Z",
+  "package_visibility": {
+    "is_private": false,
+    "is_unlisted": false,
+    "public_dist_enabled": true
+  },
+  "upload_response": "Upload response timed out; completion is determined by full direct-download checksums below",
+  "preview": {
+    "circuit_json_found": true,
+    "component_path": "routing-review.circuit.tsx",
+    "semantic_sha256": "4e0cc727459dfd6488950feb9bc04ffafee345f82e3cdbf106c8ee017bba281b",
+    "missing_connection_errors": 88,
+    "verified_anonymously": true
+  },
+  "github_artifact": {
+    "url": "https://raw.githubusercontent.com/AnasSarkiz/smart-nema14-motor-controller/45ef75776d472373224b4cb9902775e099f7e107/build/routing-review/circuit.json",
+    "sha256": "38bd6ae875aa963ffed135e8cb85d749997855ab7ec81f8771d4236edfdb4b17",
+    "verified_anonymously": true
+  },
+  "hosted_builds": [
+    {
+      "package_build_id": "35ace8c5-eaff-4a48-ba61-53bfecc99ce1",
+      "package_release_id": "8aae13ac-f696-41ef-af35-75d8e16237da",
+      "created_at": "2026-10-04T11:52:20.547Z",
+      "build_in_progress": true,
+      "circuit_json_build_in_progress": false,
+      "circuit_json_build_started_at": null,
+      "circuit_json_build_completed_at": null,
+      "circuit_json_build_error": null,
+      "transpilation_in_progress": false,
+      "transpilation_error": null,
+      "image_generation_in_progress": false,
+      "image_generation_error": null,
+      "user_code_job_error": null
+    },
+    {
+      "package_build_id": "3a3ca982-fc57-4f5e-aaaa-be80e040ce8e",
+      "package_release_id": "8aae13ac-f696-41ef-af35-75d8e16237da",
+      "created_at": "2026-10-04T11:15:43.594Z",
+      "build_in_progress": false,
+      "circuit_json_build_in_progress": false,
+      "circuit_json_build_started_at": null,
+      "circuit_json_build_completed_at": null,
+      "circuit_json_build_error": null,
+      "transpilation_in_progress": false,
+      "transpilation_error": null,
+      "image_generation_in_progress": false,
+      "image_generation_error": null,
+      "user_code_job_error": {
+        "message": "Build timed out after 30 minutes",
+        "error_code": "user_code_job_timeout"
+      }
+    },
+    {
+      "package_build_id": "85f71957-f097-4e2b-81ee-b054a8c26a82",
+      "package_release_id": "8aae13ac-f696-41ef-af35-75d8e16237da",
+      "created_at": "2026-10-04T02:45:04.505Z",
+      "build_in_progress": false,
+      "circuit_json_build_in_progress": false,
+      "circuit_json_build_started_at": null,
+      "circuit_json_build_completed_at": null,
+      "circuit_json_build_error": null,
+      "transpilation_in_progress": false,
+      "transpilation_error": null,
+      "image_generation_in_progress": false,
+      "image_generation_error": null,
+      "user_code_job_error": {
+        "message": "Build timed out after 30 minutes",
+        "error_code": "user_code_job_timeout"
+      }
+    }
+  ],
+  "hosted_status_scope": "Direct artifact readback and preview success do not rewrite or override hosted main build failures",
+  "verified_at": "2026-10-04T11:52:58.477Z",
+  "remote_inventory_count": 1170,
+  "hosted_build_success_verified": false
+}
