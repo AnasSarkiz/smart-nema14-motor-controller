@@ -1,0 +1,2210 @@
+{
+  "revision": "0.0.18-alpha.0",
+  "distribution_scope": "Exact committed sources, all unmodified imports/CAD, selected motor model and current checked partial copper. Large historical diagnostics/references remain in private Git with hashes; every failure log and result remains explicit. Incomplete routing prototype, not fabrication ready.",
+  "included_files": 2049,
+  "included_bytes": 370747253,
+  "excluded_diagnostic_files": [
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C2847904.raweasy.json",
+      "size_bytes": 92711,
+      "sha256": "f014d662826a17458ce82b662d4dd09e5eac7952f173bb114c204dcd48af1a2d",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/C465949.raweasy.json",
+      "size_bytes": 89593,
+      "sha256": "e2ca37e3badd16964f75921ba7ea654ae7000fc740697e2a85423a6ee7fb91b9",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/controller-placement.png",
+      "size_bytes": 122012,
+      "sha256": "4d4c40f2b18bc2951db264b84e7ed15afa4b0bb9cce90c89c28243aa476d69bc",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-CAN.png",
+      "size_bytes": 149966,
+      "sha256": "3d4ae57d5239a5877555ea5c320fcb8a9df676a3e59d632bd5312499da5bc52e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-Encoder.png",
+      "size_bytes": 162149,
+      "sha256": "68796688dcd4c3919eaf6b50ae3c5ff749cf3c40fa701ce106ee1672f7bdf4eb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-InputPower.png",
+      "size_bytes": 209915,
+      "sha256": "03f98bba288b937d358746643a16123a06fd20b6c04f1309c7e5021554d8a7fb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-Interfaces.png",
+      "size_bytes": 269771,
+      "sha256": "2d25ef2bddbf5cdc5f9074a7db535d1a208dbf2ddab2ebe2b60ea276b4fdc3cc",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-LogicPower.png",
+      "size_bytes": 163264,
+      "sha256": "a30a482bf504ed11eb707d2a712acc366cb5006a706f2ec36cbf588f9706a915",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-MCU.png",
+      "size_bytes": 218990,
+      "sha256": "4a00fcba9c3f6d0f1009b949cd911cc9b6f159ee14a20472c86c752f5f195102",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-MotorDriver.png",
+      "size_bytes": 229748,
+      "sha256": "b58c615494a2618fccd9e1b4f3de824dfef26aaf176c69d00021f620927e9755",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-Programming.png",
+      "size_bytes": 208752,
+      "sha256": "c6aa8e429114c162a13f82ef5e1d29ebd74e867b2a2fdad037eee9029b03e9e1",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.13-alpha.0/schematic-UsbPd.png",
+      "size_bytes": 249163,
+      "sha256": "214c90738ef6e58bf22274136432c2ae1942234b79cf2156df666076db22fd1c",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/PUBLICATION-RECEIPT.json",
+      "size_bytes": 166373,
+      "sha256": "55d7ed5d1f4245abc07e9001de0c4177e3af7f95bbdb0b1da6dfa16cd65dfed1",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-CAN.png",
+      "size_bytes": 149966,
+      "sha256": "3d4ae57d5239a5877555ea5c320fcb8a9df676a3e59d632bd5312499da5bc52e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-Encoder.png",
+      "size_bytes": 162149,
+      "sha256": "68796688dcd4c3919eaf6b50ae3c5ff749cf3c40fa701ce106ee1672f7bdf4eb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-InputPower.png",
+      "size_bytes": 228512,
+      "sha256": "793a0d23780f4f7f2a6686b33907ca64fac9c356901011340b8ad7ecf05db38f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-Interfaces.png",
+      "size_bytes": 269771,
+      "sha256": "2d25ef2bddbf5cdc5f9074a7db535d1a208dbf2ddab2ebe2b60ea276b4fdc3cc",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-LogicPower.png",
+      "size_bytes": 163182,
+      "sha256": "ae2b4ca6fbafe9a6154d5d9b1f4e8642c060690107ef921baf03f16f80584f6b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-MCU.png",
+      "size_bytes": 218990,
+      "sha256": "4a00fcba9c3f6d0f1009b949cd911cc9b6f159ee14a20472c86c752f5f195102",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-MotorDriver.png",
+      "size_bytes": 229474,
+      "sha256": "e8cf7e88a805ef8207ce1d9a8f081791230395013b99dafd03e421f809508e64",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-Programming.png",
+      "size_bytes": 208752,
+      "sha256": "c6aa8e429114c162a13f82ef5e1d29ebd74e867b2a2fdad037eee9029b03e9e1",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.15-alpha.0/schematic-UsbPd.png",
+      "size_bytes": 249098,
+      "sha256": "fc0feaacf43797c1e1bbccb45066c9072bbfff646d8a87d9c432af60a4633ac2",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-CAN.png",
+      "size_bytes": 149966,
+      "sha256": "3d4ae57d5239a5877555ea5c320fcb8a9df676a3e59d632bd5312499da5bc52e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-Encoder.png",
+      "size_bytes": 162149,
+      "sha256": "68796688dcd4c3919eaf6b50ae3c5ff749cf3c40fa701ce106ee1672f7bdf4eb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-InputPower.png",
+      "size_bytes": 228971,
+      "sha256": "c28e265f748f49e0eef906a0e8d8f1248ffed0f99ae26e1e1107cd94a834e45f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-Interfaces.png",
+      "size_bytes": 269771,
+      "sha256": "2d25ef2bddbf5cdc5f9074a7db535d1a208dbf2ddab2ebe2b60ea276b4fdc3cc",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-LogicPower.png",
+      "size_bytes": 163182,
+      "sha256": "ae2b4ca6fbafe9a6154d5d9b1f4e8642c060690107ef921baf03f16f80584f6b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-MCU.png",
+      "size_bytes": 218990,
+      "sha256": "4a00fcba9c3f6d0f1009b949cd911cc9b6f159ee14a20472c86c752f5f195102",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-MotorDriver.png",
+      "size_bytes": 229474,
+      "sha256": "e8cf7e88a805ef8207ce1d9a8f081791230395013b99dafd03e421f809508e64",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-Programming.png",
+      "size_bytes": 208752,
+      "sha256": "c6aa8e429114c162a13f82ef5e1d29ebd74e867b2a2fdad037eee9029b03e9e1",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/schematic-UsbPd.png",
+      "size_bytes": 249098,
+      "sha256": "fc0feaacf43797c1e1bbccb45066c9072bbfff646d8a87d9c432af60a4633ac2",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.16-alpha.0/unrouted-pcb.png",
+      "size_bytes": 136064,
+      "sha256": "71c51c3cb110730ab36599df975ba32819c46b5cec620d328dc4fa5b82a6a53c",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/first-routed-copper-check.log",
+      "size_bytes": 2278641,
+      "sha256": "2997fc72614c50d4e56638f03a317e85b7374d56d04bc2005442db3f10727fc6",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/first-routed-output/circuit.json",
+      "size_bytes": 5198901,
+      "sha256": "e6fcd2d2a5cb96a88d8e9b4ab2ed175ada5e60f167e63f2f84cd5cef06f12ca4",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/first-routed-output/pcb.png",
+      "size_bytes": 267714,
+      "sha256": "8091f3809f649d98efd4d1410d4a5f81dc1b152d43af05d4a251e4e09eceb89b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/first-routed-output/pcb.svg",
+      "size_bytes": 3693237,
+      "sha256": "56809d8893ba512b7b1bc5dc243372897afd04ab655832b35e2405c021e66243",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/ground-dogbone-router/phase-0.input.simple-route.json",
+      "size_bytes": 1442209,
+      "sha256": "04ee1cdf57119c6e31827f4733b3e9d894df8cb7cc8f955e8b9bfa0a4f26c734",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/ground-plane-router/phase-0.input.simple-route.json",
+      "size_bytes": 1398914,
+      "sha256": "c73b2b1294017bccd99a72a8c6f7d2644ae1bde39c124c96d62fe1e1df07c38a",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/initial-router/phase-0.input.simple-route.json",
+      "size_bytes": 1415439,
+      "sha256": "0a02f3ef6e9807a3426e7aafba1223053e53587e4d66d18cd4144b100aa6d93b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/KICAD-INTERCHANGE-AUDIT.json",
+      "size_bytes": 162938,
+      "sha256": "b2f5fb31a143288aeb963bbb5dc7b8a772904ba7181447722e3c81111c2a36e8",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/board.kicad_pcb",
+      "size_bytes": 689878,
+      "sha256": "a6e03e5f9ab79f51102f278a048a24bf7409520c48d5913ccd0fbd6662f802dd",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/diagnostic-drc.json",
+      "size_bytes": 656908,
+      "sha256": "1670a5ec371bc27fd856f47330afc7a5aa35cf58dfd25c5cca07de215bb02644",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/kicad-native.dsn",
+      "size_bytes": 122110,
+      "sha256": "8f1e7a70e6fe10fb1a7371f7ab7d5b67dbe29d2b3cadbd31184e314d0bc0fdb5",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/local-components.dsn",
+      "size_bytes": 118711,
+      "sha256": "3d74cdc91d2a2fa9dd9813d7ff0f3cc1002d0c95e5ff4c78929302cb6642c4ca",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/local-copper.json",
+      "size_bytes": 354474,
+      "sha256": "c903c1648172e37c264404788fe03abc1044b6dbdce9d440728b4c7d9fb728bb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/local-routed.kicad_pcb",
+      "size_bytes": 1894896,
+      "sha256": "9ee8aba0a386488288d8c6278f92b8cd7d2a5a8410ce18684a4e60c180967ec5",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/local-routed.ses",
+      "size_bytes": 112774,
+      "sha256": "e58200df3c4880acc5b9fdc5dfe8a2342d57ec17d03c4e4511a34d3021cb2d30",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/local-routing.dsn",
+      "size_bytes": 2893733,
+      "sha256": "03e768c84f85e3f46bb4808f94384b60f329f6468f0258fd56924f1d846f7ecf",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/local-routing.kicad_pcb",
+      "size_bytes": 1667427,
+      "sha256": "e4a62c70cdfe42d348475ceeeb477a2b05f4603f3701b88f79271b066c341e43",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/pcb.png",
+      "size_bytes": 136724,
+      "sha256": "4ba80ae07e630a205ff59a6fc074de05a7243f0ce00da5f00936c35a80933ace",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/pcb.svg",
+      "size_bytes": 478451,
+      "sha256": "bdc622e12c2d7a8d05232c5be09338b2c1e2cb488ccf0adc2a22a11e7ba9faee",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/resumed-routing.dsn",
+      "size_bytes": 3006675,
+      "sha256": "4028deba7e29662b158ad53423a803255ce297525653fb24cf4e04c782dd7806",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/routing-interchange.kicad_pcb",
+      "size_bytes": 580021,
+      "sha256": "a98e27f87be1a1e74bae4cbd59dafea1726264e17d914903926b659c3ba18dc6",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/routing-pad-guards.json",
+      "size_bytes": 2764287,
+      "sha256": "4e40d4d9b9526cf4b12adb6dea6486e263291d945b7b898aca8fef72eb7bc491",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/saved-paths.json",
+      "size_bytes": 574087,
+      "sha256": "502b6e4a1c9c0ec1c182efdde31edd54b205b35d7bb81811bfb1287177bfb7a0",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-CAN.png",
+      "size_bytes": 149966,
+      "sha256": "3d4ae57d5239a5877555ea5c320fcb8a9df676a3e59d632bd5312499da5bc52e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-Encoder.png",
+      "size_bytes": 162149,
+      "sha256": "68796688dcd4c3919eaf6b50ae3c5ff749cf3c40fa701ce106ee1672f7bdf4eb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-InputPower.png",
+      "size_bytes": 228971,
+      "sha256": "c28e265f748f49e0eef906a0e8d8f1248ffed0f99ae26e1e1107cd94a834e45f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-InputPower.svg",
+      "size_bytes": 154105,
+      "sha256": "06591bd387024c97aca485a174726b29210269d43e576eaaf47b0ce477923a49",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-Interfaces.png",
+      "size_bytes": 269771,
+      "sha256": "2d25ef2bddbf5cdc5f9074a7db535d1a208dbf2ddab2ebe2b60ea276b4fdc3cc",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-Interfaces.svg",
+      "size_bytes": 244051,
+      "sha256": "e9a341df22e84c2a20800a60de3a25c7aea817e1044d686a4cc60cda5f1f5a0f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-LogicPower.png",
+      "size_bytes": 163182,
+      "sha256": "ae2b4ca6fbafe9a6154d5d9b1f4e8642c060690107ef921baf03f16f80584f6b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-LogicPower.svg",
+      "size_bytes": 97163,
+      "sha256": "da217ef6eb58ff5a75b3c53fae74483a41b6d7296fea40f142f8ca28eaba520e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-MCU.png",
+      "size_bytes": 218990,
+      "sha256": "4a00fcba9c3f6d0f1009b949cd911cc9b6f159ee14a20472c86c752f5f195102",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-MCU.svg",
+      "size_bytes": 172895,
+      "sha256": "47859da4050cfce74a7c756378fdf33e84c40127a5b9e73582df89efddd3be0b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-MotorDriver.png",
+      "size_bytes": 229474,
+      "sha256": "e8cf7e88a805ef8207ce1d9a8f081791230395013b99dafd03e421f809508e64",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-MotorDriver.svg",
+      "size_bytes": 198410,
+      "sha256": "2dc99c931445250c20136b57a4996617ae4ba15397482acc5d9bb1c03813c372",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-Programming.png",
+      "size_bytes": 208752,
+      "sha256": "c6aa8e429114c162a13f82ef5e1d29ebd74e867b2a2fdad037eee9029b03e9e1",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-Programming.svg",
+      "size_bytes": 141319,
+      "sha256": "376e80a64d60cb62796660b3568121fee5ddf278af51b960dca9e71cc9e4d4bd",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-UsbPd.png",
+      "size_bytes": 250711,
+      "sha256": "5766be18c95dba939e5b6359f1dfebf8d8a5fbbfc37bb4fa935a723513a58967",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic-UsbPd.svg",
+      "size_bytes": 211711,
+      "sha256": "9f02e18bc4e81f3ac25340c139e4b04c08fc791778ef0a7cc1c21cc14717661c",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-060/schematic.svg",
+      "size_bytes": 173013,
+      "sha256": "b5c47b11e459745a475c4a9113f43a8a71e8f60093a3260205b702a172f3d855",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/KICAD-INTERCHANGE-AUDIT.json",
+      "size_bytes": 162852,
+      "sha256": "2bf39fa9c15f22a6e38e4f90e62aac4b0718db47c3ee2fcbc2669a7ce441baa0",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/board.kicad_pcb",
+      "size_bytes": 685776,
+      "sha256": "fccb2aef43077c66c5c1507529a5870bf41320c7521f3107bb1cc5efbe77f550",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/circuit.json",
+      "size_bytes": 2094960,
+      "sha256": "b6da7438b503a04848d804ffc4f23b06372e2ba542fba4eebf585b5694e0ae5b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/kicad-native.dsn",
+      "size_bytes": 121573,
+      "sha256": "5b697206af9391aa7f5aaf3b9a9d97a108c454f0c97e358d16831e95dc8f537d",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/local-components.dsn",
+      "size_bytes": 118455,
+      "sha256": "7b50dbd580728c1e3380d42c395411855d22329b37a6488ad69fc29c8f9a4831",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/local-routing.dsn",
+      "size_bytes": 1664989,
+      "sha256": "2e0cd3ef80ad0a9cf4bd6034b718af3dd7d7a1e89cf86735a2784bbe5e268115",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/local-routing.kicad_pcb",
+      "size_bytes": 1237260,
+      "sha256": "5d668178b8db3ad80820c132cc1a2dbdd622faa65af5e4afd2e58794eecf1f4a",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/pcb.png",
+      "size_bytes": 136749,
+      "sha256": "3d71e5328f6639f10a33a482ac835169f21f7703071a1997f6fd68ca5fc1b7b8",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/pcb.svg",
+      "size_bytes": 477125,
+      "sha256": "1de9ef39df04d5220318f2dffcb33c8f59f8f792580c390ba443c12ec8ce56ab",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/routing-interchange.kicad_pcb",
+      "size_bytes": 577323,
+      "sha256": "51c79f20a6342c3847ffc5109352b0fda15f1e397ca0144e87dcef97d9d1f10f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/routing-pad-guards.json",
+      "size_bytes": 1491514,
+      "sha256": "98759b16a3477b6f3d8ef62010d43dd15be714d0a3c89e4a5dc177a27baab2b7",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-CAN.png",
+      "size_bytes": 149966,
+      "sha256": "3d4ae57d5239a5877555ea5c320fcb8a9df676a3e59d632bd5312499da5bc52e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-Encoder.png",
+      "size_bytes": 162149,
+      "sha256": "68796688dcd4c3919eaf6b50ae3c5ff749cf3c40fa701ce106ee1672f7bdf4eb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-InputPower.png",
+      "size_bytes": 228971,
+      "sha256": "c28e265f748f49e0eef906a0e8d8f1248ffed0f99ae26e1e1107cd94a834e45f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-InputPower.svg",
+      "size_bytes": 154105,
+      "sha256": "06591bd387024c97aca485a174726b29210269d43e576eaaf47b0ce477923a49",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-Interfaces.png",
+      "size_bytes": 269771,
+      "sha256": "2d25ef2bddbf5cdc5f9074a7db535d1a208dbf2ddab2ebe2b60ea276b4fdc3cc",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-Interfaces.svg",
+      "size_bytes": 244051,
+      "sha256": "e9a341df22e84c2a20800a60de3a25c7aea817e1044d686a4cc60cda5f1f5a0f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-LogicPower.png",
+      "size_bytes": 163182,
+      "sha256": "ae2b4ca6fbafe9a6154d5d9b1f4e8642c060690107ef921baf03f16f80584f6b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-LogicPower.svg",
+      "size_bytes": 97163,
+      "sha256": "da217ef6eb58ff5a75b3c53fae74483a41b6d7296fea40f142f8ca28eaba520e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-MCU.png",
+      "size_bytes": 218990,
+      "sha256": "4a00fcba9c3f6d0f1009b949cd911cc9b6f159ee14a20472c86c752f5f195102",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-MCU.svg",
+      "size_bytes": 172895,
+      "sha256": "47859da4050cfce74a7c756378fdf33e84c40127a5b9e73582df89efddd3be0b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-MotorDriver.png",
+      "size_bytes": 229474,
+      "sha256": "e8cf7e88a805ef8207ce1d9a8f081791230395013b99dafd03e421f809508e64",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-MotorDriver.svg",
+      "size_bytes": 198410,
+      "sha256": "2dc99c931445250c20136b57a4996617ae4ba15397482acc5d9bb1c03813c372",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-Programming.png",
+      "size_bytes": 208752,
+      "sha256": "c6aa8e429114c162a13f82ef5e1d29ebd74e867b2a2fdad037eee9029b03e9e1",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-Programming.svg",
+      "size_bytes": 141319,
+      "sha256": "376e80a64d60cb62796660b3568121fee5ddf278af51b960dca9e71cc9e4d4bd",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-UsbPd.png",
+      "size_bytes": 250711,
+      "sha256": "5766be18c95dba939e5b6359f1dfebf8d8a5fbbfc37bb4fa935a723513a58967",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic-UsbPd.svg",
+      "size_bytes": 211711,
+      "sha256": "9f02e18bc4e81f3ac25340c139e4b04c08fc791778ef0a7cc1c21cc14717661c",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb-reference/schematic.svg",
+      "size_bytes": 173013,
+      "sha256": "b5c47b11e459745a475c4a9113f43a8a71e8f60093a3260205b702a172f3d855",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/KICAD-INTERCHANGE-AUDIT.json",
+      "size_bytes": 162852,
+      "sha256": "fd6b202a9303cec2f1403dad1d2bd3ce022ff7de0ebf22a0b4223b45d637ae2f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/board.kicad_pcb",
+      "size_bytes": 683128,
+      "sha256": "a1f9a96592acf6d514661a17b726a11e31b469e8c1b4fb59e037fb76a7c0999f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/circuit.json",
+      "size_bytes": 2093914,
+      "sha256": "11fcff8c56e5afa29be883d2e0762c695786782f381dc620f8a35cc8e5b40993",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/ground-plane-drc.json",
+      "size_bytes": 934870,
+      "sha256": "c39a1b806223e7eb89182a5f000d2b657819ef6b67cb722416b24857e2745d85",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/ground-plane-routed.kicad_pcb",
+      "size_bytes": 756122,
+      "sha256": "b32f24a5fb160a5f92adbf6d89b0c5b60876f00889c35e788f5b670311982709",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/ground-plane-routed.ses",
+      "size_bytes": 95055,
+      "sha256": "1bd3134e8943e7609c80ce255d83925aa4d61339c0b89f89d3bab41d4cc2d637",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/kicad-drc.json",
+      "size_bytes": 739797,
+      "sha256": "e525f63dd6110d41a09beaab5b65c3b624c5a54145502102e47d5b502f74585e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/kicad-ground-plane.dsn",
+      "size_bytes": 118265,
+      "sha256": "5fed089330714e5214499c4655173ef09cc9f0e031821ed3adddc3ac62458234",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/kicad-native.dsn",
+      "size_bytes": 121066,
+      "sha256": "1987ceaab16d4a22e0709453b49ea1fa01fcf905cab9f7307106715dec99d3f1",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/kicad-native.dsn.json",
+      "size_bytes": 261256,
+      "sha256": "c7bc999f18cf4c88f23c5156bf0a8302e7c49d777770fd9a63fc513f89ba5101",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/kicad-refilled.dsn",
+      "size_bytes": 123436,
+      "sha256": "566f6f03343bc480d48704a7c5a352cebda206e59ce562a87e0981d4b5411d4c",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/kicad-routing-unfilled.dsn",
+      "size_bytes": 118112,
+      "sha256": "969c003b0aad4ca4d8e7a2d87e022e42a379281d89bb1f4997ceb2179f897bde",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/pcb.png",
+      "size_bytes": 136006,
+      "sha256": "f5be338116776f347249603d538cbca798400de2f852c36bb4e652020b2ac405",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/pcb.svg",
+      "size_bytes": 475651,
+      "sha256": "73c09cbfea10799728175147be542a3ba46a7edabda674c8b1cd0ac281ad7966",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/routing-ground-plane.kicad_pcb",
+      "size_bytes": 569589,
+      "sha256": "3c528b9c4f8840738d97c9fb6cc17ded0c07ff1fc81522a78f8f37080ef4aaf7",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/routing-interchange-refilled.kicad_pcb",
+      "size_bytes": 561477,
+      "sha256": "87b77cbc6095eea4a956a0cabd535d95d02b27dec2da96d5920e2f24dd66f608",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/routing-interchange.kicad_pcb",
+      "size_bytes": 575287,
+      "sha256": "fca08f81c2b84cf19b1bab42ad318d5da383361b7806a1216a81875083a2f1bf",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/manual-usb/routing-unfilled.kicad_pcb",
+      "size_bytes": 533438,
+      "sha256": "0d531a39167a5cb1060fddabadd90e8c8b9c526e292d608725e1bc6fa3be9bc7",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-routing-core2071-router955.log",
+      "size_bytes": 116438,
+      "sha256": "2f69ab1adde6e5d62a74a47d6b30c5026a7e667925f31a42691eb67dd9b5bfb2",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-routing-usb-ground.log",
+      "size_bytes": 140243,
+      "sha256": "93f9b1e6a7195587e5db5441a631b138e57cdbf071b14308bc4cd39e81904ba5",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/circuit.json",
+      "size_bytes": 3413870,
+      "sha256": "f24a9b26580fe8649038a124dce501e37fe979d718854087a6ee3ac1ddf20022",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/pcb.png",
+      "size_bytes": 190250,
+      "sha256": "0e97477925ad419180988a94326d7e9bf1836c84f5589b035ac17d61ab091399",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/pcb.svg",
+      "size_bytes": 1548815,
+      "sha256": "5937d96d07026aa344b5c874d2bb0e097d7901d2e2d894639fff51c34e6dd470",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-CAN.png",
+      "size_bytes": 149966,
+      "sha256": "3d4ae57d5239a5877555ea5c320fcb8a9df676a3e59d632bd5312499da5bc52e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-Encoder.png",
+      "size_bytes": 162149,
+      "sha256": "68796688dcd4c3919eaf6b50ae3c5ff749cf3c40fa701ce106ee1672f7bdf4eb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-InputPower.png",
+      "size_bytes": 228971,
+      "sha256": "c28e265f748f49e0eef906a0e8d8f1248ffed0f99ae26e1e1107cd94a834e45f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-InputPower.svg",
+      "size_bytes": 154105,
+      "sha256": "06591bd387024c97aca485a174726b29210269d43e576eaaf47b0ce477923a49",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-Interfaces.png",
+      "size_bytes": 269771,
+      "sha256": "2d25ef2bddbf5cdc5f9074a7db535d1a208dbf2ddab2ebe2b60ea276b4fdc3cc",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-Interfaces.svg",
+      "size_bytes": 244051,
+      "sha256": "e9a341df22e84c2a20800a60de3a25c7aea817e1044d686a4cc60cda5f1f5a0f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-LogicPower.png",
+      "size_bytes": 163182,
+      "sha256": "ae2b4ca6fbafe9a6154d5d9b1f4e8642c060690107ef921baf03f16f80584f6b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-LogicPower.svg",
+      "size_bytes": 97163,
+      "sha256": "da217ef6eb58ff5a75b3c53fae74483a41b6d7296fea40f142f8ca28eaba520e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-MCU.png",
+      "size_bytes": 218990,
+      "sha256": "4a00fcba9c3f6d0f1009b949cd911cc9b6f159ee14a20472c86c752f5f195102",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-MCU.svg",
+      "size_bytes": 172895,
+      "sha256": "47859da4050cfce74a7c756378fdf33e84c40127a5b9e73582df89efddd3be0b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-MotorDriver.png",
+      "size_bytes": 229474,
+      "sha256": "e8cf7e88a805ef8207ce1d9a8f081791230395013b99dafd03e421f809508e64",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-MotorDriver.svg",
+      "size_bytes": 198410,
+      "sha256": "2dc99c931445250c20136b57a4996617ae4ba15397482acc5d9bb1c03813c372",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-Programming.png",
+      "size_bytes": 208752,
+      "sha256": "c6aa8e429114c162a13f82ef5e1d29ebd74e867b2a2fdad037eee9029b03e9e1",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-Programming.svg",
+      "size_bytes": 141319,
+      "sha256": "376e80a64d60cb62796660b3568121fee5ddf278af51b960dca9e71cc9e4d4bd",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-UsbPd.png",
+      "size_bytes": 250711,
+      "sha256": "5766be18c95dba939e5b6359f1dfebf8d8a5fbbfc37bb4fa935a723513a58967",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic-UsbPd.svg",
+      "size_bytes": 211711,
+      "sha256": "9f02e18bc4e81f3ac25340c139e4b04c08fc791778ef0a7cc1c21cc14717661c",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-2/schematic.svg",
+      "size_bytes": 173013,
+      "sha256": "b5c47b11e459745a475c4a9113f43a8a71e8f60093a3260205b702a172f3d855",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/circuit.json",
+      "size_bytes": 3402822,
+      "sha256": "0362901182c3aad7f81c7a823754af4cfe251a3bcb85f2bd46947a38ee89656f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/pcb.png",
+      "size_bytes": 190374,
+      "sha256": "ebc2b2aaa35d3611611ec32f04b80c978daaad6d45797c50ef33c4a27b7f9b04",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/pcb.svg",
+      "size_bytes": 1557015,
+      "sha256": "75fe05394035d3579d982f20950111d6ae2a423096190558982ae048a5b095c7",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-CAN.png",
+      "size_bytes": 149966,
+      "sha256": "3d4ae57d5239a5877555ea5c320fcb8a9df676a3e59d632bd5312499da5bc52e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-Encoder.png",
+      "size_bytes": 162149,
+      "sha256": "68796688dcd4c3919eaf6b50ae3c5ff749cf3c40fa701ce106ee1672f7bdf4eb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-InputPower.png",
+      "size_bytes": 228971,
+      "sha256": "c28e265f748f49e0eef906a0e8d8f1248ffed0f99ae26e1e1107cd94a834e45f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-InputPower.svg",
+      "size_bytes": 154105,
+      "sha256": "06591bd387024c97aca485a174726b29210269d43e576eaaf47b0ce477923a49",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-Interfaces.png",
+      "size_bytes": 269771,
+      "sha256": "2d25ef2bddbf5cdc5f9074a7db535d1a208dbf2ddab2ebe2b60ea276b4fdc3cc",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-Interfaces.svg",
+      "size_bytes": 244051,
+      "sha256": "e9a341df22e84c2a20800a60de3a25c7aea817e1044d686a4cc60cda5f1f5a0f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-LogicPower.png",
+      "size_bytes": 163182,
+      "sha256": "ae2b4ca6fbafe9a6154d5d9b1f4e8642c060690107ef921baf03f16f80584f6b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-LogicPower.svg",
+      "size_bytes": 97163,
+      "sha256": "da217ef6eb58ff5a75b3c53fae74483a41b6d7296fea40f142f8ca28eaba520e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-MCU.png",
+      "size_bytes": 218990,
+      "sha256": "4a00fcba9c3f6d0f1009b949cd911cc9b6f159ee14a20472c86c752f5f195102",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-MCU.svg",
+      "size_bytes": 172895,
+      "sha256": "47859da4050cfce74a7c756378fdf33e84c40127a5b9e73582df89efddd3be0b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-MotorDriver.png",
+      "size_bytes": 229474,
+      "sha256": "e8cf7e88a805ef8207ce1d9a8f081791230395013b99dafd03e421f809508e64",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-MotorDriver.svg",
+      "size_bytes": 198410,
+      "sha256": "2dc99c931445250c20136b57a4996617ae4ba15397482acc5d9bb1c03813c372",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-Programming.png",
+      "size_bytes": 208752,
+      "sha256": "c6aa8e429114c162a13f82ef5e1d29ebd74e867b2a2fdad037eee9029b03e9e1",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-Programming.svg",
+      "size_bytes": 141319,
+      "sha256": "376e80a64d60cb62796660b3568121fee5ddf278af51b960dca9e71cc9e4d4bd",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-UsbPd.png",
+      "size_bytes": 250711,
+      "sha256": "5766be18c95dba939e5b6359f1dfebf8d8a5fbbfc37bb4fa935a723513a58967",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic-UsbPd.svg",
+      "size_bytes": 211711,
+      "sha256": "9f02e18bc4e81f3ac25340c139e4b04c08fc791778ef0a7cc1c21cc14717661c",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-3/schematic.svg",
+      "size_bytes": 173013,
+      "sha256": "b5c47b11e459745a475c4a9113f43a8a71e8f60093a3260205b702a172f3d855",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/circuit.json",
+      "size_bytes": 3401725,
+      "sha256": "7b2c5ed4445b59f2e498e8a72ea047fd53bd7b3862a19e041f59690533480b9c",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/pcb.png",
+      "size_bytes": 190386,
+      "sha256": "519953ecc71b2aceb52a9a81f55d5136f130b007d131245ba36541673dcb712f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/pcb.svg",
+      "size_bytes": 1557918,
+      "sha256": "c7ef55b4f81464c60aedbb76ac7d01e4b0d76cd5d4e81eea334878b4d5867dbd",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-CAN.png",
+      "size_bytes": 149966,
+      "sha256": "3d4ae57d5239a5877555ea5c320fcb8a9df676a3e59d632bd5312499da5bc52e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-Encoder.png",
+      "size_bytes": 162149,
+      "sha256": "68796688dcd4c3919eaf6b50ae3c5ff749cf3c40fa701ce106ee1672f7bdf4eb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-InputPower.png",
+      "size_bytes": 228971,
+      "sha256": "c28e265f748f49e0eef906a0e8d8f1248ffed0f99ae26e1e1107cd94a834e45f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-InputPower.svg",
+      "size_bytes": 154105,
+      "sha256": "06591bd387024c97aca485a174726b29210269d43e576eaaf47b0ce477923a49",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-Interfaces.png",
+      "size_bytes": 269771,
+      "sha256": "2d25ef2bddbf5cdc5f9074a7db535d1a208dbf2ddab2ebe2b60ea276b4fdc3cc",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-Interfaces.svg",
+      "size_bytes": 244051,
+      "sha256": "e9a341df22e84c2a20800a60de3a25c7aea817e1044d686a4cc60cda5f1f5a0f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-LogicPower.png",
+      "size_bytes": 163182,
+      "sha256": "ae2b4ca6fbafe9a6154d5d9b1f4e8642c060690107ef921baf03f16f80584f6b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-LogicPower.svg",
+      "size_bytes": 97163,
+      "sha256": "da217ef6eb58ff5a75b3c53fae74483a41b6d7296fea40f142f8ca28eaba520e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-MCU.png",
+      "size_bytes": 218990,
+      "sha256": "4a00fcba9c3f6d0f1009b949cd911cc9b6f159ee14a20472c86c752f5f195102",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-MCU.svg",
+      "size_bytes": 172895,
+      "sha256": "47859da4050cfce74a7c756378fdf33e84c40127a5b9e73582df89efddd3be0b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-MotorDriver.png",
+      "size_bytes": 229474,
+      "sha256": "e8cf7e88a805ef8207ce1d9a8f081791230395013b99dafd03e421f809508e64",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-MotorDriver.svg",
+      "size_bytes": 198410,
+      "sha256": "2dc99c931445250c20136b57a4996617ae4ba15397482acc5d9bb1c03813c372",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-Programming.png",
+      "size_bytes": 208752,
+      "sha256": "c6aa8e429114c162a13f82ef5e1d29ebd74e867b2a2fdad037eee9029b03e9e1",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-Programming.svg",
+      "size_bytes": 141319,
+      "sha256": "376e80a64d60cb62796660b3568121fee5ddf278af51b960dca9e71cc9e4d4bd",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-UsbPd.png",
+      "size_bytes": 250711,
+      "sha256": "5766be18c95dba939e5b6359f1dfebf8d8a5fbbfc37bb4fa935a723513a58967",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic-UsbPd.svg",
+      "size_bytes": 211711,
+      "sha256": "9f02e18bc4e81f3ac25340c139e4b04c08fc791778ef0a7cc1c21cc14717661c",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners-4/schematic.svg",
+      "size_bytes": 173013,
+      "sha256": "b5c47b11e459745a475c4a9113f43a8a71e8f60093a3260205b702a172f3d855",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/circuit.json",
+      "size_bytes": 3429462,
+      "sha256": "c8aad4db7110f47ff801a9cb001751be5bfd2604449a8cf01ff8f0f05fba55d0",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/pcb.png",
+      "size_bytes": 190233,
+      "sha256": "8a530c904ce7c1dff2edaf3c6d7cce059882ff6edb5f1e3cb1b74b899fbbcc52",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/pcb.svg",
+      "size_bytes": 1557455,
+      "sha256": "6e34b9cc11fe89a3ad1f1c0946acf56ae9809e4f693742dbdc7e2495ce149513",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-CAN.png",
+      "size_bytes": 149966,
+      "sha256": "3d4ae57d5239a5877555ea5c320fcb8a9df676a3e59d632bd5312499da5bc52e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-Encoder.png",
+      "size_bytes": 162149,
+      "sha256": "68796688dcd4c3919eaf6b50ae3c5ff749cf3c40fa701ce106ee1672f7bdf4eb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-InputPower.png",
+      "size_bytes": 228971,
+      "sha256": "c28e265f748f49e0eef906a0e8d8f1248ffed0f99ae26e1e1107cd94a834e45f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-InputPower.svg",
+      "size_bytes": 154105,
+      "sha256": "06591bd387024c97aca485a174726b29210269d43e576eaaf47b0ce477923a49",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-Interfaces.png",
+      "size_bytes": 269771,
+      "sha256": "2d25ef2bddbf5cdc5f9074a7db535d1a208dbf2ddab2ebe2b60ea276b4fdc3cc",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-Interfaces.svg",
+      "size_bytes": 244051,
+      "sha256": "e9a341df22e84c2a20800a60de3a25c7aea817e1044d686a4cc60cda5f1f5a0f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-LogicPower.png",
+      "size_bytes": 163182,
+      "sha256": "ae2b4ca6fbafe9a6154d5d9b1f4e8642c060690107ef921baf03f16f80584f6b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-LogicPower.svg",
+      "size_bytes": 97163,
+      "sha256": "da217ef6eb58ff5a75b3c53fae74483a41b6d7296fea40f142f8ca28eaba520e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-MCU.png",
+      "size_bytes": 218990,
+      "sha256": "4a00fcba9c3f6d0f1009b949cd911cc9b6f159ee14a20472c86c752f5f195102",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-MCU.svg",
+      "size_bytes": 172895,
+      "sha256": "47859da4050cfce74a7c756378fdf33e84c40127a5b9e73582df89efddd3be0b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-MotorDriver.png",
+      "size_bytes": 229474,
+      "sha256": "e8cf7e88a805ef8207ce1d9a8f081791230395013b99dafd03e421f809508e64",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-MotorDriver.svg",
+      "size_bytes": 198410,
+      "sha256": "2dc99c931445250c20136b57a4996617ae4ba15397482acc5d9bb1c03813c372",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-Programming.png",
+      "size_bytes": 208752,
+      "sha256": "c6aa8e429114c162a13f82ef5e1d29ebd74e867b2a2fdad037eee9029b03e9e1",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-Programming.svg",
+      "size_bytes": 141319,
+      "sha256": "376e80a64d60cb62796660b3568121fee5ddf278af51b960dca9e71cc9e4d4bd",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-UsbPd.png",
+      "size_bytes": 250711,
+      "sha256": "5766be18c95dba939e5b6359f1dfebf8d8a5fbbfc37bb4fa935a723513a58967",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic-UsbPd.svg",
+      "size_bytes": 211711,
+      "sha256": "9f02e18bc4e81f3ac25340c139e4b04c08fc791778ef0a7cc1c21cc14717661c",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-manual-corners/schematic.svg",
+      "size_bytes": 173013,
+      "sha256": "b5c47b11e459745a475c4a9113f43a8a71e8f60093a3260205b702a172f3d855",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/circuit.json",
+      "size_bytes": 3415502,
+      "sha256": "90e078a32bedb09fe91ada0311aaa18b964a0daf44969f0fccbccf8ca4aae334",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/pcb.png",
+      "size_bytes": 190360,
+      "sha256": "79ab95b69c7735ffc232e1fa0e90aaaa6b9a8f820c95cb18f61c90f554733b13",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/pcb.svg",
+      "size_bytes": 1557501,
+      "sha256": "c42902883f3ebf7785823c12cd8fd97d4e62f3e38884753b9e9ead551a73309b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-CAN.png",
+      "size_bytes": 149966,
+      "sha256": "3d4ae57d5239a5877555ea5c320fcb8a9df676a3e59d632bd5312499da5bc52e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-Encoder.png",
+      "size_bytes": 162149,
+      "sha256": "68796688dcd4c3919eaf6b50ae3c5ff749cf3c40fa701ce106ee1672f7bdf4eb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-InputPower.png",
+      "size_bytes": 228971,
+      "sha256": "c28e265f748f49e0eef906a0e8d8f1248ffed0f99ae26e1e1107cd94a834e45f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-InputPower.svg",
+      "size_bytes": 154105,
+      "sha256": "06591bd387024c97aca485a174726b29210269d43e576eaaf47b0ce477923a49",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-Interfaces.png",
+      "size_bytes": 269771,
+      "sha256": "2d25ef2bddbf5cdc5f9074a7db535d1a208dbf2ddab2ebe2b60ea276b4fdc3cc",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-Interfaces.svg",
+      "size_bytes": 244051,
+      "sha256": "e9a341df22e84c2a20800a60de3a25c7aea817e1044d686a4cc60cda5f1f5a0f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-LogicPower.png",
+      "size_bytes": 163182,
+      "sha256": "ae2b4ca6fbafe9a6154d5d9b1f4e8642c060690107ef921baf03f16f80584f6b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-LogicPower.svg",
+      "size_bytes": 97163,
+      "sha256": "da217ef6eb58ff5a75b3c53fae74483a41b6d7296fea40f142f8ca28eaba520e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-MCU.png",
+      "size_bytes": 218990,
+      "sha256": "4a00fcba9c3f6d0f1009b949cd911cc9b6f159ee14a20472c86c752f5f195102",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-MCU.svg",
+      "size_bytes": 172895,
+      "sha256": "47859da4050cfce74a7c756378fdf33e84c40127a5b9e73582df89efddd3be0b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-MotorDriver.png",
+      "size_bytes": 229474,
+      "sha256": "e8cf7e88a805ef8207ce1d9a8f081791230395013b99dafd03e421f809508e64",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-MotorDriver.svg",
+      "size_bytes": 198410,
+      "sha256": "2dc99c931445250c20136b57a4996617ae4ba15397482acc5d9bb1c03813c372",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-Programming.png",
+      "size_bytes": 208752,
+      "sha256": "c6aa8e429114c162a13f82ef5e1d29ebd74e867b2a2fdad037eee9029b03e9e1",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-Programming.svg",
+      "size_bytes": 141319,
+      "sha256": "376e80a64d60cb62796660b3568121fee5ddf278af51b960dca9e71cc9e4d4bd",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-UsbPd.png",
+      "size_bytes": 250711,
+      "sha256": "5766be18c95dba939e5b6359f1dfebf8d8a5fbbfc37bb4fa935a723513a58967",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic-UsbPd.svg",
+      "size_bytes": 211711,
+      "sha256": "9f02e18bc4e81f3ac25340c139e4b04c08fc791778ef0a7cc1c21cc14717661c",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/native-saved-subset/schematic.svg",
+      "size_bytes": 173013,
+      "sha256": "b5c47b11e459745a475c4a9113f43a8a71e8f60093a3260205b702a172f3d855",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/pipeline7-routed-output/circuit.json",
+      "size_bytes": 4801938,
+      "sha256": "d143bb4b0b34560efca8de9a0f09f0504658933a8c522026483d16165b19c38a",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/pipeline7-routed-output/pcb.png",
+      "size_bytes": 268740,
+      "sha256": "ba115d899cfcb311e8260cd3e6ee9c35b1080994622ab8ee31d97e96bf8755c6",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/pipeline7-routed-output/pcb.svg",
+      "size_bytes": 3354390,
+      "sha256": "231d900587e3814fa52883d5c5c7ef0971b20aef5593c5f17c8c09da694a3b6d",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/pipeline7-router/phase-0.input.simple-route.json",
+      "size_bytes": 1467970,
+      "sha256": "5dae5af9826eefb57df020b2d46c7dbc66c5f5919d90b9d1a77a22a75d130e9f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/pipeline7-router/phase-0.output.traces.json",
+      "size_bytes": 1592215,
+      "sha256": "d3741778f80727924461a9a5518c4e98d34b8d7b4ce38022ff2feacc525737d9",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/pipeline7-routing.log",
+      "size_bytes": 80333,
+      "sha256": "0517efc706de5ffd5ef9822a682d238f81dba63c67083a85c6c92ac33b507f65",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/plane-diagnostic-router/phase-0.input.simple-route.json",
+      "size_bytes": 1405701,
+      "sha256": "083ba2c21bb407e75424ab1261438afbcb51ae65a4eb4141357bc2e8e38ad1a6",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/power-width-router/phase-0.input.simple-route.json",
+      "size_bytes": 1415439,
+      "sha256": "f0f09611bb81fc2f866199f1b04f14f028b6f24f4117ac3b99ff446eed8da4b3",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/released-routed-output/circuit.json",
+      "size_bytes": 5173298,
+      "sha256": "e6ca691920a3bb29dfa3c6a7fb2f98e87ceeea1e89b12d5e38fdec71ff7f1082",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/released-routed-output/pcb.png",
+      "size_bytes": 267510,
+      "sha256": "6199beb77cc0b86686e2e63e5f0d8fa51f83081e42df6e44cb445576a0d98edf",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/released-routed-output/pcb.svg",
+      "size_bytes": 3696335,
+      "sha256": "24694b6361c454c81ea5426532edea87222b278bb5f02d1fed391c14d18bd088",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/released-router-diagnostics/phase-0.input.simple-route.json",
+      "size_bytes": 1467970,
+      "sha256": "5dae5af9826eefb57df020b2d46c7dbc66c5f5919d90b9d1a77a22a75d130e9f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/released-router-diagnostics/phase-0.output.traces.json",
+      "size_bytes": 1777252,
+      "sha256": "acc5de37d7f220d292f14c79fbeb838a6107885a126c6835e47ba8800e35fa6c",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/routing-review-can-tx/checks/check-shorts/bitmap.png",
+      "size_bytes": 414631,
+      "sha256": "34dfd9b3fc4472a8f9981cb47305ddaa7a973e783ec1ccd668a1dcfcb8df7c88",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/routing-review-can-tx/checks/check-shorts/pcb.svg",
+      "size_bytes": 1560292,
+      "sha256": "507fb603280e5b286cbc43d76461f0f80bbcf277926b83057819d4fb4ab9a7dd",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/routing-review-can-tx/circuit.json",
+      "size_bytes": 3417337,
+      "sha256": "937d10599ff039db21f593d44408ee62e83afd3a09975e88b961bc34a5255f16",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/routing-review-can-tx/pcb.png",
+      "size_bytes": 190632,
+      "sha256": "7a4968a9a03f3e38a1db34ca6d36cdd8f6ad63eb4e80cf068d0974962ececf2a",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/routing-review-can-tx/pcb.svg",
+      "size_bytes": 1562378,
+      "sha256": "ae4351335dbe326812d3a97a4f0fbb23365dd909f7cb3eb2f970f021c1c4e2dd",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/routing-review-can-tx/schematic.svg",
+      "size_bytes": 173013,
+      "sha256": "b5c47b11e459745a475c4a9113f43a8a71e8f60093a3260205b702a172f3d855",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/routing-review/bottom.svg",
+      "size_bytes": 771593,
+      "sha256": "9ebbe6c828c46c6f6784984f9dcbdfeefd2f9c88a0aee248520bee2b2e27a663",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/routing-review/inner1.svg",
+      "size_bytes": 302026,
+      "sha256": "e5a481480107608d539c241980dd3c71c3a896b703e63b00512f04fe402f2684",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/routing-review/inner2.svg",
+      "size_bytes": 127085,
+      "sha256": "49032f785771d68339aec125c3ee2758276dc89356484d12d2fafc8d63f11546",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/routing-review/pcb.svg",
+      "size_bytes": 1557918,
+      "sha256": "c7ef55b4f81464c60aedbb76ac7d01e4b0d76cd5d4e81eea334878b4d5867dbd",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/routing-review/schematic.svg",
+      "size_bytes": 173013,
+      "sha256": "b5c47b11e459745a475c4a9113f43a8a71e8f60093a3260205b702a172f3d855",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/routing-review/top.svg",
+      "size_bytes": 601752,
+      "sha256": "02d8c4c224c38f6dfc6efc0802b7fb18c7e570bf2fbdadd5b8470e00e7054ccd",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.17-alpha.0/usb-ground-precheck-router/phase-0.input.simple-route.json",
+      "size_bytes": 1405701,
+      "sha256": "083ba2c21bb407e75424ab1261438afbcb51ae65a4eb4141357bc2e8e38ad1a6",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/before-boundary-correction/circuit.json",
+      "size_bytes": 3446221,
+      "sha256": "a6e1b462c238ce18cd5702ecc6300d8d5a36f671d00efa4dad9b4d407e1d23c7",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/checked-ground-network/circuit.json",
+      "size_bytes": 3446212,
+      "sha256": "35c690a51ff7402946e85e0b59a9ef7556836d161fe83f7666e4db96a5f6b205",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/checked-ground-network/pcb.png",
+      "size_bytes": 226374,
+      "sha256": "39edc94a8ad1f8ade75f36ec082f77c638ccba36909c450467b7c8842fe48862",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/checked-ground-network/pcb.svg",
+      "size_bytes": 1482749,
+      "sha256": "71e8ef447c309d2119020f0f27c4297339d8986a9b403e13cb4c8fa94d4eb889",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/compact-fanout-partial/circuit.json",
+      "size_bytes": 3036524,
+      "sha256": "b43d3839ffe9549daf886601160b909a1380f520a6f8e2caaebc76e75c555e74",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/compact-fanout-partial/pcb.png",
+      "size_bytes": 194942,
+      "sha256": "b6cc02dbe28a01dd5b7d88a82eaa4080c69a035365124377c10008c9baf10734",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/compact-fanout-partial/pcb.svg",
+      "size_bytes": 1288191,
+      "sha256": "77fe3724f4e328164240f6dc0b4e63a8270653aa61411f4a48a9d8cdf37b3ced",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/compact-partial/circuit.json",
+      "size_bytes": 2237754,
+      "sha256": "89ad199396ff0f28fd18305aa180ab2df54c5a5e92547e377de7e3d7642d4481",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/compact-partial/pcb.png",
+      "size_bytes": 136833,
+      "sha256": "00b25bb2bfef3e8271fa1b8f8e96bc3a6118287fec0df328d3d5fbdf081f593e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/compact-partial/pcb.svg",
+      "size_bytes": 479904,
+      "sha256": "69cb8aca5fec779f50a3e1fdb63c7b2c39d28f92db03204a015a053147844fcd",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/efuse-rtn-island/circuit.json",
+      "size_bytes": 2770884,
+      "sha256": "018f3aea7e18f84863d39ca42686c265f14093a811195efac0a8b6efd12597bf",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/efuse-rtn-island/pcb.png",
+      "size_bytes": 192574,
+      "sha256": "d1e977bf02eb71fc64ed5550c6c275016f251bc65a4c6edadd01c21e5459c917",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/efuse-rtn-island/pcb.svg",
+      "size_bytes": 945573,
+      "sha256": "ce81ddc73b8d40f9919a9172bc99fc4b286d97aeb0de4be91e2c5c0ca8e087bc",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/ground-plane-mapped-router/phase-0-routed.png",
+      "size_bytes": 174160,
+      "sha256": "063edf121019b7e8841433d453957abc5b44b4feba6d63c5d32339457d743b97",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/ground-plane-mapped-router/placement-unrouted.png",
+      "size_bytes": 224381,
+      "sha256": "266e5be14730cbf0863ecd76b827202c3d5a505b71c567eab15f3a9d3ca325f6",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/ground-plane-trial-router/phase-0-routed.png",
+      "size_bytes": 174160,
+      "sha256": "063edf121019b7e8841433d453957abc5b44b4feba6d63c5d32339457d743b97",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/ground-plane-trial-router/placement-unrouted.png",
+      "size_bytes": 224381,
+      "sha256": "266e5be14730cbf0863ecd76b827202c3d5a505b71c567eab15f3a9d3ca325f6",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/ground-plane-trial/circuit.json",
+      "size_bytes": 2213131,
+      "sha256": "736cf694e0f8fa36cdb715b7ed17f5c49b13814ca5ba880144b18f4f3bd75980",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/ground-plane-trial/pcb.png",
+      "size_bytes": 134753,
+      "sha256": "dfc47ec1c3ccbc6ca0740d30e3f87383807d8067daca36ea972585ff119e0b9d",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/ground-plane-trial/pcb.svg",
+      "size_bytes": 459917,
+      "sha256": "ea6bea512bde2513d3ed0dececaa6ec8edf0906fc7cf7137b0c1c5bb17535022",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/local-completion/board.kicad_pcb",
+      "size_bytes": 3059419,
+      "sha256": "2e64c917b8fef9d850d3c378c28806a746c63462fe4d9422d38247e65ea6edc7",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/local-completion/circuit.json",
+      "size_bytes": 3437806,
+      "sha256": "754ddc1c4ced5e582749e9133decd4c63bb7d05635aedf160a12a4d12ed044b4",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/local-completion/kicad-native.dsn",
+      "size_bytes": 389575,
+      "sha256": "cfc449c1597fb569a2004d262a82db2a7aaa0da6fad27ca344f3239349b04564",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/local-completion/routing-interchange.kicad_pcb",
+      "size_bytes": 2540332,
+      "sha256": "7517b8f302251fa115ca6f3686a7125759415f60c59afece698e921798f4eb7a",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/manual-ground-shoulder/circuit.json",
+      "size_bytes": 2768545,
+      "sha256": "14c90928899f71672e1b5346c801a559d902864ac9dca83bdd591ca030d18396",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/manual-ground-shoulder/pcb.png",
+      "size_bytes": 193538,
+      "sha256": "4d6993adcf82be0a6b163f55f8cd17ef8042d60e6a825511932d79dac6509145",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/manual-ground-shoulder/pcb.svg",
+      "size_bytes": 1061052,
+      "sha256": "96c9f615d19a0d6acf05a9c4355b1db67b5b7fad69e9791f959dd37f8f5256f3",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/manual-ground-top-port/circuit.json",
+      "size_bytes": 2769737,
+      "sha256": "6a21f9437a95f8124a5be53d66f8b92c9e181960d7bb43953770b90ccd80f38c",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/manual-ground-top-port/pcb.png",
+      "size_bytes": 193606,
+      "sha256": "51e420a23c05524a5138c0fa1533ca49975e653a529fea95436e13270dc465cc",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/manual-ground-top-port/pcb.svg",
+      "size_bytes": 1060446,
+      "sha256": "6cb2ad41452e18f94ef58927a562d222c0950290d0134b26844bf3bf56c106b2",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-full/router/phase-0-routed.png",
+      "size_bytes": 174160,
+      "sha256": "063edf121019b7e8841433d453957abc5b44b4feba6d63c5d32339457d743b97",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-full/router/placement-unrouted.png",
+      "size_bytes": 224381,
+      "sha256": "266e5be14730cbf0863ecd76b827202c3d5a505b71c567eab15f3a9d3ca325f6",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-leaf-first-partial/circuit.json",
+      "size_bytes": 2725639,
+      "sha256": "8a19a7194a8420093a43a28df1a19f6b08b03ed147817e7c6e51a232427f5c94",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-leaf-first-partial/pcb.png",
+      "size_bytes": 189465,
+      "sha256": "ed66c14a559c2fd583d0f5f00e0dd1f82859a9ddf302cf502bd1180fa79d82ad",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-leaf-first-partial/pcb.svg",
+      "size_bytes": 1021757,
+      "sha256": "2c8c9025f2656b8a15e9b6e17c6892a41e810496840ccf33f7b9049ab1cc9dad",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-partial/circuit.json",
+      "size_bytes": 2208539,
+      "sha256": "bff910f73a49a99ebc7a12cec6ed7c7d59186a01e9075a5e536c61685219ea70",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-partial/pcb.png",
+      "size_bytes": 133569,
+      "sha256": "63b9c1b5ad8978063740c9d91ebc1f9a6975b153c928ae272481d4faf7b9f254",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-partial/pcb.svg",
+      "size_bytes": 458089,
+      "sha256": "1e5be6d1ad4dceedab67fcd12b459dd2eb513cf6fb78d861294ed2d8c62fca8b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-pipeline7-full/circuit.json",
+      "size_bytes": 2212732,
+      "sha256": "077c2f646b0fb9bdc2b72f3ed280741a11e321eae554001c271cdf28aec60504",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-pipeline7-full/pcb.png",
+      "size_bytes": 134753,
+      "sha256": "dfc47ec1c3ccbc6ca0740d30e3f87383807d8067daca36ea972585ff119e0b9d",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-pipeline7-full/pcb.svg",
+      "size_bytes": 459917,
+      "sha256": "ea6bea512bde2513d3ed0dececaa6ec8edf0906fc7cf7137b0c1c5bb17535022",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-pipeline7-full/router/phase-0-routed.png",
+      "size_bytes": 174160,
+      "sha256": "063edf121019b7e8841433d453957abc5b44b4feba6d63c5d32339457d743b97",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-pipeline7-full/router/placement-unrouted.png",
+      "size_bytes": 224381,
+      "sha256": "266e5be14730cbf0863ecd76b827202c3d5a505b71c567eab15f3a9d3ca325f6",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-reference-partial/bottom.png",
+      "size_bytes": 196987,
+      "sha256": "847ae65a99469354871670fe28f38d4d30cd41bd810a8f49f4623fcfac1aeb36",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-reference-partial/bottom.svg",
+      "size_bytes": 496946,
+      "sha256": "43b98178c916ed1a305e6d8d02f80473952ed29a87cb4ef7463d712a8d5940b2",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-reference-partial/circuit.json",
+      "size_bytes": 2736148,
+      "sha256": "e2ffcf0bfd2e3d5fb2b397bd46d2661b4c7029c3a7a1b786365c188becce9638",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-reference-partial/inner1.png",
+      "size_bytes": 117117,
+      "sha256": "d0f2ea80f3baf6c2e0b3f88310473b5f31d633de57466337dae0304e2cb2f445",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-reference-partial/inner1.svg",
+      "size_bytes": 299967,
+      "sha256": "a680d0bfd8553e62cf195edbcf4de877e67c8caa65ec6f2c30a9b2d9995d32e4",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-reference-partial/inner2.png",
+      "size_bytes": 89865,
+      "sha256": "ac8bbaa45eef7e5054584a57ca9746cca959daa603505ed08b13ef8c998ed986",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-reference-partial/inner2.svg",
+      "size_bytes": 117231,
+      "sha256": "be6f880882c477ef334c890b58f3bc620b65d238f7f3e17d8bc07ec90c4300c4",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-reference-partial/pcb.png",
+      "size_bytes": 190386,
+      "sha256": "519953ecc71b2aceb52a9a81f55d5136f130b007d131245ba36541673dcb712f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-reference-partial/pcb.svg",
+      "size_bytes": 1031775,
+      "sha256": "8af489fc082f21ad5b4fb9c2c363d88c1aef694681fb47000550c505ac7c2382",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-reference-partial/top.png",
+      "size_bytes": 155002,
+      "sha256": "690134f85d4f05b9e5a18b4c87d8870d88b7e13eb9b252b9d78f4fc0083a717e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/port-tree-reference-partial/top.svg",
+      "size_bytes": 365487,
+      "sha256": "325635c04e50ad9fe9088d2f06b97aa97e52897999275908f6dcfd1556d5ccc3",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/routing-review/circuit.json",
+      "size_bytes": 3446221,
+      "sha256": "a6e1b462c238ce18cd5702ecc6300d8d5a36f671d00efa4dad9b4d407e1d23c7",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/routing-review/pcb.png",
+      "size_bytes": 226374,
+      "sha256": "39edc94a8ad1f8ade75f36ec082f77c638ccba36909c450467b7c8842fe48862",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/routing-review/pcb.svg",
+      "size_bytes": 1482749,
+      "sha256": "e0d9e0763363d212cb22d00ae2681223173292931b0bce094d2b4efa0b243c87",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/routing-review/schematic.svg",
+      "size_bytes": 173038,
+      "sha256": "54abdbebc40696c5d8ec050849cf89255765693608ab89dc8c360e2cb9006811",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/simplified-partial/circuit.json",
+      "size_bytes": 3002517,
+      "sha256": "ef509a5324e93eb78bb855037034fe2950b42c0e046aa482dd554d910f07a0a5",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/simplified-partial/pcb.png",
+      "size_bytes": 190386,
+      "sha256": "519953ecc71b2aceb52a9a81f55d5136f130b007d131245ba36541673dcb712f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/simplified-partial/pcb.svg",
+      "size_bytes": 1481365,
+      "sha256": "93f05c2fac94e761f716584908255b7af3cf7230b4b3262bd233744e75464cf0",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/usb-saved-ground-partial/circuit.json",
+      "size_bytes": 2210538,
+      "sha256": "eb644df8ab7e870abf9e6acd511413a2d1e4e3d0620230a28b2c197a28865818",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/usb-saved-ground-partial/pcb.png",
+      "size_bytes": 133425,
+      "sha256": "b1af48197537180426c42f57ccf8a112d5fded222043bc7d714c5afc56acaf95",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/usb-saved-ground-partial/pcb.svg",
+      "size_bytes": 456870,
+      "sha256": "dd245b7d6557763c07a6c04f0678367db19e59406913d71a8c7d067cfdfa5ec5",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/usb-saved-ground-separate/circuit.json",
+      "size_bytes": 3006503,
+      "sha256": "d357138711d03516f2b1a14b4676113cf19ab7250677a30afe73e47184d10904",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/usb-saved-ground-separate/pcb.png",
+      "size_bytes": 189465,
+      "sha256": "ed66c14a559c2fd583d0f5f00e0dd1f82859a9ddf302cf502bd1180fa79d82ad",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "evidence/rev-0.0.18-alpha.0/usb-saved-ground-separate/pcb.svg",
+      "size_bytes": 1483472,
+      "sha256": "229c09cd942bfd8e7d333a6843ff5c8dc948f814b7d0aa03e41b8abf2b6176cb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/AP63203.pdf",
+      "size_bytes": 1226090,
+      "sha256": "ef99daa3789d835bc025dfcb4c605c5c2e6d3e7223e86d40b33e6b497ea5a722",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/BSS138LT1G.pdf",
+      "size_bytes": 272362,
+      "sha256": "765a0cb0e1f58ce13c3ad17b929727f13ea80ba41e33a68696a0540a0c90791b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/ESDA25P35-1U1M.pdf",
+      "size_bytes": 602995,
+      "sha256": "dc3dd4e0f2572cc56d22c174afe3ac4eb29640ab0ece25bdc5d624a0d99517b1",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/JST-GH.pdf",
+      "size_bytes": 146619,
+      "sha256": "b1dcb317b6b9a4fbbedd2dbf42c64c95306a252d23de8933b85fcf161240b722",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/JST-PH.pdf",
+      "size_bytes": 103369,
+      "sha256": "447624f4f2f7d37c58c1eaa7ee314ad757fe7aff48f6186491ef6f69fbc00b96",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/JST-SH.pdf",
+      "size_bytes": 1623915,
+      "sha256": "2deded92b54c7650416c99a80187807477e9ba68ca6c65943069f55f4b3c2075",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/SM712-TCT.pdf",
+      "size_bytes": 147200,
+      "sha256": "68cbb25462cc51536525d7da2ba3dbcbc1ae253daf5c26168bf6a1cf490f307b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/SRN6028C.pdf",
+      "size_bytes": 136778,
+      "sha256": "431869f80fe2af9d15f5015c58acc2cea387e2a8f7d66761d75be3ca6af42399",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/STL11N3LLH6.pdf",
+      "size_bytes": 699311,
+      "sha256": "8dfded9bf107ef0dcfaaf7bb638044196dd18d5d94b20afc9d7a0d2c44186ab0",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/TLV803E.pdf",
+      "size_bytes": 2343229,
+      "sha256": "8c0e1447e9f5edfc933912d7f30d3a11867d052b43b3ff75e45309aa461a651b",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/TMP112.pdf",
+      "size_bytes": 1786014,
+      "sha256": "c70ca5900fabd8990e735aff3bb5cddb0b6da113b4a472d208c9181e3eb1b385",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/TMUX1511.pdf",
+      "size_bytes": 2548188,
+      "sha256": "c32b83722e3717c554dc8f68da05d9e02aa44087043d7b820f5e113713adbfcb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/TPD2EUSB30A.pdf",
+      "size_bytes": 2257950,
+      "sha256": "a2c0dd845043a5bbfe610f673879c29e38649544385dea51dbe0a4c49df39136",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/TPD4E05U06.pdf",
+      "size_bytes": 2801466,
+      "sha256": "c167cf1e72a5473a4d2c59b6a3c0251498701da05b7785919b9ceaae3b3e02c6",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/TPS25947.pdf",
+      "size_bytes": 5316794,
+      "sha256": "8f96de389903091650d4f462dcfad3210071c3ae7093623a7978f34baf8a65b4",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/TPS2660.pdf",
+      "size_bytes": 4118722,
+      "sha256": "b781cbce51984715771bde540df2b36404b4fae4b41e27166c84c19b6598e1de",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/TYPE-C-31-M-12.pdf",
+      "size_bytes": 118176,
+      "sha256": "6ae33d50ac47820114661138dc4e4659f40fdc5d4f485b46685dfec338da1a9e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/USB4105-GF-A.pdf",
+      "size_bytes": 143973,
+      "sha256": "0ff2526fc28bbfdcb46a61fd394454be865854212c677e5aa55fc305368a01b1",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/USB4110-GF-A-current.pdf",
+      "size_bytes": 494431,
+      "sha256": "b083cd7825c1d58d590e9b0ec6e8533ec43711b385d448d7b7a0fd25bd7f4d71",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/USB4110-GF-A.pdf",
+      "size_bytes": 140543,
+      "sha256": "db01539d03ee7a08cfff89e8733fbe0f49576a368d38f4b623f8749410ce3c48",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/capacitors/Panasonic-FP-2025.pdf",
+      "size_bytes": 837527,
+      "sha256": "58f2ec610e03cbad28a61f8bc740521df5d03e27a6dfee92a583f2747b99c981",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C1121848.step",
+      "size_bytes": 1845513,
+      "sha256": "7ec2f4a9d4f871673975070d5ec8ae81a302829848994476214ef610a680aa9e",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C11702.step",
+      "size_bytes": 1068271,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C12084.step",
+      "size_bytes": 559111,
+      "sha256": "70f46697efa1daced22df982a5fd03c112d6cf25207f9a1afdf37b49a391ab84",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C13585.step",
+      "size_bytes": 1169799,
+      "sha256": "a3b636a587c98bf5baa4dcd6af15732c43a5f396ec40d2b987bd6db5417c8265",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C136657.step",
+      "size_bytes": 1889623,
+      "sha256": "ab33b622e6a54b6ebafffcb21fec230bef83d56353a914c847e89a277b40f8a6",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C14663.step",
+      "size_bytes": 1468156,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C1525.step",
+      "size_bytes": 1481985,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C165948.step",
+      "size_bytes": 3046769,
+      "sha256": "3806dacd6082a75cfb24d3ba4b86b3d0c96213134c67e1385eb1599a89b2c461",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C178585.step",
+      "size_bytes": 1118069,
+      "sha256": "0520d085e6aa1b712b8127b1de76907f64951f608caa5f1d495a693c6ae742fb",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C1974707.step",
+      "size_bytes": 1217787,
+      "sha256": "6dc8861569f43539ad8557144a2f787ca151d7df0d3f29aa2f6375b8dbd48b04",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C19947652.step",
+      "size_bytes": 1973034,
+      "sha256": "2e7b3c5a5b2134ac7076ec5d2237a22e8d51341107a053fb0640ead10e22e729",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C23733.step",
+      "size_bytes": 1481985,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C25744.step",
+      "size_bytes": 1068271,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C25767.step",
+      "size_bytes": 1068271,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C25900.step",
+      "size_bytes": 1068271,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C268016.step",
+      "size_bytes": 1468156,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C2847904.step",
+      "size_bytes": 9783377,
+      "sha256": "fc1048bca8e51a9c5785281973849107ef5d8bc9b0d7531644412a5bb760b998",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C2965326.step",
+      "size_bytes": 1738866,
+      "sha256": "7ef034c4afa8348b3e6bd4814d87e4057187ebd051df9c9201bc90ab463ea1da",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C307335.step",
+      "size_bytes": 1481985,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C45783.step",
+      "size_bytes": 1480687,
+      "sha256": "67f86cfc9ebba2ff889d65b12f5d49d5a90b265b73635a931d68c6a27d34e11f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C465949.step",
+      "size_bytes": 2474685,
+      "sha256": "54b729c0ec691ec6e6cb3991eae11d774b0f962083e959a0bd899470bf65c45d",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C5127775.step",
+      "size_bytes": 1067586,
+      "sha256": "ca0f6c898b6c5ac572fcabb6f326264b985a8cd3c0f7fa407526b8d2ce209713",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C5448795.step",
+      "size_bytes": 1481985,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C780769.step",
+      "size_bytes": 1646923,
+      "sha256": "4420c424f4a2941b36f28b622f6950c965439c7c9525e1961bb8384ef58a6dd9",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C79815.step",
+      "size_bytes": 559111,
+      "sha256": "70f46697efa1daced22df982a5fd03c112d6cf25207f9a1afdf37b49a391ab84",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C852472.step",
+      "size_bytes": 1068271,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C852895.step",
+      "size_bytes": 1068271,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C94934.step",
+      "size_bytes": 1367051,
+      "sha256": "28e3a78293047c869953f184a2426f9c22e9d7ccc6db3301b5b9af92ce239444",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/mechanical-supplier-models/C98192.step",
+      "size_bytes": 1480687,
+      "sha256": "67f86cfc9ebba2ff889d65b12f5d49d5a90b265b73635a931d68c6a27d34e11f",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/motor/14hm11-0404s/14HM11-0404S_Full_Datasheet.pdf",
+      "size_bytes": 121198,
+      "sha256": "d1cc1604b89947f6f0c2018d2b59c36194bc5e949796cd9af2d99be4effd4305",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/motor/3323_0_3D.zip",
+      "size_bytes": 26046,
+      "sha256": "f0c1da7ef54f8587ed732eba8cf9bb19af96844b10377e7e01cda4071139dec9",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/motor/3323_0_Mechanical.pdf",
+      "size_bytes": 35535,
+      "sha256": "88a00284d81be25e14853545f8c07d6c1ff44aeb8ee28f3b57f7591cdd3638a9",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    },
+    {
+      "path": "references/motor/AS5600-supplier.pdf",
+      "size_bytes": 910875,
+      "sha256": "65b66abb023ddd28afba20e3424f273c0b871049f31e97610df106f20f20734d",
+      "reason": "Historical reference/cache or large diagnostic artifact preserved in private Git; failure logs, summaries and required runtime sources remain distributed."
+    }
+  ]
+}

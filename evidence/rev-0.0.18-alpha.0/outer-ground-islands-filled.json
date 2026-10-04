@@ -1,0 +1,338 @@
+{
+  "input": "dist/scripts/outer-ground-islands/circuit.json",
+  "sha256": "b7c9cdd1b40f549f023d10e79fdcc08d93d964f1b0054ef3c29c34b2da239b3b",
+  "scope": "Native filled BRep against actual pads, traces, via annuli and other pours; physical same-net conductors joined across full through-via spans. No net-name-only connectivity assumption. Impedance, thermal/current limits and CAM remain separate.",
+  "pour_count": 19,
+  "minimum_clearances": {
+    "trace": {
+      "pour": "pcb_copper_pour_4",
+      "other": "saved_phase_null_0_108:8",
+      "layer": "inner1",
+      "actual_mm": 0.14891670290006154,
+      "required_mm": 0.15
+    },
+    "via": {
+      "pour": "pcb_copper_pour_0",
+      "other": "pcb_via_2",
+      "layer": "inner1",
+      "actual_mm": 0.14783295721971335,
+      "required_mm": 0.15
+    },
+    "pad": {
+      "pour": "pcb_copper_pour_98",
+      "other": "pcb_smtpad_81",
+      "layer": "bottom",
+      "actual_mm": 0.15283767540421522,
+      "required_mm": 0.15
+    },
+    "pour": {
+      "pour": "pcb_copper_pour_24",
+      "other": "pcb_copper_pour_112",
+      "layer": "bottom",
+      "actual_mm": 0.754999999999999,
+      "required_mm": 0.15
+    }
+  },
+  "clearance_violations": [
+    {
+      "check": "filled_copper_to_other_net_via",
+      "pour": "pcb_copper_pour_0",
+      "other": "pcb_via_1",
+      "layer": "inner1",
+      "actual_mm": 0.14783295721971337,
+      "required_mm": 0.15
+    },
+    {
+      "check": "filled_copper_to_other_net_via",
+      "pour": "pcb_copper_pour_0",
+      "other": "pcb_via_2",
+      "layer": "inner1",
+      "actual_mm": 0.14783295721971335,
+      "required_mm": 0.15
+    },
+    {
+      "check": "filled_copper_to_other_net_via",
+      "pour": "pcb_copper_pour_1",
+      "other": "pcb_via_48",
+      "layer": "inner1",
+      "actual_mm": 0.14783295721971343,
+      "required_mm": 0.15
+    },
+    {
+      "check": "filled_copper_to_other_net_via",
+      "pour": "pcb_copper_pour_3",
+      "other": "pcb_via_48",
+      "layer": "inner1",
+      "actual_mm": 0.14783295721971337,
+      "required_mm": 0.15
+    },
+    {
+      "check": "filled_copper_to_other_net_trace",
+      "pour": "pcb_copper_pour_4",
+      "other": "saved_phase_null_0_108:8",
+      "layer": "inner1",
+      "actual_mm": 0.14891670290006154,
+      "required_mm": 0.15
+    },
+    {
+      "check": "filled_copper_to_other_net_trace",
+      "pour": "pcb_copper_pour_4",
+      "other": "saved_phase_null_0_108:9",
+      "layer": "inner1",
+      "actual_mm": 0.14891670290006154,
+      "required_mm": 0.15
+    },
+    {
+      "check": "filled_copper_to_other_net_via",
+      "pour": "pcb_copper_pour_4",
+      "other": "pcb_via_77",
+      "layer": "inner1",
+      "actual_mm": 0.14783309025414393,
+      "required_mm": 0.15
+    },
+    {
+      "check": "filled_copper_to_other_net_via",
+      "pour": "pcb_copper_pour_5",
+      "other": "pcb_via_75",
+      "layer": "inner1",
+      "actual_mm": 0.1478329572197136,
+      "required_mm": 0.15
+    },
+    {
+      "check": "filled_copper_to_other_net_via",
+      "pour": "pcb_copper_pour_5",
+      "other": "pcb_via_77",
+      "layer": "inner1",
+      "actual_mm": 0.1478330902541438,
+      "required_mm": 0.15
+    },
+    {
+      "check": "filled_copper_to_other_net_via",
+      "pour": "pcb_copper_pour_7",
+      "other": "pcb_via_79",
+      "layer": "inner1",
+      "actual_mm": 0.1478330902541437,
+      "required_mm": 0.15
+    },
+    {
+      "check": "filled_copper_to_other_net_via",
+      "pour": "pcb_copper_pour_8",
+      "other": "pcb_via_79",
+      "layer": "inner1",
+      "actual_mm": 0.14783309025414337,
+      "required_mm": 0.15
+    }
+  ],
+  "physical_islands": {
+    "GND": {
+      "physical_components": 11,
+      "components": [
+        {
+          "area_mm2": 930.9085172107278,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "C27.2",
+            "C29.2",
+            "D_USB.3",
+            "R15.2",
+            "R17.2",
+            "R51.2",
+            "U7.8",
+            "U8.1"
+          ]
+        },
+        {
+          "area_mm2": 784.3575385315838,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C1.2",
+            "C11.2",
+            "C15.2",
+            "C16.2",
+            "C19.2",
+            "C2.2",
+            "C20.2",
+            "C3.2",
+            "C4.2",
+            "C5.2",
+            "C9.2",
+            "J_MOTOR.5",
+            "J_MOTOR.6",
+            "J_SWD.3",
+            "J_USB.10",
+            "J_USB.11",
+            "J_USB.22",
+            "J_USB.23",
+            "J_USB.8",
+            "J_USB.9",
+            "LED_FAULT.1",
+            "LED_POWER.1",
+            "LED_STATUS.1",
+            "R11.2",
+            "R5.2",
+            "R6.2",
+            "R8.2",
+            "R9.2",
+            "U1.29",
+            "U1.32",
+            "U1.7",
+            "U2.10",
+            "U2.13",
+            "U2.18",
+            "U2.20",
+            "U2.25",
+            "U2.29",
+            "U2.3",
+            "U2.7",
+            "U2.9",
+            "U5.4"
+          ]
+        },
+        {
+          "area_mm2": 277.8384811951212,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "C28.2",
+            "C30.2",
+            "C31.2",
+            "C6.2",
+            "C7.2",
+            "D_CAN.3",
+            "D_IO1.3",
+            "D_IO1.8",
+            "D_IO2.3",
+            "D_IO2.8",
+            "J_IO.1",
+            "J_IO.10",
+            "J_IO.11",
+            "J_IO.12",
+            "J_IO.4",
+            "R28.2",
+            "R29.2",
+            "R52.2",
+            "R53.2",
+            "U4.8",
+            "U6.2"
+          ]
+        },
+        {
+          "area_mm2": 217.90726295099756,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "C12.2",
+            "C17.2",
+            "C18.2",
+            "C21.2",
+            "C22.2",
+            "C25.2",
+            "C26.2",
+            "C34.2",
+            "C8.2",
+            "U3.13",
+            "U3.2"
+          ]
+        },
+        {
+          "area_mm2": 19.538711827806264,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "C32.2",
+            "U9.2",
+            "U9.4"
+          ]
+        },
+        {
+          "area_mm2": 13.238539598508085,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "D_VBUS.2"
+          ]
+        },
+        {
+          "area_mm2": 4.471212753574001,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "R46.2"
+          ]
+        },
+        {
+          "area_mm2": 1.0391438208933137,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "U4.4"
+          ]
+        },
+        {
+          "area_mm2": 0.27000145999599984,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "C23.2"
+          ]
+        },
+        {
+          "area_mm2": 0.27000145999599984,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "C24.2"
+          ]
+        },
+        {
+          "area_mm2": 0.18620565597503996,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "U10.17"
+          ]
+        }
+      ],
+      "complete_plane_network": false
+    },
+    "EFUSE_RTN": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 46.828849528641754,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "C33.2",
+            "Q_ILIM.2",
+            "R39.2",
+            "R43.2",
+            "R44.2",
+            "U10.13",
+            "U10.15",
+            "U10.25"
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    }
+  },
+  "clearances_passed": false
+}

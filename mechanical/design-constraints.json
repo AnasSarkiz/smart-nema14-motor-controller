@@ -61,5 +61,12 @@
     "prototype_load_limit_proposal_n": 20,
     "direct_rail_count": 4,
     "rail_section_mm": [6, 6]
+  },
+  "controller_mount_copper_clearance": {
+    "required_radius_mm": 2.5,
+    "native_planning_radius_mm": 2.52,
+    "reason": "Circumscribed safety allowance for native circular keepout polygon facets; physical requirement unchanged.",
+    "copper_to_npth_mm": 0.3,
+    "native_pour_cutout_margin_mm": 0.31
   }
 }

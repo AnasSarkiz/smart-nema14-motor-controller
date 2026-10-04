@@ -2,7 +2,8 @@ import assert from "node:assert/strict"
 import { readFileSync, writeFileSync } from "node:fs"
 
 const revision = JSON.parse(readFileSync("package.json", "utf8")).version
-const directory = `evidence/rev-${revision}`
+const directory = process.argv[2] ?? `evidence/rev-${revision}`
+const reportDirectory = `evidence/rev-${revision}`
 const manifest = JSON.parse(
   readFileSync(`${directory}/REGENERATED-SOURCE-MANIFEST.json`, "utf8"),
 )
@@ -215,11 +216,13 @@ for (const entry of manifest) {
   })
 }
 writeFileSync(
-  `${directory}/ALL-IMPORTS-AUDIT.json`,
+  `${reportDirectory}/ALL-IMPORTS-AUDIT.json`,
   JSON.stringify(
     {
       scope:
         "Exact supplier identities, all pad mappings and raw rectangular/polygon geometry; independent datasheet qualification remains required",
+      supplierFixtureDirectory: directory,
+      revision,
       results,
       issues,
     },

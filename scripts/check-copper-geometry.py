@@ -17,7 +17,7 @@ from shapely.geometry import LineString, Point, Polygon, box
 input_path = Path(sys.argv[1] if len(sys.argv) > 1 else "dist/index/circuit.json")
 data = json.loads(input_path.read_text())
 revision = json.loads(Path("package.json").read_text())["version"]
-output_path = Path(f"evidence/rev-{revision}/COPPER-GEOMETRY.json")
+output_path = Path(sys.argv[2] if len(sys.argv) > 2 else f"evidence/rev-{revision}/COPPER-GEOMETRY.json")
 parent = {}
 
 
@@ -34,6 +34,8 @@ for trace in (entry for entry in data if entry["type"] == "source_trace"):
         parent[root(member)] = root(members[0])
 
 sources = {e["source_component_id"]: e["name"] for e in data if e["type"] == "source_component"}
+# Native manually placed vias are PCB features, not purchased components.
+sources.update({e["source_manually_placed_via_id"]: e["source_manually_placed_via_id"] for e in data if e["type"] == "source_manually_placed_via"})
 components = {e["pcb_component_id"]: sources[e["source_component_id"]] for e in data if e["type"] == "pcb_component"}
 ports = {e["pcb_port_id"]: root(e["source_port_id"]) for e in data if e["type"] == "pcb_port"}
 source_traces = {e["source_trace_id"]: e for e in data if e["type"] == "source_trace"}
@@ -109,8 +111,13 @@ for i, (first, geometry) in enumerate(tracks):
 vias = [e for e in data if e["type"] == "pcb_via"]
 for via in vias:
     position = Point(via["x"], via["y"])
-    source = source_traces[next(e["source_trace_id"] for e in data if e["type"] == "pcb_trace" and e["pcb_trace_id"] == via["pcb_trace_id"])]
-    net = root(source["connected_source_port_ids"][0])
+    if via.get("source_net_id") is not None:
+        net = root(via["source_net_id"])
+    elif via.get("source_trace_id") is not None:
+        net = root(source_traces[via["source_trace_id"]]["connected_source_port_ids"][0])
+    else:
+        source = source_traces[next(e["source_trace_id"] for e in data if e["type"] == "pcb_trace" and e["pcb_trace_id"] == via["pcb_trace_id"])]
+        net = root(source["connected_source_port_ids"][0])
     assert set(via["layers"]) == {"top", "inner1", "inner2", "bottom"}, "Unreviewed blind/buried via"
     if via["hole_diameter"] < 0.3 - 0.00002 or via["outer_diameter"] < 0.6 - 0.00002 or (via["outer_diameter"] - via["hole_diameter"]) / 2 < 0.15 - 0.00002:
         violations.append({"check": "via_dimensions", "via": via})
@@ -142,6 +149,23 @@ for segment, geometry in tracks:
         if segment["layer"] in keepout["layers"] and Point(keepout["center"]["x"], keepout["center"]["y"]).distance(geometry) < keepout["radius"] - 0.00002:
             violations.append({"check": "track_keepout", **segment, "keepout": keepout["pcb_keepout_id"]})
 
+# Ordinary vias must also clear the actual board boundary, NPTH drills and
+# mechanical copper keepouts. These checks include same-net drill cases above.
+for via in vias:
+    position = Point(via["x"], via["y"])
+    annulus = position.buffer(via["outer_diameter"] / 2, quad_segs=64)
+    if not boundary.covers(annulus):
+        violations.append({"check": "via_board_edge", "via": via["pcb_via_id"]})
+    for hole in (e for e in data if e["type"] == "pcb_hole"):
+        assert hole["hole_shape"] == "circle"
+        spacing = position.distance(Point(hole["x"], hole["y"])) - (hole["hole_diameter"] + via["outer_diameter"]) / 2
+        if spacing < .35 - .00002:
+            violations.append({"check": "via_npth", "via": via["pcb_via_id"], "hole": hole["pcb_hole_id"], "actual_mm": spacing, "required_mm": .35})
+    for keepout in (e for e in data if e["type"] == "pcb_keepout"):
+        assert keepout["shape"] == "circle"
+        if any(layer in keepout["layers"] for layer in via["layers"]) and position.distance(Point(keepout["center"]["x"], keepout["center"]["y"])) - via["outer_diameter"] / 2 < keepout["radius"] - .00002:
+            violations.append({"check": "via_keepout", "via": via["pcb_via_id"], "keepout": keepout["pcb_keepout_id"]})
+
 usb_lengths = {}
 for polarity in ("DP", "DM"):
     names = [f"USB_{polarity}_CONNECTOR_ESD", f"USB_{polarity}_ESD_MCU"]
@@ -154,7 +178,7 @@ report = {
     "revision": revision,
     "input": str(input_path),
     "input_sha256": hashlib.sha256(input_path.read_bytes()).hexdigest(),
-    "scope": "Actual tracks, drills and component/test pads. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+    "scope": "Actual tracks, drills, component/test pads, board edges, NPTH and mechanical keepouts. USB path length is independently measured by measure-usb-paths.py; absent legacy trace-name lengths below are not a USB pass. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
     "track_count": len(lengths),
     "segment_count": len(tracks),
     "via_count": len(vias),

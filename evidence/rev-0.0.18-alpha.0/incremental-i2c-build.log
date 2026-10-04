@@ -1,0 +1,39 @@
+Building 1 file(s)...
+Building scripts/incremental-i2c.circuit.tsx...
+Generating circuit JSON...
+Could not save autorouting paths for subcircuit_source_group_0: PCB port selector is not unique: .D_USB > port.pin1
+Autorouting phase 2/2 "I2C SDA completion" has been running for 10.3s; enabling phase diagnostics. Re-run with --autorouter-debug for full autorouter logs from the start.
+Autorouting <board#691 /> phase 2/2 "I2C SDA completion" long-running start: connections=1, obstacles=4891, previous_traces=0, router=tscircuit, version=beta_pipeline7, solver=AutoroutingPipelineSolver7_MultiGraph, effort=1x, cache=miss, cache_id=8a4be38a/f90057bc
+  connections: net.I2C_SDA
+  phase 2/2 "I2C SDA completion" progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=topologyMergingSolver steps=29 progress=26% iterations_per_second=692 elapsed=10.3s
+  phase 2/2 "I2C SDA completion" progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=topologyMergingSolver steps=30 progress=26% iterations_per_second=776 elapsed=10.5s
+  phase 2/2 "I2C SDA completion" progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=nodeDimensionSubdivisionSolver steps=36 progress=27% iterations_per_second=3 elapsed=109.9s
+Wrote debug artifact: dist/autorouter-debug/phase-1.input.simple-route.json
+Wrote debug artifact: dist/autorouter-debug/phase-1.previous-output.traces.json
+Wrote debug artifact: dist/autorouter-debug/board.source-and-pcb.circuit.json
+Wrote debug artifact: dist/autorouter-debug/phase-1.timeout.json
+Autorouter timeout after 110.1s in phase 2/2 "I2C SDA completion". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+158814 |       return;
+158815 |     const artifactPath = this.writeTimeoutArtifact(this.activePhase, elapsedMs);
+158816 |     const phaseLabel = this.getPhaseLabel(this.activePhase);
+158817 |     const message = `Autorouter timeout after ${this.formatElapsed(elapsedMs)} in ${phaseLabel}. Set a different timeout with \`--autorouter-timeout <duration>\` (for example, \`--autorouter-timeout 2m\`).`;
+158818 |     this.log(kleur_default.red(message));
+158819 |     throw new AutorouterPhaseTimeoutError(message, artifactPath);
+                   ^
+AutorouterPhaseTimeoutError: Autorouter timeout after 110.1s in phase 2/2 "I2C SDA completion". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+ debugArtifactPath: "/Users/anassarkiz/tsci/tscircuit-store/boards/smart-nema14-motor-controller--01a0fd9b/dist/autorouter-debug/phase-1.timeout.json",
+
+      at checkTimeout (/Users/anassarkiz/tsci/tscircuit-store/boards/smart-nema14-motor-controller--01a0fd9b/node_modules/@tscircuit/cli/dist/cli/main.js:158819:11)
+      at generateCircuitJson (/Users/anassarkiz/tsci/tscircuit-store/boards/smart-nema14-motor-controller--01a0fd9b/node_modules/@tscircuit/cli/dist/cli/main.js:167875:27)
+
+Fatal error [circuit_generation_failed]: Autorouter timeout after 110.1s in phase 2/2 "I2C SDA completion". Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, autorouter-timeout
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

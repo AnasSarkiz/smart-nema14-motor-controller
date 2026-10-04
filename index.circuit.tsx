@@ -1,3 +1,5 @@
+import { GroundReturns } from "./src/routing/GroundReturns"
+import { UsbGroundRoute } from "./src/routing/UsbGroundRoute"
 import { type BoardViewProps } from "./src/mechanics/preview-placement"
 import { InterfacesSheet } from "./src/interfaces/InterfacesSheet"
 import { ProgrammingSheet } from "./src/programming/ProgrammingSheet"
@@ -32,7 +34,8 @@ export default function SmartNema14MotorController({
       thickness="1.6mm"
       routeRemaining={routeRemaining}
       pcbStyle={{ viaHoleDiameter: "0.30mm", viaPadDiameter: "0.60mm" }}
-      autorouterEffortLevel="5x"
+      autorouterEffortLevel="1x"
+      autorouterVersion="beta_pipeline7"
       defaultTraceWidth="0.15mm"
       autorouter={{
         preset: "auto_local",
@@ -604,16 +607,18 @@ export default function SmartNema14MotorController({
             : undefined
         }
       />
-      {usbRoutesEnabled && <UsbRoutes />}
+      {usbRoutesEnabled &&
+        (savedRoutesEnabled ? <UsbGroundRoute /> : <UsbRoutes />)}
+      {usbRoutesEnabled && savedRoutesEnabled && <GroundReturns />}
       {usbRoutesEnabled && <UsbReference />}
       {savedRoutesEnabled && <SavedRoutes />}
       <copperpour
         name="L2_GND_REFERENCE"
         layer="inner1"
         connectsTo="net.GND"
-        clearance="0.15mm"
+        clearance="0.155mm"
         boardEdgeMargin="0.3mm"
-        cutoutMargin="0.3mm"
+        cutoutMargin="0.31mm"
         useThermalReliefs={false}
       />
       <ControllerMount />

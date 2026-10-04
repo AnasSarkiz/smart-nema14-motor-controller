@@ -1,3 +1,40 @@
+# Current revision 0.0.18-alpha.0 — connected ground and isolated eFuse return
+
+**Work-in-progress routing prototype; NOT fabrication ready; NOT hardware tested.** 2026-10-04 Europe/Tirane. Source basis: private Git/main 1ce8ae1ec56230643649e88294bb7ba3654c133c. Publication is pending until a receipt identifies the pushed circuit source revision and complete registry readback.
+
+| Stage | Status | Current evidence and remaining work |
+| --- | --- | --- |
+| 1. Requirements | passed | Bounded 14HM11-0404S/PD/load/stackup requirements retained. Physical mounting-circle exclusion remains 2.50 mm; conservative native planning radius is 2.52 mm. Pour-to-NPTH requirement remains 0.30 mm; 0.31 mm configured margin preserves it after native polygon approximation. |
+| 2. Schematic/BOM | passed | Latest released runtime fixture: 44 official identities /261 pin-pad mappings, zero discrepancies. All 191 imported source/model files remain byte-identical to their earlier verified imports. Electronic wiring/BOM unchanged, 111 references /108 fitted /43 selected identities. Cosmetic C1974707 rotation remains explicitly user accepted. |
+| 3. Placement | passed | All five required checks passed under released tools; native placement rerun after conservative boundary correction reports zero errors/warnings. Purchased bodies, connectors, holes and exact motor/carrier geometry are unchanged. Nine current native A4 schematic renders inspected. |
+| 4. Routing | in progress | Checked partial: 137 traces /105 actual through vias /24 filled pours. All 90 GND pads form one physical network; all eight eFuse RTN pads form a separate physical network. Native errors dropped from 187 to 91, all missing connections. Full and incremental native routing time out; no fresh completed main output exists. |
+| 5. Full automated/visual approval | not started | Partial native shorts and independent actual tracks/drills/fills pass; four current layers reviewed. Full-board connectivity, power/thermal/USB qualification, silkscreen correction and accepted snapshots remain required. |
+| 6. Prototype fabrication | not started | Same-source approved Gerbers/drills/108-fitted BOM/CPL, CAM and assembler review remain pending. No order placed. |
+| 7. Physical prototype | not started | No hardware measurements or delivered/tested firmware. |
+| 8. Store release | in progress | Current revision will remain a private prototype. Last source-readback-verified package is 0.0.17-alpha.1; hosted success is unverified. |
+
+Pinned released dependencies: CLI 0.1.2237, tscircuit 0.0.2743, core 0.0.2074, props 0.0.684, checks 0.0.238, capacity-autorouter 0.0.956, circuit-json 0.0.514, EasyEDA 0.0.370 and runframe 0.0.2897. Official upgrade and registry version evidence are retained. No dependency patch, custom router, manufactured net port or imported definition edit is used.
+
+## Reviewed current copper
+
+`boundary-corrected-partial/circuit.json` SHA256 **754ddc1c4ced5e582749e9133decd4c63bb7d05635aedf160a12a4d12ed044b4** is the checked diagnostic output, not completed manufacturing output. Its build exits 1 and retains exactly 91 `pcb_port_not_connected_error` records. `CURRENT-ROUTING-STATUS.json` lists every missing port. Main completion remains enabled. `SavedRoutes` now uses 133 real-port paths on 56 complete saved nets; shorter trees follow only existing copper. Two guarded manual bends in `ground-stitch-paths.json` clear an ordinary eFuse GND stitch, retaining original widths and layer spans. USB data copper is preserved; native ESD ground escape remains present.
+
+`check-filled-copper.py` measures actual native BRep polygons, pads, tracks and true through-via annuli, then joins only physically touching metal. GND and isolated RTN each have one network. Actual minimum fill spacing is 0.152838 mm to other-net pads, 0.153883 mm to tracks, 0.152808 mm to via annuli and 0.155 mm between separate pours. All exceed the original 0.15 mm requirement. Expanded boundary checks measure 0.306942 mm minimum to NPTH edges and 2.507865 mm minimum radius around the exact required 2.50 mm mounting circles. Earlier 0.012038 mm mounting-circle intrusion and deficient locating-hole clearances were detected and corrected; original copper and sources remain in `before-boundary-correction/`.
+
+`check-copper-geometry.py` checks actual wires, ordinary via drills against every component/test pad including own-net pads, board edges, NPTH and mounting keepouts. It passes with no exceptions and no violations. The USB graph reader walks only emitted copper between actual USB4110 DP2 pin 13 /DN1 pin 12 and STM32 PA12 pin 34 /PA11 pin 33. Primary planar lengths are **25.135517 /24.754076 mm**, skew **0.381441 mm** against the retained 0.50 mm screen. This does not prove differential impedance, return-path quality or full fabrication compliance.
+
+The corrected partial build uses the CLI's supported `--disable-parts-engine` option to avoid redundant supplier metadata lookups, retaining all official electronic definitions and 111 actual CAD entries. It is a diagnostic, not a replacement for the mandatory native checks, availability or assembly audits. An earlier normal partial build was stopped after repeated supplier model-metadata ECONNRESET failures; its log remains. All five mandatory native pre-routing checks passed without disabling them. Only routing strategy and conservative fill margins changed afterward; placement was rerun and TypeScript/format checks pass.
+
+## Routing failures and remaining gates
+
+The main official native pipeline-7 /1x completion timed out after 302.3 seconds in phase 2/2; exit 1, no fresh main output. Its bounded result/log are retained. Incremental I2C SDA attempts also time out (pipeline 7 at 110.1 s; pipeline 3 at 214.8 s). A timeout is not successful routing. Retained partial copper never substitutes for a fresh full output. The official KiCad routing interchange diagnostic preserves pad geometry/net partitions; exporter shared-via duplicates and zero-length saved-path contact markers are recorded explicitly. This is not final CAM or an approved fabrication export.
+
+Remaining blockers before ordering a prototype: complete 91 missing port connections; qualify actual power-path neck widths and thermal spreading (including driver/eFuse thermal vias or equivalent reviewed heat paths); verify USB return/impedance and motor-current layout; correct crowded reference silkscreen; run full native checks/snapshots and inspect every finished layer; generate and review same-source CAM/BOM/CPL and assembler feedback. Nominal width settings and connected ground pours alone do not establish these results. Physical testing remains stage 7 pending.
+
+Evidence folder: `evidence/rev-0.0.18-alpha.0/`. `PRE-ROUTING-CHECKS.json`, `UNCHANGED-IMPORTS.json`, `ALL-IMPORTS-AUDIT.json`, corrected partial geometry/fill/USB reports, native shorts log and `VISUAL-REVIEW.json` identify their scopes. Historical failed trials remain preserved; publication does not waive any failed gate.
+
+# Earlier revision records — historical evidence
+
 # Current publication patch 0.0.17-alpha.1 — same checked partial copper
 
 **Work in progress; NOT fabrication ready; NOT hardware tested.** 2026-10-04 Europe/Tirane. The circuit, placement, imported definitions, routing controls and saved copper are unchanged from source commit 062585ebee9135a57c5ee93879bf55cc45eaa4aa. Revision 17 pre-routing checks and bounded partial-copper reviews remain applicable. This patch only changes package metadata and publication scope. Stage 4 remains in progress; stages 5/6 remain pending.

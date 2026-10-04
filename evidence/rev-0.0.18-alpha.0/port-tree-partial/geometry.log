@@ -1,0 +1,41 @@
+{
+  "revision": "0.0.17-alpha.1",
+  "input": "evidence/rev-0.0.18-alpha.0/port-tree-partial/circuit.json",
+  "input_sha256": "bff910f73a49a99ebc7a12cec6ed7c7d59186a01e9075a5e536c61685219ea70",
+  "scope": "Actual tracks, drills and component/test pads. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 1,
+  "segment_count": 3,
+  "via_count": 1,
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": {
+      "via": "pcb_via_0",
+      "reference": "D_USB",
+      "pad": "pcb_smtpad_207",
+      "same_net": false,
+      "actual_mm": 0.36478856839534624,
+      "required_mm": 0.35
+    },
+    "track_to_pad_mm": {
+      "track": "USB_ESD_GROUND_ESCAPE",
+      "segment": 0,
+      "pad": "pcb_smtpad_207",
+      "reference": "D_USB",
+      "actual_mm": 0.1750121999999994,
+      "required_mm": 0.1
+    },
+    "track_to_track_mm": null,
+    "via_to_track_mm": null,
+    "via_to_via_mm": null
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 423,
+    "track_to_pad_mm": 535,
+    "track_to_track_mm": 0,
+    "via_to_track_mm": 0,
+    "via_to_via_mm": 0
+  },
+  "violations": [],
+  "passed": true
+}

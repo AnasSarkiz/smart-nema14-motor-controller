@@ -1,0 +1,25 @@
+{
+  "input_sha256": "754ddc1c4ced5e582749e9133decd4c63bb7d05635aedf160a12a4d12ed044b4",
+  "reviewed_images": [
+    "boundary-corrected-partial/top.png",
+    "boundary-corrected-partial/inner1.png",
+    "boundary-corrected-partial/inner2.png",
+    "boundary-corrected-partial/bottom.png",
+    "boundary-corrected-partial/schematic-MCU.png",
+    "boundary-corrected-partial/schematic-Encoder.png",
+    "boundary-corrected-partial/schematic-CAN.png",
+    "boundary-corrected-partial/schematic-LogicPower.png",
+    "boundary-corrected-partial/schematic-MotorDriver.png",
+    "boundary-corrected-partial/schematic-UsbPd.png",
+    "boundary-corrected-partial/schematic-Programming.png",
+    "boundary-corrected-partial/schematic-Interfaces.png",
+    "boundary-corrected-partial/schematic-InputPower.png"
+  ],
+  "findings": [
+    "All four current partial copper layers inspected; mounting exclusions are visible and measured independently.",
+    "Nine native A4 sheet renders inspected; labels/wiring/notes remain inside page extents, with the user-accepted TVS display finding retained.",
+    "Top and bottom reference silkscreen remains crowded/overlapping and requires manufacturing review and corrections.",
+    "Layer inspection does not qualify missing routing, power width, thermal paths, impedance or fabrication CAM."
+  ],
+  "fabrication_approved": false
+}

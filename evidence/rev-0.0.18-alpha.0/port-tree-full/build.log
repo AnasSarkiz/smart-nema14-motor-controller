@@ -1,0 +1,15 @@
+Building 1 file(s)...
+Building scripts/port-tree-main.circuit.tsx...
+Generating circuit JSON...
+Wrote debug artifact: evidence/rev-0.0.18-alpha.0/port-tree-full/router/placement-unrouted.png
+Autorouting <board#650 /> phase 1/2 "Saved local copper" start: connections=56, obstacles=444, previous_traces=0, router=precomputed, effort=5x, cache=disabled(precomputed)
+  connections: net.V3V3, net.NRST, net.I2C_SCL, net.CAN_RX, net.CAN_H, net.CAN_L, net.BUCK_SW, net.BUCK_BST, net.TMC_ENABLE_N, net.TMC_STEP, net.TMC_DIR, net.TMC_DIAG, net.TMC_UART_RX, net.TMC_CPO, net.TMC_CPI, net.TMC_VCP, net.TMC_5VOUT, net.TMC_VREF, net.TMC_SENSE_A, net.TMC_SENSE_B, net.MOTOR_A1, net.MOTOR_A2, net.MOTOR_B2, net.USB_DP, net.USB_DM, net.PD_CC1_MCU, net.PD_OVP_SERIES, net.PD_DB, net.VBUS_DIV, net.VBUS_ADC, net.SWCLK_GUARDED, net.SWCLK, net.SWDIO_CONN, net.SWCLK_CONN, net.NRST_CONN, net.POWER_GOOD, net.VBUS_ADC_PRE_GUARD, net.TEMP_ALERT_N, net.EXT_STEP_CONN, net.EXT_STEP, net.EXT_DIR, net.LIMIT2_CONN, net.LIMIT1, net.LIMIT2, net.LED_POWER_A, net.LED_STATUS_A, net.LED_FAULT_A, net.LED_STATUS_DRIVE, net.LED_FAULT_DRIVE, net.CAN_RS, net.POWER_HIGH_CURRENT, net.EFUSE_OVP_TOP_1, net.EFUSE_ILIM, net.EFUSE_ILIM_SWITCH, net.EFUSE_DVDT, net.CAN_TERM_LINK
+  phase 1/2 "Saved local copper" done: routed_traces=133, jumpers=0, errors=0, elapsed=3.0s
+Wrote debug artifact: evidence/rev-0.0.18-alpha.0/port-tree-full/router/phase-0-routed.png
+Could not save autorouting paths for subcircuit_source_group_0: PCB port selector is not unique: .D_USB > port.pin1
+Autorouting <board#650 /> phase 2/2 start: connections=26, obstacles=4812, previous_traces=0, router=tscircuit, solver=AutoroutingPipelineSolver9_PreloadedTraceGraph, effort=5x, cache=miss, cache_id=0f4f0038/d3f90c52
+  connections: net.GND, net.I2C_SDA, net.CAN_TX, net.VM, net.TMC_UART_TX, net.MOTOR_B1, net.VBUS_CONN, net.VBUS_PROTECTED, net.PD_CC1_CONN, net.PD_CC2_CONN, net.PD_CC2_MCU, net.PD_GATE, net.PD_OVP, net.PD_FLT, net.SWDIO_GUARDED, net.NRST_GUARDED, net.SWDIO, net.EXT_DIR_CONN, net.EXT_ENABLE_N_CONN, net.EXT_ENABLE_N, net.LIMIT1_CONN, net.EFUSE_FLT_N, net.EFUSE_EN, net.EFUSE_OVP_TOP_2, net.EFUSE_OVP, net.EFUSE_RTN
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=topologyPlanningSolver steps=1 progress=16% iterations_per_second=1584 elapsed=489ms
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=nodeDimensionSubdivisionSolver steps=22 progress=24% iterations_per_second=8 elapsed=65.9s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=edgeSolver steps=23 progress=28% iterations_per_second=0 elapsed=83.6s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver9_PreloadedTraceGraph solver_phase=availableSegmentPointSolver steps=28 progress=32% iterations_per_second=210 elapsed=112.9s

@@ -1,0 +1,46 @@
+"""Remove repeated traversals of existing copper; never search for new routes."""
+import hashlib
+import json
+import re
+from pathlib import Path
+
+source = Path('src/routing/saved-paths.json')
+native_path = Path('evidence/rev-0.0.17-alpha.0/routing-review/circuit.json')
+original = json.loads(source.read_text())
+native = json.loads(native_path.read_text())
+nets = {e['source_net_id']: e['name'] for e in native if e['type'] == 'source_net'}
+traces = {e['source_trace_id']: e for e in native if e['type'] == 'source_trace'}
+path_nets = {}
+for trace in native:
+    if trace['type'] != 'pcb_trace': continue
+    match = re.fullmatch(r'saved_phase_null_0_(\d+)', trace['pcb_trace_id'])
+    if not match: continue
+    net_ids = traces[trace['source_trace_id']]['connected_source_net_ids']
+    names = {nets[n] for n in net_ids if n in nets}
+    assert len(names) == 1
+    path_nets[int(match[1])] = names.pop()
+assert len(path_nets) == len(original['paths'])
+seen = {}
+compact = []
+removed_points = 0
+for index, path in enumerate(original['paths']):
+    net = path_nets[index]
+    retained_nodes = seen.setdefault(net, set())
+    route = path['route']
+    stop = len(route)
+    for i, point in enumerate(route):
+        if point['route_type'] != 'wire': continue
+        node = (round(point['x'],5), round(point['y'],5), point['layer'])
+        if i >= 1 and node in retained_nodes:
+            stop = i + 1
+            break
+    kept = route[:stop]
+    assert len(kept) >= 2
+    for point in kept:
+        layers = [point['layer']] if point['route_type'] == 'wire' else [point['from_layer'], point['to_layer']]
+        for layer in layers: retained_nodes.add((round(point['x'],5), round(point['y'],5), layer))
+    compact.append({**path,'route':kept})
+    removed_points += len(route)-len(kept)
+result = {**original,'paths':compact,'compaction_basis':{'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'native_sha256':hashlib.sha256(native_path.read_bytes()).hexdigest(),'removed_repeated_points':removed_points,'scope':'Original wire/via points only. Full geometric-union and native connectivity checks are required.'}}
+Path('src/routing/compact-paths.json').write_text(json.dumps(result,indent=2)+'\n')
+print('Kept',len(compact),'paths;',removed_points,'repeated points removed; geometric preservation remains to verify')

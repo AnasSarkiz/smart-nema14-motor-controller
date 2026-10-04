@@ -1,0 +1,55 @@
+{
+  "type": "autorouter_debug_summary",
+  "generatedAt": "2026-10-03T22:51:13.424Z",
+  "phaseCount": 2,
+  "phases": [
+    {
+      "subcircuit_id": "subcircuit_source_group_0",
+      "componentDisplayName": "<board#655 />",
+      "phaseName": "Saved local copper",
+      "phaseStageIndex": 0,
+      "phaseStageCount": 1,
+      "routingPhaseIndex": 0,
+      "phaseOrdinal": 1,
+      "phaseCount": 2,
+      "connectionCount": 56,
+      "obstacleCount": 490,
+      "previousTraceCount": 0,
+      "autorouterName": "precomputed",
+      "autorouterVersion": "beta_pipeline7",
+      "effort": 5,
+      "cacheStatus": "disabled",
+      "cacheDisabledReason": "precomputed",
+      "outputTraceCount": 133,
+      "outputJumperCount": 0,
+      "errorCount": 0,
+      "elapsedMs": 2566,
+      "startedAt": "2026-10-03T22:47:12.933Z",
+      "completedAt": "2026-10-03T22:47:15.499Z"
+    },
+    {
+      "subcircuit_id": "subcircuit_source_group_0",
+      "componentDisplayName": "<board#655 />",
+      "routingPhaseIndex": 1,
+      "phaseOrdinal": 2,
+      "phaseCount": 2,
+      "connectionCount": 26,
+      "obstacleCount": 4858,
+      "previousTraceCount": 0,
+      "autorouterName": "tscircuit",
+      "autorouterVersion": "beta_pipeline7",
+      "solverName": "AutoroutingPipelineSolver7_MultiGraph",
+      "effort": 5,
+      "cacheStatus": "miss",
+      "cacheKey": "routes:core@0.0.2070:solver:8a5670e6e692e7a2:srj:42b6e2149ec3d261",
+      "elapsedMs": 235665,
+      "error": {
+        "message": "Static reachability precheck failed: 6 route(s) have no legal path under the current reservation and start-region rules source_net_0_mst53 (pcb_port_83->escape-via:source_net_0:pcb_port_31:inner1:4), source_net_0_mst56 (pcb_port_83->pcb_port_75), source_net_0_mst78 (pcb_port_118->pcb_port_142), source_net_80_mst0 (pcb_port_381->pcb_port_383), source_net_80_mst4 (pcb_port_381->pcb_port_395), +1 more (capacity-autorouter@0.0.955)"
+      },
+      "startedAt": "2026-10-03T22:47:16.348Z",
+      "completedAt": "2026-10-03T22:51:12.019Z"
+    }
+  ],
+  "circuitJsonElementCount": 4928,
+  "targetPhaseReached": false
+}

@@ -1,0 +1,49 @@
+{
+  "required_pre_routing_checks": {
+    "netlist": {
+      "command": "bun node_modules/@tscircuit/cli/dist/cli/main.js check netlist index.circuit.tsx",
+      "exit_code": 0,
+      "log_sha256": "ed81ba6b739cc86e3893765e600d1777d9bc85ef9614b86b769f620ccb6499d6"
+    },
+    "pin_specification": {
+      "command": "bun node_modules/@tscircuit/cli/dist/cli/main.js check pin_specification index.circuit.tsx",
+      "exit_code": 0,
+      "log_sha256": "25746d215c75940bda2ef407170294c704d5268bc30fa3b18fc332045532d91d"
+    },
+    "source": {
+      "command": "bun node_modules/@tscircuit/cli/dist/cli/main.js check source index.circuit.tsx",
+      "exit_code": 0,
+      "log_sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    "schematic-placement": {
+      "command": "bun node_modules/@tscircuit/cli/dist/cli/main.js check schematic-placement index.circuit.tsx",
+      "exit_code": 0,
+      "log_sha256": "d7515c839b2803ecae72a88ecc3038c1066f75812a9cf437981a78cb73c1b543"
+    },
+    "placement": {
+      "command": "bun node_modules/@tscircuit/cli/dist/cli/main.js check placement index.circuit.tsx",
+      "exit_code": 0,
+      "log_sha256": "38df5e053a3984d90bb1403e0a86b01da9b246d9c56980f76ccf7ef0917cbc3c"
+    }
+  },
+  "typecheck": {
+    "exit_code": 0,
+    "log": "typecheck-final.log"
+  },
+  "imports": {
+    "fixture": "evidence/rev-0.0.13-alpha.0",
+    "latest_fixture_build_exit_code": 0,
+    "44_imports_261_pin_pad_mappings_zero_discrepancies": true
+  },
+  "accepted_cosmetic_findings": "Imported C1974707 TVS schematic symbol rotation remains an accepted display issue. No imported definition was patched.",
+  "main_completion_routing_enabled": true,
+  "fabrication_ready": false,
+  "placement_after_boundary_correction": {
+    "command": "bun node_modules/@tscircuit/cli/dist/cli/main.js check placement index.circuit.tsx",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0,
+    "log_sha256": "38df5e053a3984d90bb1403e0a86b01da9b246d9c56980f76ccf7ef0917cbc3c"
+  },
+  "retained_checks_basis": "After the five required checks, only native routing pipeline/effort settings and conservative fill/keepout planning margins changed. Electronic wiring, values, definitions and body placement are unchanged; placement was rerun after margin correction."
+}

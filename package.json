@@ -1,7 +1,7 @@
 {
   "name": "@tsci/AnasSarkiz.smart-nema14-motor-controller--01a0fd9b",
-  "version": "0.0.17-alpha.1",
-  "description": "STEPPERONLINE 14HM11-0404S controller: routing development prototype, fabrication validation pending",
+  "version": "0.0.18-alpha.0",
+  "description": "STEPPERONLINE 14HM11-0404S controller: connected ground/RTN planes, incomplete routing prototype; fabrication validation pending",
   "main": "index.circuit.tsx",
   "keywords": [
     "tscircuit",
@@ -43,19 +43,20 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",
-    "@tscircuit/capacity-autorouter": "0.0.955",
-    "@tscircuit/checks": "0.0.236",
+    "@tscircuit/capacity-autorouter": "0.0.956",
+    "@tscircuit/checks": "0.0.238",
     "@tscircuit/cli": "0.1.2237",
-    "@tscircuit/core": "0.0.2071",
-    "@tscircuit/props": "0.0.682",
-    "circuit-json": "0.0.513",
+    "@tscircuit/core": "0.0.2074",
+    "@tscircuit/props": "0.0.684",
+    "circuit-json": "0.0.514",
     "circuit-to-svg": "0.0.437",
     "dsn-converter": "0.0.92",
     "dsnts": "0.1.12",
-    "easyeda": "0.0.369",
+    "easyeda": "0.0.370",
     "sharp": "0.32.6",
-    "tscircuit": "0.0.2742",
-    "typescript": "5.9.3"
+    "tscircuit": "0.0.2743",
+    "typescript": "5.9.3",
+    "@tscircuit/runframe": "0.0.2897"
   },
   "author": "AnasSarkiz",
   "dependencies": {
@@ -63,10 +64,10 @@
   },
   "private": true,
   "overrides": {
-    "@tscircuit/core": "0.0.2071",
-    "@tscircuit/capacity-autorouter": "0.0.955",
-    "@tscircuit/props": "0.0.682",
-    "@tscircuit/checks": "0.0.236",
-    "circuit-json": "0.0.513"
+    "@tscircuit/core": "0.0.2074",
+    "@tscircuit/capacity-autorouter": "0.0.956",
+    "@tscircuit/props": "0.0.684",
+    "@tscircuit/checks": "0.0.238",
+    "circuit-json": "0.0.514"
   }
 }

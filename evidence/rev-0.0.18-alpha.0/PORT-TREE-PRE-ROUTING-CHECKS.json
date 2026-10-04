@@ -1,0 +1,34 @@
+{
+  "entry": "scripts/port-tree-main.circuit.tsx",
+  "checks": [
+    {
+      "command": "netlist",
+      "exit_code": 0,
+      "log_sha256": "b9c5a811d895efe03ec608192bc3561b73a1ee8c6e4f37890d676893643240fd"
+    },
+    {
+      "command": "pin",
+      "exit_code": 0,
+      "log_sha256": "c883ca9a69fb766e0318f2c0309aaeec68c72818953a279e639cebf525a03f99"
+    },
+    {
+      "command": "source",
+      "exit_code": 0,
+      "log_sha256": "a58c3134f56b6c39672a9c9e06d70ad467a4dd51a98f67fa0f2d1e6a441567c3"
+    },
+    {
+      "command": "schematic-placement",
+      "exit_code": 0,
+      "log_sha256": "42a957be926b660d0a17bbc6b87b451e4e5ebf35d6e903c123767d9136199bda"
+    },
+    {
+      "command": "placement",
+      "exit_code": 0,
+      "log_sha256": "18e2205ee5f57912f72248dba130007ad5fef73b9ef3dd692ccb740d7264af22"
+    }
+  ],
+  "accepted_findings": [
+    "User-accepted C1974707 symbol rotation remains visible"
+  ],
+  "fabrication_approved": false
+}

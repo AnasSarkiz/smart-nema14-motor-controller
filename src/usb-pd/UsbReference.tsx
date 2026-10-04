@@ -1,3 +1,4 @@
+import { Fragment } from "react"
 /** Reserve L2 copper beneath the manually placed L1 USB pair.
  * The remaining L2 area is filled after routing. These regions prohibit
  * signal-via antipads under the pair; actual continuity still requires review.
@@ -41,19 +42,22 @@ export function UsbReference() {
     },
   ]
   return regions.map(({ name, left, right, bottom, top }) => (
-    <copperpour
-      name={name}
-      layer="inner1"
-      connectsTo="net.GND"
-      unbroken
-      outline={[
-        { x: left - 0.15, y: bottom - 0.15 },
-        { x: right + 0.15, y: bottom - 0.15 },
-        { x: right + 0.15, y: top + 0.15 },
-        { x: left - 0.15, y: top + 0.15 },
-      ]}
-      clearance="0.15mm"
-      useThermalReliefs={false}
-    />
+    <Fragment key={name}>
+      <copperpour
+        name={name}
+        layer="inner1"
+        connectsTo="net.GND"
+        unbroken
+        outline={[
+          { x: left - 0.15, y: bottom - 0.15 },
+          { x: right + 0.15, y: bottom - 0.15 },
+          { x: right + 0.15, y: top + 0.15 },
+          { x: left - 0.15, y: top + 0.15 },
+        ]}
+        clearance="0.155mm"
+        cutoutMargin="0.31mm"
+        useThermalReliefs={false}
+      />
+    </Fragment>
   ))
 }

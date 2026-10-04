@@ -1,0 +1,40 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Could not save autorouting paths for subcircuit_source_group_0: PCB port selector is not unique: .D_USB > port.pin1
+Autorouting phase 2/2 has been running for 10.3s; enabling phase diagnostics. Re-run with --autorouter-debug for full autorouter logs from the start.
+Autorouting <board#690 /> phase 2/2 long-running start: connections=26, obstacles=4891, previous_traces=0, router=tscircuit, version=beta_pipeline7, solver=AutoroutingPipelineSolver7_MultiGraph, effort=1x, cache=miss, cache_id=8a4be38a/14234eda
+  connections: net.GND, net.I2C_SDA, net.CAN_TX, net.VM, net.TMC_UART_TX, net.MOTOR_B1, net.VBUS_CONN, net.VBUS_PROTECTED, net.PD_CC1_CONN, net.PD_CC2_CONN, net.PD_CC2_MCU, net.PD_GATE, net.PD_OVP, net.PD_FLT, net.SWDIO_GUARDED, net.NRST_GUARDED, net.SWDIO, net.EXT_DIR_CONN, net.EXT_ENABLE_N_CONN, net.EXT_ENABLE_N, net.LIMIT1_CONN, net.EFUSE_FLT_N, net.EFUSE_EN, net.EFUSE_OVP_TOP_2, net.EFUSE_OVP, net.EFUSE_RTN
+  phase 2/2 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=topologyMergingSolver steps=16 progress=23% iterations_per_second=568 elapsed=10.3s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=topologyMergingSolver steps=17 progress=23% iterations_per_second=920 elapsed=10.6s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=topologyMergingSolver steps=41 progress=26% iterations_per_second=386 elapsed=20.9s
+  phase 2/2 progress: solver=AutoroutingPipelineSolver7_MultiGraph solver_phase=nodeDimensionSubdivisionSolver steps=61 progress=27% iterations_per_second=0 elapsed=302.0s
+Wrote debug artifact: dist/autorouter-debug/phase-1.input.simple-route.json
+Wrote debug artifact: dist/autorouter-debug/phase-1.previous-output.traces.json
+Wrote debug artifact: dist/autorouter-debug/board.source-and-pcb.circuit.json
+Wrote debug artifact: dist/autorouter-debug/phase-1.timeout.json
+Autorouter timeout after 302.3s in phase 2/2. Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+158814 |       return;
+158815 |     const artifactPath = this.writeTimeoutArtifact(this.activePhase, elapsedMs);
+158816 |     const phaseLabel = this.getPhaseLabel(this.activePhase);
+158817 |     const message = `Autorouter timeout after ${this.formatElapsed(elapsedMs)} in ${phaseLabel}. Set a different timeout with \`--autorouter-timeout <duration>\` (for example, \`--autorouter-timeout 2m\`).`;
+158818 |     this.log(kleur_default.red(message));
+158819 |     throw new AutorouterPhaseTimeoutError(message, artifactPath);
+                   ^
+AutorouterPhaseTimeoutError: Autorouter timeout after 302.3s in phase 2/2. Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+ debugArtifactPath: "/Users/anassarkiz/tsci/tscircuit-store/boards/smart-nema14-motor-controller--01a0fd9b/dist/autorouter-debug/phase-1.timeout.json",
+
+      at checkTimeout (/Users/anassarkiz/tsci/tscircuit-store/boards/smart-nema14-motor-controller--01a0fd9b/node_modules/@tscircuit/cli/dist/cli/main.js:158819:11)
+      at generateCircuitJson (/Users/anassarkiz/tsci/tscircuit-store/boards/smart-nema14-motor-controller--01a0fd9b/node_modules/@tscircuit/cli/dist/cli/main.js:167875:27)
+
+Fatal error [circuit_generation_failed]: Autorouter timeout after 302.3s in phase 2/2. Set a different timeout with `--autorouter-timeout <duration>` (for example, `--autorouter-timeout 2m`).
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, autorouter-timeout
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

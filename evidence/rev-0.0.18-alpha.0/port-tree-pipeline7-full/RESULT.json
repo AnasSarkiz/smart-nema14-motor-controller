@@ -1,0 +1,21 @@
+{
+  "command": [
+    "bun",
+    "node_modules/@tscircuit/cli/dist/cli/main.js",
+    "build",
+    "scripts/port-tree-pipeline7.circuit.tsx",
+    "--autorouter-timeout",
+    "5m",
+    "--autorouter-debug",
+    "--autorouter-debug-dir",
+    "evidence/rev-0.0.18-alpha.0/port-tree-pipeline7-full/router",
+    "--pcb-png",
+    "--pcb-svgs"
+  ],
+  "started_unix": 1791067628.6790771,
+  "elapsed_seconds": 248.68398690223694,
+  "exit_code": 1,
+  "stopped_reason": null,
+  "fresh_circuit_output": true,
+  "scope": "Official native routing with unchanged DRC; bounded resource use is not fabrication validation."
+}

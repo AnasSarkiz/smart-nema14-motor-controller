@@ -1,0 +1,13 @@
+{
+  "command": "bun node_modules/@tscircuit/cli/dist/cli/main.js build routing-review.circuit.tsx --disable-parts-engine --pcb-png --pcb-svgs --schematic-svgs",
+  "exit_code": 1,
+  "scope": "Diagnostic checked partial copper from retained official imports. Redundant supplier metadata lookup disabled by supported CLI flag. Does not replace required full native checks or CAD/availability audits. Missing connections are retained.",
+  "files": {
+    "index.circuit.tsx": "0f842721a71bd1243c266701a778e25107f24cf47e41d76b1ec2c6500361be40",
+    "routing-review.circuit.tsx": "07666455a389869bc6f47ce953951aa30a5c9e57318cc272eb6af854c5c602f3",
+    "src/routing/GroundReturns.tsx": "3430090172f46165d45ad124c20d747c6772361c7c410cf443c96438c0e135d7",
+    "src/usb-pd/UsbReference.tsx": "d115d2541f4ece9e9eecf0c7fe3b5b8a2673e56503da5ba80ec74d62e848d0fe",
+    "src/mechanics/ControllerMount.tsx": "6498086c2fb2b0e471e9a427cfd12a1a6621d828a385d7645355b5eec1c15303",
+    "evidence/rev-0.0.18-alpha.0/boundary-corrected-partial/circuit.json": "754ddc1c4ced5e582749e9133decd4c63bb7d05635aedf160a12a4d12ed044b4"
+  }
+}

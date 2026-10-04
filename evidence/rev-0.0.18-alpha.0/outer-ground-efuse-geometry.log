@@ -1,0 +1,61 @@
+{
+  "revision": "0.0.17-alpha.1",
+  "input": "dist/scripts/outer-ground-islands/circuit.json",
+  "input_sha256": "4d2808aca7d60056be3aec351dd46404a340e508430cbe8fb69a81b4a5009be9",
+  "scope": "Actual tracks, drills and component/test pads. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 136,
+  "segment_count": 1177,
+  "via_count": 104,
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": {
+      "via": "pcb_via_68",
+      "reference": "J_MOTOR",
+      "pad": "pcb_smtpad_298",
+      "same_net": true,
+      "actual_mm": 0.35393720000000106,
+      "required_mm": 0.35
+    },
+    "track_to_pad_mm": {
+      "track": "saved_phase_null_0_125",
+      "segment": 1,
+      "pad": "pcb_smtpad_76",
+      "reference": "U6",
+      "actual_mm": 0.10054982373235043,
+      "required_mm": 0.1
+    },
+    "track_to_track_mm": {
+      "first": "saved_phase_null_0_56",
+      "first_segment": 9,
+      "second": "saved_phase_null_0_77",
+      "second_segment": 12,
+      "layer": "inner2",
+      "actual_mm": 0.15169999999999906,
+      "required_mm": 0.15
+    },
+    "via_to_track_mm": {
+      "via": "pcb_via_54",
+      "track": "saved_phase_null_0_74",
+      "segment": 8,
+      "layer": "inner1",
+      "actual_mm": 0.15165313062773927,
+      "required_mm": 0.15
+    },
+    "via_to_via_mm": {
+      "first": "pcb_via_27",
+      "second": "pcb_via_32",
+      "actual_mm": 0.15246853090345247,
+      "required_mm": 0.15
+    }
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 43992,
+    "track_to_pad_mm": 208344,
+    "track_to_track_mm": 235064,
+    "via_to_track_mm": 119140,
+    "via_to_via_mm": 5356
+  },
+  "violations": [],
+  "passed": true
+}

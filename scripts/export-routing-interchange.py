@@ -11,12 +11,17 @@ import sys
 from pathlib import Path
 
 import pcbnew
+import wx
+
+application = wx.App(False)
 
 folder = Path(sys.argv[1] if len(sys.argv) > 1 else "evidence/rev-0.0.17-alpha.0/manual-usb")
 native_path = folder / "circuit.json"
 native = json.loads(native_path.read_text())
+assert (folder / "board.kicad_pcb").is_file(), "Official KiCad export is absent"
 board = pcbnew.LoadBoard(str((folder / "board.kicad_pcb").resolve()))
 sources = {e["source_component_id"]: e["name"] for e in native if e["type"] == "source_component"}
+sources.update({e["source_manually_placed_via_id"]: e["source_manually_placed_via_id"] for e in native if e["type"] == "source_manually_placed_via"})
 components = {e["pcb_component_id"]: sources[e["source_component_id"]] for e in native if e["type"] == "pcb_component"}
 ports = {e["pcb_port_id"]: e for e in native if e["type"] == "pcb_port"}
 source_ports = {e["source_port_id"]: e for e in native if e["type"] == "source_port"}
@@ -94,6 +99,8 @@ pcb_traces = {e["pcb_trace_id"]: e for e in native if e["type"] == "pcb_trace"}
 tracks = list(board.GetTracks())
 copper_issues = []
 matched_tracks = set()
+zero_length_contacts = 0
+redundant_exported_vias = []
 layer_ids = {"top": pcbnew.F_Cu, "inner1": pcbnew.In1_Cu,
              "inner2": pcbnew.In2_Cu, "bottom": pcbnew.B_Cu}
 
@@ -110,6 +117,11 @@ def native_position_error(point, position):
 
 for trace in pcb_traces.values():
     for start, end in zip(trace["route"], trace["route"][1:]):
+        if (start["x"], start["y"]) == (end["x"], end["y"]):
+            # Native saved paths include coincident wire/via contact markers.
+            # They contain no line copper; actual via barrels are checked below.
+            zero_length_contacts += 1
+            continue
         start_layer = start["layer"] if start["route_type"] == "wire" else start["to_layer"]
         end_layer = end["layer"] if end["route_type"] == "wire" else end["from_layer"]
         if start_layer != end_layer:
@@ -129,15 +141,19 @@ for trace in pcb_traces.values():
 for via in (e for e in native if e["type"] == "pcb_via"):
     matches = [(index, track) for index, track in enumerate(tracks)
                if track.GetClass() == "PCB_VIA"
-               and track.GetNetCode() == trace_net_code(pcb_traces[via["pcb_trace_id"]])
+               and track.GetNetCode() == (next(iter(native_to_exported_net[root(via["source_net_id"])])) if via.get("source_net_id") else trace_net_code(pcb_traces[via["pcb_trace_id"]]))
                and native_position_error(via, track.GetPosition()) < 0.000002
                and abs(pcbnew.ToMM(track.GetWidth(pcbnew.F_Cu)) - via["outer_diameter"]) < 0.000002
                and abs(pcbnew.ToMM(track.GetDrillValue()) - via["hole_diameter"]) < 0.000002
                and track.TopLayer() == pcbnew.F_Cu and track.BottomLayer() == pcbnew.B_Cu]
-    if len(matches) != 1:
-        copper_issues.append({"via": via["pcb_via_id"], "matching_vias": len(matches)})
+    if not matches:
+        copper_issues.append({"via": via["pcb_via_id"], "matching_vias": 0})
     else:
-        matched_tracks.add(matches[0][0])
+        # The official exporter repeats shared route vias. Count every exact
+        # coincident copy; reject any unmatched net, dimension or layer span.
+        matched_tracks.update(index for index, _ in matches)
+        if len(matches) > 1:
+            redundant_exported_vias.append({"native_via": via["pcb_via_id"], "exact_coincident_copies": len(matches), "geometry_changed": False})
 if len(matched_tracks) != len(tracks):
     copper_issues.append({"unmatched_exported_copper_objects": len(tracks) - len(matched_tracks)})
 
@@ -151,6 +167,9 @@ report = {
     "measurements": measurements,
     "manual_copper_objects_checked": len(matched_tracks),
     "manual_copper_issues": copper_issues,
+    "zero_length_native_contact_markers": zero_length_contacts,
+    "redundant_exported_vias": redundant_exported_vias,
+    "exporter_warning": "Shared native vias have exact coincident copies in the official KiCad export; routing diagnostic only, final manufacturing export requires cleanup/review." if redundant_exported_vias else None,
     "status": "failed" if issues or any(net_issues.values()) or copper_issues else "pad geometry, connectivity partitions and manual copper match",
     "scope": "Session preservation and final copper validation remain required; this is not fabrication approval.",
 }
@@ -165,7 +184,13 @@ assert not copper_issues, "Official KiCad export changed the fixed native copper
 for reference, footprint in footprints.items():
     footprint.SetFPID(pcbnew.LIB_ID("tscircuit-routing", reference))
 
-mounting_holes = [f for f in board.GetFootprints() if not f.GetReference()]
+anonymous = [f for f in board.GetFootprints() if not f.GetReference()]
+mounting_holes = [f for f in anonymous if len(list(f.Pads())) == 1]
+native_via_features = [f for f in anonymous if not list(f.Pads())]
+assert len(native_via_features) == sum(e["type"] == "source_manually_placed_via" for e in native), "Unexpected anonymous footprint"
+for index, footprint in enumerate(native_via_features):
+    footprint.SetReference(f"NATIVE_VIA_FEATURE_{index + 1}")
+    footprint.SetFPID(pcbnew.LIB_ID("tscircuit-routing", footprint.GetReference()))
 assert len(mounting_holes) == 4
 for index, footprint in enumerate(mounting_holes):
     pads = list(footprint.Pads())

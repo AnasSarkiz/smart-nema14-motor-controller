@@ -1,0 +1,56 @@
+{
+  "type": "autorouter_debug_summary",
+  "generatedAt": "2026-10-03T22:52:26.495Z",
+  "phaseCount": 2,
+  "phases": [
+    {
+      "subcircuit_id": "subcircuit_source_group_0",
+      "componentDisplayName": "<board#656 />",
+      "phaseName": "Saved local copper",
+      "phaseStageIndex": 0,
+      "phaseStageCount": 1,
+      "routingPhaseIndex": 0,
+      "phaseOrdinal": 1,
+      "phaseCount": 3,
+      "connectionCount": 56,
+      "obstacleCount": 490,
+      "previousTraceCount": 0,
+      "autorouterName": "precomputed",
+      "effort": 5,
+      "cacheStatus": "disabled",
+      "cacheDisabledReason": "precomputed",
+      "outputTraceCount": 133,
+      "outputJumperCount": 0,
+      "errorCount": 0,
+      "elapsedMs": 2768,
+      "startedAt": "2026-10-03T22:51:31.599Z",
+      "completedAt": "2026-10-03T22:51:34.367Z"
+    },
+    {
+      "subcircuit_id": "subcircuit_source_group_0",
+      "componentDisplayName": "<board#656 />",
+      "phaseName": "Ground to reference plane",
+      "phaseStageIndex": 0,
+      "phaseStageCount": 2,
+      "routingPhaseIndex": 1,
+      "phaseOrdinal": 2,
+      "phaseCount": 3,
+      "connectionCount": 91,
+      "obstacleCount": 4847,
+      "previousTraceCount": 1,
+      "autorouterName": "fanout",
+      "solverName": "FanoutSolver",
+      "effort": 5,
+      "cacheStatus": "disabled",
+      "cacheDisabledReason": "strategy_not_cacheable",
+      "elapsedMs": 47000,
+      "error": {
+        "message": "Fanout failed for C1, C11, C12, C15, C16, C17, C18, C19, C2, C20, C21, C22, C23, C24, C25, C26, C27, C28, C29, C3, C30, C31, C32, C34, C4, C5, C6, C7, C8, C9, D_CAN, D_IO1, D_IO2, D_USB, D_VBUS, J_IO, J_MOTOR, J_SWD, J_USB, LED_FAULT, LED_POWER, LED_STATUS, R11, R15, R17, R28, R29, R46, R5, R51, R52, R53, R6, R8, R9, U1, U10, U2, U3, U4, U5, U6, U7, U8, U9: only 45 of 91 connections could escape to the breakout boundary. The breakout boundary is 20.33mm from the pads at its narrowest point, which all 91 escapes have to share. Give the fanout more room by increasing the breakout's padding, or by extending the breakout to include the parts crowding it (decoupling capacitors, series resistors) so their pads sit inside the boundary instead of against it."
+      },
+      "startedAt": "2026-10-03T22:51:35.225Z",
+      "completedAt": "2026-10-03T22:52:22.227Z"
+    }
+  ],
+  "circuitJsonElementCount": 4928,
+  "targetPhaseReached": false
+}
