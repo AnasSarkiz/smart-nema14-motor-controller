@@ -1,0 +1,36 @@
+{
+  "revision": "0.0.19-alpha.0",
+  "scope": "Independent cantilever/PCB beam engineering screen, not FEA, guaranteed laminate properties, fatigue or hardware test",
+  "material": "6061-T6/T651 machined monolithic carrier; no welding",
+  "source": "https://d2zo35mdb530wx.cloudfront.net/_legacy/UCPthyssenkruppBAMXUK/assets.files/material-data-sheets/aluminium/aluminium-6061.pdf",
+  "source_pages": [
+    2,
+    3
+  ],
+  "youngs_modulus_screen_mpa": 69000,
+  "minimum_yield_mpa": 240,
+  "external_board_and_cable_load_total_limit_n": 20,
+  "rail_stress_mpa": 22.20285423534051,
+  "return_stress_mpa": 10.304713601416898,
+  "stress_safety_factor": 10.809421052631583,
+  "rail_deflection_mm": 0.05250294197303152,
+  "return_deflection_mm": 0.0010456610160139632,
+  "pcb_deflection_mm": 0.08216605027913376,
+  "combined_load_deflection_screen_mm": 0.13571465326817925,
+  "m2_engagement_mm": [
+    2.484,
+    3.396
+  ],
+  "minimum_thread_depth_mm": 4.45,
+  "m3_motor_penetration_mm": [
+    2.75,
+    3.25
+  ],
+  "motor_minimum_available_thread_depth_mm": 4,
+  "minimum_m2_radial_bore_clearance_mm": 0.25,
+  "mount_axis_misregistration_allowance_mm": 0.15,
+  "pcb_mount_hole_pitch_mm": 30.5,
+  "hardware_constraints": "M2x5 length 5 +/-0.2 mm; head <=3.8 mm diameter x1.6 mm high; custom washer OD4.5/ID2.2/thickness0.50 +/-0.05 mm. M3x6 head <=5.5x3 mm. Retention/torque must be physically qualified. Hardware within these envelopes only.",
+  "passed_analytical_screen": true,
+  "physical_fit_or_strength_tested": false
+}

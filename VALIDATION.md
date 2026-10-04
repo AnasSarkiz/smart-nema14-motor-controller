@@ -1,5 +1,14 @@
 # Current revision 0.0.19-alpha.0 — checked manual eFuse-enable copper
 
+## Connector orientation follow-up — current 0.0.19-alpha.0
+
+Source basis: 5e3aeabc1c5983f36909f7c71e2d3d3c0af8837a. All four actual exported mouths were visually inspected from opposite directions against the manufacturer side-entry drawings. USB faces −Y, motor +Y, bottom I/O and top SWD face +X. The corresponding outer bounds are −0.090, 3.2670, 0.8620 and 0.4625 mm from their exit edges. Bodies need not be flush if their mating corridor is clear. No placement, imported definition or saved route changed.
+
+The renderer independently confirms all 111 current/native mounted component placements and CAD registrations match, plus every connector land. Fresh carrier/fastener envelope and analytical tolerance checks pass. Specified mating envelopes retain 2.2331 /2.0643 /0.1643 /1.0385 mm clearance for USB/motor/I/O/SWD. The exact JST plug CAD is unavailable, so these are explicitly bounded drawing-based envelopes; physical mating remains pending. The I/O margin is tight and needs exact harness fit testing. Native placement reports zero errors/warnings; formatting and TypeScript pass. Evidence and repeatable command: mechanical/CONNECTOR-ORIENTATION-REVIEW.md and evidence/rev-0.0.19-alpha.0/connector-orientation/.
+
+This is an audit checkpoint on the same electronic revision, with unchanged stage statuses and 88 unfinished connections. The same private package release will receive the exact committed audit files; verified publication details follow in CONNECTOR-AUDIT-PUBLICATION.json. It is not a completed full-board build or fabrication approval.
+
+
 **Work in progress; NOT fabrication ready; NOT hardware tested.** 2026-10-04 Europe/Tirane. Source basis: published private Git/main 240c7325ab0161e7de132c54259ecce02cf104e0. Source da326ab9adcdbd3c623e665cc7e01b6d9529c7fc is pushed to private GitHub/main with remote SHA verified. Private tscircuit 0.0.19-alpha.0, release 8aae13ac-f696-41ef-af35-75d8e16237da, contains 1,141 exact files /136,360,522 raw bytes; every file matches official download SHA256. PUBLICATION-RECEIPT.json records the complete readback. Hosted build success remains separately unverified.
 
 The retained source adds two native saved real-port paths joining U10 UVLO pin 10, R38 pin 2 and R39 pin 1. Two physical 0.60/0.30 mm through vias span all four layers. Guarded bends in existing PD_DB and V3V3 copper clear the new vias. No imported definitions, footprints, pin mappings, purchased placements, electronic wiring, BOM or mechanical dimensions changed. The TVS symbol rotation remains user accepted cosmetic feedback.

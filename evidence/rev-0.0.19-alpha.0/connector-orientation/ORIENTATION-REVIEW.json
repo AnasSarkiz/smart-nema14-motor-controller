@@ -1,0 +1,129 @@
+{
+  "revision": "0.0.19-alpha.0",
+  "source_basis": "5e3aeabc1c5983f36909f7c71e2d3d3c0af8837a",
+  "reviewed_at": "2026-10-04T02:43:07.816347+00:00",
+  "result": "passed connector outward orientation and bounded nominal access review",
+  "scope": "All four actual exported connector bodies, manufacturer drawings, current-to-mounted correspondence for 111 component placements and CAD registrations, current-to-mounted correspondence of every connector land, rerun carrier and constrained mating-envelope screens",
+  "connectors": [
+    {
+      "reference": "J_USB",
+      "mpn": "USB4110-GF-A",
+      "jlcpcb": [
+        "C5143397"
+      ],
+      "pcb_rotation_degrees": 0,
+      "layer": "top",
+      "visually_verified_outward_mating_direction_xyz": [
+        0,
+        -1,
+        0
+      ],
+      "board_edge": "lower (-Y)",
+      "outer_model_bound_setback_from_edge_mm": -0.08999986648559499,
+      "setback_scope": "Outer model bound, not a separately dimensioned mating-face datum; negative indicates protrusion beyond PCB edge",
+      "remaining_mating_envelope_clearance_mm": 2.2330521915429866,
+      "limiting_neighbor": "C12",
+      "model_visual_review": "evidence/rev-0.0.19-alpha.0/connector-orientation/J_USB.png",
+      "placement_change_required": false
+    },
+    {
+      "reference": "J_MOTOR",
+      "mpn": "SM04B-GHS-TB(LF)(SN)",
+      "jlcpcb": [
+        "C189895"
+      ],
+      "pcb_rotation_degrees": 180,
+      "layer": "top",
+      "visually_verified_outward_mating_direction_xyz": [
+        0,
+        1,
+        0
+      ],
+      "board_edge": "upper (+Y)",
+      "outer_model_bound_setback_from_edge_mm": 3.2670026779174783,
+      "setback_scope": "Outer model bound, not a separately dimensioned mating-face datum; negative indicates protrusion beyond PCB edge",
+      "remaining_mating_envelope_clearance_mm": 2.0643233983370455,
+      "limiting_neighbor": "C20",
+      "model_visual_review": "evidence/rev-0.0.19-alpha.0/connector-orientation/J_MOTOR.png",
+      "placement_change_required": false
+    },
+    {
+      "reference": "J_IO",
+      "mpn": "SM10B-SRSS-TB(LF)(SN)",
+      "jlcpcb": [
+        "C160409"
+      ],
+      "pcb_rotation_degrees": 90,
+      "layer": "bottom",
+      "visually_verified_outward_mating_direction_xyz": [
+        1,
+        0,
+        0
+      ],
+      "board_edge": "right (+X), underside",
+      "outer_model_bound_setback_from_edge_mm": 0.8620080947875977,
+      "setback_scope": "Outer model bound, not a separately dimensioned mating-face datum; negative indicates protrusion beyond PCB edge",
+      "remaining_mating_envelope_clearance_mm": 0.1642853467318209,
+      "limiting_neighbor": "carrier",
+      "model_visual_review": "evidence/rev-0.0.19-alpha.0/connector-orientation/J_IO.png",
+      "placement_change_required": false
+    },
+    {
+      "reference": "J_SWD",
+      "mpn": "SM05B-SRSS-TB(LF)(SN)",
+      "jlcpcb": [
+        "C136657"
+      ],
+      "pcb_rotation_degrees": 90,
+      "layer": "top",
+      "visually_verified_outward_mating_direction_xyz": [
+        1,
+        0,
+        0
+      ],
+      "board_edge": "right (+X), top",
+      "outer_model_bound_setback_from_edge_mm": 0.4625035285949721,
+      "setback_scope": "Outer model bound, not a separately dimensioned mating-face datum; negative indicates protrusion beyond PCB edge",
+      "remaining_mating_envelope_clearance_mm": 1.0385499819264088,
+      "limiting_neighbor": "fasteners",
+      "model_visual_review": "evidence/rev-0.0.19-alpha.0/connector-orientation/J_SWD.png",
+      "placement_change_required": false
+    }
+  ],
+  "reviewed_images": [
+    "evidence/rev-0.0.19-alpha.0/connector-orientation/J_USB.png",
+    "evidence/rev-0.0.19-alpha.0/connector-orientation/J_MOTOR.png",
+    "evidence/rev-0.0.19-alpha.0/connector-orientation/J_IO.png",
+    "evidence/rev-0.0.19-alpha.0/connector-orientation/J_SWD.png",
+    "evidence/rev-0.0.19-alpha.0/connector-orientation/connector-access-overview.png",
+    "evidence/rev-0.0.19-alpha.0/connector-orientation/jst-sh-drawing.png",
+    "evidence/rev-0.0.19-alpha.0/connector-orientation/jst-gh-drawing.png"
+  ],
+  "models_are_rendered_not_physical_photos": true,
+  "supplier_definitions_changed": false,
+  "electronic_placement_changed": false,
+  "saved_routes_changed": false,
+  "checks": {
+    "native_placement": {
+      "exit_code": 0,
+      "errors": 0,
+      "warnings": 0
+    },
+    "format_check": {
+      "exit_code": 0
+    },
+    "typecheck": {
+      "exit_code": 0
+    },
+    "all_111_actual_mesh_envelopes_vs_carrier_fasteners": "passed nominal clearance",
+    "mating_envelopes": "passed declared envelope/tolerance screen"
+  },
+  "limitations": [
+    "Exact mating JST plug CAD is unavailable; drawing-based conservative envelopes are used, not replacement component models.",
+    "I/O margin after allowance and deflection is only 0.164285 mm; qualify exact SHR-10V-S/AWG28 harness physically.",
+    "Wires must travel straight outward through the reviewed envelopes before bending. USB overmold must fit 12x7 mm.",
+    "Rendered underside view can be occluded by the carrier; isolated opposite views expose the real opening.",
+    "No physical mating, retention or fatigue test. Board still has 88 unrouted ports; no final fabrication approval."
+  ],
+  "fabrication_ready": false
+}
