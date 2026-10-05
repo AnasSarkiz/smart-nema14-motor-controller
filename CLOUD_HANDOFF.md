@@ -30,8 +30,10 @@ Native STEP Pipeline7 timed out at 600.892 seconds in edgeSolver, progress
 Evidence: SDA-ADOPTION.json and cloud/canonical/CHECKS.json.
 Cloud resource and exact smoke results are retained in this revision. Live
 EasyEDA availability still needs runtime activation of the saved official-host
-draft and a successful official request. Public matching publication is pending
-verification; no hosted build success is claimed.
+draft and a successful official request. Public revision 0.0.30 matches source/artifact commit `4583f6de0cc0845708e382070052b00a2ada3d84`
+and tscircuit release `68b1d6ad-877c-4b09-b708-e8dece529388`: all 311 package files
+and eight GitHub files passed anonymous SHA-256 readback. Hosted build success
+is not claimed. See PUBLICATION.json.
 **PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
 
 ## Historical Linux continuation — 0.0.29-alpha.0
