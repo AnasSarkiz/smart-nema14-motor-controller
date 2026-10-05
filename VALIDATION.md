@@ -40,7 +40,11 @@ Rejected CC1 trials remain in `evidence/rev-0.0.22-alpha.0/cloud/cc1-saved-001`
 through `007`; they are not fabrication candidates. `CC1-ADOPTION.json` records
 the actual failure/acceptance decisions. Current qualification is in
 `evidence/rev-0.0.22-alpha.0/cloud/canonical/CHECKS.json`.
-Matching public 0.0.22 source/artifact publication is pending verification.
+Matching public 0.0.22 source/artifacts are verified at GitHub commit
+`e5da51db64da0743280c1d281e0a5fa6197a2cff` and public tscircuit release
+`bb3f8367-b2e6-43da-853a-83499b0d5c83`. All 302 package files and eight
+GitHub source/artifact files passed anonymous SHA-256 readback. The release is
+ready to build; hosted build success is not claimed. See PUBLICATION.json.
 **PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
 
 # Historical Linux step — 0.0.21-alpha.0, 2026-10-05

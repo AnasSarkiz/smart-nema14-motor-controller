@@ -14,7 +14,10 @@ TypeScript, formatting, critical imports and the schematic-only draft test pass.
 All four current layer images were actually viewed; crowded silkscreen and final
 power/thermal/USB/mechanical/CAM qualification remain pending. Current canonical
 JSON SHA-256 is `ad1089660085c886286b7cb4b47072aabdebe0f20ddcbba6a9635f2d3c1e9fe3`.
-Public 0.0.22 publication is pending verification. EasyEDA live supplier access
+Public 0.0.22 release bb3f8367-b2e6-43da-853a-83499b0d5c83 matches
+GitHub source/artifact commit e5da51db64da0743280c1d281e0a5fa6197a2cff.
+All 302 package files and eight GitHub files passed anonymous checksum readback;
+hosted build success is not claimed. See PUBLICATION.json. EasyEDA live supplier access
 still requires applying the additive official-host draft; absence of warnings
 in the latest full build is not a supplier-availability check.
 **PROTOTYPE FABRICATION READY: NO.** Continue TASK.md; do not stop at this checkpoint.
