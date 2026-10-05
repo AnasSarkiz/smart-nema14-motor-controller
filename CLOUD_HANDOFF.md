@@ -35,7 +35,7 @@ Optional CLI path-cache serialization still reports a nonunique imported-port
 selector; fresh native JSON exists and electrical/import checks pass. Prior
 revisions had the same class of cache warning; imports were not patched.
 Evidence: POWER-ACCESS-ADOPTION.json and cloud/canonical/CHECKS.json.
-Matching public publication is pending verification. Live official supplier
+Matching public publication is verified: source commit `3c732b1468958add4ffd1e450dab483231eaefc9`, release `29149b5a-7ffd-4c73-8c7d-fa39be2b45d2`, all 314 base files and eight key GitHub files matched anonymous SHA-256 readback. Exact Cloud smoke passed; all 3933 context files and four historical archive parts verified. No hosted build success is claimed. Live official supplier
 verification needs the saved easyeda.com policy applied through the environment
 editor. Nine nets and full power/USB/signal/3D/CAM gates remain unfinished.
 Firmware and hardware tests are unperformed; no hosted build success is claimed.
