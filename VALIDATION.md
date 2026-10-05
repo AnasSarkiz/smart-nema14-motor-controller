@@ -31,7 +31,11 @@ The four-endpoint VBUS ADC native job exhausted its iteration limit in 55.04 s
 and was rejected. See CC2-ADOPTION.json. The latest full build does not check
 live supplier availability; the earlier EasyEDA CONNECT denial still requires
 runtime activation of the additive host draft and a successful official request.
-Matching public 0.0.23 publication is pending verification.
+Matching public 0.0.23 source/artifacts are verified at GitHub commit
+`f0e07b440d7ef5c552ce2fd5da9159f1735f03e3` and public tscircuit release
+`7f0dc003-4806-42c6-9c2a-0ef83094b939`: all 304 package files and eight
+GitHub files passed anonymous exact SHA-256 readback. Hosted build success is
+not claimed. See PUBLICATION.json.
 **PROTOTYPE FABRICATION READY: NO.** Continue TASK.md; this is a routing checkpoint.
 
 # Historical Linux continuation — 0.0.22-alpha.0, 2026-10-05

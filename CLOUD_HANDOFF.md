@@ -12,7 +12,10 @@ analytical screens pass. The exact new ordinary transition is at (3.68,-3.36).
 Canonical SHA-256: `5f175dd056e620cc8c4a7e80bd96230ef3ceb9c565761ea18a3b923574aa2c80`.
 Rejected CC2 trials and the ADC iteration exhaustion remain explicit in evidence.
 Current evidence: evidence/rev-0.0.23-alpha.0/cloud/canonical and CC2-ADOPTION.json.
-Public revision 0.0.23 verification is pending. Live EasyEDA supplier access
+Public revision 0.0.23 release 7f0dc003-4806-42c6-9c2a-0ef83094b939 matches
+GitHub source/artifact commit f0e07b440d7ef5c552ce2fd5da9159f1735f03e3.
+All 304 package files and eight GitHub files passed anonymous checksum readback;
+hosted build success is not claimed. See PUBLICATION.json. Live EasyEDA supplier access
 still awaits runtime activation of its additive official-host draft.
 **PROTOTYPE FABRICATION READY: NO.** Continue all remaining nets and TASK.md gates.
 
