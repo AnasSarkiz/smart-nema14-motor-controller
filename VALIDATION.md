@@ -1,4 +1,36 @@
-# Current Linux continuation — 0.0.26-alpha.0, 2026-10-05
+# Current Linux continuation — 0.0.27-alpha.0, 2026-10-05
+
+LIMIT1_CONN is complete between J_IO pin 8, D_IO1 pin 5 and R26 pin 1.
+The supported saved star uses inner2 from the connector to its ESD escape and
+inner1 from the ESD escape to the series resistor. All 139 earlier saved paths
+and all 47 exact filled-via declarations remain unchanged. No new vias,
+purchased imports, placements, logical wiring, dependencies or mechanics changed.
+
+Fresh full official CLI build: **225 traces / 188 vias / 70 pours**, **14 native
+unconnected-port + 11 unfinished trace errors**, **69/82 complete physical nets**.
+Canonical SHA-256: `c5c51d0351f5bc5bc10e212dbc9c917c521e21b8e090cad5f7a6b1ca84134e3d`.
+Strict geometry, foreign filled clearance, source netlist, native shorts, imports,
+TypeScript and formatting pass. All six power/reference networks remain joined;
+EFUSE_RTN stays isolated from GND. USB reference/skew and RAW-neck analytical
+screens pass. Full build exits 1 for retained errors. The 0.0.23 manufacturer-pin
+schematic-only test was not repeated for unchanged wiring/imports; current source
+netlist and imports pass. The cosmetic D_VBUS recommendation remains.
+All four current layer images were actually viewed. Silkscreen crowding and
+bottom labels near/outside the outline remain; thirteen physical nets remain
+incomplete. Full power/via/thermal/transient, USB, mechanical/3D and CAM
+qualification remains pending. See LIMIT1-CONN-ADOPTION.json and canonical/CHECKS.json.
+
+Released Pipeline9 timed out at 180 seconds in topologyMergingSolver, progress
+0.23455776173285198, with 10260.38 MiB peak sampled RSS. No TMC enable path or
+final board output was adopted. Earlier TMC power-network regressions remain
+rejected. Exact Cloud smoke and resource results are in the current root evidence.
+Live EasyEDA availability still needs activation of the saved official-host
+runtime draft and a successful official request. Matching publication is pending
+exact public checksum verification; hosted build success is not claimed.
+Firmware and physical tests remain unperformed.
+**PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
+
+# Historical Linux continuation — 0.0.26-alpha.0, 2026-10-05
 
 EXT_ENABLE_N_CONN is complete between J_IO pin 7, D_IO1 pin 4 and R25 pin 1.
 Two supported inner2 saved star branches use the existing ENABLE_IO_FILLED,

@@ -1,0 +1,19 @@
+{
+  "accepted": false,
+  "reason": "Released native Pipeline9 reached topologyMergingSolver progress 0.23455776173285198 and timed out at 180 seconds; no phase-1 route output or final circuit was produced. The canonical 0.0.26 board is unchanged.",
+  "build_status": {
+    "command": [
+      "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+      "scripts/run-native-routing.mjs",
+      "/workspace/smart-nema14-motor-controller/scripts/native-tmc-enable-pipeline9-cloud.circuit.tsx",
+      "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.27-alpha.0/cloud/tmc-enable-pipeline9-001"
+    ],
+    "exit_code": -15,
+    "termination": "timeout",
+    "memory_budget_mb": 22937,
+    "peak_sampled_group_rss_mb": 10260.37890625,
+    "elapsed_seconds": 180.53752486500161,
+    "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+  },
+  "next_approach": "Replay supported existing-filled-via LIMIT1_CONN hybrid path; TMC enable still requires a route that preserves all power networks."
+}
