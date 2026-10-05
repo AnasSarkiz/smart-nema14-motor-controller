@@ -29,8 +29,10 @@ progress zero, 1474.29 MiB peak RSS, with no final circuit or paths adopted.
 Evidence: TEMPERATURE-ADOPTION.json and cloud/canonical/CHECKS.json.
 Cloud resource and exact smoke results are retained in this revision. Live
 EasyEDA availability still needs runtime activation of the saved official-host
-draft and a successful official request. Public matching publication is pending
-verification; no hosted build success is claimed.
+draft and a successful official request. Public revision 0.0.29 matches source/artifact commit `b9c02298b43303ae542fd84ae1bb16e81e6ee7ed`
+and tscircuit release `19031b6e-7cf5-4a36-b7bd-00c82a6545f3`: all 310 package files
+and eight GitHub files passed anonymous SHA-256 readback. Hosted build success
+is not claimed. See PUBLICATION.json.
 **PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
 
 ## Historical Linux continuation — 0.0.28-alpha.0
