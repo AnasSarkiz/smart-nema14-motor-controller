@@ -1,0 +1,45 @@
+{
+  "revision": "0.0.23-alpha.0",
+  "adopted_trial": "cloud/cc2-saved-003",
+  "native_basis": "cloud/cc2-pipeline4-001",
+  "native_result_adopted_wholesale": false,
+  "saved_api": "Supported autoroutingphase pcbTracePaths, complete three-port star",
+  "source_paths_preserved": 131,
+  "owner_features_preserved": 45,
+  "ordinary_via": {
+    "x_mm": 3.68,
+    "y_mm": -3.36,
+    "drill_mm": 0.3,
+    "pad_mm": 0.6
+  },
+  "existing_filled_features_used": [
+    "CC2_USB_FILLED",
+    "CC2_TCPP_FILLED"
+  ],
+  "qualification": {
+    "CC2_physical_components": 1,
+    "all_six_power_reference_nets_physical_components": 1,
+    "physically_complete_nets": 65,
+    "total_nets": 82,
+    "strict_geometry_violations": 0,
+    "foreign_filled_clearance_violations": 0,
+    "usb_return_core_pass": true,
+    "usb_skew_mm": 0.3814407271664706,
+    "raw_lower_neck_mm": 1.455
+  },
+  "corrections": [
+    "Retain native east/north trunk with explicit clearances around NRST, NRST_CONN, VM and UART vias.",
+    "Use existing named USB filled/capped transition to inner1 and move ordinary transition beyond private RTN return.",
+    "L1 detour clears EXT_STEP and PD_OVP while preserving the full USB_DP reference core.",
+    "Shorten L3 connection to avoid isolating C14 VM return.",
+    "Reach exact existing TCPP pin 9 filled/capped transition and duplicate shared trunk for C24 endpoint."
+  ],
+  "rejected_trials": {
+    "cc2-pipeline4-001": "Incomplete branch, geometry violations and private RTN split.",
+    "cc2-saved-001": "C33 private RTN split.",
+    "cc2-saved-002": "C14 VM split and small missing USB_DP reference region.",
+    "vbus-adc-pipeline4-001": "Router iteration exhaustion; no ADC route adopted."
+  },
+  "prototype_fabrication_ready": false,
+  "hardware_tested": false
+}

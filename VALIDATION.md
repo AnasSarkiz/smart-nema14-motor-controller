@@ -1,4 +1,40 @@
-# Current Linux continuation — 0.0.22-alpha.0, 2026-10-05
+# Current Linux continuation — 0.0.23-alpha.0, 2026-10-05
+
+PD_CC2_CONN is physically complete across J_USB pin 15, C24 pin 1 and U3 pin 9.
+The source retains the reviewed native Pipeline4 east/north trunk and uses
+supported saved paths with explicit corrections. The existing USB and TCPP
+filled/capped transitions retain their exact manifest owners; the ordinary
+0.30/0.60 mm transition is at (3.68,-3.36). Its short L1 detour preserves USB
+reference copper, and the shortened L3 connection preserves the C14 VM return.
+All 131 previous saved paths, 45 filled features, imports, placement, mechanics
+and dependencies are retained. No generated JSON or dependency was patched.
+
+Fresh official CLI canonical build: **225 traces / 184 vias / 70 pours**;
+**18 native unconnected-port + 11 unfinished trace errors**, **65/82 physically
+complete nets**. Strict geometry and foreign filled clearances pass; all six
+power/reference nets are joined and EFUSE_RTN remains isolated from GND.
+Canonical SHA-256: `5f175dd056e620cc8c4a7e80bd96230ef3ceb9c565761ea18a3b923574aa2c80`.
+The full CLI correctly exits 1 for retained incomplete connections.
+
+The RAW lower neck remains 1.455 mm, with a limited 1.390106 A analytical screen
+against the 1.0714 A worst-case limit. USB skew remains 0.381441 mm, the ground
+reference covers the complete measured signal core, and the approximate main
+pair impedance remains 91.812378 ohm. These screens do not qualify the entire
+power path, via currents, transients, thermal behavior or final USB performance.
+Current checks and viewed layers are recorded in cloud/canonical/CHECKS.json.
+Crowded silkscreen, 17 incomplete nets and final mechanical/thermal/visual/CAM
+qualification remain pending. Firmware and hardware testing remain unperformed.
+
+CC2 trials 001/002 and the original native output are retained with their actual
+RTN, VM, USB-reference and clearance failures; none was adopted wholesale.
+The four-endpoint VBUS ADC native job exhausted its iteration limit in 55.04 s
+and was rejected. See CC2-ADOPTION.json. The latest full build does not check
+live supplier availability; the earlier EasyEDA CONNECT denial still requires
+runtime activation of the additive host draft and a successful official request.
+Matching public 0.0.23 publication is pending verification.
+**PROTOTYPE FABRICATION READY: NO.** Continue TASK.md; this is a routing checkpoint.
+
+# Historical Linux continuation — 0.0.22-alpha.0, 2026-10-05
 
 PD_CC1_CONN is physically complete through the existing USB/capacitor group and
 TCPP pin 7. The source adopts the released native Pipeline4 trunk with explicit

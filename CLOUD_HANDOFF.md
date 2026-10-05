@@ -1,6 +1,22 @@
 # Smart NEMA 14 controller: complete Cloud handoff
 
-## Current Linux continuation — 0.0.22-alpha.0
+## Current Linux continuation — 0.0.23-alpha.0
+
+CC2 now joins all three endpoints, retaining the native east/north trunk with
+supported source corrections. All 131 earlier saved paths and 45 filled features
+remain exact. Copper is **225 traces / 184 vias / 70 pours**, **18 native
+unconnected-port + 11 unfinished trace errors**, **65/82 complete physical nets**.
+Strict geometry, foreign filled clearances and all six power/reference networks
+pass. EFUSE_RTN remains isolated from GND. USB reference/skew and RAW lower-neck
+analytical screens pass. The exact new ordinary transition is at (3.68,-3.36).
+Canonical SHA-256: `5f175dd056e620cc8c4a7e80bd96230ef3ceb9c565761ea18a3b923574aa2c80`.
+Rejected CC2 trials and the ADC iteration exhaustion remain explicit in evidence.
+Current evidence: evidence/rev-0.0.23-alpha.0/cloud/canonical and CC2-ADOPTION.json.
+Public revision 0.0.23 verification is pending. Live EasyEDA supplier access
+still awaits runtime activation of its additive official-host draft.
+**PROTOTYPE FABRICATION READY: NO.** Continue all remaining nets and TASK.md gates.
+
+## Historical Linux continuation — 0.0.22-alpha.0
 
 CC1 is physically complete; all earlier saved paths and imported electronics
 are preserved. Copper is **226 traces / 183 vias / 69 pours**, with **18 native
