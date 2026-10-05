@@ -54,6 +54,20 @@ successful final CLI build; source restoration is checksum verified. The core
 diagnostic is retained separately and lacks CLI supplier pin-one metadata; it
 is not accepted as a replacement build.
 
+A changed official Pipeline9 SDK attempt forwards that exact 7655-obstacle,
+two-real-pad-root input unchanged and uses public mesh options dimension3/ratio30
+instead of dimension15/ratio6, retaining minNodeArea .01, effort1 and every
+manufacturing constraint. It passes edge solving (68894 regions, 211696 edges),
+then times out in portPointPathingSolver after 901.305 s / 21262.180 MiB peak
+sampled RSS. No final route exists and no board source/copper is adopted.
+The installed official class and pinned dependencies remain intact. Exact input
+provenance, source snapshot, progress, guard result and reproduction instructions
+are in cloud/power-high-mesh-native9-001/. Explicit source-access alternatives
+also violate actual pad/trace/via clearances and are rejected. This is a native
+routing performance blocker, not a package-network or setup failure; these
+unchanged jobs must not be repeated. An official native improvement or a changed
+source plan is required before the seven nets and fabrication gates can finish.
+
 Exact saved Cloud startup smoke passes: TypeScript, critical import labels,
 pinned Linux analysis libraries, complete context inventory and four archive
 parts. Source/format checks pass. Actual cgroup RAM is 32 GiB, swap is zero,
@@ -65,7 +79,9 @@ The base publication matches public source/artifact commit
 13 key GitHub files passed anonymous SHA-256 readback. PUBLICATION.json records
 that initial snapshot. The subsequent network-verified rebuild above changes
 serialization only; its current artifact/metadata readback is recorded separately
-in PUBLICATION-METADATA.json when complete.
+in PUBLICATION-METADATA.json: all 47 updated files and six key GitHub files
+passed anonymous checksum readback at commit
+`76c5a75a0758ff55a37b4cf3b488838ced28d6f1`.
 
 Seven physical nets (TMC_DIR, SWCLK, EXT_STEP_CONN, EXT_DIR, CAN_RS,
 EFUSE_FLT_N, POWER_HIGH_CURRENT) and full power/via/thermal/transient,

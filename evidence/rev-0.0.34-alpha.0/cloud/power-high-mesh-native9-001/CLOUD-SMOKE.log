@@ -1,0 +1,7 @@
+0.0.2744
+$ tsc --noEmit
+$ node scripts/check-critical-import-pins.mjs
+Critical import-label audit passed. Full schematic, BOM, mechanical and fabrication validation remains mandatory.
+Shapely 2.1.2 CadQuery 2.8.0
+Verified 4914 context files; native errors retained: {'pcb_trace': 238, 'pcb_via': 195, 'pcb_copper_pour': 74, 'pcb_port_not_connected_error': 9, 'pcb_trace_error': 6}
+Verified 4 parts of the full routing evidence archive

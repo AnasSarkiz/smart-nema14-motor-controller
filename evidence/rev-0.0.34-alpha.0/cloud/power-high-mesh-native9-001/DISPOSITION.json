@@ -1,0 +1,29 @@
+{
+  "router": "beta_pipeline9",
+  "official_package": "@tscircuit/capacity-autorouter@0.0.958",
+  "adopted": false,
+  "final_route_exists": false,
+  "termination": "timeout",
+  "elapsed_seconds": 901.3047204019967,
+  "peak_sampled_group_rss_mb": 21262.1796875,
+  "last_completed_progress_callback": {
+    "phase": "portPointPathingSolver",
+    "progress": 0.44,
+    "node_count": 68894,
+    "edge_count": 211696,
+    "elapsed_seconds": 576.912300976,
+    "solved": false,
+    "failed": false,
+    "error": null
+  },
+  "manufacturing_constraints_modified": false,
+  "package_lock_modified": false,
+  "generated_circuit_json_modified": false,
+  "board_source_modified": false,
+  "outcome": "Supported mesh options pass edge solving, but native Pipeline9 times out at port-point path selection. No complete route or fabrication candidate. Further progress requires a changed native source routing plan or an official Pipeline9 improvement; repeating this unchanged job is disallowed.",
+  "current_canonical_sha256": "519f8e29e54829445772ef4dec82ef712788d259f3556068d92bd160ce4cc855",
+  "physical_nets_complete": 75,
+  "physical_nets_total": 82,
+  "hardware_tested": false,
+  "prototype_fabrication_ready": false
+}
