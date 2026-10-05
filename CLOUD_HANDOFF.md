@@ -15,7 +15,10 @@ layer images were viewed; silkscreen and full qualification remain pending.
 Canonical SHA-256: `46da11d2673d74366c8754c221920d035bc6982debf27583f3dc2feb21214661`.
 The native ADC iteration failures and a guarded SWDIO timeout are retained.
 Current evidence: evidence/rev-0.0.24-alpha.0/cloud/canonical and ADC-ADOPTION.json.
-Public 0.0.24 publication verification is pending. Live EasyEDA availability
+Public 0.0.24 release 662718c8-fe2a-429d-aba6-f9dad467eb5e matches GitHub
+source/artifact commit e8f060f16d6b7bd248b7cedb3d34684826a568a2. All 305 package
+files and eight GitHub files passed anonymous checksum readback. Hosted build
+success is not claimed. See PUBLICATION.json. Live EasyEDA availability
 still requires runtime activation of the saved additive host draft.
 **PROTOTYPE FABRICATION READY: NO.** Continue the 16 remaining physical nets and TASK.md.
 

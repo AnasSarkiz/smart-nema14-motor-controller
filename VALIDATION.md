@@ -33,8 +33,12 @@ usable output; none was adopted. See ADC-ADOPTION.json and canonical/CHECKS.json
 
 Live supplier availability is not tested by this full build. The earlier official
 EasyEDA CONNECT denial still requires runtime activation of the saved additive
-host draft and a successful official request. Matching public 0.0.24 publication
-is pending verification. Firmware and hardware tests remain unperformed.
+host draft and a successful official request. Public revision 0.0.24 matches
+GitHub source/artifact commit `e8f060f16d6b7bd248b7cedb3d34684826a568a2`
+and public tscircuit release `662718c8-fe2a-429d-aba6-f9dad467eb5e`: all 305
+package files and eight GitHub files passed anonymous exact SHA-256 readback.
+Hosted build success is not claimed. See PUBLICATION.json. Firmware and hardware
+tests remain unperformed.
 **PROTOTYPE FABRICATION READY: NO.** Continue TASK.md; do not stop at this checkpoint.
 
 # Historical Linux continuation — 0.0.23-alpha.0, 2026-10-05
