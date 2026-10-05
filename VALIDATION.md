@@ -25,8 +25,10 @@ Released Pipeline9 timed out at 180 seconds in topologyMergingSolver, progress
 final board output was adopted. Earlier TMC power-network regressions remain
 rejected. Exact Cloud smoke and resource results are in the current root evidence.
 Live EasyEDA availability still needs activation of the saved official-host
-runtime draft and a successful official request. Matching publication is pending
-exact public checksum verification; hosted build success is not claimed.
+runtime draft and a successful official request. Public revision 0.0.27 matches
+source/artifact commit `2af85c6c2da9c26b8da173113f1b0a4382633ad2` and tscircuit release
+`4e1cf416-c852-4b90-bb2f-0f766299bc21`: all 309 package files and eight GitHub files
+passed anonymous SHA-256 readback. Hosted build success is not claimed.
 Firmware and physical tests remain unperformed.
 **PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
 
