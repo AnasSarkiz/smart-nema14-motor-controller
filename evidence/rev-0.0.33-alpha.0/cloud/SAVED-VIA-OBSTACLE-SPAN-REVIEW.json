@@ -1,0 +1,57 @@
+{
+  "scope": "Exact retained failed Pipeline9 SRJ: fixed saved via obstacle spans compared with known four-layer through barrel geometry.",
+  "measurements": [
+    {
+      "position_mm": [
+        10.0216,
+        -7.0195
+      ],
+      "native_obstacle_layers": [
+        [
+          "top",
+          "inner1"
+        ]
+      ]
+    },
+    {
+      "position_mm": [
+        11.07,
+        -1.6862
+      ],
+      "native_obstacle_layers": [
+        [
+          "inner1",
+          "inner2",
+          "bottom"
+        ]
+      ]
+    },
+    {
+      "position_mm": [
+        -7.55,
+        -5.17
+      ],
+      "native_obstacle_layers": [
+        [
+          "inner2",
+          "bottom"
+        ]
+      ]
+    },
+    {
+      "position_mm": [
+        9.275,
+        -6.3198
+      ],
+      "native_obstacle_layers": [
+        [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ]
+      ]
+    }
+  ],
+  "diagnosis": "withFixedTraces uses routed from/to layers when building via obstacles; emitted physical vias span all four layers because blind/buried vias are disabled."
+}

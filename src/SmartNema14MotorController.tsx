@@ -789,7 +789,12 @@ export default function SmartNema14MotorController({
         useThermalReliefs={false}
       />
       <PowerCopperTrial />
-      <FilledSignalEscapes />
+      <FilledSignalEscapes
+        retainSavedFeatureNames={[
+          "TMC_ENABLE_MCU_FILLED",
+          "TMC_ENABLE_R7_FILLED",
+        ]}
+      />
       <ControllerMount />
       <McuSheet mechanicalPreview={mechanicalPreview} />
       <EncoderSheet mechanicalPreview={mechanicalPreview} />

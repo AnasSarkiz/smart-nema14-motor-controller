@@ -1,0 +1,68 @@
+{
+  "scope": "Every prior physical barrel retains drill, annulus, full layer span and effective tenting (omitted booleans mean false). Only the two documented ordinary driver-enable vias are added.",
+  "prior_vias_compared": 191,
+  "current_vias": 193,
+  "passed": false,
+  "changes": [
+    {
+      "position_mm": [
+        10.45,
+        -1.85
+      ],
+      "before": {
+        "hole_diameter": 0.2,
+        "outer_diameter": 0.38,
+        "layers": [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ],
+        "tented_on_top": true,
+        "tented_on_bottom": true
+      },
+      "after": {
+        "hole_diameter": 0.2,
+        "outer_diameter": 0.38,
+        "layers": [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ],
+        "tented_on_top": null,
+        "tented_on_bottom": null
+      }
+    },
+    {
+      "position_mm": [
+        -6.432816,
+        -5
+      ],
+      "before": {
+        "hole_diameter": 0.2,
+        "outer_diameter": 0.38,
+        "layers": [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ],
+        "tented_on_top": true,
+        "tented_on_bottom": true
+      },
+      "after": {
+        "hole_diameter": 0.2,
+        "outer_diameter": 0.38,
+        "layers": [
+          "top",
+          "inner1",
+          "inner2",
+          "bottom"
+        ],
+        "tented_on_top": null,
+        "tented_on_bottom": null
+      }
+    }
+  ]
+}

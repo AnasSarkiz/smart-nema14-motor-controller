@@ -1,0 +1,1606 @@
+{
+  "baseline": "evidence/rev-0.0.32-alpha.0/cloud/canonical/circuit.json",
+  "baseline_sha256": "dd2cda6ddc62e20f50703db7bb7487df47b862a56c9f41dc516f5c0678872bd1",
+  "target": "evidence/rev-0.0.33-alpha.0/cloud/canonical-trial006/circuit.json",
+  "target_sha256": "71962810b1bea03a40b9c6db6e8264749b375561573c9fa560c18a53376c5e55",
+  "scope": "Fresh native emitted wire/via/pad copper union; pours checked independently. All other net copper must remain within 0.1 nm numerical serialization envelope.",
+  "excluded_nets": [
+    "VM",
+    "TMC_ENABLE_N"
+  ],
+  "exclusion_reason": "Driver-enable tree and exact C14-owned VM escape; every other emitted copper group must be preserved.",
+  "serialization_envelope_mm": 1e-07,
+  "measurements": [
+    {
+      "net": "GND",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "GND",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "GND",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "GND",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_PROTECTED",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_PROTECTED",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_PROTECTED",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_PROTECTED",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_RTN",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_RTN",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_RTN",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_RTN",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_CONN",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_CONN",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_CONN",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_CONN",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWCLK",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWCLK",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWCLK",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWCLK",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "POWER_HIGH_CURRENT",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "POWER_HIGH_CURRENT",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "POWER_HIGH_CURRENT",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "POWER_HIGH_CURRENT",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_STEP_CONN",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_STEP_CONN",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_STEP_CONN",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_STEP_CONN",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_FLT_N",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_FLT_N",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_FLT_N",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_FLT_N",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "V3V3",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "NRST",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_ADC",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TEMP_ALERT_N",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_UART_TX",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_UART_RX",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_DIAG",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_STEP",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_DIR",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_STEP",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_DIR",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_ENABLE_N",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LIMIT1",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LIMIT2",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_DB",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_FLT",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC2_MCU",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC1_MCU",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_STATUS_DRIVE",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_FAULT_DRIVE",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "USB_DM",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "USB_DP",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWDIO",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_RS",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_RX",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_TX",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "I2C_SCL",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "I2C_SDA",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "V3V3",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "I2C_SCL",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "I2C_SDA",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_L",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_H",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_RS",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_RX",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_TX",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_TERM_LINK",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "BUCK_BST",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "BUCK_SW",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_SENSE_B",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_B1",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_A1",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_SENSE_A",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_A2",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_VREF",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_5VOUT",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_VCP",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_CPI",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_CPO",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_B2",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_VREF",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC2_CONN",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC1_CONN",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC2_MCU",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC1_MCU",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_GATE",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_OVP",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC1_CONN",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC2_CONN",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_DB",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_FLT",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_OVP_SERIES",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_DIV",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_ADC_PRE_GUARD",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_ADC",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWDIO_CONN",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWCLK_CONN",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "NRST_CONN",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "POWER_GOOD",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWDIO_CONN",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWDIO_GUARDED",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWCLK_CONN",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWCLK_GUARDED",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "NRST_GUARDED",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "NRST_CONN",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWDIO",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "NRST",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LIMIT2_CONN",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LIMIT1_CONN",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_ENABLE_N_CONN",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_DIR_CONN",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TEMP_ALERT_N",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_STEP",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_DIR",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_ENABLE_N",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LIMIT1",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LIMIT2",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_POWER_A",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_POWER_A",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_STATUS_A",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_STATUS_DRIVE",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_STATUS_A",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_FAULT_A",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_FAULT_DRIVE",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_FAULT_A",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_DVDT",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_ILIM",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_OVP",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_EN",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_ILIM_SWITCH",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_OVP_TOP_1",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_OVP_TOP_2",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "V3V3",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LIMIT1",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "I2C_SDA",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "I2C_SDA",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TEMP_ALERT_N",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TEMP_ALERT_N",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_ENABLE_N",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LIMIT1_CONN",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LIMIT1_CONN",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_ENABLE_N_CONN",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_STATUS_DRIVE",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_ADC",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC2_CONN",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC2_CONN",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC1_CONN",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC1_CONN",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_UART_TX",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_UART_RX",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWCLK_GUARDED",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "NRST_GUARDED",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_FLT",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_FLT",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC1_MCU",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_OVP",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_OVP",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_OVP_TOP_2",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_ADC_PRE_GUARD",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_STEP",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_STEP",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_DIAG",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWDIO",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "POWER_GOOD",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "NRST",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LIMIT2",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_STATUS_A",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_ILIM_SWITCH",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_ILIM",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_TX",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_TX",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_H",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_FAULT_DRIVE",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_STEP",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_OVP",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_DB",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC2_MCU",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "I2C_SCL",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_RX",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWDIO_CONN",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWCLK_CONN",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_GATE",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_B1",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_B1",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_5VOUT",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_OVP_TOP_1",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_A1",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_A2",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_B2",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_B2",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "NRST_CONN",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "USB_DM",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "USB_DP",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "V3V3",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LIMIT1",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_ENABLE_N",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LIMIT1_CONN",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_ENABLE_N_CONN",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_ENABLE_N_CONN",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_STATUS_DRIVE",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_ADC",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_UART_TX",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_UART_TX",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_UART_RX",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_UART_RX",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWCLK_GUARDED",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWCLK_GUARDED",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "NRST_GUARDED",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "NRST_GUARDED",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC1_MCU",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_OVP",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_OVP_TOP_2",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_OVP_TOP_2",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_ADC_PRE_GUARD",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "VBUS_ADC_PRE_GUARD",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_STEP",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_DIAG",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_DIAG",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWDIO",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "POWER_GOOD",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "POWER_GOOD",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "NRST",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LIMIT2",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_STATUS_A",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_FAULT_A",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_FAULT_A",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_ILIM_SWITCH",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_ILIM_SWITCH",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_ILIM",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_ILIM",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_H",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_H",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_FAULT_DRIVE",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EXT_STEP",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_OVP",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_OVP",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_DB",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_CC2_MCU",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "I2C_SCL",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "CAN_RX",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWDIO_CONN",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "SWCLK_CONN",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_GATE",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "PD_GATE",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_B1",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_5VOUT",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_5VOUT",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_OVP_TOP_1",
+      "layer": "top",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "EFUSE_OVP_TOP_1",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_POWER_A",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "LED_POWER_A",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_A1",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_A1",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_A2",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_A2",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "MOTOR_B2",
+      "layer": "bottom",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "NRST_CONN",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_VREF",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "TMC_VREF",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "USB_DM",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "USB_DM",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "USB_DP",
+      "layer": "inner1",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    },
+    {
+      "net": "USB_DP",
+      "layer": "inner2",
+      "added_outside_serialization_envelope_mm2": 0.0,
+      "removed_outside_serialization_envelope_mm2": 0.0
+    }
+  ],
+  "passed": true
+}

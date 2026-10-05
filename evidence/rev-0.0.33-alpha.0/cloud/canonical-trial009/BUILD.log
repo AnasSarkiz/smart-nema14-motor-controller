@@ -1,0 +1,36 @@
+$ bun run validate:imports && tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs
+$ node scripts/check-critical-import-pins.mjs
+Critical import-label audit passed. Full schematic, BOM, mechanical and fabrication validation remains mandatory.
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+1401 |     }
+1402 |     return null;
+1403 |   }
+1404 |   renderError(message) {
+1405 |     if (typeof message === "string") {
+1406 |       throw new Error(message);
+                       ^
+error: Could not find port for via selector ".TMC_ENABLE_WEST > .inner1"
+      at renderError (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:1406:17)
+      at doInitialSourceTraceRender (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:5822:14)
+      at runRenderPhase (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:1385:24)
+      at runRenderPhaseForChildren (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:1395:13)
+      at runRenderPhaseForChildren (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:123692:11)
+      at runRenderCycle (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:1333:12)
+      at render (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:122353:16)
+      at generateCircuitJson (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js:167864:10)
+
+Fatal error [circuit_generation_failed]: Could not find port for via selector ".TMC_ENABLE_WEST > .inner1"
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred
+error: script "build" exited with code 1

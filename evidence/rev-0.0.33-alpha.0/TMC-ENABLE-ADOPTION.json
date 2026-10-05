@@ -1,0 +1,67 @@
+{
+  "revision": "0.0.33-alpha.0",
+  "canonical_sha256": "2a308b0c3d2d0ae50ffbd2d748f8f3365f8d842b7184a0b7d36037e1eca26534",
+  "scope": "Complete native driver-enable tree plus physically necessary C14 VM-plane reconnection; source representation fixes preserve through-barrel obstacles and mask flags. This is an intermediate prototype repair, not completion of TASK.md.",
+  "saved_path_count": 157,
+  "prior_saved_paths_exact": 151,
+  "prior_explicit_pours_exact": 20,
+  "new_pour": "VM_C14_L2_RECONNECT, inner1, unbroken, local USB-NPTH bulge",
+  "TMC_ENABLE_N_complete": true,
+  "physically_complete_nets": 74,
+  "total_nets": 82,
+  "remaining_nets": {
+    "TMC_DIR": 3,
+    "SWDIO_GUARDED": 2,
+    "SWCLK": 3,
+    "EXT_STEP_CONN": 3,
+    "EXT_DIR": 3,
+    "CAN_RS": 3,
+    "EFUSE_FLT_N": 3,
+    "POWER_HIGH_CURRENT": 3
+  },
+  "all_six_power_reference_nets": {
+    "GND": 1,
+    "EFUSE_RTN": 1,
+    "VM": 1,
+    "V3V3": 1,
+    "VBUS_CONN": 1,
+    "VBUS_PROTECTED": 1
+  },
+  "counts": {
+    "pcb_via": 193,
+    "pcb_trace": 234,
+    "pcb_copper_pour": 74,
+    "pcb_port_not_connected_error": 11,
+    "pcb_trace_error": 6
+  },
+  "geometry_violations": 0,
+  "foreign_fill_clearance_violations": 0,
+  "prior_via_mask_and_geometry_preserved": 191,
+  "current_vias_correct_in_native_input": 193,
+  "source_pins_preserved": 421,
+  "unchanged_copper_groups_preserved": 265,
+  "new_ordinary_vias": [
+    {
+      "position_mm": [
+        -13.696,
+        -4.055
+      ],
+      "drill_mm": 0.3,
+      "pad_mm": 0.6
+    },
+    {
+      "position_mm": [
+        13.677,
+        -6.1
+      ],
+      "drill_mm": 0.3,
+      "pad_mm": 0.6
+    }
+  ],
+  "mask_metadata_preservation": "Retain TMC_ENABLE_MCU_FILLED and TMC_ENABLE_R7_FILLED as explicit native tented contacts. Saved routes coalesce existing holes; six complete real-port paths include every top/bottom source endpoint. Prior50 manufacturing declarations unchanged.",
+  "usb_and_raw_neck_screens_passed": true,
+  "future_router": "tscircuit native beta_pipeline9 only, per user instruction",
+  "publication": "Pending public checksum verification",
+  "prototype_fabrication_ready": false,
+  "hardware_tested": false
+}

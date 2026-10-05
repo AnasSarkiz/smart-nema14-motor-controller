@@ -1,44 +1,40 @@
-import { mechanicalPreviewPlacement } from "../mechanics/preview-placement"
-
-type RoutePoint = {
-  x: number
-  y: number
-  via?: boolean
-  fromLayer?: "top" | "bottom"
-  toLayer?: "top" | "bottom"
-}
-
-// Native pcbPath coordinates are relative to the anchor component transform.
-// Store board coordinates here so the paired geometry remains reviewable.
-function localPath(reference: "J_USB" | "D_USB", points: RoutePoint[]) {
-  const placement = mechanicalPreviewPlacement[reference]
-  return points.flatMap((point) => {
-    const local = {
-      ...point,
-      x: point.x - placement.pcbX,
-      y: point.y - placement.pcbY,
-    }
-    if (!point.via) return [local]
-    // Native trace validation requires wire contacts on both sides of a via.
-    // These coincident endpoints preserve the physical path and layer span.
-    const contact = { x: local.x, y: local.y }
-    return [contact, local, contact]
-  })
-}
-
-/** Retain the existing native ESD ground escape during saved USB trial. */
+/** Preserve the existing ESD ground copper with an explicit ordinary barrel.
+ * Fixed routing obstacles must cover its actual 0.60 mm annulus on all layers.
+ */
 export function UsbGroundRoute() {
   return (
-    <trace
-      name="USB_ESD_GROUND_ESCAPE"
-      from=".D_USB > .pin3"
-      to=".C27 > .pin2"
-      pcbPathRelativeTo=".D_USB > .pin3"
-      thickness="0.15mm"
-      pcbPath={localPath("D_USB", [
-        { x: 3.1, y: -7, via: true, fromLayer: "top", toLayer: "bottom" },
-        { x: 3.5, y: -6.72598457 },
-      ])}
-    />
+    <>
+      <via
+        name="USB_ESD_GROUND_THROUGH"
+        pcbX={3.1}
+        pcbY={-7}
+        fromLayer="top"
+        toLayer="bottom"
+        holeDiameter="0.30mm"
+        outerDiameter="0.60mm"
+        connectsTo={[
+          "net.GND",
+          ".USB_ESD_GROUND_THROUGH > .top",
+          ".USB_ESD_GROUND_THROUGH > .bottom",
+        ]}
+      />
+      <trace
+        name="USB_ESD_GROUND_ESCAPE_TOP"
+        from=".D_USB > .pin3"
+        to=".USB_ESD_GROUND_THROUGH > .top"
+        pcbPathRelativeTo=".D_USB > .pin3"
+        thickness="0.15mm"
+        pcbPath={[".D_USB > .pin3"]}
+      />
+      <trace
+        name="USB_ESD_GROUND_ESCAPE_BOTTOM"
+        from=".USB_ESD_GROUND_THROUGH > .bottom"
+        to=".C27 > .pin2"
+        pcbPathRelativeTo=".USB_ESD_GROUND_THROUGH > .bottom"
+        thickness="0.15mm"
+        // Relative point preserves the original global corner (3.5, -6.72598457).
+        pcbPath={[{ x: 0.4, y: 0.27401543 }]}
+      />
+    </>
   )
 }

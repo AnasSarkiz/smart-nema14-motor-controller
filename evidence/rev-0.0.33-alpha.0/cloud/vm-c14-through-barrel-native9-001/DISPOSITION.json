@@ -1,0 +1,20 @@
+{
+  "status": "timeout; no final native output; no route adopted",
+  "last_phase": "pipeline9JointDrcRepairSolver",
+  "progress": 0.84,
+  "guard_status": {
+    "command": [
+      "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+      "scripts/run-native-routing.mjs",
+      "/workspace/smart-nema14-motor-controller/scripts/native-vm-c14-through-barrel-pipeline9-cloud.circuit.tsx",
+      "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.33-alpha.0/cloud/vm-c14-through-barrel-native9-001"
+    ],
+    "exit_code": -15,
+    "termination": "timeout",
+    "memory_budget_mb": 22937,
+    "peak_sampled_group_rss_mb": 15756.51953125,
+    "elapsed_seconds": 901.397420366,
+    "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+  },
+  "next_source_diagnosis": "All fixed via spans are represented; the original direct USB ESD ground via still had an undersized 0.38 mm obstacle for its 0.60 mm actual pad. Replace that source representation and link both outer ports of existing ordinary source vias. A native L2 VM pour between the C14 and eFuse-out barrels is independently tested next."
+}

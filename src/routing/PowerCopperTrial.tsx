@@ -154,6 +154,7 @@ export function PowerCopperTrial() {
                   : "inner2"
             }
             connectsTo={`net.${pour.net}`}
+            unbroken={pour.unbroken}
             clearance="0.155mm"
             boardEdgeMargin="0.3mm"
             cutoutMargin="0.31mm"
@@ -173,7 +174,11 @@ export function PowerCopperTrial() {
             toLayer="bottom"
             holeDiameter="0.30mm"
             outerDiameter="0.60mm"
-            connectsTo={`net.${fanout.net}`}
+            connectsTo={[
+              `net.${fanout.net}`,
+              `.${fanout.name} > .top`,
+              `.${fanout.name} > .bottom`,
+            ]}
             tented
           />
           {fanout.branches.map((branch) => (

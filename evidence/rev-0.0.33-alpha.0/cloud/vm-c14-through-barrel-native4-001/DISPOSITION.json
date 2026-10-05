@@ -1,0 +1,19 @@
+{
+  "status": "manually stopped before final output; no route adopted",
+  "reason": "User explicitly requested Pipeline9 instead of Pipeline4.",
+  "guard_status": {
+    "command": [
+      "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+      "scripts/run-native-routing.mjs",
+      "/workspace/smart-nema14-motor-controller/scripts/native-vm-c14-through-barrel-pipeline4-cloud.circuit.tsx",
+      "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.33-alpha.0/cloud/vm-c14-through-barrel-native4-001"
+    ],
+    "exit_code": -15,
+    "termination": null,
+    "memory_budget_mb": 22937,
+    "peak_sampled_group_rss_mb": 1609.36328125,
+    "elapsed_seconds": 104.93177521899997,
+    "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+  },
+  "full_through_barrel_obstacles_verified": true
+}

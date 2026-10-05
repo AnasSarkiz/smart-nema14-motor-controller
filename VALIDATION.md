@@ -1,4 +1,46 @@
-# Current Linux continuation — 0.0.32-alpha.0, 2026-10-05
+# Current Linux continuation — 0.0.33-alpha.0, 2026-10-05
+
+TMC_ENABLE_N now physically joins U1 pin15, U2 pin2 and R7 pin2 through the
+corrected native three-layer tree and two ordinary 0.30/0.60 mm through vias.
+The route initially split the VM plane at C14. A reviewed inner1 native pour
+reconnects C14 to the eFuse output, with a local bulge around the USB NPTH; all
+six power/reference networks remain joined and EFUSE_RTN stays isolated.
+
+All 151 previous saved paths and 20 explicit pours remain exact. All 265 other
+net/layer copper groups stay within a 0.1 nm serialization envelope. All 191
+prior via drills, pads, spans and effective tenting flags are preserved; 421
+purchased/component pin-net assignments stay exact. Saved paths now walk each
+through barrel fully for native obstacle coverage. The active USB ESD GND via
+is explicitly 0.30/0.60 mm. Actual Pipeline9 input covers all 193 current via
+annuli on all four layers. Two retained filled contacts preserve original
+mask settings; all 50 manufacturing declarations remain unchanged.
+
+Fresh official full build: **234 traces / 193 vias / 74 pours**, **11 native
+unconnected-port + 6 unfinished trace errors**, **74/82 complete physical nets**.
+Canonical SHA-256: `2a308b0c3d2d0ae50ffbd2d748f8f3365f8d842b7184a0b7d36037e1eca26534`.
+Strict geometry, foreign fill clearance, native netlist/shorts/schematic placement,
+TypeScript, imports and formatting pass. USB return/skew and RAW-neck analytical
+screens pass. Full build exits 1 for retained errors; all-net filled review
+exits 1 for eight incomplete nets. All four current layer renders were actually
+viewed. Crowded silkscreen and bottom labels at/outside outline remain.
+
+Historical Pipeline4 output seeded the corrected enable route but its raw result
+failed geometry/power and was not adopted. The VM Pipeline4 run was stopped
+when the user selected Pipeline9. VM Pipeline9 timed out at 901.397 seconds,
+15,756.520 MiB peak, in joint DRC repair (0.84), with no final route adopted.
+All future remaining-net jobs use native beta_pipeline9 only. Rejected source
+trials and stale output are explicitly identified in ARCHIVE-PROVENANCE.json;
+no check was disabled and no generated JSON or imported component was patched.
+See TMC-ENABLE-ADOPTION.json and cloud/canonical/CHECKS.json.
+
+Matching public publication is pending verification. Eight physical nets and
+full power/via/thermal/transient, USB/SI, signal, 3D/mechanical and CAM gates
+remain unfinished. Live official supplier verification still needs easyeda.com
+runtime policy activation through the environment editor. Firmware and hardware
+tests are unperformed; no hosted build success is claimed.
+**PROTOTYPE FABRICATION READY: NO.** Continue all TASK.md nets and qualification.
+
+# Historical Linux continuation — 0.0.32-alpha.0, 2026-10-05
 
 The four motor phase routes had 0.15 mm internal sections, below the conservative
 0.34245 A phase bound in the IPC-2221 / 30°C analytical screen. Native source

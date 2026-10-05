@@ -27,24 +27,30 @@ const featureSchema = z.object({
 const savedViaPositions = savedRoutes.paths.flatMap((path) =>
   path.route.filter((point) => point.route_type === "via"),
 )
-const features = z
-  .array(featureSchema)
-  .parse(manifest.features)
-  .filter(
-    (feature) =>
-      !savedViaPositions.some(
-        (via) => Math.hypot(via.x - feature.x, via.y - feature.y) < 0.00001,
-      ),
-  )
+const features = z.array(featureSchema).parse(manifest.features)
 
 /** Named PCB features; purchased pad definitions remain unchanged.
  * Every feature requires filled/capped fabrication, ownership and geometry
  * qualification. These are not replacements for ordinary routing vias.
  */
-export function FilledSignalEscapes() {
+export function FilledSignalEscapes({
+  retainSavedFeatureNames = [],
+}: {
+  retainSavedFeatureNames?: string[]
+}) {
+  // Native saved routes coalesce with existing physical holes, but their path
+  // schema cannot carry mask flags. Keep reviewed tented contacts as explicit
+  // native features when adopting their copper into a saved route.
+  const retainedFeatures = features.filter(
+    (feature) =>
+      retainSavedFeatureNames.includes(feature.name) ||
+      !savedViaPositions.some(
+        (via) => Math.hypot(via.x - feature.x, via.y - feature.y) < 0.00001,
+      ),
+  )
   return (
     <>
-      {features.map((feature) => (
+      {retainedFeatures.map((feature) => (
         <Fragment key={feature.name}>
           <via
             name={feature.name}
@@ -54,7 +60,11 @@ export function FilledSignalEscapes() {
             toLayer="bottom"
             holeDiameter={feature.hole_diameter_mm}
             outerDiameter={feature.outer_diameter_mm}
-            connectsTo={`net.${feature.net}`}
+            connectsTo={[
+              `net.${feature.net}`,
+              `.${feature.name} > .top`,
+              `.${feature.name} > .bottom`,
+            ]}
             tented
           />
           {feature.branches.map((branch) => (
