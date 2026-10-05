@@ -1,6 +1,6 @@
 # Current Cloud handoff — 0.0.20-alpha.0, 2026-10-05
 
-## Cloud account activation and portable setup correction
+## Verified Cloud activation and routing-task start
 
 After the user signed in, the browser confirmed GitHub account AnasSarkiz.
 Only AnasSarkiz/smart-nema14-motor-controller was selected. The dedicated
@@ -11,9 +11,30 @@ authorized administrator access exists and otherwise verifies every required
 preinstalled native library/tool, TLS trust and fonts. It retains the complete
 venv/dependency/smoke checks. The official Bun tagged GitHub installer provides
 a fallback when bun.com is unavailable through the Cloud proxy. Required
-package host allowlisting is documented. Environment publication and routing
-task start remain pending while this corrected setup is validated. Electronic
-sources and checked circuit JSON are unchanged; fabrication status remains NO.
+package host allowlisting is documented. The corrected exact setup and a
+separate smoke run passed in the actual Cloud image at commit
+`2bdc0064266d88a65e8cc05668bd2cdfbe65ea6e`: TypeScript, CLI, imports,
+Shapely/CadQuery, supervisor syntax, 2,804 context files and all four archive
+parts. Both formerly denied package requests returned HTTP 200 after the
+reviewed 11-host allowlist was saved. Sharp's interrupted installation was
+repaired and PNG rendering verified; repository files remained clean.
+
+The browser explicitly confirmed **Environment published** for the dedicated
+`smart-nema14-motor-controller` environment (only this board repository;
+environment sharing remains Only me). Actual setup resources were 32 GiB
+container memory limit, no swap, approximately 27 GiB free disk. This is not
+unlimited RAM; new jobs retain the bounded supervisor.
+
+The [Cloud routing continuation](https://chatgpt.com/local/01a10ba0-5ae2-7690-934b-73780c7ed077)
+was started in that exact published environment and visibly reported Working,
+with its first response reviewing handoff/evidence and the RAW VBUS bottleneck.
+The full docs/cloud/TASK.md plus actual environment details were submitted.
+No local routing was started. This verifies task dispatch and initial work,
+not completed routing or fabricated output. Cloud task links require the
+owner's account; the GitHub and tscircuit board destinations remain public.
+The corrected Linux CI [37296728759](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37296728759)
+also passed. Electronic sources and checked circuit JSON are unchanged;
+fabrication status remains NO with the 20+11 baseline routing errors.
 
 
 The latest user request moves remaining routing to Codex Cloud because local Mac jobs exhaust memory. No further local remaining-net job was started after that request. This revision promotes the checked trial226 copper to the canonical declarative index, preserves all native errors, pins upgraded released dependencies, and includes portable Cloud setup, complete task/context instructions, and archived experimental evidence. It is a work-in-progress prototype, not fabrication approval.

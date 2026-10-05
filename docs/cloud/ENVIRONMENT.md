@@ -51,10 +51,16 @@ detected VM/cgroup memory or the time limit. It records actual native errors and
 nonzero exit status. A killed job is a failure, never a passing build. One-second
 RSS polling is a guard, not an unlimited-memory guarantee.
 
-The Linux setup was verified in GitHub Actions run 37292488424 on the pushed
-handoff source. The original Cloud setup browser required sign-in. Repository preparation does
-not itself create/publish a Cloud environment. Confirm **Environment published**
-and a task ID before reporting either action as complete.
+The Linux setup was verified in GitHub Actions runs 37292488424 and 37296728759.
+After sign-in, the actual non-root Cloud setup at commit 2bdc006 passed, including
+TypeScript, imports, analysis libraries, context/archive checks and PNG rendering.
+The browser confirmed **Environment published** on 2026-10-05. The dedicated
+smart-nema14-motor-controller environment includes only this board repository;
+sharing remains Only me. Actual setup VM: 32 GiB cgroup RAM limit, no swap,
+approximately 27 GiB free disk. The routing continuation visibly started:
+https://chatgpt.com/local/01a10ba0-5ae2-7690-934b-73780c7ed077.
+Task dispatch does not establish routing or fabrication qualification. See
+VALIDATION.md for the verified setup/dispatch evidence and pending board gates.
 
 Official documentation checked 2026-10-05:
 https://learn.chatgpt.com/docs/environments/cloud-environments
