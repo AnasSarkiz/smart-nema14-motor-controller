@@ -50,25 +50,38 @@ def copper_signature(track):
 
 before_footprints = {f.GetReference(): footprint_signature(f) for f in board.GetFootprints()}
 before_copper = Counter(copper_signature(t) for t in board.GetTracks())
+ripup_scope_path = folder / "routing-ripup-scope.json"
+ripup_nets = set(json.loads(ripup_scope_path.read_text())["nets"]) if ripup_scope_path.exists() else set()
+assert not ripup_nets.intersection({"USB_DP", "USB_DM", "VM", "VBUS_CONN", "VBUS_PROTECTED", "EFUSE_RTN", "GND"})
+fixed_copper = Counter(copper_signature(t) for t in board.GetTracks() if t.IsLocked() or t.GetNetname() not in ripup_nets)
 assert pcbnew.ImportSpecctraSES(board, str(session_path.resolve())), "Official KiCad session import failed"
 after_footprints = {f.GetReference(): footprint_signature(f) for f in board.GetFootprints()}
 after_copper = Counter(copper_signature(t) for t in board.GetTracks())
+selection_path = folder / "selected-nets.json"
+selected_nets = set(json.loads(selection_path.read_text())) if selection_path.exists() else set()
+unexpected_unselected_additions = [signature for signature in (after_copper - before_copper).elements()
+                                  if selected_nets and signature[1] not in selected_nets]
 changed_footprints = [ref for ref in before_footprints if before_footprints[ref] != after_footprints.get(ref)]
-missing_copper = list((before_copper - after_copper).elements())
+missing_copper = list((fixed_copper - after_copper).elements())
+changed_selected_copper = list((before_copper - after_copper).elements())
 report = {
     "session_sha256": hashlib.sha256(session_path.read_bytes()).hexdigest(),
     "native_json_sha256": hashlib.sha256((folder / "circuit.json").read_bytes()).hexdigest(),
     "kicad_version": pcbnew.Version(), "footprints_checked": len(before_footprints),
     "changed_footprints": changed_footprints,
-    "preserved_manual_copper_objects": sum(before_copper.values()),
+    "preserved_manual_copper_objects": sum(fixed_copper.values()),
+    "rerouting_nets": sorted(ripup_nets),
+    "removed_selected_copper_objects": len(changed_selected_copper),
     "missing_manual_copper": missing_copper,
+    "unexpected_unselected_additions": unexpected_unselected_additions,
     "final_copper_objects": sum(after_copper.values()),
-    "status": "failed" if changed_footprints or missing_copper else "preservation passed",
+    "status": "failed" if changed_footprints or missing_copper or unexpected_unselected_additions else "preservation passed",
     "scope": "Final connectivity and native copper checks remain required.",
 }
 (folder / "SESSION-IMPORT-AUDIT.json").write_text(json.dumps(report, indent=2) + "\n")
 assert not changed_footprints, f"Session changed footprint geometry or connectivity: {changed_footprints}"
-assert not missing_copper, "Session changed fixed native USB copper"
+assert not missing_copper, "Session changed fixed native copper outside the selected rerouting group"
+assert not unexpected_unselected_additions, "Session added copper outside the selected routing group"
 pcbnew.SaveBoard(str((folder / "local-routed.kicad_pcb").resolve()), board)
 layer_names = {pcbnew.F_Cu: "top", pcbnew.In1_Cu: "inner1",
                pcbnew.In2_Cu: "inner2", pcbnew.B_Cu: "bottom"}

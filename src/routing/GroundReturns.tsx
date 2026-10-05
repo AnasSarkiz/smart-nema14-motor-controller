@@ -3,6 +3,37 @@ import { Fragment } from "react"
 export function GroundReturns() {
   return (
     <>
+      <trace
+        name="MCU_VSS_RETURN_RECONNECT"
+        from=".GND_STITCH_MCU > .top"
+        to=".U1 > .pin29"
+        thickness="0.2mm"
+        pcbPathRelativeTo=".GND_STITCH_MCU > .top"
+        pcbPath={[{ x: 2.25, y: -1 }]}
+      />
+      <trace
+        name="LIMIT2_CAP_GROUND_RECONNECT"
+        from=".C31 > .pin2"
+        to=".D_IO2 > .pin3"
+        thickness="0.15mm"
+        pcbPathRelativeTo=".C31 > .pin2"
+        pcbPath={[
+          { x: -0.420116, y: -0.75 },
+          { x: 0.25, y: -0.75 },
+        ]}
+      />
+      <trace
+        name="DNP_ENCODER_GROUND_RECONNECT"
+        from=".GND_STITCH_EFUSE > .bottom"
+        to=".U4 > .pin4"
+        thickness="0.15mm"
+        pcbPathRelativeTo=".GND_STITCH_EFUSE > .bottom"
+        pcbPath={[
+          { x: 0.4, y: 0.4 },
+          { x: 1.6, y: 0.4 },
+          { x: 1.6, y: 1.8 },
+        ]}
+      />
       <copperpour
         name="EFUSE_RTN_CONTROL_ISLAND"
         layer="bottom"
@@ -80,8 +111,8 @@ export function GroundReturns() {
         cutoutMargin="0.31mm"
         useThermalReliefs={false}
         outline={[
-          { x: -1.3, y: -11.8 },
-          { x: 1.3, y: -11.8 },
+          { x: -1.3, y: -14 },
+          { x: 1.3, y: -14 },
           { x: 1.3, y: -10.75 },
           { x: -1.3, y: -10.75 },
         ]}
@@ -108,8 +139,8 @@ export function GroundReturns() {
       />
       <via
         name="GND_STITCH_BUCK"
-        pcbX={-12}
-        pcbY={14}
+        pcbX={-12.25}
+        pcbY={15}
         fromLayer="top"
         toLayer="bottom"
         holeDiameter="0.30mm"

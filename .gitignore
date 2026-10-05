@@ -47,3 +47,19 @@ evidence/rev-0.0.8-alpha.0/previous-jst-orientation/diagnostic-assembly.step
 
 # Reviewed tscircuit publishing snapshots; generated from committed sources.
 .publication/
+
+# Portable Cloud runtimes and single-job lock
+.cloud-tools/
+.cloud-routing.lock
+scripts/__pycache__/
+
+# Checked canonical Circuit JSON is a required published artifact
+!dist/
+dist/*
+!dist/index/
+dist/index/*
+!dist/index/circuit.json
+
+!dist/routing-review/
+dist/routing-review/*
+!dist/routing-review/circuit.json

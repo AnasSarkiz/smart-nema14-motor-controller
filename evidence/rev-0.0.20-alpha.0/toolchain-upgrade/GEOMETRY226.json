@@ -1,0 +1,479 @@
+{
+  "revision": "0.0.19-alpha.0",
+  "input": "dist/scripts/power-trial226/circuit.json",
+  "input_sha256": "1c5a4a58749f8a7e97eabdb31c9f7474219d5871cd74057844194d775b44df33",
+  "scope": "Actual tracks, drills, component/test pads, board edges, NPTH and mechanical keepouts. USB path length is independently measured by measure-usb-paths.py; absent legacy trace-name lengths below are not a USB pass. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 223,
+  "segment_count": 1431,
+  "via_count": 179,
+  "thermal_manifest_sha256": "d3162e6fe7df40ec966d2360fc4e5f45c887e2e99dba0bfdcefc83a2797b1d1e",
+  "reviewed_thermal_drill_contacts": [
+    {
+      "name": "RTN_EFUSE_THERMAL",
+      "via": "pcb_via_20",
+      "reference": "U10",
+      "pin_number": 25,
+      "net": "EFUSE_RTN",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Native through thermal via within TPS26600 RTN exposed pad, joined to the separate RTN return island."
+    },
+    {
+      "name": "TMC_THERMAL_S",
+      "via": "pcb_via_27",
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Specified exposed-pad ground thermal spreading, filled and capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_C",
+      "via": "pcb_via_28",
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Specified exposed-pad ground thermal spreading, filled and capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_N",
+      "via": "pcb_via_29",
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Specified exposed-pad ground thermal spreading, filled and capped construction."
+    },
+    {
+      "name": "TCPP_THERMAL",
+      "via": "pcb_via_30",
+      "reference": "U3",
+      "pin_number": 13,
+      "net": "GND",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Specified exposed-pad ground thermal spreading, filled and capped construction."
+    }
+  ],
+  "filled_manifest_sha256": "ccdd7275d926741b28bd3432b9e1f6045a77bfe263fdbb1d1093ef9fbd4407af",
+  "reviewed_filled_contacts": [
+    {
+      "name": "GND_C16_FILLED",
+      "via": "pcb_via_51",
+      "reference": "C16",
+      "pin_number": 2,
+      "layer": "top",
+      "net": "GND",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "GND_VSS_FILLED",
+      "via": "pcb_via_52",
+      "reference": "U1",
+      "pin_number": 7,
+      "layer": "top",
+      "net": "GND",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "GND_C30_FILLED",
+      "via": "pcb_via_53",
+      "reference": "C20",
+      "pin_number": 2,
+      "layer": "top",
+      "net": "GND",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "GND_C30_FILLED",
+      "via": "pcb_via_53",
+      "reference": "C30",
+      "pin_number": 2,
+      "layer": "bottom",
+      "net": "GND",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "STATUS_MCU_FILLED",
+      "via": "pcb_via_54",
+      "reference": "U1",
+      "pin_number": 30,
+      "layer": "top",
+      "net": "LED_STATUS_DRIVE",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "STATUS_RESISTOR_FILLED",
+      "via": "pcb_via_55",
+      "reference": "R36",
+      "pin_number": 1,
+      "layer": "bottom",
+      "net": "LED_STATUS_DRIVE",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "POWER_HIGH_MCU_FILLED",
+      "via": "pcb_via_56",
+      "reference": "U1",
+      "pin_number": 26,
+      "layer": "top",
+      "net": "POWER_HIGH_CURRENT",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "CC1_USB_FILLED",
+      "via": "pcb_via_59",
+      "reference": "J_USB",
+      "pin_number": 18,
+      "layer": "top",
+      "net": "PD_CC1_CONN",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "CC2_USB_FILLED",
+      "via": "pcb_via_60",
+      "reference": "J_USB",
+      "pin_number": 15,
+      "layer": "top",
+      "net": "PD_CC2_CONN",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "CC1_TCPP_FILLED",
+      "via": "pcb_via_61",
+      "reference": "U3",
+      "pin_number": 7,
+      "layer": "bottom",
+      "net": "PD_CC1_CONN",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "CC2_TCPP_FILLED",
+      "via": "pcb_via_62",
+      "reference": "U3",
+      "pin_number": 9,
+      "layer": "bottom",
+      "net": "PD_CC2_CONN",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "ENABLE_MCU_FILLED",
+      "via": "pcb_via_63",
+      "reference": "U1",
+      "pin_number": 21,
+      "layer": "top",
+      "net": "EXT_ENABLE_N",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "SDA_SENSOR_FILLED",
+      "via": "pcb_via_64",
+      "reference": "U9",
+      "pin_number": 6,
+      "layer": "bottom",
+      "net": "I2C_SDA",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "SDA_ENCODER_FILLED",
+      "via": "pcb_via_65",
+      "reference": "U4",
+      "pin_number": 6,
+      "layer": "bottom",
+      "net": "I2C_SDA",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "SWCLK_SERIES_FILLED",
+      "via": "pcb_via_66",
+      "reference": "R21",
+      "pin_number": 2,
+      "layer": "bottom",
+      "net": "SWCLK",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "STEP_IO_FILLED",
+      "via": "pcb_via_68",
+      "reference": "J_IO",
+      "pin_number": 5,
+      "layer": "bottom",
+      "net": "EXT_STEP_CONN",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "STEP_ESD_FILLED",
+      "via": "pcb_via_69",
+      "reference": "D_IO1",
+      "pin_number": 1,
+      "layer": "bottom",
+      "net": "EXT_STEP_CONN",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "ENABLE_IO_FILLED",
+      "via": "pcb_via_71",
+      "reference": "J_IO",
+      "pin_number": 7,
+      "layer": "bottom",
+      "net": "EXT_ENABLE_N_CONN",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "ENABLE_ESD_FILLED",
+      "via": "pcb_via_72",
+      "reference": "D_IO1",
+      "pin_number": 4,
+      "layer": "bottom",
+      "net": "EXT_ENABLE_N_CONN",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "ENABLE_SERIES_FILLED",
+      "via": "pcb_via_73",
+      "reference": "R25",
+      "pin_number": 1,
+      "layer": "bottom",
+      "net": "EXT_ENABLE_N_CONN",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "LIMIT1_IO_FILLED",
+      "via": "pcb_via_74",
+      "reference": "J_IO",
+      "pin_number": 8,
+      "layer": "bottom",
+      "net": "LIMIT1_CONN",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "LIMIT1_ESD_FILLED",
+      "via": "pcb_via_75",
+      "reference": "D_IO1",
+      "pin_number": 5,
+      "layer": "bottom",
+      "net": "LIMIT1_CONN",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "LIMIT1_SERIES_FILLED",
+      "via": "pcb_via_76",
+      "reference": "R26",
+      "pin_number": 1,
+      "layer": "bottom",
+      "net": "LIMIT1_CONN",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "TEMP_MCU_FILLED",
+      "via": "pcb_via_77",
+      "reference": "U1",
+      "pin_number": 12,
+      "layer": "top",
+      "net": "TEMP_ALERT_N",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "TEMP_SENSOR_FILLED",
+      "via": "pcb_via_78",
+      "reference": "U9",
+      "pin_number": 3,
+      "layer": "bottom",
+      "net": "TEMP_ALERT_N",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "LIMIT1_FILTER_FILLED",
+      "via": "pcb_via_80",
+      "reference": "R26",
+      "pin_number": 2,
+      "layer": "bottom",
+      "net": "LIMIT1",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "GND_DIO2_FILLED",
+      "via": "pcb_via_81",
+      "reference": "D_IO2",
+      "pin_number": 3,
+      "layer": "bottom",
+      "net": "GND",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "FLT_EFUSE_FILLED",
+      "via": "pcb_via_84",
+      "reference": "U10",
+      "pin_number": 22,
+      "layer": "bottom",
+      "net": "EFUSE_FLT_N",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "FLT_PULLUP_FILLED",
+      "via": "pcb_via_86",
+      "reference": "R48",
+      "pin_number": 2,
+      "layer": "bottom",
+      "net": "EFUSE_FLT_N",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "FAULT_MCU_FILLED",
+      "via": "pcb_via_134",
+      "reference": "U1",
+      "pin_number": 31,
+      "layer": "top",
+      "net": "LED_FAULT_DRIVE",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "FAULT_RESISTOR_FILLED",
+      "via": "pcb_via_135",
+      "reference": "R37",
+      "pin_number": 1,
+      "layer": "bottom",
+      "net": "LED_FAULT_DRIVE",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "ILIM_SWITCH_FILLED",
+      "via": "pcb_via_141",
+      "reference": "R45",
+      "pin_number": 1,
+      "layer": "bottom",
+      "net": "EFUSE_ILIM",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "OVP_SERIES_FILLED",
+      "via": "pcb_via_166",
+      "reference": "R42",
+      "pin_number": 2,
+      "layer": "bottom",
+      "net": "EFUSE_OVP",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "OVP_DIVIDER_FILLED",
+      "via": "pcb_via_167",
+      "reference": "R43",
+      "pin_number": 1,
+      "layer": "bottom",
+      "net": "EFUSE_OVP",
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "NRST_SERIES_FILLED",
+      "via": "pcb_via_174",
+      "reference": "R22",
+      "pin_number": 1,
+      "layer": "bottom",
+      "net": "NRST_GUARDED",
+      "construction": "filled_capped_pad_contact"
+    }
+  ],
+  "filled_features_matched": [
+    "GND_C16_FILLED",
+    "GND_VSS_FILLED",
+    "GND_C30_FILLED",
+    "STATUS_MCU_FILLED",
+    "STATUS_RESISTOR_FILLED",
+    "POWER_HIGH_MCU_FILLED",
+    "POWER_HIGH_GATE_FILLED",
+    "POWER_HIGH_PULLDOWN_FILLED",
+    "CC1_USB_FILLED",
+    "CC2_USB_FILLED",
+    "CC1_TCPP_FILLED",
+    "CC2_TCPP_FILLED",
+    "ENABLE_MCU_FILLED",
+    "SDA_SENSOR_FILLED",
+    "SDA_ENCODER_FILLED",
+    "SWCLK_SERIES_FILLED",
+    "SWCLK_PULLDOWN_FILLED",
+    "STEP_IO_FILLED",
+    "STEP_ESD_FILLED",
+    "STEP_SERIES_FILLED",
+    "ENABLE_IO_FILLED",
+    "ENABLE_ESD_FILLED",
+    "ENABLE_SERIES_FILLED",
+    "LIMIT1_IO_FILLED",
+    "LIMIT1_ESD_FILLED",
+    "LIMIT1_SERIES_FILLED",
+    "TEMP_MCU_FILLED",
+    "TEMP_SENSOR_FILLED",
+    "TEMP_PULLUP_FILLED",
+    "LIMIT1_FILTER_FILLED",
+    "GND_DIO2_FILLED",
+    "GND_C25_ESCAPE",
+    "GND_C34_ESCAPE",
+    "FLT_EFUSE_FILLED",
+    "FLT_MCU_ESCAPE",
+    "FLT_PULLUP_FILLED",
+    "FAULT_MCU_FILLED",
+    "FAULT_RESISTOR_FILLED",
+    "ILIM_SWITCH_FILLED",
+    "OVP_SERIES_FILLED",
+    "OVP_DIVIDER_FILLED",
+    "NRST_MUX_FILLED",
+    "NRST_SERIES_FILLED"
+  ],
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": {
+      "via": "pcb_via_72",
+      "reference": "D_IO1",
+      "pad": "pcb_smtpad_311",
+      "same_net": false,
+      "actual_mm": 0.24999819999999814,
+      "required_mm": 0.25
+    },
+    "track_to_pad_mm": {
+      "track": "VM_BUCK__U5____pin2",
+      "segment": 0,
+      "pad": "pcb_smtpad_96",
+      "reference": "C9",
+      "actual_mm": 0.10002479999999993,
+      "required_mm": 0.1
+    },
+    "track_to_track_mm": {
+      "first": "saved_phase_null_0_5",
+      "first_segment": 4,
+      "second": "saved_phase_null_0_70",
+      "second_segment": 3,
+      "layer": "top",
+      "actual_mm": 0.15154999999999985,
+      "required_mm": 0.15
+    },
+    "via_to_track_mm": {
+      "via": "pcb_via_142",
+      "track": "VM_OUT_BRIDGE__VM_EFUSE_OUT____top",
+      "segment": 2,
+      "layer": "top",
+      "actual_mm": 0.1499999999999993,
+      "required_mm": 0.15
+    },
+    "via_to_via_mm": {
+      "first": "pcb_via_132",
+      "second": "pcb_via_175",
+      "actual_mm": 0.15497301938546093,
+      "required_mm": 0.15
+    },
+    "via_hole_to_via_hole_mm": {
+      "first": "pcb_via_72",
+      "second": "pcb_via_75",
+      "actual_mm": 0.3700861338464559,
+      "required_mm": 0.35
+    }
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 75677,
+    "track_to_pad_mm": 251896,
+    "track_to_track_mm": 353932,
+    "via_to_track_mm": 251247,
+    "via_to_via_mm": 15931,
+    "via_hole_to_via_hole_mm": 15931
+  },
+  "violations": [],
+  "passed": true
+}

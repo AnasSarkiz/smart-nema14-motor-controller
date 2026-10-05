@@ -1,3 +1,29 @@
+# Current Cloud handoff — 0.0.20-alpha.0, 2026-10-05
+
+The latest user request moves remaining routing to Codex Cloud because local Mac jobs exhaust memory. No further local remaining-net job was started after that request. This revision promotes the checked trial226 copper to the canonical declarative index, preserves all native errors, pins upgraded released dependencies, and includes portable Cloud setup, complete task/context instructions, and archived experimental evidence. It is a work-in-progress prototype, not fabrication approval.
+
+Current gate status: Stage 1/2/3 prior prototype reviews remain historical evidence, with routing-driven placement changes requiring final regression. Stage 4 in progress; Stage 5 in progress; Stage 6 not started for the completed current design; Stage 7 not started (no physical prototype); Stage 8 in progress as an explicitly untested prototype. Earlier finished checks do not qualify the changed copper.
+
+Fresh `tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs` used the pinned updated local CLI and exited **1**, retaining **20 pcb_port_not_connected_error + 11 pcb_trace_error**. The native saved-copper replay contains 225 traces / 179 vias / 65 pours. Required canonical circuit JSON is tracked at dist/index/circuit.json and mirrored in build/routing-review/circuit.json. SHA-256: `d833ec12e4eabb3bcda22e727a8eb6ed111ee19001d09b89321d7c685cae1521`.
+
+Fresh strict actual geometry check passes with zero violations. Native shorts check reports no shorts. Fresh filled-copper review finds zero foreign-clearance violations but **62/82 physically complete nets**, and correctly exits **1** for unfinished connectivity. Six power/reference networks each form one physical component, but actual widths/via-current/thermal qualification remains pending. RAW VBUS neck width and emitted narrow fanouts are documented in CLOUD_HANDOFF.md. USB historical skew and impedance estimates need current/final regression; no complete latest four-layer visual or final fabrication-file review is claimed.
+
+Current canonical output retains 111 supplier-footprint lookup failure warnings, 29 trace warnings, 14 no-power-pin, 7 no-ground-pin, 6 underspecified-pin, 5 refdes and 5 schematic-styling warnings. These are explicit unresolved review items; the live supplier lookups need investigation with working Cloud network access. No warnings are suppressed or automatically accepted.
+
+TypeScript and configured formatting checks pass. Critical official import-label audit passes. The all-import audit was rerun from a fresh isolated build using the valid rev13 supplier fixture: **44 official imports, 261 pin-to-pad mappings, zero geometry discrepancies**. The earlier missing-rev19-manifest failure was an audit invocation problem, not a component blocker. Purchased definitions remain unpatched. Ordinary selected-phase via minimums are explicitly 0.30/0.60 mm; named filled/capped features retain separate strict manifest review.
+
+Cloud setup shell syntax, Python syntax, archive-part checksums and the Mac routing refusal were checked locally. Linux dependency installation/readiness is not inferred from a Mac check; the dedicated GitHub workflow will test it on Ubuntu 24.04. Codex Cloud browser asked for sign-in, so environment publication/task start remains unverified pending account access. Automatic approval review rejected the CLI Set Env selector because no specific environment was confirmed; no alternate action was used to bypass that rejection.
+
+Toolchain: Bun 1.3.9; tscircuit 0.0.2744; CLI 0.1.2237; core 0.0.2090; props 0.0.688; capacity-autorouter 0.0.958; checks 0.0.239; circuit-json 0.0.517; easyeda 0.0.371; runframe 0.0.2908; modelprinter 0.0.8; TypeScript 5.9.3; Biome 2.5.15. Shapely 2.1.2 / CadQuery 2.8.0 are pinned for the fresh Linux analysis venv.
+
+The current handoff preserves all subsequent sources, checked JSON, motor/carrier/model references, 1,627 rev20 evidence files in four compressed parts, and checksummed context manifests. See CLOUD_HANDOFF.md and docs/cloud/TASK.md. Public destination visibility and remote readback for this new revision must be recorded after upload; no local commit alone establishes publication.
+
+**PROTOTYPE FABRICATION READY: NO.** Remaining blockers are incomplete routing/trace endpoints, final power/thermal/USB/manufacturing/visual/export qualification, and Cloud account/environment activation. Future physical testing remains pending and does not by itself excuse incomplete routing.
+
+---
+
+## Historical validation record (superseded where the current handoff differs)
+
 # Public visibility and checked build artifact — 0.0.19-alpha.0
 
 2026-10-04 Europe/Tirane. The user explicitly requested public GitHub and tscircuit visibility and the circuit JSON in the build. GitHub AnasSarkiz/smart-nema14-motor-controller is PUBLIC. The package is public and listed with public distribution enabled; anonymous package metadata was verified. Historical private receipts remain historical evidence.

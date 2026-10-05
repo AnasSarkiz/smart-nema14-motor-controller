@@ -147,7 +147,7 @@ for conductor in conductors:
     conductor['shape'] = conductor['shape'].difference(drill_voids)
 
 island_reports = {}
-for net_name in ('GND','EFUSE_RTN'):
+for net_name in sys.argv[3:] or ('GND','EFUSE_RTN'):
     net = next(key for key,name in net_names.items() if name==net_name)
     regions = []
     for layer in ('top','inner1','inner2','bottom'):

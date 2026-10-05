@@ -1,0 +1,66 @@
+# Smart NEMA 14 controller — Cloud continuation
+
+Use the repository-synced tscircuit skill at `.agents/skills/tscircuit/SKILL.md`.
+Read `CLOUD_HANDOFF.md`, `docs/cloud/TASK.md`, `VALIDATION.md`, and
+`docs/context/WORKSPACE-INSTRUCTIONS.md` before changing the design. This public
+repository is the dedicated board directory from the original workspace. Work
+inside this checkout; do not create a second board or rebuild the store app.
+The source revision before this continuation was 0.0.19-alpha.0.
+
+The latest human instruction moves routing to Codex Cloud because local Mac
+routing exhausts memory. **Do not run remaining-net routing on macOS.** Use only
+tscircuit's native autorouter, in bounded selected-net jobs. Do not resume
+Freerouting, repeat unchanged full-board attempts, or spawn parallel routing
+jobs. Use `scripts/run-cloud-routing.py` on Linux, with a fresh evidence folder.
+Inspect failure logs and change the actual routing approach before retrying.
+
+Keep the exact STEPPERONLINE 14HM11-0404S, existing imported component selection,
+35 × 35 mm four-layer outline, connector placement, and front carrier. Document
+any change necessary for a real routing/manufacturing defect. The earlier
+Phidgets/HOLRY/rear-shaft proposals are superseded. Encoder parts are DNP; the
+single front-shaft motor has no rear-shaft AS5600 arrangement.
+
+All purchased electronics must retain official JLCPCB imports. Never create,
+recreate, or patch imported symbols, footprints, pins, or pad mappings. Resolve
+importer bugs upstream or use the verified released converter. The TVS symbol's
+rotation is a disclosed cosmetic issue, not permission to alter its footprint.
+Native board structure, wiring, mounting holes and copper features are allowed.
+
+Do not hand-edit generated circuit JSON, suppress DRC, weaken checks, patch
+dependencies, introduce type escapes, or claim a visual inspection without
+viewing the rendered output. Consult the current tscircuit handbook and the
+installed CLI help/types before using an unfamiliar API. Keep the canonical
+entry point `index.circuit.tsx` declarative. Bun and the checked lockfile are the
+project's package manager; do not silently switch tools.
+
+Keep eFuse EFUSE_RTN electrically isolated from GND. Small filled/capped vias
+are allowed only when individually declared in the reviewed manufacturing
+manifests with exact owners. Ordinary new routing vias must be ≥0.30 mm drill,
+≥0.60 mm pad, ≥0.15 mm annular ring. Do not let the autorouter's board-wide
+minimum for named filled features become an undeclared blanket exception.
+
+Finish the remaining nets, then run every qualification gate in the task and
+workspace instructions. Stage 4/5/6 remain incomplete. Firmware and physical
+testing later do not excuse stopping before a credible prototype fabrication
+candidate; neither do automated checks establish production/hardware validation.
+
+Public GitHub repository: `AnasSarkiz/smart-nema14-motor-controller`, branch `main`.
+Public tscircuit package:
+`AnasSarkiz/smart-nema14-motor-controller--01a0fd9b`.
+The user has authorized committing/pushing each completed board step and
+publishing its matching prototype revision to both public destinations. Include
+fresh generated circuit JSON, verify the exact remote checksum and public
+access, and record outcomes in VALIDATION.md. No authorization to merge PRs or
+place fabrication orders is implied. If Cloud lacks publication credentials,
+report that exact publication blocker; never copy Mac Keychain/session tokens
+into this repository. Do not assume a local commit is published.
+
+Use GitHub account AnasSarkiz. Prefer the authenticated connector. Cloud doesn't
+have the local Mac Keychain; use its configured GitHub integration. Respect all
+remaining validation gates and standing publication requirements in the copied
+workspace instructions.
+
+Every new revision must state its unresolved errors, incomplete checks and
+untested prototype status. Required final board report: unconnected-port count,
+completed nets, trace/via/pour counts, DRC, power, USB and fabrication review,
+remaining blockers, and **PROTOTYPE FABRICATION READY: YES/NO**.

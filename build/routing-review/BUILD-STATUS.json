@@ -1,40 +1,15 @@
 {
-  "revision": "0.0.19-alpha.0",
-  "status": "incomplete routing prototype",
-  "artifact_kind": "checked local partial-routing diagnostic; not successful full-main build",
-  "source_entrypoint": "routing-review.circuit.tsx",
-  "main_entrypoint": "index.circuit.tsx",
-  "main_native_completion_enabled": true,
-  "preview_props": {
-    "savedRoutesEnabled": true,
-    "routeRemaining": false
+  "revision": "0.0.20-alpha.0",
+  "scope": "Incomplete saved-copper prototype and Cloud handoff; no remaining-net search performed for this checkpoint",
+  "source_entrypoint": "index.circuit.tsx",
+  "exit_code": 1,
+  "circuit_json_sha256": "d833ec12e4eabb3bcda22e727a8eb6ed111ee19001d09b89321d7c685cae1521",
+  "counts": {
+    "pcb_trace": 225,
+    "pcb_via": 179,
+    "pcb_copper_pour": 65,
+    "pcb_port_not_connected_error": 20,
+    "pcb_trace_error": 11
   },
-  "original_checked_artifact": "evidence/rev-0.0.19-alpha.0/current-partial/circuit.json",
-  "circuit_sha256": "38bd6ae875aa963ffed135e8cb85d749997855ab7ec81f8771d4236edfdb4b17",
-  "bytes": 3457805,
-  "circuit_source_commit": "da326ab9adcdbd3c623e665cc7e01b6d9529c7fc",
-  "checked_source_basis": "8ff7c62cd1a8defa96945dacaa33099677b02678",
-  "native_build_exit_code": 1,
-  "error_counts": {
-    "pcb_port_not_connected_error": 88
-  },
-  "pcb_traces": 139,
-  "pcb_vias": 107,
-  "pcb_copper_pours": 24,
-  "supplier_cad_entries": 111,
-  "package_build_artifact_path": "dist/routing-review/circuit.json",
-  "fabrication_ready": false,
-  "hardware_tested": false,
-  "hosted_build_success": false,
-  "remaining_checks": [
-    "88 missing copper connections",
-    "power/thermal paths",
-    "USB impedance and return qualification",
-    "silkscreen",
-    "Gerber/drill/BOM/CPL and assembler review",
-    "physical prototype tests"
-  ],
-  "prepared_at": "2026-10-04T11:48:49.218605+00:00",
-  "hosted_build_result": "Previous builds timed out after 30 minutes; new build 35ace8c5-eaff-4a48-ba61-53bfecc99ce1 is in progress after upload. Success unverified.",
-  "hosted_status_evidence": "evidence/rev-0.0.19-alpha.0/public-build/HOSTED-BUILDS.json"
+  "prototype_fabrication_ready": false
 }

@@ -58,9 +58,26 @@ def pad_outline(pad):
 
 
 pads = [(p, pad_outline(p), ports.get(p.get("pcb_port_id"))) for p in data if p["type"] == "pcb_smtpad"]
+thermal_manifest_path = Path(sys.argv[3]) if len(sys.argv) > 3 else None
+thermal_contacts = []
+filled_manifest_path = Path(sys.argv[4]) if len(sys.argv) > 4 else None
+filled_features = json.loads(filled_manifest_path.read_text())["features"] if filled_manifest_path else []
+filled_contacts = []
+filled_matches = []
+assert len({f["name"] for f in filled_features}) == len(filled_features)
+assert len({(f["x"], f["y"]) for f in filled_features}) == len(filled_features)
+for feature in filled_features:
+    assert feature["process"] == "IPC-4761 Type VII epoxy filled and copper capped, ENIG"
+    assert feature["construction"] in {"filled_capped_pad_contact", "filled_capped_close_escape", "filled_capped_ordinary_escape"}
+    assert feature["hole_diameter_mm"] in {.15, .2} and feature["outer_diameter_mm"] == .38
+    assert feature["minimum_foreign_drill_to_pad_mm"] == (.35 if feature["construction"] == "filled_capped_ordinary_escape" else .25)
+
+thermal_vias = json.loads(thermal_manifest_path.read_text())["vias"] if thermal_manifest_path else []
+pcb_ports = {e["pcb_port_id"]:e for e in data if e["type"] == "pcb_port"}
+source_ports = {e["source_port_id"]:e for e in data if e["type"] == "source_port"}
 assert not any(e["type"] == "pcb_plated_hole" for e in data), "Extend and verify plated slot geometry before checking a design containing it"
 violations = []
-measurements = {"via_drill_to_pad_mm": None, "track_to_pad_mm": None, "track_to_track_mm": None, "via_to_track_mm": None, "via_to_via_mm": None}
+measurements = {"via_drill_to_pad_mm": None, "track_to_pad_mm": None, "track_to_track_mm": None, "via_to_track_mm": None, "via_to_via_mm": None, "via_hole_to_via_hole_mm": None}
 measurement_counts = dict.fromkeys(measurements, 0)
 
 
@@ -119,10 +136,35 @@ for via in vias:
         source = source_traces[next(e["source_trace_id"] for e in data if e["type"] == "pcb_trace" and e["pcb_trace_id"] == via["pcb_trace_id"])]
         net = root(source["connected_source_port_ids"][0])
     assert set(via["layers"]) == {"top", "inner1", "inner2", "bottom"}, "Unreviewed blind/buried via"
-    if via["hole_diameter"] < 0.3 - 0.00002 or via["outer_diameter"] < 0.6 - 0.00002 or (via["outer_diameter"] - via["hole_diameter"]) / 2 < 0.15 - 0.00002:
+    filled = next((f for f in filled_features if math.hypot(f["x"]-via["x"], f["y"]-via["y"]) < .00001), None)
+    if filled:
+        assert net_names[net] == filled["net"], "Filled feature has wrong electrical net"
+        assert abs(via["hole_diameter"]-filled["hole_diameter_mm"]) < .00001 and abs(via["outer_diameter"]-filled["outer_diameter_mm"]) < .00001, "Filled feature drill or copper differs from manifest"
+        assert (via["outer_diameter"]-via["hole_diameter"])/2 >= .075, "Filled feature annulus below preferred manufacturer minimum"
+        filled_matches.append(filled["name"])
+    elif via["hole_diameter"] < .3-.00002 or via["outer_diameter"] < .6-.00002 or (via["outer_diameter"]-via["hole_diameter"])/2 < .15-.00002:
         violations.append({"check": "via_dimensions", "via": via})
     for pad, outline, pad_net in pads:
-        record_clearance("via_drill_to_pad_mm", {"via": via["pcb_via_id"], "reference": components[pad["pcb_component_id"]], "pad": pad["pcb_smtpad_id"], "same_net": pad_net == net, "actual_mm": position.distance(outline) - via["hole_diameter"] / 2, "required_mm": 0.35})
+        thermal = next((entry for entry in thermal_vias
+            if math.hypot(entry['x']-via['x'],entry['y']-via['y'])<.00001
+            and entry['reference']==components[pad['pcb_component_id']]
+            and entry['pin_number']==source_ports[pcb_ports[pad['pcb_port_id']]['source_port_id']].get('pin_number')), None) if pad.get('pcb_port_id') else None
+        pad_owner = {"reference": components[pad["pcb_component_id"]], "pin_number": source_ports[pcb_ports[pad["pcb_port_id"]]["source_port_id"]].get("pin_number")} if pad.get("pcb_port_id") else None
+        filled_owner = filled and pad_owner in [filled["owner"], *filled.get("additional_owners", [])]
+        if filled_owner:
+            assert pad_net == net, "Filled feature owner pad has wrong net"
+            if filled["construction"] == "filled_capped_pad_contact":
+                assert position.buffer(via["outer_diameter"]/2, quad_segs=64).intersects(outline), "Filled feature does not contact named owner"
+                filled_contacts.append({"name": filled["name"], "via": via["pcb_via_id"], **pad_owner, "layer": pad["layer"], "net": filled["net"], "construction": filled["construction"]})
+            else:
+                record_clearance("via_drill_to_pad_mm", {"via": via["pcb_via_id"], **pad_owner, "pad": pad["pcb_smtpad_id"], "same_net": True, "actual_mm": position.distance(outline)-via["hole_diameter"]/2, "required_mm": filled["minimum_foreign_drill_to_pad_mm"]})
+        elif thermal:
+            assert pad_net == net and net_names[net] == thermal['net'], 'Thermal via has the wrong electrical net'
+            assert abs(via['hole_diameter']-thermal['hole_diameter_mm'])<.00001 and abs(via['outer_diameter']-thermal['outer_diameter_mm'])<.00001, 'Thermal drill or annulus differs from reviewed construction'
+            assert outline.covers(position.buffer(via['outer_diameter']/2,quad_segs=64)), 'Thermal via is not fully inside its exposed pad'
+            thermal_contacts.append({'name':thermal['name'],'via':via['pcb_via_id'],'reference':thermal['reference'],'pin_number':thermal['pin_number'],'net':thermal['net'],'actual_drill_to_owner_pad_mm':position.distance(outline)-via['hole_diameter']/2,'reason':thermal['reason']})
+        else:
+            record_clearance("via_drill_to_pad_mm", {"via": via["pcb_via_id"], "reference": components[pad["pcb_component_id"]], "pad": pad["pcb_smtpad_id"], "same_net": pad_net == net, "actual_mm": position.distance(outline) - via["hole_diameter"] / 2, "required_mm": filled["minimum_foreign_drill_to_pad_mm"] if filled else 0.35})
         if pad_net != net and position.distance(outline) - via["outer_diameter"] / 2 < 0.15 - 0.00002:
             violations.append({"check": "via_annulus_to_other_net_pad", "via": via["pcb_via_id"], "pad": pad["pcb_smtpad_id"], "reference": components[pad["pcb_component_id"]]})
     for segment, geometry in tracks:
@@ -132,6 +174,7 @@ for via in vias:
 for i, first in enumerate(vias):
     for second in vias[i + 1:]:
         distance = math.hypot(first["x"] - second["x"], first["y"] - second["y"])
+        record_clearance("via_hole_to_via_hole_mm", {"first": first["pcb_via_id"], "second": second["pcb_via_id"], "actual_mm": distance-(first["hole_diameter"]+second["hole_diameter"])/2, "required_mm": .35})
         record_clearance("via_to_via_mm", {"first": first["pcb_via_id"], "second": second["pcb_via_id"], "actual_mm": distance - (first["outer_diameter"] + second["outer_diameter"]) / 2, "required_mm": 0.15})
 
 board = next(e for e in data if e["type"] == "pcb_board")
@@ -182,6 +225,11 @@ report = {
     "track_count": len(lengths),
     "segment_count": len(tracks),
     "via_count": len(vias),
+    "thermal_manifest_sha256": hashlib.sha256(thermal_manifest_path.read_bytes()).hexdigest() if thermal_manifest_path else None,
+    "reviewed_thermal_drill_contacts": thermal_contacts,
+    "filled_manifest_sha256": hashlib.sha256(filled_manifest_path.read_bytes()).hexdigest() if filled_manifest_path else None,
+    "reviewed_filled_contacts": filled_contacts,
+    "filled_features_matched": filled_matches,
     "usb_path_lengths_mm": usb_lengths,
     "usb_length_skew_mm": skew,
     "minimum_clearances": measurements,
@@ -189,6 +237,10 @@ report = {
     "violations": violations,
     "passed": not violations,
 }
+assert len(thermal_contacts) == len(thermal_vias), 'Every declared thermal via must match exactly one emitted via and its exposed pad'
+assert sorted(filled_matches) == sorted(f["name"] for f in filled_features), "Each named filled feature must match exactly one native emitted via"
+expected_owners = sum(1+len(f.get("additional_owners", [])) for f in filled_features if f["construction"] == "filled_capped_pad_contact")
+assert len(filled_contacts) == expected_owners, "Every intentionally contacted pad must be explicitly declared and checked"
 output_path.write_text(json.dumps(report, indent=2) + "\n")
 print(json.dumps(report, indent=2))
 sys.exit(0 if not violations else 1)

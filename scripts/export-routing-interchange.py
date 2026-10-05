@@ -117,7 +117,9 @@ def native_position_error(point, position):
 
 for trace in pcb_traces.values():
     for start, end in zip(trace["route"], trace["route"][1:]):
-        if (start["x"], start["y"]) == (end["x"], end["y"]):
+        # KiCad coordinates use integer nanometres. Native coincident port
+        # contacts can differ by floating-point roundoff below that grid.
+        if all(round(start[axis]*1_000_000) == round(end[axis]*1_000_000) for axis in ('x','y')):
             # Native saved paths include coincident wire/via contact markers.
             # They contain no line copper; actual via barrels are checked below.
             zero_length_contacts += 1

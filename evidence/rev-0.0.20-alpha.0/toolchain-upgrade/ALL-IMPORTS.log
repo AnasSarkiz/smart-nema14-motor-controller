@@ -1,0 +1,19 @@
+$ node scripts/check-all-imports.mjs
+node:fs:435
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open 'evidence/rev-0.0.19-alpha.0/REGENERATED-SOURCE-MANIFEST.json'
+    at readFileSync (node:fs:435:20)
+    at file:///Users/anassarkiz/tsci/tscircuit-store/boards/smart-nema14-motor-controller--01a0fd9b/scripts/check-all-imports.mjs:8:3
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:655:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'evidence/rev-0.0.19-alpha.0/REGENERATED-SOURCE-MANIFEST.json'
+}
+
+Node.js v25.6.0
+error: script "test:all-imports" exited with code 1

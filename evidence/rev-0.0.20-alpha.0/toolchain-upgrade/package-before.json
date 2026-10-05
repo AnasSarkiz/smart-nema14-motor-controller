@@ -1,0 +1,73 @@
+{
+  "name": "@tsci/AnasSarkiz.smart-nema14-motor-controller--01a0fd9b",
+  "version": "0.0.19-alpha.0",
+  "description": "STEPPERONLINE 14HM11-0404S controller: checked eFuse-enable route and ground/RTN copper; incomplete routing prototype, fabrication pending",
+  "main": "index.circuit.tsx",
+  "keywords": [
+    "tscircuit",
+    "circuit",
+    "pcb",
+    "electronics"
+  ],
+  "scripts": {
+    "dev": "tsci dev",
+    "validate:imports": "node scripts/check-critical-import-pins.mjs",
+    "build": "bun run validate:imports && tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs",
+    "snapshot": "bun run validate:imports && tsci snapshot index.circuit.tsx",
+    "format": "biome format --write index.circuit.tsx routing-review.circuit.tsx assembly.circuit.tsx mounted-assembly.circuit.tsx controller-preview.circuit.tsx src scripts mechanical/viewer.js mechanical/design-constraints.json package.json tsconfig.json tscircuit.config.json biome.json",
+    "format:check": "biome format index.circuit.tsx routing-review.circuit.tsx assembly.circuit.tsx mounted-assembly.circuit.tsx controller-preview.circuit.tsx src scripts mechanical/viewer.js mechanical/design-constraints.json package.json tsconfig.json tscircuit.config.json biome.json",
+    "typecheck": "tsc --noEmit",
+    "preview:schematic": "bun run validate:imports && tsci build index.circuit.tsx --disable-pcb --schematic-svgs --schematic-png && node scripts/render-schematic-sheets.mjs",
+    "test:draft": "node scripts/check-draft-connectivity.mjs",
+    "preview:imports": "tsci build scripts/import-audit.circuit.tsx --pcb-png --pcb-svgs",
+    "test:imports": "node scripts/check-released-imports.mjs",
+    "test:usb-imports": "node scripts/check-usb-imports.mjs",
+    "preview:usb-imports": "tsci build scripts/usb-import-audit.circuit.tsx --pcb-png --pcb-svgs",
+    "preview:assembly": "tsci build assembly.circuit.tsx --3d-png --glbs",
+    "test:assembly": "node scripts/check-mechanical-assembly.mjs",
+    "test:usb-model": ".mechanical-venv/bin/python mechanical/check-usb-connector-model.py",
+    "preview:viewer": "bun build mechanical/viewer.js --target browser --minify --outfile mechanical/viewer.bundle.js && .mechanical-venv/bin/python mechanical/build-viewer.py",
+    "preview:controller": "tsci build controller-preview.circuit.tsx --pcb-png --pcb-svgs --3d-png --glbs",
+    "test:all-imports": "node scripts/check-all-imports.mjs",
+    "test:usb-footprint": "node scripts/check-usb-manufacturer-footprint.mjs",
+    "test:motor-footprint": "node scripts/check-motor-connector-footprint.mjs",
+    "test:symbol-rotation": "node scripts/check-imported-symbol-rotation.mjs",
+    "bom:review": "node scripts/generate-review-bom.mjs",
+    "preview:mounted": "tsci build mounted-assembly.circuit.tsx --pcb-png --pcb-svgs --3d-png --glbs",
+    "test:front-carrier": ".mechanical-venv/bin/python mechanical/check-front-carrier.py",
+    "test:bom-catalog": "node scripts/check-bom-catalog.mjs",
+    "bom:table": "node scripts/generate-bom-table.mjs",
+    "test:power-model": ".mechanical-venv/bin/python mechanical/check-tps26600-model.py",
+    "test:power-imports": "node scripts/check-power-imports.mjs",
+    "test:power-corners": "python3 scripts/check-power-corners.py"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@tscircuit/capacity-autorouter": "0.0.956",
+    "@tscircuit/checks": "0.0.238",
+    "@tscircuit/cli": "0.1.2237",
+    "@tscircuit/core": "0.0.2074",
+    "@tscircuit/props": "0.0.684",
+    "circuit-json": "0.0.514",
+    "circuit-to-svg": "0.0.437",
+    "dsn-converter": "0.0.92",
+    "dsnts": "0.1.12",
+    "easyeda": "0.0.370",
+    "sharp": "0.32.6",
+    "tscircuit": "0.0.2743",
+    "typescript": "5.9.3",
+    "@tscircuit/runframe": "0.0.2897"
+  },
+  "author": "AnasSarkiz",
+  "dependencies": {
+    "@tsci/tscircuit.standard-jst-programmer": "0.8.0"
+  },
+  "private": true,
+  "overrides": {
+    "@tscircuit/core": "0.0.2074",
+    "@tscircuit/capacity-autorouter": "0.0.956",
+    "@tscircuit/props": "0.0.684",
+    "@tscircuit/checks": "0.0.238",
+    "circuit-json": "0.0.514"
+  }
+}

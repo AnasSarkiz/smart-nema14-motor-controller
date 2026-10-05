@@ -1,7 +1,7 @@
 {
   "name": "@tsci/AnasSarkiz.smart-nema14-motor-controller--01a0fd9b",
-  "version": "0.0.19-alpha.0",
-  "description": "STEPPERONLINE 14HM11-0404S controller: checked eFuse-enable route and ground/RTN copper; incomplete routing prototype, fabrication pending",
+  "version": "0.0.20-alpha.0",
+  "description": "STEPPERONLINE 14HM11-0404S controller: saved native copper and Codex Cloud handoff; incomplete routing prototype, not fabrication ready",
   "main": "index.circuit.tsx",
   "keywords": [
     "tscircuit",
@@ -39,24 +39,28 @@
     "bom:table": "node scripts/generate-bom-table.mjs",
     "test:power-model": ".mechanical-venv/bin/python mechanical/check-tps26600-model.py",
     "test:power-imports": "node scripts/check-power-imports.mjs",
-    "test:power-corners": "python3 scripts/check-power-corners.py"
+    "test:power-corners": "python3 scripts/check-power-corners.py",
+    "cloud:setup": "bash scripts/cloud-setup.sh",
+    "cloud:smoke": "bash scripts/cloud-smoke.sh",
+    "cloud:route": "python3 scripts/run-cloud-routing.py"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",
-    "@tscircuit/capacity-autorouter": "0.0.956",
-    "@tscircuit/checks": "0.0.238",
+    "@tscircuit/capacity-autorouter": "0.0.958",
+    "@tscircuit/checks": "0.0.239",
     "@tscircuit/cli": "0.1.2237",
-    "@tscircuit/core": "0.0.2074",
-    "@tscircuit/props": "0.0.684",
-    "circuit-json": "0.0.514",
-    "circuit-to-svg": "0.0.437",
+    "@tscircuit/core": "0.0.2090",
+    "@tscircuit/modelprinter": "0.0.8",
+    "@tscircuit/props": "0.0.688",
+    "@tscircuit/runframe": "0.0.2908",
+    "circuit-json": "0.0.517",
+    "circuit-to-svg": "0.0.441",
     "dsn-converter": "0.0.92",
     "dsnts": "0.1.12",
-    "easyeda": "0.0.370",
+    "easyeda": "0.0.371",
     "sharp": "0.32.6",
-    "tscircuit": "0.0.2743",
-    "typescript": "5.9.3",
-    "@tscircuit/runframe": "0.0.2897"
+    "tscircuit": "0.0.2744",
+    "typescript": "5.9.3"
   },
   "author": "AnasSarkiz",
   "dependencies": {
@@ -64,10 +68,11 @@
   },
   "private": true,
   "overrides": {
-    "@tscircuit/core": "0.0.2074",
-    "@tscircuit/capacity-autorouter": "0.0.956",
-    "@tscircuit/props": "0.0.684",
-    "@tscircuit/checks": "0.0.238",
-    "circuit-json": "0.0.514"
-  }
+    "@tscircuit/core": "0.0.2090",
+    "@tscircuit/capacity-autorouter": "0.0.958",
+    "@tscircuit/props": "0.0.688",
+    "@tscircuit/checks": "0.0.239",
+    "circuit-json": "0.0.517"
+  },
+  "packageManager": "bun@1.3.9"
 }
