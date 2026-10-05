@@ -1,12 +1,12 @@
 # Smart NEMA 14 Motor Controller
 
-Revision **0.0.25-alpha.0**, 2026-10-05. **Incomplete routing prototype; not fabrication ready; not hardware tested.**
+Revision **0.0.26-alpha.0**, 2026-10-05. **Incomplete routing prototype; not fabrication ready; not hardware tested.**
 
 35 × 35 mm, four layers, 111 electronic references / 108 default fitted, nine native A4 schematic sheets. Exact motor: **STEPPERONLINE 14HM11-0404S**, 0.4 A/phase, 25 Ω, 24 mH, 0.9°, single front shaft. U4/C6 encoder parts and the R50 CAN endpoint link are DNP by default. The front carrier uses the official motor geometry.
 
 STM32G0B1 provides USB FS, UCPD, classical CAN, STEP/DIR/ENABLE, limit inputs, SWD and temperature monitoring. TMC2209 drives the motor; TCPP01 protects USB; TPS26600 provides input protection/current limiting and AP63203 generates 3.3 V. Firmware and hardware tests remain pending. Hardware defaults keep the motor disabled and CAN in standby.
 
-The current saved-copper build has **227 traces, 188 vias and 70 pours**. It retains **14 native unconnected-port errors and 11 unfinished trace errors**. Independent actual-copper review finds **67 of 82 nets physically complete**; strict geometry and native shorts checks pass for this partial copper. The measured RAW VBUS lower neck is now 1.455 mm and passes its limited current screen; the complete power/via/thermal qualification remains pending. Current USB length/skew and adjacent-ground screens pass; complete qualification and final fabrication exports remain pending. Neither publication nor these partial checks approve fabrication.
+The current saved-copper build has **226 traces, 188 vias and 70 pours**. It retains **14 native unconnected-port errors and 11 unfinished trace errors**. Independent actual-copper review finds **68 of 82 nets physically complete**; strict geometry and native shorts checks pass for this partial copper. The measured RAW VBUS lower neck is now 1.455 mm and passes its limited current screen; the complete power/via/thermal qualification remains pending. Current USB length/skew and adjacent-ground screens pass; complete qualification and final fabrication exports remain pending. Neither publication nor these partial checks approve fabrication.
 
 ## Continue in Codex Cloud
 

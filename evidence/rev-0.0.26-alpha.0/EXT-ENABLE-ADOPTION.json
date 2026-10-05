@@ -1,0 +1,33 @@
+{
+  "revision": "0.0.26-alpha.0",
+  "accepted_saved_trial": "cloud/ext-enable-saved-001",
+  "logical_endpoints": [
+    "J_IO.pin7",
+    "D_IO1.pin4",
+    "R25.pin1"
+  ],
+  "supported_source_api": "Complete two-branch autoroutingphase pcbTracePaths star ending at R25.pin1 on inner2",
+  "native_router_attempts": {
+    "TMC_ENABLE_N": "Earlier Pipeline4 intermediate paths corrected in saved trials 001/002 but rejected because they split power networks. All rejected source paths were removed; accepted LED/source copper restored before external-enable trial."
+  },
+  "preserved_prior_saved_paths": 137,
+  "preserved_prior_filled_features": 47,
+  "new_filled_features": [],
+  "new_ordinary_vias": [],
+  "existing_filled_features_used": [
+    "ENABLE_IO_FILLED",
+    "ENABLE_ESD_FILLED",
+    "ENABLE_SERIES_FILLED"
+  ],
+  "strict_geometry_violations": 0,
+  "foreign_filled_clearance_violations": 0,
+  "all_six_power_reference_nets_physical_components": 1,
+  "physically_complete_nets": 68,
+  "total_nets": 82,
+  "native_unconnected_port_errors": 14,
+  "dangling_trace_errors": 11,
+  "usb_reference_skew_and_raw_neck_screens_passed": true,
+  "prototype_fabrication_ready": false,
+  "hardware_tested": false,
+  "EXT_ENABLE_N_CONN_physical_components": 1
+}

@@ -1,6 +1,40 @@
 # Smart NEMA 14 controller: complete Cloud handoff
 
-## Current Linux continuation — 0.0.25-alpha.0
+## Current Linux continuation — 0.0.26-alpha.0
+
+EXT_ENABLE_N_CONN is complete between J_IO pin 7, D_IO1 pin 4 and R25 pin 1.
+Two supported inner2 saved star branches use the existing ENABLE_IO_FILLED,
+ENABLE_ESD_FILLED and ENABLE_SERIES_FILLED features. All 137 previous saved
+paths and all 47 exact filled-via declarations remain unchanged. No new vias,
+purchased imports, placement, logical wiring, dependencies or mechanics changed.
+
+Fresh full official CLI build: **226 traces / 188 vias / 70 pours**, **14 native
+unconnected-port + 11 unfinished trace errors**, **68/82 complete physical nets**.
+Canonical SHA-256: `2e6bda85cb4f339360e0ec33a867164042e92d8fbaf9309516e03de74c00149e`.
+Strict geometry, foreign filled clearances and native copper shorts pass. All
+six power/reference networks remain joined; EFUSE_RTN stays isolated from GND.
+Source netlist, critical imports, TypeScript and formatting pass. Schematic
+placement retains the disclosed cosmetic D_VBUS recommendation; the 0.0.23
+manufacturer-pin/schematic draft test was not repeated for unchanged wiring.
+All four current layer images were actually viewed. Silkscreen crowding and
+bottom labels near/outside the outline remain. Full build exits 1 for retained
+errors. USB reference/skew and RAW-neck analytical screens remain passing,
+without qualifying all power/via/thermal/transient, USB, mechanical or CAM gates.
+
+TMC enable corrected saved trials 001/002 are rejected: they joined TMC_ENABLE_N
+and passed geometry but split VM, protected VBUS and C33 eFuse return networks.
+All rejected paths were removed before this accepted external-enable build.
+See EXT-ENABLE-ADOPTION.json and cloud/canonical/CHECKS.json. Fourteen physical
+nets remain incomplete; final power/thermal/USB, silkscreen, 3D and fabrication
+export review remain pending. Hardware/firmware tests remain unperformed.
+Actual resource measurements are in CLOUD-RESOURCES.json: 32 GiB container
+limit, no swap, 28.677 GiB disk available of 31.451 GiB total.
+Live EasyEDA availability still needs runtime activation of the saved host draft
+and a successful official request. Matching publication is pending exact public
+checksum verification; hosted build success is not claimed.
+**PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
+
+## Historical Linux continuation — 0.0.25-alpha.0
 
 LED_STATUS_DRIVE now joins U1 pin 30 and R36 pin 1 through a supported manual
 inner2 saved-phase path using the two existing named filled features. All 136

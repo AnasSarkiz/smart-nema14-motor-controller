@@ -1,9 +1,9 @@
 {
-  "revision": "0.0.25-alpha.0",
+  "revision": "0.0.26-alpha.0",
   "source_identity": "The Git commit containing this manifest identifies the source, evidence and checked build.",
   "scope": "Every tracked file except this self-referential manifest; archived routing evidence has its own per-file inventory.",
   "circuit_counts": {
-    "pcb_trace": 227,
+    "pcb_trace": 226,
     "pcb_via": 188,
     "pcb_copper_pour": 70,
     "pcb_port_not_connected_error": 14,
@@ -532,18 +532,18 @@
     },
     {
       "path": "CLOUD_HANDOFF.md",
-      "bytes": 27115,
-      "sha256": "b916681cf0d78666f9e51c874c9f87be8b92be48e50cfca8a45b89b871b5548f"
+      "bytes": 29421,
+      "sha256": "98a2b493ecb17c44efc9326ec1ce1690aa0643d6255383e3d78545c74662723e"
     },
     {
       "path": "README.md",
       "bytes": 5037,
-      "sha256": "e261fdd946cb816a7fd254c33bc3946e008e3e989b6bfbf8ef69075f60c801b3"
+      "sha256": "1aa28869f4b2caff4612244f427267ad510f5716337b27461df4abeb831020ab"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 141095,
-      "sha256": "37b5007384a97089f77f8cd6f6bb8cb212b9d1a8395b853c91230ef039ae17ff"
+      "bytes": 143412,
+      "sha256": "accb364208919f8dede439660f1db0bc6e0006247aab45e74bfd0cc11686973b"
     },
     {
       "path": "assembly.circuit.tsx",
@@ -558,12 +558,12 @@
     {
       "path": "build/routing-review/BUILD-STATUS.json",
       "bytes": 368,
-      "sha256": "cfdf3bb5813b4315e781d7e3d138c99dc42cef774b023b493fae6e79b3111a3d"
+      "sha256": "f240580fc6bc951611e8b8750e7109e28ff1eaa1a303bba9cde580e5b617be70"
     },
     {
       "path": "build/routing-review/circuit.json",
-      "bytes": 4792614,
-      "sha256": "ba082e485f73bbbae4bf0d2ea5a2f7e33bb09ada8466491caf05b422e91f58fc"
+      "bytes": 4786988,
+      "sha256": "2e6bda85cb4f339360e0ec33a867164042e92d8fbaf9309516e03de74c00149e"
     },
     {
       "path": "bun.lock",
@@ -577,13 +577,13 @@
     },
     {
       "path": "dist/index/circuit.json",
-      "bytes": 4792614,
-      "sha256": "ba082e485f73bbbae4bf0d2ea5a2f7e33bb09ada8466491caf05b422e91f58fc"
+      "bytes": 4786988,
+      "sha256": "2e6bda85cb4f339360e0ec33a867164042e92d8fbaf9309516e03de74c00149e"
     },
     {
       "path": "dist/routing-review/circuit.json",
-      "bytes": 4792614,
-      "sha256": "ba082e485f73bbbae4bf0d2ea5a2f7e33bb09ada8466491caf05b422e91f58fc"
+      "bytes": 4786988,
+      "sha256": "2e6bda85cb4f339360e0ec33a867164042e92d8fbaf9309516e03de74c00149e"
     },
     {
       "path": "docs/cloud/ENVIRONMENT.md",
@@ -11656,6 +11656,446 @@
       "sha256": "93588841a76eefd21f5e8aa9067fd3c02973fc32519623d72e70eb55203f0148"
     },
     {
+      "path": "evidence/rev-0.0.26-alpha.0/CLOUD-RESOURCES.json",
+      "bytes": 342,
+      "sha256": "224a9f41266346d726fb53d34162d350fce2adb88f9c764cb094ed49d52839c6"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/CLOUD-SMOKE.json",
+      "bytes": 107,
+      "sha256": "366e03d0fa460f3d98d8fbef64cf84a45372092e25c011c15dcc660cf7ccb864"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/CLOUD-SMOKE.log",
+      "bytes": 437,
+      "sha256": "cea6af2e0d5f45a3a7e0c0fedca5bc9b9ff6423bfef2e3f24d5826ccc9b2f661"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/EXT-ENABLE-ADOPTION.json",
+      "bytes": 1253,
+      "sha256": "24e4b52b13ae6fc5a4c65896c9138e4fda62779414b086da940bfe093e837f5a"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/BUILD-STATUS.json",
+      "bytes": 347,
+      "sha256": "6b791be530b84633a3628aa0946a5e1ed3615ab3de0ad5c6dd74f3e572c881ff"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/BUILD.log",
+      "bytes": 8840,
+      "sha256": "29d348acb9a4f66de36a9c2777dd00672a4e5bf6549f7fa9dd509d5c9b10213d"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/CHECK-netlist.json",
+      "bytes": 116,
+      "sha256": "875cc9668c503e49eeaf2e735f32058072e4d5346f5c26a8aa2fb625d13aa1d3"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/CHECK-netlist.log",
+      "bytes": 26285,
+      "sha256": "2bc116b847c7a4c9772ae62b66b6d70746c85aa031c17ef9977c8290953ae505"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/CHECK-schematic-placement.json",
+      "bytes": 125,
+      "sha256": "7387a805ee29906374121ed044dd0d995d8b248a3289b15900be6c696bd7941d"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/CHECK-schematic-placement.log",
+      "bytes": 541,
+      "sha256": "d7515c839b2803ecae72a88ecc3038c1066f75812a9cf437981a78cb73c1b543"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/CHECK-shorts.json",
+      "bytes": 112,
+      "sha256": "f54f954e5f1876cc7f18470046e1e3bb82b71990274efdfaca499f1815752b20"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/CHECK-shorts.log",
+      "bytes": 35,
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/CHECKS.json",
+      "bytes": 2399,
+      "sha256": "362b1ca377c10ebea520b10118d5810a5a45cf570dfb3a469e98aba3fe0f4551"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/FILLED-ALL-NETS.json",
+      "bytes": 185624,
+      "sha256": "0d631d9aae677494950db96fc81b2b740a5dcbcc7ac5274a250c98f9cb7b9ea2"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/FILLED-ALL-NETS.log",
+      "bytes": 1414,
+      "sha256": "eb2955d2e04bc0b7fe3946e28d141d5105fbf7e1ef8cde9a41cf8e3b6f675df3"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/GEOMETRY.json",
+      "bytes": 13235,
+      "sha256": "cb89859252ed5102a0ba152d192ee9c27980ff117ca4114835b0ea398bafd3c9"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/GEOMETRY.log",
+      "bytes": 13235,
+      "sha256": "cb89859252ed5102a0ba152d192ee9c27980ff117ca4114835b0ea398bafd3c9"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/QUALIFICATION-STATUS.json",
+      "bytes": 100,
+      "sha256": "7d35b2b15a03d606804da17b3e44538a1c3df157b1cb39bcb5af390b21167805"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/RAW-NECK.json",
+      "bytes": 732,
+      "sha256": "0e1c290652f7c4da8741d2afc15adbe21397936b8d7698731f20ce68bcebbb2c"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/RAW-NECK.log",
+      "bytes": 694,
+      "sha256": "3fd0322d29ba05b4a5d00d17a18db8dd7d59ae4170dd991de6da3e97d29ab3b2"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/USB-LENGTHS.json",
+      "bytes": 717,
+      "sha256": "5317b0bdd9226e56b6b4fa6ffe4c43af21f0a2cd2cdcc697bff1606e56368919"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/USB-LENGTHS.log",
+      "bytes": 687,
+      "sha256": "e6ff7247051bee7c11f887016210c19e1afbd73aa9ae252427472738d4fc6a7c"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/USB-RETURN.json",
+      "bytes": 22748,
+      "sha256": "7f2451b0b66826576349cb5cb94cecf8102217be74a97e7fa6f4f800ce2e9357"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/USB-RETURN.log",
+      "bytes": 209,
+      "sha256": "8692a3a3f03a52dfcb63111f83cfd938e46b966149d358f27ce0d8d6e90dc0a2"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/bottom.png",
+      "bytes": 327897,
+      "sha256": "b062c0590e382c179ddfe1eb27c388d13f0ad23b2c9ef499fe0a842206b13bf4"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/bottom.svg",
+      "bytes": 817699,
+      "sha256": "4c4ab09419833525f1e6d261228e90ab69baf5b38db86338cf4384aeac763169"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/circuit.json",
+      "bytes": 4786988,
+      "sha256": "2e6bda85cb4f339360e0ec33a867164042e92d8fbaf9309516e03de74c00149e"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/inner1.png",
+      "bytes": 222412,
+      "sha256": "8fa4980441aa7aa7d20257dd1233383a6d7332ffd9997865b5209b441c922b95"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/inner1.svg",
+      "bytes": 600052,
+      "sha256": "2e21dec2538bdf063994bc6df9802f7f10e390463570a8cce4065bd4f517e520"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/inner2.png",
+      "bytes": 219121,
+      "sha256": "cdc30b15c636265ff87c2662e141ec5b9ed7e2a39a5d53663609d044249f7cdc"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/inner2.svg",
+      "bytes": 571100,
+      "sha256": "cf84ad6fa69065bff885d434fda59020bf500a70812cf4ccf7d37f8171f9c998"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/top.png",
+      "bytes": 272834,
+      "sha256": "439ba794bc89edcd794d5c33263e04fa553572c281c70c5a9ab4a4d662f82163"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/canonical/top.svg",
+      "bytes": 775448,
+      "sha256": "2d3b8057d5504a5979a7ed2f387b1ca30fb02acb49efcbb93e15d9135ada6016"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/checks/STATUS.json",
+      "bytes": 67,
+      "sha256": "bd307eb6fc289aa235ee0be40ff65569cf7d92adc1a8da6081a8be4371c0ca24"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/checks/format-check.log",
+      "bytes": 315,
+      "sha256": "e1ff1ba1cb943f4cb78b134f3b62027603c9a4e3c99fd4bfe74909f9a1e57bd5"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/checks/typecheck.log",
+      "bytes": 15,
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/checks/validate-imports.log",
+      "bytes": 160,
+      "sha256": "cab7bc1d295e3e75503d73f9e3844c65624457dc44dca9e3aba3f4cf5ff296f7"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/BUILD-STATUS.json",
+      "bytes": 626,
+      "sha256": "34d79228fe824b5eb391e6868dc24390180b3634bb1a2a8352dd9319c6518be9"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/BUILD.log",
+      "bytes": 335,
+      "sha256": "1a9dbaa719c9bc4c0c1e4ccbcddbe2db66da94aaf953f64191a3169cb6b11f9d"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/FILLED-ALL-NETS.json",
+      "bytes": 185634,
+      "sha256": "89b14889cce9797f99ddcdd5b3578bfaff2c3427e4475c6efaa56b509cc37bc2"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/FILLED-ALL-NETS.log",
+      "bytes": 1414,
+      "sha256": "eb2955d2e04bc0b7fe3946e28d141d5105fbf7e1ef8cde9a41cf8e3b6f675df3"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/GEOMETRY.json",
+      "bytes": 13246,
+      "sha256": "5d6cf792dbb32f6700ed586b96d5f752535021e25fc183e5b252e51842dc0b7d"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/GEOMETRY.log",
+      "bytes": 13246,
+      "sha256": "5d6cf792dbb32f6700ed586b96d5f752535021e25fc183e5b252e51842dc0b7d"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/QUALIFICATION-STATUS.json",
+      "bytes": 100,
+      "sha256": "7d35b2b15a03d606804da17b3e44538a1c3df157b1cb39bcb5af390b21167805"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/RAW-NECK.json",
+      "bytes": 743,
+      "sha256": "1afc008ce3e87a6afbdee6c36c9cea466316a4144d81ec56b7137eded0b454b1"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/RAW-NECK.log",
+      "bytes": 705,
+      "sha256": "218026d1f34bf597b452ee7c21dcfdac86428a2b4ffecd6677e663013d8fc062"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/USB-LENGTHS.json",
+      "bytes": 728,
+      "sha256": "7c0ae8938ed7e4a95733f322a970d59aa228435a278178801faa34dc25aa9e6e"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/USB-LENGTHS.log",
+      "bytes": 698,
+      "sha256": "7cb6a8cbf2c92a991ce01b5841b43748b16e34f7276b336db5c77253990c8cae"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/USB-RETURN.json",
+      "bytes": 22759,
+      "sha256": "9e914fe7555ecbf57d77ebd958cf3fe1ffffab7b54d8fd5d5b58e5ae447203cf"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/USB-RETURN.log",
+      "bytes": 209,
+      "sha256": "8692a3a3f03a52dfcb63111f83cfd938e46b966149d358f27ce0d8d6e90dc0a2"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/circuit.json",
+      "bytes": 4787470,
+      "sha256": "3922c625accdd6de8b92c93c6da1666a04a7357e4f44024367c24d2d2500a420"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/phase-0-input.json",
+      "bytes": 3242487,
+      "sha256": "0ea116a31ce8c648b91d4da94f4b47c1fdaa0d123f3e739bdd4d849a77741fbb"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/ext-enable-saved-001/phase-0-output.json",
+      "bytes": 3800446,
+      "sha256": "282744f236cf3fa96ecce7d3504a3e025882f7d40d0c8770e9efbed53a1c579d"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/BUILD-STATUS.json",
+      "bytes": 624,
+      "sha256": "a764ea17caaed274b6bea3c6fd1c4e480f99f7281f35006774c935d6f0629dff"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/BUILD.log",
+      "bytes": 335,
+      "sha256": "bd12553d73ecf6bf176bd191dfcc52d20e695f4cf7fdfcf13a982271e6c3e529"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/CANDIDATE-SOURCE.json",
+      "bytes": 690,
+      "sha256": "268323752c8b4b7ca2f5cd557df0b855446fafdcd561937543c81cfadfe76d7f"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/FILLED-ALL-NETS.json",
+      "bytes": 189874,
+      "sha256": "ab26044e0ee717b72c62b5e920c1d1cf847d7886774b4d0b93910f1120da4479"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/FILLED-ALL-NETS.log",
+      "bytes": 1414,
+      "sha256": "3e30e83f47ee9749e0f5995ff21b3d9e31bd308e40e03e536178c69db67b43af"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/GEOMETRY.json",
+      "bytes": 13241,
+      "sha256": "137d40aaaa5edb8ba42664270747c0a26f5c59d9f86ee51a607f04a48a481f1c"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/GEOMETRY.log",
+      "bytes": 13241,
+      "sha256": "137d40aaaa5edb8ba42664270747c0a26f5c59d9f86ee51a607f04a48a481f1c"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/QUALIFICATION-STATUS.json",
+      "bytes": 100,
+      "sha256": "7d35b2b15a03d606804da17b3e44538a1c3df157b1cb39bcb5af390b21167805"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/RAW-NECK.json",
+      "bytes": 743,
+      "sha256": "a6ddf674de19e9b577bafd1688fc66460d3aa33f7d95b82b2ef8bd4be155c497"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/RAW-NECK.log",
+      "bytes": 705,
+      "sha256": "a033459bb92e7dac5aeecd3efb21b4f0bacd115a18841528197b844d7908b0bd"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/STOP-REASON.json",
+      "bytes": 406,
+      "sha256": "ac4fd98faf8a9fd5b0673d2a2e0ead46e31ab4021d4978479557eb33a6b3dd1d"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/USB-LENGTHS.json",
+      "bytes": 728,
+      "sha256": "ddca8e594a1bff43daee3657df6354c0f6358000bb0337355e81f6fe0590e946"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/USB-LENGTHS.log",
+      "bytes": 698,
+      "sha256": "56c603b7db54b74d5c851eaa0e8f66bd8fa4ff519a8b32fae5d674813d9e2b37"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/USB-RETURN.json",
+      "bytes": 22759,
+      "sha256": "b62a1b9e8862597586ffa1e2be4d074dd582b1a6b4f112e3895f1965bce03cc7"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/USB-RETURN.log",
+      "bytes": 209,
+      "sha256": "8692a3a3f03a52dfcb63111f83cfd938e46b966149d358f27ce0d8d6e90dc0a2"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/circuit.json",
+      "bytes": 4791819,
+      "sha256": "fe36f750587b765f8bb262c022066458fea16c1ada3412ff57e37ff8f5ad48ba"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/phase-0-input.json",
+      "bytes": 3250255,
+      "sha256": "31b27c60ab7d590ecc918001c51dfbfd1ecd34d01f8451df2a15d82f3d3797e8"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-001/phase-0-output.json",
+      "bytes": 3811832,
+      "sha256": "5b9353e3dda694d03f1acc5160a22636928001413e4dbbc62f456c495854acc5"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/BUILD-STATUS.json",
+      "bytes": 626,
+      "sha256": "47aa65127dbd1834acb1263067385f72d9a2c2bf42487552f90b460b8f7c1a76"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/BUILD.log",
+      "bytes": 335,
+      "sha256": "bd12553d73ecf6bf176bd191dfcc52d20e695f4cf7fdfcf13a982271e6c3e529"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/FILLED-ALL-NETS.json",
+      "bytes": 190300,
+      "sha256": "df5508edbdcfc6349ea88acaa3c32ec2cdb8d3791177c51032b9b88a952db593"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/FILLED-ALL-NETS.log",
+      "bytes": 1414,
+      "sha256": "72775838e82ecbbed100aa6f0d188a101617880c48ed060374d49dc49a0b70db"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/GEOMETRY.json",
+      "bytes": 13241,
+      "sha256": "10b532c1c14738229322a1c4adc9a0d2b9e8db206c0b57cea9ce965460fbb39e"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/GEOMETRY.log",
+      "bytes": 13241,
+      "sha256": "10b532c1c14738229322a1c4adc9a0d2b9e8db206c0b57cea9ce965460fbb39e"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/QUALIFICATION-STATUS.json",
+      "bytes": 100,
+      "sha256": "7d35b2b15a03d606804da17b3e44538a1c3df157b1cb39bcb5af390b21167805"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/RAW-NECK.json",
+      "bytes": 743,
+      "sha256": "9a53838a72c21e0c6d342d77c9202a2462e207d10a3402580a8629f1953e095a"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/RAW-NECK.log",
+      "bytes": 705,
+      "sha256": "2933d9745449197a555a98e4604701d316d278a829346411cc86cf2ddd23c1e5"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/STOP-REASON.json",
+      "bytes": 439,
+      "sha256": "0dd1e71ee91b2864dcf09b305633de56059384c0b9ea8b7885540369caf5677e"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/USB-LENGTHS.json",
+      "bytes": 728,
+      "sha256": "fb3be38e82b1d0ec1ade63e322a30117dc220cc16b7fa5fe7f8ca1b1cfcd0331"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/USB-LENGTHS.log",
+      "bytes": 698,
+      "sha256": "077657f8a23f244616012f8e3e01f198cd19bc813d445f2f4587574f8e9fdc53"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/USB-RETURN.json",
+      "bytes": 22759,
+      "sha256": "5a1d7d710f38dc03bd5dc46c0495ed28e7b27eb82f9f89c7555e90bf07f158c9"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/USB-RETURN.log",
+      "bytes": 209,
+      "sha256": "8692a3a3f03a52dfcb63111f83cfd938e46b966149d358f27ce0d8d6e90dc0a2"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/circuit.json",
+      "bytes": 4798695,
+      "sha256": "0339e593092344efffd9169df8b56f468ce8a3692216873ef238f0abe4cf177c"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/phase-0-input.json",
+      "bytes": 3250255,
+      "sha256": "31b27c60ab7d590ecc918001c51dfbfd1ecd34d01f8451df2a15d82f3d3797e8"
+    },
+    {
+      "path": "evidence/rev-0.0.26-alpha.0/cloud/tmc-enable-saved-002/phase-0-output.json",
+      "bytes": 3811947,
+      "sha256": "84694029861ea1057323e9b7c3a002bc06b0ac84018bf7d91eb7cababfee4609"
+    },
+    {
       "path": "evidence/rev-0.0.3-alpha.0/AP63203-application.png",
       "bytes": 267724,
       "sha256": "8e454761c7ba07957034c7679c8f0626801cf8a4012aae246f40a97476aed491"
@@ -15223,7 +15663,7 @@
     {
       "path": "package.json",
       "bytes": 4334,
-      "sha256": "7ade2b4bc43a504e718749774632e52515ee72c78834a4cd1085b78e56542518"
+      "sha256": "0845b248d15e0276e1b25145756173c4ea3defa53ef354c7ddd76687c84c4ddd"
     },
     {
       "path": "references/AP63203.pdf",
@@ -16762,8 +17202,8 @@
     },
     {
       "path": "src/routing/power-guarded-paths-trial.json",
-      "bytes": 437019,
-      "sha256": "34adf9f71b504ede78ef92a78330791f307f5259807cc0c8706413370e10c45d"
+      "bytes": 441663,
+      "sha256": "027888546ebdd8e0b11c802fe190a056c792821d8b6c68343c2120cfca5ea061"
     },
     {
       "path": "src/routing/power-pour-trial.json",

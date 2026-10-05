@@ -61,7 +61,8 @@
     "PD_CC1_CONN",
     "PD_CC2_CONN",
     "VBUS_ADC",
-    "LED_STATUS_DRIVE"
+    "LED_STATUS_DRIVE",
+    "EXT_ENABLE_N_CONN"
   ],
   "connections": [
     ".U1 > .pin4",
@@ -262,7 +263,10 @@
     ".U1 > .pin11",
     ".R51 > .pin1",
     ".U1 > .pin30",
-    ".R36 > .pin1"
+    ".R36 > .pin1",
+    ".J_IO > .pin7",
+    ".D_IO1 > .pin4",
+    ".R25 > .pin1"
   ],
   "paths": [
     {
@@ -18906,6 +18910,185 @@
           "layer": "bottom"
         }
       ]
+    },
+    {
+      "connection": ".J_IO > .pin7",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 12.03774205,
+          "y": 2.499749,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 11.5,
+          "y": 2.499749,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "via",
+          "x": 11.5,
+          "y": 2.499749,
+          "from_layer": "bottom",
+          "to_layer": "inner2",
+          "via_diameter": 0.38,
+          "via_hole_diameter": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 11.5,
+          "y": 2.499749,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 10.85,
+          "y": 3.05,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 9.4,
+          "y": 3.05,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 8.45,
+          "y": 2.25,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 8.4,
+          "y": 2.7,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 7.5,
+          "y": 2.7,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 7.5,
+          "y": 2,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 6.432816,
+          "y": 2,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "via",
+          "x": 6.432816,
+          "y": 2,
+          "from_layer": "inner2",
+          "to_layer": "bottom",
+          "via_diameter": 0.38,
+          "via_hole_diameter": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 6.432816,
+          "y": 2,
+          "width": 0.15,
+          "layer": "bottom"
+        }
+      ]
+    },
+    {
+      "connection": ".D_IO1 > .pin4",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 8.499874,
+          "y": 2.1000008,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 8.45,
+          "y": 2.25,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "via",
+          "x": 8.45,
+          "y": 2.25,
+          "from_layer": "bottom",
+          "to_layer": "inner2",
+          "via_diameter": 0.38,
+          "via_hole_diameter": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 8.45,
+          "y": 2.25,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 8.4,
+          "y": 2.7,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 7.5,
+          "y": 2.7,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 7.5,
+          "y": 2,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 6.432816,
+          "y": 2,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "via",
+          "x": 6.432816,
+          "y": 2,
+          "from_layer": "inner2",
+          "to_layer": "bottom",
+          "via_diameter": 0.38,
+          "via_hole_diameter": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 6.432816,
+          "y": 2,
+          "width": 0.15,
+          "layer": "bottom"
+        }
+      ]
     }
   ],
   "manual_edit_basis": {
@@ -19688,6 +19871,13 @@
       "preservation": "All 136 prior saved paths unchanged; two existing named filled vias retained with exact owners and dimensions.",
       "evidence": "evidence/rev-0.0.25-alpha.0/cloud/led-status-saved-001",
       "qualification": "Native saved replay passes strict geometry and foreign filled clearance checks; all 82 physical nets checked, 67 complete including LED_STATUS_DRIVE; all six power/reference nets remain joined and USB reference/skew/RAW-neck screens pass. Final fabrication qualification remains incomplete."
+    },
+    {
+      "revision": "0.0.26-alpha.0",
+      "net": "EXT_ENABLE_N_CONN",
+      "source": "Supported native complete star using existing ENABLE_IO_FILLED, ENABLE_ESD_FILLED, ENABLE_SERIES_FILLED; inner2 detour avoids EXT_STEP_CONN and LIMIT1_CONN vias.",
+      "preservation": "All 137 earlier saved paths and all 47 reviewed filled features remain exact. No new vias or filled exceptions.",
+      "qualification": "Native replay passes strict geometry and foreign fill clearance; all 82 physical nets checked, 68 complete, all six power/reference networks joined, RTN isolated and USB/RAW analytical screens pass. Final qualification remains incomplete."
     }
   ],
   "joint_routing_trials": [
