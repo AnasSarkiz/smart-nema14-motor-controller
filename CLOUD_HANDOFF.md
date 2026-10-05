@@ -1,5 +1,20 @@
 # Smart NEMA 14 controller: complete Cloud handoff
 
+CAD publication repair (2026-10-06): all 111 CAD entries retain their model
+references and all 82 unique local dependencies exist in Git. The earlier
+selected publication packet omitted every referenced local OBJ/STEP/STP asset;
+this caused missing models in the public package despite intact supplier imports.
+All 105 existing model assets (including imported models, exact USB/eFuse models
+and the official motor STEP) are now restored and anonymously verified byte for
+byte. The motor STEP needs binary upload to preserve its non-UTF8 encoding.
+The remaining remote SWD connector OBJ/STEP URLs both return HTTP 200 and valid
+model bodies. A new publication coverage guard rejects the old packet with
+82 omissions and passes the actual repaired public inventory with zero omissions.
+Circuit/source geometry and all three canonical JSON hashes remain unchanged.
+See evidence/rev-0.0.34-alpha.0/cad-publication/ for manifests,
+before/after audits and asset readback. The hosted rebuild remains pending.
+Hosted 3D rendering and assembled fit remain separately unverified.
+
 ## Current Linux continuation — 0.0.34-alpha.0
 
 SWDIO_GUARDED physically joins U7 pin3 and R20 pin1 through a supported

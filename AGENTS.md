@@ -55,6 +55,11 @@ place fabrication orders is implied. If Cloud lacks publication credentials,
 report that exact publication blocker; never copy Mac Keychain/session tokens
 into this repository. Do not assume a local commit is published.
 
+Publication must include the unchanged local OBJ/STEP/STP assets referenced by
+Circuit JSON, together with imported source modules. Before publishing, run
+`node scripts/check-publication-cad-assets.mjs dist/index/circuit.json PACKET_INVENTORY.json`.
+Any omitted model dependency blocks publication; verify uploaded asset hashes.
+
 Use GitHub account AnasSarkiz. Prefer the authenticated connector. Cloud doesn't
 have the local Mac Keychain; use its configured GitHub integration. Respect all
 remaining validation gates and standing publication requirements in the copied
