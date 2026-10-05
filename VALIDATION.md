@@ -28,8 +28,10 @@ export review remain pending. Hardware/firmware tests remain unperformed.
 Actual resource measurements are in CLOUD-RESOURCES.json: 32 GiB container
 limit, no swap, 28.677 GiB disk available of 31.451 GiB total.
 Live EasyEDA availability still needs runtime activation of the saved host draft
-and a successful official request. Matching publication is pending exact public
-checksum verification; hosted build success is not claimed.
+and a successful official request. Public revision 0.0.26 matches source/artifact
+commit `44b26731f9c6a38c88bd0d7937094cd415b455b0` and tscircuit release
+`60b5f48b-8d77-42a3-ac0b-812be521fb64`: all 308 package files and eight GitHub files
+passed anonymous SHA-256 readback. Hosted build success is not claimed.
 **PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
 
 # Historical Linux continuation — 0.0.25-alpha.0, 2026-10-05
