@@ -1,0 +1,10 @@
+{
+  "adopted": false,
+  "intended_router": "beta_pipeline9",
+  "actual_followup_router": "beta_pipeline7",
+  "actual_solver": "AutoroutingPipelineSolver7_MultiGraph",
+  "reason": "Manually stopped immediately after detection. Controller wrapper chose beta_pipeline7 when nativeRoutingTargets was empty despite the intended seeded-job version. Wrapper now uses nativeAutorouterVersion directly (default9). No result or route adopted.",
+  "elapsed_seconds": 43.06329215900041,
+  "peak_sampled_group_rss_mib": 4732.47265625,
+  "guard_termination_note": "External manual SIGTERM leaves termination=null; exit_code=-15 records the stop."
+}

@@ -1,0 +1,10 @@
+{
+  "accepted": false,
+  "router_requested": "beta_pipeline9",
+  "native_router_entered": false,
+  "reason": "Native trace inferred connected_source_net_ids=[SWCLK], so the installed core excluded it from direct pair connections. With the whole net unassigned, no phase1 input or Pipeline9 solver was created. This supported pair API did not produce the intended request; the implementation is removed from default source. Do not describe the phase0 render as a successful Pipeline9 run.",
+  "phase0_connections": 70,
+  "unresolved_errors": 15,
+  "source_snapshot": "SOURCE-SNAPSHOT/MANIFEST.json",
+  "proper_next_action": "Prepare an upstream core reproduction of trace routingPhaseIndex with inferred named-net ownership; do not strip source net IDs or edit generated routing input."
+}

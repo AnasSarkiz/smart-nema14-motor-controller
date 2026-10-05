@@ -1,0 +1,271 @@
+{
+  "scope": "Exact rejected trials and snapshots retained; no seed-only output accepted. Canonical-final is the successful pre-experiment CLI build; SOURCE-RESTORATION proves exact current source restoration. Timed-out CLI rebuilds and metadata-incomplete core diagnostic are rejected.",
+  "trials": {
+    "canonical-trial001": {
+      "adopted": false,
+      "reason": "Native fanout setup rejected ambiguous multi-layer GND plane mapping before saved routes. This partial fresh JSON is incomplete (224 port errors); it is not a canonical candidate. Configure the actual existing inner1 GND reference plane explicitly and rebuild; no DRC is disabled."
+    },
+    "canonical-trial002": {
+      "adopted": false,
+      "reason": "Native saved path U10 pin22 matches multiple unmerged fanout input connections. Full saved copper does not replay; actual geometry/USB/filled-manifest validators correctly reject this partial fresh JSON. No validator was changed or suppressed. Inspect the actual native phase input before a changed-source retry."
+    },
+    "efuse-flt-through-barrel-native9-001": {
+      "router": "tscircuit native beta_pipeline9",
+      "disposition": "Timeout; no final route produced or adopted",
+      "elapsed_seconds": 901.4913719689976,
+      "peak_sampled_group_rss_mib": 12986.2890625,
+      "last_phase": "edgeSolver",
+      "last_progress": 0.28,
+      "last_steps": 143,
+      "input_esd_via_note": "This recorded input preceded the explicit USB ESD ground via correction. It contains 192 correct full-span annuli and one undersized GND obstacle. Later precomputed input verification establishes corrected current-source ESD obstacle.",
+      "next_approach": "Select a two-contact programmer net; retain this raw job and do not rerun it unchanged."
+    },
+    "flt-canonical-trial001": {
+      "accepted": false,
+      "reason": "FLT physically completes and strict geometry/foreign fill pass, but lower inner2 seed cuts EFUSE_RTN into two groups and inner1 trunk interrupts USB reference. These power and USB failures remain blocking; source layer transitions must change.",
+      "canonical_adopted": false
+    },
+    "partial-source-input-probe001": {
+      "accepted": false,
+      "solver_started": false,
+      "reason": "Source phase index -1 produced no seed connections; no completed native routing result."
+    },
+    "power-high-native9-001": {
+      "accepted": false,
+      "router": "beta_pipeline9",
+      "actual_solver": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+      "status": {
+        "command": [
+          "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+          "scripts/run-native-routing.mjs",
+          "/workspace/smart-nema14-motor-controller/scripts/native-power-high-pipeline9-cloud.circuit.tsx",
+          "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.34-alpha.0/cloud/power-high-native9-001"
+        ],
+        "exit_code": -15,
+        "termination": "timeout",
+        "memory_budget_mb": 22937,
+        "peak_sampled_group_rss_mb": 13607.75390625,
+        "elapsed_seconds": 901.31465321,
+        "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+      },
+      "last_progress": {
+        "subcircuit_id": "subcircuit_source_group_0",
+        "componentDisplayName": "<board#970 />",
+        "phaseName": "Bounded remaining connection",
+        "phaseStageIndex": 0,
+        "phaseStageCount": 1,
+        "routingPhaseIndex": 1,
+        "_actualRoutingPhaseOrderIndex": 1,
+        "phaseOrdinal": 2,
+        "phaseCount": 2,
+        "connectionCount": 1,
+        "obstacleCount": 7607,
+        "previousTraceCount": 0,
+        "isReroutePhase": false,
+        "autorouterName": "tscircuit",
+        "autorouterVersion": "beta_pipeline9",
+        "solverName": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+        "effort": 1,
+        "cacheStatus": "disabled",
+        "cacheDisabledReason": "no_cache_engine",
+        "type": "autorouting:progress",
+        "steps": 125,
+        "iterationsPerSecond": 0.022737608003638016,
+        "progress": 0.28,
+        "phase": "edgeSolver"
+      },
+      "reason": "Bounded single-net native job timed out in edge solving; no final route output exists.",
+      "source_snapshot": "SOURCE-SNAPSHOT/MANIFEST.json",
+      "canonical_artifacts_changed": false,
+      "checks_relaxed": false
+    },
+    "seeded-controls-native9-001": {
+      "adopted": false,
+      "pipeline9_followup_started": false,
+      "reason": "Explicit GND fanout plane mapping introduced a new source-only SPREAD-to-GND request into the existing full saved phase, which correctly rejected the uncovered request. This selected phase joins signal pairs and requires no plane termination, so the supported explicit empty fanoutPourNetMap is appropriate. Existing pours and all physical/DRC checks remain active."
+    },
+    "seeded-controls-native9-002": {
+      "adopted": false,
+      "intended_router": "beta_pipeline9",
+      "actual_followup_router": "beta_pipeline7",
+      "actual_solver": "AutoroutingPipelineSolver7_MultiGraph",
+      "reason": "Manually stopped immediately after detection. Controller wrapper chose beta_pipeline7 when nativeRoutingTargets was empty despite the intended seeded-job version. Wrapper now uses nativeAutorouterVersion directly (default9). No result or route adopted.",
+      "elapsed_seconds": 43.06329215900041,
+      "peak_sampled_group_rss_mib": 4732.47265625,
+      "guard_termination_note": "External manual SIGTERM leaves termination=null; exit_code=-15 records the stop."
+    },
+    "seeded-controls-native9-003": {
+      "accepted": false,
+      "router": "beta_pipeline9",
+      "actual_solver": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+      "status": {
+        "command": [
+          "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+          "scripts/run-native-routing.mjs",
+          "/workspace/smart-nema14-motor-controller/scripts/native-seeded-controls-pipeline9-cloud.circuit.tsx",
+          "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.34-alpha.0/cloud/seeded-controls-native9-003"
+        ],
+        "exit_code": 1,
+        "termination": null,
+        "memory_budget_mb": 22937,
+        "peak_sampled_group_rss_mb": 12904.46875,
+        "elapsed_seconds": 833.6241950179974,
+        "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+      },
+      "failure": "Native router exhausted its iteration budget at progress 0.44; no follow-up routed paths emitted. The phase-1-output file is only the initial fanout seed stage, not the completed Pipeline9 result.",
+      "source_snapshot": "SOURCE-SNAPSHOT/MANIFEST.json",
+      "canonical_artifacts_changed": false,
+      "native_checks_relaxed": false
+    },
+    "seeded-power-high-native9-001": {
+      "accepted": false,
+      "router": "beta_pipeline9",
+      "actual_solver": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+      "status": {
+        "command": [
+          "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+          "scripts/run-native-routing.mjs",
+          "/workspace/smart-nema14-motor-controller/scripts/native-seeded-power-high-pipeline9-cloud.circuit.tsx",
+          "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.34-alpha.0/cloud/seeded-power-high-native9-001"
+        ],
+        "exit_code": -15,
+        "termination": null,
+        "memory_budget_mb": 22937,
+        "peak_sampled_group_rss_mb": 12144.39453125,
+        "elapsed_seconds": 160.14195231200574,
+        "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+      },
+      "termination_reason": "Stopped intentionally after inspecting follow-up input: the seed removes only one pad endpoint and still leaves 8 points, including six synthetic via contacts. It does not reduce the MCU-to-branch routing problem to two roots.",
+      "next_source_change": "Replay each existing filled contact to its exact real owner before the gate/pulldown branch, using supported native saved path trees.",
+      "canonical_artifacts_changed": false,
+      "source_snapshot": "SOURCE-SNAPSHOT/MANIFEST.json"
+    },
+    "seeded-power-high-native9-002": {
+      "accepted": false,
+      "router": "beta_pipeline9",
+      "actual_solver": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+      "status": {
+        "command": [
+          "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+          "scripts/run-native-routing.mjs",
+          "/workspace/smart-nema14-motor-controller/scripts/native-seeded-power-high-pipeline9-cloud.circuit.tsx",
+          "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.34-alpha.0/cloud/seeded-power-high-native9-002"
+        ],
+        "exit_code": -15,
+        "termination": "timeout",
+        "memory_budget_mb": 22937,
+        "peak_sampled_group_rss_mb": 13132.15234375,
+        "elapsed_seconds": 901.4469125190008,
+        "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+      },
+      "last_progress": {
+        "subcircuit_id": "subcircuit_source_group_0",
+        "componentDisplayName": "<board#970 />",
+        "phaseName": "Reviewed partial signal branches",
+        "phaseStageIndex": 1,
+        "phaseStageCount": 2,
+        "routingPhaseIndex": 1,
+        "_actualRoutingPhaseOrderIndex": 2,
+        "phaseOrdinal": 3,
+        "phaseCount": 3,
+        "connectionCount": 1,
+        "obstacleCount": 7655,
+        "previousTraceCount": 0,
+        "isReroutePhase": false,
+        "autorouterName": "tscircuit",
+        "autorouterVersion": "beta_pipeline9",
+        "solverName": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+        "effort": 1,
+        "cacheStatus": "disabled",
+        "cacheDisabledReason": "no_cache_engine",
+        "type": "autorouting:progress",
+        "steps": 145,
+        "iterationsPerSecond": 0.02192790106131041,
+        "progress": 0.28,
+        "phase": "edgeSolver"
+      },
+      "points_to_connect": 2,
+      "existing_via_annuli_verified": 195,
+      "reason": "Changed two-root native9 tree still times out during edge solving. Stage0 output is only a seed; no final native9 route emitted. Experimental source restored to previously checked source, not adopted.",
+      "source_snapshot": "SOURCE-SNAPSHOT/MANIFEST.json",
+      "canonical_artifacts_changed": false,
+      "checks_relaxed": false
+    },
+    "seeded-swclk-native9-001": {
+      "accepted": false,
+      "router": "beta_pipeline9",
+      "actual_solver": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+      "status": {
+        "command": [
+          "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+          "scripts/run-native-routing.mjs",
+          "/workspace/smart-nema14-motor-controller/scripts/native-seeded-swclk-pipeline9-cloud.circuit.tsx",
+          "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.34-alpha.0/cloud/seeded-swclk-native9-001"
+        ],
+        "exit_code": -15,
+        "termination": "memory_budget_exceeded",
+        "memory_budget_mb": 22937,
+        "peak_sampled_group_rss_mb": 23477.97265625,
+        "elapsed_seconds": 743.6783609339982,
+        "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+      },
+      "last_phase": "availableSegmentPointSolver",
+      "last_progress": 0.32,
+      "reason": "Guard stopped this changed SWCLK-only native Pipeline9 input at its 70% cgroup RSS budget. No final Pipeline9 route output was emitted or adopted. The stage-0 output is the explicit branch seed only.",
+      "source_snapshot": "SOURCE-SNAPSHOT/MANIFEST.json",
+      "canonical_artifacts_changed": false
+    },
+    "swclk-pair-native9-001": {
+      "accepted": false,
+      "router_requested": "beta_pipeline9",
+      "native_router_entered": false,
+      "reason": "Native trace inferred connected_source_net_ids=[SWCLK], so the installed core excluded it from direct pair connections. With the whole net unassigned, no phase1 input or Pipeline9 solver was created. This supported pair API did not produce the intended request; the implementation is removed from default source. Do not describe the phase0 render as a successful Pipeline9 run.",
+      "phase0_connections": 70,
+      "unresolved_errors": 15,
+      "source_snapshot": "SOURCE-SNAPSHOT/MANIFEST.json",
+      "proper_next_action": "Prepare an upstream core reproduction of trace routingPhaseIndex with inferred named-net ownership; do not strip source net IDs or edit generated routing input."
+    },
+    "swdio-canonical-trial001": {
+      "accepted": false,
+      "reason": "SWDIO physically completes, but actual full geometry found new owned escape to relocated POWER_GOOD top leg clearance 0.145 mm below 0.15 mm. Move the leg 0.03 mm west in supported source; do not waive the failure.",
+      "other_copper_groups_preserved": 268,
+      "physical_nets_complete": 75,
+      "power_reference_groups_all_one": true,
+      "foreign_fill_violations": 0,
+      "usb_and_raw_screens_pass": true
+    },
+    "swdio-canonical-trial002": {
+      "accepted": false,
+      "reason": "The 0.03 mm west correction clears the new filled escape but leaves 0.1488 mm to the existing SWCLK_CONN ordinary via, below 0.15 mm. Correct to x=6.73 mm between both bounds in native source. All physical connectivity, power reference, foreign fill and USB/RAW screens otherwise pass; no failure waived."
+    },
+    "swdio-canonical-trial003": {
+      "accepted_physical_repair": true,
+      "reason": "Passing SWDIO route and POWER_GOOD relocation; a later final full build records matching physical geometry and final metadata.",
+      "fabrication_ready": false
+    },
+    "swdio-guarded-through-barrel-native9-001": {
+      "adopted": false,
+      "phase1_started": false,
+      "reason": "Phase0 saved completeness rejected newly retained via endpoints; Pipeline9 remaining-net solver was never started. A changed source tree explicitly includes every added native port."
+    },
+    "swdio-guarded-through-barrel-native9-002": {
+      "adopted": false,
+      "router": "tscircuit native beta_pipeline9",
+      "source_revision": "0.0.33-alpha.0",
+      "physical_board_source": "Exact SOURCE-SNAPSHOT captured at launch; later trial34 source changes do not affect this already loaded job.",
+      "reason": "Timeout with no final route or output adopted",
+      "elapsed_seconds": 901.5291474330006,
+      "peak_sampled_group_rss_mib": 14483.55078125,
+      "last_phase": "edgeSolver",
+      "last_progress": 0.28,
+      "last_steps": 191,
+      "actual_all_193_via_obstacles_passed": true
+    }
+  },
+  "blocked_cli_attempts": [
+    "canonical-publication",
+    "canonical-publication-retry"
+  ],
+  "diagnostic_only": "canonical-core-diagnostic",
+  "fabrication_ready": false
+}

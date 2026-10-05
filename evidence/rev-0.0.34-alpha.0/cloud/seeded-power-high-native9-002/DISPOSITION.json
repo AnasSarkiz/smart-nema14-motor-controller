@@ -1,0 +1,51 @@
+{
+  "accepted": false,
+  "router": "beta_pipeline9",
+  "actual_solver": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+  "status": {
+    "command": [
+      "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+      "scripts/run-native-routing.mjs",
+      "/workspace/smart-nema14-motor-controller/scripts/native-seeded-power-high-pipeline9-cloud.circuit.tsx",
+      "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.34-alpha.0/cloud/seeded-power-high-native9-002"
+    ],
+    "exit_code": -15,
+    "termination": "timeout",
+    "memory_budget_mb": 22937,
+    "peak_sampled_group_rss_mb": 13132.15234375,
+    "elapsed_seconds": 901.4469125190008,
+    "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+  },
+  "last_progress": {
+    "subcircuit_id": "subcircuit_source_group_0",
+    "componentDisplayName": "<board#970 />",
+    "phaseName": "Reviewed partial signal branches",
+    "phaseStageIndex": 1,
+    "phaseStageCount": 2,
+    "routingPhaseIndex": 1,
+    "_actualRoutingPhaseOrderIndex": 2,
+    "phaseOrdinal": 3,
+    "phaseCount": 3,
+    "connectionCount": 1,
+    "obstacleCount": 7655,
+    "previousTraceCount": 0,
+    "isReroutePhase": false,
+    "autorouterName": "tscircuit",
+    "autorouterVersion": "beta_pipeline9",
+    "solverName": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+    "effort": 1,
+    "cacheStatus": "disabled",
+    "cacheDisabledReason": "no_cache_engine",
+    "type": "autorouting:progress",
+    "steps": 145,
+    "iterationsPerSecond": 0.02192790106131041,
+    "progress": 0.28,
+    "phase": "edgeSolver"
+  },
+  "points_to_connect": 2,
+  "existing_via_annuli_verified": 195,
+  "reason": "Changed two-root native9 tree still times out during edge solving. Stage0 output is only a seed; no final native9 route emitted. Experimental source restored to previously checked source, not adopted.",
+  "source_snapshot": "SOURCE-SNAPSHOT/MANIFEST.json",
+  "canonical_artifacts_changed": false,
+  "checks_relaxed": false
+}

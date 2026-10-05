@@ -1,0 +1,33 @@
+{
+  "revision": "0.0.34-alpha.0",
+  "canonical_sha256": "eedc25de02a25f31f2e664dac2b84fd0dce7d9b84c712fd883c7f4ddbd7ef029",
+  "completed_net": "SWDIO_GUARDED",
+  "owners": [
+    "U7 pin3",
+    "R20 pin1"
+  ],
+  "source_change": "Move POWER_GOOD ordinary barrel from (7.0004,-11.6263) to (7,-12.85), correct top/bottom native saved leg, add SWDIO_U7_FILLED exact-owned .20/.38 TypeVII ENIG escape at (7.16,-11.56), and new ordinary .30/.60 barrel at (10.6,-11.5). Join via a reviewed top trunk and bottom R20 dogleg.",
+  "routing_defect_measurement": {
+    "old_outlet_surface_gap_mm": 0.2258069,
+    "minimum_for_0_15_trace_between_pad_and_via_mm": 0.4
+  },
+  "saved_paths_total": 160,
+  "prior_saved_paths_exact_except_documented_power_good_path": 156,
+  "all_prior_explicit_pours_exact": true,
+  "other_net_layer_copper_groups_preserved": 268,
+  "prior_barrels_preserved_exact": 192,
+  "relocated_barrel_dimensions_span_masks_preserved": true,
+  "component_pin_net_assignments_preserved": 421,
+  "power_reference_networks_all_joined": true,
+  "efuse_rtn_isolated_from_gnd": true,
+  "native9_actual_input_vias_checked": 195,
+  "ordinary_new_via_minima_mm": [
+    0.3,
+    0.6
+  ],
+  "prototype_fabrication_ready": false,
+  "hardware_tested": false,
+  "publication": "Pending exact public checksum verification",
+  "canonical_path": "evidence/rev-0.0.34-alpha.0/cloud/canonical-final/circuit.json",
+  "qualification_basis": "evidence/rev-0.0.34-alpha.0/cloud/canonical-final/FINAL-BUILD-EQUIVALENCE.json"
+}

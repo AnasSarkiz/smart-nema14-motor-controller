@@ -1,0 +1,13 @@
+{
+  "installed_version": "0.0.958",
+  "available_official_version": "0.0.959",
+  "installed_git_head": "8e66b6388d1b2adc2e31eb3568a7e86648f92c7a",
+  "available_git_head": "38a5b4274bcb052c59681dcde064f522de869485",
+  "source": "Official npm registry and public tscircuit/tscircuit-autorouter comparison",
+  "changed_algorithm_files": [
+    "lib/autorouter-pipelines/AutoroutingPipeline9_PreloadedTraceGraph/Pipeline9JointDrcRepairSolver.ts",
+    "lib/autorouter-pipelines/AutoroutingPipeline9_PreloadedTraceGraph/createPipeline9RelaxedDrcEvaluator.ts"
+  ],
+  "finding": "0.0.959 adds routes-only evaluator input metadata for Pipeline9 joint-DRC repair candidate preparation. The current edge-solver bottleneck is unchanged by the published algorithm diff. No package changed during the active job.",
+  "adopted": false
+}

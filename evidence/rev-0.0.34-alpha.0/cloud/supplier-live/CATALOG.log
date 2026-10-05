@@ -1,0 +1,246 @@
+Checked 6/43 exact supplier identities
+Checked 12/43 exact supplier identities
+Checked 18/43 exact supplier identities
+Checked 24/43 exact supplier identities
+Checked 30/43 exact supplier identities
+Checked 36/43 exact supplier identities
+Checked 42/43 exact supplier identities
+Checked 43/43 exact supplier identities
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Exact supplier identity lookup failed
++ actual - expected
+
++ [
++   {
++     error: 'fetch failed',
++     part: 'C1525'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C23733'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C13585'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C14663'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C45783'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C307335'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C98192'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C178585'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C5448795'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C268016'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C12067'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C138714'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C94934'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C1974707'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C160409'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C189895'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C136657'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C5143397'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C19947652'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C965805'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C20512'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C2965326'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C25744'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C25900'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C11702'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C513714'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C852472'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C852895'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C25767'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C25792'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C25769'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C25079'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C17168'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C2847904'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C465949'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C1121848'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C79815'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C780769'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C12084'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C2673275'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C5218924'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C28927'
++   },
++   {
++     error: 'fetch failed',
++     part: 'C2155767'
++   }
++ ]
+- []
+
+    at file:///workspace/smart-nema14-motor-controller/scripts/check-bom-catalog.mjs:63:8
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [
+    { part: 'C1525', error: 'fetch failed' },
+    { part: 'C23733', error: 'fetch failed' },
+    { part: 'C13585', error: 'fetch failed' },
+    { part: 'C14663', error: 'fetch failed' },
+    { part: 'C45783', error: 'fetch failed' },
+    { part: 'C307335', error: 'fetch failed' },
+    { part: 'C98192', error: 'fetch failed' },
+    { part: 'C178585', error: 'fetch failed' },
+    { part: 'C5448795', error: 'fetch failed' },
+    { part: 'C268016', error: 'fetch failed' },
+    { part: 'C12067', error: 'fetch failed' },
+    { part: 'C138714', error: 'fetch failed' },
+    { part: 'C94934', error: 'fetch failed' },
+    { part: 'C1974707', error: 'fetch failed' },
+    { part: 'C160409', error: 'fetch failed' },
+    { part: 'C189895', error: 'fetch failed' },
+    { part: 'C136657', error: 'fetch failed' },
+    { part: 'C5143397', error: 'fetch failed' },
+    { part: 'C19947652', error: 'fetch failed' },
+    { part: 'C965805', error: 'fetch failed' },
+    { part: 'C20512', error: 'fetch failed' },
+    { part: 'C2965326', error: 'fetch failed' },
+    { part: 'C25744', error: 'fetch failed' },
+    { part: 'C25900', error: 'fetch failed' },
+    { part: 'C11702', error: 'fetch failed' },
+    { part: 'C513714', error: 'fetch failed' },
+    { part: 'C852472', error: 'fetch failed' },
+    { part: 'C852895', error: 'fetch failed' },
+    { part: 'C25767', error: 'fetch failed' },
+    { part: 'C25792', error: 'fetch failed' },
+    { part: 'C25769', error: 'fetch failed' },
+    { part: 'C25079', error: 'fetch failed' },
+    { part: 'C17168', error: 'fetch failed' },
+    { part: 'C2847904', error: 'fetch failed' },
+    { part: 'C465949', error: 'fetch failed' },
+    { part: 'C1121848', error: 'fetch failed' },
+    { part: 'C79815', error: 'fetch failed' },
+    { part: 'C780769', error: 'fetch failed' },
+    { part: 'C12084', error: 'fetch failed' },
+    { part: 'C2673275', error: 'fetch failed' },
+    { part: 'C5218924', error: 'fetch failed' },
+    { part: 'C28927', error: 'fetch failed' },
+    { part: 'C2155767', error: 'fetch failed' }
+  ],
+  expected: [],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

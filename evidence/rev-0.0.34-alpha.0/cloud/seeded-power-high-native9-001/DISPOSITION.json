@@ -1,0 +1,23 @@
+{
+  "accepted": false,
+  "router": "beta_pipeline9",
+  "actual_solver": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+  "status": {
+    "command": [
+      "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+      "scripts/run-native-routing.mjs",
+      "/workspace/smart-nema14-motor-controller/scripts/native-seeded-power-high-pipeline9-cloud.circuit.tsx",
+      "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.34-alpha.0/cloud/seeded-power-high-native9-001"
+    ],
+    "exit_code": -15,
+    "termination": null,
+    "memory_budget_mb": 22937,
+    "peak_sampled_group_rss_mb": 12144.39453125,
+    "elapsed_seconds": 160.14195231200574,
+    "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+  },
+  "termination_reason": "Stopped intentionally after inspecting follow-up input: the seed removes only one pad endpoint and still leaves 8 points, including six synthetic via contacts. It does not reduce the MCU-to-branch routing problem to two roots.",
+  "next_source_change": "Replay each existing filled contact to its exact real owner before the gate/pulldown branch, using supported native saved path trees.",
+  "canonical_artifacts_changed": false,
+  "source_snapshot": "SOURCE-SNAPSHOT/MANIFEST.json"
+}

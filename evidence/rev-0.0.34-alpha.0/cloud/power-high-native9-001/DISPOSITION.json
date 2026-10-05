@@ -1,0 +1,49 @@
+{
+  "accepted": false,
+  "router": "beta_pipeline9",
+  "actual_solver": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+  "status": {
+    "command": [
+      "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+      "scripts/run-native-routing.mjs",
+      "/workspace/smart-nema14-motor-controller/scripts/native-power-high-pipeline9-cloud.circuit.tsx",
+      "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.34-alpha.0/cloud/power-high-native9-001"
+    ],
+    "exit_code": -15,
+    "termination": "timeout",
+    "memory_budget_mb": 22937,
+    "peak_sampled_group_rss_mb": 13607.75390625,
+    "elapsed_seconds": 901.31465321,
+    "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+  },
+  "last_progress": {
+    "subcircuit_id": "subcircuit_source_group_0",
+    "componentDisplayName": "<board#970 />",
+    "phaseName": "Bounded remaining connection",
+    "phaseStageIndex": 0,
+    "phaseStageCount": 1,
+    "routingPhaseIndex": 1,
+    "_actualRoutingPhaseOrderIndex": 1,
+    "phaseOrdinal": 2,
+    "phaseCount": 2,
+    "connectionCount": 1,
+    "obstacleCount": 7607,
+    "previousTraceCount": 0,
+    "isReroutePhase": false,
+    "autorouterName": "tscircuit",
+    "autorouterVersion": "beta_pipeline9",
+    "solverName": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+    "effort": 1,
+    "cacheStatus": "disabled",
+    "cacheDisabledReason": "no_cache_engine",
+    "type": "autorouting:progress",
+    "steps": 125,
+    "iterationsPerSecond": 0.022737608003638016,
+    "progress": 0.28,
+    "phase": "edgeSolver"
+  },
+  "reason": "Bounded single-net native job timed out in edge solving; no final route output exists.",
+  "source_snapshot": "SOURCE-SNAPSHOT/MANIFEST.json",
+  "canonical_artifacts_changed": false,
+  "checks_relaxed": false
+}

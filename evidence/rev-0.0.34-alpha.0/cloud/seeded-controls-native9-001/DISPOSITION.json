@@ -1,0 +1,5 @@
+{
+  "adopted": false,
+  "pipeline9_followup_started": false,
+  "reason": "Explicit GND fanout plane mapping introduced a new source-only SPREAD-to-GND request into the existing full saved phase, which correctly rejected the uncovered request. This selected phase joins signal pairs and requires no plane termination, so the supported explicit empty fanoutPourNetMap is appropriate. Existing pours and all physical/DRC checks remain active."
+}

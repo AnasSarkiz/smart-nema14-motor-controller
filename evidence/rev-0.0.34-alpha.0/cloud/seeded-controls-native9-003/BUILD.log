@@ -1,0 +1,27 @@
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Routing phase 0 undefined 69 connections 1080 obstacles
+Routing phase 1 undefined 3 connections 7036 obstacles
+Routing phase 1 AutoroutingPipelineSolver9_PreloadedTraceGraph 3 connections 7649 obstacles
+Routing progress 1 0.12
+Routing progress 1 0.17
+Routing progress 1 0.20818539209600662
+Routing progress 1 0.21486033519553072
+Routing progress 1 0.22214359611007656
+Routing progress 1 0.22721291123525758
+Routing progress 1 0.2318973722325678
+Routing progress 1 0.23703703703703702
+Routing progress 1 0.24
+Routing progress 1 0.28
+Routing progress 1 0.32
+Routing progress 1 0.44
+Routing progress 1 0.44
+Routing progress 1 0.44
+Routing progress 1 0.44
+{
+  message: "aJ ran out of iterations (capacity-autorouter@0.0.958)",
+}
+Async effect error in PcbTraceRender "autorouting":
+AutorouterError: aJ ran out of iterations (capacity-autorouter@0.0.958)
+    at runCycleAndQueueNextCycle (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:107448:24)
+    at <anonymous> (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:107483:27)
+Native render complete: 232 unresolved errors

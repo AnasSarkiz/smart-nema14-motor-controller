@@ -71,16 +71,29 @@ and https://bun.com/docs/installation.
 The minimal setup allowlist above remains sufficient for installation and smoke
 checks. Full CLI board builds additionally query the official EasyEDA component
 API at `easyeda.com/api/components/search` and `easyeda.com/api/components/...`.
-The current proxy denies CONNECT to `easyeda.com` with HTTP 403; the CLI reports
-this as 111 supplier-footprint lookup warnings. This is a policy denial, not
-proof of a supplier API rate limit or an invalid component definition. Imported
-component footprints remain intact and critical pin checks pass.
+Earlier builds received CONNECT HTTP 403 for `easyeda.com`, reported as 111
+supplier-footprint lookup warnings. On 2026-10-05 the live product API returned
+all 43 exact supplier identities used by the 111 component references, with
+the sale flag set for each. Raw responses and checksums are retained in
+`evidence/rev-0.0.34-alpha.0/cloud/supplier-live/`. This does not reserve stock
+or qualify assembly. Imported footprints remain intact.
 
-For this board continuation, add only `easyeda.com` to the existing 11 custom
-hosts. No wildcard is needed. The onboarding draft preserves the existing hosts,
-package-manager preset, installation and startup instructions. An agent draft
-save does not apply live policy. Saving through the environment editor can request
-a runtime update; retry the actual HTTPS request afterward. Publishing activates
-an environment configuration/snapshot and does not migrate unrelated running
-tasks. Do not bypass the proxy, disable TLS, replace components, or hide the
-parts-engine warnings to avoid the denial.
+The exact BOM catalogue check uses the installed CLI's official backend
+`jlcsearch.tscircuit.com`. That host still received CONNECT HTTP 403. An additive
+draft update now preserves the 12 existing hosts and adds the catalogue and official CLI model hosts as described below; no wildcard is needed. Installation/startup instructions and the
+package-manager preset remain intact. The supported draft tool returned
+`saved` and `requires_publish: true`. Review and save the change in environment
+settings, then publish. A draft save alone does not apply live policy. Saving
+through the environment editor can request a runtime update; retry the actual
+HTTPS request after a meaningful policy change. Publishing activates an
+environment configuration/snapshot and does not migrate unrelated running
+tasks. Do not bypass the proxy, disable TLS, replace components, or hide
+parts-engine warnings to avoid a denial.
+
+The installed CLI also requests component OBJ/STEP metadata from
+`modelcdn.tscircuit.com`. Its actual HTTPS request received CONNECT HTTP 403;
+the draft now includes this exact official model host as the fourteenth custom
+host. This is needed for the CLI parts engine and later 3D/assembly review.
+The CLI EasyEDA search endpoint itself now returns HTTP 200 and success true.
+Neither allowed-host drafts nor successful product queries establish completed
+CLI supplier-footprint validation or final mechanical qualification.

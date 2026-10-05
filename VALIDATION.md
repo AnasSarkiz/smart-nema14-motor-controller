@@ -1,4 +1,72 @@
-# Current Linux continuation — 0.0.33-alpha.0, 2026-10-05
+# Current Linux continuation — 0.0.34-alpha.0, 2026-10-05
+
+SWDIO_GUARDED physically joins U7 pin3 and R20 pin1 through a supported
+native source tree. The old POWER_GOOD barrel obstructed the U7 outlet:
+0.2258 mm surface gap cannot fit the 0.15 mm signal plus required pad/via
+clearance. That ordinary barrel moves to (7,-12.85), retaining dimensions,
+full span and masks. One exact-owned TypeVII filled/capped ENIG U7 escape
+(.20/.38 mm) and one ordinary .30/.60 mm R20 barrel complete the link.
+
+All 156 other saved paths and all existing explicit pours remain exact.
+All 268 other net/layer copper groups remain within 0.1 nm; all 192 other
+prior barrels preserve drill, pad, full span and effective tenting. All 421
+component pin-net assignments remain exact. The manufacturing manifest has
+51 individually declared features, with no blanket exception. Actual native
+Pipeline9 input covers all 195 current annuli on all four layers and retains
+.30/.60 mm ordinary new-via minima. The board wrapper now consistently selects
+the requested beta_pipeline9 even when a seed job has no target list.
+
+Fresh full build: **238 traces / 195 vias / 74 pours**, **9 native unconnected
+ports + 6 unfinished trace errors**, **75/82 physical nets complete**.
+Canonical SHA-256: `eedc25de02a25f31f2e664dac2b84fd0dce7d9b84c712fd883c7f4ddbd7ef029`.
+Strict geometry and foreign filled-copper clearance have zero violations.
+Native netlist/shorts/schematic placement, TypeScript, formatting and imports
+pass. The final full build changes only filesystem metadata; all 5642 other
+elements are exact, as recorded in canonical-final/FINAL-BUILD-EQUIVALENCE.json. All six power/reference networks remain joined and EFUSE_RTN isolated;
+USB reference/skew and RAW-neck analytical screens pass. All four current layer
+images were actually viewed. Crowded silkscreen and bottom labels at/outside
+outline remain. Build/all-net checks correctly exit 1 for retained errors.
+
+Native Pipeline9 seeded controls exhausted iterations at port pathing after
+833.624 s / 12904.469 MiB, with no route adopted. A changed SWCLK-only seed job
+hit the guard after 743.678 s / 23477.973 MiB at available-segment point solving.
+Its seed output is not a completed Pipeline9 result. An earlier wrapper-selected
+Pipeline7 seed run was stopped at 43.063 s and rejected; the wrapper is fixed.
+A supported endpoint-pair trial created no native phase1 because of inferred net
+ownership; it is removed. A manually proposed eFuse fault trunk passed spacing
+but split RTN and interrupted USB reference, so its source is reverted. Rejected
+trials and exact source snapshots remain evidence, with no checks disabled.
+The unseeded POWER_HIGH_CURRENT-only Pipeline9 job timed out after 901.315 s
+with 13607.754 MiB peak sampled RSS in edge solving (0.28). No output was adopted.
+The invalid eFuse seed is removed from active helpers; exact rejected source
+remains archived.
+A changed two-real-pad-root POWER_HIGH_CURRENT seed still timed out after
+901.447 s / 13132.152 MiB in edge solving. All 195 annuli remained covered in
+its actual input. No final route exists. The six-contact experimental extension
+is reverted to the fourteen-file pre-trial source snapshot matching the
+successful final CLI build; source restoration is checksum verified. The core
+diagnostic is retained separately and lacks CLI supplier pin-one metadata; it
+is not accepted as a replacement build.
+
+Exact saved Cloud startup smoke passes: TypeScript, critical import labels,
+pinned Linux analysis libraries, complete context inventory and four archive
+parts. Source/format checks pass. Actual cgroup RAM is 32 GiB, swap is zero,
+and workspace disk has 27.58 GiB free out of 31.45 GiB.
+
+Matching public publication is pending verification. Seven physical nets
+(TMC_DIR, SWCLK, EXT_STEP_CONN, EXT_DIR, CAN_RS, EFUSE_FLT_N, POWER_HIGH_CURRENT)
+and complete power/via/thermal/transient, signal, USB/SI, 3D/mechanical and CAM
+gates remain unfinished. The official EasyEDA product API now matches all 43
+unique supplier identities for 111 component references, each with its sale flag
+set; this is not stock reservation or assembly approval. The official CLI BOM catalogue host jlcsearch.tscircuit.com and model metadata
+host modelcdn.tscircuit.com still received CONNECT HTTP 403. Both additions are
+saved in a 14-host draft and require environment settings Save/Publish plus
+effective-policy retries. Full CLI rebuild attempts timed out at 180 and 360
+seconds and are rejected, with no stale output accepted. Firmware and hardware tests are
+unperformed; no hosted build success is claimed.
+**PROTOTYPE FABRICATION READY: NO.** Continue all TASK.md nets and qualification.
+
+# Historical Linux continuation — 0.0.33-alpha.0, 2026-10-05
 
 TMC_ENABLE_N now physically joins U1 pin15, U2 pin2 and R7 pin2 through the
 corrected native three-layer tree and two ordinary 0.30/0.60 mm through vias.
