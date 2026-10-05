@@ -8,7 +8,8 @@ STATUS_RESISTOR_FILLED with their existing exact owners/dimensions. All 136
 prior saved paths and 47 manufacturing declarations remain identical. No new
 vias, purchased imports, placements, logic, dependencies or mechanics changed.
 Separate TMC enable Pipeline4 (180 s) and Pipeline7 (240 s) timeouts are retained;
-neither produced final routing output and neither altered accepted copper.
+neither produced final board JSON and neither altered accepted copper. Pipeline4
+did emit intermediate paths; they remain unqualified and were not adopted.
 
 Fresh full official CLI build: **227 traces / 188 vias / 70 pours**, **14 native
 unconnected-port + 11 unfinished trace errors**, **67/82 complete physical nets**.
@@ -32,8 +33,10 @@ Current Cloud measurements: 32 GiB container limit, 33.289 GiB host RAM, no swap
 31.451 GiB filesystem total and 28.757 GiB available at measurement. These actual
 values are recorded in CLOUD-RESOURCES.json. Live supplier availability remains
 unverified: activation of the saved additive easyeda.com runtime host policy and
-a successful official request are still required. Matching public publication
-is pending exact checksum verification; no hosted build success is claimed.
+a successful official request are still required. Public revision 0.0.25 matches
+GitHub source/artifact commit `239712e457844af5146bc44e7655485f25db18e9` and tscircuit release
+`d36a633c-2e68-4796-92e7-163ba4f00626`: all 308 package files and eight GitHub files
+passed anonymous SHA-256 readback. No hosted build success is claimed.
 Firmware and physical testing remain unperformed.
 **PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
 

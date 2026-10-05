@@ -16,7 +16,11 @@ formatting are checked in current evidence. All four current layer images were a
 Canonical SHA-256: `ba082e485f73bbbae4bf0d2ea5a2f7e33bb09ada8466491caf05b422e91f58fc`.
 Evidence: evidence/rev-0.0.25-alpha.0/LED-ADOPTION.json and cloud/canonical.
 TMC enable Pipeline4/7 and LED Pipeline4 timeouts are retained without adoption.
-Matching public publication is pending verification; see the receipt when present.
+Pipeline4 emitted intermediate TMC paths but timed out before final board JSON;
+those paths still need correction and full qualification.
+Public release d36a633c-2e68-4796-92e7-163ba4f00626 matches source/artifact commit
+239712e457844af5146bc44e7655485f25db18e9: all 308 package files and eight GitHub files
+passed anonymous checksum readback. Hosted build success is not claimed; see PUBLICATION.json.
 Live EasyEDA availability still requires activation of the saved official-host draft.
 **PROTOTYPE FABRICATION READY: NO.** Continue the 15 remaining nets and TASK.md.
 

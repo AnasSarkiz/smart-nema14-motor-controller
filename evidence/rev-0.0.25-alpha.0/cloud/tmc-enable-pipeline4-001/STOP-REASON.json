@@ -1,4 +1,5 @@
 {
   "adopted": false,
-  "reason": "Released Pipeline4 reached the 180-second bound at progress 0 on three TMC_ENABLE_N endpoints. No routing output adopted. Compare a different released native engine before choosing manual source corrections."
+  "reason": "Released Pipeline4 reached the 180-second bound at progress 0 on three TMC_ENABLE_N endpoints. No routing output adopted. Compare a different released native engine before choosing manual source corrections.",
+  "clarification": "Native phase-1 intermediate pcbTracePaths were emitted but no final circuit JSON completed before timeout. These paths are not accepted or qualified; later continuation may correct and replay them through the supported native saved-phase API."
 }
