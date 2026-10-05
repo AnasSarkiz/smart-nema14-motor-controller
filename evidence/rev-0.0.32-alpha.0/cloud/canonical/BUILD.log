@@ -1,0 +1,109 @@
+$ bun run validate:imports && tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs
+$ node scripts/check-critical-import-pins.mjs
+Critical import-label audit passed. Full schematic, BOM, mechanical and fabrication validation remains mandatory.
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Could not save autorouting paths for subcircuit_source_group_0: PCB port selector is not unique: .D_CAN > port.pin2
+Circuit JSON written to dist/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+U4 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+J_USB has no pin with requires_power=true
+J_USB has no pin with requires_ground=true
+Q_PD has no pin with requires_power=true
+Q_PD has no pin with requires_ground=true
+All pins on Q_PD are underspecified (no pinAttributes set)
+D_USB has no pin with requires_power=true
+D_VBUS has no pin with requires_power=true
+D_VBUS has no pin with requires_ground=true
+All pins on D_VBUS are underspecified (no pinAttributes set)
+J_IO has no pin with requires_power=true
+J_IO has no pin with requires_ground=true
+All pins on J_IO are underspecified (no pinAttributes set)
+J_MOTOR has no pin with requires_power=true
+J_MOTOR has no pin with requires_ground=true
+All pins on J_MOTOR are underspecified (no pinAttributes set)
+U9 has no pin with requires_power=true
+D_IO1 has no pin with requires_power=true
+D_IO2 has no pin with requires_power=true
+D_CAN has no pin with requires_power=true
+D_CAN has no pin with requires_ground=true
+All pins on D_CAN are underspecified (no pinAttributes set)
+U10 has no pin with requires_power=true
+Q_ILIM has no pin with requires_power=true
+Q_ILIM has no pin with requires_ground=true
+All pins on Q_ILIM are underspecified (no pinAttributes set)
+Trace [.GND_STITCH_MCU > .top to .U1 > .pin29] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [.PROTECTED_MONITOR_EAST > .bottom to .TCPP_PROTECTED_MONITOR > .bottom] is routed thinner than requested (requested: 0.18mm, actual: 0.15mm).
+Trace [.PROTECTED_LOW_RETURN > .bottom to .PROTECTED_MONITOR_WEST > .bottom] is routed thinner than requested (requested: 0.18mm, actual: 0.15mm).
+Trace [.VM_TMC_LOW > .top to .VM_BUCK > .top] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_TMC_BULK > .top to .VM_TMC_HIGH > .top] is routed thinner than requested (requested: 0.6mm, actual: 0.15mm).
+Trace [.VM_BULK_LEFT > .top to .VM_TMC_HIGH > .top] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.PROTECTED_MONITOR_WEST > .bottom to .PROTECTED_MONITOR_EAST > .bottom] is routed thinner than requested (requested: 0.18mm, actual: 0.15mm).
+Trace [.U10 > .pin8 to .U10 > .pin9] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.U10 > .pin8 to .C34 > .pin1] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.VM_BUCK > .top to .U5 > .pin2] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_BUCK > .top to .U5 > .pin3] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_BUCK > .top to .C9 > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_BUCK_CAP > .bottom to .C8 > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_TMC_LOW > .top to .U2 > .pin28] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.VM_TMC_HIGH > .top to .U2 > .pin22] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.VM_TMC_BYPASS > .bottom to .C17 > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_TMC_BULK > .bottom to .C18 > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_BULK_LEFT > .top to .C19 > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_BULK_RIGHT > .top to .C20 > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_EFUSE_OUT > .bottom to .U10 > .pin24] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.VM_EFUSE_OUT > .bottom to .U10 > .pin23] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.VM_OUT_BRIDGE > .top to .VM_EFUSE_OUT > .top] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.RAW_USB_LEFT > .top to .J_USB > .pin21] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.RAW_USB_RIGHT > .top to .J_USB > .pin20] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.RAW_PMOS_SOURCE > .bottom to .Q_PD > .pin9] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.RAW_TVS > .bottom to .D_VBUS > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.RAW_TVS > .bottom to .C25 > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.PROTECTED_PMOS_DRAIN > .bottom to .Q_PD > .pin1] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.PROTECTED_EFUSE_INPUT_VIA > .bottom to .U10 > .pin8] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Q_PD is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_USB is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_VBUS is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_CAN is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q_ILIM is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Port [U1.PA7] is not connected to net [TMC_DIR] by a PCB trace.
+Port [U1.PB1] is not connected to net [EXT_DIR] by a PCB trace.
+Port [U1.PB3] is not connected to net [CAN_RS] by a PCB trace.
+Port [U6.RS] is not connected to net [CAN_RS] by a PCB trace.
+Port [U2.DIR] is not connected to net [TMC_DIR] by a PCB trace.
+Port [R9.pin1] is not connected to net [TMC_DIR] by a PCB trace.
+Port [U7.D1] is not connected to net [SWDIO_GUARDED] by a PCB trace.
+Port [R20.pin1] is not connected to net [SWDIO_GUARDED] by a PCB trace.
+Port [R24.pin2] is not connected to net [EXT_DIR] by a PCB trace.
+Port [R29.pin1] is not connected to net [EXT_DIR] by a PCB trace.
+Port [R34.pin2] is not connected to net [CAN_RS] by a PCB trace.
+Trace [.SWCLK_MCU_ESCAPE > .top to .U1 > .pin36] has dangling endpoint at (5.55, 3.00)
+Trace [.POWER_HIGH_GATE_FILLED > .bottom to .Q_ILIM > .pin1] has dangling endpoint at (-5.65, -4.30)
+Trace [.POWER_HIGH_PULLDOWN_FILLED > .bottom to .R46 > .pin1] has dangling endpoint at (-5.70, 0.00)
+Trace [.SWCLK_PULLDOWN_FILLED > .bottom to .R53 > .pin1] has dangling endpoint at (10.60, -4.10)
+Trace [.STEP_SERIES_FILLED > .bottom to .R23 > .pin1] has dangling endpoint at (8.10, 8.05)
+Trace [.FLT_MCU_ESCAPE > .top to .U1 > .pin43] has dangling endpoint at (5.45, 1.25)
+Trace [.TMC_ENABLE_MCU_FILLED > .top to .U1 > .pin15] has dangling endpoint at (10.45, -1.85)
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   pcb-png, pcb-svgs, schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred
+error: script "build" exited with code 1

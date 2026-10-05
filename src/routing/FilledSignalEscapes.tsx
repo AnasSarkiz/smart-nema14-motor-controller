@@ -65,9 +65,17 @@ export function FilledSignalEscapes() {
               to={branch.selector}
               thickness="0.15mm"
               pcbPathRelativeTo={`.${feature.name} > .${branch.layer ?? feature.owner_layer}`}
-              pcbPath={branch.points.map((point) =>
-                applyToPoint(translate(-feature.x, -feature.y), point),
-              )}
+              // A resolved start-port selector keeps a direct contact fixed
+              // without transforming a zero offset to the component center.
+              pcbPath={
+                branch.points.length
+                  ? branch.points.map((point) =>
+                      applyToPoint(translate(-feature.x, -feature.y), point),
+                    )
+                  : [
+                      `.${feature.name} > .${branch.layer ?? feature.owner_layer}`,
+                    ]
+              }
             />
           ))}
         </Fragment>

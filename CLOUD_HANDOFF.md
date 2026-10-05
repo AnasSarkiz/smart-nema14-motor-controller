@@ -1,6 +1,47 @@
 # Smart NEMA 14 controller: complete Cloud handoff
 
-## Current Linux continuation — 0.0.31-alpha.0
+## Current Linux continuation — 0.0.32-alpha.0
+
+The four motor phase routes had 0.15 mm internal sections, below the conservative
+0.34245 A phase bound in the IPC-2221 / 30°C analytical screen. Native source
+repairs now use 0.25 mm internally, with one 0.23 mm MOTOR_A2 corridor segment.
+Screened capacities are 0.38768 A and 0.36494 A. Minimum manufactured copper,
+barrel plating, thermal and transient qualification remain pending.
+
+Existing saved trunks are represented as real-port native trees. All 253
+unchanged net/layer copper groups are preserved within a 0.1 nm numerical
+serialization envelope. All 38 V3V3 declarations stay exact; all 48 earlier
+owned filled features stay exact. Two individually owned filled contacts and
+a native driver/pullup branch reduce TMC_ENABLE_N to two physical groups.
+Direct native links now use resolved start-port selectors so the router treats
+them as fixed. A numeric-zero-start trial changed four links and failed actual
+geometry/shorts; it is rejected and retained separately.
+
+Fresh official full build: **227 traces / 191 vias / 73 pours**, **11 native
+unconnected-port + 7 unfinished trace errors**, **73/82 complete physical nets**.
+Canonical SHA-256: `dd2cda6ddc62e20f50703db7bb7487df47b862a56c9f41dc516f5c0678872bd1`.
+Strict geometry, foreign fill clearance, native netlist/shorts/schematic placement,
+TypeScript, imports and formatting pass. All six power/reference networks are
+joined and EFUSE_RTN stays isolated. USB reference/skew and RAW-neck analytical
+screens pass. Full build exits 1 for retained unresolved errors. All four current
+layer images were actually viewed; crowded silkscreen and bottom labels at/outside
+the outline remain. Supplier imports, connector placement and mechanics remain
+intact. Unchanged manufacturer schematic evidence is reused from revision23.
+
+The earlier access-only driver-enable Pipeline9 attempt was manually stopped
+at 1583.226 seconds / 13599.328 MiB peak after edgeSolver stalled; no route was
+adopted. The changed compacted/fixed source is eligible for a fresh bounded job.
+Optional CLI path-cache serialization still reports a nonunique imported-port
+selector; fresh native JSON exists and electrical/import checks pass. Prior
+revisions had the same class of cache warning; imports were not patched.
+Evidence: POWER-ACCESS-ADOPTION.json and cloud/canonical/CHECKS.json.
+Matching public publication is pending verification. Live official supplier
+verification needs the saved easyeda.com policy applied through the environment
+editor. Nine nets and full power/USB/signal/3D/CAM gates remain unfinished.
+Firmware and hardware tests are unperformed; no hosted build success is claimed.
+**PROTOTYPE FABRICATION READY: NO.** Continue all TASK.md nets and qualification.
+
+## Historical Linux continuation — 0.0.31-alpha.0
 
 LIMIT1 is physically complete between U1 pin 22, C30 pin 1, R26 pin 2 and R31 pin 2.
 The complete native saved star uses inner1, both existing ordinary MCU/cap

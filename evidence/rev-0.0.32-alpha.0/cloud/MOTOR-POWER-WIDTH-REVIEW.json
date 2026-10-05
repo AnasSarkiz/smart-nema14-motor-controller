@@ -1,0 +1,29 @@
+{
+  "baseline_revision": "0.0.31-alpha.0",
+  "baseline_canonical_sha256": "04ba8d990851f101e528d95831c468a3dcb7176b75b184141058bafee406e8a5",
+  "scope": "Adopted source repair verified in fresh native canonical output; analytical width screen is not thermal/fabrication qualification.",
+  "defect": "All four motor phase routes have 0.15 mm internal-layer sections; no same-net motor pours supplement these traces. IPC-2221 internal-layer analytical screen falls below conservative hardware phase-current bound.",
+  "phase_peak_bound_a": 0.3424477108687635,
+  "model": "IPC-2221 k=0.024 internal, dT=30 C, inner copper=0.0152 mm; engineering screen, not measured temperatures or guaranteed manufacturer copper tolerance",
+  "screened_capacity_a": {
+    "0.15": 0.2676938961964125,
+    "0.23": 0.36494295733888227,
+    "0.25": 0.3876848342130964
+  },
+  "proposed_changes": {
+    "MOTOR_B2": "Widen inner1 and inner2 to 0.25 mm; existing centerlines and vias retained.",
+    "MOTOR_B1": "0.25 mm inner sections; small outer-west/upper detours preserve spacing to protected via, CC2 and ground vias.",
+    "MOTOR_A1": "0.25 mm inner section; raise the CC1-parallel centerline and left diagonal slightly.",
+    "MOTOR_A2": "0.25 mm inner route except one 0.23 mm segment through the two-via corridor; corrected centerlines pass actual emitted spacing."
+  },
+  "preserved": "Imported components, pad mappings, connector placement, motor/carrier, top-layer phase fanouts, existing phase via positions. Only necessary phase width/centerline repair proposed.",
+  "remaining": [
+    "Minimum manufactured copper and plating requirement",
+    "Full power/thermal/transient qualification",
+    "Hardware temperatures/current/overshoot not tested"
+  ],
+  "prototype_fabrication_ready": false,
+  "canonical_sha256": "dd2cda6ddc62e20f50703db7bb7487df47b862a56c9f41dc516f5c0678872bd1",
+  "strict_geometry_passed": true,
+  "foreign_filled_clearance_violations": 0
+}

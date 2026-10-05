@@ -1,0 +1,33 @@
+{
+  "revision": "0.0.32-alpha.0",
+  "scope": "Power-width defect repair, copper-preserving tree serialization and driver-enable access preparation; remaining connection not claimed complete.",
+  "canonical_sha256": "dd2cda6ddc62e20f50703db7bb7487df47b862a56c9f41dc516f5c0678872bd1",
+  "saved_path_count": 151,
+  "prior_V3V3_paths_exact": 38,
+  "source_compaction_estimated_wire_obstacles_before": 7216,
+  "source_compaction_estimated_wire_obstacles_after": 5199,
+  "actual_emitted_unchanged_net_layer_groups": 253,
+  "serialization_envelope_mm": 1e-07,
+  "documented_physical_changes": [
+    "MOTOR_A1/A2/B1/B2 internal width/centerline repairs",
+    "Two exact-owned filled driver-enable contacts and native top driver/pullup branch"
+  ],
+  "preserved_prior_filled_features": 48,
+  "new_filled_features": [
+    "TMC_ENABLE_MCU_FILLED",
+    "TMC_ENABLE_R7_FILLED"
+  ],
+  "direct_contacts_fixed_by": "Supported native pcbPath resolved start-port selectors; empty paths had been preloaded as mutable traces. Existing nonempty paths retained. Numeric zero-start trial was rejected after real copper/clearance regressions.",
+  "strict_geometry_violations": 0,
+  "foreign_filled_clearance_violations": 0,
+  "physically_complete_nets": 73,
+  "total_nets": 82,
+  "TMC_ENABLE_N_physical_components": 2,
+  "native_unconnected_port_errors": 11,
+  "dangling_trace_errors": 7,
+  "all_six_power_reference_nets_physical_components": 1,
+  "usb_reference_skew_and_raw_neck_screens_passed": true,
+  "prior_native_attempt": "Access-only Pipeline9 attempt manually stopped at 1583.226 seconds / 13599.328 MiB peak; edgeSolver stalled, no final output or route adopted. Source compaction and fixed direct contacts change the next approach.",
+  "prototype_fabrication_ready": false,
+  "hardware_tested": false
+}

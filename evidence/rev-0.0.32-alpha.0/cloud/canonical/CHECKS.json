@@ -1,0 +1,71 @@
+{
+  "revision": "0.0.32-alpha.0",
+  "canonical_sha256": "dd2cda6ddc62e20f50703db7bb7487df47b862a56c9f41dc516f5c0678872bd1",
+  "counts": {
+    "pcb_via": 191,
+    "pcb_trace": 227,
+    "pcb_copper_pour": 73,
+    "pcb_port_not_connected_error": 11,
+    "pcb_trace_error": 7
+  },
+  "physically_complete_nets": 73,
+  "total_source_nets": 82,
+  "geometry_passed": true,
+  "foreign_filled_clearance_violations": 0,
+  "named_filled_features_matched": 50,
+  "typecheck_exit_code": 0,
+  "format_check_exit_code": 0,
+  "critical_imports_exit_code": 0,
+  "native_checks": {
+    "netlist": {
+      "check": "netlist",
+      "target": "index.circuit.tsx",
+      "exit_code": 0,
+      "reported_error_counts": [
+        0
+      ]
+    },
+    "shorts": {
+      "check": "shorts",
+      "target": "dist/index/circuit.json",
+      "exit_code": 0,
+      "reported_error_counts": []
+    },
+    "schematic-placement": {
+      "check": "schematic-placement",
+      "target": "dist/index/circuit.json",
+      "exit_code": 0,
+      "reported_error_counts": []
+    }
+  },
+  "schematic_draft_test": {
+    "repeated_this_revision": false,
+    "reused_evidence": "evidence/rev-0.0.23-alpha.0/cloud/canonical/DRAFT-SCHEMATIC-TEST.json",
+    "reason": "Only native saved copper and specifically declared vias changed. Supplier imports, component placement and source wiring/topology remain identical; fresh source netlist and critical import audit pass."
+  },
+  "layer_images_actually_viewed": [
+    "top.png",
+    "inner1.png",
+    "inner2.png",
+    "bottom.png"
+  ],
+  "visual_remaining_issues": [
+    "Crowded and overlapping silkscreen; bottom refdes near/outside outline",
+    "Unfinished escapes and 9 incomplete physical nets",
+    "Final detailed visual and 3D manufacturing review pending"
+  ],
+  "supplier_availability": "Not verified by this full build. Earlier official easyeda.com API CONNECT denied; saved additive host draft requires runtime activation and successful official request.",
+  "warning_counts": {
+    "source_refdes_convention_warning": 5,
+    "source_no_power_pin_defined_warning": 14,
+    "source_no_ground_pin_defined_warning": 7,
+    "source_component_pins_underspecified_warning": 6,
+    "pcb_trace_warning": 29,
+    "schematic_component_styling_warning": 5
+  },
+  "full_power_thermal_usb_cam_qualification_complete": false,
+  "hardware_tested": false,
+  "prototype_fabrication_ready": false,
+  "emitted_copper_preservation": "253 unchanged net/layer groups preserved within 0.1 nm numerical serialization envelope",
+  "optional_cli_path_cache_warning": "PCB port selector not unique: .D_CAN > port.pin2. Same optional cache failure existed earlier (.D_USB > port.pin1 in revision31); no import or pin map was changed. Fresh native generated JSON and source checks are available."
+}

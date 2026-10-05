@@ -27,7 +27,7 @@ export function PowerCopperTrial() {
           to={branch.to}
           thickness="0.15mm"
           pcbPathRelativeTo={branch.from}
-          pcbPath={branch.points}
+          pcbPath={branch.points.length ? branch.points : [branch.from]}
         />
       ))}
       <trace
@@ -63,7 +63,7 @@ export function PowerCopperTrial() {
         to=".VM_BUCK > .top"
         thickness="0.4mm"
         pcbPathRelativeTo=".VM_TMC_LOW > .top"
-        pcbPath={[]}
+        pcbPath={[".VM_TMC_LOW > .top"]}
       />
       <trace
         name="VM_NORTH_RECONNECT"
@@ -71,7 +71,7 @@ export function PowerCopperTrial() {
         to=".VM_TMC_HIGH > .top"
         thickness="0.6mm"
         pcbPathRelativeTo=".VM_TMC_BULK > .top"
-        pcbPath={[]}
+        pcbPath={[".VM_TMC_BULK > .top"]}
       />
       <trace
         name="VM_NORTH_BULK_BRIDGE"
@@ -87,7 +87,7 @@ export function PowerCopperTrial() {
         to=".PROTECTED_MONITOR_EAST > .bottom"
         thickness="0.18mm"
         pcbPathRelativeTo=".PROTECTED_MONITOR_WEST > .bottom"
-        pcbPath={[]}
+        pcbPath={[".PROTECTED_MONITOR_WEST > .bottom"]}
       />
       <trace
         name="R39_RTN_CORRIDOR"
@@ -118,7 +118,7 @@ export function PowerCopperTrial() {
         to=".U10 > .pin9"
         thickness="0.28mm"
         pcbPathRelativeTo=".U10 > .pin8"
-        pcbPath={[]}
+        pcbPath={[".U10 > .pin8"]}
       />
       <trace
         name="PROTECTED_EFUSE_INPUT_CAP"
@@ -184,9 +184,13 @@ export function PowerCopperTrial() {
               to={branch.selector}
               thickness={fanout.width}
               pcbPathRelativeTo={`.${fanout.name} > .${fanout.layer}`}
-              pcbPath={branch.points.map((point) =>
-                applyToPoint(translate(-fanout.x, -fanout.y), point),
-              )}
+              pcbPath={
+                branch.points.length
+                  ? branch.points.map((point) =>
+                      applyToPoint(translate(-fanout.x, -fanout.y), point),
+                    )
+                  : [`.${fanout.name} > .${fanout.layer}`]
+              }
             />
           ))}
         </Fragment>
