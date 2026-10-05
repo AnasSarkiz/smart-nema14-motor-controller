@@ -28,12 +28,17 @@ export default function SmartNema14MotorController({
   routeRemaining = false,
   nativeRoutingTargets = [],
   nativeRoutingNetNames = [],
+  nativeAutorouterVersion = "beta_pipeline9",
 }: BoardViewProps & {
   usbRoutesEnabled?: boolean
   savedRoutesEnabled?: boolean
   routeRemaining?: boolean
   nativeRoutingTargets?: string[]
   nativeRoutingNetNames?: string[]
+  nativeAutorouterVersion?:
+    | "beta_pipeline4"
+    | "beta_pipeline7"
+    | "beta_pipeline9"
 } = {}) {
   return (
     <board
@@ -46,7 +51,9 @@ export default function SmartNema14MotorController({
       pcbStyle={{ viaHoleDiameter: "0.30mm", viaPadDiameter: "0.60mm" }}
       autorouterEffortLevel="1x"
       autorouterVersion={
-        nativeRoutingTargets.length > 0 ? "beta_pipeline9" : "beta_pipeline7"
+        nativeRoutingTargets.length > 0
+          ? nativeAutorouterVersion
+          : "beta_pipeline7"
       }
       defaultTraceWidth="0.15mm"
       autorouter={{

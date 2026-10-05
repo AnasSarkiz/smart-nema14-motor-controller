@@ -1,15 +1,9 @@
 {
-  "revision": "0.0.20-alpha.0",
-  "scope": "Incomplete saved-copper prototype and Cloud handoff; no remaining-net search performed for this checkpoint",
-  "source_entrypoint": "index.circuit.tsx",
+  "revision": "0.0.21-alpha.0",
+  "scope": "Exact mirror of the fresh canonical index build, not a separate native render",
+  "canonical_source": "index.circuit.tsx",
   "exit_code": 1,
-  "circuit_json_sha256": "d833ec12e4eabb3bcda22e727a8eb6ed111ee19001d09b89321d7c685cae1521",
-  "counts": {
-    "pcb_trace": 225,
-    "pcb_via": 179,
-    "pcb_copper_pour": 65,
-    "pcb_port_not_connected_error": 20,
-    "pcb_trace_error": 11
-  },
-  "prototype_fabrication_ready": false
+  "unconnected_port_errors": 18,
+  "dangling_trace_errors": 11,
+  "fabrication_ready": false
 }

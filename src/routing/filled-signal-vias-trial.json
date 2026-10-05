@@ -1028,6 +1028,34 @@
         }
       ],
       "design_reason": "Explicit fault escape around reviewed neighboring control copper. Imported footprints unchanged; generated clearance and filled copper checks required."
+    },
+    {
+      "name": "ILIM_DIVIDER_FILLED",
+      "owner": {
+        "reference": "R44",
+        "pin_number": 1
+      },
+      "net": "EFUSE_ILIM",
+      "x": -3.1,
+      "y": -15.4,
+      "owner_layer": "bottom",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_ordinary_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.35,
+      "design_reason": "Move the individually named ILIM escape 0.4 mm inward and replace it with a filled/capped 0.20/0.38 mm via to widen the RAW VBUS inner1 lower neck. R44 pad and electrical topology are unchanged; ordinary 0.35 mm drill-to-pad clearance is retained.",
+      "branches": [
+        {
+          "selector": ".R44 > .pin1",
+          "points": [
+            {
+              "x": -3.1,
+              "y": -16.19
+            }
+          ]
+        }
+      ]
     }
   ]
 }

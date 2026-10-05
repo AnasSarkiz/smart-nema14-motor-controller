@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/smart-nema14-motor-controller/scripts/check-copper-geometry.py", line 138, in <module>
+    assert set(via["layers"]) == {"top", "inner1", "inner2", "bottom"}, "Unreviewed blind/buried via"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Unreviewed blind/buried via

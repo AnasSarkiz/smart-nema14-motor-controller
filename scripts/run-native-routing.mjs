@@ -11,6 +11,17 @@ if (!circuitPath || !outputFolder) {
 mkdirSync(outputFolder, { recursive: true })
 const { default: Board } = await import(resolve(circuitPath))
 const circuit = new Circuit()
+let lastProgressRecordedAt = 0
+circuit.on("autorouting:progress", (event) => {
+  if (Date.now() - lastProgressRecordedAt < 5000) return
+  lastProgressRecordedAt = Date.now()
+  const { debugGraphics, ...progress } = event
+  writeFileSync(
+    `${outputFolder}/phase-${event.routingPhaseIndex}-progress.json`,
+    JSON.stringify(progress, null, 2),
+  )
+  console.log("Routing progress", event.routingPhaseIndex, event.progress)
+})
 circuit.on("autorouting:start", (event) => {
   writeFileSync(
     `${outputFolder}/phase-${event.routingPhaseIndex}-input.json`,

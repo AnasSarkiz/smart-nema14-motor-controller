@@ -1,6 +1,32 @@
 # Smart NEMA 14 controller: complete Cloud handoff
 
-## Resume point and intent
+## Current Linux continuation — 0.0.21-alpha.0
+
+The Cloud setup/startup checks passed and the user authorized routing. This
+revision fixes the measured RAW VBUS neck and completes TMC_UART_TX using
+released native Pipeline4 geometry with supported source corrections.
+Canonical copper: **226 traces / 181 vias / 64 pours**, **18 native unconnected
+port errors + 11 dangling trace errors**, **63/82 physically complete nets**.
+The UART uses ordinary 0.30/0.60 mm full-through vias. Strict emitted-copper
+geometry and foreign filled-copper clearances pass with zero violations.
+USB skew is 0.381441 mm; the adjacent-ground and approximate 91.812 ohm screens
+pass, without establishing complete USB qualification. RAW VBUS neck width
+is 1.455 mm; its IPC-2221 screening estimate is 1.390106 A at an assumed 30 C
+rise and 0.0152 mm inner copper, versus 1.0714 A worst-case current limit.
+This screen does not qualify all power paths, vias, transients or thermal behavior.
+
+The exact canonical source/artifact hashes are in the refreshed context manifest.
+Current evidence is `evidence/rev-0.0.21-alpha.0/cloud/canonical`; rejected native
+trials are separately retained and are never fabrication candidates. All four
+copper-layer images were actually viewed. Silkscreen crowding and incomplete
+connections remain visible; final visual/manufacturing review is pending.
+The canonical CLI retains 111 EasyEDA HTTP 403 supplier lookup warnings, even
+though imported footprints remain intact and critical pin checks pass.
+Cloud tscircuit login is authenticated as AnasSarkiz. Publication results will
+be recorded after verified upload; a local source revision is not a publication.
+**PROTOTYPE FABRICATION READY: NO.** Continue all remaining physical nets in TASK.md.
+
+## Historical 0.0.20 resume point and intent
 
 The user moved remaining routing to Codex Cloud after repeated Mac memory
 exhaustion. Do not run further local Mac routing. The required outcome remains

@@ -1,3 +1,57 @@
+# Current Linux continuation — 0.0.21-alpha.0, 2026-10-05
+
+The user authorized the board continuation after successful Cloud installation
+and startup checks. This source revision retains the exact imported electronics,
+board outline, placement and motor/carrier design. The ILIM divider escape moved
+from y=-15.8 to -15.4 mm and became the exact named filled/capped
+ILIM_DIVIDER_FILLED feature (0.20/0.38 mm). This addresses the measured RAW VBUS
+neck defect while retaining every other saved path. TMC_UART_TX is complete
+through native Pipeline4-derived geometry with supported manual source changes:
+the first ordinary via moved away from the resistor pad, and the top route
+clears the CAN via and PD_FLT trace. No generated JSON or dependency was patched.
+
+Fresh full CLI build exited 1 with **18 unconnected-port + 11 dangling-trace
+errors**, preserving the incomplete design. Canonical JSON SHA-256:
+`b34e0750a4ae9700afa078058bd48f4fc32d4d448cbe4c961d4da169752a53c7`.
+Copper counts: **226 traces / 181 vias / 64 pours**. Strict geometry passes
+with zero violations; all-82-net filled-copper review passes foreign clearance
+and correctly fails incomplete connectivity (**63/82 complete**). Native
+netlist, copper-short and schematic-placement checks each report zero errors.
+
+RAW VBUS lower-neck measurement: **1.455 mm**, IPC-2221 inner-layer screening
+estimate **1.390106 A** (0.0152 mm copper, assumed 30 C rise), versus 1.0714 A
+worst-case eFuse limit. This is a local analytical screen, not complete current,
+via, transient, thermal or hardware qualification. USB emitted-path lengths are
+25.135517/24.754076 mm, skew **0.381441 mm** (0.5 mm screen); the adjacent
+ground covers the signal core and the main-pair estimate is **91.812378 ohm**.
+These current checks do not complete final USB qualification.
+
+All four current copper layers were rendered with the official renderer and
+actually viewed. No apparent missing saved copper was observed; unfinished
+escapes and crowded/overlapping silkscreen remain explicit blockers. Final
+mechanical/thermal/visual and fabrication export/CAM qualification is pending.
+The CLI retains 111 EasyEDA HTTP 403 supplier-footprint lookup warnings, plus
+29 trace, 14 power-pin, 7 ground-pin, 6 underspecified-pin, 5 refdes and
+5 schematic-style warnings. Critical official import labels and TypeScript/
+formatting pass. The historical `test:draft` expects a schematic-only build;
+applying it to the full PCB correctly rejects the PCB records. A separate fresh schematic-only build and the unmodified draft test pass; the
+full canonical PCB JSON was restored exactly afterward.
+
+Bounded Pipeline9/Pipeline7 CC1 and Pipeline9 UART attempts timed out;
+Pipeline4 produced geometry requiring manual correction. Gate branch attempts
+were rejected: invalid local trace coordinates/partial via spans, saved-phase
+coverage changes, and a 180-second remaining-branch timeout. None of these
+outputs was adopted. Public phase props enforce ordinary via minimums for
+new routing; individually named filled features retain exact ownership review.
+
+Cloud tscircuit authentication was confirmed as AnasSarkiz. Matching public
+publication is pending verified upload. Full remaining-net completion is still
+active; this is not the requested final fabrication candidate.
+
+**PROTOTYPE FABRICATION READY: NO.**
+
+---
+
 # Current Cloud handoff — 0.0.20-alpha.0, 2026-10-05
 
 ## Verified Cloud activation and routing-task start
