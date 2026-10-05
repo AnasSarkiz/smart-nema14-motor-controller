@@ -22,8 +22,11 @@ copper-layer images were actually viewed. Silkscreen crowding and incomplete
 connections remain visible; final visual/manufacturing review is pending.
 The canonical CLI retains 111 EasyEDA HTTP 403 supplier lookup warnings, even
 though imported footprints remain intact and critical pin checks pass.
-Cloud tscircuit login is authenticated as AnasSarkiz. Publication results will
-be recorded after verified upload; a local source revision is not a publication.
+Cloud tscircuit login is authenticated as AnasSarkiz. Public revision 0.0.21
+was verified against GitHub commit 9f2d6a33c195e13fc1df4e8a9529f9789c7c2610
+and tscircuit release 500e4d7d-eb50-490e-96d8-7b8afd71c3c0: 290 anonymous
+package-file downloads and five GitHub source/artifact downloads match. The
+hosted build is queued, not claimed successful. See the current PUBLICATION.json.
 **PROTOTYPE FABRICATION READY: NO.** Continue all remaining physical nets in TASK.md.
 
 ## Historical 0.0.20 resume point and intent

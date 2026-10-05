@@ -44,8 +44,15 @@ coverage changes, and a 180-second remaining-branch timeout. None of these
 outputs was adopted. Public phase props enforce ordinary via minimums for
 new routing; individually named filled features retain exact ownership review.
 
-Cloud tscircuit authentication was confirmed as AnasSarkiz. Matching public
-publication is pending verified upload. Full remaining-net completion is still
+Cloud tscircuit authentication was confirmed as AnasSarkiz. Revision 0.0.21
+is public in GitHub source/artifact commit `9f2d6a33c195e13fc1df4e8a9529f9789c7c2610`
+and tscircuit release `500e4d7d-eb50-490e-96d8-7b8afd71c3c0` (is_private=false).
+All 290 package files were anonymously downloaded and checksum-verified; five
+GitHub source/artifact downloads also match. All canonical/preview JSON mirrors
+have SHA-256 b34e0750…a53c7. The official compressed archive API repaired the
+CLI HTTP 413 failures in bounded batches; full historical archive parts remain
+in GitHub. The hosted build was queued; its success is unverified. Exact receipt:
+`evidence/rev-0.0.21-alpha.0/PUBLICATION.json`. Full remaining-net completion is still
 active; this is not the requested final fabrication candidate.
 
 **PROTOTYPE FABRICATION READY: NO.**

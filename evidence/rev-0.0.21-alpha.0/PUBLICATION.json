@@ -1,0 +1,2079 @@
+{
+  "revision": "0.0.21-alpha.0",
+  "source_commit": "9f2d6a33c195e13fc1df4e8a9529f9789c7c2610",
+  "package_name": "AnasSarkiz/smart-nema14-motor-controller--01a0fd9b",
+  "package_release_id": "500e4d7d-eb50-490e-96d8-7b8afd71c3c0",
+  "scope": "Matching electronics and mechanical source, task/config context, current qualification reports and fresh canonical/preview JSON. Complete historic routing evidence and skill/reference archives remain in public GitHub.",
+  "verification_method": "Anonymous official file downloads, SHA-256 of exact bytes",
+  "verification": [
+    {
+      "path": "AGENTS.md",
+      "status": 200,
+      "sha256": "f78f5ab55d8e7ad49c51d8688cfe920d97f76accabaabc88de3ca0c26fe0391c",
+      "expected_sha256": "f78f5ab55d8e7ad49c51d8688cfe920d97f76accabaabc88de3ca0c26fe0391c",
+      "verified": true
+    },
+    {
+      "path": "assembly.circuit.tsx",
+      "status": 200,
+      "sha256": "59e8aca9aaef62287d1590954a5127a8a645c082ca161a8fd2d00cf4345593b0",
+      "expected_sha256": "59e8aca9aaef62287d1590954a5127a8a645c082ca161a8fd2d00cf4345593b0",
+      "verified": true
+    },
+    {
+      "path": "biome.json",
+      "status": 200,
+      "sha256": "01daff404e24483f2670720cd1e14604cef6b059a35fff07cad5ca0fe55856ec",
+      "expected_sha256": "01daff404e24483f2670720cd1e14604cef6b059a35fff07cad5ca0fe55856ec",
+      "verified": true
+    },
+    {
+      "path": "build/routing-review/BUILD-STATUS.json",
+      "status": 200,
+      "sha256": "fc5e2f9888e8839566029cce9977ad4b82ad712af138209db8f408ad599f9d80",
+      "expected_sha256": "fc5e2f9888e8839566029cce9977ad4b82ad712af138209db8f408ad599f9d80",
+      "verified": true
+    },
+    {
+      "path": "build/routing-review/circuit.json",
+      "status": 200,
+      "sha256": "b34e0750a4ae9700afa078058bd48f4fc32d4d448cbe4c961d4da169752a53c7",
+      "expected_sha256": "b34e0750a4ae9700afa078058bd48f4fc32d4d448cbe4c961d4da169752a53c7",
+      "verified": true
+    },
+    {
+      "path": "bun.lock",
+      "status": 200,
+      "sha256": "cadb135db5a5715add2be0e9d7808a0851102306a371dda16517e69005684e82",
+      "expected_sha256": "cadb135db5a5715add2be0e9d7808a0851102306a371dda16517e69005684e82",
+      "verified": true
+    },
+    {
+      "path": "CLOUD_HANDOFF.md",
+      "status": 200,
+      "sha256": "5c9afa3b1236bfd08137a8e1fcc2682aca595e2f56098b7915a5ee90b4257cca",
+      "expected_sha256": "5c9afa3b1236bfd08137a8e1fcc2682aca595e2f56098b7915a5ee90b4257cca",
+      "verified": true
+    },
+    {
+      "path": "controller-preview.circuit.tsx",
+      "status": 200,
+      "sha256": "f288252e595a86da47a410c74ae17dac0082856b2e1117f377d98a7140ee4200",
+      "expected_sha256": "f288252e595a86da47a410c74ae17dac0082856b2e1117f377d98a7140ee4200",
+      "verified": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "status": 200,
+      "sha256": "b34e0750a4ae9700afa078058bd48f4fc32d4d448cbe4c961d4da169752a53c7",
+      "expected_sha256": "b34e0750a4ae9700afa078058bd48f4fc32d4d448cbe4c961d4da169752a53c7",
+      "verified": true
+    },
+    {
+      "path": "dist/routing-review/circuit.json",
+      "status": 200,
+      "sha256": "b34e0750a4ae9700afa078058bd48f4fc32d4d448cbe4c961d4da169752a53c7",
+      "expected_sha256": "b34e0750a4ae9700afa078058bd48f4fc32d4d448cbe4c961d4da169752a53c7",
+      "verified": true
+    },
+    {
+      "path": "docs/cloud/CONTEXT-MANIFEST.json",
+      "status": 200,
+      "sha256": "f8630c291e4db7f3fd7724c6408a6dfdc4ccb9802713e7ceb245274d131db969",
+      "expected_sha256": "f8630c291e4db7f3fd7724c6408a6dfdc4ccb9802713e7ceb245274d131db969",
+      "verified": true
+    },
+    {
+      "path": "docs/cloud/ENVIRONMENT.md",
+      "status": 200,
+      "sha256": "0f19104eacae1fd32f0a1c0f69de91897d09797e9ec7e6e634de2c9ff2f262b8",
+      "expected_sha256": "0f19104eacae1fd32f0a1c0f69de91897d09797e9ec7e6e634de2c9ff2f262b8",
+      "verified": true
+    },
+    {
+      "path": "docs/cloud/ROUTING-HISTORY-MANIFEST.json",
+      "status": 200,
+      "sha256": "86c2fdc0a39accef4f94fbfe97674c4799f631ad95c5accee7970b36957682dd",
+      "expected_sha256": "86c2fdc0a39accef4f94fbfe97674c4799f631ad95c5accee7970b36957682dd",
+      "verified": true
+    },
+    {
+      "path": "docs/cloud/TASK.md",
+      "status": 200,
+      "sha256": "3d40198d031a451b73cb691d983fc64cccf6c775d68f81e09e48db0a1c2aae8e",
+      "expected_sha256": "3d40198d031a451b73cb691d983fc64cccf6c775d68f81e09e48db0a1c2aae8e",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.21-alpha.0/cloud/canonical/BUILD-STATUS.json",
+      "status": 200,
+      "sha256": "1b2f5a083325c33035cb246dcb6ceb08b00a036dfd9bf30e39aa76843a88af4f",
+      "expected_sha256": "1b2f5a083325c33035cb246dcb6ceb08b00a036dfd9bf30e39aa76843a88af4f",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.21-alpha.0/cloud/canonical/BUILD.log",
+      "status": 200,
+      "sha256": "dc17d250e06163e044bf0067ee1c1a06904d105fb58f02a8f98a8fff598599ea",
+      "expected_sha256": "dc17d250e06163e044bf0067ee1c1a06904d105fb58f02a8f98a8fff598599ea",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.21-alpha.0/cloud/canonical/circuit.json",
+      "status": 200,
+      "sha256": "b34e0750a4ae9700afa078058bd48f4fc32d4d448cbe4c961d4da169752a53c7",
+      "expected_sha256": "b34e0750a4ae9700afa078058bd48f4fc32d4d448cbe4c961d4da169752a53c7",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.21-alpha.0/cloud/canonical/FILLED-ALL-NETS.json",
+      "status": 200,
+      "sha256": "2931c5a2716dc508eea43dbecdf8d6271db4a7cec1a5019adf1df9a909ea4a59",
+      "expected_sha256": "2931c5a2716dc508eea43dbecdf8d6271db4a7cec1a5019adf1df9a909ea4a59",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.21-alpha.0/cloud/canonical/FILLED-ALL-NETS.log",
+      "status": 200,
+      "sha256": "aea70cb821c54bd6091b49381b4dda72272939af323a920a2b06f4436e2281b2",
+      "expected_sha256": "aea70cb821c54bd6091b49381b4dda72272939af323a920a2b06f4436e2281b2",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.21-alpha.0/cloud/canonical/GEOMETRY.json",
+      "status": 200,
+      "sha256": "38afd28a879cd03a1a8ff451e111a9a05a295083371b07a5d5f829e0446db7c6",
+      "expected_sha256": "38afd28a879cd03a1a8ff451e111a9a05a295083371b07a5d5f829e0446db7c6",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.21-alpha.0/cloud/canonical/GEOMETRY.log",
+      "status": 200,
+      "sha256": "38afd28a879cd03a1a8ff451e111a9a05a295083371b07a5d5f829e0446db7c6",
+      "expected_sha256": "38afd28a879cd03a1a8ff451e111a9a05a295083371b07a5d5f829e0446db7c6",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.21-alpha.0/cloud/canonical/NATIVE-SOURCE-CHECKS.json",
+      "status": 200,
+      "sha256": "96d133778f5316bc9eaa6031e6433821acca401dac11dbd4c03fd09c70984700",
+      "expected_sha256": "96d133778f5316bc9eaa6031e6433821acca401dac11dbd4c03fd09c70984700",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.21-alpha.0/cloud/canonical/RAW-VBUS-NECK.json",
+      "status": 200,
+      "sha256": "03dfa6eb96ee80eec24cb757c6331377cdda25ebe2a7132276f698354bfe50cb",
+      "expected_sha256": "03dfa6eb96ee80eec24cb757c6331377cdda25ebe2a7132276f698354bfe50cb",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.21-alpha.0/cloud/canonical/RENDER-GEOMETRY-MATCH.json",
+      "status": 200,
+      "sha256": "07cb6c622e5207781e38b32857fdc79057585d502a4f2826817ebf77c61292c2",
+      "expected_sha256": "07cb6c622e5207781e38b32857fdc79057585d502a4f2826817ebf77c61292c2",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.21-alpha.0/cloud/canonical/USB-LENGTHS.json",
+      "status": 200,
+      "sha256": "adb412082ce4981828f87b1148822e54d6f748bd1d53b4efd6e215dc29ba4899",
+      "expected_sha256": "adb412082ce4981828f87b1148822e54d6f748bd1d53b4efd6e215dc29ba4899",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.21-alpha.0/cloud/canonical/USB-RETURN.json",
+      "status": 200,
+      "sha256": "f809aaffd4dbe10c345590bbc62945752671f89ffb21a92b29d567e5512f977a",
+      "expected_sha256": "f809aaffd4dbe10c345590bbc62945752671f89ffb21a92b29d567e5512f977a",
+      "verified": true
+    },
+    {
+      "path": "index.circuit.tsx",
+      "status": 200,
+      "sha256": "68f27962e6b7c62406096d9b741db1c5d59652bc3fe936a70a1ca938cd238e69",
+      "expected_sha256": "68f27962e6b7c62406096d9b741db1c5d59652bc3fe936a70a1ca938cd238e69",
+      "verified": true
+    },
+    {
+      "path": "mechanical/assets/carrier-fastener-envelopes.step",
+      "status": 200,
+      "sha256": "c0cedb4963573cb9c6f2f48da053b339b3442f80d202471ccec5b353ce465b38",
+      "expected_sha256": "c0cedb4963573cb9c6f2f48da053b339b3442f80d202471ccec5b353ce465b38",
+      "verified": true
+    },
+    {
+      "path": "mechanical/assets/diametric-magnet.step",
+      "status": 200,
+      "sha256": "7d23a2de70fe982f5c893b23b8676fff2fa30ecef5930f5a0dbe03347465207a",
+      "expected_sha256": "7d23a2de70fe982f5c893b23b8676fff2fa30ecef5930f5a0dbe03347465207a",
+      "verified": true
+    },
+    {
+      "path": "mechanical/assets/front-flange-carrier.step",
+      "status": 200,
+      "sha256": "1a1f9fad9c65e6270a6c0d127b0d99fe8085d0ddac25c23c33482dc81bb312e2",
+      "expected_sha256": "1a1f9fad9c65e6270a6c0d127b0d99fe8085d0ddac25c23c33482dc81bb312e2",
+      "verified": true
+    },
+    {
+      "path": "mechanical/assets/retaining-cup.step",
+      "status": 200,
+      "sha256": "5b05b26b4d151384e1de0a6c92cde8990534c68cbedd03fe6a2d3f8c4fa5087e",
+      "expected_sha256": "5b05b26b4d151384e1de0a6c92cde8990534c68cbedd03fe6a2d3f8c4fa5087e",
+      "verified": true
+    },
+    {
+      "path": "mechanical/assets/standoffs.step",
+      "status": 200,
+      "sha256": "f1e3ed531ef190bc21015c1d20c0bc0768afbf76b1e8d0dfec56853bd842366b",
+      "expected_sha256": "f1e3ed531ef190bc21015c1d20c0bc0768afbf76b1e8d0dfec56853bd842366b",
+      "verified": true
+    },
+    {
+      "path": "mechanical/build-viewer.py",
+      "status": 200,
+      "sha256": "0298f5b3b697f5f012871f0c699678a18c3260765043526108e568683f2286d2",
+      "expected_sha256": "0298f5b3b697f5f012871f0c699678a18c3260765043526108e568683f2286d2",
+      "verified": true
+    },
+    {
+      "path": "mechanical/check-assembly.py",
+      "status": 200,
+      "sha256": "c36bb5b40ae215a35e3194a82aa90bd3172d228d5d0549a7d65d456549818d95",
+      "expected_sha256": "c36bb5b40ae215a35e3194a82aa90bd3172d228d5d0549a7d65d456549818d95",
+      "verified": true
+    },
+    {
+      "path": "mechanical/check-carrier-tolerance.py",
+      "status": 200,
+      "sha256": "e0fdc7662012e1a8aeb31a644cffecd37c2d104b9f46b2926014281d9c8c383d",
+      "expected_sha256": "e0fdc7662012e1a8aeb31a644cffecd37c2d104b9f46b2926014281d9c8c383d",
+      "verified": true
+    },
+    {
+      "path": "mechanical/check-front-carrier.py",
+      "status": 200,
+      "sha256": "89e4b0a3adb5d5dbb650fbc8b0203c525cbea1365acdc42e450463911ff33c8c",
+      "expected_sha256": "89e4b0a3adb5d5dbb650fbc8b0203c525cbea1365acdc42e450463911ff33c8c",
+      "verified": true
+    },
+    {
+      "path": "mechanical/check-mating-envelopes.py",
+      "status": 200,
+      "sha256": "c7ec098193676d44e326dc0d88dcdc4e28e064f41a332497e06e1f88ccab2eb9",
+      "expected_sha256": "c7ec098193676d44e326dc0d88dcdc4e28e064f41a332497e06e1f88ccab2eb9",
+      "verified": true
+    },
+    {
+      "path": "mechanical/check-selected-motor.py",
+      "status": 200,
+      "sha256": "f1f166b51ca7a782cfe85b25e75d4914a0187a4f0c61cf6097a1cf2dbd359b7b",
+      "expected_sha256": "f1f166b51ca7a782cfe85b25e75d4914a0187a4f0c61cf6097a1cf2dbd359b7b",
+      "verified": true
+    },
+    {
+      "path": "mechanical/check-tps26600-model.py",
+      "status": 200,
+      "sha256": "98cd1c2527f0c75e85c90217d5c4b0ee6b498971da1e66cf4cce72d960317ea4",
+      "expected_sha256": "98cd1c2527f0c75e85c90217d5c4b0ee6b498971da1e66cf4cce72d960317ea4",
+      "verified": true
+    },
+    {
+      "path": "mechanical/check-usb-connector-model.py",
+      "status": 200,
+      "sha256": "2def0cd4a01de15f2f930f57f57ab7b9fa8052a5cb4065d23aa16bc77ec6b90f",
+      "expected_sha256": "2def0cd4a01de15f2f930f57f57ab7b9fa8052a5cb4065d23aa16bc77ec6b90f",
+      "verified": true
+    },
+    {
+      "path": "mechanical/CONNECTOR-ORIENTATION-REVIEW.md",
+      "status": 200,
+      "sha256": "a297c261c3b81cb9ac0bbd88a5a426dc0f96902c5c792cc19e330f3565003fc5",
+      "expected_sha256": "a297c261c3b81cb9ac0bbd88a5a426dc0f96902c5c792cc19e330f3565003fc5",
+      "verified": true
+    },
+    {
+      "path": "mechanical/design-constraints.json",
+      "status": 200,
+      "sha256": "d349df02c713ce5ce1233a185aeff2dc7a0a23d229567159c7112da604c54241",
+      "expected_sha256": "d349df02c713ce5ce1233a185aeff2dc7a0a23d229567159c7112da604c54241",
+      "verified": true
+    },
+    {
+      "path": "mechanical/download-supplier-models.py",
+      "status": 200,
+      "sha256": "366a5d34797bf4244b0a51ceebe801a078428a24ca699522c222175e432f9464",
+      "expected_sha256": "366a5d34797bf4244b0a51ceebe801a078428a24ca699522c222175e432f9464",
+      "verified": true
+    },
+    {
+      "path": "mechanical/FRONT-CARRIER-REVIEW.md",
+      "status": 200,
+      "sha256": "055e169f9ddcc29f925cf71b31d7e5290a28172f349958b9c4a4cd6005c72f52",
+      "expected_sha256": "055e169f9ddcc29f925cf71b31d7e5290a28172f349958b9c4a4cd6005c72f52",
+      "verified": true
+    },
+    {
+      "path": "mechanical/generate-front-carrier.py",
+      "status": 200,
+      "sha256": "ff3bb4bdeb14a2dcbd39f03daa1d9a569ff734ac2f75018c2db80732a6a23d2b",
+      "expected_sha256": "ff3bb4bdeb14a2dcbd39f03daa1d9a569ff734ac2f75018c2db80732a6a23d2b",
+      "verified": true
+    },
+    {
+      "path": "mechanical/generate-hardware.py",
+      "status": 200,
+      "sha256": "8bf8b6e646271ccd35dea4dc578b6655dae26e7f76e58548c1adbfb058777574",
+      "expected_sha256": "8bf8b6e646271ccd35dea4dc578b6655dae26e7f76e58548c1adbfb058777574",
+      "verified": true
+    },
+    {
+      "path": "mechanical/manufacturing-rules.json",
+      "status": 200,
+      "sha256": "62ca5e0be3176e349dec1adf144d7fdbbfedacaf065d16dfff761ede4620bb50",
+      "expected_sha256": "62ca5e0be3176e349dec1adf144d7fdbbfedacaf065d16dfff761ede4620bb50",
+      "verified": true
+    },
+    {
+      "path": "mechanical/POWER-CORNER-REVIEW.md",
+      "status": 200,
+      "sha256": "4fbb689d997dc2b413f558949492de09703fce50568591b919f40afcc9aca63e",
+      "expected_sha256": "4fbb689d997dc2b413f558949492de09703fce50568591b919f40afcc9aca63e",
+      "verified": true
+    },
+    {
+      "path": "mechanical/render-connector-orientation.py",
+      "status": 200,
+      "sha256": "fe76f6b1c230b8478848b3b02ee0d0420028dedb3a9eed1213dacf5854d63566",
+      "expected_sha256": "fe76f6b1c230b8478848b3b02ee0d0420028dedb3a9eed1213dacf5854d63566",
+      "verified": true
+    },
+    {
+      "path": "mechanical/requirements.lock.txt",
+      "status": 200,
+      "sha256": "5dc6466ba004adce05a17a0e53b782c51c9c46cb12d40641a538c431e3f79a20",
+      "expected_sha256": "5dc6466ba004adce05a17a0e53b782c51c9c46cb12d40641a538c431e3f79a20",
+      "verified": true
+    },
+    {
+      "path": "mechanical/REVIEW.md",
+      "status": 200,
+      "sha256": "ae0383ce033715b59175d24543492497f306b27d1a94cee0afd5d1ff0d49a546",
+      "expected_sha256": "ae0383ce033715b59175d24543492497f306b27d1a94cee0afd5d1ff0d49a546",
+      "verified": true
+    },
+    {
+      "path": "mechanical/viewer.js",
+      "status": 200,
+      "sha256": "5a57739889d69c14ed65dc4d96016888e055cb9ec221f0c42ef741a930110146",
+      "expected_sha256": "5a57739889d69c14ed65dc4d96016888e055cb9ec221f0c42ef741a930110146",
+      "verified": true
+    },
+    {
+      "path": "mounted-assembly.circuit.tsx",
+      "status": 200,
+      "sha256": "e30cc2b33cd71e8ffd869c2e0ab3044b739c0eb9b5f92ecc255711fa2b6b7618",
+      "expected_sha256": "e30cc2b33cd71e8ffd869c2e0ab3044b739c0eb9b5f92ecc255711fa2b6b7618",
+      "verified": true
+    },
+    {
+      "path": "package.json",
+      "status": 200,
+      "sha256": "90245175ac93f2c324969d9650cd173f04b18944c600198fce939bcf37127d46",
+      "expected_sha256": "90245175ac93f2c324969d9650cd173f04b18944c600198fce939bcf37127d46",
+      "verified": true
+    },
+    {
+      "path": "README.md",
+      "status": 200,
+      "sha256": "f127d990ce9103df63bce29b4359b8c0df6855c3e8caee1571b0f89362ed621d",
+      "expected_sha256": "f127d990ce9103df63bce29b4359b8c0df6855c3e8caee1571b0f89362ed621d",
+      "verified": true
+    },
+    {
+      "path": "routing-review.circuit.tsx",
+      "status": 200,
+      "sha256": "07666455a389869bc6f47ce953951aa30a5c9e57318cc272eb6af854c5c602f3",
+      "expected_sha256": "07666455a389869bc6f47ce953951aa30a5c9e57318cc272eb6af854c5c602f3",
+      "verified": true
+    },
+    {
+      "path": "scripts/adopt-complete-joint-routing.py",
+      "status": 200,
+      "sha256": "c1463b481dabfe258c7dcf4cf549e851a11e00b40b43695a1fd30b5bd424a602",
+      "expected_sha256": "c1463b481dabfe258c7dcf4cf549e851a11e00b40b43695a1fd30b5bd424a602",
+      "verified": true
+    },
+    {
+      "path": "scripts/adopt-complete-local-nets.py",
+      "status": 200,
+      "sha256": "80f4015dd60e367e697fc069c5f43d2e8f7dec3bf28b3980c65bd9c0f64cd7c6",
+      "expected_sha256": "80f4015dd60e367e697fc069c5f43d2e8f7dec3bf28b3980c65bd9c0f64cd7c6",
+      "verified": true
+    },
+    {
+      "path": "scripts/adopt-joint-local-routing.py",
+      "status": 200,
+      "sha256": "73a059121b8a10a38e9cfbca88ce4bfca898fca80f435a38036bdec119b4dcf3",
+      "expected_sha256": "73a059121b8a10a38e9cfbca88ce4bfca898fca80f435a38036bdec119b4dcf3",
+      "verified": true
+    },
+    {
+      "path": "scripts/all-imports-audit.circuit.tsx",
+      "status": 200,
+      "sha256": "50bf10e3a2d114d6b0bee41043ffa94b744cb91ef403a78cdb4b409a61532618",
+      "expected_sha256": "50bf10e3a2d114d6b0bee41043ffa94b744cb91ef403a78cdb4b409a61532618",
+      "verified": true
+    },
+    {
+      "path": "scripts/apply-ground-stitch-edits.py",
+      "status": 200,
+      "sha256": "c997423c652c38079ff0a86de846d8a76f66180407b3df67565943bfccdc3ef6",
+      "expected_sha256": "c997423c652c38079ff0a86de846d8a76f66180407b3df67565943bfccdc3ef6",
+      "verified": true
+    },
+    {
+      "path": "scripts/apply-manual-route-edits.py",
+      "status": 200,
+      "sha256": "afaff4b966e80827f35b87b2083ae1917e490e9f5a3320c1eb94d82d2f0d67d6",
+      "expected_sha256": "afaff4b966e80827f35b87b2083ae1917e490e9f5a3320c1eb94d82d2f0d67d6",
+      "verified": true
+    },
+    {
+      "path": "scripts/bounded-routing-trial.circuit.tsx",
+      "status": 200,
+      "sha256": "ca961b9eac4d0cf29955657aa2240e6f48e4b899af3af7aaddb425c1b1aa0e47",
+      "expected_sha256": "ca961b9eac4d0cf29955657aa2240e6f48e4b899af3af7aaddb425c1b1aa0e47",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-all-imports.mjs",
+      "status": 200,
+      "sha256": "4afbc4f9ee473920217693c656e6bca72321abc5d0c6cc88d46de50f810f89d3",
+      "expected_sha256": "4afbc4f9ee473920217693c656e6bca72321abc5d0c6cc88d46de50f810f89d3",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-bom-catalog.mjs",
+      "status": 200,
+      "sha256": "3a550d55a262c86d48d179795bd4d761113e708adaafdb52b86f8a51bfa8b8f8",
+      "expected_sha256": "3a550d55a262c86d48d179795bd4d761113e708adaafdb52b86f8a51bfa8b8f8",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-cloud-native-runtime.py",
+      "status": 200,
+      "sha256": "82729587a4570a478c99db77e57b85b749c105f71a0812ea9f6b2281b7ac12ca",
+      "expected_sha256": "82729587a4570a478c99db77e57b85b749c105f71a0812ea9f6b2281b7ac12ca",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-copper-geometry.py",
+      "status": 200,
+      "sha256": "ce238660f90dc6519e9977e174392e3eccb7509a413d97729cb4ef4a1bee1eb3",
+      "expected_sha256": "ce238660f90dc6519e9977e174392e3eccb7509a413d97729cb4ef4a1bee1eb3",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-critical-import-pins.mjs",
+      "status": 200,
+      "sha256": "f4c35815357126c89e6fc1a0b3bcda5f50f2bed8abbd8b443e25b39a31dfd698",
+      "expected_sha256": "f4c35815357126c89e6fc1a0b3bcda5f50f2bed8abbd8b443e25b39a31dfd698",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-draft-connectivity.mjs",
+      "status": 200,
+      "sha256": "81ee4bd589b15ed86a5556b0f689941af5e1b9731350af4a9e6f503b27af8380",
+      "expected_sha256": "81ee4bd589b15ed86a5556b0f689941af5e1b9731350af4a9e6f503b27af8380",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-filled-copper.py",
+      "status": 200,
+      "sha256": "ec85004607e08cc2c2c3fc4fba68d7ce0564c4f724154db282cca23bb43ea86e",
+      "expected_sha256": "ec85004607e08cc2c2c3fc4fba68d7ce0564c4f724154db282cca23bb43ea86e",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-filled-via-guards.py",
+      "status": 200,
+      "sha256": "191a6f905687b2fca828b675f67cde4f20b5a29b450c4d00bd930892af934c9a",
+      "expected_sha256": "191a6f905687b2fca828b675f67cde4f20b5a29b450c4d00bd930892af934c9a",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-imported-symbol-rotation.mjs",
+      "status": 200,
+      "sha256": "d684369ea71d135c809ec671cea3ab6da15884c3ee6cdf4dc1d87634133c413d",
+      "expected_sha256": "d684369ea71d135c809ec671cea3ab6da15884c3ee6cdf4dc1d87634133c413d",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-mechanical-assembly.mjs",
+      "status": 200,
+      "sha256": "966a258273e46ec4a32acee303608e41aeb507c4881b2b5153cb1951e8279a4d",
+      "expected_sha256": "966a258273e46ec4a32acee303608e41aeb507c4881b2b5153cb1951e8279a4d",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-motor-connector-footprint.mjs",
+      "status": 200,
+      "sha256": "7444a695213c5351368bf6dcb5b7c3b8a2db4af1f50e2c16d62b46351d1f3ec2",
+      "expected_sha256": "7444a695213c5351368bf6dcb5b7c3b8a2db4af1f50e2c16d62b46351d1f3ec2",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-power-corners.py",
+      "status": 200,
+      "sha256": "22373ac0d42c0535752501e468d016253e637d03ad5a980665ce523e39db6d76",
+      "expected_sha256": "22373ac0d42c0535752501e468d016253e637d03ad5a980665ce523e39db6d76",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-power-imports.mjs",
+      "status": 200,
+      "sha256": "0dc6848e2497739262c1b35f43f89d877d563b9d709a4456360b1aa098cb4e99",
+      "expected_sha256": "0dc6848e2497739262c1b35f43f89d877d563b9d709a4456360b1aa098cb4e99",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-raw-vbus-neck.py",
+      "status": 200,
+      "sha256": "d573827495c8b9b72b09e9d0b935d554800700879fa5a29be28e24e8c57f992d",
+      "expected_sha256": "d573827495c8b9b72b09e9d0b935d554800700879fa5a29be28e24e8c57f992d",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-released-imports.mjs",
+      "status": 200,
+      "sha256": "475f4526afc78523885f30bba7ff2e60f00845075dacfcac282402abc1013f51",
+      "expected_sha256": "475f4526afc78523885f30bba7ff2e60f00845075dacfcac282402abc1013f51",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-routing-dsn.mjs",
+      "status": 200,
+      "sha256": "295e9c820de61721c0f7668887625c45073767eaa721eabdc247000c09848231",
+      "expected_sha256": "295e9c820de61721c0f7668887625c45073767eaa721eabdc247000c09848231",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-thermal-via-guards.py",
+      "status": 200,
+      "sha256": "de40eacb76121bf4fed27394bef8d275041bb3e19aeeadf7a779c1a076a1e537",
+      "expected_sha256": "de40eacb76121bf4fed27394bef8d275041bb3e19aeeadf7a779c1a076a1e537",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-usb-imports.mjs",
+      "status": 200,
+      "sha256": "6fe890f2eb1118c9bd78643f565bace0a1402a9a68c63f250b8337eef7592e88",
+      "expected_sha256": "6fe890f2eb1118c9bd78643f565bace0a1402a9a68c63f250b8337eef7592e88",
+      "verified": true
+    },
+    {
+      "path": "scripts/check-usb-manufacturer-footprint.mjs",
+      "status": 200,
+      "sha256": "84202159f9b20e5ae0327294ce8e5395502035b7a52058e17efe13f187fd4f5c",
+      "expected_sha256": "84202159f9b20e5ae0327294ce8e5395502035b7a52058e17efe13f187fd4f5c",
+      "verified": true
+    },
+    {
+      "path": "scripts/cloud-setup.sh",
+      "status": 200,
+      "sha256": "be24bdbc1880b0aa8ea433bd281ad6db3f36d80f2cf6d34febd180179f443fae",
+      "expected_sha256": "be24bdbc1880b0aa8ea433bd281ad6db3f36d80f2cf6d34febd180179f443fae",
+      "verified": true
+    },
+    {
+      "path": "scripts/cloud-smoke.sh",
+      "status": 200,
+      "sha256": "7aa25c3899cb1add3b86c6c5770f695a770478abfd75ff76c4d581dde67c2ce1",
+      "expected_sha256": "7aa25c3899cb1add3b86c6c5770f695a770478abfd75ff76c4d581dde67c2ce1",
+      "verified": true
+    },
+    {
+      "path": "scripts/compact-saved-port-tree.py",
+      "status": 200,
+      "sha256": "11b5270839cb06eef621cd3d78ab07c5a7c294535c9caf6f0bfa027a922cfc94",
+      "expected_sha256": "11b5270839cb06eef621cd3d78ab07c5a7c294535c9caf6f0bfa027a922cfc94",
+      "verified": true
+    },
+    {
+      "path": "scripts/efuse-enable-trial.circuit.tsx",
+      "status": 200,
+      "sha256": "06971711b0fd7f73416ce21de4fd3fa4dc37dd70cc874516fe1e083ee62bc3d3",
+      "expected_sha256": "06971711b0fd7f73416ce21de4fd3fa4dc37dd70cc874516fe1e083ee62bc3d3",
+      "verified": true
+    },
+    {
+      "path": "scripts/efuse-rtn-island.circuit.tsx",
+      "status": 200,
+      "sha256": "68c4b0acc648496708e3293275a3f6ade1ed2e4b6775bb2d698312b3a709f954",
+      "expected_sha256": "68c4b0acc648496708e3293275a3f6ade1ed2e4b6775bb2d698312b3a709f954",
+      "verified": true
+    },
+    {
+      "path": "scripts/export-routing-interchange.py",
+      "status": 200,
+      "sha256": "5f3c2dec0aa7ccd67d4f2155d3d05d9d68240410fbce4d8e314da8fe6c9e401b",
+      "expected_sha256": "5f3c2dec0aa7ccd67d4f2155d3d05d9d68240410fbce4d8e314da8fe6c9e401b",
+      "verified": true
+    },
+    {
+      "path": "scripts/generate-bom-table.mjs",
+      "status": 200,
+      "sha256": "94180860f1624ec48b7637c92f13e6c9f0af72b6953c7594f3ff8129e3f90c81",
+      "expected_sha256": "94180860f1624ec48b7637c92f13e6c9f0af72b6953c7594f3ff8129e3f90c81",
+      "verified": true
+    },
+    {
+      "path": "scripts/generate-review-bom.mjs",
+      "status": 200,
+      "sha256": "c16bcc6a38f26211370eb0b681aebf51e8681be7aeaf3e1c6b9a2a8fe587477d",
+      "expected_sha256": "c16bcc6a38f26211370eb0b681aebf51e8681be7aeaf3e1c6b9a2a8fe587477d",
+      "verified": true
+    },
+    {
+      "path": "scripts/ground-plane-trial.circuit.tsx",
+      "status": 200,
+      "sha256": "83b65974917949ec3bad023c8f5a00a995917f6896a243ebde0eafe82728c8a9",
+      "expected_sha256": "83b65974917949ec3bad023c8f5a00a995917f6896a243ebde0eafe82728c8a9",
+      "verified": true
+    },
+    {
+      "path": "scripts/import-audit.circuit.tsx",
+      "status": 200,
+      "sha256": "4f87d9bbe8767b1ca88d434590c55f6b3f5e05f729ac8a18a38d2baecde753a8",
+      "expected_sha256": "4f87d9bbe8767b1ca88d434590c55f6b3f5e05f729ac8a18a38d2baecde753a8",
+      "verified": true
+    },
+    {
+      "path": "scripts/import-local-routes.py",
+      "status": 200,
+      "sha256": "801d0d024a26916a6d5fbd9d26b74ea981e0d24569b7fbc370c10ca2b9744914",
+      "expected_sha256": "801d0d024a26916a6d5fbd9d26b74ea981e0d24569b7fbc370c10ca2b9744914",
+      "verified": true
+    },
+    {
+      "path": "scripts/imported-symbol-rotation.circuit.tsx",
+      "status": 200,
+      "sha256": "0c5f21fa9a88ff567fb59d2328c19d21b3cd6d6229b2ba967321fc6c7aea3b38",
+      "expected_sha256": "0c5f21fa9a88ff567fb59d2328c19d21b3cd6d6229b2ba967321fc6c7aea3b38",
+      "verified": true
+    },
+    {
+      "path": "scripts/incremental-i2c-pipeline3.circuit.tsx",
+      "status": 200,
+      "sha256": "4e5fcef3eb3852527072ad9a4c1e454b38602e4b573592920ba96558bac835ef",
+      "expected_sha256": "4e5fcef3eb3852527072ad9a4c1e454b38602e4b573592920ba96558bac835ef",
+      "verified": true
+    },
+    {
+      "path": "scripts/incremental-i2c-pipeline9.circuit.tsx",
+      "status": 200,
+      "sha256": "8e44814a1201c6b2fb351a36a1c7ccec66b6626db0f70f3468d268a8cfb1baf9",
+      "expected_sha256": "8e44814a1201c6b2fb351a36a1c7ccec66b6626db0f70f3468d268a8cfb1baf9",
+      "verified": true
+    },
+    {
+      "path": "scripts/incremental-i2c.circuit.tsx",
+      "status": 200,
+      "sha256": "7e5e0ed6c9b8ecfda90d65e6f82d374a9b672e2dd566acf49faf9ee58abae167",
+      "expected_sha256": "7e5e0ed6c9b8ecfda90d65e6f82d374a9b672e2dd566acf49faf9ee58abae167",
+      "verified": true
+    },
+    {
+      "path": "scripts/inspect-planner-clearances.py",
+      "status": 200,
+      "sha256": "0f0c9fd97deceb197b2eacf3974ffaabda23c40bc14a85aac7805df82b536264",
+      "expected_sha256": "0f0c9fd97deceb197b2eacf3974ffaabda23c40bc14a85aac7805df82b536264",
+      "verified": true
+    },
+    {
+      "path": "scripts/inspect-route-candidates.py",
+      "status": 200,
+      "sha256": "f6d35db8eaa5a3e48a662ad32930cab3f0deb98d412b7bc8431ed532d3db3891",
+      "expected_sha256": "f6d35db8eaa5a3e48a662ad32930cab3f0deb98d412b7bc8431ed532d3db3891",
+      "verified": true
+    },
+    {
+      "path": "scripts/legalize-unrouted-placement.py",
+      "status": 200,
+      "sha256": "c979e21b75c85dc0a4f95d8c666dc498792caed6dd671d936ea07284461c8f5c",
+      "expected_sha256": "c979e21b75c85dc0a4f95d8c666dc498792caed6dd671d936ea07284461c8f5c",
+      "verified": true
+    },
+    {
+      "path": "scripts/manual-ground-escape.circuit.tsx",
+      "status": 200,
+      "sha256": "4f12ec79295f25b4ccf18411273adb6f8399b6351039806f808378dad857718f",
+      "expected_sha256": "4f12ec79295f25b4ccf18411273adb6f8399b6351039806f808378dad857718f",
+      "verified": true
+    },
+    {
+      "path": "scripts/measure-usb-paths.py",
+      "status": 200,
+      "sha256": "086f0c3a3507d39dd9aa72a2a70ac90fa251c25c00308d299faee57701c662d4",
+      "expected_sha256": "086f0c3a3507d39dd9aa72a2a70ac90fa251c25c00308d299faee57701c662d4",
+      "verified": true
+    },
+    {
+      "path": "scripts/motor-bounded57.circuit.tsx",
+      "status": 200,
+      "sha256": "8eb19db431cee41d1856ce3732256a67611f9929c655ff941e001ea960bcdd48",
+      "expected_sha256": "8eb19db431cee41d1856ce3732256a67611f9929c655ff941e001ea960bcdd48",
+      "verified": true
+    },
+    {
+      "path": "scripts/native-cc1-cloud.circuit.tsx",
+      "status": 200,
+      "sha256": "a00fa44e302afc28c1f01c614441e001a2a14956ff86a9bff7dce8c72e0579bb",
+      "expected_sha256": "a00fa44e302afc28c1f01c614441e001a2a14956ff86a9bff7dce8c72e0579bb",
+      "verified": true
+    },
+    {
+      "path": "scripts/native-cc1-pipeline4-cloud.circuit.tsx",
+      "status": 200,
+      "sha256": "7236563c93b69aa449fd4a4c655511af642ba725ea2d0e3705a1e30eb2cf90a5",
+      "expected_sha256": "7236563c93b69aa449fd4a4c655511af642ba725ea2d0e3705a1e30eb2cf90a5",
+      "verified": true
+    },
+    {
+      "path": "scripts/native-cc1-pipeline7-cloud.circuit.tsx",
+      "status": 200,
+      "sha256": "54501af4cbba7d34e8b1fa2f5ae3484b1378b42c79cec263cc543c9bae8639e3",
+      "expected_sha256": "54501af4cbba7d34e8b1fa2f5ae3484b1378b42c79cec263cc543c9bae8639e3",
+      "verified": true
+    },
+    {
+      "path": "scripts/native-ilim115.circuit.tsx",
+      "status": 200,
+      "sha256": "003c60710380389869c889a46b8a063625004534075bf699c41eedcda96332e2",
+      "expected_sha256": "003c60710380389869c889a46b8a063625004534075bf699c41eedcda96332e2",
+      "verified": true
+    },
+    {
+      "path": "scripts/native-protection227.circuit.tsx",
+      "status": 200,
+      "sha256": "db7a9fdcb8cd826481462f0ca5aa5a78d74d2d8f7bff738b901f42a9e6a8195e",
+      "expected_sha256": "db7a9fdcb8cd826481462f0ca5aa5a78d74d2d8f7bff738b901f42a9e6a8195e",
+      "verified": true
+    },
+    {
+      "path": "scripts/native-protection228.circuit.tsx",
+      "status": 200,
+      "sha256": "319b3f123e46d5b52130c6a6cecb41d4e0323534ca561905343fb611c136e878",
+      "expected_sha256": "319b3f123e46d5b52130c6a6cecb41d4e0323534ca561905343fb611c136e878",
+      "verified": true
+    },
+    {
+      "path": "scripts/native-protection229.circuit.tsx",
+      "status": 200,
+      "sha256": "319b3f123e46d5b52130c6a6cecb41d4e0323534ca561905343fb611c136e878",
+      "expected_sha256": "319b3f123e46d5b52130c6a6cecb41d4e0323534ca561905343fb611c136e878",
+      "verified": true
+    },
+    {
+      "path": "scripts/native-uart-tx-cloud.circuit.tsx",
+      "status": 200,
+      "sha256": "42e780168023328ed48d8208a2285bb87b3e420543bc9b3f0a09a18fd9da3dfa",
+      "expected_sha256": "42e780168023328ed48d8208a2285bb87b3e420543bc9b3f0a09a18fd9da3dfa",
+      "verified": true
+    },
+    {
+      "path": "scripts/native-uart-tx-pipeline4-cloud.circuit.tsx",
+      "status": 200,
+      "sha256": "add626e67249bb130b6329c4434529c7583f8ab2e20d32253d762b33fc9ecce2",
+      "expected_sha256": "add626e67249bb130b6329c4434529c7583f8ab2e20d32253d762b33fc9ecce2",
+      "verified": true
+    },
+    {
+      "path": "scripts/outer-ground-islands.circuit.tsx",
+      "status": 200,
+      "sha256": "5ccf29844c797b95fac8a70be1db715a845e2be15324348f5e75bd207ca48dc9",
+      "expected_sha256": "5ccf29844c797b95fac8a70be1db715a845e2be15324348f5e75bd207ca48dc9",
+      "verified": true
+    },
+    {
+      "path": "scripts/ovp-bus-lanes.circuit.tsx",
+      "status": 200,
+      "sha256": "3c462a8d6fcc8c03f18ab3673ae03933f541cc7dd936ff8ef14cad86b117b79b",
+      "expected_sha256": "3c462a8d6fcc8c03f18ab3673ae03933f541cc7dd936ff8ef14cad86b117b79b",
+      "verified": true
+    },
+    {
+      "path": "scripts/pd-cc2-bounded.circuit.tsx",
+      "status": 200,
+      "sha256": "1f7383131bba000ea0f62ba5760b27debbb25c7389e6a4a2261d3709bf878072",
+      "expected_sha256": "1f7383131bba000ea0f62ba5760b27debbb25c7389e6a4a2261d3709bf878072",
+      "verified": true
+    },
+    {
+      "path": "scripts/pipeline9-full.circuit.tsx",
+      "status": 200,
+      "sha256": "c2abef53946110cb22f83609ed60b8ad2ee0f6378ac0a9007699a76994f23798",
+      "expected_sha256": "c2abef53946110cb22f83609ed60b8ad2ee0f6378ac0a9007699a76994f23798",
+      "verified": true
+    },
+    {
+      "path": "scripts/place-controller-mount.py",
+      "status": 200,
+      "sha256": "7c19ffdbc4613b4a6158d6190e39adbc69e851699a004d52b543d6006afa5909",
+      "expected_sha256": "7c19ffdbc4613b4a6158d6190e39adbc69e851699a004d52b543d6006afa5909",
+      "verified": true
+    },
+    {
+      "path": "scripts/placement-escape-trial.circuit.tsx",
+      "status": 200,
+      "sha256": "7e2afbad4ea3a67b6948a7e7fd41c430697f55c1aca9f1fe1be1635b53ad1293",
+      "expected_sha256": "7e2afbad4ea3a67b6948a7e7fd41c430697f55c1aca9f1fe1be1635b53ad1293",
+      "verified": true
+    },
+    {
+      "path": "scripts/plane-completion-trial.circuit.tsx",
+      "status": 200,
+      "sha256": "364e30c28dca9d5fa8439087558fe731903838fa15dd61ceb36cc9e564bb46d7",
+      "expected_sha256": "364e30c28dca9d5fa8439087558fe731903838fa15dd61ceb36cc9e564bb46d7",
+      "verified": true
+    },
+    {
+      "path": "scripts/port-tree-main.circuit.tsx",
+      "status": 200,
+      "sha256": "b49009ea00dd3c77ecf0aa95903f2e2bb5a0f604489f4a4f9c06856ce98b6c6b",
+      "expected_sha256": "b49009ea00dd3c77ecf0aa95903f2e2bb5a0f604489f4a4f9c06856ce98b6c6b",
+      "verified": true
+    },
+    {
+      "path": "scripts/port-tree-pipeline7.circuit.tsx",
+      "status": 200,
+      "sha256": "140eae8c7d28357c17ce22a41d20144f2ba04c05ff3f755690fff7926755c939",
+      "expected_sha256": "140eae8c7d28357c17ce22a41d20144f2ba04c05ff3f755690fff7926755c939",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-candidate-audit.circuit.tsx",
+      "status": 200,
+      "sha256": "94bbf90e4c1698d80ac44c507c4818d18747da97ddc3e0ff3276e8e8d65a2cf1",
+      "expected_sha256": "94bbf90e4c1698d80ac44c507c4818d18747da97ddc3e0ff3276e8e8d65a2cf1",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-copper-trial.circuit.tsx",
+      "status": 200,
+      "sha256": "1cddcd4b81885eb1705ee4a3f70bbc82073224d561dcd5a3fb6a82f1b9572106",
+      "expected_sha256": "1cddcd4b81885eb1705ee4a3f70bbc82073224d561dcd5a3fb6a82f1b9572106",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial100.circuit.tsx",
+      "status": 200,
+      "sha256": "32a23f9705a7d7d05f66dac819a42b6ef81047c84ee5e5c8cd0cca766fbf6e5c",
+      "expected_sha256": "32a23f9705a7d7d05f66dac819a42b6ef81047c84ee5e5c8cd0cca766fbf6e5c",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial101.circuit.tsx",
+      "status": 200,
+      "sha256": "bd281e9238c4791c0c6adb992de6d031c74ee712ca4a88dd9855631bc9257803",
+      "expected_sha256": "bd281e9238c4791c0c6adb992de6d031c74ee712ca4a88dd9855631bc9257803",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial103.circuit.tsx",
+      "status": 200,
+      "sha256": "98203e2f03eb37f775edab54219dad2f0642d3f8eeab8eadffb3a13f9bc43bfe",
+      "expected_sha256": "98203e2f03eb37f775edab54219dad2f0642d3f8eeab8eadffb3a13f9bc43bfe",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial104.circuit.tsx",
+      "status": 200,
+      "sha256": "5a00a596a60c99da7a65e97e4fd4477b5b96ed2aa4ae91774830aa5dabc39feb",
+      "expected_sha256": "5a00a596a60c99da7a65e97e4fd4477b5b96ed2aa4ae91774830aa5dabc39feb",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial105.circuit.tsx",
+      "status": 200,
+      "sha256": "9c77316ebf8fb2c6ceced961e411a728d37ca8fb24c4ddc8de4ce3c2f1f09d3c",
+      "expected_sha256": "9c77316ebf8fb2c6ceced961e411a728d37ca8fb24c4ddc8de4ce3c2f1f09d3c",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial106.circuit.tsx",
+      "status": 200,
+      "sha256": "eb0b1096ae10f01af1e97e48bc48535314eb6db3bf5800aeac7295c9b528df34",
+      "expected_sha256": "eb0b1096ae10f01af1e97e48bc48535314eb6db3bf5800aeac7295c9b528df34",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial107.circuit.tsx",
+      "status": 200,
+      "sha256": "a5883c2d6c65c3dbf671b11dc1060279cf9cd27e5e3f529d6b45b81af60db204",
+      "expected_sha256": "a5883c2d6c65c3dbf671b11dc1060279cf9cd27e5e3f529d6b45b81af60db204",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial108.circuit.tsx",
+      "status": 200,
+      "sha256": "09d98fa6f71052a4db89ab3e635679b150c6bdd8cd259e551371e12fd822d451",
+      "expected_sha256": "09d98fa6f71052a4db89ab3e635679b150c6bdd8cd259e551371e12fd822d451",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial110.circuit.tsx",
+      "status": 200,
+      "sha256": "32644ef2a95391f9c9e5e0ad10f8cef91ef424ab9cb72fe774dbbbdf18ded51b",
+      "expected_sha256": "32644ef2a95391f9c9e5e0ad10f8cef91ef424ab9cb72fe774dbbbdf18ded51b",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial119.circuit.tsx",
+      "status": 200,
+      "sha256": "f232cbd50e260a01c7e43ceff42c02903e57bb0017fe3832649fed9bdea09cd8",
+      "expected_sha256": "f232cbd50e260a01c7e43ceff42c02903e57bb0017fe3832649fed9bdea09cd8",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial120.circuit.tsx",
+      "status": 200,
+      "sha256": "78dbe4757a6594d9a9c0f36e375a960da780b812016b02ccb8ae37a4eb00ad03",
+      "expected_sha256": "78dbe4757a6594d9a9c0f36e375a960da780b812016b02ccb8ae37a4eb00ad03",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial121.circuit.tsx",
+      "status": 200,
+      "sha256": "6773a26542b7bd13a2e244b9df86b9f4350cc2a0222d0a81bd06cc5d4d24364a",
+      "expected_sha256": "6773a26542b7bd13a2e244b9df86b9f4350cc2a0222d0a81bd06cc5d4d24364a",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial122.circuit.tsx",
+      "status": 200,
+      "sha256": "e5c2174bfafb231c0043a06cec2fc2c02e16880e11a2b41fb36e15bf2bb18f3a",
+      "expected_sha256": "e5c2174bfafb231c0043a06cec2fc2c02e16880e11a2b41fb36e15bf2bb18f3a",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial124.circuit.tsx",
+      "status": 200,
+      "sha256": "7981210417f28db5a527bebc7f504aad69a7b770793ce5e40c26c71570d8e512",
+      "expected_sha256": "7981210417f28db5a527bebc7f504aad69a7b770793ce5e40c26c71570d8e512",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial151.circuit.tsx",
+      "status": 200,
+      "sha256": "71f8444fcf91b1bfeb36167d6d8d8c7f20f7a0db0585bf33aecb514504ef379c",
+      "expected_sha256": "71f8444fcf91b1bfeb36167d6d8d8c7f20f7a0db0585bf33aecb514504ef379c",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial153.circuit.tsx",
+      "status": 200,
+      "sha256": "17768315adec69ec338d6fbb2a28cc03d6c54866b1f8b200641e7dbd96d33e2b",
+      "expected_sha256": "17768315adec69ec338d6fbb2a28cc03d6c54866b1f8b200641e7dbd96d33e2b",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial154.circuit.tsx",
+      "status": 200,
+      "sha256": "281f26a2c9ade8e74b32afcdb6c08df0705138fdf84f7f050bdfaba9f0753cb9",
+      "expected_sha256": "281f26a2c9ade8e74b32afcdb6c08df0705138fdf84f7f050bdfaba9f0753cb9",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial155.circuit.tsx",
+      "status": 200,
+      "sha256": "bc412777795009553a900eda2ef64972d3ad4206f74efc61eeb53a5db58b266c",
+      "expected_sha256": "bc412777795009553a900eda2ef64972d3ad4206f74efc61eeb53a5db58b266c",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial165.circuit.tsx",
+      "status": 200,
+      "sha256": "3b68f991328c4b5351774bfedde8451f9dc516897b9932358d40cc5ff3a28f56",
+      "expected_sha256": "3b68f991328c4b5351774bfedde8451f9dc516897b9932358d40cc5ff3a28f56",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial167.circuit.tsx",
+      "status": 200,
+      "sha256": "7e9b593c0d234814079fe4606dfa08ae7ab49fb0fd27755bdf6cbd7066eb2734",
+      "expected_sha256": "7e9b593c0d234814079fe4606dfa08ae7ab49fb0fd27755bdf6cbd7066eb2734",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial169.circuit.tsx",
+      "status": 200,
+      "sha256": "573b41133c4413b247915856295e4e5be43bf7d958089c92550adf4742be7a79",
+      "expected_sha256": "573b41133c4413b247915856295e4e5be43bf7d958089c92550adf4742be7a79",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial176.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial182.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial183.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial185.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial186.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial190.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial191.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial192.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial193.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial194.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial196.circuit.tsx",
+      "status": 200,
+      "sha256": "108927f239876cbd94f6a1a85fd1d8eea7d582215e49124343c52cbaff644501",
+      "expected_sha256": "108927f239876cbd94f6a1a85fd1d8eea7d582215e49124343c52cbaff644501",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial197.circuit.tsx",
+      "status": 200,
+      "sha256": "e86ad114e93a976ed453fd7f9cbba2792ce032d3696d9709c9c7e4adcdc23e7e",
+      "expected_sha256": "e86ad114e93a976ed453fd7f9cbba2792ce032d3696d9709c9c7e4adcdc23e7e",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial198.circuit.tsx",
+      "status": 200,
+      "sha256": "b678f1ee6147a2b027fddd5077c1d3ea2147cc02a5b86f0ca277735c5bee3b80",
+      "expected_sha256": "b678f1ee6147a2b027fddd5077c1d3ea2147cc02a5b86f0ca277735c5bee3b80",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial200.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial201.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial203.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial205.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial206.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial207.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial215.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial222.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial226.circuit.tsx",
+      "status": 200,
+      "sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "expected_sha256": "c025308d802f1c80e4d850ee024363ae84ecf3d454e0f8f25ddc74d3e5d745b3",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial40.circuit.tsx",
+      "status": 200,
+      "sha256": "eb904702174f44a26da94552d081713854364fa36156662356b4a6afa30d514f",
+      "expected_sha256": "eb904702174f44a26da94552d081713854364fa36156662356b4a6afa30d514f",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial42.circuit.tsx",
+      "status": 200,
+      "sha256": "f960e863eac7acab3eae56ca05f7e1a8cc1bca45b503aa6ef302ba3cf97968c8",
+      "expected_sha256": "f960e863eac7acab3eae56ca05f7e1a8cc1bca45b503aa6ef302ba3cf97968c8",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial43.circuit.tsx",
+      "status": 200,
+      "sha256": "e3885c519f46f71f33ceafa67ee2a523a223fb037499c8bbbbc28b027c6b2707",
+      "expected_sha256": "e3885c519f46f71f33ceafa67ee2a523a223fb037499c8bbbbc28b027c6b2707",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial44.circuit.tsx",
+      "status": 200,
+      "sha256": "5176d43a534e151db215add1c1e5a793891e9ada2de176dbc902983b1702af98",
+      "expected_sha256": "5176d43a534e151db215add1c1e5a793891e9ada2de176dbc902983b1702af98",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial45.circuit.tsx",
+      "status": 200,
+      "sha256": "c7541c79ad1c88139dea247b72e364b346e24916c8283c1c3e0a4202c9a005be",
+      "expected_sha256": "c7541c79ad1c88139dea247b72e364b346e24916c8283c1c3e0a4202c9a005be",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial46.circuit.tsx",
+      "status": 200,
+      "sha256": "129531d59543a3c3e19be9fd4fa47f2f5e8f3b6e13486569426a1fb761889aa1",
+      "expected_sha256": "129531d59543a3c3e19be9fd4fa47f2f5e8f3b6e13486569426a1fb761889aa1",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial47.circuit.tsx",
+      "status": 200,
+      "sha256": "edab21b7290413e784ff5e5e98d44f3c651f9e061b12f598982484ed223d000f",
+      "expected_sha256": "edab21b7290413e784ff5e5e98d44f3c651f9e061b12f598982484ed223d000f",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial48.circuit.tsx",
+      "status": 200,
+      "sha256": "0c76791609f0a299a99057e3d1139a8d2defc0f678cc9561fae4e1ae116d51ac",
+      "expected_sha256": "0c76791609f0a299a99057e3d1139a8d2defc0f678cc9561fae4e1ae116d51ac",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial49.circuit.tsx",
+      "status": 200,
+      "sha256": "101a935f0d3e09b80bb2b32fdfdf570e387cfb9495357f591492a4bceff62538",
+      "expected_sha256": "101a935f0d3e09b80bb2b32fdfdf570e387cfb9495357f591492a4bceff62538",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial50.circuit.tsx",
+      "status": 200,
+      "sha256": "03661c96f6a89c2c7ca3aa5015fc4b47bd4ad773b6e9ffd57ae26b56cc6a0d7c",
+      "expected_sha256": "03661c96f6a89c2c7ca3aa5015fc4b47bd4ad773b6e9ffd57ae26b56cc6a0d7c",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial51.circuit.tsx",
+      "status": 200,
+      "sha256": "6708f383a377a23e72abdb4a1f8af0cefa84ba2209cfc0fa366db5539e8ec2e8",
+      "expected_sha256": "6708f383a377a23e72abdb4a1f8af0cefa84ba2209cfc0fa366db5539e8ec2e8",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial52.circuit.tsx",
+      "status": 200,
+      "sha256": "1ee95a6d0d71332b9dedb062a486beaa5c3e93330553a05c8fd4c6ee0bf3e1d6",
+      "expected_sha256": "1ee95a6d0d71332b9dedb062a486beaa5c3e93330553a05c8fd4c6ee0bf3e1d6",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial53.circuit.tsx",
+      "status": 200,
+      "sha256": "d3a1f6cd73ebd66cb2d8d5c1fa0264de80780d78abaec6cbc9e7bebb0c2f300b",
+      "expected_sha256": "d3a1f6cd73ebd66cb2d8d5c1fa0264de80780d78abaec6cbc9e7bebb0c2f300b",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial54.circuit.tsx",
+      "status": 200,
+      "sha256": "1e9b52bb3b0323510612679c1d2492b4275a1cd8a877d630a84d247c8f658e33",
+      "expected_sha256": "1e9b52bb3b0323510612679c1d2492b4275a1cd8a877d630a84d247c8f658e33",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial55.circuit.tsx",
+      "status": 200,
+      "sha256": "9250e97d7fd681a8c2a79b41f9716dd1375fc28cbaadf332dfbe080297e90637",
+      "expected_sha256": "9250e97d7fd681a8c2a79b41f9716dd1375fc28cbaadf332dfbe080297e90637",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial56.circuit.tsx",
+      "status": 200,
+      "sha256": "83468aff647bd853a295b9602a3721f24680af848b7499703b64601dd5139e36",
+      "expected_sha256": "83468aff647bd853a295b9602a3721f24680af848b7499703b64601dd5139e36",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial57.circuit.tsx",
+      "status": 200,
+      "sha256": "3c05d62961cc5ceb197b37de0966ed9210187ec1b68705472d5b7232a67afcca",
+      "expected_sha256": "3c05d62961cc5ceb197b37de0966ed9210187ec1b68705472d5b7232a67afcca",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial58.circuit.tsx",
+      "status": 200,
+      "sha256": "e5b92ac71e56f000ce636fc0bdbe32be6016ad8bf4753664fccb8b29252d74c9",
+      "expected_sha256": "e5b92ac71e56f000ce636fc0bdbe32be6016ad8bf4753664fccb8b29252d74c9",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial59.circuit.tsx",
+      "status": 200,
+      "sha256": "d12d696725508de40ade99252017a892d07036a9f44c8534d4db4d81a6828185",
+      "expected_sha256": "d12d696725508de40ade99252017a892d07036a9f44c8534d4db4d81a6828185",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial60.circuit.tsx",
+      "status": 200,
+      "sha256": "1f71815dacdd8708c504b5d079119dae65668557949b806365659937cac66d6e",
+      "expected_sha256": "1f71815dacdd8708c504b5d079119dae65668557949b806365659937cac66d6e",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial61.circuit.tsx",
+      "status": 200,
+      "sha256": "b6491b3ae6f81101a025d27cb13e8747ce714abbf133f430361879d369936fdb",
+      "expected_sha256": "b6491b3ae6f81101a025d27cb13e8747ce714abbf133f430361879d369936fdb",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial62.circuit.tsx",
+      "status": 200,
+      "sha256": "05a2efb4c1e89dea1b8254bb5852516cfb1bc3b71e1573d0eaf21fa6c00384fa",
+      "expected_sha256": "05a2efb4c1e89dea1b8254bb5852516cfb1bc3b71e1573d0eaf21fa6c00384fa",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial63.circuit.tsx",
+      "status": 200,
+      "sha256": "0d8092269892142ccce8aa96ec4befbffde9515a67e1cc0514343a100cca83d5",
+      "expected_sha256": "0d8092269892142ccce8aa96ec4befbffde9515a67e1cc0514343a100cca83d5",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial64.circuit.tsx",
+      "status": 200,
+      "sha256": "fba0e5ee92e36a17b61e728650218108ef16658fbd5de31bb92d7adcb02e2ad7",
+      "expected_sha256": "fba0e5ee92e36a17b61e728650218108ef16658fbd5de31bb92d7adcb02e2ad7",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial65.circuit.tsx",
+      "status": 200,
+      "sha256": "fd5d114a280d9e5cdcc982e1b3f43e18aaa3067734937c46743146652448071f",
+      "expected_sha256": "fd5d114a280d9e5cdcc982e1b3f43e18aaa3067734937c46743146652448071f",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial66.circuit.tsx",
+      "status": 200,
+      "sha256": "1be7984836306c351840310c3e7ff27971fb4ecc991948778c1ec55b1f75438a",
+      "expected_sha256": "1be7984836306c351840310c3e7ff27971fb4ecc991948778c1ec55b1f75438a",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial67.circuit.tsx",
+      "status": 200,
+      "sha256": "ff6aeeb4ff94118f1aa6ca71c7c1851439842bfe0dc84632c5673be7f11c4a78",
+      "expected_sha256": "ff6aeeb4ff94118f1aa6ca71c7c1851439842bfe0dc84632c5673be7f11c4a78",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial68.circuit.tsx",
+      "status": 200,
+      "sha256": "4472d011af80a2ca99f498dcc6c2f3e5e9bbbed3d93bfc95e99769555d053e30",
+      "expected_sha256": "4472d011af80a2ca99f498dcc6c2f3e5e9bbbed3d93bfc95e99769555d053e30",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial69.circuit.tsx",
+      "status": 200,
+      "sha256": "c1e091a04232c26bab99346e17bcd4d1c75710baaa33e0bbe09383df1d2d697f",
+      "expected_sha256": "c1e091a04232c26bab99346e17bcd4d1c75710baaa33e0bbe09383df1d2d697f",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial70.circuit.tsx",
+      "status": 200,
+      "sha256": "a0f1746b54cab5e2321f96ae926da75ffb4f058e0757e65577196d3bd848e627",
+      "expected_sha256": "a0f1746b54cab5e2321f96ae926da75ffb4f058e0757e65577196d3bd848e627",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial71.circuit.tsx",
+      "status": 200,
+      "sha256": "31fc3ac8bef0338275e37654e5c779ab8a39ed6ab142737f6464ac5830e680dc",
+      "expected_sha256": "31fc3ac8bef0338275e37654e5c779ab8a39ed6ab142737f6464ac5830e680dc",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial72.circuit.tsx",
+      "status": 200,
+      "sha256": "b5c95c999abcf82134e6b78dd28db1f59e6e4af002530255d9429f607f705cfc",
+      "expected_sha256": "b5c95c999abcf82134e6b78dd28db1f59e6e4af002530255d9429f607f705cfc",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial73.circuit.tsx",
+      "status": 200,
+      "sha256": "1638f9d3816ce0d63b91d3720939eebef04a24259ab0628732bf189b0a6b920d",
+      "expected_sha256": "1638f9d3816ce0d63b91d3720939eebef04a24259ab0628732bf189b0a6b920d",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial74.circuit.tsx",
+      "status": 200,
+      "sha256": "876d530b993f4982593f7edc9bfa14cf4eefdc439570d53a0c125f736f827baa",
+      "expected_sha256": "876d530b993f4982593f7edc9bfa14cf4eefdc439570d53a0c125f736f827baa",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial75.circuit.tsx",
+      "status": 200,
+      "sha256": "00e4fce1211fb64be0fe44d79efe598e469eafd35f33da9173c717e5d4d972ff",
+      "expected_sha256": "00e4fce1211fb64be0fe44d79efe598e469eafd35f33da9173c717e5d4d972ff",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial76.circuit.tsx",
+      "status": 200,
+      "sha256": "df70cc335c8c07113e9418d4da1117538f44f8aa90237ac06709c5e639e152d8",
+      "expected_sha256": "df70cc335c8c07113e9418d4da1117538f44f8aa90237ac06709c5e639e152d8",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial77.circuit.tsx",
+      "status": 200,
+      "sha256": "cc391b294c4835c774ebe6bd4c44e71ce444de9843fb46b650eb3758498bd153",
+      "expected_sha256": "cc391b294c4835c774ebe6bd4c44e71ce444de9843fb46b650eb3758498bd153",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial80.circuit.tsx",
+      "status": 200,
+      "sha256": "66fdbabde73e5fdb19b81abed7584a365c2421784c644738e160bdb0444c5aa5",
+      "expected_sha256": "66fdbabde73e5fdb19b81abed7584a365c2421784c644738e160bdb0444c5aa5",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial85.circuit.tsx",
+      "status": 200,
+      "sha256": "974af131bbff1a22816a18e7e1b5eb537c9724ab161da960fa80f12961e9cb3a",
+      "expected_sha256": "974af131bbff1a22816a18e7e1b5eb537c9724ab161da960fa80f12961e9cb3a",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial87.circuit.tsx",
+      "status": 200,
+      "sha256": "4506965defe5bb2e92c653dbf3601df5f23a7429c12da86e3de20d43daef5195",
+      "expected_sha256": "4506965defe5bb2e92c653dbf3601df5f23a7429c12da86e3de20d43daef5195",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial88.circuit.tsx",
+      "status": 200,
+      "sha256": "9b6532d14b697e82906d5c96268f6562bef3fbafccf5bea055429deed59dbc9b",
+      "expected_sha256": "9b6532d14b697e82906d5c96268f6562bef3fbafccf5bea055429deed59dbc9b",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial89.circuit.tsx",
+      "status": 200,
+      "sha256": "132a9ade2c26907b665322dfca4753f6b6d42a7f75a70ba38aad282ce544d867",
+      "expected_sha256": "132a9ade2c26907b665322dfca4753f6b6d42a7f75a70ba38aad282ce544d867",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial90.circuit.tsx",
+      "status": 200,
+      "sha256": "ad9d2910a1938c8dcedc378cd9ddfb6d448c11bd0e50349f728a488cf8512c56",
+      "expected_sha256": "ad9d2910a1938c8dcedc378cd9ddfb6d448c11bd0e50349f728a488cf8512c56",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial91.circuit.tsx",
+      "status": 200,
+      "sha256": "1584cccb79fd3e848d45472ccc219a00b1c96b000b9273b71696024f49a72cf9",
+      "expected_sha256": "1584cccb79fd3e848d45472ccc219a00b1c96b000b9273b71696024f49a72cf9",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial92.circuit.tsx",
+      "status": 200,
+      "sha256": "b36d2270a2ce8ded91c88137e67c41fb5e38f721cf0b2918414266f4326de86a",
+      "expected_sha256": "b36d2270a2ce8ded91c88137e67c41fb5e38f721cf0b2918414266f4326de86a",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial93.circuit.tsx",
+      "status": 200,
+      "sha256": "2468061091ed4c48f3fc69010fbecf0e26c48d06565929ca044173d1fe5f3df2",
+      "expected_sha256": "2468061091ed4c48f3fc69010fbecf0e26c48d06565929ca044173d1fe5f3df2",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial94.circuit.tsx",
+      "status": 200,
+      "sha256": "34618fab59daf34b168b0d5d38ac1c54367bb47f47d44eb0a4e2fc80965fe51d",
+      "expected_sha256": "34618fab59daf34b168b0d5d38ac1c54367bb47f47d44eb0a4e2fc80965fe51d",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial95.circuit.tsx",
+      "status": 200,
+      "sha256": "4f02578f100d2f533885970fe0bb0f33fc7257ec75a75e261b732a5300f2172d",
+      "expected_sha256": "4f02578f100d2f533885970fe0bb0f33fc7257ec75a75e261b732a5300f2172d",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial96.circuit.tsx",
+      "status": 200,
+      "sha256": "df88e89e9c68c88798522a66977cc89a94cb3bdb31b1bd3e684f24a6fc5752ec",
+      "expected_sha256": "df88e89e9c68c88798522a66977cc89a94cb3bdb31b1bd3e684f24a6fc5752ec",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial97.circuit.tsx",
+      "status": 200,
+      "sha256": "50d8126706fdc6eef5bb4dfece98f0fb15100e3b38dd902ad427fbbdae114fee",
+      "expected_sha256": "50d8126706fdc6eef5bb4dfece98f0fb15100e3b38dd902ad427fbbdae114fee",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial98.circuit.tsx",
+      "status": 200,
+      "sha256": "56023d6184b2fe0d26b9af57a973a37497efd869971792023e47e348f8e0da41",
+      "expected_sha256": "56023d6184b2fe0d26b9af57a973a37497efd869971792023e47e348f8e0da41",
+      "verified": true
+    },
+    {
+      "path": "scripts/power-trial99.circuit.tsx",
+      "status": 200,
+      "sha256": "5fd32c1e14ff1902a9c6d8e2d039d7b011354c3ec8c47ab535951840de495b0d",
+      "expected_sha256": "5fd32c1e14ff1902a9c6d8e2d039d7b011354c3ec8c47ab535951840de495b0d",
+      "verified": true
+    },
+    {
+      "path": "scripts/prepare-local-routing.py",
+      "status": 200,
+      "sha256": "b19fb5fac8d944430255d6089371272de4a031ae9c41d265c1805e371fb18370",
+      "expected_sha256": "b19fb5fac8d944430255d6089371272de4a031ae9c41d265c1805e371fb18370",
+      "verified": true
+    },
+    {
+      "path": "scripts/prepare-routing-pad-guards.py",
+      "status": 200,
+      "sha256": "593ff1f0905672ab29fb63a47b6c749a06f8f297726f9de262ea297c7528e6d1",
+      "expected_sha256": "593ff1f0905672ab29fb63a47b6c749a06f8f297726f9de262ea297c7528e6d1",
+      "verified": true
+    },
+    {
+      "path": "scripts/prepare-selected-routing.py",
+      "status": 200,
+      "sha256": "328d5a5c6aeb7c2b97ebc6cdf4ed5bb5563ca0e1f16147433c820bbc24cb82a4",
+      "expected_sha256": "328d5a5c6aeb7c2b97ebc6cdf4ed5bb5563ca0e1f16147433c820bbc24cb82a4",
+      "verified": true
+    },
+    {
+      "path": "scripts/read-local-route-topology.py",
+      "status": 200,
+      "sha256": "1560a4ca6ca81619e4d3dbd453728625b521901c8da7a3105c9a855c9ed37bee",
+      "expected_sha256": "1560a4ca6ca81619e4d3dbd453728625b521901c8da7a3105c9a855c9ed37bee",
+      "verified": true
+    },
+    {
+      "path": "scripts/refresh-cloud-context.py",
+      "status": 200,
+      "sha256": "cbe8207ea8fb26ae20db35d5b9c058d4fae62693122dc6f77d43cc95cc7fbb61",
+      "expected_sha256": "cbe8207ea8fb26ae20db35d5b9c058d4fae62693122dc6f77d43cc95cc7fbb61",
+      "verified": true
+    },
+    {
+      "path": "scripts/render-routing-review.mjs",
+      "status": 200,
+      "sha256": "e7049a7df26972c6f89d51883f33367a1212cd61aebdfecd117e5b026cbe71db",
+      "expected_sha256": "e7049a7df26972c6f89d51883f33367a1212cd61aebdfecd117e5b026cbe71db",
+      "verified": true
+    },
+    {
+      "path": "scripts/render-schematic-sheets.mjs",
+      "status": 200,
+      "sha256": "b1624ed2822df3878b74d948ec98f63b4af4ed69cc96bc0b278c2c7af7d1dad6",
+      "expected_sha256": "b1624ed2822df3878b74d948ec98f63b4af4ed69cc96bc0b278c2c7af7d1dad6",
+      "verified": true
+    },
+    {
+      "path": "scripts/restore-routing-history.py",
+      "status": 200,
+      "sha256": "cd22d644a14ca5a9141e9d85ee5452b0a646f5cf9a49d48a0ead4787872ee0b8",
+      "expected_sha256": "cd22d644a14ca5a9141e9d85ee5452b0a646f5cf9a49d48a0ead4787872ee0b8",
+      "verified": true
+    },
+    {
+      "path": "scripts/review-usb-return.py",
+      "status": 200,
+      "sha256": "0620e5b2f40a3b9450c76bb96d5025d643c4a7c05783279401befd3bab67986d",
+      "expected_sha256": "0620e5b2f40a3b9450c76bb96d5025d643c4a7c05783279401befd3bab67986d",
+      "verified": true
+    },
+    {
+      "path": "scripts/run-cloud-routing.py",
+      "status": 200,
+      "sha256": "6e437c499659f198b8b23b9e775f30181f21c483a07c3fa04942b34fd510bd76",
+      "expected_sha256": "6e437c499659f198b8b23b9e775f30181f21c483a07c3fa04942b34fd510bd76",
+      "verified": true
+    },
+    {
+      "path": "scripts/run-mechanical-checks.mjs",
+      "status": 200,
+      "sha256": "3d47593e5f0efd74b7c7ea7cfe97d743e63655d91cc7007511a0550e4ef450b2",
+      "expected_sha256": "3d47593e5f0efd74b7c7ea7cfe97d743e63655d91cc7007511a0550e4ef450b2",
+      "verified": true
+    },
+    {
+      "path": "scripts/run-native-routing.mjs",
+      "status": 200,
+      "sha256": "308b0b33c5fbf2ebb20d75fbba77a08374be6d3117d3461db3a0c043f62f2511",
+      "expected_sha256": "308b0b33c5fbf2ebb20d75fbba77a08374be6d3117d3461db3a0c043f62f2511",
+      "verified": true
+    },
+    {
+      "path": "scripts/saved-route-api.circuit.tsx",
+      "status": 200,
+      "sha256": "11c6328835b251877464575cbefec4c6bca03f19770182b97f6f9549a5b0cdea",
+      "expected_sha256": "11c6328835b251877464575cbefec4c6bca03f19770182b97f6f9549a5b0cdea",
+      "verified": true
+    },
+    {
+      "path": "scripts/signal-completion-pipeline9.circuit.tsx",
+      "status": 200,
+      "sha256": "c69cd319202ba9994a05958cb5315714ea74bc406eef591dafe92be8d8b9a46c",
+      "expected_sha256": "c69cd319202ba9994a05958cb5315714ea74bc406eef591dafe92be8d8b9a46c",
+      "verified": true
+    },
+    {
+      "path": "scripts/simplified-main.circuit.tsx",
+      "status": 200,
+      "sha256": "a56d288734b6ba08e48339b78be2a1acd57176ac029374d631537c8d50f09731",
+      "expected_sha256": "a56d288734b6ba08e48339b78be2a1acd57176ac029374d631537c8d50f09731",
+      "verified": true
+    },
+    {
+      "path": "scripts/simplify-saved-routes.py",
+      "status": 200,
+      "sha256": "7c52ea75489e110a8e30bf79cf39aec77910d039c5734859d301913f9c69f4f9",
+      "expected_sha256": "7c52ea75489e110a8e30bf79cf39aec77910d039c5734859d301913f9c69f4f9",
+      "verified": true
+    },
+    {
+      "path": "scripts/usb-import-audit.circuit.tsx",
+      "status": 200,
+      "sha256": "5be591a46ffdfe36bddb3aecfaacfce2411ea17904d36b3f8703af48f46f9b3a",
+      "expected_sha256": "5be591a46ffdfe36bddb3aecfaacfce2411ea17904d36b3f8703af48f46f9b3a",
+      "verified": true
+    },
+    {
+      "path": "scripts/usb-saved-main.circuit.tsx",
+      "status": 200,
+      "sha256": "b90803ce646f4cdb7b00e9939b610a82af4c905adf6d099df6e21a6191daff34",
+      "expected_sha256": "b90803ce646f4cdb7b00e9939b610a82af4c905adf6d099df6e21a6191daff34",
+      "verified": true
+    },
+    {
+      "path": "scripts/verify-cloud-context.py",
+      "status": 200,
+      "sha256": "e6a68588331ffa25026a885fec42275e8845ef964300f264581e41b695b31627",
+      "expected_sha256": "e6a68588331ffa25026a885fec42275e8845ef964300f264581e41b695b31627",
+      "verified": true
+    },
+    {
+      "path": "src/can/CanSheet.tsx",
+      "status": 200,
+      "sha256": "2b3a0741928be487f7b63434a74e4081295c4ad7c3d0ca22d831d73854267f3e",
+      "expected_sha256": "2b3a0741928be487f7b63434a74e4081295c4ad7c3d0ca22d831d73854267f3e",
+      "verified": true
+    },
+    {
+      "path": "src/encoder/EncoderSheet.tsx",
+      "status": 200,
+      "sha256": "6dd48ea0e8ce6453e30ba940111bd97518462658a8994be606a1b15d9a5c33d7",
+      "expected_sha256": "6dd48ea0e8ce6453e30ba940111bd97518462658a8994be606a1b15d9a5c33d7",
+      "verified": true
+    },
+    {
+      "path": "src/interfaces/InterfacesSheet.tsx",
+      "status": 200,
+      "sha256": "c0aaafcc652a1d7d6cdd31b85fa77d8b55d98cffd2b6c003ce6b36237aed9d8b",
+      "expected_sha256": "c0aaafcc652a1d7d6cdd31b85fa77d8b55d98cffd2b6c003ce6b36237aed9d8b",
+      "verified": true
+    },
+    {
+      "path": "src/mcu/McuSheet.tsx",
+      "status": 200,
+      "sha256": "500a6ade422d39ab07e8aece68e17294dba98352dc7e802a29e7d92040144a51",
+      "expected_sha256": "500a6ade422d39ab07e8aece68e17294dba98352dc7e802a29e7d92040144a51",
+      "verified": true
+    },
+    {
+      "path": "src/mechanics/ControllerMount.tsx",
+      "status": 200,
+      "sha256": "6498086c2fb2b0e471e9a427cfd12a1a6621d828a385d7645355b5eec1c15303",
+      "expected_sha256": "6498086c2fb2b0e471e9a427cfd12a1a6621d828a385d7645355b5eec1c15303",
+      "verified": true
+    },
+    {
+      "path": "src/mechanics/motor-lock.ts",
+      "status": 200,
+      "sha256": "dd015dd20a39daf04cd5842522a4a4bff665fdc9f5788f3d77bd60e25b89c3fe",
+      "expected_sha256": "dd015dd20a39daf04cd5842522a4a4bff665fdc9f5788f3d77bd60e25b89c3fe",
+      "verified": true
+    },
+    {
+      "path": "src/mechanics/preview-placement.ts",
+      "status": 200,
+      "sha256": "6174f8d1ff0195cfa07c6ba06a09244aa517a15568ae2feeaa4c188996765f4c",
+      "expected_sha256": "6174f8d1ff0195cfa07c6ba06a09244aa517a15568ae2feeaa4c188996765f4c",
+      "verified": true
+    },
+    {
+      "path": "src/mechanics/ProgrammingConnectorPreview.tsx",
+      "status": 200,
+      "sha256": "47b76f4f787bb0363eda984ac725fe0c8ff9e1385c513ab984d4596dd47fdded",
+      "expected_sha256": "47b76f4f787bb0363eda984ac725fe0c8ff9e1385c513ab984d4596dd47fdded",
+      "verified": true
+    },
+    {
+      "path": "src/mechanics/RearMountHoles.tsx",
+      "status": 200,
+      "sha256": "b5f6698de0e4d29d8ad255d75e9c4535f483ac946df60a96942e6b691c4a3a29",
+      "expected_sha256": "b5f6698de0e4d29d8ad255d75e9c4535f483ac946df60a96942e6b691c4a3a29",
+      "verified": true
+    },
+    {
+      "path": "src/mechanics/selected-motor.ts",
+      "status": 200,
+      "sha256": "3b3a6142eb11a329d3f29c20d8d52981c91107b30596ac61707bb9ab6b9fe808",
+      "expected_sha256": "3b3a6142eb11a329d3f29c20d8d52981c91107b30596ac61707bb9ab6b9fe808",
+      "verified": true
+    },
+    {
+      "path": "src/motor-driver/MotorDriverSheet.tsx",
+      "status": 200,
+      "sha256": "740bfe45dca0d7990232f879595102da02adc31295922e852f58148946803d38",
+      "expected_sha256": "740bfe45dca0d7990232f879595102da02adc31295922e852f58148946803d38",
+      "verified": true
+    },
+    {
+      "path": "src/power/InputPowerSheet.tsx",
+      "status": 200,
+      "sha256": "f4fbd6d453f99e58362b3a2b922121b5d87884ccc79c2454fe5820d6f2724c5e",
+      "expected_sha256": "f4fbd6d453f99e58362b3a2b922121b5d87884ccc79c2454fe5820d6f2724c5e",
+      "verified": true
+    },
+    {
+      "path": "src/power/LogicBuckSheet.tsx",
+      "status": 200,
+      "sha256": "4588196fcf57b519ef57f9a31cfa3def4f6b68ab548da61c7b270b77e58f7fd6",
+      "expected_sha256": "4588196fcf57b519ef57f9a31cfa3def4f6b68ab548da61c7b270b77e58f7fd6",
+      "verified": true
+    },
+    {
+      "path": "src/programming/ProgrammingSheet.tsx",
+      "status": 200,
+      "sha256": "d8c82dbeee775e6b6e1f848278aae4d6f7118977acbe3c74981796866dbc7aa8",
+      "expected_sha256": "d8c82dbeee775e6b6e1f848278aae4d6f7118977acbe3c74981796866dbc7aa8",
+      "verified": true
+    },
+    {
+      "path": "src/routing/efuse-enable-paths.json",
+      "status": 200,
+      "sha256": "59c36bc073cbdf0fc664412be5ded49ec17c31cfc0c2c2b9270ae8db06f095b6",
+      "expected_sha256": "59c36bc073cbdf0fc664412be5ded49ec17c31cfc0c2c2b9270ae8db06f095b6",
+      "verified": true
+    },
+    {
+      "path": "src/routing/EfuseEnableSavedRoutes.tsx",
+      "status": 200,
+      "sha256": "edd56497493ba593e09fee0aa92b909b3775a5cfd2b8c751dc4bc928337c372e",
+      "expected_sha256": "edd56497493ba593e09fee0aa92b909b3775a5cfd2b8c751dc4bc928337c372e",
+      "verified": true
+    },
+    {
+      "path": "src/routing/filled-signal-vias-trial.json",
+      "status": 200,
+      "sha256": "aaaafbc5198d3ab3eab1d172e47a21cea48df7fc447e0863beee1c7b9b5c96c4",
+      "expected_sha256": "aaaafbc5198d3ab3eab1d172e47a21cea48df7fc447e0863beee1c7b9b5c96c4",
+      "verified": true
+    },
+    {
+      "path": "src/routing/FilledSignalEscapes.tsx",
+      "status": 200,
+      "sha256": "290f8ae2bb6d7037591de02fb4f446df4f1baef0045b2afbd76da1a62e7a08c7",
+      "expected_sha256": "290f8ae2bb6d7037591de02fb4f446df4f1baef0045b2afbd76da1a62e7a08c7",
+      "verified": true
+    },
+    {
+      "path": "src/routing/ground-stitch-paths.json",
+      "status": 200,
+      "sha256": "59c36bc073cbdf0fc664412be5ded49ec17c31cfc0c2c2b9270ae8db06f095b6",
+      "expected_sha256": "59c36bc073cbdf0fc664412be5ded49ec17c31cfc0c2c2b9270ae8db06f095b6",
+      "verified": true
+    },
+    {
+      "path": "src/routing/GroundEscapeTrial.tsx",
+      "status": 200,
+      "sha256": "4878f8f6a255af1d48e35dae40f7b54ca1440e35e1aa2fe20e1dd78b02dc30ea",
+      "expected_sha256": "4878f8f6a255af1d48e35dae40f7b54ca1440e35e1aa2fe20e1dd78b02dc30ea",
+      "verified": true
+    },
+    {
+      "path": "src/routing/GroundPhaseRoutes.tsx",
+      "status": 200,
+      "sha256": "ec7dba3e15814c31132adc1b1b74d9bb193bbc11d7ae779d0ddccb86acc5d7a5",
+      "expected_sha256": "ec7dba3e15814c31132adc1b1b74d9bb193bbc11d7ae779d0ddccb86acc5d7a5",
+      "verified": true
+    },
+    {
+      "path": "src/routing/GroundReturns.tsx",
+      "status": 200,
+      "sha256": "c49262ca6d889db1f6665543ffd20d04c89b34239034b517d569820b91918267",
+      "expected_sha256": "c49262ca6d889db1f6665543ffd20d04c89b34239034b517d569820b91918267",
+      "verified": true
+    },
+    {
+      "path": "src/routing/GroundStitchSavedRoutes.tsx",
+      "status": 200,
+      "sha256": "354a38ebc95703245426df6601ac4a534b33d83e1a502a7e21863ff372cb98b1",
+      "expected_sha256": "354a38ebc95703245426df6601ac4a534b33d83e1a502a7e21863ff372cb98b1",
+      "verified": true
+    },
+    {
+      "path": "src/routing/manual-edits.json",
+      "status": 200,
+      "sha256": "fb20f9f5d39745c401b08a9a3e4f902ddeae3ebacc50026120d26fd18f94b94c",
+      "expected_sha256": "fb20f9f5d39745c401b08a9a3e4f902ddeae3ebacc50026120d26fd18f94b94c",
+      "verified": true
+    },
+    {
+      "path": "src/routing/partial-protection-paths.json",
+      "status": 200,
+      "sha256": "e2cd458110e027dbb7fea826543a5c550b7adae57a843a2059d3e83a6ff9217c",
+      "expected_sha256": "e2cd458110e027dbb7fea826543a5c550b7adae57a843a2059d3e83a6ff9217c",
+      "verified": true
+    },
+    {
+      "path": "src/routing/partial-signal-paths.json",
+      "status": 200,
+      "sha256": "750c39d8da6b513a3d1cde9b8d6f6c13723e0b2ed212ec6550b413c8da43af55",
+      "expected_sha256": "750c39d8da6b513a3d1cde9b8d6f6c13723e0b2ed212ec6550b413c8da43af55",
+      "verified": true
+    },
+    {
+      "path": "src/routing/PartialProtectionRoutes.tsx",
+      "status": 200,
+      "sha256": "3b1143c286ff20fbd70fd87d9c7ec26f7c8f5578b7e5a3a4ff2931250d408dc4",
+      "expected_sha256": "3b1143c286ff20fbd70fd87d9c7ec26f7c8f5578b7e5a3a4ff2931250d408dc4",
+      "verified": true
+    },
+    {
+      "path": "src/routing/PartialSignalRoutes.tsx",
+      "status": 200,
+      "sha256": "743314fad49e73908dcd43deca8aa2baa09f0b212f29e0ea87c880b273afb8cf",
+      "expected_sha256": "743314fad49e73908dcd43deca8aa2baa09f0b212f29e0ea87c880b273afb8cf",
+      "verified": true
+    },
+    {
+      "path": "src/routing/port-tree-paths.json",
+      "status": 200,
+      "sha256": "1281dbfa8c8170b02ff1a03b9361fb748c9ec2fc737444336ad4ec14d296d731",
+      "expected_sha256": "1281dbfa8c8170b02ff1a03b9361fb748c9ec2fc737444336ad4ec14d296d731",
+      "verified": true
+    },
+    {
+      "path": "src/routing/port-tree-simplified.json",
+      "status": 200,
+      "sha256": "9ee174568a0eb310114edc0ff8b5ef78d8e8c2e9cbbc1e8e88238f14ff325b52",
+      "expected_sha256": "9ee174568a0eb310114edc0ff8b5ef78d8e8c2e9cbbc1e8e88238f14ff325b52",
+      "verified": true
+    },
+    {
+      "path": "src/routing/PortTreeRoutes.tsx",
+      "status": 200,
+      "sha256": "9ee47875510b8b35c4c22855633efb842e59f40b9268c78ca2e3c0ca69b67827",
+      "expected_sha256": "9ee47875510b8b35c4c22855633efb842e59f40b9268c78ca2e3c0ca69b67827",
+      "verified": true
+    },
+    {
+      "path": "src/routing/power-guarded-paths-trial.json",
+      "status": 200,
+      "sha256": "e6ebf8319c2c3e6f75b6a9567b07733676214252f70a1d8241f97c428ea7edb9",
+      "expected_sha256": "e6ebf8319c2c3e6f75b6a9567b07733676214252f70a1d8241f97c428ea7edb9",
+      "verified": true
+    },
+    {
+      "path": "src/routing/power-pour-trial.json",
+      "status": 200,
+      "sha256": "c30bcff8d09c0ab564f0b378e12da4a6f1b88bfdd971e81df92813d169a9a4ca",
+      "expected_sha256": "c30bcff8d09c0ab564f0b378e12da4a6f1b88bfdd971e81df92813d169a9a4ca",
+      "verified": true
+    },
+    {
+      "path": "src/routing/PowerCopperTrial.tsx",
+      "status": 200,
+      "sha256": "1450917c6aaf5ca97641633323c767ee11c4c9a7523e798ca8b3e2646614dede",
+      "expected_sha256": "1450917c6aaf5ca97641633323c767ee11c4c9a7523e798ca8b3e2646614dede",
+      "verified": true
+    },
+    {
+      "path": "src/routing/PowerSavedRoutesTrial.tsx",
+      "status": 200,
+      "sha256": "0a34a54e0e24d55d4133882fa7cb4ccc3295f1b4e8f53af26b1ee8420823ea2d",
+      "expected_sha256": "0a34a54e0e24d55d4133882fa7cb4ccc3295f1b4e8f53af26b1ee8420823ea2d",
+      "verified": true
+    },
+    {
+      "path": "src/routing/rtn-return-trial.json",
+      "status": 200,
+      "sha256": "6c06e3c677f3e6798e00094ac29f4f3e662f27fa0bd17738003b6701e47cade9",
+      "expected_sha256": "6c06e3c677f3e6798e00094ac29f4f3e662f27fa0bd17738003b6701e47cade9",
+      "verified": true
+    },
+    {
+      "path": "src/routing/saved-paths.json",
+      "status": 200,
+      "sha256": "090ec0741584de93b256af12fb1477ed99f6a1952e71344920c0de119602be1a",
+      "expected_sha256": "090ec0741584de93b256af12fb1477ed99f6a1952e71344920c0de119602be1a",
+      "verified": true
+    },
+    {
+      "path": "src/routing/SavedRoutes.tsx",
+      "status": 200,
+      "sha256": "354a38ebc95703245426df6601ac4a534b33d83e1a502a7e21863ff372cb98b1",
+      "expected_sha256": "354a38ebc95703245426df6601ac4a534b33d83e1a502a7e21863ff372cb98b1",
+      "verified": true
+    },
+    {
+      "path": "src/routing/simplified-paths.json",
+      "status": 200,
+      "sha256": "eb846f82c46fe8ba775860fa2fe928f44cd4b49b95704dd2ccc454a6b893313b",
+      "expected_sha256": "eb846f82c46fe8ba775860fa2fe928f44cd4b49b95704dd2ccc454a6b893313b",
+      "verified": true
+    },
+    {
+      "path": "src/routing/SimplifiedRoutes.tsx",
+      "status": 200,
+      "sha256": "2d2ea8ce8de90c0848cea23c45492ff7435ef722b868ec823eb783206d950d96",
+      "expected_sha256": "2d2ea8ce8de90c0848cea23c45492ff7435ef722b868ec823eb783206d950d96",
+      "verified": true
+    },
+    {
+      "path": "src/routing/single-layer-signal-branches.json",
+      "status": 200,
+      "sha256": "568782673e5815e1634b22297f13cb75112db988d224c4d809f18f75f99708ba",
+      "expected_sha256": "568782673e5815e1634b22297f13cb75112db988d224c4d809f18f75f99708ba",
+      "verified": true
+    },
+    {
+      "path": "src/routing/thermal-vias-trial.json",
+      "status": 200,
+      "sha256": "d3162e6fe7df40ec966d2360fc4e5f45c887e2e99dba0bfdcefc83a2797b1d1e",
+      "expected_sha256": "d3162e6fe7df40ec966d2360fc4e5f45c887e2e99dba0bfdcefc83a2797b1d1e",
+      "verified": true
+    },
+    {
+      "path": "src/routing/usb-saved-paths.json",
+      "status": 200,
+      "sha256": "5d5ddd69f6ae734cbd12b2eb0b5f28b81007e2c6e25abb099d4ff579a9866f0b",
+      "expected_sha256": "5d5ddd69f6ae734cbd12b2eb0b5f28b81007e2c6e25abb099d4ff579a9866f0b",
+      "verified": true
+    },
+    {
+      "path": "src/routing/UsbGroundRoute.tsx",
+      "status": 200,
+      "sha256": "9f72b8e90f08753096f2e93fd593a7fa86797ea7730d87732a943e338d651f37",
+      "expected_sha256": "9f72b8e90f08753096f2e93fd593a7fa86797ea7730d87732a943e338d651f37",
+      "verified": true
+    },
+    {
+      "path": "src/routing/UsbSavedRoutes.tsx",
+      "status": 200,
+      "sha256": "15ad8df91c0b1cbf473231b95ca91cdd1edfea4d65ced5ee1463ae5a64426729",
+      "expected_sha256": "15ad8df91c0b1cbf473231b95ca91cdd1edfea4d65ced5ee1463ae5a64426729",
+      "verified": true
+    },
+    {
+      "path": "src/routing/vm-fanouts-trial.json",
+      "status": 200,
+      "sha256": "1e9aa79b6212558529bc9ddf1ae62dc7857ec53f30405f362ad3a6f9f4fecc41",
+      "expected_sha256": "1e9aa79b6212558529bc9ddf1ae62dc7857ec53f30405f362ad3a6f9f4fecc41",
+      "verified": true
+    },
+    {
+      "path": "src/SmartNema14MotorController.tsx",
+      "status": 200,
+      "sha256": "d51b3de0b349a8196e4f4e657ed22c6cafea2ec266501bd23989f16093712a75",
+      "expected_sha256": "d51b3de0b349a8196e4f4e657ed22c6cafea2ec266501bd23989f16093712a75",
+      "verified": true
+    },
+    {
+      "path": "src/usb-pd/UsbPdSheet.tsx",
+      "status": 200,
+      "sha256": "fb1f7a420d1637acac56f7517e072b08f97c198e99cc6a32e030546a7435097b",
+      "expected_sha256": "fb1f7a420d1637acac56f7517e072b08f97c198e99cc6a32e030546a7435097b",
+      "verified": true
+    },
+    {
+      "path": "src/usb-pd/UsbReference.tsx",
+      "status": 200,
+      "sha256": "d115d2541f4ece9e9eecf0c7fe3b5b8a2673e56503da5ba80ec74d62e848d0fe",
+      "expected_sha256": "d115d2541f4ece9e9eecf0c7fe3b5b8a2673e56503da5ba80ec74d62e848d0fe",
+      "verified": true
+    },
+    {
+      "path": "src/usb-pd/UsbRoutes.tsx",
+      "status": 200,
+      "sha256": "fa1bbb712a85d0d140e2f470e695f8401ed057ffd469b2f15ee7544e74b48053",
+      "expected_sha256": "fa1bbb712a85d0d140e2f470e695f8401ed057ffd469b2f15ee7544e74b48053",
+      "verified": true
+    },
+    {
+      "path": "tscircuit.config.json",
+      "status": 200,
+      "sha256": "5945f682b0af43f2c6531b8744d08fd2603098d9e0a9fa74c5b34b9d0dd4a407",
+      "expected_sha256": "5945f682b0af43f2c6531b8744d08fd2603098d9e0a9fa74c5b34b9d0dd4a407",
+      "verified": true
+    },
+    {
+      "path": "tsconfig.json",
+      "status": 200,
+      "sha256": "b7656834a123f23ffafa0bde27b9008440e78977bf59dd7d8a3ea193d98ad629",
+      "expected_sha256": "b7656834a123f23ffafa0bde27b9008440e78977bf59dd7d8a3ea193d98ad629",
+      "verified": true
+    },
+    {
+      "path": "VALIDATION.md",
+      "status": 200,
+      "sha256": "c947f09bc61147ed713d74d33fd2ab4c048b86414c2e4de7a1397d64dae08a50",
+      "expected_sha256": "c947f09bc61147ed713d74d33fd2ab4c048b86414c2e4de7a1397d64dae08a50",
+      "verified": true
+    }
+  ],
+  "all_files_verified": true,
+  "file_count": 290,
+  "is_private": false,
+  "ready_to_build": true,
+  "hosted_build_success_claimed": false,
+  "fabrication_ready": false,
+  "completed_at": "2026-10-05T11:59:30.718Z",
+  "github_public_checks": [
+    {
+      "path": "index.circuit.tsx",
+      "status": 200,
+      "sha256": "68f27962e6b7c62406096d9b741db1c5d59652bc3fe936a70a1ca938cd238e69",
+      "verified": true
+    },
+    {
+      "path": "src/SmartNema14MotorController.tsx",
+      "status": 200,
+      "sha256": "d51b3de0b349a8196e4f4e657ed22c6cafea2ec266501bd23989f16093712a75",
+      "verified": true
+    },
+    {
+      "path": "src/routing/power-guarded-paths-trial.json",
+      "status": 200,
+      "sha256": "e6ebf8319c2c3e6f75b6a9567b07733676214252f70a1d8241f97c428ea7edb9",
+      "verified": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "status": 200,
+      "sha256": "b34e0750a4ae9700afa078058bd48f4fc32d4d448cbe4c961d4da169752a53c7",
+      "verified": true
+    },
+    {
+      "path": "dist/routing-review/circuit.json",
+      "status": 200,
+      "sha256": "b34e0750a4ae9700afa078058bd48f4fc32d4d448cbe4c961d4da169752a53c7",
+      "verified": true
+    }
+  ]
+}
