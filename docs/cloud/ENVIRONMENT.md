@@ -65,3 +65,22 @@ VALIDATION.md for the verified setup/dispatch evidence and pending board gates.
 Official documentation checked 2026-10-05:
 https://learn.chatgpt.com/docs/environments/cloud-environments
 and https://bun.com/docs/installation.
+
+## Live supplier verification during board continuation
+
+The minimal setup allowlist above remains sufficient for installation and smoke
+checks. Full CLI board builds additionally query the official EasyEDA component
+API at `easyeda.com/api/components/search` and `easyeda.com/api/components/...`.
+The current proxy denies CONNECT to `easyeda.com` with HTTP 403; the CLI reports
+this as 111 supplier-footprint lookup warnings. This is a policy denial, not
+proof of a supplier API rate limit or an invalid component definition. Imported
+component footprints remain intact and critical pin checks pass.
+
+For this board continuation, add only `easyeda.com` to the existing 11 custom
+hosts. No wildcard is needed. The onboarding draft preserves the existing hosts,
+package-manager preset, installation and startup instructions. An agent draft
+save does not apply live policy. Saving through the environment editor can request
+a runtime update; retry the actual HTTPS request afterward. Publishing activates
+an environment configuration/snapshot and does not migrate unrelated running
+tasks. Do not bypass the proxy, disable TLS, replace components, or hide the
+parts-engine warnings to avoid the denial.

@@ -31,6 +31,10 @@ actually viewed. No apparent missing saved copper was observed; unfinished
 escapes and crowded/overlapping silkscreen remain explicit blockers. Final
 mechanical/thermal/visual and fabrication export/CAM qualification is pending.
 The CLI retains 111 EasyEDA HTTP 403 supplier-footprint lookup warnings, plus
+The exact EasyEDA CONNECT request is denied by the Cloud Envoy proxy before
+supplier API access; this is not an established supplier rate limit. A draft
+adds only easyeda.com to the existing 11 custom hosts; runtime activation is
+pending user-facing save/publication and an actual successful retry.
 29 trace, 14 power-pin, 7 ground-pin, 6 underspecified-pin, 5 refdes and
 5 schematic-style warnings. Critical official import labels and TypeScript/
 formatting pass. The historical `test:draft` expects a schematic-only build;
