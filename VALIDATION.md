@@ -15,6 +15,14 @@ See evidence/rev-0.0.34-alpha.0/cad-publication/ for manifests,
 before/after audits and asset readback. The hosted rebuild remains pending.
 Hosted 3D rendering and assembled fit remain separately unverified.
 
+Publication verification: GitHub main commit
+`5b1f28a0068c5107eb37800553e62d39829fe683` and the matching public
+tscircuit revision 0.0.34-alpha.0 are anonymously accessible. All 17 updated
+metadata/artifact files passed exact remote SHA-256 readback, including all
+three unchanged canonical Circuit JSON copies. The separate asset receipt
+verifies all 105 model files. See cad-publication/METADATA-PUBLICATION.json
+for this verification snapshot; subsequent commits only record this outcome.
+
 SWDIO_GUARDED physically joins U7 pin3 and R20 pin1 through a supported
 native source tree. The old POWER_GOOD barrel obstructed the U7 outlet:
 0.2258 mm surface gap cannot fit the 0.15 mm signal plus required pad/via
