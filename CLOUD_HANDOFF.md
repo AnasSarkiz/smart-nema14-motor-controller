@@ -28,8 +28,10 @@ DIR Pipeline9 timed out at 600.907 seconds in edgeSolver (progress 0.28), with
 Evidence: LIMIT1-ADOPTION.json and cloud/canonical/CHECKS.json.
 Cloud resources and exact smoke results are retained. Live supplier availability
 still requires runtime activation of the saved easyeda.com host draft and a
-successful official request. Matching public publication is pending verification;
-no hosted build success is claimed.
+successful official request. Public revision 0.0.31 matches source/artifact commit `b3a748f2c3d6a979ea9088ba172069f49cbae59e`
+and tscircuit release `6868a1c3-d5f1-49e7-a4e1-8e70d3c3e9ee`: all 311 package files
+and eight GitHub files passed anonymous SHA-256 readback. Hosted build success
+is not claimed. See PUBLICATION.json.
 **PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
 
 ## Historical Linux continuation — 0.0.30-alpha.0
