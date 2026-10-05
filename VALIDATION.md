@@ -33,7 +33,7 @@ trials and stale output are explicitly identified in ARCHIVE-PROVENANCE.json;
 no check was disabled and no generated JSON or imported component was patched.
 See TMC-ENABLE-ADOPTION.json and cloud/canonical/CHECKS.json.
 
-Matching public publication is pending verification. Eight physical nets and
+Public revision0.0.33 matches source/artifact commit `642bfbe516b4ac4cbbc0bd00e2f876b07afe537f` and release `20809bda-8414-4ea2-aef8-c7f4c6754ed2`: all 326 base package files and 13 key GitHub files passed anonymous SHA-256 readback. Exact Cloud smoke and 4311 context files plus all four historical archive parts were verified. No hosted build success is claimed. Eight physical nets and
 full power/via/thermal/transient, USB/SI, signal, 3D/mechanical and CAM gates
 remain unfinished. Live official supplier verification still needs easyeda.com
 runtime policy activation through the environment editor. Firmware and hardware
