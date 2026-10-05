@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/smart-nema14-motor-controller/scripts/measure-usb-paths.py", line 123, in <module>
+    lengths[polarity] = shortest_existing_length(graph,[node(p,p['layers'][0])for p in endpoints])
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/smart-nema14-motor-controller/scripts/measure-usb-paths.py", line 40, in shortest_existing_length
+    assert start in graph and end in graph, 'USB endpoint missing from physical copper'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: USB endpoint missing from physical copper

@@ -1,0 +1,17 @@
+{
+  "input": "evidence/rev-0.0.29-alpha.0/cloud/canonical/circuit.json",
+  "sha256": "e3032bafd1603fd8fa2eaf78d4a49096a7dbccd37289cce17c05224397f87af1",
+  "scope": "0.001 mm vertical slices across the recorded RAW VBUS lower neck, x=-3.5..-2.7 mm. Does not qualify other necks, pads, vias, thermal spreading or transients.",
+  "minimum": {
+    "x_mm": -3.1,
+    "width_mm": 1.455
+  },
+  "inner_copper_thickness_mm": 0.0152,
+  "assumed_temperature_rise_c": 30,
+  "analytical_model": "IPC-2221 inner-layer k=0.024; I=k*dT^0.44*A_mil2^0.725, screening estimate only",
+  "screened_capacity_a": 1.3901061864698465,
+  "worst_case_efuse_limit_a": 1.0714,
+  "screen_passed": true,
+  "hardware_tested": false,
+  "fabrication_ready": false
+}

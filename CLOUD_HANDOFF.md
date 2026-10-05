@@ -1,6 +1,39 @@
 # Smart NEMA 14 controller: complete Cloud handoff
 
-## Current Linux continuation — 0.0.28-alpha.0
+## Current Linux continuation — 0.0.29-alpha.0
+
+TEMP_ALERT_N is complete between U1 pin 12, U9 pin 3 and R33 pin 2.
+The supported star uses inner1 from the existing MCU filled contact around the
+east/north perimeter and the reviewed UART/CC1 corridor to its pullup, plus an
+inner2 sensor branch. All 143 earlier saved paths and all 48 individually owned
+filled features remain exact; no new vias, purchased imports, placement, logical
+wiring, dependencies or mechanics changed.
+
+Fresh full official CLI build: **225 traces / 189 vias / 71 pours**, **14 native
+unconnected-port + 10 unfinished trace errors**, **71/82 complete physical nets**.
+Canonical SHA-256: `e3032bafd1603fd8fa2eaf78d4a49096a7dbccd37289cce17c05224397f87af1`.
+Strict geometry, foreign fill clearance, source netlist, native shorts, imports,
+TypeScript and formatting pass. All six power/reference networks stay joined;
+EFUSE_RTN remains isolated from GND. USB reference/skew and RAW-neck analytical
+screens pass. Full build exits 1 for retained errors. The 0.0.23 manufacturer-pin
+schematic-only test was not repeated for unchanged wiring/imports. Cosmetic
+D_VBUS styling remains. All four current layer images were actually viewed;
+crowded silkscreen and bottom labels near/outside the outline remain.
+Eleven physical nets and full power/via/thermal/transient, USB, 3D/mechanical
+and CAM qualification remain pending. Firmware and hardware tests are unperformed.
+
+Temperature trial001 failed before saved copper rendering because the new net's
+phase selectors were not declared. Trial002 corrected source phase assignments;
+001 is rejected. Native STEP Pipeline4 timed out at 180 seconds in nodeSolver,
+progress zero, 1474.29 MiB peak RSS, with no final circuit or paths adopted.
+Evidence: TEMPERATURE-ADOPTION.json and cloud/canonical/CHECKS.json.
+Cloud resource and exact smoke results are retained in this revision. Live
+EasyEDA availability still needs runtime activation of the saved official-host
+draft and a successful official request. Public matching publication is pending
+verification; no hosted build success is claimed.
+**PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
+
+## Historical Linux continuation — 0.0.28-alpha.0
 
 EXT_ENABLE_N is complete between U1 pin 21, R25 pin 2 and R30 pin 2.
 The supported inner1 saved star uses the existing ENABLE_MCU_FILLED and the

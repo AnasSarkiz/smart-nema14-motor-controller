@@ -1,0 +1,30 @@
+{
+  "revision": "0.0.29-alpha.0",
+  "accepted_saved_trial": "cloud/temperature-saved-002",
+  "logical_endpoints": [
+    "U1.pin12",
+    "U9.pin3",
+    "R33.pin2"
+  ],
+  "supported_source_api": "Complete saved star: inner1 east/north MCU trunk and inner2 sensor branch ending at R33 pin2",
+  "preserved_prior_saved_paths": 143,
+  "preserved_prior_filled_features": 48,
+  "new_vias": [],
+  "existing_filled_features_used": [
+    "TEMP_MCU_FILLED",
+    "TEMP_SENSOR_FILLED",
+    "TEMP_PULLUP_FILLED"
+  ],
+  "strict_geometry_violations": 0,
+  "foreign_filled_clearance_violations": 0,
+  "all_six_power_reference_nets_physical_components": 1,
+  "physically_complete_nets": 71,
+  "total_nets": 82,
+  "TEMP_ALERT_N_physical_components": 1,
+  "native_unconnected_port_errors": 14,
+  "dangling_trace_errors": 10,
+  "usb_reference_skew_and_raw_neck_screens_passed": true,
+  "prototype_fabrication_ready": false,
+  "hardware_tested": false,
+  "rejected_trial_001": "Saved selectors lacked phase connections; all copper replay failed. Corrected source phase assignments in trial002; trial001 never adopted."
+}

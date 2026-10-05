@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/smart-nema14-motor-controller/scripts/check-copper-geometry.py", line 241, in <module>
+    assert sorted(filled_matches) == sorted(f["name"] for f in filled_features), "Each named filled feature must match exactly one native emitted via"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Each named filled feature must match exactly one native emitted via
