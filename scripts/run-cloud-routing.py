@@ -59,6 +59,9 @@ def main():
     parser.add_argument('evidence_folder')
     parser.add_argument('--timeout-seconds', type=int, default=900)
     parser.add_argument('--memory-mb', type=int)
+    parser.add_argument('--native-pipeline9-input', help='Replay an unchanged captured core Pipeline9 event with public SDK mesh options.')
+    parser.add_argument('--max-node-dimension', type=float, default=3)
+    parser.add_argument('--max-node-ratio', type=float, default=30)
     arguments = parser.parse_args()
     if sys.platform != 'linux':
         parser.error('Routing is Cloud/Linux only; local Mac routing is disabled.')
@@ -70,6 +73,17 @@ def main():
     source.relative_to(repository)
     if not source.is_file():
         parser.error('Circuit source does not exist.')
+    native_input = None
+    if arguments.native_pipeline9_input:
+        native_input = Path(arguments.native_pipeline9_input).resolve()
+        native_input.relative_to(repository)
+        if not native_input.is_file():
+            parser.error('Captured native input does not exist.')
+        import math
+        if not math.isfinite(arguments.max_node_dimension) or arguments.max_node_dimension <= 0:
+            parser.error('Maximum node dimension must be finite and positive.')
+        if not math.isfinite(arguments.max_node_ratio) or arguments.max_node_ratio < 1:
+            parser.error('Maximum node ratio must be finite and at least 1.')
     output = Path(arguments.evidence_folder).resolve()
     output.relative_to(repository)
     output.mkdir(parents=True, exist_ok=True)
@@ -86,6 +100,10 @@ def main():
     with open('.cloud-routing.lock', 'w') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         command = [bun, 'scripts/run-native-routing.mjs', str(source), str(output)]
+        if native_input is not None:
+            command = [bun, 'scripts/run-pipeline9-sdk-routing.ts', str(native_input),
+                       str(output), str(arguments.max_node_dimension),
+                       str(arguments.max_node_ratio)]
         started = time.monotonic()
         peak_rss = 0
         termination = None

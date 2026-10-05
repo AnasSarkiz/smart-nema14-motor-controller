@@ -1,18 +1,20 @@
 {
   "checked_at": "2026-10-05T21:19:26.999620+00:00",
   "live_easyeda_status": "43 exact identities matched, HTTP200",
-  "live_catalogue_status": "CONNECT403; effective policy not yet verified after draft save",
+  "live_catalogue_status": "43 exact identities matched, all with nonzero displayed stock, exit0 through supported Node environment proxy",
   "added_host": "jlcsearch.tscircuit.com",
   "preserved_custom_host_count": 12,
   "draft_save": "saved",
   "requires_publish": true,
   "install_startup_and_package_manager_preset_preserved": true,
-  "runtime_applied_claimed": false,
+  "runtime_applied_claimed": "Actual requests now succeed; no inference that draft tool applied or published policy",
   "added_hosts": [
     "jlcsearch.tscircuit.com",
     "modelcdn.tscircuit.com"
   ],
   "custom_host_count": 14,
   "model_host_evidence": "Installed official CLI fetchEasyEDAComponent requests modelcdn.tscircuit.com OBJ metadata; actual CONNECT request received HTTP403",
-  "easyeda_search_request": "Installed CLI endpoint POST /api/components/search returned HTTP200 success true"
+  "easyeda_search_request": "Installed CLI endpoint POST /api/components/search returned HTTP200 success true",
+  "live_model_status": "Exact installed-CLI C2847904 OBJ URL with UUID returns HTTP200; response contains real OBJ vertex/face records",
+  "node_proxy_requirement": "NODE_USE_ENV_PROXY=1 for Node24 fetch-based tooling; Bun and curl use the configured proxy"
 }

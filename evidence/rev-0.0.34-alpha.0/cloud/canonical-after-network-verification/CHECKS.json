@@ -1,0 +1,59 @@
+{
+  "revision": "0.0.34-alpha.0",
+  "canonical_sha256": "519f8e29e54829445772ef4dec82ef712788d259f3556068d92bd160ce4cc855",
+  "counts": {
+    "pcb_via": 195,
+    "pcb_trace": 238,
+    "pcb_copper_pour": 74,
+    "pcb_port_not_connected_error": 9,
+    "pcb_trace_error": 6
+  },
+  "physically_complete_nets": 75,
+  "total_source_nets": 82,
+  "geometry_passed": true,
+  "foreign_filled_clearance_violations": 0,
+  "named_filled_features_matched": 51,
+  "checks_exit_codes": {
+    "TYPECHECK": 0,
+    "FORMAT": 0,
+    "IMPORTS": 0
+  },
+  "native_checks": {
+    "netlist": {
+      "check": "netlist",
+      "target": "index.circuit.tsx",
+      "exit_code": 0,
+      "reported_error_counts": [
+        0
+      ],
+      "basis": "Unchanged source/pin-net mapping; prior fresh source netlist check reused."
+    },
+    "shorts": {
+      "check": "shorts",
+      "target": "dist/index/circuit.json",
+      "exit_code": 0
+    },
+    "schematic-placement": {
+      "check": "schematic-placement",
+      "target": "dist/index/circuit.json",
+      "exit_code": 0
+    }
+  },
+  "all_four_layer_images_actually_viewed": true,
+  "visual_limitations": [
+    "Crowded silkscreen remains.",
+    "Bottom reference labels near/outside the board remain."
+  ],
+  "usb_and_raw_screens_passed": true,
+  "full_power_thermal_transient_signal_3d_and_cam_qualification_complete": false,
+  "prototype_fabrication_ready": false,
+  "hardware_tested": false,
+  "qualification_status": {
+    "GEOMETRY": 0,
+    "FILLED-ALL-NETS": 1,
+    "USB-RETURN": 0,
+    "USB-LENGTHS": 0,
+    "RAW-NECK": 0
+  },
+  "all_current_copper_groups_preserved": 276
+}

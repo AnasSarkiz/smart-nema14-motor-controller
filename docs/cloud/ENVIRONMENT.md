@@ -79,21 +79,20 @@ the sale flag set for each. Raw responses and checksums are retained in
 or qualify assembly. Imported footprints remain intact.
 
 The exact BOM catalogue check uses the installed CLI's official backend
-`jlcsearch.tscircuit.com`. That host still received CONNECT HTTP 403. An additive
-draft update now preserves the 12 existing hosts and adds the catalogue and official CLI model hosts as described below; no wildcard is needed. Installation/startup instructions and the
-package-manager preset remain intact. The supported draft tool returned
-`saved` and `requires_publish: true`. Review and save the change in environment
-settings, then publish. A draft save alone does not apply live policy. Saving
-through the environment editor can request a runtime update; retry the actual
-HTTPS request after a meaningful policy change. Publishing activates an
-environment configuration/snapshot and does not migrate unrelated running
-tasks. Do not bypass the proxy, disable TLS, replace components, or hide
-parts-engine warnings to avoid a denial.
+`jlcsearch.tscircuit.com`; model requests use `modelcdn.tscircuit.com`.
+Both initially received CONNECT HTTP 403. The additive 14-host draft preserves
+the package-manager preset, install/startup instructions and existing hosts.
+The supported draft tool returned saved and requires_publish: true. Draft
+saving alone does not prove effective policy application. The supported editor
+Save/Publish controls apply environment configuration; actual requests must
+be retried to verify access. No wildcard, proxy bypass or TLS disable is used.
 
-The installed CLI also requests component OBJ/STEP metadata from
-`modelcdn.tscircuit.com`. Its actual HTTPS request received CONNECT HTTP 403;
-the draft now includes this exact official model host as the fourteenth custom
-host. This is needed for the CLI parts engine and later 3D/assembly review.
-The CLI EasyEDA search endpoint itself now returns HTTP 200 and success true.
-Neither allowed-host drafts nor successful product queries establish completed
-CLI supplier-footprint validation or final mechanical qualification.
+Latest actual verification: the exact CLI catalogue check passes all 43 parts
+with displayed stock using `NODE_USE_ENV_PROXY=1 node scripts/check-bom-catalog.mjs`.
+Node 24 requires this supported environment-proxy option for fetch-based tools;
+without it the registry request failed DNS resolution. Registry access returns
+HTTP 200 with the option. Curl also returns HTTP 200 for the catalogue.
+The exact CLI model URL, including the UUID from the official product response,
+returns HTTP 200 and a real OBJ. Omitting that UUID returned service HTTP 504;
+that was not a policy denial. These observations establish current request
+access, not publication of the saved draft, stock reservation or final 3D fit.

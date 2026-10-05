@@ -18,11 +18,15 @@ the requested beta_pipeline9 even when a seed job has no target list.
 
 Fresh full build: **238 traces / 195 vias / 74 pours**, **9 native unconnected
 ports + 6 unfinished trace errors**, **75/82 physical nets complete**.
-Canonical SHA-256: `eedc25de02a25f31f2e664dac2b84fd0dce7d9b84c712fd883c7f4ddbd7ef029`.
+Canonical SHA-256: `519f8e29e54829445772ef4dec82ef712788d259f3556068d92bd160ce4cc855`.
 Strict geometry and foreign filled-copper clearance have zero violations.
 Native netlist/shorts/schematic placement, TypeScript, formatting and imports
-pass. The final full build changes only filesystem metadata; all 5642 other
-elements are exact, as recorded in canonical-final/FINAL-BUILD-EQUIVALENCE.json. All six power/reference networks remain joined and EFUSE_RTN isolated;
+pass. After successful network verification, the fresh full CLI build completed
+in 45.045 seconds with 7255.5 MiB peak sampled RSS. Its element serialization
+changed, but all 276 emitted net/layer copper groups preserve geometry within
+0.1 nm, all 195 barrel dimensions/spans/effective masks remain exact and all
+74 emitted pours remain byte-exact. See cloud/canonical-after-network-verification/
+EMITTED-ALL-COPPER-PRESERVATION.json and REBUILD-PRESERVATION.json. All six power/reference networks remain joined and EFUSE_RTN isolated;
 USB reference/skew and RAW-neck analytical screens pass. All four current layer
 images were actually viewed. Crowded silkscreen and bottom labels at/outside
 outline remain. Build/all-net checks correctly exit 1 for retained errors.
@@ -53,16 +57,25 @@ pinned Linux analysis libraries, complete context inventory and four archive
 parts. Source/format checks pass. Actual cgroup RAM is 32 GiB, swap is zero,
 and workspace disk has 27.58 GiB free out of 31.45 GiB.
 
-Matching public publication is pending verification. Seven physical nets
-(TMC_DIR, SWCLK, EXT_STEP_CONN, EXT_DIR, CAN_RS, EFUSE_FLT_N, POWER_HIGH_CURRENT)
-and complete power/via/thermal/transient, signal, USB/SI, 3D/mechanical and CAM
-gates remain unfinished. The official EasyEDA product API now matches all 43
-unique supplier identities for 111 component references, each with its sale flag
-set; this is not stock reservation or assembly approval. The official CLI BOM catalogue host jlcsearch.tscircuit.com and model metadata
-host modelcdn.tscircuit.com still received CONNECT HTTP 403. Both additions are
-saved in a 14-host draft and require environment settings Save/Publish plus
-effective-policy retries. Full CLI rebuild attempts timed out at 180 and 360
-seconds and are rejected, with no stale output accepted. Firmware and hardware tests are
+The base publication matches public source/artifact commit
+`169b518f865632e9b97b61bb34603463d829ce6a` and tscircuit release
+`1f1e413e-9f44-43c5-8c58-e97d64e38a75`: all 386 base package files and
+13 key GitHub files passed anonymous SHA-256 readback. PUBLICATION.json records
+that initial snapshot. The subsequent network-verified rebuild above changes
+serialization only; its current artifact/metadata readback is recorded separately
+in PUBLICATION-METADATA.json when complete.
+
+Seven physical nets (TMC_DIR, SWCLK, EXT_STEP_CONN, EXT_DIR, CAN_RS,
+EFUSE_FLT_N, POWER_HIGH_CURRENT) and full power/via/thermal/transient,
+signal, USB/SI, 3D/mechanical and CAM gates remain unfinished. Live official
+EasyEDA product responses match all 43 unique supplier identities for 111
+references. The official CLI catalogue check now passes all 43 exact parts
+with nonzero displayed stock; the exact model URL with its official UUID
+returns HTTP 200 and a real OBJ. Both formerly denied hosts now permit these
+requests. Node fetch tools use supported NODE_USE_ENV_PROXY=1. The 14-host
+draft is saved; successful actual requests do not prove draft publication,
+stock reservation or final 3D fit. Earlier 180/360-second failed builds are
+rejected, with no stale output accepted. Firmware and hardware tests remain
 unperformed; no hosted build success is claimed.
 **PROTOTYPE FABRICATION READY: NO.** Continue all TASK.md nets and qualification.
 
