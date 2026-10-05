@@ -15,17 +15,22 @@ Startup instructions (Start skill): read AGENTS.md and CLOUD_HANDOFF.md, then ru
 installation/startup. Save the verified setup and publish the environment;
 start the continuation using `docs/cloud/TASK.md`.
 
-Installation requires an Ubuntu/Debian Linux image with root or noninteractive
-sudo for apt. It installs pinned Bun 1.3.9, the exact bun.lock dependencies,
+Installation uses an Ubuntu/Debian Linux image. With root or noninteractive
+sudo, apt installs native prerequisites. On a non-root Cloud image without
+sudo, the script verifies curl/unzip/Python/fontconfig, installed system fonts,
+loadable native graphics libraries and the TLS trust store, and fails on a
+missing prerequisite. Python venv/pip and analysis libraries are verified by
+the subsequent installation and smoke checks. It installs pinned Bun 1.3.9, the exact bun.lock dependencies,
 Shapely 2.1.2 and CadQuery 2.8.0 in a fresh Linux .mechanical-venv. It never copies
 the Mac venv. Python 3.11/3.12 are the intended Linux runtime; validate actual
 wheel/tool availability during setup. No routing, fabrication approval or final
 board checks are implied by a successful setup smoke check.
 
 Allow package-manager domains and the official Bun download hosts `bun.com`,
-`github.com`, `release-assets.githubusercontent.com`, `objects.githubusercontent.com`.
+`github.com`, `raw.githubusercontent.com`, `api.github.com`,
+`release-assets.githubusercontent.com`, `objects.githubusercontent.com`.
 The Bun lockfile also uses `registry.npmjs.org` and
-`registry-api.tscircuit.com`; Python wheels use `pypi.org` and
+`registry-api.tscircuit.com` and `npm.tscircuit.com`; Python wheels use `pypi.org` and
 `files.pythonhosted.org`. Add official datasheet/model/source hosts only as
 needed for verification. Internet host access does not grant authentication.
 GitHub and tscircuit publication need their configured integrations/credentials;

@@ -1,5 +1,21 @@
 # Current Cloud handoff — 0.0.20-alpha.0, 2026-10-05
 
+## Cloud account activation and portable setup correction
+
+After the user signed in, the browser confirmed GitHub account AnasSarkiz.
+Only AnasSarkiz/smart-nema14-motor-controller was selected. The dedicated
+[Cloud setup task](https://chatgpt.com/local/01a10b97-5af1-74dc-a50a-05ae18efe070)
+verified checkout 43064cc. The actual non-root image has no sudo, so the initial
+apt-only install stopped before routing. The install script now uses apt when
+authorized administrator access exists and otherwise verifies every required
+preinstalled native library/tool, TLS trust and fonts. It retains the complete
+venv/dependency/smoke checks. The official Bun tagged GitHub installer provides
+a fallback when bun.com is unavailable through the Cloud proxy. Required
+package host allowlisting is documented. Environment publication and routing
+task start remain pending while this corrected setup is validated. Electronic
+sources and checked circuit JSON are unchanged; fabrication status remains NO.
+
+
 The latest user request moves remaining routing to Codex Cloud because local Mac jobs exhaust memory. No further local remaining-net job was started after that request. This revision promotes the checked trial226 copper to the canonical declarative index, preserves all native errors, pins upgraded released dependencies, and includes portable Cloud setup, complete task/context instructions, and archived experimental evidence. It is a work-in-progress prototype, not fabrication approval.
 
 Current gate status: Stage 1/2/3 prior prototype reviews remain historical evidence, with routing-driven placement changes requiring final regression. Stage 4 in progress; Stage 5 in progress; Stage 6 not started for the completed current design; Stage 7 not started (no physical prototype); Stage 8 in progress as an explicitly untested prototype. Earlier finished checks do not qualify the changed copper.
