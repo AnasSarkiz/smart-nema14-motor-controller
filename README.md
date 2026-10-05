@@ -1,18 +1,18 @@
 # Smart NEMA 14 Motor Controller
 
-Revision **0.0.21-alpha.0**, 2026-10-05. **Incomplete routing prototype; not fabrication ready; not hardware tested.**
+Revision **0.0.22-alpha.0**, 2026-10-05. **Incomplete routing prototype; not fabrication ready; not hardware tested.**
 
 35 × 35 mm, four layers, 111 electronic references / 108 default fitted, nine native A4 schematic sheets. Exact motor: **STEPPERONLINE 14HM11-0404S**, 0.4 A/phase, 25 Ω, 24 mH, 0.9°, single front shaft. U4/C6 encoder parts and the R50 CAN endpoint link are DNP by default. The front carrier uses the official motor geometry.
 
 STM32G0B1 provides USB FS, UCPD, classical CAN, STEP/DIR/ENABLE, limit inputs, SWD and temperature monitoring. TMC2209 drives the motor; TCPP01 protects USB; TPS26600 provides input protection/current limiting and AP63203 generates 3.3 V. Firmware and hardware tests remain pending. Hardware defaults keep the motor disabled and CAN in standby.
 
-The current saved-copper build has **226 traces, 181 vias and 64 pours**. It retains **18 native unconnected-port errors and 11 unfinished trace errors**. Independent actual-copper review finds **63 of 82 nets physically complete**; strict geometry and native shorts checks pass for this partial copper. The measured RAW VBUS lower neck is now 1.455 mm and passes its limited current screen; the complete power/via/thermal qualification remains pending. Current USB length/skew and adjacent-ground screens pass; complete qualification and final fabrication exports remain pending. Neither publication nor these partial checks approve fabrication.
+The current saved-copper build has **226 traces, 183 vias and 69 pours**. It retains **18 native unconnected-port errors and 11 unfinished trace errors**. Independent actual-copper review finds **64 of 82 nets physically complete**; strict geometry and native shorts checks pass for this partial copper. The measured RAW VBUS lower neck is now 1.455 mm and passes its limited current screen; the complete power/via/thermal qualification remains pending. Current USB length/skew and adjacent-ground screens pass; complete qualification and final fabrication exports remain pending. Neither publication nor these partial checks approve fabrication.
 
 ## Continue in Codex Cloud
 
 Local remaining-net routing exhausted the Mac's memory. New routing is Cloud/Linux only, using **tscircuit's native autorouter**. Read [AGENTS.md](AGENTS.md), the [complete handoff](CLOUD_HANDOFF.md), [environment setup](docs/cloud/ENVIRONMENT.md), [Cloud task](docs/cloud/TASK.md), and [validation record](VALIDATION.md).
 
-The default entry replays checked source routes/pours and preserves all errors without launching a new remaining-net search. Explicit selected-net phase-1 jobs use Pipeline9 with ordinary 0.30/0.60 mm vias. Saved copper includes individually declared filled/capped features; follow the manufacturing manifests, not a blanket same-net drill exemption. Do not resume older Freerouting experiments.
+The default entry replays checked source routes/pours and preserves all errors without launching a new remaining-net search. Explicit selected-net jobs use released native Pipelines 4/7/9 with ordinary 0.30/0.60 mm vias. Saved copper includes individually declared filled/capped features; follow the manufacturing manifests, not a blanket same-net drill exemption. Do not resume older Freerouting experiments.
 
 The fresh Ubuntu 24.04 [Linux readiness run](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37292488424) passed. The Codex Cloud setup and startup smoke checks passed; the environment was published and the user authorized board continuation. Cloud tscircuit authentication is now established.
 

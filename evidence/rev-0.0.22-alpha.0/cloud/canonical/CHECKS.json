@@ -1,0 +1,63 @@
+{
+  "revision": "0.0.22-alpha.0",
+  "canonical_sha256": "ad1089660085c886286b7cb4b47072aabdebe0f20ddcbba6a9635f2d3c1e9fe3",
+  "counts": {
+    "pcb_trace": 226,
+    "pcb_via": 183,
+    "pcb_copper_pour": 69,
+    "pcb_port_not_connected_error": 18,
+    "pcb_trace_error": 11
+  },
+  "physically_complete_nets": 64,
+  "total_source_nets": 82,
+  "geometry_passed": true,
+  "foreign_filled_clearance_violations": 0,
+  "typecheck_exit_code": 0,
+  "format_check_exit_code": 0,
+  "critical_imports_exit_code": 0,
+  "native_checks": {
+    "netlist": {
+      "check": "netlist",
+      "target": "index.circuit.tsx",
+      "exit_code": 0
+    },
+    "shorts": {
+      "check": "shorts",
+      "target": "dist/index/circuit.json",
+      "exit_code": 0
+    },
+    "schematic-placement": {
+      "check": "schematic-placement",
+      "target": "dist/index/circuit.json",
+      "exit_code": 0
+    }
+  },
+  "schematic_draft_test": {
+    "scope": "Fresh schematic-only render and the unmodified manufacturer-pin draft-connectivity test. Full canonical PCB JSON restored by shell EXIT trap.",
+    "schematic_build_exit_code": 0,
+    "draft_test_exit_code": 0
+  },
+  "layer_images_actually_viewed": [
+    "top.png",
+    "inner1.png",
+    "inner2.png",
+    "bottom.png"
+  ],
+  "visual_remaining_issues": [
+    "Crowded and overlapping silkscreen",
+    "Unfinished escape ends and remaining nets",
+    "Final detailed visual and 3D manufacturing review remains pending"
+  ],
+  "supplier_availability": "Not tested by the current full build; earlier official easyeda.com API requests were denied at the Cloud CONNECT proxy. Saved additive host policy awaits runtime activation and a successful retry.",
+  "warning_counts": {
+    "pcb_trace_warning": 29,
+    "schematic_component_styling_warning": 5,
+    "source_component_pins_underspecified_warning": 6,
+    "source_no_ground_pin_defined_warning": 7,
+    "source_no_power_pin_defined_warning": 14,
+    "source_refdes_convention_warning": 5
+  },
+  "full_power_thermal_usb_cam_qualification_complete": false,
+  "hardware_tested": false,
+  "prototype_fabrication_ready": false
+}

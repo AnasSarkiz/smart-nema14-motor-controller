@@ -4,6 +4,17 @@ export function GroundReturns() {
   return (
     <>
       <trace
+        name="CC1_RTN_DIVIDER_BOTTOM_RECONNECT"
+        from=".R44 > .pin2"
+        to=".R39 > .pin2"
+        thickness="0.15mm"
+        pcbPathRelativeTo=".R44 > .pin2"
+        pcbPath={[
+          { x: -0.432816, y: 0.485 },
+          { x: 1.967184, y: 0.485 },
+        ]}
+      />
+      <trace
         name="MCU_VSS_RETURN_RECONNECT"
         from=".GND_STITCH_MCU > .top"
         to=".U1 > .pin29"

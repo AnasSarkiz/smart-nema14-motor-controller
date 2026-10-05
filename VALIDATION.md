@@ -1,4 +1,49 @@
-# Current Linux continuation — 0.0.21-alpha.0, 2026-10-05
+# Current Linux continuation — 0.0.22-alpha.0, 2026-10-05
+
+PD_CC1_CONN is physically complete through the existing USB/capacitor group and
+TCPP pin 7. The source adopts the released native Pipeline4 trunk with explicit
+escape/clearance corrections. All 129 earlier saved paths remain identical.
+A specifically declared 0.20/0.38 mm filled/capped ground stitch at (-5.55,1.8)
+joins the C34 return island; a native 0.15 mm bottom trace joins R44 pin 2 to R39
+pin 2 via y=-16.675 mm, retaining isolated EFUSE_RTN connectivity. The CC1
+ordinary via is 0.30/0.60 mm at (-4.8,-4.45). Component imports, placement,
+outline, mechanics, dependencies and all earlier saved paths are retained.
+
+Fresh canonical official CLI build: **226 traces / 183 vias / 69 pours**;
+**18 native unconnected-port errors + 11 dangling-trace errors** remain.
+Independent filled-copper review finds **64/82 physically complete nets**,
+zero foreign clearance violations, and each of GND, EFUSE_RTN, VBUS_CONN,
+VBUS_PROTECTED, VM and V3V3 physically joined. Strict geometry passes with zero
+violations and exactly 45 named filled/capped features matched. Canonical SHA-256:
+`ad1089660085c886286b7cb4b47072aabdebe0f20ddcbba6a9635f2d3c1e9fe3`.
+
+RAW VBUS neck remains 1.455 mm; its limited IPC-2221 screen is 1.390106 A at an
+assumed 30 C rise, versus the 1.0714 A worst-case eFuse limit. USB skew remains
+0.381441 mm, adjacent ground covers the signal core, and approximate main-pair
+impedance remains 91.812378 ohm. These pass their defined analytical screens;
+complete power-path/via/transient/thermal and USB qualification remain pending.
+TypeScript, formatting, critical imports, native source netlist and copper-short
+checks pass. Native schematic placement retains the disclosed D_VBUS cosmetic
+orientation recommendation. A fresh schematic-only build and the unmodified
+manufacturer-pin draft test pass for 111 supplier parts and nine A4 sheets.
+The full PCB JSON was restored exactly afterward.
+
+All four current official-renderer layer images were actually viewed. Crowded
+silkscreen, 18 incomplete physical nets and unfinished escapes remain. The full
+CLI build exits 1 for the retained errors. Current JSON retains 29 trace, 14
+power-pin, 7 ground-pin, 6 underspecified-pin, 5 refdes and 5 schematic-style
+warnings. The current full build does not verify live supplier availability;
+the earlier EasyEDA CONNECT denial still requires runtime activation of the
+saved additive easyeda.com host and an actual successful official request.
+
+Rejected CC1 trials remain in `evidence/rev-0.0.22-alpha.0/cloud/cc1-saved-001`
+through `007`; they are not fabrication candidates. `CC1-ADOPTION.json` records
+the actual failure/acceptance decisions. Current qualification is in
+`evidence/rev-0.0.22-alpha.0/cloud/canonical/CHECKS.json`.
+Matching public 0.0.22 source/artifact publication is pending verification.
+**PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
+
+# Historical Linux step — 0.0.21-alpha.0, 2026-10-05
 
 The user authorized the board continuation after successful Cloud installation
 and startup checks. This source revision retains the exact imported electronics,

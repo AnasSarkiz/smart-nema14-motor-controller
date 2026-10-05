@@ -1,0 +1,137 @@
+{
+  "revision": "0.0.22-alpha.0",
+  "prototype_fabrication_ready": false,
+  "method": "Released native Pipeline4 trunk plus supported, explicitly specified source route coordinates; generated circuit JSON and dependency code unchanged.",
+  "native_trunk_origin": "evidence/rev-0.0.21-alpha.0/cloud/cc1-pipeline4-001/phase-1-output.json",
+  "adopted_trial": "cc1-saved-008",
+  "filled_features": 45,
+  "ordinary_cc1_via": {
+    "x": -4.8,
+    "y": -4.45,
+    "hole_diameter_mm": 0.3,
+    "outer_diameter_mm": 0.6
+  },
+  "ground_return_feature": "CC1_GROUND_RETURN_FILLED",
+  "rtn_bridge": "CC1_RTN_DIVIDER_BOTTOM_RECONNECT, bottom 0.15 mm, y=-16.675 mm",
+  "preserved_source_paths": "All 129 earlier saved paths remain byte-for-byte identical as parsed route objects. Only the new CC1 paths and net assignment are appended.",
+  "trials": [
+    {
+      "trial": "cc1-saved-001",
+      "decision": "rejected",
+      "reason": "Saved star paths consumed the USB hub before the capacitor path could use it.",
+      "circuit_sha256": "c16a7347206ed6b621e646fe4a8235bedf8e31ce27df9f677d216a4fb223deaa",
+      "counts": {
+        "pcb_trace": 94,
+        "pcb_via": 86,
+        "pcb_copper_pour": 63,
+        "pcb_port_not_connected_error": 206,
+        "pcb_trace_error": 11
+      }
+    },
+    {
+      "trial": "cc1-saved-002",
+      "decision": "rejected",
+      "reason": "CC1 spacing passed, but actual ground, raw VBUS and RTN networks split.",
+      "circuit_sha256": "6c7a3caf1c6ab3e6596dc91ef745535c5ac2734dd23b250245a9a97303d76f40",
+      "counts": {
+        "pcb_trace": 225,
+        "pcb_via": 182,
+        "pcb_copper_pour": 70,
+        "pcb_port_not_connected_error": 97,
+        "pcb_trace_error": 11
+      },
+      "GEOMETRY.json": "bdba5535cd8320a65e6e082a979b80784000f3e0dd0ea54486cb6031857805f1",
+      "FILLED-ALL-NETS.json": "b88d76d13beb61457792e41179a38562fbd35c910a164210bf2834e7dd36fb64"
+    },
+    {
+      "trial": "cc1-saved-003",
+      "decision": "rejected",
+      "reason": "Raw VBUS restored; ground and C33 RTN remained split, with two native keepout errors.",
+      "circuit_sha256": "3bd36c7cdbca5ca0f051feb0f5bc3ab024f6dd015107ca31a78859f9b0249986",
+      "counts": {
+        "pcb_trace": 225,
+        "pcb_via": 182,
+        "pcb_copper_pour": 69,
+        "pcb_port_not_connected_error": 93,
+        "pcb_trace_error": 13
+      },
+      "GEOMETRY.json": "4778afab15b4512ea5c902e3bfe8071d30c6d366e7aa3fe66e521cb64ba3c1f6",
+      "FILLED-ALL-NETS.json": "a27b33e5c6ba3d3858472c28a2e614c60822e32d50ae53738a0ba501bf23a3dd"
+    },
+    {
+      "trial": "cc1-saved-004",
+      "decision": "rejected",
+      "reason": "Ground stitch restored GND, but the experimental C33 trace was rotated incorrectly and crossed PD_OVP.",
+      "circuit_sha256": "0a9c2f927653240a4aaffa592eca285d5ac924644dfdabedc290b29108e9e60a",
+      "counts": {
+        "pcb_trace": 226,
+        "pcb_via": 183,
+        "pcb_copper_pour": 68,
+        "pcb_port_not_connected_error": 22,
+        "pcb_trace_error": 13
+      },
+      "GEOMETRY.json": "1fa9444b20d064e4c7dc01cb2f85a5b777062168a5482c4e4b0b74c41d0acec3",
+      "FILLED-ALL-NETS.json": "9dbe9de9be73bd38cda57490577b1c4d3863102852f3f31ca7a5ea34afc86951"
+    },
+    {
+      "trial": "cc1-saved-005",
+      "decision": "rejected",
+      "reason": "C33 trace spacing was corrected, but its endpoint did not reach the RTN pour.",
+      "circuit_sha256": "6a7958bb16ef86ea2d80e0bd67264aa259b03112473f28fadf49dc4fd4a8ff15",
+      "counts": {
+        "pcb_trace": 226,
+        "pcb_via": 183,
+        "pcb_copper_pour": 69,
+        "pcb_port_not_connected_error": 22,
+        "pcb_trace_error": 11
+      }
+    },
+    {
+      "trial": "cc1-saved-006",
+      "decision": "rejected",
+      "reason": "C33 and primary RTN joined; the lower divider RTN network was isolated.",
+      "circuit_sha256": "a8e0b588c55bbbaf70df65c9cac4726a652892e6dbe8f1ba6860870669e562b9",
+      "counts": {
+        "pcb_trace": 225,
+        "pcb_via": 183,
+        "pcb_copper_pour": 69,
+        "pcb_port_not_connected_error": 22,
+        "pcb_trace_error": 11
+      },
+      "GEOMETRY.json": "0b71ce0e2986ad4d446524193ddf73efd6210ff5031fda63141e322f2fded94a",
+      "FILLED-ALL-NETS.json": "865ce76ccfca1d785aad7577ccf8ca6dbe1fad9a11add6f22740fe19f6ee9299"
+    },
+    {
+      "trial": "cc1-saved-007",
+      "decision": "rejected",
+      "reason": "Long inner1 escape preserved RTN but split ground and failed USB return coverage.",
+      "circuit_sha256": "7e4b1efb871f25de2bf77089c88dbb00ceeec68c094a433e32a56f995e2022fc",
+      "counts": {
+        "pcb_trace": 225,
+        "pcb_via": 182,
+        "pcb_copper_pour": 70,
+        "pcb_port_not_connected_error": 89,
+        "pcb_trace_error": 11
+      },
+      "GEOMETRY.json": "bb3cca18dfd19c9eaca29efb292e01c7f1782629ec93144a691127cb49069965",
+      "FILLED-ALL-NETS.json": "4f9fbef951007cc510fad72ee8ba0e7e31878a39e90500e60918afa4e48afcf2",
+      "USB-RETURN.json": "7bf59b0d73a47b1e354df8b31380b33f9d01785d0c65f82fc65be24f7b8a41f5"
+    },
+    {
+      "trial": "cc1-saved-008",
+      "decision": "accepted incomplete prototype checkpoint",
+      "reason": "Accepted routing checkpoint: 64/82 physical nets, all six power/reference nets joined, strict geometry and USB/neck screens pass; full qualification remains incomplete.",
+      "circuit_sha256": "3a8b350bb39a92da5fb2ccff3ce20e35d58db9c7b137786bf6d5194e00f8f00c",
+      "counts": {
+        "pcb_trace": 226,
+        "pcb_via": 183,
+        "pcb_copper_pour": 69,
+        "pcb_port_not_connected_error": 18,
+        "pcb_trace_error": 11
+      },
+      "GEOMETRY.json": "73d892d4ef6b9ef2250c072918f84c864987153e8628c7e7a06dfaaba11c332c",
+      "FILLED-ALL-NETS.json": "de7c9b70b17e1eb48926d9ccb2b48ca53e0069e77eae7963160888ba8628add2",
+      "USB-RETURN.json": "106af493dac6a67386c273947a910c12b477509c10828bb013324e74bf16e029"
+    }
+  ]
+}

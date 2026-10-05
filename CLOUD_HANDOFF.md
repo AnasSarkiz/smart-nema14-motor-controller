@@ -1,6 +1,25 @@
 # Smart NEMA 14 controller: complete Cloud handoff
 
-## Current Linux continuation — 0.0.21-alpha.0
+## Current Linux continuation — 0.0.22-alpha.0
+
+CC1 is physically complete; all earlier saved paths and imported electronics
+are preserved. Copper is **226 traces / 183 vias / 69 pours**, with **18 native
+unconnected-port + 11 dangling-trace errors**, **64/82 physically complete nets**.
+Strict geometry and foreign filled-copper clearances pass. All six power/reference
+nets remain physically joined; RTN remains isolated from GND. The exact added
+ground filled/capped feature and bottom RTN divider bridge are recorded in
+CC1-ADOPTION.json and the manufacturing manifest; there are 45 named filled features.
+RAW neck and USB skew/return analytical screens pass. Native netlist, shorts,
+TypeScript, formatting, critical imports and the schematic-only draft test pass.
+All four current layer images were actually viewed; crowded silkscreen and final
+power/thermal/USB/mechanical/CAM qualification remain pending. Current canonical
+JSON SHA-256 is `ad1089660085c886286b7cb4b47072aabdebe0f20ddcbba6a9635f2d3c1e9fe3`.
+Public 0.0.22 publication is pending verification. EasyEDA live supplier access
+still requires applying the additive official-host draft; absence of warnings
+in the latest full build is not a supplier-availability check.
+**PROTOTYPE FABRICATION READY: NO.** Continue TASK.md; do not stop at this checkpoint.
+
+## Historical Linux step — 0.0.21-alpha.0
 
 The Cloud setup/startup checks passed and the user authorized routing. This
 revision fixes the measured RAW VBUS neck and completes TMC_UART_TX using
