@@ -1,0 +1,19 @@
+{
+  "accepted": false,
+  "reason": "Released native Pipeline7 reached progress 0.2656934901832861 but produced no final route before the bounded 240-second timeout. Existing canonical 0.0.24 copper is unchanged.",
+  "build_status": {
+    "command": [
+      "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+      "scripts/run-native-routing.mjs",
+      "/workspace/smart-nema14-motor-controller/scripts/native-tmc-enable-pipeline7-cloud.circuit.tsx",
+      "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.25-alpha.0/cloud/tmc-enable-pipeline7-001"
+    ],
+    "exit_code": -15,
+    "termination": "timeout",
+    "memory_budget_mb": 22937,
+    "peak_sampled_group_rss_mb": 8804.3984375,
+    "elapsed_seconds": 240.62401363499885,
+    "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+  },
+  "next_approach": "Select the two-endpoint LED_STATUS_DRIVE net instead of repeating unchanged TMC enable inputs."
+}

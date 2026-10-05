@@ -60,7 +60,8 @@
     "TMC_UART_TX",
     "PD_CC1_CONN",
     "PD_CC2_CONN",
-    "VBUS_ADC"
+    "VBUS_ADC",
+    "LED_STATUS_DRIVE"
   ],
   "connections": [
     ".U1 > .pin4",
@@ -259,7 +260,9 @@
     ".C27 > .pin1",
     ".U7 > .pin13",
     ".U1 > .pin11",
-    ".R51 > .pin1"
+    ".R51 > .pin1",
+    ".U1 > .pin30",
+    ".R36 > .pin1"
   ],
   "paths": [
     {
@@ -18796,6 +18799,113 @@
           "layer": "bottom"
         }
       ]
+    },
+    {
+      "connection": ".U1 > .pin30",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 8.749936,
+          "y": 5.549928,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 8.749936,
+          "y": 5.15,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "via",
+          "x": 8.749936,
+          "y": 5.15,
+          "from_layer": "top",
+          "to_layer": "inner2",
+          "via_diameter": 0.38,
+          "via_hole_diameter": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 8.749936,
+          "y": 5.15,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 7.85,
+          "y": 4.95,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 5.2,
+          "y": 4.95,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 5.2,
+          "y": 4.15,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 3.1,
+          "y": 4.15,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 3.1,
+          "y": 5.5,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": -0.567184,
+          "y": 5.5,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": -0.567184,
+          "y": 6.16,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "via",
+          "x": -0.567184,
+          "y": 6.16,
+          "from_layer": "inner2",
+          "to_layer": "bottom",
+          "via_diameter": 0.38,
+          "via_hole_diameter": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": -0.567184,
+          "y": 6.16,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": -0.567184,
+          "y": 6,
+          "width": 0.15,
+          "layer": "bottom"
+        }
+      ]
     }
   ],
   "manual_edit_basis": {
@@ -19570,6 +19680,14 @@
       "preserved_prior_paths": 133,
       "ordinary_vias_mm": [[5.18, -5.75], [8.19, -8.1]],
       "new_named_filled_owners": ["U1.pin11", "R51.pin1"]
+    },
+    {
+      "revision": "0.0.25-alpha.0",
+      "net": "LED_STATUS_DRIVE",
+      "source": "Supported native saved-phase path; manual inner2 detour around CAN_RX/EXT_STEP ordinary vias.",
+      "preservation": "All 136 prior saved paths unchanged; two existing named filled vias retained with exact owners and dimensions.",
+      "evidence": "evidence/rev-0.0.25-alpha.0/cloud/led-status-saved-001",
+      "qualification": "Native saved replay passes strict geometry and foreign filled clearance checks; all 82 physical nets checked, 67 complete including LED_STATUS_DRIVE; all six power/reference nets remain joined and USB reference/skew/RAW-neck screens pass. Final fabrication qualification remains incomplete."
     }
   ],
   "joint_routing_trials": [

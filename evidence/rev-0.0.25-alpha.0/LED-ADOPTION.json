@@ -1,0 +1,32 @@
+{
+  "revision": "0.0.25-alpha.0",
+  "accepted_saved_trial": "cloud/led-status-saved-001",
+  "logical_endpoints": [
+    "U1.pin30",
+    "R36.pin1"
+  ],
+  "supported_source_api": "Complete autoroutingphase pcbTracePaths path using inner2 manual detour",
+  "native_router_attempts": {
+    "LED_STATUS_DRIVE": "Pipeline4 bounded 180-second timeout; no final route adopted",
+    "TMC_ENABLE_N": "Pipeline4 180-second and Pipeline7 240-second timeouts; no final route adopted"
+  },
+  "preserved_prior_saved_paths": 136,
+  "preserved_prior_filled_features": 47,
+  "new_filled_features": [],
+  "new_ordinary_vias": [],
+  "existing_filled_features_used": [
+    "STATUS_MCU_FILLED",
+    "STATUS_RESISTOR_FILLED"
+  ],
+  "strict_geometry_violations": 0,
+  "foreign_filled_clearance_violations": 0,
+  "LED_physical_components": 1,
+  "all_six_power_reference_nets_physical_components": 1,
+  "physically_complete_nets": 67,
+  "total_nets": 82,
+  "native_unconnected_port_errors": 14,
+  "dangling_trace_errors": 11,
+  "usb_reference_skew_and_raw_neck_screens_passed": true,
+  "prototype_fabrication_ready": false,
+  "hardware_tested": false
+}

@@ -1,6 +1,26 @@
 # Smart NEMA 14 controller: complete Cloud handoff
 
-## Current Linux continuation — 0.0.24-alpha.0
+## Current Linux continuation — 0.0.25-alpha.0
+
+LED_STATUS_DRIVE now joins U1 pin 30 and R36 pin 1 through a supported manual
+inner2 saved-phase path using the two existing named filled features. All 136
+previous saved paths and all 47 filled-via declarations remain exact. No new
+vias, imports, placement, logical wiring, dependencies or mechanics were added.
+Fresh canonical copper: **227 traces / 188 vias / 70 pours**, **14 native
+unconnected-port + 11 unfinished trace errors**, **67/82 physically complete
+nets**. Strict geometry and foreign filled clearances pass. All six power/
+reference nets stay joined; RTN stays isolated. USB reference/skew and RAW neck
+analytical screens pass. Source netlist, shorts, imports, TypeScript and
+formatting are checked in current evidence. All four current layer images were actually viewed; final power/thermal/USB, silkscreen,
+3D/mechanical and fabrication-file qualification remain incomplete.
+Canonical SHA-256: `ba082e485f73bbbae4bf0d2ea5a2f7e33bb09ada8466491caf05b422e91f58fc`.
+Evidence: evidence/rev-0.0.25-alpha.0/LED-ADOPTION.json and cloud/canonical.
+TMC enable Pipeline4/7 and LED Pipeline4 timeouts are retained without adoption.
+Matching public publication is pending verification; see the receipt when present.
+Live EasyEDA availability still requires activation of the saved official-host draft.
+**PROTOTYPE FABRICATION READY: NO.** Continue the 15 remaining nets and TASK.md.
+
+## Historical Linux continuation — 0.0.24-alpha.0
 
 The four-endpoint VBUS_ADC net is complete through supported L1 source star paths.
 Two ordinary 0.30/0.60 mm transitions and two individually owned ADC filled/capped

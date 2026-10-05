@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+    "scripts/run-native-routing.mjs",
+    "/workspace/smart-nema14-motor-controller/scripts/native-led-status-pipeline4-cloud.circuit.tsx",
+    "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.25-alpha.0/cloud/led-status-pipeline4-001"
+  ],
+  "exit_code": -15,
+  "termination": "timeout",
+  "memory_budget_mb": 22937,
+  "peak_sampled_group_rss_mb": 1462.58203125,
+  "elapsed_seconds": 180.2322922229996,
+  "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+}

@@ -1,4 +1,43 @@
-# Current Linux continuation — 0.0.24-alpha.0, 2026-10-05
+# Current Linux continuation — 0.0.25-alpha.0, 2026-10-05
+
+LED_STATUS_DRIVE is complete between U1 pin 30 and R36 pin 1. The released
+Pipeline4 timed out at 180 seconds without final output; no native candidate
+was adopted. A supported manual inner2 saved path detours around the existing
+CAN_RX and EXT_STEP ordinary vias, using STATUS_MCU_FILLED and
+STATUS_RESISTOR_FILLED with their existing exact owners/dimensions. All 136
+prior saved paths and 47 manufacturing declarations remain identical. No new
+vias, purchased imports, placements, logic, dependencies or mechanics changed.
+Separate TMC enable Pipeline4 (180 s) and Pipeline7 (240 s) timeouts are retained;
+neither produced final routing output and neither altered accepted copper.
+
+Fresh full official CLI build: **227 traces / 188 vias / 70 pours**, **14 native
+unconnected-port + 11 unfinished trace errors**, **67/82 complete physical nets**.
+Canonical SHA-256: `ba082e485f73bbbae4bf0d2ea5a2f7e33bb09ada8466491caf05b422e91f58fc`.
+The full build correctly exits 1 for retained errors. Strict geometry and foreign
+filled clearances pass; all six power/reference nets remain joined and EFUSE_RTN
+stays isolated from GND. Source netlist, native shorts, imports, TypeScript and
+formatting are checked in the current evidence. The manufacturer-pin/schematic
+draft test was not repeated; its 0.0.23 evidence applies to unchanged imports,
+placement and logical wiring. Schematic placement retains the disclosed cosmetic
+D_VBUS orientation recommendation.
+
+USB skew remains 0.381441 mm, measured reference-core coverage passes and the
+approximate main-pair impedance remains 91.812378 ohm. RAW lower neck remains
+1.455 mm, with the limited 1.390106 A analytical estimate versus the 1.0714 A
+worst-case current limit. Full power/via/transient/thermal, USB, silkscreen,
+3D/mechanical and CAM qualification remain pending. All four current layer images were actually viewed; crowded silkscreen and bottom
+refdes near/outside the outline remain. Fifteen physical nets remain incomplete. See LED-ADOPTION.json and canonical/CHECKS.json.
+
+Current Cloud measurements: 32 GiB container limit, 33.289 GiB host RAM, no swap;
+31.451 GiB filesystem total and 28.757 GiB available at measurement. These actual
+values are recorded in CLOUD-RESOURCES.json. Live supplier availability remains
+unverified: activation of the saved additive easyeda.com runtime host policy and
+a successful official request are still required. Matching public publication
+is pending exact checksum verification; no hosted build success is claimed.
+Firmware and physical testing remain unperformed.
+**PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
+
+# Historical Linux continuation — 0.0.24-alpha.0, 2026-10-05
 
 VBUS_ADC is physically complete across MCU U1 pin 11, C27 pin 1, guard U7 pin 13
 and series R51 pin 1. Native Pipeline4 exhausted iterations on four endpoints;
