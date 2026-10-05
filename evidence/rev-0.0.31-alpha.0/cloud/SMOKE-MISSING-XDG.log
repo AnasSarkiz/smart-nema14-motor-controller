@@ -1,0 +1,20 @@
+157796 |     }
+157797 |     const errors = this.#validator.errors.map(({ instancePath, message = "" }) => `\`${instancePath.slice(1)}\` ${message}`);
+157798 |     throw new Error("Config schema violation: " + errors.join("; "));
+157799 |   }
+157800 |   _ensureDirectory() {
+157801 |     fs12.mkdirSync(path13.dirname(this.path), { recursive: true });
+                  ^
+EROFS: read-only file system, mkdir '/home/agent/.config/tscircuit-nodejs'
+    path: "/home/agent/.config/tscircuit-nodejs",
+ syscall: "mkdir",
+   errno: -30,
+    code: "EROFS"
+
+      at _ensureDirectory (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js:157801:10)
+      at store (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js:157737:14)
+      at new Conf (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js:157628:23)
+      at getCliConfig (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js:157975:10)
+      at /workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js:157980:17
+
+Bun v1.3.9 (Linux x64)

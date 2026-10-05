@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/smart-nema14-motor-controller/scripts/review-usb-return.py", line 68, in <module>
+    verticals[polarity] = max(candidates, key=lambda s:s["length_mm"])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: max() iterable argument is empty

@@ -1,0 +1,69 @@
+{
+  "revision": "0.0.31-alpha.0",
+  "canonical_sha256": "04ba8d990851f101e528d95831c468a3dcb7176b75b184141058bafee406e8a5",
+  "counts": {
+    "pcb_via": 189,
+    "pcb_trace": 224,
+    "pcb_copper_pour": 72,
+    "pcb_port_not_connected_error": 14,
+    "pcb_trace_error": 6
+  },
+  "physically_complete_nets": 73,
+  "total_source_nets": 82,
+  "geometry_passed": true,
+  "foreign_filled_clearance_violations": 0,
+  "named_filled_features_matched": 48,
+  "typecheck_exit_code": 0,
+  "format_check_exit_code": 0,
+  "critical_imports_exit_code": 0,
+  "native_checks": {
+    "netlist": {
+      "check": "netlist",
+      "target": "index.circuit.tsx",
+      "exit_code": 0,
+      "reported_error_counts": [
+        0
+      ]
+    },
+    "shorts": {
+      "check": "shorts",
+      "target": "dist/index/circuit.json",
+      "exit_code": 0,
+      "reported_error_counts": []
+    },
+    "schematic-placement": {
+      "check": "schematic-placement",
+      "target": "dist/index/circuit.json",
+      "exit_code": 0,
+      "reported_error_counts": []
+    }
+  },
+  "schematic_draft_test": {
+    "repeated_this_revision": false,
+    "reused_evidence": "evidence/rev-0.0.23-alpha.0/cloud/canonical/DRAFT-SCHEMATIC-TEST.json",
+    "reason": "Only native saved copper and specifically declared vias changed. Supplier imports, component placement and source wiring/topology remain identical; fresh source netlist and critical import audit pass."
+  },
+  "layer_images_actually_viewed": [
+    "top.png",
+    "inner1.png",
+    "inner2.png",
+    "bottom.png"
+  ],
+  "visual_remaining_issues": [
+    "Crowded and overlapping silkscreen; bottom refdes near/outside outline",
+    "Unfinished escapes and 9 incomplete physical nets",
+    "Final detailed visual and 3D manufacturing review pending"
+  ],
+  "supplier_availability": "Not verified by this full build. Earlier official easyeda.com API CONNECT denied; saved additive host draft requires runtime activation and successful official request.",
+  "warning_counts": {
+    "source_refdes_convention_warning": 5,
+    "source_no_power_pin_defined_warning": 14,
+    "source_no_ground_pin_defined_warning": 7,
+    "source_component_pins_underspecified_warning": 6,
+    "pcb_trace_warning": 29,
+    "schematic_component_styling_warning": 5
+  },
+  "full_power_thermal_usb_cam_qualification_complete": false,
+  "hardware_tested": false,
+  "prototype_fabrication_ready": false
+}

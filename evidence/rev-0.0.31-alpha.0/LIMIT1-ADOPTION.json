@@ -1,0 +1,33 @@
+{
+  "revision": "0.0.31-alpha.0",
+  "accepted_saved_trial": "cloud/limit1-saved-002",
+  "logical_endpoints": [
+    "U1.pin22",
+    "C30.pin1",
+    "R26.pin2",
+    "R31.pin2"
+  ],
+  "supported_source_api": "Complete native saved source star on inner1 using existing MCU/cap ordinary escapes and filter filled contact; explicit pullup branch includes fourth logical endpoint",
+  "preserved_prior_saved_paths": 148,
+  "preserved_prior_filled_features": 48,
+  "new_vias": [],
+  "existing_filled_features_used": [
+    "LIMIT1_FILTER_FILLED"
+  ],
+  "existing_ordinary_escapes_used": [
+    "LIMIT1_MCU_ESCAPE",
+    "LIMIT1_CAP_ESCAPE"
+  ],
+  "strict_geometry_violations": 0,
+  "foreign_filled_clearance_violations": 0,
+  "all_six_power_reference_nets_physical_components": 1,
+  "physically_complete_nets": 73,
+  "total_nets": 82,
+  "LIMIT1_physical_components": 1,
+  "native_unconnected_port_errors": 14,
+  "dangling_trace_errors": 6,
+  "usb_reference_skew_and_raw_neck_screens_passed": true,
+  "prototype_fabrication_ready": false,
+  "hardware_tested": false,
+  "rejected_trial001": "Incomplete source star omitted pullup R31 pin2 and native saved phase failed; corrected002 covers all four logical endpoints."
+}

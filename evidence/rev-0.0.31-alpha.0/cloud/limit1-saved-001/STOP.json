@@ -1,0 +1,4 @@
+{
+  "accepted": false,
+  "reason": "LIMIT1 has four logical endpoints; R31 pin2 was already externally joined to R26 pin2, but supported saved-phase API requires a path covering that endpoint explicitly. Added the exact existing bottom pullup link to the complete star in002. Native async error retained, no checks weakened."
+}
