@@ -26,8 +26,10 @@ and CAM qualification remain pending. Firmware and hardware tests are unperforme
 Evidence: EXT-ENABLE-INTERNAL-ADOPTION.json and cloud/canonical/CHECKS.json.
 Cloud resource and exact smoke results are retained in this revision. Live
 EasyEDA availability still needs runtime activation of the saved official-host
-draft and a successful official request. Public matching publication is pending
-verification; no hosted build success is claimed.
+draft and a successful official request. Public revision 0.0.28 matches source/artifact commit `3d9bed56d9928a4f745d774357888be7bb360b09`
+and tscircuit release `a6bb7734-03de-4312-a96e-6f178f2cf35f`: all 309 package files
+and eight GitHub files passed anonymous SHA-256 readback. Hosted build success
+is not claimed. See PUBLICATION.json.
 **PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
 
 ## Historical Linux continuation — 0.0.27-alpha.0
