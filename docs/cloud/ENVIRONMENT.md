@@ -46,7 +46,8 @@ detected VM/cgroup memory or the time limit. It records actual native errors and
 nonzero exit status. A killed job is a failure, never a passing build. One-second
 RSS polling is a guard, not an unlimited-memory guarantee.
 
-The original Cloud setup browser required sign-in. Repository preparation does
+The Linux setup was verified in GitHub Actions run 37292488424 on the pushed
+handoff source. The original Cloud setup browser required sign-in. Repository preparation does
 not itself create/publish a Cloud environment. Confirm **Environment published**
 and a task ID before reporting either action as complete.
 

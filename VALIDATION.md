@@ -20,6 +20,14 @@ The current handoff preserves all subsequent sources, checked JSON, motor/carrie
 
 **PROTOTYPE FABRICATION READY: NO.** Remaining blockers are incomplete routing/trace endpoints, final power/thermal/USB/manufacturing/visual/export qualification, and Cloud account/environment activation. Future physical testing remains pending and does not by itself excuse incomplete routing.
 
+## Verified remote handoff publication and Linux setup
+
+The code/artifact handoff is public in GitHub commit `e8ac86a139e5d9abbba239be893fa47983f3032a`. Anonymous GitHub downloads returned HTTP 200 and the checked canonical JSON digest `d833ec12e4eabb3bcda22e727a8eb6ed111ee19001d09b89321d7c685cae1521`. The Linux setup workflow [37292488424](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37292488424) passed on a fresh Ubuntu 24.04 checkout: dependency installation, TypeScript, critical imports, analysis-library imports and checksums for 2,799 context files plus the full four-part evidence archive. This confirms Linux repository setup, not Codex Cloud environment publication or a routing run.
+
+The existing tscircuit package was verified public (`is_private: false`). Revision **0.0.20-alpha.0**, release `b33a6427-8b92-4c9c-b3bb-2b1a33d75550`, was published through the same official registry archive API used by CLI compressed publishing, in bounded batches. **500 uploaded files were downloaded and checksum-verified**; canonical and preview circuit JSON and both entry/source files also matched anonymous readback. The canonical build remains d833ec12… and the separately generated preview is `16860a4847e88fa456877a81a62c65a6b12d6511774d38951cc31fca4cb35470`; their copper matches, while generated warning IDs/project metadata differ. Full historical evidence, skills and manufacturer references remain in public GitHub; the registry upload includes the exact board sources, current records and build JSON. See CLOUD-CHECKPOINT-PUBLICATION.json, CLOUD-PUBLIC-ACCESS.json and CLOUD-LINUX-READINESS.json in this revision's evidence.
+
+The hosted tscircuit build was queued; its success is not claimed. The local native build intentionally fails with the retained 20+11 unfinished-routing errors. Cloud environment/task activation still awaits sign-in and a confirmed environment. **PROTOTYPE FABRICATION READY: NO.**
+
 ---
 
 ## Historical validation record (superseded where the current handoff differs)

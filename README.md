@@ -14,6 +14,8 @@ Local remaining-net routing exhausted the Mac's memory. New routing is Cloud/Lin
 
 The default entry replays checked source routes/pours and preserves all errors without launching a new remaining-net search. Explicit selected-net phase-1 jobs use Pipeline9 with ordinary 0.30/0.60 mm vias. Saved copper includes individually declared filled/capped features; follow the manufacturing manifests, not a blanket same-net drill exemption. Do not resume older Freerouting experiments.
 
+The fresh Ubuntu 24.04 [Linux readiness run](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37292488424) passed. The actual Codex Cloud environment/task still needs account sign-in and environment activation.
+
 Cloud environment install command: `bash scripts/cloud-setup.sh`. Startup check: `bash scripts/cloud-smoke.sh`. Then publish the environment and start the task from TASK.md. A repository commit alone does not create or start a Cloud environment.
 
 All 1,627 rev20 experimental evidence files are retained in four compressed archive parts, with exact hashes. `python3 scripts/restore-routing-history.py` restores them into a separate folder when needed. Current checked JSON is committed at [dist/index/circuit.json](dist/index/circuit.json) and mirrored in [build/routing-review/circuit.json](build/routing-review/circuit.json).

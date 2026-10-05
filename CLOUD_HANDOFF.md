@@ -17,6 +17,12 @@ the subsequent checked copper, latest released dependencies and Cloud setup.
 Source identity is the Cloud handoff commit and its manifest, not a historical
 experimental filename alone.
 
+Linux installation and context checks passed in GitHub Actions run
+[37292488424](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37292488424).
+The public tscircuit 0.0.20-alpha.0 snapshot was uploaded and all 500 package
+files read back with matching hashes. Codex Cloud itself is not yet activated;
+the browser requested sign-in and no environment ID is confirmed.
+
 Public destinations:
 - https://github.com/AnasSarkiz/smart-nema14-motor-controller (`main`)
 - https://tscircuit.com/AnasSarkiz/smart-nema14-motor-controller--01a0fd9b
@@ -135,6 +141,12 @@ wrapper uses beta_pipeline9 when selected routing targets exist. Selected
 `<net>` elements require routingPhaseIndex 1. Native phase-1 new ordinary via
 minima are now explicitly 0.30/0.60 mm; global 0.15/0.38 accommodates only named
 filled/capped historical features.
+
+The CLI also logged a saved-route serialization ambiguity for
+`.D_USB > port.pin1` in native227. The official import audit passes; do not
+patch the TVS component to satisfy that helper. Inspect public native phase-end
+paths and exact port selectors before adoption, and report a tooling defect if
+necessary. This is distinct from the accepted cosmetic symbol rotation.
 
 `scripts/run-native-routing.mjs` uses the public Circuit API and records native
 start/end/error events, circuit JSON and nonzero errors. Public phase-end
