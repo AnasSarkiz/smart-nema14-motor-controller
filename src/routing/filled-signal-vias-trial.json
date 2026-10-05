@@ -1074,6 +1074,42 @@
       "minimum_foreign_drill_to_pad_mm": 0.25,
       "branches": [],
       "reason": "CC1 routing separates C34 ground through the inner1 return plane. This individually reviewed full-through stitch joins the isolated inner1 conductor to the main top and bottom ground pours beside U2 pin13. Ordinary 0.30/0.60 mm geometry fails the neighboring I2C_SCL and TMC_UART_RX clearances; exact 0.20/0.38 mm filled/capped geometry is measured separately. Physical connectivity and final transient/current/thermal qualification remain required."
+    },
+    {
+      "name": "ADC_MCU_FILLED",
+      "owner": {
+        "reference": "U1",
+        "pin_number": 11
+      },
+      "net": "VBUS_ADC",
+      "x": 10.749932,
+      "y": -3.4,
+      "owner_layer": "top",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_pad_contact",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "branches": [],
+      "review_reason": "Individually owned fine-pitch ADC escape; ordinary drill geometry cannot clear adjacent imported pads/traces. Full foreign-clearance and owner checks required."
+    },
+    {
+      "name": "ADC_SERIES_FILLED",
+      "owner": {
+        "reference": "R51",
+        "pin_number": 1
+      },
+      "net": "VBUS_ADC",
+      "x": 5.25,
+      "y": -2.9,
+      "owner_layer": "bottom",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "branches": [],
+      "review_reason": "Individually owned fine-pitch ADC escape; ordinary drill geometry cannot clear adjacent imported pads/traces. Full foreign-clearance and owner checks required."
     }
   ]
 }

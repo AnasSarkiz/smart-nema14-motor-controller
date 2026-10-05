@@ -1,0 +1,70 @@
+{
+  "revision": "0.0.24-alpha.0",
+  "accepted_saved_trial": "cloud/adc-saved-001",
+  "logical_endpoints": [
+    "U1.pin11",
+    "C27.pin1",
+    "U7.pin13",
+    "R51.pin1"
+  ],
+  "supported_source_api": "Complete three-branch autoroutingphase pcbTracePaths star ending at R51.pin1",
+  "native_router_attempts": {
+    "four_endpoints": "Pipeline4 iteration exhaustion, retained in revision 0.0.23 evidence",
+    "pair_selectors": "Released API expanded pair to whole four-point net; iteration exhaustion, no output adopted"
+  },
+  "new_reviewed_filled_features": [
+    {
+      "name": "ADC_MCU_FILLED",
+      "owner": "U1.pin11",
+      "position_mm": [
+        10.749932,
+        -3.4
+      ],
+      "drill_mm": 0.2,
+      "pad_mm": 0.38,
+      "construction": "filled_capped_pad_contact"
+    },
+    {
+      "name": "ADC_SERIES_FILLED",
+      "owner": "R51.pin1",
+      "position_mm": [
+        5.25,
+        -2.9
+      ],
+      "drill_mm": 0.2,
+      "pad_mm": 0.38,
+      "construction": "filled_capped_close_escape"
+    }
+  ],
+  "new_ordinary_vias": [
+    {
+      "position_mm": [
+        5.18,
+        -5.75
+      ],
+      "drill_mm": 0.3,
+      "pad_mm": 0.6
+    },
+    {
+      "position_mm": [
+        8.19,
+        -8.1
+      ],
+      "drill_mm": 0.3,
+      "pad_mm": 0.6
+    }
+  ],
+  "preserved_prior_saved_paths": 133,
+  "preserved_prior_filled_features": 45,
+  "strict_geometry_violations": 0,
+  "foreign_filled_clearance_violations": 0,
+  "ADC_physical_components": 1,
+  "all_six_power_reference_nets_physical_components": 1,
+  "physically_complete_nets": 66,
+  "total_nets": 82,
+  "native_unconnected_port_errors": 14,
+  "dangling_trace_errors": 11,
+  "usb_reference_skew_and_raw_neck_screens_passed": true,
+  "prototype_fabrication_ready": false,
+  "hardware_tested": false
+}

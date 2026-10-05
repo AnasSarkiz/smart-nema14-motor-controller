@@ -1,12 +1,12 @@
 {
-  "revision": "0.0.23-alpha.0",
+  "revision": "0.0.24-alpha.0",
   "source_identity": "The Git commit containing this manifest identifies the source, evidence and checked build.",
   "scope": "Every tracked file except this self-referential manifest; archived routing evidence has its own per-file inventory.",
   "circuit_counts": {
-    "pcb_trace": 225,
-    "pcb_via": 184,
+    "pcb_trace": 228,
+    "pcb_via": 188,
     "pcb_copper_pour": 70,
-    "pcb_port_not_connected_error": 18,
+    "pcb_port_not_connected_error": 14,
     "pcb_trace_error": 11
   },
   "files": [
@@ -532,18 +532,18 @@
     },
     {
       "path": "CLOUD_HANDOFF.md",
-      "bytes": 23790,
-      "sha256": "c4bd5400c7407586393cc3b2975cb1adb72cea5a769afb92f19ba4fca71d811d"
+      "bytes": 25125,
+      "sha256": "10f2eac6ac2c295492c2c7784823cf5bfd5cc7c52f23135d65e7a80be3ec9ac0"
     },
     {
       "path": "README.md",
       "bytes": 5037,
-      "sha256": "81851ccf8e8d3bff448fdd8703423cb38260c5e60663e564393dfdbd828fe7a0"
+      "sha256": "c099f7d5762bcf32037df945e1c9cd3b864e959d12b4a314bc7377c7876bde46"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 135210,
-      "sha256": "5e6838cfa768a96f5b1a0b6023bd9cc4bde6913d262448fdf4f2880be346cc8f"
+      "bytes": 137871,
+      "sha256": "fa10bfa22ea0985519be4adfd2991f7bf8c1c5257132bf8a81ac6c2a5b0ffce7"
     },
     {
       "path": "assembly.circuit.tsx",
@@ -557,13 +557,13 @@
     },
     {
       "path": "build/routing-review/BUILD-STATUS.json",
-      "bytes": 402,
-      "sha256": "5b5debed3998269dbd118895a7512c168b651a77d0204479a21f45c25e232642"
+      "bytes": 368,
+      "sha256": "af20f0dec6cf365b49ce2f3e7c0f4967677954097f384a37cac79a82b0ca7e1b"
     },
     {
       "path": "build/routing-review/circuit.json",
-      "bytes": 4763304,
-      "sha256": "5f175dd056e620cc8c4a7e80bd96230ef3ceb9c565761ea18a3b923574aa2c80"
+      "bytes": 4796142,
+      "sha256": "46da11d2673d74366c8754c221920d035bc6982debf27583f3dc2feb21214661"
     },
     {
       "path": "bun.lock",
@@ -577,13 +577,13 @@
     },
     {
       "path": "dist/index/circuit.json",
-      "bytes": 4763304,
-      "sha256": "5f175dd056e620cc8c4a7e80bd96230ef3ceb9c565761ea18a3b923574aa2c80"
+      "bytes": 4796142,
+      "sha256": "46da11d2673d74366c8754c221920d035bc6982debf27583f3dc2feb21214661"
     },
     {
       "path": "dist/routing-review/circuit.json",
-      "bytes": 4763304,
-      "sha256": "5f175dd056e620cc8c4a7e80bd96230ef3ceb9c565761ea18a3b923574aa2c80"
+      "bytes": 4796142,
+      "sha256": "46da11d2673d74366c8754c221920d035bc6982debf27583f3dc2feb21214661"
     },
     {
       "path": "docs/cloud/ENVIRONMENT.md",
@@ -10946,6 +10946,331 @@
       "sha256": "7a39f96614f29015202c3f60e8a489dadf6eeea0f79ec604efbefe8f5e467956"
     },
     {
+      "path": "evidence/rev-0.0.24-alpha.0/ADC-ADOPTION.json",
+      "bytes": 1787,
+      "sha256": "3698f680c9cea9c6c86796200783cbedb6257d396957a1b142b4a30543760f6a"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/CLOUD-RESOURCES.json",
+      "bytes": 262,
+      "sha256": "44d97c8bb98f2740e86ea4ef82f2e23e234147ddaae7f2300fa6fad8a204e5df"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/CLOUD-SMOKE.json",
+      "bytes": 71,
+      "sha256": "b1082a1d32ab073354a3192bdd836af8449b8f12a2250a99a938ffff41cf8fba"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/CLOUD-SMOKE.log",
+      "bytes": 437,
+      "sha256": "9f2cb51d3cacf46b57fa81eb8042fa035fc310b10e0c2b809724995a7148bc87"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/BUILD-STATUS.json",
+      "bytes": 609,
+      "sha256": "47db3222bced3de96753cff5acacb85310af6b0825c5ef0369276ec9926af6b6"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/BUILD.log",
+      "bytes": 335,
+      "sha256": "20e989ba8a2361302c9e15dcb9bd22b34081a07dc2c9693b4ffdd877577a0aeb"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/FILLED-ALL-NETS.json",
+      "bytes": 187130,
+      "sha256": "d3e884890b840ff7b46e0ee13e680103ceb12231b2e088d27445a38545208239"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/FILLED-ALL-NETS.log",
+      "bytes": 1414,
+      "sha256": "cc7e970bead81c21547500598017196a4bde695fa525c3f041e9edec670f52ee"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/GEOMETRY.json",
+      "bytes": 13232,
+      "sha256": "9d5a25f50fcc332e9caa366f74d1a49994d2c856b40c7fba54ca5663fad836a3"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/GEOMETRY.log",
+      "bytes": 13232,
+      "sha256": "9d5a25f50fcc332e9caa366f74d1a49994d2c856b40c7fba54ca5663fad836a3"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/QUALIFICATION-STATUS.json",
+      "bytes": 100,
+      "sha256": "7d35b2b15a03d606804da17b3e44538a1c3df157b1cb39bcb5af390b21167805"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/RAW-NECK.json",
+      "bytes": 736,
+      "sha256": "96469e8f2fc152e5e70d21e6d77a49f4fb1389c2bfdde5cd6f114ecbe7883080"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/RAW-NECK.log",
+      "bytes": 698,
+      "sha256": "b2d7cc43236784a24c177a051cb2ee288587e66cadcfee4606c99dd4f4e905b1"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/USB-LENGTHS.json",
+      "bytes": 721,
+      "sha256": "26fa9f14669eb14f944c9e115e7c430ce03bbe802ceb26172e84b3cb1d8528d8"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/USB-LENGTHS.log",
+      "bytes": 691,
+      "sha256": "b562324cdbb56b97f20b89cf5c30984f40a250afee632c6e2519712389742974"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/USB-RETURN.json",
+      "bytes": 22752,
+      "sha256": "2f922649134077e88177fca4b80738f0463c4fb0d695bd08b6bd49faaa996c5c"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/USB-RETURN.log",
+      "bytes": 209,
+      "sha256": "8692a3a3f03a52dfcb63111f83cfd938e46b966149d358f27ce0d8d6e90dc0a2"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/circuit.json",
+      "bytes": 4796629,
+      "sha256": "a732e7d2da4dc3ea5821c1eb1d7e50f0c0f65ffd3c201c886740c9ad8b24da1e"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/phase-0-input.json",
+      "bytes": 3253218,
+      "sha256": "fde622e7a19b6d7e60dd736774a6a8743c2b26e464c5ed46e6ead70ed82d71a3"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/adc-saved-001/phase-0-output.json",
+      "bytes": 3801851,
+      "sha256": "25aa6adef73bd6b0745c9738b56c4e222902971391cb03af110befd2b7b0828e"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/BUILD-STATUS.json",
+      "bytes": 344,
+      "sha256": "d4c58ee2c4234f139a46ea29ded41372b26abe6c92b342df4163aa9b412efbf3"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/BUILD.log",
+      "bytes": 8840,
+      "sha256": "29d348acb9a4f66de36a9c2777dd00672a4e5bf6549f7fa9dd509d5c9b10213d"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/CHECK-netlist.json",
+      "bytes": 116,
+      "sha256": "875cc9668c503e49eeaf2e735f32058072e4d5346f5c26a8aa2fb625d13aa1d3"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/CHECK-netlist.log",
+      "bytes": 26285,
+      "sha256": "2bc116b847c7a4c9772ae62b66b6d70746c85aa031c17ef9977c8290953ae505"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/CHECK-schematic-placement.json",
+      "bytes": 125,
+      "sha256": "7387a805ee29906374121ed044dd0d995d8b248a3289b15900be6c696bd7941d"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/CHECK-schematic-placement.log",
+      "bytes": 541,
+      "sha256": "d7515c839b2803ecae72a88ecc3038c1066f75812a9cf437981a78cb73c1b543"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/CHECK-shorts.json",
+      "bytes": 112,
+      "sha256": "f54f954e5f1876cc7f18470046e1e3bb82b71990274efdfaca499f1815752b20"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/CHECK-shorts.log",
+      "bytes": 35,
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/CHECKS.json",
+      "bytes": 2399,
+      "sha256": "0da6708478cbb017232f9d67c0f95efb4b96957893977b44e18d466608e7bbcc"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/FILLED-ALL-NETS.json",
+      "bytes": 187127,
+      "sha256": "6c3371c99a754a3ab39f29077f902eb99487185d9ff7789b921e576a3eeb253e"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/FILLED-ALL-NETS.log",
+      "bytes": 1414,
+      "sha256": "cc7e970bead81c21547500598017196a4bde695fa525c3f041e9edec670f52ee"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/GEOMETRY.json",
+      "bytes": 13228,
+      "sha256": "eef650bc40abf7144fa15fa8e6a40e3d419f0515e58a8c818d7bfd4620a3d8b8"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/GEOMETRY.log",
+      "bytes": 13228,
+      "sha256": "eef650bc40abf7144fa15fa8e6a40e3d419f0515e58a8c818d7bfd4620a3d8b8"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/QUALIFICATION-STATUS.json",
+      "bytes": 100,
+      "sha256": "7d35b2b15a03d606804da17b3e44538a1c3df157b1cb39bcb5af390b21167805"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/RAW-NECK.json",
+      "bytes": 732,
+      "sha256": "586522488f3f1de7d5f056d4d3e294439f88bd1cd12ab4e2403711f575f6de3d"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/RAW-NECK.log",
+      "bytes": 694,
+      "sha256": "45014626b3f5d559ebd1b149ab8d8617a34ae8673e5bfe1c30b1e6d616dbad2b"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/USB-LENGTHS.json",
+      "bytes": 717,
+      "sha256": "bcaa58039c0323b8e31b030454d590f20d9ba5fe14b6c98d9a06e9681ae3dc14"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/USB-LENGTHS.log",
+      "bytes": 687,
+      "sha256": "6f59dc5850b101595d8bafaa8bd6998f818f45125ebda67021d336e47608a0ab"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/USB-RETURN.json",
+      "bytes": 22748,
+      "sha256": "38bb466e432bd5913e9f7c766f602d91ac153ab78c13a2c67e88ac1b65c319ec"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/USB-RETURN.log",
+      "bytes": 209,
+      "sha256": "8692a3a3f03a52dfcb63111f83cfd938e46b966149d358f27ce0d8d6e90dc0a2"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/bottom.png",
+      "bytes": 327897,
+      "sha256": "b062c0590e382c179ddfe1eb27c388d13f0ad23b2c9ef499fe0a842206b13bf4"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/bottom.svg",
+      "bytes": 817709,
+      "sha256": "7b26dc506a72391bf4eb45aa00a5ab3ef65e71569955a78c639a6032ba17e904"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/circuit.json",
+      "bytes": 4796142,
+      "sha256": "46da11d2673d74366c8754c221920d035bc6982debf27583f3dc2feb21214661"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/inner1.png",
+      "bytes": 222412,
+      "sha256": "8fa4980441aa7aa7d20257dd1233383a6d7332ffd9997865b5209b441c922b95"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/inner1.svg",
+      "bytes": 600052,
+      "sha256": "a9136e54c0ae95464356650d70a3fb452104a0cc5480b5d24c1a90fd7c7c4d83"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/inner2.png",
+      "bytes": 218697,
+      "sha256": "459fb9c5ef7f9bc62e7921ddf93ae1263529d3e2df991257bae0779746ff8965"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/inner2.svg",
+      "bytes": 568823,
+      "sha256": "951203a78ae960bde0b0eab6f3876381aaf55431a6d248e423c00789f523655c"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/top.png",
+      "bytes": 272834,
+      "sha256": "439ba794bc89edcd794d5c33263e04fa553572c281c70c5a9ab4a4d662f82163"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/canonical/top.svg",
+      "bytes": 775480,
+      "sha256": "39d2875cdbd24ac2cf50317e53803389b757146e72e81ad9502c6fe52de73070"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/swdio-guarded-pipeline4-001/BUILD-STATUS.json",
+      "bytes": 669,
+      "sha256": "0f2ab3db1e07e2d3effc2bab678aa450b9a56a1829e2d7e50abd50dd75eea737"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/swdio-guarded-pipeline4-001/BUILD.log",
+      "bytes": 635,
+      "sha256": "cec5bc3727eae43a416ddb1c2a5d8f6bc1d0f2029893edc50bf1a041a4c7fb84"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/swdio-guarded-pipeline4-001/STOP-REASON.json",
+      "bytes": 198,
+      "sha256": "6ae6298006fd3185737001f08f975c43cddad8fc7fbee3723799f0da79a81067"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/swdio-guarded-pipeline4-001/phase-0-input.json",
+      "bytes": 3253218,
+      "sha256": "1500695fefadcea69bc61ba07ab7a94540bfff92e6d8cb64eace0488ff1bc43b"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/swdio-guarded-pipeline4-001/phase-0-output.json",
+      "bytes": 3801851,
+      "sha256": "3a2ff82b4a7aca1ae640dd666f58f27391a4413324d938f8d93979c474dbeb95"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/swdio-guarded-pipeline4-001/phase-1-input.json",
+      "bytes": 6641971,
+      "sha256": "fafb4f6f4c2d3608e6293c8b019ac4107d7a2b8e5d38c2527bf116bc333ad0ea"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/swdio-guarded-pipeline4-001/phase-1-progress.json",
+      "bytes": 741,
+      "sha256": "16a5a00a96b4267199d66a5bdb16bd883ececb71291b1db127bb47ebe82741b5"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/vbus-adc-cap-guard-pipeline4-001/BUILD-STATUS.json",
+      "bytes": 672,
+      "sha256": "d68ed42b1f8a00e5e5c24c1c1b2a632d2ec8812f2c7cc2c81676cd25094c1302"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/vbus-adc-cap-guard-pipeline4-001/BUILD.log",
+      "bytes": 931,
+      "sha256": "f4097ec55f7a93b103307506364ddf72c4f4e7ffdbc5b620ee03b62e89b00b92"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/vbus-adc-cap-guard-pipeline4-001/STOP-REASON.json",
+      "bytes": 434,
+      "sha256": "d1073aaaa26a7cc813ebefe5e42e2be0254f6ba56748b7567bc481ff7c26664d"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/vbus-adc-cap-guard-pipeline4-001/circuit.json",
+      "bytes": 3566533,
+      "sha256": "dd2ab7562573be917bb8aae43c084ae9027c15f814f014bccf344380d7ee8865"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/vbus-adc-cap-guard-pipeline4-001/phase-0-input.json",
+      "bytes": 3252298,
+      "sha256": "d0a02983b43a11627d7735df1284de8c4fe714770f9cb4fbc8877b381300b07e"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/vbus-adc-cap-guard-pipeline4-001/phase-0-output.json",
+      "bytes": 3792815,
+      "sha256": "9b7308219511af5999d830ef176cb9481aedad2b18838f5f9c55290d5b8a4103"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/vbus-adc-cap-guard-pipeline4-001/phase-1-input.json",
+      "bytes": 6588862,
+      "sha256": "c3586e4b151b438a8cbc65e22c7a0f4d93d770d1f88b7681237a5fa6b0bc1fca"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/vbus-adc-cap-guard-pipeline4-001/phase-1-progress.json",
+      "bytes": 741,
+      "sha256": "d12ab4c7374dc6d6f1f1447d15c52a066fbb4f20f2e70fd0d98c13e718b42ced"
+    },
+    {
+      "path": "evidence/rev-0.0.24-alpha.0/cloud/vbus-adc-cap-guard-pipeline4-001/routing-error.json",
+      "bytes": 6588951,
+      "sha256": "7a39f96614f29015202c3f60e8a489dadf6eeea0f79ec604efbefe8f5e467956"
+    },
+    {
       "path": "evidence/rev-0.0.3-alpha.0/AP63203-application.png",
       "bytes": 267724,
       "sha256": "8e454761c7ba07957034c7679c8f0626801cf8a4012aae246f40a97476aed491"
@@ -14513,7 +14838,7 @@
     {
       "path": "package.json",
       "bytes": 4334,
-      "sha256": "a034388bd3908e1b979ed352370e766befb141f1376185c3bc35139d9c0f7bf0"
+      "sha256": "fc90a6392953601f4f841c56c18e58419461fd499b8b6259bd9cc7e64de6049d"
     },
     {
       "path": "references/AP63203.pdf",
@@ -15196,6 +15521,11 @@
       "sha256": "319b3f123e46d5b52130c6a6cecb41d4e0323534ca561905343fb611c136e878"
     },
     {
+      "path": "scripts/native-swdio-guarded-pipeline4-cloud.circuit.tsx",
+      "bytes": 402,
+      "sha256": "818ec407292ef704d89844472349043eb6f237eff9ebbe5904bd1acc2872ea40"
+    },
+    {
       "path": "scripts/native-uart-tx-cloud.circuit.tsx",
       "bytes": 328,
       "sha256": "42e780168023328ed48d8208a2285bb87b3e420543bc9b3f0a09a18fd9da3dfa"
@@ -15204,6 +15534,11 @@
       "path": "scripts/native-uart-tx-pipeline4-cloud.circuit.tsx",
       "bytes": 392,
       "sha256": "add626e67249bb130b6329c4434529c7583f8ab2e20d32253d762b33fc9ecce2"
+    },
+    {
+      "path": "scripts/native-vbus-adc-cap-guard-pipeline4-cloud.circuit.tsx",
+      "bytes": 402,
+      "sha256": "c95fbcb95443cc1bc968669ca990fb8c5f5de8b9fcc1176db6babb97de2ab529"
     },
     {
       "path": "scripts/native-vbus-adc-pipeline4-cloud.circuit.tsx",
@@ -15992,8 +16327,8 @@
     },
     {
       "path": "src/routing/filled-signal-vias-trial.json",
-      "bytes": 30021,
-      "sha256": "e35ce7338bab8421cf151ae4216f9b0ed388a0503ba58ee4df3f0c71fd1137e6"
+      "bytes": 31341,
+      "sha256": "3cfbb3bc9ca2a6bef79ba04a2412eed0b7d1fcaf96bde842e64845b7e0c54c60"
     },
     {
       "path": "src/routing/ground-stitch-paths.json",
@@ -16027,8 +16362,8 @@
     },
     {
       "path": "src/routing/power-guarded-paths-trial.json",
-      "bytes": 428192,
-      "sha256": "5215fc09814c0e2b4f3e183e593bacdf7f06e723cfb2570c5a4668bde8af64e3"
+      "bytes": 433902,
+      "sha256": "5aa0392572cc54419bcaaec16d096a6b04d9e9713ce31283b61668e506d48412"
     },
     {
       "path": "src/routing/power-pour-trial.json",

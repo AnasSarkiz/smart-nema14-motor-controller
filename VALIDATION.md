@@ -1,4 +1,43 @@
-# Current Linux continuation — 0.0.23-alpha.0, 2026-10-05
+# Current Linux continuation — 0.0.24-alpha.0, 2026-10-05
+
+VBUS_ADC is physically complete across MCU U1 pin 11, C27 pin 1, guard U7 pin 13
+and series R51 pin 1. Native Pipeline4 exhausted iterations on four endpoints;
+selecting two pins still expanded to the whole net. Supported explicit source
+paths form a checked L1 star with two ordinary 0.30/0.60 mm vias at (5.18,-5.75)
+and (8.19,-8.1). Individually reviewed ADC_MCU_FILLED and ADC_SERIES_FILLED
+0.20/0.38 mm features have exact U1 pin 11 and R51 pin 1 owners. All prior 133
+saved paths and 45 filled features remain identical; exactly 47 filled features
+now match emitted geometry. No imported component, placement, mechanics,
+logical source wiring or dependency was changed.
+
+Fresh official CLI build: **228 traces / 188 vias / 70 pours**, **14 native
+unconnected-port + 11 unfinished trace errors**, **66/82 complete physical nets**.
+Canonical SHA-256: `46da11d2673d74366c8754c221920d035bc6982debf27583f3dc2feb21214661`.
+Strict geometry and foreign filled clearances pass; all six power/reference
+networks remain joined and EFUSE_RTN remains isolated from GND. The full CLI
+exits 1 for the retained incomplete connections. Source netlist, native copper
+shorts, TypeScript, formatting and critical import checks pass. Native schematic
+placement retains the disclosed cosmetic D_VBUS orientation recommendation.
+The previous revision's manufacturer-pin/schematic-only test remains applicable
+to the identical supplier imports and logical wiring; it was not repeated here.
+
+USB skew remains 0.381441 mm, complete measured ground-reference coverage passes,
+and the approximate main-pair impedance is 91.812378 ohm. RAW lower neck remains
+1.455 mm; its limited analytical current estimate is 1.390106 A against the
+1.0714 A worst-case current limit. These screens do not qualify all power paths,
+via currents, transients, thermal behavior or final USB performance. All four
+current layer images were actually viewed. Crowded silkscreen and 16 incomplete
+physical nets remain, with final 3D/mechanical/thermal/visual/CAM review pending.
+A separate native guarded SWDIO job timed out at the 180-second bound without
+usable output; none was adopted. See ADC-ADOPTION.json and canonical/CHECKS.json.
+
+Live supplier availability is not tested by this full build. The earlier official
+EasyEDA CONNECT denial still requires runtime activation of the saved additive
+host draft and a successful official request. Matching public 0.0.24 publication
+is pending verification. Firmware and hardware tests remain unperformed.
+**PROTOTYPE FABRICATION READY: NO.** Continue TASK.md; do not stop at this checkpoint.
+
+# Historical Linux continuation — 0.0.23-alpha.0, 2026-10-05
 
 PD_CC2_CONN is physically complete across J_USB pin 15, C24 pin 1 and U3 pin 9.
 The source retains the reviewed native Pipeline4 east/north trunk and uses

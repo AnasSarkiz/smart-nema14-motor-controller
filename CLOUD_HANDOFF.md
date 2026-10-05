@@ -1,6 +1,25 @@
 # Smart NEMA 14 controller: complete Cloud handoff
 
-## Current Linux continuation — 0.0.23-alpha.0
+## Current Linux continuation — 0.0.24-alpha.0
+
+The four-endpoint VBUS_ADC net is complete through supported L1 source star paths.
+Two ordinary 0.30/0.60 mm transitions and two individually owned ADC filled/capped
+features are recorded in ADC-ADOPTION.json; all prior 133 saved paths and 45 filled
+features remain exact. There are now 47 matched filled features. Copper is
+**228 traces / 188 vias / 70 pours**, **14 native unconnected-port + 11 unfinished
+trace errors**, **66/82 physically complete nets**. Strict geometry and foreign
+filled clearances pass; all six power/reference nets remain joined and RTN stays
+isolated from GND. USB reference/skew and RAW lower-neck screens pass.
+Source netlist, shorts, imports, TypeScript and formatting pass. All four current
+layer images were viewed; silkscreen and full qualification remain pending.
+Canonical SHA-256: `46da11d2673d74366c8754c221920d035bc6982debf27583f3dc2feb21214661`.
+The native ADC iteration failures and a guarded SWDIO timeout are retained.
+Current evidence: evidence/rev-0.0.24-alpha.0/cloud/canonical and ADC-ADOPTION.json.
+Public 0.0.24 publication verification is pending. Live EasyEDA availability
+still requires runtime activation of the saved additive host draft.
+**PROTOTYPE FABRICATION READY: NO.** Continue the 16 remaining physical nets and TASK.md.
+
+## Historical Linux continuation — 0.0.23-alpha.0
 
 CC2 now joins all three endpoints, retaining the native east/north trunk with
 supported source corrections. All 131 earlier saved paths and 45 filled features
