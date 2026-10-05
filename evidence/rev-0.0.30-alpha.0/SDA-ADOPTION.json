@@ -1,0 +1,34 @@
+{
+  "revision": "0.0.30-alpha.0",
+  "accepted_saved_trial": "cloud/sda-saved-002",
+  "logical_endpoints": [
+    "U1.pin48",
+    "U4.pin6",
+    "U9.pin6",
+    "R3.pin2"
+  ],
+  "supported_source_api": "Complete source star with inner2 western detour plus inner1 encoder/pullup leg, ending at the MCU; all current layer transitions replay through native tscircuit",
+  "preserved_prior_saved_paths": 145,
+  "preserved_prior_filled_features": 48,
+  "new_vias": [],
+  "existing_filled_features_used": [
+    "SDA_SENSOR_FILLED",
+    "SDA_ENCODER_FILLED"
+  ],
+  "existing_ordinary_escapes_used": [
+    "SDA_MCU_ESCAPE",
+    "SDA_PULLUP_ESCAPE"
+  ],
+  "strict_geometry_violations": 0,
+  "foreign_filled_clearance_violations": 0,
+  "all_six_power_reference_nets_physical_components": 1,
+  "physically_complete_nets": 72,
+  "total_nets": 82,
+  "I2C_SDA_physical_components": 1,
+  "native_unconnected_port_errors": 14,
+  "dangling_trace_errors": 8,
+  "usb_reference_skew_and_raw_neck_screens_passed": true,
+  "prototype_fabrication_ready": false,
+  "hardware_tested": false,
+  "sda_trial001": "Unchanged revision29 replay: local source-preparation helper failed before source writes; corrected helper used in002. No claim that001 contains SDA candidate."
+}

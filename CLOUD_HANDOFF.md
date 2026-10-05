@@ -1,6 +1,40 @@
 # Smart NEMA 14 controller: complete Cloud handoff
 
-## Current Linux continuation — 0.0.29-alpha.0
+## Current Linux continuation — 0.0.30-alpha.0
+
+I2C_SDA is complete between U1 pin 48, U9 pin 6, DNP encoder U4 pin 6 and R3 pin 2.
+The supported saved star uses inner2 around the existing UART/driver/control
+copper and an inner1 encoder-to-pullup leg, reusing the two existing ordinary
+escapes and two exact filled contacts. All 145 prior saved paths and all 48
+filled declarations remain unchanged. No new vias, imports, placement, logical
+wiring, dependencies or mechanical changes were made.
+
+Fresh full official CLI build: **224 traces / 189 vias / 71 pours**, **14 native
+unconnected-port + 8 unfinished trace errors**, **72/82 complete physical nets**.
+Canonical SHA-256: `5007f586de57f7c84af0351fd2931961a71e2a7b9d0e66eec456bf87e95e36f4`.
+Strict geometry, foreign fill clearance, source netlist, native shorts, imports,
+TypeScript and formatting pass. All six power/reference networks stay joined;
+EFUSE_RTN remains isolated from GND. USB reference/skew and RAW-neck analytical
+screens pass. Full build exits 1 for retained errors. The 0.0.23 manufacturer-pin
+schematic-only test was not repeated for unchanged wiring/imports. Cosmetic
+D_VBUS styling remains. All four current layer images were actually viewed;
+crowded silkscreen and bottom labels near/outside the outline remain.
+Ten physical nets and full power/via/thermal/transient, USB, 3D/mechanical and CAM
+qualification remain pending. Firmware and hardware tests are unperformed.
+I2C bus rise-time/loading review remains part of final signal qualification.
+
+SDA trial001 replayed unchanged29 because a temporary preparation helper failed
+before writing source; corrected owner lookup and source candidate are in002.
+Native STEP Pipeline7 timed out at 600.892 seconds in edgeSolver, progress
+0.3181818181818182, 13235.03 MiB peak sampled RSS; no final route was adopted.
+Evidence: SDA-ADOPTION.json and cloud/canonical/CHECKS.json.
+Cloud resource and exact smoke results are retained in this revision. Live
+EasyEDA availability still needs runtime activation of the saved official-host
+draft and a successful official request. Public matching publication is pending
+verification; no hosted build success is claimed.
+**PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
+
+## Historical Linux continuation — 0.0.29-alpha.0
 
 TEMP_ALERT_N is complete between U1 pin 12, U9 pin 3 and R33 pin 2.
 The supported star uses inner1 from the existing MCU filled contact around the
