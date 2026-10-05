@@ -1,0 +1,43 @@
+{
+  "new_filled_feature": {
+    "name": "ENABLE_R25_FILLED",
+    "owner": {
+      "reference": "R25",
+      "pin_number": 2
+    },
+    "net": "EXT_ENABLE_N",
+    "x": 5.35,
+    "y": 2.15,
+    "owner_layer": "bottom",
+    "hole_diameter_mm": 0.2,
+    "outer_diameter_mm": 0.38,
+    "construction": "filled_capped_pad_contact",
+    "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+    "minimum_foreign_drill_to_pad_mm": 0.25,
+    "branches": [],
+    "design_reason": "Individually owned series-resistor pad contact; native source inner1 escape preserves imported pads and adjacent CAN_TX copper. Not an ordinary-via or blanket drill exemption."
+  },
+  "precheck_file": "cloud/ext-enable-internal-saved-001/SOURCE-GEOMETRY-PRECHECK.json",
+  "preserved_prior_paths": 141,
+  "preserved_prior_filled_features": 47,
+  "accepted": true,
+  "approved_for_fabrication": false,
+  "revision": "0.0.28-alpha.0",
+  "accepted_saved_trial": "cloud/ext-enable-internal-saved-001",
+  "canonical_sha256": "ec9ab91850274401988370ae8f67f0d4968a8c1070bff4a5720c22cb9e179dfe",
+  "logical_endpoints": [
+    "U1.pin21",
+    "R25.pin2",
+    "R30.pin2"
+  ],
+  "strict_geometry_violations": 0,
+  "foreign_filled_clearance_violations": 0,
+  "physically_complete_nets": 70,
+  "total_nets": 82,
+  "EXT_ENABLE_N_physical_components": 1,
+  "all_six_power_reference_nets_physical_components": 1,
+  "native_unconnected_port_errors": 14,
+  "dangling_trace_errors": 11,
+  "prototype_fabrication_ready": false,
+  "hardware_tested": false
+}

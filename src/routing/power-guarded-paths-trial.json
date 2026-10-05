@@ -63,7 +63,8 @@
     "VBUS_ADC",
     "LED_STATUS_DRIVE",
     "EXT_ENABLE_N_CONN",
-    "LIMIT1_CONN"
+    "LIMIT1_CONN",
+    "EXT_ENABLE_N"
   ],
   "connections": [
     ".U1 > .pin4",
@@ -270,7 +271,10 @@
     ".R25 > .pin1",
     ".J_IO > .pin8",
     ".D_IO1 > .pin5",
-    ".R26 > .pin1"
+    ".R26 > .pin1",
+    ".U1 > .pin21",
+    ".R30 > .pin2",
+    ".R25 > .pin2"
   ],
   "paths": [
     {
@@ -19295,6 +19299,146 @@
           "layer": "bottom"
         }
       ]
+    },
+    {
+      "connection": ".U1 > .pin21",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 12.749928,
+          "y": 2.549934,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 13.39,
+          "y": 2.549934,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "via",
+          "x": 13.39,
+          "y": 2.549934,
+          "from_layer": "top",
+          "to_layer": "inner1",
+          "via_diameter": 0.38,
+          "via_hole_diameter": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 13.39,
+          "y": 2.549934,
+          "width": 0.15,
+          "layer": "inner1"
+        },
+        {
+          "route_type": "wire",
+          "x": 15.2,
+          "y": 1.5,
+          "width": 0.15,
+          "layer": "inner1"
+        },
+        {
+          "route_type": "wire",
+          "x": 15.2,
+          "y": -2.3,
+          "width": 0.15,
+          "layer": "inner1"
+        },
+        {
+          "route_type": "wire",
+          "x": 6.25,
+          "y": -2.3,
+          "width": 0.15,
+          "layer": "inner1"
+        },
+        {
+          "route_type": "wire",
+          "x": 6.25,
+          "y": 0.6,
+          "width": 0.15,
+          "layer": "inner1"
+        },
+        {
+          "route_type": "wire",
+          "x": 5.95,
+          "y": 0.6,
+          "width": 0.15,
+          "layer": "inner1"
+        },
+        {
+          "route_type": "wire",
+          "x": 5.95,
+          "y": 2.4,
+          "width": 0.15,
+          "layer": "inner1"
+        },
+        {
+          "route_type": "wire",
+          "x": 5.35,
+          "y": 2.15,
+          "width": 0.15,
+          "layer": "inner1"
+        },
+        {
+          "route_type": "via",
+          "x": 5.35,
+          "y": 2.15,
+          "from_layer": "inner1",
+          "to_layer": "bottom",
+          "via_diameter": 0.38,
+          "via_hole_diameter": 0.2
+        },
+        {
+          "route_type": "wire",
+          "x": 5.35,
+          "y": 2.15,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 5.567184,
+          "y": 2,
+          "width": 0.15,
+          "layer": "bottom"
+        }
+      ]
+    },
+    {
+      "connection": ".R30 > .pin2",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 4.432816,
+          "y": 1.5,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 4.432816,
+          "y": 2.1,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 5.35,
+          "y": 2.15,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 5.567184,
+          "y": 2,
+          "width": 0.15,
+          "layer": "bottom"
+        }
+      ]
     }
   ],
   "manual_edit_basis": {
@@ -20091,6 +20235,16 @@
       "source": "Supported complete native saved-phase star with inner2 connector leg and inner1 ESD-to-series leg using the three existing named LIMIT1 filled features.",
       "preservation": "All 139 prior saved paths and all 47 filled declarations remain exact; no new via exceptions.",
       "qualification": "Native replay, strict geometry and foreign fill clearances pass; all 82 physical nets checked, 69 complete including LIMIT1_CONN. All six power/reference networks remain joined; USB/RAW screens pass. Final fabrication qualification incomplete."
+    },
+    {
+      "revision": "0.0.28-alpha.0",
+      "net": "EXT_ENABLE_N",
+      "source": "Complete supported native saved star ending at R25 pin2; inner1 detour around TMC STEP, SWDIO and LIMIT via corridor.",
+      "preserved_prior_paths": 141,
+      "preserved_prior_filled_features": 47,
+      "new_filled_feature": "ENABLE_R25_FILLED",
+      "new_ordinary_vias": 0,
+      "qualification": "Fresh official CLI and native replay, strict geometry, foreign fill clearances and all 82 physical nets checked; 70 complete including EXT_ENABLE_N. All six power/reference networks remain joined and RTN isolated. USB/RAW analytical screens pass; final qualification incomplete."
     }
   ],
   "joint_routing_trials": [

@@ -1110,6 +1110,24 @@
       "minimum_foreign_drill_to_pad_mm": 0.25,
       "branches": [],
       "review_reason": "Individually owned fine-pitch ADC escape; ordinary drill geometry cannot clear adjacent imported pads/traces. Full foreign-clearance and owner checks required."
+    },
+    {
+      "name": "ENABLE_R25_FILLED",
+      "owner": {
+        "reference": "R25",
+        "pin_number": 2
+      },
+      "net": "EXT_ENABLE_N",
+      "x": 5.35,
+      "y": 2.15,
+      "owner_layer": "bottom",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_pad_contact",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "branches": [],
+      "design_reason": "Individually owned series-resistor pad contact; native source inner1 escape preserves imported pads and adjacent CAN_TX copper. Not an ordinary-via or blanket drill exemption."
     }
   ]
 }

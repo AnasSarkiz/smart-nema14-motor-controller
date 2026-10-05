@@ -1,6 +1,36 @@
 # Smart NEMA 14 controller: complete Cloud handoff
 
-## Current Linux continuation — 0.0.27-alpha.0
+## Current Linux continuation — 0.0.28-alpha.0
+
+EXT_ENABLE_N is complete between U1 pin 21, R25 pin 2 and R30 pin 2.
+The supported inner1 saved star uses the existing ENABLE_MCU_FILLED and the
+individually owned ENABLE_R25_FILLED pad contact: 0.20 mm drill / 0.38 mm pad,
+IPC-4761 Type VII filled/capped, ENIG. This exact R25 pin 2 declaration is not
+an ordinary-via or blanket manufacturing exemption. All 141 earlier saved paths
+and 47 filled features remain unchanged; 48 named filled features now match.
+Purchased imports, placement, logical wiring, dependencies and mechanics remain exact.
+
+Fresh full official CLI build: **226 traces / 189 vias / 70 pours**, **14 native
+unconnected-port + 11 unfinished trace errors**, **70/82 complete physical nets**.
+Canonical SHA-256: `ec9ab91850274401988370ae8f67f0d4968a8c1070bff4a5720c22cb9e179dfe`.
+Strict geometry, foreign fill clearance, source netlist, native shorts, imports,
+TypeScript and formatting pass. All six power/reference networks stay joined;
+EFUSE_RTN remains isolated from GND. USB reference/skew and RAW-neck analytical
+screens pass. Full build exits 1 for retained errors. The 0.0.23 manufacturer-pin
+schematic-only test was not repeated for unchanged wiring/imports. Cosmetic
+D_VBUS styling remains. All four current layer images were actually viewed;
+crowded silkscreen and bottom labels near/outside the outline remain.
+Twelve physical nets and complete power/via/thermal/transient, USB, 3D/mechanical
+and CAM qualification remain pending. Firmware and hardware tests are unperformed.
+
+Evidence: EXT-ENABLE-INTERNAL-ADOPTION.json and cloud/canonical/CHECKS.json.
+Cloud resource and exact smoke results are retained in this revision. Live
+EasyEDA availability still needs runtime activation of the saved official-host
+draft and a successful official request. Public matching publication is pending
+verification; no hosted build success is claimed.
+**PROTOTYPE FABRICATION READY: NO.** Continue all remaining TASK.md nets and gates.
+
+## Historical Linux continuation — 0.0.27-alpha.0
 
 LIMIT1_CONN is complete between J_IO pin 8, D_IO1 pin 5 and R26 pin 1.
 The supported saved star uses inner2 from the connector to its ESD escape and
