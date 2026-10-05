@@ -65,6 +65,12 @@ also violate actual pad/trace/via clearances and are rejected. This is a native
 routing performance blocker, not a package-network or setup failure; these
 unchanged jobs must not be repeated. An official native improvement or a changed
 source plan is required before the seven nets and fabrication gates can finish.
+The exact failure/reproduction packet and unchanged three canonical mirrors
+are publicly verified at GitHub commit `556d29bfc95f579731448c626d3691d33bbc57bb`
+and the existing revision34 release: all 30 updated files and six key GitHub
+files passed anonymous checksum readback. See PUBLICATION-PIPELINE9.json.
+The registry's unversioned download endpoint caches for 24 hours; its anonymous
+file API and checksum-addressed downloads return the current verified bytes.
 
 Exact saved Cloud startup smoke passes: TypeScript, critical import labels,
 pinned Linux analysis libraries, complete context inventory and four archive
