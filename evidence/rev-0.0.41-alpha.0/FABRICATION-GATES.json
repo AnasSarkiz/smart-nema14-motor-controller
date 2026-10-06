@@ -1,0 +1,270 @@
+{
+  "canonical_sha256": "e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430",
+  "scope": "Report measured fabrication blockers for the current native board, without approving an order.",
+  "native_error_count": 0,
+  "native_width_warning_count": 30,
+  "counts": {
+    "schematic_sheet": 9,
+    "source_group": 1,
+    "source_net": 82,
+    "source_port": 607,
+    "source_manually_placed_via": 98,
+    "source_component": 109,
+    "source_board": 1,
+    "source_refdes_convention_warning": 4,
+    "source_trace": 547,
+    "source_no_power_pin_defined_warning": 11,
+    "source_no_ground_pin_defined_warning": 6,
+    "source_component_pins_underspecified_warning": 6,
+    "schematic_component": 109,
+    "schematic_text": 341,
+    "schematic_path": 72,
+    "schematic_circle": 6,
+    "schematic_group": 1,
+    "schematic_port": 411,
+    "schematic_line": 20,
+    "schematic_symbol": 5,
+    "schematic_rect": 1,
+    "schematic_trace": 266,
+    "schematic_net_label": 110,
+    "pcb_component": 207,
+    "pcb_board": 1,
+    "pcb_silkscreen_text": 4,
+    "pcb_via": 224,
+    "pcb_hole": 6,
+    "pcb_keepout": 4,
+    "pcb_smtpad": 413,
+    "pcb_silkscreen_path": 543,
+    "pcb_silkscreen_circle": 12,
+    "pcb_courtyard_outline": 109,
+    "pcb_solder_paste": 329,
+    "pcb_fabrication_note_path": 42,
+    "pcb_port": 607,
+    "pcb_trace": 327,
+    "cad_component": 108,
+    "pcb_copper_pour": 82,
+    "pcb_trace_warning": 30,
+    "source_project_metadata": 1
+  },
+  "via_dimensions_mm": [
+    {
+      "hole": 0.15,
+      "pad": 0.38,
+      "count": 3
+    },
+    {
+      "hole": 0.2,
+      "pad": 0.38,
+      "count": 63
+    },
+    {
+      "hole": 0.3,
+      "pad": 0.6,
+      "count": 158
+    }
+  ],
+  "power_trace_length_mm_by_layer": {
+    "VBUS_PROTECTED": {
+      "bottom": 27.85182167747561
+    },
+    "VM": {
+      "top": 37.86011646645695,
+      "bottom": 22.93089985990391
+    },
+    "VBUS_CONN": {
+      "top": 12.058990090052976,
+      "bottom": 12.877788613939234
+    },
+    "V3V3": {
+      "top": 73.34687184575579,
+      "bottom": 136.23422847599247,
+      "inner1": 14.052863800023768
+    },
+    "MOTOR_B1": {
+      "top": 12.926691155666687,
+      "inner1": 12.030460023676639,
+      "inner2": 9.547161834600912
+    },
+    "BUCK_SW": {
+      "top": 10.199373828624566
+    },
+    "MOTOR_A1": {
+      "top": 9.110805853543123,
+      "inner2": 15.429161322892124
+    },
+    "MOTOR_A2": {
+      "top": 2.3316475578298546,
+      "inner2": 11.349061040949376
+    },
+    "MOTOR_B2": {
+      "top": 3.518865554550204,
+      "inner1": 16.24628005513985,
+      "inner2": 5.678844289182561
+    }
+  },
+  "inner_power_pours": [
+    {
+      "net": "VM",
+      "layer": "inner2",
+      "id": "pcb_copper_pour_244"
+    },
+    {
+      "net": "VM",
+      "layer": "inner2",
+      "id": "pcb_copper_pour_260"
+    },
+    {
+      "net": "VM",
+      "layer": "inner2",
+      "id": "pcb_copper_pour_298"
+    },
+    {
+      "net": "VM",
+      "layer": "inner2",
+      "id": "pcb_copper_pour_307"
+    },
+    {
+      "net": "VBUS_PROTECTED",
+      "layer": "inner2",
+      "id": "pcb_copper_pour_325"
+    },
+    {
+      "net": "VBUS_CONN",
+      "layer": "inner1",
+      "id": "pcb_copper_pour_328"
+    },
+    {
+      "net": "VBUS_CONN",
+      "layer": "inner1",
+      "id": "pcb_copper_pour_329"
+    },
+    {
+      "net": "VBUS_CONN",
+      "layer": "inner1",
+      "id": "pcb_copper_pour_332"
+    },
+    {
+      "net": "VBUS_CONN",
+      "layer": "inner1",
+      "id": "pcb_copper_pour_337"
+    },
+    {
+      "net": "VBUS_PROTECTED",
+      "layer": "inner2",
+      "id": "pcb_copper_pour_342"
+    },
+    {
+      "net": "VBUS_PROTECTED",
+      "layer": "inner2",
+      "id": "pcb_copper_pour_344"
+    },
+    {
+      "net": "VBUS_PROTECTED",
+      "layer": "inner2",
+      "id": "pcb_copper_pour_345"
+    },
+    {
+      "net": "VBUS_PROTECTED",
+      "layer": "inner2",
+      "id": "pcb_copper_pour_351"
+    },
+    {
+      "net": "VBUS_PROTECTED",
+      "layer": "inner2",
+      "id": "pcb_copper_pour_352"
+    },
+    {
+      "net": "VBUS_CONN",
+      "layer": "inner1",
+      "id": "pcb_copper_pour_353"
+    },
+    {
+      "net": "VBUS_PROTECTED",
+      "layer": "inner2",
+      "id": "pcb_copper_pour_354"
+    },
+    {
+      "net": "VBUS_PROTECTED",
+      "layer": "inner2",
+      "id": "pcb_copper_pour_355"
+    },
+    {
+      "net": "VBUS_PROTECTED",
+      "layer": "inner2",
+      "id": "pcb_copper_pour_356"
+    },
+    {
+      "net": "VBUS_CONN",
+      "layer": "inner2",
+      "id": "pcb_copper_pour_362"
+    },
+    {
+      "net": "VM",
+      "layer": "inner1",
+      "id": "pcb_copper_pour_363"
+    }
+  ],
+  "measured_gates": [
+    {
+      "gate": "Native errors",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "gate": "Strict copper/drill/edge geometry",
+      "passed": true
+    },
+    {
+      "gate": "Every physical copper network joined",
+      "passed": true,
+      "joined_nets": 82,
+      "total_nets": 82
+    },
+    {
+      "gate": "No blind or buried vias",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "gate": "Every via has requested 0.30 mm hole and 0.45 mm pad",
+      "passed": false
+    },
+    {
+      "gate": "All power/motor trace segments on outer layers",
+      "passed": false
+    },
+    {
+      "gate": "Board-owned connector silkscreen",
+      "passed": true
+    },
+    {
+      "gate": "Complete production silkscreen",
+      "passed": false
+    },
+    {
+      "gate": "All native supplier assembly rotations verified",
+      "passed": false,
+      "unverified": [
+        "J_USB",
+        "LED_POWER",
+        "LED_STATUS",
+        "LED_FAULT"
+      ]
+    }
+  ],
+  "remaining_measured_failures": [
+    "Every via has requested 0.30 mm hole and 0.45 mm pad",
+    "All power/motor trace segments on outer layers",
+    "Complete production silkscreen",
+    "All native supplier assembly rotations verified"
+  ],
+  "external_or_incomplete_gates": [
+    "Exact MCU sourcing and order-specific acceptance/allocation of all fitted parts",
+    "Manufacturer confirmation of minimum copper/plating, exact stackup, mask/paste and named filled/capped features",
+    "Loaded rail/ground pour-neck/via current sharing, complete device thermal and switching-loop qualification",
+    "Imported-symbol/automatic-label repairs and complete UI schematic style review",
+    "Higher-threshold USB protection system qualification"
+  ],
+  "hardware_testing": "Firmware, physical programming/USB/PD/power/motor/temperature tests have not been performed",
+  "prototype_fabrication_ready": false
+}

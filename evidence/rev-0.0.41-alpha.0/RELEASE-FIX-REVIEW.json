@@ -1,0 +1,94 @@
+{
+  "checked_at_utc": "2026-10-06T19:23:41.442Z",
+  "comparisons": [
+    {
+      "repository": "core",
+      "baseline_tag": "v0.0.2095",
+      "newest_tag_checked": "v0.0.2097",
+      "url": "https://github.com/tscircuit/core/compare/v0.0.2095...v0.0.2097",
+      "commits": [
+        {
+          "sha": "13007c726288c712a8c0b57e4ff39cc670fc5002",
+          "title": "Support multiple PCB paths on Trace (#4409)"
+        },
+        {
+          "sha": "0dd4f347d8d30ab14dbf4d37151ae9a8ef2a17b8",
+          "title": "v0.0.2096"
+        },
+        {
+          "sha": "46a303350abc80e525925d611118aabf2d4be149",
+          "title": "update @tscircuit/checks to 0.0.241 (#4414)"
+        },
+        {
+          "sha": "f7c64758e97eea5bf8e80fd928dc79e434d19715",
+          "title": "v0.0.2097"
+        }
+      ],
+      "files": [
+        "lib/components/primitive-components/Trace/Trace_doInitialPcbManualTraceRender.ts",
+        "lib/components/primitive-components/Trace/Trace_doInitialPcbTraceRender.ts",
+        "lib/components/primitive-components/Trace/get-route-for-pcb-path.ts",
+        "lib/components/primitive-components/Trace/render-pcb-paths.ts",
+        "package.json",
+        "tests/components/primitive-components/__snapshots__/trace-multiple-pcb-paths-pcb.snap.svg",
+        "tests/components/primitive-components/trace-multiple-pcb-paths.test.tsx"
+      ]
+    },
+    {
+      "repository": "checks",
+      "baseline_tag": "v0.0.240",
+      "newest_tag_checked": "v0.0.241",
+      "url": "https://github.com/tscircuit/checks/compare/v0.0.240...v0.0.241",
+      "commits": [
+        {
+          "sha": "da48cb2d190d186261bab2169731f44961c56ae8",
+          "title": "update @tscircuit/circuit-json-util to 0.0.120"
+        },
+        {
+          "sha": "7f61d9573a1330724b66d13f09b826a06dd06d8e",
+          "title": "v0.0.241"
+        }
+      ],
+      "files": [
+        "package.json"
+      ]
+    },
+    {
+      "repository": "cli",
+      "baseline_tag": "v0.1.2251",
+      "newest_tag_checked": "v0.1.2253",
+      "url": "https://github.com/tscircuit/cli/compare/v0.1.2251...v0.1.2253",
+      "commits": [
+        {
+          "sha": "e7d0662e834f362e530aea5f88eddf0a8aac885b",
+          "title": "v0.1.2251 (#5166)"
+        },
+        {
+          "sha": "50557cc4ef923acfccc975301890636340075bad",
+          "title": "chore: update packages @tscircuit/runframe (#5169)"
+        },
+        {
+          "sha": "4f8e49252370c380d08ac617e9fad8cb9dcd9ad4",
+          "title": "v0.1.2252 (#5170)"
+        },
+        {
+          "sha": "7b4df4d3b19b2e7114a7af5bfd7fc37efe473add",
+          "title": "update @tscircuit/circuit-json-util to 0.0.120 (#5171)"
+        },
+        {
+          "sha": "65344c57fe32aa6645a2eed4fbe2a64a311f6f6b",
+          "title": "v0.1.2253"
+        }
+      ],
+      "files": [
+        "bun.lock",
+        "package.json"
+      ]
+    }
+  ],
+  "official_importer_version": "0.0.371; still the latest npm release",
+  "props_version": "0.0.689; still the latest npm release",
+  "gerber_version": "0.0.112; latest release has no silk clipping/width fix",
+  "relevant_silkscreen_or_orientation_repair_found": false,
+  "installed_dependencies_changed": false
+}

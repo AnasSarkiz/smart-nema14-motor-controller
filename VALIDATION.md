@@ -1,3 +1,41 @@
+# Remaining fabrication review — 0.0.41-alpha.0, 2026-10-06
+
+Additional audit only; canonical source, purchased imports, saved copper, pinned
+dependencies and all three generated Circuit JSON mirrors remain unchanged.
+Fresh exact official JLC shop lookup now lists genuine ST Q_PD C2965326 with
+100 units (displayed presale number97). U1 C2847904 and CBT6TR remain absent;
+related LQFP48 CBT3 has zero stock. No stock reservation or assembler allocation
+is claimed. The older rev41 stock receipt below is retained as historical evidence.
+
+Fresh motor-path endpoint/track/barrel review gives a conservative simultaneous
+peak copper DC loss bound of 0.072695 W under its explicit 80 C, nominal copper,
+18 um uniform plating and -20% width assumptions. Inverting the existing
+IPC-2221 30 C screen requires 14.8254 um minimum inner copper; the nominal
+15.2 um leaves only 2.53% thickness margin. This is not thermal or manufactured
+minimum qualification. Complete rail/ground neck/current-sharing and device
+thermal/switching review remains open.
+
+Fresh native CAM silk checks retain a pass for all four owned connector labels,
+but fail the production check: 541 supplier paths below 0.15 mm, top ink outside
+outline and both sides inside mask clearance. Both native silk renders were
+viewed. Four supplier rotations remain unverified. Reviewed newer released
+core/CLI/checks and unchanged latest importer/props/exporter show no relevant
+silk/orientation repair; dependencies are retained.
+
+A fresh isolated native MOTOR_A2 bottom-layer manual candidate completed in
+56.2 s, peak sampled RSS1455.9 MiB, but produced13 native errors and25 strict
+geometry violations. It is rejected, with complete source delta, generated JSON,
+geometry and status retained. No candidate copper is adopted. Read-only manual
+corridor probes also encountered blockers; they are not qualified routes.
+
+The measured fabrication-gate script correctly exits1: uniform0.30/0.45 vias,
+outer-only power, complete supplier silk and all supplier rotations remain
+blocked. Zero canonical native errors/strict geometry failures and all82 joined
+networks remain verified by exact-hash current receipts. A concrete unsent
+manufacturer/assembler review checklist is prepared in
+[FABRICATION-REVIEW.md](docs/FABRICATION-REVIEW.md). Firmware and physical tests
+remain unperformed. **PROTOTYPE FABRICATION READY: NO.**
+
 # Genuine supplier replacements — 0.0.41-alpha.0, 2026-10-06
 
 User selected U2 TRINAMIC TMC2209-LA-T C2150710 and D_USB Texas Instruments

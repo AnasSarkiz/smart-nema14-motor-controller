@@ -38,8 +38,11 @@ mechanical references and the local tscircuit skill remain preserved.
 Fresh official public shop searches show 16,560 C2150710 and 5,954 C97502 units.
 These counts do not reserve assembly stock. U1 remains unavailable in the user's
 LCSC listing and has no verified stocked footprint-compatible replacement.
-Q_PD remains unchanged; its user LCSC listing shows 100 units. Public JLCPCB
-shop searches return no exact U1/Q_PD match, illustrating separate inventory.
+Q_PD remains unchanged. A subsequent fresh official JLCPCB shop query now
+returns exact genuine ST C2965326 with 100 units and displayed presale number
+97, matching the user's LCSC stock count. U1 still has no exact shop match.
+Neither public listing allocates assembler inventory. See
+[the remaining fabrication review](FABRICATION-REVIEW.md) for the fresh result.
 
 Uniform 0.30/0.45 mm via sizing, outer-only power routing, supplier silk/mask/
 paste/CPL approval, four supplier orientations, stackup/plating/filled-process

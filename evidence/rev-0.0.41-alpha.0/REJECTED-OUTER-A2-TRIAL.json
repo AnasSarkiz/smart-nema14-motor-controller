@@ -1,0 +1,552 @@
+{
+  "method": "Native saved manual source path: move only MOTOR_A2 inner2 span to bottom using its existing two 0.30/0.60 through barrels. Unchanged XY coordinates/widths/ports and all other paths; no generated JSON edits. This is an isolated rejected-or-qualified candidate, not canonical adoption.",
+  "source_layer_change": {
+    "method": "Native saved manual source path: move only MOTOR_A2 inner2 span to bottom using its existing two 0.30/0.60 through barrels. Unchanged XY coordinates/widths/ports and all other paths; no generated JSON edits. This is an isolated rejected-or-qualified candidate, not canonical adoption.",
+    "source_sha256": "a10b61b8f5a9bac46a64da806886eb27fa632f0d64b88ee48e616291000d29e2",
+    "candidate_source_sha256": "7d09b68ed37868cb4f892add1e3593a50325bd5345c47e28512698f2637d5812",
+    "changed_layer_fields": 10,
+    "before": {
+      "connection": ".J_MOTOR > .pin2",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -1.1243980000000002,
+          "y": 10.0504355,
+          "layer": "top",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": -1.1244,
+          "y": 10.05044,
+          "layer": "top",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": -1.1244,
+          "y": 8.7259,
+          "layer": "top",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": -1.095,
+          "y": 8.6965,
+          "layer": "top",
+          "width": 0.15
+        },
+        {
+          "route_type": "via",
+          "x": -1.095,
+          "y": 8.6965,
+          "from_layer": "top",
+          "to_layer": "inner2",
+          "via_diameter": 0.6,
+          "via_hole_diameter": 0.3
+        },
+        {
+          "route_type": "wire",
+          "x": -1.095,
+          "y": 8.6965,
+          "layer": "inner2",
+          "width": 0.27
+        },
+        {
+          "route_type": "wire",
+          "x": -1.9498663908708274,
+          "y": 7.287933609129173,
+          "layer": "inner2",
+          "width": 0.27
+        },
+        {
+          "route_type": "wire",
+          "x": -2.7298663908708267,
+          "y": 6.517933609129173,
+          "layer": "inner2",
+          "width": 0.27
+        },
+        {
+          "route_type": "wire",
+          "x": -2.9098663908708273,
+          "y": 6.447933609129173,
+          "layer": "inner2",
+          "width": 0.27
+        },
+        {
+          "route_type": "wire",
+          "x": -4.619866390870827,
+          "y": 6.137933609129173,
+          "layer": "inner2",
+          "width": 0.27
+        },
+        {
+          "route_type": "wire",
+          "x": -9.049866390870827,
+          "y": 5.857933609129173,
+          "layer": "inner2",
+          "width": 0.27
+        },
+        {
+          "route_type": "wire",
+          "x": -9.209866390870827,
+          "y": 5.767933609129173,
+          "layer": "inner2",
+          "width": 0.27
+        },
+        {
+          "route_type": "wire",
+          "x": -10.4808,
+          "y": 4.157,
+          "layer": "inner2",
+          "width": 0.27
+        },
+        {
+          "route_type": "via",
+          "x": -10.4808,
+          "y": 4.157,
+          "from_layer": "inner2",
+          "to_layer": "top",
+          "via_diameter": 0.6,
+          "via_hole_diameter": 0.3
+        },
+        {
+          "route_type": "wire",
+          "x": -10.4808,
+          "y": 4.157,
+          "layer": "top",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": -10.5013,
+          "y": 4.1365,
+          "layer": "top",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": -10.5013,
+          "y": 3.2,
+          "layer": "top",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": -10.501267,
+          "y": 3.1999950000000004,
+          "layer": "top",
+          "width": 0.15
+        }
+      ]
+    },
+    "after": {
+      "connection": ".J_MOTOR > .pin2",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -1.1243980000000002,
+          "y": 10.0504355,
+          "layer": "top",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": -1.1244,
+          "y": 10.05044,
+          "layer": "top",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": -1.1244,
+          "y": 8.7259,
+          "layer": "top",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": -1.095,
+          "y": 8.6965,
+          "layer": "top",
+          "width": 0.15
+        },
+        {
+          "route_type": "via",
+          "x": -1.095,
+          "y": 8.6965,
+          "from_layer": "top",
+          "to_layer": "bottom",
+          "via_diameter": 0.6,
+          "via_hole_diameter": 0.3
+        },
+        {
+          "route_type": "wire",
+          "x": -1.095,
+          "y": 8.6965,
+          "layer": "bottom",
+          "width": 0.27
+        },
+        {
+          "route_type": "wire",
+          "x": -1.9498663908708274,
+          "y": 7.287933609129173,
+          "layer": "bottom",
+          "width": 0.27
+        },
+        {
+          "route_type": "wire",
+          "x": -2.7298663908708267,
+          "y": 6.517933609129173,
+          "layer": "bottom",
+          "width": 0.27
+        },
+        {
+          "route_type": "wire",
+          "x": -2.9098663908708273,
+          "y": 6.447933609129173,
+          "layer": "bottom",
+          "width": 0.27
+        },
+        {
+          "route_type": "wire",
+          "x": -4.619866390870827,
+          "y": 6.137933609129173,
+          "layer": "bottom",
+          "width": 0.27
+        },
+        {
+          "route_type": "wire",
+          "x": -9.049866390870827,
+          "y": 5.857933609129173,
+          "layer": "bottom",
+          "width": 0.27
+        },
+        {
+          "route_type": "wire",
+          "x": -9.209866390870827,
+          "y": 5.767933609129173,
+          "layer": "bottom",
+          "width": 0.27
+        },
+        {
+          "route_type": "wire",
+          "x": -10.4808,
+          "y": 4.157,
+          "layer": "bottom",
+          "width": 0.27
+        },
+        {
+          "route_type": "via",
+          "x": -10.4808,
+          "y": 4.157,
+          "from_layer": "bottom",
+          "to_layer": "top",
+          "via_diameter": 0.6,
+          "via_hole_diameter": 0.3
+        },
+        {
+          "route_type": "wire",
+          "x": -10.4808,
+          "y": 4.157,
+          "layer": "top",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": -10.5013,
+          "y": 4.1365,
+          "layer": "top",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": -10.5013,
+          "y": 3.2,
+          "layer": "top",
+          "width": 0.15
+        },
+        {
+          "route_type": "wire",
+          "x": -10.501267,
+          "y": 3.1999950000000004,
+          "layer": "top",
+          "width": 0.15
+        }
+      ]
+    }
+  },
+  "native_run": {
+    "command": [
+      "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+      "scripts/run-native-routing.mjs",
+      "/workspace/smart-nema14-motor-controller/.publication/fix41/remaining-review/outer-a2/index.circuit.tsx",
+      "/workspace/smart-nema14-motor-controller/.publication/fix41/remaining-review/outer-a2-render"
+    ],
+    "exit_code": 1,
+    "termination": null,
+    "memory_budget_mb": 8192,
+    "peak_sampled_group_rss_mb": 1455.93359375,
+    "elapsed_seconds": 56.163910048999696,
+    "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+  },
+  "native_error_count": 13,
+  "native_errors": [
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_0",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .GND_STITCH_INTERFACE > .bottom to .U9 > .pin2 overlaps with .U2 > .OA2 to net.MOTOR_A2 (accidental contact)",
+      "pcb_trace_id": "pcb_trace_5",
+      "source_trace_id": "",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -8.247123525110212,
+        "y": 5.954363057993719
+      },
+      "pcb_port_ids": [
+        "pcb_port_13",
+        "pcb_port_485",
+        "pcb_port_312",
+        "pcb_port_479"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_1",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U9 > .V_POS to net.V3V3 overlaps with .U2 > .OA2 to net.MOTOR_A2 (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_7",
+      "source_trace_id": "",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -6.251116725752745,
+        "y": 6.017316532445207
+      },
+      "pcb_port_ids": [
+        "pcb_port_488",
+        "pcb_port_541",
+        "pcb_port_312",
+        "pcb_port_479"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_2",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U9 > .V_POS to net.V3V3 overlaps with .U2 > .OA2 to net.MOTOR_A2 (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_8",
+      "source_trace_id": "",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -6.251116725752745,
+        "y": 6.017316532445207
+      },
+      "pcb_port_ids": [
+        "pcb_port_488",
+        "pcb_port_533",
+        "pcb_port_312",
+        "pcb_port_479"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_3",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .R31 > .pin1 to net.V3V3 is too close to .U2 > .OA2 to net.MOTOR_A2 (gap: 0.024mm)",
+      "pcb_trace_id": "saved_phase_null_0_9",
+      "source_trace_id": "",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -4.088097597238934,
+        "y": 6.115273842834124
+      },
+      "pcb_port_ids": [
+        "pcb_port_529",
+        "pcb_port_533",
+        "pcb_port_312",
+        "pcb_port_479"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_4",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U1 > .PA1 to net.TEMP_ALERT_N overlaps with .U2 > .OA2 to net.MOTOR_A2 (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_40",
+      "source_trace_id": "",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -4.932816,
+        "y": 6.118153498394147
+      },
+      "pcb_port_ids": [
+        "pcb_port_207",
+        "pcb_port_534",
+        "pcb_port_312",
+        "pcb_port_479"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_5",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U9 > .ALERT to net.TEMP_ALERT_N overlaps with .U2 > .OA2 to net.MOTOR_A2 (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_41",
+      "source_trace_id": "",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -4.932816,
+        "y": 6.118153498394147
+      },
+      "pcb_port_ids": [
+        "pcb_port_486",
+        "pcb_port_534",
+        "pcb_port_312",
+        "pcb_port_479"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_6",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U2 > .OA2 to net.MOTOR_A2 overlaps with pcb_smtpad \"U9.GND\" (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_129",
+      "center": {
+        "x": -8.0499852,
+        "y": 5.9211315173557715
+      },
+      "source_trace_id": "",
+      "pcb_component_ids": [
+        "pcb_component_168"
+      ],
+      "pcb_port_ids": [
+        "pcb_port_312",
+        "pcb_port_479",
+        "pcb_port_485"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_7",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U2 > .OA2 to net.MOTOR_A2 overlaps with TMC_DIR_TRANSFER_00_02 connectivity (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_129",
+      "source_trace_id": "",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -6.963978903789542,
+        "y": 5.989772998831827
+      },
+      "pcb_port_ids": [
+        "pcb_port_312",
+        "pcb_port_479",
+        "pcb_port_116",
+        "pcb_port_347"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_8",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U2 > .OA2 to net.MOTOR_A2 overlaps with TMC_DIR_TRANSFER_00_02 connectivity (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_129",
+      "source_trace_id": "",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -6.963978903789542,
+        "y": 5.989772998831827
+      },
+      "pcb_port_ids": [
+        "pcb_port_312",
+        "pcb_port_479",
+        "pcb_port_117",
+        "pcb_port_347"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_9",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U2 > .OA2 to net.MOTOR_A2 overlaps with .U2 > .DIR to net.TMC_DIR (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_129",
+      "source_trace_id": "",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -6.963978903789542,
+        "y": 5.989772998831827
+      },
+      "pcb_port_ids": [
+        "pcb_port_312",
+        "pcb_port_479",
+        "pcb_port_310",
+        "pcb_port_347"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_10",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U2 > .OA2 to net.MOTOR_A2 overlaps with pcb_smtpad \"U9.V_POS\" (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_129",
+      "center": {
+        "x": -6.5500136,
+        "y": 6.015937848732746
+      },
+      "source_trace_id": "",
+      "pcb_component_ids": [
+        "pcb_component_168"
+      ],
+      "pcb_port_ids": [
+        "pcb_port_312",
+        "pcb_port_479",
+        "pcb_port_488"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_11",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U2 > .OA2 to net.MOTOR_A2 overlaps with pcb_smtpad \"R33.pin2\" (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_129",
+      "center": {
+        "x": -5.215644999999999,
+        "y": 6.100277173337713
+      },
+      "source_trace_id": "",
+      "pcb_component_ids": [
+        "pcb_component_182"
+      ],
+      "pcb_port_ids": [
+        "pcb_port_312",
+        "pcb_port_479",
+        "pcb_port_534"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_12",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .U2 > .OA2 to net.MOTOR_A2 overlaps with pcb_smtpad \"R33.pin1\" (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_129",
+      "center": {
+        "x": -4.350013000000001,
+        "y": 6.186854399287042
+      },
+      "source_trace_id": "",
+      "pcb_component_ids": [
+        "pcb_component_182"
+      ],
+      "pcb_port_ids": [
+        "pcb_port_312",
+        "pcb_port_479",
+        "pcb_port_533"
+      ]
+    }
+  ],
+  "strict_geometry_violations": 25,
+  "candidate_circuit_sha256": "fafd1775776acdb676d437bf6a44698c6fd64763e60e8fc546695db1ccd4ce47",
+  "canonical_circuit_sha256": "e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430",
+  "adopted": false,
+  "qualification": "Rejected: actual shorts/clearance violations. No general impossibility claim about alternative placements/routes."
+}

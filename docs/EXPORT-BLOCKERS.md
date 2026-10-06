@@ -1,4 +1,4 @@
-# Remaining manufacturing export issues — 0.0.37-alpha.0
+# Remaining manufacturing export issues — 0.0.41-alpha.0
 
 The owned copper and connector-label fixes are complete. These remaining
 supplier issues cannot be corrected by moving a trace or changing its width.
@@ -19,9 +19,11 @@ Run the fresh native full build and Gerber export, then build
 The optional diagnostic environment uses PyGerber 2.4.3 and Shapely 2.1.2.
 It reads immutable native files and raises on unsupported Gerber constructs.
 The owned-label gate passes; the complete production check correctly exits 1.
-There are 557 supplier paths below 0.15 mm, top ink outside the 35 mm outline,
+The fresh revision41 audit finds 541 supplier paths below 0.15 mm, top ink outside the 35 mm outline,
 and ink inside the required 0.15 mm mask-opening clearance on both sides.
-Exact measurements, canonical input and export hashes are in SILKSCREEN-CAM.json.
+Exact measurements, canonical input and export hashes are in the current
+`evidence/rev-0.0.41-alpha.0/SILKSCREEN-CAM.json`. The owned-text fixture and
+native Gerbers are retained alongside it. Both native silk renders were viewed.
 
 Installed props 0.0.689 expose text visibility/size/position through pcbStyle,
 but no inherited graphic-path visibility, minimum stroke or mask/outline
@@ -45,16 +47,23 @@ orientation before ordering; do not add fields to generated Circuit JSON.
 
 ## Procurement and process
 
-Official public stock queries still return no exact in-stock match for fitted
-C2847904, C465949, C94934 and C2965326. Shop/pre-order results, indexed catalogue
-stock and allocated assembly stock are different. A supplier-approved genuine
-part/ordering suffix needs its own official import and suitability checks;
-an apparent clone is not a qualified substitution.
+Revision41 replaces C465949 with genuine C2150710 and C94934 with genuine
+C97502, with unchanged official physical pads/models and manufacturer review.
+Fresh subsequent public stock queries now return exact genuine ST C2965326
+with 100 units; Q_PD does not need a replacement solely for the old missing shop
+result. U1 C2847904 remains unresolved, with no verified stocked compatible
+LQFP48 alternative. Shop/pre-order results, indexed catalogue stock and allocated
+assembly stock differ. No parts are reserved or assembler-approved.
 
-Minimum copper/plating, the selected four-layer stackup and 68 exact owned
+Minimum copper/plating, the selected four-layer stackup and 66 exact owned
 filled/capped features require manufacturer acceptance. Current width/power/USB
 screens have explicit assumptions; full loaded power/via/thermal and switching
 loop review remains unfinished. None of these is established by a successful
 native DRC check or by environment setup.
+
+The new actual motor track/barrel loss and required minimum-copper review,
+rejected native manual outer-layer candidate, release comparisons and concrete
+manufacturer review checklist are in [FABRICATION-REVIEW.md](FABRICATION-REVIEW.md).
+Neither uniform 0.30/0.45 mm vias nor outer-only power routing is complete.
 
 **PROTOTYPE FABRICATION READY: NO.** Hardware and firmware remain untested.

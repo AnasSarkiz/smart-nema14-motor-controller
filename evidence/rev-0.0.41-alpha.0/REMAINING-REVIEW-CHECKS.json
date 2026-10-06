@@ -1,0 +1,60 @@
+{
+  "canonical_sha256": "e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/review-motor-copper-loss.py",
+        "dist/index/circuit.json",
+        "evidence/rev-0.0.41-alpha.0/TRACE-WIDTH-AUDIT.json",
+        "evidence/rev-0.0.41-alpha.0/POWER-CORNER-SCREEN.json",
+        "evidence/rev-0.0.41-alpha.0/MOTOR-COPPER-LOSS.json"
+      ],
+      "exit_code": 0,
+      "interpretation": "Motor-path DC review completed under explicit assumptions"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/review-fabrication-gates.py",
+        "dist/index/circuit.json",
+        "evidence/rev-0.0.41-alpha.0",
+        "evidence/rev-0.0.41-alpha.0/FABRICATION-GATES.json"
+      ],
+      "exit_code": 1,
+      "interpretation": "Fabrication blockers correctly reject readiness"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/review-motor-copper-loss.py",
+        ".publication/fix41/baseline-circuit.json",
+        "evidence/rev-0.0.41-alpha.0/TRACE-WIDTH-AUDIT.json",
+        "evidence/rev-0.0.41-alpha.0/POWER-CORNER-SCREEN.json",
+        ".publication/fix41/remaining-review/STALE-MOTOR-REPORT.json"
+      ],
+      "exit_code": 1,
+      "interpretation": "Stale canonical input rejected before output"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/review-fabrication-gates.py",
+        ".publication/fix41/baseline-circuit.json",
+        "evidence/rev-0.0.41-alpha.0",
+        ".publication/fix41/remaining-review/STALE-GATES-REPORT.json"
+      ],
+      "exit_code": 1,
+      "interpretation": "Stale canonical input rejected before output"
+    }
+  ],
+  "format_check_exit_code": 0,
+  "no_canonical_design_changes": true,
+  "new_board_revision_created": false,
+  "prototype_fabrication_ready": false,
+  "cloud_smoke_exit_code": 0,
+  "typecheck_exit_code": 0,
+  "critical_imports_exit_code": 0,
+  "context_files_verified": 5566,
+  "historical_archive_parts_verified": 4
+}

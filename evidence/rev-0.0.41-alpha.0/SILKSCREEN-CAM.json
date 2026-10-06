@@ -1,0 +1,2790 @@
+{
+  "canonical_sha256": "e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430",
+  "legend_fixture_sha256": "fef967c3689efe9a0dd08449f24886fe8703d4f4782741e3fd59c98d0f9ce6f7",
+  "scope": "Measure native production silkscreen and isolated board-owned connector text.\n\nUses optional PyGerber 2.4.3/Shapely 2.1.2 diagnostics. Reports supplier defects\nwithout editing imports, Circuit JSON, Gerbers or manufacturing thresholds.\n",
+  "file_sha256": {
+    ".publication/fix41/native-gerbers/F_SilkScreen.gbr": "6212eb10800272d7ca576fa42f077bdd587f3003f7eae1f08ed97bf0cb8a7fb8",
+    ".publication/fix41/native-gerbers/F_Mask.gbr": "e7bfe0ef503557948de348c3787c442513363f3c384507ece947506f9236ec43",
+    ".publication/fix41/remaining-review/legend/gerbers/F_SilkScreen.gbr": "cc05746d69ceea828a0bd9db585bc2bf2f4cd44b7d386e8c7ad3baf9b336e746",
+    ".publication/fix41/native-gerbers/B_SilkScreen.gbr": "b1420d458d9b18d06dd8467ae48ec086d25b3c3107ced1b9bed7507c2c58aa80",
+    ".publication/fix41/native-gerbers/B_Mask.gbr": "154856593c3b95eedbe5b57ba15f7c42b53dd332d19285b7f951bf5e185bcac0"
+  },
+  "owned_connector_texts": [
+    {
+      "text": "MOTOR",
+      "anchor_position": {
+        "x": -1.75,
+        "y": 16
+      },
+      "anchor_alignment": "center",
+      "font_size": 2.2,
+      "layer": "top",
+      "ccw_rotation": 0
+    },
+    {
+      "text": "USB-C",
+      "anchor_position": {
+        "x": -9.6,
+        "y": -16
+      },
+      "anchor_alignment": "center",
+      "font_size": 2.2,
+      "layer": "top",
+      "ccw_rotation": 0
+    },
+    {
+      "text": "SWD",
+      "anchor_position": {
+        "x": 14.8,
+        "y": -13.05
+      },
+      "anchor_alignment": "center",
+      "font_size": 2.2,
+      "layer": "top",
+      "ccw_rotation": 0
+    },
+    {
+      "text": "IO",
+      "anchor_position": {
+        "x": 15.6,
+        "y": 9.5
+      },
+      "anchor_alignment": "center",
+      "font_size": 2.2,
+      "layer": "top",
+      "ccw_rotation": 90
+    }
+  ],
+  "owned_text_pen_widths_mm": [
+    0.198
+  ],
+  "owned_text_clearance": {
+    "mask_clearance_mm": 0.21446609187682686,
+    "ink_within_0_15mm_mask_clearance_mm2": 0.0,
+    "ink_outside_outline_mm2": 0.0
+  },
+  "owned_text_passed": true,
+  "production_layers": [
+    {
+      "layer": "F",
+      "mask_clearance_mm": 0.0,
+      "ink_within_0_15mm_mask_clearance_mm2": 1.0636900700383412,
+      "ink_outside_outline_mm2": 0.9364236922514433
+    },
+    {
+      "layer": "B",
+      "mask_clearance_mm": 0.07776199999999633,
+      "ink_within_0_15mm_mask_clearance_mm2": 0.15573289884747973,
+      "ink_outside_outline_mm2": 0.0
+    }
+  ],
+  "native_supplier_paths_below_0_15mm": [
+    {
+      "id": "pcb_silkscreen_path_2",
+      "pcb_component_id": "pcb_component_99",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_3",
+      "pcb_component_id": "pcb_component_99",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_4",
+      "pcb_component_id": "pcb_component_99",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_5",
+      "pcb_component_id": "pcb_component_99",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_6",
+      "pcb_component_id": "pcb_component_99",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_7",
+      "pcb_component_id": "pcb_component_99",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_8",
+      "pcb_component_id": "pcb_component_99",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_9",
+      "pcb_component_id": "pcb_component_99",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_10",
+      "pcb_component_id": "pcb_component_99",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_11",
+      "pcb_component_id": "pcb_component_99",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_12",
+      "pcb_component_id": "pcb_component_100",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_13",
+      "pcb_component_id": "pcb_component_100",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_14",
+      "pcb_component_id": "pcb_component_100",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_15",
+      "pcb_component_id": "pcb_component_100",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_16",
+      "pcb_component_id": "pcb_component_100",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_17",
+      "pcb_component_id": "pcb_component_100",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_18",
+      "pcb_component_id": "pcb_component_100",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_19",
+      "pcb_component_id": "pcb_component_100",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_20",
+      "pcb_component_id": "pcb_component_100",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_21",
+      "pcb_component_id": "pcb_component_100",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_22",
+      "pcb_component_id": "pcb_component_101",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_23",
+      "pcb_component_id": "pcb_component_101",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_24",
+      "pcb_component_id": "pcb_component_101",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_25",
+      "pcb_component_id": "pcb_component_101",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_26",
+      "pcb_component_id": "pcb_component_101",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_27",
+      "pcb_component_id": "pcb_component_101",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_28",
+      "pcb_component_id": "pcb_component_101",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_29",
+      "pcb_component_id": "pcb_component_101",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_30",
+      "pcb_component_id": "pcb_component_101",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_31",
+      "pcb_component_id": "pcb_component_101",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_32",
+      "pcb_component_id": "pcb_component_102",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_33",
+      "pcb_component_id": "pcb_component_102",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_34",
+      "pcb_component_id": "pcb_component_102",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_35",
+      "pcb_component_id": "pcb_component_102",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_36",
+      "pcb_component_id": "pcb_component_102",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_37",
+      "pcb_component_id": "pcb_component_102",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_38",
+      "pcb_component_id": "pcb_component_102",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_39",
+      "pcb_component_id": "pcb_component_102",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_40",
+      "pcb_component_id": "pcb_component_102",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_41",
+      "pcb_component_id": "pcb_component_102",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_42",
+      "pcb_component_id": "pcb_component_103",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_43",
+      "pcb_component_id": "pcb_component_103",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_44",
+      "pcb_component_id": "pcb_component_104",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_45",
+      "pcb_component_id": "pcb_component_104",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_46",
+      "pcb_component_id": "pcb_component_104",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_47",
+      "pcb_component_id": "pcb_component_104",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_48",
+      "pcb_component_id": "pcb_component_104",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_49",
+      "pcb_component_id": "pcb_component_104",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_50",
+      "pcb_component_id": "pcb_component_104",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_51",
+      "pcb_component_id": "pcb_component_104",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_52",
+      "pcb_component_id": "pcb_component_104",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_53",
+      "pcb_component_id": "pcb_component_104",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_54",
+      "pcb_component_id": "pcb_component_105",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_55",
+      "pcb_component_id": "pcb_component_105",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_56",
+      "pcb_component_id": "pcb_component_106",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_57",
+      "pcb_component_id": "pcb_component_106",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_58",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_59",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_60",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_61",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_62",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_63",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_64",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_65",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_66",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_67",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_68",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_69",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_70",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_71",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_72",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_73",
+      "pcb_component_id": "pcb_component_107",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_74",
+      "pcb_component_id": "pcb_component_108",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_75",
+      "pcb_component_id": "pcb_component_108",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_76",
+      "pcb_component_id": "pcb_component_108",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_77",
+      "pcb_component_id": "pcb_component_108",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_78",
+      "pcb_component_id": "pcb_component_108",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_79",
+      "pcb_component_id": "pcb_component_108",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_80",
+      "pcb_component_id": "pcb_component_108",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_81",
+      "pcb_component_id": "pcb_component_108",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_82",
+      "pcb_component_id": "pcb_component_108",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_83",
+      "pcb_component_id": "pcb_component_108",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_84",
+      "pcb_component_id": "pcb_component_109",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_85",
+      "pcb_component_id": "pcb_component_109",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_86",
+      "pcb_component_id": "pcb_component_110",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_87",
+      "pcb_component_id": "pcb_component_110",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_88",
+      "pcb_component_id": "pcb_component_111",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_89",
+      "pcb_component_id": "pcb_component_111",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_90",
+      "pcb_component_id": "pcb_component_111",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_91",
+      "pcb_component_id": "pcb_component_111",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_92",
+      "pcb_component_id": "pcb_component_111",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_93",
+      "pcb_component_id": "pcb_component_111",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_94",
+      "pcb_component_id": "pcb_component_112",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_95",
+      "pcb_component_id": "pcb_component_112",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_96",
+      "pcb_component_id": "pcb_component_112",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_97",
+      "pcb_component_id": "pcb_component_112",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_98",
+      "pcb_component_id": "pcb_component_112",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_99",
+      "pcb_component_id": "pcb_component_112",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_100",
+      "pcb_component_id": "pcb_component_112",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_101",
+      "pcb_component_id": "pcb_component_112",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_102",
+      "pcb_component_id": "pcb_component_112",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_103",
+      "pcb_component_id": "pcb_component_112",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_104",
+      "pcb_component_id": "pcb_component_113",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_105",
+      "pcb_component_id": "pcb_component_113",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_106",
+      "pcb_component_id": "pcb_component_113",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_107",
+      "pcb_component_id": "pcb_component_113",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_108",
+      "pcb_component_id": "pcb_component_113",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_109",
+      "pcb_component_id": "pcb_component_113",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_110",
+      "pcb_component_id": "pcb_component_113",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_111",
+      "pcb_component_id": "pcb_component_113",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_112",
+      "pcb_component_id": "pcb_component_113",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_113",
+      "pcb_component_id": "pcb_component_113",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_114",
+      "pcb_component_id": "pcb_component_114",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_115",
+      "pcb_component_id": "pcb_component_114",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_116",
+      "pcb_component_id": "pcb_component_114",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_117",
+      "pcb_component_id": "pcb_component_114",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_118",
+      "pcb_component_id": "pcb_component_114",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_119",
+      "pcb_component_id": "pcb_component_114",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_120",
+      "pcb_component_id": "pcb_component_114",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_121",
+      "pcb_component_id": "pcb_component_114",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_122",
+      "pcb_component_id": "pcb_component_114",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_123",
+      "pcb_component_id": "pcb_component_114",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_124",
+      "pcb_component_id": "pcb_component_115",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_125",
+      "pcb_component_id": "pcb_component_115",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_126",
+      "pcb_component_id": "pcb_component_116",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_127",
+      "pcb_component_id": "pcb_component_116",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_128",
+      "pcb_component_id": "pcb_component_116",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_129",
+      "pcb_component_id": "pcb_component_116",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_130",
+      "pcb_component_id": "pcb_component_116",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_131",
+      "pcb_component_id": "pcb_component_116",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_132",
+      "pcb_component_id": "pcb_component_116",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_133",
+      "pcb_component_id": "pcb_component_116",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_134",
+      "pcb_component_id": "pcb_component_116",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_135",
+      "pcb_component_id": "pcb_component_116",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_136",
+      "pcb_component_id": "pcb_component_117",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_137",
+      "pcb_component_id": "pcb_component_117",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_138",
+      "pcb_component_id": "pcb_component_117",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_139",
+      "pcb_component_id": "pcb_component_117",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_140",
+      "pcb_component_id": "pcb_component_117",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_141",
+      "pcb_component_id": "pcb_component_117",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_142",
+      "pcb_component_id": "pcb_component_117",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_143",
+      "pcb_component_id": "pcb_component_117",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_144",
+      "pcb_component_id": "pcb_component_117",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_145",
+      "pcb_component_id": "pcb_component_117",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_146",
+      "pcb_component_id": "pcb_component_118",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_147",
+      "pcb_component_id": "pcb_component_118",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_148",
+      "pcb_component_id": "pcb_component_118",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_149",
+      "pcb_component_id": "pcb_component_118",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_150",
+      "pcb_component_id": "pcb_component_118",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_151",
+      "pcb_component_id": "pcb_component_119",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_152",
+      "pcb_component_id": "pcb_component_119",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_153",
+      "pcb_component_id": "pcb_component_119",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_154",
+      "pcb_component_id": "pcb_component_119",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_155",
+      "pcb_component_id": "pcb_component_119",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_156",
+      "pcb_component_id": "pcb_component_119",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_157",
+      "pcb_component_id": "pcb_component_119",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_158",
+      "pcb_component_id": "pcb_component_119",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_159",
+      "pcb_component_id": "pcb_component_119",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_160",
+      "pcb_component_id": "pcb_component_119",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_161",
+      "pcb_component_id": "pcb_component_120",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_162",
+      "pcb_component_id": "pcb_component_120",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_163",
+      "pcb_component_id": "pcb_component_120",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_164",
+      "pcb_component_id": "pcb_component_120",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_165",
+      "pcb_component_id": "pcb_component_120",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_166",
+      "pcb_component_id": "pcb_component_120",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_167",
+      "pcb_component_id": "pcb_component_120",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_168",
+      "pcb_component_id": "pcb_component_120",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_169",
+      "pcb_component_id": "pcb_component_120",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_170",
+      "pcb_component_id": "pcb_component_120",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_171",
+      "pcb_component_id": "pcb_component_121",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_172",
+      "pcb_component_id": "pcb_component_121",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_173",
+      "pcb_component_id": "pcb_component_121",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_174",
+      "pcb_component_id": "pcb_component_121",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_175",
+      "pcb_component_id": "pcb_component_121",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_176",
+      "pcb_component_id": "pcb_component_121",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_177",
+      "pcb_component_id": "pcb_component_121",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_178",
+      "pcb_component_id": "pcb_component_121",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_179",
+      "pcb_component_id": "pcb_component_121",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_180",
+      "pcb_component_id": "pcb_component_121",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_181",
+      "pcb_component_id": "pcb_component_122",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_182",
+      "pcb_component_id": "pcb_component_122",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_183",
+      "pcb_component_id": "pcb_component_122",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_184",
+      "pcb_component_id": "pcb_component_122",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_185",
+      "pcb_component_id": "pcb_component_122",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_186",
+      "pcb_component_id": "pcb_component_122",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_187",
+      "pcb_component_id": "pcb_component_122",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_188",
+      "pcb_component_id": "pcb_component_122",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_189",
+      "pcb_component_id": "pcb_component_122",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_190",
+      "pcb_component_id": "pcb_component_122",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_191",
+      "pcb_component_id": "pcb_component_123",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_192",
+      "pcb_component_id": "pcb_component_123",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_193",
+      "pcb_component_id": "pcb_component_123",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_194",
+      "pcb_component_id": "pcb_component_123",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_195",
+      "pcb_component_id": "pcb_component_123",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_196",
+      "pcb_component_id": "pcb_component_123",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_197",
+      "pcb_component_id": "pcb_component_123",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_198",
+      "pcb_component_id": "pcb_component_123",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_199",
+      "pcb_component_id": "pcb_component_123",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_200",
+      "pcb_component_id": "pcb_component_123",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_201",
+      "pcb_component_id": "pcb_component_124",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_202",
+      "pcb_component_id": "pcb_component_124",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_203",
+      "pcb_component_id": "pcb_component_124",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_204",
+      "pcb_component_id": "pcb_component_124",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_205",
+      "pcb_component_id": "pcb_component_124",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_206",
+      "pcb_component_id": "pcb_component_124",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_207",
+      "pcb_component_id": "pcb_component_124",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_208",
+      "pcb_component_id": "pcb_component_124",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_209",
+      "pcb_component_id": "pcb_component_124",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_210",
+      "pcb_component_id": "pcb_component_124",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_211",
+      "pcb_component_id": "pcb_component_125",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_212",
+      "pcb_component_id": "pcb_component_125",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_213",
+      "pcb_component_id": "pcb_component_126",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_214",
+      "pcb_component_id": "pcb_component_126",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_215",
+      "pcb_component_id": "pcb_component_127",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_216",
+      "pcb_component_id": "pcb_component_127",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_217",
+      "pcb_component_id": "pcb_component_128",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_218",
+      "pcb_component_id": "pcb_component_128",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_219",
+      "pcb_component_id": "pcb_component_129",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_220",
+      "pcb_component_id": "pcb_component_129",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_221",
+      "pcb_component_id": "pcb_component_130",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_222",
+      "pcb_component_id": "pcb_component_130",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_223",
+      "pcb_component_id": "pcb_component_131",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_224",
+      "pcb_component_id": "pcb_component_131",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_225",
+      "pcb_component_id": "pcb_component_132",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_226",
+      "pcb_component_id": "pcb_component_132",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_227",
+      "pcb_component_id": "pcb_component_133",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_228",
+      "pcb_component_id": "pcb_component_133",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_229",
+      "pcb_component_id": "pcb_component_134",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_230",
+      "pcb_component_id": "pcb_component_134",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_231",
+      "pcb_component_id": "pcb_component_135",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_232",
+      "pcb_component_id": "pcb_component_135",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_233",
+      "pcb_component_id": "pcb_component_135",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_234",
+      "pcb_component_id": "pcb_component_135",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_235",
+      "pcb_component_id": "pcb_component_135",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_236",
+      "pcb_component_id": "pcb_component_135",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_237",
+      "pcb_component_id": "pcb_component_135",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_238",
+      "pcb_component_id": "pcb_component_135",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_239",
+      "pcb_component_id": "pcb_component_135",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_240",
+      "pcb_component_id": "pcb_component_135",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_241",
+      "pcb_component_id": "pcb_component_136",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_242",
+      "pcb_component_id": "pcb_component_136",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_243",
+      "pcb_component_id": "pcb_component_136",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_244",
+      "pcb_component_id": "pcb_component_136",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_245",
+      "pcb_component_id": "pcb_component_136",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_246",
+      "pcb_component_id": "pcb_component_137",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_247",
+      "pcb_component_id": "pcb_component_137",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_248",
+      "pcb_component_id": "pcb_component_137",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_249",
+      "pcb_component_id": "pcb_component_137",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_250",
+      "pcb_component_id": "pcb_component_138",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_251",
+      "pcb_component_id": "pcb_component_138",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_252",
+      "pcb_component_id": "pcb_component_138",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_253",
+      "pcb_component_id": "pcb_component_138",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_254",
+      "pcb_component_id": "pcb_component_138",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_255",
+      "pcb_component_id": "pcb_component_138",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_256",
+      "pcb_component_id": "pcb_component_138",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_257",
+      "pcb_component_id": "pcb_component_138",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_258",
+      "pcb_component_id": "pcb_component_139",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_259",
+      "pcb_component_id": "pcb_component_139",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_260",
+      "pcb_component_id": "pcb_component_139",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_261",
+      "pcb_component_id": "pcb_component_139",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_262",
+      "pcb_component_id": "pcb_component_139",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_263",
+      "pcb_component_id": "pcb_component_140",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_264",
+      "pcb_component_id": "pcb_component_140",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_265",
+      "pcb_component_id": "pcb_component_140",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_266",
+      "pcb_component_id": "pcb_component_140",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_267",
+      "pcb_component_id": "pcb_component_140",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_268",
+      "pcb_component_id": "pcb_component_141",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_269",
+      "pcb_component_id": "pcb_component_141",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_270",
+      "pcb_component_id": "pcb_component_141",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_271",
+      "pcb_component_id": "pcb_component_141",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_272",
+      "pcb_component_id": "pcb_component_141",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_273",
+      "pcb_component_id": "pcb_component_141",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_274",
+      "pcb_component_id": "pcb_component_141",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_275",
+      "pcb_component_id": "pcb_component_141",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_276",
+      "pcb_component_id": "pcb_component_141",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_277",
+      "pcb_component_id": "pcb_component_141",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_278",
+      "pcb_component_id": "pcb_component_142",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_279",
+      "pcb_component_id": "pcb_component_142",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_280",
+      "pcb_component_id": "pcb_component_142",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_281",
+      "pcb_component_id": "pcb_component_142",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_282",
+      "pcb_component_id": "pcb_component_142",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_283",
+      "pcb_component_id": "pcb_component_142",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_284",
+      "pcb_component_id": "pcb_component_142",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_285",
+      "pcb_component_id": "pcb_component_142",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_286",
+      "pcb_component_id": "pcb_component_142",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_287",
+      "pcb_component_id": "pcb_component_142",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_288",
+      "pcb_component_id": "pcb_component_143",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_289",
+      "pcb_component_id": "pcb_component_143",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_290",
+      "pcb_component_id": "pcb_component_143",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_291",
+      "pcb_component_id": "pcb_component_143",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_292",
+      "pcb_component_id": "pcb_component_143",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_293",
+      "pcb_component_id": "pcb_component_143",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_294",
+      "pcb_component_id": "pcb_component_143",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_295",
+      "pcb_component_id": "pcb_component_143",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_296",
+      "pcb_component_id": "pcb_component_143",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_297",
+      "pcb_component_id": "pcb_component_143",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_298",
+      "pcb_component_id": "pcb_component_144",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_299",
+      "pcb_component_id": "pcb_component_144",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_300",
+      "pcb_component_id": "pcb_component_144",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_301",
+      "pcb_component_id": "pcb_component_144",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_302",
+      "pcb_component_id": "pcb_component_144",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_303",
+      "pcb_component_id": "pcb_component_144",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_304",
+      "pcb_component_id": "pcb_component_144",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_305",
+      "pcb_component_id": "pcb_component_144",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_306",
+      "pcb_component_id": "pcb_component_144",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_307",
+      "pcb_component_id": "pcb_component_144",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_308",
+      "pcb_component_id": "pcb_component_145",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_309",
+      "pcb_component_id": "pcb_component_145",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_310",
+      "pcb_component_id": "pcb_component_145",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_311",
+      "pcb_component_id": "pcb_component_145",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_312",
+      "pcb_component_id": "pcb_component_145",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_313",
+      "pcb_component_id": "pcb_component_145",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_314",
+      "pcb_component_id": "pcb_component_145",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_315",
+      "pcb_component_id": "pcb_component_145",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_316",
+      "pcb_component_id": "pcb_component_145",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_317",
+      "pcb_component_id": "pcb_component_145",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_318",
+      "pcb_component_id": "pcb_component_146",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_319",
+      "pcb_component_id": "pcb_component_146",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_320",
+      "pcb_component_id": "pcb_component_147",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_321",
+      "pcb_component_id": "pcb_component_147",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_322",
+      "pcb_component_id": "pcb_component_148",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_323",
+      "pcb_component_id": "pcb_component_148",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_324",
+      "pcb_component_id": "pcb_component_149",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_325",
+      "pcb_component_id": "pcb_component_149",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_326",
+      "pcb_component_id": "pcb_component_150",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_327",
+      "pcb_component_id": "pcb_component_150",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_328",
+      "pcb_component_id": "pcb_component_151",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_329",
+      "pcb_component_id": "pcb_component_151",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_330",
+      "pcb_component_id": "pcb_component_152",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_331",
+      "pcb_component_id": "pcb_component_152",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_332",
+      "pcb_component_id": "pcb_component_153",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_333",
+      "pcb_component_id": "pcb_component_153",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_334",
+      "pcb_component_id": "pcb_component_153",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_335",
+      "pcb_component_id": "pcb_component_153",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_336",
+      "pcb_component_id": "pcb_component_153",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_337",
+      "pcb_component_id": "pcb_component_153",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_338",
+      "pcb_component_id": "pcb_component_153",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_339",
+      "pcb_component_id": "pcb_component_153",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_340",
+      "pcb_component_id": "pcb_component_153",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_341",
+      "pcb_component_id": "pcb_component_153",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_342",
+      "pcb_component_id": "pcb_component_154",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_343",
+      "pcb_component_id": "pcb_component_154",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_344",
+      "pcb_component_id": "pcb_component_154",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_345",
+      "pcb_component_id": "pcb_component_154",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_346",
+      "pcb_component_id": "pcb_component_154",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_347",
+      "pcb_component_id": "pcb_component_154",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_348",
+      "pcb_component_id": "pcb_component_154",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_349",
+      "pcb_component_id": "pcb_component_154",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_350",
+      "pcb_component_id": "pcb_component_154",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_351",
+      "pcb_component_id": "pcb_component_154",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_352",
+      "pcb_component_id": "pcb_component_155",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_353",
+      "pcb_component_id": "pcb_component_155",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_354",
+      "pcb_component_id": "pcb_component_155",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_355",
+      "pcb_component_id": "pcb_component_155",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_356",
+      "pcb_component_id": "pcb_component_156",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_357",
+      "pcb_component_id": "pcb_component_156",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_358",
+      "pcb_component_id": "pcb_component_156",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_359",
+      "pcb_component_id": "pcb_component_157",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_360",
+      "pcb_component_id": "pcb_component_157",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_361",
+      "pcb_component_id": "pcb_component_158",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_362",
+      "pcb_component_id": "pcb_component_158",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_363",
+      "pcb_component_id": "pcb_component_158",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_364",
+      "pcb_component_id": "pcb_component_158",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_365",
+      "pcb_component_id": "pcb_component_158",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_366",
+      "pcb_component_id": "pcb_component_158",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_367",
+      "pcb_component_id": "pcb_component_158",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_368",
+      "pcb_component_id": "pcb_component_158",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_369",
+      "pcb_component_id": "pcb_component_158",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_370",
+      "pcb_component_id": "pcb_component_158",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_371",
+      "pcb_component_id": "pcb_component_159",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_372",
+      "pcb_component_id": "pcb_component_159",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_373",
+      "pcb_component_id": "pcb_component_159",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_374",
+      "pcb_component_id": "pcb_component_159",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_375",
+      "pcb_component_id": "pcb_component_159",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_376",
+      "pcb_component_id": "pcb_component_159",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_377",
+      "pcb_component_id": "pcb_component_159",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_378",
+      "pcb_component_id": "pcb_component_159",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_379",
+      "pcb_component_id": "pcb_component_159",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_380",
+      "pcb_component_id": "pcb_component_159",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_381",
+      "pcb_component_id": "pcb_component_160",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_382",
+      "pcb_component_id": "pcb_component_160",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_383",
+      "pcb_component_id": "pcb_component_161",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_384",
+      "pcb_component_id": "pcb_component_161",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_385",
+      "pcb_component_id": "pcb_component_162",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_386",
+      "pcb_component_id": "pcb_component_162",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_387",
+      "pcb_component_id": "pcb_component_163",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_388",
+      "pcb_component_id": "pcb_component_163",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_389",
+      "pcb_component_id": "pcb_component_164",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_390",
+      "pcb_component_id": "pcb_component_164",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_391",
+      "pcb_component_id": "pcb_component_165",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_392",
+      "pcb_component_id": "pcb_component_165",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_393",
+      "pcb_component_id": "pcb_component_166",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_394",
+      "pcb_component_id": "pcb_component_166",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_395",
+      "pcb_component_id": "pcb_component_166",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_396",
+      "pcb_component_id": "pcb_component_167",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_397",
+      "pcb_component_id": "pcb_component_167",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_398",
+      "pcb_component_id": "pcb_component_167",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_399",
+      "pcb_component_id": "pcb_component_168",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_400",
+      "pcb_component_id": "pcb_component_168",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_401",
+      "pcb_component_id": "pcb_component_169",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_402",
+      "pcb_component_id": "pcb_component_169",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_403",
+      "pcb_component_id": "pcb_component_170",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_404",
+      "pcb_component_id": "pcb_component_170",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_405",
+      "pcb_component_id": "pcb_component_171",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_406",
+      "pcb_component_id": "pcb_component_171",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_407",
+      "pcb_component_id": "pcb_component_171",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_408",
+      "pcb_component_id": "pcb_component_172",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_409",
+      "pcb_component_id": "pcb_component_172",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_410",
+      "pcb_component_id": "pcb_component_173",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_411",
+      "pcb_component_id": "pcb_component_173",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_412",
+      "pcb_component_id": "pcb_component_174",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_413",
+      "pcb_component_id": "pcb_component_174",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_414",
+      "pcb_component_id": "pcb_component_175",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_415",
+      "pcb_component_id": "pcb_component_175",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_416",
+      "pcb_component_id": "pcb_component_176",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_417",
+      "pcb_component_id": "pcb_component_176",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_418",
+      "pcb_component_id": "pcb_component_177",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_419",
+      "pcb_component_id": "pcb_component_177",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_420",
+      "pcb_component_id": "pcb_component_178",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_421",
+      "pcb_component_id": "pcb_component_178",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_422",
+      "pcb_component_id": "pcb_component_179",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_423",
+      "pcb_component_id": "pcb_component_179",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_424",
+      "pcb_component_id": "pcb_component_180",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_425",
+      "pcb_component_id": "pcb_component_180",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_426",
+      "pcb_component_id": "pcb_component_181",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_427",
+      "pcb_component_id": "pcb_component_181",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_428",
+      "pcb_component_id": "pcb_component_182",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_429",
+      "pcb_component_id": "pcb_component_182",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_430",
+      "pcb_component_id": "pcb_component_183",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_431",
+      "pcb_component_id": "pcb_component_183",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_432",
+      "pcb_component_id": "pcb_component_184",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_433",
+      "pcb_component_id": "pcb_component_184",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_434",
+      "pcb_component_id": "pcb_component_184",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_435",
+      "pcb_component_id": "pcb_component_184",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_436",
+      "pcb_component_id": "pcb_component_184",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_437",
+      "pcb_component_id": "pcb_component_184",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_438",
+      "pcb_component_id": "pcb_component_184",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_439",
+      "pcb_component_id": "pcb_component_184",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_440",
+      "pcb_component_id": "pcb_component_184",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_441",
+      "pcb_component_id": "pcb_component_184",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_442",
+      "pcb_component_id": "pcb_component_185",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_443",
+      "pcb_component_id": "pcb_component_185",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_444",
+      "pcb_component_id": "pcb_component_185",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_445",
+      "pcb_component_id": "pcb_component_185",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_446",
+      "pcb_component_id": "pcb_component_185",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_447",
+      "pcb_component_id": "pcb_component_185",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_448",
+      "pcb_component_id": "pcb_component_185",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_449",
+      "pcb_component_id": "pcb_component_185",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_450",
+      "pcb_component_id": "pcb_component_185",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_451",
+      "pcb_component_id": "pcb_component_185",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_452",
+      "pcb_component_id": "pcb_component_186",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_453",
+      "pcb_component_id": "pcb_component_186",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_454",
+      "pcb_component_id": "pcb_component_186",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_455",
+      "pcb_component_id": "pcb_component_186",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_456",
+      "pcb_component_id": "pcb_component_186",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_457",
+      "pcb_component_id": "pcb_component_186",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_458",
+      "pcb_component_id": "pcb_component_186",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_459",
+      "pcb_component_id": "pcb_component_186",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_460",
+      "pcb_component_id": "pcb_component_186",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_461",
+      "pcb_component_id": "pcb_component_186",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_462",
+      "pcb_component_id": "pcb_component_187",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_463",
+      "pcb_component_id": "pcb_component_187",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_464",
+      "pcb_component_id": "pcb_component_188",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_465",
+      "pcb_component_id": "pcb_component_188",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_466",
+      "pcb_component_id": "pcb_component_188",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_467",
+      "pcb_component_id": "pcb_component_188",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_468",
+      "pcb_component_id": "pcb_component_188",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_469",
+      "pcb_component_id": "pcb_component_188",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_470",
+      "pcb_component_id": "pcb_component_188",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_471",
+      "pcb_component_id": "pcb_component_188",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_472",
+      "pcb_component_id": "pcb_component_189",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_473",
+      "pcb_component_id": "pcb_component_189",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_474",
+      "pcb_component_id": "pcb_component_190",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_475",
+      "pcb_component_id": "pcb_component_190",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_476",
+      "pcb_component_id": "pcb_component_190",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_477",
+      "pcb_component_id": "pcb_component_190",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_478",
+      "pcb_component_id": "pcb_component_190",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_479",
+      "pcb_component_id": "pcb_component_190",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_480",
+      "pcb_component_id": "pcb_component_190",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_481",
+      "pcb_component_id": "pcb_component_190",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_482",
+      "pcb_component_id": "pcb_component_191",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_483",
+      "pcb_component_id": "pcb_component_191",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_484",
+      "pcb_component_id": "pcb_component_192",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_485",
+      "pcb_component_id": "pcb_component_192",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_486",
+      "pcb_component_id": "pcb_component_192",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_487",
+      "pcb_component_id": "pcb_component_192",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_488",
+      "pcb_component_id": "pcb_component_192",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_489",
+      "pcb_component_id": "pcb_component_192",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_490",
+      "pcb_component_id": "pcb_component_192",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_491",
+      "pcb_component_id": "pcb_component_192",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_492",
+      "pcb_component_id": "pcb_component_193",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_493",
+      "pcb_component_id": "pcb_component_193",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_494",
+      "pcb_component_id": "pcb_component_193",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_495",
+      "pcb_component_id": "pcb_component_193",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_496",
+      "pcb_component_id": "pcb_component_194",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_497",
+      "pcb_component_id": "pcb_component_194",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_498",
+      "pcb_component_id": "pcb_component_194",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_499",
+      "pcb_component_id": "pcb_component_194",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_500",
+      "pcb_component_id": "pcb_component_194",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_501",
+      "pcb_component_id": "pcb_component_194",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_502",
+      "pcb_component_id": "pcb_component_194",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_503",
+      "pcb_component_id": "pcb_component_195",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_504",
+      "pcb_component_id": "pcb_component_195",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_505",
+      "pcb_component_id": "pcb_component_196",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_506",
+      "pcb_component_id": "pcb_component_196",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_507",
+      "pcb_component_id": "pcb_component_197",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_508",
+      "pcb_component_id": "pcb_component_197",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_509",
+      "pcb_component_id": "pcb_component_198",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_510",
+      "pcb_component_id": "pcb_component_198",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_511",
+      "pcb_component_id": "pcb_component_199",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_512",
+      "pcb_component_id": "pcb_component_199",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_513",
+      "pcb_component_id": "pcb_component_200",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_514",
+      "pcb_component_id": "pcb_component_200",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_515",
+      "pcb_component_id": "pcb_component_201",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_516",
+      "pcb_component_id": "pcb_component_201",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_517",
+      "pcb_component_id": "pcb_component_202",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_518",
+      "pcb_component_id": "pcb_component_202",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_519",
+      "pcb_component_id": "pcb_component_203",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_520",
+      "pcb_component_id": "pcb_component_203",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_521",
+      "pcb_component_id": "pcb_component_204",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_522",
+      "pcb_component_id": "pcb_component_204",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_523",
+      "pcb_component_id": "pcb_component_204",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_524",
+      "pcb_component_id": "pcb_component_204",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_525",
+      "pcb_component_id": "pcb_component_204",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_526",
+      "pcb_component_id": "pcb_component_204",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_527",
+      "pcb_component_id": "pcb_component_204",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_528",
+      "pcb_component_id": "pcb_component_204",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_529",
+      "pcb_component_id": "pcb_component_204",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_530",
+      "pcb_component_id": "pcb_component_204",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_531",
+      "pcb_component_id": "pcb_component_205",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_532",
+      "pcb_component_id": "pcb_component_205",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_533",
+      "pcb_component_id": "pcb_component_205",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_534",
+      "pcb_component_id": "pcb_component_205",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_535",
+      "pcb_component_id": "pcb_component_205",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_536",
+      "pcb_component_id": "pcb_component_205",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_537",
+      "pcb_component_id": "pcb_component_205",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_538",
+      "pcb_component_id": "pcb_component_205",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_539",
+      "pcb_component_id": "pcb_component_205",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_540",
+      "pcb_component_id": "pcb_component_205",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_541",
+      "pcb_component_id": "pcb_component_206",
+      "stroke_width_mm": 0.1
+    },
+    {
+      "id": "pcb_silkscreen_path_542",
+      "pcb_component_id": "pcb_component_206",
+      "stroke_width_mm": 0.1
+    }
+  ],
+  "production_silkscreen_passed": false,
+  "prototype_fabrication_ready": false
+}
