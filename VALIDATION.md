@@ -49,6 +49,11 @@ for UI analysis. Latest released tscircuit/CLI/core versions still match pins.
 Actual cgroup memory is32 GiB; workspace disk31.45 GiB total,22.57 GiB available.
 No environment publication, fabrication order or physical programming is claimed.
 
+The registry archive endpoint rejected the first9 MB review-ZIP upload with
+HTTP413. The runtime ZIP now omits duplicated large failed-route inputs, rejected
+JSON and a redundant PCB snapshot; every original diagnostic remains committed
+in evidence/rev-0.0.39-alpha.0. Sources/Circuit JSON/models are unchanged.
+
 Publication status: pending completion of this revision's exact file readback
 and Linux CI receipts. Evidence: evidence/rev-0.0.39-alpha.0/.
 All prior supplier silk/CPL/stackup/plating/filled-process and loaded power/thermal
