@@ -73,6 +73,21 @@ TypeScript, critical imports, Shapely/CadQuery, context hashes and all four
 historical routing archives. Remote publication receipts are recorded below
 when complete.
 
+Publication verified: source/artifact commit `9f7ca62d598f61154ac4be2bc9db2debd83678d1` and public
+tscircuit release `417fecfa-b1ba-476a-909e-3e54d5ab473a` (0.0.41-alpha.0). All 402 runtime
+files and 25 immutable GitHub source/model/artifact files passed anonymous
+SHA-256 readback, including the exact three canonical Circuit JSON mirrors
+and both new official model dependencies. The release is ready to build;
+no hosted preview/render success or hardware validation is claimed.
+Fresh complete Linux readiness workflow [run 37516256224](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37516256224)
+passed every job and step for the immutable source/artifact commit.
+The actual runtime filesystem MD5 matches the native generated metadata across
+215 recognized source files; no metadata was edited to obtain a cache hit.
+Exact receipts are PUBLICATION.json, LINUX-READINESS.json and
+RUNTIME-SOURCE-HASH.json. Authored TSX/MJS/Python/Markdown whitespace checks
+pass; supplier STEP CRLF and native rendered SVG whitespace are preserved
+unchanged, and are not fabrication/geometry failures.
+
 Stages 4/5/6 remain incomplete: uniform 0.30/0.45 mm via request, outer-only
 power routing, supplier silk/mask/paste/CPL review, stackup/plating/filled-process
 acceptance, full loaded power/via/thermal review and sourcing are unresolved.
