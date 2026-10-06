@@ -53,11 +53,32 @@ Evidence: `evidence/rev-0.0.42-alpha.0/`. Exact root Cloud smoke passed: pinned
 tools, TypeScript, official critical imports, Shapely/CadQuery, context and all
 four routing archives. Actual RAM limit32 GiB, overlay disk about29 GiB free.
 Final context refresh is verified separately. Publication/CI receipts are
-appended when verified. Stage4/5/6 remain incomplete: imported
+now verified and retained below. Stage4/5/6 remain incomplete: imported
 symbol/readability, MCU sourcing, uniform requested vias, outer-only power,
 supplier silk/orientation, stackup/fill/mask/paste/assembler and full loaded
 power/thermal review. Firmware, physical programming and hardware tests remain
 pending. **PROTOTYPE FABRICATION READY: NO.** No order is authorized.
+
+Publication source commit:
+[`035b876fb9cfa7747a672b6b2a58abdc6de652ae`](https://github.com/AnasSarkiz/smart-nema14-motor-controller/commit/035b876fb9cfa7747a672b6b2a58abdc6de652ae).
+The matching public tscircuit release is
+`AnasSarkiz/smart-nema14-motor-controller--01a0fd9b@0.0.42-alpha.0`,
+release `51894a12-e701-4cdb-b6c5-2b36764a1e20`. Anonymous download verification
+matches all405 runtime files, including all80 referenced local model assets and
+all three exact canonical Circuit JSON mirrors, plus149 changed immutable
+GitHub files. `ready_to_build` is true; a successful hosted preview build is
+not claimed. The last archive response timed out after the server stored every
+file. A read-only inventory found zero missing files; all405 exact downloaded
+hashes passed before readiness was set, without any repeat upload. The original
+timeout and recovery logs are retained alongside `PUBLICATION.json`.
+
+The fresh exact-source Linux readiness workflow
+[37527242963](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37527242963)
+passed every job and step at source commit035b876, including pinned Linux
+installation and the complete smoke checks. See `LINUX-READINESS.json`.
+The receipt-only follow-up changes validation/context metadata; its405 runtime
+files must retain these exact published hashes. CI and public checksum success
+do not authorize fabrication or establish hardware readiness.
 
 ---
 
