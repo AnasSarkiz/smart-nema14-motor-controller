@@ -1,5 +1,15 @@
 # Current Linux continuation — 0.0.36-alpha.0, 2026-10-06
 
+Published matching prototype 0.0.36-alpha.0 from source commit
+`dd637e4d963ad637e90b6baf27ecc5a45a90293f`. All **387** package files (including every
+model asset and fresh Circuit JSON) were downloaded anonymously and SHA-256
+verified; **13** matching immutable GitHub raw files passed. Public tscircuit
+release `c212d402-dca4-4a88-be0c-ddb521cc58d7` is ready to build.
+The [fresh Linux readiness workflow](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37475422263) passed installation
+and smoke checks. Hosted 3D rendering, hardware and fabrication readiness are
+not claimed. See evidence/rev-0.0.36-alpha.0/PUBLICATION.json and
+PUBLICATION-METADATA.json.
+
 The pinned released toolchain is updated to tscircuit 0.0.2745, CLI 0.1.2251,
 core 0.0.2095, props 0.0.689, checks 0.0.240, runframe 0.0.2915 and native
 Pipeline9 0.0.959. Bun 1.3.9 is retained with its checked lockfile.
