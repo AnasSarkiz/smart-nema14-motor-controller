@@ -7,8 +7,8 @@ import { Fragment } from "react"
 export function BoardLegend() {
   const legends = [
     { text: "MOTOR", pcbX: -1.75, pcbY: 16.0 },
-    { text: "USB-C", pcbX: -9.4, pcbY: -16.0 },
-    { text: "SWD", pcbX: 14.6, pcbY: -4.65 },
+    { text: "USB-C", pcbX: -9.6, pcbY: -16.0 },
+    { text: "SWD", pcbX: 14.8, pcbY: -13.05 },
     { text: "IO", pcbX: 15.6, pcbY: 9.5, pcbRotation: 90 },
   ]
   return legends.map((legend) => (

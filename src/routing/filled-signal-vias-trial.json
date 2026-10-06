@@ -906,7 +906,7 @@
         "pin_number": 2
       },
       "net": "GND",
-      "x": -11.8,
+      "x": -11.67,
       "y": -13.5,
       "owner_layer": "bottom",
       "hole_diameter_mm": 0.2,
@@ -925,7 +925,7 @@
           ]
         }
       ],
-      "design_reason": "Reconnect a measured isolated capacitor ground island after eFuse enable routing. Same-net ordinary drill clearance retained, using paid filled/capped four-layer process."
+      "design_reason": "Reconnect a measured isolated capacitor ground island after eFuse enable routing. Same-net ordinary drill clearance retained, using paid filled/capped four-layer process. Revision 0.0.37: shift the owned escape 0.13 mm toward C25 to eliminate the irregular inner1 ground sliver removed by native Gerber VBUS clear polarity. Maintain the 0.35 mm foreign drill-to-pad requirement; revalidate all copper and CAM."
     },
     {
       "name": "GND_C34_ESCAPE",

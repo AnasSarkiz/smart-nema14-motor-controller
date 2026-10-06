@@ -8,6 +8,10 @@ STM32G0B1 provides USB FS, UCPD, classical CAN, STEP/DIR/ENABLE, limit inputs, S
 
 Updated pinned toolchain: tscircuit 0.0.2745, CLI 0.1.2251, core 0.0.2095 and native Pipeline9 dependency 0.0.959. R20/R21/R22 now use official C25076 100 Ω imports for the standard JST programmer; placements and the five-pin order are preserved. Cluttered automatic reference text is replaced by four connector labels; all 111 identities remain in the assembly drawing.
 
+Revision 0.0.37 fixes the native Gerber ground mismatch and measures all four
+owned connector labels clear of mask openings, with 0.198 mm pens. Supplier
+silkscreen and ordering blockers remain; see [current validation](VALIDATION.md).
+
 Fresh native build: **334 traces / 224 vias / 82 pours**, **zero native errors or shorts**, and **82/82 physical nets joined**. Independent actual-copper spacing, drills, board edges, NPTH and filled-pour checks pass, including exact owners of all 68 declared filled features. All 421 purchased-pin wiring partitions are preserved. Fresh [Circuit JSON](dist/index/circuit.json) is included in the package; its exact checksum is recorded in [build status](build/routing-review/BUILD-STATUS.json) and publication receipts.
 
 Every nonzero trace segment is inventoried: 2,218 segments across 82 nets meet the 0.15 mm width floor. All four motor nets now use ≥0.27 mm inner segments and pass the stated 0.34245 A analytical screen with the manufacturer’s −20% width tolerance; complete rail/pour/via current and thermal qualification remains pending. Thirty combined-route-tree width warnings are retained; all 34 active fanout corridors have their requested copper width, but checking the minimum width alone does not qualify loaded power paths. USB skew is 0.38144 mm and its limited return/impedance screens pass. These are analytical checks, not measured hardware ratings.
@@ -18,7 +22,7 @@ Use direct pinned tscircuit export for review files:
 bunx tsci export dist/index/circuit.json --format gerbers --output "$PWD/review-gerbers.zip"
 ```
 
-The checked review ZIP has 224 unique plated drill hits, six NPTH holes and matching 108-reference BOM/CPL. Four supplier placement orientations remain unverified (J_USB and three LEDs). The earlier KiCad conversion has duplicated objects/default-rule failures and 55 reported disconnected items; it is diagnostic evidence, not an approved fabrication package. Final copper/mask/paste, silkscreen, small filled-via process, stackup/plating, power and thermal reviews remain blockers. **Do not order this revision.**
+The checked review ZIP has 224 unique plated drill hits, six NPTH holes and matching 108-reference BOM/CPL. Four supplier placement orientations remain unverified (J_USB and three LEDs). The earlier KiCad conversion has duplicated objects/default-rule failures and 55 reported disconnected items; it is diagnostic evidence, not an approved fabrication package. All four copper layers pass the native/CAM vector comparison. Supplier silkscreen, mask/paste approval, small filled-via process, stackup/plating, power and thermal reviews remain blockers. **Do not order this revision.**
 
 The public runtime packet contains the board sources, unchanged supplier models, pinned lockfile and fresh Circuit JSON. Review records are in `build/qualification-review.zip`; full historical evidence and all qualification tools remain in the GitHub checkout. This keeps old routing experiments out of the runnable package.
 

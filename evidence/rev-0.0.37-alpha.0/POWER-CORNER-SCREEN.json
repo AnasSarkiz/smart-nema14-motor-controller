@@ -1,0 +1,91 @@
+{
+  "revision": "0.0.37-alpha.0",
+  "scope": "Analytical screens, not physical tests or USB certification",
+  "fabrication_ready": false,
+  "intended_prototype_envelope": {
+    "motor": "14HM11-0404S",
+    "pd_contract_voltages_v": [
+      9,
+      12,
+      15,
+      20
+    ],
+    "preferred_motor_pd_v": [
+      12,
+      15
+    ],
+    "maximum_source_v": 21,
+    "phase_peak_screen_a": 0.3424477108687635,
+    "maximum_rpm": 300,
+    "maximum_external_reflected_inertia_kg_m2": 2.5e-07,
+    "continuous_overhauling_or_backdrive": "excluded",
+    "initial_5v_source_requirement": "USB-C PD charger/powered dock advertising >=1.5 A; legacy/default-current USB hosts not qualified",
+    "gpio_high_current_contract_min_a": 1.5,
+    "physical_limits_verified": false
+  },
+  "efuse": {
+    "part": "C2155767",
+    "out_operating_limit_independent_of_vin_v": 60,
+    "out_abs_max_v": 62,
+    "mode": "current limiting with auto-retry; MODE to isolated RTN",
+    "r44_r45_each_ohms": 24000,
+    "bootstrap_current_screen_a": [
+      0.41666666666666663,
+      0.586734693877551
+    ],
+    "parallel_high_current_screen_a": [
+      0.9313725490196078,
+      1.0714285714285714
+    ],
+    "high_current_switch": "C20512 DMG1012T-7: max 0.5 ohm at VGS 2.5 V, 25 C; temperature curve is typical; <0.01% resistor-branch contribution with 2-ohm design allowance",
+    "ovp_worst_case_screen_v": [
+      21.473403734826118,
+      22.84284766970888
+    ],
+    "ovp_input_leakage_bound_a": 1e-07,
+    "dvdt_cap_f": 2.2e-06,
+    "dvdt_effective_screen_f": 1.329596928e-06,
+    "fast_slew_screen_v_per_ms": 0.10548309570101533,
+    "maximum_vm_cap_charge_screen_a": 0.028480435839274138,
+    "input_bypass_effective_typical_screen_f_at_21v": 1.8628790400000008e-07,
+    "disconnect_rating_concern": "resolved by independent OUT rating; whole system limits remain 29 V or lower"
+  },
+  "regeneration": {
+    "phase_independent_bound_j": 0.00337738851876258,
+    "rotor_plus_allowed_load_energy_j": 0.0006168502750680848,
+    "returned_energy_j": 0.003994238793830665,
+    "minimum_bulk_screen_after_tolerance_reflow_and_endurance_f": 0.0001008,
+    "lossless_vm_peak_v": 22.80900632905481,
+    "lf_esr_screen_ohms": 3.157836172458241,
+    "lf_resistive_step_v": 2.1627875371138052,
+    "peak_plus_lf_screen_v": 24.971793866168614,
+    "driver_operating_max_v": 29,
+    "high_frequency_parasitic_overshoot": "not included; native short power layout and prototype measurement required"
+  },
+  "startup": {
+    "ap63203_soft_start_typ_ms": 4,
+    "datasheet_minimum_soft_start_ms": null,
+    "buck_bootstrap_efficiency_guarantee": null,
+    "bootstrap_3v3_current_allocation_a": 0.15,
+    "boot_efficiency_engineering_allowance": 0.6,
+    "vm_minimum_screen_v": 4.2,
+    "maximum_screened_boot_vm_current_a": 0.24973043583927412,
+    "bootstrap_current_margin_a": 0.1669362308273925,
+    "maximum_source_current_screen_a": 0.591734693877551,
+    "allocation_conditions": "Motor ENN high; CAN RS high; encoder DNP; no 3V3 export; board logic <=150 mA until qualified PD contract. 60% efficiency is an engineering allowance, not a guaranteed device limit.",
+    "legacy_100ma_pre_enumeration_compliance": "not established; not advertised",
+    "cold_start_contract_firmware": "not delivered or physically tested"
+  },
+  "sources": {
+    "efuse": "https://www.ti.com/lit/ds/symlink/tps2660.pdf",
+    "bulk": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1184.pdf",
+    "mlcc": "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=MSASU168BB5225KTNA01&u=M",
+    "buck": "https://www.diodes.com/datasheet/download/AP63200-AP63201-AP63203-AP63205.pdf"
+  },
+  "remaining": [
+    "Physical cold-start and PD sequence verification",
+    "Typical MLCC curves and aging allowance are engineering screens, not guaranteed combined tolerance",
+    "High-frequency regeneration overshoot/ripple and thermal qualification",
+    "Critical routed power loops; current-carrying copper; firmware interlocks"
+  ]
+}

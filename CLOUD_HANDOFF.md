@@ -1,3 +1,16 @@
+# Current manual fixes — 0.0.37-alpha.0
+
+The native Gerber ground mismatch is resolved by moving the exactly owned C25
+ground escape 0.13 mm in source. All four board-owned connector labels now pass
+native CAM mask/width/outline measurements. All 82 nets remain connected, with
+zero native errors/shorts and zero strict copper violations. Supplier outlines,
+four orientation metadata gaps, sourcing, power/thermal and fabrication-process
+qualification remain open. Read current VALIDATION.md, docs/EXPORT-BLOCKERS.md
+and evidence/rev-0.0.37-alpha.0/. Preserve every official import and model asset.
+**PROTOTYPE FABRICATION READY: NO.** No order authorized.
+
+---
+
 # Latest continuation — 0.0.36-alpha.0
 
 The released tscircuit toolchain and motor/CC1/CAN_RS copper fixes are complete;

@@ -1,5 +1,5 @@
 {
-  "revision": "0.0.36-alpha.0",
+  "revision": "0.0.37-alpha.0",
   "source_identity": "The Git commit containing this manifest identifies the source, evidence and checked build.",
   "scope": "Every tracked file except this self-referential manifest; archived routing evidence has its own per-file inventory.",
   "circuit_counts": {
@@ -532,18 +532,18 @@
     },
     {
       "path": "CLOUD_HANDOFF.md",
-      "bytes": 63955,
-      "sha256": "241b734f9d577fa4cc3263f7b8280d3fed24196f3120f606172a0252d8bf72c9"
+      "bytes": 64620,
+      "sha256": "986097c0eb0b374445a8ef44a4157b4193a89bc90af9127d937e18f236b58fe3"
     },
     {
       "path": "README.md",
-      "bytes": 7002,
-      "sha256": "1a9a6835f13288c9552f58afc73f36cb12c86212f4e3b40df28cba9706b18d5f"
+      "bytes": 7306,
+      "sha256": "16f43d0e9e3cfb2e58891d5350fb1d2abd814a32847b358b12007559b4916083"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 183209,
-      "sha256": "5e12c9d852dfbc622df95ed530cd6dacd177c4cea7621f0da2966c56724eeac4"
+      "bytes": 187691,
+      "sha256": "4126fe0c65bd773387753db8d053374d141b782d9cc09629f8e77dfb5d74f3a5"
     },
     {
       "path": "assembly.circuit.tsx",
@@ -557,18 +557,18 @@
     },
     {
       "path": "build/qualification-review.zip",
-      "bytes": 2765434,
-      "sha256": "65793c83f573b0dcac8259936e39ebd0ef3c9b3756903f1282f293bd340f9f80"
+      "bytes": 3183756,
+      "sha256": "7c4f38cfb0018d996d26cbba69dc8d83cea3cebba1d500628a225ec7f8c62090"
     },
     {
       "path": "build/routing-review/BUILD-STATUS.json",
-      "bytes": 402,
-      "sha256": "a69a399921a62d3cc40af8bbe71f0f162ebb0c2ad78bd54b58b403be0b726066"
+      "bytes": 397,
+      "sha256": "a717473fb035a54079c45d831253fd6651934722def02f42d1588da9daffd3c6"
     },
     {
       "path": "build/routing-review/circuit.json",
-      "bytes": 4913164,
-      "sha256": "feb1c704d92b3a0c0686bc85fd09198c221a3e393b60b4a8d5fb3b457bc78b80"
+      "bytes": 4914397,
+      "sha256": "99df7e9371dce7a57c2d76ad668ba12ba4a4a465ca7f595f08d791757f6bc033"
     },
     {
       "path": "bun.lock",
@@ -582,18 +582,23 @@
     },
     {
       "path": "dist/index/circuit.json",
-      "bytes": 4913164,
-      "sha256": "feb1c704d92b3a0c0686bc85fd09198c221a3e393b60b4a8d5fb3b457bc78b80"
+      "bytes": 4914397,
+      "sha256": "99df7e9371dce7a57c2d76ad668ba12ba4a4a465ca7f595f08d791757f6bc033"
     },
     {
       "path": "dist/routing-review/circuit.json",
-      "bytes": 4913164,
-      "sha256": "feb1c704d92b3a0c0686bc85fd09198c221a3e393b60b4a8d5fb3b457bc78b80"
+      "bytes": 4914397,
+      "sha256": "99df7e9371dce7a57c2d76ad668ba12ba4a4a465ca7f595f08d791757f6bc033"
     },
     {
       "path": "docs/BOARD-REVIEW.md",
-      "bytes": 9306,
-      "sha256": "ca25da646048488a4370e135e5885f52c6f0d01cfa99b97ca7bff0cbac7d79c7"
+      "bytes": 9971,
+      "sha256": "6eb86cb051505fdbf757c011b72b7df2dc055cf2927be0d14fee336f37d86f44"
+    },
+    {
+      "path": "docs/EXPORT-BLOCKERS.md",
+      "bytes": 3295,
+      "sha256": "20e1e2825e25cf35f866acf37e02fa71b2c83006fa84b93e937cd2801caad739"
     },
     {
       "path": "docs/PROGRAMMING.md",
@@ -20876,6 +20881,201 @@
       "sha256": "317b4d43d5d4c71b6f8bcbbf697353125e9deb80e0b6de22d5632d0b0ca2ee8f"
     },
     {
+      "path": "evidence/rev-0.0.37-alpha.0/B_Cu.gbr.svg",
+      "bytes": 366412,
+      "sha256": "15e68b80f82f364d4a1f1b9568e99f94825bd5fbf0e359fd1c3e5446f48b638e"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/CAD-PUBLICATION.json",
+      "bytes": 756,
+      "sha256": "eb4a49358fb062f302e59379b324441b7bc23248c4f98fcf307a5cbe789268d1"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/CAM-COPPER-COMPARISON.json",
+      "bytes": 2420,
+      "sha256": "7b3b6d4486a01289aad44c8e82dbae457ff6f3bc386f7414c95a2ae7f683c955"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/CAM-SOURCE-COPPER.json",
+      "bytes": 20681,
+      "sha256": "fa309eb585bcca7f9ff1a047b22ca49aa9d981f8cf3cfa50d2ae79b672e93527"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/CHANGE-PRESERVATION.json",
+      "bytes": 19408,
+      "sha256": "01ea61443d242caa88bf87d5dd9a8d5f6942bb29fcc440c767ab446a971713ef"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/CLOUD-RESOURCES.json",
+      "bytes": 377,
+      "sha256": "9fde1204f4abc735c10d631ccaee110090024c01bfca786c4020ed0bbeaa56bd"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/CLOUD-SMOKE.log.gz",
+      "bytes": 309,
+      "sha256": "e9a3dfdf9b2bfe1835c849c5a8ae0d5256eadba1489ad0254da975746ddb5fbc"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/COPPER-GEOMETRY.json",
+      "bytes": 15019,
+      "sha256": "087a82ea281c4de63e9207f6e4c0afe8bcb881c0834ee62a7a6d0cc89e6a49c9"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/COPPER-RECHECK-PRESERVATION.json",
+      "bytes": 591,
+      "sha256": "b00a91e9ff2d693f35f4528611ded0d2ecfb8d3b5278cfc58c44de09d70ebe83"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/FANOUT-COPPER-DIAGNOSTIC.json",
+      "bytes": 20681,
+      "sha256": "edf6896d14accc80886f6d044a039c3bdd44d5473077bd1aa614e27f0dcfe28c"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/FILLED-COPPER.json",
+      "bytes": 196983,
+      "sha256": "1bf44e25e1d80139559a815ea8b41708c64e484edb2d284e69d180434ed6c7dd"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/F_Cu.gbr.svg",
+      "bytes": 374344,
+      "sha256": "5d761d894c0160eba7fefbba668188aa891d0548e0b57e0608c241a2042d3a5a"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/In1_Cu.gbr.svg",
+      "bytes": 242443,
+      "sha256": "2fa888f4bec4ae4a0c12aff7083882c2fd8d7ad94ab2c6d178a2d8d7f00c9108"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/In2_Cu.gbr.svg",
+      "bytes": 162165,
+      "sha256": "af8b6010c88c1f4a8a87a1cd5ffe86b02f595443022b884e0f175f1267402383"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/NATIVE-CAM-AUDIT.json",
+      "bytes": 4509,
+      "sha256": "85243b637aab4b99894ab418501f2f8ab838ad4fcf88db4cde5284c88f1b6f4f"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/OFFICIAL-JLC-PARTS.json",
+      "bytes": 35229,
+      "sha256": "444278544039b4f86fa62138e9b772346c1c10716be582780eabb2af15b3074f"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/PACKAGE-INVENTORY.json",
+      "bytes": 68319,
+      "sha256": "71be6dffa76e4f761dbc8a246df645dceb7b67f6e60d99a7bc88feaf4b7efc7e"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/POWER-CORNER-SCREEN.json",
+      "bytes": 3991,
+      "sha256": "bcd3d861bc324d3d6e156b31e62c3ef5243ec53976f18924eeb74d43787d6ee9"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/POWER-FANOUT-WIDTH-REVIEW.json",
+      "bytes": 8856,
+      "sha256": "3c968587078a9507d9faa3a13248be9d07979af929ca3b47920dbdbbd34b0bba"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/PROGRAMMER-COMPATIBILITY.json",
+      "bytes": 5523,
+      "sha256": "f6afba2fac69453b97b42ca6cc30f567acae88ded1e4cc54fa9c98481baf16c8"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/READINESS.json",
+      "bytes": 2444,
+      "sha256": "45e791bb21c0e481a01e96fb225a97ddeff29e45e093a68b84aaaa880b31cc73"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/REJECTED-TRIALS.tar.gz",
+      "bytes": 718351,
+      "sha256": "331ea32c3d0194ed4adcfd94238a7d8e5367d43ba70af13c1ca2fd646327b890"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/REVIEW-BOM.csv",
+      "bytes": 6484,
+      "sha256": "493ceb5b0d5116e128ede82ae33310f2e054643730a6d1c10d6d6f8015b0668c"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/REVIEW-BOM.json",
+      "bytes": 31165,
+      "sha256": "a52efbfbae684117707eeb3e8969a6774b7f19153d87a1790074d5afd7e43940"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/SILKSCREEN-CAM.json",
+      "bytes": 73940,
+      "sha256": "29057c515937a20f05266f7fd94b5eac346c58309c89885ce154a91f53a8f662"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/TRACE-WIDTH-AUDIT.json",
+      "bytes": 1048240,
+      "sha256": "f13e6672bddbb675eeacb36065497cd777b3c74506cf9612c5e94680cb4359eb"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/USB-PATHS.json",
+      "bytes": 684,
+      "sha256": "ef56a2019f522cd9c623e4a5248631bb5e0c392f5b85a37e7fa435f3144a037c"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/USB-RETURN.json",
+      "bytes": 22821,
+      "sha256": "e46a19490ef05edc763686622780a14087f89a193358344d54b5b1558c3272b5"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/WIDTH-TOLERANCE.json",
+      "bytes": 2336,
+      "sha256": "4510bb8232a9efb3fea1eea542d84d5f1caead36197bb3d4034afe87539807ab"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/legend-accepted-cam-F_SilkScreen.gbr.svg",
+      "bytes": 35353,
+      "sha256": "e6290885e3c900f77b6f2e0cc0eec6b464d076f687f43c29921746f646959cbd"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/legend-final-cam-F_SilkScreen.gbr.svg",
+      "bytes": 35353,
+      "sha256": "104e3561f3a5960b73458d93531bb4374b7bd869a7142b25efe280e9d8686ab0"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/native-cam-accepted-B_Mask.gbr.svg",
+      "bytes": 22545,
+      "sha256": "31ea91f7607d95a19f720aee984d89a19160e03e3fd478f294d8136a4ec6ba3d"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/native-cam-accepted-B_SilkScreen.gbr.svg",
+      "bytes": 269488,
+      "sha256": "25e22d37f0331e7d6cfd48a0bc5daa4f70fb047aa5aafbea21d3d6598b84d7d5"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/native-cam-accepted-F_Mask.gbr.svg",
+      "bytes": 35202,
+      "sha256": "948bc98893b9a544aff978c15ca1af6ebaf6ca9d9085094af4a353a7fa34d46e"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/native-cam-accepted-F_SilkScreen.gbr.svg",
+      "bytes": 142129,
+      "sha256": "6d0e96cdc0abe4c88203d3ef70b4a9d8f3382475eb821768cb13c4fe5206c4b8"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/native-cam-final-B_Mask.gbr.svg",
+      "bytes": 22545,
+      "sha256": "31ea91f7607d95a19f720aee984d89a19160e03e3fd478f294d8136a4ec6ba3d"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/native-cam-final-B_SilkScreen.gbr.svg",
+      "bytes": 269488,
+      "sha256": "25e22d37f0331e7d6cfd48a0bc5daa4f70fb047aa5aafbea21d3d6598b84d7d5"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/native-cam-final-F_Mask.gbr.svg",
+      "bytes": 35202,
+      "sha256": "948bc98893b9a544aff978c15ca1af6ebaf6ca9d9085094af4a353a7fa34d46e"
+    },
+    {
+      "path": "evidence/rev-0.0.37-alpha.0/native-cam-final-F_SilkScreen.gbr.svg",
+      "bytes": 142129,
+      "sha256": "4c9188a667569bbdc059a864eae3e1b619c46e8398217879df7d65f3c2ec01bb"
+    },
+    {
       "path": "evidence/rev-0.0.4-alpha.0/C1121848.raweasy.json",
       "bytes": 20931,
       "sha256": "de7a73e7da69c1f78a0c26ea983b1fc9623b52d31dccb19953124ed9bfcd5dfb"
@@ -24078,7 +24278,7 @@
     {
       "path": "package.json",
       "bytes": 4324,
-      "sha256": "34da593f87228a4dfb71ed6f3bbc114a6ca0bb82e6ce6bdbbb4a6d791ecd3297"
+      "sha256": "dc3051d3ce9a238ce9b2192bb2485696b2e8cc924d269ba3974be3e3142a320e"
     },
     {
       "path": "references/AP63203.pdf",
@@ -24531,6 +24731,11 @@
       "sha256": "ef50e4e52d594a5adf42361654cfd14d72cde9a071be990727061de9b2a43f2c"
     },
     {
+      "path": "scripts/board-legend-audit.circuit.tsx",
+      "bytes": 272,
+      "sha256": "0ad4505025f8a34745d96f06d91ef7afbdac7ee69222f529dac30835d1c21650"
+    },
+    {
       "path": "scripts/bounded-routing-trial.circuit.tsx",
       "bytes": 24624,
       "sha256": "ca961b9eac4d0cf29955657aa2240e6f48e4b899af3af7aaddb425c1b1aa0e47"
@@ -24639,6 +24844,11 @@
       "path": "scripts/check-routing-dsn.mjs",
       "bytes": 4553,
       "sha256": "295e9c820de61721c0f7668887625c45073767eaa721eabdc247000c09848231"
+    },
+    {
+      "path": "scripts/check-silkscreen-cam.py",
+      "bytes": 5375,
+      "sha256": "2c90b465df71c6d82008385c4975037d3494d67511b25cc43acc73e81ca6638f"
     },
     {
       "path": "scripts/check-thermal-via-guards.py",
@@ -25557,8 +25767,8 @@
     },
     {
       "path": "src/BoardLegend.tsx",
-      "bytes": 781,
-      "sha256": "31dc928a1983be3bab5c69b989beb58798e40235d23022f26e646d9683931e72"
+      "bytes": 782,
+      "sha256": "30536938b0d2760ad5ad74781b0490835a0f3ae1e08ebe70b06671dc3b431924"
     },
     {
       "path": "src/SmartNema14MotorController.tsx",
@@ -25727,8 +25937,8 @@
     },
     {
       "path": "src/routing/filled-signal-vias-trial.json",
-      "bytes": 48699,
-      "sha256": "06368b458c0227fd4c617482d3acc42fee1d2967b4b0cf73da7563be27cf34e4"
+      "bytes": 48939,
+      "sha256": "25b4928bacb8335ed584873712a873a0a14a3f0bf6c890ced9d569db92985f14"
     },
     {
       "path": "src/routing/ground-stitch-paths.json",

@@ -1,3 +1,71 @@
+# Manual source fixes — 0.0.37-alpha.0, 2026-10-06
+
+Moved the exactly owned GND_C25_ESCAPE from (-11.8, -13.5) to
+(-11.67, -13.5) mm. The native inner1 ground polygon beside this barrel had
+an irregular sliver erased by the subsequent VBUS_CONN Gerber clear-polarity
+hole. The new source position removes that sliver without changing supplier
+pads or generated JSON. Strict copper clearance still passes the original
+0.35 mm foreign drill-to-pad requirement; the 0.15 mm trial failed by 5 µm
+and was rejected. The earlier 0.02 mm trial retained a CAM mismatch.
+
+All four exported copper layers now match native geometry under the existing,
+explicit 0.002 mm boundary/curve comparison allowance: zero missing/extra area.
+This is a vector-geometry comparison, not full fabrication approval or a claim
+that the former sliver was an open net. Native shorts reports none.
+
+Moved USB-C text 0.2 mm left and SWD text below its connector. A fresh native
+isolated-text fixture is compared with the full production mask and silkscreen.
+All four owned labels pass: 0.214466 mm minimum mask clearance, 0.198 mm actual
+Gerber pen width, zero ink within 0.15 mm of openings and zero ink outside outline.
+The complete production silk check intentionally still exits 1: 557 unchanged
+supplier paths are thinner than 0.15 mm; top mask/outline and bottom mask
+violations remain. No supplier graphic is hidden or patched to obtain a pass.
+
+Final canonical Circuit JSON SHA-256: `99df7e9371dce7a57c2d76ad668ba12ba4a4a465ca7f595f08d791757f6bc033`.
+Three committed mirrors match. Source compilation at the minimum runtime root
+preserves package-relative model URLs. All 421 purchased-pin partitions, 111
+placements, 423 supplier pads, 108 CAD entries, 111 existing runtime assets and
+223 other barrels remain exact. Default fitted population is 108; U4/C6/R50 DNP.
+
+Fresh native build/checks: zero native/unconnected/dangling errors, 82/82 physical
+nets, 334 traces / 224 vias / 82 pours. Strict copper and foreign-pour checks
+pass, with all 68 exact reviewed filled/capped owners. Thirty route-width and
+27 supplier pin-metadata warnings remain visible. The successful copper checks
+ran before the final SWD text-only move; the exact original measurement input
+is preserved in qualification-review.zip. COPPER-RECHECK-PRESERVATION.json compares
+all other element types byte-for-byte, including every copper and wiring object.
+The final canonical independently passes native shorts/placement/source/netlist,
+Gerber geometry, USB path, programmer and width/tolerance checks. All four current
+copper images were viewed. The nine schematic sheets and CAD geometry are unchanged;
+the previous qualified analytical carrier/import/model screens remain applicable.
+
+All 2,218 nonzero segments meet the 0.15 mm floor. Four motor nets pass the
+retained −20% width screen at 0.348699 A versus 0.342448 A phase peak, conditional
+on 15.2 µm inner copper and the 30 C IPC-2221 model. All 34 declared power branches
+retain source widths; complete loaded rails, barrel plating, transient/switching
+loops and thermal qualification remain open. USB skew stays 0.381441 mm; signal-core
+reference coverage is exact and its screen passes. Nominal 91.812 Ω is not confirmed
+controlled impedance. Programmer pin checks pass with 100 Ω series parts; VOUT is
+isolated. Physical flashing, operation, thermal behavior and mating are untested.
+
+Refreshed 44 exact supplier identities through the official public Parts Library:
+zero request errors; U1 C2847904, U2 C465949, D_USB C94934 and Q_PD C2965326 still
+have no exact public in-stock match. This does not establish allocated assembly
+stock. J_USB and three LED supplier rotations still lack native orientation metadata.
+The drill/BOM/CPL identity check passes 224 PTH, six NPTH and 108 fitted references.
+Supplier silk, CPL orientation, sourcing, selected stackup/minimum copper/plating,
+68 filled/capped process acceptance and complete power/thermal review block ordering.
+See docs/EXPORT-BLOCKERS.md for the supported capability limits and reproductions.
+
+Latest released tscircuit 0.0.2745 / CLI 0.1.2251 remain pinned, with Bun 1.3.9.
+Gerber 0.0.112 was inspected: its new files API does not fix these supplier defects;
+no dependency patch, substitute exporter/router or unused package was installed.
+
+**PROTOTYPE FABRICATION READY: NO.** No fabrication order or physical test.
+Publication and fresh Linux CI outcomes are recorded separately when verified.
+
+---
+
 # Current Linux continuation — 0.0.36-alpha.0, 2026-10-06
 
 Published matching prototype 0.0.36-alpha.0 from source commit
