@@ -36,6 +36,19 @@ manufacturer/assembler review checklist is prepared in
 [FABRICATION-REVIEW.md](docs/FABRICATION-REVIEW.md). Firmware and physical tests
 remain unperformed. **PROTOTYPE FABRICATION READY: NO.**
 
+The additional review is public in GitHub commit
+`4b2bd17b454eb42d6e6d0f347434dea83b7b589e`; nine anonymous source/evidence/JSON
+downloads match SHA-256. The unchanged public tscircuit release remains
+`417fecfa-b1ba-476a-909e-3e54d5ab473a`, version0.0.41-alpha.0; all three published
+Circuit JSON mirrors were freshly downloaded and match canonical bytes.
+No new board revision or package upload is claimed for this audit-only step.
+Exact local Cloud smoke, formatting, Python compilation, current-input reviews
+and stale-input rejection checks completed. Fresh Ubuntu Linux readiness
+[run37520066445](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37520066445)
+passed every job/step for the immutable review commit. Receipts are
+`REVIEW-PUBLICATION.json`, `REMAINING-REVIEW-CHECKS.json`,
+`REMAINING-REVIEW-LINUX-READINESS.json` and `REMAINING-REVIEW-SMOKE.log.gz`.
+
 # Genuine supplier replacements — 0.0.41-alpha.0, 2026-10-06
 
 User selected U2 TRINAMIC TMC2209-LA-T C2150710 and D_USB Texas Instruments

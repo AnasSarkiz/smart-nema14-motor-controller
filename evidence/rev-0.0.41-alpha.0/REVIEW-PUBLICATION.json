@@ -1,0 +1,91 @@
+{
+  "commit": "4b2bd17b454eb42d6e6d0f347434dea83b7b589e",
+  "checks": [
+    {
+      "path": "docs/FABRICATION-REVIEW.md",
+      "status": 200,
+      "sha256": "a337ae90c0ba0e6040a7d392d0d1a01ae5022c0d5a2a1a39ac40f27bdd6680f0",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.41-alpha.0/FABRICATION-GATES.json",
+      "status": 200,
+      "sha256": "86a105526cad9ee75dcb79df81edc8d5bea83a2dc96cac66454d3e9313748a9f",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.41-alpha.0/MOTOR-COPPER-LOSS.json",
+      "status": 200,
+      "sha256": "f65a99eab8d88b7800260dfee65bb74843b50538a7d4550aadb3110a9142c42a",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.41-alpha.0/REMAINING-PART-SEARCH.json",
+      "status": 200,
+      "sha256": "952d2916e11e65182e73d7d734ecc5c170f959c175ade1652b642849de101489",
+      "verified": true
+    },
+    {
+      "path": "scripts/review-motor-copper-loss.py",
+      "status": 200,
+      "sha256": "555517f654706a5c22c13400a155f6abc375083ffb7437afa9f61b8d5e3e3f86",
+      "verified": true
+    },
+    {
+      "path": "scripts/review-fabrication-gates.py",
+      "status": 200,
+      "sha256": "6a0a65379fc912140b83a171efded64c12dc8af99a4f53450a0c9fbfca733196",
+      "verified": true
+    },
+    {
+      "path": "dist/index/circuit.json",
+      "status": 200,
+      "sha256": "e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430",
+      "verified": true
+    },
+    {
+      "path": "dist/routing-review/circuit.json",
+      "status": 200,
+      "sha256": "e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430",
+      "verified": true
+    },
+    {
+      "path": "build/routing-review/circuit.json",
+      "status": 200,
+      "sha256": "e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430",
+      "verified": true
+    }
+  ],
+  "all_verified": true,
+  "checked_at_utc": "2026-10-06T19:35:24.867Z",
+  "public_package_readback": {
+    "checked_at_utc": "2026-10-06T19:34:24.973Z",
+    "package": "AnasSarkiz/smart-nema14-motor-controller--01a0fd9b",
+    "version": "0.0.41-alpha.0",
+    "package_release_id": "417fecfa-b1ba-476a-909e-3e54d5ab473a",
+    "is_private": false,
+    "checks": [
+      {
+        "path": "dist/index/circuit.json",
+        "http": 200,
+        "sha256": "e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430",
+        "verified": true
+      },
+      {
+        "path": "dist/routing-review/circuit.json",
+        "http": 200,
+        "sha256": "e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430",
+        "verified": true
+      },
+      {
+        "path": "build/routing-review/circuit.json",
+        "http": 200,
+        "sha256": "e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430",
+        "verified": true
+      }
+    ],
+    "board_revision_changed": false,
+    "prototype_fabrication_ready": false
+  },
+  "publication_scope": "Additional qualification evidence for unchanged board revision0.0.41-alpha.0; no new design version or modified canonical JSON. Existing public package three JSON mirrors match exactly."
+}
