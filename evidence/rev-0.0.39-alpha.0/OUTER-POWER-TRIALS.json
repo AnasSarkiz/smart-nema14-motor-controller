@@ -1,0 +1,25 @@
+{
+  "router": "Native beta_pipeline9; public AutoroutingPipelineSolver9_PreloadedTraceGraph callback on autoroutingphase",
+  "connection": "MOTOR_A1 only; all other saved copper retained",
+  "constraint": "Both inner layers fully blocked in this selected routing callback; no blind/buried vias; minimum0.30/0.45 new vias; existing drill/pad/track/edge limits preserved",
+  "fixed_obstacle_count_before_constraint": 14405,
+  "run2": {
+    "mesh_max_dimension": 3,
+    "mesh_max_ratio": 30,
+    "min_node_area": 0.01,
+    "nominal_trace_width_mm": 0.5,
+    "result": "300-second timeout",
+    "peak_sampled_rss_mib": 6693.40625
+  },
+  "run3": {
+    "mesh_max_dimension": 8,
+    "mesh_max_ratio": 12,
+    "min_node_area": 0.025,
+    "nominal_trace_width_mm": 0.35,
+    "result": "8192MiB process-group guard exceeded at119.575seconds",
+    "peak_sampled_rss_mib": 8478.18359375
+  },
+  "routes_produced": 0,
+  "adopted": false,
+  "note": "Earlier run1 was interrupted when source inspection showed the nested callback was not applied. Runs2/3 use the verified direct phase callback; exact input with blocking obstacle is retained. These are bounded candidates, not a failure/completeness claim about all possible outer-layer routes."
+}

@@ -112,13 +112,15 @@ export function InterfacesSheet({
         schX={-12.35}
         schY={-0.72}
         connections={{ A11: "net.CAN_H", A12: "net.CAN_L", K: "net.GND" }}
-      />
-      <schematictext
-        schX={-12.35}
-        schY={-1.584}
-        fontSize={0.2}
-        text="D_CAN - SM712.TCT"
-      />
+      >
+        <schematictext
+          text="{NAME}"
+          schX={-0.8}
+          schY={-0.7}
+          fontSize={0.2}
+          anchor="left"
+        />
+      </SM712_TCT>
       <A_0402WGF1001TCE
         name="R23"
         {...previewPlacement("R23", mechanicalPreview)}

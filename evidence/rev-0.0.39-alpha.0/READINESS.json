@@ -1,0 +1,78 @@
+{
+  "revision": "0.0.39-alpha.0",
+  "canonical_sha256": "a2a836a5ceae27967440cb6a0e324a26426f9ada311d1a73391ced7507bcf3b7",
+  "native_errors": 0,
+  "unconnected_port_count": 0,
+  "completed_physical_nets": 82,
+  "total_physical_nets": 82,
+  "traces": 334,
+  "vias": 224,
+  "pours": 82,
+  "strict_copper_passed": true,
+  "filled_copper_passed": true,
+  "motor_width_tolerance_passed": true,
+  "programmer_wiring_passed": true,
+  "gerber_geometry_passed": true,
+  "silkscreen_passed": false,
+  "native_drill_bom_cpl_identity_passed": true,
+  "unverified_supplier_rotations": [
+    "J_USB",
+    "LED_POWER",
+    "LED_STATUS",
+    "LED_FAULT"
+  ],
+  "native_warning_counts": {
+    "route_width": 30,
+    "pin_metadata": 25,
+    "refdes": 4,
+    "schematic_styling": 0
+  },
+  "power_scope": "All 34 declared fanout branches retain source widths. Bounded current/power screens retained; full loaded rail/pour/barrel current, switching loops, transient and thermal qualification incomplete.",
+  "usb_scope": "0.381440727mm skew and adjacent signal-core GND screen pass; approximate nominal91.812ohm impedance only. Stackup/CAM impedance unconfirmed.",
+  "remaining_blockers": [
+    "Supplier silkscreen width/mask/outline violations",
+    "J_USB and three LED CPL orientations unverified",
+    "Four exact fitted part stock/allocation gaps",
+    "Selected minimum copper/plating, stackup and 68 filled/capped features need manufacturer acceptance",
+    "Loaded power/via/thermal and switching-loop qualification incomplete",
+    "User-requested uniform0.30/0.45 vias require genuine escape/plane-contact redesign: trial has109 native errors and217 strict violations",
+    "Motor and14.052864mm of3.3V wire still use inner layers; two constrained Pipeline9 candidates produce no adoptable output",
+    "Schematic UI cannot load until supported Cloud network update/browser CA trust is available",
+    "Imported TVS rotation and residual automatic label/value placement overlaps prevent complete schematic style qualification"
+  ],
+  "firmware_delivered": false,
+  "hardware_tested": false,
+  "physical_programming_tested": false,
+  "prototype_fabrication_ready": false,
+  "owned_connector_silkscreen_passed": true,
+  "qualification_provenance": "Fresh canonical native full build, placement/source/pin/netlist/shorts CLI checks, strict measured copper and filled-copper checks, USB path/programmer wiring/actual widths and tolerance/fanout screens. CHANGE-PRESERVATION proves copper/pads/CAD/ports/source traces/nets unchanged from0.0.38; only USB connector classification/cable-insertion metadata and schematic objects change. Prior physical CAM/silk/process limitations remain without extension; rejected redesign/routing candidates are preserved separately. Snapshot records a current baseline, not hardware validation.",
+  "all_111_placements_and_421_pin_partitions_preserved": true,
+  "native_converter_versions": {
+    "gerber_cli": "0.0.111",
+    "latest_released_gerber_checked": "0.0.112",
+    "latest_gerber_fix_scope": "Adds filesystem-neutral files API; does not resolve supplier silk or clear-polarity ownership. Latest tscircuit and CLI remain pinned and unchanged."
+  },
+  "explained_components": 111,
+  "schematic_sheet_count": 9,
+  "schematic_note_coverage_passed": true,
+  "schematic_note_layout_passed": true,
+  "all_nine_sheet_images_visually_reviewed": true,
+  "standard_usb_c_schematic_passed": true,
+  "all_16_purchased_usb_pin_groups_represented": true,
+  "missing_custom_reference_label_count": 0,
+  "schematic_cli_remaining_issues": [
+    "D_VBUS TwoPinComponentShouldBeVertical: released core ignores imported custom-symbol rotation"
+  ],
+  "schematic_ui_analysis_completed": false,
+  "schematic_ui_blockers": [
+    "data.jsdelivr.com dependency metadata CONNECT403; saved draft does not apply to current VM",
+    "cdn.tailwindcss.com CONNECT403",
+    "Chromium lacks current environment proxy root CA in read-only legacy NSS store"
+  ],
+  "visual_review_scope": "All nine native sheet images viewed; purpose panels and added labels reviewed. Residual automatic label/value placement overlaps remain visible and are not a complete UI style pass.",
+  "blind_buried_via_count": 0,
+  "all_vias_requested_030_045": false,
+  "all_power_traces_on_outer_layers": false,
+  "uniform_via_candidate_adopted": false,
+  "outer_power_candidate_adopted": false
+}

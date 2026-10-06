@@ -1,6 +1,23 @@
 # Smart NEMA 14 Motor Controller
 
-Revision **0.0.38-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
+Revision **0.0.39-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
+
+The USB-C schematic uses native `standard="usb_c"` while retaining the exact
+C5143397 import's footprint, supplier identity and all sixteen pin groups. Five
+missing custom reference labels and the R41/C34 and R11/U2 collisions are fixed.
+The CLI still reports the imported D_VBUS rotation defect; UI style analysis is
+blocked by CDN access and Chromium CA trust. Existing automatic label/value
+placement overlaps remain visible; this is not complete schematic qualification.
+
+All 224 current vias are through plated. The requested uniform 0.30 mm hole /
+0.45 mm pad trial produces 109 native errors and 217 strict clearance violations;
+it is rejected. Current copper retains 156 ordinary 0.30/0.60, 64 filled/capped
+0.20/0.38 and four 0.15/0.38 mm vias. VM/USB input power wires use outer layers;
+some 3.3 V and all four motor nets still include inner wires. Two bounded native
+Pipeline9 outer-layer candidates produced no adoptable route. No fabricated
+success or completed resizing/rerouting is claimed. Four fitted part codes still
+lack exact public stock matches; all assembler allocation remains unverified.
+See [the six-request review](docs/BOARD-REVIEW-39.md).
 
 [Every component now has a purpose note](docs/SCHEMATIC-NOTES.md) on its native schematic sheet, including values and DNP assembly notes. The right-side panels explain all 111 references without changing PCB geometry or electrical connections.
 

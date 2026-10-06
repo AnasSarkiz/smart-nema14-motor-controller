@@ -82,12 +82,6 @@ export function InputPowerSheet({
           N_FLT: "net.EFUSE_FLT_N",
         }}
       />
-      <schematictext
-        schX={-2.6}
-        schY={-0.288}
-        fontSize={0.2}
-        text="Q_ILIM - DMG1012T-7"
-      />
       <DMG1012T_7
         name="Q_ILIM"
         {...previewPlacement("Q_ILIM", mechanicalPreview)}
@@ -98,7 +92,15 @@ export function InputPowerSheet({
           S: "net.EFUSE_RTN",
           D: "net.EFUSE_ILIM_SWITCH",
         }}
-      />
+      >
+        <schematictext
+          text="{NAME}"
+          schX={-1.5}
+          schY={0.9}
+          fontSize={0.2}
+          anchor="left"
+        />
+      </DMG1012T_7>
       <RT0402BRD07100KL
         name="R38"
         {...previewPlacement("R38", mechanicalPreview)}
@@ -129,7 +131,7 @@ export function InputPowerSheet({
       <A_0402WGF1001TCE
         name="R41"
         {...previewPlacement("R41", mechanicalPreview)}
-        schX={-9.75}
+        schX={-10}
         schY={-4.32}
         connections={{
           pin1: "net.EFUSE_OVP_TOP_1",
@@ -186,7 +188,7 @@ export function InputPowerSheet({
       <UMK107BBJ225KA_T
         name="C34"
         {...previewPlacement("C34", mechanicalPreview)}
-        schX={-9.75}
+        schX={-9.5}
         schY={-6.48}
         schRotation={270}
         connections={{ pin1: "net.VBUS_PROTECTED", pin2: "net.GND" }}

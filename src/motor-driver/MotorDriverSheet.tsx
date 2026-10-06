@@ -35,7 +35,7 @@ export function MotorDriverSheet({
       <TMC2209_LA
         name="U2"
         {...previewPlacement("U2", mechanicalPreview)}
-        schX={-10.4}
+        schX={-10.09}
         schY={0}
         schWidth={2.53}
         schPinArrangement={{
@@ -196,7 +196,7 @@ export function MotorDriverSheet({
       <A_0402WGF1002TCE
         name="R11"
         {...previewPlacement("R11", mechanicalPreview)}
-        schX={-13.65}
+        schX={-13.96}
         schY={1.44}
         schRotation={270}
         connections={{ pin1: "net.TMC_VREF", pin2: "net.GND" }}

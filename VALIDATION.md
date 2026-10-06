@@ -1,3 +1,61 @@
+# Standard USB schematic and six-request review — 0.0.39-alpha.0, 2026-10-06
+
+Native USB-C standard schematic reuses unchanged official C5143397 footprint,
+supplier identity and all 16 physical pin groups, including DN1/DN2. Five missing
+custom-symbol reference labels and the R41/C34 and R11/U2 collisions are fixed.
+All 111 component explanations remain. The schematic CLI retains D_VBUS's known
+imported-symbol rotation defect; a fresh official C1974707 reproducer fails as
+expected. No symbol/footprint/pin definition is patched. All nine fresh native
+renders were viewed; residual automatic net-label/value overlaps are visible.
+UI style analysis is blocked at Loading files by denied required CDN metadata
+and browser proxy-CA trust; it is not claimed as performed.
+
+Fresh canonical SHA-256:
+`a2a836a5ceae27967440cb6a0e324a26426f9ada311d1a73391ced7507bcf3b7`;
+all three mirrors match. Full native build, TypeScript, format, notes/USB-pin
+checks, native source/placement/shorts/netlist/pin checks run. Zero native PCB
+errors, opens, dangling items or shorts;82/82 nets,334 traces,224 vias,82 pours.
+Independent actual/filled copper, widths/tolerance, USB and programmer checks
+pass their stated scope.30 width,25 pin metadata and four refdes warnings remain.
+Exact comparison proves unchanged source ports/traces/nets and all copper/pads/
+CAD/placements; only USB classification/cable metadata and schematic objects
+change. All official imports,111 runtime assets, mechanical references, saved
+routing, local skill and historical evidence remain intact.
+
+All 224 accepted vias are through plated; no blind/buried vias. The requested
+uniform0.30/0.45 mm source candidate emits the target size but fails with 109
+native errors (66 opens,38 via/pad errors,5 drill-spacing errors) and 217 strict
+geometry violations. Foreign drill/track/pad/hole/edge/keepout limits and exact
+owner checks are retained. The candidate is rejected; current sizes remain
+156×0.30/0.60,64×0.20/0.38 and4×0.15/0.38 mm. JLCPCB's preferred via diameter
+minus hole is0.15 mm, so the requested nominal ring is permitted; resizing in
+place is unsafe. Genuine escape/plane-contact rerouting and CAM requalification
+are still required before adoption.
+
+VM/USB input wires use outer layers;14.052864 mm of V3V3 and portions of all
+four motor nets remain inner. Two actual outer-only MOTOR_A1 Pipeline9 trials
+produce no route:300-second timeout, then8 GiB process RSS guard exceeded at
+119.6seconds after coarser mesh/0.35 mm nominal-width changes. Existing copper
+is preserved; outer-layer routing is incomplete. All 44 exact C codes were
+freshly checked at the official public JLCPCB stock endpoint. Four fitted codes
+remain absent: U1 C2847904, U2 C465949, D_USB C94934, Q_PD C2965326.
+Shop stock does not establish assembler allocation; lookalike manufacturer
+substitutions are not adopted. See [the complete six-request report](docs/BOARD-REVIEW-39.md).
+
+The Cloud draft retains exact install/start scripts and adds the two necessary
+UI CDN hosts. Draft persistence is confirmed; application to the running VM is
+not. Supported review/save runtime update and browser trust remain prerequisites
+for UI analysis. Latest released tscircuit/CLI/core versions still match pins.
+Actual cgroup memory is32 GiB; workspace disk31.45 GiB total,22.57 GiB available.
+No environment publication, fabrication order or physical programming is claimed.
+
+Publication status: pending completion of this revision's exact file readback
+and Linux CI receipts. Evidence: evidence/rev-0.0.39-alpha.0/.
+All prior supplier silk/CPL/stackup/plating/filled-process and loaded power/thermal
+blockers remain. **PROTOTYPE FABRICATION READY: NO.**
+
+---
+
 # Schematic explanations — 0.0.38-alpha.0, 2026-10-06
 
 All 111 electronic references have native purpose notes on their nine A4 sheets,

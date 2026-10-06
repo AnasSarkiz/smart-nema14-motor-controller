@@ -1,6 +1,6 @@
 {
   "name": "@tsci/AnasSarkiz.smart-nema14-motor-controller--01a0fd9b",
-  "version": "0.0.38-alpha.0",
+  "version": "0.0.39-alpha.0",
   "description": "STEPPERONLINE 14HM11-0404S controller: complete checked native routing; untested prototype, fabrication qualification pending",
   "main": "index.circuit.tsx",
   "keywords": [
@@ -43,7 +43,8 @@
     "cloud:setup": "bash scripts/cloud-setup.sh",
     "cloud:smoke": "bash scripts/cloud-smoke.sh",
     "cloud:route": "python3 scripts/run-cloud-routing.py",
-    "test:schematic-notes": "node scripts/check-schematic-notes.mjs"
+    "test:schematic-notes": "node scripts/check-schematic-notes.mjs",
+    "test:standard-usb": "node scripts/check-standard-usb-schematic.mjs"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",

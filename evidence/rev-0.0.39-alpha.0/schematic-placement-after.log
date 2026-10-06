@@ -1,0 +1,10 @@
+<SchematicSheet name="UsbPd" id="schematic_sheet_5">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="J_USB" positionAnchor="center" schX="-13" schY="1.44" width="1.7" height="3.2" />
+<SchematicBoxPlacement componentName="D_VBUS" positionAnchor="center" schX="-2.05" schY="4.32" width="0.2" height="0.28" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<SchematicPinPaddingToEdgeTooLarge message="Move schematic pins closer to the box edge or change the schematic box width" componentName="J_USB" pinSides="bottom" edgeSides="left,right" suggestedSchWidth="1.15" />
+<TwoPinComponentShouldBeVertical componentName="D_VBUS" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate D_VBUS by -90° so its power-connected pin faces up and the component is vertical" />
+</SchematicPlacementIssues>
+</SchematicSheet>

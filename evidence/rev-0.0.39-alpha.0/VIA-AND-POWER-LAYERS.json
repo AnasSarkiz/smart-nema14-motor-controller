@@ -1,0 +1,68 @@
+{
+  "interpretation": "Outer wire interpreted as top/bottom copper layers; no answer received to optional clarification.",
+  "through_via_count": 224,
+  "blind_buried_via_count": 0,
+  "via_dimension_inventory_mm": [
+    {
+      "hole": 0.3,
+      "pad": 0.6,
+      "count": 156
+    },
+    {
+      "hole": 0.2,
+      "pad": 0.38,
+      "count": 64
+    },
+    {
+      "hole": 0.15,
+      "pad": 0.38,
+      "count": 4
+    }
+  ],
+  "power_trace_length_mm_by_layer": {
+    "VBUS_PROTECTED": {
+      "bottom": 27.85182167747561
+    },
+    "VM": {
+      "top": 37.86011646645695,
+      "bottom": 22.93089985990391
+    },
+    "VBUS_CONN": {
+      "top": 12.058990090052976,
+      "bottom": 12.877788613939234
+    },
+    "V3V3": {
+      "top": 73.34687184575579,
+      "bottom": 123.97341658107197,
+      "inner1": 14.052863800023768
+    },
+    "MOTOR_B1": {
+      "top": 12.926691155666687,
+      "inner1": 12.030460023676639,
+      "inner2": 9.547161834600912
+    },
+    "BUCK_SW": {
+      "top": 10.199373828624566
+    },
+    "MOTOR_A1": {
+      "top": 9.110805853543123,
+      "inner2": 15.429161322892124
+    },
+    "MOTOR_A2": {
+      "top": 2.3316475578298546,
+      "inner2": 11.349061040949376
+    },
+    "MOTOR_B2": {
+      "top": 3.518865554550204,
+      "inner1": 16.24628005513985,
+      "inner2": 5.678844289182561
+    }
+  },
+  "uniform_requested_via_size_met": false,
+  "all_power_traces_on_outer_layers": false,
+  "ground_and_inner_power_pours_reviewed_separately": true,
+  "manufacturer_via_reference": "https://jlcpcb.com/capabilities/pcb-capabilities/",
+  "manufacturer_via_rule": "Via diameter should be 0.1 mm (0.15 mm preferred) larger than Via hole size; requested 0.30/0.45 meets the preferred nominal difference.",
+  "requested_radial_annular_ring_mm": 0.075,
+  "all_other_native_and_strict_clearances_retained": true
+}

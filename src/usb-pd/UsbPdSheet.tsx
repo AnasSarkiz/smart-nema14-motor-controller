@@ -3,7 +3,7 @@ import {
   type BoardViewProps,
   previewPlacement,
 } from "../mechanics/preview-placement"
-import { USB4110_GF_A } from "../../imports/USB4110_GF_A/USB4110_GF_A"
+import { StandardUsbCConnector } from "./StandardUsbCConnector"
 import { TCPP01_M12 } from "../../imports/TCPP01_M12/TCPP01_M12"
 import { STL11N3LLH6 } from "../../imports/STL11N3LLH6/STL11N3LLH6"
 import { TPD2EUSB30ADRTR } from "../../imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR"
@@ -34,7 +34,7 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           "TCPP01 protects CC and drives Q_PD; TPS26600 limits inrush and supplies the buck and motor rail."
         }
       />
-      <USB4110_GF_A
+      <StandardUsbCConnector
         name="J_USB"
         {...previewPlacement("J_USB", mechanicalPreview)}
         cadModel={{
@@ -85,24 +85,6 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           EP: "net.GND",
         }}
       />
-      <schematictext
-        schX={-3.9}
-        schY={2.952}
-        fontSize={0.2}
-        text="Q_PD - STL11N3LLH6"
-      />
-      <schematictext
-        schX={-1.95}
-        schY={3.888}
-        fontSize={0.2}
-        text="D_VBUS - ESDA25P35"
-      />
-      <schematictext
-        schX={-13}
-        schY={-3.96}
-        fontSize={0.2}
-        text="D_USB - TPD2EUSB30A"
-      />
       <STL11N3LLH6
         name="Q_PD"
         {...previewPlacement("Q_PD", mechanicalPreview)}
@@ -119,7 +101,15 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           D4: "net.VBUS_CONN",
           D5: "net.VBUS_CONN",
         }}
-      />
+      >
+        <schematictext
+          text="{NAME}"
+          schX={-1.3}
+          schY={1.15}
+          fontSize={0.2}
+          anchor="left"
+        />
+      </STL11N3LLH6>
       <TPD2EUSB30ADRTR
         name="D_USB"
         {...previewPlacement("D_USB", mechanicalPreview)}
@@ -130,7 +120,15 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           D_NEG: "net.USB_DM",
           GND: "net.GND",
         }}
-      />
+      >
+        <schematictext
+          text="{NAME}"
+          schX={-1.2}
+          schY={1.3}
+          fontSize={0.2}
+          anchor="left"
+        />
+      </TPD2EUSB30ADRTR>
       <ESDA25P35_1U1M
         name="D_VBUS"
         {...previewPlacement("D_VBUS", mechanicalPreview)}
@@ -138,7 +136,15 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schX={-1.95}
         schY={4.32}
         connections={{ pin1: "net.VBUS_CONN", pin2: "net.GND" }}
-      />
+      >
+        <schematictext
+          text="{NAME}"
+          schX={-0.7}
+          schY={0.65}
+          fontSize={0.2}
+          anchor="left"
+        />
+      </ESDA25P35_1U1M>
       <UMK107BBJ225KA_T
         name="C25"
         {...previewPlacement("C25", mechanicalPreview)}

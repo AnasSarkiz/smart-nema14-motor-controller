@@ -1,0 +1,23 @@
+{
+  "requested_via_hole_mm": 0.3,
+  "requested_via_pad_mm": 0.45,
+  "all_224_emitted_vias_match_requested_dimensions": true,
+  "all_224_are_through_vias": true,
+  "native_build_exit_code": 1,
+  "native_error_counts": {
+    "pcb_port_not_connected_error": 66,
+    "pcb_pad_pad_clearance_error": 38,
+    "pcb_via_clearance_error": 5
+  },
+  "strict_clearance_violation_count": 217,
+  "strict_clearance_violation_counts": {
+    "via_to_track_mm": 122,
+    "via_drill_to_pad_mm": 49,
+    "via_annulus_to_other_net_pad": 38,
+    "via_hole_to_via_hole_mm": 7,
+    "via_to_via_mm": 1
+  },
+  "candidate_adopted": false,
+  "check_policy": "Only explicit dimension target changes to user-requested JLCPCB-preferred 0.30/0.45; all foreign drill/pad/track/hole/NPTH/edge/keepout clearances and exact owner tests remain intact. Root published checks and PCB stay unchanged.",
+  "follow_on_work": "Reposition and reroute the enlarged fine-pitch filled escapes, restore disconnected copper contacts/plane islands, and requalify actual copper plus CAM; size replacement alone is invalid."
+}

@@ -1,0 +1,38 @@
+<SchematicSheet name="InputPower" id="schematic_sheet_8">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="Q_ILIM" positionAnchor="center" schX="-2.37" schY="-2.19" width="0.66" height="0.86" />
+<SchematicBoxPlacement componentName="R41" positionAnchor="center" schX="-9.75" schY="-4.32" width="0.6" height="0.65" />
+<SchematicBoxPlacement componentName="C34" positionAnchor="center" schX="-9.75" schY="-6.48" width="0.9" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<SchematicTextCollision schematicTextId="schematic_text_171" text="Q_ILIM - DMG1012T-7" collidingObjectType="trace" collidingObjectId="schematic_trace_266" newSchX="-3.2" newSchY="-0.288" message="Text &quot;Q_ILIM - DMG1012T-7&quot; overlaps trace schematic_trace_266; reposition the text to leave its visible area clear." />
+<ComponentNetLabelCollision pair1="R41/C34">
+  <SuggestedFix note="Apply all moves simultaneously. Set schAutoLayoutEnabled on your circuit.">
+    <Move componentName="R41" newSchX="-10" newSchY="-4.32" />
+    <Move componentName="C34" newSchX="-9.5" newSchY="-6.48" />
+  </SuggestedFix>
+</ComponentNetLabelCollision>
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="UsbPd" id="schematic_sheet_5">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="D_VBUS" positionAnchor="center" schX="-2.05" schY="4.32" width="0.2" height="0.28" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<TwoPinComponentShouldBeVertical componentName="D_VBUS" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate D_VBUS by -90° so its power-connected pin faces up and the component is vertical" />
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="MotorDriver" id="schematic_sheet_4">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U2" positionAnchor="center" schX="-10.4" schY="0" width="2.53" height="3.2" />
+<SchematicBoxPlacement componentName="R11" positionAnchor="center" schX="-13.65" schY="1.44" width="0.9" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<ComponentNetLabelCollision pair1="R11/U2">
+  <SuggestedFix note="Apply all moves simultaneously. Set schAutoLayoutEnabled on your circuit.">
+    <Move componentName="R11" newSchX="-13.96" newSchY="1.44" />
+    <Move componentName="U2" newSchX="-10.09" newSchY="0" />
+  </SuggestedFix>
+</ComponentNetLabelCollision>
+</SchematicPlacementIssues>
+</SchematicSheet>
