@@ -52,7 +52,7 @@ export function LogicBuckSheet({
       <CC0603KRX7R9BB104
         name="C9"
         {...previewPlacement("C9", mechanicalPreview)}
-        schX={-9.1}
+        schX={-9.85}
         schY={2.88}
         schRotation={270}
         connections={{ pin1: "net.VM", pin2: "net.GND" }}
@@ -82,7 +82,7 @@ export function LogicBuckSheet({
       <CL21A226MAQNNNE
         name="C12"
         {...previewPlacement("C12", mechanicalPreview)}
-        schX={-0.65}
+        schX={-0.85}
         schY={-2.16}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}

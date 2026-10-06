@@ -10,7 +10,7 @@ export function StandardUsbCConnector(props: ImportedUsbProps) {
     <connector
       {...importedConnector.props}
       standard="usb_c"
-      schWidth={1.7}
+      schWidth={1.65}
       // The official import calls D- DN1/DN2; the standard calls them DM1/DM2.
       // Keep the purchased pin aliases and explicitly include both D- terminals.
       schPinArrangement={{

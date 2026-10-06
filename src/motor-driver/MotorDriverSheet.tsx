@@ -116,7 +116,7 @@ export function MotorDriverSheet({
       <CL31A106KBHNNNE
         name="C18"
         {...previewPlacement("C18", mechanicalPreview)}
-        schX={-1.95}
+        schX={-2.15}
         schY={2.16}
         schRotation={270}
         connections={{ pin1: "net.VM", pin2: "net.GND" }}
@@ -125,15 +125,15 @@ export function MotorDriverSheet({
         name="C19"
         {...previewPlacement("C19", mechanicalPreview)}
         schX={-3.9}
-        schY={0}
+        schY={0.6}
         schRotation={270}
         connections={{ pin1: "net.VM", pin2: "net.GND" }}
       />
       <EEEFPV101XAP
         name="C20"
         {...previewPlacement("C20", mechanicalPreview)}
-        schX={-1.95}
-        schY={0}
+        schX={-2.15}
+        schY={0.6}
         schRotation={270}
         connections={{ pin1: "net.VM", pin2: "net.GND" }}
       />

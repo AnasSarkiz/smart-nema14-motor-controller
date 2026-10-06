@@ -1,6 +1,6 @@
 # Smart NEMA 14 Motor Controller
 
-Revision **0.0.41-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
+Revision **0.0.42-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
 
 U2 now uses official **TMC2209-LA-T / C2150710** and D_USB uses official
 **TI TPD2EUSB30DRTR / C97502**. Both replacements retain the previous pad and
@@ -19,9 +19,14 @@ ground return is retained with ordinary through vias. See [removal review](docs/
 The USB-C schematic uses native `standard="usb_c"` while retaining the exact
 C5143397 import's footprint, supplier identity and all sixteen pin groups. Five
 missing custom reference labels and the R41/C34 and R11/U2 collisions are fixed.
-The CLI still reports the imported D_VBUS rotation defect; UI style analysis is
-blocked by CDN access and Chromium CA trust. Existing automatic label/value
-placement overlaps remain visible; this is not complete schematic qualification.
+Revision 0.0.42 tightens schematic capacitor groups, separates U8 pin labels,
+and uses local native ground labels to remove wire detours. The full current
+official style analyzer reports one remaining issue, D_VBUS orientation: the
+unchanged imported React symbol ignores rotation in the installed runtime.
+The live CDN analyzer cannot be fetched in this VM; its official source is
+reviewed and run directly. See [schematic style review](docs/SCHEMATIC-STYLE.md).
+Automatic value-label overlaps and the imported symbol defect remain disclosed;
+this is not complete schematic or fabrication qualification.
 
 All 224 current vias are through plated. The requested uniform 0.30 mm hole /
 0.45 mm pad trial produces 109 native errors and 217 strict clearance violations;

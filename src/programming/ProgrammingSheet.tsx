@@ -76,6 +76,7 @@ export function ProgrammingSheet({
       />
       <TLV803EA30DBZR
         name="U8"
+        schWidth={1.8}
         {...previewPlacement("U8", mechanicalPreview)}
         schX={-8.45}
         schY={-5.04}
@@ -85,10 +86,17 @@ export function ProgrammingSheet({
           N_RESET: "net.POWER_GOOD",
         }}
       />
+      <netlabel
+        net="GND"
+        connection=".U8 > .GND"
+        schX={-10.5}
+        schY={-4.3}
+        anchorSide="bottom"
+      />
       <A_0402WGF1002TCE
         name="R19"
         {...previewPlacement("R19", mechanicalPreview)}
-        schX={-4.55}
+        schX={-5.2}
         schY={-5.04}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.POWER_GOOD" }}
@@ -96,7 +104,7 @@ export function ProgrammingSheet({
       <CL05B104KO5NNNC
         name="C28"
         {...previewPlacement("C28", mechanicalPreview)}
-        schX={-2.6}
+        schX={-3.4}
         schY={-5.04}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
@@ -104,7 +112,7 @@ export function ProgrammingSheet({
       <CL05B104KO5NNNC
         name="C29"
         {...previewPlacement("C29", mechanicalPreview)}
-        schX={-0.65}
+        schX={-1.65}
         schY={-5.04}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}

@@ -1,0 +1,130 @@
+{
+  "canonical_sha256": "8ab167f29868ccdee845f0b65f687fa5fa3a9bcd06351a8eccdfa7e9a2131a06",
+  "export_method": "Pinned tsci export directly from the unchanged canonical Circuit JSON, --format gerbers; no KiCad conversion, replacement router or generated-JSON edits.",
+  "drills": [
+    {
+      "file": "drill-L1-L4.drl",
+      "actual_hits": 224,
+      "expected_hits": 224,
+      "duplicate_hits": 0,
+      "exact_source_match": true
+    },
+    {
+      "file": "drill_npth.drl",
+      "actual_hits": 6,
+      "expected_hits": 6,
+      "duplicate_hits": 0,
+      "exact_source_match": true
+    }
+  ],
+  "source_references": 109,
+  "default_fitted_references": 108,
+  "dnp_references": [
+    "R50"
+  ],
+  "bom_rows": 108,
+  "pick_and_place_rows": 108,
+  "unverified_supplier_rotations": [
+    "J_USB",
+    "LED_POWER",
+    "LED_STATUS",
+    "LED_FAULT"
+  ],
+  "violations": [],
+  "drill_population_identity_checks_passed": true,
+  "full_cam_review_complete": false,
+  "prototype_fabrication_ready": false,
+  "remaining": [
+    "Supplier/CAM approval of named small filled/capped vias, plating and exact stackup",
+    "Complete copper/outline/mask/paste Gerber geometry and assembler orientation review",
+    "Silkscreen cleanup",
+    "Complete loaded power paths, via current and thermal qualification"
+  ],
+  "files": [
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/B_Cu.gbr",
+      "bytes": 223245,
+      "sha256": "ae117a74336b4ac3c42dfd5c8f4a76de987b29a7ac53dd67dea8bc9e43c5ed1c"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/B_Fab.gbr",
+      "bytes": 2127,
+      "sha256": "623ca80673f416af9d3d60f4814002db16b396c0afd22bc8b8b760e967d3fc00"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/B_Mask.gbr",
+      "bytes": 11289,
+      "sha256": "b528e8b9144d18f6be8cf128230c086110cf8082175a8d31b010805d17ec12db"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/B_Paste.gbr",
+      "bytes": 10226,
+      "sha256": "196f07ddb791e029715475d386e92cfc63587462b41b646fad34040e18f9470c"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/B_SilkScreen.gbr",
+      "bytes": 40342,
+      "sha256": "25ddd6ddd7c7e4ad9fc6acc4c32a33ecec1cbc44c2a09e3a7097d04c8610ebae"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/Edge_Cuts.gbr",
+      "bytes": 493,
+      "sha256": "9ee57a932c4552215e4966f9fabbd1edd52fada89a0093be30d5bff2ec808c46"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/F_Cu.gbr",
+      "bytes": 244418,
+      "sha256": "63fe1f05876ea45ae7b0b51e9a31f845d79627f4f0cf96e0cc29d235a4fd9d42"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/F_Fab.gbr",
+      "bytes": 5664,
+      "sha256": "6e33e1322f45d3d1cbcbb64614b0a2232164391f18418f401e79500b871f62ba"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/F_Mask.gbr",
+      "bytes": 14100,
+      "sha256": "beacda1059781d10644fda71ef92698366ae132ecbfb16adcde975415fc23a1d"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/F_Paste.gbr",
+      "bytes": 5897,
+      "sha256": "aabb4d3241f5ac9ba066c4629a6329510679b1b940c92699761e53161dc352fe"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/F_SilkScreen.gbr",
+      "bytes": 28083,
+      "sha256": "85b4e3174d5bf69e71f58ac2e52bfd1071af6ed1079f5adf7901d97a6f13d22a"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/In1_Cu.gbr",
+      "bytes": 204769,
+      "sha256": "649b63ccc2a864921c19bc8d31bab5cd6b703d2d1c3737fbdc620a0a6e5e7edf"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/In2_Cu.gbr",
+      "bytes": 128478,
+      "sha256": "dfcc6097ccd0b29933803e13f37d884fc6e84f70744e97e178634c024d80d5c9"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/bom.csv",
+      "bytes": 4225,
+      "sha256": "1a90bf79b2f1389d4d2c9b903ee2c67c98672fa87b571e8ef9c082cdacb86311"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/drill-L1-L4.drl",
+      "bytes": 4160,
+      "sha256": "e4bf56c5b64ba797fb1b43e924ae14babe5b68686d322af13506622b8e8e9d58"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/drill_npth.drl",
+      "bytes": 501,
+      "sha256": "e99bd9c7704e0dd836b11587bc4576ef8740c1ae0c357c7407f0defd9d2a7d61"
+    },
+    {
+      "path": "evidence/rev-0.0.42-alpha.0/native-gerbers/pick_and_place.csv",
+      "bytes": 3043,
+      "sha256": "c3815065c110c7d2d9f5a426a73a79c2cad4cb31facb9ba4a31433ea072c801a"
+    }
+  ]
+}

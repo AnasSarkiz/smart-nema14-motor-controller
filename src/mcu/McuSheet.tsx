@@ -94,7 +94,7 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
       <CL05A475MP5NRNC
         name="C2"
         {...previewPlacement("C2", mechanicalPreview)}
-        schX={-1.3}
+        schX={-1.5}
         schY={3.6}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
@@ -103,31 +103,31 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         name="C3"
         {...previewPlacement("C3", mechanicalPreview)}
         schX={-3.25}
-        schY={1.44}
+        schY={2.05}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
       />
       <CL05B104KO5NNNC
         name="C4"
         {...previewPlacement("C4", mechanicalPreview)}
-        schX={-1.3}
-        schY={1.44}
+        schX={-1.5}
+        schY={2.05}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
       />
       <A_0402WGF1002TCE
         name="R1"
         {...previewPlacement("R1", mechanicalPreview)}
-        schX={-3.25}
-        schY={-2.16}
+        schX={-15.3}
+        schY={2.5}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.NRST" }}
       />
       <CL05B104KO5NNNC
         name="C5"
         {...previewPlacement("C5", mechanicalPreview)}
-        schX={-1.3}
-        schY={-2.16}
+        schX={-15.3}
+        schY={-1.0}
         schRotation={270}
         connections={{ pin1: "net.NRST", pin2: "net.GND" }}
       />

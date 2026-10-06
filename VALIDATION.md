@@ -1,3 +1,66 @@
+# Schematic style corrections — 0.0.42-alpha.0, 2026-10-06
+
+The full current official schematic analyzer reproduces eleven issues on the
+canonical 0.0.41 JSON and one on 0.0.42. Ten findings are corrected through
+native board-owned schematic layout: USB-C width, U8 inner labels, six capacitor
+banks, MCU reset path and programming ground path. An additional automatic
+input-protection ground detour found during iteration gets a local native label.
+All sixteen official USB pin groups and all109 component purpose notes remain.
+No purchased definition, pin mapping, footprint, dependency or saved route changes.
+
+Fresh canonical Circuit JSON SHA-256:
+`8ab167f29868ccdee845f0b65f687fa5fa3a9bcd06351a8eccdfa7e9a2131a06`.
+All three committed mirrors match the exact native minimum-runtime build.
+The preservation guard proves all411 purchased-pin electrical partitions,
+source parts/pin attributes, every PCB element type/placement and all108 CAD
+registrations exact versus0.0.41. Negative checks reject real older wiring and
+rejected changed-copper inputs. Original imported model bytes remain unchanged.
+Native PCB snapshot matches the actual0.0.41 snapshot exactly.
+
+Fresh native build, TypeScript/format, five CLI source checks, shorts,
+manufacturer-pin checks on PCB-disabled output, strict copper/filled-pour,
+trace widths/tolerance, power fanouts/corners, USB screens, all38 programmer
+assertions, notes and standard-USB checks pass. All82 nets join with327 traces,
+224 through vias and82 pours, zero unconnected/dangling/native/strict copper
+errors or shorts. All four native Gerber vector layers match checked copper;
+224 unique plated drills, six NPTH and108-reference BOM/CPL match. Four supplier
+rotation warnings and all existing fabrication limitations remain visible.
+The CAD publication guard covers108 CAD entries/80 local models with zero
+omitted dependencies in the405-file runtime packet. Its actual native source
+filesystem hash is15f4ad3949cab03676ba3a407b9a5043 across216 recognized files.
+
+All nine freshly rendered native A4 sheets and the analyzer's native issue
+artifact were viewed. The full style command correctly exits1 for the single
+remaining D_VBUS orientation issue. A fresh unmodified C1974707 symbol
+reproducer builds successfully and fails its rotation assertion: horizontal
+port vector despite native schRotation270. This requires a supported runtime/
+importer repair; no custom symbol, dependency patch or JSON editing is adopted.
+Automatic value/wire label overlaps remain disclosed. Live UI CDN request is
+proxy403; the complete official GitHub source analyzer at immutable commit
+3b42ebf254bb5d7343874d3ec1023cc63a7781ce is executed without filters. Exact live
+browser/CDN equivalence is not claimed. See [review](docs/SCHEMATIC-STYLE.md).
+
+Initial diagnostic failures are retained separately: width checks lacked the
+fresh power-corner prerequisite; manufacturer-pin checks were first given
+PCB-bearing JSON; Node catalogue requests lacked inherited proxy activation;
+BOM table lacked its unchanged original raw supplier inputs. Supported reruns
+pass after correcting inputs/runtime, without reducing assertions. Fresh indexed
+catalogue identities are distinct from actual official shop/assembly inventory:
+the earlier41/42 fitted-code shop result and missing U1 remain applicable to
+this unchanged BOM, with no stock reservation or new shop query claimed.
+
+Evidence: `evidence/rev-0.0.42-alpha.0/`. Exact root Cloud smoke passed: pinned
+tools, TypeScript, official critical imports, Shapely/CadQuery, context and all
+four routing archives. Actual RAM limit32 GiB, overlay disk about29 GiB free.
+Final context refresh is verified separately. Publication/CI receipts are
+appended when verified. Stage4/5/6 remain incomplete: imported
+symbol/readability, MCU sourcing, uniform requested vias, outer-only power,
+supplier silk/orientation, stackup/fill/mask/paste/assembler and full loaded
+power/thermal review. Firmware, physical programming and hardware tests remain
+pending. **PROTOTYPE FABRICATION READY: NO.** No order is authorized.
+
+---
+
 # Current continuation review — 0.0.41-alpha.0, 2026-10-06
 
 No new board revision or candidate copper is adopted. All three public native

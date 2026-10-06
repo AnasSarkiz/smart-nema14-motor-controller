@@ -148,7 +148,7 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
       <CC0603KRX7R9BB104
         name="C26"
         {...previewPlacement("C26", mechanicalPreview)}
-        schX={1.95}
+        schX={1.8}
         schY={4.32}
         schRotation={270}
         connections={{ pin1: "net.VBUS_CONN", pin2: "net.GND" }}

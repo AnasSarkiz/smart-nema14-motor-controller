@@ -1,0 +1,511 @@
+{
+  "canonical_sha256": "e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430",
+  "analyzer_module_sha256": "b6a70abe4da656e8266f9a32a638567dbec6e71af48f7a2d0d662e2dfb6c83e3",
+  "issue_counts": {
+    "FlybackDiodeSeparatedFromRelayCoil": 0,
+    "ComponentOverlap": 0,
+    "SchematicBoxHasALotOfSurroundingWhitespace": 0,
+    "CapacitorSymbolHorizontal": 0,
+    "VerboseSchematicNetLabel": 0,
+    "PinHeaderSchematicBoxTooWide": 0,
+    "GenericSchematicBoxTooWide": 1,
+    "SchematicBoxInnerLabelCollision": 1,
+    "SchematicPinPaddingToEdgeTooLarge": 0,
+    "DiodeResistorNotAligned": 0,
+    "ParallelDiodeResistorNotAligned": 0,
+    "ComponentPinsWouldAlignWithVerticalShift": 0,
+    "TraceCanBeSimplifiedByMovingComponent": 0,
+    "CrystalNotCenteredOverLoadCapacitors": 0,
+    "ComponentNetLabelCollision": 0,
+    "ComponentBoxNetLabelCollision": 0,
+    "NetLabelCollision": 0,
+    "FeedbackNetworkNotCompact": 0,
+    "PullResistorOnWrongSide": 0,
+    "SchematicTextCollision": 0,
+    "ResetNetworkNotGrouped": 0,
+    "TwoPinComponentCouldBeFlipped": 0,
+    "TwoPinComponentShouldBeVertical": 1,
+    "TwoPinComponentHasInvertedRails": 0,
+    "DecouplingCapacitorsNotCloseTogether": 6,
+    "ConnectorPositionCausesTraceDetours": 0,
+    "LowSideTransistorNotAlignedWithLoad": 0,
+    "UsbSeriesResistorsNotAligned": 0,
+    "RegulatorCapacitorsOnWrongSides": 0,
+    "VoltageDividerSupplyResistorBelowGroundResistor": 0,
+    "CurrentSenseShuntSeparatedFromInputs": 0,
+    "PiFilterComponentsNotGrouped": 0,
+    "MosfetGateNetworkNotGrouped": 0,
+    "CapacitorSeparatedFromChipPins": 0,
+    "RailPathTooSpreadOut": 2
+  },
+  "issue_count": 11,
+  "issues": [
+    {
+      "lineItemType": "GenericSchematicBoxTooWide",
+      "schematicBox": {
+        "lineItemType": "SchematicBoxPlacement",
+        "positionAnchor": "center",
+        "schX": -13,
+        "schY": 1.44,
+        "width": 1.7,
+        "height": 4.000000000000001,
+        "sourceComponentId": "source_component_38",
+        "sourceComponentName": "J_USB",
+        "schematicComponentId": "schematic_component_38",
+        "schematicSheetId": "schematic_sheet_5",
+        "schematicSheetName": "UsbPd"
+      },
+      "measuredInnerLabelHorizontalEmptySpace": 1.0299999999999994,
+      "maxAllowedInnerLabelHorizontalEmptySpace": 1,
+      "suggestedSchWidth": 1.6700000000000006,
+      "message": "Shrink schematic box width"
+    },
+    {
+      "lineItemType": "SchematicBoxInnerLabelCollision",
+      "schematicBox": {
+        "lineItemType": "SchematicBoxPlacement",
+        "positionAnchor": "center",
+        "schX": -8.45,
+        "schY": -5.04,
+        "width": 1.2000000000000002,
+        "height": 0.6000000000000001,
+        "sourceComponentId": "source_component_58",
+        "sourceComponentName": "U8",
+        "schematicComponentId": "schematic_component_58",
+        "schematicSheetId": "schematic_sheet_6",
+        "schematicSheetName": "Programming"
+      },
+      "overlappingSides": [
+        "left",
+        "right"
+      ],
+      "message": "Inner labels are colliding. Increase the schWidth."
+    },
+    {
+      "lineItemType": "TwoPinComponentShouldBeVertical",
+      "schematicBox": {
+        "lineItemType": "SchematicBoxPlacement",
+        "positionAnchor": "center",
+        "schX": -2.05,
+        "schY": 4.32,
+        "width": 0.19999999999999996,
+        "height": 0.27999999999999936,
+        "sourceComponentId": "source_component_42",
+        "sourceComponentName": "D_VBUS",
+        "schematicComponentId": "schematic_component_42",
+        "schematicSheetId": "schematic_sheet_5",
+        "schematicSheetName": "UsbPd"
+      },
+      "railSourcePortId": "source_port_396",
+      "railPinName": "pin1",
+      "railType": "power",
+      "deltaSchRotation": -90,
+      "suggestedRailFacingDirection": "up",
+      "message": "rotate D_VBUS by -90° so its power-connected pin faces up and the component is vertical"
+    },
+    {
+      "lineItemType": "DecouplingCapacitorsNotCloseTogether",
+      "railName": "V3V3",
+      "groundName": "GND",
+      "capacitorSchematicBoxes": [
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -3.25,
+          "schY": 3.6,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_1",
+          "sourceComponentName": "C1",
+          "schematicComponentId": "schematic_component_1",
+          "schematicSheetId": "schematic_sheet_0",
+          "schematicSheetName": "MCU"
+        },
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -1.3,
+          "schY": 3.6,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_2",
+          "sourceComponentName": "C2",
+          "schematicComponentId": "schematic_component_2",
+          "schematicSheetId": "schematic_sheet_0",
+          "schematicSheetName": "MCU"
+        },
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -3.25,
+          "schY": 1.44,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_3",
+          "sourceComponentName": "C3",
+          "schematicComponentId": "schematic_component_3",
+          "schematicSheetId": "schematic_sheet_0",
+          "schematicSheetName": "MCU"
+        },
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -1.3,
+          "schY": 1.44,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_4",
+          "sourceComponentName": "C4",
+          "schematicComponentId": "schematic_component_4",
+          "schematicSheetId": "schematic_sheet_0",
+          "schematicSheetName": "MCU"
+        }
+      ],
+      "maxBodyGap": 1.56,
+      "maxRecommendedBodyGap": 1,
+      "message": "Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections."
+    },
+    {
+      "lineItemType": "DecouplingCapacitorsNotCloseTogether",
+      "railName": "VM",
+      "groundName": "GND",
+      "capacitorSchematicBoxes": [
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -11.7,
+          "schY": 2.88,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_14",
+          "sourceComponentName": "C8",
+          "schematicComponentId": "schematic_component_14",
+          "schematicSheetId": "schematic_sheet_3",
+          "schematicSheetName": "LogicPower"
+        },
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -9.1,
+          "schY": 2.88,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_15",
+          "sourceComponentName": "C9",
+          "schematicComponentId": "schematic_component_15",
+          "schematicSheetId": "schematic_sheet_3",
+          "schematicSheetName": "LogicPower"
+        }
+      ],
+      "maxBodyGap": 1.6999999999999997,
+      "maxRecommendedBodyGap": 1,
+      "message": "Group the decoupling capacitors between VM and GND closer together in this schematic block. Preserve their net connections."
+    },
+    {
+      "lineItemType": "DecouplingCapacitorsNotCloseTogether",
+      "railName": "V3V3",
+      "groundName": "GND",
+      "capacitorSchematicBoxes": [
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -2.6,
+          "schY": -2.16,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_18",
+          "sourceComponentName": "C11",
+          "schematicComponentId": "schematic_component_18",
+          "schematicSheetId": "schematic_sheet_3",
+          "schematicSheetName": "LogicPower"
+        },
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -0.65,
+          "schY": -2.16,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_19",
+          "sourceComponentName": "C12",
+          "schematicComponentId": "schematic_component_19",
+          "schematicSheetId": "schematic_sheet_3",
+          "schematicSheetName": "LogicPower"
+        }
+      ],
+      "maxBodyGap": 1.0500000000000003,
+      "maxRecommendedBodyGap": 1,
+      "message": "Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections."
+    },
+    {
+      "lineItemType": "DecouplingCapacitorsNotCloseTogether",
+      "railName": "VM",
+      "groundName": "GND",
+      "capacitorSchematicBoxes": [
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -3.9,
+          "schY": 2.16,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_25",
+          "sourceComponentName": "C17",
+          "schematicComponentId": "schematic_component_25",
+          "schematicSheetId": "schematic_sheet_4",
+          "schematicSheetName": "MotorDriver"
+        },
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -1.95,
+          "schY": 2.16,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_26",
+          "sourceComponentName": "C18",
+          "schematicComponentId": "schematic_component_26",
+          "schematicSheetId": "schematic_sheet_4",
+          "schematicSheetName": "MotorDriver"
+        },
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -3.9,
+          "schY": 0,
+          "width": 1.1,
+          "height": 0.6000000000000001,
+          "sourceComponentId": "source_component_27",
+          "sourceComponentName": "C19",
+          "schematicComponentId": "schematic_component_27",
+          "schematicSheetId": "schematic_sheet_4",
+          "schematicSheetName": "MotorDriver"
+        },
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -1.95,
+          "schY": 0,
+          "width": 1.1,
+          "height": 0.6000000000000001,
+          "sourceComponentId": "source_component_28",
+          "sourceComponentName": "C20",
+          "schematicComponentId": "schematic_component_28",
+          "schematicSheetId": "schematic_sheet_4",
+          "schematicSheetName": "MotorDriver"
+        }
+      ],
+      "maxBodyGap": 1.56,
+      "maxRecommendedBodyGap": 1.1,
+      "message": "Group the decoupling capacitors between VM and GND closer together in this schematic block. Preserve their net connections."
+    },
+    {
+      "lineItemType": "DecouplingCapacitorsNotCloseTogether",
+      "railName": "VBUS_CONN",
+      "groundName": "GND",
+      "capacitorSchematicBoxes": [
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": 0,
+          "schY": 4.32,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_43",
+          "sourceComponentName": "C25",
+          "schematicComponentId": "schematic_component_43",
+          "schematicSheetId": "schematic_sheet_5",
+          "schematicSheetName": "UsbPd"
+        },
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": 1.95,
+          "schY": 4.32,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_44",
+          "sourceComponentName": "C26",
+          "schematicComponentId": "schematic_component_44",
+          "schematicSheetId": "schematic_sheet_5",
+          "schematicSheetName": "UsbPd"
+        }
+      ],
+      "maxBodyGap": 1.0499999999999998,
+      "maxRecommendedBodyGap": 1,
+      "message": "Group the decoupling capacitors between VBUS_CONN and GND closer together in this schematic block. Preserve their net connections."
+    },
+    {
+      "lineItemType": "DecouplingCapacitorsNotCloseTogether",
+      "railName": "V3V3",
+      "groundName": "GND",
+      "capacitorSchematicBoxes": [
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -2.6,
+          "schY": -5.04,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_60",
+          "sourceComponentName": "C28",
+          "schematicComponentId": "schematic_component_60",
+          "schematicSheetId": "schematic_sheet_6",
+          "schematicSheetName": "Programming"
+        },
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -0.65,
+          "schY": -5.04,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_61",
+          "sourceComponentName": "C29",
+          "schematicComponentId": "schematic_component_61",
+          "schematicSheetId": "schematic_sheet_6",
+          "schematicSheetName": "Programming"
+        }
+      ],
+      "maxBodyGap": 1.0500000000000003,
+      "maxRecommendedBodyGap": 1,
+      "message": "Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections."
+    },
+    {
+      "lineItemType": "RailPathTooSpreadOut",
+      "hostSchematicBox": {
+        "lineItemType": "SchematicBoxPlacement",
+        "positionAnchor": "center",
+        "schX": -9.75,
+        "schY": 0,
+        "width": 3.48,
+        "height": 5.000000000000002,
+        "sourceComponentId": "source_component_0",
+        "sourceComponentName": "U1",
+        "schematicComponentId": "schematic_component_0",
+        "schematicSheetId": "schematic_sheet_0",
+        "schematicSheetName": "MCU"
+      },
+      "sourcePortId": "source_port_205",
+      "sourcePortName": "PF2_NRST",
+      "railType": "power",
+      "supportSchematicBoxes": [
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -3.25,
+          "schY": -2.16,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_5",
+          "sourceComponentName": "R1",
+          "schematicComponentId": "schematic_component_5",
+          "schematicSheetId": "schematic_sheet_0",
+          "schematicSheetName": "MCU"
+        }
+      ],
+      "schematicTraceIds": [
+        "schematic_trace_9"
+      ],
+      "pathPoints": [
+        {
+          "x": -11.89,
+          "y": 0.5000000000000009
+        },
+        {
+          "x": -12.7025,
+          "y": 0.5000000000000009
+        },
+        {
+          "x": -12.7775,
+          "y": 0.5000000000000009
+        },
+        {
+          "x": -13.851,
+          "y": 0.5000000000000009
+        },
+        {
+          "x": -13.851,
+          "y": -2.8000000000000007
+        },
+        {
+          "x": -3.25,
+          "y": -2.8000000000000007
+        },
+        {
+          "x": -3.25,
+          "y": -2.46
+        },
+        {
+          "x": -3.25,
+          "y": -1.86
+        }
+      ],
+      "pathBounds": {
+        "left": -13.851,
+        "right": -3.25,
+        "bottom": -2.8000000000000007,
+        "top": 0.5000000000000009
+      },
+      "pathLength": 16.802000000000003,
+      "pathSpan": 10.601,
+      "maxRecommendedSpan": 8,
+      "maxRecommendedPathLength": 16,
+      "message": "Visible path from U1.PF2_NRST to power spans 10.60 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces."
+    },
+    {
+      "lineItemType": "RailPathTooSpreadOut",
+      "hostSchematicBox": {
+        "lineItemType": "SchematicBoxPlacement",
+        "positionAnchor": "center",
+        "schX": -8.45,
+        "schY": -5.04,
+        "width": 1.2000000000000002,
+        "height": 0.6000000000000001,
+        "sourceComponentId": "source_component_58",
+        "sourceComponentName": "U8",
+        "schematicComponentId": "schematic_component_58",
+        "schematicSheetId": "schematic_sheet_6",
+        "schematicSheetName": "Programming"
+      },
+      "sourcePortId": "source_port_445",
+      "sourcePortName": "GND",
+      "railType": "ground",
+      "supportSchematicBoxes": [],
+      "schematicTraceIds": [
+        "schematic_trace_162"
+      ],
+      "pathPoints": [
+        {
+          "x": -9.45,
+          "y": -4.94
+        },
+        {
+          "x": -11.171,
+          "y": -4.94
+        },
+        {
+          "x": -11.171,
+          "y": -6.761
+        },
+        {
+          "x": -2.6000000000000014,
+          "y": -6.761
+        }
+      ],
+      "pathBounds": {
+        "left": -11.171,
+        "right": -2.6000000000000014,
+        "bottom": -6.761,
+        "top": -4.94
+      },
+      "pathLength": 12.112999999999998,
+      "pathSpan": 8.570999999999998,
+      "maxRecommendedSpan": 8,
+      "maxRecommendedPathLength": 16,
+      "message": "Visible path from U8.GND to ground spans 8.57 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces."
+    }
+  ],
+  "description_xml": "<SchematicSheet name=\"UsbPd\" id=\"schematic_sheet_5\">\n<SchematicBoxPositions>\n<SchematicBoxPlacement componentName=\"J_USB\" positionAnchor=\"center\" schX=\"-13\" schY=\"1.44\" width=\"1.7\" height=\"4\" />\n<SchematicBoxPlacement componentName=\"D_VBUS\" positionAnchor=\"center\" schX=\"-2.05\" schY=\"4.32\" width=\"0.2\" height=\"0.28\" />\n<SchematicBoxPlacement componentName=\"C25\" positionAnchor=\"center\" schX=\"0\" schY=\"4.32\" width=\"0.9\" height=\"0.6\" />\n<SchematicBoxPlacement componentName=\"C26\" positionAnchor=\"center\" schX=\"1.95\" schY=\"4.32\" width=\"0.9\" height=\"0.6\" />\n</SchematicBoxPositions>\n<SchematicPlacementIssues>\n<GenericSchematicBoxTooWide message=\"Shrink schematic box width\" componentName=\"J_USB\" currentSchWidth=\"1.7\" measuredInnerLabelHorizontalEmptySpace=\"1.03\" maxAllowedInnerLabelHorizontalEmptySpace=\"1\" suggestedSchWidth=\"1.67\" />\n<TwoPinComponentShouldBeVertical componentName=\"D_VBUS\" railPin=\"pin1\" railType=\"power\" deltaSchRotation=\"-90\" suggestedRailFacingDirection=\"up\" message=\"rotate D_VBUS by -90° so its power-connected pin faces up and the component is vertical\" />\n<DecouplingCapacitorsNotCloseTogether rail=\"VBUS_CONN\" ground=\"GND\" capacitorNames=\"C25, C26\" maxBodyGap=\"1.05\" maxRecommendedBodyGap=\"1\" message=\"Group the decoupling capacitors between VBUS_CONN and GND closer together in this schematic block. Preserve their net connections.\" />\n</SchematicPlacementIssues>\n</SchematicSheet>\n<SchematicSheet name=\"Programming\" id=\"schematic_sheet_6\">\n<SchematicBoxPositions>\n<SchematicBoxPlacement componentName=\"U8\" positionAnchor=\"center\" schX=\"-8.45\" schY=\"-5.04\" width=\"1.2\" height=\"0.6\" />\n<SchematicBoxPlacement componentName=\"C28\" positionAnchor=\"center\" schX=\"-2.6\" schY=\"-5.04\" width=\"0.9\" height=\"0.6\" />\n<SchematicBoxPlacement componentName=\"C29\" positionAnchor=\"center\" schX=\"-0.65\" schY=\"-5.04\" width=\"0.9\" height=\"0.6\" />\n</SchematicBoxPositions>\n<SchematicPlacementIssues>\n<SchematicBoxInnerLabelCollision message=\"Inner labels are colliding. Increase the schWidth.\" componentName=\"U8\" currentSchWidth=\"1.2\" currentSchHeight=\"0.6\" overlappingSides=\"left,right\" />\n<DecouplingCapacitorsNotCloseTogether rail=\"V3V3\" ground=\"GND\" capacitorNames=\"C28, C29\" maxBodyGap=\"1.05\" maxRecommendedBodyGap=\"1\" message=\"Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections.\" />\n<RailPathTooSpreadOut hostName=\"U8\" pinName=\"GND\" railType=\"ground\" pathSpan=\"8.571\" pathLength=\"12.113\" message=\"Visible path from U8.GND to ground spans 8.57 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces.\" />\n</SchematicPlacementIssues>\n</SchematicSheet>\n<SchematicSheet name=\"MCU\" id=\"schematic_sheet_0\">\n<SchematicBoxPositions>\n<SchematicBoxPlacement componentName=\"U1\" positionAnchor=\"center\" schX=\"-9.75\" schY=\"0\" width=\"3.48\" height=\"5\" />\n<SchematicBoxPlacement componentName=\"C1\" positionAnchor=\"center\" schX=\"-3.25\" schY=\"3.6\" width=\"0.9\" height=\"0.6\" />\n<SchematicBoxPlacement componentName=\"C2\" positionAnchor=\"center\" schX=\"-1.3\" schY=\"3.6\" width=\"0.9\" height=\"0.6\" />\n<SchematicBoxPlacement componentName=\"C3\" positionAnchor=\"center\" schX=\"-3.25\" schY=\"1.44\" width=\"0.9\" height=\"0.6\" />\n<SchematicBoxPlacement componentName=\"C4\" positionAnchor=\"center\" schX=\"-1.3\" schY=\"1.44\" width=\"0.9\" height=\"0.6\" />\n<SchematicBoxPlacement componentName=\"R1\" positionAnchor=\"center\" schX=\"-3.25\" schY=\"-2.16\" width=\"0.9\" height=\"0.6\" />\n</SchematicBoxPositions>\n<SchematicPlacementIssues>\n<DecouplingCapacitorsNotCloseTogether rail=\"V3V3\" ground=\"GND\" capacitorNames=\"C1, C2, C3, C4\" maxBodyGap=\"1.56\" maxRecommendedBodyGap=\"1\" message=\"Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections.\" />\n<RailPathTooSpreadOut hostName=\"U1\" pinName=\"PF2_NRST\" railType=\"power\" pathSpan=\"10.601\" pathLength=\"16.802\" message=\"Visible path from U1.PF2_NRST to power spans 10.60 schematic units; move the connected support elements closer together near the pin and recompute their schematic traces.\" />\n</SchematicPlacementIssues>\n</SchematicSheet>\n<SchematicSheet name=\"LogicPower\" id=\"schematic_sheet_3\">\n<SchematicBoxPositions>\n<SchematicBoxPlacement componentName=\"C8\" positionAnchor=\"center\" schX=\"-11.7\" schY=\"2.88\" width=\"0.9\" height=\"0.6\" />\n<SchematicBoxPlacement componentName=\"C9\" positionAnchor=\"center\" schX=\"-9.1\" schY=\"2.88\" width=\"0.9\" height=\"0.6\" />\n<SchematicBoxPlacement componentName=\"C11\" positionAnchor=\"center\" schX=\"-2.6\" schY=\"-2.16\" width=\"0.9\" height=\"0.6\" />\n<SchematicBoxPlacement componentName=\"C12\" positionAnchor=\"center\" schX=\"-0.65\" schY=\"-2.16\" width=\"0.9\" height=\"0.6\" />\n</SchematicBoxPositions>\n<SchematicPlacementIssues>\n<DecouplingCapacitorsNotCloseTogether rail=\"VM\" ground=\"GND\" capacitorNames=\"C8, C9\" maxBodyGap=\"1.7\" maxRecommendedBodyGap=\"1\" message=\"Group the decoupling capacitors between VM and GND closer together in this schematic block. Preserve their net connections.\" />\n<DecouplingCapacitorsNotCloseTogether rail=\"V3V3\" ground=\"GND\" capacitorNames=\"C11, C12\" maxBodyGap=\"1.05\" maxRecommendedBodyGap=\"1\" message=\"Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections.\" />\n</SchematicPlacementIssues>\n</SchematicSheet>\n<SchematicSheet name=\"MotorDriver\" id=\"schematic_sheet_4\">\n<SchematicBoxPositions>\n<SchematicBoxPlacement componentName=\"C17\" positionAnchor=\"center\" schX=\"-3.9\" schY=\"2.16\" width=\"0.9\" height=\"0.6\" />\n<SchematicBoxPlacement componentName=\"C18\" positionAnchor=\"center\" schX=\"-1.95\" schY=\"2.16\" width=\"0.9\" height=\"0.6\" />\n<SchematicBoxPlacement componentName=\"C19\" positionAnchor=\"center\" schX=\"-3.9\" schY=\"0\" width=\"1.1\" height=\"0.6\" />\n<SchematicBoxPlacement componentName=\"C20\" positionAnchor=\"center\" schX=\"-1.95\" schY=\"0\" width=\"1.1\" height=\"0.6\" />\n</SchematicBoxPositions>\n<SchematicPlacementIssues>\n<DecouplingCapacitorsNotCloseTogether rail=\"VM\" ground=\"GND\" capacitorNames=\"C17, C18, C19, C20\" maxBodyGap=\"1.56\" maxRecommendedBodyGap=\"1.1\" message=\"Group the decoupling capacitors between VM and GND closer together in this schematic block. Preserve their net connections.\" />\n</SchematicPlacementIssues>\n</SchematicSheet>",
+  "passed": false
+}

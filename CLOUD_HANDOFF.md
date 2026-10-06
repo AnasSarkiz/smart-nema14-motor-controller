@@ -1,3 +1,17 @@
+# Current continuation — 0.0.42-alpha.0
+
+Ten full-analyzer schematic findings are corrected through native layout.
+One imported D_VBUS rotation issue remains; the unchanged official React symbol
+ignores rotation in the installed runtime. Read docs/SCHEMATIC-STYLE.md and
+VALIDATION.md. Exact purchased wiring, all PCB records and CAD remain unchanged
+from0.0.41; fresh native JSON, strict geometry/filled nets and CAM vector checks
+pass.327 traces/224 through vias/82 pours; all82 nets joined, zero native or
+strict copper errors. Preserve all official imports, local models and saved routes.
+All fabrication/sourcing/thermal/firmware/hardware blockers remain disclosed.
+**PROTOTYPE FABRICATION READY: NO.** No fabrication order is authorized.
+
+---
+
 # Current continuation — 0.0.41-alpha.0
 
 User selected official TMC2209-LA-T C2150710 and TI TPD2EUSB30DRTR C97502.

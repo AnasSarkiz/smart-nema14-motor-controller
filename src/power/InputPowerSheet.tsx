@@ -217,6 +217,13 @@ export function InputPowerSheet({
           "MODE to RTN: current limit with automatic retry; SHDN internal pull-up enables startup. Hold ENN high on\nfault. RTN must remain separate from GND. Reverse blocking is not a brake."
         }
       />
+      <netlabel
+        net="GND"
+        connection=".U10 > .GND"
+        schX={-10.7}
+        schY={2.4}
+        anchorSide="top"
+      />
       <ComponentNotes sheet="InputPower" />
     </schematicsheet>
   )
