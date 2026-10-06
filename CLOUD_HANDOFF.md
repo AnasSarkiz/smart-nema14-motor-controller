@@ -1,5 +1,34 @@
 # Smart NEMA 14 controller: complete Cloud handoff
 
+## Six-point board review — 2026-10-06
+
+See docs/BOARD-REVIEW.md and docs/PROGRAMMING.md. Design sources, imported parts,
+placement, saved copper and canonical SHA
+`63076b482262db351ea8136616baf8afc8594d505a2a0932eb0c336d29395f53` are unchanged.
+Exact canonical checks again pass: 82/82 physical nets, zero unintended opens or
+shorts, zero strict copper/filled-pour violations, native placement zero errors
+and warnings, native runtime netlist zero errors and warnings, 38 programmer
+pin/net assertions passed. Native pin-specification retains 27 metadata warnings.
+
+**The nominal motor-width pass below is not a manufacturing-tolerance pass.**
+The now-reachable official JLCPCB capabilities page specifies ±20% track-width
+tolerance. Applying it to the retained peak-current/30 C screen fails 26 internal
+motor segments across all four phases: minimum .310431/.329776 A vs .342448 A.
+Current width qualification is blocked. All 43 exact parts were queried in both
+the indexed catalogue and official public Parts Library; four fitted codes
+C2847904/C465949/C94934/C2965326 have no exact public in-stock result. Pre-order
+results differ and actual assembler allocation is unconfirmed. Programmer J3
+five-pin order matches, VOUT remains unconnected, and target needs its own USB-C
+supply. Its 1 kilohm series resistors/TMUX require timing qualification versus
+the official recommended 100 ohms. Final CAM/orientation/silkscreen and full
+power/via/thermal/transient review remain unfinished.
+
+**PROTOTYPE FABRICATION READY: NO. Hardware and programming untested; firmware
+not delivered; no fabrication order placed.** This is a review metadata update
+for revision 0.0.35-alpha.0, not a new electrical/copper revision. Exact review
+checks and official source snapshots are in
+evidence/rev-0.0.35-alpha.0/board-review-20261006/.
+
 ## Current Linux continuation — 0.0.35-alpha.0, 2026-10-06
 
 Routing is complete using supported native source paths. Fresh full CLI build

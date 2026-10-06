@@ -1,0 +1,53 @@
+{
+  "canonical_sha256": "63076b482262db351ea8136616baf8afc8594d505a2a0932eb0c336d29395f53",
+  "native_placement": {
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "native_shorts": {
+    "exit_code": 0,
+    "shorts_detected": 0
+  },
+  "native_pin_specification": {
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 27
+  },
+  "native_source": {
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "native_netlist_runtime": {
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0,
+    "cwd": ".publication/rev-0.0.35-alpha.0",
+    "entrypoint": "index.circuit.tsx",
+    "scope": "Exact immutable published runtime inputs and source fingerprint match generated canonical build."
+  },
+  "native_netlist_direct_json_attempt": {
+    "exit_code": 1,
+    "reason": "This CLI netlist command does not support a Circuit JSON input; attempts to evaluate its array as a React element."
+  },
+  "native_netlist_root_source_attempt": {
+    "exit_code": 137,
+    "reason": "PCB-disabled generation unexpectedly starts routing and raises undefined connectedPort.x; stopped after failure. No generated board file overwritten."
+  },
+  "strict_copper_geometry": {
+    "exit_code": 0,
+    "violations": 0
+  },
+  "filled_all_82_nets": {
+    "exit_code": 0,
+    "clearance_violations": 0,
+    "connected_nets": 82
+  },
+  "manufacturing_tolerance_motor_current_screen": {
+    "exit_code": 1,
+    "failed_segments": 26,
+    "passed_nets": 0,
+    "scope": "Failed conservative analytical screen is retained; not reported as a success."
+  }
+}

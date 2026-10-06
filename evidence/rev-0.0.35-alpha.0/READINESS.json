@@ -14,7 +14,6 @@
   "native_shorts_check": "passed",
   "fresh_manufacturer_pin_draft_check": "passed; separately generated --disable-pcb source output, original assertions retained",
   "all_2209_nonzero_segments_inventoried": true,
-  "ordinary_width_and_motor_phase_screens_passed": true,
   "native_width_warnings_retained": 30,
   "native_cam_drill_population_identity": "passed; 224 unique PTH, six NPTH, 108 default fitted",
   "unverified_supplier_rotations": [
@@ -24,11 +23,12 @@
     "LED_FAULT"
   ],
   "qualification_blockers": [
-    "Thirty combined-route-tree width warnings are retained; all 34 active fanout width corridors are covered, but complete loaded rail/pour neck and via current/thermal qualification remains unfinished",
-    "Official fabricator capabilities, named .15/.20 mm TypeVII filled/capped features, exact stackup and minimum copper/plating are unconfirmed; jlcpcb.com CONNECT denied 403, additive draft saved but not applied",
-    "Complete native Gerber copper/mask/paste/outline audit and assembler orientation approval unfinished",
-    "Crowded/outside-outline silkscreen remains",
-    "High-frequency transient, switching-loop and thermal analysis unfinished; physical mating/assembly fit is untested. Existing declared-envelope mechanical/tolerance screens pass."
+    "Requalify or widen motor-current copper: 26 internal segments fail the prior peak/30 C screen after applying official \u00b120% track-width tolerance; nominal pass cannot be treated as a manufacturing worst-case pass.",
+    "Confirm assembler availability/allocation of all fitted parts; MCU and USB ESD appear as zero-stock pre-order entries, PD MOSFET has a pre-order entry, and the driver has no exact in-stock/pre-order public result. Indexed catalogue stock alone is insufficient.",
+    "Qualify SWD timing with existing 1 kilohm resistors/TMUX versus official recommended 100 ohms; perform physical flashing and recovery tests.",
+    "Finish loaded power/pour-neck/via/thermal and switching-loop/transient qualification.",
+    "Approve complete native Gerber/mask/paste/outline package, four supplier orientations J_USB/LED_POWER/LED_STATUS/LED_FAULT, silkscreen and order-specific TypeVII/stackup/minimum copper/plating.",
+    "Physical carrier/mating fit untested; constrained analytical envelope screens pass."
   ],
   "prototype_fabrication_ready": false,
   "hardware_tested": false,
@@ -51,5 +51,11 @@
     "hosted_build_success_claimed": false
   },
   "purchased_pins_compared": 421,
-  "current_full_cloud_smoke": "passed; 5079 files plus all four historical archive parts verified"
+  "current_full_cloud_smoke": "passed; 5079 files plus all four historical archive parts verified",
+  "nominal_ordinary_width_and_motor_phase_screens_passed": true,
+  "fabricator_tolerance_motor_width_screen_passed": false,
+  "fabricator_tolerance_failing_motor_segments": 26,
+  "official_jlcpcb_capabilities_https_reachable": true,
+  "supplier_assembly_availability_confirmed": false,
+  "latest_six_point_review": "board-review-20261006/REVIEW.json"
 }
