@@ -12,7 +12,6 @@
   "strict_copper_geometry_passed": true,
   "foreign_pour_clearance_passed": true,
   "native_shorts_check": "passed",
-  "purchased_pin_partition_count": 421,
   "fresh_manufacturer_pin_draft_check": "passed; separately generated --disable-pcb source output, original assertions retained",
   "all_2209_nonzero_segments_inventoried": true,
   "ordinary_width_and_motor_phase_screens_passed": true,
@@ -41,5 +40,16 @@
   "carrier_tolerance_analytical_screen": "passed under declared 20 N load/material/hardware allowances",
   "mating_envelope_analytical_screen": "passed; limiting J_IO remaining clearance .1643 mm under constrained cable/hardware envelopes",
   "physical_qualification_source_sha256": "e3cdd05def166bf0525d72d45f46c08347593d8a23d602988e49456bfe753603",
-  "all_elements_preserved_except_source_filesystem_hash_proof": "cloud/canonical-runtime/REBUILD-PRESERVATION.json"
+  "all_elements_preserved_except_source_filesystem_hash_proof": "cloud/canonical-runtime/REBUILD-PRESERVATION.json",
+  "publication": {
+    "source_commit": "9c5b63415baad275a9d045c535696ab3884c56bf",
+    "package_release_id": "18fcb173-e240-4c1b-aa98-6a5f83fef3d3",
+    "file_count": 384,
+    "all_files_verified": true,
+    "is_private": false,
+    "ready_to_build": true,
+    "hosted_build_success_claimed": false
+  },
+  "purchased_pins_compared": 421,
+  "current_full_cloud_smoke": "passed; 5079 files plus all four historical archive parts verified"
 }

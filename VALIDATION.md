@@ -68,7 +68,13 @@ Publish are environment-panel actions, followed by an actual request retry.
 Manufacturer confirmation of the .15/.20 mm named TypeVII filled/capped process,
 minimum copper/plating and exact stackup remains an ordering blocker.
 
-Revision035 publication is pending verification. No hosted build success is
+Revision035 publication is verified: public GitHub source/artifact commit
+`9c5b63415baad275a9d045c535696ab3884c56bf` and public tscircuit release
+`18fcb173-e240-4c1b-aa98-6a5f83fef3d3`. All 384 runtime package files and
+13 GitHub source/artifact files passed anonymous SHA-256 readback,
+including all three canonical JSON copies and every unchanged model asset.
+PUBLICATION.json identifies that exact snapshot. Subsequent metadata receipts
+record only documentation/review updates; routed source and JSON remain exact. No hosted build success is
 claimed. Stages 4/5/6 are incomplete; firmware and hardware tests are pending.
 **PROTOTYPE FABRICATION READY: NO.** Do not order from this review packet.
 
