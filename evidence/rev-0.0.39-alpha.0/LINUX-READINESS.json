@@ -1,0 +1,82 @@
+{
+  "revision": "0.0.39-alpha.0",
+  "workflow": ".github/workflows/cloud-readiness.yml",
+  "fresh_linux_image": "ubuntu-24.04",
+  "installation_command": "bash scripts/cloud-setup.sh",
+  "required_setup_step": "Install pinned Linux dependencies and verify handoff",
+  "runs": [
+    {
+      "phase": "implementation",
+      "head_sha": "e77d4b804dfdca3b0a5b80df581b01959b6610c2",
+      "run_id": 37496872948,
+      "url": "https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37496872948",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "linux-setup",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install pinned Linux dependencies and verify handoff",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "artifact",
+      "head_sha": "ce56cd20bc29d44ea34384027e309db26f4d16e2",
+      "run_id": 37497480348,
+      "url": "https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37497480348",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "linux-setup",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install pinned Linux dependencies and verify handoff",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "local_cloud_smoke_passed": true,
+  "prototype_fabrication_ready": false,
+  "all_required_job_and_step_outcomes_success": true
+}

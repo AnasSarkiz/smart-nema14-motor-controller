@@ -49,15 +49,23 @@ for UI analysis. Latest released tscircuit/CLI/core versions still match pins.
 Actual cgroup memory is32 GiB; workspace disk31.45 GiB total,22.57 GiB available.
 No environment publication, fabrication order or physical programming is claimed.
 
-The registry archive endpoint rejected the first9 MB review-ZIP upload with
-HTTP413. A second5.27 MB ZIP also received HTTP413. The runtime ZIP now contains only
+The registry archive endpoint rejected the first 9 MB review-ZIP upload with
+HTTP 413. A second 5.27 MB ZIP also received HTTP 413. The runtime ZIP now contains only
 current revision checks/native sheet images and the applicable prior CAM/USB/silk
-qualification subset, below the previously successful3.22 MB bundle size.
+qualification subset, below the previously successful 3.22 MB bundle size.
 Every complete historical diagnostic and rejected candidate remains committed
 in evidence/rev-0.0.39-alpha.0. Sources/Circuit JSON/models are unchanged.
 
-Publication status: pending completion of this revision's exact file readback
-and Linux CI receipts. Evidence: evidence/rev-0.0.39-alpha.0/.
+Publication verified: source/artifact commit
+`ce56cd20bc29d44ea34384027e309db26f4d16e2` and public tscircuit release
+`e4342765-6324-46b2-8071-6c39a4309793` (0.0.39-alpha.0). All 393 runtime-package
+files and 19 immutable GitHub files passed anonymous SHA-256 readback, including
+all required model assets and exact canonical mirrors. The release is ready to
+build; hosted preview success is not claimed. Fresh Ubuntu setup passed for
+implementation run [37496872948](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37496872948)
+and exact artifact run [37497480348](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37497480348),
+with every required job and step successful. Receipts are committed in
+PUBLICATION.json and LINUX-READINESS.json. Evidence: evidence/rev-0.0.39-alpha.0/.
 All prior supplier silk/CPL/stackup/plating/filled-process and loaded power/thermal
 blockers remain. **PROTOTYPE FABRICATION READY: NO.**
 
