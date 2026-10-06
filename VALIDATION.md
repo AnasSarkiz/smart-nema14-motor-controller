@@ -1,5 +1,13 @@
 # Manual source fixes — 0.0.37-alpha.0, 2026-10-06
 
+Publication verified: source/artifact commit `f29b08808188b69cb31d415ea3ee69740fec21d5`, public
+tscircuit release `ca0c7647-3f73-4835-80b6-ce1128d4c26c` (0.0.37-alpha.0).
+All **389 package files** and **13 immutable GitHub files** passed anonymous
+SHA-256 readback, including every model asset and the three canonical mirrors.
+The [fresh Linux install/startup workflow](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37483110250)
+passed; exact step outcomes are in LINUX-READINESS.json. The release is ready to
+build; hosted preview success and fabrication readiness are not claimed.
+
 Moved the exactly owned GND_C25_ESCAPE from (-11.8, -13.5) to
 (-11.67, -13.5) mm. The native inner1 ground polygon beside this barrel had
 an irregular sliver erased by the subsequent VBUS_CONN Gerber clear-polarity
