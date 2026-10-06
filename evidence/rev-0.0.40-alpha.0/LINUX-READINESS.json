@@ -1,0 +1,76 @@
+{
+  "source_commit": "61f2fb05302dd712770ebdb90e519c5af328865e",
+  "workflow_url": "https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37505205560",
+  "all_jobs_and_steps_successful": true,
+  "jobs": [
+    {
+      "id": 112411993152,
+      "run_id": 37505205560,
+      "workflow_name": "Cloud environment readiness",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37505205560",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOU5-6CM8AAAAaLEbkQA",
+      "head_sha": "61f2fb05302dd712770ebdb90e519c5af328865e",
+      "url": "https://api.github.com/repos/AnasSarkiz/smart-nema14-motor-controller/actions/jobs/112411993152",
+      "html_url": "https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37505205560/job/112411993152",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-06T17:39:13Z",
+      "started_at": "2026-10-06T17:39:16Z",
+      "completed_at": "2026-10-06T17:40:58Z",
+      "name": "linux-setup",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-06T17:39:16Z",
+          "completed_at": "2026-10-06T17:39:17Z"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-06T17:39:17Z",
+          "completed_at": "2026-10-06T17:39:40Z"
+        },
+        {
+          "name": "Install pinned Linux dependencies and verify handoff",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-06T17:39:40Z",
+          "completed_at": "2026-10-06T17:40:55Z"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-06T17:40:55Z",
+          "completed_at": "2026-10-06T17:40:55Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-06T17:40:55Z",
+          "completed_at": "2026-10-06T17:40:55Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/AnasSarkiz/smart-nema14-motor-controller/check-runs/112411993152",
+      "labels": [
+        "ubuntu-24.04"
+      ],
+      "runner_id": 1000009027,
+      "runner_name": "GitHub Actions 1000009027",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ],
+  "scope": "Fresh Ubuntu 24.04 runs exact scripts/cloud-setup.sh, pinned lockfile/Bun/Linux mechanical dependencies and smoke checks. This is environment readiness, not fabrication readiness."
+}

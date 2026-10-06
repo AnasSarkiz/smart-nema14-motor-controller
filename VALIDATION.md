@@ -26,8 +26,17 @@ warnings and all previous fabrication/power/thermal/sourcing blockers remain.
 No complete UI style or hardware/programming validation is claimed.
 
 Evidence:evidence/rev-0.0.40-alpha.0/; [removal review](docs/ENCODER-REMOVAL.md).
-The public release and immutable checksums are recorded in PUBLICATION.json
-once verified. Stages4/5/6 remain incomplete for the previous unresolved
+Publication verified: source/artifact commit
+`61f2fb05302dd712770ebdb90e519c5af328865e` and public tscircuit release
+`51529005-b37f-4b32-a147-1c4ecfb6a9de` (0.0.40-alpha.0). All 396 runtime files
+and 19 immutable GitHub files passed anonymous SHA-256 readback, including
+the canonical Circuit JSON mirrors and preserved model dependencies. Canonical
+SHA-256 is `e38b284e997482f78cc5575e448647a5f82756447d0c9b87da358e259c710bf0`.
+The release is ready to build; hosted preview success is not claimed.
+Fresh Ubuntu setup and all workflow steps passed for source run
+[37505205560](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37505205560).
+Exact receipts are PUBLICATION.json and LINUX-READINESS.json in the evidence folder.
+Stages4/5/6 remain incomplete for the previous unresolved
 constraints;firmware and hardware tests are pending.
 **PROTOTYPE FABRICATION READY: NO.**
 
