@@ -97,6 +97,10 @@ assert root(port_for(("U8", 2))["source_port_id"]) != \
        root(port_for(("U1", 10))["source_port_id"]), \
        "Target reset must not disable the other SWD switch channels"
 
+for reference in ["R20", "R21", "R22"]:
+    assert components[reference]["resistance"] == 100, (reference, "100 ohm SWD/reset series resistance required")
+    assert components[reference]["supplier_part_numbers"]["jlcpcb"] == ["C25076"]
+
 report = {
     "canonical_sha256": hashlib.sha256(circuit_path.read_bytes()).hexdigest(),
     "official_package_version": official_package["version"],
@@ -114,8 +118,8 @@ report = {
     "target_nrst_pullup_ohms": components["R1"]["resistance"],
     "target_nrst_capacitance_f": components["C5"]["capacitance"],
     "qualification": "Pinout compatible; hardware flashing and timing untested. "
-                     "Target uses 1 kilohm series resistors and TMUX1511, "
-                     "rather than the programmer example's 100 ohms; "
+                     "Target uses the recommended 100 ohm series resistors "
+                     "with TMUX1511 powered-off protection; "
                      "maximum SWD rate requires waveform and flashing tests.",
     "usage": "Straight-through five-way cable from programmer J3 to J_SWD. "
              "Target requires its own qualified USB-C supply. "

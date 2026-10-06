@@ -1,3 +1,26 @@
+# Board fixes — 0.0.36-alpha.0, 2026-10-06
+
+Updated released tscircuit; widened motor inner traces to 0.27 mm and corrected
+CC1/CAN_RS clearances; replaced programmer R20/R21/R22 with official 100 Ω parts;
+normalized native-build CAD paths by building at the runtime package root. All
+421 purchased-pin wiring partitions and 111 placements are preserved.
+
+| Review | Current result |
+| --- | --- |
+| Copper and connections | 82/82 native networks joined; zero strict copper, foreign-pour or native errors/shorts; 334 traces, 224 vias, 82 pours. |
+| Widths | All 2,218 segments meet the 0.15 mm floor. Four motor nets pass the −20% width screen under the retained copper/thermal assumptions. Full loaded rails/barrels/thermal scope remains open. |
+| Components and models | 108 fitted electronics, three exact DNP references. All 44 official import geometries pass 261 pin-to-pad comparisons. Fitted models and original assets are preserved. |
+| Programmer | Correct five-pin J3 cable order, 100 Ω target series parts, independent reset, VOUT disconnected. Physical flashing/timing untested. |
+| JLCPCB | Four selected fitted codes have no exact public stock result; assembler acceptance/allocation and four CPL rotations are unverified. |
+| Fabrication | Native drill/BOM/CPL identity passes. Independent CAM finds a small inner GND export mismatch. Supplier silk still violates mask clearance/width/outline requirements. Stackup, plating and 68 owned filled/capped features need process confirmation. |
+
+**PROTOTYPE FABRICATION READY: NO.** Complete evidence and exact canonical SHA
+are in the current VALIDATION.md and evidence/rev-0.0.36-alpha.0/. The retained
+0.0.35 review below records the earlier findings, including widths and resistor
+values that this revision changes; it is not the current board status.
+
+---
+
 # Board review — 2026-10-06
 
 Controller 0.0.35-alpha.0, unchanged design from source commit

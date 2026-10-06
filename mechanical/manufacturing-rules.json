@@ -1,9 +1,9 @@
 {
-  "status": "Selected design targets; routed geometry and fabricator CAM not yet approved",
+  "status": "Routed prototype targets and measured native copper; selected process and fabricator CAM not approved",
   "manufacturer": "JLCPCB",
   "capabilities_reference": "https://jlcpcb.com/capabilities/pcb-capabilities",
   "stackup_reference": "https://jlcpcb.com/pcb-impedance-calculator",
-  "checked_date": "2026-10-03",
+  "checked_date": "2026-10-06",
   "stackup": {
     "name": "JLC04161H-3313",
     "layers": 4,
@@ -15,7 +15,7 @@
     "core_mm": 1.265,
     "layer_intent": [
       "top: components, motor/power and signals",
-      "inner1: continuous GND reference",
+      "inner1: partitioned GND reference and routed signals; USB reference coverage screened separately",
       "inner2: power and slow signals",
       "bottom: signals and components"
     ],
@@ -29,8 +29,8 @@
     "fine_pitch_pad_to_track_clearance_mm": 0.1,
     "different_net_smd_pad_to_pad_clearance_mm": 0.15,
     "through_via_drill_mm": 0.3,
-    "through_via_pad_mm": 0.7,
-    "through_via_annular_ring_mm": 0.2,
+    "through_via_pad_mm": 0.6,
+    "through_via_annular_ring_mm": 0.15,
     "ordinary_hole_to_track_clearance_mm": 0.35,
     "npth_to_copper_clearance_mm": 0.3,
     "copper_to_board_edge_mm": 0.3,
@@ -44,8 +44,8 @@
       "scope": "Manufacturer calculator nominal geometry; actual routes and CAM confirmation pending"
     }
   },
-  "exceptions": "Imported pads are retained unchanged. Thermal vias in exposed ground pads require separate explicit geometry, paste and assembler review. No ordinary-drill same-net exception is assumed.",
+  "exceptions": "Official imported pads retained unchanged. Exactly 68 source-manifested filled/capped features use their named owners and process, including five exposed-pad thermal vias. Ordinary routing vias are 0.30mm drill / 0.60mm pad / 0.15mm ring; no blanket same-net drill exception. JLC published 18um average hole plating is not a guaranteed minimum.",
   "native_routing_configuration_applied": true,
-  "actual_copper_measurements": "pending: board is unrouted",
+  "actual_copper_measurements": "82/82 native copper networks connected. Strict actual geometry reports are revision-specific; selected widths, filled/capped features and stackup must be qualified against final CAM.",
   "fabrication_ready": false
 }

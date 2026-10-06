@@ -65,7 +65,7 @@ report = {
     "scope": "Retains the prior peak-current and 30 C rise screen, applying "
              "the fabricator's published width tolerance. Copper thickness "
              "remains the recorded analytical assumption, not a confirmed minimum. "
-             "Fails that conservative screen; does not prove physical overheating.",
+             "Reports the conservative screen outcome; does not predict physical temperature.",
     "motor_nets": motor_results,
     "violations": violations,
     "passed": not violations,
@@ -78,5 +78,5 @@ report = {
 report_path.write_text(json.dumps(report, indent=2) + "\n")
 print(f"Motor manufacturing-tolerance screen: {len(violations)} failing segments; "
       f"{sum(r['passed'] for r in motor_results)}/4 nets pass. "
-      "Nominal routing geometry remains unchanged.")
+      "Actual generated widths are measured; copper minimum still needs CAM confirmation.")
 sys.exit(0 if report["passed"] else 1)

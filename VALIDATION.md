@@ -1,3 +1,79 @@
+# Current Linux continuation — 0.0.36-alpha.0, 2026-10-06
+
+The pinned released toolchain is updated to tscircuit 0.0.2745, CLI 0.1.2251,
+core 0.0.2095, props 0.0.689, checks 0.0.240, runframe 0.0.2915 and native
+Pipeline9 0.0.959. Bun 1.3.9 is retained with its checked lockfile.
+
+Fresh native Circuit JSON SHA-256: `feb1c704d92b3a0c0686bc85fd09198c221a3e393b60b4a8d5fb3b457bc78b80`. The build runs at the minimal
+runtime package root so CAD URLs resolve to `./imports/...`; generated JSON is
+never edited. All three committed JSON mirrors match. Version 0.0.35 evidence
+below is historical; the new reports are in evidence/rev-0.0.36-alpha.0/.
+
+Four motor nets now use at least 0.27 mm inner wires. Their conservative
+−20% manufactured-width screen passes: 0.348699 A minimum screened capacity
+versus 0.342448 A peak, retaining 15.2 µm inner copper and the 30 C IPC-2221
+model. These assumptions are not a guaranteed fabricated copper minimum or
+thermal validation. Local native source bends, one ordinary CC1 barrel move,
+and a synchronized CAN_RS detour restore full clearances without changing
+component placement, motor endpoints, USB geometry or any owned filled feature.
+R20/R21/R22 use unchanged official C25076 100 Ω imports, matching the official
+standard JST programmer recommendation. VOUT stays isolated; target power is
+separate. All 421 purchased-pin wiring partitions and all 111 centers, layers
+and rotations are preserved. Default fitted population is 108; U4/C6/R50 are DNP.
+
+Native geometry: 334 traces, 224 vias, 82 pours, zero unconnected/dangling/native
+errors; all 82 physical nets joined, zero strict copper or foreign-pour
+violations. The 68 individually owned filled/capped features retain their
+exact owners. Native shorts, placement, source and netlist checks pass;
+27 supplier pin metadata warnings and 30 combined-tree width warnings remain
+visible. All 2,218 nonzero wires meet the 0.15 mm floor. All 34 declared active
+fanout branches retain their requested widths. This does not qualify every
+loaded rail, barrel, switching loop or thermal path.
+
+USB skew remains 0.381441 mm; the signal-core reference screen passes.
+Nominal impedance estimate is 91.812 Ω on the selected, unconfirmed stackup.
+Programmer physical pin/net assertions pass; flashing and SWD timing are
+untested. Default assembly has 108 genuine fitted component models plus the
+unchanged official motor; all 111 component identities remain in the assembly
+drawing and all supplier assets remain in the packet. Both inner and both
+outer rendered layers and the assembly preview were viewed. Carrier and mating
+screens pass their documented analytical envelopes; real fit remains untested.
+
+Ordering remains blocked. Strict independent Gerber vector comparison finds
+0.000399007 mm² of missing inner1 GND copper after an explicit 0.002 mm/2 µm
+boundary comparison allowance. This is an export mismatch, not a claim of an
+open net. Supplier silk overlaps mask openings and extends outside the outline;
+557 native supplier paths are thinner than 0.15 mm. Four concise connector
+labels replace crowded automatic reference text, but final silk is not approved.
+108-reference BOM/CPL and 224 PTH/6 NPTH drill identities match. J_USB and the
+three LED supplier rotations still lack pin1 metadata and require assembler
+confirmation. Official imports, footprints, pads and pin mappings are unchanged.
+Do not repair these by editing supplier footprints or generated JSON.
+
+All 44 exact part identities were checked in the indexed catalogue and official
+public Parts Library. Of 42 fitted part codes, C2847904 (U1), C465949 (U2),
+C94934 (D_USB), and C2965326 (Q_PD) have no exact public in-stock search result.
+This is not proof of assembler allocation; Q_PD has a separate pre-order result.
+Clone-branded alternatives were not selected. A stocked genuine TMC2209-LA-T
+code is recorded as an unqualified procurement candidate, without changing U2.
+
+The fresh supplier geometry fixture uses the released Circuit SDK with
+platform routingDisabled. It passes all 44 imports / 261 pin-to-pad mappings.
+The CLI fixture retained eight routed traces despite its disabled-routing input;
+that failed output and exact commands are retained as a generator/cache diagnostic.
+No dependency patches, DRC suppression or weakened tests were used. Negative
+via tests now select current manifest coordinates rather than stale revision
+positions. The assembly test asserts the exact default DNP set and 109 CAD
+entries instead of an obsolete all-fitted 112-entry display.
+
+**PROTOTYPE FABRICATION READY: NO.** Final native-export/silkscreen and supplier
+orientation fixes, actual assembly stock allocation, stackup/minimum copper and
+plating, filled/capped processing, loaded power/via/thermal and switching-loop
+review remain incomplete. Firmware, physical flashing, electrical transients
+and functional/fit tests are unperformed. No order was placed.
+
+---
+
 # Current Linux continuation — 0.0.35-alpha.0, 2026-10-06
 
 ## Six-point board review — 2026-10-06

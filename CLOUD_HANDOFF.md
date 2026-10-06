@@ -1,3 +1,21 @@
+# Latest continuation — 0.0.36-alpha.0
+
+The released tscircuit toolchain and motor/CC1/CAN_RS copper fixes are complete;
+100 Ω official programmer resistors are fitted in source. All 82 native copper
+networks are connected. Read the current VALIDATION.md, docs/BOARD-REVIEW.md and
+evidence/rev-0.0.36-alpha.0 before using the older handoff below. Build the minimal
+runtime packet from its own root to preserve ./imports CAD URLs. All models must
+be included and verified at publication; do not modify generated Circuit JSON.
+
+The board is still **not ready to order**: native Gerber GND mismatch, supplier
+silkscreen clearance/width, four supplier rotations, stock allocation and complete
+power/via/thermal/fabrication-process review remain open. Physical tests and
+firmware are absent. Preserve all original supplier modules, model assets,
+mechanical references and reviewed small-via owners. No fabrication order is
+authorized.
+
+---
+
 # Smart NEMA 14 controller: complete Cloud handoff
 
 ## Six-point board review — 2026-10-06

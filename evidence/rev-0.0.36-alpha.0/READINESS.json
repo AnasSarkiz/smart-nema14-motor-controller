@@ -1,0 +1,44 @@
+{
+  "revision": "0.0.36-alpha.0",
+  "canonical_sha256": "feb1c704d92b3a0c0686bc85fd09198c221a3e393b60b4a8d5fb3b457bc78b80",
+  "native_errors": 0,
+  "unconnected_port_count": 0,
+  "completed_physical_nets": 82,
+  "total_physical_nets": 82,
+  "traces": 334,
+  "vias": 224,
+  "pours": 82,
+  "strict_copper_passed": true,
+  "filled_copper_passed": true,
+  "motor_width_tolerance_passed": true,
+  "programmer_wiring_passed": true,
+  "gerber_geometry_passed": false,
+  "silkscreen_passed": false,
+  "native_drill_bom_cpl_identity_passed": true,
+  "unverified_supplier_rotations": [
+    "J_USB",
+    "LED_POWER",
+    "LED_STATUS",
+    "LED_FAULT"
+  ],
+  "native_warning_counts": {
+    "route_width": 30,
+    "pin_metadata": 27,
+    "refdes": 5,
+    "schematic_styling": 5
+  },
+  "power_scope": "All 34 declared fanout branches retain source widths. Bounded current/power screens retained; full loaded rail/pour/barrel current, switching loops, transient and thermal qualification incomplete.",
+  "usb_scope": "0.381440727mm skew and adjacent signal-core GND screen pass; approximate nominal91.812ohm impedance only. Stackup/CAM impedance unconfirmed.",
+  "remaining_blockers": [
+    "Inner1 GND native Gerber export mismatch (0.000399007mm2 after2um allowance)",
+    "Supplier silkscreen width/mask/outline violations",
+    "J_USB and three LED CPL orientations unverified",
+    "Four exact fitted part stock/allocation gaps",
+    "Selected minimum copper/plating, stackup and 68 filled/capped features need manufacturer acceptance",
+    "Loaded power/via/thermal and switching-loop qualification incomplete"
+  ],
+  "firmware_delivered": false,
+  "hardware_tested": false,
+  "physical_programming_tested": false,
+  "prototype_fabrication_ready": false
+}

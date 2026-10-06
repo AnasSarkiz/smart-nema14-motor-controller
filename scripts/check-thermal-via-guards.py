@@ -3,6 +3,7 @@
 These temporary invalid fixtures are tests only, never fabrication sources.
 """
 import copy
+import hashlib
 import json
 import subprocess
 import sys
@@ -15,6 +16,7 @@ report_path = Path(sys.argv[3])
 filled_manifest_path = Path(sys.argv[4])
 checked_circuit = json.loads(checked_circuit_path.read_text())
 thermal_manifest = json.loads(thermal_manifest_path.read_text())
+circuit_sha256 = hashlib.sha256(checked_circuit_path.read_bytes()).hexdigest()
 results = []
 
 with tempfile.TemporaryDirectory(prefix="thermal-guard-", dir=report_path.parent) as temporary:
@@ -27,13 +29,14 @@ with tempfile.TemporaryDirectory(prefix="thermal-guard-", dir=report_path.parent
         elif mutation == "wrong_drill":
             manifest["vias"][0]["hole_diameter_mm"] = 0.31
         else:
+            feature = next(via for via in thermal_manifest["vias"] if via["net"] == "GND")
             thermal_ground_via = next(entry for entry in circuit
                 if entry["type"] == "pcb_via"
-                and abs(entry["x"] + 10) < 0.00001
-                and abs(entry["y"] + 9) < 0.00001)
+                and abs(entry["x"]-feature["x"]) < 0.00001
+                and abs(entry["y"]-feature["y"]) < 0.00001)
             ordinary_via = copy.deepcopy(thermal_ground_via)
             ordinary_via.update({"pcb_via_id": "negative_same_net_via",
-                "x": -13.920116, "y": -9})
+                "x": feature["x"] + .2, "y": feature["y"]})
             circuit.append(ordinary_via)
         input_path = fixture_directory / f"{mutation}.circuit.json"
         manifest_path = fixture_directory / f"{mutation}.manifest.json"
@@ -54,7 +57,7 @@ with tempfile.TemporaryDirectory(prefix="thermal-guard-", dir=report_path.parent
                 and violation["check"] == "via_drill_to_pad_mm"
                 and violation["same_net"] for violation in report["violations"])
         results.append({"invalid_fixture": mutation, "rejected": True})
-report_path.write_text(json.dumps({"checked_circuit": str(checked_circuit_path),
+report_path.write_text(json.dumps({"checked_circuit": str(checked_circuit_path), "circuit_sha256": circuit_sha256,
     "thermal_manifest": str(thermal_manifest_path), "results": results,
     "passed": True}, indent=2) + "\n")
 print(json.dumps(results))

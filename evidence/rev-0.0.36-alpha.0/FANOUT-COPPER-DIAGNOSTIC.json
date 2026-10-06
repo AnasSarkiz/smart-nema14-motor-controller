@@ -1,0 +1,894 @@
+{
+  "input": "dist/index/circuit.json",
+  "sha256": "feb1c704d92b3a0c0686bc85fd09198c221a3e393b60b4a8d5fb3b457bc78b80",
+  "scope": "Native filled BRep against actual pads, traces, via annuli and other pours; physical same-net conductors joined across full through-via spans. No net-name-only connectivity assumption. Impedance, thermal/current limits and CAM remain separate.",
+  "mechanical_constraints_sha256": "d349df02c713ce5ce1233a185aeff2dc7a0a23d229567159c7112da604c54241",
+  "pour_count": 82,
+  "minimum_clearances": {
+    "pad": {
+      "pour": "pcb_copper_pour_151",
+      "other": "pcb_smtpad_81",
+      "layer": "bottom",
+      "actual_mm": 0.15283765731457094,
+      "required_mm": 0.15
+    },
+    "trace": {
+      "pour": "pcb_copper_pour_89",
+      "other": "pcb_trace_16:1",
+      "layer": "top",
+      "actual_mm": 0.15282282462421504,
+      "required_mm": 0.15
+    },
+    "via": {
+      "pour": "pcb_copper_pour_109",
+      "other": "pcb_via_224",
+      "layer": "bottom",
+      "actual_mm": 0.15280840022185763,
+      "required_mm": 0.15
+    },
+    "pour": {
+      "pour": "pcb_copper_pour_265",
+      "other": "pcb_copper_pour_354",
+      "layer": "inner2",
+      "actual_mm": 0.15499921447888157,
+      "required_mm": 0.15
+    },
+    "npth": {
+      "pour": "pcb_copper_pour_89",
+      "hole": "pcb_hole_4",
+      "layer": "top",
+      "actual_mm": 0.30694199475727046,
+      "required_mm": 0.3
+    },
+    "mount_circle": {
+      "pour": "pcb_copper_pour_89",
+      "keepout": "pcb_keepout_0",
+      "layer": "top",
+      "actual_radius_mm": 2.507865076711874,
+      "required_radius_mm": 2.5,
+      "native_planning_radius_mm": 2.52
+    }
+  },
+  "clearance_violations": [],
+  "physical_islands": {
+    "GND": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1728.862352966139,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "C1.2",
+            "C11.2",
+            "C12.2",
+            "C15.2",
+            "C16.2",
+            "C17.2",
+            "C18.2",
+            "C19.2",
+            "C2.2",
+            "C20.2",
+            "C21.2",
+            "C22.2",
+            "C23.2",
+            "C24.2",
+            "C25.2",
+            "C26.2",
+            "C27.2",
+            "C28.2",
+            "C29.2",
+            "C3.2",
+            "C30.2",
+            "C31.2",
+            "C32.2",
+            "C34.2",
+            "C4.2",
+            "C5.2",
+            "C6.2",
+            "C7.2",
+            "C8.2",
+            "C9.2",
+            "D_CAN.3",
+            "D_IO1.3",
+            "D_IO1.8",
+            "D_IO2.3",
+            "D_IO2.8",
+            "D_USB.3",
+            "D_VBUS.2",
+            "J_IO.1",
+            "J_IO.10",
+            "J_IO.11",
+            "J_IO.12",
+            "J_IO.4",
+            "J_MOTOR.5",
+            "J_MOTOR.6",
+            "J_SWD.3",
+            "J_USB.10",
+            "J_USB.11",
+            "J_USB.22",
+            "J_USB.23",
+            "J_USB.8",
+            "J_USB.9",
+            "LED_FAULT.1",
+            "LED_POWER.1",
+            "LED_STATUS.1",
+            "R11.2",
+            "R15.2",
+            "R17.2",
+            "R28.2",
+            "R29.2",
+            "R46.2",
+            "R5.2",
+            "R51.2",
+            "R52.2",
+            "R53.2",
+            "R6.2",
+            "R8.2",
+            "R9.2",
+            "U1.29",
+            "U1.32",
+            "U1.7",
+            "U10.17",
+            "U2.10",
+            "U2.13",
+            "U2.18",
+            "U2.20",
+            "U2.25",
+            "U2.29",
+            "U2.3",
+            "U2.7",
+            "U2.9",
+            "U3.13",
+            "U3.2",
+            "U4.4",
+            "U4.8",
+            "U5.4",
+            "U6.2",
+            "U7.8",
+            "U8.1",
+            "U9.2",
+            "U9.4"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -14.496431,
+                -10.245061,
+                -6.8911,
+                -6.7032
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -17.2,
+                -17.2,
+                17.2,
+                17.2
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -8.545417,
+                2.7333,
+                -2.138775,
+                10.075545
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                1.03185,
+                -7.36815,
+                3.46815,
+                -6.626373
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                5.777342,
+                -4.77,
+                11.990533,
+                0.989685
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -0.256316,
+                -1.5808,
+                11.990533,
+                8.6777
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -5.009161,
+                8.4,
+                4.994288,
+                14.647785
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -7.3,
+                -15.700000000000001,
+                -6.7,
+                -15.1
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -9.145,
+                -14.8,
+                -5.055,
+                -11.129871
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -12.002875,
+                -13.69,
+                -11.610000000000001,
+                -13.31
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -9.25276,
+                -11.168,
+                -2.1133,
+                2.774875
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -7.5151155,
+                7.200504,
+                -3.970993,
+                11.843889
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -17.2,
+                -17.2,
+                17.2,
+                17.2
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -4.3,
+                -5.3,
+                -3.688791,
+                -4.7
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -5.53,
+                3.08,
+                -2.974804,
+                7.680231
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                5.13,
+                -2.07,
+                11.610307,
+                4.501937
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -3.728,
+                4.567045,
+                8.906616,
+                14.72
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -7.3,
+                -15.700000000000001,
+                -6.7,
+                -15.1
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -7.5,
+                -14.8,
+                -6.9,
+                -14.2
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -11.99,
+                -13.69,
+                -11.610000000000001,
+                -13.31
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -9.19,
+                -10.139999999999999,
+                -8.81,
+                -9.76
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -4.3,
+                -5.3,
+                -3.7,
+                -4.7
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -10.5,
+                -0.4,
+                -9.899999999999999,
+                0.19999999999999998
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -10.5,
+                0.39999999999999997,
+                -9.899999999999999,
+                1.0
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -10.5,
+                1.2,
+                -9.899999999999999,
+                1.8
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -5.74,
+                1.61,
+                -5.359999999999999,
+                1.99
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -4.99,
+                4.39,
+                -4.609999999999999,
+                4.7700000000000005
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -9.8,
+                6.7,
+                -9.2,
+                7.3
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -7.5151155,
+                7.999997999999999,
+                -7.1351154999999995,
+                8.379997999999999
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -7.3,
+                10.6,
+                -6.7,
+                11.200000000000001
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -11.8,
+                10.7,
+                -11.2,
+                11.3
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -12.55,
+                14.7,
+                -11.95,
+                15.3
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                5.4,
+                -13.350000000000001,
+                6.0,
+                -12.75
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -0.3,
+                -11.700000000000001,
+                0.3,
+                -11.1
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                5.0,
+                -9.15,
+                5.6,
+                -8.549999999999999
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -1.95299,
+                -9.35,
+                3.45,
+                -6.7
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                8.55993600000002,
+                -3.565,
+                8.939936000000019,
+                -3.185
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -1.3,
+                -1.3,
+                -0.7,
+                -0.7
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                8.81,
+                -0.0899992,
+                9.19,
+                0.2900008
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                1.6307994000000001,
+                2.24500793,
+                2.0107994000000002,
+                2.6250079299999998
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -3.19,
+                6.734999999999999,
+                -2.81,
+                7.115
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                6.7,
+                7.4,
+                7.3,
+                8.0
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                1.7,
+                9.799999999999999,
+                2.3,
+                10.4
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                9.639884,
+                11.31,
+                10.019884,
+                11.69
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -2.225,
+                12.75,
+                -1.625,
+                13.350000000000001
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -9.564831,
+                -16.4552,
+                -4.9128,
+                -13.0500009
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -12.527519,
+                -14.919995,
+                -9.73,
+                -9.855077
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -9.7,
+                -12.895001,
+                -8.104975,
+                -9.41435
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -16.9,
+                -16.9,
+                -3.762972,
+                16.9
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -7.6701155000000005,
+                5.914986,
+                -5.78907,
+                10.12
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -8.956528,
+                5.7833,
+                1.0,
+                16.9
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -1.145,
+                -13.97,
+                1.145,
+                -10.905
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -4.3,
+                -6.1749587,
+                -0.7,
+                -0.648
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -6.217504,
+                2.405225,
+                -0.870772,
+                5.3233
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                1.6,
+                -14.0484,
+                6.970077,
+                -5.675002
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                2.663,
+                -9.9699,
+                7.1702,
+                -2.425002
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                6.43,
+                -10.37,
+                9.834328,
+                -3.003615
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                6.820772,
+                -1.77,
+                9.9201155,
+                1.229088
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                2.73,
+                -16.9,
+                16.9,
+                16.9
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                1.6,
+                0.425002,
+                6.483558,
+                8.1718
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                4.020234,
+                6.694349,
+                8.716,
+                10.846752
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                1.6,
+                9.185814,
+                8.151292,
+                16.602896
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "EFUSE_RTN": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 41.039436639958275,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "C33.2",
+            "Q_ILIM.2",
+            "R39.2",
+            "R43.2",
+            "R44.2",
+            "U10.13",
+            "U10.15",
+            "U10.25"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                0.5,
+                -15.200000000000001,
+                1.1,
+                -14.6
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                1.4,
+                -8.55,
+                2.0,
+                -7.95
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -4.8,
+                -8.05,
+                -4.2,
+                -7.45
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -4.94,
+                -4.390000000000001,
+                0.165,
+                -1.735
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                0.5,
+                -15.200000000000001,
+                1.1,
+                -14.6
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                1.4,
+                -8.55,
+                2.0,
+                -7.95
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -4.8,
+                -8.05,
+                -4.2,
+                -7.45
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -0.215,
+                -4.390000000000001,
+                0.165,
+                -4.01
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -4.94,
+                -2.115,
+                -4.56,
+                -1.735
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -1.437145,
+                -15.200000000000001,
+                1.1,
+                -11.831252
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -4.8,
+                -10.005006,
+                -1.427149,
+                -7.45
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -4.94,
+                -2.115,
+                -4.56,
+                -1.735
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -0.391831,
+                -9.79,
+                2.99,
+                -7.95
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -0.215,
+                -4.390000000000001,
+                0.165,
+                -4.01
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -7.345,
+                -16.75,
+                1.115645,
+                -0.855
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -1.604962,
+                -8.592473,
+                2.0,
+                -4.01
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    }
+  },
+  "clearances_passed": true
+}

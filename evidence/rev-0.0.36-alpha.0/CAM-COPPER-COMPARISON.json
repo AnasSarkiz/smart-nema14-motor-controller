@@ -1,0 +1,73 @@
+{
+  "canonical_sha256": "feb1c704d92b3a0c0686bc85fd09198c221a3e393b60b4a8d5fb3b457bc78b80",
+  "parser": "PyGerber 2.4.3; Raise on parser errors; ordered dark/clear vector masks",
+  "comparison_allowance_mm": 0.002,
+  "scope": "Compare strict native Gerber vector geometry with canonical native copper.\n\nRequires optional diagnostic PyGerber 2.4.3 and Shapely 2.1.2. This measures\nexported files without changing them. It does not qualify mask, paste, impedance,\nnet ownership, copper plating, thermal behavior or assembler acceptance.\n",
+  "layers": [
+    {
+      "file": "F_Cu.gbr",
+      "layer": "top",
+      "source_sha256": "ffd5d16b52623581e87a9333134eddde7c95b2a5e82a671f555849f49dc1759c",
+      "expected_mm2": 822.3739985058693,
+      "actual_mm2": 822.3774668311552,
+      "missing_mm2_after_2um_coordinate_allowance": 0.0,
+      "extra_mm2_after_2um_coordinate_allowance": 0.0,
+      "net_losses": [],
+      "svg_diagnostics": {
+        "collinear_zero_area_paths": 0
+      }
+    },
+    {
+      "file": "In1_Cu.gbr",
+      "layer": "inner1",
+      "source_sha256": "cc8b246a8239f972937a36a5d802fc73595f631fa47dc8761796c4cab28b3bfe",
+      "expected_mm2": 793.010133902123,
+      "actual_mm2": 793.0128015296648,
+      "missing_mm2_after_2um_coordinate_allowance": 0.00039900667125709476,
+      "extra_mm2_after_2um_coordinate_allowance": 0.0,
+      "net_losses": [
+        {
+          "net": "GND",
+          "missing_mm2": 0.00039900667125707774,
+          "bounds_mm": [
+            -12.002875,
+            -13.555873525499967,
+            -11.983689526657916,
+            -13.481032224144936
+          ]
+        }
+      ],
+      "svg_diagnostics": {
+        "collinear_zero_area_paths": 0
+      }
+    },
+    {
+      "file": "In2_Cu.gbr",
+      "layer": "inner2",
+      "source_sha256": "e927a14a281cb6b47ff5b58293ef4d1e7c4b6c480137ee42205fe516b6b88bf3",
+      "expected_mm2": 632.8115801014121,
+      "actual_mm2": 632.8150133534394,
+      "missing_mm2_after_2um_coordinate_allowance": 0.0,
+      "extra_mm2_after_2um_coordinate_allowance": 0.0,
+      "net_losses": [],
+      "svg_diagnostics": {
+        "collinear_zero_area_paths": 0
+      }
+    },
+    {
+      "file": "B_Cu.gbr",
+      "layer": "bottom",
+      "source_sha256": "0cf103b4db29df79e1ceed4104626667186808330f4fd9f324269a85c6e61b35",
+      "expected_mm2": 735.5803705471244,
+      "actual_mm2": 735.5837648054319,
+      "missing_mm2_after_2um_coordinate_allowance": 0.0,
+      "extra_mm2_after_2um_coordinate_allowance": 0.0,
+      "net_losses": [],
+      "svg_diagnostics": {
+        "collinear_zero_area_paths": 2
+      }
+    }
+  ],
+  "geometry_comparison_passed": false,
+  "prototype_fabrication_ready": false
+}

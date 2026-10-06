@@ -1,7 +1,7 @@
 # Programming this controller with the standard JST programmer
 
 Reviewed 2026-10-06 against the public standard-jst-programmer **0.8.0** source
-and controller **0.0.35-alpha.0** Circuit JSON. This verifies wiring; no physical
+and controller **0.0.36-alpha.0** Circuit JSON. This verifies wiring; no physical
 flashing or maximum SWD speed has been demonstrated.
 
 Use the programmer's **J3 five-pin** JST SH port and a **straight-through
@@ -42,8 +42,8 @@ openocd -f /path/to/openocd-reset.cfg -f target/stm32g0x.cfg \
 
 This command has not been executed against physical hardware. Start at 100 kHz
 for bring-up; that is an initial setting, not a validated speed rating. The
-target uses **1 kilohm** R20/R21/R22 and an analog switch, whereas the programmer
-example recommends **100 ohm** target SWD resistors. Confirm edges, SWD turnaround,
+target now uses the official C25076 **100 ohm** parts for R20/R21/R22, matching
+the programmer example, with the TMUX1511 analog switch retained. Confirm edges, SWD turnaround,
 connect-under-reset, flashing, verification and recovery on the prototype before
 increasing speed or accepting this interface.
 

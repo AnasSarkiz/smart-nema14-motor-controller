@@ -3,7 +3,7 @@ import { RT0402BRD07100KL } from "../../imports/RT0402BRD07100KL/RT0402BRD07100K
 import { TMUX1511RSVR } from "../../imports/TMUX1511RSVR/TMUX1511RSVR"
 import { TLV803EA30DBZR } from "../../imports/TLV803EA30DBZR/TLV803EA30DBZR"
 import { CL05B104KO5NNNC } from "../../imports/CL05B104KO5NNNC/CL05B104KO5NNNC"
-import { A_0402WGF1001TCE } from "../../imports/A_0402WGF1001TCE/A_0402WGF1001TCE"
+import { A_0402WGF1000TCE } from "../../imports/A_0402WGF1000TCE/A_0402WGF1000TCE"
 import { A_0402WGF1002TCE } from "../../imports/A_0402WGF1002TCE/A_0402WGF1002TCE"
 import {
   type BoardViewProps,
@@ -106,21 +106,21 @@ export function ProgrammingSheet({
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
       />
-      <A_0402WGF1001TCE
+      <A_0402WGF1000TCE
         name="R20"
         {...previewPlacement("R20", mechanicalPreview)}
         schX={5}
         schY={4}
         connections={{ pin1: "net.SWDIO_GUARDED", pin2: "net.SWDIO" }}
       />
-      <A_0402WGF1001TCE
+      <A_0402WGF1000TCE
         name="R21"
         {...previewPlacement("R21", mechanicalPreview)}
         schX={5}
         schY={1}
         connections={{ pin1: "net.SWCLK_GUARDED", pin2: "net.SWCLK" }}
       />
-      <A_0402WGF1001TCE
+      <A_0402WGF1000TCE
         name="R22"
         {...previewPlacement("R22", mechanicalPreview)}
         schX={5}

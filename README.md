@@ -1,14 +1,16 @@
 # Smart NEMA 14 Motor Controller
 
-Revision **0.0.35-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
+Revision **0.0.36-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
 
 35 × 35 mm, four layers, 111 electronic references / 108 default fitted, nine native A4 schematic sheets. Exact motor: **STEPPERONLINE 14HM11-0404S**, 0.4 A/phase, single front shaft. U4/C6 encoder parts and R50 are marked DNP in source and excluded from default assembly exports. Their imported footprints, pads and wiring remain intact.
 
 STM32G0B1 provides USB FS, UCPD, classical CAN, STEP/DIR/ENABLE, limit inputs, SWD and temperature monitoring. TMC2209 drives the motor; TCPP01 protects USB; TPS26600 provides input protection/current limiting and AP63203 generates 3.3 V. Hardware defaults keep the motor disabled and CAN in standby. Firmware is pending.
 
+Updated pinned toolchain: tscircuit 0.0.2745, CLI 0.1.2251, core 0.0.2095 and native Pipeline9 dependency 0.0.959. R20/R21/R22 now use official C25076 100 Ω imports for the standard JST programmer; placements and the five-pin order are preserved. Cluttered automatic reference text is replaced by four connector labels; all 111 identities remain in the assembly drawing.
+
 Fresh native build: **334 traces / 224 vias / 82 pours**, **zero native errors or shorts**, and **82/82 physical nets joined**. Independent actual-copper spacing, drills, board edges, NPTH and filled-pour checks pass, including exact owners of all 68 declared filled features. All 421 purchased-pin wiring partitions are preserved. Fresh [Circuit JSON](dist/index/circuit.json) is included in the package; its exact checksum is recorded in [build status](build/routing-review/BUILD-STATUS.json) and publication receipts.
 
-Every nonzero trace segment is inventoried: 2,209 segments across 82 nets meet the 0.15 mm width floor. Motor phase traces pass the stated 0.34245 A analytical screen; complete rail/pour/via current and thermal qualification remains pending. Thirty combined-route-tree width warnings are retained; all 34 active fanout corridors have their requested copper width, but checking the minimum width alone does not qualify loaded power paths. USB skew is 0.38144 mm and its limited return/impedance screens pass. These are analytical checks, not measured hardware ratings.
+Every nonzero trace segment is inventoried: 2,218 segments across 82 nets meet the 0.15 mm width floor. All four motor nets now use ≥0.27 mm inner segments and pass the stated 0.34245 A analytical screen with the manufacturer’s −20% width tolerance; complete rail/pour/via current and thermal qualification remains pending. Thirty combined-route-tree width warnings are retained; all 34 active fanout corridors have their requested copper width, but checking the minimum width alone does not qualify loaded power paths. USB skew is 0.38144 mm and its limited return/impedance screens pass. These are analytical checks, not measured hardware ratings.
 
 Use direct pinned tscircuit export for review files:
 

@@ -1,0 +1,133 @@
+{
+  "revision": "0.0.36-alpha.0",
+  "scope": "Conservative external mating/straight-wire envelope clearance; actual plug CAD unavailable; own-header mating overlap excluded only",
+  "inputs": {
+    "front_carrier_audit_sha256": "ea2678e8a6bf4757cb0f67bb54a7e2b64404ef73d12b22417d16477ef91d9f73"
+  },
+  "results": [
+    {
+      "reference": "J_IO",
+      "mate": "SHR-10V-S, SSH-003T-P0.2-H; AWG28",
+      "bounds_mm": [
+        [
+          16,
+          -1.6,
+          -4.1
+        ],
+        [
+          23,
+          9.6,
+          -0.8
+        ]
+      ],
+      "catalogue_housing_mm": [
+        11,
+        5,
+        2.8
+      ],
+      "source": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "nominal_minimum_clearance_mm": 0.7000000000000002,
+      "limiting_neighbor": "carrier",
+      "additional_worst_case_allowance_mm": 0.4,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 0.1642853467318209,
+      "passed": true
+    },
+    {
+      "reference": "J_SWD",
+      "mate": "SHR-05V-S, SSH-003T-P0.2-H; AWG28",
+      "bounds_mm": [
+        [
+          16,
+          -11.5,
+          0.8
+        ],
+        [
+          23,
+          -5.3,
+          4.1
+        ]
+      ],
+      "catalogue_housing_mm": [
+        6,
+        5,
+        2.8
+      ],
+      "source": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "nominal_minimum_clearance_mm": 1.5742646351945881,
+      "limiting_neighbor": "fasteners",
+      "additional_worst_case_allowance_mm": 0.4,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 1.0385499819264088,
+      "passed": true
+    },
+    {
+      "reference": "J_MOTOR",
+      "mate": "GHR-04V-S, SSHL-002T-P0.2; AWG26",
+      "bounds_mm": [
+        [
+          -5,
+          13,
+          0.8
+        ],
+        [
+          1.5,
+          22,
+          5.6
+        ]
+      ],
+      "catalogue_housing_mm": [
+        6.25,
+        5.7,
+        4.15
+      ],
+      "source": "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
+      "reviewed_pages": [
+        1,
+        3
+      ],
+      "nominal_minimum_clearance_mm": 2.6000380516052246,
+      "limiting_neighbor": "C20",
+      "additional_worst_case_allowance_mm": 0.4,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 2.0643233983370455,
+      "passed": true
+    },
+    {
+      "reference": "J_USB",
+      "mate": "USB-C cable: overmold at most 12 mm wide and 7 mm thick",
+      "bounds_mm": [
+        [
+          -6,
+          -42.6,
+          -1.5
+        ],
+        [
+          6,
+          -17.59,
+          5.5
+        ]
+      ],
+      "scope": "Allowed cable envelope, not a claimed exact cable model",
+      "source": "https://gct.co/connector/usb4110",
+      "nominal_minimum_clearance_mm": 1.1499873042106614,
+      "limiting_neighbor": "R44",
+      "additional_worst_case_allowance_mm": 0.4,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 0.6142726509424822,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "routing_authorized_by_this_check_alone": false,
+  "physical_fit_tested": false,
+  "cable_constraints": "Route wires straight outward beyond envelope before bending. USB overmold <=12x7 mm. No unrestricted cable/backdrive claim."
+}

@@ -1,0 +1,12 @@
+{
+  "revision": "0.0.36-alpha.0",
+  "source_fixture": "scripts/all-imports-audit.circuit.tsx",
+  "source_fixture_sha256": "50bf10e3a2d114d6b0bee41043ffa94b744cb91ef403a78cdb4b409a61532618",
+  "cli": "0.1.2251",
+  "core": "0.0.2095",
+  "cli_result": "8 unexpected PCB traces despite board routingDisabled and CLI --routing-disabled; existing zero-copper assertion rejected the result.",
+  "correct_generation": "bun scripts/build-import-audit.mjs scripts/all-imports-audit.circuit.tsx dist/scripts/all-imports-audit/circuit.json",
+  "sdk_result": "Fresh released Circuit SDK with platform routingDisabled emits no routed copper; unchanged geometry checks pass for all 44 imports /261 pin-to-pad mappings.",
+  "scope": "Source/geometry fixture only; production copper is not disabled. No dependency edits, generated JSON edits, check weakening or suppressed errors. Exact failed and successful logs retained.",
+  "upstream_generator_cache_diagnostic_remains": true
+}

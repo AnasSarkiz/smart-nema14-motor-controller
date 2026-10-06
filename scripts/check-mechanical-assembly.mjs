@@ -12,10 +12,29 @@ assert.equal(
 assert.equal(pcb.length, 111)
 assert.equal(
   cad.length,
-  112,
-  "111 PCB components plus unchanged manufacturer motor",
+  109,
+  "108 default-fitted PCB components plus unchanged manufacturer motor",
 )
 const sources = circuit.filter((element) => element.type === "source_component")
+const sourceById = new Map(
+  sources.map((element) => [element.source_component_id, element]),
+)
+const dnp = pcb.filter((component) => component.do_not_place)
+assert.deepEqual(
+  dnp
+    .map((component) => sourceById.get(component.source_component_id).name)
+    .sort(),
+  ["C6", "R50", "U4"],
+)
+assert.ok(
+  dnp.every(
+    (component) =>
+      !cad.some(
+        (model) => model.pcb_component_id === component.pcb_component_id,
+      ),
+  ),
+  "Default DNP parts must not appear as fitted models",
+)
 const motorSource = sources.find(
   (element) => element.name === "OfficialStepperOnline14hm11Motor",
 )
@@ -42,22 +61,25 @@ assert.equal(
   circuit.filter((element) => element.type.includes("error")).length,
   0,
 )
-const missingModels = pcb.flatMap((component) => {
-  const model = cad.find(
-    (element) => element.pcb_component_id === component.pcb_component_id,
-  )
-  if (model?.model_step_url) return []
-  const source = sources.find(
-    (element) => element.source_component_id === component.source_component_id,
-  )
-  return [
-    {
-      reference: source.name,
-      part: source.supplier_part_numbers?.jlcpcb,
-      show_as_bounding_box: model?.show_as_bounding_box ?? false,
-    },
-  ]
-})
+const missingModels = pcb
+  .filter((component) => !component.do_not_place)
+  .flatMap((component) => {
+    const model = cad.find(
+      (element) => element.pcb_component_id === component.pcb_component_id,
+    )
+    if (model?.model_step_url) return []
+    const source = sources.find(
+      (element) =>
+        element.source_component_id === component.source_component_id,
+    )
+    return [
+      {
+        reference: source.name,
+        part: source.supplier_part_numbers?.jlcpcb,
+        show_as_bounding_box: model?.show_as_bounding_box ?? false,
+      },
+    ]
+  })
 const mountingHoles = circuit.filter(
   (element) => element.type === "pcb_hole" && !element.pcb_component_id,
 )
@@ -74,6 +96,8 @@ writeFileSync(
       revision,
       pcb_component_count: pcb.length,
       cad_entry_count: cad.length,
+      default_fitted_count: pcb.length - dnp.length,
+      dnp_references: ["C6", "R50", "U4"],
       exact_motor_reference: "passed",
       genuine_step_model_count: cad.length - missingModels.length,
       missing_models: missingModels,

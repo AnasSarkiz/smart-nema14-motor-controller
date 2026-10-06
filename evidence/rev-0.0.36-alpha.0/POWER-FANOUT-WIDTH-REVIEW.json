@@ -1,0 +1,313 @@
+{
+  "canonical_sha256": "feb1c704d92b3a0c0686bc85fd09198c221a3e393b60b4a8d5fb3b457bc78b80",
+  "scope": "Compare each documented fanout corridor at its requested width with the actual emitted same-net tracks/pads/pours on that layer. Copper holes excluded symmetrically. 2 um source pad-coordinate precision allowance. Does not establish complete loaded-path current sharing or rail/pour neck capacity.",
+  "branches": [
+    {
+      "fanout": "VM_BUCK",
+      "port": ".U5 > .pin2",
+      "net": "VM",
+      "layer": "top",
+      "requested_width_mm": 0.4,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "VM_BUCK",
+      "port": ".U5 > .pin3",
+      "net": "VM",
+      "layer": "top",
+      "requested_width_mm": 0.4,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "VM_BUCK",
+      "port": ".C9 > .pin1",
+      "net": "VM",
+      "layer": "top",
+      "requested_width_mm": 0.4,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "VM_BUCK_CAP",
+      "port": ".C8 > .pin1",
+      "net": "VM",
+      "layer": "bottom",
+      "requested_width_mm": 0.4,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "VM_TMC_LOW",
+      "port": ".U2 > .pin28",
+      "net": "VM",
+      "layer": "top",
+      "requested_width_mm": 0.28,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "VM_TMC_HIGH",
+      "port": ".U2 > .pin22",
+      "net": "VM",
+      "layer": "top",
+      "requested_width_mm": 0.28,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "VM_CHARGE_PUMP",
+      "port": ".C14 > .pin2",
+      "net": "VM",
+      "layer": "top",
+      "requested_width_mm": 0.15,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "VM_TMC_BYPASS",
+      "port": ".C17 > .pin1",
+      "net": "VM",
+      "layer": "bottom",
+      "requested_width_mm": 0.4,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "VM_TMC_BULK",
+      "port": ".C18 > .pin1",
+      "net": "VM",
+      "layer": "bottom",
+      "requested_width_mm": 0.4,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "VM_BULK_LEFT",
+      "port": ".C19 > .pin1",
+      "net": "VM",
+      "layer": "top",
+      "requested_width_mm": 0.4,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "VM_BULK_RIGHT",
+      "port": ".C20 > .pin1",
+      "net": "VM",
+      "layer": "top",
+      "requested_width_mm": 0.4,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "VM_EFUSE_OUT",
+      "port": ".U10 > .pin24",
+      "net": "VM",
+      "layer": "bottom",
+      "requested_width_mm": 0.28,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "VM_EFUSE_OUT",
+      "port": ".U10 > .pin23",
+      "net": "VM",
+      "layer": "bottom",
+      "requested_width_mm": 0.28,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "PROTECTED_MONITOR",
+      "port": ".R16 > .pin1",
+      "net": "VBUS_PROTECTED",
+      "layer": "bottom",
+      "requested_width_mm": 0.15,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "VM_OUT_BRIDGE",
+      "port": ".VM_EFUSE_OUT > .top",
+      "net": "VM",
+      "layer": "top",
+      "requested_width_mm": 0.4,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "GND_INPUT_CAP",
+      "port": ".C12 > .pin2",
+      "net": "GND",
+      "layer": "bottom",
+      "requested_width_mm": 0.15,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "RAW_USB_LEFT",
+      "port": ".J_USB > .pin21",
+      "net": "VBUS_CONN",
+      "layer": "top",
+      "requested_width_mm": 0.28,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "RAW_USB_RIGHT",
+      "port": ".J_USB > .pin20",
+      "net": "VBUS_CONN",
+      "layer": "top",
+      "requested_width_mm": 0.28,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "RAW_PMOS_SOURCE",
+      "port": ".Q_PD > .pin9",
+      "net": "VBUS_CONN",
+      "layer": "bottom",
+      "requested_width_mm": 0.4,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "RAW_TVS",
+      "port": ".D_VBUS > .pin1",
+      "net": "VBUS_CONN",
+      "layer": "bottom",
+      "requested_width_mm": 0.4,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "RAW_TVS",
+      "port": ".C25 > .pin1",
+      "net": "VBUS_CONN",
+      "layer": "bottom",
+      "requested_width_mm": 0.4,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "RAW_ADC_ESCAPE",
+      "port": ".R13 > .pin1",
+      "net": "VBUS_CONN",
+      "layer": "bottom",
+      "requested_width_mm": 0.15,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "PROTECTED_PMOS_DRAIN",
+      "port": ".Q_PD > .pin1",
+      "net": "VBUS_PROTECTED",
+      "layer": "bottom",
+      "requested_width_mm": 0.28,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "PROTECTED_EFUSE_INPUT_VIA",
+      "port": ".U10 > .pin8",
+      "net": "VBUS_PROTECTED",
+      "layer": "bottom",
+      "requested_width_mm": 0.28,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "TCPP_PROTECTED_MONITOR",
+      "port": ".U3 > .pin4",
+      "net": "VBUS_PROTECTED",
+      "layer": "bottom",
+      "requested_width_mm": 0.15,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "TCPP_RAW_SUPPLY",
+      "port": ".U3 > .pin8",
+      "net": "VBUS_CONN",
+      "layer": "bottom",
+      "requested_width_mm": 0.15,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "TCPP_RAW_SUPPLY",
+      "port": ".C26 > .pin1",
+      "net": "VBUS_CONN",
+      "layer": "bottom",
+      "requested_width_mm": 0.15,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "TCPP_DECAP_GND",
+      "port": ".C22 > .pin2",
+      "net": "GND",
+      "layer": "bottom",
+      "requested_width_mm": 0.15,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "RTN_LOWER_DIVIDERS",
+      "port": ".R43 > .pin2",
+      "net": "EFUSE_RTN",
+      "layer": "bottom",
+      "requested_width_mm": 0.15,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "RTN_DVDT_CAP",
+      "port": ".C33 > .pin2",
+      "net": "EFUSE_RTN",
+      "layer": "bottom",
+      "requested_width_mm": 0.15,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "SWCLK_MCU_ESCAPE",
+      "port": ".U1 > .pin36",
+      "net": "SWCLK",
+      "layer": "top",
+      "requested_width_mm": 0.15,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "PROGRAMMER_GROUND_RECONNECT",
+      "port": ".U7 > .pin8",
+      "net": "GND",
+      "layer": "bottom",
+      "requested_width_mm": 0.15,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "CAN_TERM_GROUND_RECONNECT",
+      "port": ".R17 > .pin2",
+      "net": "GND",
+      "layer": "bottom",
+      "requested_width_mm": 0.15,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    },
+    {
+      "fanout": "EXT_DIR_MCU_ESCAPE",
+      "port": ".U1 > .pin20",
+      "net": "EXT_DIR",
+      "layer": "top",
+      "requested_width_mm": 0.15,
+      "missing_required_copper_mm2": 0.0,
+      "full_source_branch_width_covered": true
+    }
+  ],
+  "all_fanout_corridors_covered": true
+}

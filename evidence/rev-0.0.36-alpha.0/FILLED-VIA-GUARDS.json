@@ -1,0 +1,28 @@
+{
+  "circuit": "dist/index/circuit.json",
+  "circuit_sha256": "feb1c704d92b3a0c0686bc85fd09198c221a3e393b60b4a8d5fb3b457bc78b80",
+  "filled_manifest": "src/routing/filled-signal-vias-trial.json",
+  "results": [
+    {
+      "invalid_fixture": "wrong_net",
+      "rejected": true
+    },
+    {
+      "invalid_fixture": "wrong_drill",
+      "rejected": true
+    },
+    {
+      "invalid_fixture": "wrong_owner",
+      "rejected": true
+    },
+    {
+      "invalid_fixture": "unlisted_small_via",
+      "rejected": true
+    },
+    {
+      "invalid_fixture": "ordinary_same_net_contact",
+      "rejected": true
+    }
+  ],
+  "passed": true
+}

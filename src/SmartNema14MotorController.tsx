@@ -1,3 +1,4 @@
+import { BoardLegend } from "./BoardLegend"
 import { NativePlaneReconnections } from "./routing/NativePlaneReconnections"
 import { PowerCopperTrial } from "./routing/PowerCopperTrial"
 import { FilledSignalEscapes } from "./routing/FilledSignalEscapes"
@@ -58,7 +59,11 @@ export default function SmartNema14MotorController({
       thickness="1.6mm"
       routeRemaining={routeRemaining}
       routingDisabled={!copperEnabled}
-      pcbStyle={{ viaHoleDiameter: "0.30mm", viaPadDiameter: "0.60mm" }}
+      pcbStyle={{
+        viaHoleDiameter: "0.30mm",
+        viaPadDiameter: "0.60mm",
+        silkscreenTextVisibility: "hidden",
+      }}
       autorouterEffortLevel="1x"
       autorouterVersion={nativeAutorouterVersion}
       defaultTraceWidth="0.15mm"
@@ -79,6 +84,7 @@ export default function SmartNema14MotorController({
       minViaPadDiameter="0.38mm"
       schLayout={{ layoutMode: "none" }}
     >
+      <BoardLegend />
       <net
         name="GND"
         routingPhaseIndex={
