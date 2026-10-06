@@ -45,6 +45,15 @@ context and all four archived routing parts. Final metadata/context are checked
 separately after retaining the smoke and candidate receipts. Development
 readiness is separate from the unchanged **NO** fabrication decision.
 
+Public review commit `bb7d22943ec14df296cbf642d2a8ec70203b1ff7` is pushed
+to main. Anonymous immutable GitHub downloads verify 33/33 changed/reviewed
+files, including all three canonical native JSON mirrors. All 402 runtime files
+still match the previously verified public 0.0.41 package; no new board version
+or package-content change is claimed. Fresh Linux readiness run 37524212262
+passed every job/step for this review commit:
+https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37524212262.
+Receipts are retained in the continuation folder. Fabrication decision stays NO.
+
 ---
 
 # Remaining fabrication review — 0.0.41-alpha.0, 2026-10-06
