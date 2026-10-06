@@ -1,0 +1,74 @@
+[
+  {
+    "name": "netlist",
+    "command": [
+      "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+      "x",
+      "tsci",
+      "check",
+      "netlist",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "placement",
+    "command": [
+      "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+      "x",
+      "tsci",
+      "check",
+      "placement",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "source",
+    "command": [
+      "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+      "x",
+      "tsci",
+      "check",
+      "source",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "pin_specification",
+    "command": [
+      "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+      "x",
+      "tsci",
+      "check",
+      "pin_specification",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "schematic-placement",
+    "command": [
+      "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+      "x",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "shorts",
+    "command": [
+      "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+      "x",
+      "tsci",
+      "check",
+      "shorts",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0
+  }
+]

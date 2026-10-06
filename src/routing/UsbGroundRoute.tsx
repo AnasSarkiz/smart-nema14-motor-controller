@@ -11,7 +11,7 @@ export function UsbGroundRoute() {
         fromLayer="top"
         toLayer="bottom"
         holeDiameter="0.30mm"
-        outerDiameter="0.60mm"
+        outerDiameter="0.45mm"
         connectsTo={[
           "net.GND",
           ".USB_ESD_GROUND_THROUGH > .top",

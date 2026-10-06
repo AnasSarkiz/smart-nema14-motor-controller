@@ -142,7 +142,11 @@ for via in vias:
         assert abs(via["hole_diameter"]-filled["hole_diameter_mm"]) < .00001 and abs(via["outer_diameter"]-filled["outer_diameter_mm"]) < .00001, "Filled feature drill or copper differs from manifest"
         assert (via["outer_diameter"]-via["hole_diameter"])/2 >= .075, "Filled feature annulus below preferred manufacturer minimum"
         filled_matches.append(filled["name"])
-    elif via["hole_diameter"] < .3-.00002 or via["outer_diameter"] < .6-.00002 or (via["outer_diameter"]-via["hole_diameter"])/2 < .15-.00002:
+    # Current user target: 0.30/0.45 mm. JLCPCB's preferred diameter
+    # difference is 0.15 mm, i.e. a 0.075 mm radial annular ring.
+    # This changes the explicit size policy; every spacing/ownership check
+    # below remains intact. Named small filled features retain exact manifests.
+    elif via["hole_diameter"] < .3-.00002 or via["outer_diameter"] < .45-.00002 or (via["outer_diameter"]-via["hole_diameter"])/2 < .075-.00002:
         violations.append({"check": "via_dimensions", "via": via})
     for pad, outline, pad_net in pads:
         thermal = next((entry for entry in thermal_vias

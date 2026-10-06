@@ -1,0 +1,17 @@
+{
+  "method": "Actual prior native0.42 canonical used as negative input; no generated-JSON mutation",
+  "negative_guard_rejects_unresized_board": true,
+  "expected_error": "Unexpected via pad change",
+  "final_native_build_passed": true,
+  "typecheck_passed": true,
+  "format_passed": true,
+  "full_style_expected_exit_code": 1,
+  "full_style_issue_count": 1,
+  "diagnostic_input_failures": [
+    "CLI checks initially lacked Bun PATH; corrected inherited PATH",
+    "Source-only CLI netlist was initially given Circuit JSON; corrected native source argument",
+    "CAM parser initially used mechanical Python without optional PyGerber; corrected existing cam-venv"
+  ],
+  "no_dependency_check_or_circuit_json_patching": true,
+  "prototype_fabrication_ready": false
+}

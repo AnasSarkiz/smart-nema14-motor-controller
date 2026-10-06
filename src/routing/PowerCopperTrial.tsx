@@ -174,7 +174,7 @@ export function PowerCopperTrial() {
             fromLayer="top"
             toLayer="bottom"
             holeDiameter="0.30mm"
-            outerDiameter="0.60mm"
+            outerDiameter="0.45mm"
             connectsTo={[
               `net.${fanout.net}`,
               `.${fanout.name} > .top`,

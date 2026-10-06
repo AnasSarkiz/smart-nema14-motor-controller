@@ -1,6 +1,6 @@
 # Smart NEMA 14 Motor Controller
 
-Revision **0.0.42-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
+Revision **0.0.43-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
 
 U2 now uses official **TMC2209-LA-T / C2150710** and D_USB uses official
 **TI TPD2EUSB30DRTR / C97502**. Both replacements retain the previous pad and
@@ -28,13 +28,20 @@ reviewed and run directly. See [schematic style review](docs/SCHEMATIC-STYLE.md)
 Automatic value-label overlaps and the imported symbol defect remain disclosed;
 this is not complete schematic or fabrication qualification.
 
-All 224 current vias are through plated. The requested uniform 0.30 mm hole /
-0.45 mm pad trial produces 109 native errors and 217 strict clearance violations;
-it is rejected. Current copper retains 158 ordinary 0.30/0.60, 63 filled/capped
-0.20/0.38 and three 0.15/0.38 mm vias. VM/USB input power wires use outer layers;
-some 3.3 V and all four motor nets still include inner wires. Two bounded native
-Pipeline9 outer-layer candidates produced no adoptable route. No fabricated
-success or completed resizing/rerouting is claimed. Both replacement codes have
+All 224 current vias are through plated. Revision 0.0.43 changes all 158 existing
+0.30/0.60 mm vias to the requested 0.30/0.45 mm through native source. All
+spacing and exact filled-owner checks pass. The 66 smaller filled/capped vias
+still need actual relocation/rerouting: the prior uniform in-place trial fails
+109 native errors and 217 spacing violations. Uniform sizing is incomplete.
+VM/USB input power wires use outer layers; some 3.3 V and all four motor nets
+still include inner wires. A new bottom-layer trial makes accidental contacts;
+the corrected outer-only Pipeline9 attempt hits its 8 GiB process guard. Both
+are rejected. The existing TMP112 supplies the reference board's I2C temperature
+sensing role. A smaller buzzer fits a native bottom-side placement trial, but
+its circuit is not adopted: official datasheet access and drive, power,
+mechanical and routing qualification remain pending. See
+[the via, power and buzzer review](docs/VIA-POWER-BUZZER.md).
+Both replacement codes have
 exact public shop stock matches. U1 remains out of stock at LCSC; Q_PD's user
 listing shows 100 LCSC units. JLCPCB shop and assembly inventories differ, and
 all assembler allocation remains unverified.
@@ -76,7 +83,7 @@ bun run typecheck
 
 Local remaining-net routing exhausted the Mac's memory. New routing is Cloud/Linux only, using **tscircuit's native autorouter**. Read [AGENTS.md](AGENTS.md), the [complete handoff](CLOUD_HANDOFF.md), [environment setup](docs/cloud/ENVIRONMENT.md), [Cloud task](docs/cloud/TASK.md), and [validation record](VALIDATION.md).
 
-The default entry replays checked source routes/pours and preserves all errors without launching a new remaining-net search. Explicit selected-net jobs use released native Pipeline9 with ordinary 0.30/0.60 mm vias. Saved copper includes individually declared filled/capped features; follow the manufacturing manifests, not a blanket same-net drill exemption. Do not resume older Freerouting experiments.
+The default entry replays checked source routes/pours and preserves all errors without launching a new remaining-net search. Explicit selected-net jobs use released native Pipeline9 with ordinary 0.30/0.45 mm vias. Saved copper includes individually declared filled/capped features; follow the manufacturing manifests, not a blanket same-net drill exemption. Do not resume older Freerouting experiments.
 
 The fresh Ubuntu 24.04 [Linux readiness run](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37488982248) passed. The Codex Cloud setup and startup smoke checks passed; the environment was published and the user authorized board continuation. Cloud tscircuit authentication is now established.
 

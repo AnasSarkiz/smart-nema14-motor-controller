@@ -37,8 +37,11 @@ project's package manager; do not silently switch tools.
 
 Keep eFuse EFUSE_RTN electrically isolated from GND. Small filled/capped vias
 are allowed only when individually declared in the reviewed manufacturing
-manifests with exact owners. Ordinary new routing vias must be ≥0.30 mm drill,
-≥0.60 mm pad, ≥0.15 mm annular ring. Do not let the autorouter's board-wide
+manifests with exact owners. The user's latest requested ordinary via size is
+0.30 mm drill / 0.45 mm pad / 0.075 mm radial annular ring, matching JLCPCB's
+published preferred diameter difference. Preserve every independent spacing
+check. The 66 existing small filled features still require relocation/rerouting
+before uniform sizing can be claimed. Do not let the autorouter's board-wide
 minimum for named filled features become an undeclared blanket exception.
 
 Finish the remaining nets, then run every qualification gate in the task and

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+    "scripts/run-native-routing.mjs",
+    "/workspace/smart-nema14-motor-controller/.publication/fix43/outer-v3v3-native/index.circuit.tsx",
+    "/workspace/smart-nema14-motor-controller/.publication/fix43/outer-v3v3-native-corrected-run"
+  ],
+  "exit_code": -15,
+  "termination": "memory_budget_exceeded",
+  "memory_budget_mb": 8192,
+  "peak_sampled_group_rss_mb": 8432.734375,
+  "elapsed_seconds": 240.07516478800062,
+  "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+}

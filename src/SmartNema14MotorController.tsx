@@ -61,7 +61,7 @@ export default function SmartNema14MotorController({
       routingDisabled={!copperEnabled}
       pcbStyle={{
         viaHoleDiameter: "0.30mm",
-        viaPadDiameter: "0.60mm",
+        viaPadDiameter: "0.45mm",
         silkscreenTextVisibility: "hidden",
       }}
       autorouterEffortLevel="1x"
@@ -785,7 +785,7 @@ export default function SmartNema14MotorController({
           name="Bounded remaining connection"
           phaseIndex={1}
           minViaHoleDiameter="0.30mm"
-          minViaPadDiameter="0.60mm"
+          minViaPadDiameter="0.45mm"
           autorouter={{
             preset: "auto_local",
             traceClearance: "0.15mm",

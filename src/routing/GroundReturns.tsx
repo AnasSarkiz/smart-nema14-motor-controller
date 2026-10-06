@@ -89,7 +89,7 @@ export function GroundReturns() {
         fromLayer="top"
         toLayer="bottom"
         holeDiameter="0.30mm"
-        outerDiameter="0.60mm"
+        outerDiameter="0.45mm"
         connectsTo="net.GND"
       />
       <via
@@ -99,7 +99,7 @@ export function GroundReturns() {
         fromLayer="top"
         toLayer="bottom"
         holeDiameter="0.30mm"
-        outerDiameter="0.60mm"
+        outerDiameter="0.45mm"
         connectsTo="net.GND"
       />
       <copperpour
@@ -123,7 +123,7 @@ export function GroundReturns() {
         fromLayer="top"
         toLayer="bottom"
         holeDiameter="0.30mm"
-        outerDiameter="0.60mm"
+        outerDiameter="0.45mm"
         connectsTo="net.GND"
       />
       <via
@@ -133,7 +133,7 @@ export function GroundReturns() {
         fromLayer="top"
         toLayer="bottom"
         holeDiameter="0.30mm"
-        outerDiameter="0.60mm"
+        outerDiameter="0.45mm"
         connectsTo="net.GND"
       />
       <via
@@ -143,7 +143,7 @@ export function GroundReturns() {
         fromLayer="top"
         toLayer="bottom"
         holeDiameter="0.30mm"
-        outerDiameter="0.60mm"
+        outerDiameter="0.45mm"
         connectsTo="net.GND"
       />
       <via
@@ -153,7 +153,7 @@ export function GroundReturns() {
         fromLayer="top"
         toLayer="bottom"
         holeDiameter="0.30mm"
-        outerDiameter="0.60mm"
+        outerDiameter="0.45mm"
         connectsTo="net.GND"
       />
       <trace
@@ -174,7 +174,7 @@ export function GroundReturns() {
         fromLayer="top"
         toLayer="bottom"
         holeDiameter="0.30mm"
-        outerDiameter="0.60mm"
+        outerDiameter="0.45mm"
         connectsTo="net.GND"
       />
       <trace
@@ -215,7 +215,7 @@ export function GroundReturns() {
         toLayer="bottom"
         tented
         holeDiameter="0.30mm"
-        outerDiameter="0.60mm"
+        outerDiameter="0.45mm"
         connectsTo="net.GND"
       />
       <via
@@ -226,7 +226,7 @@ export function GroundReturns() {
         toLayer="bottom"
         tented
         holeDiameter="0.30mm"
-        outerDiameter="0.60mm"
+        outerDiameter="0.45mm"
         connectsTo="net.GND"
       />
     </>

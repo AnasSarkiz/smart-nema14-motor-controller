@@ -1,3 +1,85 @@
+# Via, power and buzzer continuation — 0.0.43-alpha.0, 2026-10-06
+
+All158 previous0.30/0.60 mm vias now use the requested0.30/0.45 mm pads,
+including five exactly owned thermal contacts. Coordinates, drills and through
+spans are retained. The remaining66 small filled/capped vias are unchanged:
+63x0.20/0.38 and three0.15/0.38 mm. Uniform sizing is incomplete. The ordinary
+annular-ring policy follows the latest user request and JLCPCB's published
+preferred0.15 mm pad-to-hole diameter difference. Every physical spacing and
+exact owner check remains intact. See [review](docs/VIA-POWER-BUZZER.md).
+
+Fresh native minimum-runtime Circuit JSON SHA256:
+`60c9034339361ad2a118704176cb7efb6b113fa0742c0f383256fdcf1f5bb039`.
+All three mirrors match. The preservation guard proves all411 purchased-pin
+partitions, component/pin attributes, imported pads, CAD, courtyards, keepouts,
+holes, silkscreen and every nonzero wire segment unchanged versus0.0.42. A
+negative check correctly rejects the unresized older board. All12 schematic
+element types are exact, so the prior full schematic visual review applies.
+Native source metadata matches217 recognized runtime files, MD5
+`15b9703676cc7465e55d45e649811d58`. The final prose-only runtime update is rebuilt
+natively and proven identical to the first43 build except source metadata.
+No generated JSON is edited. All four freshly rendered copper layers were viewed.
+
+Fresh native build, TypeScript/format, five native CLI source checks, shorts,
+manufacturer-pin checks on PCB-disabled output, strict copper/filled-pour,
+width/tolerance, power fanouts/corners, USB screens,38 programmer assertions,
+notes, standard USB and catalogue checks pass. All82 physical nets join with
+327 traces/224 through vias/82 pours; zero unconnected/dangling/native/strict
+copper errors or shorts. Thirty route-tree width warnings and23 supplier pin
+metadata warnings remain disclosed. The full unfiltered official style analyzer
+still reports one imported D_VBUS orientation issue; its exit1 is retained.
+
+Fresh pinned native Gerbers match all four canonical copper layers by strict
+CAM vector comparison, with224 unique plated drills, six NPTH and108-reference
+BOM/CPL. J_USB and three LED supplier rotations remain unverified. This is a
+review export, not an approved manufacturing package. CAD dependency coverage
+includes all108 CAD entries and80 unchanged local models in the407-file runtime
+packet. No rejected candidate becomes the current board or runtime input.
+
+VM/input/protected VBUS and buck-switch wires use outer layers. Part of3.3 V
+and all four motor nets still use inner wires;20 inner power pours remain. A
+bottom3.3 V trial fails four native errors and seven actual spacing violations.
+A corrected outer-only Pipeline9 job reaches topology merging, then hits its
+8 GiB process guard at240.1 seconds, sampled8432.7 MiB. Neither is adopted;
+this does not prove that outer routing is impossible.
+
+The reference's TMP102 role is already provided by U9 TMP112 at address0x48,
+with R2/R3 pull-ups, bypass and alert connection. No duplicate sensor is added.
+Fresh unmodified MLT-5020/C94598 imports are reviewed in placement-only fixtures.
+The top site overlaps C19 and a thermal via; the first bottom site fails four
+pad clearances. The shifted bottom(-3.75,13.75) mm trial passes native checking
+and independent spacing. Its actual bottom rendering is viewed. All buzzer
+pads remain noConnect and the fixture is not adopted. A functional addition
+still needs official drive verification, driver/flyback/pull-down/bypass/PWM,
+power-budget, carrier/acoustic and complete routed-circuit qualification.
+
+The official buzzer PDF download host
+`jlc-prod-smt.oss-eu-central-1.aliyuncs.com` is proxy CONNECT403 and absent from
+the effective allowed-host configuration. Its other official URL returns HTML,
+not a datasheet. The pending supported remedy is to add this exact host and save
+environment settings, then verify real access. No proxy bypass or guessed drive
+specification is used. Displayed JLCPCB stock is distinct from assembly allocation.
+U1 still has no qualified stocked same-footprint replacement. Original imports,
+model assets, firmware limits and physical-test requirements remain unchanged.
+
+Initial command diagnostics are retained: a missing Bun PATH, a source-only CLI
+command given Circuit JSON, and CAM Python lacking the already installed optional
+parser. Correct native source arguments, inherited PATH and existing cam-venv
+resolve these without any dependency or check reduction. Evidence is in
+`evidence/rev-0.0.43-alpha.0/`. Final Cloud smoke, context, exact-source Linux CI
+and matching public file verification are recorded after completion below.
+Exact root Cloud smoke passed: pinned Bun/CLI, TypeScript, critical official
+imports, Shapely/CadQuery, exact context and all four routing archives. Actual
+cgroup RAM limit32 GiB; overlay free disk27.79 GiB at resource measurement.
+
+Stage4/5/6 remain incomplete: uniform small vias, outer power, imported schematic
+symbol, MCU sourcing, supplier silkscreen/orientations, stackup/fill/mask/paste/
+assembly, loaded rail/pour-neck/via sharing and complete thermal/USB/ESD review.
+Firmware, physical programming, motor/load and hardware tests are pending.
+**PROTOTYPE FABRICATION READY: NO.** No fabrication order is authorized.
+
+---
+
 # Schematic style corrections — 0.0.42-alpha.0, 2026-10-06
 
 The full current official schematic analyzer reproduces eleven issues on the

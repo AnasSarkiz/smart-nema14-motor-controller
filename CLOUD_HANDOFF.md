@@ -1,3 +1,25 @@
+# Current continuation — 0.0.43-alpha.0
+
+All 158 previous 0.30/0.60 mm vias now use 0.30/0.45 mm through native source.
+The other 66 small filled/capped vias remain and need relocation/rerouting;
+uniform sizing is incomplete. Independent spacing rules and exact filled owners
+are preserved. Purchased wiring, wire geometry, official imports and CAD stay
+unchanged. Fresh native build and current qualification records are in
+VALIDATION.md and docs/VIA-POWER-BUZZER.md. 327 traces/224 through vias/82 pours,
+all82 physical nets joined, zero native errors or strict copper violations.
+
+VM/input VBUS wires are outer; four motor nets and part of3.3 V still use inner
+wires. The new bottom3.3 V trial shorts and the corrected outer-only Pipeline9
+job hits its8 GiB guard. No trial power route is adopted. Existing U9 TMP112
+provides I2C temperature sensing like the reference RP2040 board. Buzzer placement
+is diagnostic only; official datasheet host access and a complete qualified
+driver/circuit/mechanical/routing addition remain pending. All sourcing, thermal,
+fabrication, firmware and hardware blockers remain. Preserve the80 original
+model files and all current Circuit JSON mirrors.
+**PROTOTYPE FABRICATION READY: NO.** No fabrication order is authorized.
+
+---
+
 # Current continuation — 0.0.42-alpha.0
 
 Ten full-analyzer schematic findings are corrected through native layout.
