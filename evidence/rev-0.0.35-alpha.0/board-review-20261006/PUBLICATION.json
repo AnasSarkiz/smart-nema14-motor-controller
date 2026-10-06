@@ -1,0 +1,123 @@
+{
+  "revision": "0.0.35-alpha.0",
+  "release_id": "18fcb173-e240-4c1b-aa98-6a5f83fef3d3",
+  "github_commit": "f846a21d3eba73347af7322f23f2905919431f7e",
+  "canonical_sha256": "63076b482262db351ea8136616baf8afc8594d505a2a0932eb0c336d29395f53",
+  "scope": "Six-point review metadata for unchanged board revision35. Initial PUBLICATION.json and the earlier PUBLICATION-METADATA.json retain their exact snapshots. Only the binary qualification-review ZIP is updated; design sources, all required model assets and three canonical Circuit JSON mirrors remain unchanged. Fresh reviews identify failed motor manufacturing-tolerance screens and unresolved sourcing/programming/fabrication qualifications; no hosted build or hardware success is claimed.",
+  "verification_method": "Anonymous official downloads with a checksum URL cache key. The unversioned download endpoint caches for 86400 seconds; anonymous package_files/get and checksum-keyed downloads return the current bytes.",
+  "all_updated_files_anonymously_verified": true,
+  "updated_file_count": 1,
+  "package_total_files": 384,
+  "package_checks": [
+    {
+      "path": "build/qualification-review.zip",
+      "status": 200,
+      "sha256": "941f35cef9c0ed807994733d296768b6586399158fb4ffe0456caa79d2ef6072",
+      "verified": true
+    }
+  ],
+  "github_public_checks": [
+    {
+      "path": "dist/index/circuit.json",
+      "status": 200,
+      "sha256": "63076b482262db351ea8136616baf8afc8594d505a2a0932eb0c336d29395f53",
+      "verified": true
+    },
+    {
+      "path": "dist/routing-review/circuit.json",
+      "status": 200,
+      "sha256": "63076b482262db351ea8136616baf8afc8594d505a2a0932eb0c336d29395f53",
+      "verified": true
+    },
+    {
+      "path": "build/routing-review/circuit.json",
+      "status": 200,
+      "sha256": "63076b482262db351ea8136616baf8afc8594d505a2a0932eb0c336d29395f53",
+      "verified": true
+    },
+    {
+      "path": "CLOUD_HANDOFF.md",
+      "status": 200,
+      "sha256": "71de29a4f24ecf996384a755788f3b74cc194b3217477d98a13d29f2c0965585",
+      "verified": true
+    },
+    {
+      "path": "VALIDATION.md",
+      "status": 200,
+      "sha256": "c706ca2d131212da524d49c06200ea89665b476c55131639c0a74a718fb8e21c",
+      "verified": true
+    },
+    {
+      "path": "docs/BOARD-REVIEW.md",
+      "status": 200,
+      "sha256": "26024ef68e80739dd3b36e38649edb082a2f04e91236d60dece330dbdf59ff64",
+      "verified": true
+    },
+    {
+      "path": "docs/PROGRAMMING.md",
+      "status": 200,
+      "sha256": "8e5af69aaf743c32a3a4265521004ee79d3e4f9b0243ec8a7662bc0a6e5949ec",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.35-alpha.0/board-review-20261006/REVIEW.json",
+      "status": 200,
+      "sha256": "d1eecf8a147c216f52ff99ecbecb64f40f0db813c990692a9a9d231994208f1a",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.35-alpha.0/board-review-20261006/FABRICATION-WIDTH-TOLERANCE.json",
+      "status": 200,
+      "sha256": "a2672e9743a16c494141b23615e203dac237f1f9347a923d95362a610c6127bd",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.35-alpha.0/board-review-20261006/OFFICIAL-JLC-PARTS.json",
+      "status": 200,
+      "sha256": "6d1b29f6a3ba7cb23113f9e60d051c80164f07f3c9565fd0e04f0c7be9d309c3",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.35-alpha.0/board-review-20261006/PROGRAMMER-COMPATIBILITY.json",
+      "status": 200,
+      "sha256": "c5bc3559fef5518c9be53ba0aec5490f24e48caa65d73f87d9559bd750eacd5d",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.35-alpha.0/READINESS.json",
+      "status": 200,
+      "sha256": "29d937ddfb4d06f30f25077489ba384a23fa609cce2ca5c5502975a29042c545",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.35-alpha.0/PACKAGE-INVENTORY.json",
+      "status": 200,
+      "sha256": "04dbc2018214c236efe7ee335e88c984a92abd3f980b3693054ce80ee5456006",
+      "verified": true
+    },
+    {
+      "path": "build/qualification-review.zip",
+      "status": 200,
+      "sha256": "941f35cef9c0ed807994733d296768b6586399158fb4ffe0456caa79d2ef6072",
+      "verified": true
+    }
+  ],
+  "hosted_build_success_claimed": false,
+  "hardware_tested": false,
+  "prototype_fabrication_ready": false,
+  "completed_at_utc": "2026-10-06T12:09:02.823Z",
+  "cloud_smoke": {
+    "passed": true,
+    "context_files_verified": 5102,
+    "routing_archive_parts_verified": 4,
+    "scope": "Passed before this receipt-only commit; TypeScript, import pins, pinned CLI, Shapely/CadQuery and the complete context/archive checks."
+  },
+  "qualification_limits": {
+    "motor_tolerance_screen_passed": false,
+    "failed_motor_segments": 26,
+    "sourcing_all_fitted_parts_confirmed": false,
+    "hardware_programming_verified": false,
+    "native_width_warnings_retained": 30,
+    "native_pin_metadata_warnings_retained": 27
+  }
+}
