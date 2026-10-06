@@ -5,10 +5,8 @@ const circuit = JSON.parse(readFileSync("dist/index/circuit.json", "utf8"))
 const components = circuit.filter(
   (element) => element.type === "source_component",
 )
-assert.equal(components.length, 111)
+assert.equal(components.length, 109)
 const optionalPopulation = {
-  U4: "Default open-loop assembly: selected motor has no rear shaft for AS5600 magnet",
-  C6: "Supply bypass for optional U4; omit with encoder",
   R50: "CAN termination link: omit except on bus endpoints",
 }
 const records = components
@@ -33,7 +31,7 @@ const records = components
   .sort((left, right) =>
     left.reference.localeCompare(right.reference, undefined, { numeric: true }),
   )
-assert.equal(records.filter((component) => !component.fit_default).length, 3)
+assert.equal(records.filter((component) => !component.fit_default).length, 1)
 const directory = `evidence/rev-${revision}`
 writeFileSync(
   `${directory}/REVIEW-BOM.json`,
@@ -43,7 +41,7 @@ writeFileSync(
       status:
         "Design review only; supplier availability, footprints and assembly remain unqualified. Not a fabrication BOM.",
       population_basis:
-        "Optional unpopulated encoder is permitted by USER-BRIEF.md; no rear-shaft feedback for this motor. R50 is fitted only at CAN bus endpoints.",
+        "U4/C6 removed by user request. Open-loop motor control; retained I2C serves U9. R50 is fitted only at CAN bus endpoints.",
       pcb_component_count: records.length,
       default_fitted_count: records.filter((component) => component.fit_default)
         .length,

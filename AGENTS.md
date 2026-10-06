@@ -17,8 +17,8 @@ Inspect failure logs and change the actual routing approach before retrying.
 Keep the exact STEPPERONLINE 14HM11-0404S, existing imported component selection,
 35 × 35 mm four-layer outline, connector placement, and front carrier. Document
 any change necessary for a real routing/manufacturing defect. The earlier
-Phidgets/HOLRY/rear-shaft proposals are superseded. Encoder parts are DNP; the
-single front-shaft motor has no rear-shaft AS5600 arrangement.
+Phidgets/HOLRY/rear-shaft proposals are superseded. U4/C6 were removed by the user in revision 0.0.40-alpha.0; the
+single front-shaft motor has no encoder arrangement. Retain R2/R3 for U9 I2C.
 
 All purchased electronics must retain official JLCPCB imports. Never create,
 recreate, or patch imported symbols, footprints, pins, or pad mappings. Resolve

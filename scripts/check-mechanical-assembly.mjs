@@ -9,7 +9,7 @@ assert.equal(
   circuit.filter((element) => element.type === "pcb_board").length,
   1,
 )
-assert.equal(pcb.length, 111)
+assert.equal(pcb.length, 109)
 assert.equal(
   cad.length,
   109,
@@ -24,7 +24,7 @@ assert.deepEqual(
   dnp
     .map((component) => sourceById.get(component.source_component_id).name)
     .sort(),
-  ["C6", "R50", "U4"],
+  ["R50"],
 )
 assert.ok(
   dnp.every(
@@ -97,7 +97,7 @@ writeFileSync(
       pcb_component_count: pcb.length,
       cad_entry_count: cad.length,
       default_fitted_count: pcb.length - dnp.length,
-      dnp_references: ["C6", "R50", "U4"],
+      dnp_references: ["R50"],
       exact_motor_reference: "passed",
       genuine_step_model_count: cad.length - missingModels.length,
       missing_models: missingModels,

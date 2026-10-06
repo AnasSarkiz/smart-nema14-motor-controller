@@ -1,3 +1,16 @@
+# Current continuation — 0.0.40-alpha.0
+
+U4 AS5600 and C6 removed by user request. Keep R2/R3: U9 TMP112 still uses I2C.
+Read docs/ENCODER-REMOVAL.md and current VALIDATION.md. Shared supply and bus trees
+are reconnected at remaining pads; the central GND return is retained. Fresh
+native copper has327 traces,224 through vias,82 pours,zero errors,82/82 joined
+nets and zero strict geometry violations. Programmer wiring checks pass.
+Existing qualification blockers and untested hardware remain.
+**PROTOTYPE FABRICATION READY: NO.** Preserve unused official imports/models and
+historical evidence; they do not instantiate the removed parts in the board.
+
+---
+
 # Schematic component explanations — 0.0.38-alpha.0
 
 All 111 electronic references now have native schematic purpose notes on their

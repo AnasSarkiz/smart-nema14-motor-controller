@@ -4,7 +4,7 @@ import { type BoardViewProps } from "../src/mechanics/preview-placement"
 import { InterfacesSheet } from "../src/interfaces/InterfacesSheet"
 import { ProgrammingSheet } from "../src/programming/ProgrammingSheet"
 import { CanSheet } from "../src/can/CanSheet"
-import { EncoderSheet } from "../src/encoder/EncoderSheet"
+import { I2cSheet } from "../src/interfaces/I2cSheet"
 import { McuSheet } from "../src/mcu/McuSheet"
 import { MotorDriverSheet } from "../src/motor-driver/MotorDriverSheet"
 import { UsbPdSheet } from "../src/usb-pd/UsbPdSheet"
@@ -636,7 +636,7 @@ export default function SmartNema14MotorController({
       />
       <ControllerMount />
       <McuSheet mechanicalPreview={mechanicalPreview} />
-      <EncoderSheet mechanicalPreview={mechanicalPreview} />
+      <I2cSheet mechanicalPreview={mechanicalPreview} />
       <CanSheet mechanicalPreview={mechanicalPreview} />
       <LogicBuckSheet mechanicalPreview={mechanicalPreview} />
       <MotorDriverSheet mechanicalPreview={mechanicalPreview} />

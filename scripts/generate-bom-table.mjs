@@ -141,7 +141,7 @@ const table = rows.map((row) => {
 })
 writeFileSync(
   "BOM-CURRENT.md",
-  `# Complete candidate BOM — ${revision}\n\n111 references / 108 default fitted / 44 exact identities. Design-review BOM, not an assembly or fabrication approval. Stock is the CLI catalogue's indexed display, not an assembler reservation. Manufacturer identity is retained from the previously audited raw supplier record; MPN, package and classification are checked against the current exact catalogue match. Missing exact datasheet reviews remain explicit.\n\n| Ref | Function / connected nets | Manufacturer | MPN | Package | JLCPCB/LCSC | Class | Datasheet/reference | Notes |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n${table.join("\n")}\n`,
+  `# Complete candidate BOM — ${revision}\n\n109 references / 108 default fitted / 43 exact identities. Design-review BOM, not an assembly or fabrication approval. Stock is the CLI catalogue's indexed display, not an assembler reservation. Manufacturer identity is retained from the previously audited raw supplier record; MPN, package and classification are checked against the current exact catalogue match. Missing exact datasheet reviews remain explicit.\n\n| Ref | Function / connected nets | Manufacturer | MPN | Package | JLCPCB/LCSC | Class | Datasheet/reference | Notes |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n${table.join("\n")}\n`,
 )
 console.log(
   `Wrote complete ${rows.length}-reference candidate table with explicit review limits.`,

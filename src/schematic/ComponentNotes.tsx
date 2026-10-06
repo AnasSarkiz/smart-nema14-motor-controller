@@ -10,9 +10,7 @@ export const componentNotes = {
     "R1: 10 kohm; holds NRST high when reset is released.",
     "C5: 100 nF; filters noise on the NRST reset line.",
   ],
-  Encoder: [
-    "U4: AS5600 magnetic angle sensor; DNP in this assembly.",
-    "C6: 100 nF; encoder supply bypass; DNP with U4.",
+  I2C: [
     "R2: 4.7 kohm; pulls I2C SCL up to 3.3 V.",
     "R3: 4.7 kohm; pulls I2C SDA up to 3.3 V.",
   ],

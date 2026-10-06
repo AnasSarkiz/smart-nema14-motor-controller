@@ -20,7 +20,7 @@ const notes = circuit.filter(
       element.text.startsWith(`${component.name}: `),
     ),
 )
-assert.equal(components.length, 111, "Purchased-reference coverage changed")
+assert.equal(components.length, 109, "Purchased-reference coverage changed")
 assert.equal(notes.length, components.length, "Missing or duplicate purposes")
 assert.equal(sheets.length, 9, "Expected nine native schematic sheets")
 
@@ -43,7 +43,7 @@ for (const component of components) {
   assert.ok(note.text.length > component.name.length + 15)
   assert.equal(note.anchor, "left")
   assert.ok(note.font_size >= 0.2, "Purpose text is too small")
-  if (["U4", "C6", "R50"].includes(component.name)) {
+  if (["R50"].includes(component.name)) {
     assert.match(note.text, /DNP/, `${component.name} population is unclear`)
   }
   coverage.push({
@@ -116,5 +116,5 @@ if (process.argv[3]) {
   writeFileSync(process.argv[3], `${JSON.stringify(report, null, 2)}\n`)
 }
 console.log(
-  "111 component explanations on nine A4 sheets; coverage/layout pass",
+  "109 component explanations on nine A4 sheets; coverage/layout pass",
 )

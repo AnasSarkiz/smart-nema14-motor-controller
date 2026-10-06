@@ -1,7 +1,7 @@
 # Programming this controller with the standard JST programmer
 
 Reviewed 2026-10-06 against the public standard-jst-programmer **0.8.0** source
-and controller **0.0.36-alpha.0** Circuit JSON. This verifies wiring; no physical
+and controller **0.0.40-alpha.0** Circuit JSON. This verifies wiring; no physical
 flashing or maximum SWD speed has been demonstrated.
 
 Use the programmer's **J3 five-pin** JST SH port and a **straight-through

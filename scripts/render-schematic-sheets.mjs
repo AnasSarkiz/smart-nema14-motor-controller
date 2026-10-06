@@ -12,7 +12,7 @@ const sheets = circuitJson.filter(
 )
 const expectedSheets = [
   "MCU",
-  "Encoder",
+  "I2C",
   "CAN",
   "LogicPower",
   "MotorDriver",

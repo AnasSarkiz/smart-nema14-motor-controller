@@ -1,0 +1,25 @@
+{
+  "revision": "0.0.40-alpha.0",
+  "baseline_sha256": "a2a836a5ceae27967440cb6a0e324a26426f9ada311d1a73391ced7507bcf3b7",
+  "canonical_sha256": "fc2053b30fb148567bf7958298ee1ff3a499b33530f79c944b0476b1bc1b1071",
+  "removed_references": [
+    "C6",
+    "U4"
+  ],
+  "surviving_reference_count": 109,
+  "default_fitted_count": 108,
+  "surviving_purchased_pins": 411,
+  "all_surviving_pin_partitions_unchanged": true,
+  "all_surviving_placements_pads_and_cad_unchanged": true,
+  "unaffected_fixed_copper_net_layer_groups": 267,
+  "pour_rebuild_scope": "Native pours regenerate cutouts around removed U4/C6 pads and relocated vias. Fresh strict filled-copper checks verify all 82 networks; exact pour preservation is not claimed.",
+  "maximum_unaffected_copper_area_difference_mm2": 0.0,
+  "affected_nets": [
+    "GND",
+    "I2C_SCL",
+    "I2C_SDA",
+    "V3V3"
+  ],
+  "hardware_tested": false,
+  "prototype_fabrication_ready": false
+}

@@ -391,28 +391,6 @@
       ]
     },
     {
-      "name": "SDA_ENCODER_FILLED",
-      "owner": {
-        "reference": "U4",
-        "pin_number": 6
-      },
-      "net": "I2C_SDA",
-      "x": -0.635,
-      "y": 3.2,
-      "owner_layer": "bottom",
-      "hole_diameter_mm": 0.2,
-      "outer_diameter_mm": 0.38,
-      "construction": "filled_capped_pad_contact",
-      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
-      "minimum_foreign_drill_to_pad_mm": 0.25,
-      "branches": [
-        {
-          "selector": ".U4 > .pin6",
-          "points": []
-        }
-      ]
-    },
-    {
       "name": "SWCLK_SERIES_FILLED",
       "owner": {
         "reference": "R21",
@@ -1446,29 +1424,6 @@
       "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
       "minimum_foreign_drill_to_pad_mm": 0.25,
       "branches": [],
-      "design_reason": "Individually owned native reconnection after measured signal-routing cuts split a ground/return island. Ordinary .30/.60 barrel clearance is unavailable here; independent ownership, drill, annulus, fill and USB checks are mandatory."
-    },
-    {
-      "name": "GND_ENCODER_DIR_CONTACT",
-      "net": "GND",
-      "owner": {
-        "reference": "U4",
-        "pin_number": 8
-      },
-      "owner_layer": "bottom",
-      "x": 1.8207994,
-      "y": 2.43500793,
-      "hole_diameter_mm": 0.15,
-      "outer_diameter_mm": 0.38,
-      "construction": "filled_capped_pad_contact",
-      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
-      "minimum_foreign_drill_to_pad_mm": 0.25,
-      "branches": [
-        {
-          "selector": ".U4 > .pin8",
-          "points": []
-        }
-      ],
       "design_reason": "Individually owned native reconnection after measured signal-routing cuts split a ground/return island. Ordinary .30/.60 barrel clearance is unavailable here; independent ownership, drill, annulus, fill and USB checks are mandatory."
     },
     {

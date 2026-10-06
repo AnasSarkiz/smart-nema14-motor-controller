@@ -52,12 +52,10 @@ for (const [ref, pin, net] of [
   ["U1", 45, "CAN_TX"],
   ["U1", 47, "I2C_SCL"],
   ["U1", 48, "I2C_SDA"],
-  ["U4", 1, "V3V3"],
-  ["U4", 2, "V3V3"],
-  ["U4", 4, "GND"],
-  ["U4", 6, "I2C_SDA"],
-  ["U4", 7, "I2C_SCL"],
-  ["U4", 8, "GND"],
+  ["R2", 1, "V3V3"],
+  ["R2", 2, "I2C_SCL"],
+  ["R3", 1, "V3V3"],
+  ["R3", 2, "I2C_SDA"],
   ["U6", 1, "CAN_TX"],
   ["U6", 2, "GND"],
   ["U6", 3, "V3V3"],
@@ -327,7 +325,7 @@ for (const [ref, pin, net] of [
 
 assert.equal(
   components.length,
-  111,
+  109,
   "Do not validate an empty or unexpected draft",
 )
 assert.ok(
@@ -336,6 +334,19 @@ assert.ok(
   ),
   "Every instantiated part must carry a JLCPCB supplier number",
 )
+for (const reference of ["U4", "C6"]) {
+  assert.ok(
+    !components.some((component) => component.name === reference),
+    `${reference} encoder part must remain removed`,
+  )
+}
+for (const reference of ["R2", "R3"]) {
+  assert.equal(
+    components.find((component) => component.name === reference)?.resistance,
+    4700,
+    `${reference} must retain the temperature bus pull-up`,
+  )
+}
 const sheets = circuitJson.filter(
   (element) => element.type === "schematic_sheet",
 )
@@ -462,5 +473,5 @@ assert.equal(
   0,
 )
 console.log(
-  "Draft checks passed: manufacturer pin connections, 111 supplier parts, nine A4 sheets, protected programming paths, current-limit values and separate supply rails; no PCB output.",
+  "Draft checks passed: manufacturer pin connections, 109 supplier parts, nine A4 sheets, protected programming paths, current-limit values and separate supply rails; no PCB output.",
 )

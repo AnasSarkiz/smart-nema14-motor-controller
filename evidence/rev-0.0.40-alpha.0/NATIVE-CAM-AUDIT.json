@@ -1,0 +1,130 @@
+{
+  "canonical_sha256": "e38b284e997482f78cc5575e448647a5f82756447d0c9b87da358e259c710bf0",
+  "export_method": "Pinned tsci export directly from the unchanged canonical Circuit JSON, --format gerbers; no KiCad conversion, replacement router or generated-JSON edits.",
+  "drills": [
+    {
+      "file": "drill-L1-L4.drl",
+      "actual_hits": 224,
+      "expected_hits": 224,
+      "duplicate_hits": 0,
+      "exact_source_match": true
+    },
+    {
+      "file": "drill_npth.drl",
+      "actual_hits": 6,
+      "expected_hits": 6,
+      "duplicate_hits": 0,
+      "exact_source_match": true
+    }
+  ],
+  "source_references": 109,
+  "default_fitted_references": 108,
+  "dnp_references": [
+    "R50"
+  ],
+  "bom_rows": 108,
+  "pick_and_place_rows": 108,
+  "unverified_supplier_rotations": [
+    "J_USB",
+    "LED_POWER",
+    "LED_STATUS",
+    "LED_FAULT"
+  ],
+  "violations": [],
+  "drill_population_identity_checks_passed": true,
+  "full_cam_review_complete": false,
+  "prototype_fabrication_ready": false,
+  "remaining": [
+    "Supplier/CAM approval of named small filled/capped vias, plating and exact stackup",
+    "Complete copper/outline/mask/paste Gerber geometry and assembler orientation review",
+    "Silkscreen cleanup",
+    "Complete loaded power paths, via current and thermal qualification"
+  ],
+  "files": [
+    {
+      "path": ".publication/fix40/native-cam/B_Cu.gbr",
+      "bytes": 223245,
+      "sha256": "4da142cac505d93147f1a71bb1c65a071161f13db9abb4001c146fc86eda52c2"
+    },
+    {
+      "path": ".publication/fix40/native-cam/B_Fab.gbr",
+      "bytes": 2127,
+      "sha256": "09dc80b85a6ee1716addaf32db8094384aa507b459cd3ac2e1f9135bc2368a5b"
+    },
+    {
+      "path": ".publication/fix40/native-cam/B_Mask.gbr",
+      "bytes": 11289,
+      "sha256": "3a6cb299d62bd531c388f9a7fbdce20fdd214737142327e104fc5cb3851e59e9"
+    },
+    {
+      "path": ".publication/fix40/native-cam/B_Paste.gbr",
+      "bytes": 10226,
+      "sha256": "422d6c461b25849902154deedc0859a365c0139045295e904fa488c8fe148d3f"
+    },
+    {
+      "path": ".publication/fix40/native-cam/B_SilkScreen.gbr",
+      "bytes": 40342,
+      "sha256": "98c38a2c00191f0af211c813e96eb9d38d8e75f53e1b44c54ecdf5463c2b7086"
+    },
+    {
+      "path": ".publication/fix40/native-cam/Edge_Cuts.gbr",
+      "bytes": 493,
+      "sha256": "bb1a68df02cb3048d96624ef72c171390e4bc3a2e600530d949445f49b797de0"
+    },
+    {
+      "path": ".publication/fix40/native-cam/F_Cu.gbr",
+      "bytes": 244418,
+      "sha256": "464382ff840d41822402951425e56eee2515ce41dd3e2b4c775db1f4af9eceab"
+    },
+    {
+      "path": ".publication/fix40/native-cam/F_Fab.gbr",
+      "bytes": 5664,
+      "sha256": "24b079d6f2e35700df574fc4edef8eed04dcd91c4e294091d6f614c049e0a1c5"
+    },
+    {
+      "path": ".publication/fix40/native-cam/F_Mask.gbr",
+      "bytes": 14100,
+      "sha256": "6e8fb362669467d4e2cd2e96bfa75ad6952ac8910d3224616b0cffd26922c656"
+    },
+    {
+      "path": ".publication/fix40/native-cam/F_Paste.gbr",
+      "bytes": 5897,
+      "sha256": "84366e892d6cdecfa1e537fd28526ce35013f5a328f3a58448d28f8d15e52314"
+    },
+    {
+      "path": ".publication/fix40/native-cam/F_SilkScreen.gbr",
+      "bytes": 28083,
+      "sha256": "6d405699b146bfdbace3fd86f2c37cc9c4873ff351b77c4d55dbcd7506ae1d63"
+    },
+    {
+      "path": ".publication/fix40/native-cam/In1_Cu.gbr",
+      "bytes": 204769,
+      "sha256": "a7d7b9aa09f9471f18d0327e48d137318fc4905ba49c36cacb172098da54bc7d"
+    },
+    {
+      "path": ".publication/fix40/native-cam/In2_Cu.gbr",
+      "bytes": 128478,
+      "sha256": "58df987a39df1e55edcba28b7289a0ba6eb87f4754ccad43ca3b2409e51610c0"
+    },
+    {
+      "path": ".publication/fix40/native-cam/bom.csv",
+      "bytes": 4222,
+      "sha256": "151dd13d34051e389acd5c58d038098ea40237b309e96de5c5ffcfdd01e4a0dc"
+    },
+    {
+      "path": ".publication/fix40/native-cam/drill-L1-L4.drl",
+      "bytes": 4160,
+      "sha256": "8674cb98d5c289e1893731d582bde686479e14e63fb3754de4f6fdc46a6bae66"
+    },
+    {
+      "path": ".publication/fix40/native-cam/drill_npth.drl",
+      "bytes": 501,
+      "sha256": "0cfa6fccba523fb5ee68524b44152819a23ce456e4efc50768acec0ab52f65dd"
+    },
+    {
+      "path": ".publication/fix40/native-cam/pick_and_place.csv",
+      "bytes": 3043,
+      "sha256": "c3815065c110c7d2d9f5a426a73a79c2cad4cb31facb9ba4a31433ea072c801a"
+    }
+  ]
+}

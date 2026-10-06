@@ -9,7 +9,7 @@ import { type BoardViewProps } from "./mechanics/preview-placement"
 import { InterfacesSheet } from "./interfaces/InterfacesSheet"
 import { ProgrammingSheet } from "./programming/ProgrammingSheet"
 import { CanSheet } from "./can/CanSheet"
-import { EncoderSheet } from "./encoder/EncoderSheet"
+import { I2cSheet } from "./interfaces/I2cSheet"
 import { McuSheet } from "./mcu/McuSheet"
 import { MotorDriverSheet } from "./motor-driver/MotorDriverSheet"
 import { UsbPdSheet } from "./usb-pd/UsbPdSheet"
@@ -816,7 +816,6 @@ export default function SmartNema14MotorController({
               "EFUSE_FLT_USB_RETURN_TRANSFER_02",
               "GND_CAN_BUFFER_BULK_CONTACT",
               "GND_DRIVER_PLANE_RECONNECT",
-              "GND_ENCODER_DIR_CONTACT",
               "RTN_C33_TRANSFER_01",
               "RTN_C33_TRANSFER_02",
               "POWER_HIGH_MCU_FILLED",
@@ -846,7 +845,7 @@ export default function SmartNema14MotorController({
       )}
       <ControllerMount />
       <McuSheet mechanicalPreview={mechanicalPreview} />
-      <EncoderSheet mechanicalPreview={mechanicalPreview} />
+      <I2cSheet mechanicalPreview={mechanicalPreview} />
       <CanSheet mechanicalPreview={mechanicalPreview} />
       <LogicBuckSheet mechanicalPreview={mechanicalPreview} />
       <MotorDriverSheet mechanicalPreview={mechanicalPreview} />

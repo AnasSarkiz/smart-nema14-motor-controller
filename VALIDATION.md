@@ -1,3 +1,38 @@
+# Encoder removal — 0.0.40-alpha.0, 2026-10-06
+
+User requested removal of the unused encoder. U4/C6 are absent from schematic
+and PCB; R2/R3 remain required by U9's temperature-monitoring I2C bus. The Encoder
+sheet is now I2C with native explanations for both pull-ups. Motor control is
+open-loop. Shared supply and bus trees join remaining real pads; a required
+central ground return is retained. SDA/ground junctions now use relocated
+ordinary 0.30/0.60 mm through vias. Official unused imports/models and historical
+references/evidence remain intact.
+
+Fresh build:327 traces/224 vias/82 pours;0 native errors,opens,dangling items
+or shorts. All82 physical networks pass strict filled-copper connectivity;
+strict track/drill/edge/keepout geometry has zero violations and66 exact named
+filled features. All411 surviving purchased-pin partitions and remaining
+placements,pads,CAD are preserved;267 unaffected fixed-copper groups match
+exactly. Generated pour cutouts are requalified. Programmer38 pin checks,
+width/motor-tolerance and USB path screens pass their stated analytical scope.
+Fresh native review Gerbers/drills/BOM/CPL have224 unique plated drills,six
+NPTH and108 fitted references;four supplier rotations remain unverified.
+Fresh PCB-disabled manufacturer-pin and exploded-assembly/model inventory checks
+pass. The minimal runtime full build and all five cached native source checks
+pass; all four direct Gerber layers match the source with no measured net losses.
+Nine sheets and all four physical layer renders were viewed. Existing imported
+TVS rotation/style,automatic label overlaps,30 width/24 metadata/four refdes
+warnings and all previous fabrication/power/thermal/sourcing blockers remain.
+No complete UI style or hardware/programming validation is claimed.
+
+Evidence:evidence/rev-0.0.40-alpha.0/; [removal review](docs/ENCODER-REMOVAL.md).
+The public release and immutable checksums are recorded in PUBLICATION.json
+once verified. Stages4/5/6 remain incomplete for the previous unresolved
+constraints;firmware and hardware tests are pending.
+**PROTOTYPE FABRICATION READY: NO.**
+
+---
+
 # Standard USB schematic and six-request review — 0.0.39-alpha.0, 2026-10-06
 
 Native USB-C standard schematic reuses unchanged official C5143397 footprint,

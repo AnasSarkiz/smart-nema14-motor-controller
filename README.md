@@ -1,6 +1,13 @@
 # Smart NEMA 14 Motor Controller
 
-Revision **0.0.39-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
+Revision **0.0.40-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
+
+U4 (AS5600) and its dedicated bypass C6 have been removed at the user's request.
+The selected single-front-shaft motor has no encoder arrangement; this is an
+open-loop controller. R2/R3 remain necessary pull-ups for U9's TMP112 temperature
+sensor. The former Encoder sheet is now the I2C bus sheet. Shared supply/bus
+copper is reconnected through real remaining pads, and the necessary central
+ground return is retained with ordinary through vias. See [removal review](docs/ENCODER-REMOVAL.md).
 
 The USB-C schematic uses native `standard="usb_c"` while retaining the exact
 C5143397 import's footprint, supplier identity and all sixteen pin groups. Five
@@ -11,29 +18,29 @@ placement overlaps remain visible; this is not complete schematic qualification.
 
 All 224 current vias are through plated. The requested uniform 0.30 mm hole /
 0.45 mm pad trial produces 109 native errors and 217 strict clearance violations;
-it is rejected. Current copper retains 156 ordinary 0.30/0.60, 64 filled/capped
-0.20/0.38 and four 0.15/0.38 mm vias. VM/USB input power wires use outer layers;
+it is rejected. Current copper retains 158 ordinary 0.30/0.60, 63 filled/capped
+0.20/0.38 and three 0.15/0.38 mm vias. VM/USB input power wires use outer layers;
 some 3.3 V and all four motor nets still include inner wires. Two bounded native
 Pipeline9 outer-layer candidates produced no adoptable route. No fabricated
 success or completed resizing/rerouting is claimed. Four fitted part codes still
 lack exact public stock matches; all assembler allocation remains unverified.
 See [the six-request review](docs/BOARD-REVIEW-39.md).
 
-[Every component now has a purpose note](docs/SCHEMATIC-NOTES.md) on its native schematic sheet, including values and DNP assembly notes. The right-side panels explain all 111 references without changing PCB geometry or electrical connections.
+[Every component now has a purpose note](docs/SCHEMATIC-NOTES.md) on its native schematic sheet, including values and DNP assembly notes. The right-side panels explain all 109 references without changing PCB geometry or electrical connections.
 
-35 × 35 mm, four layers, 111 electronic references / 108 default fitted, nine native A4 schematic sheets. Exact motor: **STEPPERONLINE 14HM11-0404S**, 0.4 A/phase, single front shaft. U4/C6 encoder parts and R50 are marked DNP in source and excluded from default assembly exports. Their imported footprints, pads and wiring remain intact.
+35 × 35 mm, four layers, 109 electronic references / 108 default fitted, nine native A4 schematic sheets. Exact motor: **STEPPERONLINE 14HM11-0404S**, 0.4 A/phase, single front shaft. U4/C6 are removed from the schematic and PCB. Only R50 remains DNP in the default assembly. The unused official AS5600 import/model files and historical evidence are preserved.
 
 STM32G0B1 provides USB FS, UCPD, classical CAN, STEP/DIR/ENABLE, limit inputs, SWD and temperature monitoring. TMC2209 drives the motor; TCPP01 protects USB; TPS26600 provides input protection/current limiting and AP63203 generates 3.3 V. Hardware defaults keep the motor disabled and CAN in standby. Firmware is pending.
 
-Updated pinned toolchain: tscircuit 0.0.2745, CLI 0.1.2251, core 0.0.2095 and native Pipeline9 dependency 0.0.959. R20/R21/R22 now use official C25076 100 Ω imports for the standard JST programmer; placements and the five-pin order are preserved. Cluttered automatic reference text is replaced by four connector labels; all 111 identities remain in the assembly drawing.
+Updated pinned toolchain: tscircuit 0.0.2745, CLI 0.1.2251, core 0.0.2095 and native Pipeline9 dependency 0.0.959. R20/R21/R22 now use official C25076 100 Ω imports for the standard JST programmer; placements and the five-pin order are preserved. Cluttered automatic reference text is replaced by four connector labels; all 109 identities remain in the assembly drawing.
 
 Revision 0.0.37 fixes the native Gerber ground mismatch and measures all four
 owned connector labels clear of mask openings, with 0.198 mm pens. Supplier
 silkscreen and ordering blockers remain; see [current validation](VALIDATION.md).
 
-Fresh native build: **334 traces / 224 vias / 82 pours**, **zero native errors or shorts**, and **82/82 physical nets joined**. Independent actual-copper spacing, drills, board edges, NPTH and filled-pour checks pass, including exact owners of all 68 declared filled features. All 421 purchased-pin wiring partitions are preserved. Fresh [Circuit JSON](dist/index/circuit.json) is included in the package; its exact checksum is recorded in [build status](build/routing-review/BUILD-STATUS.json) and publication receipts.
+Fresh native build: **327 traces / 224 vias / 82 pours**, **zero native errors or shorts**, and **82/82 physical nets joined**. Independent actual-copper spacing, drills, board edges, NPTH and filled-pour checks pass, including exact owners of all 66 declared filled features. All 411 surviving purchased-pin wiring partitions are preserved. Fresh [Circuit JSON](dist/index/circuit.json) is included in the package; its exact checksum is recorded in [build status](build/routing-review/BUILD-STATUS.json) and publication receipts.
 
-Every nonzero trace segment is inventoried: 2,218 segments across 82 nets meet the 0.15 mm width floor. All four motor nets now use ≥0.27 mm inner segments and pass the stated 0.34245 A analytical screen with the manufacturer’s −20% width tolerance; complete rail/pour/via current and thermal qualification remains pending. Thirty combined-route-tree width warnings are retained; all 34 active fanout corridors have their requested copper width, but checking the minimum width alone does not qualify loaded power paths. USB skew is 0.38144 mm and its limited return/impedance screens pass. These are analytical checks, not measured hardware ratings.
+Every nonzero trace segment is inventoried: 2,227 segments across 82 nets meet the 0.15 mm width floor. All four motor nets now use ≥0.27 mm inner segments and pass the stated 0.34245 A analytical screen with the manufacturer’s −20% width tolerance; complete rail/pour/via current and thermal qualification remains pending. Thirty combined-route-tree width warnings are retained; all 34 active fanout corridors have their requested copper width, but checking the minimum width alone does not qualify loaded power paths. USB skew is 0.38144 mm and its limited return/impedance screens pass. These are analytical checks, not measured hardware ratings.
 
 Use direct pinned tscircuit export for review files:
 

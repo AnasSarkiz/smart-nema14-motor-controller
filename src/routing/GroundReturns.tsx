@@ -33,18 +33,6 @@ export function GroundReturns() {
           { x: 0.25, y: -0.75 },
         ]}
       />
-      <trace
-        name="DNP_ENCODER_GROUND_RECONNECT"
-        from=".GND_STITCH_EFUSE > .bottom"
-        to=".U4 > .pin4"
-        thickness="0.15mm"
-        pcbPathRelativeTo=".GND_STITCH_EFUSE > .bottom"
-        pcbPath={[
-          { x: 0.4, y: 0.4 },
-          { x: 1.6, y: 0.4 },
-          { x: 1.6, y: 1.8 },
-        ]}
-      />
       <copperpour
         name="EFUSE_RTN_CONTROL_ISLAND"
         layer="bottom"
@@ -197,8 +185,16 @@ export function GroundReturns() {
         pcbPathRelativeTo=".GND_STITCH_EFUSE > .bottom"
         pcbPath={[{ x: 0, y: -0.84246 }]}
       />
+      <trace
+        name="INTERFACE_MODE_GROUND_ESCAPE"
+        from=".R46 > .pin2"
+        to="net.GND"
+        thickness="0.15mm"
+        pcbPathRelativeTo=".R46 > .pin2"
+        pcbPath={[{ x: -1.2, y: 0 }]}
+      />
       <copperpour
-        name="ENCODER_DNP_GND_REGION"
+        name="BOTTOM_GND_CENTER_RETURN"
         layer="bottom"
         connectsTo="net.GND"
         clearance="0.155mm"
@@ -211,18 +207,21 @@ export function GroundReturns() {
           { x: -2.8, y: 0.2 },
         ]}
       />
-      <trace
-        name="INTERFACE_MODE_GROUND_ESCAPE"
-        from=".R46 > .pin2"
-        to="net.GND"
-        thickness="0.15mm"
-        pcbPathRelativeTo=".R46 > .pin2"
-        pcbPath={[{ x: -1.2, y: 0 }]}
-      />
       <via
-        name="GND_STITCH_ENCODER"
+        name="GND_STITCH_CENTER"
         pcbX={-1}
         pcbY={-1}
+        fromLayer="top"
+        toLayer="bottom"
+        tented
+        holeDiameter="0.30mm"
+        outerDiameter="0.60mm"
+        connectsTo="net.GND"
+      />
+      <via
+        name="GND_STITCH_INTERFACE_RETURN"
+        pcbX={1.8807994}
+        pcbY={2.2950079}
         fromLayer="top"
         toLayer="bottom"
         tented
