@@ -2,6 +2,9 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 export PATH="$PWD/.cloud-tools/bun/bin:$PATH"
+export XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$PWD/.cloud-tools/config}"
+export XDG_CACHE_HOME="${XDG_CACHE_HOME:-$PWD/.cloud-tools/cache}"
+export XDG_DATA_HOME="${XDG_DATA_HOME:-$PWD/.cloud-tools/share}"
 [[ "$(bun --version)" == 1.3.9 ]]
 bun node_modules/@tscircuit/cli/dist/cli/main.js --version
 bun run typecheck

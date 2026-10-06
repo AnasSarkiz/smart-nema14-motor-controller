@@ -11,7 +11,7 @@ from pathlib import Path
 import pcbnew
 import wx
 
-application=wx.App(False)
+application = wx.AppConsole() if sys.platform == "linux" else wx.App(False)
 folder=Path(sys.argv[1]); selection=json.loads((folder/'selected-nets.json').read_text())
 audit=json.loads((folder/'KICAD-INTERCHANGE-AUDIT.json').read_text())
 assert audit['status']=='pad geometry, connectivity partitions and manual copper match'
@@ -21,7 +21,7 @@ for zone in list(board.Zones()):
 # Same native USB reference envelopes; reserve L2 for the return underneath the pair.
 regions=[[-1.6,-10.65,2.15,-9.1],[.4,-9.15,1.55,-6.3],[1.4,-7.75,4.2,-6.25],[2.12,-6.45,3.23,6.35],[2.12,5.15,7.65,7.78]]
 for left,bottom,right,top in regions:
- z=pcbnew.ZONE(board);z.SetIsRuleArea(True);z.SetLayer(pcbnew.In1_Cu);z.SetDoNotAllowTracks(True);z.SetDoNotAllowVias(True);z.SetDoNotAllowPads(False);z.SetDoNotAllowZoneFills(False);z.Outline().NewOutline()
+ z=pcbnew.ZONE(board);z.SetIsRuleArea(True);z.SetLayer(pcbnew.In1_Cu);z.SetDoNotAllowTracks(True);z.SetDoNotAllowVias(True);z.SetDoNotAllowPads(False);z.SetDoNotAllowCopperPour(False);z.Outline().NewOutline()
  for x,y in [[left,bottom],[right,bottom],[right,top],[left,top]]:z.Outline().Append(pcbnew.FromMM(100+x),pcbnew.FromMM(100-y))
  board.Add(z)
 reference_path = folder / 'routing-reference-keepouts.json'
@@ -34,7 +34,7 @@ for reference in additional_references:
  z.SetDoNotAllowTracks(True)
  z.SetDoNotAllowVias(True)
  z.SetDoNotAllowPads(False)
- z.SetDoNotAllowZoneFills(False)
+ z.SetDoNotAllowCopperPour(False)
  z.Outline().NewOutline()
  for x, y in reference['outline']:
   z.Outline().Append(pcbnew.FromMM(100+x), pcbnew.FromMM(100-y))
@@ -92,6 +92,31 @@ def is_explicit_native_feature(track):
   return any(abs(x-fx)<.000002 and abs(y-fy)<.000002 and abs(pcbnew.ToMM(track.GetDrillValue())-hole)<.000002 and abs(pcbnew.ToMM(track.GetWidth(pcbnew.F_Cu))-outer)<.000002 for fx,fy,hole,outer in fixed_native_vias)
  actual = sorted([(round(pcbnew.ToMM(track.GetStart().x)-100,5), round(100-pcbnew.ToMM(track.GetStart().y),5)), (round(pcbnew.ToMM(track.GetEnd().x)-100,5), round(100-pcbnew.ToMM(track.GetEnd().y),5))])
  return any(actual == sorted([(round(a['x'],5),round(a['y'],5)),(round(b['x'],5),round(b['y'],5))]) and track.GetLayer() == layer_names[a['layer']] and abs(pcbnew.ToMM(track.GetWidth())-a['width'])<.000002 for a,b in fixed_native_segments)
+
+# The official export repeats shared native contacts. Collapse only exact
+# coincident planning objects before the router, which also deduplicates them.
+# The original export/native audit above remains mandatory and unchanged.
+def planning_copper_signature(track):
+ if track.GetClass() == 'PCB_VIA':
+  return ('via', track.GetNetCode(), track.GetPosition().x, track.GetPosition().y,
+          track.GetWidth(pcbnew.F_Cu), track.GetDrillValue(), track.TopLayer(), track.BottomLayer())
+ endpoints = sorted([(track.GetStart().x,track.GetStart().y), (track.GetEnd().x,track.GetEnd().y)])
+ return ('wire', track.GetNetCode(), track.GetLayer(), track.GetWidth(), *endpoints[0], *endpoints[1])
+
+seen_planning_copper = set()
+coincident_copies_removed = []
+for track in list(board.GetTracks()):
+ signature = planning_copper_signature(track)
+ if signature in seen_planning_copper:
+  coincident_copies_removed.append(signature)
+  board.Delete(track)
+ else:
+  seen_planning_copper.add(signature)
+assert seen_planning_copper == {planning_copper_signature(track) for track in board.GetTracks()}
+(folder/'ROUTING-COINCIDENT-CLEANUP.json').write_text(json.dumps({
+ 'scope':'Planning interchange only; exact coincident copies removed, every unique net/layer/endpoint/width/drill/span signature retained. No native Circuit JSON or purchased pad is changed.',
+ 'unique_physical_copper_objects':len(seen_planning_copper),
+ 'coincident_copies_removed':coincident_copies_removed},indent=2)+'\n')
 
 removed_objects = 0
 for track in list(board.GetTracks()):

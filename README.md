@@ -1,12 +1,30 @@
 # Smart NEMA 14 Motor Controller
 
-Revision **0.0.34-alpha.0**, 2026-10-05. **Incomplete routing prototype; not fabrication ready; not hardware tested.**
+Revision **0.0.35-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
 
-35 × 35 mm, four layers, 111 electronic references / 108 default fitted, nine native A4 schematic sheets. Exact motor: **STEPPERONLINE 14HM11-0404S**, 0.4 A/phase, 25 Ω, 24 mH, 0.9°, single front shaft. U4/C6 encoder parts and the R50 CAN endpoint link are DNP by default. The front carrier uses the official motor geometry.
+35 × 35 mm, four layers, 111 electronic references / 108 default fitted, nine native A4 schematic sheets. Exact motor: **STEPPERONLINE 14HM11-0404S**, 0.4 A/phase, single front shaft. U4/C6 encoder parts and R50 are marked DNP in source and excluded from default assembly exports. Their imported footprints, pads and wiring remain intact.
 
-STM32G0B1 provides USB FS, UCPD, classical CAN, STEP/DIR/ENABLE, limit inputs, SWD and temperature monitoring. TMC2209 drives the motor; TCPP01 protects USB; TPS26600 provides input protection/current limiting and AP63203 generates 3.3 V. Firmware and hardware tests remain pending. Hardware defaults keep the motor disabled and CAN in standby.
+STM32G0B1 provides USB FS, UCPD, classical CAN, STEP/DIR/ENABLE, limit inputs, SWD and temperature monitoring. TMC2209 drives the motor; TCPP01 protects USB; TPS26600 provides input protection/current limiting and AP63203 generates 3.3 V. Hardware defaults keep the motor disabled and CAN in standby. Firmware is pending.
 
-The current saved-copper build has **238 traces, 195 vias and 74 pours**. It retains **9 native unconnected-port errors and 6 unfinished trace errors**. Independent actual-copper review finds **75 of 82 nets physically complete**; strict geometry and native shorts checks pass for this partial copper. The measured RAW VBUS lower neck is now 1.455 mm and passes its limited current screen; the complete power/via/thermal qualification remains pending. Current USB length/skew and adjacent-ground screens pass; complete qualification and final fabrication exports remain pending. Neither publication nor these partial checks approve fabrication.
+Fresh native build: **334 traces / 224 vias / 82 pours**, **zero native errors or shorts**, and **82/82 physical nets joined**. Independent actual-copper spacing, drills, board edges, NPTH and filled-pour checks pass, including exact owners of all 68 declared filled features. All 421 purchased-pin wiring partitions are preserved. Fresh [Circuit JSON](dist/index/circuit.json) is included in the package; its exact checksum is recorded in [build status](build/routing-review/BUILD-STATUS.json) and publication receipts.
+
+Every nonzero trace segment is inventoried: 2,209 segments across 82 nets meet the 0.15 mm width floor. Motor phase traces pass the stated 0.34245 A analytical screen; complete rail/pour/via current and thermal qualification remains pending. Thirty combined-route-tree width warnings are retained; all 34 active fanout corridors have their requested copper width, but checking the minimum width alone does not qualify loaded power paths. USB skew is 0.38144 mm and its limited return/impedance screens pass. These are analytical checks, not measured hardware ratings.
+
+Use direct pinned tscircuit export for review files:
+
+```bash
+bunx tsci export dist/index/circuit.json --format gerbers --output "$PWD/review-gerbers.zip"
+```
+
+The checked review ZIP has 224 unique plated drill hits, six NPTH holes and matching 108-reference BOM/CPL. Four supplier placement orientations remain unverified (J_USB and three LEDs). The earlier KiCad conversion has duplicated objects/default-rule failures and 55 reported disconnected items; it is diagnostic evidence, not an approved fabrication package. Final copper/mask/paste, silkscreen, small filled-via process, stackup/plating, power and thermal reviews remain blockers. **Do not order this revision.**
+
+The public runtime packet contains the board sources, unchanged supplier models, pinned lockfile and fresh Circuit JSON. Review records are in `build/qualification-review.zip`; full historical evidence and all qualification tools remain in the GitHub checkout. This keeps old routing experiments out of the runnable package.
+
+```bash
+bun install --frozen-lockfile
+bun run build
+bun run typecheck
+```
 
 ## Continue in Codex Cloud
 

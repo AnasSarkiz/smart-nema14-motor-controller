@@ -12,7 +12,7 @@ from pathlib import Path
 import pcbnew
 import wx
 
-application = wx.App(False)
+application = wx.AppConsole() if sys.platform == "linux" else wx.App(False)
 folder = Path(sys.argv[1])
 session_path = folder / "local-routed.ses"
 board = pcbnew.LoadBoard(str((folder / "local-routing.kicad_pcb").resolve()))

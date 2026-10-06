@@ -1,0 +1,98 @@
+[
+  {
+    "name": "RTN_C33_RECONNECT_1",
+    "from": ".RTN_DVDT_CAP > .bottom",
+    "to": ".RTN_C33_TRANSFER_01 > .bottom",
+    "width_mm": 0.15,
+    "points": [
+      {
+        "x": 1.7,
+        "y": -8.25
+      },
+      {
+        "x": 0.6,
+        "y": -4.825
+      },
+      {
+        "x": -0.025,
+        "y": -4.2
+      }
+    ]
+  },
+  {
+    "name": "RTN_C33_RECONNECT_2",
+    "from": ".RTN_C33_TRANSFER_01 > .top",
+    "to": ".RTN_C33_TRANSFER_02 > .top",
+    "width_mm": 0.15,
+    "points": [
+      {
+        "x": -0.025,
+        "y": -4.2
+      },
+      {
+        "x": -0.4,
+        "y": -3.75
+      },
+      {
+        "x": -4.325,
+        "y": -2.35
+      },
+      {
+        "x": -4.75,
+        "y": -1.925
+      }
+    ]
+  },
+  {
+    "name": "RTN_C33_RECONNECT_3",
+    "from": ".RTN_C33_TRANSFER_02 > .bottom",
+    "to": ".RTN_EFUSE_THERMAL > .bottom",
+    "width_mm": 0.15,
+    "points": [
+      {
+        "x": -4.75,
+        "y": -1.925
+      },
+      {
+        "x": -6.075,
+        "y": -3.2
+      },
+      {
+        "x": -6.1,
+        "y": -3.65
+      },
+      {
+        "x": -6.075,
+        "y": -4.425
+      },
+      {
+        "x": -5.875,
+        "y": -4.7
+      },
+      {
+        "x": -5.175,
+        "y": -5.45
+      },
+      {
+        "x": -4.5,
+        "y": -7.75
+      }
+    ]
+  },
+  {
+    "name": "USB_GND2_LEFT_RETURN_FEED",
+    "from": ".J_USB > .pin23",
+    "to": ".J_USB > .pin8",
+    "width_mm": 0.5,
+    "points": [
+      {
+        "x": -3.1999936,
+        "y": -10.2350062
+      },
+      {
+        "x": -5.1099974,
+        "y": -10.8100114
+      }
+    ]
+  }
+]

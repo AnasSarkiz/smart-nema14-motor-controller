@@ -13,7 +13,7 @@ from pathlib import Path
 import pcbnew
 import wx
 
-application = wx.App(False)
+application = wx.AppConsole() if sys.platform == "linux" else wx.App(False)
 
 folder = Path(sys.argv[1] if len(sys.argv) > 1 else "evidence/rev-0.0.17-alpha.0/manual-usb")
 native_path = folder / "circuit.json"
@@ -143,7 +143,7 @@ for trace in pcb_traces.values():
 for via in (e for e in native if e["type"] == "pcb_via"):
     matches = [(index, track) for index, track in enumerate(tracks)
                if track.GetClass() == "PCB_VIA"
-               and track.GetNetCode() == (next(iter(native_to_exported_net[root(via["source_net_id"])])) if via.get("source_net_id") else trace_net_code(pcb_traces[via["pcb_trace_id"]]))
+               and track.GetNetCode() == (next(iter(native_to_exported_net[root(via["source_net_id"])])) if via.get("source_net_id") else trace_net_code(via if via.get("source_trace_id") else pcb_traces[via["pcb_trace_id"]]))
                and native_position_error(via, track.GetPosition()) < 0.000002
                and abs(pcbnew.ToMM(track.GetWidth(pcbnew.F_Cu)) - via["outer_diameter"]) < 0.000002
                and abs(pcbnew.ToMM(track.GetDrillValue()) - via["hole_diameter"]) < 0.000002

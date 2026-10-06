@@ -1,0 +1,23 @@
+$ node scripts/check-draft-connectivity.mjs
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Draft evidence must be generated with --disable-pcb; placement awaits mechanics
+
+2890 !== 0
+
+    at file:///workspace/smart-nema14-motor-controller/scripts/check-draft-connectivity.mjs:453:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 2890,
+  expected: 0,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.19.0
+error: script "test:draft" exited with code 1

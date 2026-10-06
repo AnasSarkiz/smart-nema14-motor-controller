@@ -24,6 +24,7 @@ export function EncoderSheet({
       />
       <AS5600_ASOM
         name="U4"
+        doNotPlace
         {...previewPlacement("U4", mechanicalPreview)}
         layer="bottom"
         schX={-5}
@@ -40,6 +41,7 @@ export function EncoderSheet({
       />
       <CL05B104KO5NNNC
         name="C6"
+        doNotPlace
         {...previewPlacement("C6", mechanicalPreview)}
         layer="bottom"
         schX={6}

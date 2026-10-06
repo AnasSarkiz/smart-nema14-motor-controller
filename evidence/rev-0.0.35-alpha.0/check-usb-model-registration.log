@@ -1,0 +1,13 @@
+$ .mechanical-venv/bin/python mechanical/check-usb-connector-model.py
+Traceback (most recent call last):
+  File "/workspace/smart-nema14-motor-controller/mechanical/check-usb-connector-model.py", line 23, in <module>
+    circuit = json.loads(Path("dist/assembly/circuit.json").read_text())
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'dist/assembly/circuit.json'
+error: script "test:usb-model" exited with code 1

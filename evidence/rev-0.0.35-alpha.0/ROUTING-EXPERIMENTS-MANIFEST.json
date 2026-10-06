@@ -1,0 +1,1682 @@
+{
+  "revision": "0.0.35-alpha.0",
+  "scope": "Rejected/diagnostic routing experiments only; accepted canonical outputs and manual-complete006 preservation remain unpacked. Every original file verified inside the lossless archive before removing redundant unpacked copies.",
+  "archive_path": "evidence/rev-0.0.35-alpha.0/routing-experiments.tar.gz",
+  "archive_bytes": 29211939,
+  "archive_sha256": "5e68d5df4850bd8e66da6de340ba567651acc221d527a662eda9f23cafa6dc5e",
+  "file_count": 334,
+  "original_bytes": 539390807,
+  "restore_command": "mkdir -p .publication/restored-035 && tar -xzf evidence/rev-0.0.35-alpha.0/routing-experiments.tar.gz -C .publication/restored-035",
+  "files": [
+    {
+      "path": "cloud/access-only001/BUILD-STATUS.json",
+      "bytes": 610,
+      "sha256": "bbda110baf24904d3899cbf3a4e4d4b054f1ac06143ec16deb6c61155713bdf2"
+    },
+    {
+      "path": "cloud/access-only001/BUILD.log",
+      "bytes": 336,
+      "sha256": "13bdf9a22cc1037d80f56e7497e446dfdc1baa5ac0663a5bec73d7549c986493"
+    },
+    {
+      "path": "cloud/access-only001/FILLED.json",
+      "bytes": 41608,
+      "sha256": "c3e9eb52a5ba8752bb3ed798df92edbc61d72a071863a30322ce6ebac7092f5d"
+    },
+    {
+      "path": "cloud/access-only001/FREEROUTING-NATIVE-REJECTION.json",
+      "bytes": 250,
+      "sha256": "f312dafbfbe4b0a9295e3ab2a0cf2c2f75f41a0dd91ec8e523aa83db944eba54"
+    },
+    {
+      "path": "cloud/access-only001/FREEROUTING-STATUS.json",
+      "bytes": 1074,
+      "sha256": "a8d5e6d824f3eafe3e51db29ecb340d434182474bb1f975781c45684b0db00c6"
+    },
+    {
+      "path": "cloud/access-only001/FREEROUTING.log",
+      "bytes": 16264,
+      "sha256": "ab5d41f746e1f691d0119fa174e042a8b31b7ef1c040c264ead16424a864cba4"
+    },
+    {
+      "path": "cloud/access-only001/GEOMETRY.json",
+      "bytes": 13879,
+      "sha256": "6317372ff84f19e785a4e75c81deb4ef94a85c19e8df52b0058f02445cfd8c2a"
+    },
+    {
+      "path": "cloud/access-only001/KICAD-INTERCHANGE-AUDIT.json",
+      "bytes": 176215,
+      "sha256": "8f161f5fe6b7290814c921ccf358e50125b019341e3ecc2e9aa1773f2ef2e980"
+    },
+    {
+      "path": "cloud/access-only001/ROUTING-COINCIDENT-CLEANUP.json",
+      "bytes": 39091,
+      "sha256": "da3ead38f3de239845b76af73fb6178ef42c789d43fd0089a17fd0c649d2e2d5"
+    },
+    {
+      "path": "cloud/access-only001/SELECTED-ROUTING-PLAN.json",
+      "bytes": 2123,
+      "sha256": "3a9297d43a1e56d3a1d51af619b9e8d0f477b0c25c928f4ba7a65071c4e96c58"
+    },
+    {
+      "path": "cloud/access-only001/VISUAL-REVIEW.json",
+      "bytes": 685,
+      "sha256": "38fbb0a63c853139673849f4573a9a6a35236dd594eadca23fa78edbc723d0e6"
+    },
+    {
+      "path": "cloud/access-only001/board.kicad_pcb",
+      "bytes": 4676187,
+      "sha256": "ed44d403ff8ed54e93b0c77af110bebd491097e7e66ef8d00a076a0aca8a92ed"
+    },
+    {
+      "path": "cloud/access-only001/bottom.png",
+      "bytes": 331372,
+      "sha256": "22d1ac7effb7570a8b65569becca0c7d8c453f449dbd44df2f75a0eaf2bec2d7"
+    },
+    {
+      "path": "cloud/access-only001/bottom.svg",
+      "bytes": 835710,
+      "sha256": "0463088b626765f03087400aec2928ae779474823e0b29dda2f526fa748fe9b9"
+    },
+    {
+      "path": "cloud/access-only001/circuit.json",
+      "bytes": 4685723,
+      "sha256": "f84ebd71a5ea6bfc0c0ede91d44525626292cbde152eee5ff50f4390e343f5bf"
+    },
+    {
+      "path": "cloud/access-only001/inner1.png",
+      "bytes": 226737,
+      "sha256": "c22275933cf985b20c4a6e2143dc66e33f18dd5229f5a3746448445e31f5cabc"
+    },
+    {
+      "path": "cloud/access-only001/inner1.svg",
+      "bytes": 603111,
+      "sha256": "0cd3167d4ac44c3b9dece223316678c0f7b87c1b73eb76874765da9a6a131f68"
+    },
+    {
+      "path": "cloud/access-only001/inner2.png",
+      "bytes": 204751,
+      "sha256": "923cca6efe86d405680951f1fc3c5ea8573a9119ccff2e4dfc45cb8457d318f0"
+    },
+    {
+      "path": "cloud/access-only001/inner2.svg",
+      "bytes": 429590,
+      "sha256": "8444aef67e935072f7ad7b429d8187523caf786907fb9210f2a6b63031847c20"
+    },
+    {
+      "path": "cloud/access-only001/kicad-native.dsn",
+      "bytes": 603329,
+      "sha256": "b17a24fa5cb682020eb5bafbb40731111add3b1ce25212698f3f9f44735c0f72"
+    },
+    {
+      "path": "cloud/access-only001/kicad-native.dsn.audit.json",
+      "bytes": 51594,
+      "sha256": "97e05fb34b2f4c385008fe9b9d21c914f3a6db8ce79c0401125b446737e633b0"
+    },
+    {
+      "path": "cloud/access-only001/local-export.dsn",
+      "bytes": 247549,
+      "sha256": "1bb85522ca1193801d83157db5ce1b20a4b9c21df4baaceea70fa35fe37808dc"
+    },
+    {
+      "path": "cloud/access-only001/local-export.dsn.audit.json",
+      "bytes": 51594,
+      "sha256": "9706a67c4ef8b013f77a751dfb5782b32f91359c4b2b72b2f6172457f491f3e8"
+    },
+    {
+      "path": "cloud/access-only001/local-routing.dsn",
+      "bytes": 4210175,
+      "sha256": "40f31cf1b1c895e4697a72ab177eb45a77cbfb1e145f0fac74ee1214bbd41af7"
+    },
+    {
+      "path": "cloud/access-only001/local-routing.kicad_pcb",
+      "bytes": 876406,
+      "sha256": "df8b102fb176fe6eadce3e2fc2018dc63a1bdaa38ed7c7fec3c52ab429959329"
+    },
+    {
+      "path": "cloud/access-only001/local-routing.kicad_pro",
+      "bytes": 8368,
+      "sha256": "b7dfac696cfee018edb048679c83b0fc0b8af798aaf3f58fe180df11ebb0d8a3"
+    },
+    {
+      "path": "cloud/access-only001/phase-0-input.json",
+      "bytes": 3527508,
+      "sha256": "f6485197d4cf44a4565da1ba05495d6f365304e7f2c76ce5f8f4949f9433b3d5"
+    },
+    {
+      "path": "cloud/access-only001/phase-0-output.json",
+      "bytes": 4095128,
+      "sha256": "fbc0b15ad205ac112a561b304876605b6d5e9ebe1cc2b8847df73a89cd0eaf02"
+    },
+    {
+      "path": "cloud/access-only001/phase-0-stage-0-input.json",
+      "bytes": 3527508,
+      "sha256": "f6485197d4cf44a4565da1ba05495d6f365304e7f2c76ce5f8f4949f9433b3d5"
+    },
+    {
+      "path": "cloud/access-only001/phase-0-stage-0-output.json",
+      "bytes": 4095128,
+      "sha256": "fbc0b15ad205ac112a561b304876605b6d5e9ebe1cc2b8847df73a89cd0eaf02"
+    },
+    {
+      "path": "cloud/access-only001/routing-interchange.kicad_pcb",
+      "bytes": 3845576,
+      "sha256": "870f659b548010ba7f3ae0fc4b61a8a020e224c0df1415fdde65b480347f1fb5"
+    },
+    {
+      "path": "cloud/access-only001/routing-interchange.kicad_prl",
+      "bytes": 2070,
+      "sha256": "43654e32e234d3281b612bf2b02bcce14d368373a6173c348f13784028503ab9"
+    },
+    {
+      "path": "cloud/access-only001/routing-interchange.kicad_pro",
+      "bytes": 8374,
+      "sha256": "9407a1a81c66beeb904405b2bee166c0b13179e34e921065b1eb3d8281dfc3bd"
+    },
+    {
+      "path": "cloud/access-only001/routing-pad-guards.json",
+      "bytes": 2736368,
+      "sha256": "81e7ca991738940b34d2f563177a45e4a795a8911476b834f56d2feb98542139"
+    },
+    {
+      "path": "cloud/access-only001/selected-nets.json",
+      "bytes": 112,
+      "sha256": "eda4a00b171cab66db1b1c58c7c0075123ae8b096acff60d5ae148a02defe73b"
+    },
+    {
+      "path": "cloud/access-only001/top.png",
+      "bytes": 273765,
+      "sha256": "2c84bfe9b113b0916f41cf9189d0c300496dd520f57562a3a1c71bdb185ba527"
+    },
+    {
+      "path": "cloud/access-only001/top.svg",
+      "bytes": 769660,
+      "sha256": "2181778930c9b1b92630756de73e9288b250a3679785e345f83ebb70950c4d61"
+    },
+    {
+      "path": "cloud/access-only002/BUILD-STATUS.json",
+      "bytes": 611,
+      "sha256": "2fd4fe4591a14d79c6855ff78441b1ee9b3b00bcee731e1746b2b4bc460b9ba7"
+    },
+    {
+      "path": "cloud/access-only002/BUILD.log",
+      "bytes": 336,
+      "sha256": "565d32cbaac3cc68120021c110038e87e30b4efafe4570b972a93727967a8e62"
+    },
+    {
+      "path": "cloud/access-only002/GEOMETRY.json",
+      "bytes": 14317,
+      "sha256": "e730773c2292c4e2c080ccc394dda0f8a50a624bc7bc9b2e52c8573d14daa253"
+    },
+    {
+      "path": "cloud/access-only002/GEOMETRY.log",
+      "bytes": 14317,
+      "sha256": "e730773c2292c4e2c080ccc394dda0f8a50a624bc7bc9b2e52c8573d14daa253"
+    },
+    {
+      "path": "cloud/access-only002/REJECTION.json",
+      "bytes": 317,
+      "sha256": "228df8e4158879feceb850c6dda3e8a29370ef7515a174ec5d9d9e344edcc6ec"
+    },
+    {
+      "path": "cloud/access-only002/circuit.json",
+      "bytes": 4689562,
+      "sha256": "38778623f7a63ad4505a02ff1c52ed8926f97ea8d88b4c25de6e8afdc9211c08"
+    },
+    {
+      "path": "cloud/access-only002/phase-0-input.json",
+      "bytes": 3528986,
+      "sha256": "2d7dc60890b3340cb50cbee63ff7b4b6dc2dcb4f6f4c3af4dab2d29d53db5133"
+    },
+    {
+      "path": "cloud/access-only002/phase-0-output.json",
+      "bytes": 4096606,
+      "sha256": "f1c71999c72f97f2734fe3b1a377507ab246218a114377071064d0dbf319181c"
+    },
+    {
+      "path": "cloud/access-only002/phase-0-stage-0-input.json",
+      "bytes": 3528986,
+      "sha256": "2d7dc60890b3340cb50cbee63ff7b4b6dc2dcb4f6f4c3af4dab2d29d53db5133"
+    },
+    {
+      "path": "cloud/access-only002/phase-0-stage-0-output.json",
+      "bytes": 4096606,
+      "sha256": "f1c71999c72f97f2734fe3b1a377507ab246218a114377071064d0dbf319181c"
+    },
+    {
+      "path": "cloud/access-only003/BUILD-STATUS.json",
+      "bytes": 610,
+      "sha256": "6e2cc0e842566bf6eb0f625e265d72a48467f33b5fdb215c6cd666e6f567564d"
+    },
+    {
+      "path": "cloud/access-only003/BUILD.log",
+      "bytes": 336,
+      "sha256": "13bdf9a22cc1037d80f56e7497e446dfdc1baa5ac0663a5bec73d7549c986493"
+    },
+    {
+      "path": "cloud/access-only003/GEOMETRY.json",
+      "bytes": 13912,
+      "sha256": "3fee186d1d8b310c68756098890bbaadec7bd2a5b6f1dda179a386ed3c9cdbb1"
+    },
+    {
+      "path": "cloud/access-only003/GEOMETRY.log",
+      "bytes": 13912,
+      "sha256": "3fee186d1d8b310c68756098890bbaadec7bd2a5b6f1dda179a386ed3c9cdbb1"
+    },
+    {
+      "path": "cloud/access-only003/circuit.json",
+      "bytes": 4686652,
+      "sha256": "d73d9b5658f0bcc4bad39f97dfbf2726fa2ee884ecc07d62c92b8a648f4149ac"
+    },
+    {
+      "path": "cloud/access-only003/phase-0-input.json",
+      "bytes": 3526554,
+      "sha256": "df835ec134913b5b5f848987c9647f9e5d018aaf1671862130da0332981812fa"
+    },
+    {
+      "path": "cloud/access-only003/phase-0-output.json",
+      "bytes": 4094174,
+      "sha256": "00c1f6e5ad0332b7bd3d9a6176827aea2af1650180ad9aa11ecbff55aacc534c"
+    },
+    {
+      "path": "cloud/access-only003/phase-0-stage-0-input.json",
+      "bytes": 3526554,
+      "sha256": "df835ec134913b5b5f848987c9647f9e5d018aaf1671862130da0332981812fa"
+    },
+    {
+      "path": "cloud/access-only003/phase-0-stage-0-output.json",
+      "bytes": 4094174,
+      "sha256": "00c1f6e5ad0332b7bd3d9a6176827aea2af1650180ad9aa11ecbff55aacc534c"
+    },
+    {
+      "path": "cloud/access-only004/BUILD-STATUS.json",
+      "bytes": 610,
+      "sha256": "3c31356466c63f942cc67f399df11a456480daed8193e0fe1553366417e18311"
+    },
+    {
+      "path": "cloud/access-only004/BUILD.log",
+      "bytes": 336,
+      "sha256": "2bdf5735e6abc483fac384637d360bf21d5cc0a3c57075980573f9cd40f23aba"
+    },
+    {
+      "path": "cloud/access-only004/GEOMETRY-CORRECTED-LABEL.log",
+      "bytes": 15406,
+      "sha256": "1e0a1d079c330e4f573f314a546ba5ddbeb165cb7db7ded1711918f479cd18af"
+    },
+    {
+      "path": "cloud/access-only004/GEOMETRY.json",
+      "bytes": 15406,
+      "sha256": "1e0a1d079c330e4f573f314a546ba5ddbeb165cb7db7ded1711918f479cd18af"
+    },
+    {
+      "path": "cloud/access-only004/GEOMETRY.log",
+      "bytes": 417,
+      "sha256": "2d0c72cab9d5cb3fedf8c6aaecd3a2b77d0e016952d38f5d7e3c13330969ae98"
+    },
+    {
+      "path": "cloud/access-only004/REJECTION.json",
+      "bytes": 444,
+      "sha256": "c7684b78ea665ebb90f8a302be3d46c1a425a99f1d8c0c3c2496d9bc11e01408"
+    },
+    {
+      "path": "cloud/access-only004/circuit.json",
+      "bytes": 4660818,
+      "sha256": "bc6513e1c6d4aba767eff23184734f819411c4d03f0097115c5f3e9484c311fa"
+    },
+    {
+      "path": "cloud/access-only004/phase-0-input.json",
+      "bytes": 3523206,
+      "sha256": "42802fcefe8583b3376a92b1ab919fbf72d87ea2d31ff6ae9fb764f621fa6f8f"
+    },
+    {
+      "path": "cloud/access-only004/phase-0-output.json",
+      "bytes": 4090826,
+      "sha256": "1bcde32d4984b653736fb149e2103bc33af1e155bf8d8fa7d699f9a2026f9ee5"
+    },
+    {
+      "path": "cloud/access-only004/phase-0-stage-0-input.json",
+      "bytes": 3523206,
+      "sha256": "42802fcefe8583b3376a92b1ab919fbf72d87ea2d31ff6ae9fb764f621fa6f8f"
+    },
+    {
+      "path": "cloud/access-only004/phase-0-stage-0-output.json",
+      "bytes": 4090826,
+      "sha256": "1bcde32d4984b653736fb149e2103bc33af1e155bf8d8fa7d699f9a2026f9ee5"
+    },
+    {
+      "path": "cloud/access-only005/BUILD-STATUS.json",
+      "bytes": 611,
+      "sha256": "0ec69854c2c3ca90b30ed8c76b951c6af5b571b56ef03c43d6ceac0f6f045571"
+    },
+    {
+      "path": "cloud/access-only005/BUILD.log",
+      "bytes": 336,
+      "sha256": "13bdf9a22cc1037d80f56e7497e446dfdc1baa5ac0663a5bec73d7549c986493"
+    },
+    {
+      "path": "cloud/access-only005/FILLED.json",
+      "bytes": 41608,
+      "sha256": "64bf2ba2fa930462f434203aa4e6c80ba69d7228039f325687fa793692813aa5"
+    },
+    {
+      "path": "cloud/access-only005/FILLED.log",
+      "bytes": 154,
+      "sha256": "46f7d7f9c462211a93704df76fcfeccca66ee2d3cd8d4ee4571df0d298ca597b"
+    },
+    {
+      "path": "cloud/access-only005/GEOMETRY.json",
+      "bytes": 13912,
+      "sha256": "6eb47d74fc3dd1815df44e7df581351ead21024618b379952bf8bac9d0a18752"
+    },
+    {
+      "path": "cloud/access-only005/GEOMETRY.log",
+      "bytes": 13912,
+      "sha256": "6eb47d74fc3dd1815df44e7df581351ead21024618b379952bf8bac9d0a18752"
+    },
+    {
+      "path": "cloud/access-only005/circuit.json",
+      "bytes": 4686253,
+      "sha256": "94d5338203f307e03604fa742752b1b14fbcd15639ac456fc4537e07a75df7e4"
+    },
+    {
+      "path": "cloud/access-only005/phase-0-input.json",
+      "bytes": 3526554,
+      "sha256": "df835ec134913b5b5f848987c9647f9e5d018aaf1671862130da0332981812fa"
+    },
+    {
+      "path": "cloud/access-only005/phase-0-output.json",
+      "bytes": 4093691,
+      "sha256": "44d6aef2868d89eeb2f4fe6b394292142c190465bc3322f5c86efa1ee82b9255"
+    },
+    {
+      "path": "cloud/access-only005/phase-0-stage-0-input.json",
+      "bytes": 3526554,
+      "sha256": "df835ec134913b5b5f848987c9647f9e5d018aaf1671862130da0332981812fa"
+    },
+    {
+      "path": "cloud/access-only005/phase-0-stage-0-output.json",
+      "bytes": 4093691,
+      "sha256": "44d6aef2868d89eeb2f4fe6b394292142c190465bc3322f5c86efa1ee82b9255"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/RESULT.json",
+      "bytes": 306,
+      "sha256": "9515337fae9e80d30899c39cfc1d7e00570b8d2c93eef982d09f4dc181c9fbaa"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-access-fault-first-requests.json",
+      "bytes": 2877,
+      "sha256": "c25e970968da0423b974187ecd69d73a67e3f5c08d9f71509dc0c227ecf95983"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-000.json",
+      "bytes": 3774,
+      "sha256": "b1133803812ec8c78ef9873ec9f1f95d83919ad342366c1d201be2f8e329c08d"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-001.json",
+      "bytes": 2892,
+      "sha256": "b3fe4b7b86a97c3d0ac292e30d29337977d6459cab970d407285214d4842c495"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-002.json",
+      "bytes": 406,
+      "sha256": "f6bd26cec2cf43711cdf598f48cfe4470dedd51968ffc1734889b4cbbdbeac65"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-003.json",
+      "bytes": 5346,
+      "sha256": "9eb12582f383f32e17964f101b569a202528264f7f7730fa3fd905473ff64bbb"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-004.json",
+      "bytes": 3775,
+      "sha256": "cb0a3750f92bb0f5eea418bbb7c021491d0e1905caf8de24bd0aef7986a5e90c"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-005.json",
+      "bytes": 407,
+      "sha256": "ad98fa9732c2983d11ccb99fb8f0b0db1e001c2869bd87756e4ca393f742b09b"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-006.json",
+      "bytes": 405,
+      "sha256": "46ecd3934a0e8e8a50782451f84286b87bf406752bbf75c599842afcb6e30003"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-007.json",
+      "bytes": 6025,
+      "sha256": "fdc95473df6702f25fbca3bf36ddb1c4421be7c96fc41a8ba044bed8b4815929"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-008.json",
+      "bytes": 3775,
+      "sha256": "9af3e0621bebabf1cbc50b34e4a0893e77cd51d3d95df77beec994bd4116a136"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-009.json",
+      "bytes": 4140,
+      "sha256": "6a621134a8c7c6793ccdae4c4faf89181f98def9d7b1e11916a66bf62f1054aa"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-010.json",
+      "bytes": 407,
+      "sha256": "805dd0acfb06e82bf2482072b91528293584b0cec45df1dfcd2b6e9bdb6069b7"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-011.json",
+      "bytes": 407,
+      "sha256": "24d6fcda83f5c6048bd31a2a8a3e85ef0f58bae53198f58de36ce4c105ff1494"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-012.json",
+      "bytes": 10798,
+      "sha256": "9b082933627f244495adcc32d0613684e15f8268c8381f16c3b5dcd59be3292a"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-013.json",
+      "bytes": 7416,
+      "sha256": "b9cf4337ac3c27562e3158fce2d19ac531fa0ceb6e1a61dbfa348973447798ee"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-014.json",
+      "bytes": 408,
+      "sha256": "5808812d88244184f3098f8e6486f1d7dd1e110652bd62f2a84316f030464462"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore-best.json",
+      "bytes": 9432,
+      "sha256": "effec3c212af143506acf7c4403bc04f98a2f49058f39b691e386cd43f6c51e2"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/actual-explore.log",
+      "bytes": 3769,
+      "sha256": "76ed0d2fb214c00ae92f42297150544153afde28c8047c7f639ab1e56cf868a0"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/explore-actual-paths.py",
+      "bytes": 2994,
+      "sha256": "525d1f34d8e441def8c52baa6f15efef53a087be14501faf075847a69a426f32"
+    },
+    {
+      "path": "cloud/actual-manual-exploration001/plan-reference-preserved.py",
+      "bytes": 13893,
+      "sha256": "b50c9d4cd361778203dc8545c5c3036cec42ff576269e0c6e95d4c82182952ea"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/RESULT.json",
+      "bytes": 323,
+      "sha256": "3391626bb0ea4195e67d35d5afe7dc5cc4de65edc9d949e05da85cd6e1b4c2ba"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/actual-access-fault-first-requests.json",
+      "bytes": 2864,
+      "sha256": "9c9a2b100505abcfa15b4ed560f065c1910b5e36bed18dbed89e5bf9500fa13d"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/explore-opened-access.py",
+      "bytes": 2994,
+      "sha256": "377877d1d98db71880dc3d0bfb4a533d441a54c47e41691dd8669cd98f9a6e4d"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore-000.json",
+      "bytes": 3775,
+      "sha256": "042d7ab3a9e38008701c116f761fc333bbf0859a7dac0a81b64cfcffe8b6c736"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore-001.json",
+      "bytes": 2769,
+      "sha256": "a9fd39ba5148f90286347a1de539288dcc720242f92eb7c64d57e20a9dddb2cb"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore-002.json",
+      "bytes": 405,
+      "sha256": "c035bb7e8f5272a337862fb42f2c661bb2860397bbc618b5b65057447d771c85"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore-003.json",
+      "bytes": 5347,
+      "sha256": "67e40e4efeb1217112840424081d95ac220a67960ea954ee17807bb61fff8492"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore-004.json",
+      "bytes": 3774,
+      "sha256": "8d6c3a039b9c02852eb84fcb7f03ffc9086ea47039e17f5efa9258c56ecd3210"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore-005.json",
+      "bytes": 406,
+      "sha256": "0e0d055d64f667703914364c56b5cd694570861f83b0f97761ea7d4b76028d23"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore-006.json",
+      "bytes": 405,
+      "sha256": "08febf2b80dbf886f709e5a5e6c0b7a537412faf25c53aeafeaec6b45bda5ea8"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore-007.json",
+      "bytes": 5902,
+      "sha256": "adcf27a00ab389e1e703646001ae59d854ed25cd7f5115fb793c1d62afb8b4e6"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore-008.json",
+      "bytes": 3775,
+      "sha256": "2cd5d38129f499eb40bcb24887997723fa58357fbb54f105c5a17b1d87ef4541"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore-009.json",
+      "bytes": 4141,
+      "sha256": "83dbb170b5c172430c3a54044772e095d3d944e9bfdfde63184490840a68ddd5"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore-010.json",
+      "bytes": 407,
+      "sha256": "230d98ada8b5b0a22a6f1e1fa78f1e4fbe987733894ceaf38ebee07c3a80392b"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore-011.json",
+      "bytes": 406,
+      "sha256": "4cbb2d068868869735b272bc5000375c3ee0f40276f7e719338627db738dea27"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore-012.json",
+      "bytes": 10675,
+      "sha256": "6b297180c0281e63a6bafe86ef69f21b74c54edc776c5bdb114dd8c6ccdbdf07"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore-best.json",
+      "bytes": 9317,
+      "sha256": "6937a6da2c75ef874cc9298ff6ad2d8d569223d7b0d8234fee716511a9b4cecf"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/opened-explore.log",
+      "bytes": 3262,
+      "sha256": "fdc729e00a7d135bddfcb79bc087b24bfc0c8126188d7f8d86251235f5743f9d"
+    },
+    {
+      "path": "cloud/actual-manual-exploration002/plan-reference-preserved.py",
+      "bytes": 13893,
+      "sha256": "b50c9d4cd361778203dc8545c5c3036cec42ff576269e0c6e95d4c82182952ea"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/actual-access-fault-first-requests.json",
+      "bytes": 2864,
+      "sha256": "9c9a2b100505abcfa15b4ed560f065c1910b5e36bed18dbed89e5bf9500fa13d"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/corridor-explore-000.json",
+      "bytes": 3768,
+      "sha256": "3787d8fe017a295111f4a1eecf40d480befffb43c19aab5d234a2ff72d20093e"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/corridor-explore-001.json",
+      "bytes": 2769,
+      "sha256": "62f0bfd806e37c989e1c96745bc9063305f5252abce7048443b3f08a72b18de7"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/corridor-explore-002.json",
+      "bytes": 405,
+      "sha256": "1895f9d12a2480b1c7f7e2adde89fd230ff9b56b4214424061a2145bda613ab9"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/corridor-explore-003.json",
+      "bytes": 6258,
+      "sha256": "4752eddc007e213db046f45d881b413f7682346d32c902bf2a3459e775cb4513"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/corridor-explore-004.json",
+      "bytes": 3769,
+      "sha256": "af66c6760e67e94182a7962cacefca8bd56076863e8464be6ccdb5f1f5a222e7"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/corridor-explore-005.json",
+      "bytes": 406,
+      "sha256": "441c00224af951a60519870f002be6ad6c59a37032cf9213d0503fdc4bd1b4a8"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/corridor-explore-006.json",
+      "bytes": 405,
+      "sha256": "3ac36019ae617275ef2a5adfaa3eab0f6d133572f28cff94127981911f60feaf"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/corridor-explore-007.json",
+      "bytes": 5438,
+      "sha256": "90d3037175ad7691f937ca63951442b7eb704ac4cf21d4edd56a92d6f0fd1bd3"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/corridor-explore-008.json",
+      "bytes": 3769,
+      "sha256": "21638cd3e5dd1c4931e496b0f60a07ce74d202553c7ff437b5eea91bf33baf37"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/corridor-explore-009.json",
+      "bytes": 4134,
+      "sha256": "8939d71c7fa985e3f241383dd3f9a648d4c61a40228c2f0cc91165db14cb9fe2"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/corridor-explore-010.json",
+      "bytes": 407,
+      "sha256": "6c8011758cbd47b07e0e83bb70ef534c3e11fe9ad644f2912792a9e30ff8647d"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/corridor-explore-011.json",
+      "bytes": 407,
+      "sha256": "4460d9948e788cf9beb4697659bb4beb176563fc43e44157e34eb59ff8a2ac6a"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/corridor-explore-best.json",
+      "bytes": 5317,
+      "sha256": "37a0132105e1feb6377d5a5a9d6b477a2045a4b75761658a0d018d440a8c5713"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/corridor-explore.log",
+      "bytes": 3010,
+      "sha256": "6e5fc45084439b6dd6ff5fdb99ce0d9912d96fd3032a74b1fdf2b3e5a994d60d"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/explore-exact-reference.py",
+      "bytes": 2992,
+      "sha256": "71239a2cb027eb47037829b83a92b7a282ae02a8b262462b7d3e51ebb3cdd149"
+    },
+    {
+      "path": "cloud/actual-manual-exploration003/plan-exact-reference.py",
+      "bytes": 14752,
+      "sha256": "8ae5b50b9ebc5f1bac1150fb2a3f6e1804947de806c5b70a35e91485248e3015"
+    },
+    {
+      "path": "cloud/cli-diagnostic001/BUILD.log.gz",
+      "bytes": 5476301,
+      "sha256": "260c2db950ddd451ac606d70b1d028c79e91f0f9dab58c36c8446f79a3a267d4"
+    },
+    {
+      "path": "cloud/cli-diagnostic001/STATUS.json",
+      "bytes": 325,
+      "sha256": "2d4bf1470ff6574505e430e48d73e358f7049a7714f500ca47c79876ec5fd9b6"
+    },
+    {
+      "path": "cloud/cli-diagnostic001/phase-0-routed.png",
+      "bytes": 203028,
+      "sha256": "5c279259248ad453ff140875840c5764fff143221526c3027d1bc30294890720"
+    },
+    {
+      "path": "cloud/cli-diagnostic001/phase-0.input.simple-route.json",
+      "bytes": 3574414,
+      "sha256": "d44478a10713b7103134939fdf7a5c829af328fcd922cb3ab4a9e983bb67da36"
+    },
+    {
+      "path": "cloud/cli-diagnostic001/phase-0.output.traces.json",
+      "bytes": 725908,
+      "sha256": "981ba0a61fdf5f542ef8a09613d5eac102ff1ba843f3a7e5bbb83063fd4ea1ab"
+    },
+    {
+      "path": "cloud/cli-diagnostic001/placement-unrouted.png",
+      "bytes": 245463,
+      "sha256": "4b5755c10b9e5558728adce00a28a559180f8495adaf3be51277a54c0c3ecbba"
+    },
+    {
+      "path": "cloud/freerouting-baseline001/board.kicad_pcb",
+      "bytes": 4673310,
+      "sha256": "475f93371895efa1ebedceefee690bf73190099d89015d39f994a618b73b7868"
+    },
+    {
+      "path": "cloud/freerouting-baseline001/circuit.json",
+      "bytes": 4616192,
+      "sha256": "519f8e29e54829445772ef4dec82ef712788d259f3556068d92bd160ce4cc855"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/FREEROUTING-DRC.log",
+      "bytes": 1868,
+      "sha256": "5372041cb98abe53ab75c760a375a6e36086b1d450faa8754c02a8ce8f7345fa"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/FREEROUTING-PREEXISTING-DRC.json",
+      "bytes": 325960,
+      "sha256": "84af4a44ab08f1513456f6f8bdaa1ee9a26b42871a203a9dd7f89becfe542583"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/FREEROUTING-STATUS.json",
+      "bytes": 1414,
+      "sha256": "e7800c5157b0fbf54addd6aff49f4f6d6fa37a55d1b7888b9b753dc45f935552"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/FREEROUTING.log",
+      "bytes": 17478,
+      "sha256": "8028944a607e9b2504d4456a00ad8450b3787691265fe0e98d85c9620501392f"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/KICAD-INTERCHANGE-AUDIT.json",
+      "bytes": 176215,
+      "sha256": "8f161f5fe6b7290814c921ccf358e50125b019341e3ecc2e9aa1773f2ef2e980"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/REJECTION.json",
+      "bytes": 904,
+      "sha256": "b48a77a1631e171bfc4b2cd4c76ea32c43578afdf5480a7bb28be9099334c679"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/ROUTING-COINCIDENT-CLEANUP.json",
+      "bytes": 39091,
+      "sha256": "da3ead38f3de239845b76af73fb6178ef42c789d43fd0089a17fd0c649d2e2d5"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/SELECTED-ROUTING-PLAN.json",
+      "bytes": 2123,
+      "sha256": "3a9297d43a1e56d3a1d51af619b9e8d0f477b0c25c928f4ba7a65071c4e96c58"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/SESSION-IMPORT-AUDIT.json",
+      "bytes": 589,
+      "sha256": "d75873c2d953d22e378a9ae0019fa8e0716b9e13653f4b3db51889dc9f869d2a"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/SESSION-IMPORT.log",
+      "bytes": 1387,
+      "sha256": "29eb878cf8a91e64ebd2e1dbd4e45ccf9ec4cdba378fcf9a09146b7ca97a1421"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/TOPOLOGY.log",
+      "bytes": 76,
+      "sha256": "c71f928371ebcf6d195250593f1f2ced67b8dbef30ccdaa17351f26345df5268"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/circuit.json",
+      "bytes": 4685723,
+      "sha256": "f84ebd71a5ea6bfc0c0ede91d44525626292cbde152eee5ff50f4390e343f5bf"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/complete-TOPOLOGY-REVIEW.json",
+      "bytes": 14726,
+      "sha256": "ab27de49e4ce3d9fd87c8f9d80c474911f8f7363d0e75203d9ac61fd2a547aa8"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/complete-saved-paths.json",
+      "bytes": 1138451,
+      "sha256": "15c56962ca8ef1dec8c8d5215cc4dc7aaf0d5c0da01b2f5789686e7564f123b9"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/local-copper.json",
+      "bytes": 402955,
+      "sha256": "4d2979606e0726c9505f80af29489cabdfeccb5e884c09d33b5d1182e83dd6a1"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/local-routed.kicad_pcb",
+      "bytes": 880682,
+      "sha256": "de10606d2d135df43ce467038760db93fb23616bbc66e99227a62a17d4c99638"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/local-routed.kicad_prl",
+      "bytes": 2063,
+      "sha256": "569ce97e28b560afafeb124675d7c5e7f55c7f2261bbb38395c8bbc1e457653f"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/local-routed.kicad_pro",
+      "bytes": 8365,
+      "sha256": "e05ba62f1f76afe70ccbadded6a95e959715678540b2f0550fb6e98330a06436"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/local-routed.ses",
+      "bytes": 10255,
+      "sha256": "1f38e02ccb2d807e931f2566b37a3fc66a522b43d2f9661519e7c86f5f740d99"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/local-routing.dsn",
+      "bytes": 4210175,
+      "sha256": "40f31cf1b1c895e4697a72ab177eb45a77cbfb1e145f0fac74ee1214bbd41af7"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/local-routing.kicad_pcb",
+      "bytes": 876406,
+      "sha256": "df8b102fb176fe6eadce3e2fc2018dc63a1bdaa38ed7c7fec3c52ab429959329"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/routing-pad-guards.json",
+      "bytes": 2736368,
+      "sha256": "81e7ca991738940b34d2f563177a45e4a795a8911476b834f56d2feb98542139"
+    },
+    {
+      "path": "cloud/freerouting-jvm001/selected-nets.json",
+      "bytes": 112,
+      "sha256": "eda4a00b171cab66db1b1c58c7c0075123ae8b096acff60d5ae148a02defe73b"
+    },
+    {
+      "path": "cloud/freerouting-stable001/FREEROUTING-STATUS.json",
+      "bytes": 1252,
+      "sha256": "b34fb52d26e52fedeb8565051f498e7126f5e757d14f605171dedba30bf1cc02"
+    },
+    {
+      "path": "cloud/freerouting-stable001/FREEROUTING.log",
+      "bytes": 7519,
+      "sha256": "85484ba6b6fdc1a7391e9a551d1af444bf07d6d9c55db25ae509849ee924fec4"
+    },
+    {
+      "path": "cloud/freerouting-stable001/KICAD-INTERCHANGE-AUDIT.json",
+      "bytes": 176215,
+      "sha256": "8f161f5fe6b7290814c921ccf358e50125b019341e3ecc2e9aa1773f2ef2e980"
+    },
+    {
+      "path": "cloud/freerouting-stable001/ROUTING-COINCIDENT-CLEANUP.json",
+      "bytes": 39091,
+      "sha256": "da3ead38f3de239845b76af73fb6178ef42c789d43fd0089a17fd0c649d2e2d5"
+    },
+    {
+      "path": "cloud/freerouting-stable001/SELECTED-ROUTING-PLAN.json",
+      "bytes": 2123,
+      "sha256": "3a9297d43a1e56d3a1d51af619b9e8d0f477b0c25c928f4ba7a65071c4e96c58"
+    },
+    {
+      "path": "cloud/freerouting-stable001/SESSION-IMPORT-AUDIT.json",
+      "bytes": 50034,
+      "sha256": "345524a522a1d1aaf94c6adcbdb775368826c4eb0df6d43bfb2f20c4bc0e5ef6"
+    },
+    {
+      "path": "cloud/freerouting-stable001/SESSION-IMPORT.log",
+      "bytes": 1161,
+      "sha256": "2e2a209e4426096e221b7c74af1ac45f2fbabbb4eae30d9bcc3382afdacf24c9"
+    },
+    {
+      "path": "cloud/freerouting-stable001/TOPOLOGY.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cloud/freerouting-stable001/circuit.json",
+      "bytes": 4685723,
+      "sha256": "f84ebd71a5ea6bfc0c0ede91d44525626292cbde152eee5ff50f4390e343f5bf"
+    },
+    {
+      "path": "cloud/freerouting-stable001/local-routed.ses",
+      "bytes": 44071,
+      "sha256": "d89b67329fee4948895d70177bb954263a8484a385f9d0d40f346869c1f99413"
+    },
+    {
+      "path": "cloud/freerouting-stable001/local-routing.dsn",
+      "bytes": 4210175,
+      "sha256": "40f31cf1b1c895e4697a72ab177eb45a77cbfb1e145f0fac74ee1214bbd41af7"
+    },
+    {
+      "path": "cloud/freerouting-stable001/local-routing.kicad_pcb",
+      "bytes": 876406,
+      "sha256": "df8b102fb176fe6eadce3e2fc2018dc63a1bdaa38ed7c7fec3c52ab429959329"
+    },
+    {
+      "path": "cloud/freerouting-stable001/routing-pad-guards.json",
+      "bytes": 2736368,
+      "sha256": "81e7ca991738940b34d2f563177a45e4a795a8911476b834f56d2feb98542139"
+    },
+    {
+      "path": "cloud/freerouting-stable001/selected-nets.json",
+      "bytes": 112,
+      "sha256": "eda4a00b171cab66db1b1c58c7c0075123ae8b096acff60d5ae148a02defe73b"
+    },
+    {
+      "path": "cloud/manual-complete001/BUILD-STATUS.json",
+      "bytes": 614,
+      "sha256": "ec345ff8e1ce49607fd350e3287c1487f24eebef9e8de9134e9142495d0765dd"
+    },
+    {
+      "path": "cloud/manual-complete001/BUILD.log",
+      "bytes": 336,
+      "sha256": "48f8cb8b635312ab86cec47f1bbe68c98c771060198ed0cf3e40c3dd5287c034"
+    },
+    {
+      "path": "cloud/manual-complete001/FILLED-ALL.json",
+      "bytes": 195223,
+      "sha256": "7ddcc653103932b4292a58b72ab2ff9ea3be62994ea2d6e4950126d62c2c71a5"
+    },
+    {
+      "path": "cloud/manual-complete001/FILLED-ALL.log",
+      "bytes": 1414,
+      "sha256": "45955418cf987e01cf22ad62842dc1344fd0217711ea867536270fd555366599"
+    },
+    {
+      "path": "cloud/manual-complete001/GEOMETRY.json",
+      "bytes": 14302,
+      "sha256": "8db61fafaf8e58e481ca9b4afc11630e30818b0244746a72719001c9da68f3e3"
+    },
+    {
+      "path": "cloud/manual-complete001/GEOMETRY.log",
+      "bytes": 14302,
+      "sha256": "8db61fafaf8e58e481ca9b4afc11630e30818b0244746a72719001c9da68f3e3"
+    },
+    {
+      "path": "cloud/manual-complete001/USB-RETURN.json",
+      "bytes": 22863,
+      "sha256": "fce9e47352cdbc325b69936e55f1335e3ed9d07b626277bab8f5200d2bcb9803"
+    },
+    {
+      "path": "cloud/manual-complete001/USB-RETURN.log",
+      "bytes": 209,
+      "sha256": "8692a3a3f03a52dfcb63111f83cfd938e46b966149d358f27ce0d8d6e90dc0a2"
+    },
+    {
+      "path": "cloud/manual-complete001/circuit.json",
+      "bytes": 4916842,
+      "sha256": "fa3f566b5a35dcc3f94f3e3020b729680c3765fe8c14f92ef60a626af318142d"
+    },
+    {
+      "path": "cloud/manual-complete001/phase-0-input.json",
+      "bytes": 3589377,
+      "sha256": "164a8eed35c6612d7f3ade75409fd0e695ec7fc395ec7407d7126e2278731db5"
+    },
+    {
+      "path": "cloud/manual-complete001/phase-0-output.json",
+      "bytes": 4434098,
+      "sha256": "923e752ca58c49deef07b4bea64a9c957a7f69803982009579c9591ae11adb0f"
+    },
+    {
+      "path": "cloud/manual-complete001/phase-0-stage-0-input.json",
+      "bytes": 3589377,
+      "sha256": "164a8eed35c6612d7f3ade75409fd0e695ec7fc395ec7407d7126e2278731db5"
+    },
+    {
+      "path": "cloud/manual-complete001/phase-0-stage-0-output.json",
+      "bytes": 4434098,
+      "sha256": "923e752ca58c49deef07b4bea64a9c957a7f69803982009579c9591ae11adb0f"
+    },
+    {
+      "path": "cloud/manual-complete002/BUILD-STATUS.json",
+      "bytes": 615,
+      "sha256": "27ae552ace8226b6a3a3c3c88af59664a3a3d23f5f0b7e6e4ade2fc8f93046b5"
+    },
+    {
+      "path": "cloud/manual-complete002/BUILD.log",
+      "bytes": 1900,
+      "sha256": "c8c65df41f95d5d29df1d04d908f08aefadb077a27173fe68479fa4f310eef40"
+    },
+    {
+      "path": "cloud/manual-complete002/circuit.json",
+      "bytes": 3716607,
+      "sha256": "e3da92cec76bf8d95fd7f3d64bb05cd64e79e432f585db3cb019fa0583d19d9a"
+    },
+    {
+      "path": "cloud/manual-complete002/phase-0-input.json",
+      "bytes": 3737956,
+      "sha256": "772f9fd1e9c7bccbc96d95af01b58090a04cae81c1bb9efdcc05a6661ed5704d"
+    },
+    {
+      "path": "cloud/manual-complete002/phase-0-stage-0-error.json",
+      "bytes": 3738104,
+      "sha256": "7c0464dbc13ed937f44f810caf13e2e763bf34138d70f60ee5fa29405d057da1"
+    },
+    {
+      "path": "cloud/manual-complete002/phase-0-stage-0-input.json",
+      "bytes": 3737956,
+      "sha256": "772f9fd1e9c7bccbc96d95af01b58090a04cae81c1bb9efdcc05a6661ed5704d"
+    },
+    {
+      "path": "cloud/manual-complete002/routing-error.json",
+      "bytes": 3738104,
+      "sha256": "7c0464dbc13ed937f44f810caf13e2e763bf34138d70f60ee5fa29405d057da1"
+    },
+    {
+      "path": "cloud/manual-complete003/BUILD-STATUS.json",
+      "bytes": 612,
+      "sha256": "ed7b515f5555887234bc618e4903037f2e0761578f98b93f1199bd15ee2c94d6"
+    },
+    {
+      "path": "cloud/manual-complete003/BUILD.log",
+      "bytes": 1910,
+      "sha256": "db57d05553ca0567e0ccfb1c48d1cd04b05dd62e265fc8c57f6ef93dd003712d"
+    },
+    {
+      "path": "cloud/manual-complete003/REJECTION.json",
+      "bytes": 418,
+      "sha256": "8ece899122acb6cf5dedf6837fba591ab1d37aec55595fbdfd34d5420749f9f4"
+    },
+    {
+      "path": "cloud/manual-complete003/circuit.json",
+      "bytes": 3650958,
+      "sha256": "aa1170e7459a4977a1f168c883b5c653470b3af8d12f0f89d631ee786854b44f"
+    },
+    {
+      "path": "cloud/manual-complete003/phase-0-input.json",
+      "bytes": 3869593,
+      "sha256": "28052123bd41952530b448142e46318397a7e003fe9301aa9f69a1ab6c955151"
+    },
+    {
+      "path": "cloud/manual-complete003/phase-0-stage-0-error.json",
+      "bytes": 3869747,
+      "sha256": "8690f197d185623587a2afe54a0f14322a75da8215515c16fcd97a8d438f29a4"
+    },
+    {
+      "path": "cloud/manual-complete003/phase-0-stage-0-input.json",
+      "bytes": 3869593,
+      "sha256": "28052123bd41952530b448142e46318397a7e003fe9301aa9f69a1ab6c955151"
+    },
+    {
+      "path": "cloud/manual-complete003/routing-error.json",
+      "bytes": 3869747,
+      "sha256": "8690f197d185623587a2afe54a0f14322a75da8215515c16fcd97a8d438f29a4"
+    },
+    {
+      "path": "cloud/manual-complete004/BUILD-STATUS.json",
+      "bytes": 613,
+      "sha256": "d23b10209c18f3e043144a4b47f2afe6d64558929206bc3aa6f194e80ffb6a45"
+    },
+    {
+      "path": "cloud/manual-complete004/BUILD.log",
+      "bytes": 1966,
+      "sha256": "69db9a55fbb1f94c5adfe8d1ef12c1f2c497c86d767b96aa184f33dd0977408f"
+    },
+    {
+      "path": "cloud/manual-complete004/REJECTION.json",
+      "bytes": 280,
+      "sha256": "dd7e5a00ee72293763e1feed05763f5be411620c59e4d7a801bfb77cbf2c1aa7"
+    },
+    {
+      "path": "cloud/manual-complete004/circuit.json",
+      "bytes": 3650986,
+      "sha256": "9f5a0db6db83e40bfee54e36543073265eb511990bbc0c55a22cb8fc30f6d6c7"
+    },
+    {
+      "path": "cloud/manual-complete004/phase-0-input.json",
+      "bytes": 3869593,
+      "sha256": "28052123bd41952530b448142e46318397a7e003fe9301aa9f69a1ab6c955151"
+    },
+    {
+      "path": "cloud/manual-complete004/phase-0-stage-0-error.json",
+      "bytes": 3869775,
+      "sha256": "80b00cb53d79f77b6edbcb74691c24d619cca655715c080ba6e916d90a3ee9ee"
+    },
+    {
+      "path": "cloud/manual-complete004/phase-0-stage-0-input.json",
+      "bytes": 3869593,
+      "sha256": "28052123bd41952530b448142e46318397a7e003fe9301aa9f69a1ab6c955151"
+    },
+    {
+      "path": "cloud/manual-complete004/routing-error.json",
+      "bytes": 3869775,
+      "sha256": "80b00cb53d79f77b6edbcb74691c24d619cca655715c080ba6e916d90a3ee9ee"
+    },
+    {
+      "path": "cloud/manual-complete005/BUILD-STATUS.json",
+      "bytes": 614,
+      "sha256": "0236abfccc9629b2faea485fbedb1b0edf54eb38e2dc1bff237909a6adb22f8b"
+    },
+    {
+      "path": "cloud/manual-complete005/BUILD.log",
+      "bytes": 2526,
+      "sha256": "d34a6d5c422c1402c091355eb058339d05c73b9537c47446b4306dde3df08792"
+    },
+    {
+      "path": "cloud/manual-complete005/phase-0-input.json",
+      "bytes": 3869593,
+      "sha256": "28052123bd41952530b448142e46318397a7e003fe9301aa9f69a1ab6c955151"
+    },
+    {
+      "path": "cloud/manual-complete005/phase-0-output.json",
+      "bytes": 4739580,
+      "sha256": "356cc5828359cf2d109fbd4ac52b4eb45e3225708e33b219630b849a267523dd"
+    },
+    {
+      "path": "cloud/manual-complete005/phase-0-stage-0-input.json",
+      "bytes": 3869593,
+      "sha256": "28052123bd41952530b448142e46318397a7e003fe9301aa9f69a1ab6c955151"
+    },
+    {
+      "path": "cloud/manual-complete005/phase-0-stage-0-output.json",
+      "bytes": 4739580,
+      "sha256": "356cc5828359cf2d109fbd4ac52b4eb45e3225708e33b219630b849a267523dd"
+    },
+    {
+      "path": "cloud/manual-complete005-diagnostic/PARTIAL-FAILED.json",
+      "bytes": 5719842,
+      "sha256": "aafc6202d6f95128ab66b5624d0ae062551af5885f0354c58010780975dd8573"
+    },
+    {
+      "path": "cloud/manual-complete005-diagnostic/phase-0-input.json",
+      "bytes": 3869593,
+      "sha256": "28052123bd41952530b448142e46318397a7e003fe9301aa9f69a1ab6c955151"
+    },
+    {
+      "path": "cloud/manual-complete005-diagnostic/phase-0-output.json",
+      "bytes": 4739580,
+      "sha256": "356cc5828359cf2d109fbd4ac52b4eb45e3225708e33b219630b849a267523dd"
+    },
+    {
+      "path": "cloud/manual-complete005-diagnostic/phase-0-stage-0-input.json",
+      "bytes": 3869593,
+      "sha256": "28052123bd41952530b448142e46318397a7e003fe9301aa9f69a1ab6c955151"
+    },
+    {
+      "path": "cloud/manual-complete005-diagnostic/phase-0-stage-0-output.json",
+      "bytes": 4739580,
+      "sha256": "356cc5828359cf2d109fbd4ac52b4eb45e3225708e33b219630b849a267523dd"
+    },
+    {
+      "path": "cloud/manual-source-trial001/BUILD-STATUS.json",
+      "bytes": 616,
+      "sha256": "88578a5433c7179eb4fb45dc6702f005ddb27e0b315ff371b8400cc3effbd04e"
+    },
+    {
+      "path": "cloud/manual-source-trial001/BUILD.log",
+      "bytes": 1900,
+      "sha256": "074c36826d8c34ef306023c4d3b24ee586d53758008b795b81fd6c34fc168514"
+    },
+    {
+      "path": "cloud/manual-source-trial001/circuit.json",
+      "bytes": 3398477,
+      "sha256": "233266748f7fdb4621db0706edb9188bf58b8378084ab7d8c6571bcdc94fa1a8"
+    },
+    {
+      "path": "cloud/manual-source-trial001/phase-0-input.json",
+      "bytes": 3502968,
+      "sha256": "8bd65699ac1711ff83e18ac4d79d0e60b21fdb7bd35b79ee6c54caf37d07fbea"
+    },
+    {
+      "path": "cloud/manual-source-trial001/phase-0-stage-0-error.json",
+      "bytes": 3503116,
+      "sha256": "6c23a0b87c664048c2d233068164ccd2190377a5e259c1456c9ca914e24ae895"
+    },
+    {
+      "path": "cloud/manual-source-trial001/phase-0-stage-0-input.json",
+      "bytes": 3502968,
+      "sha256": "8bd65699ac1711ff83e18ac4d79d0e60b21fdb7bd35b79ee6c54caf37d07fbea"
+    },
+    {
+      "path": "cloud/manual-source-trial001/routing-error.json",
+      "bytes": 3503116,
+      "sha256": "6c23a0b87c664048c2d233068164ccd2190377a5e259c1456c9ca914e24ae895"
+    },
+    {
+      "path": "cloud/manual-source-trial002/BUILD-STATUS.json",
+      "bytes": 618,
+      "sha256": "fb45358c1443ea4c81fdd6154ea84f3c1fde33a21dd08dda76eaf3b0d84f89c3"
+    },
+    {
+      "path": "cloud/manual-source-trial002/BUILD.log",
+      "bytes": 336,
+      "sha256": "7055ce003cdf60bc289c26481219c96ba96b3ab36b4c68a5a4a214456a9268d5"
+    },
+    {
+      "path": "cloud/manual-source-trial002/FILLED.json",
+      "bytes": 63373,
+      "sha256": "401788071dab5f1dbe7b4fd0b0130eff0672e4203e3cd25596856e7fd1e45c71"
+    },
+    {
+      "path": "cloud/manual-source-trial002/GEOMETRY.json",
+      "bytes": 13797,
+      "sha256": "ef81c07f1e5e20eebb7e710f3a0f004e5a319ce7d7eb2621c8e90642a25d5ac8"
+    },
+    {
+      "path": "cloud/manual-source-trial002/USB.json",
+      "bytes": 22867,
+      "sha256": "bb43d064d8fd50f395801032c4563373697f07bacd54ea3926e9bbf8acb6acb1"
+    },
+    {
+      "path": "cloud/manual-source-trial002/circuit.json",
+      "bytes": 4717286,
+      "sha256": "f156afbc2572d2aa4e72ddbeb27d81e885651cb3532a2b579a6982658ceff2bf"
+    },
+    {
+      "path": "cloud/manual-source-trial002/phase-0-input.json",
+      "bytes": 3501515,
+      "sha256": "66bb4d3a2a6c8ed8a283cf0a6bbc554ed4b794bce7b17d022810eba0bc6e96f9"
+    },
+    {
+      "path": "cloud/manual-source-trial002/phase-0-output.json",
+      "bytes": 4165720,
+      "sha256": "a53bc4a2da0d74ab2e7e30af3ce40f291e2ebdc3645c50fd4a620effe2578175"
+    },
+    {
+      "path": "cloud/manual-source-trial002/phase-0-stage-0-input.json",
+      "bytes": 3501515,
+      "sha256": "66bb4d3a2a6c8ed8a283cf0a6bbc554ed4b794bce7b17d022810eba0bc6e96f9"
+    },
+    {
+      "path": "cloud/manual-source-trial002/phase-0-stage-0-output.json",
+      "bytes": 4165720,
+      "sha256": "a53bc4a2da0d74ab2e7e30af3ce40f291e2ebdc3645c50fd4a620effe2578175"
+    },
+    {
+      "path": "cloud/manual-source-trial003/BUILD-STATUS.json",
+      "bytes": 615,
+      "sha256": "6e1e0fc984d8429b21dd6e82331faa40c95b02b4327dd173e86dddcf2f7fa0be"
+    },
+    {
+      "path": "cloud/manual-source-trial003/BUILD.log",
+      "bytes": 281,
+      "sha256": "8ff827d32203b3f8f59a328287cd6bff6213e6ffce5b3b617ab47867bfd926b8"
+    },
+    {
+      "path": "cloud/manual-source-trial003/circuit.json",
+      "bytes": 3407760,
+      "sha256": "a61908fce410657d96922c587dbb3a44900e85822e4d5acd64460db5c0d6be22"
+    },
+    {
+      "path": "cloud/manual-source-trial004/BUILD-STATUS.json",
+      "bytes": 617,
+      "sha256": "9620df6d51fd6e42287997fa1c012fda9dd072ab7c7515a31ba9afdb5b0083de"
+    },
+    {
+      "path": "cloud/manual-source-trial004/BUILD.log",
+      "bytes": 281,
+      "sha256": "d8ba7f53541c8fff458ee0e26a79c8a1d2098ac09af9667b198c4f7c3e189d40"
+    },
+    {
+      "path": "cloud/manual-source-trial004/circuit.json",
+      "bytes": 3408302,
+      "sha256": "6f24c26b865725abbef416396d8ca2ff84fc120a6dec331fd390a7205dbfd777"
+    },
+    {
+      "path": "cloud/manual-source-trial005/BUILD-STATUS.json",
+      "bytes": 614,
+      "sha256": "a962055fe88dd13bbc29e03c46368329e8271fc82e3f41970e837a53ea6be9c1"
+    },
+    {
+      "path": "cloud/manual-source-trial005/BUILD.log",
+      "bytes": 2526,
+      "sha256": "42c8835f912c9ebe83cf06eededf8699ddebad7ebf058ab32f279c2ef338e176"
+    },
+    {
+      "path": "cloud/manual-source-trial005/phase-0-input.json",
+      "bytes": 3657508,
+      "sha256": "22f1f90a746f7a604b7c7271d9407987b555545c3590a9a38533ce89796c5ec6"
+    },
+    {
+      "path": "cloud/manual-source-trial005/phase-0-output.json",
+      "bytes": 4321815,
+      "sha256": "02c1cbd0d27339b22349ba9015fc7a317e4123e74f4c3c728eec8dcd07462a6f"
+    },
+    {
+      "path": "cloud/manual-source-trial005/phase-0-stage-0-input.json",
+      "bytes": 3657508,
+      "sha256": "22f1f90a746f7a604b7c7271d9407987b555545c3590a9a38533ce89796c5ec6"
+    },
+    {
+      "path": "cloud/manual-source-trial005/phase-0-stage-0-output.json",
+      "bytes": 4321815,
+      "sha256": "02c1cbd0d27339b22349ba9015fc7a317e4123e74f4c3c728eec8dcd07462a6f"
+    },
+    {
+      "path": "cloud/manual-source-trial006/BUILD-STATUS.json",
+      "bytes": 617,
+      "sha256": "6cb138afab8a0acf2f7262aa5e729525fe0debbb2a7254316af9d64e4d274e78"
+    },
+    {
+      "path": "cloud/manual-source-trial006/BUILD.log",
+      "bytes": 336,
+      "sha256": "7ddef51845c7b970c43322a7ebae223ec0f756dde0881dacc084b22832b9e826"
+    },
+    {
+      "path": "cloud/manual-source-trial006/FILLED.json",
+      "bytes": 64672,
+      "sha256": "569bf0a0bfd8cc7b4225341bb9c066150df1a3c8ea792e864126da20b8bc0be7"
+    },
+    {
+      "path": "cloud/manual-source-trial006/GEOMETRY.json",
+      "bytes": 14051,
+      "sha256": "c5ece6dfd797a193759864a2f5470ea9e319b2a750fe570558063bccc8d286e2"
+    },
+    {
+      "path": "cloud/manual-source-trial006/USB.json",
+      "bytes": 22867,
+      "sha256": "776de1be191440933cef5373671a6f8e6d0ec96b23741ea7ba9280bc71f34d9f"
+    },
+    {
+      "path": "cloud/manual-source-trial006/circuit.json",
+      "bytes": 4727866,
+      "sha256": "68f78c0f83e0fce05bc34063fb146e5d884bc3577e2b08eee1b4b68365581816"
+    },
+    {
+      "path": "cloud/manual-source-trial006/phase-0-input.json",
+      "bytes": 3553061,
+      "sha256": "f50b94e9c223e90bd3818636dd31b597dc717a45e2f7ca7665062b7552306b42"
+    },
+    {
+      "path": "cloud/manual-source-trial006/phase-0-output.json",
+      "bytes": 4217368,
+      "sha256": "aa4696dd8b2dd4133b2913e6aa023415e599fbdbdbf22fc0d47e02bb74efadeb"
+    },
+    {
+      "path": "cloud/manual-source-trial006/phase-0-stage-0-input.json",
+      "bytes": 3553061,
+      "sha256": "f50b94e9c223e90bd3818636dd31b597dc717a45e2f7ca7665062b7552306b42"
+    },
+    {
+      "path": "cloud/manual-source-trial006/phase-0-stage-0-output.json",
+      "bytes": 4217368,
+      "sha256": "aa4696dd8b2dd4133b2913e6aa023415e599fbdbdbf22fc0d47e02bb74efadeb"
+    },
+    {
+      "path": "cloud/manual-source-trial007/BUILD-STATUS.json",
+      "bytes": 616,
+      "sha256": "add09904aba36e99bc9410d4ef3c42d4f1e5b7a075aed983cded740b828343cc"
+    },
+    {
+      "path": "cloud/manual-source-trial007/BUILD.log",
+      "bytes": 2526,
+      "sha256": "b6ca30e5f97c61f702acb46cdeefc54d130ccde21ef22b979b1306d89148b734"
+    },
+    {
+      "path": "cloud/manual-source-trial007/phase-0-input.json",
+      "bytes": 3888042,
+      "sha256": "34edd66bdf4a8747a42d47472c18005eb8bc67796a3c216e2f99a1ba1832dd52"
+    },
+    {
+      "path": "cloud/manual-source-trial007/phase-0-output.json",
+      "bytes": 4552056,
+      "sha256": "8938c4a04ca419004271a5855fb1de386ece833cbd3804d99e0780cbd0b53e07"
+    },
+    {
+      "path": "cloud/manual-source-trial007/phase-0-stage-0-input.json",
+      "bytes": 3888042,
+      "sha256": "34edd66bdf4a8747a42d47472c18005eb8bc67796a3c216e2f99a1ba1832dd52"
+    },
+    {
+      "path": "cloud/manual-source-trial007/phase-0-stage-0-output.json",
+      "bytes": 4552056,
+      "sha256": "8938c4a04ca419004271a5855fb1de386ece833cbd3804d99e0780cbd0b53e07"
+    },
+    {
+      "path": "cloud/manual-source-trial008/BUILD-STATUS.json",
+      "bytes": 615,
+      "sha256": "30585a75376b8ea03610cffbda962e94750c0db5c2deb57d03ed1c3d106bb64f"
+    },
+    {
+      "path": "cloud/manual-source-trial008/BUILD.log",
+      "bytes": 336,
+      "sha256": "8f724e6096f04422878bd87ccaa1d51e6f9d60d4597c2e4a89bc46a77823256d"
+    },
+    {
+      "path": "cloud/manual-source-trial008/circuit.json",
+      "bytes": 4758162,
+      "sha256": "68188e7a7a9f397d14c3f9660528be53dbbe409b96f43535eb3eff043966e72e"
+    },
+    {
+      "path": "cloud/manual-source-trial008/phase-0-input.json",
+      "bytes": 3881930,
+      "sha256": "ffd08a583db458bf350c2b1bc758a7eb042577f2bb42350f73867d497dc6aabe"
+    },
+    {
+      "path": "cloud/manual-source-trial008/phase-0-output.json",
+      "bytes": 4545944,
+      "sha256": "fb777021cff890eb9fe2d096fd2618c1a8fe8c5ead3e25ac7e7aa01a372cb530"
+    },
+    {
+      "path": "cloud/manual-source-trial008/phase-0-stage-0-input.json",
+      "bytes": 3881930,
+      "sha256": "ffd08a583db458bf350c2b1bc758a7eb042577f2bb42350f73867d497dc6aabe"
+    },
+    {
+      "path": "cloud/manual-source-trial008/phase-0-stage-0-output.json",
+      "bytes": 4545944,
+      "sha256": "fb777021cff890eb9fe2d096fd2618c1a8fe8c5ead3e25ac7e7aa01a372cb530"
+    },
+    {
+      "path": "cloud/manual-source-trial009/BUILD-STATUS.json",
+      "bytes": 617,
+      "sha256": "c78f91875d65341c84e239b4f6cbf9218ee5e48dfe0db0e2d8cc8efa7ffd1147"
+    },
+    {
+      "path": "cloud/manual-source-trial009/BUILD.log",
+      "bytes": 847,
+      "sha256": "9c9e7f3875ce99712011307c9b07adcf8da90e9deb605da83cd93f162b330709"
+    },
+    {
+      "path": "cloud/manual-source-trial010/BUILD-STATUS.json",
+      "bytes": 619,
+      "sha256": "c394ca0133f50759cb05ebc10d6c09a9c172d0879e7de832ea3fa8cdd415e94a"
+    },
+    {
+      "path": "cloud/manual-source-trial010/BUILD.log",
+      "bytes": 336,
+      "sha256": "6a2f78e74c7c5dfa45a7aeb4d51e53282aafa0771d851392534ceba70c2e1db4"
+    },
+    {
+      "path": "cloud/manual-source-trial010/FILLED.json",
+      "bytes": 45263,
+      "sha256": "803c5a3a9ea27cc4b19969f1a3b6822861d51c44c8a0126ec6dbc4860e5f4abe"
+    },
+    {
+      "path": "cloud/manual-source-trial010/GEOMETRY.json",
+      "bytes": 14853,
+      "sha256": "7471cc5819f29f0f70826e94c91cc6553a852a371c337be6fdb0c3c0b91cb1d0"
+    },
+    {
+      "path": "cloud/manual-source-trial010/circuit.json",
+      "bytes": 4754915,
+      "sha256": "661c74993a0561cb99659b0c0ff0a8e5182b73ff1d2ad9a35cdba08fb67d5f14"
+    },
+    {
+      "path": "cloud/manual-source-trial010/phase-0-input.json",
+      "bytes": 3656389,
+      "sha256": "34b7ad8270cc8927963c37fd31ee628cd173e9ea522b62f92afecb442c2f2b7d"
+    },
+    {
+      "path": "cloud/manual-source-trial010/phase-0-output.json",
+      "bytes": 4320403,
+      "sha256": "19008be491b7fdcef16daa533c1dc72e3203b23a5210c2f11e7ea0cd208d34db"
+    },
+    {
+      "path": "cloud/manual-source-trial010/phase-0-stage-0-input.json",
+      "bytes": 3656389,
+      "sha256": "34b7ad8270cc8927963c37fd31ee628cd173e9ea522b62f92afecb442c2f2b7d"
+    },
+    {
+      "path": "cloud/manual-source-trial010/phase-0-stage-0-output.json",
+      "bytes": 4320403,
+      "sha256": "19008be491b7fdcef16daa533c1dc72e3203b23a5210c2f11e7ea0cd208d34db"
+    },
+    {
+      "path": "cloud/manual-source-trial011/BUILD-STATUS.json",
+      "bytes": 618,
+      "sha256": "f882668cbf0c9e719602ea8ef26e242adf544fddc4868cc9a3e45049a25fb1fd"
+    },
+    {
+      "path": "cloud/manual-source-trial011/BUILD.log",
+      "bytes": 1918,
+      "sha256": "0f041422407f0e4a7653ec29393a157b47418cd8cfc55ec25e1d7ea23746d0f5"
+    },
+    {
+      "path": "cloud/manual-source-trial011/circuit.json",
+      "bytes": 3440306,
+      "sha256": "255b34c3bae4c701b33f718753d07604cffda178ae1d9f2d9ec3bd7e7e2fce29"
+    },
+    {
+      "path": "cloud/manual-source-trial011/phase-0-input.json",
+      "bytes": 3672724,
+      "sha256": "cf3500f711fc73a84a474bb0beee9296f96e09e8b5d75180bd206d9289b8ced8"
+    },
+    {
+      "path": "cloud/manual-source-trial011/phase-0-output.json",
+      "bytes": 4336738,
+      "sha256": "3d235f3858e7b595dab80280d3919704c0351e5afa41006881de0c9806d0b035"
+    },
+    {
+      "path": "cloud/manual-source-trial011/phase-0-stage-0-input.json",
+      "bytes": 3672724,
+      "sha256": "cf3500f711fc73a84a474bb0beee9296f96e09e8b5d75180bd206d9289b8ced8"
+    },
+    {
+      "path": "cloud/manual-source-trial011/phase-0-stage-0-output.json",
+      "bytes": 4336738,
+      "sha256": "3d235f3858e7b595dab80280d3919704c0351e5afa41006881de0c9806d0b035"
+    },
+    {
+      "path": "cloud/manual-source-trial011/phase-10-input.json",
+      "bytes": 7741518,
+      "sha256": "5ac5237a6c17df4944793bad389d04ece5a03d43b1935db90a05825477f0d48d"
+    },
+    {
+      "path": "cloud/manual-source-trial011/phase-10-stage-0-error.json",
+      "bytes": 7741646,
+      "sha256": "953612bc3eb71f0ac47becce890357a4871b2f0b337556a76569fb0efa76bb77"
+    },
+    {
+      "path": "cloud/manual-source-trial011/phase-10-stage-0-input.json",
+      "bytes": 7741518,
+      "sha256": "5ac5237a6c17df4944793bad389d04ece5a03d43b1935db90a05825477f0d48d"
+    },
+    {
+      "path": "cloud/manual-source-trial011/routing-error.json",
+      "bytes": 7741646,
+      "sha256": "953612bc3eb71f0ac47becce890357a4871b2f0b337556a76569fb0efa76bb77"
+    },
+    {
+      "path": "cloud/manual-source-trial012/BUILD-STATUS.json",
+      "bytes": 619,
+      "sha256": "d5dd9d300ad71112f4cf0500a6112abd420957a9716e7419fe1a2fd5bbd50c3f"
+    },
+    {
+      "path": "cloud/manual-source-trial012/BUILD.log",
+      "bytes": 1918,
+      "sha256": "0f041422407f0e4a7653ec29393a157b47418cd8cfc55ec25e1d7ea23746d0f5"
+    },
+    {
+      "path": "cloud/manual-source-trial012/circuit.json",
+      "bytes": 3440306,
+      "sha256": "255b34c3bae4c701b33f718753d07604cffda178ae1d9f2d9ec3bd7e7e2fce29"
+    },
+    {
+      "path": "cloud/manual-source-trial012/phase-0-input.json",
+      "bytes": 3672724,
+      "sha256": "cf3500f711fc73a84a474bb0beee9296f96e09e8b5d75180bd206d9289b8ced8"
+    },
+    {
+      "path": "cloud/manual-source-trial012/phase-0-output.json",
+      "bytes": 4336738,
+      "sha256": "3d235f3858e7b595dab80280d3919704c0351e5afa41006881de0c9806d0b035"
+    },
+    {
+      "path": "cloud/manual-source-trial012/phase-0-stage-0-input.json",
+      "bytes": 3672724,
+      "sha256": "cf3500f711fc73a84a474bb0beee9296f96e09e8b5d75180bd206d9289b8ced8"
+    },
+    {
+      "path": "cloud/manual-source-trial012/phase-0-stage-0-output.json",
+      "bytes": 4336738,
+      "sha256": "3d235f3858e7b595dab80280d3919704c0351e5afa41006881de0c9806d0b035"
+    },
+    {
+      "path": "cloud/manual-source-trial012/phase-10-input.json",
+      "bytes": 7741518,
+      "sha256": "5ac5237a6c17df4944793bad389d04ece5a03d43b1935db90a05825477f0d48d"
+    },
+    {
+      "path": "cloud/manual-source-trial012/phase-10-stage-0-error.json",
+      "bytes": 7741646,
+      "sha256": "953612bc3eb71f0ac47becce890357a4871b2f0b337556a76569fb0efa76bb77"
+    },
+    {
+      "path": "cloud/manual-source-trial012/phase-10-stage-0-input.json",
+      "bytes": 7741518,
+      "sha256": "5ac5237a6c17df4944793bad389d04ece5a03d43b1935db90a05825477f0d48d"
+    },
+    {
+      "path": "cloud/manual-source-trial012/routing-error.json",
+      "bytes": 7741646,
+      "sha256": "953612bc3eb71f0ac47becce890357a4871b2f0b337556a76569fb0efa76bb77"
+    },
+    {
+      "path": "cloud/rejected-unreferenced-corridor-source/README.md",
+      "bytes": 185,
+      "sha256": "f8d1fa56279bd64dc528db3f128ddacaa7bc505f71b464de43bc41a4898b85ac"
+    },
+    {
+      "path": "cloud/rejected-unreferenced-corridor-source/RemainingRouteReconnections.tsx",
+      "bytes": 1387,
+      "sha256": "185b50517ad851e52abcbd1ffae73e7ff26f32412c3263f19ca9d49aabfd8165"
+    },
+    {
+      "path": "cloud/rejected-unreferenced-corridor-source/remaining-route-reconnections.json",
+      "bytes": 14598,
+      "sha256": "578d2eb54e3dd188bc6c99cb8eaa483d00047ec67d2900ff648e0f78c8553bdc"
+    },
+    {
+      "path": "cloud/selected-proposals001/KICAD-INTERCHANGE-AUDIT.json",
+      "bytes": 176215,
+      "sha256": "8f161f5fe6b7290814c921ccf358e50125b019341e3ecc2e9aa1773f2ef2e980"
+    },
+    {
+      "path": "cloud/selected-proposals001/PROPOSAL-SELECTION.json",
+      "bytes": 50047,
+      "sha256": "c430c02f126a23adcdc8cc70463cc41272d68c74fa2235becd4479a44b14620f"
+    },
+    {
+      "path": "cloud/selected-proposals001/ROUTING-COINCIDENT-CLEANUP.json",
+      "bytes": 39091,
+      "sha256": "da3ead38f3de239845b76af73fb6178ef42c789d43fd0089a17fd0c649d2e2d5"
+    },
+    {
+      "path": "cloud/selected-proposals001/SELECTED-ROUTING-PLAN.json",
+      "bytes": 2123,
+      "sha256": "3a9297d43a1e56d3a1d51af619b9e8d0f477b0c25c928f4ba7a65071c4e96c58"
+    },
+    {
+      "path": "cloud/selected-proposals001/SESSION-IMPORT-AUDIT.json",
+      "bytes": 682,
+      "sha256": "efcb2e9a29a2d042f9535e3154892194e79e734c28c59e9090b36d297bb7305a"
+    },
+    {
+      "path": "cloud/selected-proposals001/SESSION-IMPORT.log",
+      "bytes": 1480,
+      "sha256": "57c03bbe4228338f3996670c66ad1b5e141bc47a9de7c44e678c7a3f91559245"
+    },
+    {
+      "path": "cloud/selected-proposals001/TOPOLOGY.log",
+      "bytes": 76,
+      "sha256": "c71f928371ebcf6d195250593f1f2ced67b8dbef30ccdaa17351f26345df5268"
+    },
+    {
+      "path": "cloud/selected-proposals001/circuit.json",
+      "bytes": 4685723,
+      "sha256": "f84ebd71a5ea6bfc0c0ede91d44525626292cbde152eee5ff50f4390e343f5bf"
+    },
+    {
+      "path": "cloud/selected-proposals001/complete-TOPOLOGY-REVIEW.json",
+      "bytes": 14822,
+      "sha256": "0d156c6907fb3fb43cc158bd3a2f30994a7ea1def687e7d53683b3bca171a031"
+    },
+    {
+      "path": "cloud/selected-proposals001/complete-saved-paths.json",
+      "bytes": 1138451,
+      "sha256": "15c56962ca8ef1dec8c8d5215cc4dc7aaf0d5c0da01b2f5789686e7564f123b9"
+    },
+    {
+      "path": "cloud/selected-proposals001/local-copper.json",
+      "bytes": 400345,
+      "sha256": "f56271d8906311a15265de23e1181f5585a7b829f0255b95bc8e4d94fca25094"
+    },
+    {
+      "path": "cloud/selected-proposals001/local-routed.kicad_pcb",
+      "bytes": 879135,
+      "sha256": "30f51568016b7fea1b14b8a8a84aa5fd3134c47dbb7b56b365a56c18224f77c9"
+    },
+    {
+      "path": "cloud/selected-proposals001/local-routed.kicad_prl",
+      "bytes": 2063,
+      "sha256": "569ce97e28b560afafeb124675d7c5e7f55c7f2261bbb38395c8bbc1e457653f"
+    },
+    {
+      "path": "cloud/selected-proposals001/local-routed.kicad_pro",
+      "bytes": 8365,
+      "sha256": "e05ba62f1f76afe70ccbadded6a95e959715678540b2f0550fb6e98330a06436"
+    },
+    {
+      "path": "cloud/selected-proposals001/local-routed.ses",
+      "bytes": 44071,
+      "sha256": "d89b67329fee4948895d70177bb954263a8484a385f9d0d40f346869c1f99413"
+    },
+    {
+      "path": "cloud/selected-proposals001/local-routing.kicad_pcb",
+      "bytes": 876406,
+      "sha256": "df8b102fb176fe6eadce3e2fc2018dc63a1bdaa38ed7c7fec3c52ab429959329"
+    },
+    {
+      "path": "cloud/selected-proposals001/routing-pad-guards.json",
+      "bytes": 2736368,
+      "sha256": "81e7ca991738940b34d2f563177a45e4a795a8911476b834f56d2feb98542139"
+    },
+    {
+      "path": "cloud/selected-proposals001/select-proposals.py",
+      "bytes": 7927,
+      "sha256": "67ec2e14b079a764e45e74ee86393dc5f2e8bb444ea149bc334cb23b7e1c3e24"
+    },
+    {
+      "path": "cloud/selected-proposals001/selected-nets.json",
+      "bytes": 112,
+      "sha256": "eda4a00b171cab66db1b1c58c7c0075123ae8b096acff60d5ae148a02defe73b"
+    }
+  ]
+}

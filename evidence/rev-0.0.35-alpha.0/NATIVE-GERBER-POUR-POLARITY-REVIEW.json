@@ -1,0 +1,78 @@
+{
+  "scope": "Audit actual ordered dark/clear Gerber regions against the native filled-pour union before later pads/traces/vias. Coordinates .000001 mm; 2 um serialization allowance. This is a targeted converter diagnostic, not a complete CAM approval.",
+  "layers": [
+    {
+      "missing_pour_regions": [],
+      "missing_restored_by_later_traces_vias_mm2": 0.0,
+      "missing_after_all_inner_copper_mm2": 0.0,
+      "file": "F_Cu.gbr",
+      "layer": "top",
+      "region_commands": 43,
+      "source_pours": 7,
+      "expected_pour_union_area_mm2": 627.0606840476773,
+      "plotted_pour_region_area_mm2": 627.0606840476767,
+      "missing_after_2um_allowance_mm2": 0.0,
+      "extra_after_2um_allowance_mm2": 0.0,
+      "missing_bounds_mm": []
+    },
+    {
+      "missing_pour_regions": [
+        {
+          "pour": "pcb_copper_pour_199",
+          "net": "GND",
+          "area_mm2": 0.27952735608799983
+        },
+        {
+          "pour": "pcb_copper_pour_200",
+          "net": "GND",
+          "area_mm2": 0.11251445955399997
+        }
+      ],
+      "missing_restored_by_later_traces_vias_mm2": 0.39146895624382483,
+      "missing_after_all_inner_copper_mm2": 0.0005726611561187525,
+      "file": "In1_Cu.gbr",
+      "layer": "inner1",
+      "region_commands": 58,
+      "source_pours": 21,
+      "expected_pour_union_area_mm2": 690.4947614524968,
+      "plotted_pour_region_area_mm2": 690.1027196319421,
+      "missing_after_2um_allowance_mm2": 0.39204181564199964,
+      "extra_after_2um_allowance_mm2": 0.0,
+      "missing_bounds_mm": [
+        -12.002875,
+        -15.69925,
+        -6.70075,
+        -13.31075
+      ]
+    },
+    {
+      "missing_pour_regions": [],
+      "missing_restored_by_later_traces_vias_mm2": 0.0,
+      "missing_after_all_inner_copper_mm2": 0.0,
+      "file": "In2_Cu.gbr",
+      "layer": "inner2",
+      "region_commands": 46,
+      "source_pours": 21,
+      "expected_pour_union_area_mm2": 523.9067453933849,
+      "plotted_pour_region_area_mm2": 523.906745393385,
+      "missing_after_2um_allowance_mm2": 0.0,
+      "extra_after_2um_allowance_mm2": 0.0,
+      "missing_bounds_mm": []
+    },
+    {
+      "missing_pour_regions": [],
+      "missing_restored_by_later_traces_vias_mm2": 0.0,
+      "missing_after_all_inner_copper_mm2": 0.0,
+      "file": "B_Cu.gbr",
+      "layer": "bottom",
+      "region_commands": 72,
+      "source_pours": 33,
+      "expected_pour_union_area_mm2": 567.988082762986,
+      "plotted_pour_region_area_mm2": 567.9880827629861,
+      "missing_after_2um_allowance_mm2": 0.0,
+      "extra_after_2um_allowance_mm2": 0.0,
+      "missing_bounds_mm": []
+    }
+  ],
+  "interpretation": "Inner1 ordered clear regions remove some earlier GND pour regions; later via/track flashes restore nearly all of that area. This targeted area diagnostic does not prove an electrical open or full copper equivalence. An independent full Gerber CAM review remains mandatory; this review ZIP is not approved for ordering."
+}

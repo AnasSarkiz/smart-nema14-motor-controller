@@ -10,6 +10,7 @@ const savedViaPositions = savedRoutes.paths.flatMap((path) =>
 )
 const unrepresentedFanouts = fanouts.filter(
   (fanout) =>
+    savedRoutes.retained_fanout_names.includes(fanout.name) ||
     !savedViaPositions.some(
       (via) => Math.hypot(via.x - fanout.x, via.y - fanout.y) < 0.00001,
     ),

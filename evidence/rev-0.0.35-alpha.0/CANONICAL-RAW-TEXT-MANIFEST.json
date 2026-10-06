@@ -1,0 +1,23 @@
+{
+  "scope": "Exact unmodified CLI SVG/log bytes archived for preservation; PNG views and qualification reports remain unpacked. No generated output is reformatted.",
+  "archive_path": "evidence/rev-0.0.35-alpha.0/canonical-raw-text.tar.gz",
+  "archive_sha256": "0a8de1ec9a819538cfa9bad41fd2c768ff3bc0aae043b6e211aea3b09db930d9",
+  "files": [
+    {
+      "path": "cloud/canonical/schematic.svg",
+      "bytes": 173187,
+      "sha256": "648c965c1785a90b335db155f7ac37b837ce26353c3db95674ded7b5ec12e249"
+    },
+    {
+      "path": "cloud/canonical-final/schematic.svg",
+      "bytes": 173187,
+      "sha256": "648c965c1785a90b335db155f7ac37b837ce26353c3db95674ded7b5ec12e249"
+    },
+    {
+      "path": "cloud/canonical/CHECK-netlist.log",
+      "bytes": 24486,
+      "sha256": "05cdba599695cbec180d11ef561a14b4bbd96fdb850b584b83a207bccb03ec7c"
+    }
+  ],
+  "restore_command": "tar -xzf evidence/rev-0.0.35-alpha.0/canonical-raw-text.tar.gz -C .publication/restored-035"
+}

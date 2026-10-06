@@ -1,0 +1,71 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Async effect error in PcbTraceRender "autorouting":
+TypeError: undefined is not an object (evaluating 'connectedPort.x')
+    at <anonymous> (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:108939:11)
+    at map (native:1:11)
+    at getSimpleRouteJsonFromCircuitJson (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:108928:5)
+    at _runLocalAutorouting (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:119590:52)
+    at <anonymous> (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:120252:26)
+    at _queueAsyncEffect (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:1218:16)
+    at _startAsyncAutorouting (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:120250:12)
+    at updatePcbTraceRender (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:120323:14)
+    at runRenderPhase (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:1378:25)
+    at runRenderCycle (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:1334:12)
+    at render (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:122353:16)
+    at generateCircuitJson (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js:167877:12)
+    at async <anonymous> (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js:167984:28)
+    at async <anonymous> (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js:182506:38)
+    at async <anonymous> (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js:182628:15)
+    at processTicksAndRejections (native:7:39)
+Circuit JSON written to dist/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+U4 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+J_USB has no pin with requires_power=true
+J_USB has no pin with requires_ground=true
+Q_PD has no pin with requires_power=true
+Q_PD has no pin with requires_ground=true
+All pins on Q_PD are underspecified (no pinAttributes set)
+D_USB has no pin with requires_power=true
+D_VBUS has no pin with requires_power=true
+D_VBUS has no pin with requires_ground=true
+All pins on D_VBUS are underspecified (no pinAttributes set)
+J_IO has no pin with requires_power=true
+J_IO has no pin with requires_ground=true
+All pins on J_IO are underspecified (no pinAttributes set)
+J_MOTOR has no pin with requires_power=true
+J_MOTOR has no pin with requires_ground=true
+All pins on J_MOTOR are underspecified (no pinAttributes set)
+U9 has no pin with requires_power=true
+D_IO1 has no pin with requires_power=true
+D_IO2 has no pin with requires_power=true
+D_CAN has no pin with requires_power=true
+D_CAN has no pin with requires_ground=true
+All pins on D_CAN are underspecified (no pinAttributes set)
+U10 has no pin with requires_power=true
+Q_ILIM has no pin with requires_power=true
+Q_ILIM has no pin with requires_ground=true
+All pins on Q_ILIM are underspecified (no pinAttributes set)
+Q_PD is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_USB is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_VBUS is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_CAN is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q_ILIM is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Generating preview images...
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Build complete
+  Circuits  1 passed
+  Options   schematic-svgs
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

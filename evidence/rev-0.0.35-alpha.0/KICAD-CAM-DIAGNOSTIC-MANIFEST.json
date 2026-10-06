@@ -1,0 +1,103 @@
+{
+  "scope": "Rejected KiCad CAM diagnostic retained byte-exact in an archive, not fabrication approval",
+  "archive_path": "evidence/rev-0.0.35-alpha.0/kicad-cam-diagnostic.tar.gz",
+  "archive_sha256": "49e53859cda14b981a8f445bb0a170b656a869d96960fea768ec6efcc9d6b87b",
+  "files": [
+    {
+      "path": "cam-review/POSITIONS-UNAPPROVED.csv",
+      "bytes": 13187,
+      "sha256": "469b5a7766ecf1a5cf3576359c266e2b3e82bbeebe1708e1e0c23e283f08ec36"
+    },
+    {
+      "path": "cam-review/board-B_Cu.gbl",
+      "bytes": 678810,
+      "sha256": "7baeb41fc772295af9bb59cde1c35a1bf6d968721a3ef0f759e56b4c3d0462df"
+    },
+    {
+      "path": "cam-review/board-B_Fab.gbr",
+      "bytes": 1089,
+      "sha256": "ef536b0aaa402cb0e994494f58eea13b2e372fe0c74ee64d447128ff6760fd79"
+    },
+    {
+      "path": "cam-review/board-B_Mask.gbs",
+      "bytes": 10125,
+      "sha256": "c395dad68579b6f79b59859d06a205271a671ac850eaf2b52c4ed200614d1346"
+    },
+    {
+      "path": "cam-review/board-B_Paste.gbp",
+      "bytes": 9841,
+      "sha256": "670b1e35fa231e382642974509516c116f2eff7ea4d4e190c50e3985e10a617f"
+    },
+    {
+      "path": "cam-review/board-B_Silkscreen.gbo",
+      "bytes": 173353,
+      "sha256": "ead821fd19528615757e4c0d933c43daf467e287beaa53060322a56fa7cd396d"
+    },
+    {
+      "path": "cam-review/board-Edge_Cuts.gm1",
+      "bytes": 692,
+      "sha256": "5cf18af449c18f6f09f05a3b9889bf851bfc5b23fcfb901407dcb2ff87f00b46"
+    },
+    {
+      "path": "cam-review/board-F_Cu.gtl",
+      "bytes": 961367,
+      "sha256": "eb70db6bc905e803cf38a72de9793a9c9d9ed2d9a89c4b45a2da0cbfab20c5b8"
+    },
+    {
+      "path": "cam-review/board-F_Fab.gbr",
+      "bytes": 5988,
+      "sha256": "d5ec36eef48ff99d9e8d22d415e27d4ec9e3db864865e11e854e347ef8c81dee"
+    },
+    {
+      "path": "cam-review/board-F_Mask.gts",
+      "bytes": 7383,
+      "sha256": "47c8a16e681f7a6ed55d5d023c413f19652a58c34be64e7155048307f66d550c"
+    },
+    {
+      "path": "cam-review/board-F_Paste.gtp",
+      "bytes": 7119,
+      "sha256": "6c051b47e7901d2651b7036cf433ecc8ec86b776c2cdb59c1f75646c96931146"
+    },
+    {
+      "path": "cam-review/board-F_Silkscreen.gto",
+      "bytes": 83392,
+      "sha256": "39e2d3f63be383464090e8744d80f927fe5cf7d33370d936c2322dfe3641d5a9"
+    },
+    {
+      "path": "cam-review/board-In1_Cu.g1",
+      "bytes": 857154,
+      "sha256": "e8a1e70ade6b2da80a51e762cbfe332013ab1227928f46e15b98385782b399ec"
+    },
+    {
+      "path": "cam-review/board-In2_Cu.g2",
+      "bytes": 446120,
+      "sha256": "89c6bf187286a479a63887cbe501d4f7b81cb6890e16909f79d3dbb4178c4742"
+    },
+    {
+      "path": "cam-review/board-NPTH-drl_map.svg",
+      "bytes": 47274,
+      "sha256": "f16db950d97674507e46d29413c109b5bfcc37d2e567d0959c7cc746d48a775d"
+    },
+    {
+      "path": "cam-review/board-NPTH.drl",
+      "bytes": 502,
+      "sha256": "fd447d79eea875ccf6c9af9cd62afb3eff7d9543fa0ab687b81912f26e118f4a"
+    },
+    {
+      "path": "cam-review/board-PTH-drl_map.svg",
+      "bytes": 86204,
+      "sha256": "d560fdb8f899d6e76569754a4d505dcef10fbeb91ace873a136359c58418968b"
+    },
+    {
+      "path": "cam-review/board-PTH.drl",
+      "bytes": 6481,
+      "sha256": "d58bedcf1ec75c8c32d7684e725f33f3694607fdff2d84e2cdfba4a4dcf74c7d"
+    },
+    {
+      "path": "cam-review/board-job.gbrjob",
+      "bytes": 3892,
+      "sha256": "ae926f1c9b850a022179a430eb0be44af4475c47f9b54c421f720b8ab6d9621d"
+    }
+  ],
+  "restore_command": "tar -xzf evidence/rev-0.0.35-alpha.0/kicad-cam-diagnostic.tar.gz -C .publication/restored-035"
+}

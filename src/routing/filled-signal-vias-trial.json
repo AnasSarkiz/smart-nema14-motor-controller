@@ -1219,6 +1219,363 @@
         }
       ],
       "routing_defect": "Relocate the POWER_GOOD ordinary via formerly at (7.0004,-11.6263): its 0.2258 mm outlet gap to U7 pin2 cannot fit a 0.15 mm SWDIO branch with 0.10 mm pad and 0.15 mm via clearance. This named exact-owner escape releases U7 pin3 without changing its official imported footprint."
+    },
+    {
+      "name": "CAN_RS_MCU_ESCAPE",
+      "net": "CAN_RS",
+      "owner": {
+        "reference": "U1",
+        "pin_number": 42
+      },
+      "x": 6.375,
+      "y": 1.375,
+      "owner_layer": "top",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "branches": [
+        {
+          "selector": ".U1 > .pin42",
+          "points": [
+            {
+              "x": 5.7,
+              "y": 1.7
+            }
+          ]
+        }
+      ],
+      "design_reason": "Local CAN_TX top and LIMIT1_CONN inner1 detours open an exact-owned CAN_RS escape; all placement, old barrels and imports stay unchanged."
+    },
+    {
+      "name": "EXT_DIR_SERIES_ESCAPE",
+      "net": "EXT_DIR",
+      "owner": {
+        "reference": "R24",
+        "pin_number": 2
+      },
+      "x": 5.1,
+      "y": 5.375,
+      "owner_layer": "bottom",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "branches": [
+        {
+          "selector": ".R24 > .pin2",
+          "points": []
+        }
+      ],
+      "design_reason": "Individually owned filled/capped escape retains the imported R24 pad, all component positions and prior barrels. Ordinary barrel does not fit this outlet; every proposed alternative must pass exact foreign-pad and all-layer copper checks."
+    },
+    {
+      "name": "SWCLK_MCU_ADDITIONAL_FILLED",
+      "net": "SWCLK",
+      "owner": {
+        "reference": "U1",
+        "pin_number": 36
+      },
+      "x": 6.58055,
+      "y": 3.88138004,
+      "owner_layer": "top",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "branches": [
+        {
+          "selector": ".U1 > .pin36",
+          "points": [
+            {
+              "x": 6.0,
+              "y": 4.55
+            }
+          ]
+        }
+      ],
+      "design_reason": "A second exact-owned MCU clock escape avoids the blocked four-layer outlet shared by the retained clock barrel and CAN fanout; the old barrel and branch remain."
+    },
+    {
+      "name": "TMC_DIR_MCU_FILLED_ESCAPE",
+      "net": "TMC_DIR",
+      "owner": {
+        "reference": "U1",
+        "pin_number": 18
+      },
+      "x": 14.5,
+      "y": 0.75,
+      "owner_layer": "top",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "branches": [
+        {
+          "selector": ".U1 > .pin18",
+          "points": []
+        }
+      ],
+      "design_reason": "Two newly proposed ordinary MCU escapes pass annular spacing but their gap cannot carry a .15 signal with .15 foreign-copper clearance. This individually owned filled/capped escape opens access without moving any prior barrel or purchased pad."
+    },
+    {
+      "name": "POWER_HIGH_CURRENT_TRANSFER_07_01",
+      "net": "POWER_HIGH_CURRENT",
+      "x": -0.5,
+      "y": 7.35,
+      "owner": {
+        "reference": "U1",
+        "pin_number": 26
+      },
+      "branches": [],
+      "owner_layer": "top",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "design_reason": "Individually owned source-path layer transfer in a congested signal outlet. The ordinary .30/.60 mm envelope fails at this exact position; the declared .20/.38 Type VII feature must pass all independent native checks. The owner is reached by the supported saved trace tree, retaining imported pads and existing barrels."
+    },
+    {
+      "name": "POWER_HIGH_CURRENT_TRANSFER_07_02",
+      "net": "POWER_HIGH_CURRENT",
+      "x": 7.475,
+      "y": 11.125,
+      "owner": {
+        "reference": "U1",
+        "pin_number": 26
+      },
+      "branches": [],
+      "owner_layer": "top",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "design_reason": "Individually owned source-path layer transfer in a congested signal outlet. The ordinary .30/.60 mm envelope fails at this exact position; the declared .20/.38 Type VII feature must pass all independent native checks. The owner is reached by the supported saved trace tree, retaining imported pads and existing barrels."
+    },
+    {
+      "name": "SWCLK_TRANSFER_09_03",
+      "net": "SWCLK",
+      "x": -2.75,
+      "y": 4.375,
+      "owner": {
+        "reference": "U1",
+        "pin_number": 36
+      },
+      "branches": [],
+      "owner_layer": "top",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "design_reason": "Individually owned source-path layer transfer in a congested signal outlet. The ordinary .30/.60 mm envelope fails at this exact position; the declared .20/.38 Type VII feature must pass all independent native checks. The owner is reached by the supported saved trace tree, retaining imported pads and existing barrels."
+    },
+    {
+      "name": "EFUSE_FLT_N_TRANSFER_13_01",
+      "net": "EFUSE_FLT_N",
+      "x": -0.0,
+      "y": 1.175,
+      "owner": {
+        "reference": "U1",
+        "pin_number": 43
+      },
+      "branches": [],
+      "owner_layer": "top",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "design_reason": "Individually owned source-path layer transfer in a congested signal outlet. The ordinary .30/.60 mm envelope fails at this exact position; the declared .20/.38 Type VII feature must pass all independent native checks. The owner is reached by the supported saved trace tree, retaining imported pads and existing barrels."
+    },
+    {
+      "name": "EXT_DIR_TRANSFER_03_01",
+      "net": "EXT_DIR",
+      "x": 0.525,
+      "y": 5.3,
+      "owner": {
+        "reference": "U1",
+        "pin_number": 20
+      },
+      "branches": [],
+      "owner_layer": "top",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "design_reason": "Individually owned source-path layer transfer in a congested signal outlet. The ordinary .30/.60 mm envelope fails at this exact position; the declared .20/.38 Type VII feature must pass all independent native checks. The owner is reached by the supported saved trace tree, retaining imported pads and existing barrels."
+    },
+    {
+      "name": "CAN_RS_TRANSFER_04_01",
+      "net": "CAN_RS",
+      "x": 1.85,
+      "y": 8.1,
+      "owner": {
+        "reference": "U6",
+        "pin_number": 8
+      },
+      "branches": [],
+      "owner_layer": "bottom",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "design_reason": "Individually owned source-path layer transfer in a congested signal outlet. The ordinary .30/.60 mm envelope fails at this exact position; the declared .20/.38 Type VII feature must pass all independent native checks. The owner is reached by the supported saved trace tree, retaining imported pads and existing barrels."
+    },
+    {
+      "name": "GND_DRIVER_PLANE_RECONNECT",
+      "net": "GND",
+      "owner": {
+        "reference": "C16",
+        "pin_number": 2
+      },
+      "owner_layer": "top",
+      "x": -3,
+      "y": 6.925,
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "branches": [],
+      "design_reason": "Individually owned native reconnection after measured signal-routing cuts split a ground/return island. Ordinary .30/.60 barrel clearance is unavailable here; independent ownership, drill, annulus, fill and USB checks are mandatory."
+    },
+    {
+      "name": "GND_ENCODER_DIR_CONTACT",
+      "net": "GND",
+      "owner": {
+        "reference": "U4",
+        "pin_number": 8
+      },
+      "owner_layer": "bottom",
+      "x": 1.8207994,
+      "y": 2.43500793,
+      "hole_diameter_mm": 0.15,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_pad_contact",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "branches": [
+        {
+          "selector": ".U4 > .pin8",
+          "points": []
+        }
+      ],
+      "design_reason": "Individually owned native reconnection after measured signal-routing cuts split a ground/return island. Ordinary .30/.60 barrel clearance is unavailable here; independent ownership, drill, annulus, fill and USB checks are mandatory."
+    },
+    {
+      "name": "RTN_C33_TRANSFER_01",
+      "net": "EFUSE_RTN",
+      "owner": {
+        "reference": "C33",
+        "pin_number": 2
+      },
+      "owner_layer": "bottom",
+      "x": -0.025,
+      "y": -4.2,
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "branches": [],
+      "design_reason": "Individually owned native reconnection after measured signal-routing cuts split a ground/return island. Ordinary .30/.60 barrel clearance is unavailable here; independent ownership, drill, annulus, fill and USB checks are mandatory."
+    },
+    {
+      "name": "RTN_C33_TRANSFER_02",
+      "net": "EFUSE_RTN",
+      "owner": {
+        "reference": "C33",
+        "pin_number": 2
+      },
+      "owner_layer": "bottom",
+      "x": -4.75,
+      "y": -1.925,
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "branches": [],
+      "design_reason": "Individually owned native reconnection after measured signal-routing cuts split a ground/return island. Ordinary .30/.60 barrel clearance is unavailable here; independent ownership, drill, annulus, fill and USB checks are mandatory."
+    },
+    {
+      "name": "GND_CAN_BUFFER_BULK_CONTACT",
+      "net": "GND",
+      "owner": {
+        "reference": "C32",
+        "pin_number": 2
+      },
+      "additional_owners": [
+        {
+          "reference": "C19",
+          "pin_number": 2
+        }
+      ],
+      "x": -7.3251155,
+      "y": 8.189998,
+      "owner_layer": "bottom",
+      "hole_diameter_mm": 0.15,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_pad_contact",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "branches": [
+        {
+          "selector": ".C32 > .pin2",
+          "points": []
+        },
+        {
+          "selector": ".C19 > .pin2",
+          "layer": "top",
+          "points": []
+        }
+      ],
+      "design_reason": "Exact paired ground contact between the unchanged bottom CAN-buffer capacitor and top motor bulk-capacitor ground pads. A local MOTOR_A1 inner2 detour retains .25 mm width and every old barrel to clear the contact. Independent geometry, power, physical-fill and CAM checks are mandatory."
+    },
+    {
+      "name": "EFUSE_FLT_USB_RETURN_TRANSFER_01",
+      "net": "EFUSE_FLT_N",
+      "x": -1.45,
+      "y": -4.65,
+      "owner": {
+        "reference": "R48",
+        "pin_number": 2
+      },
+      "owner_layer": "bottom",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "branches": [],
+      "design_reason": "Individually owned fault-leaf transfer opens the USB electrical GND2 feed; its ordinary .30/.60 envelope does not fit. Full native geometry, physical planes, USB and manufacturing qualification required."
+    },
+    {
+      "name": "EFUSE_FLT_USB_RETURN_TRANSFER_02",
+      "net": "EFUSE_FLT_N",
+      "x": -1.175,
+      "y": -1.675,
+      "owner": {
+        "reference": "R48",
+        "pin_number": 2
+      },
+      "owner_layer": "bottom",
+      "hole_diameter_mm": 0.2,
+      "outer_diameter_mm": 0.38,
+      "construction": "filled_capped_close_escape",
+      "process": "IPC-4761 Type VII epoxy filled and copper capped, ENIG",
+      "minimum_foreign_drill_to_pad_mm": 0.25,
+      "branches": [],
+      "design_reason": "Individually owned fault-leaf transfer opens the USB electrical GND2 feed; its ordinary .30/.60 envelope does not fit. Full native geometry, physical planes, USB and manufacturing qualification required."
     }
   ]
 }

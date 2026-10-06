@@ -1,0 +1,7 @@
+{
+  "baseline_cli_sha256": "1e81e31ea909d232d078264cb2518c141ed9769d9842837a376214927ae4a8fe",
+  "final_cli_sha256": "e573623bfc9aeee2bd368cf927ecf64bcd8dcc34f62bfff03babfd9b05ef447d",
+  "all_pcb_elements_compared": 3096,
+  "all_pcb_elements_exact": true,
+  "reason": "The new copperEnabled guard restores explicitly unrouted assembly views. Routed board output is byte-exact for every PCB element, including all copper, pads, masks and silkscreen. Only source metadata changes. Full CLI build passed again in 35.2564 s with zero errors. Independent geometry/connectivity/USB reports in ../canonical remain applicable by this complete equality proof."
+}

@@ -1,0 +1,8 @@
+{
+  "canonical_sha256": "d2fcea6f8bad399c6b89f649680edf3cebef515e09060637b3009d90b9f2e5f4",
+  "previous_checked_sha256": "e3cdd05def166bf0525d72d45f46c08347593d8a23d602988e49456bfe753603",
+  "every_element_except_source_filesystem_hash_exact": true,
+  "all_pcb_elements_exact": true,
+  "all_supplier_cad_references_exact": true,
+  "reason": "Fresh minimal packet bun run build passes imports and full CLI native build. Only source_filesystem_md5_hash changes because the exact reproducible packet now also includes qualification scripts and documents. All copper, pin wiring, component population and CAD entries remain byte-exact."
+}

@@ -183,4 +183,5 @@ for net_name in sys.argv[3:] or ('GND','EFUSE_RTN'):
 report = {'input':str(input_path),'sha256':hashlib.sha256(input_path.read_bytes()).hexdigest(),'scope':'Native filled BRep against actual pads, traces, via annuli and other pours; physical same-net conductors joined across full through-via spans. No net-name-only connectivity assumption. Impedance, thermal/current limits and CAM remain separate.','mechanical_constraints_sha256':hashlib.sha256(constraints_path.read_bytes()).hexdigest(),'pour_count':len(pours),'minimum_clearances':minimum,'clearance_violations':violations,'physical_islands':island_reports,'clearances_passed':not violations}
 output_path.write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({'pour_count':len(pours),'clearance_violations':len(violations),'physical_components':{name:r['physical_components'] for name,r in island_reports.items()}}))
-sys.exit(0 if not violations and all(r['complete_plane_network'] for r in island_reports.values()) else 1)
+if __name__ == '__main__':
+    sys.exit(0 if not violations and all(r['complete_plane_network'] for r in island_reports.values()) else 1)

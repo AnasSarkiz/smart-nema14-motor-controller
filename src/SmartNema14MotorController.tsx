@@ -1,3 +1,4 @@
+import { NativePlaneReconnections } from "./routing/NativePlaneReconnections"
 import { PowerCopperTrial } from "./routing/PowerCopperTrial"
 import { FilledSignalEscapes } from "./routing/FilledSignalEscapes"
 import { GroundReturns } from "./routing/GroundReturns"
@@ -43,6 +44,11 @@ export default function SmartNema14MotorController({
     | "beta_pipeline7"
     | "beta_pipeline9"
 } = {}) {
+  const copperEnabled =
+    savedRoutesEnabled ||
+    usbRoutesEnabled ||
+    routeRemaining ||
+    nativeRoutingTargets.length > 0
   return (
     <board
       width="35mm"
@@ -51,6 +57,7 @@ export default function SmartNema14MotorController({
       isViaInPadAllowed
       thickness="1.6mm"
       routeRemaining={routeRemaining}
+      routingDisabled={!copperEnabled}
       pcbStyle={{ viaHoleDiameter: "0.30mm", viaPadDiameter: "0.60mm" }}
       autorouterEffortLevel="1x"
       autorouterVersion={nativeAutorouterVersion}
@@ -781,23 +788,56 @@ export default function SmartNema14MotorController({
           connections={nativeRoutingTargets}
         />
       )}
-      <copperpour
-        name="L2_GND_REFERENCE"
-        layer="inner1"
-        connectsTo="net.GND"
-        clearance="0.155mm"
-        boardEdgeMargin="0.3mm"
-        cutoutMargin="0.31mm"
-        useThermalReliefs={false}
-      />
-      <PowerCopperTrial />
-      <FilledSignalEscapes
-        retainSavedFeatureNames={[
-          "TMC_ENABLE_MCU_FILLED",
-          "TMC_ENABLE_R7_FILLED",
-          "SWDIO_U7_FILLED",
-        ]}
-      />
+      {copperEnabled && (
+        <>
+          <copperpour
+            name="L2_GND_REFERENCE"
+            layer="inner1"
+            connectsTo="net.GND"
+            clearance="0.155mm"
+            boardEdgeMargin="0.3mm"
+            cutoutMargin="0.31mm"
+            useThermalReliefs={false}
+          />
+          <PowerCopperTrial />
+          <NativePlaneReconnections />
+          <FilledSignalEscapes
+            retainSavedFeatureNames={[
+              "TMC_ENABLE_MCU_FILLED",
+              "TMC_ENABLE_R7_FILLED",
+              "SWDIO_U7_FILLED",
+              "EFUSE_FLT_USB_RETURN_TRANSFER_01",
+              "EFUSE_FLT_USB_RETURN_TRANSFER_02",
+              "GND_CAN_BUFFER_BULK_CONTACT",
+              "GND_DRIVER_PLANE_RECONNECT",
+              "GND_ENCODER_DIR_CONTACT",
+              "RTN_C33_TRANSFER_01",
+              "RTN_C33_TRANSFER_02",
+              "POWER_HIGH_MCU_FILLED",
+              "POWER_HIGH_GATE_FILLED",
+              "POWER_HIGH_PULLDOWN_FILLED",
+              "SWCLK_SERIES_FILLED",
+              "SWCLK_PULLDOWN_FILLED",
+              "STEP_IO_FILLED",
+              "STEP_ESD_FILLED",
+              "STEP_SERIES_FILLED",
+              "FLT_EFUSE_FILLED",
+              "FLT_MCU_ESCAPE",
+              "FLT_PULLUP_FILLED",
+              "CAN_RS_MCU_ESCAPE",
+              "EXT_DIR_SERIES_ESCAPE",
+              "SWCLK_MCU_ADDITIONAL_FILLED",
+              "TMC_DIR_MCU_FILLED_ESCAPE",
+              "POWER_HIGH_CURRENT_TRANSFER_07_01",
+              "POWER_HIGH_CURRENT_TRANSFER_07_02",
+              "SWCLK_TRANSFER_09_03",
+              "EFUSE_FLT_N_TRANSFER_13_01",
+              "EXT_DIR_TRANSFER_03_01",
+              "CAN_RS_TRANSFER_04_01",
+            ]}
+          />
+        </>
+      )}
       <ControllerMount />
       <McuSheet mechanicalPreview={mechanicalPreview} />
       <EncoderSheet mechanicalPreview={mechanicalPreview} />

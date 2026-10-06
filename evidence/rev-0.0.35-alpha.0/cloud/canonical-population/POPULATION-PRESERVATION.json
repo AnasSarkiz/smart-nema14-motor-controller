@@ -1,0 +1,36 @@
+{
+  "canonical_sha256": "e3cdd05def166bf0525d72d45f46c08347593d8a23d602988e49456bfe753603",
+  "previous_sha256": "e573623bfc9aeee2bd368cf927ecf64bcd8dcc34f62bfff03babfd9b05ef447d",
+  "all_pcb_elements_compared": 3096,
+  "changes": [
+    {
+      "type": "pcb_component",
+      "reference": "U4",
+      "changed_keys": [
+        "do_not_place",
+        "pin1_location",
+        "supplier_pin1_location_map"
+      ]
+    },
+    {
+      "type": "pcb_component",
+      "reference": "C6",
+      "changed_keys": [
+        "do_not_place",
+        "pin1_location",
+        "supplier_pin1_location_map"
+      ]
+    },
+    {
+      "type": "pcb_component",
+      "reference": "R50",
+      "changed_keys": [
+        "do_not_place",
+        "pin1_location",
+        "supplier_pin1_location_map"
+      ]
+    }
+  ],
+  "all_copper_pads_masks_and_silkscreen_exact": true,
+  "reason": "Supported doNotPlace source props implement the preexisting default DNP policy. The CLI omits supplier orientation metadata for those three unfitted references. Physical footprints, wiring and copper remain exact."
+}

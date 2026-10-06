@@ -1,5 +1,79 @@
 # Smart NEMA 14 controller: complete Cloud handoff
 
+## Current Linux continuation — 0.0.35-alpha.0, 2026-10-06
+
+Routing is complete using supported native source paths. Fresh full CLI build
+passes with **334 traces, 224 vias, 82 pours and zero native errors**. All 82
+physical nets have one connected copper component, with zero foreign-pour
+spacing violations. Strict copper/drill/edge/NPTH checks pass with all 68 exact
+filled-feature owners matched; native shorts reports none. All 421 purchased
+pins retain their complete named and unnamed wiring partitions. The independent
+fresh schematic-only manufacturer-pin tests pass for 111 supplier references,
+nine sheets, programming/protection connections and current-limit values.
+
+Canonical SHA-256: `63076b482262db351ea8136616baf8afc8594d505a2a0932eb0c336d29395f53`.
+All three committed JSON mirrors match this fresh CLI output. Original 111
+placements, 423 pads, 195 prior barrels and 51 prior owned features are preserved;
+four local saved paths change to open verified corridors. Added ground and RTN
+reconnections repair actual islands without joining EFUSE_RTN to GND. All
+physical PCB geometry is exact across the final default-DNP metadata update.
+U4/C6/R50 use supported doNotPlace props; their copper remains present, while
+BOM/CPL correctly exclude those three references.
+
+All 2,209 nonzero wire segments across 82 nets are inventoried. Width floor
+and motor phase-current screens pass; the narrowest internal motor section is
+0.23 mm, screened at 0.36494 A versus the conservative 0.34245 A phase peak.
+Inner sections of 0.25 mm screen at 0.38768 A. These assume the recorded copper
+thickness and 30 C rise model. Thirty native width warnings remain: a combined
+same-net tree's minimum is compared with individual .18/.20/.28/.40/.60 mm
+requests. All 34 active fanout corridors are covered at their requested widths (POWER-FANOUT-WIDTH-REVIEW.json). No warning is suppressed. Actual loaded power paths, pours/necks,
+parallel paths, via plating, switching loops and thermal spreading are not yet
+fully qualified. RAW VBUS's previously measured 1.455 mm neck screen remains
+applicable because its physical copper is unchanged. Power tolerance/regeneration
+corner screens pass their stated bounds; high-frequency transients remain open.
+
+Fresh USB paths measure DP 25.13552 mm, DM 24.75408 mm, skew 0.38144 mm (<0.5).
+Adjacent ground covers the signal core. The approximate 91.812 ohm result uses
+the selected nominal stackup, not a field solver or confirmed fabrication coupon.
+The four copper-layer images were viewed before the DNP metadata-only change;
+physical silkscreen is unchanged and still crowded, with some labels outside
+outline. Cosmetic D_VBUS schematic rotation and imported metadata warnings remain.
+
+Direct native tscircuit Gerbers/drill/BOM/CPL export passes identity checks:
+224 plated drill hits, six NPTH, no duplicate hits, exact supplier identities,
+positions/layers and 108 default fitted references. Four supplier orientations
+remain unverified: J_USB, LED_POWER, LED_STATUS and LED_FAULT. Complete Gerber
+copper/outline/mask/paste review and assembler feedback remain pending. The old
+KiCad conversion reported 2,023 violations and 55 disconnected export items,
+including duplicate objects and mismatched default rules. Its failures are
+retained, not disabled or described as an approved fabrication export.
+
+All local model dependencies remain present. Actual assembly/mounted previews
+build, and the nominal exact-motor/front-carrier BRep/AABB audit passes for all
+111 references. The carrier/tolerance and constrained mating-envelope analytical screens also
+pass; the limiting J_IO clearance is .1643 mm after allowances. Actual
+physical assembly and mating fit remain untested. The live catalogue check passes all 43 exact parts with displayed
+stock; that does not reserve stock. TypeScript and formatting pass.
+
+Evidence: evidence/rev-0.0.35-alpha.0/, especially cloud/canonical-population/,
+TRACE-WIDTH-AUDIT.json, PIN-PARTITION-PRESERVATION.json and NATIVE-CAM-AUDIT.json.
+Rejected routing experiments are losslessly archived with per-file SHA-256;
+accepted canonical evidence remains unpacked. The runnable package excludes
+historical routing/debug trials but retains necessary sources, imports, models,
+pinned dependencies, checks and fresh Circuit JSON. Existing historical evidence,
+official references, context manifests and .agents/skills/tscircuit are preserved.
+
+Cloud currently denies CONNECT access to jlcpcb.com for its official capability
+page. An additive draft preserves the known dependency/supplier hosts and adds
+jlcpcb.com. Saving a draft does not apply or publish policy; review/save and
+Publish are environment-panel actions, followed by an actual request retry.
+Manufacturer confirmation of the .15/.20 mm named TypeVII filled/capped process,
+minimum copper/plating and exact stackup remains an ordering blocker.
+
+Revision035 publication is pending verification. No hosted build success is
+claimed. Stages 4/5/6 are incomplete; firmware and hardware tests are pending.
+**PROTOTYPE FABRICATION READY: NO.** Do not order from this review packet.
+
 CAD publication repair (2026-10-06): all 111 CAD entries retain their model
 references and all 82 unique local dependencies exist in Git. The earlier
 selected publication packet omitted every referenced local OBJ/STEP/STP asset;
@@ -15,7 +89,7 @@ See evidence/rev-0.0.34-alpha.0/cad-publication/ for manifests,
 before/after audits and asset readback. The hosted rebuild remains pending.
 Hosted 3D rendering and assembled fit remain separately unverified.
 
-## Current Linux continuation — 0.0.34-alpha.0
+## Historical Linux continuation — 0.0.34-alpha.0
 
 SWDIO_GUARDED physically joins U7 pin3 and R20 pin1 through a supported
 native source tree. The old POWER_GOOD barrel obstructed the U7 outlet:

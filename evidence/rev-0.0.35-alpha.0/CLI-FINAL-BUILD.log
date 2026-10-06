@@ -1,0 +1,110 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+trace: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)
+Could not save autorouting paths for subcircuit_source_group_0: PCB port selector is not unique: .D_CAN > port.pin2
+Circuit JSON written to dist/index/circuit.json
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+U4 has no pin with requires_power=true
+U2 has no pin with requires_power=true
+J_USB has no pin with requires_power=true
+J_USB has no pin with requires_ground=true
+Q_PD has no pin with requires_power=true
+Q_PD has no pin with requires_ground=true
+All pins on Q_PD are underspecified (no pinAttributes set)
+D_USB has no pin with requires_power=true
+D_VBUS has no pin with requires_power=true
+D_VBUS has no pin with requires_ground=true
+All pins on D_VBUS are underspecified (no pinAttributes set)
+J_IO has no pin with requires_power=true
+J_IO has no pin with requires_ground=true
+All pins on J_IO are underspecified (no pinAttributes set)
+J_MOTOR has no pin with requires_power=true
+J_MOTOR has no pin with requires_ground=true
+All pins on J_MOTOR are underspecified (no pinAttributes set)
+U9 has no pin with requires_power=true
+D_IO1 has no pin with requires_power=true
+D_IO2 has no pin with requires_power=true
+D_CAN has no pin with requires_power=true
+D_CAN has no pin with requires_ground=true
+All pins on D_CAN are underspecified (no pinAttributes set)
+U10 has no pin with requires_power=true
+Q_ILIM has no pin with requires_power=true
+Q_ILIM has no pin with requires_ground=true
+All pins on Q_ILIM are underspecified (no pinAttributes set)
+Failed to fetch supplier footprint for <chip#883(.Interfaces>.J_IO) /> (jlcpcb:C160409): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#710(.MotorDriver>.C20) /> (jlcpcb:C178585): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#779(.UsbPd>.D_USB) /> (jlcpcb:C94934): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#848(.Programming>.U8) /> (jlcpcb:C5218924): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#799(.UsbPd>.R13) /> (jlcpcb:C852472): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#593(.Encoder>.C6) /> (jlcpcb:C1525): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#616(.CAN>.C7) /> (jlcpcb:C1525): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#932(.Interfaces>.D_CAN) /> (jlcpcb:C12067): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#873(.Programming>.R52) /> (jlcpcb:C852472): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <led#994(.Interfaces>.LED_FAULT) /> (jlcpcb:C965805): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#808(.UsbPd>.R16) /> (jlcpcb:C25767): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#1062(.InputPower>.R48) /> (jlcpcb:C25744): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#967(.Interfaces>.R34) /> (jlcpcb:C25744): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#976(.Interfaces>.C32) /> (jlcpcb:C1525): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#934(.Interfaces>.R23) /> (jlcpcb:C11702): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <chip#903(.Interfaces>.U9) /> (jlcpcb:C28927): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <resistor#864(.Programming>.R21) /> (jlcpcb:C11702): Failed to search for the component (HTTP 429)
+Failed to fetch supplier footprint for <capacitor#973(.Interfaces>.C31) /> (jlcpcb:C1525): Failed to search for the component (HTTP 429)
+Trace [.GND_STITCH_MCU > .top to .U1 > .pin29] is routed thinner than requested (requested: 0.2mm, actual: 0.15mm).
+Trace [.PROTECTED_MONITOR_EAST > .bottom to .TCPP_PROTECTED_MONITOR > .bottom] is routed thinner than requested (requested: 0.18mm, actual: 0.15mm).
+Trace [.PROTECTED_LOW_RETURN > .bottom to .PROTECTED_MONITOR_WEST > .bottom] is routed thinner than requested (requested: 0.18mm, actual: 0.15mm).
+Trace [.VM_TMC_LOW > .top to .VM_BUCK > .top] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_TMC_BULK > .top to .VM_TMC_HIGH > .top] is routed thinner than requested (requested: 0.6mm, actual: 0.15mm).
+Trace [.VM_BULK_LEFT > .top to .VM_TMC_HIGH > .top] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.PROTECTED_MONITOR_WEST > .bottom to .PROTECTED_MONITOR_EAST > .bottom] is routed thinner than requested (requested: 0.18mm, actual: 0.15mm).
+Trace [.U10 > .pin8 to .U10 > .pin9] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.U10 > .pin8 to .C34 > .pin1] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.VM_BUCK > .top to .U5 > .pin2] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_BUCK > .top to .U5 > .pin3] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_BUCK > .top to .C9 > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_BUCK_CAP > .bottom to .C8 > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_TMC_LOW > .top to .U2 > .pin28] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.VM_TMC_HIGH > .top to .U2 > .pin22] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.VM_TMC_BYPASS > .bottom to .C17 > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_TMC_BULK > .bottom to .C18 > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_BULK_LEFT > .top to .C19 > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_BULK_RIGHT > .top to .C20 > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.VM_EFUSE_OUT > .bottom to .U10 > .pin24] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.VM_EFUSE_OUT > .bottom to .U10 > .pin23] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.VM_OUT_BRIDGE > .top to .VM_EFUSE_OUT > .top] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.RAW_USB_LEFT > .top to .J_USB > .pin21] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.RAW_USB_RIGHT > .top to .J_USB > .pin20] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.RAW_PMOS_SOURCE > .bottom to .Q_PD > .pin9] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.RAW_TVS > .bottom to .D_VBUS > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.RAW_TVS > .bottom to .C25 > .pin1] is routed thinner than requested (requested: 0.4mm, actual: 0.15mm).
+Trace [.PROTECTED_PMOS_DRAIN > .bottom to .Q_PD > .pin1] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.PROTECTED_EFUSE_INPUT_VIA > .bottom to .U10 > .pin8] is routed thinner than requested (requested: 0.28mm, actual: 0.15mm).
+Trace [.J_USB > .pin23 to .J_USB > .pin8] is routed thinner than requested (requested: 0.5mm, actual: 0.15mm).
+Q_PD is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_USB is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_VBUS is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+D_CAN is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q_ILIM is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+[profile] index.circuit.tsx: 35256.4ms
+Generating preview images...
+[index] Generating PCB SVG...
+[index] Written pcb.svg
+[index] Generating PCB PNG...
+[index] Written pcb.png
+[index] Generating schematic SVG...
+[index] Written schematic.svg
+
+Profile Summary (slowest first)
+  35256.4ms index.circuit.tsx
+
+Build complete
+  Circuits  1 passed
+  Options   pcb-png, pcb-svgs, schematic-svgs, profile
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

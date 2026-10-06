@@ -54,6 +54,7 @@ export function CanSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
       />
       <A_0402WGF0000TCE
         name="R50"
+        doNotPlace
         {...previewPlacement("R50", mechanicalPreview)}
         schX={9}
         schY={4}

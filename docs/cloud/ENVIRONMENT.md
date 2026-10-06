@@ -96,3 +96,18 @@ The exact CLI model URL, including the UUID from the official product response,
 returns HTTP 200 and a real OBJ. Omitting that UUID returned service HTTP 504;
 that was not a policy denial. These observations establish current request
 access, not publication of the saved draft, stock reservation or final 3D fit.
+
+## Revision035 startup and fabricator verification
+
+The portable startup smoke now supplies repository-local XDG configuration/cache/
+data defaults for a Cloud image with read-only HOME. The saved startup draft
+also initializes these paths and NODE_USE_ENV_PROXY=1 for subsequent commands.
+The exact startup smoke passes with the current checked board and context.
+
+Fabricator qualification needs the official host jlcpcb.com. Its capability
+page currently receives CONNECT 403. An additive 15-host draft preserves the
+11 installation hosts and three verified supplier/model hosts and adds this
+exact host. The tool confirms saved, requires_publish:true. Review/save and
+Publish in environment settings are required; draft persistence does not apply
+policy. An actual successful request and CAM/process confirmation are still
+needed before ordering. No wildcard, TLS relaxation or proxy bypass is used.

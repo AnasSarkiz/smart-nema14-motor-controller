@@ -3,7 +3,9 @@ import { readFileSync } from "node:fs"
 
 // Independent physical-pin checks against the manufacturer pin tables.
 // This qualifies only the implemented draft blocks, never the complete board.
-const circuitJson = JSON.parse(readFileSync("dist/index/circuit.json", "utf8"))
+const circuitJson = JSON.parse(
+  readFileSync(process.argv[2] ?? "dist/index/circuit.json", "utf8"),
+)
 const components = circuitJson.filter(
   (element) => element.type === "source_component",
 )
