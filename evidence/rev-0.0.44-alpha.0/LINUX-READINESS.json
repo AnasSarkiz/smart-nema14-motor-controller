@@ -1,0 +1,44 @@
+{
+  "source_commit": "2765e4ced770530cf44fc4286386389cfb392bbd",
+  "workflow_run_id": 37541394417,
+  "url": "https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37541394417",
+  "status": "completed",
+  "conclusion": "success",
+  "verified_at_utc": "2026-10-06T22:38:07.050044+00:00",
+  "jobs": [
+    {
+      "name": "linux-setup",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install pinned Linux dependencies and verify handoff",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "scope": "Exact-source Linux setup/readiness only; does not qualify physical hardware or fabrication",
+  "prototype_fabrication_ready": false
+}

@@ -1,0 +1,58 @@
+Using public board release ee4cc135-f49c-4dc5-b9b3-4527b5f3f4a9
+Uploaded group 1 / 45 102 files 44649 request bytes
+Uploaded group 2 / 45 1 files 3274353 request bytes
+Uploaded group 3 / 45 10 files 686865 request bytes
+Uploaded group 4 / 45 6 files 713981 request bytes
+Uploaded group 5 / 45 7 files 525329 request bytes
+Uploaded group 6 / 45 9 files 844949 request bytes
+Uploaded group 7 / 45 9 files 725093 request bytes
+Uploaded group 8 / 45 9 files 725097 request bytes
+Uploaded group 9 / 45 9 files 725093 request bytes
+Uploaded group 10 / 45 8 files 829869 request bytes
+Uploaded group 11 / 45 27 files 778429 request bytes
+Uploaded group 12 / 45 6 files 756341 request bytes
+Uploaded group 13 / 45 6 files 758201 request bytes
+Uploaded group 14 / 45 6 files 787901 request bytes
+Uploaded group 15 / 45 6 files 840421 request bytes
+Uploaded group 16 / 45 12 files 794233 request bytes
+Uploaded group 17 / 45 6 files 806093 request bytes
+Uploaded group 18 / 45 7 files 833049 request bytes
+Uploaded group 19 / 45 10 files 725589 request bytes
+Uploaded group 20 / 45 6 files 710085 request bytes
+Uploaded group 21 / 45 3 files 688209 request bytes
+Uploaded group 22 / 45 3 files 614285 request bytes
+Uploaded group 23 / 45 3 files 566265 request bytes
+Uploaded group 24 / 45 3 files 598033 request bytes
+Uploaded group 25 / 45 6 files 438617 request bytes
+Uploaded group 26 / 45 1 files 496509 request bytes
+Uploaded group 27 / 45 4 files 545249 request bytes
+Uploaded group 28 / 45 6 files 768041 request bytes
+Uploaded group 29 / 45 1 files 1570129 request bytes
+Uploaded group 30 / 45 1 files 2138981 request bytes
+Uploaded group 31 / 45 10 files 778477 request bytes
+Uploaded group 32 / 45 3 files 620721 request bytes
+Uploaded group 33 / 45 3 files 783653 request bytes
+Uploaded group 34 / 45 4 files 823881 request bytes
+Uploaded group 35 / 45 3 files 647453 request bytes
+Uploaded group 36 / 45 3 files 635597 request bytes
+Uploaded group 37 / 45 3 files 675697 request bytes
+Uploaded group 38 / 45 7 files 676069 request bytes
+Uploaded group 39 / 45 3 files 386921 request bytes
+Uploaded group 40 / 45 6 files 826869 request bytes
+Uploaded group 41 / 45 6 files 600849 request bytes
+Uploaded group 42 / 45 20 files 686897 request bytes
+Uploaded group 43 / 45 5 files 534005 request bytes
+Uploaded group 44 / 45 1 files 1061053 request bytes
+Uploaded group 45 / 45 84 files 774197 request bytes
+Anonymous files verified 390 / 454
+45 |  }
+46 | }))
+47 | const receipt={revision:inventory.revision,source_commit:inventory.source_commit,package_name:name,package_release_id:list.package_files[0]?.package_release_id,scope:inventory.scope,verification_method:'Anonymous official file downloads, SHA-256 of exact bytes',verification:results.sort((a,b)=>a.path.localeCompare(b.path)),all_files_verified:results.every(f=>f.verified),file_count:results.length,is_private:false,hosted_build_success_claimed:false,hardware_tested:false,prototype_fabrication_ready:false}
+48 | writeFileSync('/tmp/nema-publication44-verification.json',JSON.stringify(receipt,null,2)+'\n')
+49 | console.log('Anonymous files verified',results.filter(f=>f.verified).length,'/',results.length)
+50 | if(!receipt.all_files_verified)throw new Error('Public file checksums do not match')
+                                              ^
+error: Public file checksums do not match
+      at /workspace/smart-nema14-motor-controller/.publication/publish44.mjs:50:42
+
+Bun v1.3.9 (Linux x64)

@@ -55,7 +55,7 @@ Previous README/context manifest, all old imported assets, saved routes,
 mechanical official references and evidence are retained. No historical
 fabrication ZIP is a valid order package for revision44.
 
-Actual cgroup RAM is32GiB and free disk27.05GiB at the recorded measurement. TypeScript, formatting, critical import-label and native runtime checks pass. Publication, final context/smoke and exact canonical checksum will be recorded after verification. No fabrication order is authorized.
+Actual cgroup RAM is32GiB and free disk27.05GiB at the recorded measurement. TypeScript, formatting, critical import-label, native runtime and final root Cloud smoke checks pass. Matching public publication will be recorded after verification. No fabrication order is authorized.
 
 Canonical native JSON SHA256: `b72ed0cd13e08f93fcbbcd0f7d49c503667c058619a8498f8bdd809a6794a087`. All three mirrors match. Native build/placement have zero errors; full style retains one finding. Current native warning counts: `{'source_refdes_convention_warning': 7, 'source_no_power_pin_defined_warning': 15, 'source_no_ground_pin_defined_warning': 9, 'source_component_pins_underspecified_warning': 8, 'source_part_not_found_warning': 137}`. Supplier-fetch HTTP503 warnings are not stock evidence.
 
@@ -64,6 +64,41 @@ Shapely2.1.2/CadQuery2.8.0, exact context inventory and all four historical
 routing archives. Native placement JSON intentionally lacks automatic open
 errors because routing is disabled; the separately invoked native connection
 check still reports504 opens. This setup result does not approve fabrication.
+
+The exact-source Linux readiness workflow
+[37541394417](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37541394417)
+completed successfully for source commit
+`2765e4ced770530cf44fc4286386389cfb392bbd`. All Linux setup job steps pass;
+the checked API receipt is `evidence/rev-0.0.44-alpha.0/LINUX-READINESS.json`.
+This verifies setup and smoke checks, not routed copper or physical hardware.
+
+Publication source is `2765e4ced770530cf44fc4286386389cfb392bbd`, pushed to
+GitHub main. All 45 upload archives for public tscircuit revision
+`AnasSarkiz/smart-nema14-motor-controller--01a0fd9b@0.0.44-alpha.0`, release
+`ee4cc135-f49c-4dc5-b9b3-4527b5f3f4a9`, were accepted. The packet contains
+454 files and 145 unchanged local model files, including all 100 local assets
+used by current CAD. Anonymous downloads verify 404/454 exact file hashes,
+including all three canonical JSON mirrors. Fifty downloads remain HTTP503;
+serial verification recovered 14 initial failures before reproducing the
+Cloud tunnel transport error `Invalid argument` at `cloudflare_https_tunnel`.
+Immutable GitHub anonymous checks verify 10/119 changed files; the other 109
+requests return the same HTTP503. Git proxy push and exact-source CI succeed.
+Full public checksum verification and hosted build success are **not claimed**.
+The registry initially created the release with build readiness enabled;
+an authenticated disable request succeeds and anonymous POST readback confirms
+`ready_to_build: false`. Keep it disabled until all public hashes are verified.
+See `evidence/rev-0.0.44-alpha.0/PUBLICATION-PENDING.json` and retained logs.
+
+Cloud draft revision15 contains the exact install/start instructions and31
+scoped custom hosts. Current runtime spec6 still has17 custom hosts;
+pkg.pr.new and added manufacturer hosts are absent from its effective policy.
+Review/save the draft in environment settings, then publish the environment
+to activate it. This does not establish that the separate intermittent
+HTTP503 tunnel failure is repaired; actual affected requests must be verified.
+Current resource readback is32GiB cgroup RAM and27.03GiB available disk.
+Receipt-only updates preserve every one of the454 published runtime bytes.
+Routing, full component/3D qualification, power/USB/CAM and physical testing
+remain incomplete. **PROTOTYPE FABRICATION READY: NO.**
 
 ---
 
