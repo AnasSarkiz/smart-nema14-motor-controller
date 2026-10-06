@@ -111,3 +111,23 @@ exact host. The tool confirms saved, requires_publish:true. Review/save and
 Publish in environment settings are required; draft persistence does not apply
 policy. An actual successful request and CAM/process confirmation are still
 needed before ordering. No wildcard, TLS relaxation or proxy bypass is used.
+
+## Exact MCU distributor access — 2026-10-06 continuation
+
+The current official ST product page for STM32G0B1CB and exact LCSC C2847904
+page both return HTTP 200. LCSC reports OutOfStock and inventory zero. ST's
+own public distributor component calls
+`https://ksmk.st.com/distributors/distributorsByProductId?productId=STM32G0B1CBT6`
+(and CBT6TR); both currently receive proxy CONNECT 403. The official exact-part
+store page `https://estore.st.com/en/stm32g0b1cbt6-cpn.html` also receives
+CONNECT 403. No distributor stock is inferred from the accessible product page.
+
+The precise additional destinations for these read-only checks are
+`ksmk.st.com` and `estore.st.com`. Preserve the existing dependency and official
+source allowlist when adding them in environment settings. A complete current
+draft list is unavailable through the tools, so no replacement list was written.
+The supported editor Save/Publish workflow applies configuration; draft-saving
+alone cannot apply policy. Retry the exact requests after propagation. The
+current runtime status reports policy state unknown, so enforcement is not
+claimed from configuration metadata. Proxy, certificate checks, installed
+packages and TypeScript remain intact.

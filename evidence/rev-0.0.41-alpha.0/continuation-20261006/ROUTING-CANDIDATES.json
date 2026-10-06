@@ -1,0 +1,75 @@
+{
+  "canonical_source_commit": "c299b12e9311a0e9c58096d7a6e76044f88b4758",
+  "canonical_revision": "0.0.41-alpha.0",
+  "canonical_sha256": "e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430",
+  "scope": "Isolated source routing candidates only. No generated circuit edits, dependency patches or imported component changes. No candidate adopted.",
+  "manual_candidate": {
+    "description": "MOTOR_A2 top-layer north corridor, with three copies of crossing TMC_DIR path consistently moved to inner2 through two ordinary 0.30/0.60 mm vias.",
+    "native_errors": 13,
+    "strict_violations": 18,
+    "decision": "Rejected; collisions with existing PD/control/motor copper and ordinary drill-spacing violations."
+  },
+  "native_candidate": {
+    "description": "MOTOR_A2 same top path; remove the exact physical TMC_DIR saved paths, preserving all purchases and named filled features. Route only TMC_DIR with native beta_pipeline9 and ordinary via minima. Captured input has one 11-point connection and 13453 fixed obstacles.",
+    "default_result": {
+      "command": [
+        "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+        "scripts/run-native-routing.mjs",
+        "/workspace/smart-nema14-motor-controller/.publication/fix42/native-dir/index.circuit.tsx",
+        "/workspace/smart-nema14-motor-controller/.publication/fix42/native-dir-render-2"
+      ],
+      "exit_code": -15,
+      "termination": "memory_budget_exceeded",
+      "memory_budget_mb": 8192,
+      "peak_sampled_group_rss_mb": 8206.81640625,
+      "elapsed_seconds": 192.26969703400027,
+      "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+    },
+    "modified_mesh_result": {
+      "command": [
+        "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+        "scripts/run-pipeline9-sdk-routing.ts",
+        "/workspace/smart-nema14-motor-controller/.publication/fix42/native-dir-render-2/phase-1-stage-0-input.json",
+        "/workspace/smart-nema14-motor-controller/.publication/fix42/native-dir-mesh",
+        "3.0",
+        "30.0"
+      ],
+      "exit_code": -15,
+      "termination": "memory_budget_exceeded",
+      "memory_budget_mb": 8192,
+      "peak_sampled_group_rss_mb": 8209.34765625,
+      "elapsed_seconds": 82.96628733299985,
+      "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+    },
+    "decision": "Rejected as incomplete. Default and changed-mesh 8 GiB jobs exceeded memory guards; 20 GiB job timed out before producing a route. No canonical route or generated JSON was changed.",
+    "larger_memory_result": {
+      "command": [
+        "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+        "scripts/run-pipeline9-sdk-routing.ts",
+        "/workspace/smart-nema14-motor-controller/.publication/fix42/native-dir-render-2/phase-1-stage-0-input.json",
+        "/workspace/smart-nema14-motor-controller/.publication/fix42/native-dir-mesh-20g",
+        "3.0",
+        "30.0"
+      ],
+      "exit_code": -15,
+      "termination": "timeout",
+      "memory_budget_mb": 20480,
+      "peak_sampled_group_rss_mb": 16968.56640625,
+      "elapsed_seconds": 601.9197582500001,
+      "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+    },
+    "last_recorded_progress": {
+      "phase": "nodeDimensionSubdivisionSolver",
+      "progress": 0.24,
+      "node_count": 88680,
+      "elapsed_seconds": 524.0939739920001,
+      "solved": false,
+      "failed": false,
+      "error": null
+    }
+  },
+  "hardware_tested": false,
+  "prototype_fabrication_ready": false,
+  "canonical_preserved": true,
+  "completed_at_utc": "2026-10-06T20:07:02.828220+00:00"
+}

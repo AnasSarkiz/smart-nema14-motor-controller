@@ -1,0 +1,69 @@
+{
+  "checked_at_utc": "2026-10-06T20:00:09.484760+00:00",
+  "installed_router": "0.0.959",
+  "latest_router": "0.0.962",
+  "official_compare_url": "https://github.com/tscircuit/tscircuit-autorouter/compare/38a5b4274bcb052c59681dcde064f522de869485...d64134f0c0bf41e2401246deea7de7cd1059966f",
+  "commits": [
+    {
+      "sha": "36540daa624ad22143d0e0d47f40f34006e99fde",
+      "title": "v0.0.959 (#2875)"
+    },
+    {
+      "sha": "a31f534ac3db1ee8a5af36d77014cfc4feadb959",
+      "title": "fix: preserve power-expander safety with hole-clearance pin (#2884)"
+    },
+    {
+      "sha": "fd5e2e408e521152fe32d27ca3652959f618525a",
+      "title": "v0.0.960 (#2887)"
+    },
+    {
+      "sha": "074dd577037ca6e558e76849fb43ba45f3a39ec7",
+      "title": "Pin optimized tiny-hypergraph main (#2883)"
+    },
+    {
+      "sha": "2950efd83e0365ebe29297fe43b8100401a081fb",
+      "title": "v0.0.961 (#2891)"
+    },
+    {
+      "sha": "a0aedffe92b8d7cd6620e4edd20eb1da496a22dd",
+      "title": "Add Pipeline 9 TI EVM routing repros (#2889)"
+    },
+    {
+      "sha": "572fb189cfd27474241c6bdb14d4af7fdf9fcc7c",
+      "title": "Preserve Pipeline 9 terminal route connectivity (#2890)"
+    },
+    {
+      "sha": "d64134f0c0bf41e2401246deea7de7cd1059966f",
+      "title": "v0.0.962"
+    }
+  ],
+  "changed_files": [
+    "fixtures/repro/drv8307evm-disconnected-island.srj.json.gz",
+    "fixtures/repro/lm5155evm-fly-terminal-layers.srj.json.gz",
+    "lib/autorouter-pipelines/AutoroutingPipeline7_MultiGraph/AutoroutingPipelineSolver7_MultiGraph.ts",
+    "lib/autorouter-pipelines/AutoroutingPipeline7_MultiGraph/lock-hd-route-terminals.ts",
+    "lib/autorouter-pipelines/AutoroutingPipeline9_PreloadedTraceGraph/AutoroutingPipelineSolver9_PreloadedTraceGraph.ts",
+    "lib/solvers/RouteStitchingSolver/MultipleHighDensityRouteStitchSolver3.ts",
+    "lib/solvers/TraceWidthSolver/TraceWidthSolver.ts",
+    "package.json",
+    "tests/bugs/__snapshots__/bugreport58-b69d72.snap.svg",
+    "tests/bugs/__snapshots__/bugreport88-9a86ed.snap.svg",
+    "tests/bugs/__snapshots__/bugreport96-full-gameboy-no-breakout-linux-routed.snap.svg",
+    "tests/bugs/__snapshots__/bugreport96-full-gameboy-no-breakout-routed.snap.svg",
+    "tests/features/tracewidthsolver/preserves-terminal-pcb-port-ids.test.ts",
+    "tests/pipeline7-lock-terminal-ports.test.ts",
+    "tests/repro/drv8307evm-disconnected-island.test.ts",
+    "tests/repro/getPipeline9TiEvmRoutingErrors.ts",
+    "tests/repro/lm5155evm-fly-terminal-layers.test.ts",
+    "tests/stitch-solver/disconnected-island-after-terminal-route.test.ts"
+  ],
+  "findings": [
+    "Official changes include power-expander hole-clearance safety, an optimized tiny-hypergraph pin, and preservation of terminal route connectivity.",
+    "No direct TopologyMergingSolver source change appears in this release diff.",
+    "No stock/silkscreen/supplier-orientation fix is claimed from these router changes.",
+    "Installed Pipeline9 constructor places topologyMergingSolver before nodeDimensionSubdivisionSolver. The tested maxNodeDimension/maxNodeRatio settings are applied by the latter, after the stalled stage.",
+    "TopologyMergingSolver has no tiny-hypergraph import in the installed source. The newer optimized tiny-hypergraph pin is not a demonstrated repair for this stage.",
+    "No supported constructor switch for bypassing TopologyMergingSolver was found. Routing clearances and circuit validation were not changed."
+  ],
+  "decision": "Pinned dependencies retained during these reproducible candidate jobs; newer package is not represented as installed or qualified."
+}

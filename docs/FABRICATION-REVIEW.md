@@ -1,5 +1,21 @@
 # Remaining fabrication review — 0.0.41-alpha.0
 
+Latest continuation: a fresh exact official shop check confirms enough displayed
+stock for one default board for **41/42 fitted codes** (107 of 108 fitted refs).
+**U1 C2847904 remains the only missing fitted code.** Genuine ST Q_PD C2965326
+has 100 units. All43 catalogue codes were queried, including the DNP part.
+Shop stock does not establish assembler allocation. Additional genuine-ST
+LQFP variants return no stocked drop-in; stocked QFN alternatives have a
+different footprint and have not been substituted. Exact chip distributor sourcing
+cannot yet be verified because official `ksmk.st.com` and `estore.st.com`
+requests receive proxy CONNECT403. See the continuation evidence below and
+[network prerequisites](cloud/ENVIRONMENT.md).
+
+Current public native Circuit JSON was anonymously rechecked: all three mirrors
+retain the reviewed SHA256. Purchased imports, component placements, CAD and
+canonical copper remain unchanged by the isolated routing trials. Evidence:
+`evidence/rev-0.0.41-alpha.0/continuation-20261006/`.
+
 Reviewed 2026-10-06 against canonical native Circuit JSON
 `e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430`.
 This is additional evidence for the existing revision. No canonical source,

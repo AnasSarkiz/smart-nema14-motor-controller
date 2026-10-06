@@ -1,0 +1,2 @@
+import SmartNema14MotorController from "./src/SmartNema14MotorController"
+export default () => <SmartNema14MotorController nativeRoutingTargets={[".U2 > .pin19"]} nativeRoutingNetNames={["TMC_DIR"]} />

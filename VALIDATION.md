@@ -1,3 +1,52 @@
+# Current continuation review — 0.0.41-alpha.0, 2026-10-06
+
+No new board revision or candidate copper is adopted. All three public native
+JSON mirrors were anonymously rechecked against the canonical SHA256
+`e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430`.
+Source electronics, saved routes, all imports, CAD and pinned dependencies remain
+unchanged. The current handoff's obsolete Q_PD stock statement is corrected.
+
+Fresh official shop queries verify enough displayed quantity for one board for
+41/42 fitted codes (107/108 fitted references). U1 C2847904 is the only absent
+fitted code. Q_PD C2965326 has 100 units. Additional LQFP variants provide no
+stocked drop-in; stocked QFN parts do not fit the current board. Exact ST
+product and LCSC pages are accessible, but official distributor/store requests
+need `ksmk.st.com` and `estore.st.com`: actual proxy CONNECT403 is preserved.
+No assembler allocation, global sourcing or stock reservation is claimed.
+
+An isolated native top-MOTOR_A2/inner2-DIR manual candidate completed in 53.1 s,
+peak sampled RSS 1,494.3 MiB, but failed 13 native errors and 18 strict geometry
+violations. Rejected; complete native JSON, source and strict evidence retained.
+A different source candidate routes only DIR with native Pipeline9 around that
+motor corridor. The default 8 GiB run exceeded its memory guard in 192.3 s;
+the changed-mesh 8 GiB run exceeded it in 83.0 s. A 20 GiB/600-second run timed
+out in 601.9 s, peak sampled group RSS 16,968.6 MiB, before producing any route.
+Last progress was topologyMergingSolver. Source inspection shows tested mesh
+settings apply after that stage and finds no supported bypass switch. No
+clearance, DRC or connectivity requirement is reduced. New official router
+0.0.962 changes were reviewed; they are not represented as installed/qualified
+or as a demonstrated repair for this merging bottleneck.
+
+Canonical board: zero native errors, opens, dangling items or shorts; all 82
+physical nets joined; 327 traces, 224 through vias and 82 pours. Existing strict
+geometry/filled-copper, widths, USB screens and 38 programmer assertions retain
+their exact checked input. All fabrication gates remain as documented in
+[the current review](docs/FABRICATION-REVIEW.md): uniform vias and outer-only
+power are unmet; supplier silk, four supplier rotations, full rail/ground/thermal,
+stackup/fill/CAM/assembly approval, sourcing, firmware and hardware testing are
+unfinished. **PROTOTYPE FABRICATION READY: NO.** No order is authorized.
+
+Evidence: `evidence/rev-0.0.41-alpha.0/continuation-20261006/`.
+Actual Cloud machine: 32 GiB cgroup RAM limit, about 29 GiB available overlay disk.
+
+Exact repository-root `bash scripts/cloud-smoke.sh` passed again: pinned tool
+activation, TypeScript, official critical import labels, Shapely/CadQuery,
+context and all four archived routing parts. Final metadata/context are checked
+separately after retaining the smoke and candidate receipts. Development
+readiness is separate from the unchanged **NO** fabrication decision.
+
+---
+
 # Remaining fabrication review — 0.0.41-alpha.0, 2026-10-06
 
 Additional audit only; canonical source, purchased imports, saved copper, pinned

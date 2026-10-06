@@ -1,0 +1,57 @@
+{
+  "checked_at_utc": "2026-10-06T19:51:14.356Z",
+  "endpoint": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "records": [
+    {
+      "keyword": "STM32G0B1CBT6N",
+      "matches": []
+    },
+    {
+      "keyword": "STM32G0B1CBT6TR",
+      "matches": []
+    },
+    {
+      "keyword": "STM32G0C1CBT6",
+      "matches": []
+    },
+    {
+      "keyword": "STM32G0C1CCT6",
+      "matches": []
+    },
+    {
+      "keyword": "STM32G0B1CET6",
+      "matches": []
+    }
+  ],
+  "method": "Read-only official Parts Library search; no purchase, reservation, cart mutation or messages.",
+  "same_footprint_replacement_verified": false,
+  "exact_mcu_lcsc": {
+    "part": "C2847904",
+    "manufacturer_part": "STM32G0B1CBT6",
+    "url": "https://www.lcsc.com/product-detail/C2847904.html",
+    "http_status": 200,
+    "stock_status": "OutOfStock",
+    "inventory_level": 0,
+    "html_sha256": "1dc9b72c4df08c56c72cde3fc476e35fa8d7211418431c99fc97d9abefac7a8f"
+  },
+  "official_st_product": {
+    "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32g0b1cb.html",
+    "http_status": 200,
+    "html_sha256": "e8aacebf4388d8b928b7166c766fc7794a2e00ea8e7166a95c93a9ab3bdd66e6"
+  },
+  "blocked_official_requests": [
+    {
+      "url": "https://ksmk.st.com/distributors/distributorsByProductId?productId=STM32G0B1CBT6",
+      "failure": "Proxy CONNECT 403"
+    },
+    {
+      "url": "https://ksmk.st.com/distributors/distributorsByProductId?productId=STM32G0B1CBT6TR",
+      "failure": "Proxy CONNECT 403"
+    },
+    {
+      "url": "https://estore.st.com/en/stm32g0b1cbt6-cpn.html",
+      "failure": "Proxy CONNECT 403"
+    }
+  ],
+  "decision": "Retain the exact official LQFP48 MCU import. No stocked same-footprint variant was found; QFN48 does not fit. Exact chip global sourcing or an independently qualified MCU layout change remains necessary."
+}

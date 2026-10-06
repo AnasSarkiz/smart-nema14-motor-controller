@@ -4,8 +4,10 @@ User selected official TMC2209-LA-T C2150710 and TI TPD2EUSB30DRTR C97502.
 The exact supplier imports are unmodified; manufacturer tables and raw pads
 are verified. All 411 electrical pin partitions, placements, copper, pad/drill/
 silk geometry and CAD registrations/model bytes remain exact. U1 is unchanged
-and lacks a verified stocked drop-in; Q_PD is unchanged (100 LCSC units in the
-user screenshot, no exact public JLC shop match). The USB part has a higher
+and lacks a verified stocked drop-in. Q_PD is unchanged: the later exact
+official JLC shop lookup lists genuine ST C2965326 with 100 units and presale 97
+(2026-10-06); stock allocation and assembler acceptance remain unverified.
+See docs/FABRICATION-REVIEW.md for the latest review. The USB part has a higher
 stand-off/breakdown threshold and needs system ESD/USB hardware qualification.
 Fresh native minimum runtime build and applicable automated screens pass;
 all 82 nets connect, with 327 traces/224 vias/82 pours and zero native/strict
