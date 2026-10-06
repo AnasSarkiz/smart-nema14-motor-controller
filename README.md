@@ -1,6 +1,13 @@
 # Smart NEMA 14 Motor Controller
 
-Revision **0.0.40-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
+Revision **0.0.41-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
+
+U2 now uses official **TMC2209-LA-T / C2150710** and D_USB uses official
+**TI TPD2EUSB30DRTR / C97502**. Both replacements retain the previous pad and
+model geometry. ADI confirms the driver's tape/reel ordering variant and permits
+pin 25 to connect to ground. The USB protection part retains the D+/D-/GND
+pinout and 0.7 pF typical capacitance, but has 7 V typical breakdown instead of
+4.5 V; system ESD testing remains pending. See [replacement review](docs/PART-REPLACEMENTS.md).
 
 U4 (AS5600) and its dedicated bypass C6 have been removed at the user's request.
 The selected single-front-shaft motor has no encoder arrangement; this is an
@@ -22,8 +29,10 @@ it is rejected. Current copper retains 158 ordinary 0.30/0.60, 63 filled/capped
 0.20/0.38 and three 0.15/0.38 mm vias. VM/USB input power wires use outer layers;
 some 3.3 V and all four motor nets still include inner wires. Two bounded native
 Pipeline9 outer-layer candidates produced no adoptable route. No fabricated
-success or completed resizing/rerouting is claimed. Four fitted part codes still
-lack exact public stock matches; all assembler allocation remains unverified.
+success or completed resizing/rerouting is claimed. Both replacement codes have
+exact public shop stock matches. U1 remains out of stock at LCSC; Q_PD's user
+listing shows 100 LCSC units. JLCPCB shop and assembly inventories differ, and
+all assembler allocation remains unverified.
 See [the six-request review](docs/BOARD-REVIEW-39.md).
 
 [Every component now has a purpose note](docs/SCHEMATIC-NOTES.md) on its native schematic sheet, including values and DNP assembly notes. The right-side panels explain all 109 references without changing PCB geometry or electrical connections.

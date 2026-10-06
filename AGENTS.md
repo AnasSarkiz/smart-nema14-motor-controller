@@ -19,6 +19,8 @@ Keep the exact STEPPERONLINE 14HM11-0404S, existing imported component selection
 any change necessary for a real routing/manufacturing defect. The earlier
 Phidgets/HOLRY/rear-shaft proposals are superseded. U4/C6 were removed by the user in revision 0.0.40-alpha.0; the
 single front-shaft motor has no encoder arrangement. Retain R2/R3 for U9 I2C.
+Revision 0.0.41-alpha.0 selects official C2150710 TMC2209-LA-T and C97502
+TI TPD2EUSB30DRTR by user request. Preserve their original supplier definitions.
 
 All purchased electronics must retain official JLCPCB imports. Never create,
 recreate, or patch imported symbols, footprints, pins, or pad mappings. Resolve

@@ -1,0 +1,53 @@
+{
+  "canonical_sha256": "e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430",
+  "nominal_width_audit_sha256": "68a80623c079519223c430b72e78b583425bee5d139491b6e46f40e2b672d145",
+  "official_source_url": "https://jlcpcb.com/capabilities/pcb-capabilities",
+  "official_rule_quote": "Track width tolerance \u00b120%; for a 0.1 mm track, finished track width ranges from 0.08 to 0.12 mm.",
+  "minimum_width_fraction": 0.8,
+  "copper_and_thermal_model": "IPC-2221 I=k*dT^0.44*A_mil2^0.725; k=.048 outer/.024 inner, dT=30 C. Analytical screen only, not an IPC-2152 thermal solution.",
+  "stackup": {
+    "name": "JLC04161H-3313",
+    "layers": 4,
+    "finished_thickness_mm": 1.56,
+    "finished_thickness_tolerance_fraction": 0.1,
+    "outer_copper_mm": 0.035,
+    "inner_copper_mm": 0.0152,
+    "top_bottom_prepreg_mm": 0.0994,
+    "core_mm": 1.265,
+    "layer_intent": [
+      "top: components, motor/power and signals",
+      "inner1: partitioned GND reference and routed signals; USB reference coverage screened separately",
+      "inner2: power and slow signals",
+      "bottom: signals and components"
+    ],
+    "ordered_and_cam_confirmed": false,
+    "ordered_nominal_thickness_mm": 1.6
+  },
+  "scope": "Retains the prior peak-current and 30 C rise screen, applying the fabricator's published width tolerance. Copper thickness remains the recorded analytical assumption, not a confirmed minimum. Reports the conservative screen outcome; does not predict physical temperature.",
+  "motor_nets": [
+    {
+      "net": "MOTOR_A1",
+      "minimum_adjusted_capacity_a": 0.3486994605706056,
+      "passed": true
+    },
+    {
+      "net": "MOTOR_A2",
+      "minimum_adjusted_capacity_a": 0.3486994605706056,
+      "passed": true
+    },
+    {
+      "net": "MOTOR_B1",
+      "minimum_adjusted_capacity_a": 0.3486994605706056,
+      "passed": true
+    },
+    {
+      "net": "MOTOR_B2",
+      "minimum_adjusted_capacity_a": 0.3486994605706056,
+      "passed": true
+    }
+  ],
+  "violations": [],
+  "passed": true,
+  "next_action": "Requalify motor paths for manufacturing tolerances and actual minimum copper. Under the retained model, internal motor tracks need approximately 0.27 mm nominal; widening must also pass clearance, filled-pour and routing checks. Do not edit exported JSON.",
+  "prototype_fabrication_ready": false
+}

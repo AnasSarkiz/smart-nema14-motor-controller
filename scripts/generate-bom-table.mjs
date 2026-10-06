@@ -18,8 +18,9 @@ const schematicComponents = circuit.filter(
 const partNames = circuit.filter((row) => row.type === "source_net")
 const references = {
   C2847904: "https://www.st.com/resource/en/datasheet/stm32g0b1cb.pdf",
-  C465949:
+  C2150710:
     "https://www.analog.com/media/en/technical-documentation/data-sheets/TMC2209_datasheet_rev1.09.pdf",
+  C97502: "https://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf",
   C1121848: "https://www.st.com/resource/en/datasheet/tcpp01-m12.pdf",
   C1974707: "https://www.st.com/resource/en/datasheet/esda25p35-1u1m.pdf",
   C5143397: "https://gct.co/connector/usb4110",
@@ -39,6 +40,11 @@ const references = {
   C136657: "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
 }
 
+const replacementSupplierRecords = {
+  C2150710: `${directory}/C2150710.raweasy.json`,
+  C97502: `${directory}/C97502.raweasy.json`,
+}
+
 function markdownCell(cell) {
   return String(cell ?? "Unverified").replaceAll("|", " / ")
 }
@@ -54,11 +60,12 @@ const rows = bom.records.map((component) => {
       ? null
       : JSON.parse(
           readFileSync(
-            ["C2155767", "C25769", "C20512"].includes(
-              component.jlcpcb_part_number,
-            )
-              ? `evidence/power-candidate-audit/${component.jlcpcb_part_number}.raweasy.json`
-              : `evidence/rev-0.0.13-alpha.0/${component.jlcpcb_part_number}.raweasy.json`,
+            replacementSupplierRecords[component.jlcpcb_part_number] ??
+              (["C2155767", "C25769", "C20512"].includes(
+                component.jlcpcb_part_number,
+              )
+                ? `evidence/power-candidate-audit/${component.jlcpcb_part_number}.raweasy.json`
+                : `evidence/rev-0.0.13-alpha.0/${component.jlcpcb_part_number}.raweasy.json`),
             "utf8",
           ),
         )

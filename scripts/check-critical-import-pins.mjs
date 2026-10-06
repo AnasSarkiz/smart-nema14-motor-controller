@@ -5,6 +5,29 @@ import ts from "typescript"
 // This is a limited audit, not full footprint or schematic qualification.
 const criticalPinChecks = [
   {
+    partNumber: "C2150710",
+    path: "imports/TMC2209_LA_T/TMC2209_LA_T.tsx",
+    datasheet:
+      "ADI TMC2209 Rev 1.09, order codes and pin table, pp. 2 and 9-11",
+    pins: {
+      pin1: "OB2",
+      pin14: "PDN_UART",
+      pin16: "STEP",
+      pin19: "DIR",
+      pin21: "OA2",
+      pin24: "OA1",
+      pin25: "UNUSED",
+      pin26: "OB1",
+      pin29: "EP",
+    },
+  },
+  {
+    partNumber: "C97502",
+    path: "imports/TPD2EUSB30DRTR/TPD2EUSB30DRTR.tsx",
+    datasheet: "TI SLVSAC2G, DRT pin table, p. 3",
+    pins: { pin1: "D_POS", pin2: "D_NEG", pin3: "GND" },
+  },
+  {
     partNumber: "C20512",
     path: "imports/DMG1012T_7/DMG1012T_7.tsx",
     datasheet: "Diodes DS31783 Rev 8-2, top view",
@@ -99,8 +122,10 @@ function auditImport(check) {
   for (const [pin, expectedLabel] of Object.entries(check.pins)) {
     const aliases = pinLabels[pin]
     if (!aliases) throw new Error(`Missing physical pin ${pin}: ${check.path}`)
-    const matches = aliases.some((alias) =>
-      alias.split(/[\s_/]+/).includes(expectedLabel),
+    const matches = aliases.some(
+      (alias) =>
+        alias === expectedLabel ||
+        alias.split(/[\s_/]+/).includes(expectedLabel),
     )
     if (!matches) {
       console.error(

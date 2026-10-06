@@ -1,3 +1,20 @@
+# Current continuation — 0.0.41-alpha.0
+
+User selected official TMC2209-LA-T C2150710 and TI TPD2EUSB30DRTR C97502.
+The exact supplier imports are unmodified; manufacturer tables and raw pads
+are verified. All 411 electrical pin partitions, placements, copper, pad/drill/
+silk geometry and CAD registrations/model bytes remain exact. U1 is unchanged
+and lacks a verified stocked drop-in; Q_PD is unchanged (100 LCSC units in the
+user screenshot, no exact public JLC shop match). The USB part has a higher
+stand-off/breakdown threshold and needs system ESD/USB hardware qualification.
+Fresh native minimum runtime build and applicable automated screens pass;
+all 82 nets connect, with 327 traces/224 vias/82 pours and zero native/strict
+copper errors. Preserve every original import, saved route and historical file.
+Read VALIDATION.md and docs/PART-REPLACEMENTS.md for exact results and blockers.
+**PROTOTYPE FABRICATION READY: NO.** No fabrication order is authorized.
+
+---
+
 # Current continuation — 0.0.40-alpha.0
 
 U4 AS5600 and C6 removed by user request. Keep R2/R3: U9 TMP112 still uses I2C.

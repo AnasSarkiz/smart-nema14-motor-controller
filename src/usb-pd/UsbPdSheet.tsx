@@ -6,7 +6,7 @@ import {
 import { StandardUsbCConnector } from "./StandardUsbCConnector"
 import { TCPP01_M12 } from "../../imports/TCPP01_M12/TCPP01_M12"
 import { STL11N3LLH6 } from "../../imports/STL11N3LLH6/STL11N3LLH6"
-import { TPD2EUSB30ADRTR } from "../../imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR"
+import { TPD2EUSB30DRTR } from "../../imports/TPD2EUSB30DRTR/TPD2EUSB30DRTR"
 import { ESDA25P35_1U1M } from "../../imports/ESDA25P35_1U1M/ESDA25P35_1U1M"
 import { TCC0402COG331J500AT } from "../../imports/TCC0402COG331J500AT/TCC0402COG331J500AT"
 import { RT0402BRD07100KL } from "../../imports/RT0402BRD07100KL/RT0402BRD07100KL"
@@ -110,7 +110,7 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           anchor="left"
         />
       </STL11N3LLH6>
-      <TPD2EUSB30ADRTR
+      <TPD2EUSB30DRTR
         name="D_USB"
         {...previewPlacement("D_USB", mechanicalPreview)}
         schX={-13}
@@ -120,15 +120,7 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           D_NEG: "net.USB_DM",
           GND: "net.GND",
         }}
-      >
-        <schematictext
-          text="{NAME}"
-          schX={-1.2}
-          schY={1.3}
-          fontSize={0.2}
-          anchor="left"
-        />
-      </TPD2EUSB30ADRTR>
+      />
       <ESDA25P35_1U1M
         name="D_VBUS"
         {...previewPlacement("D_VBUS", mechanicalPreview)}

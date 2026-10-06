@@ -12,7 +12,7 @@ import { A_0402WGF1002TCE } from "../../imports/A_0402WGF1002TCE/A_0402WGF1002TC
 import { CL05B223KB5VPNC } from "../../imports/CL05B223KB5VPNC/CL05B223KB5VPNC"
 import { RT1206BRD071RL } from "../../imports/RT1206BRD071RL/RT1206BRD071RL"
 import { CL21A475KBQNNNE } from "../../imports/CL21A475KBQNNNE/CL21A475KBQNNNE"
-import { TMC2209_LA } from "../../imports/TMC2209_LA/TMC2209_LA"
+import { TMC2209_LA_T } from "../../imports/TMC2209_LA_T/TMC2209_LA_T"
 
 export function MotorDriverSheet({
   mechanicalPreview = false,
@@ -32,7 +32,7 @@ export function MotorDriverSheet({
         schX={-6.5}
         schY={8.7}
       />
-      <TMC2209_LA
+      <TMC2209_LA_T
         name="U2"
         {...previewPlacement("U2", mechanicalPreview)}
         schX={-10.09}
@@ -52,7 +52,7 @@ export function MotorDriverSheet({
           GND1: "net.GND",
           GND2: "net.GND",
           EP: "net.GND",
-          _NEG: "net.GND",
+          UNUSED: "net.GND",
           CPO: "net.TMC_CPO",
           CPI: "net.TMC_CPI",
           VCP: "net.TMC_VCP",

@@ -30,7 +30,7 @@ export const componentNotes = {
     "C12: 22 uF; parallel 3.3 V output filter/reservoir.",
   ],
   MotorDriver: [
-    "U2: TMC2209; drives both stepper windings from VM.",
+    "U2: TMC2209-LA-T; drives both stepper windings.",
     "C13: 22 nF; flying capacitor for the charge pump.",
     "C14: 100 nF; charge-pump reservoir between VCP and VM.",
     "C15: 4.7 uF; bypasses the driver's 5VOUT regulator.",
@@ -53,7 +53,7 @@ export const componentNotes = {
     "J_USB: USB-C input; power, CC negotiation and USB data.",
     "U3: TCPP01; protects CC and controls the VBUS MOSFET.",
     "Q_PD: VBUS series MOSFET; gate controlled by U3.",
-    "D_USB: Low-capacitance ESD protection for USB D+/D-.",
+    "D_USB: TPD2EUSB30; ESD clamp for USB D+/D-.",
     "D_VBUS: Input VBUS surge clamp; not a motor brake.",
     "C25: 2.2 uF; USB connector VBUS input bypass.",
     "C26: 100 nF; high-frequency connector VBUS bypass.",

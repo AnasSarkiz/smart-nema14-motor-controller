@@ -1,0 +1,42 @@
+{
+  "revision": "0.0.41-alpha.0",
+  "manufacturer_access_verified": true,
+  "TMC2209_LA_T": {
+    "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/TMC2209_datasheet_rev1.09.pdf",
+    "order_code_scope": "LA and LA-T are tray and tape/reel order codes for the same driver, manufacturer p. 2",
+    "pin_25": "Manufacturer pin table explicitly permits GND, pp. 9-11",
+    "current_limit_thermal_and_firmware_unchanged": true
+  },
+  "TPD2EUSB30DRTR": {
+    "source": "https://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf",
+    "pin_numbers": {
+      "1": "D+",
+      "2": "D-",
+      "3": "GND"
+    },
+    "package": "DRT, three pins; same pad and model geometry",
+    "manufacturer_application_signal_range_v": [
+      0,
+      3.3
+    ],
+    "stand_off_voltage_v": 5.5,
+    "previous_stand_off_voltage_v": 3.6,
+    "typical_breakdown_voltage_v": 7,
+    "previous_typical_breakdown_voltage_v": 4.5,
+    "typical_capacitance_pf": 0.7,
+    "datasheet_clamp_limit_at_1a_v": 8,
+    "scope": "Fits manufacturer 0..3.3V USB application without wiring change; breakdown differs. No system-level ESD, surge or USB hardware qualification claimed."
+  },
+  "hardware_tested": false,
+  "prototype_fabrication_ready": false,
+  "files": [
+    {
+      "path": "references/TMC2209-rev1.09.pdf",
+      "sha256": "1d9e8eed9ad2edc17b112c1d54e3c468c34102a629bc3dbf729828919a7b0893"
+    },
+    {
+      "path": "evidence/rev-0.0.41-alpha.0/TPD2EUSB30-MANUFACTURER.pdf",
+      "sha256": "a2c0dd845043a5bbfe610f673879c29e38649544385dea51dbe0a4c49df39136"
+    }
+  ]
+}

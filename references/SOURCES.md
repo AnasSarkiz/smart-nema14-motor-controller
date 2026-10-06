@@ -1,5 +1,25 @@
 # Sources and review scope
 
+## Revision 0.0.41 replacement review — 2026-10-06
+
+- Fresh official ADI [TMC2209 Rev 1.09](https://www.analog.com/media/en/technical-documentation/data-sheets/TMC2209_datasheet_rev1.09.pdf)
+  saved as `references/TMC2209-rev1.09.pdf`: order codes p. 2 establish tray
+  versus tape/reel only; pin table pp. 9-10 permits pin 25 at GND. The unchanged
+  current-control/thermal limits remain applicable. Hardware qualification is pending.
+- Fresh official TI [SLVSAC2G](https://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf)
+  saved in revision 41 evidence: common DRT pin table p. 3, electrical p. 5 and
+  0..3.3 V USB application pp. 9-10. Non-A TPD2EUSB30DRTR retains footprint,
+  0.7 pF typical capacitance and stated 8 V clamp limit at 1 A, but raises
+  stand-off/breakdown from 3.6/4.5 V to 5.5/7 V. These component facts do not
+  establish complete STM32/system ESD immunity.
+- Official JLCPCB public shop queries and fresh official imports identify
+  genuine TRINAMIC C2150710 and TI C97502. Clone-brand equivalents are not used.
+  Public shop inventory is not assembler allocation. U1 sourcing is unresolved;
+  Q_PD's user screenshot establishes 100 LCSC units, a separate inventory.
+- Both fresh imports retain exactly the former raw pad shapes and identical
+  downloaded STEP/OBJ bytes. Original modules/assets remain preserved.
+
+
 Read on 2026-10-02. Web sources may serve cached text; displayed stock counts
 are not treated as current assembly inventory or reservations.
 

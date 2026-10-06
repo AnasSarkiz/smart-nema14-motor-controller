@@ -13,6 +13,16 @@ const ports = circuitJson.filter((element) => element.type === "source_port")
 const nets = circuitJson.filter((element) => element.type === "source_net")
 const traces = circuitJson.filter((element) => element.type === "source_trace")
 
+for (const [reference, part, manufacturerPartNumber] of [
+  ["U2", "C2150710", "TMC2209-LA-T"],
+  ["D_USB", "C97502", "TPD2EUSB30DRTR"],
+]) {
+  const component = components.find((candidate) => candidate.name === reference)
+  assert.ok(component, `Missing replacement ${reference}`)
+  assert.deepEqual(component.supplier_part_numbers.jlcpcb, [part])
+  assert.equal(component.manufacturer_part_number, manufacturerPartNumber)
+}
+
 function checkPinNet(pinReference, expectedNetName) {
   const component = components.find(
     (candidate) => candidate.name === pinReference.ref,

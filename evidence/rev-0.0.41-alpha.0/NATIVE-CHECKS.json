@@ -1,0 +1,55 @@
+{
+  "revision": "0.0.41-alpha.0",
+  "canonical_sha256": "e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430",
+  "working_directory": ".publication/rev-0.0.41-alpha.0",
+  "checks": [
+    {
+      "check": "netlist",
+      "command": "tsci check netlist index.circuit.tsx",
+      "exit_code": 0,
+      "log_sha256": "3d6d4f74f231c3a6c0ea67894698447ec69ce8088a1bd137a54a21b1281bd6bf"
+    },
+    {
+      "check": "pin_specification",
+      "command": "tsci check pin_specification index.circuit.tsx",
+      "exit_code": 0,
+      "log_sha256": "5e5a911792e9d70d9bfe77891c760fa642a5d8d49795567c029c27a1f856f1e7"
+    },
+    {
+      "check": "source",
+      "command": "tsci check source index.circuit.tsx",
+      "exit_code": 0,
+      "log_sha256": "6b1891d669cc7500612cf8bc9c0e22700688013a25bb89ad425f3de2ef1f4ad3"
+    },
+    {
+      "check": "schematic-placement",
+      "command": "tsci check schematic-placement index.circuit.tsx",
+      "exit_code": 0,
+      "log_sha256": "1f577f4f28cd8d94ca7191d5b9097c94b9b5b02b353491096a459af3f99ee8f3"
+    },
+    {
+      "check": "placement",
+      "command": "tsci check placement index.circuit.tsx",
+      "exit_code": 0,
+      "log_sha256": "2219b48ecb5eed0fc8ec0fdc4b788d7ab8d6470a12066a7de4ed1efc35e63048"
+    },
+    {
+      "check": "shorts",
+      "command": "tsci check shorts dist/index/circuit.json",
+      "exit_code": 0,
+      "log_sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    }
+  ],
+  "pin_specification_warnings": 23,
+  "refdes_warnings": 4,
+  "schematic_placement_issues": [
+    "Imported D_VBUS should be vertical; unchanged official symbol, cosmetic issue remains disclosed."
+  ],
+  "native_full_build": true,
+  "snapshot_check_passed": true,
+  "all_nine_schematic_sheets_viewed": true,
+  "all_four_copper_layers_viewed": true,
+  "fresh_assembly_render_viewed": true,
+  "hardware_tested": false,
+  "prototype_fabrication_ready": false
+}

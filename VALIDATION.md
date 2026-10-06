@@ -1,3 +1,86 @@
+# Genuine supplier replacements — 0.0.41-alpha.0, 2026-10-06
+
+User selected U2 TRINAMIC TMC2209-LA-T C2150710 and D_USB Texas Instruments
+TPD2EUSB30DRTR C97502. Both are freshly imported with the pinned supported CLI;
+all supplier symbol, footprint, pin attributes and model files are unmodified.
+ADI Rev 1.09 identifies LA/LA-T as tray/tape-and-reel versions of the same driver
+and permits unused pin 25 to connect to GND. TI SLVSAC2G shares the DRT three-pin
+land pattern/pin table and USB application. The non-A protector has higher
+stand-off/breakdown thresholds (5.5/7 V versus 3.6/4.5 V); no system ESD/surge or
+hardware USB immunity is inferred. U1 and Q_PD remain unchanged.
+
+Fresh canonical native build SHA-256:
+`e3564bef28127cda269198701137dd2be9b552f6418f82ebc407435d66018430`.
+All three committed Circuit JSON mirrors match. Exact comparison with revision
+0.0.40 proves all 411 manufacturer-pin electrical partitions, 109 purchased
+placements, pads, drills, silkscreen, 327 traces, 224 vias, 82 pours and 108 CAD
+registrations/model bytes unchanged. Native regenerated port IDs are compared
+by their real component/physical-pin owners. The new pin25 alias is UNUSED;
+the USB symbol supplies its own reference label. Updated purpose notes remain
+native. Exact-alias checking fixes a prior tokenization bug without relaxing
+any expected label or electrical assertion.
+
+Fresh full build, TypeScript/format/import labels, all five supported native
+source checks, shorts and snapshots pass; existing imported D_VBUS vertical
+rotation issue remains in the schematic-placement output. PCB-disabled physical
+manufacturer-pin/value/supply/programmer checks and fresh exploded assembly
+inventory pass. All 82 physical filled-copper networks join; zero native errors,
+opens, dangling items or shorts, and zero strict track/drill/edge/keepout/copper
+clearance violations. All 2,227 wire segments meet the 0.15 mm floor; four motor
+nets pass the documented 0.34245 A analytical screen including -20% width
+variation. All 34 active power fanout corridors have their requested copper.
+Thirty combined-route-tree width, 23 pin-metadata and four refdes warnings remain
+visible. Complete loaded rail/pour/via current and thermal qualification is pending.
+
+USB path lengths 25.13552/24.75408 mm, skew 0.38144 mm; limited actual-ground
+return and approximately 91.812 ohm nominal pair screens pass their stated
+scope. All 38 standard-JST programmer physical-pin/net assertions pass, with
+VOUT isolated and the target powered by USB-C. Firmware timing and physical
+programming remain untested. All nine fresh schematic sheets, four actual
+copper-layer renders and fresh assembly render were viewed; automatic label
+and value overlaps remain disclosed. Complete UI style review is unresolved.
+
+Fresh direct native Gerbers/drills/BOM/CPL have 224 unique through-plated drills,
+six NPTH and 108 fitted references, R50 DNP. All four strict native Gerber vector
+layers match canonical copper with zero per-net losses under the unchanged
+explicit 2 um serialization comparison allowance. Four supplier rotations are
+unverified. The CAD publication guard covers 108 entries/80 local model assets
+with zero omitted dependencies. The minimum runtime packet has 402 files;
+all historic original imports, models, saved routing and mechanical references
+remain preserved. No routing job, replacement router or dependency patch ran.
+
+Fresh official public JLC shop searches at 18:59 UTC show 16,560 genuine
+C2150710 and 5,954 genuine C97502 units. All 43 exact codes are queried; only
+U1/C2847904 and Q_PD/C2965326 lack an exact shop match. This is distinct from
+LCSC: the user's U1 listing is out of stock and Q_PD listing shows 100 units.
+Indexed catalogue identities pass, but assembler allocation/reservations for
+the full BOM remain unverified. No stocked compatible MCU alternative is adopted.
+
+The full-history root build was stopped after remaining in generation for more
+than five minutes. The documented minimal runtime build completed normally;
+only its fresh native output is canonical. Initial diagnostic invocations used
+the system Python without Shapely and a missing render output directory; both
+were rerun successfully using the installed mechanical venv and explicit output
+directory. Font cache write advisories did not prevent correctly rendered fonts.
+No failed output is called a pass and no DRC/test threshold is suppressed.
+
+Evidence: `evidence/rev-0.0.41-alpha.0/`; detailed supplier rationale and remaining
+requirements: [PART-REPLACEMENTS.md](docs/PART-REPLACEMENTS.md). Repeat the exact
+preservation check with `scripts/check-part-replacement.py BASELINE CURRENT REPORT`;
+baseline is the immutable rev40 source commit's `dist/index/circuit.json`.
+Fresh exact `bash scripts/cloud-smoke.sh` passes with pinned Bun/tscircuit,
+TypeScript, critical imports, Shapely/CadQuery, context hashes and all four
+historical routing archives. Remote publication receipts are recorded below
+when complete.
+
+Stages 4/5/6 remain incomplete: uniform 0.30/0.45 mm via request, outer-only
+power routing, supplier silk/mask/paste/CPL review, stackup/plating/filled-process
+acceptance, full loaded power/via/thermal review and sourcing are unresolved.
+Firmware, USB/system ESD and physical programming/motor tests are pending.
+**PROTOTYPE FABRICATION READY: NO.** No order is placed.
+
+---
+
 # Encoder removal — 0.0.40-alpha.0, 2026-10-06
 
 User requested removal of the unused encoder. U4/C6 are absent from schematic
