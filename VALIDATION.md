@@ -78,6 +78,27 @@ assembly, loaded rail/pour-neck/via sharing and complete thermal/USB/ESD review.
 Firmware, physical programming, motor/load and hardware tests are pending.
 **PROTOTYPE FABRICATION READY: NO.** No fabrication order is authorized.
 
+Publication source commit:
+[`ae9e9af8e4b81559dea220addb75db2ce40dab2b`](https://github.com/AnasSarkiz/smart-nema14-motor-controller/commit/ae9e9af8e4b81559dea220addb75db2ce40dab2b).
+The matching public tscircuit release is
+`AnasSarkiz/smart-nema14-motor-controller--01a0fd9b@0.0.43-alpha.0`,
+release `f06431f7-691f-4e86-8920-3873c17e9fd6`. All407 exact anonymous file downloads
+match, including80 local models and all three fresh JSON mirrors, alongside
+177 immutable changed GitHub files. `ready_to_build` is true; hosted preview
+success is not claimed. Every upload archive response completes successfully.
+The exact-source Linux readiness workflow
+[37533518456](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37533518456) passes every job and step,
+including the fresh pinned installation and complete smoke checks. See
+PUBLICATION.json and LINUX-READINESS.json. Publication/CI success does not
+approve fabrication or establish hardware readiness.
+
+A later isolated top-layer3.3 V source trial also fails: ten native errors,
+including buck switch-pad and TMC enable accidental contacts. The source delta,
+native output and process report are retained in `outer-v3v3-top-run/`; it is
+not adopted or uploaded as the current board. The receipt-only follow-up adds
+this rejected diagnostic and verification/context metadata. Its407 runtime
+files must remain byte-exact against the matching published release.
+
 ---
 
 # Schematic style corrections — 0.0.42-alpha.0, 2026-10-06

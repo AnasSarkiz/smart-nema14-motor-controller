@@ -1,0 +1,672 @@
+{
+  "revision": "0.0.43-alpha.0",
+  "scope": "Later isolated native manual top-layer trial; not adopted or uploaded as board runtime",
+  "base_source_commit": "ae9e9af8e4b81559dea220addb75db2ce40dab2b",
+  "source_file": "src/routing/power-guarded-paths-trial.json",
+  "only_source_delta": ".U2 > .pin15 inner1 wires moved to top; redundant top-to-inner transitions converted into top wire points",
+  "before_source_route": {
+    "connection": ".U2 > .pin15",
+    "route": [
+      {
+        "route_type": "wire",
+        "x": -7.498987,
+        "y": 3.1999950000000004,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.49899,
+        "y": 3.2,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -6.5894,
+        "y": 3.2,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -6.5226,
+        "y": 3.2668,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -6.3226,
+        "y": 3.0668,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "via",
+        "x": -6.3226,
+        "y": 3.0668,
+        "from_layer": "top",
+        "to_layer": "inner1",
+        "via_diameter": 0.45,
+        "via_hole_diameter": 0.3
+      },
+      {
+        "route_type": "wire",
+        "x": -6.3226,
+        "y": 3.0668,
+        "layer": "inner1",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.1204,
+        "y": 1.269,
+        "layer": "inner1",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.1204,
+        "y": -8,
+        "layer": "inner1",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.5,
+        "y": -8.4,
+        "layer": "inner1",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.5,
+        "y": -9.15,
+        "layer": "inner1",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.1204,
+        "y": -9.3377,
+        "layer": "inner1",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.7552,
+        "y": -9.7029,
+        "layer": "inner1",
+        "width": 0.15
+      },
+      {
+        "route_type": "via",
+        "x": -7.7552,
+        "y": -9.7029,
+        "from_layer": "inner1",
+        "to_layer": "top",
+        "via_diameter": 0.45,
+        "via_hole_diameter": 0.3
+      },
+      {
+        "route_type": "wire",
+        "x": -7.7552,
+        "y": -9.7029,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "via",
+        "x": -7.7552,
+        "y": -9.7029,
+        "from_layer": "top",
+        "to_layer": "bottom",
+        "via_diameter": 0.45,
+        "via_hole_diameter": 0.3
+      },
+      {
+        "route_type": "wire",
+        "x": -7.7552,
+        "y": -9.7029,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.8806,
+        "y": -9.7029,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.0834,
+        "y": -9.5001,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.5926,
+        "y": -9.5001,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.59259,
+        "y": -9.50013,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.592586,
+        "y": -9.500126,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.59259,
+        "y": -9.50013,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.5926,
+        "y": -9.5001,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.0834,
+        "y": -9.5001,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.8806,
+        "y": -9.7029,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.7552,
+        "y": -9.7029,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "via",
+        "x": -7.7552,
+        "y": -9.7029,
+        "from_layer": "bottom",
+        "to_layer": "top",
+        "via_diameter": 0.45,
+        "via_hole_diameter": 0.3
+      },
+      {
+        "route_type": "wire",
+        "x": -7.7552,
+        "y": -9.7029,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.4,
+        "y": -10.15,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.4,
+        "y": -11.400059,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -10.15,
+        "y": -11.400059,
+        "layer": "top",
+        "width": 0.15
+      }
+    ]
+  },
+  "rejected_source_route": {
+    "connection": ".U2 > .pin15",
+    "route": [
+      {
+        "route_type": "wire",
+        "x": -7.498987,
+        "y": 3.1999950000000004,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.49899,
+        "y": 3.2,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -6.5894,
+        "y": 3.2,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -6.5226,
+        "y": 3.2668,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -6.3226,
+        "y": 3.0668,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -6.3226,
+        "y": 3.0668,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -6.3226,
+        "y": 3.0668,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.1204,
+        "y": 1.269,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.1204,
+        "y": -8,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.5,
+        "y": -8.4,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.5,
+        "y": -9.15,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.1204,
+        "y": -9.3377,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.7552,
+        "y": -9.7029,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.7552,
+        "y": -9.7029,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.7552,
+        "y": -9.7029,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "via",
+        "x": -7.7552,
+        "y": -9.7029,
+        "from_layer": "top",
+        "to_layer": "bottom",
+        "via_diameter": 0.45,
+        "via_hole_diameter": 0.3
+      },
+      {
+        "route_type": "wire",
+        "x": -7.7552,
+        "y": -9.7029,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.8806,
+        "y": -9.7029,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.0834,
+        "y": -9.5001,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.5926,
+        "y": -9.5001,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.59259,
+        "y": -9.50013,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.592586,
+        "y": -9.500126,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.59259,
+        "y": -9.50013,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.5926,
+        "y": -9.5001,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -8.0834,
+        "y": -9.5001,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.8806,
+        "y": -9.7029,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.7552,
+        "y": -9.7029,
+        "layer": "bottom",
+        "width": 0.15
+      },
+      {
+        "route_type": "via",
+        "x": -7.7552,
+        "y": -9.7029,
+        "from_layer": "bottom",
+        "to_layer": "top",
+        "via_diameter": 0.45,
+        "via_hole_diameter": 0.3
+      },
+      {
+        "route_type": "wire",
+        "x": -7.7552,
+        "y": -9.7029,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.4,
+        "y": -10.15,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -7.4,
+        "y": -11.400059,
+        "layer": "top",
+        "width": 0.15
+      },
+      {
+        "route_type": "wire",
+        "x": -10.15,
+        "y": -11.400059,
+        "layer": "top",
+        "width": 0.15
+      }
+    ]
+  },
+  "native_error_count": 10,
+  "native_errors": [
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_0",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .TMC_ENABLE_R7_FILLED > .top to .U2 > .pin2 overlaps with .L1 > .pin2 to net.V3V3 (accidental contact)",
+      "pcb_trace_id": "pcb_trace_80",
+      "source_trace_id": "",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -8.1204,
+        "y": -4.635
+      },
+      "pcb_port_ids": [
+        "pcb_port_160",
+        "pcb_port_293",
+        "pcb_port_287",
+        "pcb_port_306"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_1",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .L1 > .pin2 to net.V3V3 overlaps with pcb_smtpad \"L1.pin1\" (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_4",
+      "center": {
+        "x": -8.1204,
+        "y": -7.899939
+      },
+      "source_trace_id": "",
+      "pcb_component_ids": [
+        "pcb_component_115"
+      ],
+      "pcb_port_ids": [
+        "pcb_port_287",
+        "pcb_port_306",
+        "pcb_port_286"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_2",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .L1 > .pin2 to net.V3V3 overlaps with .TMC_ENABLE_MCU_FILLED > .top to .U1 > .pin15 (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_4",
+      "source_trace_id": "",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -8.1204,
+        "y": -5.15
+      },
+      "pcb_port_ids": [
+        "pcb_port_287",
+        "pcb_port_306",
+        "pcb_port_210",
+        "pcb_port_160"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_3",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .L1 > .pin2 to net.V3V3 overlaps with TMC_ENABLE_R7_FILLED connectivity (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_4",
+      "source_trace_id": "",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -8.1204,
+        "y": -4.635
+      },
+      "pcb_port_ids": [
+        "pcb_port_287",
+        "pcb_port_306",
+        "pcb_port_160",
+        "pcb_port_293"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_4",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .L1 > .pin2 to net.V3V3 overlaps with pcb_smtpad \"C13.pin2\" (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_4",
+      "center": {
+        "x": -8.1204,
+        "y": -3.770002
+      },
+      "source_trace_id": "",
+      "pcb_component_ids": [
+        "pcb_component_119"
+      ],
+      "pcb_port_ids": [
+        "pcb_port_287",
+        "pcb_port_306",
+        "pcb_port_322"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_5",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .L1 > .pin2 to net.V3V3 is too close to .U2 > .CPI to net.TMC_CPI (gap: 0.059mm)",
+      "pcb_trace_id": "saved_phase_null_0_4",
+      "source_trace_id": "",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -8.22514,
+        "y": -3.4999999999999996
+      },
+      "pcb_port_ids": [
+        "pcb_port_287",
+        "pcb_port_306",
+        "pcb_port_296",
+        "pcb_port_322"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_6",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .L1 > .pin2 to net.V3V3 overlaps with pcb_smtpad \"U2.VCP\" (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_4",
+      "center": {
+        "x": -8.0923859,
+        "y": -2.1099893000000005
+      },
+      "source_trace_id": "",
+      "pcb_component_ids": [
+        "pcb_component_118"
+      ],
+      "pcb_port_ids": [
+        "pcb_port_287",
+        "pcb_port_306",
+        "pcb_port_297"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_7",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .L1 > .pin2 to net.V3V3 overlaps with pcb_smtpad \"U2.EP\" (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_4",
+      "center": {
+        "x": -8.1204,
+        "y": -1.0501234999999998
+      },
+      "source_trace_id": "",
+      "pcb_component_ids": [
+        "pcb_component_118"
+      ],
+      "pcb_port_ids": [
+        "pcb_port_287",
+        "pcb_port_306",
+        "pcb_port_320"
+      ]
+    },
+    {
+      "type": "pcb_trace_error",
+      "pcb_trace_error_id": "pcb_trace_error_8",
+      "error_type": "pcb_trace_error",
+      "message": "PCB trace .L1 > .pin2 to net.V3V3 overlaps with .U2 > .VCP to net.TMC_VCP (accidental contact)",
+      "pcb_trace_id": "saved_phase_null_0_4",
+      "source_trace_id": "",
+      "pcb_component_ids": [],
+      "center": {
+        "x": -8.059899999999999,
+        "y": -2.55
+      },
+      "pcb_port_ids": [
+        "pcb_port_287",
+        "pcb_port_306",
+        "pcb_port_297",
+        "pcb_port_323"
+      ]
+    },
+    {
+      "type": "pcb_pad_trace_clearance_error",
+      "pcb_pad_trace_clearance_error_id": "pcb_pad_trace_clearance_error_0",
+      "error_type": "pcb_pad_trace_clearance_error",
+      "message": "Pad U2.PDN_UART and trace .L1 > .pin2 to net.V3V3 are too close (clearance: 0.053mm, minimum: 0.1mm)",
+      "pcb_pad_id": "pcb_smtpad_111",
+      "pcb_trace_id": "saved_phase_null_0_4",
+      "minimum_clearance": 0.1,
+      "actual_clearance": 0.05255570858758177,
+      "center": {
+        "x": -6.927578892444838,
+        "y": 2.318592592444838
+      }
+    }
+  ],
+  "adopted": false,
+  "canonical_runtime_changed": false,
+  "prototype_fabrication_ready": false
+}
