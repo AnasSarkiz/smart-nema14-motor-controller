@@ -1,3 +1,4 @@
+import { ComponentNotes } from "../schematic/ComponentNotes"
 import {
   type BoardViewProps,
   previewPlacement,
@@ -24,15 +25,17 @@ export function MotorDriverSheet({
       sheetIndex={5}
     >
       <schematictext
-        fontSize={0.22}
-        text="VM from TPS26600; motor connector fitted. Regenerative energy qualification pending; ENN high during 5 V bootstrap."
-        schX={0}
-        schY={9}
+        fontSize={0.18}
+        text={
+          "VM from TPS26600; motor connector fitted. Regenerative energy qualification pending; ENN high during 5 V\nbootstrap."
+        }
+        schX={-6.5}
+        schY={8.7}
       />
       <TMC2209_LA
         name="U2"
         {...previewPlacement("U2", mechanicalPreview)}
-        schX={-6}
+        schX={-10.4}
         schY={0}
         schWidth={2.53}
         schPinArrangement={{
@@ -74,54 +77,54 @@ export function MotorDriverSheet({
       <CL05B223KB5VPNC
         name="C13"
         {...previewPlacement("C13", mechanicalPreview)}
-        schX={0}
-        schY={6}
+        schX={-6.5}
+        schY={4.32}
         connections={{ pin1: "net.TMC_CPO", pin2: "net.TMC_CPI" }}
       />
       <CC0603KRX7R9BB104
         name="C14"
         {...previewPlacement("C14", mechanicalPreview)}
-        schX={5}
-        schY={6}
+        schX={-3.25}
+        schY={4.32}
         schRotation={270}
         connections={{ pin1: "net.TMC_VCP", pin2: "net.VM" }}
       />
       <CL21A475KBQNNNE
         name="C15"
         {...previewPlacement("C15", mechanicalPreview)}
-        schX={-11}
-        schY={-5}
+        schX={-13.65}
+        schY={-3.6}
         schRotation={270}
         connections={{ pin1: "net.TMC_5VOUT", pin2: "net.GND" }}
       />
       <CL05B104KO5NNNC
         name="C16"
         {...previewPlacement("C16", mechanicalPreview)}
-        schX={0}
-        schY={3}
+        schX={-6.5}
+        schY={2.16}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
       />
       <CC0603KRX7R9BB104
         name="C17"
         {...previewPlacement("C17", mechanicalPreview)}
-        schX={4}
-        schY={3}
+        schX={-3.9}
+        schY={2.16}
         schRotation={270}
         connections={{ pin1: "net.VM", pin2: "net.GND" }}
       />
       <CL31A106KBHNNNE
         name="C18"
         {...previewPlacement("C18", mechanicalPreview)}
-        schX={7}
-        schY={3}
+        schX={-1.95}
+        schY={2.16}
         schRotation={270}
         connections={{ pin1: "net.VM", pin2: "net.GND" }}
       />
       <EEEFPV101XAP
         name="C19"
         {...previewPlacement("C19", mechanicalPreview)}
-        schX={4}
+        schX={-3.9}
         schY={0}
         schRotation={270}
         connections={{ pin1: "net.VM", pin2: "net.GND" }}
@@ -129,7 +132,7 @@ export function MotorDriverSheet({
       <EEEFPV101XAP
         name="C20"
         {...previewPlacement("C20", mechanicalPreview)}
-        schX={7}
+        schX={-1.95}
         schY={0}
         schRotation={270}
         connections={{ pin1: "net.VM", pin2: "net.GND" }}
@@ -137,87 +140,92 @@ export function MotorDriverSheet({
       <RT1206BRD071RL
         name="R5"
         {...previewPlacement("R5", mechanicalPreview)}
-        schX={0}
-        schY={-3}
+        schX={-6.5}
+        schY={-2.16}
         schRotation={270}
         connections={{ pin1: "net.TMC_SENSE_A", pin2: "net.GND" }}
       />
       <RT1206BRD071RL
         name="R6"
         {...previewPlacement("R6", mechanicalPreview)}
-        schX={4}
-        schY={-3}
+        schX={-3.9}
+        schY={-2.16}
         schRotation={270}
         connections={{ pin1: "net.TMC_SENSE_B", pin2: "net.GND" }}
       />
       <A_0402WGF1001TCE
         name="R4"
         {...previewPlacement("R4", mechanicalPreview)}
-        schX={8}
-        schY={-3}
+        schX={-1.3}
+        schY={-2.16}
         schRotation={270}
         connections={{ pin1: "net.TMC_UART_TX", pin2: "net.TMC_UART_RX" }}
       />
       <A_0402WGF1002TCE
         name="R7"
         {...previewPlacement("R7", mechanicalPreview)}
-        schX={0}
-        schY={-6}
+        schX={-6.5}
+        schY={-4.32}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.TMC_ENABLE_N" }}
       />
       <A_0402WGF1002TCE
         name="R8"
         {...previewPlacement("R8", mechanicalPreview)}
-        schX={4}
-        schY={-6}
+        schX={-3.9}
+        schY={-4.32}
         schRotation={270}
         connections={{ pin1: "net.TMC_STEP", pin2: "net.GND" }}
       />
       <A_0402WGF1002TCE
         name="R9"
         {...previewPlacement("R9", mechanicalPreview)}
-        schX={8}
-        schY={-6}
+        schX={-1.3}
+        schY={-4.32}
         schRotation={270}
         connections={{ pin1: "net.TMC_DIR", pin2: "net.GND" }}
       />
       <A_0402WGF1002TCE
         name="R10"
         {...previewPlacement("R10", mechanicalPreview)}
-        schX={-11}
-        schY={5}
+        schX={-13.65}
+        schY={3.6}
         schRotation={270}
         connections={{ pin1: "net.TMC_5VOUT", pin2: "net.TMC_VREF" }}
       />
       <A_0402WGF1002TCE
         name="R11"
         {...previewPlacement("R11", mechanicalPreview)}
-        schX={-11}
-        schY={2}
+        schX={-13.65}
+        schY={1.44}
         schRotation={270}
         connections={{ pin1: "net.TMC_VREF", pin2: "net.GND" }}
       />
       <CL05B104KO5NNNC
         name="C21"
         {...previewPlacement("C21", mechanicalPreview)}
-        schX={-11}
-        schY={-2}
+        schX={-13.65}
+        schY={-1.44}
         schRotation={270}
         connections={{ pin1: "net.TMC_VREF", pin2: "net.GND" }}
       />
       <schematictext
-        fontSize={0.22}
-        text="1 ohm / 0.25 W precision sense pair: about 0.32 A peak at full scale; 10k/10k VREF avoids low-reference operation."
-        schX={0}
-        schY={-9}
+        fontSize={0.18}
+        text={
+          "1 ohm / 0.25 W precision sense pair: about 0.32 A peak at full scale; 10k/10k VREF avoids low-reference\noperation."
+        }
+        schX={-6.5}
+        schY={-9.26}
       />
       <schematictext
-        fontSize={0.22}
-        text="200 uF / 35 V bulk nominal; capacitor ripple, polarity, startup and thermal qualification pending"
-        schX={0}
-        schY={-10}
+        fontSize={0.18}
+        text={
+          "200 uF / 35 V bulk nominal; capacitor ripple, polarity, startup and thermal qualification pending"
+        }
+        schX={-6.5}
+        schY={-9.7}
       />
+      <ComponentNotes sheet="MotorDriver" />
     </schematicsheet>
   )
 }

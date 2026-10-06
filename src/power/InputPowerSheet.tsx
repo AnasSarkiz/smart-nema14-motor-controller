@@ -1,3 +1,4 @@
+import { ComponentNotes } from "../schematic/ComponentNotes"
 import { TPS26600RHFR } from "../../imports/TPS26600RHFR/TPS26600RHFR"
 import { DMG1012T_7 } from "../../imports/DMG1012T_7/DMG1012T_7"
 import { RT0402BRD07100KL } from "../../imports/RT0402BRD07100KL/RT0402BRD07100KL"
@@ -24,15 +25,17 @@ export function InputPowerSheet({
       sheetIndex={9}
     >
       <schematictext
-        schX={0}
-        schY={8}
-        fontSize={0.22}
-        text="Autonomous USB bootstrap; GPIO high-current mode requires a validated >=1.5 A PD contract. Motor ENN stays high at 5 V."
+        schX={-6.5}
+        schY={8.7}
+        fontSize={0.18}
+        text={
+          "Autonomous USB bootstrap; GPIO high-current mode requires a validated >=1.5 A PD contract. Motor ENN\nstays high at 5 V."
+        }
       />
       <TPS26600RHFR
         name="U10"
         {...previewPlacement("U10", mechanicalPreview)}
-        schX={-5}
+        schX={-9.75}
         schY={0}
         schWidth={1.445}
         schHeight={2.77}
@@ -80,16 +83,16 @@ export function InputPowerSheet({
         }}
       />
       <schematictext
-        schX={6}
-        schY={-0.4}
+        schX={-2.6}
+        schY={-0.288}
         fontSize={0.2}
         text="Q_ILIM - DMG1012T-7"
       />
       <DMG1012T_7
         name="Q_ILIM"
         {...previewPlacement("Q_ILIM", mechanicalPreview)}
-        schX={6}
-        schY={-3}
+        schX={-2.6}
+        schY={-2.16}
         connections={{
           G: "net.POWER_HIGH_CURRENT",
           S: "net.EFUSE_RTN",
@@ -99,15 +102,15 @@ export function InputPowerSheet({
       <RT0402BRD07100KL
         name="R38"
         {...previewPlacement("R38", mechanicalPreview)}
-        schX={-12}
-        schY={4}
+        schX={-14.3}
+        schY={2.88}
         schRotation={270}
         connections={{ pin1: "net.VBUS_PROTECTED", pin2: "net.EFUSE_EN" }}
       />
       <A_0402WGF4702TCE
         name="R39"
         {...previewPlacement("R39", mechanicalPreview)}
-        schX={-12}
+        schX={-14.3}
         schY={0}
         schRotation={270}
         connections={{ pin1: "net.EFUSE_EN", pin2: "net.EFUSE_RTN" }}
@@ -115,8 +118,8 @@ export function InputPowerSheet({
       <RT0402BRD07100KL
         name="R40"
         {...previewPlacement("R40", mechanicalPreview)}
-        schX={-9}
-        schY={-6}
+        schX={-12.35}
+        schY={-4.32}
         schRotation={270}
         connections={{
           pin1: "net.VBUS_PROTECTED",
@@ -126,8 +129,8 @@ export function InputPowerSheet({
       <A_0402WGF1001TCE
         name="R41"
         {...previewPlacement("R41", mechanicalPreview)}
-        schX={-5}
-        schY={-6}
+        schX={-9.75}
+        schY={-4.32}
         connections={{
           pin1: "net.EFUSE_OVP_TOP_1",
           pin2: "net.EFUSE_OVP_TOP_2",
@@ -136,78 +139,83 @@ export function InputPowerSheet({
       <A_0402WGF4701TCE
         name="R42"
         {...previewPlacement("R42", mechanicalPreview)}
-        schX={-1}
-        schY={-6}
+        schX={-7.15}
+        schY={-4.32}
         connections={{ pin1: "net.EFUSE_OVP_TOP_2", pin2: "net.EFUSE_OVP" }}
       />
       <RT0402BRD076K04L
         name="R43"
         {...previewPlacement("R43", mechanicalPreview)}
-        schX={3}
-        schY={-6}
+        schX={-4.55}
+        schY={-4.32}
         schRotation={270}
         connections={{ pin1: "net.EFUSE_OVP", pin2: "net.EFUSE_RTN" }}
       />
       <A_0402WGF2402TCE
         name="R44"
         {...previewPlacement("R44", mechanicalPreview)}
-        schX={2}
-        schY={3}
+        schX={-5.2}
+        schY={2.16}
         schRotation={270}
         connections={{ pin1: "net.EFUSE_ILIM", pin2: "net.EFUSE_RTN" }}
       />
       <A_0402WGF2402TCE
         name="R45"
         {...previewPlacement("R45", mechanicalPreview)}
-        schX={6}
-        schY={3}
+        schX={-2.6}
+        schY={2.16}
         schRotation={270}
         connections={{ pin1: "net.EFUSE_ILIM", pin2: "net.EFUSE_ILIM_SWITCH" }}
       />
       <A_0402WGF1002TCE
         name="R46"
         {...previewPlacement("R46", mechanicalPreview)}
-        schX={10}
-        schY={-3}
+        schX={0}
+        schY={-2.16}
         schRotation={270}
         connections={{ pin1: "net.POWER_HIGH_CURRENT", pin2: "net.GND" }}
       />
       <UMK107BBJ225KA_T
         name="C33"
         {...previewPlacement("C33", mechanicalPreview)}
-        schX={0}
-        schY={-9}
+        schX={-6.5}
+        schY={-6.48}
         schRotation={270}
         connections={{ pin1: "net.EFUSE_DVDT", pin2: "net.EFUSE_RTN" }}
       />
       <UMK107BBJ225KA_T
         name="C34"
         {...previewPlacement("C34", mechanicalPreview)}
-        schX={-5}
-        schY={-9}
+        schX={-9.75}
+        schY={-6.48}
         schRotation={270}
         connections={{ pin1: "net.VBUS_PROTECTED", pin2: "net.GND" }}
       />
       <A_0402WGF1002TCE
         name="R48"
         {...previewPlacement("R48", mechanicalPreview)}
-        schX={7}
-        schY={7}
+        schX={-1.95}
+        schY={5.04}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.EFUSE_FLT_N" }}
       />
       <schematictext
-        schX={0}
-        schY={-11.5}
-        fontSize={0.2}
-        text="2.2 uF dVdT to isolated RTN: nominal slew 0.0526 V/ms. 24k gives 0.50 A; parallel branch gives 1.00 A. Firmware must limit USB bootstrap draw."
+        schX={-6.5}
+        schY={-9.02}
+        fontSize={0.18}
+        text={
+          "2.2 uF dVdT to isolated RTN: nominal slew 0.0526 V/ms. 24k gives 0.50 A; parallel branch gives 1.00 A.\nFirmware must limit USB bootstrap draw."
+        }
       />
       <schematictext
-        schX={0}
-        schY={-12.2}
-        fontSize={0.2}
-        text="MODE to RTN: current limit with automatic retry; SHDN internal pull-up enables startup. Hold ENN high on fault. RTN must remain separate from GND. Reverse blocking is not a brake."
+        schX={-6.5}
+        schY={-9.7}
+        fontSize={0.18}
+        text={
+          "MODE to RTN: current limit with automatic retry; SHDN internal pull-up enables startup. Hold ENN high on\nfault. RTN must remain separate from GND. Reverse blocking is not a brake."
+        }
       />
+      <ComponentNotes sheet="InputPower" />
     </schematicsheet>
   )
 }

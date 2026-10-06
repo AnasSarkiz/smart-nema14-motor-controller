@@ -1,3 +1,4 @@
+import { ComponentNotes } from "../schematic/ComponentNotes"
 import {
   type BoardViewProps,
   previewPlacement,
@@ -26,10 +27,12 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
       sheetIndex={6}
     >
       <schematictext
-        schX={0}
-        schY={8.5}
-        fontSize={0.22}
-        text="TCPP01 protects CC and drives Q_PD; TPS26600 limits inrush and supplies the buck and motor rail."
+        schX={-6.5}
+        schY={8.7}
+        fontSize={0.18}
+        text={
+          "TCPP01 protects CC and drives Q_PD; TPS26600 limits inrush and supplies the buck and motor rail."
+        }
       />
       <USB4110_GF_A
         name="J_USB"
@@ -41,8 +44,8 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           modelUnitToMmScale: 1,
           modelBoardNormalDirection: "z+",
         }}
-        schX={-10}
-        schY={2}
+        schX={-13}
+        schY={1.44}
         noConnect={["SBU1", "SBU2"]}
         connections={{
           SHELL1: "net.GND",
@@ -64,8 +67,8 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
       <TCPP01_M12
         name="U3"
         {...previewPlacement("U3", mechanicalPreview)}
-        schX={-3}
-        schY={2}
+        schX={-8.45}
+        schY={1.44}
         connections={{
           CC1c: "net.PD_CC1_CONN",
           CC2c: "net.PD_CC2_CONN",
@@ -83,28 +86,28 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         }}
       />
       <schematictext
-        schX={4}
-        schY={4.1}
+        schX={-3.9}
+        schY={2.952}
         fontSize={0.2}
         text="Q_PD - STL11N3LLH6"
       />
       <schematictext
-        schX={7}
-        schY={5.4}
+        schX={-1.95}
+        schY={3.888}
         fontSize={0.2}
         text="D_VBUS - ESDA25P35"
       />
       <schematictext
-        schX={-10}
-        schY={-5.5}
+        schX={-13}
+        schY={-3.96}
         fontSize={0.2}
         text="D_USB - TPD2EUSB30A"
       />
       <STL11N3LLH6
         name="Q_PD"
         {...previewPlacement("Q_PD", mechanicalPreview)}
-        schX={4}
-        schY={5}
+        schX={-3.9}
+        schY={3.6}
         connections={{
           S1: "net.VBUS_PROTECTED",
           S2: "net.VBUS_PROTECTED",
@@ -120,8 +123,8 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
       <TPD2EUSB30ADRTR
         name="D_USB"
         {...previewPlacement("D_USB", mechanicalPreview)}
-        schX={-10}
-        schY={-7}
+        schX={-13}
+        schY={-5.04}
         connections={{
           D_POS: "net.USB_DP",
           D_NEG: "net.USB_DM",
@@ -132,94 +135,94 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         name="D_VBUS"
         {...previewPlacement("D_VBUS", mechanicalPreview)}
         schRotation={270}
-        schX={7}
-        schY={6}
+        schX={-1.95}
+        schY={4.32}
         connections={{ pin1: "net.VBUS_CONN", pin2: "net.GND" }}
       />
       <UMK107BBJ225KA_T
         name="C25"
         {...previewPlacement("C25", mechanicalPreview)}
-        schX={10}
-        schY={6}
+        schX={0}
+        schY={4.32}
         schRotation={270}
         connections={{ pin1: "net.VBUS_CONN", pin2: "net.GND" }}
       />
       <CC0603KRX7R9BB104
         name="C26"
         {...previewPlacement("C26", mechanicalPreview)}
-        schX={13}
-        schY={6}
+        schX={1.95}
+        schY={4.32}
         schRotation={270}
         connections={{ pin1: "net.VBUS_CONN", pin2: "net.GND" }}
       />
       <CL05B104KO5NNNC
         name="C22"
         {...previewPlacement("C22", mechanicalPreview)}
-        schX={1}
-        schY={-2}
+        schX={-5.85}
+        schY={-1.44}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
       />
       <TCC0402COG331J500AT
         name="C23"
         {...previewPlacement("C23", mechanicalPreview)}
-        schX={4}
-        schY={-2}
+        schX={-3.9}
+        schY={-1.44}
         schRotation={270}
         connections={{ pin1: "net.PD_CC1_CONN", pin2: "net.GND" }}
       />
       <TCC0402COG331J500AT
         name="C24"
         {...previewPlacement("C24", mechanicalPreview)}
-        schX={7}
-        schY={-2}
+        schX={-1.95}
+        schY={-1.44}
         schRotation={270}
         connections={{ pin1: "net.PD_CC2_CONN", pin2: "net.GND" }}
       />
       <A_0402WGF1002TCE
         name="R12"
         {...previewPlacement("R12", mechanicalPreview)}
-        schX={10}
-        schY={-2}
+        schX={0}
+        schY={-1.44}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.PD_FLT" }}
       />
       <RT0402BRD07100KL
         name="R13"
         {...previewPlacement("R13", mechanicalPreview)}
-        schX={1}
-        schY={-6}
+        schX={-5.85}
+        schY={-4.32}
         schRotation={270}
         connections={{ pin1: "net.VBUS_CONN", pin2: "net.PD_OVP_SERIES" }}
       />
       <A_0402WGF1001TCE
         name="R14"
         {...previewPlacement("R14", mechanicalPreview)}
-        schX={4}
-        schY={-6}
+        schX={-3.9}
+        schY={-4.32}
         connections={{ pin1: "net.PD_OVP_SERIES", pin2: "net.PD_OVP" }}
       />
       <RT0402BRD076K04L
         name="R15"
         {...previewPlacement("R15", mechanicalPreview)}
-        schX={7}
-        schY={-6}
+        schX={-1.95}
+        schY={-4.32}
         schRotation={270}
         connections={{ pin1: "net.PD_OVP", pin2: "net.GND" }}
       />
       <A_0402WGF2203TCE
         name="R16"
         {...previewPlacement("R16", mechanicalPreview)}
-        schX={-5}
-        schY={-8.5}
+        schX={-9.75}
+        schY={-6.12}
         schRotation={270}
         connections={{ pin1: "net.VBUS_PROTECTED", pin2: "net.VBUS_DIV" }}
       />
       <A_0402WGF1002TCE
         name="R17"
         {...previewPlacement("R17", mechanicalPreview)}
-        schX={-2}
-        schY={-8.5}
+        schX={-7.8}
+        schY={-6.12}
         schRotation={270}
         connections={{ pin1: "net.VBUS_DIV", pin2: "net.GND" }}
       />
@@ -227,36 +230,43 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         name="R18"
         {...previewPlacement("R18", mechanicalPreview)}
         schRotation={270}
-        schX={2}
-        schY={-8.5}
+        schX={-5.2}
+        schY={-6.12}
         connections={{ pin1: "net.VBUS_DIV", pin2: "net.VBUS_ADC_PRE_GUARD" }}
       />
       <CL05B104KO5NNNC
         name="C27"
         {...previewPlacement("C27", mechanicalPreview)}
-        schX={6}
-        schY={-8.5}
+        schX={-2.6}
+        schY={-6.12}
         schRotation={270}
         connections={{ pin1: "net.VBUS_ADC", pin2: "net.GND" }}
       />
       <schematictext
-        schX={0}
-        schY={-11}
-        fontSize={0.2}
-        text="Initialize UCPD sink Rd BEFORE raising PB12/DB. PA9/PA10 grounded; motor ENN remains pulled high."
+        schX={-6.5}
+        schY={-8.58}
+        fontSize={0.18}
+        text={
+          "Initialize UCPD sink Rd BEFORE raising PB12/DB. PA9/PA10 grounded; motor ENN remains pulled high."
+        }
       />
       <schematictext
-        schX={0}
-        schY={-11.5}
-        fontSize={0.2}
-        text="TCPP OVP: 22.51 V nominal. Downstream eFuse OVP: 22.02 V nominal; transient qualification remains pending."
+        schX={-6.5}
+        schY={-9.26}
+        fontSize={0.18}
+        text={
+          "TCPP OVP: 22.51 V nominal. Downstream eFuse OVP: 22.02 V nominal; transient qualification remains\npending."
+        }
       />
       <schematictext
-        schX={0}
-        schY={-12}
-        fontSize={0.2}
-        text="D_VBUS is input surge protection, NOT a motor brake. USB data: direct FS PHY, 90-ohm routing pending."
+        schX={-6.5}
+        schY={-9.7}
+        fontSize={0.18}
+        text={
+          "D_VBUS is input surge protection, NOT a motor brake. USB data: direct FS PHY; impedance qualification pending."
+        }
       />
+      <ComponentNotes sheet="UsbPd" />
     </schematicsheet>
   )
 }

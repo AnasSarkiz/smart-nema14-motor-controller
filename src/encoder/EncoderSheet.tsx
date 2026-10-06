@@ -1,3 +1,4 @@
+import { ComponentNotes } from "../schematic/ComponentNotes"
 import {
   type BoardViewProps,
   previewPlacement,
@@ -17,17 +18,17 @@ export function EncoderSheet({
       sheetIndex={2}
     >
       <schematictext
-        fontSize={0.22}
-        text="AS5600, 3.3 V, I2C address 0x36 - optional assembly population"
-        schX={0}
-        schY={6}
+        fontSize={0.18}
+        text={"AS5600, 3.3 V, I2C address 0x36 - optional assembly population"}
+        schX={-6.5}
+        schY={8.7}
       />
       <AS5600_ASOM
         name="U4"
         doNotPlace
         {...previewPlacement("U4", mechanicalPreview)}
         layer="bottom"
-        schX={-5}
+        schX={-9.75}
         schY={0}
         noConnect={["OUT", "PGO"]}
         connections={{
@@ -44,45 +45,52 @@ export function EncoderSheet({
         doNotPlace
         {...previewPlacement("C6", mechanicalPreview)}
         layer="bottom"
-        schX={6}
-        schY={-4}
+        schX={-2.6}
+        schY={-2.88}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
       />
       <A_0402WGF4701TCE
         name="R2"
         {...previewPlacement("R2", mechanicalPreview)}
-        schX={5}
-        schY={4}
+        schX={-3.25}
+        schY={2.88}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.I2C_SCL" }}
       />
       <A_0402WGF4701TCE
         name="R3"
         {...previewPlacement("R3", mechanicalPreview)}
-        schX={10}
-        schY={4}
+        schX={0}
+        schY={2.88}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.I2C_SDA" }}
       />
       <schematictext
-        fontSize={0.22}
-        text="PGO retains internal pull-up; OUT unused. Volatile settings only; OTP programming excluded."
-        schX={0}
-        schY={-5}
+        fontSize={0.18}
+        text={
+          "PGO retains internal pull-up; OUT unused. Volatile settings only; OTP programming excluded."
+        }
+        schX={-6.5}
+        schY={-8.58}
       />
       <schematictext
-        fontSize={0.22}
-        text="DIR=GND: clockwise viewed per datasheet. Motor-side orientation must be calibrated."
-        schX={0}
-        schY={-6}
+        fontSize={0.18}
+        text={
+          "DIR=GND: clockwise viewed per datasheet. Motor-side orientation must be calibrated."
+        }
+        schX={-6.5}
+        schY={-9.02}
       />
       <schematictext
-        fontSize={0.22}
-        text="14HM11-0404S has no rear shaft. Open-loop review default: U4/C6 unpopulated; no magnet or feedback qualified."
-        schX={0}
-        schY={-7}
+        fontSize={0.18}
+        text={
+          "14HM11-0404S has no rear shaft. Open-loop review default: U4/C6 unpopulated; no magnet or feedback\nqualified."
+        }
+        schX={-6.5}
+        schY={-9.7}
       />
+      <ComponentNotes sheet="Encoder" />
     </schematicsheet>
   )
 }

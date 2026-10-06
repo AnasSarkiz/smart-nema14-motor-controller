@@ -1,3 +1,40 @@
+# Schematic explanations — 0.0.38-alpha.0, 2026-10-06
+
+All 111 electronic references have native purpose notes on their nine A4 sheets,
+including actual passive values, hardware defaults and U4/C6/R50 DNP status.
+Schematic coordinates and existing prose are reflowed for right-side panels.
+The outdated USB routing-pending note now identifies impedance qualification
+as pending. See [all sheet images](docs/SCHEMATIC-NOTES.md).
+
+Fresh canonical Circuit JSON SHA-256: `7141f726718ecfe7d3887cb1fdcf29fc58089b19bd390c337a61484c4558289b`. All three mirrors match.
+The exact preservation check compares every one of 28 non-schematic element types
+(excluding project metadata): source traces/ports/nets/components, all PCB objects,
+334 traces /224 vias /82 pours, 423 supplier pads and 108 CAD entries remain
+byte-equivalent to revision 0.0.37. All 111 original runtime model assets, official
+imports, mechanical references and routing sources are unchanged. No routing ran.
+
+All nine fresh native renders were viewed. The annotation regression check passes:
+111/111 references, matching sheets, no purpose-panel symbol/net-label/wire overlap,
+adequate line spacing, and DNP disclosures. Native build, TypeScript, formatting,
+netlist, source, placement and shorts pass. Native errors/opens/dangling items: zero;
+82/82 physical nets remain joined. Thirty width warnings, 27 supplier pin-metadata
+warnings, five refdes and five styling warnings remain visible. Native snapshots
+record a new visual baseline; exact physical preservation is the regression proof.
+
+Existing strict copper, CAM, width/tolerance, USB and programmer qualification
+is retained by exact unchanged electrical/PCB/CAD objects, with baseline evidence
+explicitly labeled in the qualification ZIP. This annotation-only step does not
+repeat or extend physical qualification. Power/thermal/loaded-via review remains
+incomplete; USB impedance is a bounded analytical screen; flashing is untested.
+Supplier silk, four CPL rotations, four sourcing/allocation gaps, stackup/plating
+and 68 filled/capped via process acceptance still block ordering.
+
+**PROTOTYPE FABRICATION READY: NO.** No hardware validation, order or hosted-preview
+success is claimed. Publication and Linux workflow receipts will be recorded after
+exact public verification. Evidence: evidence/rev-0.0.38-alpha.0/.
+
+---
+
 # Manual source fixes — 0.0.37-alpha.0, 2026-10-06
 
 Publication verified: source/artifact commit `f29b08808188b69cb31d415ea3ee69740fec21d5`, public

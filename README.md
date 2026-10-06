@@ -1,6 +1,8 @@
 # Smart NEMA 14 Motor Controller
 
-Revision **0.0.36-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
+Revision **0.0.38-alpha.0**, 2026-10-06. **Routing complete; fabrication qualification pending; not hardware tested.**
+
+[Every component now has a purpose note](docs/SCHEMATIC-NOTES.md) on its native schematic sheet, including values and DNP assembly notes. The right-side panels explain all 111 references without changing PCB geometry or electrical connections.
 
 35 × 35 mm, four layers, 111 electronic references / 108 default fitted, nine native A4 schematic sheets. Exact motor: **STEPPERONLINE 14HM11-0404S**, 0.4 A/phase, single front shaft. U4/C6 encoder parts and R50 are marked DNP in source and excluded from default assembly exports. Their imported footprints, pads and wiring remain intact.
 

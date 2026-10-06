@@ -1,3 +1,4 @@
+import { ComponentNotes } from "../schematic/ComponentNotes"
 import {
   type BoardViewProps,
   previewPlacement,
@@ -16,15 +17,17 @@ export function CanSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
       sheetIndex={3}
     >
       <schematictext
-        fontSize={0.22}
-        text="FDCAN2 in classical CAN mode, up to 1 Mbps; no CAN FD data phase"
-        schX={0}
-        schY={6}
+        fontSize={0.18}
+        text={
+          "FDCAN2 in classical CAN mode, up to 1 Mbps; no CAN FD data phase"
+        }
+        schX={-6.5}
+        schY={8.7}
       />
       <SN65HVD230DR
         name="U6"
         {...previewPlacement("U6", mechanicalPreview)}
-        schX={-4}
+        schX={-9.1}
         schY={0}
         noConnect={["VREF"]}
         connections={{
@@ -40,7 +43,7 @@ export function CanSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
       <CL05B104KO5NNNC
         name="C7"
         {...previewPlacement("C7", mechanicalPreview)}
-        schX={6}
+        schX={-2.6}
         schY={0}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
@@ -48,30 +51,35 @@ export function CanSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
       <A_0402WGF1200TCE
         name="R49"
         {...previewPlacement("R49", mechanicalPreview)}
-        schX={4}
-        schY={4}
+        schX={-3.9}
+        schY={2.88}
         connections={{ pin1: "net.CAN_H", pin2: "net.CAN_TERM_LINK" }}
       />
       <A_0402WGF0000TCE
         name="R50"
         doNotPlace
         {...previewPlacement("R50", mechanicalPreview)}
-        schX={9}
-        schY={4}
+        schX={-0.65}
+        schY={2.88}
         connections={{ pin1: "net.CAN_TERM_LINK", pin2: "net.CAN_L" }}
       />
       <schematictext
-        fontSize={0.22}
-        text="RS pulled high selects standby at reset; PB3 selects active high-speed mode. VREF unused."
-        schX={0}
-        schY={-5}
+        fontSize={0.18}
+        text={
+          "RS pulled high selects standby at reset; PB3 selects active high-speed mode. VREF unused."
+        }
+        schX={-6.5}
+        schY={-9.26}
       />
       <schematictext
-        fontSize={0.22}
-        text="R50 is DNP by default. Populate its zero-ohm link ONLY on CAN bus endpoints to enable R49 termination."
-        schX={0}
-        schY={-6}
+        fontSize={0.18}
+        text={
+          "R50 is DNP by default. Populate its zero-ohm link ONLY on CAN bus endpoints to enable R49 termination."
+        }
+        schX={-6.5}
+        schY={-9.7}
       />
+      <ComponentNotes sheet="CAN" />
     </schematicsheet>
   )
 }

@@ -1,3 +1,4 @@
+import { ComponentNotes } from "../schematic/ComponentNotes"
 import {
   type BoardViewProps,
   previewPlacement,
@@ -16,15 +17,17 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
       sheetIndex={1}
     >
       <schematictext
-        fontSize={0.22}
-        text="STM32G0B1: native UCPD/USB, TMC UART, SWD, classical CAN, temperature and control inputs."
-        schX={0}
-        schY={8}
+        fontSize={0.18}
+        text={
+          "STM32G0B1: native UCPD/USB, TMC UART, SWD, classical CAN, temperature and control inputs."
+        }
+        schX={-6.5}
+        schY={8.7}
       />
       <STM32G0B1CBT6
         name="U1"
         {...previewPlacement("U1", mechanicalPreview)}
-        schX={-5}
+        schX={-9.75}
         schY={0}
         schWidth={3.48}
         noConnect={[
@@ -83,69 +86,74 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
       <CL05B104KO5NNNC
         name="C1"
         {...previewPlacement("C1", mechanicalPreview)}
-        schX={5}
-        schY={5}
+        schX={-3.25}
+        schY={3.6}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
       />
       <CL05A475MP5NRNC
         name="C2"
         {...previewPlacement("C2", mechanicalPreview)}
-        schX={8}
-        schY={5}
+        schX={-1.3}
+        schY={3.6}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
       />
       <CL05B104KO5NNNC
         name="C3"
         {...previewPlacement("C3", mechanicalPreview)}
-        schX={5}
-        schY={2}
+        schX={-3.25}
+        schY={1.44}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
       />
       <CL05B104KO5NNNC
         name="C4"
         {...previewPlacement("C4", mechanicalPreview)}
-        schX={8}
-        schY={2}
+        schX={-1.3}
+        schY={1.44}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
       />
       <A_0402WGF1002TCE
         name="R1"
         {...previewPlacement("R1", mechanicalPreview)}
-        schX={5}
-        schY={-3}
+        schX={-3.25}
+        schY={-2.16}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.NRST" }}
       />
       <CL05B104KO5NNNC
         name="C5"
         {...previewPlacement("C5", mechanicalPreview)}
-        schX={8}
-        schY={-3}
+        schX={-1.3}
+        schY={-2.16}
         schRotation={270}
         connections={{ pin1: "net.NRST", pin2: "net.GND" }}
       />
       <schematictext
-        fontSize={0.22}
-        text="C1/C2: VDD/VDDA; C3: VREF+; C4: VBAT; C5: NRST"
-        schX={0}
-        schY={-6}
+        fontSize={0.18}
+        text={"C1/C2: VDD/VDDA; C3: VREF+; C4: VBAT; C5: NRST"}
+        schX={-6.5}
+        schY={-8.82}
       />
       <schematictext
-        fontSize={0.22}
-        text="C2 effective capacitance under 3.3 V bias requires qualification"
-        schX={0}
-        schY={-7}
+        fontSize={0.18}
+        text={
+          "C2 effective capacitance under 3.3 V bias requires qualification"
+        }
+        schX={-6.5}
+        schY={-9.26}
       />
       <schematictext
-        fontSize={0.22}
-        text="Unused GPIO: firmware analog mode. HSI48/CRS for USB; no external crystal."
-        schX={0}
-        schY={-8}
+        fontSize={0.18}
+        text={
+          "Unused GPIO: firmware analog mode. HSI48/CRS for USB; no external crystal."
+        }
+        schX={-6.5}
+        schY={-9.7}
       />
+      <ComponentNotes sheet="MCU" />
     </schematicsheet>
   )
 }

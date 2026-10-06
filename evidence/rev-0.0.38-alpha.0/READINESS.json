@@ -1,0 +1,56 @@
+{
+  "revision": "0.0.38-alpha.0",
+  "canonical_sha256": "7141f726718ecfe7d3887cb1fdcf29fc58089b19bd390c337a61484c4558289b",
+  "native_errors": 0,
+  "unconnected_port_count": 0,
+  "completed_physical_nets": 82,
+  "total_physical_nets": 82,
+  "traces": 334,
+  "vias": 224,
+  "pours": 82,
+  "strict_copper_passed": true,
+  "filled_copper_passed": true,
+  "motor_width_tolerance_passed": true,
+  "programmer_wiring_passed": true,
+  "gerber_geometry_passed": true,
+  "silkscreen_passed": false,
+  "native_drill_bom_cpl_identity_passed": true,
+  "unverified_supplier_rotations": [
+    "J_USB",
+    "LED_POWER",
+    "LED_STATUS",
+    "LED_FAULT"
+  ],
+  "native_warning_counts": {
+    "route_width": 30,
+    "pin_metadata": 27,
+    "refdes": 5,
+    "schematic_styling": 5
+  },
+  "power_scope": "All 34 declared fanout branches retain source widths. Bounded current/power screens retained; full loaded rail/pour/barrel current, switching loops, transient and thermal qualification incomplete.",
+  "usb_scope": "0.381440727mm skew and adjacent signal-core GND screen pass; approximate nominal91.812ohm impedance only. Stackup/CAM impedance unconfirmed.",
+  "remaining_blockers": [
+    "Supplier silkscreen width/mask/outline violations",
+    "J_USB and three LED CPL orientations unverified",
+    "Four exact fitted part stock/allocation gaps",
+    "Selected minimum copper/plating, stackup and 68 filled/capped features need manufacturer acceptance",
+    "Loaded power/via/thermal and switching-loop qualification incomplete"
+  ],
+  "firmware_delivered": false,
+  "hardware_tested": false,
+  "physical_programming_tested": false,
+  "prototype_fabrication_ready": false,
+  "owned_connector_silkscreen_passed": true,
+  "qualification_provenance": "Fresh native full build and shorts/placement/source/netlist/pin checks; annotation coverage and panel separation checked on the exact canonical. CHANGE-PRESERVATION proves all 28 non-schematic/non-project-metadata element types exactly equal revision 0.0.37, including all electrical source objects, PCB/CAD geometry and every copper object. Existing copper/CAM/power/USB/programmer/process qualification and disclosed limitations apply without a physical change. Nine individual native rendered images reviewed. Snapshot command creates a new baseline, not a historical regression proof.",
+  "all_111_placements_and_421_pin_partitions_preserved": true,
+  "native_converter_versions": {
+    "gerber_cli": "0.0.111",
+    "latest_released_gerber_checked": "0.0.112",
+    "latest_gerber_fix_scope": "Adds filesystem-neutral files API; does not resolve supplier silk or clear-polarity ownership. Latest tscircuit and CLI remain pinned and unchanged."
+  },
+  "explained_components": 111,
+  "schematic_sheet_count": 9,
+  "schematic_note_coverage_passed": true,
+  "schematic_note_layout_passed": true,
+  "all_nine_sheet_images_visually_reviewed": true
+}

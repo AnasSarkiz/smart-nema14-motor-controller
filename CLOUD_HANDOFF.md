@@ -1,3 +1,13 @@
+# Schematic component explanations — 0.0.38-alpha.0
+
+All 111 electronic references now have native schematic purpose notes on their
+nine A4 sheets. Drawing coordinates and prose were reflowed for readable panels;
+electrical connections, all PCB geometry, supplier imports and CAD are unchanged
+from revision 0.0.37. Read current VALIDATION.md and evidence/rev-0.0.38-alpha.0/.
+**PROTOTYPE FABRICATION READY: NO.** Existing ordering blockers remain.
+
+---
+
 # Current manual fixes — 0.0.37-alpha.0
 
 The native Gerber ground mismatch is resolved by moving the exactly owned C25

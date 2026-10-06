@@ -1,0 +1,485 @@
+{
+  "baseline_revision": "0.0.37-alpha.0",
+  "baseline_commit": "8f88ea70fdd0b08fdf602f9f1d7da10efa3a5423",
+  "baseline_canonical_sha256": "99df7e9371dce7a57c2d76ad668ba12ba4a4a465ca7f595f08d791757f6bc033",
+  "canonical_sha256": "7141f726718ecfe7d3887cb1fdcf29fc58089b19bd390c337a61484c4558289b",
+  "comparison": "All non-schematic element types byte-equivalent except source project metadata. All source traces, ports, net assignments, component metadata, PCB objects, copper, pads and CAD entries are exact. All official imported sources, routing and mechanical references untouched.",
+  "unchanged_element_counts": {
+    "cad_component": 108,
+    "pcb_board": 1,
+    "pcb_component": 209,
+    "pcb_copper_pour": 82,
+    "pcb_courtyard_outline": 111,
+    "pcb_fabrication_note_path": 42,
+    "pcb_hole": 6,
+    "pcb_keepout": 4,
+    "pcb_port": 617,
+    "pcb_silkscreen_circle": 13,
+    "pcb_silkscreen_path": 559,
+    "pcb_silkscreen_text": 4,
+    "pcb_smtpad": 423,
+    "pcb_solder_paste": 331,
+    "pcb_trace": 334,
+    "pcb_trace_warning": 30,
+    "pcb_via": 224,
+    "source_board": 1,
+    "source_component": 111,
+    "source_component_pins_underspecified_warning": 6,
+    "source_group": 1,
+    "source_manually_placed_via": 98,
+    "source_net": 82,
+    "source_no_ground_pin_defined_warning": 7,
+    "source_no_power_pin_defined_warning": 14,
+    "source_port": 617,
+    "source_refdes_convention_warning": 5,
+    "source_trace": 558
+  },
+  "all_original_runtime_model_assets": [
+    {
+      "path": "imports/AP63203WU_7/AP63203WU_7.obj",
+      "sha256": "6bf633f38ffa66eddae4e52f2e0134e27604a77f2e70a2a65f73e02b6c5d5d69"
+    },
+    {
+      "path": "imports/AP63203WU_7/AP63203WU_7.step",
+      "sha256": "4420c424f4a2941b36f28b622f6950c965439c7c9525e1961bb8384ef58a6dd9"
+    },
+    {
+      "path": "imports/AS5600_ASOM/AS5600_ASOM.obj",
+      "sha256": "18c8f36579d4dc6d93c51d3556539c69f8f75cd557fdba6d9cf73cbf0e23d278"
+    },
+    {
+      "path": "imports/AS5600_ASOM/AS5600_ASOM.step",
+      "sha256": "70f46697efa1daced22df982a5fd03c112d6cf25207f9a1afdf37b49a391ab84"
+    },
+    {
+      "path": "imports/A_0402WGF0000TCE/A_0402WGF0000TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/A_0402WGF0000TCE/A_0402WGF0000TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/A_0402WGF1000TCE/A_0402WGF1000TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/A_0402WGF1000TCE/A_0402WGF1000TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/A_0402WGF1200TCE/A_0402WGF1200TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/A_0402WGF1200TCE/A_0402WGF1200TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/A_0402WGF2203TCE/A_0402WGF2203TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/A_0402WGF2203TCE/A_0402WGF2203TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/A_0402WGF2402TCE/A_0402WGF2402TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/A_0402WGF2402TCE/A_0402WGF2402TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/A_0402WGF4701TCE/A_0402WGF4701TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/A_0402WGF4702TCE/A_0402WGF4702TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/A_0402WGF4702TCE/A_0402WGF4702TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/A_0402WGF6651TCE/A_0402WGF6651TCE.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/A_0402WGF6651TCE/A_0402WGF6651TCE.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/BSS138LT1G/BSS138LT1G.obj",
+      "sha256": "eba3fbb208f2c1a7432380919e93350a471d50f840cc10ec11fdb1f59812c7b2"
+    },
+    {
+      "path": "imports/BSS138LT1G/BSS138LT1G.step",
+      "sha256": "c9a82c26510eaf3f266d1d61eb7c4addbfd4f1bef9c428b719678ad8455821cc"
+    },
+    {
+      "path": "imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.obj",
+      "sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2"
+    },
+    {
+      "path": "imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.step",
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110"
+    },
+    {
+      "path": "imports/CL05A475MP5NRNC/CL05A475MP5NRNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "path": "imports/CL05A475MP5NRNC/CL05A475MP5NRNC.step",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14"
+    },
+    {
+      "path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "path": "imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14"
+    },
+    {
+      "path": "imports/CL05B223KB5VPNC/CL05B223KB5VPNC.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "path": "imports/CL05B223KB5VPNC/CL05B223KB5VPNC.step",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14"
+    },
+    {
+      "path": "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.obj",
+      "sha256": "a6ecf4d78195d1f061b045e187fdff13726b03dc2475a4f11803b44d86adebc1"
+    },
+    {
+      "path": "imports/CL21A226MAQNNNE/CL21A226MAQNNNE.step",
+      "sha256": "67f86cfc9ebba2ff889d65b12f5d49d5a90b265b73635a931d68c6a27d34e11f"
+    },
+    {
+      "path": "imports/CL21A475KBQNNNE/CL21A475KBQNNNE.obj",
+      "sha256": "a6ecf4d78195d1f061b045e187fdff13726b03dc2475a4f11803b44d86adebc1"
+    },
+    {
+      "path": "imports/CL21A475KBQNNNE/CL21A475KBQNNNE.step",
+      "sha256": "67f86cfc9ebba2ff889d65b12f5d49d5a90b265b73635a931d68c6a27d34e11f"
+    },
+    {
+      "path": "imports/CL31A106KBHNNNE/CL31A106KBHNNNE.obj",
+      "sha256": "d725fdbb4ab326035448275626e2022faef2bcdf473e3b7654e25f6308d096c0"
+    },
+    {
+      "path": "imports/CL31A106KBHNNNE/CL31A106KBHNNNE.step",
+      "sha256": "a3b636a587c98bf5baa4dcd6af15732c43a5f396ec40d2b987bd6db5417c8265"
+    },
+    {
+      "path": "imports/DMG1012T_7/DMG1012T_7.obj",
+      "sha256": "c500f5faa8090cbb23c8d31b37400f56588265a266d18bf34752d1baed01aff7"
+    },
+    {
+      "path": "imports/DMG1012T_7/DMG1012T_7.step",
+      "sha256": "ae69ee72f295d977932aab0d244465261eb61f2c031805f1d289d0cf85806849"
+    },
+    {
+      "path": "imports/EEEFPV101XAP/EEEFPV101XAP.obj",
+      "sha256": "d2a82f339551bccf8ac1358cc8f9756f50a5d9d445ffb49c9395fe01969b4225"
+    },
+    {
+      "path": "imports/EEEFPV101XAP/EEEFPV101XAP.step",
+      "sha256": "0520d085e6aa1b712b8127b1de76907f64951f608caa5f1d495a693c6ae742fb"
+    },
+    {
+      "path": "imports/ESDA25P35_1U1M/ESDA25P35_1U1M.obj",
+      "sha256": "3a3868fa6cd1ad408ed014d97373e6102bff1712afbddedbb25583579f7e605d"
+    },
+    {
+      "path": "imports/ESDA25P35_1U1M/ESDA25P35_1U1M.step",
+      "sha256": "6dc8861569f43539ad8557144a2f787ca151d7df0d3f29aa2f6375b8dbd48b04"
+    },
+    {
+      "path": "imports/HoLRT1206_1W_180mR_1_/HoLRT1206_1W_180mR_1_.obj",
+      "sha256": "bb7ca81e5a381483c7fb7f3a472cf27ffa6f321494823911b0dae819cd352cc1"
+    },
+    {
+      "path": "imports/HoLRT1206_1W_180mR_1_/HoLRT1206_1W_180mR_1_.step",
+      "sha256": "ca0f6c898b6c5ac572fcabb6f326264b985a8cd3c0f7fa407526b8d2ce209713"
+    },
+    {
+      "path": "imports/RT0402BRD07100KL/RT0402BRD07100KL.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/RT0402BRD07100KL/RT0402BRD07100KL.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/RT0402BRD0724KL/RT0402BRD0724KL.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/RT0402BRD0724KL/RT0402BRD0724KL.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/RT0402BRD076K04L/RT0402BRD076K04L.obj",
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/RT0402BRD076K04L/RT0402BRD076K04L.step",
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/RT1206BRD071RL/RT1206BRD071RL.obj",
+      "sha256": "bb7ca81e5a381483c7fb7f3a472cf27ffa6f321494823911b0dae819cd352cc1"
+    },
+    {
+      "path": "imports/RT1206BRD071RL/RT1206BRD071RL.step",
+      "sha256": "ca0f6c898b6c5ac572fcabb6f326264b985a8cd3c0f7fa407526b8d2ce209713"
+    },
+    {
+      "path": "imports/S4B_PH_K_S_LF__SN_/S4B_PH_K_S_LF__SN_.obj",
+      "sha256": "98ae325e726fc69855350e84476506cc22d468270291ad06bfcf3592161df37e"
+    },
+    {
+      "path": "imports/S4B_PH_K_S_LF__SN_/S4B_PH_K_S_LF__SN_.step",
+      "sha256": "a724d16fa46b1d2bd2d39ca8cfc1f7f455315c85dbc30582eeb789a9f75219fe"
+    },
+    {
+      "path": "imports/S4B_PH_SM4_K_TB_LF__SN_/S4B_PH_SM4_K_TB_LF__SN_.obj",
+      "sha256": "bca64f44867ba10f2345f877cebe0070f4697e9ec43b9206d5eedfa81b818981"
+    },
+    {
+      "path": "imports/S4B_PH_SM4_K_TB_LF__SN_/S4B_PH_SM4_K_TB_LF__SN_.step",
+      "sha256": "1b8eb61c9f40eab30ade2cf79f008e466ba5c09d4271035724825acb074323cc"
+    },
+    {
+      "path": "imports/S4B_PH_SM4_TB_LF__SN_/S4B_PH_SM4_TB_LF__SN_.obj",
+      "sha256": "bca64f44867ba10f2345f877cebe0070f4697e9ec43b9206d5eedfa81b818981"
+    },
+    {
+      "path": "imports/S4B_PH_SM4_TB_LF__SN_/S4B_PH_SM4_TB_LF__SN_.step",
+      "sha256": "1b8eb61c9f40eab30ade2cf79f008e466ba5c09d4271035724825acb074323cc"
+    },
+    {
+      "path": "imports/SM04B_GHS_TB_LF__SN_/SM04B_GHS_TB_LF__SN_.obj",
+      "sha256": "4c1fa5348a19ac90841e87279be118fcd49bef63cf89509dd47a17aa07647523"
+    },
+    {
+      "path": "imports/SM04B_GHS_TB_LF__SN_/SM04B_GHS_TB_LF__SN_.step",
+      "sha256": "bbc0cf3000b7277d362a6e283c6a20283067c70e697083b91b1c095bcfefae1a"
+    },
+    {
+      "path": "imports/SM10B_SRSS_TB_LF__SN_/SM10B_SRSS_TB_LF__SN_.obj",
+      "sha256": "432880d70e8f76d275c21ddd1e1578c8e026d3655d22044eeb0ea9a2f135dc89"
+    },
+    {
+      "path": "imports/SM10B_SRSS_TB_LF__SN_/SM10B_SRSS_TB_LF__SN_.step",
+      "sha256": "14c1101e1628b886b8bed802295e99a3705a2033365fe7882d62a089ff261c36"
+    },
+    {
+      "path": "imports/SM712_TCT/SM712_TCT.obj",
+      "sha256": "eba3fbb208f2c1a7432380919e93350a471d50f840cc10ec11fdb1f59812c7b2"
+    },
+    {
+      "path": "imports/SM712_TCT/SM712_TCT.step",
+      "sha256": "c9a82c26510eaf3f266d1d61eb7c4addbfd4f1bef9c428b719678ad8455821cc"
+    },
+    {
+      "path": "imports/SN65HVD230DR/SN65HVD230DR.obj",
+      "sha256": "18c8f36579d4dc6d93c51d3556539c69f8f75cd557fdba6d9cf73cbf0e23d278"
+    },
+    {
+      "path": "imports/SN65HVD230DR/SN65HVD230DR.step",
+      "sha256": "70f46697efa1daced22df982a5fd03c112d6cf25207f9a1afdf37b49a391ab84"
+    },
+    {
+      "path": "imports/SRN6028C_3R9M/SRN6028C_3R9M.obj",
+      "sha256": "e756a1d16edc5f2da4c3734b9d423c61337e8ce7ea6c160a2301c2b374c38412"
+    },
+    {
+      "path": "imports/SRN6028C_3R9M/SRN6028C_3R9M.step",
+      "sha256": "2e7b3c5a5b2134ac7076ec5d2237a22e8d51341107a053fb0640ead10e22e729"
+    },
+    {
+      "path": "imports/STL11N3LLH6/STL11N3LLH6.obj",
+      "sha256": "36eed239d5fa35628a4da66b523b0663515280461b35c03e3521ffdacc33053f"
+    },
+    {
+      "path": "imports/STL11N3LLH6/STL11N3LLH6.step",
+      "sha256": "7ef034c4afa8348b3e6bd4814d87e4057187ebd051df9c9201bc90ab463ea1da"
+    },
+    {
+      "path": "imports/STM32G0B1CBT6/STM32G0B1CBT6.obj",
+      "sha256": "0aaf09e94ac8622460deff54c72c9eea9f73640ee1ce58b900400257ce7e1f06"
+    },
+    {
+      "path": "imports/STM32G0B1CBT6/STM32G0B1CBT6.step",
+      "sha256": "fc1048bca8e51a9c5785281973849107ef5d8bc9b0d7531644412a5bb760b998"
+    },
+    {
+      "path": "imports/TCC0402COG331J500AT/TCC0402COG331J500AT.obj",
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "path": "imports/TCC0402COG331J500AT/TCC0402COG331J500AT.step",
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14"
+    },
+    {
+      "path": "imports/TCPP01_M12/TCPP01_M12.obj",
+      "sha256": "1a53bb48fcd9ac7b2f81c8c98b2c65d18c1527d4a73d0e2496f881cc53abcc47"
+    },
+    {
+      "path": "imports/TCPP01_M12/TCPP01_M12.step",
+      "sha256": "7ec2f4a9d4f871673975070d5ec8ae81a302829848994476214ef610a680aa9e"
+    },
+    {
+      "path": "imports/TLV803EA30DBZR/TLV803EA30DBZR.obj",
+      "sha256": "b579ed36991ffc8657e2b5bba0fd00fea2f2aa889925092ca9c543ce88ba8199"
+    },
+    {
+      "path": "imports/TLV803EA30DBZR/TLV803EA30DBZR.step",
+      "sha256": "404e2c1e10e1ebdc38126eb298c04d95ad998039e4ddaf854293dcb8b285a876"
+    },
+    {
+      "path": "imports/TLV803EA30DPWR/TLV803EA30DPWR.obj",
+      "sha256": "05bbdb8565aba167feacd0e5e1ba75d5a68ce526f3e163b1551c7158c7af1eb9"
+    },
+    {
+      "path": "imports/TLV803EA30DPWR/TLV803EA30DPWR.step",
+      "sha256": "38144219a425cadbfb813d9aace0a26ea4bf8d381396c6a80dfe83f9f3d7ab75"
+    },
+    {
+      "path": "imports/TMC2209_LA/TMC2209_LA.obj",
+      "sha256": "81eca268ddbbf49f48818b62a569d0fe618ea425448a3cc702038f04796094f0"
+    },
+    {
+      "path": "imports/TMC2209_LA/TMC2209_LA.step",
+      "sha256": "54b729c0ec691ec6e6cb3991eae11d774b0f962083e959a0bd899470bf65c45d"
+    },
+    {
+      "path": "imports/TMP112AIDRLR/TMP112AIDRLR.obj",
+      "sha256": "bc86540062da17394ffedde912df61cf4e9388c732bf220ad4f3237430ae3c59"
+    },
+    {
+      "path": "imports/TMP112AIDRLR/TMP112AIDRLR.step",
+      "sha256": "2fa2e0f7cefa8b58279161303b6e060e28345b91cc712c9c548aa9b06a56d4b6"
+    },
+    {
+      "path": "imports/TMUX1511RSVR/TMUX1511RSVR.obj",
+      "sha256": "2324708e69ab92f94f40c7d651b31d37ae715d2cd0262d758822852f465e1afd"
+    },
+    {
+      "path": "imports/TMUX1511RSVR/TMUX1511RSVR.step",
+      "sha256": "cffb323aa76b68e2c36677424bf06875c7d086e519d5d401b8ea42114bae75dc"
+    },
+    {
+      "path": "imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR.obj",
+      "sha256": "64afcb69c763513e646acc334b022c87a47c31c49bc12629bcc854f0ebf307aa"
+    },
+    {
+      "path": "imports/TPD2EUSB30ADRTR/TPD2EUSB30ADRTR.step",
+      "sha256": "28e3a78293047c869953f184a2426f9c22e9d7ccc6db3301b5b9af92ce239444"
+    },
+    {
+      "path": "imports/TPD4E05U06DQAR/TPD4E05U06DQAR.obj",
+      "sha256": "59dd839f715dc4fd87af40d250d0723142795e42b2a4ac98514521b49176554f"
+    },
+    {
+      "path": "imports/TPD4E05U06DQAR/TPD4E05U06DQAR.step",
+      "sha256": "657a205108be41e11084cf5694452e8e2f63cd4d15665350a6d022d98d6719a8"
+    },
+    {
+      "path": "imports/TPS259470LRPWR/TPS259470LRPWR.obj",
+      "sha256": "906e299ffa34a390c458b5664c2ac7e88431eb1c7f51fc33e0b5053284d4f138"
+    },
+    {
+      "path": "imports/TPS259470LRPWR/TPS259470LRPWR.step",
+      "sha256": "2cc166f3b0fc4aa31d02f669ac22bad9c41301cc21475875d64a6bdc2d5d16df"
+    },
+    {
+      "path": "imports/TPS26600RHFT/TPS26600RHFT.obj",
+      "sha256": "5f2f18bd972667d79bf5b61bfcac4e240161edbd923df2616f700148614aa59a"
+    },
+    {
+      "path": "imports/TPS26600RHFT/TPS26600RHFT.step",
+      "sha256": "790e210ea0c850989b13df0d49c39875a2703a9d34435ff051eccb2aa39729a1"
+    },
+    {
+      "path": "imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T.obj",
+      "sha256": "3af4d2000750b3be8149bdf53d8b14743d96fc20c1c8a963704802ada85759f2"
+    },
+    {
+      "path": "imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T.step",
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110"
+    },
+    {
+      "path": "imports/XL_1608SYGC_06/XL_1608SYGC_06.obj",
+      "sha256": "637004ba79bbe8f5a027e0f6ad201573d59b26c70393dc4d1bf8bbe3c6aff4d1"
+    },
+    {
+      "path": "imports/XL_1608SYGC_06/XL_1608SYGC_06.step",
+      "sha256": "960e9b081492a26215d1668d977990f322ae71831f05f070d38a476f2cf1b5d4"
+    },
+    {
+      "path": "mechanical/assets/carrier-fastener-envelopes.step",
+      "sha256": "c0cedb4963573cb9c6f2f48da053b339b3442f80d202471ccec5b353ce465b38"
+    },
+    {
+      "path": "mechanical/assets/diametric-magnet.step",
+      "sha256": "7d23a2de70fe982f5c893b23b8676fff2fa30ecef5930f5a0dbe03347465207a"
+    },
+    {
+      "path": "mechanical/assets/front-flange-carrier.step",
+      "sha256": "1a1f9fad9c65e6270a6c0d127b0d99fe8085d0ddac25c23c33482dc81bb312e2"
+    },
+    {
+      "path": "mechanical/assets/retaining-cup.step",
+      "sha256": "5b05b26b4d151384e1de0a6c92cde8990534c68cbedd03fe6a2d3f8c4fa5087e"
+    },
+    {
+      "path": "mechanical/assets/standoffs.step",
+      "sha256": "f1e3ed531ef190bc21015c1d20c0bc0768afbf76b1e8d0dfec56853bd842366b"
+    },
+    {
+      "path": "references/motor/14hm11-0404s/14HM11-0404S.STEP",
+      "sha256": "959f43e95b7840beae5ffbd56e997e23c5004a1b09e16b7caa40400296e46281"
+    },
+    {
+      "path": "references/motor/3323_0.stp",
+      "sha256": "e16e8e7d84c9ecbc3fd27bfcf26959762dbfe7868b44c42c6dc1977ba5f6db04"
+    },
+    {
+      "path": "references/tps26600-cad/RHF0024A.stp",
+      "sha256": "3b1cdf1034f9434010f7c2a32ca0686c80f56c0328a38be2e6f7f67ed7f78a41"
+    },
+    {
+      "path": "references/usb4110-external-model/usb4110-gf-a.stp",
+      "sha256": "fb802f14dd0a87ca59b246036d7a6365de3ea32b20a7896a02ade42b9f35d799"
+    }
+  ],
+  "model_asset_count": 111,
+  "passed": true
+}
