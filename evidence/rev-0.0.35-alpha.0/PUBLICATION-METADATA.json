@@ -1,0 +1,79 @@
+{
+  "revision": "0.0.35-alpha.0",
+  "release_id": "18fcb173-e240-4c1b-aa98-6a5f83fef3d3",
+  "github_commit": "26707020946b162901c667a232416e1b7b3a1f30",
+  "canonical_sha256": "63076b482262db351ea8136616baf8afc8594d505a2a0932eb0c336d29395f53",
+  "scope": "Final qualification metadata update only. Initial PUBLICATION.json verifies all 384 runtime files and 13 GitHub files at its recorded snapshot; only build/qualification-review.zip changes here. Source, model assets and all three canonical Circuit JSON files remain unchanged. Hosted build success is not claimed.",
+  "verification_method": "Anonymous official downloads with a checksum URL cache key. The unversioned download endpoint caches for 86400 seconds; anonymous package_files/get and checksum-keyed downloads return the current bytes.",
+  "all_updated_files_anonymously_verified": true,
+  "updated_file_count": 1,
+  "package_total_files": 384,
+  "package_checks": [
+    {
+      "path": "build/qualification-review.zip",
+      "status": 200,
+      "sha256": "dedf84c1f7e578b4cdc6332b0babf17d796d8fda53b6be63ee954b1a1a261892",
+      "verified": true
+    }
+  ],
+  "github_public_checks": [
+    {
+      "path": "dist/index/circuit.json",
+      "status": 200,
+      "sha256": "63076b482262db351ea8136616baf8afc8594d505a2a0932eb0c336d29395f53",
+      "verified": true
+    },
+    {
+      "path": "dist/routing-review/circuit.json",
+      "status": 200,
+      "sha256": "63076b482262db351ea8136616baf8afc8594d505a2a0932eb0c336d29395f53",
+      "verified": true
+    },
+    {
+      "path": "build/routing-review/circuit.json",
+      "status": 200,
+      "sha256": "63076b482262db351ea8136616baf8afc8594d505a2a0932eb0c336d29395f53",
+      "verified": true
+    },
+    {
+      "path": "CLOUD_HANDOFF.md",
+      "status": 200,
+      "sha256": "ed3aab30d22a73faf931429d671c5dbc5e60271f86f94fc7f07ab39d9f957783",
+      "verified": true
+    },
+    {
+      "path": "VALIDATION.md",
+      "status": 200,
+      "sha256": "80879ad627fb4f7b33f55b80d0064ee69f2074b370a6ec8b5361d852584701a3",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.35-alpha.0/READINESS.json",
+      "status": 200,
+      "sha256": "daebbb369cf7cf02c182304b50489f3d9575d7791cb4148a26f2e06a7addaa40",
+      "verified": true
+    },
+    {
+      "path": "evidence/rev-0.0.35-alpha.0/PACKAGE-INVENTORY.json",
+      "status": 200,
+      "sha256": "983b5c95d7da8f9d5cb318ed98079fab6fa348a72cc2f52e43cbf829dcff91e6",
+      "verified": true
+    },
+    {
+      "path": "build/qualification-review.zip",
+      "status": 200,
+      "sha256": "dedf84c1f7e578b4cdc6332b0babf17d796d8fda53b6be63ee954b1a1a261892",
+      "verified": true
+    }
+  ],
+  "hosted_build_success_claimed": false,
+  "hardware_tested": false,
+  "prototype_fabrication_ready": false,
+  "completed_at_utc": "2026-10-06T05:05:39.632Z",
+  "final_cloud_smoke": {
+    "passed": true,
+    "context_files_verified": 5082,
+    "historical_archive_parts_verified": 4,
+    "scope": "Run against final qualification metadata before this receipt-only commit; TypeScript, critical imports, pinned CLI and Python native libraries passed."
+  }
+}
