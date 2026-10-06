@@ -29,9 +29,17 @@ incomplete; USB impedance is a bounded analytical screen; flashing is untested.
 Supplier silk, four CPL rotations, four sourcing/allocation gaps, stackup/plating
 and 68 filled/capped via process acceptance still block ordering.
 
-**PROTOTYPE FABRICATION READY: NO.** No hardware validation, order or hosted-preview
-success is claimed. Publication and Linux workflow receipts will be recorded after
-exact public verification. Evidence: evidence/rev-0.0.38-alpha.0/.
+Publications verified: implementation commit `f37e48bcd4688eeb0b4daa01742f0d67475ab91f`
+and public tscircuit release `c235fa13-c8bf-4f0e-a7ef-30c1eaa8e070`. All 391
+package files and 22 immutable GitHub files passed anonymous SHA-256 readback,
+including the component-note helper, all nine sheet sources, Circuit JSON and
+every preserved model asset. The release is ready to build; hosted-preview
+success is not claimed. The fresh Ubuntu install/startup workflow
+[37488982248](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37488982248)
+passed; exact step outcomes are recorded in LINUX-READINESS.json.
+
+**PROTOTYPE FABRICATION READY: NO.** No hardware validation or order is claimed.
+Evidence: evidence/rev-0.0.38-alpha.0/.
 
 ---
 

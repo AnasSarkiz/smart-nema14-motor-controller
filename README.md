@@ -40,7 +40,7 @@ Local remaining-net routing exhausted the Mac's memory. New routing is Cloud/Lin
 
 The default entry replays checked source routes/pours and preserves all errors without launching a new remaining-net search. Explicit selected-net jobs use released native Pipeline9 with ordinary 0.30/0.60 mm vias. Saved copper includes individually declared filled/capped features; follow the manufacturing manifests, not a blanket same-net drill exemption. Do not resume older Freerouting experiments.
 
-The fresh Ubuntu 24.04 [Linux readiness run](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37292488424) passed. The Codex Cloud setup and startup smoke checks passed; the environment was published and the user authorized board continuation. Cloud tscircuit authentication is now established.
+The fresh Ubuntu 24.04 [Linux readiness run](https://github.com/AnasSarkiz/smart-nema14-motor-controller/actions/runs/37488982248) passed. The Codex Cloud setup and startup smoke checks passed; the environment was published and the user authorized board continuation. Cloud tscircuit authentication is now established.
 
 Cloud environment install command: `bash scripts/cloud-setup.sh`. Startup check: `bash scripts/cloud-smoke.sh`. The active board task is TASK.md. A repository commit alone does not create or start a Cloud environment.
 
