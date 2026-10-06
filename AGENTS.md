@@ -1,3 +1,18 @@
+# Active user redesign — 0.0.44-alpha.0
+
+The latest user request explicitly authorizes RP2040, dedicated USB-PD,
+functional buzzer and all review fixes. Read docs/RP2040-USB-PD-REDESIGN.md.
+The former STM32/TCPP01 selection-preservation instruction is superseded for
+these replacements only. Preserve official imported definitions, historical
+copper/models/evidence and the exact motor, outline, connectors and carrier.
+The canonical entry is now UNROUTED: never replay legacy STM32 saved routes.
+Stage 2 manufacturer/BOM and Stage 3 mechanical/placement qualification are
+in progress; resolve them before routing. All prior fabrication metrics and
+filled-via manifests describe historical boards, not this new architecture.
+PROTOTYPE FABRICATION READY: NO.
+
+---
+
 # Smart NEMA 14 controller — Cloud continuation
 
 Use the repository-synced tscircuit skill at `.agents/skills/tscircuit/SKILL.md`.

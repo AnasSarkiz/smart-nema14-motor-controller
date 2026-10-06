@@ -1,7 +1,6 @@
 import { ComponentNotes } from "../schematic/ComponentNotes"
 import { SM10B_SRSS_TB_LF__SN_ } from "../../imports/SM10B_SRSS_TB_LF__SN_/SM10B_SRSS_TB_LF__SN_"
 import { SM04B_GHS_TB_LF__SN_ } from "../../imports/SM04B_GHS_TB_LF__SN_/SM04B_GHS_TB_LF__SN_"
-import { TMP112AIDRLR } from "../../imports/TMP112AIDRLR/TMP112AIDRLR"
 import { TPD4E05U06DQAR } from "../../imports/TPD4E05U06DQAR/TPD4E05U06DQAR"
 import { SM712_TCT } from "../../imports/SM712_TCT/SM712_TCT"
 import { XL_1608SYGC_06 } from "../../imports/XL_1608SYGC_06/XL_1608SYGC_06"
@@ -19,7 +18,7 @@ export function InterfacesSheet({
   return (
     <schematicsheet
       name="Interfaces"
-      displayName="Motor, CAN, control inputs, temperature and indicators"
+      displayName="Motor connector, protected control inputs and indicators"
       sheetSize="A4"
       sheetIndex={8}
     >
@@ -65,20 +64,7 @@ export function InterfacesSheet({
           pin6: "net.GND",
         }}
       />
-      <TMP112AIDRLR
-        name="U9"
-        {...previewPlacement("U9", mechanicalPreview)}
-        schX={-9.1}
-        schY={-4.32}
-        connections={{
-          SCL: "net.I2C_SCL",
-          SDA: "net.I2C_SDA",
-          V_POS: "net.V3V3",
-          GND: "net.GND",
-          ADD0: "net.GND",
-          ALERT: "net.TEMP_ALERT_N",
-        }}
-      />
+
       <TPD4E05U06DQAR
         name="D_IO1"
         {...previewPlacement("D_IO1", mechanicalPreview)}
@@ -199,14 +185,7 @@ export function InterfacesSheet({
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.LIMIT2" }}
       />
-      <A_0402WGF1002TCE
-        name="R33"
-        {...previewPlacement("R33", mechanicalPreview)}
-        schX={-11.7}
-        schY={-5.04}
-        schRotation={270}
-        connections={{ pin1: "net.V3V3", pin2: "net.TEMP_ALERT_N" }}
-      />
+
       <A_0402WGF1002TCE
         name="R34"
         {...previewPlacement("R34", mechanicalPreview)}
@@ -231,14 +210,7 @@ export function InterfacesSheet({
         schRotation={270}
         connections={{ pin1: "net.LIMIT2", pin2: "net.GND" }}
       />
-      <CL05B104KO5NNNC
-        name="C32"
-        {...previewPlacement("C32", mechanicalPreview)}
-        schX={-7.15}
-        schY={-5.76}
-        schRotation={270}
-        connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
-      />
+
       <A_0402WGF1001TCE
         name="R35"
         {...previewPlacement("R35", mechanicalPreview)}
@@ -292,7 +264,7 @@ export function InterfacesSheet({
         schY={-9.26}
         fontSize={0.18}
         text={
-          "TMP112 address 0x48; board temperature only. Firmware must enforce motor current and temperature limits."
+          "GPIO inputs are 3.3 V only. Temperature and I2C pull-ups are together on the Sensors and buzzer sheet."
         }
       />
       <schematictext

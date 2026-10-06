@@ -2,18 +2,20 @@ import assert from "node:assert/strict"
 import { createHash } from "node:crypto"
 import { readFileSync, writeFileSync } from "node:fs"
 const revision = JSON.parse(readFileSync("package.json", "utf8")).version
-const circuit = JSON.parse(readFileSync("dist/assembly/circuit.json", "utf8"))
+const circuit = JSON.parse(
+  readFileSync(process.argv[2] ?? "dist/assembly/circuit.json", "utf8"),
+)
 const cad = circuit.filter((element) => element.type === "cad_component")
 const pcb = circuit.filter((element) => element.type === "pcb_component")
 assert.equal(
   circuit.filter((element) => element.type === "pcb_board").length,
   1,
 )
-assert.equal(pcb.length, 109)
+assert.equal(pcb.length, 147)
 assert.equal(
   cad.length,
-  109,
-  "108 default-fitted PCB components plus unchanged manufacturer motor",
+  147,
+  "146 default-fitted PCB components plus unchanged manufacturer motor",
 )
 const sources = circuit.filter((element) => element.type === "source_component")
 const sourceById = new Map(

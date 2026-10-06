@@ -76,7 +76,7 @@ expected_pin_nets = [
     ("R20", 1, "SWDIO_GUARDED"), ("R20", 2, "SWDIO"),
     ("R21", 1, "SWCLK_GUARDED"), ("R21", 2, "SWCLK"),
     ("R22", 1, "NRST_GUARDED"), ("R22", 2, "NRST"),
-    ("U1", 35, "SWDIO"), ("U1", 36, "SWCLK"), ("U1", 10, "NRST"),
+    ("U1", 25, "SWDIO"), ("U1", 24, "SWCLK"), ("U1", 26, "NRST"),
     ("R1", 1, "V3V3"), ("R1", 2, "NRST"),
     ("C5", 1, "NRST"), ("C5", 2, "GND"),
     ("R52", 1, "SWDIO"), ("R52", 2, "GND"),
@@ -94,7 +94,7 @@ assert net_names(("J_SWD", 1)) == []
 assert not any(power_port["source_port_id"] in t["connected_source_port_ids"]
                for t in traces), "Programmer VOUT must remain disconnected"
 assert root(port_for(("U8", 2))["source_port_id"]) != \
-       root(port_for(("U1", 10))["source_port_id"]), \
+       root(port_for(("U1", 26))["source_port_id"]), \
        "Target reset must not disable the other SWD switch channels"
 
 for reference in ["R20", "R21", "R22"]:
@@ -124,7 +124,7 @@ report = {
     "usage": "Straight-through five-way cable from programmer J3 to J_SWD. "
              "Target requires its own qualified USB-C supply. "
              "Programmer SWD/reset logic is fixed 3.3 V. "
-             "Load programmer CMSIS-DAP firmware; use STM32G0 OpenOCD target "
+             "Load programmer CMSIS-DAP firmware; use the RP2040 OpenOCD target "
              "configuration with hardware reset. Start with a slow SWD clock.",
     "hardware_programming_verified": False,
     "prototype_fabrication_ready": False,

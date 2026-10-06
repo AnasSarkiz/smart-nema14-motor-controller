@@ -1,0 +1,747 @@
+{
+  "canonical_sha256": "b72ed0cd13e08f93fcbbcd0f7d49c503667c058619a8498f8bdd809a6794a087",
+  "component_count": 147,
+  "explained_component_count": 147,
+  "sheet_count": 9,
+  "all_purposes_on_correct_sheet": true,
+  "no_panel_symbol_label_or_wire_overlap": true,
+  "all_dnp_disclosed": true,
+  "coverage": [
+    {
+      "reference": "U1",
+      "sheet": "MCU",
+      "purpose": "U1: RP2040; motor control, USB data, SPI CAN and I2C."
+    },
+    {
+      "reference": "U_FLASH",
+      "sheet": "MCU",
+      "purpose": "U_FLASH: W25Q16JVUXIQ; 2 MB external QSPI boot flash."
+    },
+    {
+      "reference": "R_FLASH_CS",
+      "sheet": "MCU",
+      "purpose": "R_FLASH_CS: 10 kohm; holds flash CS high at startup."
+    },
+    {
+      "reference": "C_FLASH",
+      "sheet": "MCU",
+      "purpose": "C_FLASH: 100 nF; local boot-flash supply bypass."
+    },
+    {
+      "reference": "Y_RP",
+      "sheet": "MCU",
+      "purpose": "Y_RP: ABM8-272-T3; 12 MHz reference for RP2040/USB."
+    },
+    {
+      "reference": "R_XOUT",
+      "sheet": "MCU",
+      "purpose": "R_XOUT: 1 kohm; limits crystal oscillator drive."
+    },
+    {
+      "reference": "C_XIN",
+      "sheet": "MCU",
+      "purpose": "C_XIN: 15 pF; crystal load on XIN; qualify stray load."
+    },
+    {
+      "reference": "C_XOUT",
+      "sheet": "MCU",
+      "purpose": "C_XOUT: 15 pF; crystal load on XTAL_OUT."
+    },
+    {
+      "reference": "R_USB_DM",
+      "sheet": "MCU",
+      "purpose": "R_USB_DM: 33 ohm; RP2040 USB D- series termination."
+    },
+    {
+      "reference": "R_USB_DP",
+      "sheet": "MCU",
+      "purpose": "R_USB_DP: 33 ohm; RP2040 USB D+ series termination."
+    },
+    {
+      "reference": "R1",
+      "sheet": "MCU",
+      "purpose": "R1: 10 kohm; pulls RP2040 RUN/system reset high."
+    },
+    {
+      "reference": "C5",
+      "sheet": "MCU",
+      "purpose": "C5: 100 nF; filters the RUN/system reset line."
+    },
+    {
+      "reference": "C1",
+      "sheet": "MCU",
+      "purpose": "C1: 100 nF; local 3.3 V IOVDD supply bypass."
+    },
+    {
+      "reference": "C_IO2",
+      "sheet": "MCU",
+      "purpose": "C_IO2: 100 nF; local 3.3 V IOVDD supply bypass."
+    },
+    {
+      "reference": "C_IO3",
+      "sheet": "MCU",
+      "purpose": "C_IO3: 100 nF; local 3.3 V IOVDD supply bypass."
+    },
+    {
+      "reference": "C_IO4",
+      "sheet": "MCU",
+      "purpose": "C_IO4: 100 nF; local 3.3 V IOVDD supply bypass."
+    },
+    {
+      "reference": "C_IO5",
+      "sheet": "MCU",
+      "purpose": "C_IO5: 100 nF; local 3.3 V IOVDD supply bypass."
+    },
+    {
+      "reference": "C_IO6",
+      "sheet": "MCU",
+      "purpose": "C_IO6: 100 nF; local 3.3 V IOVDD supply bypass."
+    },
+    {
+      "reference": "C_ADC",
+      "sheet": "MCU",
+      "purpose": "C_ADC: 100 nF; bypasses ADC_AVDD supply noise."
+    },
+    {
+      "reference": "C_USBPHY",
+      "sheet": "MCU",
+      "purpose": "C_USBPHY: 100 nF; bypasses the USB_VDD supply."
+    },
+    {
+      "reference": "C2",
+      "sheet": "MCU",
+      "purpose": "C2: 1 uF; local RP2040 VREG_IN supply bypass."
+    },
+    {
+      "reference": "C_VCORE",
+      "sheet": "MCU",
+      "purpose": "C_VCORE: 1 uF; internal 1.1 V regulator reservoir."
+    },
+    {
+      "reference": "C3",
+      "sheet": "MCU",
+      "purpose": "C3: 100 nF; bypasses DVDD2 on the 1.1 V core rail."
+    },
+    {
+      "reference": "C4",
+      "sheet": "MCU",
+      "purpose": "C4: 100 nF; bypasses DVDD1 on the 1.1 V core rail."
+    },
+    {
+      "reference": "U9",
+      "sheet": "I2C",
+      "purpose": "U9: TMP112; board temperature sensor; I2C address 0x48."
+    },
+    {
+      "reference": "R2",
+      "sheet": "I2C",
+      "purpose": "R2: 4.7 kohm; shared I2C SCL pull-up to 3.3 V."
+    },
+    {
+      "reference": "R3",
+      "sheet": "I2C",
+      "purpose": "R3: 4.7 kohm; shared I2C SDA pull-up to 3.3 V."
+    },
+    {
+      "reference": "R33",
+      "sheet": "I2C",
+      "purpose": "R33: 10 kohm; pulls temperature ALERT high."
+    },
+    {
+      "reference": "C32",
+      "sheet": "I2C",
+      "purpose": "C32: 100 nF; local TMP112 supply bypass."
+    },
+    {
+      "reference": "BZ1",
+      "sheet": "I2C",
+      "purpose": "BZ1: MLT-5020; externally driven magnetic sounder."
+    },
+    {
+      "reference": "D_BUZZ",
+      "sheet": "I2C",
+      "purpose": "D_BUZZ: 1N4148WS; clamps the coil turn-off pulse."
+    },
+    {
+      "reference": "Q_BUZZ",
+      "sheet": "I2C",
+      "purpose": "Q_BUZZ: DMG1012T; low-side buzzer current switch."
+    },
+    {
+      "reference": "R_BUZZ_GATE",
+      "sheet": "I2C",
+      "purpose": "R_BUZZ_GATE: 100 ohm; limits PWM gate charging current."
+    },
+    {
+      "reference": "R_BUZZ_OFF",
+      "sheet": "I2C",
+      "purpose": "R_BUZZ_OFF: 100 kohm; keeps buzzer off at reset."
+    },
+    {
+      "reference": "C_BUZZ",
+      "sheet": "I2C",
+      "purpose": "C_BUZZ: 1 uF; local buzzer rail decoupling."
+    },
+    {
+      "reference": "U6",
+      "sheet": "CAN",
+      "purpose": "U6: SN65HVD230; classical CAN physical transceiver."
+    },
+    {
+      "reference": "C7",
+      "sheet": "CAN",
+      "purpose": "C7: 100 nF; bypasses the CAN transceiver supply."
+    },
+    {
+      "reference": "R49",
+      "sheet": "CAN",
+      "purpose": "R49: 120 ohm; CAN bus termination, enabled by R50."
+    },
+    {
+      "reference": "R50",
+      "sheet": "CAN",
+      "purpose": "R50: 0 ohm; DNP; fit only at a CAN bus endpoint."
+    },
+    {
+      "reference": "U_CAN",
+      "sheet": "CAN",
+      "purpose": "U_CAN: MCP2515; dedicated classical CAN controller."
+    },
+    {
+      "reference": "Y_CAN",
+      "sheet": "CAN",
+      "purpose": "Y_CAN: 16 MHz crystal; clocks CAN bit timing."
+    },
+    {
+      "reference": "C_CAN_XIN",
+      "sheet": "CAN",
+      "purpose": "C_CAN_XIN: 15 pF; one half of 30 pF crystal load."
+    },
+    {
+      "reference": "C_CAN_XOUT",
+      "sheet": "CAN",
+      "purpose": "C_CAN_XOUT: 15 pF; one half of 30 pF crystal load."
+    },
+    {
+      "reference": "C_CAN_CORE",
+      "sheet": "CAN",
+      "purpose": "C_CAN_CORE: 100 nF; MCP2515 local supply bypass."
+    },
+    {
+      "reference": "R_CAN_CS",
+      "sheet": "CAN",
+      "purpose": "R_CAN_CS: 10 kohm; deselects CAN SPI at reset."
+    },
+    {
+      "reference": "R_CAN_INT",
+      "sheet": "CAN",
+      "purpose": "R_CAN_INT: 10 kohm; open-drain CAN IRQ pull-up."
+    },
+    {
+      "reference": "C_CAN_XIN2",
+      "sheet": "CAN",
+      "purpose": "C_CAN_XIN2: 15 pF; parallel XIN load; qualify stray load."
+    },
+    {
+      "reference": "C_CAN_XOUT2",
+      "sheet": "CAN",
+      "purpose": "C_CAN_XOUT2: 15 pF; parallel XOUT load; qualify stray load."
+    },
+    {
+      "reference": "U5",
+      "sheet": "LogicPower",
+      "purpose": "U5: AP63203; converts protected VM to fixed 3.3 V."
+    },
+    {
+      "reference": "C8",
+      "sheet": "LogicPower",
+      "purpose": "C8: 10 uF; buck input energy reservoir."
+    },
+    {
+      "reference": "C9",
+      "sheet": "LogicPower",
+      "purpose": "C9: 100 nF; high-frequency buck input bypass."
+    },
+    {
+      "reference": "C10",
+      "sheet": "LogicPower",
+      "purpose": "C10: 100 nF; bootstrap capacitor for the buck switch."
+    },
+    {
+      "reference": "L1",
+      "sheet": "LogicPower",
+      "purpose": "L1: 3.9 uH; buck energy-storage/output filter inductor."
+    },
+    {
+      "reference": "C11",
+      "sheet": "LogicPower",
+      "purpose": "C11: 22 uF; filters and stores the 3.3 V output."
+    },
+    {
+      "reference": "C12",
+      "sheet": "LogicPower",
+      "purpose": "C12: 22 uF; parallel 3.3 V output filter/reservoir."
+    },
+    {
+      "reference": "U2",
+      "sheet": "MotorDriver",
+      "purpose": "U2: TMC2209-LA-T; drives both stepper windings."
+    },
+    {
+      "reference": "C13",
+      "sheet": "MotorDriver",
+      "purpose": "C13: 22 nF; flying capacitor for the charge pump."
+    },
+    {
+      "reference": "C14",
+      "sheet": "MotorDriver",
+      "purpose": "C14: 100 nF; charge-pump reservoir between VCP and VM."
+    },
+    {
+      "reference": "C15",
+      "sheet": "MotorDriver",
+      "purpose": "C15: 4.7 uF; bypasses the driver's 5VOUT regulator."
+    },
+    {
+      "reference": "C16",
+      "sheet": "MotorDriver",
+      "purpose": "C16: 100 nF; bypasses the driver's 3.3 V logic supply."
+    },
+    {
+      "reference": "C17",
+      "sheet": "MotorDriver",
+      "purpose": "C17: 100 nF; high-frequency motor-supply bypass."
+    },
+    {
+      "reference": "C18",
+      "sheet": "MotorDriver",
+      "purpose": "C18: 10 uF; local ceramic motor-supply reservoir."
+    },
+    {
+      "reference": "C19",
+      "sheet": "MotorDriver",
+      "purpose": "C19: 100 uF / 35 V; motor bulk; observe polarity."
+    },
+    {
+      "reference": "C20",
+      "sheet": "MotorDriver",
+      "purpose": "C20: 100 uF / 35 V; parallel motor bulk; polarised."
+    },
+    {
+      "reference": "R5",
+      "sheet": "MotorDriver",
+      "purpose": "R5: 1 ohm / 0.25 W; winding A current-sense resistor."
+    },
+    {
+      "reference": "R6",
+      "sheet": "MotorDriver",
+      "purpose": "R6: 1 ohm / 0.25 W; winding B current-sense resistor."
+    },
+    {
+      "reference": "R4",
+      "sheet": "MotorDriver",
+      "purpose": "R4: 1 kohm; isolates MCU TX on the one-wire UART."
+    },
+    {
+      "reference": "R7",
+      "sheet": "MotorDriver",
+      "purpose": "R7: 10 kohm; pulls ENN high, disabling motor at reset."
+    },
+    {
+      "reference": "R8",
+      "sheet": "MotorDriver",
+      "purpose": "R8: 10 kohm; keeps STEP low when MCU is inactive."
+    },
+    {
+      "reference": "R9",
+      "sheet": "MotorDriver",
+      "purpose": "R9: 10 kohm; gives DIR a defined low default."
+    },
+    {
+      "reference": "R10",
+      "sheet": "MotorDriver",
+      "purpose": "R10: 10 kohm; upper arm of the 5VOUT/VREF divider."
+    },
+    {
+      "reference": "R11",
+      "sheet": "MotorDriver",
+      "purpose": "R11: 10 kohm; lower arm of the VREF divider to GND."
+    },
+    {
+      "reference": "C21",
+      "sheet": "MotorDriver",
+      "purpose": "C21: 100 nF; filters the motor current-reference VREF."
+    },
+    {
+      "reference": "J_USB",
+      "sheet": "UsbPd",
+      "purpose": "J_USB: USB-C; VBUS power, PD CC signals and USB data."
+    },
+    {
+      "reference": "U3",
+      "sheet": "UsbPd",
+      "purpose": "U3: STUSB4500; autonomous PD sink; I2C address 0x28."
+    },
+    {
+      "reference": "Q_PD_IN",
+      "sheet": "UsbPd",
+      "purpose": "Q_PD_IN: 40 V PMOS; input half of reverse-blocking pair."
+    },
+    {
+      "reference": "Q_PD_OUT",
+      "sheet": "UsbPd",
+      "purpose": "Q_PD_OUT: 40 V PMOS; output half; shared source/gate."
+    },
+    {
+      "reference": "R13",
+      "sheet": "UsbPd",
+      "purpose": "R13: 100 kohm; gate-to-source default-off resistor."
+    },
+    {
+      "reference": "R_PD_GATE",
+      "sheet": "UsbPd",
+      "purpose": "R_PD_GATE: 22 kohm; limits gate drive/sink current."
+    },
+    {
+      "reference": "R14",
+      "sheet": "UsbPd",
+      "purpose": "R14: 470 ohm; filters incoming PD-controller supply."
+    },
+    {
+      "reference": "C_PD_VDD",
+      "sheet": "UsbPd",
+      "purpose": "C_PD_VDD: 2.2 uF/50 V; decouples PD input supply."
+    },
+    {
+      "reference": "C_PD_1V2",
+      "sheet": "UsbPd",
+      "purpose": "C_PD_1V2: 1 uF; bypasses the internal 1.2 V regulator."
+    },
+    {
+      "reference": "C_PD_2V7",
+      "sheet": "UsbPd",
+      "purpose": "C_PD_2V7: 1 uF; bypasses the internal 2.7 V regulator."
+    },
+    {
+      "reference": "R_PD_RESET",
+      "sheet": "UsbPd",
+      "purpose": "R_PD_RESET: 10 kohm; holds active-high PD reset low."
+    },
+    {
+      "reference": "R12",
+      "sheet": "UsbPd",
+      "purpose": "R12: 10 kohm; open-drain PD ALERT pull-up to 3.3 V."
+    },
+    {
+      "reference": "R_PD_OK",
+      "sheet": "UsbPd",
+      "purpose": "R_PD_OK: 10 kohm; PD power flag pull-up to 3.3 V."
+    },
+    {
+      "reference": "R_PD_SENSE",
+      "sheet": "UsbPd",
+      "purpose": "R_PD_SENSE: 1 kohm/0.66 W; input sense/discharge limit."
+    },
+    {
+      "reference": "R_PD_DISCH1",
+      "sheet": "UsbPd",
+      "purpose": "R_PD_DISCH1: 1 kohm/0.66 W; motor rail discharge arm."
+    },
+    {
+      "reference": "R_PD_DISCH2",
+      "sheet": "UsbPd",
+      "purpose": "R_PD_DISCH2: 1 kohm/0.66 W; parallel discharge arm."
+    },
+    {
+      "reference": "D_USB",
+      "sheet": "UsbPd",
+      "purpose": "D_USB: TPD2EUSB30; protects USB D+/D- from ESD."
+    },
+    {
+      "reference": "D_VBUS",
+      "sheet": "UsbPd",
+      "purpose": "D_VBUS: input surge clamp; transient proof pending."
+    },
+    {
+      "reference": "C25",
+      "sheet": "UsbPd",
+      "purpose": "C25: 2.2 uF/50 V; USB connector VBUS input bypass."
+    },
+    {
+      "reference": "C26",
+      "sheet": "UsbPd",
+      "purpose": "C26: 100 nF; high-frequency connector VBUS bypass."
+    },
+    {
+      "reference": "R16",
+      "sheet": "UsbPd",
+      "purpose": "R16: 220 kohm; upper protected-VBUS ADC divider."
+    },
+    {
+      "reference": "R17",
+      "sheet": "UsbPd",
+      "purpose": "R17: 10 kohm; lower VBUS ADC divider to GND."
+    },
+    {
+      "reference": "R18",
+      "sheet": "UsbPd",
+      "purpose": "R18: 1 kohm; series ADC filter/isolation resistor."
+    },
+    {
+      "reference": "C27",
+      "sheet": "UsbPd",
+      "purpose": "C27: 100 nF; filters guarded VBUS ADC input."
+    },
+    {
+      "reference": "J_SWD",
+      "sheet": "Programming",
+      "purpose": "J_SWD: Standard JST SWD/reset; programmer VOUT unused."
+    },
+    {
+      "reference": "U7",
+      "sheet": "Programming",
+      "purpose": "U7: TMUX1511; isolates SWD, reset and ADC until power-good."
+    },
+    {
+      "reference": "U8",
+      "sheet": "Programming",
+      "purpose": "U8: TLV803; qualifies 3.0 V rail, then delays 200 ms."
+    },
+    {
+      "reference": "R19",
+      "sheet": "Programming",
+      "purpose": "R19: 10 kohm; pulls open-drain POWER_GOOD high."
+    },
+    {
+      "reference": "C28",
+      "sheet": "Programming",
+      "purpose": "C28: 100 nF; bypasses the TMUX1511 supply."
+    },
+    {
+      "reference": "C29",
+      "sheet": "Programming",
+      "purpose": "C29: 100 nF; bypasses the rail supervisor supply."
+    },
+    {
+      "reference": "R20",
+      "sheet": "Programming",
+      "purpose": "R20: 100 ohm; series damping/isolation on SWDIO."
+    },
+    {
+      "reference": "R21",
+      "sheet": "Programming",
+      "purpose": "R21: 100 ohm; series damping/isolation on SWCLK."
+    },
+    {
+      "reference": "R22",
+      "sheet": "Programming",
+      "purpose": "R22: 100 ohm; series isolation on programmer NRST."
+    },
+    {
+      "reference": "R51",
+      "sheet": "Programming",
+      "purpose": "R51: 100 kohm; keeps ADC input defined if isolated."
+    },
+    {
+      "reference": "R52",
+      "sheet": "Programming",
+      "purpose": "R52: 100 kohm; holds isolated MCU SWDIO low."
+    },
+    {
+      "reference": "R53",
+      "sheet": "Programming",
+      "purpose": "R53: 100 kohm; holds isolated MCU SWCLK low."
+    },
+    {
+      "reference": "J_IO",
+      "sheet": "Interfaces",
+      "purpose": "J_IO: CAN, 3.3 V STEP/DIR/ENABLE and two limit inputs."
+    },
+    {
+      "reference": "J_MOTOR",
+      "sheet": "Interfaces",
+      "purpose": "J_MOTOR: A1/A2 and B1/B2 winding cable connector."
+    },
+    {
+      "reference": "D_IO1",
+      "sheet": "Interfaces",
+      "purpose": "D_IO1: ESD clamp for STEP, DIR, ENABLE and LIMIT1."
+    },
+    {
+      "reference": "D_IO2",
+      "sheet": "Interfaces",
+      "purpose": "D_IO2: ESD clamp for LIMIT2; other channels unused."
+    },
+    {
+      "reference": "D_CAN",
+      "sheet": "Interfaces",
+      "purpose": "D_CAN: SM712; surge/ESD protection for CAN H and L."
+    },
+    {
+      "reference": "R23",
+      "sheet": "Interfaces",
+      "purpose": "R23: 1 kohm; series protection on external STEP."
+    },
+    {
+      "reference": "R24",
+      "sheet": "Interfaces",
+      "purpose": "R24: 1 kohm; series protection on external DIR."
+    },
+    {
+      "reference": "R25",
+      "sheet": "Interfaces",
+      "purpose": "R25: 1 kohm; series protection on external ENABLE_N."
+    },
+    {
+      "reference": "R26",
+      "sheet": "Interfaces",
+      "purpose": "R26: 1 kohm; LIMIT1 series resistor / RC filter arm."
+    },
+    {
+      "reference": "R27",
+      "sheet": "Interfaces",
+      "purpose": "R27: 1 kohm; LIMIT2 series resistor / RC filter arm."
+    },
+    {
+      "reference": "R28",
+      "sheet": "Interfaces",
+      "purpose": "R28: 10 kohm; gives external STEP a low default."
+    },
+    {
+      "reference": "R29",
+      "sheet": "Interfaces",
+      "purpose": "R29: 10 kohm; gives external DIR a low default."
+    },
+    {
+      "reference": "R30",
+      "sheet": "Interfaces",
+      "purpose": "R30: 10 kohm; pulls ENABLE_N high (inactive)."
+    },
+    {
+      "reference": "R31",
+      "sheet": "Interfaces",
+      "purpose": "R31: 10 kohm; LIMIT1 high means open contact/fault."
+    },
+    {
+      "reference": "R32",
+      "sheet": "Interfaces",
+      "purpose": "R32: 10 kohm; LIMIT2 high means open contact/fault."
+    },
+    {
+      "reference": "R34",
+      "sheet": "Interfaces",
+      "purpose": "R34: 10 kohm; keeps CAN in standby during reset."
+    },
+    {
+      "reference": "C30",
+      "sheet": "Interfaces",
+      "purpose": "C30: 100 nF; filters LIMIT1 with R26."
+    },
+    {
+      "reference": "C31",
+      "sheet": "Interfaces",
+      "purpose": "C31: 100 nF; filters LIMIT2 with R27."
+    },
+    {
+      "reference": "R35",
+      "sheet": "Interfaces",
+      "purpose": "R35: 1 kohm; limits LED_POWER current."
+    },
+    {
+      "reference": "LED_POWER",
+      "sheet": "Interfaces",
+      "purpose": "LED_POWER: Shows that the 3.3 V supply is present."
+    },
+    {
+      "reference": "R36",
+      "sheet": "Interfaces",
+      "purpose": "R36: 1 kohm; limits LED_STATUS current."
+    },
+    {
+      "reference": "LED_STATUS",
+      "sheet": "Interfaces",
+      "purpose": "LED_STATUS: Firmware-controlled status indicator."
+    },
+    {
+      "reference": "R37",
+      "sheet": "Interfaces",
+      "purpose": "R37: 1 kohm; limits LED_FAULT current."
+    },
+    {
+      "reference": "LED_FAULT",
+      "sheet": "Interfaces",
+      "purpose": "LED_FAULT: Firmware-controlled fault indicator."
+    },
+    {
+      "reference": "U10",
+      "sheet": "InputPower",
+      "purpose": "U10: TPS26600; inrush/current limit and reverse blocking."
+    },
+    {
+      "reference": "Q_ILIM",
+      "sheet": "InputPower",
+      "purpose": "Q_ILIM: Adds R45 current-limit branch when MCU enables it."
+    },
+    {
+      "reference": "R38",
+      "sheet": "InputPower",
+      "purpose": "R38: 100 kohm; upper eFuse undervoltage divider arm."
+    },
+    {
+      "reference": "R39",
+      "sheet": "InputPower",
+      "purpose": "R39: 47 kohm; lower UVLO arm to isolated EFUSE_RTN."
+    },
+    {
+      "reference": "R40",
+      "sheet": "InputPower",
+      "purpose": "R40: 100 kohm; first eFuse OVP upper-arm resistor."
+    },
+    {
+      "reference": "R41",
+      "sheet": "InputPower",
+      "purpose": "R41: 1 kohm; second eFuse OVP upper-arm resistor."
+    },
+    {
+      "reference": "R42",
+      "sheet": "InputPower",
+      "purpose": "R42: 4.7 kohm; third eFuse OVP upper-arm resistor."
+    },
+    {
+      "reference": "R43",
+      "sheet": "InputPower",
+      "purpose": "R43: 6.04 kohm; lower OVP arm to isolated EFUSE_RTN."
+    },
+    {
+      "reference": "R44",
+      "sheet": "InputPower",
+      "purpose": "R44: 24 kohm; sets nominal 0.50 A bootstrap limit."
+    },
+    {
+      "reference": "R45",
+      "sheet": "InputPower",
+      "purpose": "R45: 24 kohm; switched parallel arm gives 1.00 A nominal."
+    },
+    {
+      "reference": "R46",
+      "sheet": "InputPower",
+      "purpose": "R46: 10 kohm; holds high-current selection off at reset."
+    },
+    {
+      "reference": "C33",
+      "sheet": "InputPower",
+      "purpose": "C33: 2.2 uF; sets eFuse output slew / inrush timing."
+    },
+    {
+      "reference": "C34",
+      "sheet": "InputPower",
+      "purpose": "C34: 2.2 uF; protected VBUS input bypass for U10."
+    },
+    {
+      "reference": "R48",
+      "sheet": "InputPower",
+      "purpose": "R48: 10 kohm; pulls the eFuse fault output high."
+    }
+  ],
+  "passed": true
+}

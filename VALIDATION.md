@@ -1,3 +1,74 @@
+# RP2040 and dedicated USB-PD redesign — 0.0.44-alpha.0, 2026-10-06
+
+**UNROUTED PROTOTYPE. PROTOTYPE FABRICATION READY: NO.**
+The latest user request replaces STM32/TCPP01 with RP2040/STUSB4500 and adds
+functional buzzer circuitry. Read docs/RP2040-USB-PD-REDESIGN.md for every
+review request, part identities, firmware interface and actual limitations.
+Prior revision43 connectivity/power/USB/Gerber evidence is historical; none
+establishes readiness of this changed architecture.
+
+Stage1 requirements: recorded; exact motor/outline/connectors/carrier retained.
+Stage2 schematic/BOM: in progress, blocked on manufacturer access and full
+fresh supplier qualification. Native pin assertions, 147 purposes, standard
+USB16groups and38programmer wiring assertions pass. The full official style
+analyzer leaves the unchanged imported TVS rotation finding, with exit1 retained.
+Stage3 placement: in progress. Native unrouted build has147 PCB components,
+146 fitted CAD entries, zero placement errors. New bypass/crystal components
+were moved toward actual host pins after detecting overly distant initial
+placements. Four native placement orientation findings were corrected in board-owned source; the repeated native placement check reports no findings. Full mounted3D fit remains blocked:145/146 fitted meshes are measured without envelope collisions, but J_SWD has an empty mesh after a remote HTTP503. The strengthened mechanical guard retains exit1 and names the missing connector.
+Stage4 routing: not started; Stage5 copper review and Stage6 fabrication: pending.
+Stage7 firmware/physical tests: pending. Stage8 prototype publication: recorded
+only after exact matching public file verification.
+
+Explicit connection checking is invoked separately on placement JSON:
+**504 unconnected-port errors,108 required nets,0 completed routed nets,
+0 traces/0 vias/0 pours**. Native placement error count0 and short count0 are
+not connectivity or routed-DRC approval. The requested0.30/0.45 ordinary through
+via policy is configured; no generated via compliance claim is made. Outer
+power/current/thermal/USB/shorts/spacing/return/annular-ring and fresh CAM review
+remain mandatory after routing. EFUSE_RTN stays isolated from GND.
+
+Independent physical-pin assertions cover the new RP2040/PD/flash/CAN/buzzer,
+protected programming and preserved peripherals. Imported labels match the
+checked assertions; full RP/MCP/Winbond manufacturer documents remain blocked.
+ST DS12499 Rev8 and DocID025617 Rev2 were read for PD and PMOS wiring. Firmware
+must read actual PD RDO/voltage/current before enabling the motor/high-current
+mode. Factory20V/1A does not automatically justify a1A nominal limiter because
+its tolerance exceeds1A. Discharge, startup, TVS/clamp coordination, PMOS
+transient/gate/current/thermal and oscillator qualification remain open.
+
+Latest registry versions observed: tscircuit2748, CLI2253, core2099, props693,
+checks242, capacity962, runframe2918, circuit-json518, circuit-to-svg444 and
+unchanged easyeda371. A real Bun installation fails resolving the publisher's
+modelprinter dependency at pkg.pr.new with403. No lockfile changes are adopted;
+original frozen pins are restored and verified. No substitute router/package,
+credential copy or rule weakening is used. The exact dependency host and
+manufacturer hosts are saved in the reviewed Cloud draft, which requires
+publication before activation. Allowed-host traffic intermittently fails503
+with an upstream Cloudflare tunnel Invalid argument; scoped Git read succeeds.
+A fresh53-part official supplier search has13 exact responses and40 HTTP503
+failures. Thus all-parts availability/assembler allocation is unconfirmed.
+
+Fresh evidence is in evidence/rev-0.0.44-alpha.0/. Native source JSON, CAD
+coverage, minimum runtime and completed applicable checks are recorded there.
+Previous README/context manifest, all old imported assets, saved routes,
+mechanical official references and evidence are retained. No historical
+fabrication ZIP is a valid order package for revision44.
+
+Actual cgroup RAM is32GiB and free disk27.05GiB at the recorded measurement. TypeScript, formatting, critical import-label and native runtime checks pass. Publication, final context/smoke and exact canonical checksum will be recorded after verification. No fabrication order is authorized.
+
+Canonical native JSON SHA256: `b72ed0cd13e08f93fcbbcd0f7d49c503667c058619a8498f8bdd809a6794a087`. All three mirrors match. Native build/placement have zero errors; full style retains one finding. Current native warning counts: `{'source_refdes_convention_warning': 7, 'source_no_power_pin_defined_warning': 15, 'source_no_ground_pin_defined_warning': 9, 'source_component_pins_underspecified_warning': 8, 'source_part_not_found_warning': 137}`. Supplier-fetch HTTP503 warnings are not stock evidence.
+
+Final root Cloud smoke passed: frozen Bun/CLI, TypeScript, critical import labels,
+Shapely2.1.2/CadQuery2.8.0, exact context inventory and all four historical
+routing archives. Native placement JSON intentionally lacks automatic open
+errors because routing is disabled; the separately invoked native connection
+check still reports504 opens. This setup result does not approve fabrication.
+
+---
+
+# Historical validation records
+
 # Via, power and buzzer continuation — 0.0.43-alpha.0, 2026-10-06
 
 All158 previous0.30/0.60 mm vias now use the requested0.30/0.45 mm pads,

@@ -1,3 +1,30 @@
+# Active redesign — 0.0.44-alpha.0
+
+User requested RP2040 and actual dedicated USB-PD plus all review corrections.
+U1 is C2040 with flash/crystal; U3 is C2678061 STUSB4500 with genuine C222138
+back-to-back PMOS switches. MCP2515 restores classic CAN via SPI1. TMP112 and
+functional buzzer now share a populated I2C sheet. All147 references have notes.
+See docs/RP2040-USB-PD-REDESIGN.md and current VALIDATION.md.
+
+The canonical board is UNROUTED: 0 traces/vias/pours, 108 required nets and
+504 explicit native unconnected-port errors. Zero placement errors does not
+mean connected copper. Default native routing is disabled. Legacy STM32 saved
+paths fail explicitly if enabled; preserve them historically, never replay.
+Ordinary future vias use0.30/0.45 mm with via-in-pad disabled. Outer power,
+thermal/USB/CAM/assembly qualification must restart on this architecture.
+
+Exact motor, four connectors, outline, four layers and front carrier remain.
+Original models/imports/route modules/evidence are preserved. The previous
+context manifest is archived in evidence/rev-0.0.44-alpha.0. Factory PD profiles
+and firmware safeguards are documented; no physical negotiation/flashing claim.
+Latest dependency install requires blocked pkg.pr.new; manufacturer hosts
+also require activating the saved environment draft. No substitute or bypass.
+PROTOTYPE FABRICATION READY: NO. No fabrication order authorized.
+
+All handoffs below describe historical revisions.
+
+---
+
 # Current continuation — 0.0.43-alpha.0
 
 All 158 previous 0.30/0.60 mm vias now use 0.30/0.45 mm through native source.

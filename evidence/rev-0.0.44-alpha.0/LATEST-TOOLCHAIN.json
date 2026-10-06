@@ -1,0 +1,168 @@
+{
+  "tscircuit": {
+    "version": "0.0.2748",
+    "dependencies": {
+      "zod": "^3.25.67",
+      "debug": "^4.3.6",
+      "react": "^19.1.0",
+      "tslib": "^2.8.1",
+      "rollup": "^4.53.2",
+      "spicey": "^0.0.14",
+      "comlink": "^4.4.2",
+      "kicadts": "^0.0.53",
+      "poppygl": "0.0.30",
+      "spicets": "^0.0.4",
+      "sucrase": "^3.35.0",
+      "flatbush": "^4.5.0",
+      "bpc-graph": "^0.0.57",
+      "gl-matrix": "^3.4.4",
+      "react-dom": "^19.1.0",
+      "@lume/kiwi": "^0.4.3",
+      "css-select": "5.1.0",
+      "jscad-fiber": "^0.0.88",
+      "minicssgrid": "^0.0.9",
+      "circuit-json": "^0.0.516",
+      "s-expression": "^3.1.1",
+      "jscad-planner": "^0.0.18",
+      "@tscircuit/cli": "^0.1.2253",
+      "circuit-to-svg": "^0.0.440",
+      "format-si-unit": "^0.0.12",
+      "graphics-debug": "^0.0.95",
+      "@resvg/resvg-js": "^2.6.2",
+      "@tscircuit/core": "^0.0.2097",
+      "@tscircuit/eval": "^0.0.1562",
+      "calculate-elbow": "^0.0.12",
+      "performance-now": "^2.1.0",
+      "@flatten-js/core": "^1.6.2",
+      "@tscircuit/props": "^0.0.689",
+      "connectivity-map": "^1.0.1",
+      "@tscircuit/checks": "^0.0.241",
+      "calculate-packing": "^0.0.90",
+      "rollup-plugin-dts": "^6.2.3",
+      "schematic-symbols": "^0.0.248",
+      "svg-path-commander": "^2.1.11",
+      "@rollup/plugin-json": "^6.1.0",
+      "@tscircuit/alphabet": "0.0.25",
+      "@tscircuit/krt-wasm": "^0.1.1",
+      "@tscircuit/miniflex": "^0.0.4",
+      "@tscircuit/runframe": "^0.0.2916",
+      "circuit-json-to-bpc": "^0.0.13",
+      "@tscircuit/matchpack": "^0.0.97",
+      "@tscircuit/soup-util": "^0.0.41",
+      "circuit-json-to-gltf": "^0.0.145",
+      "@tscircuit/math-utils": "^0.0.36",
+      "circuit-json-to-spice": "^0.0.45",
+      "kicad-to-circuit-json": "^0.0.142",
+      "transformation-matrix": "^2.16.1",
+      "@tscircuit/footprinter": "^0.0.430",
+      "@tscircuit/image-utils": "^0.0.8",
+      "@rollup/plugin-commonjs": "^29.0.0",
+      "@tscircuit/modelprinter": "^0.0.6",
+      "@tscircuit/solver-utils": "^0.0.16",
+      "circuit-json-to-pnp-csv": "^0.0.16",
+      "@tscircuit/fanout-solver": "0.0.78",
+      "@tscircuit/simple-3d-svg": "^0.0.41",
+      "@rollup/plugin-typescript": "^12.3.0",
+      "calculate-cell-boundaries": "^0.0.25",
+      "circuit-json-to-simple-3d": "^0.0.9",
+      "kicad-component-converter": "^0.1.40",
+      "@rollup/plugin-node-resolve": "^16.0.3",
+      "@tscircuit/circuit-json-util": "^0.0.119",
+      "@tscircuit/copper-pour-solver": "^0.0.67",
+      "@tscircuit/capacity-autorouter": "^0.0.958",
+      "@tscircuit/infgrid-ijump-astar": "^0.0.35",
+      "@tscircuit/create-fdm-enclosure": "0.0.4",
+      "@tscircuit/ngspice-spice-engine": "^0.0.20",
+      "@tscircuit/schematic-match-adapt": "^0.0.18",
+      "circuit-json-to-connectivity-map": "^0.0.33",
+      "@tscircuit/internal-dynamic-import": "^0.0.11",
+      "@tscircuit/infer-cable-insertion-point": "^0.0.4"
+    },
+    "engines": {}
+  },
+  "@tscircuit/core": {
+    "version": "0.0.2099",
+    "dependencies": {
+      "zod": "^3.25.67",
+      "nanoid": "^5.0.7",
+      "gl-matrix": "^3.4.4",
+      "@lume/kiwi": "^0.4.3",
+      "css-select": "5.1.0",
+      "jscad-fiber": "^0.0.88",
+      "jscad-planner": "^0.0.18",
+      "format-si-unit": "^0.0.12",
+      "performance-now": "^2.1.0",
+      "@flatten-js/core": "^1.6.2",
+      "react-reconciler": "^0.32.0",
+      "calculate-packing": "^0.0.90",
+      "svg-path-commander": "^2.1.11",
+      "transformation-matrix": "^2.16.1",
+      "calculate-cell-boundaries": "^0.0.25"
+    },
+    "engines": {}
+  },
+  "@tscircuit/cli": {
+    "version": "0.1.2253",
+    "dependencies": {},
+    "engines": {}
+  },
+  "@tscircuit/props": {
+    "version": "0.0.693",
+    "dependencies": {},
+    "engines": {}
+  },
+  "@tscircuit/checks": {
+    "version": "0.0.242",
+    "dependencies": {
+      "flatbush": "^4.6.2"
+    },
+    "engines": {}
+  },
+  "@tscircuit/capacity-autorouter": {
+    "version": "0.0.962",
+    "dependencies": {
+      "stack-svgs": "^0.0.1",
+      "object-hash": "^3.0.0",
+      "fast-json-stable-stringify": "^2.1.0",
+      "@tscircuit/pcb-trace-linter": "github:tscircuit/pcb-trace-linter#4c035f9d40ffb03ba547a08975b5e64b20371123"
+    },
+    "engines": {}
+  },
+  "@tscircuit/runframe": {
+    "version": "0.0.2918",
+    "dependencies": {
+      "debug": "^4.4.0",
+      "format-si-unit": "^0.0.12",
+      "@tscircuit/core": "^0.0.1911",
+      "@tscircuit/eval": "0.0.1563",
+      "@tscircuit/solver-utils": "^0.0.16"
+    },
+    "engines": {}
+  },
+  "circuit-json": {
+    "version": "0.0.518",
+    "dependencies": {},
+    "engines": {}
+  },
+  "circuit-to-svg": {
+    "version": "0.0.444",
+    "dependencies": {
+      "color": "^5.0.3",
+      "debug": "^4.4.3",
+      "svgson": "^5.3.1",
+      "bun-types": "^1.1.40",
+      "@types/node": "^22.5.5",
+      "calculate-elbow": "0.0.12",
+      "svg-path-commander": "^2.1.11",
+      "transformation-matrix": "^2.16.1"
+    },
+    "engines": {
+      "node": "24.x"
+    }
+  },
+  "easyeda": {
+    "version": "0.0.371",
+    "dependencies": {},
+    "engines": {}
+  }
+}

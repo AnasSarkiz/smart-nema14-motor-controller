@@ -1,3 +1,31 @@
+# Active task — RP2040 / autonomous USB-PD redesign, revision44
+
+The user's latest architecture request supersedes the older STM32/TCPP01
+component-preservation and 20-port routing checkpoint below. Read
+../../docs/RP2040-USB-PD-REDESIGN.md, root AGENTS.md and VALIDATION.md.
+The new canonical board has no saved copper:108 required nets and504 native
+unconnected-port errors when checking explicitly. Do not reuse STM32 routes.
+Finish manufacturer pin/value/BOM, local bypass/crystal placement and actual
+3D fit reviews before native selected-net Pipeline9 routing. Verify0.30/0.45
+ordinary through vias, outer power where feasible, all copper widths/shorts/
+connectivity/USB/thermal/mechanics and fresh matching fabrication exports.
+Preserve the existing official imports, history, exact motor and carrier.
+
+RP2040 has external flash/crystal and a MCP2515 CAN controller. STUSB4500 uses
+factory5V/1.5A,15V/1.5A,20V/1A sink profiles: qualify actual negotiated RDO and
+current margins before high-current mode. The standard JST programmer wiring
+passes independent checks; physical flashing is pending. No order is authorized.
+
+The saved dependency/manufacturer allowlist requires environment publication
+to apply; pkg.pr.new currently blocks the full latest toolchain install.
+Complete applicable checks and publish each completed prototype step with
+exact matching JSON/model hashes under the standing authorization below.
+PROTOTYPE FABRICATION READY: NO.
+
+---
+
+# Historical original routing task
+
 # Cloud task prompt
 
 Continue this board from the current public GitHub `main` checkout. Read
