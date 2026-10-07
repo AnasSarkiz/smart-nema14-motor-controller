@@ -1,5 +1,17 @@
 # Routing checkpoint — 0.0.46-alpha.0, 2026-10-07
 
+## Exact revision46 publication verified
+
+Source commit `393b14c4a1c0c6b70d34685a2c3b1434a0c6a384` and public tscircuit release
+`cca81fcc-882a-4672-ae60-8a49423edeb8` contain matching revision0.0.46-alpha.0. All307
+package files and307 immutable GitHub files pass anonymous SHA-256 comparison
+at 2026-10-07T12:18:35.702Z. Exact canonical Circuit JSON SHA is
+`a1a9ae548215b2d24a78fc272cb197901b69e8856eeae92b4685934bca4f546e`.
+Original103 local model assets are included. Hosted ready_to_build is true;
+no hosted build success, physical test or fabrication readiness is claimed.
+See evidence/rev-0.0.46-alpha.0/PUBLICATION.json. Routing continues.
+
+
 **PROTOTYPE FABRICATION READY: NO. Routing continues.**
 
 The exact RP2040/STUSB4500 canonical source has 51 of 108 physically connected
