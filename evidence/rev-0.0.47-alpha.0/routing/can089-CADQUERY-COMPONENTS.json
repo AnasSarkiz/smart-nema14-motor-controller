@@ -1,0 +1,3081 @@
+{
+  "checked_at_utc": "2026-10-07T13:26:54.853901+00:00",
+  "cadquery_version": "2.8.0",
+  "canonical_sha256": "880ad55a35344ba974349087d8f4e919575775083a62024afd05b057a8e907b8",
+  "scope": "Default fitted component STEP import, valid solids, unchanged original bytes and export/reimport; not footprint registration, electrical correctness or mechanical fit",
+  "fitted_component_count": 146,
+  "unique_step_model_count": 53,
+  "verified_remote_step_urls": [],
+  "chip_count": 12,
+  "all_chip_models_passed": true,
+  "all_fitted_component_models_passed": true,
+  "component_results": [
+    {
+      "reference": "U1",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2040"
+        ]
+      },
+      "is_chip": true,
+      "model_step_url": "./imports/RP2040/RP2040.step",
+      "passed": true,
+      "sha256": "174a866c06fe9b824f197259a77cb3b39625ba986ddd7214fb32f0d873eb4bbd",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 41.93692353196497,
+      "dimensions_mm": [
+        7.020000000000036,
+        7.0200000000000475,
+        0.87
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "U_RESET",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C5218924"
+        ]
+      },
+      "is_chip": true,
+      "model_step_url": "./imports/TLV803EA30DBZR/TLV803EA30DBZR.step",
+      "passed": true,
+      "sha256": "404e2c1e10e1ebdc38126eb298c04d95ad998039e4ddaf854293dcb8b285a876",
+      "valid_brep": true,
+      "solid_count": 17,
+      "volume_mm3": 3.60147164463214,
+      "dimensions_mm": [
+        2.5056292368943334,
+        2.9000002,
+        1.0502050972729515
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_RESET",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "U_FLASH",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2986331"
+        ]
+      },
+      "is_chip": true,
+      "model_step_url": "./imports/GD25Q16EEIGR/GD25Q16EEIGR.step",
+      "passed": true,
+      "sha256": "2dd22ac0001afff0442bc446a8b088ace9dc27630dd4d061bd9837e310011c20",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 2.720332351570311,
+      "dimensions_mm": [
+        3.0000002000000006,
+        2.0100001,
+        0.47000010000000003
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R_FLASH_CS",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_FLASH",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "Y_RP",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C20625731"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/ABM8_272_T3/ABM8_272_T3.step",
+      "passed": true,
+      "sha256": "55aee3da5b1518e84230f692ed298823bc71771ac97e871a21b265f0b4f8232b",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 5.0864228612895195,
+      "dimensions_mm": [
+        3.2000002000000007,
+        2.5000002000000006,
+        0.7010002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R_XOUT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_XIN",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1548"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402CG150J500NT/A_0402CG150J500NT.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_XOUT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1548"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402CG150J500NT/A_0402CG150J500NT.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R_USB_DM",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25100"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF270JTCE/A_0402WGF270JTCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R_USB_DP",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25100"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF270JTCE/A_0402WGF270JTCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R1",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C5",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C1",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_IO2",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_IO3",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_IO4",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_IO5",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_IO6",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_ADC",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_USBPHY",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C2",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15849"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL10A105KB8NNNC/CL10A105KB8NNNC.step",
+      "passed": true,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.9906814997340847,
+      "dimensions_mm": [
+        1.6,
+        0.800000200000005,
+        0.8000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_VCORE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15849"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL10A105KB8NNNC/CL10A105KB8NNNC.step",
+      "passed": true,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.9906814997340847,
+      "dimensions_mm": [
+        1.6,
+        0.800000200000005,
+        0.8000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C3",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C4",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "U9",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C28927"
+        ]
+      },
+      "is_chip": true,
+      "model_step_url": "./imports/TMP112AIDRLR/TMP112AIDRLR.step",
+      "passed": true,
+      "sha256": "2fa2e0f7cefa8b58279161303b6e060e28345b91cc712c9c548aa9b06a56d4b6",
+      "valid_brep": true,
+      "solid_count": 14,
+      "volume_mm3": 1.1422445334159776,
+      "dimensions_mm": [
+        1.6000000000000003,
+        1.6000002000000002,
+        0.6110000999999999
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R2",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25900"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF4701TCE/A_0402WGF4701TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R3",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25900"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF4701TCE/A_0402WGF4701TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R33",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C32",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "BZ1",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C94598"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/MLT_5020/MLT_5020.step",
+      "passed": true,
+      "sha256": "867309604960a2d7b111a32890275508b957a192f906f17a71728fc991489fac",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 51.8137307702078,
+      "dimensions_mm": [
+        5.275826923916234,
+        5.2000002,
+        2.0100000000000007
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "D_BUZZ",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C22624"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/B5819WS/B5819WS.step",
+      "passed": true,
+      "sha256": "9d3d6f4ee4b582bb1ba7152befc7da6217084253623b730b996aacec436ec089",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 1.7735627753584033,
+      "dimensions_mm": [
+        2.65,
+        1.3000002000000004,
+        0.9500000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "Q_BUZZ",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C20512"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/DMG1012T_7/DMG1012T_7.step",
+      "passed": true,
+      "sha256": "ae69ee72f295d977932aab0d244465261eb61f2c031805f1d289d0cf85806849",
+      "valid_brep": true,
+      "solid_count": 17,
+      "volume_mm3": 1.200846626789318,
+      "dimensions_mm": [
+        1.612604884268745,
+        1.6000002,
+        1.1500832997859427
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R_BUZZ_GATE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25076"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1000TCE/A_0402WGF1000TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R_BUZZ_OFF",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C852472"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/RT0402BRD07100KL/RT0402BRD07100KL.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_BUZZ",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15849"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL10A105KB8NNNC/CL10A105KB8NNNC.step",
+      "passed": true,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.9906814997340847,
+      "dimensions_mm": [
+        1.6,
+        0.800000200000005,
+        0.8000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "U6",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C12084"
+        ]
+      },
+      "is_chip": true,
+      "model_step_url": "./imports/SN65HVD230DR/SN65HVD230DR.step",
+      "passed": true,
+      "sha256": "70f46697efa1daced22df982a5fd03c112d6cf25207f9a1afdf37b49a391ab84",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 29.69936216720682,
+      "dimensions_mm": [
+        4.9000002,
+        6.0,
+        1.7000000000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C7",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R49",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25079"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1200TCE/A_0402WGF1200TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "U_CAN",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C96140"
+        ]
+      },
+      "is_chip": true,
+      "model_step_url": "./imports/MCP2515T_I_ML/MCP2515T_I_ML.step",
+      "passed": true,
+      "sha256": "e8b91567f18dfb787022750b7a0887e7a41224b00efdac8d1310bdabb01659d8",
+      "valid_brep": true,
+      "solid_count": 21,
+      "volume_mm3": 13.022245336403891,
+      "dimensions_mm": [
+        4.020000000000069,
+        4.02000000000007,
+        0.8300001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "Y_CAN",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C179641"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/ABM8_16_000MHZ_B2_T/ABM8_16_000MHZ_B2_T.step",
+      "passed": true,
+      "sha256": "8015c0c093d5c35b185c83f70cb9b7185f6edf40f9d0a5d5ae139935451577b5",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 5.3479403845797915,
+      "dimensions_mm": [
+        3.2000002000000007,
+        2.5000002,
+        0.7200000999999999
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_CAN_XIN",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1570"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402CG300J500NT/A_0402CG300J500NT.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_CAN_XOUT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1570"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402CG300J500NT/A_0402CG300J500NT.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_CAN_CORE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R_CAN_CS",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R_CAN_INT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "U5",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C780769"
+        ]
+      },
+      "is_chip": true,
+      "model_step_url": "./imports/AP63203WU_7/AP63203WU_7.step",
+      "passed": true,
+      "sha256": "4420c424f4a2941b36f28b622f6950c965439c7c9525e1961bb8384ef58a6dd9",
+      "valid_brep": true,
+      "solid_count": 14,
+      "volume_mm3": 4.220902903857773,
+      "dimensions_mm": [
+        2.9000002,
+        2.8,
+        0.8910001000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C8",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C13585"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL31A106KBHNNNE/CL31A106KBHNNNE.step",
+      "passed": true,
+      "sha256": "a3b636a587c98bf5baa4dcd6af15732c43a5f396ec40d2b987bd6db5417c8265",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 6.389003979570262,
+      "dimensions_mm": [
+        3.2,
+        1.6000002000000004,
+        1.3000002000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C9",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C14663"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.step",
+      "passed": true,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.9906814997340847,
+      "dimensions_mm": [
+        1.6,
+        0.800000200000005,
+        0.8000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C10",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C14663"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.step",
+      "passed": true,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.9906814997340847,
+      "dimensions_mm": [
+        1.6,
+        0.800000200000005,
+        0.8000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "L1",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C19947652"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/SRN6028C_3R9M/SRN6028C_3R9M.step",
+      "passed": true,
+      "sha256": "2e7b3c5a5b2134ac7076ec5d2237a22e8d51341107a053fb0640ead10e22e729",
+      "valid_brep": true,
+      "solid_count": 22,
+      "volume_mm3": 74.5577243784988,
+      "dimensions_mm": [
+        5.950000000000026,
+        5.985096725941485,
+        2.610000200000019
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C11",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C45783"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL21A226MAQNNNE/CL21A226MAQNNNE.step",
+      "passed": true,
+      "sha256": "67f86cfc9ebba2ff889d65b12f5d49d5a90b265b73635a931d68c6a27d34e11f",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 3.2617823127493573,
+      "dimensions_mm": [
+        2.0,
+        1.3000002000000082,
+        1.3000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C12",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C45783"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL21A226MAQNNNE/CL21A226MAQNNNE.step",
+      "passed": true,
+      "sha256": "67f86cfc9ebba2ff889d65b12f5d49d5a90b265b73635a931d68c6a27d34e11f",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 3.2617823127493573,
+      "dimensions_mm": [
+        2.0,
+        1.3000002000000082,
+        1.3000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "U2",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2150710"
+        ]
+      },
+      "is_chip": true,
+      "model_step_url": "./imports/TMC2209_LA_T/TMC2209_LA_T.step",
+      "passed": true,
+      "sha256": "54b729c0ec691ec6e6cb3991eae11d774b0f962083e959a0bd899470bf65c45d",
+      "valid_brep": true,
+      "solid_count": 42,
+      "volume_mm3": 20.3083879958953,
+      "dimensions_mm": [
+        5.02000000000003,
+        5.0200000000000005,
+        0.8210001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C13",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C307335"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B223KB5VPNC/CL05B223KB5VPNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C14",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C14663"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.step",
+      "passed": true,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.9906814997340847,
+      "dimensions_mm": [
+        1.6,
+        0.800000200000005,
+        0.8000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C15",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C98192"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL21A475KBQNNNE/CL21A475KBQNNNE.step",
+      "passed": true,
+      "sha256": "67f86cfc9ebba2ff889d65b12f5d49d5a90b265b73635a931d68c6a27d34e11f",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 3.2617823127493573,
+      "dimensions_mm": [
+        2.0,
+        1.3000002000000082,
+        1.3000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C16",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C17",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C14663"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.step",
+      "passed": true,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.9906814997340847,
+      "dimensions_mm": [
+        1.6,
+        0.800000200000005,
+        0.8000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C18",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C13585"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL31A106KBHNNNE/CL31A106KBHNNNE.step",
+      "passed": true,
+      "sha256": "a3b636a587c98bf5baa4dcd6af15732c43a5f396ec40d2b987bd6db5417c8265",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 6.389003979570262,
+      "dimensions_mm": [
+        3.2,
+        1.6000002000000004,
+        1.3000002000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C19",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C178585"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/EEEFPV101XAP/EEEFPV101XAP.step",
+      "passed": true,
+      "sha256": "0520d085e6aa1b712b8127b1de76907f64951f608caa5f1d495a693c6ae742fb",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 188.3459265257297,
+      "dimensions_mm": [
+        7.3,
+        6.6010001,
+        5.820000000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C20",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C178585"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/EEEFPV101XAP/EEEFPV101XAP.step",
+      "passed": true,
+      "sha256": "0520d085e6aa1b712b8127b1de76907f64951f608caa5f1d495a693c6ae742fb",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 188.3459265257297,
+      "dimensions_mm": [
+        7.3,
+        6.6010001,
+        5.820000000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R5",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C513714"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/RT1206BRD071RL/RT1206BRD071RL.step",
+      "passed": true,
+      "sha256": "ca0f6c898b6c5ac572fcabb6f326264b985a8cd3c0f7fa407526b8d2ce209713",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 4.804900575517365,
+      "dimensions_mm": [
+        3.2,
+        1.6010001000000003,
+        0.56
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R6",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C513714"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/RT1206BRD071RL/RT1206BRD071RL.step",
+      "passed": true,
+      "sha256": "ca0f6c898b6c5ac572fcabb6f326264b985a8cd3c0f7fa407526b8d2ce209713",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 4.804900575517365,
+      "dimensions_mm": [
+        3.2,
+        1.6010001000000003,
+        0.56
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R4",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R7",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R8",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R9",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R10",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R11",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C21",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "J_USB",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C5143397"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./references/usb4110-external-model/usb4110-gf-a.stp",
+      "passed": true,
+      "sha256": "fb802f14dd0a87ca59b246036d7a6365de3ea32b20a7896a02ade42b9f35d799",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 114.29011633150124,
+      "dimensions_mm": [
+        11.30000010000161,
+        3.8853773035111008,
+        7.700000200000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "U3",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2678061"
+        ]
+      },
+      "is_chip": true,
+      "model_step_url": "./imports/STUSB4500QTR/STUSB4500QTR.step",
+      "passed": true,
+      "sha256": "356258af4ccb3230644ca08a5d2dbc242e15022c10613c2b1720e7c7a3ae6acb",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 14.614596094440243,
+      "dimensions_mm": [
+        4.020000000000021,
+        4.02000000000001,
+        0.9201001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "Q_PD_IN",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C222138"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/STL8P4LLF6/STL8P4LLF6.step",
+      "passed": true,
+      "sha256": "250a1503918ae7b559cf393a4aabeb843796b54d7c3c10fd0bdf84c2670c875a",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 6.735934505563349,
+      "dimensions_mm": [
+        3.3000002,
+        3.3000001,
+        0.7600002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "Q_PD_OUT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C222138"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/STL8P4LLF6/STL8P4LLF6.step",
+      "passed": true,
+      "sha256": "250a1503918ae7b559cf393a4aabeb843796b54d7c3c10fd0bdf84c2670c875a",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 6.735934505563349,
+      "dimensions_mm": [
+        3.3000002,
+        3.3000001,
+        0.7600002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R13",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C852472"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/RT0402BRD07100KL/RT0402BRD07100KL.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R_PD_GATE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25768"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF2202TCE/A_0402WGF2202TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R14",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25117"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF4700TCE/A_0402WGF4700TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_PD_VDD",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C268016"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T.step",
+      "passed": true,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.9906814997340847,
+      "dimensions_mm": [
+        1.6,
+        0.800000200000005,
+        0.8000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_PD_1V2",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15849"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL10A105KB8NNNC/CL10A105KB8NNNC.step",
+      "passed": true,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.9906814997340847,
+      "dimensions_mm": [
+        1.6,
+        0.800000200000005,
+        0.8000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C_PD_2V7",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C15849"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL10A105KB8NNNC/CL10A105KB8NNNC.step",
+      "passed": true,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.9906814997340847,
+      "dimensions_mm": [
+        1.6,
+        0.800000200000005,
+        0.8000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R_PD_RESET",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R12",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R_PD_OK",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R_PD_SENSE",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C4261071"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/ERJ_P08F1001V/ERJ_P08F1001V.step",
+      "passed": true,
+      "sha256": "ca0f6c898b6c5ac572fcabb6f326264b985a8cd3c0f7fa407526b8d2ce209713",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 4.804900575517365,
+      "dimensions_mm": [
+        3.2,
+        1.6010001000000003,
+        0.56
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R_PD_DISCH1",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C4261071"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/ERJ_P08F1001V/ERJ_P08F1001V.step",
+      "passed": true,
+      "sha256": "ca0f6c898b6c5ac572fcabb6f326264b985a8cd3c0f7fa407526b8d2ce209713",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 4.804900575517365,
+      "dimensions_mm": [
+        3.2,
+        1.6010001000000003,
+        0.56
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R_PD_DISCH2",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C4261071"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/ERJ_P08F1001V/ERJ_P08F1001V.step",
+      "passed": true,
+      "sha256": "ca0f6c898b6c5ac572fcabb6f326264b985a8cd3c0f7fa407526b8d2ce209713",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 4.804900575517365,
+      "dimensions_mm": [
+        3.2,
+        1.6010001000000003,
+        0.56
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "D_USB",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C97502"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/TPD2EUSB30DRTR/TPD2EUSB30DRTR.step",
+      "passed": true,
+      "sha256": "28e3a78293047c869953f184a2426f9c22e9d7ccc6db3301b5b9af92ce239444",
+      "valid_brep": true,
+      "solid_count": 14,
+      "volume_mm3": 0.36595181334627047,
+      "dimensions_mm": [
+        0.9963476599572261,
+        1.0,
+        0.51
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "D_VBUS",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1974707"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/ESDA25P35_1U1M/ESDA25P35_1U1M.step",
+      "passed": true,
+      "sha256": "6dc8861569f43539ad8557144a2f787ca151d7df0d3f29aa2f6375b8dbd48b04",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.8591129845637445,
+      "dimensions_mm": [
+        1.6100002,
+        1.0000002,
+        0.5500001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C25",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C268016"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T.step",
+      "passed": true,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.9906814997340847,
+      "dimensions_mm": [
+        1.6,
+        0.800000200000005,
+        0.8000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C26",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C14663"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104.step",
+      "passed": true,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.9906814997340847,
+      "dimensions_mm": [
+        1.6,
+        0.800000200000005,
+        0.8000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R16",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25767"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF2203TCE/A_0402WGF2203TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R17",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R18",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C27",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "J_SWD",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C136657"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./references/programming-connector-official/C136657.step",
+      "passed": true,
+      "sha256": "ab33b622e6a54b6ebafffcb21fec230bef83d56353a914c847e89a277b40f8a6",
+      "valid_brep": true,
+      "solid_count": 14,
+      "volume_mm3": 43.97860070667294,
+      "dimensions_mm": [
+        7.000000000000001,
+        4.95,
+        2.9110001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "U7",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2673275"
+        ]
+      },
+      "is_chip": true,
+      "model_step_url": "./imports/TMUX1511RSVR/TMUX1511RSVR.step",
+      "passed": true,
+      "sha256": "cffb323aa76b68e2c36677424bf06875c7d086e519d5d401b8ea42114bae75dc",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 2.1248336237093506,
+      "dimensions_mm": [
+        2.6199999999999983,
+        1.8200001000000068,
+        0.46
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "U8",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C5218924"
+        ]
+      },
+      "is_chip": true,
+      "model_step_url": "./imports/TLV803EA30DBZR/TLV803EA30DBZR.step",
+      "passed": true,
+      "sha256": "404e2c1e10e1ebdc38126eb298c04d95ad998039e4ddaf854293dcb8b285a876",
+      "valid_brep": true,
+      "solid_count": 17,
+      "volume_mm3": 3.60147164463214,
+      "dimensions_mm": [
+        2.5056292368943334,
+        2.9000002,
+        1.0502050972729515
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R19",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C28",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C29",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R20",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25076"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1000TCE/A_0402WGF1000TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R21",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25076"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1000TCE/A_0402WGF1000TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R22",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25076"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1000TCE/A_0402WGF1000TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R51",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C852472"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/RT0402BRD07100KL/RT0402BRD07100KL.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R52",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C852472"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/RT0402BRD07100KL/RT0402BRD07100KL.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R53",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C852472"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/RT0402BRD07100KL/RT0402BRD07100KL.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "J_IO",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C160409"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/SM10B_SRSS_TB_LF__SN_/SM10B_SRSS_TB_LF__SN_.step",
+      "passed": true,
+      "sha256": "14c1101e1628b886b8bed802295e99a3705a2033365fe7882d62a089ff261c36",
+      "valid_brep": true,
+      "solid_count": 14,
+      "volume_mm3": 54.83451871255304,
+      "dimensions_mm": [
+        11.500000000000002,
+        5.0,
+        2.4510001000000807
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "J_MOTOR",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C189895"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/SM04B_GHS_TB_LF__SN_/SM04B_GHS_TB_LF__SN_.step",
+      "passed": true,
+      "sha256": "bbc0cf3000b7277d362a6e283c6a20283067c70e697083b91b1c095bcfefae1a",
+      "valid_brep": true,
+      "solid_count": 14,
+      "volume_mm3": 69.7256721501677,
+      "dimensions_mm": [
+        8.2500002,
+        4.859999999999987,
+        4.261000100000014
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "D_IO1",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C138714"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/TPD4E05U06DQAR/TPD4E05U06DQAR.step",
+      "passed": true,
+      "sha256": "657a205108be41e11084cf5694452e8e2f63cd4d15665350a6d022d98d6719a8",
+      "valid_brep": true,
+      "solid_count": 14,
+      "volume_mm3": 1.5101553937884398,
+      "dimensions_mm": [
+        1.0200000000000005,
+        2.5000002,
+        0.6110000999999999
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "D_IO2",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C138714"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/TPD4E05U06DQAR/TPD4E05U06DQAR.step",
+      "passed": true,
+      "sha256": "657a205108be41e11084cf5694452e8e2f63cd4d15665350a6d022d98d6719a8",
+      "valid_brep": true,
+      "solid_count": 14,
+      "volume_mm3": 1.5101553937884398,
+      "dimensions_mm": [
+        1.0200000000000005,
+        2.5000002,
+        0.6110000999999999
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "D_CAN",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C12067"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/SM712_TCT/SM712_TCT.step",
+      "passed": true,
+      "sha256": "c9a82c26510eaf3f266d1d61eb7c4addbfd4f1bef9c428b719678ad8455821cc",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 4.55764082258939,
+      "dimensions_mm": [
+        2.9000002,
+        2.8,
+        1.1000000000000003
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R23",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R24",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R25",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R26",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R27",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R28",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R29",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R30",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R31",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R32",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R34",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C30",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C31",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C1525"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/CL05B104KO5NNNC/CL05B104KO5NNNC.step",
+      "passed": true,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.23927570817556737,
+      "dimensions_mm": [
+        1.0,
+        0.5000002000000032,
+        0.5000002000000001
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R35",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "LED_POWER",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C965805"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/XL_1608SYGC_06/XL_1608SYGC_06.step",
+      "passed": true,
+      "sha256": "960e9b081492a26215d1668d977990f322ae71831f05f070d38a476f2cf1b5d4",
+      "valid_brep": true,
+      "solid_count": 4,
+      "volume_mm3": 0.640292375025304,
+      "dimensions_mm": [
+        1.6199999999999999,
+        0.8000002000000002,
+        0.6000000999999999
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R36",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "LED_STATUS",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C965805"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/XL_1608SYGC_06/XL_1608SYGC_06.step",
+      "passed": true,
+      "sha256": "960e9b081492a26215d1668d977990f322ae71831f05f070d38a476f2cf1b5d4",
+      "valid_brep": true,
+      "solid_count": 4,
+      "volume_mm3": 0.640292375025304,
+      "dimensions_mm": [
+        1.6199999999999999,
+        0.8000002000000002,
+        0.6000000999999999
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R37",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "LED_FAULT",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C965805"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/XL_1608SYGC_06/XL_1608SYGC_06.step",
+      "passed": true,
+      "sha256": "960e9b081492a26215d1668d977990f322ae71831f05f070d38a476f2cf1b5d4",
+      "valid_brep": true,
+      "solid_count": 4,
+      "volume_mm3": 0.640292375025304,
+      "dimensions_mm": [
+        1.6199999999999999,
+        0.8000002000000002,
+        0.6000000999999999
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "U10",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C2155767"
+        ]
+      },
+      "is_chip": true,
+      "model_step_url": "./references/tps26600-cad/RHF0024A.stp",
+      "passed": true,
+      "sha256": "3b1cdf1034f9434010f7c2a32ca0686c80f56c0328a38be2e6f7f67ed7f78a41",
+      "valid_brep": true,
+      "solid_count": 30,
+      "volume_mm3": 19.794172930263507,
+      "dimensions_mm": [
+        4.0,
+        5.0,
+        1.0
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "Q_ILIM",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C20512"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/DMG1012T_7/DMG1012T_7.step",
+      "passed": true,
+      "sha256": "ae69ee72f295d977932aab0d244465261eb61f2c031805f1d289d0cf85806849",
+      "valid_brep": true,
+      "solid_count": 17,
+      "volume_mm3": 1.200846626789318,
+      "dimensions_mm": [
+        1.612604884268745,
+        1.6000002,
+        1.1500832997859427
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R38",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C852472"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/RT0402BRD07100KL/RT0402BRD07100KL.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R39",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25792"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF4702TCE/A_0402WGF4702TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R40",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C852472"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/RT0402BRD07100KL/RT0402BRD07100KL.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R41",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C11702"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1001TCE/A_0402WGF1001TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R42",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25900"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF4701TCE/A_0402WGF4701TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R43",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C852895"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/RT0402BRD076K04L/RT0402BRD076K04L.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R44",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25769"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF2402TCE/A_0402WGF2402TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R45",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25769"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF2402TCE/A_0402WGF2402TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R46",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C33",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C268016"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T.step",
+      "passed": true,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.9906814997340847,
+      "dimensions_mm": [
+        1.6,
+        0.800000200000005,
+        0.8000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "C34",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C268016"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T.step",
+      "passed": true,
+      "sha256": "5f7216cf66690dab2ac39e25f5ad1bda3a067967e55809dd781fa60d385df110",
+      "valid_brep": true,
+      "solid_count": 1,
+      "volume_mm3": 0.9906814997340847,
+      "dimensions_mm": [
+        1.6,
+        0.800000200000005,
+        0.8000002000000002
+      ],
+      "step_export_reimport_passed": true
+    },
+    {
+      "reference": "R48",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C25744"
+        ]
+      },
+      "is_chip": false,
+      "model_step_url": "./imports/A_0402WGF1002TCE/A_0402WGF1002TCE.step",
+      "passed": true,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729",
+      "valid_brep": true,
+      "solid_count": 3,
+      "volume_mm3": 0.28778167941011523,
+      "dimensions_mm": [
+        1.0,
+        0.5010001000000001,
+        0.36000000000000004
+      ],
+      "step_export_reimport_passed": true
+    }
+  ],
+  "prototype_fabrication_ready": false
+}

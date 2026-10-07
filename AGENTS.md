@@ -1,3 +1,22 @@
+# Active routing — 0.0.48-alpha.0
+
+Read docs/REV48-ROUTING-CHECKPOINT.md, VALIDATION.md and the manufacturer review
+in docs/REV45-PRE-ROUTING-REVIEW.md. The checked native replay connects64/108 nets:
+97 tracks,79 ordinary0.30/0.45mm through vias,eight pours and227 open ports;
+zero other native errors or strict copper violations. GND is one physical
+network. Programmer/ADC/CAN select/interrupt routes are saved and manually
+corrected. R_CAN_CS moves to bottom(1.5,-0.2), rotation0; C31 remains original.
+Actual current CadQuery and mounted146-mesh review pass. Continue one bounded
+selected-net native Pipeline9 job at a time; save qualified source paths and
+manually correct actual DRC. All44 remaining nets, current/thermal/USB/fresh
+CAM/assembly quote remain open. Preserve imports/models/history, exact motor,
+connectors, outline and carrier. Publish completed checked prototype steps
+with exact JSON/CAD bytes under standing authorization. FABRICATION READY: NO.
+
+---
+
+# Historical revision47 continuation
+
 # Active routing — 0.0.47-alpha.0
 
 Read docs/REV47-ROUTING-CHECKPOINT.md, VALIDATION.md and the manufacturer review

@@ -26,7 +26,7 @@ export const mechanicalPreviewPlacement = {
   C_CAN_XIN: { pcbX: -0.75, pcbY: -7.25, layer: "top", pcbRotation: 270 },
   C_CAN_XOUT: { pcbX: -3.25, pcbY: -5.0, layer: "top", pcbRotation: 0 },
   C_CAN_CORE: { pcbX: 0.5, pcbY: -1.5, layer: "bottom", pcbRotation: 0 },
-  R_CAN_CS: { pcbX: 2.25, pcbY: -1.5, layer: "bottom", pcbRotation: 90 },
+  R_CAN_CS: { pcbX: 1.5, pcbY: -0.2, layer: "bottom", pcbRotation: 0 },
   R_CAN_INT: { pcbX: 2.0, pcbY: -4.5, layer: "bottom", pcbRotation: 0 },
   Q_PD_IN: { pcbX: -10.25, pcbY: -2.5, layer: "bottom", pcbRotation: 0 },
   Q_PD_OUT: { pcbX: -9.0, pcbY: 2.75, layer: "bottom", pcbRotation: 270 },
