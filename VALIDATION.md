@@ -2,6 +2,15 @@
 
 **PROTOTYPE FABRICATION READY: NO. No hardware testing or fabrication order.**
 
+Public WIP verification completed at 2026-10-07T19:34:23.454Z. GitHub implementation
+commit `d7089622defe6dc29d253f82c185fa972aab5e5a` and public tscircuit release
+`d40636fb-e07c-4c37-928c-be6136b5537f` contain matching revision0.0.50-alpha.0. All715
+package files and all715 immutable GitHub files passed anonymous SHA-256
+verification, including the three canonical Circuit JSON mirrors and115 original
+local CAD assets. No referenced CAD asset is omitted. The official release
+reports ready_to_build:true; hosted build/3D-render success is not claimed.
+See `evidence/rev-0.0.50-alpha.0/PUBLICATION.json`. Routing continues.
+
 RP2040, STUSB4500 and MCP2515 remain selected. Separate official USB-C POWER
 and DATA connectors, 15 V NVM programming/readback procedure, isolated computer
 VBUS sensing and hardware motor interlock are implemented. Active requirements
