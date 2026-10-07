@@ -20,7 +20,7 @@ const notes = circuit.filter(
       element.text.startsWith(`${component.name}: `),
     ),
 )
-assert.equal(components.length, 149, "Purchased-reference coverage changed")
+assert.equal(components.length, 147, "Purchased-reference coverage changed")
 assert.equal(notes.length, components.length, "Missing or duplicate purposes")
 assert.equal(sheets.length, 9, "Expected nine native schematic sheets")
 
@@ -116,5 +116,5 @@ if (process.argv[3]) {
   writeFileSync(process.argv[3], `${JSON.stringify(report, null, 2)}\n`)
 }
 console.log(
-  "149 component explanations on nine A4 sheets; coverage/layout pass",
+  "147 component explanations on nine A4 sheets; coverage/layout pass",
 )

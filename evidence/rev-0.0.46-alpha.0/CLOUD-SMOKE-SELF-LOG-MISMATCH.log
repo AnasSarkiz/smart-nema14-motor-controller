@@ -1,0 +1,10 @@
+0.0.2750
+$ tsc --noEmit
+$ node scripts/check-critical-import-pins.mjs
+Critical import-label audit passed. Full schematic, BOM, mechanical and fabrication validation remains mandatory.
+Shapely 2.1.2 CadQuery 2.8.0
+Traceback (most recent call last):
+  File "/workspace/smart-nema14-motor-controller/scripts/verify-cloud-context.py", line 19, in <module>
+    assert digest == entry['sha256'], f'Context checksum mismatch: {entry["path"]}'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Context checksum mismatch: evidence/rev-0.0.46-alpha.0/CLOUD-SMOKE.log

@@ -31,6 +31,12 @@ def main():
     output = json.loads(Path(args.routing_output).read_text())
     srj = output.get('simpleRouteJson', output)
     references = {e['source_component_id']: e['name'] for e in circuit if e['type'] == 'source_component'}
+    # Explicit ground stitching vias also have native PCB component records.
+    # They are board features, and are not purchased source components.
+    references.update({
+        e['source_manually_placed_via_id']: e.get('name', e['source_manually_placed_via_id'])
+        for e in circuit if e['type'] == 'source_manually_placed_via'
+    })
     component_references = {e['pcb_component_id']: references[e['source_component_id']] for e in circuit if e['type'] == 'pcb_component'}
     source_ports = {e['source_port_id']: e for e in circuit if e['type'] == 'source_port'}
     ports = {e['pcb_port_id']: e for e in circuit if e['type'] == 'pcb_port'}

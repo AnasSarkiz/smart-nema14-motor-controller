@@ -1,3 +1,26 @@
+# Active continuation — 0.0.46-alpha.0
+
+Read docs/REV46-ROUTING-CHECKPOINT.md, VALIDATION.md and the manufacturer review
+in docs/REV45-PRE-ROUTING-REVIEW.md. Current exact canonical copper connects
+51/108 nets:82 tracks,52 ordinary0.30/0.45 mm through vias,nine pours and255
+native open ports; zero other native errors or strict copper violations.
+All147 references /146 fitted models /12 ICs pass actual CadQuery checks.
+Fresh official stock checks pass all54 exact identities; allocation/quote pending.
+Two C1570 30pF loads replace four parallel15pF loads and keep native CAN clocks
+under10mm with zero vias. Three native placement orientation suggestions and
+one disclosed imported TVS schematic rotation finding remain explicit.
+Continue one changed bounded selected-net Pipeline9 job at a time, save qualified
+source paths and correct actual DRC manually. Finish all copper, outer power
+where feasible, USB return/impedance, current/thermal and fresh CAM/assembly
+qualification. Preserve official imports/models/history, exact motor, outline,
+four connectors and carrier. Publish completed prototype steps with matching
+fresh Circuit JSON and original CAD hashes under standing authorization.
+PROTOTYPE FABRICATION READY: NO. No fabrication order is authorized.
+
+---
+
+# Historical revision45 handoff
+
 # Active user redesign — 0.0.45-alpha.0
 
 The user authorizes RP2040, dedicated USB-PD, functional buzzer and all review

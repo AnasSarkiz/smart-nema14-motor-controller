@@ -5,7 +5,7 @@ const circuit = JSON.parse(readFileSync("dist/index/circuit.json", "utf8"))
 const components = circuit.filter(
   (element) => element.type === "source_component",
 )
-assert.equal(components.length, 149)
+assert.equal(components.length, 147)
 const optionalPopulation = {
   R50: "CAN termination link: omit except on bus endpoints",
 }
@@ -39,7 +39,7 @@ writeFileSync(
     {
       revision,
       status:
-        "Design review only; supplier availability, footprints and assembly remain unqualified. Not a fabrication BOM.",
+        "Design review only; public supplier availability is checked separately. Assembly allocation and fabrication remain unqualified. Not a fabrication BOM.",
       population_basis:
         "U4/C6 removed by user request. Open-loop motor control; retained I2C serves U9. R50 is fitted only at CAN bus endpoints.",
       pcb_component_count: records.length,

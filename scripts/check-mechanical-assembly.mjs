@@ -11,11 +11,11 @@ assert.equal(
   circuit.filter((element) => element.type === "pcb_board").length,
   1,
 )
-assert.equal(pcb.length, 149)
+assert.equal(pcb.length, 147)
 assert.equal(
   cad.length,
-  149,
-  "148 default-fitted PCB components plus unchanged manufacturer motor",
+  147,
+  "146 default-fitted PCB components plus unchanged manufacturer motor",
 )
 const sources = circuit.filter((element) => element.type === "source_component")
 const sourceById = new Map(

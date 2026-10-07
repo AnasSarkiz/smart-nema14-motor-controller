@@ -396,7 +396,7 @@ for (const [ref, pin, net] of [
 
 assert.equal(
   components.length,
-  149,
+  147,
   "Do not validate an empty or unexpected draft",
 )
 assert.ok(
@@ -577,6 +577,24 @@ assert.deepEqual(
 assert.deepEqual(
   components.find((c) => c.name === "J_USB")?.supplier_part_numbers.jlcpcb,
   ["C5143397"],
+)
+// ABM8-16MHz-B2-T requires 18 pF load: retain the reviewed nominal
+// 30 pF per leg (15 pF series equivalent), with PCB stray qualified on hardware.
+for (const [reference, net] of [
+  ["C_CAN_XIN", "CAN_XIN"],
+  ["C_CAN_XOUT", "CAN_XOUT"],
+]) {
+  const load = components.find((component) => component.name === reference)
+  assert.equal(load?.capacitance, 30e-12, `${reference} crystal load`)
+  assert.deepEqual(load.supplier_part_numbers.jlcpcb, ["C1570"])
+  checkPinNet({ ref: reference, pin: 1 }, net)
+  checkPinNet({ ref: reference, pin: 2 }, "GND")
+}
+assert.ok(
+  !components.some((component) =>
+    ["C_CAN_XIN2", "C_CAN_XOUT2"].includes(component.name),
+  ),
+  "Parallel duplicate loads must not remain alongside the 30 pF loads",
 )
 assert.equal(
   circuitJson.filter((element) => element.type.startsWith("pcb_")).length,

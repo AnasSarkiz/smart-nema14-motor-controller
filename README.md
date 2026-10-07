@@ -1,6 +1,6 @@
 # Smart NEMA 14 Motor Controller
 
-Revision **0.0.45-alpha.0** — **RP2040 + autonomous STUSB4500 USB-PD**.
+Revision **0.0.46-alpha.0** — **RP2040 + autonomous STUSB4500 USB-PD**.
 **Partially routed prototype. PROTOTYPE FABRICATION READY: NO. Not hardware tested.**
 
 The user-requested redesign replaces STM32/TCPP01 with official RP2040,
@@ -13,7 +13,7 @@ Firmware must qualify the actual contract before enabling the motor/current.
 The CAN interface uses a new MCP2515 SPI controller and retains SN65HVD230.
 A functional magnetic buzzer driver is added; TMP112 remains the I2C sensor.
 Its sheet now includes the sensor, pull-ups, bypasses and buzzer circuit.
-All **149 electronic references / 148 default fitted** have purpose notes on
+All **147 electronic references / 146 default fitted** have purpose notes on
 nine native A4 sheets. Only R50, the optional CAN termination link, is DNP.
 
 The board remains **35 x 35 mm, four layers**, with the original four
@@ -21,16 +21,17 @@ connectors, front carrier and exact **STEPPERONLINE 14HM11-0404S** single-front-
 shaft motor. AS5600 stays removed; motor control is open loop.
 
 See [the complete redesign and every review request](docs/RP2040-USB-PD-REDESIGN.md),
+[current routing checkpoint](docs/REV46-ROUTING-CHECKPOINT.md),
 [current validation](VALIDATION.md) and [Cloud task](docs/cloud/TASK.md).
 Manufacturer pin/BOM and initial placement/model reviews permit routing.
 Complete copper, power/USB/thermal/CAM qualification and hardware tests remain.
 The full official schematic analyzer leaves one imported TVS rotation defect.
 No purchased import, pad mapping, model, DRC or TypeScript rule is patched.
 
-Fresh native [Circuit JSON](dist/index/circuit.json) contains **63 traces,
-36 ordinary through vias and7 native ground pours**. **44 of108 required nets** have
+Fresh native [Circuit JSON](dist/index/circuit.json) contains **82 traces,
+52 ordinary through vias and9 native ground pours**. **51 of108 required nets** have
 one independently measured physical copper island. Native checking still
-reports **283 open-port errors**, with zero other native errors and zero strict
+reports **255 open-port errors**, with zero other native errors and zero strict
 copper/drill/edge/keepout violations in this partial build. The build exits1
 because connectivity remains incomplete. It is not ready to order.
 Old STM32 copper is preserved historically and deliberately cannot be replayed
@@ -43,12 +44,13 @@ Frozen installation succeeds through the official registry mirror with normal
 TLS/integrity. No substitute router, dependency patch or proxy bypass is used.
 Saving a Cloud draft alone does not activate its network policy.
 
-All12 ICs and all148 fitted genuine STEP models pass actual CadQuery import,
-solid validity and export/reimport. Ten moved USB/bypass/crystal parts pass renewed
-native placement and the actual mounted148-mesh nominal envelope checks.
-All53 exact part numbers have positive official JLCPCB stock/SMT availability
-checked2026-10-07 06:47UTC; customer allocation remains pending. The5-board
-fitted-part baseline is$27.27 per board, excluding PCB, assembly/loading fees,
+All12 ICs and all146 fitted genuine STEP models pass actual CadQuery import,
+solid validity and export/reimport. Current internal placements pass actual mounted146-mesh nominal envelope checks.
+The native placement screen retains three orientation suggestions; they remain
+explicit alongside the one imported TVS schematic-style finding.
+All54 exact part numbers have positive official JLCPCB stock/SMT availability
+checked2026-10-07 12:01UTC; customer allocation remains pending. The5-board
+fitted-part baseline is$27.261 per board, excluding PCB, assembly/loading fees,
 supplier losses, shipping/tax, carrier and motor. This is not a delivered quote.
 
 ```bash
@@ -60,7 +62,7 @@ bun run typecheck
 
 Installation/startup do not route. Routing uses one bounded selected-net
 native Pipeline9 job at a time on Linux through scripts/run-cloud-routing.py,
-plus supported native saved manual paths. All36 current vias measure0.30mm
+plus supported native saved manual paths. All52 current vias measure0.30mm
 drill /0.45mm pad and span all four layers. Via-in-pad is disabled. Outer power,
 complete loaded widths and USB coupling/return require copper qualification.
 

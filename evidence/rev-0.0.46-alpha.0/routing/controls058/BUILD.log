@@ -1,0 +1,22 @@
+Routing phase 0 undefined 47 connections 576 obstacles
+Routing phase 1 AutoroutingPipelineSolver9_PreloadedTraceGraph 3 connections 3012 obstacles
+Routing progress 1 0.12
+Routing progress 1 0.2082209377007065
+Routing progress 1 0.2275230143438236
+Routing progress 1 0.24
+Routing progress 1 0.28
+Routing progress 1 0.32
+Routing progress 1 0.44
+Routing progress 1 0.44
+Routing progress 1 0.44
+Routing progress 1 0.44
+Routing progress 1 0.44
+Routing progress 1 0.44
+{
+  message: "hJ ran out of iterations (capacity-autorouter@0.0.962)",
+}
+Async effect error in PcbTraceRender "autorouting":
+AutorouterError: hJ ran out of iterations (capacity-autorouter@0.0.962)
+    at runCycleAndQueueNextCycle (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:107790:24)
+    at <anonymous> (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:107825:27)
+Native render complete: 390 unresolved errors

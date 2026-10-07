@@ -1,0 +1,56 @@
+{
+  "net_names": [
+    "NRST"
+  ],
+  "paths": [
+    {
+      "connection": ".U_CAN port.pin17",
+      "route": [
+        {
+          "route_type": "wire",
+          "layer": "top",
+          "width": 0.15,
+          "x": 1.000126,
+          "y": -1.59246
+        },
+        {
+          "route_type": "wire",
+          "layer": "top",
+          "width": 0.15,
+          "x": 1.000126,
+          "y": -1.0
+        },
+        {
+          "route_type": "wire",
+          "layer": "top",
+          "width": 0.15,
+          "x": -1.8,
+          "y": -1.0
+        },
+        {
+          "route_type": "wire",
+          "layer": "top",
+          "width": 0.15,
+          "x": -1.8,
+          "y": -0.6
+        },
+        {
+          "route_type": "via",
+          "from_layer": "top",
+          "to_layer": "inner2",
+          "via_diameter": 0.45,
+          "via_hole_diameter": 0.3,
+          "x": -1.8,
+          "y": -0.6
+        },
+        {
+          "route_type": "wire",
+          "layer": "inner2",
+          "width": 0.15,
+          "x": -1.8,
+          "y": -0.6
+        }
+      ]
+    }
+  ]
+}

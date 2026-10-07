@@ -1,12 +1,12 @@
 {
-  "revision": "0.0.45-alpha.0",
+  "revision": "0.0.46-alpha.0",
   "source_identity": "The Git commit containing this manifest identifies the source, evidence and checked build.",
   "scope": "Every tracked file except this self-referential manifest; archived routing evidence has its own per-file inventory.",
   "circuit_counts": {
-    "pcb_trace": 63,
-    "pcb_via": 36,
-    "pcb_copper_pour": 7,
-    "pcb_port_not_connected_error": 283,
+    "pcb_trace": 82,
+    "pcb_via": 52,
+    "pcb_copper_pour": 9,
+    "pcb_port_not_connected_error": 255,
     "pcb_trace_error": 0
   },
   "files": [
@@ -512,8 +512,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 5996,
-      "sha256": "1e8ec19777f56cbac1d307f61d6328baaa91bf2ac3682af3b810625a058317b0"
+      "bytes": 7304,
+      "sha256": "d87d8e53bda5b592c1134ff919329678bf792b8616b3f4a3bf5ff4acc080d944"
     },
     {
       "path": "ARCHITECTURE.md",
@@ -532,18 +532,18 @@
     },
     {
       "path": "CLOUD_HANDOFF.md",
-      "bytes": 72095,
-      "sha256": "1403a945bba78b819e222d9d3ce033950793a08ba9cc0c49670db67ef5e9aaa5"
+      "bytes": 73403,
+      "sha256": "5a62a8d58233b2cb22b49a2775a9cd414969069707a796e15900dc336fa46571"
     },
     {
       "path": "README.md",
-      "bytes": 4989,
-      "sha256": "b066c48bff8eca1d96f9ee7d18e167a48b77954b491c04bf9299c219b1943e1c"
+      "bytes": 5158,
+      "sha256": "26543503778edf7f411290c57c4f7ab91540477d736bb16a3b0d2eb3cf0669d8"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 244987,
-      "sha256": "aa0cec5943ea30aca07cca1abe7696006ef062dfdf7967915bbfe1f7dd0e07b4"
+      "bytes": 249717,
+      "sha256": "5d260011d9562a4c9e616bca6a41b9e56bdc617b79f7397837dfa4726b1bc716"
     },
     {
       "path": "assembly.circuit.tsx",
@@ -567,8 +567,8 @@
     },
     {
       "path": "build/routing-review/circuit.json",
-      "bytes": 3597753,
-      "sha256": "4e15aa8be90488f9de498393835c2e03fe39c311ffbe09836e71e5fd665d7b21"
+      "bytes": 3729062,
+      "sha256": "a1a9ae548215b2d24a78fc272cb197901b69e8856eeae92b4685934bca4f546e"
     },
     {
       "path": "bun.lock",
@@ -582,13 +582,13 @@
     },
     {
       "path": "dist/index/circuit.json",
-      "bytes": 3597753,
-      "sha256": "4e15aa8be90488f9de498393835c2e03fe39c311ffbe09836e71e5fd665d7b21"
+      "bytes": 3729062,
+      "sha256": "a1a9ae548215b2d24a78fc272cb197901b69e8856eeae92b4685934bca4f546e"
     },
     {
       "path": "dist/routing-review/circuit.json",
-      "bytes": 3597753,
-      "sha256": "4e15aa8be90488f9de498393835c2e03fe39c311ffbe09836e71e5fd665d7b21"
+      "bytes": 3729062,
+      "sha256": "a1a9ae548215b2d24a78fc272cb197901b69e8856eeae92b4685934bca4f546e"
     },
     {
       "path": "docs/BOARD-REVIEW-39.md",
@@ -636,9 +636,14 @@
       "sha256": "5c0a7011073d1a06840ab32d541e03546d38609a63ca192c5a19faf792bb3015"
     },
     {
+      "path": "docs/REV46-ROUTING-CHECKPOINT.md",
+      "bytes": 4688,
+      "sha256": "6c02414e3039031d42dd35c734a0e877610915a1d3fb6a7b78c847234359bff4"
+    },
+    {
       "path": "docs/RP2040-USB-PD-REDESIGN.md",
-      "bytes": 10757,
-      "sha256": "5a70a90bdc031008d5d53d281e1559babc1a3b39ea006b24ac74065a86b9ef49"
+      "bytes": 12061,
+      "sha256": "e29c65f9a3b32678e1e870fa382847ad1db90cbfeb0fb9281c692618ec385464"
     },
     {
       "path": "docs/SCHEMATIC-NOTES.md",
@@ -667,8 +672,8 @@
     },
     {
       "path": "docs/cloud/TASK.md",
-      "bytes": 6547,
-      "sha256": "385377a76c0a8f17641e3f30b29c10273c21a532a49b99e23f0d3963b65da994"
+      "bytes": 7855,
+      "sha256": "e4981e3350bec1efb855a61461ebf11ac2829dbcb5be58c0092aa16faa76ad34"
     },
     {
       "path": "docs/cloud/routing-history-rev20.tar.gz.001",
@@ -26551,6 +26556,546 @@
       "sha256": "7307e15b0e1e933488f8812fd45c9a2cbc1d38704debfb1658954f9ffb200862"
     },
     {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls041/BUILD-STATUS.json",
+      "bytes": 638,
+      "sha256": "01852d2640d3f814b25a3e6e77ae490bf71e5a66d83ffb26f78e8746546a6ad1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls041/BUILD.log",
+      "bytes": 804,
+      "sha256": "48b0e608e002f64256fd157eae98cc66118556fe92506b47726f034d9f42025d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls041/phase-0-input.json",
+      "bytes": 2642859,
+      "sha256": "42ebaeafe41653214d2e0db7198fa98ad69bd441d8dc45a7a566dc607f47df9c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls041/phase-0-output.json",
+      "bytes": 2770780,
+      "sha256": "78b52d1ae177292705d820a28a631143794f7e5ba5d04168fb7c86e58fd39885"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls041/phase-0-stage-0-input.json",
+      "bytes": 2642859,
+      "sha256": "42ebaeafe41653214d2e0db7198fa98ad69bd441d8dc45a7a566dc607f47df9c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls041/phase-0-stage-0-output.json",
+      "bytes": 2770780,
+      "sha256": "78b52d1ae177292705d820a28a631143794f7e5ba5d04168fb7c86e58fd39885"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls041/phase-1-input.json",
+      "bytes": 3371213,
+      "sha256": "3a4bf44a3d7f55564e0379bb5d7060f57af393f2f141dffc26ee2747f1bd66e4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls041/phase-1-output.json",
+      "bytes": 3447403,
+      "sha256": "e54c6135d0f2e31dc9bbf5cf47597eca354f675ad2ca1e3f63cfa7e16acd229e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls041/phase-1-progress.json",
+      "bytes": 793,
+      "sha256": "ae09e67f3f3c19b98b75a588fb304ae9d54abd24b09b7c5185fafb21a3e89149"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls041/phase-1-stage-0-input.json",
+      "bytes": 3371213,
+      "sha256": "3a4bf44a3d7f55564e0379bb5d7060f57af393f2f141dffc26ee2747f1bd66e4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls041/phase-1-stage-0-output.json",
+      "bytes": 3447403,
+      "sha256": "e54c6135d0f2e31dc9bbf5cf47597eca354f675ad2ca1e3f63cfa7e16acd229e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls041/phase-1-stage-0-progress.json",
+      "bytes": 793,
+      "sha256": "ae09e67f3f3c19b98b75a588fb304ae9d54abd24b09b7c5185fafb21a3e89149"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls042/BUILD-STATUS.json",
+      "bytes": 696,
+      "sha256": "05f19fc11577d33773eb1670d9eef027a70aabb062c46ba133666b149d2f543b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls042/BUILD.log",
+      "bytes": 3089,
+      "sha256": "cbcbfdcc918ea84cbddf43743af0c913ac5a2d500985200c86f97681d7dc1558"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls042/INPUT-PROVENANCE.json",
+      "bytes": 888,
+      "sha256": "b104f0db8ad1bbad967937685fe4404928568e59827a7d9da7e71c7cda377bdd"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls042/OUTPUT-SIMPLE-ROUTE.json",
+      "bytes": 3340485,
+      "sha256": "5739ee6f05f6c610c597df71e16cb8bfcd7b65c132cf9dcc8248fbe2199862bf"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls042/PROGRESS.json",
+      "bytes": 175,
+      "sha256": "aab585001fb2ae039a5f35b27231ec3597329b4333c4bc76576b9e41515ffee6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls043-candidates.json",
+      "bytes": 29408,
+      "sha256": "20012e3cc261fbd54ce8257be510829cb4a198d4fd0237eadc9d789a634a2f99"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls043/BUILD-STATUS.json",
+      "bytes": 628,
+      "sha256": "ac397035f3613f1f4fa1843ddfb6da6da77f5c5781f9f670c5e57b45c2923eed"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls043/BUILD.log",
+      "bytes": 208,
+      "sha256": "33a981d9d5b6b03e04318dbd6386f7ca1139a65bcac2838dd088bd4438485a3f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls044/BUILD-STATUS.json",
+      "bytes": 631,
+      "sha256": "2f672f57afd6b7c936f327d25bb8fa1762e0682084c16e0e0f275df07baec4cd"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls044/BUILD.log",
+      "bytes": 101,
+      "sha256": "8e2afc7a5f6787820d4ebac4ff2ab4b3d7e3ec73ffda3372cb7846729660497d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls044/COPPER-GEOMETRY.json",
+      "bytes": 7220,
+      "sha256": "4acd695b6f5d8b613a12d51d8375343cda467a076c92344a2b721e7ef97dee6f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls044/FILLED-COPPER.json",
+      "bytes": 66132,
+      "sha256": "e8609ab16209e2a40f2dae27b7a445ec361c79ec9e0be5dbbd28697b9cc274f5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls044/FILLED.log",
+      "bytes": 869,
+      "sha256": "786c2c844890fbdb7421a884ed441c31a7ef1f5d53c4477d35f729f782c69a20"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls044/STRICT.log",
+      "bytes": 7220,
+      "sha256": "4acd695b6f5d8b613a12d51d8375343cda467a076c92344a2b721e7ef97dee6f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls044/circuit.json",
+      "bytes": 3769398,
+      "sha256": "d9f9738b4064ad51e2e14a3ad692e699b384127ba81ebbd515612591c15622a8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls044/phase-0-input.json",
+      "bytes": 2647588,
+      "sha256": "3c4cb34447d655b45fb777928b775904cb93292f5eb88d8ebf22907da016a0bd"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls044/phase-0-output.json",
+      "bytes": 2813793,
+      "sha256": "c10d7d00dee090b3df9f3ec194fbf35e73c38961872dd610edf220a8c832a400"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls044/phase-0-stage-0-input.json",
+      "bytes": 2647588,
+      "sha256": "3c4cb34447d655b45fb777928b775904cb93292f5eb88d8ebf22907da016a0bd"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls044/phase-0-stage-0-output.json",
+      "bytes": 2813793,
+      "sha256": "c10d7d00dee090b3df9f3ec194fbf35e73c38961872dd610edf220a8c832a400"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls045-input/reset-escape.json",
+      "bytes": 1095,
+      "sha256": "6784a9c45232ab4bdeb91322ec5d00a4328ffedb6003ff333ab0ffa6df70390d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls045/BUILD-STATUS.json",
+      "bytes": 631,
+      "sha256": "58b39f12a95eda024edd48f28484c857381c2f584ae8052c170b16e6e1dff0b6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls045/BUILD.log",
+      "bytes": 1607,
+      "sha256": "8c25fae1e8a07373ee341e5ac89738e3000eeab0e4898c6e1f56e3797ac3e289"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls045/circuit.json",
+      "bytes": 3218009,
+      "sha256": "6ce8d03ae1a31ea51b73255b32933039653d89b40c0727ee073329fca9c46396"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls046-candidates.json",
+      "bytes": 3982,
+      "sha256": "9c9e8df6c7099bea2c863727a19e7478241a2c50e70beb235eeb6cbd318a3003"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls046/BUILD-STATUS.json",
+      "bytes": 631,
+      "sha256": "105152d71814c6c93bad17dc02d1d8f4b2cf45f7725fc3391f4bdd0f91ba752b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls046/BUILD.log",
+      "bytes": 101,
+      "sha256": "953de430144ba6d76106eb074638e50cce8775336b9e62d9f1389b0333853a52"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls046/COPPER-GEOMETRY.json",
+      "bytes": 2319,
+      "sha256": "e3ffeb0dc2b370f786e3b5f7052b7985a8dc430e643b12c41920e53bbe8f946d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls046/FILLED-COPPER.json",
+      "bytes": 55156,
+      "sha256": "eb17a3f0ad1a1319edc914974f638b5e976bb8d8cae7b1d21970ead79613e7ea"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls046/FILLED.log",
+      "bytes": 792,
+      "sha256": "48e4801db283356d89415f3efddd8e6b80dc75806fe71b27c4c72dc792a92179"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls046/STRICT.log",
+      "bytes": 2319,
+      "sha256": "e3ffeb0dc2b370f786e3b5f7052b7985a8dc430e643b12c41920e53bbe8f946d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls046/USB-PATHS.json",
+      "bytes": 2092,
+      "sha256": "8b47254b6b97cc8f43dc9508cb0bc198e9a7a26b2e8f74fb1175368b025ec1f8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls046/USB.log",
+      "bytes": 1792,
+      "sha256": "3a37ba05baba1e3149633bb0b56e97b64b4bed13551d03ff190c54a891f802e1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls046/circuit.json",
+      "bytes": 3617705,
+      "sha256": "ad7b82fdcb65966bd6c6bae0ba093e8c2fe3bb8edd6e5273949a053cfeaf66b3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls046/phase-0-input.json",
+      "bytes": 2643564,
+      "sha256": "0fc9698c5b7e7a3ea622334da9d367ab850f259cc2a07ddfb424910b6560450d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls046/phase-0-output.json",
+      "bytes": 2775855,
+      "sha256": "c189d7b2d8bfb404664a4f5f168b4d561d76c53cf42ca1dc1fa85ee90b3741fc"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls046/phase-0-stage-0-input.json",
+      "bytes": 2643564,
+      "sha256": "0fc9698c5b7e7a3ea622334da9d367ab850f259cc2a07ddfb424910b6560450d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls046/phase-0-stage-0-output.json",
+      "bytes": 2775855,
+      "sha256": "c189d7b2d8bfb404664a4f5f168b4d561d76c53cf42ca1dc1fa85ee90b3741fc"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/BUILD-STATUS.json",
+      "bytes": 627,
+      "sha256": "2117a22f858d1b7bb133720d77e403baa6da21a21834220ccbe70f3cf71a7319"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/BUILD.log",
+      "bytes": 494,
+      "sha256": "113f7d9bf8f7b8da7c428f3c44560ce03dc4d282a9a251862d7c6a9903b617b4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/COPPER-GEOMETRY.json",
+      "bytes": 2315,
+      "sha256": "ccdd053fdac9357c4fdb140566f2a64480dd9b057dfe7d0fb7f579bdb051e5c4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/FILLED-COPPER.json",
+      "bytes": 58065,
+      "sha256": "bbe1924de58ec15bbd4624edb715c45452e435dd8eb1fdb0e8bffa8cc2dd9336"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/FILLED.log",
+      "bytes": 791,
+      "sha256": "113fd676de770d732b7595ba21efc65b4ca2f475d825343e7e2aad3a77a633ff"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/STRICT.log",
+      "bytes": 2315,
+      "sha256": "ccdd053fdac9357c4fdb140566f2a64480dd9b057dfe7d0fb7f579bdb051e5c4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/circuit.json",
+      "bytes": 3704715,
+      "sha256": "9225d247a98cb92574a70580553cb264650022a145447c96c2be0ebb9ff8af62"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/phase-0-input.json",
+      "bytes": 2642859,
+      "sha256": "6a25e5bba86f1665e75cec146994eb5663027028267efa7fba70b6f1dd4fc734"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/phase-0-output.json",
+      "bytes": 2770780,
+      "sha256": "2175684cdf6ad11f96f0d173c679d967dc80eeaede9d6c701764fefef51a4886"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/phase-0-stage-0-input.json",
+      "bytes": 2642859,
+      "sha256": "6a25e5bba86f1665e75cec146994eb5663027028267efa7fba70b6f1dd4fc734"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/phase-0-stage-0-output.json",
+      "bytes": 2770780,
+      "sha256": "2175684cdf6ad11f96f0d173c679d967dc80eeaede9d6c701764fefef51a4886"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/phase-2-input.json",
+      "bytes": 3371177,
+      "sha256": "dc9c3e52bcb22eacd5a29f7053db4fccc5edb209aea55461394aea8ad6629e06"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/phase-2-output.json",
+      "bytes": 3392468,
+      "sha256": "a5ab05351564cd2802ca64bed4fdfb3b8b2fd9aac755d69d3b773eb912c17bf4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/phase-2-progress.json",
+      "bytes": 806,
+      "sha256": "c65960d966696577388a6dc4e5ef461bba1971c487460f401d0712c756904861"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/phase-2-stage-0-input.json",
+      "bytes": 3367750,
+      "sha256": "3845674d3d732883c879706fc437a97ab6f739790e1200bbfe89251cec7e146e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/phase-2-stage-0-output.json",
+      "bytes": 3370789,
+      "sha256": "f3ef9a0112b8ac72e0e949566dd68f2ae21879768992148385035fa240c3604f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/phase-2-stage-1-input.json",
+      "bytes": 3371177,
+      "sha256": "dc9c3e52bcb22eacd5a29f7053db4fccc5edb209aea55461394aea8ad6629e06"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/phase-2-stage-1-output.json",
+      "bytes": 3392468,
+      "sha256": "a5ab05351564cd2802ca64bed4fdfb3b8b2fd9aac755d69d3b773eb912c17bf4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls047/phase-2-stage-1-progress.json",
+      "bytes": 806,
+      "sha256": "c65960d966696577388a6dc4e5ef461bba1971c487460f401d0712c756904861"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls048-candidates.json",
+      "bytes": 12526,
+      "sha256": "7e998625a271cf44ffef73cc10e22c1d282b4608907b428ed4d2a0f786357e32"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls048/BUILD-STATUS.json",
+      "bytes": 632,
+      "sha256": "054cb68a612b90e977cb2265e484c65bac17c063b1c481470e4463b96bde6ff8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls048/BUILD.log",
+      "bytes": 101,
+      "sha256": "fc8fa4ec0e4f3760cb87a2b5668bcdb1f529db09f18890efa55a76a93705207f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls048/COPPER-GEOMETRY.json",
+      "bytes": 3233,
+      "sha256": "f82679b1dcfa00ff02c9af44788456ec721845e1f09435bc9aecfc8a86dff201"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls048/FILLED-COPPER.json",
+      "bytes": 60161,
+      "sha256": "edaf57e024ba9d1d2c45d7dcc3989bd1071e44dcd0309ad4ea9eab2d2d04c4d4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls048/FILLED.log",
+      "bytes": 824,
+      "sha256": "5fd5e1690b7ae262a6c8da5e5cdb10eed97fd0f193214581d39bc94937112bd7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls048/STRICT.log",
+      "bytes": 3233,
+      "sha256": "f82679b1dcfa00ff02c9af44788456ec721845e1f09435bc9aecfc8a86dff201"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls048/circuit.json",
+      "bytes": 3721945,
+      "sha256": "33e0ec2eea131339aaf74aa84c0b9337878cf96278614b802ab49644925dab51"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls048/phase-0-input.json",
+      "bytes": 2645381,
+      "sha256": "0f2b38a30158decf0ca43a4e79fb858e189bb1358b8264af53acf1fcd1f103a7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls048/phase-0-output.json",
+      "bytes": 2793982,
+      "sha256": "71df29806f227671ca1c48155672dbc525c11467ea424e606874a374a1217224"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls048/phase-0-stage-0-input.json",
+      "bytes": 2645381,
+      "sha256": "0f2b38a30158decf0ca43a4e79fb858e189bb1358b8264af53acf1fcd1f103a7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls048/phase-0-stage-0-output.json",
+      "bytes": 2793982,
+      "sha256": "71df29806f227671ca1c48155672dbc525c11467ea424e606874a374a1217224"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls049-candidates.json",
+      "bytes": 21977,
+      "sha256": "b3c2f9216b0a5cd8bf5d65666fa0b4b83322e2893281570ceed2757c46d7b957"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls049/BUILD-STATUS.json",
+      "bytes": 629,
+      "sha256": "c6ad6e5173656d8d3626c323f93022ffce3070e5a8864dab04016924b6d4d883"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls049/BUILD.log",
+      "bytes": 1540,
+      "sha256": "bd5b9df98d1abcc8c5a9417f4b701cd486debb20d3cfecd274b4bf158219cec7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls049/circuit.json",
+      "bytes": 3228514,
+      "sha256": "1b28d9e0e97d83e4a1c56b71c6864c4885dce4bf09f3c318c82190b94ca6005b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls049/phase-0-input.json",
+      "bytes": 2646659,
+      "sha256": "6c5e5d61bc2c284d8ae61cb791ae875387b7193bf7f5e4232cc7e21e7a0273d2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls049/phase-0-stage-0-error.json",
+      "bytes": 2646744,
+      "sha256": "e7a443991d17b36cc92cccd80cc0be5bd354e6a13b71a8b9f1715b3378af25d5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls049/phase-0-stage-0-input.json",
+      "bytes": 2646659,
+      "sha256": "6c5e5d61bc2c284d8ae61cb791ae875387b7193bf7f5e4232cc7e21e7a0273d2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls049/routing-error.json",
+      "bytes": 2646744,
+      "sha256": "e7a443991d17b36cc92cccd80cc0be5bd354e6a13b71a8b9f1715b3378af25d5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls050-candidates.json",
+      "bytes": 21972,
+      "sha256": "57ba330cfbc454c6011ff9fc54e896dddf6efc0c3c9e2f1ec08567ae57e741ff"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls050/BUILD-STATUS.json",
+      "bytes": 632,
+      "sha256": "bf5180bf92561a4be2f0ffcb34e2335c750acc32bcf9338e8bb66c83eb941214"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls050/BUILD.log",
+      "bytes": 1678,
+      "sha256": "59b5791a4c9cbeedb77411733a5fd9e54655d7a94222560bdb93359fde5b7b07"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls050/circuit.json",
+      "bytes": 3228584,
+      "sha256": "83a5a59bf0cd574c223aeb6512b1e3827d24e66cb9944e0e6e41bde62a9e2de8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls050/phase-0-input.json",
+      "bytes": 2646659,
+      "sha256": "6c5e5d61bc2c284d8ae61cb791ae875387b7193bf7f5e4232cc7e21e7a0273d2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls050/phase-0-stage-0-error.json",
+      "bytes": 2646814,
+      "sha256": "ad7c0b1ba936aa58c58d8d56ee9058af61e3ee9f56f96bdbdb87deecf69e0618"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls050/phase-0-stage-0-input.json",
+      "bytes": 2646659,
+      "sha256": "6c5e5d61bc2c284d8ae61cb791ae875387b7193bf7f5e4232cc7e21e7a0273d2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls050/routing-error.json",
+      "bytes": 2646814,
+      "sha256": "ad7c0b1ba936aa58c58d8d56ee9058af61e3ee9f56f96bdbdb87deecf69e0618"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls051-candidates.json",
+      "bytes": 22122,
+      "sha256": "6c4070fb38be1cc9f235dd71706e96df2f98919cccc4d59af4f88f40f1bf2920"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls051/BUILD-STATUS.json",
+      "bytes": 629,
+      "sha256": "16cdaa82d62ed2a1dfbaf5c097b22763bc1902f24543f34fbb219abdef79a390"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls051/BUILD.log",
+      "bytes": 101,
+      "sha256": "38a1af33e0993dcf119566ca5677c666c58b1c55fdbefb84222dde3e5ae34c59"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls051/COPPER-GEOMETRY.json",
+      "bytes": 8144,
+      "sha256": "d3d3448d1aca471a154a1ae7faea95354bb1a46ba60f6ce8e27693a66eb3af8c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls051/FILLED-COPPER.json",
+      "bytes": 63465,
+      "sha256": "87e775e6a248727f40e109696428dd72d66a0ec2bb34bfacf6e7ebebaa8a1654"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls051/FILLED.log",
+      "bytes": 835,
+      "sha256": "36240246946995e423c5edcf0401696fdab4a3dd1a95281c916792223d638751"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls051/STRICT.log",
+      "bytes": 8144,
+      "sha256": "d3d3448d1aca471a154a1ae7faea95354bb1a46ba60f6ce8e27693a66eb3af8c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls051/circuit.json",
+      "bytes": 3729363,
+      "sha256": "c52f23163f31c70da0d08ebe21fbee2a2b6506576cbfc81931a74b1cb590efed"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls051/phase-0-input.json",
+      "bytes": 2677500,
+      "sha256": "86e30a2a34688a1f47c13222c9a53953d372e69edb0eaf103b1e1f608cdce20d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls051/phase-0-output.json",
+      "bytes": 2838893,
+      "sha256": "97c8b34262a347511854f6b5ed706fea57358b1b06e41afa7d75f7c9410ddd57"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls051/phase-0-stage-0-input.json",
+      "bytes": 2677500,
+      "sha256": "86e30a2a34688a1f47c13222c9a53953d372e69edb0eaf103b1e1f608cdce20d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls051/phase-0-stage-0-output.json",
+      "bytes": 2838893,
+      "sha256": "97c8b34262a347511854f6b5ed706fea57358b1b06e41afa7d75f7c9410ddd57"
+    },
+    {
       "path": "evidence/rev-0.0.45-alpha.0/routing/ground027/BUILD-STATUS.json",
       "bytes": 627,
       "sha256": "cb28d7bafbb96bc379a6054c181bd3689fd793f2d1ec37ee78929c23611fdb72"
@@ -29061,6 +29606,1096 @@
       "sha256": "98b858ef94865b5551bd61563c69b953e4188df6b4145e840d59d40999a26104"
     },
     {
+      "path": "evidence/rev-0.0.46-alpha.0/C1570-CADQUERY.json",
+      "bytes": 408,
+      "sha256": "9b7f4fa49bae1753269e076bf5a8e20e8731cfbb82d0a4151d4de0e5bb59b8de"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/C1570-DATASHEET.json",
+      "bytes": 235,
+      "sha256": "da647e24d9114a77e411b1fcd43932efb901ff7b1052d6c8025a2d419359f4c9"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/C1570-OFFICIAL-STOCK.json",
+      "bytes": 3802,
+      "sha256": "1fd74dfab98339c77a33f9e5baaf4d2c65d587325820f9517177b04504756c58"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/C1570.raweasy.json",
+      "bytes": 13760,
+      "sha256": "a74664b6a9ced003e30c050b801c7cb56af55a9c217f4c7b679d6a078780f91b"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CADQUERY-LATEST.json",
+      "bytes": 83867,
+      "sha256": "7ca972fca27ab08edbc2e4186dd6b47367b22883bc92f1d9bccdeba70e67f0db"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CAN-CLOCK-QUALIFICATION.json",
+      "bytes": 1258,
+      "sha256": "bbd8b0d4ae6b35ecfa561395bc83833c6fa3da02920bbd1fd140a26f43b88b2a"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CANONICAL-BUILD.log",
+      "bytes": 20537,
+      "sha256": "f838da20e4eb0135d47cd151d0d27acd80f35a49bdd80f8f5fd92e9aa3f33e56"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CANONICAL-COPPER-GEOMETRY.json",
+      "bytes": 2283,
+      "sha256": "b7b49324a2df0e755a5db0f2c59d77fc1c100e8bc9765b05b169f4d7b86830be"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CANONICAL-FILLED-COPPER.json",
+      "bytes": 68189,
+      "sha256": "8b847f72049a38f0d2c1a4e84dee9bc43c586e8d0e9331e9f45b933812618d48"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CANONICAL-FILLED.log",
+      "bytes": 876,
+      "sha256": "d087613438e4644c6dd21f7269e5b7756712aae7b70487372aeb1b1ada71636b"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CANONICAL-PROGRAMMER.json",
+      "bytes": 5526,
+      "sha256": "fd0b15868ed73de56e4fa379d7c945d3f94346adc5354572fbbd15e1f8bff34e"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CANONICAL-STRICT.log",
+      "bytes": 2283,
+      "sha256": "b7b49324a2df0e755a5db0f2c59d77fc1c100e8bc9765b05b169f4d7b86830be"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CANONICAL-USB-SYMBOL.json",
+      "bytes": 304,
+      "sha256": "9b0b6dc672a6e3380a22426b988fb6b19b60006e35a521851ec9622282208758"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CANONICAL-USB.json",
+      "bytes": 2055,
+      "sha256": "0bc7f3fa65cd9c7a217c0aa12eaa5eaf2a1c1a6dcd2776de026b8415073522ed"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CHECKPOINT.json",
+      "bytes": 1947,
+      "sha256": "bac78105902491eedbf639ba6ee188df9135a398046423b810dd5997068773b6"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CLI-CHECKS.json",
+      "bytes": 707,
+      "sha256": "89e501b4d37829868446b81af56cca7b75f88d3fca817d869cfff1eb7170c1e8"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CLI-netlist.log",
+      "bytes": 33197,
+      "sha256": "b49b58ddfea995291c653094d703772ed13394128c84a6f104668d21df24e4aa"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CLI-pin_specification.log",
+      "bytes": 2866,
+      "sha256": "7a9f8fbde620e2afef9274b643a376179041b665953f9ffdb6acd8ae5806f870"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CLI-placement.log",
+      "bytes": 6648,
+      "sha256": "a8b4ad45cad4ecd9b3133ba43e7662f30368d362b0b8641148cb225d7589cecb"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CLI-schematic-placement.log",
+      "bytes": 545,
+      "sha256": "7e4f622b173d2cd517de72278e6d2cf17c20ecf474c61c06380165af7abad0a1"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CLI-shorts.log",
+      "bytes": 40,
+      "sha256": "c20f4cdf9ff8d90d6bdcfdb559dbb705ed7e5ee595faeab588b1c5cc21d5ef54"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CLI-source.log",
+      "bytes": 528,
+      "sha256": "1a521f5e90f5c6a9b45118c2152faed006f799260e14c4d092b880415abe650e"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CLOUD-SMOKE-SELF-LOG-MISMATCH.log",
+      "bytes": 560,
+      "sha256": "fdb773fc19a8fe33c3d6e106eac4535eea1a2f89ff6106be07ba205d6badd9c8"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/CLOUD-SMOKE.log",
+      "bytes": 434,
+      "sha256": "834e2ab96a83b49775ca476b6b47ecbf120a1e9137dc46302c37664cd5c44b63"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/DRAFT-CHECKS.log",
+      "bytes": 207,
+      "sha256": "b7c19f1395ac4d99d57e1783897bfb1a65aef3a7801516eaeb153a53383e47b3"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/FORMAT.log",
+      "bytes": 322,
+      "sha256": "1cb699b38842930355ac4a76f27c1d5b89a4863b36c9ab083e25d2566a2990dc"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/FRONT-CARRIER-CONTROLS057.json",
+      "bytes": 55567,
+      "sha256": "2d5543f22ce5463712d002fd18d97f5749036e0031a68028278a163a394cea7c"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/FRONT-CARRIER-CONTROLS064.json",
+      "bytes": 54868,
+      "sha256": "b25408434ed31ff6bc82dad0fda3183d77c0ad19fb66d715201338692c1d592a"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/OFFICIAL-JLC-DETAIL.json",
+      "bytes": 176289,
+      "sha256": "dc62c4da6701791836631aa933c4a8612316d4bf613f9f127a0ecf9ae36f15b6"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/OFFICIAL-JLC-PARTS-PRICING.json",
+      "bytes": 91440,
+      "sha256": "f1e6148887eb257dc8f78f3d4b361710e6c7202e7edc6abb76fdacea92e399f6"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/PARTS-COST-BASELINE.json",
+      "bytes": 1050,
+      "sha256": "32c602d51ed3c9229f98e2726f3888ee800ecf8e64c59948c3563f9e9cc6c61d"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/PUBLICATION-CAD-ASSETS.json",
+      "bytes": 498,
+      "sha256": "e0c2f0573d88c32aaf99950fc323bf56f44225d5acec5b11f7f9f9ef5ef8635b"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/REVIEW-BOM.csv",
+      "bytes": 8493,
+      "sha256": "b0123c7bd82e93e187109fbe3a743857df658f0d5263658aff0bfcd7f662b846"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/REVIEW-BOM.json",
+      "bytes": 41116,
+      "sha256": "497c8eacded2c8aa8d3e7fed629f0d2c7332cab7cec41264029b6fad7e7071bc"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/REVIEW-BOM.log",
+      "bytes": 119,
+      "sha256": "a3216d8153aa16563f029af859ed1dcabf7cb6beb84779c335ff90ee90a4c904"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/ROUTING-CHECKPOINT-48.json",
+      "bytes": 640,
+      "sha256": "5616a8c09b704767d18791f17a3d853315b90ce9bbacf67583f64d8b31684540"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/SCHEMATIC-NOTES.json",
+      "bytes": 20299,
+      "sha256": "2327c30b3160a6222eeb2a38fa0ce4dd2ce36dd8c85b4c1eb05d87893452bba4"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/SCHEMATIC-NOTES.log",
+      "bytes": 67,
+      "sha256": "a8fd57f9b7c9402f6fbf9ea186deaa2db71d28c1d51be4d83988fad261771c2b"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/SCHEMATIC-STYLE.json",
+      "bytes": 3124,
+      "sha256": "0c7a352e5ba045f45a802426b6251382139080093fe2ac1a138b15ba93673525"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/SCHEMATIC-STYLE.log",
+      "bytes": 545,
+      "sha256": "7e4f622b173d2cd517de72278e6d2cf17c20ecf474c61c06380165af7abad0a1"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/TYPECHECK.log",
+      "bytes": 15,
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/placement/circuit.json",
+      "bytes": 1846067,
+      "sha256": "e2702c110a7d13f5436d105674a041bfd5f5f848da76bf1d328096d45d871b9a"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/can066/BUILD-STATUS.json",
+      "bytes": 629,
+      "sha256": "42f455637921b147f3f15e4cee9cc0b18e52675adee850aa07fa863b2a8f84e6"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/can066/BUILD.log",
+      "bytes": 351,
+      "sha256": "9f457527264e3180feabea81bdb63e387c4abd1992cb8e46e2cf25414dc9c2c1"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/can066/phase-0-input.json",
+      "bytes": 2650343,
+      "sha256": "47ecccdca3ad0ab3ff1ad5a1f2d6edfc083b9f84b7021780561eea8ebeeb9b10"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/can066/phase-0-output.json",
+      "bytes": 2821595,
+      "sha256": "fe678b4e525ec29631a9451222c6a42bfe9f346e7766754ae9075991b5dea6ed"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/can066/phase-0-stage-0-input.json",
+      "bytes": 2650343,
+      "sha256": "47ecccdca3ad0ab3ff1ad5a1f2d6edfc083b9f84b7021780561eea8ebeeb9b10"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/can066/phase-0-stage-0-output.json",
+      "bytes": 2821595,
+      "sha256": "fe678b4e525ec29631a9451222c6a42bfe9f346e7766754ae9075991b5dea6ed"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/can066/phase-1-input.json",
+      "bytes": 3628712,
+      "sha256": "b0840f4a440d82829d4dc38bfc9962b2bd4d6f6b3aabdf37155e40b796cc0cf7"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/can066/phase-1-progress.json",
+      "bytes": 780,
+      "sha256": "e1858502409025a2e8ea83a8863effb20a345a3dd00bc86ef4ae7ea0b408b243"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/can066/phase-1-stage-0-input.json",
+      "bytes": 3628712,
+      "sha256": "b0840f4a440d82829d4dc38bfc9962b2bd4d6f6b3aabdf37155e40b796cc0cf7"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/can066/phase-1-stage-0-progress.json",
+      "bytes": 780,
+      "sha256": "e1858502409025a2e8ea83a8863effb20a345a3dd00bc86ef4ae7ea0b408b243"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/can067/BUILD-STATUS.json",
+      "bytes": 690,
+      "sha256": "72b9d198a319988b6519214bf3c3ca86923cd9c2c775e49234ca89ea308f4e24"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/can067/BUILD.log",
+      "bytes": 3804,
+      "sha256": "60eb24ed1691237115364435ae3ebe2ec9b497df23a95193b07feb7d56763c25"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/can067/INPUT-PROVENANCE.json",
+      "bytes": 883,
+      "sha256": "1436a1ef4c0fef4f576703234abd506f1077db2654cdc1ca036f20b99045fee0"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/can067/PROGRESS.json",
+      "bytes": 204,
+      "sha256": "ef80630eab3de204b2c9ad524de4eac4a636c4976fa6d92ceb1d03ada1d35436"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock052/BUILD-STATUS.json",
+      "bytes": 634,
+      "sha256": "7d772ba73fd3f41d2d2cffda3b6ff5295e8dad512e52f1478db493c069cfceae"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock052/BUILD.log",
+      "bytes": 574,
+      "sha256": "2a66fa66355681cf66421dad6a882c954cb583acb0ea9536b6acec6e6c2adea6"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock052/phase-0-input.json",
+      "bytes": 2677500,
+      "sha256": "1bc85332c8ca04389a7d54fe127c1c30661b719b9e5512f28470cfd4c6e79876"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock052/phase-0-output.json",
+      "bytes": 2838893,
+      "sha256": "26b7f2a5dcfa7e01f0312382e5eba8afc8979d96f021c52114fbbbef3abc9b89"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock052/phase-0-stage-0-input.json",
+      "bytes": 2677500,
+      "sha256": "1bc85332c8ca04389a7d54fe127c1c30661b719b9e5512f28470cfd4c6e79876"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock052/phase-0-stage-0-output.json",
+      "bytes": 2838893,
+      "sha256": "26b7f2a5dcfa7e01f0312382e5eba8afc8979d96f021c52114fbbbef3abc9b89"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock052/phase-1-input.json",
+      "bytes": 3630286,
+      "sha256": "21e78a02f3dce088e6b0773977dabec7d7a64ddc7a10b1c6a50dce666b62b0ab"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock052/phase-1-progress.json",
+      "bytes": 781,
+      "sha256": "f71ca236b7a081a9a03e5682715d999cf9f29d0096a348e9de55badc98facf7b"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock052/phase-1-stage-0-input.json",
+      "bytes": 3630286,
+      "sha256": "21e78a02f3dce088e6b0773977dabec7d7a64ddc7a10b1c6a50dce666b62b0ab"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock052/phase-1-stage-0-progress.json",
+      "bytes": 781,
+      "sha256": "f71ca236b7a081a9a03e5682715d999cf9f29d0096a348e9de55badc98facf7b"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock053/BUILD-STATUS.json",
+      "bytes": 696,
+      "sha256": "67dde94bbbc4d35c75ef1ef123ea03c9edc7a98e4bdb83b7ea016986a4d35de7"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock053/BUILD.log",
+      "bytes": 4172,
+      "sha256": "053cf017123d1ddd7906cc870305b59f32fb50f428a8cabee599d69a2bfe6b3a"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock053/INPUT-PROVENANCE.json",
+      "bytes": 884,
+      "sha256": "858eb4e820b3abb98a0eade9c5298d53ece695c7fb1ef9b8fa1a235e8f1690e2"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock053/PROGRESS.json",
+      "bytes": 205,
+      "sha256": "e42ea6bb252f99cc5f32b41e2e996b14dfc89b2ad6d9e8a50bf7a28de792758c"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock056-candidates.json",
+      "bytes": 5348,
+      "sha256": "3f03db6a816400982ad3692def6afa35747041d1ec01928591fc893ddba350cb"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock060-candidates.json",
+      "bytes": 3308,
+      "sha256": "d8d51ce5ffb5463bb3615be7e2d2f61418b8ab61f99dce732c5f2498e0dadb86"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock060/BUILD-STATUS.json",
+      "bytes": 627,
+      "sha256": "9993d0424ccf3869ff617f1f390e06cc51ccef8e0d4cb08069803b72fa7c2a86"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock060/BUILD.log",
+      "bytes": 101,
+      "sha256": "15110ce096ffa590879e172bc9b5d246f3d12a5389e720bf88c07b7464321c76"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock060/COPPER-GEOMETRY.json",
+      "bytes": 2541,
+      "sha256": "886b261af9fa6fc8b9772e8e83e458f6b5d8dc775a1505990be827ba71f869a7"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock060/FILLED-COPPER.json",
+      "bytes": 66376,
+      "sha256": "833b8aee5002289aee51411ef6e7747814c922d489f557b5416b8f024c7276f3"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock060/FILLED.log",
+      "bytes": 864,
+      "sha256": "e9381081935c3439033d9f3797aab2d178f8d70fe7b326b28b0d2c869905bfd7"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock060/STRICT.log",
+      "bytes": 2541,
+      "sha256": "886b261af9fa6fc8b9772e8e83e458f6b5d8dc775a1505990be827ba71f869a7"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock060/circuit.json",
+      "bytes": 3723711,
+      "sha256": "b91feb4c49ab2121ae7f6629a8baae0494467398ff9040d96a80c6c6658046d2"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock060/phase-0-input.json",
+      "bytes": 2649596,
+      "sha256": "c0ef47d25f400482ba80dd3ef30c97f2edbf77c348f551876c8c39485875191a"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock060/phase-0-output.json",
+      "bytes": 2816701,
+      "sha256": "f2d8c3abda57a942dd201bb617de47a28d9990e96d44f2134a72715dc4ecf2c5"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock060/phase-0-stage-0-input.json",
+      "bytes": 2649596,
+      "sha256": "c0ef47d25f400482ba80dd3ef30c97f2edbf77c348f551876c8c39485875191a"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock060/phase-0-stage-0-output.json",
+      "bytes": 2816701,
+      "sha256": "f2d8c3abda57a942dd201bb617de47a28d9990e96d44f2134a72715dc4ecf2c5"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock061-candidates.json",
+      "bytes": 3742,
+      "sha256": "cd43930facf94e7a854885b24b489b472e3087db2c2014276ea2c00edfb7dde9"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock061/BUILD-STATUS.json",
+      "bytes": 626,
+      "sha256": "d50a0314012eeb4a9e08b60ccfc2b7be4605a35bdd2bfe842a6516f68f1d31ee"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock061/BUILD.log",
+      "bytes": 101,
+      "sha256": "ea86febff3a7f5dcc9160c41dff830cf34d5f77d7505149e811fc2016e23ef3b"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock061/COPPER-GEOMETRY.json",
+      "bytes": 2317,
+      "sha256": "49313aef5f9050ae223e158b034e1d1eb1469fc74a4d38e221d9163d936379da"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock061/FILLED-COPPER.json",
+      "bytes": 66770,
+      "sha256": "156775deb81750e1490bfd74aecbbe541119be15719bd8d65663027d1e8d6010"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock061/FILLED.log",
+      "bytes": 865,
+      "sha256": "bb3e04183f19b4c5989876529469017919f9c73ac547ccdb621456bae3e61d21"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock061/STRICT.log",
+      "bytes": 2317,
+      "sha256": "49313aef5f9050ae223e158b034e1d1eb1469fc74a4d38e221d9163d936379da"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock061/USB-LENGTHS.json",
+      "bytes": 2089,
+      "sha256": "6c8a3b845369e11d0c0a576c77ab6d12b8e062d65825fca5fd0478ca1d48565d"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock061/USB.log",
+      "bytes": 1789,
+      "sha256": "606c8a3458154ad4604a8667cb514e09e04e7018c123b4c09dc67ed7163487ca"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock061/circuit.json",
+      "bytes": 3767904,
+      "sha256": "b7fe65f4c49ce5c1fb584b5de54eecaa70b3e6b257c4203b6e222c81d419b30d"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock061/phase-0-input.json",
+      "bytes": 2649596,
+      "sha256": "c0ef47d25f400482ba80dd3ef30c97f2edbf77c348f551876c8c39485875191a"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock061/phase-0-output.json",
+      "bytes": 2817021,
+      "sha256": "85c8e5e4d905d7b65249062d57e58dd9292ac76fbe248ae84af5f738c6a5c072"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock061/phase-0-stage-0-input.json",
+      "bytes": 2649596,
+      "sha256": "c0ef47d25f400482ba80dd3ef30c97f2edbf77c348f551876c8c39485875191a"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/clock061/phase-0-stage-0-output.json",
+      "bytes": 2817021,
+      "sha256": "85c8e5e4d905d7b65249062d57e58dd9292ac76fbe248ae84af5f738c6a5c072"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054-candidates.json",
+      "bytes": 22061,
+      "sha256": "a6383f00117bc3657477779b3298f0df7404748b4b60366737a0c6a56bec72f0"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054-previous-saved-paths.json",
+      "bytes": 108761,
+      "sha256": "3b88c338657346b04451c41d0d9b8498076b1dbd7eca35ec638d3e29de7f8d5a"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/BUILD-STATUS.json",
+      "bytes": 632,
+      "sha256": "08b51e2204f08e8a8b0e68a2b8a04d6da6808a3b89ce5a8cd15a0936373067c1"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/BUILD.log",
+      "bytes": 101,
+      "sha256": "01558c082c3f5341ad17f57ce2662dfcdca8a4088d671ea3eb1dc3da84249fcd"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/COPPER-GEOMETRY.json",
+      "bytes": 2544,
+      "sha256": "f22ef19f5210579a39f64dbeb05ee08d09bc3de9932941f64e8b50dc0716675c"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/FILLED-COPPER.json",
+      "bytes": 65183,
+      "sha256": "53d78a052327f4887b6719d0606fc214fabd29a41ea3a6c7c6c260606d012662"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/FILLED.log",
+      "bytes": 835,
+      "sha256": "4ddb24801298bc18472c5cff903477fea0f57eb48beac2087f8e64734bb353b6"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/STRICT.log",
+      "bytes": 2544,
+      "sha256": "f22ef19f5210579a39f64dbeb05ee08d09bc3de9932941f64e8b50dc0716675c"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/bottom.png",
+      "bytes": 151199,
+      "sha256": "598628abe4b58db90168a88af0f25775d2adf4709abd9bd19e25650562927b86"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/bottom.svg",
+      "bytes": 590311,
+      "sha256": "d8fc91ae8948af24df5a0b530439d66654cf10a03f1cb5cc89c15bf60ba6f68b"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/circuit.json",
+      "bytes": 3791965,
+      "sha256": "f8e5f4ed783fa805ace579408d6f3bc6ad76be20fb9f3fd2b09a2e15467344bb"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/inner1.png",
+      "bytes": 84167,
+      "sha256": "031f030fde11695581b6a769481a6e1e0c7914989421915ee313942fffe43c5d"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/inner1.svg",
+      "bytes": 189537,
+      "sha256": "150b69d756ed4a27e55f27502e7d108ab2eddd30306527b5e9812d03f8916034"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/inner2.png",
+      "bytes": 69337,
+      "sha256": "3e2feb35a1dcd4a4a9506e3cd2dcfce0139b34a9cf268101348046e84e5648a2"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/inner2.svg",
+      "bytes": 85549,
+      "sha256": "5bf9ea71543eb967f44f47be8273fa6ab3e0c3b9dda7938390b99ca3c4422c5b"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/phase-0-input.json",
+      "bytes": 2677502,
+      "sha256": "a0a5d1ddded6fedb39fc1809c08a3fa17468503b5cf98a309af72bf6d6006770"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/phase-0-output.json",
+      "bytes": 2840708,
+      "sha256": "c106fb9fd552e7e282b9666a7b477ffaaea6497cb95895828c5286b3f99c851b"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/phase-0-stage-0-input.json",
+      "bytes": 2677502,
+      "sha256": "a0a5d1ddded6fedb39fc1809c08a3fa17468503b5cf98a309af72bf6d6006770"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/phase-0-stage-0-output.json",
+      "bytes": 2840708,
+      "sha256": "c106fb9fd552e7e282b9666a7b477ffaaea6497cb95895828c5286b3f99c851b"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/top.png",
+      "bytes": 149782,
+      "sha256": "57a99544203dbd21da14134a502ccbfd93e9e61fbb1a6f630ec01a6974ed43cf"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls054/top.svg",
+      "bytes": 559060,
+      "sha256": "e635caddcb983f2b951b48b335b51e9b3d87417f94b5127d6bdcc5163a264429"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls055-candidates.json",
+      "bytes": 22235,
+      "sha256": "4f8067b7e69acb0e5e69634b6ad8fc7323908151eb225dd8afbf6c474366734e"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls055/BUILD-STATUS.json",
+      "bytes": 631,
+      "sha256": "9b6671d14d98a4beca61f4e1264003d720e889d5706a3fd0dcd4fbd57fd999c1"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls055/BUILD.log",
+      "bytes": 46,
+      "sha256": "4345ac0dfbb61673e42476a5a5c6a99cbc04a40305ce6f601a51fc029400f9b2"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls055/COPPER-GEOMETRY.json",
+      "bytes": 1701,
+      "sha256": "a53920ae6bdb86ce3ff76e96c18ee7a80d9451baa62a861c781ca9241fa458c2"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls055/FILLED-COPPER.json",
+      "bytes": 70382,
+      "sha256": "645f6dd7405469b5c0c116f6c5355c31495c55c79b631630d934d319f75d9d1f"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls055/FILLED.log",
+      "bytes": 837,
+      "sha256": "056d3c80ad0ec3e3204f65cecfd72ad85e0e55e4e2ac2ed1d285a2d533ad3b9a"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls055/STRICT.log",
+      "bytes": 1701,
+      "sha256": "a53920ae6bdb86ce3ff76e96c18ee7a80d9451baa62a861c781ca9241fa458c2"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls055/circuit.json",
+      "bytes": 3235000,
+      "sha256": "0baeb8e9c2948f67b09220d95851f2f6750ca0bf3cb992e15fa3a02b756b4ee7"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls056-candidates.json",
+      "bytes": 27553,
+      "sha256": "274ea512f524e68c08d355c3b7beafbba72b620d5738efacc1dae703c28bb31b"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls056/BUILD-STATUS.json",
+      "bytes": 632,
+      "sha256": "4d44de0e9096902cfc145b3d9773f6b847456bb6d91e65922b87faf364814893"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls056/BUILD.log",
+      "bytes": 101,
+      "sha256": "5bc7e18ef939e5130d58fa0f90f94a8ff1e3974f35a3be4bc1e7ce8841b52026"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls056/COPPER-GEOMETRY.json",
+      "bytes": 4174,
+      "sha256": "949befc8a8f5e58a369a0bcf298ba7ec30d8922a77ad0077bd1c64f882cb4203"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls056/FILLED-COPPER.json",
+      "bytes": 12178,
+      "sha256": "b7ee54f1b6cdce199dfa37cf1e174327c1e8745ee5a9014bd7d7d0a6b3c091ff"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls056/FILLED.log",
+      "bytes": 97,
+      "sha256": "a7a404c66589fb895085ebca5f6c07135836621f0f0f51c1c35afa604843b84e"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls056/STRICT.log",
+      "bytes": 4174,
+      "sha256": "949befc8a8f5e58a369a0bcf298ba7ec30d8922a77ad0077bd1c64f882cb4203"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls056/USB-LENGTHS.json",
+      "bytes": 2092,
+      "sha256": "51c66a86bf5e8bb25a07e99ece115f2e9011fd274c6390d59136220cc7a7f08a"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls056/circuit.json",
+      "bytes": 3802625,
+      "sha256": "be6bb1f9be4f03bc6eb2aad4ceb470db3bc1e430fe9f46ce0979fe3097efff52"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls056/phase-0-input.json",
+      "bytes": 2710670,
+      "sha256": "208a566c86b114f5e8727a7b190a2ff1423cbb4c0a8bdb31b60ea28c1a0bb2d5"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls056/phase-0-output.json",
+      "bytes": 2880618,
+      "sha256": "2ae3ebe2fadd7ded21939fceb6758d19c2639b4dbafe9205797001bbe4f63d2f"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls056/phase-0-stage-0-input.json",
+      "bytes": 2710670,
+      "sha256": "208a566c86b114f5e8727a7b190a2ff1423cbb4c0a8bdb31b60ea28c1a0bb2d5"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls056/phase-0-stage-0-output.json",
+      "bytes": 2880618,
+      "sha256": "2ae3ebe2fadd7ded21939fceb6758d19c2639b4dbafe9205797001bbe4f63d2f"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls057/BUILD-STATUS.json",
+      "bytes": 632,
+      "sha256": "0ec69d6b83f39db53043160cb7aaa4a687c6c2a0733d6ffb88802e71a906e607"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls057/BUILD.log",
+      "bytes": 101,
+      "sha256": "c3dbd8e319bf0d132d6ed7080bc6ffc9e88957c5499af4f9d462829debecd757"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls057/COPPER-GEOMETRY.json",
+      "bytes": 2320,
+      "sha256": "b551cad7795ca81bf75e05358d5e3f666fbc5ec417eb0f89a266588bf9889bbe"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls057/FILLED-COPPER.json",
+      "bytes": 65223,
+      "sha256": "29e9f16285676ddc92c56ab4d0ea6102fddbb4460cc0832e840fb0c8398236e8"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls057/FILLED.log",
+      "bytes": 835,
+      "sha256": "c28a1ab1f923a731457e011d2167ff439d0d273607a868d9d49273d91017fa3f"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls057/STRICT.log",
+      "bytes": 2320,
+      "sha256": "b551cad7795ca81bf75e05358d5e3f666fbc5ec417eb0f89a266588bf9889bbe"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls057/circuit.json",
+      "bytes": 3749664,
+      "sha256": "b3f589104cfda508a98dbcb4d4c6bce071ecde110d38da6791b559d0a04a41d3"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls057/phase-0-input.json",
+      "bytes": 2708841,
+      "sha256": "01c4158a161288d10886fc63b7bbc247d0d33b8be0cb56bd643512a2a0886b05"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls057/phase-0-output.json",
+      "bytes": 2872035,
+      "sha256": "179555b5887bb4049da2a2d5c20ec003cde2a494b7e79b8f5e9522dcb1e1d814"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls057/phase-0-stage-0-input.json",
+      "bytes": 2708841,
+      "sha256": "01c4158a161288d10886fc63b7bbc247d0d33b8be0cb56bd643512a2a0886b05"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls057/phase-0-stage-0-output.json",
+      "bytes": 2872035,
+      "sha256": "179555b5887bb4049da2a2d5c20ec003cde2a494b7e79b8f5e9522dcb1e1d814"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls058/BUILD-STATUS.json",
+      "bytes": 631,
+      "sha256": "296ae18600840c11cc86e66a4161af14bfc54e97dcd2ec878d1cb271ee021f9a"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls058/BUILD.log",
+      "bytes": 950,
+      "sha256": "407f29851c4cd968e46eaad102d29a7013773f5d83626d3e6b0b008d833e79b3"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls058/circuit.json",
+      "bytes": 3233638,
+      "sha256": "3c0972a9d6af266f4bcc24ef7e4efed47c661b7eafeb0473d6f53b55dd442a7f"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls058/phase-0-input.json",
+      "bytes": 2708841,
+      "sha256": "515394fcb46f090668750740c1c3a0e918ade8e0df7d9970f476563a610720ab"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls058/phase-0-output.json",
+      "bytes": 2872035,
+      "sha256": "d757ce90d0700b07176b4af264246038790aa3d989263a055df1b0c107f387d6"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls058/phase-0-stage-0-input.json",
+      "bytes": 2708841,
+      "sha256": "515394fcb46f090668750740c1c3a0e918ade8e0df7d9970f476563a610720ab"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls058/phase-0-stage-0-output.json",
+      "bytes": 2872035,
+      "sha256": "d757ce90d0700b07176b4af264246038790aa3d989263a055df1b0c107f387d6"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls058/phase-1-input.json",
+      "bytes": 3651208,
+      "sha256": "5b7cfc01fe672c391c8ea49d727abe1a1541e235ae556c77e833cc7ee02ee14a"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls058/phase-1-progress.json",
+      "bytes": 772,
+      "sha256": "04a398b549e2eeb1ddcfa3c246f8229bfef3ab82f71bbb9f0a65e8c2b586fe5e"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls058/phase-1-stage-0-error.json",
+      "bytes": 3651298,
+      "sha256": "c3e11dda194de587fd09a3836a94845da79c85baa880fcb974da51a2b3b2ca5c"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls058/phase-1-stage-0-input.json",
+      "bytes": 3651208,
+      "sha256": "5b7cfc01fe672c391c8ea49d727abe1a1541e235ae556c77e833cc7ee02ee14a"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls058/phase-1-stage-0-progress.json",
+      "bytes": 772,
+      "sha256": "04a398b549e2eeb1ddcfa3c246f8229bfef3ab82f71bbb9f0a65e8c2b586fe5e"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls058/routing-error.json",
+      "bytes": 3651298,
+      "sha256": "c3e11dda194de587fd09a3836a94845da79c85baa880fcb974da51a2b3b2ca5c"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls059/BUILD-STATUS.json",
+      "bytes": 694,
+      "sha256": "bdaca33d61c58dfd4efb268e129a15f663b7483176012855cb9cce7bd1d61139"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls059/BUILD.log",
+      "bytes": 1791,
+      "sha256": "b89fc56e6653cd9f3f25efd1dde2f9254098891723986c96c5223e50fbf6df9e"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls059/INPUT-PROVENANCE.json",
+      "bytes": 887,
+      "sha256": "323df68a8d19b5073775dec2685fd47c5418a0be87ad45787393cf88d3750827"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls059/PROGRESS.json",
+      "bytes": 367,
+      "sha256": "781735a20179c1453285ec98c1d0e9403840e9109090008301c079de34dd9bb6"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls062-candidates.json",
+      "bytes": 6922,
+      "sha256": "3106cf5690a4e4c8e3c49dd9b9b079e967d2a14ae1e73726026b132609d08461"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls062-previous-saved-paths.json",
+      "bytes": 131854,
+      "sha256": "76cde04d7c595faf4bfd435d8527c3ecad6888c526b5119bad07e958733f2290"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls062/BUILD-STATUS.json",
+      "bytes": 627,
+      "sha256": "3db05fbfa18b46467a1f0e2b4a34d3ec76da5ad98347842a3ccc6d40fa5905b0"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls062/BUILD.log",
+      "bytes": 101,
+      "sha256": "eb08a2959dff15a8b3c5b8a03c42b0f7cc51e8b3e57482d1191c6b48171d3ef5"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls062/circuit.json",
+      "bytes": 3745040,
+      "sha256": "6a55eb029c34dcdf212e672bbddf7061d15ceb5bd4f4a8ce000a4f4f725d8728"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls062/phase-0-input.json",
+      "bytes": 2681414,
+      "sha256": "b67fbab8fd88990bd8460911dbfcbb0342f6d4275c561953aabbefeebc25aecd"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls062/phase-0-output.json",
+      "bytes": 2852990,
+      "sha256": "f5706e5134cf113172f5497602fd43f5e628abdef8a44b20497399c4a37f5d88"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls062/phase-0-stage-0-input.json",
+      "bytes": 2681414,
+      "sha256": "b67fbab8fd88990bd8460911dbfcbb0342f6d4275c561953aabbefeebc25aecd"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls062/phase-0-stage-0-output.json",
+      "bytes": 2852990,
+      "sha256": "f5706e5134cf113172f5497602fd43f5e628abdef8a44b20497399c4a37f5d88"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls063-candidates.json",
+      "bytes": 6906,
+      "sha256": "8f18681cc1b0e056afccd4486c9b717e5b0aff8f5dca26f8d50f99749207c145"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls063/BUILD-STATUS.json",
+      "bytes": 631,
+      "sha256": "d6beea3560738522992ec0c32ca03a2f213dba75b9ec27da9eb57352a775deb3"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls063/BUILD.log",
+      "bytes": 101,
+      "sha256": "443465aafb7c5ead8a253068bf8e59ae7fd4e83027e639d3fd9a0d64220968ac"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls063/circuit.json",
+      "bytes": 3736417,
+      "sha256": "f5d0f04949eab99cbe982e1cb33dc6d0142f9ad82360b027276ad7a4e39029c3"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls063/phase-0-input.json",
+      "bytes": 2650343,
+      "sha256": "3b70602325e7e67161ccd5f53a7ce32e2052d581894c1a1888b1f721cd9dfe9d"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls063/phase-0-output.json",
+      "bytes": 2821585,
+      "sha256": "01ded9ab11bb3fff8f7a55ec2eda9db68f1f4de33828093b024fc826d6c8f2cb"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls063/phase-0-stage-0-input.json",
+      "bytes": 2650343,
+      "sha256": "3b70602325e7e67161ccd5f53a7ce32e2052d581894c1a1888b1f721cd9dfe9d"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls063/phase-0-stage-0-output.json",
+      "bytes": 2821585,
+      "sha256": "01ded9ab11bb3fff8f7a55ec2eda9db68f1f4de33828093b024fc826d6c8f2cb"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls064-candidates.json",
+      "bytes": 7222,
+      "sha256": "1dd0b07fd738acca019046c1e864602a2fd39525e1441f81b0084983ebed5d96"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls064/BUILD-STATUS.json",
+      "bytes": 632,
+      "sha256": "38ccfc85389cad0a245b311fdf9536ecc03ea5c5bedb22dfd8e0fdf36e858e71"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls064/BUILD.log",
+      "bytes": 101,
+      "sha256": "8a712073b3309508e60bf8f142e2d54f3595a76660318531e5de9ae83484d266"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls064/COPPER-GEOMETRY.json",
+      "bytes": 2546,
+      "sha256": "c6f74ca27aaf846ef63ccd29b3b094b46ea42f6c3c2bd89199877454634889c9"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls064/FILLED-COPPER.json",
+      "bytes": 68225,
+      "sha256": "3ff45073e0dd44cb41c6082e536a026a206627c18789bb263271e48f875847dd"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls064/FILLED.log",
+      "bytes": 876,
+      "sha256": "143c295c1f0b6a8ddb4648655cadfd1f0556ed386021d02b1408bf92797c04ad"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls064/STRICT.log",
+      "bytes": 2546,
+      "sha256": "c6f74ca27aaf846ef63ccd29b3b094b46ea42f6c3c2bd89199877454634889c9"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls064/USB-LENGTHS.json",
+      "bytes": 2092,
+      "sha256": "f9bd61cf197beabc24e67fc4f13ceea0fb76e3930b56e27dea7a4fc0bfdf9e48"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls064/USB.log",
+      "bytes": 1792,
+      "sha256": "707dad8da532625aed5eb9ce686df151991634b9c02916075eed970cfdaef245"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls064/circuit.json",
+      "bytes": 3736198,
+      "sha256": "1c9d1bff629997d86286fbb5eebc202a60de9b3c56e03897097f98aa6072a8ac"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls064/phase-0-input.json",
+      "bytes": 2650343,
+      "sha256": "3b70602325e7e67161ccd5f53a7ce32e2052d581894c1a1888b1f721cd9dfe9d"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls064/phase-0-output.json",
+      "bytes": 2821595,
+      "sha256": "48fbfb00c81c0ac1d1b4dcc4de7f32bbfa3e36322476b97c25bd25c0df6718f8"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls064/phase-0-stage-0-input.json",
+      "bytes": 2650343,
+      "sha256": "3b70602325e7e67161ccd5f53a7ce32e2052d581894c1a1888b1f721cd9dfe9d"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls064/phase-0-stage-0-output.json",
+      "bytes": 2821595,
+      "sha256": "48fbfb00c81c0ac1d1b4dcc4de7f32bbfa3e36322476b97c25bd25c0df6718f8"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065-previous-saved-paths.json",
+      "bytes": 131686,
+      "sha256": "08b24a857851d575efab9ca01f62acb7cd75bdb418ba9225bfea1d97177c5c1d"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/BUILD-STATUS.json",
+      "bytes": 632,
+      "sha256": "20fa6485319073140a536348848b7faeb782cc10d1a9b35359cc4c21f6b3e3ab"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/BUILD.log",
+      "bytes": 101,
+      "sha256": "8a712073b3309508e60bf8f142e2d54f3595a76660318531e5de9ae83484d266"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/COPPER-GEOMETRY.json",
+      "bytes": 2320,
+      "sha256": "d64b5bddf0d50d47fe4fce0996793ef9034191223f1492598ea01e67199ff654"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/FILLED-COPPER.json",
+      "bytes": 68226,
+      "sha256": "d57c2e0abed9a415caa9c7a03a08af7e8f486f2ac164e598a757df06587d62d1"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/FILLED.log",
+      "bytes": 876,
+      "sha256": "143c295c1f0b6a8ddb4648655cadfd1f0556ed386021d02b1408bf92797c04ad"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/STRICT.log",
+      "bytes": 2320,
+      "sha256": "d64b5bddf0d50d47fe4fce0996793ef9034191223f1492598ea01e67199ff654"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/bottom.png",
+      "bytes": 152420,
+      "sha256": "67523f6049e6fcecdbebe9722ae34e7db5fa289e56d67797f0b032152d2d8dbd"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/bottom.svg",
+      "bytes": 596713,
+      "sha256": "1be7afdb7a11957cec87a7eb20d59e5f8a7c70d5b8343e8c91e01a378ecbb18f"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/circuit.json",
+      "bytes": 3736785,
+      "sha256": "f9c6b584541e1994a35d297ac1cb753cad5c9e44e6f448d7c9d0b25d3b694953"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/inner1.png",
+      "bytes": 85533,
+      "sha256": "5fd84957861284b4c36e56e604bfbfd8b6eb1acd22d8cbfd393474aa69847654"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/inner1.svg",
+      "bytes": 195275,
+      "sha256": "3de6244c0d9c2705558775b9377540bfa2753506c6bc849c9da534033aca1053"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/inner2.png",
+      "bytes": 70769,
+      "sha256": "c44d5081c8471846d56ad0e045e6051bbb6033b183a87dc856a907bbb4067401"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/inner2.svg",
+      "bytes": 88162,
+      "sha256": "37d57b9fc0b8c85994e5fec0120bf5f61dfcf0dd0948835cdbc3b022481c4fc9"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/phase-0-input.json",
+      "bytes": 2650343,
+      "sha256": "3b70602325e7e67161ccd5f53a7ce32e2052d581894c1a1888b1f721cd9dfe9d"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/phase-0-output.json",
+      "bytes": 2821595,
+      "sha256": "ed327fbb976a309354c579024ea1ff4331164408fdf967554ff434e7cc2481f9"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/phase-0-stage-0-input.json",
+      "bytes": 2650343,
+      "sha256": "3b70602325e7e67161ccd5f53a7ce32e2052d581894c1a1888b1f721cd9dfe9d"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/phase-0-stage-0-output.json",
+      "bytes": 2821595,
+      "sha256": "ed327fbb976a309354c579024ea1ff4331164408fdf967554ff434e7cc2481f9"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/top.png",
+      "bytes": 150131,
+      "sha256": "dc54b5e83e40d8925a795affd0f3793e2417340b8b3f9031151c3080123122bb"
+    },
+    {
+      "path": "evidence/rev-0.0.46-alpha.0/routing/controls065/top.svg",
+      "bytes": 552200,
+      "sha256": "2de0815220167545205ac5e64b0f6f324916d1610da59c92098ee03557368173"
+    },
+    {
       "path": "evidence/rev-0.0.5-alpha.0/BLOCKER-RECHECK.md",
       "bytes": 3786,
       "sha256": "ddd0e1ba69ae3a6b296e933f8517d8567bc1a5803f7f39cb75f907cf158336aa"
@@ -30911,6 +32546,21 @@
       "sha256": "32785709516529b51131fbe22dc81adece6e6f7ec99287868fd70ec293c3023a"
     },
     {
+      "path": "imports/A_0402CG300J500NT/A_0402CG300J500NT.obj",
+      "bytes": 55992,
+      "sha256": "11ff3d0e00ddf06caa7ba9e7a4127aa407425d2dbeb9d33203f865f52a44590d"
+    },
+    {
+      "path": "imports/A_0402CG300J500NT/A_0402CG300J500NT.step",
+      "bytes": 1481985,
+      "sha256": "b49e77a39a55d45c078607d8c791cc5521719fc0140e660f44a3e122fe57af14"
+    },
+    {
+      "path": "imports/A_0402CG300J500NT/A_0402CG300J500NT.tsx",
+      "bytes": 2818,
+      "sha256": "5fe6e794256c14552ad730c51880593bfda58c6285400698878827588e80dfe9"
+    },
+    {
       "path": "imports/A_0402WGF0000TCE/A_0402WGF0000TCE.obj",
       "bytes": 18730,
       "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
@@ -32163,7 +33813,7 @@
     {
       "path": "mechanical/check-front-carrier.py",
       "bytes": 7742,
-      "sha256": "9626f5e5bca530b0a74722696e69ace8afe2be8f8fe3b492366f5430e2ce3b9b"
+      "sha256": "eb2c2292d0221a103d01df1710f13a8eb0184d518f57857d6c6d03d797800d0e"
     },
     {
       "path": "mechanical/check-mating-envelopes.py",
@@ -32232,8 +33882,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 4464,
-      "sha256": "7b5d01cf6e6408853735307e6b99da7ef40e6b7f5de6bb3fcf56ef6e41620507"
+      "bytes": 4435,
+      "sha256": "2c50f7bf72cc4464750fee95ed401fa39f1be3f1dc44d029983d2061fffa44a5"
     },
     {
       "path": "references/AP63203.pdf",
@@ -32409,6 +34059,11 @@
       "path": "references/USER-BRIEF.md",
       "bytes": 12473,
       "sha256": "6c55902f9fe4852a9d793129ba4c4bf271deb78943aad5a7b9c682df11fef445"
+    },
+    {
+      "path": "references/capacitors/C1570.pdf",
+      "bytes": 3187974,
+      "sha256": "705023d3be0454148a96fc2715d249a32d8ff442e70b64d1116d3490ed1d8136"
     },
     {
       "path": "references/capacitors/Panasonic-FP-2025.pdf",
@@ -32737,8 +34392,8 @@
     },
     {
       "path": "scripts/check-draft-connectivity.mjs",
-      "bytes": 16763,
-      "sha256": "f6bce0de63003f9fc85bf4baf4bf301ada173939c5ae0ebdd1b03fc24ebe0cc4"
+      "bytes": 17503,
+      "sha256": "eadb87792db6c459b8dd0cb5a4955bf4141bdffae5f60c9c5a5275b916dacbda"
     },
     {
       "path": "scripts/check-fabrication-width-tolerance.py",
@@ -32768,7 +34423,7 @@
     {
       "path": "scripts/check-mechanical-assembly.mjs",
       "bytes": 4093,
-      "sha256": "2a9a715d0043601acee2709e3de21f459f1d6e43024cab975e2b4ccd97c98530"
+      "sha256": "30eb9b9fdb628acaa5e2bd4f1384222535351e7e53f6db3f0b25d1b1988600d6"
     },
     {
       "path": "scripts/check-motor-connector-footprint.mjs",
@@ -32823,7 +34478,7 @@
     {
       "path": "scripts/check-schematic-notes.mjs",
       "bytes": 3973,
-      "sha256": "15e29a351e0237d6c5edf887bc9fcef2c6d2798293deecc125d48d75fe6fb6a7"
+      "sha256": "0c67d974376df4e37cfc5a33ba947eecc472f1d604126ee0e72138ed98db5e3d"
     },
     {
       "path": "scripts/check-schematic-preservation.py",
@@ -32907,8 +34562,8 @@
     },
     {
       "path": "scripts/generate-review-bom.mjs",
-      "bytes": 2636,
-      "sha256": "6a365fc16b525827022400ca8ccd736ec400b36c46ec1eae2d96cc07e172644b"
+      "bytes": 2677,
+      "sha256": "e723d1930899d0aa35985de17444827bfb683ee0402d1b2f47d6e3169396c936"
     },
     {
       "path": "scripts/ground-plane-trial.circuit.tsx",
@@ -33181,6 +34836,46 @@
       "sha256": "b957320c73d0c34a4cd803dce1fa35c5be6b050a535e67db6f134de0e5c9ea86"
     },
     {
+      "path": "scripts/native45-controls043.circuit.tsx",
+      "bytes": 476,
+      "sha256": "5c2f4c647fe1b3905e1af8d8747bb94020b56cb3eb0a7923cf088c3270776cc1"
+    },
+    {
+      "path": "scripts/native45-controls045.circuit.tsx",
+      "bytes": 480,
+      "sha256": "c12f9835c070e72dd1edc852917afe947b17b607470ba92c2ea889d188bd2997"
+    },
+    {
+      "path": "scripts/native45-controls046.circuit.tsx",
+      "bytes": 475,
+      "sha256": "4ca8db9fff34dc9e16a2fee76764947da8e220dfc1f4aa18e53aaed347673cdd"
+    },
+    {
+      "path": "scripts/native45-controls047.circuit.tsx",
+      "bytes": 480,
+      "sha256": "806904c7c3ba801d26b27d97530a04c466c995eaa44a96497a3c3bb45dbdb3ff"
+    },
+    {
+      "path": "scripts/native45-controls048.circuit.tsx",
+      "bytes": 475,
+      "sha256": "dc91eed2fe4497f334a7ae76e9e6e06890a0a54c0dbe13ea4f2e8dd858ddece1"
+    },
+    {
+      "path": "scripts/native45-controls049.circuit.tsx",
+      "bytes": 475,
+      "sha256": "e3360a2fb49e3f7e2004277d5b3bf65d8b4005448a3bbfdb9a78fcd3c9cb83d5"
+    },
+    {
+      "path": "scripts/native45-controls050.circuit.tsx",
+      "bytes": 475,
+      "sha256": "854faa53008fa3a5359802ccebbcc4a03caa883b777acd425bce9209a2b4ae04"
+    },
+    {
+      "path": "scripts/native45-controls051.circuit.tsx",
+      "bytes": 475,
+      "sha256": "60d1d86e063a4c69c995a3dd4942223b3de80ed2340c1f257714a8b881e1786c"
+    },
+    {
       "path": "scripts/native45-ground027.circuit.tsx",
       "bytes": 320,
       "sha256": "a7932d48bdea9a302be77bd8f643bca7fdaaa38f03e93b1ced6e3cdbab317ff8"
@@ -33324,6 +35019,71 @@
       "path": "scripts/native45-usb024.circuit.tsx",
       "bytes": 561,
       "sha256": "d76f615423c2cff56134114634d6ffd835c7896f045dc67dafd48257f18d9402"
+    },
+    {
+      "path": "scripts/native46-can066.circuit.tsx",
+      "bytes": 347,
+      "sha256": "2ec1e6301e87155ed1864098b2175173bc8665c7d5237eac55fe8ece73a3020b"
+    },
+    {
+      "path": "scripts/native46-clock052.circuit.tsx",
+      "bytes": 621,
+      "sha256": "bd948eb49d963bd8f65187ace84d7c591468f330681b6aef8977d89cc8484d3d"
+    },
+    {
+      "path": "scripts/native46-clock060.circuit.tsx",
+      "bytes": 469,
+      "sha256": "e948ed52e420c66965816906ab2523b852c1b84026548c5dc06116c8a63f91d0"
+    },
+    {
+      "path": "scripts/native46-clock061.circuit.tsx",
+      "bytes": 469,
+      "sha256": "34a110bb3777d514487cd54abd3dcb8f3fa006005f126e2d0138c4b05580f67b"
+    },
+    {
+      "path": "scripts/native46-controls054.circuit.tsx",
+      "bytes": 475,
+      "sha256": "c9db6fb7d7d94fdc0a611c8d2c8997064a36ad34c3411645d8d10bf9b472e1af"
+    },
+    {
+      "path": "scripts/native46-controls055.circuit.tsx",
+      "bytes": 475,
+      "sha256": "ea03daf2baea1e3e2f482508da6bf6b6028ca279a13b9b2cc132b8185e2f2474"
+    },
+    {
+      "path": "scripts/native46-controls056.circuit.tsx",
+      "bytes": 475,
+      "sha256": "9737caa5979aee56a9d7cfe40ce872d1082f24787b6bff34861e418d76cd0b02"
+    },
+    {
+      "path": "scripts/native46-controls057.circuit.tsx",
+      "bytes": 475,
+      "sha256": "578e1b88b7c59d13192dc41731e400845b22847ae84b4935d5a37f5b50989052"
+    },
+    {
+      "path": "scripts/native46-controls058.circuit.tsx",
+      "bytes": 341,
+      "sha256": "ee71e095cd7cccd35f503820a5d631bbbaebaa71b5d4e091be81ea46d5dc95ce"
+    },
+    {
+      "path": "scripts/native46-controls062.circuit.tsx",
+      "bytes": 475,
+      "sha256": "b7a372af75239c5a6172d5e817ae6b69d51fa408d8bcf0b79ab90e28a327642c"
+    },
+    {
+      "path": "scripts/native46-controls063.circuit.tsx",
+      "bytes": 475,
+      "sha256": "bf0984514eeb2289be27462a1c5469fd20b5c25c4c0cc2ff52ed7bf149578c67"
+    },
+    {
+      "path": "scripts/native46-controls064.circuit.tsx",
+      "bytes": 475,
+      "sha256": "9775c971c9a7c686aa06b7ca76a3e11429e7aa5e66361355ceee004eff5422a7"
+    },
+    {
+      "path": "scripts/native46-controls065.circuit.tsx",
+      "bytes": 475,
+      "sha256": "4bc36676ce26083279e91a5c6ebbda282bf0d9ab42673a9880d782194100994e"
     },
     {
       "path": "scripts/outer-ground-islands.circuit.tsx",
@@ -33992,13 +35752,13 @@
     },
     {
       "path": "src/SmartNema14MotorController.tsx",
-      "bytes": 21968,
-      "sha256": "f79568c42fcddd49ce74a45ad03976250d2dd41d0033d10200d4fa2f8ad0cb4b"
+      "bytes": 22015,
+      "sha256": "c3293409b04a2c1cce7223023e591df07ede1fb28550919256bae12e42e0c707"
     },
     {
       "path": "src/can/CanSheet.tsx",
-      "bytes": 5765,
-      "sha256": "729ae99781ea24acdd12a603d6800b5fd4f6be0795e894ff8503d87c680a0683"
+      "bytes": 5267,
+      "sha256": "66fdc5cd4f196e6d7820b80741eea9dfe605a3d42451e61554bf3977e3e69d85"
     },
     {
       "path": "src/interfaces/I2cSheet.tsx",
@@ -34037,8 +35797,8 @@
     },
     {
       "path": "src/mechanics/preview-placement.ts",
-      "bytes": 10061,
-      "sha256": "e15b47a25147ba63b0853141628246ac466872bd91101b70a03f6d43f5da34ce"
+      "bytes": 9902,
+      "sha256": "281973de2ebb061e9e50f3cc623d3a318de57a6d476449e34abb68d271cbded6"
     },
     {
       "path": "src/mechanics/selected-motor.ts",
@@ -34087,8 +35847,8 @@
     },
     {
       "path": "src/routing/GroundReturnPlanes.tsx",
-      "bytes": 1264,
-      "sha256": "3cf1d9e4517ba4bb9d48f9efa95f8cb767349309b329ad2df49bc473d5b4c746"
+      "bytes": 1397,
+      "sha256": "f3e93da7d4faca25a32b0602b7af5fa6e0b7391c621598af72b1bafcbe5fe326"
     },
     {
       "path": "src/routing/GroundReturns.tsx",
@@ -34222,8 +35982,8 @@
     },
     {
       "path": "src/routing/rev45-saved-paths.json",
-      "bytes": 104889,
-      "sha256": "8bcbef40ea2d1335f3753401903e2ef86ff0d1dd5cea85367a440b549f1f63c2"
+      "bytes": 138065,
+      "sha256": "788bac9d76c0a3fb01085b3dbd3ed0c2599d98127baaaed7e1aae79068a568fe"
     },
     {
       "path": "src/routing/rtn-return-trial.json",
@@ -34262,8 +36022,8 @@
     },
     {
       "path": "src/schematic/ComponentNotes.tsx",
-      "bytes": 9378,
-      "sha256": "006c8788dae3ff198c6d5a070226973341fab8b32f9d50c6d20d4173cd2a3dbc"
+      "bytes": 9238,
+      "sha256": "6094bb26bfce41a2bf4b3ed8019ae6ca046fddedd4c1bec09b1c23cf4c7fb1e2"
     },
     {
       "path": "src/usb-pd/StandardUsbCConnector.tsx",

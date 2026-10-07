@@ -25,11 +25,11 @@ glb = json.loads(glb_bytes[20:20 + json_length])
 binary_offset = 20 + json_length + 8
 sources = {entry["source_component_id"]: entry["name"] for entry in circuit if entry["type"] == "source_component"}
 components = [entry for entry in circuit if entry["type"] == "pcb_component"]
-assert len(components) == 149
+assert len(components) == 147
 dnp = [entry for entry in components if entry.get("do_not_place")]
 assert [sources[entry["source_component_id"]] for entry in dnp] == ["R50"]
 fitted_components = [entry for entry in components if not entry.get("do_not_place")]
-assert len(fitted_components) == 148
+assert len(fitted_components) == 146
 mount_centers = [(x, y) for x in (-15.25, 15.25) for y in (-15.25, 15.25)]
 holes = [entry for entry in circuit if entry["type"] == "pcb_hole" and not entry.get("pcb_component_id")]
 assert len(holes) == 4
@@ -101,7 +101,7 @@ for index, left in enumerate(results):
         pair_results.append({"left": left["reference"], "right": right["reference"], "clearance_mm": clearance_mm})
 pair_failures = [row for row in pair_results if row["clearance_mm"] < 0.1]
 failures = [row for row in results if min(row["carrier_clearance_mm"], row["fastener_clearance_mm"]) < 0.15]
-report = {"revision": revision, "result": "failed" if failures or pair_failures else "passed nominal envelope clearance", "scope": "Exact motor and carrier BRep; conservative AABBs of all 148 default-fitted exported component meshes versus carrier and proposed fastener envelopes. R50 is deliberately DNP and has no fitted mesh.", "motor_carrier_intersection_mm3": motor_overlap_mm3, "minimum_component_clearance_mm": min(min(row["carrier_clearance_mm"], row["fastener_clearance_mm"]) for row in results), "component_results": results, "failures": failures, "physical_and_tolerance_qualification": "pending", "mating_plug_harness_qualification": "pending", "fabrication_ready": False, "rendered_glb_sha256": hashlib.sha256(glb_bytes).hexdigest()}
+report = {"revision": revision, "result": "failed" if failures or pair_failures else "passed nominal envelope clearance", "scope": "Exact motor and carrier BRep; conservative AABBs of all 146 default-fitted exported component meshes versus carrier and proposed fastener envelopes. R50 is deliberately DNP and has no fitted mesh.", "motor_carrier_intersection_mm3": motor_overlap_mm3, "minimum_component_clearance_mm": min(min(row["carrier_clearance_mm"], row["fastener_clearance_mm"]) for row in results), "component_results": results, "failures": failures, "physical_and_tolerance_qualification": "pending", "mating_plug_harness_qualification": "pending", "fabrication_ready": False, "rendered_glb_sha256": hashlib.sha256(glb_bytes).hexdigest()}
 report["component_pair_envelope_clearance_mm"] = min(row["clearance_mm"] for row in pair_results)
 report["component_pair_envelope_failures"] = pair_failures
 report["expected_fitted_mesh_count"] = len(fitted_components)

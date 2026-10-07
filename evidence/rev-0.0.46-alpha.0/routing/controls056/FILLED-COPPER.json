@@ -1,0 +1,524 @@
+{
+  "input": "evidence/rev-0.0.46-alpha.0/routing/controls056/circuit.json",
+  "sha256": "be6bb1f9be4f03bc6eb2aad4ceb470db3bc1e430fe9f46ce0979fe3097efff52",
+  "scope": "Native filled BRep against actual pads, traces, via annuli and other pours; physical same-net conductors joined across full through-via spans. No net-name-only connectivity assumption. Impedance, thermal/current limits and CAM remain separate.",
+  "mechanical_constraints_sha256": "28044e448bd8c9cb70581f734682c0899778c35f9b45e4c74eb1e75448f9e9bb",
+  "pour_count": 10,
+  "minimum_clearances": {
+    "trace": {
+      "pour": "pcb_copper_pour_8",
+      "other": "saved_phase_null_0_3:4",
+      "layer": "top",
+      "actual_mm": 0.15280880779086872,
+      "required_mm": 0.15
+    },
+    "via": {
+      "pour": "pcb_copper_pour_36",
+      "other": "pcb_via_18",
+      "layer": "bottom",
+      "actual_mm": 0.15316960877656047,
+      "required_mm": 0.15
+    },
+    "pad": {
+      "pour": "pcb_copper_pour_36",
+      "other": "pcb_smtpad_148",
+      "layer": "bottom",
+      "actual_mm": 0.15283767540421522,
+      "required_mm": 0.15
+    },
+    "npth": {
+      "pour": "pcb_copper_pour_3",
+      "hole": "pcb_hole_4",
+      "layer": "inner1",
+      "actual_mm": 0.30694199475727046,
+      "required_mm": 0.3
+    },
+    "mount_circle": {
+      "pour": "pcb_copper_pour_3",
+      "keepout": "pcb_keepout_0",
+      "layer": "inner1",
+      "actual_radius_mm": 2.507865076711874,
+      "required_radius_mm": 2.5,
+      "native_planning_radius_mm": 2.52
+    }
+  },
+  "clearance_violations": [],
+  "physical_islands": {
+    "GND": {
+      "physical_components": 2,
+      "components": [
+        {
+          "area_mm2": 2698.9254250406298,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "C1.2",
+            "C11.2",
+            "C12.2",
+            "C15.2",
+            "C16.2",
+            "C17.2",
+            "C18.2",
+            "C19.2",
+            "C2.2",
+            "C20.2",
+            "C21.2",
+            "C25.2",
+            "C26.2",
+            "C27.2",
+            "C28.2",
+            "C29.2",
+            "C3.2",
+            "C30.2",
+            "C31.2",
+            "C32.2",
+            "C34.2",
+            "C4.2",
+            "C5.2",
+            "C7.2",
+            "C8.2",
+            "C9.2",
+            "C_ADC.2",
+            "C_BUZZ.2",
+            "C_CAN_CORE.2",
+            "C_CAN_XIN.2",
+            "C_CAN_XOUT.2",
+            "C_CAN_XOUT2.2",
+            "C_FLASH.2",
+            "C_IO2.2",
+            "C_IO3.2",
+            "C_IO4.2",
+            "C_IO5.2",
+            "C_IO6.2",
+            "C_PD_1V2.2",
+            "C_PD_2V7.2",
+            "C_PD_VDD.2",
+            "C_RESET.2",
+            "C_USBPHY.2",
+            "C_VCORE.2",
+            "C_XIN.2",
+            "C_XOUT.2",
+            "D_CAN.3",
+            "D_IO1.3",
+            "D_IO1.8",
+            "D_IO2.3",
+            "D_IO2.8",
+            "D_USB.3",
+            "D_VBUS.2",
+            "J_IO.1",
+            "J_IO.10",
+            "J_IO.11",
+            "J_IO.12",
+            "J_IO.4",
+            "J_MOTOR.5",
+            "J_MOTOR.6",
+            "J_SWD.3",
+            "J_USB.10",
+            "J_USB.11",
+            "J_USB.22",
+            "J_USB.23",
+            "J_USB.8",
+            "J_USB.9",
+            "LED_FAULT.1",
+            "LED_POWER.1",
+            "LED_STATUS.1",
+            "Q_BUZZ.2",
+            "R11.2",
+            "R17.2",
+            "R28.2",
+            "R29.2",
+            "R46.2",
+            "R5.2",
+            "R51.2",
+            "R52.2",
+            "R53.2",
+            "R6.2",
+            "R8.2",
+            "R9.2",
+            "R_BUZZ_OFF.2",
+            "R_PD_RESET.2",
+            "U1.19",
+            "U1.57",
+            "U10.17",
+            "U2.10",
+            "U2.13",
+            "U2.18",
+            "U2.20",
+            "U2.25",
+            "U2.29",
+            "U2.3",
+            "U2.7",
+            "U2.9",
+            "U3.10",
+            "U3.12",
+            "U3.13",
+            "U3.22",
+            "U3.25",
+            "U5.4",
+            "U6.2",
+            "U7.8",
+            "U8.1",
+            "U9.2",
+            "U9.4",
+            "U_CAN.21",
+            "U_CAN.8",
+            "U_FLASH.4",
+            "U_FLASH.9",
+            "U_RESET.1",
+            "Y_CAN.2",
+            "Y_CAN.4",
+            "Y_RP.2",
+            "Y_RP.4"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                1.500077,
+                -2.532802,
+                4.495058,
+                1.881334
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -17.2,
+                -17.2,
+                17.2,
+                17.2
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                5.402,
+                5.305069,
+                12.771801,
+                10.129672
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                5.65507,
+                -5.77,
+                11.344931,
+                4.145058
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                7.73,
+                5.364621,
+                9.73672,
+                8.6861
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -17.2,
+                -17.2,
+                17.2,
+                17.2
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                11.575000000000001,
+                -4.324999999999999,
+                12.025,
+                -3.8749999999999996
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                2.525,
+                0.8250000000000001,
+                2.975,
+                1.2750000000000001
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                10.335,
+                1.275,
+                10.785,
+                1.725
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -9.225,
+                5.575,
+                -8.775,
+                6.0249999999999995
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                8.075000000000001,
+                7.4750000000000005,
+                8.525,
+                7.925
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                10.575000000000001,
+                9.275,
+                11.025,
+                9.725
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -6.425,
+                10.325000000000001,
+                -5.9750000000000005,
+                10.775
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -0.225,
+                15.275,
+                0.225,
+                15.725
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -10.145025,
+                5.275475,
+                -5.3999768,
+                10.8
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -17.2,
+                -17.2,
+                17.2,
+                17.2
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                8.979609,
+                -5.17,
+                12.791575,
+                -2.53
+              ]
+            }
+          ]
+        },
+        {
+          "area_mm2": 0.49901393111200015,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C_CAN_XIN2.2"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -0.67,
+                -7.265116,
+                0.12,
+                -6.5798844999999995
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": false
+    },
+    "EFUSE_RTN": {
+      "physical_components": 8,
+      "components": [
+        {
+          "area_mm2": 9.672541320039958,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "U10.25"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -6.3251297,
+                -9.0750037,
+                -2.6751243000000002,
+                -6.4249963
+              ]
+            }
+          ]
+        },
+        {
+          "area_mm2": 0.7199971200028807,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "C33.2"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                1.1000248,
+                -6.9499991,
+                1.9000232000000001,
+                -6.0500009
+              ]
+            }
+          ]
+        },
+        {
+          "area_mm2": 0.30545758263200085,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "R44.2"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -1.7000130000000002,
+                -16.460002000000003,
+                -1.1343550000000002,
+                -15.919998000000001
+              ]
+            }
+          ]
+        },
+        {
+          "area_mm2": 0.30545758263200007,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "R39.2"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -4.100013000000001,
+                -13.470002,
+                -3.534355,
+                -12.929998
+              ]
+            }
+          ]
+        },
+        {
+          "area_mm2": 0.30545758263199985,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "R43.2"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                0.549987,
+                -16.120002,
+                1.115645,
+                -15.579998
+              ]
+            }
+          ]
+        },
+        {
+          "area_mm2": 0.20400223199472015,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "Q_ILIM.2"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -5.9049893,
+                -2.7000006,
+                -5.3949827,
+                -2.3000014
+              ]
+            }
+          ]
+        },
+        {
+          "area_mm2": 0.18620565597503996,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "U10.13"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -6.1400018,
+                -6.1749587,
+                -5.859992200000001,
+                -5.5099613
+              ]
+            }
+          ]
+        },
+        {
+          "area_mm2": 0.18620565597503996,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "U10.15"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -5.1400038,
+                -6.1749587,
+                -4.8599942,
+                -5.5099613
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": false
+    }
+  },
+  "clearances_passed": true
+}

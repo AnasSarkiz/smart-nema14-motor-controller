@@ -725,6 +725,7 @@ export default function SmartNema14MotorController({
           }}
           connections={nativeFanoutTrial.netNames.map((name) => `net.${name}`)}
           pcbTracePaths={nativeFanoutTrial.paths}
+          fanoutPourNetMap={{ inner1: "GND" }}
           minViaHoleDiameter="0.30mm"
           minViaPadDiameter="0.45mm"
         />

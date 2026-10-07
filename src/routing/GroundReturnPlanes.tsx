@@ -11,6 +11,8 @@ export function GroundReturnPlanes() {
         { name: "GND_STITCH_CORE", pcbX: 10.56, pcbY: 1.5 },
         { name: "GND_STITCH_USBPHY", pcbX: 8.3, pcbY: 7.7 },
         { name: "GND_STITCH_PD_VDD", pcbX: -6.2, pcbY: 10.55 },
+        { name: "GND_STITCH_FLASH_IO", pcbX: 10.8, pcbY: 9.5 },
+        { name: "GND_STITCH_RESET_RETURN", pcbX: 11.8, pcbY: -4.1 },
       ].map((position) => (
         <Fragment key={position.name}>
           <via

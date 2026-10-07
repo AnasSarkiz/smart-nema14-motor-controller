@@ -1,0 +1,287 @@
+{
+  "net_names": [
+    "CAN_XIN",
+    "CAN_XOUT",
+    "SWCLK"
+  ],
+  "paths": [
+    {
+      "connection": ".Y_CAN port.pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -3.150053,
+          "y": -6.62497,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -2.925083,
+          "y": -6.4,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -0.75,
+          "y": -6.4,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -0.75,
+          "y": -6.829884,
+          "width": 0.15,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "connection": ".C_CAN_XIN port.pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -0.75,
+          "y": -6.829884,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -0.75,
+          "y": -6.4,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 0.000128,
+          "y": -6.4,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 0.000128,
+          "y": -5.40754,
+          "width": 0.15,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "connection": ".Y_CAN port.pin3",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -5.349947,
+          "y": -8.37503,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -4.25,
+          "y": -8.37503,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -4.25,
+          "y": -5.579884,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -3.670116,
+          "y": -5,
+          "width": 0.15,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "connection": ".C_CAN_XOUT port.pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -3.670116,
+          "y": -5,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -3.670116,
+          "y": -5.8,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -1.75,
+          "y": -5.8,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -1.35,
+          "y": -5.4,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -0.499998,
+          "y": -5.4,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -0.499998,
+          "y": -5.40754,
+          "width": 0.15,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "connection": ".R53 port.pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 10.432816,
+          "y": -12,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 11.567184,
+          "y": -12,
+          "width": 0.15,
+          "layer": "bottom"
+        }
+      ]
+    },
+    {
+      "connection": ".U1 port.pin24",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 9.499998,
+          "y": -2.125063,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 9.499998,
+          "y": -0.5,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 10.55,
+          "y": -0.5,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "via",
+          "x": 10.55,
+          "y": -0.5,
+          "from_layer": "top",
+          "to_layer": "inner2",
+          "via_diameter": 0.45,
+          "via_hole_diameter": 0.3
+        },
+        {
+          "route_type": "wire",
+          "x": 10.55,
+          "y": -0.5,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 6.9,
+          "y": -0.5,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 6.9,
+          "y": -3.6,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 9.9,
+          "y": -6,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 9.9,
+          "y": -11.75,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 10.5,
+          "y": -11.75,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "via",
+          "x": 10.5,
+          "y": -11.75,
+          "from_layer": "inner2",
+          "to_layer": "bottom",
+          "via_diameter": 0.45,
+          "via_hole_diameter": 0.3
+        },
+        {
+          "route_type": "wire",
+          "x": 10.5,
+          "y": -11.75,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 10.85,
+          "y": -12,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 11.567184,
+          "y": -12,
+          "width": 0.15,
+          "layer": "bottom"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "description": "Explicit top-only board-owned manual tree using two genuine C1570 30pF loads instead of four C1548 15pF parallel loads, with identical nominal 30pF per leg. No routed vias, native 10mm aggregate trace limit retained. Preserve all original candidate failures. Native replay and full strict/fill/length checks required.",
+    "clock061_correction": "Board-owned CAN_XOUT jog avoids both ordinary eFuse control vias without changing isolated RTN or clock limits.",
+    "controls062_correction": "C_CAN_XIN moved 0.75mm east with incoming branch adjusted for one ordinary GND return stitch; R53 relocated next to R21 to solve documented static reachability failure; SWDIO common ordinary via shifted 0.1mm south to clear SWCLK escape. Full native/strict/fill requalification required.",
+    "controls063_correction": "Rotate unpolarized C_CAN_XIN 180 degrees so its GND terminal opens directly into the external GND fill instead of a narrow clock-created island. Update clock terminal paths and remove rejected GND via; original supplier model and 30pF identity unchanged."
+  }
+}

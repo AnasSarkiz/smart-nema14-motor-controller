@@ -1,6 +1,6 @@
 import { MCP2515T_I_ML } from "../../imports/MCP2515T_I_ML/MCP2515T_I_ML"
 import { ABM8_16_000MHZ_B2_T } from "../../imports/ABM8_16_000MHZ_B2_T/ABM8_16_000MHZ_B2_T"
-import { A_0402CG150J500NT } from "../../imports/A_0402CG150J500NT/A_0402CG150J500NT"
+import { A_0402CG300J500NT } from "../../imports/A_0402CG300J500NT/A_0402CG300J500NT"
 import { A_0402WGF1002TCE } from "../../imports/A_0402WGF1002TCE/A_0402WGF1002TCE"
 import { ComponentNotes } from "../schematic/ComponentNotes"
 import {
@@ -128,7 +128,7 @@ export function CanSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           pin4: "net.GND",
         }}
       />
-      <A_0402CG150J500NT
+      <A_0402CG300J500NT
         name="C_CAN_XIN"
         {...previewPlacement("C_CAN_XIN", mechanicalPreview)}
         schX={-6}
@@ -136,7 +136,7 @@ export function CanSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schRotation={270}
         connections={{ pin1: "net.CAN_XIN", pin2: "net.GND" }}
       />
-      <A_0402CG150J500NT
+      <A_0402CG300J500NT
         name="C_CAN_XOUT"
         {...previewPlacement("C_CAN_XOUT", mechanicalPreview)}
         schX={-2}
@@ -167,22 +167,6 @@ export function CanSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schY={5.3}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.CAN_INT_N" }}
-      />
-      <A_0402CG150J500NT
-        name="C_CAN_XIN2"
-        {...previewPlacement("C_CAN_XIN2", mechanicalPreview)}
-        schX={-8}
-        schY={-5}
-        schRotation={270}
-        connections={{ pin1: "net.CAN_XIN", pin2: "net.GND" }}
-      />
-      <A_0402CG150J500NT
-        name="C_CAN_XOUT2"
-        {...previewPlacement("C_CAN_XOUT2", mechanicalPreview)}
-        schX={0}
-        schY={-5}
-        schRotation={270}
-        connections={{ pin1: "net.CAN_XOUT", pin2: "net.GND" }}
       />
       <ComponentNotes sheet="CAN" />
     </schematicsheet>

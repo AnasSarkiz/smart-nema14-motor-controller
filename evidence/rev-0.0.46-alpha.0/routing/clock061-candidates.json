@@ -1,0 +1,165 @@
+{
+  "net_names": [
+    "CAN_XIN",
+    "CAN_XOUT"
+  ],
+  "paths": [
+    {
+      "connection": ".Y_CAN port.pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -3.150053,
+          "y": -6.62497,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -2.25,
+          "y": -6.62497,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -2.25,
+          "y": -7.670116,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -1.5,
+          "y": -7.670116,
+          "width": 0.15,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "connection": ".C_CAN_XIN port.pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -1.5,
+          "y": -7.670116,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -0.9,
+          "y": -7.670116,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -0.9,
+          "y": -6.4,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 0.000128,
+          "y": -6.4,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 0.000128,
+          "y": -5.40754,
+          "width": 0.15,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "connection": ".Y_CAN port.pin3",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -5.349947,
+          "y": -8.37503,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -4.25,
+          "y": -8.37503,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -4.25,
+          "y": -5.579884,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -3.670116,
+          "y": -5,
+          "width": 0.15,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "connection": ".C_CAN_XOUT port.pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -3.670116,
+          "y": -5,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -3.670116,
+          "y": -5.8,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -1.75,
+          "y": -5.8,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -1.35,
+          "y": -5.4,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -0.499998,
+          "y": -5.4,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -0.499998,
+          "y": -5.40754,
+          "width": 0.15,
+          "layer": "top"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "description": "Explicit top-only board-owned manual tree using two genuine C1570 30pF loads instead of four C1548 15pF parallel loads, with identical nominal 30pF per leg. No routed vias, native 10mm aggregate trace limit retained. Preserve all original candidate failures. Native replay and full strict/fill/length checks required.",
+    "clock061_correction": "Board-owned CAN_XOUT jog avoids both ordinary eFuse control vias without changing isolated RTN or clock limits."
+  }
+}

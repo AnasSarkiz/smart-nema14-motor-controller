@@ -1,0 +1,160 @@
+{
+  "net_names": [
+    "SWDIO"
+  ],
+  "paths": [
+    {
+      "connection": ".U1 port.pin25",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 9.900048,
+          "y": -2.125063,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 9.900048,
+          "y": -2.5406269803610186,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 10.136375670958413,
+          "y": -2.776954651319432,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 11.273015941703607,
+          "y": -2.776954651319432,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 11.706191097099932,
+          "y": -3.210129806715758,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 11.706191097099932,
+          "y": -5.489074438210266,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 10.68,
+          "y": -6.515265535310198,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 10.68,
+          "y": -6.52,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 10.594,
+          "y": -6.790001999999999,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "via",
+          "x": 10.594,
+          "y": -6.790001999999999,
+          "from_layer": "top",
+          "to_layer": "bottom",
+          "via_diameter": 0.45,
+          "via_hole_diameter": 0.3
+        },
+        {
+          "route_type": "wire",
+          "x": 10.594,
+          "y": -6.790001999999999,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 9.61335978608427,
+          "y": -6.614597611554285,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 9.238801432714833,
+          "y": -6.245506582879019,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 9.250084260019316,
+          "y": -4.317084260019316,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 8.932816,
+          "y": -4,
+          "width": 0.15,
+          "layer": "bottom"
+        }
+      ]
+    },
+    {
+      "connection": ".R52 port.pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 8.932816,
+          "y": -4,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 8.932816,
+          "y": -6.865700352310574,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 11.817184,
+          "y": -9.750068352310572,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 11.817184,
+          "y": -10,
+          "width": 0.15,
+          "layer": "bottom"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "circuit_json": "dist/index/circuit.json",
+    "circuit_json_sha256": "4e15aa8be90488f9de498393835c2e03fe39c311ffbe09836e71e5fd665d7b21",
+    "routing_output": "evidence/rev-0.0.45-alpha.0/routing/controls042/OUTPUT-SIMPLE-ROUTE.json",
+    "routing_output_sha256": "5739ee6f05f6c610c597df71e16cb8bfcd7b65c132cf9dcc8248fbe2199862bf",
+    "status": "candidate only; no connectivity or clearance qualification implied",
+    "qualification_scope": "Candidate subset only; rejects QSPI_IO0, CAN_SPI_CS and CAN_INT_N geometry; POWER_GOOD/SWCLK conflict not adopted"
+  }
+}

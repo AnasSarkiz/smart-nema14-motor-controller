@@ -1,0 +1,51 @@
+{
+  "canonical_sha256": "a1a9ae548215b2d24a78fc272cb197901b69e8856eeae92b4685934bca4f546e",
+  "clock_nets": {
+    "CAN_XIN": {
+      "native_aggregate_trace_length_mm": 4.9541732688897655,
+      "unchanged_native_limit_mm": 10,
+      "via_count": 0,
+      "layers": [
+        "top"
+      ],
+      "native_constraints": [
+        {
+          "max_length": 10,
+          "max_via_count": 0
+        },
+        {
+          "max_length": 10,
+          "max_via_count": 0
+        },
+        {
+          "max_length": 10,
+          "max_via_count": 0
+        }
+      ]
+    },
+    "CAN_XOUT": {
+      "native_aggregate_trace_length_mm": 8.858516242352398,
+      "unchanged_native_limit_mm": 10,
+      "via_count": 0,
+      "layers": [
+        "top"
+      ],
+      "native_constraints": [
+        {
+          "max_length": 10,
+          "max_via_count": 0
+        },
+        {
+          "max_length": 10,
+          "max_via_count": 0
+        },
+        {
+          "max_length": 10,
+          "max_via_count": 0
+        }
+      ]
+    }
+  },
+  "manufacturer_load": "Genuine ABM8-16MHz-B2-T 18pF target; two C1570 30pF C0G +/-5% 50V loads give nominal15pF series equivalent plus board stray. Actual startup/load remains a prototype hardware check.",
+  "passed": true
+}
