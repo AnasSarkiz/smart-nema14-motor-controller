@@ -26,9 +26,13 @@ export function rev45RoutingPhaseIndex(
 export function Rev45SavedRoutes({
   trialPaths = [],
   trialNetNames = [],
+  replacedNetNames = [],
+  replacedPathSelectors = [],
 }: {
   trialPaths?: FanoutTracePath[]
   trialNetNames?: string[]
+  replacedNetNames?: string[]
+  replacedPathSelectors?: string[]
 } = {}) {
   return (
     <autoroutingphase
@@ -36,10 +40,18 @@ export function Rev45SavedRoutes({
       phaseIndex={0}
       autorouter="auto_local"
       connections={[
-        ...savedRoutes.connections,
+        ...savedRoutes.connections.filter(
+          (connection) =>
+            !replacedNetNames.some((name) => connection === `net.${name}`),
+        ),
         ...trialNetNames.map((name) => `net.${name}`),
       ]}
-      pcbTracePaths={[...paths, ...trialPaths]}
+      pcbTracePaths={[
+        ...paths.filter(
+          (path) => !replacedPathSelectors.includes(path.connection),
+        ),
+        ...trialPaths,
+      ]}
     />
   )
 }

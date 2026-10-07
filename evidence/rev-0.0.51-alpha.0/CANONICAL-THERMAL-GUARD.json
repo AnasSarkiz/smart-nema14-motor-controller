@@ -1,0 +1,92 @@
+{
+  "input": "dist/index/circuit.json",
+  "input_sha256": "eaa2bec0cc85443567b72e08e0f7644c6c43eb26d7217d15c96c767364306450",
+  "features": [
+    {
+      "name": "TMC_THERMAL_SW",
+      "pcb_via_id": "pcb_via_9",
+      "x": -10,
+      "y": 0.1,
+      "construction": "IPC-4761 Type VII",
+      "owner": "U2.29",
+      "layer_span": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ]
+    },
+    {
+      "name": "TMC_THERMAL_S",
+      "pcb_via_id": "pcb_via_10",
+      "x": -9.25,
+      "y": 0.1,
+      "construction": "IPC-4761 Type VII",
+      "owner": "U2.29",
+      "layer_span": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ]
+    },
+    {
+      "name": "TMC_THERMAL_SE",
+      "pcb_via_id": "pcb_via_11",
+      "x": -8.5,
+      "y": 0.1,
+      "construction": "IPC-4761 Type VII",
+      "owner": "U2.29",
+      "layer_span": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ]
+    },
+    {
+      "name": "TMC_THERMAL_NW",
+      "pcb_via_id": "pcb_via_12",
+      "x": -10,
+      "y": 0.85,
+      "construction": "IPC-4761 Type VII",
+      "owner": "U2.29",
+      "layer_span": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ]
+    },
+    {
+      "name": "TMC_THERMAL_NE",
+      "pcb_via_id": "pcb_via_13",
+      "x": -8,
+      "y": 0.85,
+      "construction": "IPC-4761 Type VII",
+      "owner": "U2.29",
+      "layer_span": [
+        "top",
+        "inner1",
+        "inner2",
+        "bottom"
+      ]
+    }
+  ],
+  "native_ordinary_pad_contact_guard": "Original official check re-enabled for every via; exactly five manifest-owned U2 EP contacts and zero other contacts",
+  "exposed_pad_mm": {
+    "width": 3.499993,
+    "height": 3.499993,
+    "solder_mask_open": true
+  },
+  "unchanged_native_paste_mm": {
+    "width": 2.4499950999999998,
+    "height": 2.4499950999999998,
+    "coverage_fraction": 0.48999999999999994
+  },
+  "limitations": [
+    "Filling/capping must be explicitly ordered and confirmed in CAM/assembly quote; generated drill geometry alone does not specify it",
+    "Thermal load/temperature tests pending; 30 K/W JEDEC value does not qualify this 35 x 35 mm board"
+  ],
+  "passed": true
+}

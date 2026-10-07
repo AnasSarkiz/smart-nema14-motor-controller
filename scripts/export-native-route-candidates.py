@@ -26,6 +26,7 @@ def main():
     parser.add_argument('routing_output')
     parser.add_argument('candidate_output')
     parser.add_argument('net_names', nargs='+')
+    parser.add_argument('--restore-terminal-precision', action='store_true', help='Explicit source-path repair of SDK endpoints rounded to 0.001 mm; record every change and require <=0.0005 mm per coordinate.')
     args = parser.parse_args()
     circuit = json.loads(Path(args.circuit_json).read_text())
     output = json.loads(Path(args.routing_output).read_text())
@@ -42,6 +43,7 @@ def main():
     ports = {e['pcb_port_id']: e for e in circuit if e['type'] == 'pcb_port'}
     net_names = {e['source_net_id']: e['name'] for e in circuit if e['type'] == 'source_net'}
     paths = []
+    restored_endpoints = []
     for net_name in args.net_names:
         edges = [dict(trace) for trace in srj['traces'] if net_names.get(trace['connection_name']) == net_name]
         if not edges:
@@ -59,8 +61,18 @@ def main():
                 first, last = last, first
             first_point = ports[first]
             last_point = ports[last]
-            if abs(route[0]['x']-first_point['x']) + abs(route[0]['y']-first_point['y']) > .00001:
+            first_distance = abs(route[0]['x']-first_point['x']) + abs(route[0]['y']-first_point['y'])
+            last_distance = abs(route[-1]['x']-first_point['x']) + abs(route[-1]['y']-first_point['y'])
+            if last_distance < first_distance:
                 route = reverse_route(route)
+            if args.restore_terminal_precision:
+                route = [dict(point) for point in route]
+                for index, terminal, port_id in ((0, first_point, first), (-1, last_point, last)):
+                    previous = {key: route[index][key] for key in ('x', 'y')}
+                    assert all(abs(previous[key]-terminal[key]) <= .000500001 for key in ('x', 'y')), 'SDK endpoint differs by more than 0.001 mm rounding precision'
+                    if any(previous[key] != terminal[key] for key in ('x', 'y')):
+                        restored_endpoints.append({'pcb_port_id': port_id, 'previous_mm': previous, 'exact_native_terminal_mm': {key:terminal[key] for key in ('x','y')}})
+                    route[index].update({key: terminal[key] for key in ('x', 'y')})
             assert abs(route[0]['x']-first_point['x']) + abs(route[0]['y']-first_point['y']) < .00001
             assert abs(route[-1]['x']-last_point['x']) + abs(route[-1]['y']-last_point['y']) < .00001
             source_port = source_ports[first_point['source_port_id']]
@@ -77,6 +89,7 @@ def main():
             'routing_output': args.routing_output,
             'routing_output_sha256': hashlib.sha256(Path(args.routing_output).read_bytes()).hexdigest(),
             'status': 'candidate only; no connectivity or clearance qualification implied',
+            'explicit_source_terminal_precision_repairs': restored_endpoints,
         },
     }
     destination = Path(args.candidate_output)

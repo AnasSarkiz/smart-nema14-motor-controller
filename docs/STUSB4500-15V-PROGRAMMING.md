@@ -70,3 +70,14 @@ validation or authorize an order.
 Sources: ST DS12499 Rev 8 §§2.2.8, 2.2.10, 3.3–3.4, 5; ST UM2650 runtime
 programming guide; TI SCES417L (SN74LVC1G98), SCES470F (SN74LVC3G17), SCES488E
 (SN74LVC1G27), TLV803E datasheet; ADI TMC2209 Rev 1.09 §§17, 19–20.
+
+Reproduce the synthetic decoder/rejection checks with
+`bun run test:stusb4500-readback`. Fixture inputs are preserved in
+`tests/fixtures/stusb4500/`; every identity explicitly says SYNTHETIC. The
+20 V / 1.5 A rejection fixture uses word `0x00064096`, little-endian runtime
+bytes 0x89–0x8C = `96 40 06 00`. The harness asserts its decoded 20 V voltage
+and 1.5 A current before invoking the validator. The historical
+`20v_preferred` test changed only byte 0x8A, encoding 14.6 V; it demonstrated
+a wrong-voltage rejection but was mislabeled. Its original receipt remains
+preserved. The corrected regression evidence supersedes that label and does
+not represent a programmed chip, cold hardware readback or PD negotiation.

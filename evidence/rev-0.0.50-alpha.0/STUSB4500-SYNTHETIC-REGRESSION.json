@@ -1,0 +1,80 @@
+{
+  "scope": "Reproducible synthetic decoder tests only; no NVM programming or hardware evidence",
+  "validator_sha256": "d72b3a2c8a457a1155b071b379563f04daa660472ce1d775f7807b90205f5a60",
+  "results": [
+    {
+      "fixture": "tests/fixtures/stusb4500/preferred-15v.json",
+      "fixture_sha256": "b0ae65e8a2189ad2339f3516a050007609f476717269f02a18d815b3ac592464",
+      "pdo2_word_hex": "0x0004b096",
+      "decoded_pdo2_voltage_v": 15,
+      "decoded_pdo2_current_a": 1.5,
+      "expected_accepted": true,
+      "validator_exit": 0,
+      "passed": true
+    },
+    {
+      "fixture": "tests/fixtures/stusb4500/preferred-20v.json",
+      "fixture_sha256": "06840ba1b1b554ceb05c474edff773424fc26c736191164a80c965564b70d947",
+      "pdo2_word_hex": "0x00064096",
+      "decoded_pdo2_voltage_v": 20,
+      "decoded_pdo2_current_a": 1.5,
+      "expected_accepted": false,
+      "validator_exit": 1,
+      "passed": true
+    },
+    {
+      "fixture": "tests/fixtures/stusb4500/three-active-pdos.json",
+      "fixture_sha256": "7567e9eeb097b4196bf7ac0d4e59e59b33474e8e4c350fa523662a7f27fdc78a",
+      "pdo2_word_hex": "0x0004b096",
+      "decoded_pdo2_voltage_v": 15,
+      "decoded_pdo2_current_a": 1.5,
+      "expected_accepted": false,
+      "validator_exit": 1,
+      "passed": true
+    },
+    {
+      "fixture": "tests/fixtures/stusb4500/wrong-power-ok-config.json",
+      "fixture_sha256": "5ee4a13b04c104c3081137d60f0f8b4b7dd52af793fd0ff18c6370f298e7843d",
+      "pdo2_word_hex": "0x0004b096",
+      "decoded_pdo2_voltage_v": 15,
+      "decoded_pdo2_current_a": 1.5,
+      "expected_accepted": false,
+      "validator_exit": 1,
+      "passed": true
+    },
+    {
+      "fixture": "tests/fixtures/stusb4500/disabled-5v-bootstrap.json",
+      "fixture_sha256": "99bc2fe901f6a52432362b9abd0bb628e98617fc3d1f6e4b9d5651b495a69a54",
+      "pdo2_word_hex": "0x0004b096",
+      "decoded_pdo2_voltage_v": 15,
+      "decoded_pdo2_current_a": 1.5,
+      "expected_accepted": false,
+      "validator_exit": 1,
+      "passed": true
+    },
+    {
+      "fixture": "tests/fixtures/stusb4500/mismatched-nvm-count.json",
+      "fixture_sha256": "58381fb2aca19c3ce733602355c440d837d40c3c980eb7909cac81881cbfeb50",
+      "pdo2_word_hex": "0x0004b096",
+      "decoded_pdo2_voltage_v": 15,
+      "decoded_pdo2_current_a": 1.5,
+      "expected_accepted": false,
+      "validator_exit": 1,
+      "passed": true
+    },
+    {
+      "fixture": "tests/fixtures/stusb4500/missing-inactive-pdo-byte.json",
+      "fixture_sha256": "7b2139af9d92885aed5c3b9b073da4e4efd728ddd0615e99612191be84da3bea",
+      "pdo2_word_hex": "0x0004b096",
+      "decoded_pdo2_voltage_v": 15,
+      "decoded_pdo2_current_a": 1.5,
+      "expected_accepted": false,
+      "validator_exit": 1,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "physical_programming_tested": false,
+  "physical_readback_tested": false,
+  "correction": "The historical 20v_preferred test changed only byte0x8A and actually encoded14.6V. This fixture encodes20V/1.5A as0x00064096 and asserts its decoded voltage before rejection."
+}

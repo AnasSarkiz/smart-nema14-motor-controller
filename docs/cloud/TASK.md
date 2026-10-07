@@ -1,3 +1,19 @@
+# Active routing — 0.0.51-alpha.0
+
+Read `../REV51-POWER-THERMAL-ROUTING.md` and the two-port architecture in
+`../REV50-TWO-PORT-ROUTING.md`. Power059 joins54/120 required nets, including
+all seven common PD-FET-source terminals, with291 opens,87 tracks,66 ordinary
+0.30/0.45mm through vias,five explicitly manifested filled/capped U2 thermal
+vias and six GND regions. Zero other native errors and zero unchanged strict
+clearance violations. All previous53 complete nets remain physically joined.
+Keep the original supplier footprint/pins/models. The five TypeVII vias require
+selective filling/capping and CAM/quote confirmation; they are not ordinary open
+via-in-pad holes. Continue protected VBUS/VM, then logic power, controls, USB pair
+and ALL remaining required physical connections. Publish this checked step as
+WIP and continue routing immediately. PROTOTYPE FABRICATION READY:NO.
+
+---
+
 # Active owner requirement — two USB-C ports / 15 V motor power
 
 Current implementation, electrical interlock and routing evidence are in

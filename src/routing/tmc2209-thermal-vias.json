@@ -1,0 +1,61 @@
+{
+  "scope": "Only these five intentional U2 EP thermal vias permit pad contact. Every ordinary drill, foreign pad, copper, hole and keepout check remains unchanged.",
+  "fabrication_requirement": "IPC-4761 Type VII nonconductive epoxy filled and copper capped, planar solderable ENIG cap on top, bottom solder mask tenting. Confirm filling/capping and native exposed-pad paste/mask in JLCPCB CAM/assembly quote before fabrication approval.",
+  "vias": [
+    {
+      "name": "TMC_THERMAL_SW",
+      "x": -10,
+      "y": 0.1,
+      "hole_diameter_mm": 0.3,
+      "outer_diameter_mm": 0.45,
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_S",
+      "x": -9.25,
+      "y": 0.1,
+      "hole_diameter_mm": 0.3,
+      "outer_diameter_mm": 0.45,
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_SE",
+      "x": -8.5,
+      "y": 0.1,
+      "hole_diameter_mm": 0.3,
+      "outer_diameter_mm": 0.45,
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_NW",
+      "x": -10,
+      "y": 0.85,
+      "hole_diameter_mm": 0.3,
+      "outer_diameter_mm": 0.45,
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_NE",
+      "x": -8,
+      "y": 0.85,
+      "hole_diameter_mm": 0.3,
+      "outer_diameter_mm": 0.45,
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    }
+  ]
+}

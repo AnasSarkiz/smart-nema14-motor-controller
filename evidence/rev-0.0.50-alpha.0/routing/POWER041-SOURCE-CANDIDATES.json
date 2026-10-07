@@ -1,0 +1,206 @@
+{
+  "net_names": [
+    "PD_FET_SOURCE"
+  ],
+  "paths": [
+    {
+      "connection": ".Q_PD_IN port.pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -9.275021,
+          "y": -4.099946,
+          "width": 0.4,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": -9.925007,
+          "y": -4.099946,
+          "width": 0.4,
+          "layer": "bottom"
+        }
+      ]
+    },
+    {
+      "connection": ".Q_PD_IN port.pin2",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -9.925007,
+          "y": -4.099946,
+          "width": 0.4,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": -10.574993,
+          "y": -4.099946,
+          "width": 0.4,
+          "layer": "bottom"
+        }
+      ]
+    },
+    {
+      "connection": ".Q_PD_IN port.pin3",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -10.574993,
+          "y": -4.099946,
+          "width": 0.4,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": -10.574993,
+          "y": -4.8,
+          "width": 0.4,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": -12.4,
+          "y": -4.8,
+          "width": 0.4,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "via",
+          "x": -12.4,
+          "y": -4.8,
+          "from_layer": "bottom",
+          "to_layer": "inner2",
+          "via_hole_diameter": 0.3,
+          "via_diameter": 0.45
+        },
+        {
+          "route_type": "wire",
+          "x": -12.4,
+          "y": -4.8,
+          "width": 0.8,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": -13.6,
+          "y": -4.8,
+          "width": 0.8,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": -13.6,
+          "y": 0.65,
+          "width": 0.8,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": -10.6,
+          "y": 0.65,
+          "width": 0.8,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "via",
+          "x": -10.6,
+          "y": 0.65,
+          "from_layer": "inner2",
+          "to_layer": "bottom",
+          "via_hole_diameter": 0.3,
+          "via_diameter": 0.45
+        },
+        {
+          "route_type": "wire",
+          "x": -10.6,
+          "y": 0.65,
+          "width": 0.4,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": -10.599946000000001,
+          "y": 1.7750210000000002,
+          "width": 0.4,
+          "layer": "bottom"
+        }
+      ]
+    },
+    {
+      "connection": ".Q_PD_OUT port.pin2",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -10.599946,
+          "y": 2.4250070000000004,
+          "width": 0.4,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": -10.599946000000001,
+          "y": 1.7750210000000002,
+          "width": 0.4,
+          "layer": "bottom"
+        }
+      ]
+    },
+    {
+      "connection": ".Q_PD_OUT port.pin3",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -10.599946,
+          "y": 3.074993,
+          "width": 0.4,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": -10.599946,
+          "y": 2.4250070000000004,
+          "width": 0.4,
+          "layer": "bottom"
+        }
+      ]
+    },
+    {
+      "connection": ".R13 port.pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -7.5,
+          "y": -3.432816,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": -7.5,
+          "y": -3.55,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": -9.275021,
+          "y": -3.55,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": -9.275021,
+          "y": -4.099946,
+          "width": 0.15,
+          "layer": "bottom"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "status": "Unqualified supported manual source path candidate. Original pins/footprints and DRC unchanged. Main power connection uses0.8mm trunk with0.4mm short terminal escapes; R13 is a low-current gate pull-up branch. Loaded checks remain separate.",
+    "baseline_sha256": "88d464e298e7194c9e02f2b7e8bfce4fc0bb1954a5d70f8daff16cd335f70df6"
+  }
+}

@@ -1,3 +1,59 @@
+# Revision 0.0.51-alpha.0 — checked FET-source copper and direct thermal vias
+
+**PROTOTYPE FABRICATION READY: NO. Routing continues; no physical hardware test.**
+
+Power059 qualifies54/120 physical nets with291 open ports,87 tracks,66 ordinary
+0.30mm drill/0.45mm pad full through vias,five manifested TypeVII filled/capped
+thermal vias under the original TMC2209 EP,and six filled GND regions. All prior
+53 complete nets survive; GND and the seven FET-source terminals each form one
+physical network. Native replay exits1 solely for291 required opens; zero other
+native errors,strict copper/drill violations or filled-copper clearance failures.
+All four rendered copper layers were viewed. Evidence and source provenance:
+`evidence/rev-0.0.50-alpha.0/routing/power059-replay/QUALIFICATION-SUMMARY.json`.
+
+The failed full-board/source/gate candidates remain explicitly unqualified.
+Native Pipeline9's local bounds change preserves every original obstacle and
+rule; its full solve completed in202seconds before full-board manual repair.
+Only three saved gate paths were replaced;78 prior paths remain exact. Six source
+paths complete PD_FET_SOURCE. Supported source paths alone changed; no supplier
+or generated Circuit JSON edits. The five exact U2.29 owner contacts pass the
+re-enabled official via-in-pad guard; ordinary contacts remain disallowed.
+Loaded power/USB/thermal,fresh complete CAM,assembly quote and live stock
+allocation remain pending. Filling/capping cost is unquoted.
+
+The synthetic STUSB readback regression now verifies a genuine invalid20V/1.5A
+PDO2 word0x00064096 before asserting rejection. All seven synthetic cases pass;
+this is reproducible validator evidence,not physical NVM readback.
+
+Fresh canonical CLI build has SHA-256
+`eaa2bec0cc85443567b72e08e0f7644c6c43eb26d7217d15c96c767364306450`;
+all three mirrors match. Copper/net geometry exactly matches qualified power059;
+only generated IDs/endpoint annotations differ. Native build exits1 solely for
+291 opens. Fresh unchanged strict copper and all120 physical-network checks
+confirm54 complete and zero clearance failures. The official shorts check passes.
+Unrouted source netlist has0 errors/0 warnings and its172 purchased-pin partitions
+exactly equal canonical copper. Correctly unrouted draft checks,166 purpose notes,
+both standard USB symbols,38 programmer checks and16 interlock truth/static-corner
+checks pass. Formatting,TypeScript and frozen lockfile verification pass.
+
+Pin/source checks report0 errors with35/23 attribute/source warnings. Schematic
+analysis retains the original D_VBUS rotation finding; placement exits1 for six
+orientation suggestions with0 native diagnostic errors. These are explicitly WIP
+and will be reviewed before final qualification. Current165 fitted CAD transforms
+and all original asset bytes exactly match the qualified two-port actual assembly.
+
+The initial publication packet omitted three historical import modules needed by
+the unchanged pin audit. Their original modules/assets are now included; the
+exact build and pin audit passed that dependency stage. The early draft test was
+invoked against routed geometry and correctly rejected it; a fresh --disable-pcb
+draft passes. Original failure/repair records remain explicit.
+
+Matching public GitHub/tscircuit publication for this revision is in progress.
+Prior public revision50 receipts below remain valid.
+See [the current routing record](docs/REV51-POWER-THERMAL-ROUTING.md).
+
+---
+
 # Revision 0.0.50-alpha.0 — two-port WIP implementation
 
 **PROTOTYPE FABRICATION READY: NO. No hardware testing or fabrication order.**
@@ -3242,3 +3298,13 @@ Fresh CLI netlist, pin_specification, source, schematic-placement, placement and
 Evidence: `evidence/rev-0.0.45-alpha.0/PARTIAL-44-READINESS.json` and its referenced reports. The minimum publication runtime contains 303 files, including original model assets and all three literal assembly STEP dependencies. This checkpoint is partial; remaining signals and power, loaded widths/thermal, full CAM and fabrication qualification are still required. Public matching-revision publication is being verified under the standing authorization. **PROTOTYPE FABRICATION READY: NO.**
 
 Matching revision0.0.45-alpha.0 is public and byte-verified: GitHub source commit `f6c4a8f49895e43591ec3aea869d5a0ddc530423`; tscircuit release `fafe46be-08ad-44f4-84d3-f1667e4ac8f5`. All303 anonymous package downloads and all303 immutable GitHub downloads have exact matching SHA-256. `PUBLICATION.json` records the2026-10-07T10:08:11.994Z receipt and the hosted build request; neither a successful hosted render nor fabrication readiness is claimed. Further routing candidates remain unadopted pending whole-board physical ground/clearance review.
+
+## Revision 50 synthetic readback evidence correction
+
+`bun run test:stusb4500-readback` passes seven reproducible fixture cases,
+including correct 15 V acceptance and independently decoded 20 V / 1.5 A
+rejection. Inputs are in `tests/fixtures/stusb4500/`; results are in
+`evidence/rev-0.0.50-alpha.0/STUSB4500-SYNTHETIC-REGRESSION.json`. The earlier
+20v_preferred test actually encoded 14.6 V and is retained as historical
+wrong-voltage rejection evidence. No hardware programming/readback result
+is claimed. Routing and all physical qualification continue.

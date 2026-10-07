@@ -1,0 +1,80 @@
+[
+  {
+    "check": "netlist",
+    "command": [
+      "/workspace/smart-nema14-motor-controller/node_modules/.bin/tsci",
+      "check",
+      "netlist",
+      "controller-preview.circuit.tsx"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 40.27775004200521
+  },
+  {
+    "check": "pin_specification",
+    "command": [
+      "/workspace/smart-nema14-motor-controller/node_modules/.bin/tsci",
+      "check",
+      "pin_specification",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 5.303440511008375
+  },
+  {
+    "check": "source",
+    "command": [
+      "/workspace/smart-nema14-motor-controller/node_modules/.bin/tsci",
+      "check",
+      "source",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 5.198971947989776
+  },
+  {
+    "check": "schematic-placement",
+    "command": [
+      "/workspace/smart-nema14-motor-controller/node_modules/.bin/tsci",
+      "check",
+      "schematic-placement",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 5.470050409989199
+  },
+  {
+    "check": "placement",
+    "command": [
+      "/workspace/smart-nema14-motor-controller/node_modules/.bin/tsci",
+      "check",
+      "placement",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 22.636473595004645
+  },
+  {
+    "check": "shorts",
+    "command": [
+      "/workspace/smart-nema14-motor-controller/node_modules/.bin/tsci",
+      "check",
+      "shorts",
+      "dist/index/circuit.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 10.784416381007759
+  },
+  {
+    "check": "unrouted-draft-build",
+    "command": [
+      "/workspace/smart-nema14-motor-controller/node_modules/.bin/tsci",
+      "build",
+      "controller-preview.circuit.tsx",
+      "--disable-pcb",
+      "--schematic-svgs"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 36.612642495005275
+  }
+]

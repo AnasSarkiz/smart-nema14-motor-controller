@@ -4,6 +4,7 @@ import { createHash } from "node:crypto"
 import { readFileSync, writeFileSync } from "node:fs"
 import { resolve } from "node:path"
 import { parseCapturedPipeline9Input } from "./pipeline9-captured-input"
+import { withPipeline9SearchBounds } from "./pipeline9-search-bounds"
 
 const [
   inputPath,
@@ -12,6 +13,7 @@ const [
   maxNodeRatioText,
   minNodeAreaText,
   candidateCaptureMode,
+  searchBoundsPath,
 ] = process.argv.slice(2)
 if (!inputPath || !outputFolder)
   throw new Error("Supply captured input and output")
@@ -30,6 +32,9 @@ if (
 }
 const capturedEventText = readFileSync(inputPath, "utf8")
 const routingEvent = parseCapturedPipeline9Input(capturedEventText)
+const simpleRouteJson = searchBoundsPath
+  ? withPipeline9SearchBounds(routingEvent.simpleRouteJson, searchBoundsPath)
+  : routingEvent.simpleRouteJson
 const options = {
   effort: routingEvent.effort,
   maxNodeDimension,
@@ -37,7 +42,7 @@ const options = {
   minNodeArea,
 }
 const solver = new AutoroutingPipelineSolver9_PreloadedTraceGraph(
-  routingEvent.simpleRouteJson,
+  simpleRouteJson,
   options,
 )
 const packageVersion = JSON.parse(
@@ -57,7 +62,12 @@ writeFileSync(
       captured_input_sha256: createHash("sha256")
         .update(capturedEventText)
         .digest("hex"),
-      input_forwarded_without_field_or_coordinate_changes: true,
+      input_forwarded_without_field_or_coordinate_changes: !searchBoundsPath,
+      only_changed_input_field: searchBoundsPath ? "bounds" : null,
+      search_bounds_path: searchBoundsPath ?? null,
+      original_bounds: routingEvent.simpleRouteJson.bounds,
+      solver_search_bounds: simpleRouteJson.bounds,
+      obstacles_coordinates_rules_preserved: true,
       options,
       candidate_capture_mode: candidateCaptureMode ?? "full-pipeline-only",
       previous_mesh_options: { maxNodeDimension: 15, maxNodeRatio: 6 },

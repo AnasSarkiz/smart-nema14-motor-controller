@@ -1,6 +1,8 @@
 import { Fragment } from "react"
 import { BoardLegend } from "./BoardLegend"
 import { GroundReturnPlanes } from "./routing/GroundReturnPlanes"
+import { TmcThermalSpreadingTrial } from "./routing/TmcThermalSpreadingTrial"
+import { TmcThermalVias } from "./routing/TmcThermalVias"
 import type { FanoutTracePath } from "@tscircuit/props"
 import { type BoardViewProps } from "./mechanics/preview-placement"
 import { InterfacesSheet } from "./interfaces/InterfacesSheet"
@@ -34,6 +36,9 @@ export default function SmartNema14MotorController({
   nativeSavedRouteTrial,
   nativeFanoutTrial,
   nativeGroundPourTrial = true,
+  nativeThermalSpreadingTrial = false,
+  nativeThermalViasTrial = true,
+  nativeSavedRouteReplacement,
 }: BoardViewProps & {
   usbRoutesEnabled?: boolean
   savedRoutesEnabled?: boolean
@@ -49,6 +54,9 @@ export default function SmartNema14MotorController({
   nativeSavedRouteTrial?: { netNames: string[]; paths: FanoutTracePath[] }
   nativeFanoutTrial?: { netNames: string[]; paths?: FanoutTracePath[] }
   nativeGroundPourTrial?: boolean
+  nativeThermalSpreadingTrial?: boolean
+  nativeThermalViasTrial?: boolean
+  nativeSavedRouteReplacement?: { netNames: string[]; pathSelectors: string[] }
 } = {}) {
   if (savedRoutesEnabled || usbRoutesEnabled || nativePartialSignalBranches) {
     throw new Error(
@@ -69,6 +77,9 @@ export default function SmartNema14MotorController({
       height="35mm"
       layers={4}
       thickness="1.6mm"
+      isViaInPadAllowed={
+        copperEnabled && nativeThermalViasTrial ? true : undefined
+      }
       routeRemaining={routeRemaining}
       routingDisabled={copperEnabled ? undefined : true}
       pcbStyle={{
@@ -698,6 +709,8 @@ export default function SmartNema14MotorController({
         <Rev45SavedRoutes
           trialPaths={nativeSavedRouteTrial?.paths}
           trialNetNames={nativeSavedRouteTrial?.netNames}
+          replacedNetNames={nativeSavedRouteReplacement?.netNames}
+          replacedPathSelectors={nativeSavedRouteReplacement?.pathSelectors}
         />
       )}
       <differentialpair
@@ -766,6 +779,10 @@ export default function SmartNema14MotorController({
         />
       )}
       {copperEnabled && nativeGroundPourTrial && <GroundReturnPlanes />}
+      {copperEnabled && nativeThermalSpreadingTrial && (
+        <TmcThermalSpreadingTrial />
+      )}
+      {copperEnabled && nativeThermalViasTrial && <TmcThermalVias />}
       <ControllerMount />
       <McuSheet mechanicalPreview={mechanicalPreview} />
       <I2cSheet mechanicalPreview={mechanicalPreview} />

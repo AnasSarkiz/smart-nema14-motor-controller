@@ -60,6 +60,7 @@ def main():
     parser.add_argument('--timeout-seconds', type=int, default=900)
     parser.add_argument('--memory-mb', type=int)
     parser.add_argument('--native-pipeline9-input', help='Replay an unchanged captured core Pipeline9 event with public SDK mesh options.')
+    parser.add_argument('--search-bounds-file', help='Native SRJ solver-domain rectangle only; preserve every obstacle and rule. Full-board source replay remains required.')
     parser.add_argument('--max-node-dimension', type=float, default=3)
     parser.add_argument('--max-node-ratio', type=float, default=30)
     parser.add_argument('--min-node-area', type=float, default=.01)
@@ -114,6 +115,14 @@ def main():
                        str(output), str(arguments.max_node_dimension),
                        str(arguments.max_node_ratio), str(arguments.min_node_area),
                        'capture-before-repair' if arguments.capture_before_repair else 'full-pipeline-only']
+            if arguments.search_bounds_file:
+                search_bounds_file = Path(arguments.search_bounds_file).resolve()
+                search_bounds_file.relative_to(repository)
+                if not search_bounds_file.is_file():
+                    parser.error('Search bounds file does not exist.')
+                command.append(str(search_bounds_file))
+        elif arguments.search_bounds_file:
+            parser.error('Search bounds apply only to native Pipeline9 SDK input.')
         started = time.monotonic()
         peak_rss = 0
         termination = None

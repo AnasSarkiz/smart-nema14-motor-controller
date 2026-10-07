@@ -1,6 +1,6 @@
 # Smart NEMA 14 Motor Controller
 
-Revision **0.0.50-alpha.0 — WIP prototype** uses **RP2040** and **two USB-C ports**:
+Revision **0.0.51-alpha.0 — WIP prototype** uses **RP2040** and **two USB-C ports**:
 `J_USB` supplies motor power through STUSB4500 USB-PD; `J_DATA` connects the
 computer's USB data. The board is 35 × 35 mm, four layers, with the original
 STEPPERONLINE 14HM11-0404S motor and front carrier. Motor control is open loop.
@@ -12,9 +12,10 @@ supervisor. Factory settings alone do not establish a 15 V motor contract.
 Computer VBUS only supplies its presence-sense divider; computer power cannot
 power the controller or motor. The POWER port must also be connected.
 
-The checked copper connects **53/120 required nets**, including all twelve raw
-PD VBUS terminals: **81 traces, 62 ordinary 0.30 mm drill / 0.45 mm pad through
-vias and six filled GND regions**. It has **298 open-port errors**, zero other
+The checked copper connects **54/120 required nets**, including all twelve raw
+PD VBUS and seven common FET-source terminals: **87 traces, 66 ordinary
+0.30 mm drill / 0.45 mm pad through vias, five filled/capped TMC2209 thermal
+vias and six filled GND regions**. It has **291 open-port errors**, zero other
 native errors and zero independent copper-clearance violations. Routing and
 loaded power, USB, thermal and fresh manufacturing qualification continue.
 **PROTOTYPE FABRICATION READY: NO. Not hardware tested.**
@@ -22,7 +23,8 @@ loaded power, USB, thermal and fresh manufacturing qualification continue.
 All 166 electronic references have purpose notes on eleven native A4 sheets;
 165 are fitted (R50 is optional). Original official JLCPCB definitions and
 OBJ/STEP models are preserved. Actual assembly, model registration and bounded
-connector/cable checks pass. See [current routing/electrical evidence](docs/REV50-TWO-PORT-ROUTING.md),
+connector/cable checks pass. See [current routing evidence](docs/REV51-POWER-THERMAL-ROUTING.md),
+[two-port electrical review](docs/REV50-TWO-PORT-ROUTING.md),
 [15 V NVM programming](docs/STUSB4500-15V-PROGRAMMING.md), [validation](VALIDATION.md)
 and [Cloud task](docs/cloud/TASK.md). The remaining imported TVS schematic
 rotation finding is disclosed. Exact-part stock checks are snapshots, not a

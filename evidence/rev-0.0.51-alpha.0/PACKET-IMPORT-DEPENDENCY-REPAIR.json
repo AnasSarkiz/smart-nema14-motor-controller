@@ -1,0 +1,12 @@
+{
+  "initial_command": [
+    "bun",
+    "run",
+    "build"
+  ],
+  "initial_exit_code": 1,
+  "failure": "validate:imports required imports/W25Q16JVUXIQ/W25Q16JVUXIQ.tsx, omitted from earlier publication50 packet",
+  "repair": "Include unchanged complete import modules and original assets for every path required by existing criticalPinChecks, including three historical imports. No audit skipped or supplier definition changed.",
+  "source_selection": "Active circuit remains RP2040/GD25Q16E/STUSB4500; historical definitions are audit dependencies only",
+  "next_check": "Run exact bun run build from corrected current-source packet"
+}

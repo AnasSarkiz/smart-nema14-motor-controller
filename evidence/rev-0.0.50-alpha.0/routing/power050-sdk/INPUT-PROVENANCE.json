@@ -1,0 +1,38 @@
+{
+  "router": "beta_pipeline9",
+  "solver": "AutoroutingPipelineSolver9_PreloadedTraceGraph",
+  "package_version": "0.0.962",
+  "captured_input_path": "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.50-alpha.0/routing/power049-input/phase-1-input.json",
+  "captured_input_sha256": "e99da5241aecfbc4faedbcac4f339a5e2f074aad408b91f85976b4d59f3873ae",
+  "input_forwarded_without_field_or_coordinate_changes": false,
+  "only_changed_input_field": "bounds",
+  "search_bounds_path": "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.50-alpha.0/routing/PD-FET-SOURCE-SEARCH-BOUNDS.json",
+  "original_bounds": {
+    "minX": -17.5,
+    "maxX": 17.5,
+    "minY": -17.5,
+    "maxY": 17.5
+  },
+  "solver_search_bounds": {
+    "minX": -15,
+    "maxX": -5,
+    "minY": -6,
+    "maxY": 6
+  },
+  "obstacles_coordinates_rules_preserved": true,
+  "options": {
+    "effort": 1,
+    "maxNodeDimension": 35,
+    "maxNodeRatio": 1000000,
+    "minNodeArea": 0.0001
+  },
+  "candidate_capture_mode": "capture-before-repair",
+  "previous_mesh_options": {
+    "maxNodeDimension": 15,
+    "maxNodeRatio": 6
+  },
+  "obstacle_count": 3248,
+  "connection_count": 1,
+  "point_count": 7,
+  "note": "Official installed Pipeline9 public constructor only. Captured core input is anchored to its original source snapshot; output is a candidate, never direct circuit JSON adoption."
+}

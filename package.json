@@ -1,6 +1,6 @@
 {
   "name": "@tsci/AnasSarkiz.smart-nema14-motor-controller--01a0fd9b",
-  "version": "0.0.50-alpha.0",
+  "version": "0.0.51-alpha.0",
   "description": "RP2040 NEMA14 prototype: separate 15V USB-PD motor and computer USB-C data ports; qualification in progress",
   "main": "index.circuit.tsx",
   "keywords": [
@@ -44,7 +44,8 @@
     "cloud:smoke": "bash scripts/cloud-smoke.sh",
     "cloud:route": "python3 scripts/run-cloud-routing.py",
     "test:schematic-notes": "node scripts/check-schematic-notes.mjs",
-    "test:standard-usb": "node scripts/check-standard-usb-schematic.mjs"
+    "test:standard-usb": "node scripts/check-standard-usb-schematic.mjs",
+    "test:stusb4500-readback": "node scripts/test-stusb4500-readback.mjs"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.15",

@@ -1,0 +1,73 @@
+{
+  "revision": "0.0.50-alpha.0",
+  "input": "evidence/rev-0.0.50-alpha.0/routing/thermal048/circuit.json",
+  "input_sha256": "40599ceff611c1630c33ab6b1fdd64bb7cc46a9308d35e2c76b0f29b05af6b77",
+  "scope": "Actual tracks, drills, component/test pads, board edges, NPTH and mechanical keepouts. USB path length is independently measured by measure-usb-paths.py; absent legacy trace-name lengths below are not a USB pass. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 81,
+  "segment_count": 651,
+  "via_count": 64,
+  "thermal_manifest_sha256": null,
+  "reviewed_thermal_drill_contacts": [],
+  "filled_manifest_sha256": null,
+  "reviewed_filled_contacts": [],
+  "filled_features_matched": [],
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": {
+      "via": "pcb_via_33",
+      "reference": "U_MOTOR_INTERLOCK",
+      "pad": "pcb_smtpad_284",
+      "same_net": false,
+      "actual_mm": 0.34999110000000033,
+      "required_mm": 0.35
+    },
+    "track_to_pad_mm": {
+      "track": "saved_phase_null_0_80",
+      "segment": 3,
+      "pad": "pcb_smtpad_321",
+      "reference": "J_USB",
+      "actual_mm": 0.10219015979169327,
+      "required_mm": 0.1
+    },
+    "track_to_track_mm": {
+      "first": "saved_phase_null_0_41",
+      "first_segment": 1,
+      "second": "saved_phase_null_0_67",
+      "second_segment": 5,
+      "layer": "top",
+      "actual_mm": 0.15499999999999936,
+      "required_mm": 0.15
+    },
+    "via_to_track_mm": {
+      "via": "pcb_via_6",
+      "track": "saved_phase_null_0_46",
+      "segment": 16,
+      "layer": "inner1",
+      "actual_mm": 0.15172591095042479,
+      "required_mm": 0.15
+    },
+    "via_to_via_mm": {
+      "first": "pcb_via_13",
+      "second": "pcb_via_32",
+      "actual_mm": 0.217466126976882,
+      "required_mm": 0.15
+    },
+    "via_hole_to_via_hole_mm": {
+      "first": "pcb_via_13",
+      "second": "pcb_via_32",
+      "actual_mm": 0.367466126976882,
+      "required_mm": 0.35
+    }
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 39808,
+    "track_to_pad_mm": 174282,
+    "track_to_track_mm": 73206,
+    "via_to_track_mm": 39958,
+    "via_to_via_mm": 2016,
+    "via_hole_to_via_hole_mm": 2016
+  },
+  "violations": [],
+  "passed": true
+}

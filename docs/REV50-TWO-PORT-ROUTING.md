@@ -1,3 +1,7 @@
+Historical revision50 copper counts below are superseded by
+[revision51](REV51-POWER-THERMAL-ROUTING.md). The two-port electrical architecture
+and manufacturer interlock review remain active.
+
 # Revision 0.0.50: two USB-C ports and a 15 V motor contract
 
 The active design uses RP2040, STUSB4500 and MCP2515. `J_USB` is the

@@ -1,0 +1,20 @@
+{
+  "input": "evidence/rev-0.0.50-alpha.0/routing/thermal051/circuit.json",
+  "sha256": "6e7d1a1dea2aaa1d6c78787eb6fbe62f34bd1c085469213bb6022e6b43086c90",
+  "unchanged_checker": "scripts/check-copper-geometry.py",
+  "results": [
+    {
+      "invalid_fixture": "wrong_net",
+      "rejected": true
+    },
+    {
+      "invalid_fixture": "wrong_drill",
+      "rejected": true
+    },
+    {
+      "invalid_fixture": "unlisted_same_net_contact",
+      "rejected": true
+    }
+  ],
+  "passed": true
+}

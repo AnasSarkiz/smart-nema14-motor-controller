@@ -1,0 +1,19 @@
+{"phase":"topologyMergingSolver","progress":0.21552039966694422,"elapsed_seconds":4.0292978889999995,"solved":false,"failed":false,"error":null}
+{"phase":"nodeDimensionSubdivisionSolver","progress":0.24,"node_count":7902,"elapsed_seconds":10.256792989,"solved":false,"failed":false,"error":null}
+{"phase":"availableSegmentPointSolver","progress":0.32,"node_count":7757,"edge_count":21826,"elapsed_seconds":16.675407954999997,"solved":false,"failed":false,"error":null}
+{"phase":"portPointPathingSolver","progress":0.44,"node_count":7757,"edge_count":21826,"elapsed_seconds":51.949080024000004,"solved":false,"failed":false,"error":null}
+{"phase":"portPointPathingSolver","progress":0.44,"node_count":7757,"edge_count":21826,"elapsed_seconds":56.953357125000004,"solved":false,"failed":false,"error":null}
+{"phase":"portPointPathingSolver","progress":0.44,"node_count":7757,"edge_count":21826,"elapsed_seconds":61.95652587000001,"solved":false,"failed":false,"error":null}
+{"phase":"portPointPathingSolver","progress":0.44,"node_count":7757,"edge_count":21826,"elapsed_seconds":66.956525977,"solved":false,"failed":false,"error":null}
+{"phase":"portPointPathingSolver","progress":0.44,"node_count":7757,"edge_count":21826,"elapsed_seconds":69.61060792699999,"solved":false,"failed":true,"error":"hJ ran out of iterations"}
+133 |     )
+134 |     console.log(JSON.stringify(progress))
+135 |     await new Promise((resume) => setTimeout(resume, 0))
+136 |   }
+137 | }
+138 | if (solver.failed) throw new Error(solver.error || "Native Pipeline9 failed")
+                                   ^
+error: hJ ran out of iterations
+      at /workspace/smart-nema14-motor-controller/scripts/run-pipeline9-sdk-routing.ts:138:30
+
+Bun v1.3.9 (Linux x64)

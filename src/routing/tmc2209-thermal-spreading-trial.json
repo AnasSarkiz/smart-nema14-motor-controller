@@ -1,0 +1,24 @@
+{
+  "scope": "Ordinary outside-pad TMC2209 ground thermal spreading candidate; no via-in-pad exception or fabrication qualification implied.",
+  "reference": "U2",
+  "pin_number": 29,
+  "net": "GND",
+  "construction": "Ordinary plated through vias outside all component pads; both sides tented; no fill/cap requirement.",
+  "vias": [
+    {
+      "name": "TMC_THERMAL_NE1",
+      "x": -6.55,
+      "y": 2.9,
+      "hole_diameter_mm": 0.3,
+      "outer_diameter_mm": 0.45
+    },
+    {
+      "name": "TMC_THERMAL_NE2",
+      "x": -6.55,
+      "y": 3.6,
+      "hole_diameter_mm": 0.3,
+      "outer_diameter_mm": 0.45
+    }
+  ],
+  "qualification_required": "Full native/independent drill/copper checks, actual top copper continuity from EP to both vias and solid inner ground, measured neck and CAM mask/drill verification. No 30 K/W assumption: datasheet JEDEC board is 70 x 133 mm. Prototype load/temperature testing remains pending."
+}
