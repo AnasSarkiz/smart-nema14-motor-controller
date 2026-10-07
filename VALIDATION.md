@@ -1,5 +1,15 @@
 # Routing checkpoint — 0.0.47-alpha.0, 2026-10-07
 
+## Exact revision47 publication verified
+
+Source commit `b6388c51a8178cef35be6af1802654cabb2a59b3` and public tscircuit release
+`ee327023-5e57-4b0f-96d5-8f2973ce475c` contain matching revision0.0.47-alpha.0. All308
+package files and308 immutable GitHub files pass anonymous SHA-256 comparison
+at 2026-10-07T13:02:58.263Z. Original103 local model assets are included.
+Hosted ready_to_build is true; no hosted build success, physical test or
+fabrication readiness is claimed. See evidence/rev-0.0.47-alpha.0/PUBLICATION.json.
+Routing continues.
+
 **PROTOTYPE FABRICATION READY: NO. Routing continues.**
 
 Fresh native canonical Circuit JSON connects 54/108 physical networks, including
