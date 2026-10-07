@@ -13,6 +13,7 @@ export default function SmartNema14Assembly() {
         mechanicalPreview
         usbRoutesEnabled={false}
         savedRoutesEnabled={false}
+        freshRoutesEnabled={false}
       />
       <assembly.subassembly
         name="OfficialStepperOnline14hm11Motor"

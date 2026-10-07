@@ -1,0 +1,1047 @@
+[
+  {
+    "name": "VM_BUCK",
+    "x": -15.5,
+    "y": -2,
+    "layer": "top",
+    "width": 0.4,
+    "branches": [
+      {
+        "selector": ".U5 > .pin2",
+        "points": [
+          {
+            "x": -15.5,
+            "y": -3.8
+          }
+        ],
+        "pad": {
+          "x": -15.5,
+          "y": -4.800104
+        }
+      },
+      {
+        "selector": ".U5 > .pin3",
+        "points": [
+          {
+            "x": -15.5,
+            "y": -3.8
+          },
+          {
+            "x": -15.5,
+            "y": -4.8001
+          }
+        ],
+        "pad": {
+          "x": -16.44996,
+          "y": -4.800103999999999
+        }
+      },
+      {
+        "selector": ".C9 > .pin1",
+        "points": [],
+        "pad": {
+          "x": -16.200024,
+          "y": -3
+        }
+      }
+    ],
+    "net": "VM"
+  },
+  {
+    "name": "VM_BUCK_CAP",
+    "x": -12.3,
+    "y": -3.2,
+    "layer": "bottom",
+    "width": 0.4,
+    "branches": [
+      {
+        "selector": ".C8 > .pin1",
+        "points": [],
+        "pad": {
+          "x": -14,
+          "y": -2.65742
+        }
+      }
+    ],
+    "net": "VM"
+  },
+  {
+    "name": "VM_TMC_LOW",
+    "x": -12.35,
+    "y": -2,
+    "layer": "top",
+    "width": 0.28,
+    "branches": [
+      {
+        "selector": ".U2 > .pin28",
+        "points": [
+          {
+            "x": -11.8,
+            "y": -1.5
+          },
+          {
+            "x": -11.8,
+            "y": -0.80127
+          }
+        ],
+        "pad": {
+          "x": -11.499995,
+          "y": -0.801267
+        }
+      }
+    ],
+    "net": "VM"
+  },
+  {
+    "name": "VM_TMC_HIGH",
+    "x": -13.8,
+    "y": 4.9,
+    "layer": "top",
+    "width": 0.28,
+    "branches": [
+      {
+        "selector": ".U2 > .pin22",
+        "points": [
+          {
+            "x": -13.8,
+            "y": 5.6
+          },
+          {
+            "x": -11.9,
+            "y": 5.6
+          },
+          {
+            "x": -12,
+            "y": 4
+          },
+          {
+            "x": -12,
+            "y": 3.3
+          },
+          {
+            "x": -11.8,
+            "y": 3.1
+          },
+          {
+            "x": -11.8,
+            "y": 2.20101
+          }
+        ],
+        "pad": {
+          "x": -11.499995,
+          "y": 2.2010129999999997
+        }
+      }
+    ],
+    "net": "VM"
+  },
+  {
+    "name": "VM_CHARGE_PUMP",
+    "x": -3.2,
+    "y": -3.6,
+    "layer": "top",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".C14 > .pin2",
+        "points": [
+          {
+            "x": -3.25,
+            "y": -3.15
+          },
+          {
+            "x": -4.6,
+            "y": -3.15
+          }
+        ],
+        "pad": {
+          "x": -5.049976,
+          "y": -3.5
+        }
+      }
+    ],
+    "net": "VM"
+  },
+  {
+    "name": "VM_TMC_BYPASS",
+    "x": -15,
+    "y": 0.8,
+    "layer": "bottom",
+    "width": 0.4,
+    "branches": [
+      {
+        "selector": ".C17 > .pin1",
+        "points": [],
+        "pad": {
+          "x": -14.700023999999999,
+          "y": -0.7499999999999999
+        }
+      }
+    ],
+    "net": "VM"
+  },
+  {
+    "name": "VM_TMC_BULK",
+    "x": -15.5,
+    "y": 5,
+    "layer": "bottom",
+    "width": 0.4,
+    "branches": [
+      {
+        "selector": ".C18 > .pin1",
+        "points": [],
+        "pad": {
+          "x": -15.59258,
+          "y": 3.5
+        }
+      }
+    ],
+    "net": "VM"
+  },
+  {
+    "name": "VM_BULK_LEFT",
+    "x": -14.5,
+    "y": 7,
+    "layer": "top",
+    "width": 0.4,
+    "branches": [
+      {
+        "selector": ".C19 > .pin1",
+        "points": [],
+        "pad": {
+          "x": -13.770048,
+          "y": 8.5
+        }
+      }
+    ],
+    "net": "VM"
+  },
+  {
+    "name": "VM_BULK_RIGHT",
+    "x": 5,
+    "y": 13.2,
+    "layer": "top",
+    "width": 0.4,
+    "branches": [
+      {
+        "selector": ".C20 > .pin1",
+        "points": [],
+        "pad": {
+          "x": 5.0799520000000005,
+          "y": 11.5
+        }
+      }
+    ],
+    "net": "VM"
+  },
+  {
+    "name": "VM_EFUSE_OUT",
+    "x": -3,
+    "y": -14.5,
+    "layer": "bottom",
+    "width": 0.28,
+    "branches": [
+      {
+        "selector": ".U10 > .pin24",
+        "points": [
+          {
+            "x": -3,
+            "y": -12.2
+          },
+          {
+            "x": -3.75,
+            "y": -12.2
+          },
+          {
+            "x": -3.75,
+            "y": -10.45
+          },
+          {
+            "x": -1.78,
+            "y": -10.45
+          },
+          {
+            "x": -1.78,
+            "y": -8.749998
+          }
+        ],
+        "pad": {
+          "x": -2.092461,
+          "y": -8.749998
+        }
+      },
+      {
+        "selector": ".U10 > .pin23",
+        "points": [
+          {
+            "x": -3,
+            "y": -12.2
+          },
+          {
+            "x": -3.75,
+            "y": -12.2
+          },
+          {
+            "x": -3.75,
+            "y": -10.45
+          },
+          {
+            "x": -1.78,
+            "y": -10.45
+          },
+          {
+            "x": -1.78,
+            "y": -8.250126
+          }
+        ],
+        "pad": {
+          "x": -2.092461,
+          "y": -8.250126
+        }
+      }
+    ],
+    "net": "VM"
+  },
+  {
+    "name": "PROTECTED_MONITOR",
+    "x": 1.6,
+    "y": -13.5,
+    "layer": "bottom",
+    "net": "VBUS_PROTECTED",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".R16 > .pin1",
+        "points": [],
+        "pad": {
+          "x": 1.567184,
+          "y": -12.5
+        }
+      }
+    ]
+  },
+  {
+    "name": "PROTECTED_LEFT",
+    "x": -12.3,
+    "y": -9.5,
+    "layer": "bottom",
+    "net": "VBUS_PROTECTED",
+    "width": 0.4,
+    "branches": []
+  },
+  {
+    "name": "RTN_EFUSE_THERMAL",
+    "x": -4.5,
+    "y": -7.75,
+    "layer": "bottom",
+    "net": "EFUSE_RTN",
+    "width": 0.15,
+    "branches": []
+  },
+  {
+    "name": "VM_OUT_BRIDGE",
+    "x": 3.1,
+    "y": -15,
+    "net": "VM",
+    "layer": "top",
+    "width": 0.4,
+    "branches": [
+      {
+        "selector": ".VM_EFUSE_OUT > .top",
+        "points": [
+          {
+            "x": 3.1,
+            "y": -16.3
+          },
+          {
+            "x": -2.45,
+            "y": -16.3
+          },
+          {
+            "x": -2.45,
+            "y": -14.8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GND_INPUT_CAP",
+    "x": -7,
+    "y": -15.4,
+    "net": "GND",
+    "layer": "bottom",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".C12 > .pin2",
+        "points": []
+      }
+    ]
+  },
+  {
+    "name": "RAW_USB_LEFT",
+    "x": -1.1,
+    "y": -15.4,
+    "net": "VBUS_CONN",
+    "layer": "top",
+    "width": 0.28,
+    "branches": [
+      {
+        "selector": ".J_USB > .pin21",
+        "points": [
+          {
+            "x": -1.85,
+            "y": -14.5
+          },
+          {
+            "x": -1.85,
+            "y": -11.3
+          },
+          {
+            "x": -2.05,
+            "y": -11.05
+          },
+          {
+            "x": -2.3,
+            "y": -10.65
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RAW_USB_RIGHT",
+    "x": 1.9,
+    "y": -15.4,
+    "net": "VBUS_CONN",
+    "layer": "top",
+    "width": 0.28,
+    "branches": [
+      {
+        "selector": ".J_USB > .pin20",
+        "points": [
+          {
+            "x": 2.45,
+            "y": -15.4
+          },
+          {
+            "x": 2.45,
+            "y": -12.85
+          },
+          {
+            "x": 1.85,
+            "y": -12.85
+          },
+          {
+            "x": 1.85,
+            "y": -11.3
+          },
+          {
+            "x": 2.05,
+            "y": -11.05
+          },
+          {
+            "x": 2.3,
+            "y": -10.65
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RAW_PMOS_SOURCE",
+    "x": -11.9,
+    "y": -4,
+    "net": "VBUS_CONN",
+    "layer": "bottom",
+    "width": 0.4,
+    "branches": [
+      {
+        "selector": ".Q_PD > .pin9",
+        "points": [
+          {
+            "x": -11.5,
+            "y": -3.3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RAW_TVS",
+    "x": -5.5,
+    "y": -12.35,
+    "net": "VBUS_CONN",
+    "layer": "bottom",
+    "width": 0.4,
+    "branches": [
+      {
+        "selector": ".D_VBUS > .pin1",
+        "points": []
+      },
+      {
+        "selector": ".C25 > .pin1",
+        "points": [
+          {
+            "x": -5.5,
+            "y": -12.7
+          },
+          {
+            "x": -9.3,
+            "y": -12.7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TMC_THERMAL_S",
+    "x": -10.2,
+    "y": -0.1,
+    "net": "GND",
+    "layer": "top",
+    "width": 0.15,
+    "branches": []
+  },
+  {
+    "name": "TMC_THERMAL_C",
+    "x": -10.2,
+    "y": 0.7,
+    "net": "GND",
+    "layer": "top",
+    "width": 0.15,
+    "branches": []
+  },
+  {
+    "name": "TMC_THERMAL_N",
+    "x": -10.2,
+    "y": 1.5,
+    "net": "GND",
+    "layer": "top",
+    "width": 0.15,
+    "branches": []
+  },
+  {
+    "name": "TCPP_THERMAL",
+    "x": -11.5,
+    "y": 11,
+    "net": "GND",
+    "layer": "top",
+    "width": 0.15,
+    "branches": []
+  },
+  {
+    "name": "RAW_ADC_ESCAPE",
+    "x": -4.7,
+    "y": -0.95,
+    "net": "VBUS_CONN",
+    "layer": "bottom",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".R13 > .pin1",
+        "points": [
+          {
+            "x": -4.43,
+            "y": -0.45
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PROTECTED_PMOS_DRAIN",
+    "net": "VBUS_PROTECTED",
+    "x": -7.55,
+    "y": -4.1,
+    "layer": "bottom",
+    "width": "0.28mm",
+    "branches": [
+      {
+        "selector": ".Q_PD > .pin1",
+        "points": [
+          {
+            "x": -8.4,
+            "y": -4.23
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PROTECTED_EFUSE_INPUT_VIA",
+    "net": "VBUS_PROTECTED",
+    "x": -6.7,
+    "y": -9.5,
+    "layer": "bottom",
+    "width": "0.28mm",
+    "branches": [
+      {
+        "selector": ".U10 > .pin8",
+        "points": [
+          {
+            "x": -7.1,
+            "y": -9.15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TCPP_PROTECTED_MONITOR",
+    "net": "VBUS_PROTECTED",
+    "x": -13.85,
+    "y": 10.5,
+    "layer": "bottom",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".U3 > .pin4",
+        "points": []
+      }
+    ]
+  },
+  {
+    "name": "TCPP_RAW_SUPPLY",
+    "net": "VBUS_CONN",
+    "x": -10.75,
+    "y": 13.5,
+    "layer": "bottom",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".U3 > .pin8",
+        "points": [
+          {
+            "x": -11.5,
+            "y": 13.0
+          }
+        ]
+      },
+      {
+        "selector": ".C26 > .pin1",
+        "points": [
+          {
+            "x": -10.75,
+            "y": 13.9
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "TCPP_DECAP_GND",
+    "net": "GND",
+    "x": -7,
+    "y": 10.9,
+    "width": "0.15mm",
+    "layer": "bottom",
+    "branches": [
+      {
+        "selector": ".C22 > .pin2",
+        "points": []
+      }
+    ]
+  },
+  {
+    "name": "PROTECTED_MONITOR_WEST",
+    "net": "VBUS_PROTECTED",
+    "x": -16.2,
+    "y": 6.2,
+    "layer": "bottom",
+    "width": "0.18mm",
+    "branches": []
+  },
+  {
+    "name": "PROTECTED_MONITOR_EAST",
+    "net": "VBUS_PROTECTED",
+    "x": -13.6,
+    "y": 6.2,
+    "layer": "bottom",
+    "width": "0.18mm",
+    "branches": []
+  },
+  {
+    "name": "PROTECTED_LOW_RETURN",
+    "net": "VBUS_PROTECTED",
+    "x": -16.9,
+    "y": -2.05,
+    "layer": "bottom",
+    "width": 0.18,
+    "branches": []
+  },
+  {
+    "name": "SDA_MCU_ESCAPE",
+    "net": "I2C_SDA",
+    "x": 5.55,
+    "y": -1.15,
+    "layer": "top",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".U1 > .pin48",
+        "points": [
+          {
+            "x": 5.55,
+            "y": -1.450058
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ILIM_DIVIDER_FILLED",
+    "net": "EFUSE_ILIM",
+    "x": -3.1,
+    "y": -15.4,
+    "layer": "bottom",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".R44 > .pin1",
+        "points": [
+          {
+            "x": -3.1,
+            "y": -16.19
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RTN_LOWER_DIVIDERS",
+    "net": "EFUSE_RTN",
+    "x": 0.8,
+    "y": -14.9,
+    "layer": "bottom",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".R43 > .pin2",
+        "points": [
+          {
+            "x": 0.832816,
+            "y": -14.932816
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RTN_DVDT_CAP",
+    "net": "EFUSE_RTN",
+    "x": 1.7,
+    "y": -8.25,
+    "layer": "bottom",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".C33 > .pin2",
+        "points": [
+          {
+            "x": 1.7,
+            "y": -6.699976
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SDA_PULLUP_ESCAPE",
+    "net": "I2C_SDA",
+    "x": 1.35,
+    "y": -4.1,
+    "layer": "top",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".R3 > .pin2",
+        "points": [
+          {
+            "x": 1.35,
+            "y": -4.917184
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LIMIT1_MCU_ESCAPE",
+    "net": "LIMIT1",
+    "x": 10.3,
+    "y": 4.3,
+    "layer": "top",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".U1 > .pin22",
+        "points": [
+          {
+            "x": 11.45,
+            "y": 4.3
+          },
+          {
+            "x": 11.45,
+            "y": 3.05006
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LIMIT1_CAP_ESCAPE",
+    "net": "LIMIT1",
+    "x": 9.9166,
+    "y": 10.38,
+    "layer": "bottom",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".C30 > .pin1",
+        "points": [
+          {
+            "x": 10.5399,
+            "y": 11.0033
+          },
+          {
+            "x": 10.6701,
+            "y": 11.0033
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SWCLK_MCU_ESCAPE",
+    "net": "SWCLK",
+    "x": 5.55,
+    "y": 3,
+    "layer": "top",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".U1 > .pin36",
+        "points": []
+      }
+    ]
+  },
+  {
+    "name": "PROGRAMMER_GROUND_RECONNECT",
+    "net": "GND",
+    "x": 5.3,
+    "y": -8.85,
+    "layer": "bottom",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".U7 > .pin8",
+        "points": [
+          {
+            "x": 5.3,
+            "y": -9.4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CAN_TERM_GROUND_RECONNECT",
+    "net": "GND",
+    "x": 5.7,
+    "y": -13.05,
+    "layer": "bottom",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".R17 > .pin2",
+        "points": [
+          {
+            "x": 4.932816,
+            "y": -12.65
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RAW_FLT_BRIDGE_S",
+    "net": "VBUS_CONN",
+    "x": -14.2,
+    "y": -11.7,
+    "layer": "bottom",
+    "width": "1.3mm",
+    "branches": []
+  },
+  {
+    "name": "RAW_FLT_BRIDGE_N",
+    "net": "VBUS_CONN",
+    "x": -13.88,
+    "y": -10.1,
+    "layer": "bottom",
+    "width": "1.3mm",
+    "branches": []
+  },
+  {
+    "name": "EXT_DIR_MCU_ESCAPE",
+    "net": "EXT_DIR",
+    "owner": {
+      "reference": "U1",
+      "pin_number": 20
+    },
+    "x": 13.999928,
+    "y": 1.56965853,
+    "layer": "top",
+    "width": 0.15,
+    "branches": [
+      {
+        "selector": ".U1 > .pin20",
+        "points": [
+          {
+            "x": 13.65,
+            "y": 1.8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "SWCLK_TRANSFER_09_01",
+    "net": "SWCLK",
+    "x": 4.875,
+    "y": -13.225,
+    "owner": {
+      "reference": "U1",
+      "pin_number": 36
+    },
+    "branches": [],
+    "layer": "top",
+    "width": 0.15
+  },
+  {
+    "name": "SWCLK_TRANSFER_09_02",
+    "net": "SWCLK",
+    "x": -2.0,
+    "y": -6.1,
+    "owner": {
+      "reference": "U1",
+      "pin_number": 36
+    },
+    "branches": [],
+    "layer": "top",
+    "width": 0.15
+  },
+  {
+    "name": "CAN_RS_TRANSFER_04_02",
+    "net": "CAN_RS",
+    "x": 1.625,
+    "y": 9.45,
+    "owner": {
+      "reference": "U6",
+      "pin_number": 8
+    },
+    "branches": [],
+    "layer": "bottom",
+    "width": 0.15
+  },
+  {
+    "name": "CAN_RS_TRANSFER_04_03",
+    "net": "CAN_RS",
+    "x": 9.575,
+    "y": 13.725,
+    "owner": {
+      "reference": "U6",
+      "pin_number": 8
+    },
+    "branches": [],
+    "layer": "bottom",
+    "width": 0.15
+  },
+  {
+    "name": "CAN_RS_TRANSFER_05_01",
+    "net": "CAN_RS",
+    "x": 9.2,
+    "y": 14.375,
+    "owner": {
+      "reference": "U1",
+      "pin_number": 42
+    },
+    "branches": [],
+    "layer": "top",
+    "width": 0.15
+  },
+  {
+    "name": "CAN_RS_TRANSFER_05_02",
+    "net": "CAN_RS",
+    "x": 2.9,
+    "y": 10.1,
+    "owner": {
+      "reference": "U1",
+      "pin_number": 42
+    },
+    "branches": [],
+    "layer": "top",
+    "width": 0.15
+  },
+  {
+    "name": "CAN_RS_TRANSFER_05_03",
+    "net": "CAN_RS",
+    "x": -2.125,
+    "y": 4.175,
+    "owner": {
+      "reference": "U1",
+      "pin_number": 42
+    },
+    "branches": [],
+    "layer": "top",
+    "width": 0.15
+  },
+  {
+    "name": "TMC_DIR_TRANSFER_00_01",
+    "net": "TMC_DIR",
+    "x": -2.7,
+    "y": 2.125,
+    "owner": {
+      "reference": "U2",
+      "pin_number": 19
+    },
+    "branches": [],
+    "layer": "top",
+    "width": 0.15
+  },
+  {
+    "name": "TMC_DIR_TRANSFER_00_02",
+    "net": "TMC_DIR",
+    "x": -7.275,
+    "y": 7.125,
+    "owner": {
+      "reference": "U2",
+      "pin_number": 19
+    },
+    "branches": [],
+    "layer": "top",
+    "width": 0.15
+  },
+  {
+    "name": "TMC_DIR_TRANSFER_01_01",
+    "net": "TMC_DIR",
+    "x": 12.6,
+    "y": 10.225,
+    "owner": {
+      "reference": "U1",
+      "pin_number": 18
+    },
+    "branches": [],
+    "layer": "top",
+    "width": 0.15
+  },
+  {
+    "name": "GND_MOTOR_PLANE_RECONNECT",
+    "net": "GND",
+    "x": -1.925,
+    "y": 13.05,
+    "layer": "bottom",
+    "width": 0.4,
+    "branches": []
+  }
+]

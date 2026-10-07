@@ -1,0 +1,249 @@
+{
+  "revision": "0.0.50-alpha.0",
+  "scope": "Conservative external mating/straight-wire envelope clearance; actual plug CAD unavailable; own-header mating overlap excluded only",
+  "inputs": {
+    "front_carrier_audit_sha256": "42b6ba9983648097ad527f9f3f047c539d9eb33453c400689786bde434be9790"
+  },
+  "results": [
+    {
+      "reference": "J_IO",
+      "mate": "SHR-10V-S, SSH-003T-P0.2-H; AWG28",
+      "bounds_mm": [
+        [
+          16,
+          -1.6,
+          -4.1
+        ],
+        [
+          23,
+          9.6,
+          -0.8
+        ]
+      ],
+      "catalogue_housing_mm": [
+        11,
+        5,
+        2.8
+      ],
+      "source": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "nominal_minimum_clearance_mm": 0.7000000000000002,
+      "limiting_neighbor": "carrier",
+      "additional_worst_case_allowance_mm": 0.4,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 0.1642853467318209,
+      "passed": true
+    },
+    {
+      "reference": "J_SWD",
+      "mate": "SHR-05V-S, SSH-003T-P0.2-H; AWG28",
+      "bounds_mm": [
+        [
+          16.9375,
+          -10.2,
+          -4.1
+        ],
+        [
+          23.9375,
+          -4.0,
+          -0.8
+        ]
+      ],
+      "catalogue_housing_mm": [
+        6,
+        5,
+        2.8
+      ],
+      "source": "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "nominal_minimum_clearance_mm": 0.7000000000000002,
+      "limiting_neighbor": "carrier",
+      "additional_worst_case_allowance_mm": 0.4,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 0.1642853467318209,
+      "passed": true
+    },
+    {
+      "reference": "J_MOTOR",
+      "mate": "GHR-04V-S, SSHL-002T-P0.2; AWG26",
+      "bounds_mm": [
+        [
+          -5,
+          13,
+          0.8
+        ],
+        [
+          1.5,
+          22,
+          5.6
+        ]
+      ],
+      "catalogue_housing_mm": [
+        6.25,
+        5.7,
+        4.15
+      ],
+      "source": "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
+      "reviewed_pages": [
+        1,
+        3
+      ],
+      "nominal_minimum_clearance_mm": 1.5999999999999999,
+      "limiting_neighbor": "BZ1",
+      "additional_worst_case_allowance_mm": 0.4,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 1.0642853467318205,
+      "passed": true
+    },
+    {
+      "reference": "J_USB",
+      "mate": "POWER USB-C cable: overmold at most 11 mm wide and 7 mm thick",
+      "bounds_mm": [
+        [
+          -11.7,
+          -43.8,
+          -5.605
+        ],
+        [
+          -0.7,
+          -18.79,
+          1.395
+        ]
+      ],
+      "scope": "Restricted cable envelope derived from actual registered connector mouth; no exact cable model claimed",
+      "source": "https://gct.co/connector/usb4110",
+      "nominal_minimum_clearance_mm": 1.249999904632575,
+      "limiting_neighbor": "J_DATA",
+      "additional_worst_case_allowance_mm": 0.4,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 0.7142852513643957,
+      "passed": true
+    },
+    {
+      "reference": "J_DATA",
+      "mate": "DATA USB-C cable: overmold at most 11 mm wide and 7 mm thick",
+      "bounds_mm": [
+        [
+          0.7,
+          -43.8,
+          -1.395
+        ],
+        [
+          11.7,
+          -18.79,
+          5.605
+        ]
+      ],
+      "scope": "Restricted cable envelope derived from actual registered connector mouth; no exact cable model claimed",
+      "source": "https://gct.co/connector/usb4110",
+      "nominal_minimum_clearance_mm": 1.2499999046325747,
+      "limiting_neighbor": "J_USB",
+      "additional_worst_case_allowance_mm": 0.4,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 0.7142852513643955,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "mating_pair_results": [
+    {
+      "left": "J_IO",
+      "right": "J_SWD",
+      "nominal_clearance_mm": 2.4,
+      "combined_tolerance_allowance_mm": 0.8,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 1.4642853467318206,
+      "passed": true
+    },
+    {
+      "left": "J_IO",
+      "right": "J_MOTOR",
+      "nominal_clearance_mm": 14.978985279383915,
+      "combined_tolerance_allowance_mm": 0.8,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 14.043270626115735,
+      "passed": true
+    },
+    {
+      "left": "J_IO",
+      "right": "J_USB",
+      "nominal_clearance_mm": 23.966353498185743,
+      "combined_tolerance_allowance_mm": 0.8,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 23.03063884491756,
+      "passed": true
+    },
+    {
+      "left": "J_IO",
+      "right": "J_DATA",
+      "nominal_clearance_mm": 17.71965293113835,
+      "combined_tolerance_allowance_mm": 0.8,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 16.783938277870167,
+      "passed": true
+    },
+    {
+      "left": "J_SWD",
+      "right": "J_MOTOR",
+      "nominal_clearance_mm": 23.019044425214528,
+      "combined_tolerance_allowance_mm": 0.8,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 22.083329771946346,
+      "passed": true
+    },
+    {
+      "left": "J_SWD",
+      "right": "J_USB",
+      "nominal_clearance_mm": 19.618091299869107,
+      "combined_tolerance_allowance_mm": 0.8,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 18.682376646600925,
+      "passed": true
+    },
+    {
+      "left": "J_SWD",
+      "right": "J_DATA",
+      "nominal_clearance_mm": 10.060790538024335,
+      "combined_tolerance_allowance_mm": 0.8,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 9.125075884756155,
+      "passed": true
+    },
+    {
+      "left": "J_MOTOR",
+      "right": "J_USB",
+      "nominal_clearance_mm": 31.79,
+      "combined_tolerance_allowance_mm": 0.8,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 30.854285346731817,
+      "passed": true
+    },
+    {
+      "left": "J_MOTOR",
+      "right": "J_DATA",
+      "nominal_clearance_mm": 31.79,
+      "combined_tolerance_allowance_mm": 0.8,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 30.854285346731817,
+      "passed": true
+    },
+    {
+      "left": "J_USB",
+      "right": "J_DATA",
+      "nominal_clearance_mm": 1.3999999999999992,
+      "combined_tolerance_allowance_mm": 0.8,
+      "load_deflection_screen_mm": 0.13571465326817925,
+      "remaining_clearance_mm": 0.46428534673182,
+      "passed": true
+    }
+  ],
+  "routing_authorized_by_this_check_alone": false,
+  "physical_fit_tested": false,
+  "cable_constraints": "Route wires straight outward beyond envelope before bending. Both USB overmolds <=11x7 mm; the previous single-port12mm allowance is superseded by the measured two-port envelope. No unrestricted cable/backdrive claim."
+}

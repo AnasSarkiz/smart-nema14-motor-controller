@@ -1,0 +1,37 @@
+{
+  "scope": "Synthetic validator regression fixtures only; NO hardware readback, NVM programming or negotiation measurement.",
+  "passed": true,
+  "hardware_tested": false,
+  "checks": [
+    {
+      "fixture": "valid",
+      "expected_acceptance": true,
+      "actual_acceptance": true
+    },
+    {
+      "fixture": "factory_three_pdos",
+      "expected_acceptance": false,
+      "actual_acceptance": false
+    },
+    {
+      "fixture": "20v_preferred",
+      "expected_acceptance": false,
+      "actual_acceptance": false
+    },
+    {
+      "fixture": "wrong_power_ok_cfg",
+      "expected_acceptance": false,
+      "actual_acceptance": false
+    },
+    {
+      "fixture": "not_cold_readback",
+      "expected_acceptance": false,
+      "actual_acceptance": false
+    },
+    {
+      "fixture": "invalid_byte",
+      "expected_acceptance": false,
+      "actual_acceptance": false
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+import { Fragment } from "react"
 import { BoardLegend } from "./BoardLegend"
 import { GroundReturnPlanes } from "./routing/GroundReturnPlanes"
 import type { FanoutTracePath } from "@tscircuit/props"
@@ -8,7 +9,9 @@ import { CanSheet } from "./can/CanSheet"
 import { I2cSheet } from "./interfaces/I2cSheet"
 import { McuSheet } from "./mcu/McuSheet"
 import { MotorDriverSheet } from "./motor-driver/MotorDriverSheet"
+import { MotorInterlockSheet } from "./motor-driver/MotorInterlockSheet"
 import { UsbPdSheet } from "./usb-pd/UsbPdSheet"
+import { UsbDataSheet } from "./usb-pd/UsbDataSheet"
 import { InputPowerSheet } from "./power/InputPowerSheet"
 import { LogicBuckSheet } from "./power/LogicBuckSheet"
 import { ControllerMount } from "./mechanics/ControllerMount"
@@ -67,7 +70,7 @@ export default function SmartNema14MotorController({
       layers={4}
       thickness="1.6mm"
       routeRemaining={routeRemaining}
-      routingDisabled={!copperEnabled}
+      routingDisabled={copperEnabled ? undefined : true}
       pcbStyle={{
         viaHoleDiameter: "0.30mm",
         viaPadDiameter: "0.45mm",
@@ -94,6 +97,27 @@ export default function SmartNema14MotorController({
       schLayout={{ layoutMode: "none" }}
     >
       <BoardLegend />
+      {[
+        "USB_DATA_VBUS",
+        "USB_DATA_CC1",
+        "USB_DATA_CC2",
+        "USB_DATA_SENSE_GATE",
+        "USB_DATA_ABSENT_N",
+        "MOTOR_REQUEST_N",
+        "MOTOR_ENABLE_DRIVE",
+        "MOTOR_POWER_GOOD",
+        "PD_PATH_INVALID_N",
+        "MOTOR_REQUEST_CLEAN_N",
+        "PD_CONTRACT_15_CLEAN_N",
+        "PD_PATH_INVALID_CLEAN_N",
+      ].map((name) => (
+        <Fragment key={name}>
+          <net
+            name={name}
+            routingPhaseIndex={rev45RoutingPhaseIndex(name, routingContext)}
+          />
+        </Fragment>
+      ))}
       <net
         name="PD_LOAD_ENABLE_N"
         routingPhaseIndex={rev45RoutingPhaseIndex(
@@ -606,9 +630,9 @@ export default function SmartNema14MotorController({
         routingPhaseIndex={rev45RoutingPhaseIndex("PD_RESET", routingContext)}
       />
       <net
-        name="PD_POWER_OK3"
+        name="PD_CONTRACT_15_N"
         routingPhaseIndex={rev45RoutingPhaseIndex(
-          "PD_POWER_OK3",
+          "PD_CONTRACT_15_N",
           routingContext,
         )}
       />
@@ -748,7 +772,9 @@ export default function SmartNema14MotorController({
       <CanSheet mechanicalPreview={mechanicalPreview} />
       <LogicBuckSheet mechanicalPreview={mechanicalPreview} />
       <MotorDriverSheet mechanicalPreview={mechanicalPreview} />
+      <MotorInterlockSheet mechanicalPreview={mechanicalPreview} />
       <UsbPdSheet mechanicalPreview={mechanicalPreview} />
+      <UsbDataSheet mechanicalPreview={mechanicalPreview} />
       <ProgrammingSheet mechanicalPreview={mechanicalPreview} />
       <InterfacesSheet mechanicalPreview={mechanicalPreview} />
       <InputPowerSheet mechanicalPreview={mechanicalPreview} />

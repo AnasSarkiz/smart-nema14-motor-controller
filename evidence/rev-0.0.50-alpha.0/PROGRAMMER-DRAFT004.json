@@ -1,0 +1,269 @@
+{
+  "canonical_sha256": "45c7094e22922001c29594d610129a4e3929492f4ebc327ffa8647a8b889eadd",
+  "official_package_version": "0.8.0",
+  "official_interface": "StandardJstSwdResetSide; programmer J3, five-way JST SH",
+  "official_physical_pin_labels": {
+    "1": [
+      "VOUT"
+    ],
+    "2": [
+      "SWDIO"
+    ],
+    "3": [
+      "GND"
+    ],
+    "4": [
+      "SWCLK"
+    ],
+    "5": [
+      "NRST",
+      "nRESET"
+    ]
+  },
+  "target_connector_part": "C136657 / SM05B-SRSS-TB(LF)(SN)",
+  "physical_pin_checks": [
+    {
+      "reference": "J_SWD",
+      "pin_number": 2,
+      "net": "SWDIO_CONN",
+      "passed": true
+    },
+    {
+      "reference": "J_SWD",
+      "pin_number": 3,
+      "net": "GND",
+      "passed": true
+    },
+    {
+      "reference": "J_SWD",
+      "pin_number": 4,
+      "net": "SWCLK_CONN",
+      "passed": true
+    },
+    {
+      "reference": "J_SWD",
+      "pin_number": 5,
+      "net": "NRST_CONN",
+      "passed": true
+    },
+    {
+      "reference": "U7",
+      "pin_number": 1,
+      "net": "POWER_GOOD",
+      "passed": true
+    },
+    {
+      "reference": "U7",
+      "pin_number": 2,
+      "net": "SWDIO_CONN",
+      "passed": true
+    },
+    {
+      "reference": "U7",
+      "pin_number": 3,
+      "net": "SWDIO_GUARDED",
+      "passed": true
+    },
+    {
+      "reference": "U7",
+      "pin_number": 4,
+      "net": "POWER_GOOD",
+      "passed": true
+    },
+    {
+      "reference": "U7",
+      "pin_number": 5,
+      "net": "SWCLK_CONN",
+      "passed": true
+    },
+    {
+      "reference": "U7",
+      "pin_number": 6,
+      "net": "SWCLK_GUARDED",
+      "passed": true
+    },
+    {
+      "reference": "U7",
+      "pin_number": 8,
+      "net": "GND",
+      "passed": true
+    },
+    {
+      "reference": "U7",
+      "pin_number": 9,
+      "net": "NRST_GUARDED",
+      "passed": true
+    },
+    {
+      "reference": "U7",
+      "pin_number": 10,
+      "net": "NRST_CONN",
+      "passed": true
+    },
+    {
+      "reference": "U7",
+      "pin_number": 11,
+      "net": "POWER_GOOD",
+      "passed": true
+    },
+    {
+      "reference": "U7",
+      "pin_number": 15,
+      "net": "POWER_GOOD",
+      "passed": true
+    },
+    {
+      "reference": "U7",
+      "pin_number": 16,
+      "net": "V3V3",
+      "passed": true
+    },
+    {
+      "reference": "U8",
+      "pin_number": 1,
+      "net": "GND",
+      "passed": true
+    },
+    {
+      "reference": "U8",
+      "pin_number": 2,
+      "net": "POWER_GOOD",
+      "passed": true
+    },
+    {
+      "reference": "U8",
+      "pin_number": 3,
+      "net": "V3V3",
+      "passed": true
+    },
+    {
+      "reference": "R19",
+      "pin_number": 1,
+      "net": "V3V3",
+      "passed": true
+    },
+    {
+      "reference": "R19",
+      "pin_number": 2,
+      "net": "POWER_GOOD",
+      "passed": true
+    },
+    {
+      "reference": "R20",
+      "pin_number": 1,
+      "net": "SWDIO_GUARDED",
+      "passed": true
+    },
+    {
+      "reference": "R20",
+      "pin_number": 2,
+      "net": "SWDIO",
+      "passed": true
+    },
+    {
+      "reference": "R21",
+      "pin_number": 1,
+      "net": "SWCLK_GUARDED",
+      "passed": true
+    },
+    {
+      "reference": "R21",
+      "pin_number": 2,
+      "net": "SWCLK",
+      "passed": true
+    },
+    {
+      "reference": "R22",
+      "pin_number": 1,
+      "net": "NRST_GUARDED",
+      "passed": true
+    },
+    {
+      "reference": "R22",
+      "pin_number": 2,
+      "net": "NRST",
+      "passed": true
+    },
+    {
+      "reference": "U1",
+      "pin_number": 25,
+      "net": "SWDIO",
+      "passed": true
+    },
+    {
+      "reference": "U1",
+      "pin_number": 24,
+      "net": "SWCLK",
+      "passed": true
+    },
+    {
+      "reference": "U1",
+      "pin_number": 26,
+      "net": "NRST",
+      "passed": true
+    },
+    {
+      "reference": "R1",
+      "pin_number": 1,
+      "net": "V3V3",
+      "passed": true
+    },
+    {
+      "reference": "R1",
+      "pin_number": 2,
+      "net": "NRST",
+      "passed": true
+    },
+    {
+      "reference": "C5",
+      "pin_number": 1,
+      "net": "NRST",
+      "passed": true
+    },
+    {
+      "reference": "C5",
+      "pin_number": 2,
+      "net": "GND",
+      "passed": true
+    },
+    {
+      "reference": "R52",
+      "pin_number": 1,
+      "net": "SWDIO",
+      "passed": true
+    },
+    {
+      "reference": "R52",
+      "pin_number": 2,
+      "net": "GND",
+      "passed": true
+    },
+    {
+      "reference": "R53",
+      "pin_number": 1,
+      "net": "SWCLK",
+      "passed": true
+    },
+    {
+      "reference": "R53",
+      "pin_number": 2,
+      "net": "GND",
+      "passed": true
+    }
+  ],
+  "wiring_checks_passed": true,
+  "programmer_vout_disconnected": true,
+  "nrst_independent_of_power_good": true,
+  "target_series_resistance_ohms": {
+    "R20": 100,
+    "R21": 100,
+    "R22": 100
+  },
+  "official_recommended_swd_series_resistance_ohms": 100,
+  "target_nrst_pullup_ohms": 10000,
+  "target_nrst_capacitance_f": 1e-07,
+  "qualification": "Pinout compatible; hardware flashing and timing untested. Target uses the recommended 100 ohm series resistors with TMUX1511 powered-off protection; maximum SWD rate requires waveform and flashing tests.",
+  "usage": "Straight-through five-way cable from programmer J3 to J_SWD. Target requires its own qualified USB-C supply. Programmer SWD/reset logic is fixed 3.3 V. Load programmer CMSIS-DAP firmware; use the RP2040 OpenOCD target configuration with hardware reset. Start with a slow SWD clock.",
+  "hardware_programming_verified": false,
+  "prototype_fabrication_ready": false
+}

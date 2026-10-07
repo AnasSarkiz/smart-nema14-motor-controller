@@ -7,6 +7,7 @@ export default function ControllerPreview() {
       mechanicalPreview
       usbRoutesEnabled={false}
       savedRoutesEnabled={false}
+      freshRoutesEnabled={false}
     />
   )
 }

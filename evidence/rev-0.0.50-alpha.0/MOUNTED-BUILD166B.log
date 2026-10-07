@@ -1,0 +1,223 @@
+Building 1 file(s)...
+Building mounted-assembly.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/mounted-assembly/circuit.json
+The "Y" prefix is being used with a <chip />, try using it with a <crystal />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+Differential pair "USB_RECEPTACLE_PAIR" positiveConnection=".R_USB_DP > port.pin1" is not point-to-point: expected exactly 2 terminal pins, found 4: .D_USB > .pin1, .J_DATA > .DP1, .J_DATA > .DP2, and .R_USB_DP > .pin1.
+Differential pair "USB_RECEPTACLE_PAIR" negativeConnection=".R_USB_DM > port.pin1" is not point-to-point: expected exactly 2 terminal pins, found 4: .D_USB > .pin2, .J_DATA > .DN1, .J_DATA > .DN2, and .R_USB_DM > .pin1.
+Y_RP has no pin with requires_power=true
+U9 has no pin with requires_power=true
+BZ1 has no pin with requires_power=true
+BZ1 has no pin with requires_ground=true
+Q_BUZZ has no pin with requires_power=true
+Q_BUZZ has no pin with requires_ground=true
+All pins on Q_BUZZ are underspecified (no pinAttributes set)
+Q_PD_IN has no pin with requires_power=true
+Q_PD_IN has no pin with requires_ground=true
+All pins on Q_PD_IN are underspecified (no pinAttributes set)
+Q_PD_OUT has no pin with requires_power=true
+Q_PD_OUT has no pin with requires_ground=true
+All pins on Q_PD_OUT are underspecified (no pinAttributes set)
+D_VBUS has no pin with requires_power=true
+D_VBUS has no pin with requires_ground=true
+All pins on D_VBUS are underspecified (no pinAttributes set)
+D_USB has no pin with requires_power=true
+Q_DATA_PRESENT has no pin with requires_power=true
+Q_DATA_PRESENT has no pin with requires_ground=true
+All pins on Q_DATA_PRESENT are underspecified (no pinAttributes set)
+J_IO has no pin with requires_power=true
+J_IO has no pin with requires_ground=true
+All pins on J_IO are underspecified (no pinAttributes set)
+J_MOTOR has no pin with requires_power=true
+J_MOTOR has no pin with requires_ground=true
+All pins on J_MOTOR are underspecified (no pinAttributes set)
+D_IO1 has no pin with requires_power=true
+D_IO2 has no pin with requires_power=true
+D_CAN has no pin with requires_power=true
+D_CAN has no pin with requires_ground=true
+All pins on D_CAN are underspecified (no pinAttributes set)
+U10 has no pin with requires_power=true
+Q_ILIM has no pin with requires_power=true
+Q_ILIM has no pin with requires_ground=true
+All pins on Q_ILIM are underspecified (no pinAttributes set)
+Q_DATA_PRESENT is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Failed to fetch supplier footprint for <crystal#396(.CAN>.Y_CAN) /> (jlcpcb:C179641): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#332(.I2C>.R_BUZZ_OFF) /> (jlcpcb:C852472): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#401(.CAN>.C_CAN_XIN) /> (jlcpcb:C1570): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#407(.CAN>.C_CAN_CORE) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#404(.CAN>.C_CAN_XOUT) /> (jlcpcb:C1570): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#430(.LogicPower>.U5) /> (jlcpcb:C780769): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#540(.MotorDriver>.R10) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#468(.MotorDriver>.U2) /> (jlcpcb:C2150710): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#546(.MotorDriver>.C21) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#683(.UsbPd>.Q_PD_IN) /> (jlcpcb:C222138): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#597(.MotorInterlock>.C_PD_SCHMITT) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <connector#640(.UsbPd>.J_USB) /> (jlcpcb:C5143397): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#603(.MotorInterlock>.U_MOTOR_ENN) /> (jlcpcb:C485081): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#753(.UsbPd>.R18) /> (jlcpcb:C11702): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#588(.MotorInterlock>.U_PD_SCHMITT) /> (jlcpcb:C68245): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#968(.Interfaces>.R29) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#600(.MotorInterlock>.C_MOTOR_INTERLOCK) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#715(.UsbPd>.C_PD_1V2) /> (jlcpcb:C15849): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#804(.UsbData>.R_DATA_CC1) /> (jlcpcb:C25905): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#811(.UsbData>.R_DATA_SENSE_TOP) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#871(.Programming>.R20) /> (jlcpcb:C25076): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#706(.UsbPd>.R_PD_GATE) /> (jlcpcb:C25768): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#721(.UsbPd>.R_PD_RESET) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#727(.UsbPd>.R_PD_OK) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#814(.UsbData>.R_DATA_SENSE_OFF) /> (jlcpcb:C852472): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#877(.Programming>.R22) /> (jlcpcb:C25076): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#363(.CAN>.C7) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#949(.Interfaces>.D_CAN) /> (jlcpcb:C12067): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#452(.LogicPower>.C12) /> (jlcpcb:C45783): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#857(.Programming>.U8) /> (jlcpcb:C5218924): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#937(.Interfaces>.D_IO2) /> (jlcpcb:C138714): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <connector#834(.Programming>.J_SWD) /> (jlcpcb:C136657): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#413(.CAN>.R_CAN_INT) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#883(.Programming>.R52) /> (jlcpcb:C852472): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#443(.LogicPower>.C10) /> (jlcpcb:C14663): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#501(.MotorDriver>.C14) /> (jlcpcb:C14663): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#862(.Programming>.R19) /> (jlcpcb:C852472): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#818(.UsbData>.R_DATA_PRESENT) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#507(.MotorDriver>.C16) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#449(.LogicPower>.C11) /> (jlcpcb:C45783): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <inductor#446(.LogicPower>.L1) /> (jlcpcb:C19947652): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#498(.MotorDriver>.C13) /> (jlcpcb:C307335): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#437(.LogicPower>.C8) /> (jlcpcb:C13585): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#211(.MCU>.R_FLASH_CS) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#227(.MCU>.R_USB_DM) /> (jlcpcb:C25100): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#230(.MCU>.R_USB_DP) /> (jlcpcb:C25100): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#198(.MCU>.C_RESET) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#136(.MCU>.U1) /> (jlcpcb:C2040): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#194(.MCU>.U_RESET) /> (jlcpcb:C5218924): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#221(.MCU>.C_XIN) /> (jlcpcb:C1548): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#214(.MCU>.C_FLASH) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#239(.MCU>.C1) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#242(.MCU>.C_IO2) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#245(.MCU>.C_IO3) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#217(.MCU>.Y_RP) /> (jlcpcb:C20625731): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#257(.MCU>.C_ADC) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#224(.MCU>.C_XOUT) /> (jlcpcb:C1548): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#251(.MCU>.C_IO5) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#218(.MCU>.R_XOUT) /> (jlcpcb:C11702): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#323(.I2C>.BZ1) /> (jlcpcb:C94598): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#329(.I2C>.R_BUZZ_GATE) /> (jlcpcb:C25076): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#254(.MCU>.C_IO6) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#266(.MCU>.C_VCORE) /> (jlcpcb:C15849): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#311(.I2C>.R2) /> (jlcpcb:C25900): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#236(.MCU>.C5) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#320(.I2C>.C32) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#272(.MCU>.C4) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#366(.CAN>.R49) /> (jlcpcb:C25079): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#314(.I2C>.R3) /> (jlcpcb:C25900): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#263(.MCU>.C2) /> (jlcpcb:C15849): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#304(.I2C>.U9) /> (jlcpcb:C28927): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#328(.I2C>.Q_BUZZ) /> (jlcpcb:C20512): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#374(.CAN>.U_CAN) /> (jlcpcb:C96140): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <diode#324(.I2C>.D_BUZZ) /> (jlcpcb:C22624): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#233(.MCU>.R1) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#510(.MotorDriver>.C17) /> (jlcpcb:C14663): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#513(.MotorDriver>.C18) /> (jlcpcb:C13585): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#528(.MotorDriver>.R4) /> (jlcpcb:C11702): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#525(.MotorDriver>.R6) /> (jlcpcb:C513714): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#575(.MotorInterlock>.R_PD_PATH) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#613(.MotorInterlock>.U_MOTOR_SUPERVISOR) /> (jlcpcb:C5218924): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#537(.MotorDriver>.R9) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#718(.UsbPd>.C_PD_2V7) /> (jlcpcb:C15849): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#543(.MotorDriver>.R11) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#740(.UsbPd>.D_VBUS) /> (jlcpcb:C1974707): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#741(.UsbPd>.C25) /> (jlcpcb:C268016): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#730(.UsbPd>.R_PD_SENSE) /> (jlcpcb:C4261071): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#578(.MotorInterlock>.R_MOTOR_REQUEST) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#712(.UsbPd>.C_PD_VDD) /> (jlcpcb:C268016): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#693(.UsbPd>.Q_PD_OUT) /> (jlcpcb:C222138): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#531(.MotorDriver>.R7) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#620(.MotorInterlock>.C_MOTOR_SUPERVISOR) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#733(.UsbPd>.R_PD_DISCH1) /> (jlcpcb:C4261071): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#581(.MotorInterlock>.U_MOTOR_INTERLOCK) /> (jlcpcb:C128410): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#750(.UsbPd>.R17) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#724(.UsbPd>.R12) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#747(.UsbPd>.R16) /> (jlcpcb:C25767): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#756(.UsbPd>.C27) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <led#992(.Interfaces>.LED_POWER) /> (jlcpcb:C965805): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#1067(.InputPower>.R39) /> (jlcpcb:C25792): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#1070(.InputPower>.R40) /> (jlcpcb:C852472): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#1064(.InputPower>.R38) /> (jlcpcb:C852472): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#1094(.InputPower>.C34) /> (jlcpcb:C268016): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#1079(.InputPower>.R43) /> (jlcpcb:C852895): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#865(.Programming>.C28) /> (jlcpcb:C1525): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#874(.Programming>.R21) /> (jlcpcb:C25076): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#840(.Programming>.U7) /> (jlcpcb:C2673275): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#817(.UsbData>.Q_DATA_PRESENT) /> (jlcpcb:C20512): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#807(.UsbData>.R_DATA_CC2) /> (jlcpcb:C25905): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#880(.Programming>.R51) /> (jlcpcb:C852472): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#886(.Programming>.R53) /> (jlcpcb:C852472): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#977(.Interfaces>.R32) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#906(.Interfaces>.J_IO) /> (jlcpcb:C160409): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#950(.Interfaces>.R23) /> (jlcpcb:C11702): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#989(.Interfaces>.R35) /> (jlcpcb:C11702): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#953(.Interfaces>.R24) /> (jlcpcb:C11702): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#965(.Interfaces>.R28) /> (jlcpcb:C25744): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#1001(.Interfaces>.R37) /> (jlcpcb:C11702): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <led#1004(.Interfaces>.LED_FAULT) /> (jlcpcb:C965805): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#504(.MotorDriver>.C15) /> (jlcpcb:C98192): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <chip#1063(.InputPower>.Q_ILIM) /> (jlcpcb:C20512): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#1085(.InputPower>.R45) /> (jlcpcb:C25769): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#1073(.InputPower>.R41) /> (jlcpcb:C11702): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <resistor#1076(.InputPower>.R42) /> (jlcpcb:C25900): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#1091(.InputPower>.C33) /> (jlcpcb:C268016): Failed to search for the component (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#440(.LogicPower>.C9) /> (jlcpcb:C14663): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <diode#572(.MotorInterlock>.D_PD_VALID) /> (jlcpcb:C124205): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <chip#201(.MCU>.U_FLASH) /> (jlcpcb:C2986331): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <resistor#410(.CAN>.R_CAN_CS) /> (jlcpcb:C25744): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <led#998(.Interfaces>.LED_STATUS) /> (jlcpcb:C965805): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#516(.MotorDriver>.C19) /> (jlcpcb:C178585): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <resistor#617(.MotorInterlock>.R_MOTOR_BOOT_PULLUP) /> (jlcpcb:C25760): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <chip#919(.Interfaces>.J_MOTOR) /> (jlcpcb:C189895): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <chip#926(.Interfaces>.D_IO1) /> (jlcpcb:C138714): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <chip#354(.CAN>.U6) /> (jlcpcb:C12084): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <resistor#534(.MotorDriver>.R8) /> (jlcpcb:C25744): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <chip#657(.UsbPd>.U3) /> (jlcpcb:C2678061): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#260(.MCU>.C_USBPHY) /> (jlcpcb:C1525): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#610(.MotorInterlock>.C_MOTOR_ENN) /> (jlcpcb:C1525): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <resistor#317(.I2C>.R33) /> (jlcpcb:C25744): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#519(.MotorDriver>.C20) /> (jlcpcb:C178585): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#986(.Interfaces>.C31) /> (jlcpcb:C1525): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <resistor#1097(.InputPower>.R48) /> (jlcpcb:C25744): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <resistor#1088(.InputPower>.R46) /> (jlcpcb:C25744): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <resistor#959(.Interfaces>.R26) /> (jlcpcb:C11702): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <chip#810(.UsbData>.D_USB) /> (jlcpcb:C97502): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#744(.UsbPd>.C26) /> (jlcpcb:C14663): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <resistor#956(.Interfaces>.R25) /> (jlcpcb:C11702): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <resistor#962(.Interfaces>.R27) /> (jlcpcb:C11702): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <resistor#974(.Interfaces>.R31) /> (jlcpcb:C25744): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <resistor#736(.UsbPd>.R_PD_DISCH2) /> (jlcpcb:C4261071): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <resistor#980(.Interfaces>.R34) /> (jlcpcb:C25744): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#983(.Interfaces>.C30) /> (jlcpcb:C1525): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#269(.MCU>.C3) /> (jlcpcb:C1525): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <capacitor#868(.Programming>.C29) /> (jlcpcb:C1525): Failed to fetch the component details (HTTP 503)
+Failed to fetch supplier footprint for <chip#1036(.InputPower>.U10) /> (jlcpcb:C2155767): Failed to fetch the component details (HTTP 503)
+Datasheet information for chip "BZ1" could not be fetched: the parts engine only accepted a request without the datasheet option. Pin attributes may not be populated.
+SMT pad unnamed SMD pad violates copper-to-board-edge clearance (measured 0.075mm, required 0.300mm)
+SMT pad unnamed SMD pad violates copper-to-board-edge clearance (measured 0.075mm, required 0.300mm)
+Courtyard of C5 overlaps with courtyard of J_SWD
+Courtyard of C3 overlaps with courtyard of J_SWD
+Courtyard of J_DATA overlaps with courtyard of J_SWD
+Generating GLB models for all builds...
+[mounted-assembly] Converting circuit to GLB...
+[mounted-assembly] Written 3d.glb
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   glbs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

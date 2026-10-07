@@ -1,5 +1,61 @@
 # Smart NEMA 14 Motor Controller
 
+Revision **0.0.50-alpha.0 — WIP prototype** uses **RP2040** and **two USB-C ports**:
+`J_USB` supplies motor power through STUSB4500 USB-PD; `J_DATA` connects the
+computer's USB data. The board is 35 × 35 mm, four layers, with the original
+STEPPERONLINE 14HM11-0404S motor and front carrier. Motor control is open loop.
+
+Configure and read back STUSB4500 NVM for two active sink PDOs: 5 V bootstrap
+and preferred 15 V / 1.5 A. Deactivate the factory 20 V PDO. The hardware
+interlock combines the 15 V indication, live sink path, MCU request and logic
+supervisor. Factory settings alone do not establish a 15 V motor contract.
+Computer VBUS only supplies its presence-sense divider; computer power cannot
+power the controller or motor. The POWER port must also be connected.
+
+The checked copper connects **53/120 required nets**, including all twelve raw
+PD VBUS terminals: **81 traces, 62 ordinary 0.30 mm drill / 0.45 mm pad through
+vias and six filled GND regions**. It has **298 open-port errors**, zero other
+native errors and zero independent copper-clearance violations. Routing and
+loaded power, USB, thermal and fresh manufacturing qualification continue.
+**PROTOTYPE FABRICATION READY: NO. Not hardware tested.**
+
+All 166 electronic references have purpose notes on eleven native A4 sheets;
+165 are fitted (R50 is optional). Original official JLCPCB definitions and
+OBJ/STEP models are preserved. Actual assembly, model registration and bounded
+connector/cable checks pass. See [current routing/electrical evidence](docs/REV50-TWO-PORT-ROUTING.md),
+[15 V NVM programming](docs/STUSB4500-15V-PROGRAMMING.md), [validation](VALIDATION.md)
+and [Cloud task](docs/cloud/TASK.md). The remaining imported TVS schematic
+rotation finding is disclosed. Exact-part stock checks are snapshots, not a
+customer PCBA allocation or assembly quote.
+
+The lockfile pins Bun 1.3.9, tscircuit 0.0.2757, CLI 0.1.2257, core 0.0.2107,
+native Pipeline9 0.0.962 and coherent released dependencies.
+
+```bash
+bash scripts/cloud-setup.sh
+bash scripts/cloud-smoke.sh
+bun run typecheck
+bun run build
+```
+
+Setup/startup do not route. The intermediate build exits 1 while required opens
+remain. Routing uses bounded native Pipeline9 batches and qualified saved source
+paths, without supplier edits, generated JSON edits or weaker checks.
+
+Public destinations: [GitHub main](https://github.com/AnasSarkiz/smart-nema14-motor-controller)
+and [tscircuit](https://tscircuit.com/AnasSarkiz/smart-nema14-motor-controller--01a0fd9b).
+Publication receipts identify exact matching source, Circuit JSON and CAD bytes.
+No fabrication order is authorized.
+
+---
+
+## Historical revision 48 record
+
+The following is preserved history. Its one-port architecture, counts, toolchain
+and CAD limitations do not describe the current two-port revision.
+
+# Smart NEMA 14 Motor Controller
+
 Revision **0.0.48-alpha.0** — **RP2040 + autonomous STUSB4500 USB-PD**.
 **Partially routed prototype. PROTOTYPE FABRICATION READY: NO. Not hardware tested.**
 

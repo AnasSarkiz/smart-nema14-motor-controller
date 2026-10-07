@@ -59,7 +59,7 @@ for (const [ref, pin, net] of [
   ["U1", 3, "TMC_UART_RX"],
   ["U1", 4, "TMC_STEP"],
   ["U1", 5, "TMC_DIR"],
-  ["U1", 6, "TMC_ENABLE_N"],
+  ["U1", 6, "MOTOR_REQUEST_N"],
   ["U1", 7, "TMC_DIAG"],
   ["U1", 8, "I2C_SDA"],
   ["U1", 9, "I2C_SCL"],
@@ -92,7 +92,8 @@ for (const [ref, pin, net] of [
   ["U1", 36, "LED_FAULT_DRIVE"],
   ["U1", 37, "BUZZER_PWM"],
   ["U1", 38, "VBUS_ADC"],
-  ["U1", 39, "PD_POWER_OK3"],
+  ["U1", 39, "PD_CONTRACT_15_N"],
+  ["U1", 41, "USB_DATA_ABSENT_N"],
   ["U1", 40, "TEMP_ALERT_N"],
   ["U1", 42, "V3V3"],
   ["U1", 43, "V3V3"],
@@ -121,7 +122,7 @@ for (const [ref, pin, net] of [
   ["U3", 10, "GND"],
   ["U3", 12, "GND"],
   ["U3", 13, "GND"],
-  ["U3", 14, "PD_POWER_OK3"],
+  ["U3", 20, "PD_CONTRACT_15_N"],
   ["U3", 16, "PD_LOAD_ENABLE_N"],
   ["U3", 18, "PD_VBUS_SENSE"],
   ["U3", 19, "PD_ALERT_N"],
@@ -254,15 +255,77 @@ for (const [ref, pin, net] of [
   ["R10", 2, "TMC_VREF"],
   ["R11", 1, "TMC_VREF"],
   ["R11", 2, "GND"],
+  ["J_DATA", 8, "GND"],
+  ["J_DATA", 9, "GND"],
+  ["J_DATA", 10, "GND"],
+  ["J_DATA", 11, "GND"],
+  ["J_DATA", 12, "USB_DM"],
+  ["J_DATA", 13, "USB_DP"],
+  ["J_DATA", 15, "USB_DATA_CC2"],
+  ["J_DATA", 16, "USB_DP"],
+  ["J_DATA", 17, "USB_DM"],
+  ["J_DATA", 18, "USB_DATA_CC1"],
+  ["J_DATA", 20, "USB_DATA_VBUS"],
+  ["J_DATA", 21, "USB_DATA_VBUS"],
+  ["J_DATA", 22, "GND"],
+  ["J_DATA", 23, "GND"],
+  ["R_DATA_CC1", 1, "USB_DATA_CC1"],
+  ["R_DATA_CC1", 2, "GND"],
+  ["R_DATA_CC2", 1, "USB_DATA_CC2"],
+  ["R_DATA_CC2", 2, "GND"],
+  ["Q_DATA_PRESENT", 1, "USB_DATA_SENSE_GATE"],
+  ["Q_DATA_PRESENT", 2, "GND"],
+  ["Q_DATA_PRESENT", 3, "USB_DATA_ABSENT_N"],
+  ["R_DATA_PRESENT", 1, "V3V3"],
+  ["R_DATA_PRESENT", 2, "USB_DATA_ABSENT_N"],
+  ["R_DATA_SENSE_TOP", 1, "USB_DATA_VBUS"],
+  ["R_DATA_SENSE_TOP", 2, "USB_DATA_SENSE_GATE"],
+  ["R_DATA_SENSE_OFF", 1, "USB_DATA_SENSE_GATE"],
+  ["R_DATA_SENSE_OFF", 2, "GND"],
+  ["D_PD_VALID", 1, "PD_LOAD_ENABLE_N"],
+  ["D_PD_VALID", 2, "PD_PATH_INVALID_N"],
+  ["R_PD_PATH", 1, "V3V3"],
+  ["R_PD_PATH", 2, "PD_PATH_INVALID_N"],
+  ["R_MOTOR_REQUEST", 1, "V3V3"],
+  ["R_MOTOR_REQUEST", 2, "MOTOR_REQUEST_N"],
+  ["U_PD_SCHMITT", 1, "MOTOR_REQUEST_N"],
+  ["U_PD_SCHMITT", 7, "MOTOR_REQUEST_CLEAN_N"],
+  ["U_PD_SCHMITT", 3, "PD_CONTRACT_15_N"],
+  ["U_PD_SCHMITT", 5, "PD_CONTRACT_15_CLEAN_N"],
+  ["U_PD_SCHMITT", 6, "PD_PATH_INVALID_N"],
+  ["U_PD_SCHMITT", 2, "PD_PATH_INVALID_CLEAN_N"],
+  ["U_PD_SCHMITT", 4, "GND"],
+  ["U_PD_SCHMITT", 8, "V3V3"],
+  ["U_MOTOR_INTERLOCK", 1, "MOTOR_REQUEST_CLEAN_N"],
+  ["U_MOTOR_INTERLOCK", 2, "GND"],
+  ["U_MOTOR_INTERLOCK", 3, "PD_CONTRACT_15_CLEAN_N"],
+  ["U_MOTOR_INTERLOCK", 4, "MOTOR_ENABLE_DRIVE"],
+  ["U_MOTOR_INTERLOCK", 5, "V3V3"],
+  ["U_MOTOR_INTERLOCK", 6, "PD_PATH_INVALID_CLEAN_N"],
+  ["U_MOTOR_ENN", 1, "GND"],
+  ["U_MOTOR_ENN", 2, "GND"],
+  ["U_MOTOR_ENN", 3, "MOTOR_ENABLE_DRIVE"],
+  ["U_MOTOR_ENN", 4, "TMC_ENABLE_N"],
+  ["U_MOTOR_ENN", 5, "V3V3"],
+  ["U_MOTOR_ENN", 6, "MOTOR_POWER_GOOD"],
+  ["C_MOTOR_ENN", 1, "V3V3"],
+  ["C_MOTOR_ENN", 2, "GND"],
+  ["U_MOTOR_SUPERVISOR", 1, "GND"],
+  ["U_MOTOR_SUPERVISOR", 2, "MOTOR_POWER_GOOD"],
+  ["U_MOTOR_SUPERVISOR", 3, "V3V3"],
+  ["R_MOTOR_BOOT_PULLUP", 1, "V3V3"],
+  ["R_MOTOR_BOOT_PULLUP", 2, "MOTOR_POWER_GOOD"],
+  ["C_MOTOR_SUPERVISOR", 1, "V3V3"],
+  ["C_MOTOR_SUPERVISOR", 2, "GND"],
+  ["C_MOTOR_INTERLOCK", 1, "V3V3"],
+  ["C_MOTOR_INTERLOCK", 2, "GND"],
+  ["C_PD_SCHMITT", 1, "V3V3"],
+  ["C_PD_SCHMITT", 2, "GND"],
   ["J_USB", 8, "GND"],
   ["J_USB", 9, "GND"],
   ["J_USB", 10, "GND"],
   ["J_USB", 11, "GND"],
-  ["J_USB", 12, "USB_DM"],
-  ["J_USB", 13, "USB_DP"],
   ["J_USB", 15, "PD_CC2_CONN"],
-  ["J_USB", 16, "USB_DP"],
-  ["J_USB", 17, "USB_DM"],
   ["J_USB", 18, "PD_CC1_CONN"],
   ["J_USB", 20, "VBUS_CONN"],
   ["J_USB", 21, "VBUS_CONN"],
@@ -396,7 +459,7 @@ for (const [ref, pin, net] of [
 
 assert.equal(
   components.length,
-  147,
+  166,
   "Do not validate an empty or unexpected draft",
 )
 assert.ok(
@@ -449,10 +512,87 @@ for (const reference of ["R2", "R3"]) {
     `${reference} must retain the temperature bus pull-up`,
   )
 }
+for (const reference of ["R_DATA_CC1", "R_DATA_CC2"]) {
+  const rd = components.find((component) => component.name === reference)
+  assert.equal(rd.resistance, 5100)
+  assert.deepEqual(rd.supplier_part_numbers.jlcpcb, ["C25905"])
+}
+for (const [ref, pins] of [
+  ["J_USB", [12, 13, 14, 16, 17, 19]],
+  ["J_DATA", [14, 19]],
+  ["U3", [14]],
+]) {
+  const component = components.find((candidate) => candidate.name === ref)
+  for (const pin of pins) {
+    const port = ports.find(
+      (candidate) =>
+        candidate.source_component_id === component.source_component_id &&
+        candidate.pin_number === pin,
+    )
+    assert.ok(port)
+    assert.equal(
+      traces.filter((trace) =>
+        trace.connected_source_port_ids.includes(port.source_port_id),
+      ).length,
+      0,
+      `${ref} pin ${pin} must remain no-connect`,
+    )
+  }
+}
+const pcVbus = nets.find((net) => net.name === "USB_DATA_VBUS")
+const pcVbusMembers = ports
+  .filter(
+    (port) =>
+      port.subcircuit_connectivity_map_key ===
+      pcVbus.subcircuit_connectivity_map_key,
+  )
+  .map(
+    (port) =>
+      `${components.find((component) => component.source_component_id === port.source_component_id).name}.${port.pin_number}`,
+  )
+  .sort()
+assert.deepEqual(pcVbusMembers, [
+  "J_DATA.20",
+  "J_DATA.21",
+  "R_DATA_SENSE_TOP.1",
+])
+const pcCc1 = nets.find((net) => net.name === "USB_DATA_CC1")
+const pcCc2 = nets.find((net) => net.name === "USB_DATA_CC2")
+assert.notEqual(
+  pcCc1.subcircuit_connectivity_map_key,
+  pcCc2.subcircuit_connectivity_map_key,
+)
+for (const name of ["PD_CC1_CONN", "PD_CC2_CONN"]) {
+  const cc = nets.find((net) => net.name === name)
+  const references = [
+    ...new Set(
+      ports
+        .filter(
+          (port) =>
+            port.subcircuit_connectivity_map_key ===
+            cc.subcircuit_connectivity_map_key,
+        )
+        .map(
+          (port) =>
+            components.find(
+              (component) =>
+                component.source_component_id === port.source_component_id,
+            ).name,
+        ),
+    ),
+  ].sort()
+  assert.deepEqual(references, ["J_USB", "U3"])
+}
+assert.notEqual(
+  nets.find((net) => net.name === "MOTOR_REQUEST_N")
+    .subcircuit_connectivity_map_key,
+  nets.find((net) => net.name === "TMC_ENABLE_N")
+    .subcircuit_connectivity_map_key,
+)
 const sheets = circuitJson.filter(
   (element) => element.type === "schematic_sheet",
 )
-assert.equal(sheets.length, 9)
+assert.equal(sheets.length, 11)
 assert.ok(
   sheets.every(
     (sheet) =>
@@ -479,6 +619,7 @@ const distinctPowerNets = [
   "TMC_5VOUT",
   "VBUS_CONN",
   "VBUS_PROTECTED",
+  "USB_DATA_VBUS",
 ].map((netName) => {
   const net = nets.find((candidate) => candidate.name === netName)
   assert.ok(net, `Missing ${netName}`)
@@ -606,5 +747,5 @@ assert.equal(
   0,
 )
 console.log(
-  "Draft checks passed: RP2040/USB-PD/CAN/flash/buzzer physical pin connections, supplier identities, nine A4 sheets, protected programming paths, current-limit values and separate supply rails; no PCB output.",
+  "Draft checks passed: RP2040/USB-PD/CAN/flash/buzzer physical pin connections, supplier identities, eleven A4 sheets, protected programming paths, current-limit values and separate supply rails; no PCB output.",
 )

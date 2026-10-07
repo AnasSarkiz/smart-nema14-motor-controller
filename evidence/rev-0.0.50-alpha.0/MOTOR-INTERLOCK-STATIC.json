@@ -1,0 +1,210 @@
+{
+  "circuit_sha256": "4859eeb1a42d6fdacb16fed8034b81ec86e13814ef0221f19d20d1c0a75f8b05",
+  "chosen_gate": "TI SN74LVC1G98DCKR C485081, Schmitt-input NAND configuration",
+  "passed_pin_truth_and_scoped_static_corners": true,
+  "truth_rows": [
+    {
+      "request_n": 0,
+      "contract_15_n": 0,
+      "path_invalid_n": 0,
+      "power_good": 0,
+      "enn": 1
+    },
+    {
+      "request_n": 0,
+      "contract_15_n": 0,
+      "path_invalid_n": 0,
+      "power_good": 1,
+      "enn": 0
+    },
+    {
+      "request_n": 0,
+      "contract_15_n": 0,
+      "path_invalid_n": 1,
+      "power_good": 0,
+      "enn": 1
+    },
+    {
+      "request_n": 0,
+      "contract_15_n": 0,
+      "path_invalid_n": 1,
+      "power_good": 1,
+      "enn": 1
+    },
+    {
+      "request_n": 0,
+      "contract_15_n": 1,
+      "path_invalid_n": 0,
+      "power_good": 0,
+      "enn": 1
+    },
+    {
+      "request_n": 0,
+      "contract_15_n": 1,
+      "path_invalid_n": 0,
+      "power_good": 1,
+      "enn": 1
+    },
+    {
+      "request_n": 0,
+      "contract_15_n": 1,
+      "path_invalid_n": 1,
+      "power_good": 0,
+      "enn": 1
+    },
+    {
+      "request_n": 0,
+      "contract_15_n": 1,
+      "path_invalid_n": 1,
+      "power_good": 1,
+      "enn": 1
+    },
+    {
+      "request_n": 1,
+      "contract_15_n": 0,
+      "path_invalid_n": 0,
+      "power_good": 0,
+      "enn": 1
+    },
+    {
+      "request_n": 1,
+      "contract_15_n": 0,
+      "path_invalid_n": 0,
+      "power_good": 1,
+      "enn": 1
+    },
+    {
+      "request_n": 1,
+      "contract_15_n": 0,
+      "path_invalid_n": 1,
+      "power_good": 0,
+      "enn": 1
+    },
+    {
+      "request_n": 1,
+      "contract_15_n": 0,
+      "path_invalid_n": 1,
+      "power_good": 1,
+      "enn": 1
+    },
+    {
+      "request_n": 1,
+      "contract_15_n": 1,
+      "path_invalid_n": 0,
+      "power_good": 0,
+      "enn": 1
+    },
+    {
+      "request_n": 1,
+      "contract_15_n": 1,
+      "path_invalid_n": 0,
+      "power_good": 1,
+      "enn": 1
+    },
+    {
+      "request_n": 1,
+      "contract_15_n": 1,
+      "path_invalid_n": 1,
+      "power_good": 0,
+      "enn": 1
+    },
+    {
+      "request_n": 1,
+      "contract_15_n": 1,
+      "path_invalid_n": 1,
+      "power_good": 1,
+      "enn": 1
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "data only / no logic supply",
+      "logic_powered": false,
+      "motor_powered": false,
+      "motor_enabled": false
+    },
+    {
+      "name": "PD5V, with or without data",
+      "inputs": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "enn": 1
+    },
+    {
+      "name": "PD15V, no request",
+      "inputs": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "enn": 1
+    },
+    {
+      "name": "PD15V, qualified request",
+      "inputs": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "enn": 0
+    },
+    {
+      "name": "detach with stale POWER_OK2 and held-up logic",
+      "inputs": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "enn": 1
+    },
+    {
+      "name": "renegotiation/path loss",
+      "inputs": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "enn": 1
+    },
+    {
+      "name": "supervisor reset/brownout, any flags",
+      "inputs": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "enn": 1
+    },
+    {
+      "name": "factory20V configuration",
+      "nvm_acceptance": false,
+      "fabrication_configuration_acceptance": false
+    }
+  ],
+  "corners": {
+    "supervisor_max_sink_ua": 14.539842873176207,
+    "supervisor_guarantee_ua": 15,
+    "power_good_min_high_at_3v": 2.091,
+    "pd_diode_shift_max_low_at_25c": 0.72,
+    "pd_schmitt_low_limit_at_3v": 0.84,
+    "enn_max_sink_ma": 0.34939393939393937,
+    "enn_gate_max_low_at_3v": 0.45,
+    "tmc_low_limit_at_3v": 0.9
+  },
+  "startup_conclusion": "No MOS threshold assumption remains. Supervisor feeds a Schmitt input; rising sub-POR is below the TMC minimum I/O reset-release voltage. ENN and VCC_IO share one rail.",
+  "limitations": [
+    "ST open-drain VOL and BAT54 VF/leakage limits used here are guaranteed at25C; hot/cold diode-shift margins require physical qualification.",
+    "Below1.65V logic behavior is outside its operating range. No measured falling-ramp reset threshold or full-ramp waveform is claimed.",
+    "NVM cold readback, live15V negotiation, exact routed input capacitance/edge checks, detach timing and backfeed measurements remain pending."
+  ],
+  "physical_startup_tested": false,
+  "fabrication_ready": false
+}

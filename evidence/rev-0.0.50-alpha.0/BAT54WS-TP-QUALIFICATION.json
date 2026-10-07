@@ -1,0 +1,32 @@
+{
+  "purchased_part": "C668868 MCC BAT54WS-TP",
+  "jlc_stock_snapshot": 16147,
+  "datasheet_sha256": "8c1681c3a15cc7d47028d34fd6a3190d60c689c03b0432df6479fa71e3f9bb44",
+  "manufacturer_limits_at_25C": {
+    "dc_reverse_voltage_V": 30,
+    "VF_max_at_1mA_V": 0.32,
+    "reverse_leakage_max_at_25V_uA": 2
+  },
+  "same_original_land_geometry_and_model_bytes": true,
+  "preserved_prior_full_assembly_qualification": "FRONT-CARRIER-AUDIT.json and CADQUERY166.json",
+  "entries": {
+    "BAT54WS_7_F": {
+      "obj": "d80b1280ab715ab64d8d0d839353d728435d675c64844a6df39248f1918a22c9",
+      "step": "9d3d6f4ee4b582bb1ba7152befc7da6217084253623b730b996aacec436ec089",
+      "pads": [
+        "<smtpad portHints={[\"pin1\"]} pcbX=\"-1.172464mm\" pcbY=\"0mm\" width=\"0.999998mm\" height=\"0.6999986mm\" shape=\"rect\" />",
+        "<smtpad portHints={[\"pin2\"]} pcbX=\"1.172464mm\" pcbY=\"0mm\" width=\"0.999998mm\" height=\"0.6999986mm\" shape=\"rect\" />"
+      ]
+    },
+    "BAT54WS_TP": {
+      "obj": "d80b1280ab715ab64d8d0d839353d728435d675c64844a6df39248f1918a22c9",
+      "step": "9d3d6f4ee4b582bb1ba7152befc7da6217084253623b730b996aacec436ec089",
+      "pads": [
+        "<smtpad portHints={[\"pin1\",\"cathode\",\"neg\"]} pcbX=\"-1.172464mm\" pcbY=\"0mm\" width=\"0.999998mm\" height=\"0.6999986mm\" shape=\"rect\" />",
+        "<smtpad portHints={[\"pin2\",\"anode\",\"pos\"]} pcbX=\"1.172464mm\" pcbY=\"0mm\" width=\"0.999998mm\" height=\"0.6999986mm\" shape=\"rect\" />"
+      ]
+    }
+  },
+  "supplier_source_modified": false,
+  "scope": "Official released import with polarized aliases replaces missing symbol; exact unchanged imported pad geometry and genuine model bytes preserve mechanical geometry. Electrical and fresh native schematic checks remain required."
+}

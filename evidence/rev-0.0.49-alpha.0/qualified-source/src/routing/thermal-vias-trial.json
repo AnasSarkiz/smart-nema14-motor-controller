@@ -1,0 +1,61 @@
+{
+  "scope": "Only intentionally specified exposed-pad thermal vias. All other pads, tracks, holes, keepouts and annular rings retain their checks.",
+  "fabrication_requirement": "Fill and cap these thermal vias for assembly; review JLCPCB via filling/CAM and exposed-pad paste before fabrication approval.",
+  "vias": [
+    {
+      "name": "RTN_EFUSE_THERMAL",
+      "x": -4.5,
+      "y": -7.75,
+      "hole_diameter_mm": 0.3,
+      "outer_diameter_mm": 0.45,
+      "reference": "U10",
+      "pin_number": 25,
+      "net": "EFUSE_RTN",
+      "reason": "Native through thermal via within TPS26600 RTN exposed pad, joined to the separate RTN return island."
+    },
+    {
+      "name": "TMC_THERMAL_S",
+      "x": -10.2,
+      "y": -0.1,
+      "hole_diameter_mm": 0.3,
+      "outer_diameter_mm": 0.45,
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "reason": "Specified exposed-pad ground thermal spreading, filled and capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_C",
+      "x": -10.2,
+      "y": 0.7,
+      "hole_diameter_mm": 0.3,
+      "outer_diameter_mm": 0.45,
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "reason": "Specified exposed-pad ground thermal spreading, filled and capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_N",
+      "x": -10.2,
+      "y": 1.5,
+      "hole_diameter_mm": 0.3,
+      "outer_diameter_mm": 0.45,
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "reason": "Specified exposed-pad ground thermal spreading, filled and capped construction."
+    },
+    {
+      "name": "TCPP_THERMAL",
+      "x": -11.5,
+      "y": 11,
+      "hole_diameter_mm": 0.3,
+      "outer_diameter_mm": 0.45,
+      "reference": "U3",
+      "pin_number": 13,
+      "net": "GND",
+      "reason": "Specified exposed-pad ground thermal spreading, filled and capped construction."
+    }
+  ]
+}

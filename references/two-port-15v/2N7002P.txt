@@ -1,0 +1,861 @@
+                    2N7002P
+                    60 V, 360 mA N-channel Trench MOSFET
+                    Rev. 02 — 29 July 2010                                                        Product data sheet
+
+
+
+
+1. Product profile
+
+          1.1 General description
+              N-channel enhancement mode Field-Effect Transistor (FET) in a small SOT23
+              (TO-236AB) Surface-Mounted Device (SMD) plastic package using Trench MOSFET
+              technology.
+
+          1.2 Features and benefits
+                AEC-Q101 qualified                                       Trench MOSFET technology
+                Logic-level compatible                                   Very fast switching
+
+          1.3 Applications
+                High-speed line driver                                   Relay driver
+                Low-side loadswitch                                      Switching circuits
+
+          1.4 Quick reference data
+              Table 1.      Quick reference data
+              Symbol          Parameter            Conditions                                 Min     Typ    Max Unit
+              VDS             drain-source         Tamb = 25 °C                               -       -      60    V
+                              voltage
+              VGS             gate-source                                                     -20     -      20    V
+                              voltage
+              ID              drain current        VGS = 10 V; Tamb = 25 °C            [1]    -       -      360   mA
+              Static characteristics
+              RDSon           drain-source         VGS = 10 V; ID = 500 mA;                   -       1      1.6   Ω
+                              on-state             Tj = 25 °C; pulsed; tp ≤ 300 µs;
+                              resistance           δ ≤ 0.01
+
+              [1]   Device mounted on an FR4 PCB, single-sided copper, tin-plated, mounting pad for drain 1 cm2.
+NXP Semiconductors                                                                                                                                 2N7002P
+                                                                                                               60 V, 360 mA N-channel Trench MOSFET
+
+
+
+2. Pinning information
+Table 2.       Pinning information
+Pin          Symbol Description                                   Simplified outline                                         Graphic symbol
+1            G           gate
+                                                                                                 3                                                   D
+2            S           source
+3            D           drain
+                                                                                                                                         G
+                                                                                  1                     2
+
+                                                                           SOT23 (TO-236AB)                                              mbb076      S
+
+
+
+3. Ordering information
+Table 3.       Ordering information
+Type number                  Package
+                             Name              Description                                                                                                 Version
+2N7002P                      TO-236AB          plastic surface-mounted package; 3 leads                                                                    SOT23
+
+
+4. Marking
+Table 4.       Marking codes
+Type number                                                                           Marking code[1]
+2N7002P                                                                               LW%
+
+[1]    % = -: made in Hong Kong; % = p: made in Hong Kong; % = t: made in Malaysia; % = W: made in China
+
+
+5. Limiting values
+Table 5.       Limiting values
+In accordance with the Absolute Maximum Rating System (IEC 60134).
+Symbol              Parameter                                 Conditions                                                                     Min           Max            Unit
+VDS                 drain-source voltage                      Tamb = 25 °C                                                                   -             60             V
+VGS                 gate-source voltage                                                                                                      -20           20             V
+ID                  drain current                             VGS = 10 V; Tamb = 25 °C                                             [1]       -             360            mA
+                                                              VGS = 10 V; Tamb = 100 °C                                            [1]       -             280            mA
+IDM                 peak drain current                        Tamb = 25 °C; single pulse; tp ≤ 10 µs                                         -             1.2            A
+Ptot                total power dissipation                   Tamb = 25 °C                                                         [2]       -             350            mW
+                                                                                                                                   [1]       -             420            mW
+                                                              Tsp = 25 °C                                                                    -             1140           mW
+Tj                  junction temperature                                                                                                     -             150            °C
+Tamb                ambient temperature                                                                                                      -55           150            °C
+Tstg                storage temperature                                                                                                      -65           150            °C
+Source-drain diode
+IS                  source current                            Tamb = 25 °C                                                         [1]       -             360            mA
+
+[1]    Device mounted on an FR4 PCB, single-sided copper, tin-plated, mounting pad for drain 1 cm2.
+
+2N7002P                                         All information provided in this document is subject to legal disclaimers.                         © NXP B.V. 2010. All rights reserved.
+
+Product data sheet                                              Rev. 02 — 29 July 2010                                                                                      2 of 15
+NXP Semiconductors                                                                                                                              2N7002P
+                                                                                                                   60 V, 360 mA N-channel Trench MOSFET
+
+
+[2]   Device mounted on an FR4 PCB, single-sided copper, tin-plated and standard footprint.
+
+
+                                                      017aaa001                                                                                    017aaa002
+            120                                                                                       120
+
+
+          Pder                                                                                     Ider
+          (%)                                                                                      (%)
+
+
+             80                                                                                         80
+
+
+
+
+             40                                                                                         40
+
+
+
+
+                 0                                                                                        0
+                  −75       −25        25   75     125      175                                            −75           −25     25      75     125      175
+                                                     Tamb (°C)                                                                                    Tamb (°C)
+
+
+
+
+  Fig 1.             Normalized total power dissipation as a                               Fig 2.          Normalized continuous drain current as a
+                     function of ambient temperature                                                       function of ambient temperature
+
+                                                                                                                                                   017aaa014
+             10
+
+           ID
+          (A)
+
+                 1
+                                                                                                                                                     (1)
+
+                                                                                                                                                     (2)
+
+           10−1
+                                                                                                                                                     (3)
+
+                                                                                                                                                     (4)
+                                                                                                                                                     (5)
+           10−2
+                                                                                                                                                     (6)
+
+
+
+
+           10−3
+              10−1                                      1                                                              10                                     102
+                                                                                                                                      VDS (V)
+
+                     IDM = single pulse
+                     (1) tp = 100 μs
+                     (2) tp = 1 ms
+                     (3) tp = 10 ms
+                     (4) tp = 100 ms
+                     (5) DC; Tsp = 25 °C
+                     (6) DC; Tamb = 25 °C; drain mounting pad 1 cm2
+  Fig 3.             Safe operating area; junction to ambient; continuous and peak drain currents as a function of drain-source
+                     voltage
+
+
+
+2N7002P                                             All information provided in this document is subject to legal disclaimers.                  © NXP B.V. 2010. All rights reserved.
+
+Product data sheet                                                  Rev. 02 — 29 July 2010                                                                               3 of 15
+NXP Semiconductors                                                                                                                                     2N7002P
+                                                                                                                     60 V, 360 mA N-channel Trench MOSFET
+
+
+
+6. Thermal characteristics
+Table 6.          Thermal characteristics
+Symbol                      Parameter                 Conditions                                                                         Min       Typ          Max            Unit
+Rth(j-a)                    thermal resistance        in free air                                                                  [1]   -         310          370            K/W
+                            from junction to                                                                                       [2]   -         260          300            K/W
+                            ambient
+Rth(j-sp)                   thermal resistance                                                                                           -         -            115            K/W
+                            from junction to solder
+                            point
+
+[1]   Device mounted on an FR4 PCB, single-sided copper, tin-plated and standard footprint.
+[2]   Device mounted on an FR4 PCB, single-sided copper, tin-plated, mounting pad for drain 1 cm2.
+
+
+                                                                                                                                                           017aaa015
+           103
+
+
+      Zth(j-a)      duty cycle = 1
+      (K/W)                     0.75
+                      0.5
+                                0.33
+           102       0.25
+                                 0.2
+                      0.1       0.05
+
+
+                                0.02
+            10                  0.01
+                       0
+
+
+
+
+             1
+             10−3                      10−2            10−1                               1                              10                  102                      103
+                                                                                                                                                       tp (s)
+
+                 FR4 PCB, standard footprint
+  Fig 4.         Transient thermal impedance from junction to ambient as a function of pulse duration; typical values
+
+                                                                                                                                                           017aaa016
+           103
+
+
+      Zth(j-a)
+                    duty cycle = 1
+      (K/W)
+                                0.75
+                      0.5
+           102                  0.33
+                     0.25
+                                 0.2
+                      0.1       0.05
+
+
+                       0        0.02
+            10                  0.01
+
+
+
+
+             1
+             10−3                      10−2            10−1                               1                              10                  102                      103
+                                                                                                                                                       tp (s)
+
+                 FR4 PCB, mounting pad for drain 1 cm2
+  Fig 5.         Transient thermal impedance from junction to ambient as a function of pulse duration; typical values
+2N7002P                                               All information provided in this document is subject to legal disclaimers.                        © NXP B.V. 2010. All rights reserved.
+
+Product data sheet                                                    Rev. 02 — 29 July 2010                                                                                     4 of 15
+NXP Semiconductors                                                                                                                 2N7002P
+                                                                                                        60 V, 360 mA N-channel Trench MOSFET
+
+
+
+7. Characteristics
+Table 7.    Characteristics
+Symbol           Parameter               Conditions                                                                   Min    Typ           Max            Unit
+Static characteristics
+V(BR)DSS         drain-source            ID = 10 µA; VGS = 0 V; Tj = 25 °C                                            60     -             -              V
+                 breakdown voltage
+VGSth            gate-source threshold   ID = 250 µA; VDS = VGS; Tj = 25 °C                                           1.1    1.75          2.4            V
+                 voltage
+IDSS             drain leakage current   VDS = 60 V; VGS = 0 V; Tj = 25 °C                                            -      -             1              µA
+                                         VDS = 60 V; VGS = 0 V; Tj = 150 °C                                           -      -             10             µA
+IGSS             gate leakage current    VGS = 20 V; VDS = 0 V; Tj = 25 °C                                            -      -             100            nA
+                                         VGS = -20 V; VDS = 0 V; Tj = 25 °C                                           -      -             100            nA
+RDSon            drain-source on-state   VGS = 5 V; ID = 50 mA; pulsed;                                               -      1.3           2              Ω
+                 resistance              tp ≤ 300 µs; δ ≤ 0.01 ; Tj = 25 °C
+                                         VGS = 10 V; ID = 500 mA; pulsed;                                             -      1             1.6            Ω
+                                         tp ≤ 300 µs; δ ≤ 0.01 ; Tj = 25 °C
+gfs               forward                VDS = 10 V; ID = 200 mA; pulsed;                                             -      400           -              mS
+                 transconductance        tp ≤ 300 µs; δ ≤ 0.01 ; Tj = 25 °C
+Dynamic characteristics
+QG(tot)          total gate charge       ID = 300 mA; VDS = 30 V; VGS = 4.5 V;                                        -      0.6           0.8            nC
+QGS              gate-source charge      Tj = 25 °C                                                                   -      0.2           -              nC
+QGD              gate-drain charge                                                                                    -      0.2           -              nC
+Ciss             input capacitance       VGS = 0 V; VDS = 10 V; f = 1 MHz;                                            -      30            50             pF
+Coss             output capacitance      Tj = 25 °C                                                                   -      7             -              pF
+Crss             reverse transfer                                                                                     -      4             -              pF
+                 capacitance
+td(on)           turn-on delay time      VDS = 50 V; RL = 250 Ω; VGS = 10 V;                                          -      3             6              ns
+tr               rise time               RG(ext) = 6 Ω; Tj = 25 °C                                                    -      4             -              ns
+td(off)          turn-off delay time                                                                                  -      10            20             ns
+tf               fall time                                                                                            -      5             -              ns
+Source-drain diode
+VSD              source-drain voltage    IS = 115 mA; VGS = 0 V; Tj = 25 °C                                           0.47   0.75          1.1            V
+
+
+
+
+2N7002P                                  All information provided in this document is subject to legal disclaimers.                © NXP B.V. 2010. All rights reserved.
+
+Product data sheet                                       Rev. 02 — 29 July 2010                                                                             5 of 15
+NXP Semiconductors                                                                                                                                                     2N7002P
+                                                                                                                                   60 V, 360 mA N-channel Trench MOSFET
+
+
+
+                                                                      017aaa017                                                                                           017aaa018
+             0.7                                                                                                    10−3
+           ID    VGS = 4.0 V
+          (A)                                                3.5 V
+             0.6                                                                                                    ID
+                                                                                                                   (A)
+
+            0.5
+                                                                                                                    10−4
+                                                             3.25 V
+                                                                                                                                                 (1)       (2)          (3)
+            0.4
+
+
+            0.3                                              3.0 V
+                                                                                                                    10−5
+            0.2
+                                                             2.75 V
+            0.1
+                                                             2.5 V
+            0.0                                                                                                     10−6
+               0.0         1.0            2.0                 3.0                   4.0                                      0                   1                2                    3
+                                                                     VDS (V)                                                                                           VGS (V)
+
+                  Tamb = 25 °C                                                                                               Tamb = 25 °C; VDS = 5 V
+                                                                                                                             (1) minimum values
+                                                                                                                             (2) typical values
+                                                                                                                             (3) maximum values
+  Fig 6.          Output characteristics: drain current as a                                               Fig 7.          Sub-threshold drain current as a function of
+                  function of drain-source voltage; typical values                                                         gate-source voltage
+
+                                                                      017aaa019                                                                                           017aaa020
+          10.0                                                                                                         6.0
+
+     RDSon
+      (Ω)                                                                                                        RDSon
+                                           (1)
+                                                                                                                  (Ω)
+            7.5
+                                                       (2)
+                                                                                                                       4.0
+
+
+            5.0
+
+                                                                                                                                                                 (1)
+                                                                                                                       2.0
+            2.5
+                                                                                                                                                                 (2)
+                                                              (3)
+                                                                              (4)
+
+                                                              (5)
+            0.0                                                                                                        0.0
+               0.0       0.2        0.4          0.6            0.8                 1.0                                   0.0             2.0        4.0   6.0         8.0      10.0
+                                                                        ID (A)                                                                                            VGS (V)
+
+                  Tamb = 25 °C                                                                                               ID = 500 mA
+                  (1) VGS = 3.25 V                                                                                           (1) Tamb = 150 °C
+                  (2) VGS = 3.5 V                                                                                            (2) Tamb = 25 °C
+                  (3) VGS = 4 V
+                  (4) VGS = 5 V
+                  (5) VGS = 10 V
+  Fig 8.          Drain-source on-state resistance as a function                                           Fig 9.          Drain-source on-state resistance as a function
+                  of drain current; typical values                                                                         of gate-source voltage; typical values
+
+
+
+
+2N7002P                                                             All information provided in this document is subject to legal disclaimers.                         © NXP B.V. 2010. All rights reserved.
+
+Product data sheet                                                                   Rev. 02 — 29 July 2010                                                                                     6 of 15
+NXP Semiconductors                                                                                                                                                       2N7002P
+                                                                                                                                  60 V, 360 mA N-channel Trench MOSFET
+
+
+
+                                                                     017aaa021                                                                                               017aaa022
+            1.0                                                                                                         2.4
+           ID
+                                                                                                                    a
+          (A)
+            0.8
+                                                          (1)     (2)                                                   1.8
+
+
+            0.6
+
+                                                                                                                        1.2
+
+            0.4
+
+
+                                                                                                                        0.6
+            0.2
+                                       (2)        (1)
+
+
+
+            0.0                                                                                                         0.0
+               0.0        1.0       2.0             3.0           4.0      5.0                                             −60                  0             60        120         180
+                                                                     VGS (V)                                                                                               Tamb (°C)
+
+                  VDS > ID × RDSon
+                  (1) Tamb = 25 °C
+                  (2) Tamb = 150 °C
+  Fig 10. Transfer characteristics: drain current as a                                                    Fig 11. Normalized drain-source on-state resistance as
+          function of gate-source voltage; typical values                                                         a function of ambient temperature; typical
+                                                                                                                  values
+
+                                                                     017aaa023                                                                                               017aaa024
+            3.0                                                                                                      102
+
+
+     VGS(th)
+      (V)                              (1)                                                                                                              (1)
+                                                                                                                   C
+                                                                                                                  (pF)
+            2.0
+                                       (2)                                                                                                              (2)
+
+                                                                                                                        10
+
+                                       (3)
+                                                                                                                                                        (3)
+            1.0
+
+
+
+
+            0.0                                                                                                          1
+               −60              0            60                 120         180                                          10−1                       1              10                   102
+                                                                   Tamb (°C)                                                                                              VDS (V)
+
+                  ID = 0.25 mA; VDS = VGS                                                                                     f = 1 MHz; VGS = 0 V
+                  (1) maximum values                                                                                          (1) Ciss
+                  (2) typical values                                                                                          (2) Coss
+                  (3) minimum values                                                                                          (3) Crss
+  Fig 12. Gate-source threshold voltage as a function of                                                  Fig 13. Input, output and reverse transfer capacitances
+          ambient temperature                                                                                     as a function of drain-source voltage; typical
+                                                                                                                  values
+
+
+
+
+2N7002P                                                            All information provided in this document is subject to legal disclaimers.                             © NXP B.V. 2010. All rights reserved.
+
+Product data sheet                                                                 Rev. 02 — 29 July 2010                                                                                          7 of 15
+NXP Semiconductors                                                                                                                                         2N7002P
+                                                                                                                       60 V, 360 mA N-channel Trench MOSFET
+
+
+
+                                                          017aaa025
+            5.0
+                                                                                                                   VDS
+          VGS
+          (V)
+            4.0                                                                                                                         ID
+
+
+                                                                                                                 VGS(pl)
+            3.0
+                                                                                                                   VGS(th)
+
+            2.0                                                                                                    VGS
+                                                                                                                                     QGS1    QGS2
+
+                                                                                                                                        QGS          QGD
+            1.0
+                                                                                                                                                QG(tot)
+
+                                                                                                                                                              003aaa508
+            0.0
+               0.0         0.2        0.4         0.6                 0.8
+                                                        QG (nC)
+
+                  ID = 300 mA; VDS = 30 V; Tamb = 25 °C
+  Fig 14. Gate-source voltage as a function of gate                                            Fig 15. Gate charge waveform definitions
+          charge; typical values
+
+                                                                                                                    017aaa026
+                                              1.2
+
+
+                                             IS
+                                            (A)
+
+
+                                              0.8
+                                                                                                 (1)             (2)
+
+
+
+
+                                              0.4
+
+
+
+
+                                              0.0
+                                                 0.0                          0.4                      0.8                      1.2
+                                                                                                                VSD (V)
+
+                  VGS = 0 V
+                  (1) Tamb = 150 °C
+                  (2) Tamb = 25 °C
+  Fig 16. Source current as a function of source-drain voltage; typical values
+
+
+
+
+2N7002P                                                 All information provided in this document is subject to legal disclaimers.                         © NXP B.V. 2010. All rights reserved.
+
+Product data sheet                                                      Rev. 02 — 29 July 2010                                                                                      8 of 15
+NXP Semiconductors                                                                                                     2N7002P
+                                                                                                   60 V, 360 mA N-channel Trench MOSFET
+
+
+
+8. Test information
+
+
+                                          P                                                   t1
+                                                                        duty cycle δ =
+                                                                 t2                           t2
+
+                                                        t1
+
+
+
+
+                                                                                             t
+                                                                                   006aaa812
+
+
+  Fig 17. Duty cycle definition
+
+
+
+
+2N7002P                           All information provided in this document is subject to legal disclaimers.           © NXP B.V. 2010. All rights reserved.
+
+Product data sheet                                Rev. 02 — 29 July 2010                                                                        9 of 15
+NXP Semiconductors                                                                                                                                                  2N7002P
+                                                                                                                           60 V, 360 mA N-channel Trench MOSFET
+
+
+
+9. Package outline
+
+   Plastic surface-mounted package; 3 leads                                                                                                                                            SOT23
+
+
+
+
+                                                  D                                     B                                                E                 A        X
+
+
+
+
+                                                                                                                                         HE                             v M A
+
+
+
+
+                                                       3
+
+
+
+
+                                                                                                                                                           Q
+
+
+                                                                                                                   A
+
+                                                                                                                         A1
+
+                          1                                                 2                                                                                   c
+
+                                       e1              bp                            w M B                                                                Lp
+
+                                                  e
+                                                                                                                                             detail X
+
+
+
+
+                                                                          0                     1                      2 mm
+
+                                                                                              scale
+
+
+
+      DIMENSIONS (mm are the original dimensions)
+                          A1
+          UNIT      A           bp          c         D          E             e         e1           HE         Lp           Q           v         w
+                         max.
+                   1.1          0.48       0.15       3.0       1.4                                   2.5      0.45        0.55
+          mm             0.1                                                  1.9       0.95                                             0.2        0.1
+                   0.9          0.38       0.09       2.8       1.2                                   2.1      0.15        0.45
+
+
+
+
+            OUTLINE                                                    REFERENCES                                                                   EUROPEAN
+                                                                                                                                                                        ISSUE DATE
+            VERSION                  IEC                     JEDEC                          JEITA                                                  PROJECTION
+
+                                                                                                                                                                           04-11-04
+                 SOT23                                      TO-236AB
+                                                                                                                                                                           06-03-16
+
+
+Fig 18. Package outline SOT23 (TO-236AB)
+
+2N7002P                                                     All information provided in this document is subject to legal disclaimers.                              © NXP B.V. 2010. All rights reserved.
+
+Product data sheet                                                            Rev. 02 — 29 July 2010                                                                                       10 of 15
+NXP Semiconductors                                                                                                                        2N7002P
+                                                                                                        60 V, 360 mA N-channel Trench MOSFET
+
+
+
+10. Soldering
+
+                                            3.3
+
+                                            2.9
+
+                                            1.9
+
+
+
+
+                                                                                                                                  solder lands
+
+
+                                                                                                                                  solder resist
+               3     1.7                                                                      2
+
+                                                                                                                                  solder paste
+
+
+                            0.7                                                      0.6                                          occupied area
+                           (3×)                                                     (3×)
+                                                                                                                       Dimensions in mm
+
+                                             0.5
+                                            (3×)
+                                             0.6
+                                            (3×)
+
+                                              1                                                                                          sot023_fr
+
+
+  Fig 19. Reflow soldering footprint for SOT23 (TO-236AB)
+
+                                                     2.2
+                                   1.2
+                                  (2×)
+
+
+
+
+                            1.4
+                           (2×)
+
+
+                                                                                                                                   solder lands
+
+
+              4.6    2.6                                                                                                           solder resist
+
+
+                                                                                                                                   occupied area
+
+                                                                                                                        Dimensions in mm
+                           1.4
+
+
+
+
+                                                                                                  preferred transport direction during soldering
+
+                                                     2.8
+
+                                                     4.5                                                                                 sot023_fw
+
+
+  Fig 20. Wave soldering footprint for SOT23 (TO-236AB)
+
+
+
+
+2N7002P                                  All information provided in this document is subject to legal disclaimers.                       © NXP B.V. 2010. All rights reserved.
+
+Product data sheet                                       Rev. 02 — 29 July 2010                                                                                  11 of 15
+NXP Semiconductors                                                                                                            2N7002P
+                                                                                                         60 V, 360 mA N-channel Trench MOSFET
+
+
+
+11. Revision history
+Table 8.    Revision history
+Document ID             Release date                  Data sheet status                              Change notice        Supersedes
+2N7002P v.2             20100729                      Product data sheet                             -                    2N7002P_1
+Modifications:           • Correction of thermal values.
+                         • Correction of various characteristics values including related graphs.
+2N7002P_1               20100419                      Product data sheet                             -                    -
+
+
+
+
+2N7002P                                 All information provided in this document is subject to legal disclaimers.            © NXP B.V. 2010. All rights reserved.
+
+Product data sheet                                      Rev. 02 — 29 July 2010                                                                       12 of 15
+NXP Semiconductors                                                                                                                                            2N7002P
+                                                                                                                                60 V, 360 mA N-channel Trench MOSFET
+
+
+
+12. Legal information
+
+12.1 Data sheet status
+Document status[1][2]                 Product status[3]                        Definition
+Objective [short] data sheet          Development                              This document contains data from the objective specification for product development.
+Preliminary [short] data sheet        Qualification                            This document contains data from the preliminary specification.
+Product [short] data sheet            Production                               This document contains the product specification.
+
+[1]   Please consult the most recently issued document before initiating or completing a design.
+[2]   The term 'short data sheet' is explained in section "Definitions".
+[3]   The product status of device(s) described in this document may have changed since this document was published and may differ in case of multiple devices. The latest product
+      status information is available on the Internet at URL http://www.nxp.com.
+
+
+
+12.2 Definitions                                                                                          Suitability for use — NXP Semiconductors products are not designed,
+                                                                                                          authorized or warranted to be suitable for use in life support, life-critical or
+Draft — The document is a draft version only. The content is still under                                  safety-critical systems or equipment, nor in applications where failure or
+internal review and subject to formal approval, which may result in                                       malfunction of an NXP Semiconductors product can reasonably be expected
+modifications or additions. NXP Semiconductors does not give any                                          to result in personal injury, death or severe property or environmental
+representations or warranties as to the accuracy or completeness of                                       damage. NXP Semiconductors accepts no liability for inclusion and/or use of
+information included herein and shall have no liability for the consequences of                           NXP Semiconductors products in such equipment or applications and
+use of such information.                                                                                  therefore such inclusion and/or use is at the customer’s own risk.
+
+Short data sheet — A short data sheet is an extract from a full data sheet                                Applications — Applications that are described herein for any of these
+with the same product type number(s) and title. A short data sheet is intended                            products are for illustrative purposes only. NXP Semiconductors makes no
+for quick reference only and should not be relied upon to contain detailed and                            representation or warranty that such applications will be suitable for the
+full information. For detailed and full information see the relevant full data                            specified use without further testing or modification.
+sheet, which is available on request via the local NXP Semiconductors sales
+office. In case of any inconsistency or conflict with the short data sheet, the                           Customers are responsible for the design and operation of their applications
+full data sheet shall prevail.                                                                            and products using NXP Semiconductors products, and NXP Semiconductors
+                                                                                                          accepts no liability for any assistance with applications or customer product
+Product specification — The information and data provided in a Product                                    design. It is customer’s sole responsibility to determine whether the NXP
+data sheet shall define the specification of the product as agreed between                                Semiconductors product is suitable and fit for the customer’s applications and
+NXP Semiconductors and its customer, unless NXP Semiconductors and                                        products planned, as well as for the planned application and use of
+customer have explicitly agreed otherwise in writing. In no event however,                                customer’s third party customer(s). Customers should provide appropriate
+shall an agreement be valid in which the NXP Semiconductors product is                                    design and operating safeguards to minimize the risks associated with their
+deemed to offer functions and qualities beyond those described in the                                     applications and products.
+Product data sheet.
+                                                                                                          NXP Semiconductors does not accept any liability related to any default,
+                                                                                                          damage, costs or problem which is based on any weakness or default in the
+12.3 Disclaimers                                                                                          customer’s applications or products, or the application or use by customer’s
+                                                                                                          third party customer(s). Customer is responsible for doing all necessary
+Limited warranty and liability — Information in this document is believed to                              testing for the customer’s applications and products using NXP
+be accurate and reliable. However, NXP Semiconductors does not give any                                   Semiconductors products in order to avoid a default of the applications and
+representations or warranties, expressed or implied, as to the accuracy or                                the products or of the application or use by customer’s third party
+completeness of such information and shall have no liability for the                                      customer(s). NXP does not accept any liability in this respect.
+consequences of use of such information.
+                                                                                                          Limiting values — Stress above one or more limiting values (as defined in
+In no event shall NXP Semiconductors be liable for any indirect, incidental,                              the Absolute Maximum Ratings System of IEC 60134) will cause permanent
+punitive, special or consequential damages (including - without limitation - lost                         damage to the device. Limiting values are stress ratings only and (proper)
+profits, lost savings, business interruption, costs related to the removal or                             operation of the device at these or any other conditions above those given in
+replacement of any products or rework charges) whether or not such                                        the Recommended operating conditions section (if present) or the
+damages are based on tort (including negligence), warranty, breach of                                     Characteristics sections of this document is not warranted. Constant or
+contract or any other legal theory.                                                                       repeated exposure to limiting values will permanently and irreversibly affect
+                                                                                                          the quality and reliability of the device.
+Notwithstanding any damages that customer might incur for any reason
+whatsoever, NXP Semiconductors’ aggregate and cumulative liability towards                                Terms and conditions of commercial sale — NXP Semiconductors
+customer for the products described herein shall be limited in accordance                                 products are sold subject to the general terms and conditions of commercial
+with the Terms and conditions of commercial sale of NXP Semiconductors.                                   sale, as published at http://www.nxp.com/profile/terms, unless otherwise
+                                                                                                          agreed in a valid written individual agreement. In case an individual
+Right to make changes — NXP Semiconductors reserves the right to make                                     agreement is concluded only the terms and conditions of the respective
+changes to information published in this document, including without                                      agreement shall apply. NXP Semiconductors hereby expressly objects to
+limitation specifications and product descriptions, at any time and without                               applying the customer’s general terms and conditions with regard to the
+notice. This document supersedes and replaces all information supplied prior                              purchase of NXP Semiconductors products by customer.
+to the publication hereof.
+
+
+
+2N7002P                                                          All information provided in this document is subject to legal disclaimers.                   © NXP B.V. 2010. All rights reserved.
+
+Product data sheet                                                               Rev. 02 — 29 July 2010                                                                              13 of 15
+NXP Semiconductors                                                                                                                                2N7002P
+                                                                                                                        60 V, 360 mA N-channel Trench MOSFET
+
+
+No offer to sell or license — Nothing in this document may be interpreted or
+construed as an offer to sell products that is open for acceptance or the grant,
+                                                                                                  12.4 Trademarks
+conveyance or implication of any license under any copyrights, patents or                         Notice: All referenced brands, product names, service names and trademarks
+other industrial or intellectual property rights.                                                 are the property of their respective owners.
+
+Export control — This document as well as the item(s) described herein may                        Adelante, Bitport, Bitsound, CoolFlux, CoReUse, DESFire, EZ-HV,
+be subject to export control regulations. Export might require a prior                            FabKey, GreenChip, HiPerSmart, HITAG, I²C-bus logo, ICODE, I-CODE,
+authorization from national authorities.                                                          ITEC, Labelution, MIFARE, MIFARE Plus, MIFARE Ultralight, MoReUse,
+                                                                                                  QLPAK, Silicon Tuner, SiliconMAX, SmartXA, STARplug, TOPFET,
+Quick reference data — The Quick reference data is an extract of the                              TrenchMOS, TriMedia and UCODE — are trademarks of NXP B.V.
+product data given in the Limiting values and Characteristics sections of this
+document, and as such is not complete, exhaustive or legally binding.                             HD Radio and HD Radio logo — are trademarks of iBiquity Digital
+                                                                                                  Corporation.
+
+
+
+13. Contact information
+For more information, please visit: http://www.nxp.com
+
+For sales office addresses, please send an email to: salesaddresses@nxp.com
+
+
+
+
+2N7002P                                                  All information provided in this document is subject to legal disclaimers.               © NXP B.V. 2010. All rights reserved.
+
+Product data sheet                                                       Rev. 02 — 29 July 2010                                                                          14 of 15
+NXP Semiconductors                                                                                                                           2N7002P
+                                                                                                     60 V, 360 mA N-channel Trench MOSFET
+
+
+
+14. Contents
+1      Product profile . . . . . . . . . . . . . . . . . . . . . . . . . . .1
+1.1      General description . . . . . . . . . . . . . . . . . . . . . .1
+1.2      Features and benefits . . . . . . . . . . . . . . . . . . . . .1
+1.3      Applications . . . . . . . . . . . . . . . . . . . . . . . . . . . .1
+1.4      Quick reference data . . . . . . . . . . . . . . . . . . . . .1
+2      Pinning information . . . . . . . . . . . . . . . . . . . . . . .2
+3      Ordering information . . . . . . . . . . . . . . . . . . . . . .2
+4      Marking . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .2
+5      Limiting values. . . . . . . . . . . . . . . . . . . . . . . . . . .2
+6      Thermal characteristics . . . . . . . . . . . . . . . . . . .4
+7      Characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . .5
+8      Test information . . . . . . . . . . . . . . . . . . . . . . . . . .9
+9      Package outline . . . . . . . . . . . . . . . . . . . . . . . . .10
+10     Soldering . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+11     Revision history . . . . . . . . . . . . . . . . . . . . . . . . .12
+12     Legal information. . . . . . . . . . . . . . . . . . . . . . . .13
+12.1     Data sheet status . . . . . . . . . . . . . . . . . . . . . . .13
+12.2     Definitions . . . . . . . . . . . . . . . . . . . . . . . . . . . . .13
+12.3     Disclaimers . . . . . . . . . . . . . . . . . . . . . . . . . . . .13
+12.4     Trademarks. . . . . . . . . . . . . . . . . . . . . . . . . . . .14
+13     Contact information. . . . . . . . . . . . . . . . . . . . . .14
+
+
+
+
+                                                                                    Please be aware that important notices concerning this document and the product(s)
+                                                                                    described herein, have been included in section ‘Legal information’.
+
+
+                                                                                    © NXP B.V. 2010.                                              All rights reserved.
+                                                                                    For more information, please visit: http://www.nxp.com
+                                                                                    For sales office addresses, please send an email to: salesaddresses@nxp.com
+                                                                                                                                               Date of release: 29 July 2010
+                                                                                                                                              Document identifier: 2N7002P
+

@@ -1,0 +1,27 @@
+{"phase":"topologyPlanningSolver","progress":0.1622804251343144,"elapsed_seconds":3.9131593849999997,"solved":false,"failed":false,"error":null}
+{"phase":"topologyMergingSolver","progress":0.20395061728395064,"elapsed_seconds":8.914300007000001,"solved":false,"failed":false,"error":null}
+{"phase":"topologyMergingSolver","progress":0.2160185185185185,"elapsed_seconds":13.915732166999998,"solved":false,"failed":false,"error":null}
+{"phase":"topologyMergingSolver","progress":0.222641975308642,"elapsed_seconds":18.915992191,"solved":false,"failed":false,"error":null}
+{"phase":"topologyMergingSolver","progress":0.22689506172839508,"elapsed_seconds":23.929462332000003,"solved":false,"failed":false,"error":null}
+{"phase":"topologyMergingSolver","progress":0.23150617283950617,"elapsed_seconds":28.934231809,"solved":false,"failed":false,"error":null}
+{"phase":"topologyMergingSolver","progress":0.23839506172839506,"elapsed_seconds":33.936754568999994,"solved":false,"failed":false,"error":null}
+{"phase":"nodeDimensionSubdivisionSolver","progress":0.24,"node_count":50325,"elapsed_seconds":212.89267871099997,"solved":false,"failed":false,"error":null}
+{"phase":"edgeSolver","progress":0.28,"node_count":55479,"elapsed_seconds":330.777349182,"solved":false,"failed":false,"error":null}
+{"phase":"edgeSolver","progress":0.28,"node_count":55479,"elapsed_seconds":335.82124855200004,"solved":false,"failed":false,"error":null}
+{"phase":"availableSegmentPointSolver","progress":0.32,"node_count":55479,"edge_count":165451,"elapsed_seconds":398.86096196000005,"solved":false,"failed":false,"error":null}
+{"phase":"portPointPathingSolver","progress":0.44,"node_count":55479,"edge_count":165451,"elapsed_seconds":483.920115907,"solved":false,"failed":false,"error":null}
+{"phase":"portPointPathingSolver","progress":0.44,"node_count":55479,"edge_count":165451,"elapsed_seconds":489.14451511900006,"solved":false,"failed":false,"error":null}
+{"phase":"portPointPathingSolver","progress":0.44,"node_count":55479,"edge_count":165451,"elapsed_seconds":494.61674778,"solved":false,"failed":false,"error":null}
+{"phase":"portPointPathingSolver","progress":0.44,"node_count":55479,"edge_count":165451,"elapsed_seconds":499.62023162800006,"solved":false,"failed":false,"error":null}
+{"phase":"portPointPathingSolver","progress":0.44,"node_count":55479,"edge_count":165451,"elapsed_seconds":502.725527563,"solved":false,"failed":true,"error":"hJ ran out of iterations"}
+123 |     )
+124 |     console.log(JSON.stringify(progress))
+125 |     await new Promise((resume) => setTimeout(resume, 0))
+126 |   }
+127 | }
+128 | if (solver.failed) throw new Error(solver.error || "Native Pipeline9 failed")
+                                   ^
+error: hJ ran out of iterations
+      at /workspace/smart-nema14-motor-controller/scripts/run-pipeline9-sdk-routing.ts:128:30
+
+Bun v1.3.9 (Linux x64)

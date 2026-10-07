@@ -1,0 +1,16 @@
+<SchematicSheet name="MotorInterlock" id="schematic_sheet_5">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="U_MOTOR_SUPERVISOR" positionAnchor="center" schX="-7.4" schY="-7" width="2.4" height="0.6" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<GenericSchematicBoxTooWide message="Shrink schematic box width" componentName="U_MOTOR_SUPERVISOR" currentSchWidth="2.4" measuredInnerLabelHorizontalEmptySpace="1.25" maxAllowedInnerLabelHorizontalEmptySpace="1" suggestedSchWidth="2.15" />
+</SchematicPlacementIssues>
+</SchematicSheet>
+<SchematicSheet name="UsbPd" id="schematic_sheet_6">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="D_VBUS" positionAnchor="center" schX="-4.6" schY="-3.3" width="0.2" height="0.28" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<TwoPinComponentShouldBeVertical componentName="D_VBUS" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate D_VBUS by -90° so its power-connected pin faces up and the component is vertical" />
+</SchematicPlacementIssues>
+</SchematicSheet>

@@ -1,0 +1,581 @@
+                                                                                                          BSS806N
+
+      OptiMOS™2 Small-Signal-Transistor
+                                                                         Product Summary
+      Features
+                                                                        V DS                              20        V
+      • N-channel
+                                                                        R DS(on),max   V GS=2.5 V         57        mΩ
+      • Enhancement mode
+                                                                                       V GS=1.8 V         82
+      • Ultra Logic level (1.8V rated)
+                                                                        ID                               2.3        A
+      • Avalanche rated
+
+      • Qualified according to AEC Q101
+                                                                                              PG-SOT23
+      • 100% lead-free; RoHS compliant
+                                                                                                               3
+      • Halogen-free according to IEC61249-2-21
+
+
+                                                                                                    1
+                                                                                                          2
+
+
+
+          Type       Package        Tape and Reel Information              Marking     Lead Free        Packing
+          BSS806N    SOT23          H6327: 3000 pcs/ reel                  YEs         Yes              Non dry
+
+      Maximum ratings, at T j=25 °C, unless otherwise specified
+
+      Parameter                              Symbol Conditions                             Value                   Unit
+
+      Continuous drain current               ID           T A=25 °C                          2.3                   A
+
+                                                          T A=70 °C                          1.9
+
+      Pulsed drain current                   I D,pulse    T A=25 °C                          9.3
+
+
+      Avalanche energy, single pulse         E AS         I D=2.3 A, R GS=25 Ω               10.8                  mJ
+
+
+                                                          I D=2.3 A, V DS=16 V,
+      Reverse diode dv /dt                   dv /dt       di /dt =200 A/µs,                   6                    kV/µs
+                                                          T j,max=150 °C
+
+      Gate source voltage                    V GS                                            ±8                    V
+
+      Power dissipation1)                    P tot        T A=25 °C                          0.5                   W
+
+      Operating and storage temperature      T j, T stg                                  -55 ... 150               °C
+
+      ESD Class                                            JESD22-A114 -HBM              0(<250V)
+
+      Soldering Temperature                                                                260 °C
+
+      IEC climatic category; DIN IEC 68-1                                                55/150/56
+
+
+
+
+Rev 2.3                                                    page 1                                                      2011-07-11
+                                                                                                             BSS806N
+
+      Parameter                               Symbol Conditions                             Values             Unit
+
+                                                                                     min.    typ.      max.
+
+      Thermal characteristics
+
+
+      Thermal resistance,
+                                              R thJA     minimal footprint 1)         -        -        250    K/W
+      junction - ambient
+
+
+      Electrical characteristics, at T j=25 °C, unless otherwise specified
+
+
+      Static characteristics
+
+
+      Drain-source breakdown voltage          V (BR)DSS V GS= 0 V, I D= 250 µA       20        -         -     V
+
+
+      Gate threshold voltage                  V GS(th)   V DS=VGS , I D=11 µA        0.3     0.55      0.75
+
+                                                         V DS=20 V, V GS=0 V,
+      Drain-source leakage current            I DSS                                   -        -         1     μA
+                                                         T j=25 °C
+
+                                                         V DS=20 V, V GS=0 V,
+                                                                                      -        -        100
+                                                         T j=150 °C
+
+      Gate-source leakage current             I GSS      V GS=8 V, V DS=0 V           -        -        100    nA
+
+      Drain-source on-state resistance        R DS(on)   V GS=1.8 V, I D=1.3 A        -       57        82     mΩ
+
+                                                         V GS=2.5 V, I D=2.3 A        -       41        57
+
+                                                         |V DS|>2|I D|R DS(on)max,
+      Transconductance                        g fs                                             9         -     S
+                                                         I D=1.9 A
+
+      1)
+         Performed on 40mm2 FR4 PCB. The traces are 1mm wide, 70μm thick and 20mm long; they are present on both sides
+      of the PCB.
+
+
+
+
+Rev 2.3                                                   page 2                                                   2011-07-11
+                                                                                                  BSS806N
+
+      Parameter                         Symbol Conditions                           Values          Unit
+                                                                             min.    typ.    max.
+
+      Dynamic characteristics
+
+      Input capacitance                 C iss                                 -      370     529    pF
+                                                    V GS=0 V, V DS=10 V,
+      Output capacitance                C oss                                 -      118     169
+                                                    f =1 MHz
+      Reverse transfer capacitance      Crss                                  -      20       29
+
+      Turn-on delay time                t d(on)                               -      7.5      -     ns
+
+      Rise time                         tr          V DD=10 V, V GS=2.5 V,    -      9.9      -
+
+      Turn-off delay time               t d(off)    I D=2.3A, R G=6 Ω         -      12.0     -
+
+      Fall time                         tf                                    -      3.7      -
+
+      Gate Charge Characteristics
+
+      Gate to source charge             Q gs                                  -      0.55     -     nC
+
+      Gate to drain charge              Q gd        V DD=10 V, I D=2.3 A,     -      0.58     -
+                                                    V GS=0 to 2.5 V
+      Gate charge total                 Qg                                    -      1.7      -
+
+      Gate plateau voltage              V plateau                             -      1.5      -     V
+
+      Reverse Diode
+
+      Diode continous forward current   IS                                    -       -      0.5    A
+                                                    T A=25 °C
+      Diode pulse current               I S,pulse                             -       -      9.3
+
+                                                    V GS=0 V, I F=2.3 A,
+      Diode forward voltage             V SD                                  -      0.82    1.1    V
+                                                    T j=25 °C
+
+      Reverse recovery time             t rr        V R=10 V, I F=2.3 A,      -      11       -     ns
+                                                    di F/dt =100 A/µs
+      Reverse recovery charge           Q rr                                  -      3.3      -     nC
+
+
+
+
+Rev 2.3                                              page 3                                             2011-07-11
+                                                                                                                                                                                       BSS806N
+      1 Power dissipation                                                                        2 Drain current
+      P tot=f(T A)                                                                               I D=f(T A); V GS≥2.5 V
+
+
+
+                                                                                                                  2.5
+
+                       0.5
+
+
+                                                                                                                  2.0
+
+
+                0.375
+
+                                                                                                                  1.5
+          P tot [W]
+
+
+
+
+                                                                                                     I D [A]
+                      0.25
+                                                                                                                  1.0
+
+
+
+
+                0.125
+                                                                                                                  0.5
+
+
+
+
+                        0                                                                                         0.0
+                                0        40               80                   120      160                              0        20           40       60         80     100    120    140   160
+                                                       T A [°C]                                                                                              T A [°C]
+
+
+      3 Safe operating area                                                                      4 Max. transient thermal impedance
+      I D=f(V DS); T A=25 °C; D =0                                                               Z thJA=f(t p)
+      parameter: t p                                                                             parameter: D =t p/T
+
+                       102                                                                                        103
+
+
+
+
+                       101                                                      10 µs                                            0.5
+                                                                    100 µs                                        102
+                                                           1 ms                                                                   0.2
+
+                                                        10 ms                                                                     0.1
+                       100
+                                                                                                   Z thJA [K/W]
+
+
+
+
+                                                                                                                                 0.05
+          I D [A]
+
+
+
+
+                                                                                                                  101
+                                                                                                                                0.02
+
+                           -1
+                      10                                       DC                                                              0.01
+                                                                                                                                             single pulse
+
+
+
+                                                                                                                  100
+                           -2
+                      10
+
+
+
+
+                      10-3                                                                                        10-1
+                                    -1             0                       1                 2
+                             10               10                      10                10                              10-5          10-4       10-3       10-2        10-1    100    101    102
+                                                       V DS [V]                                                                                               t p [s]
+
+
+Rev 2.3                                                                                 page 4                                                                                                2011-07-11
+                                                                                                                                                               BSS806N
+      5 Typ. output characteristics                                                   6 Typ. drain-source on resistance
+      I D=f(V DS); T j=25 °C                                                          R DS(on)=f(I D); T j=25 °C
+      parameter: V GS                                                                 parameter: V GS
+
+                     4                                                                                 120
+                          2.5 V                                                                                  1.3 V
+
+                                  1.8 V
+                                                                                                                         1.4 V
+                                                          1.6 V
+                                                                                                       100                           1.5 V
+
+                                                                                                                                                       1.6 V
+                     3
+
+                                                                                                       80
+
+
+
+
+                                                                                       R DS(on) [mΩ]
+                                                          1.5 V
+          I D [A]
+
+
+
+
+                                                                                                       60                                                      1.8 V
+                     2
+                                                                                                                                                               2V
+
+
+                                                          1.4 V                                        40                                                       2.5 V
+
+
+
+                     1
+                                                          1.3 V                                        20
+
+                                                          1.2 V
+
+                                                          1.1 V                                         0
+                     0                                                                                       0                   1             2          3              4
+                         0.0              0.4     0.8         1.2         1.6   2.0
+                                                    V DS [V]                                                                                 I D [A]
+
+      7 Typ. transfer characteristics                                                 8 Typ. forward transconductance
+      I D=f(V GS); |V DS|>2|I D|R DS(on)max                                           g fs=f(I D); T j=25 °C
+
+
+
+                     4                                                                                 20
+
+
+
+
+                                                                                                       16
+                     3
+
+
+
+                                                                                                       12
+                                                                                        g fs [S]
+           I D [A]
+
+
+
+
+                     2
+
+                                                                                                        8
+                                                                     25 °C
+                                                        150 °C
+
+
+                     1
+                                                                                                        4
+
+
+
+
+                     0                                                                                  0
+                         0.0                0.5         1.0         1.5         2.0                          0                   2             4           6             8
+                                                   V GS [V]                                                                                  I D [A]
+
+
+Rev 2.3                                                                         page 5                                                                                  2011-07-11
+                                                                                                                                                                      BSS806N
+      9 Drain-source on-state resistance                                                        10 Typ. gate threshold voltage
+      R DS(on)=f(T j); I D=2.3 A; V GS=2.5 V                                                    V GS(th)=f(T j); V DS=VGS; I D=11 µA
+                                                                                                parameter: I D
+
+                          100                                                                                    1.2
+
+
+
+
+                           80
+                                                                                                                 0.8
+                                                                                                                                                  98 %
+
+                                                 98 %
+          R DS(on) [mΩ]
+
+
+
+
+                           60
+                                                                                                                                                 typ
+
+
+
+
+                                                                                                  V GS(th) [V]
+                                                                                                                 0.4
+
+                                                            typ                                                                                2%
+                           40
+
+
+
+                                                                                                                   0
+                           20
+
+
+
+
+                            0                                                                                    -0.4
+                                -60    -20       20       60             100        140   180                           -60   -20         20      60      100         140   180
+                                                        T j [°C]                                                                               T j [°C]
+
+
+      11 Typ. capacitances                                                                      12 Forward characteristics of reverse diode
+      C =f(V DS); V GS=0 V; f =1 MHz; Tj=25°C                                                   I F=f(V SD)
+                                                                                                parameter: T j
+
+                          103                                                                                    101
+
+
+
+
+                                                               Ciss
+                                                                                                                                               25 °C
+                                                                                                                 100
+
+                                                                                                                                                           150 °C, 98%
+
+
+                                                               Coss
+          C [pF]
+
+
+
+
+                                                                                                 I F [A]
+
+
+
+
+                               2
+                          10                                                                                     10-1
+
+
+                                                                                                                               150 °C
+
+                                                                                                                                                           25 °C, 98%
+
+                                                                                                                 10-2
+                                                                  Crss
+
+
+
+
+                          101                                                                                    10-3
+                                   0         5            10                   15         20                             0          0.4           0.8           1.2         1.6
+                                                        V DS [V]                                                                               V SD [V]
+
+
+Rev 2.3                                                                                   page 6                                                                            2011-07-11
+                                                                                                                                                             BSS806N
+      13 Avalanche characteristics                                                      14 Typ. gate charge
+
+      I AS=f(t AV); R GS=25 Ω                                                           V GS=f(Q gate); I D=2.3 A pulsed
+      parameter: T j(start)                                                             parameter: V DD
+
+                          101                                                                         5
+
+                                                                                                    4.5
+
+                                                                                                      4
+
+                                                                                                    3.5
+                                                                          25 °C
+
+                                                                                                      3                                 10 V
+
+
+
+
+                                                                                         V GS [V]
+          I AV [A]
+
+
+
+
+                                                                         100 °C
+                          100                                                                                                           16 V
+                                                                                                    2.5                       4V
+
+
+                                                                     125 °C
+                                                                                                      2
+
+                                                                                                    1.5
+
+                                                                                                      1
+
+                                                                                                    0.5
+
+                          10-1                                                                        0
+                                 100         101               102                103                     0.0   0.5     1.0    1.5      2.0      2.5   3.0    3.5   4.0
+                                                   t AV [µs]                                                                       Q gate [nC]
+
+
+      15 Drain-source breakdown voltage                                                 16 Gate charge waveforms
+      V BR(DSS)=f(T j); I D=250 µA
+
+
+
+                          25
+                                                                                                     V GS
+                          24
+                                                                                                                                   Qg
+
+                          23
+
+
+                          22
+          V BR(DSS) [V]
+
+
+
+
+                          21
+
+
+                          20
+                                                                                                    V g s(th)
+
+                          19
+
+
+                          18
+
+                                                                                                    Q g(th)                             Q sw                    Q g ate
+                          17
+
+                                                                                                                 Q gs                          Q gd
+                          16
+                               -60     -20   20       60       100        140     180
+                                                   T j [°C]
+
+
+Rev 2.3                                                                           page 7                                                                            2011-07-11
+                                      BSS806N
+
+
+
+                         SOT23
+
+
+
+
+      Package Outline:
+
+
+
+
+      Footprint:         Packaging:
+
+
+
+
+      Dimensions in mm
+
+
+Rev 2.3                   page 8          2011-07-11
+                                                                                                        BSS806N
+
+
+
+
+      Published by
+      Infineon Technologies AG
+      81726 Munich, Germany
+      © 2008 Infineon Technologies AG
+      All Rights Reserved.
+
+
+      Legal Disclaimer
+      The information given in this document shall in no event be regarded as a guarantee of
+      conditions or characteristics. With respect to any examples or hints given herein, any typical
+      values stated herein and/or any information regarding the application of the device,
+      Infineon Technologies hereby disclaims any and all warranties and liabilities of any kind,
+      including without limitation, warranties of non-infringement of intellectual property rights
+      of any third party.
+
+
+      Information
+      For further information on technology, delivery terms and conditions and prices, please
+      contact the nearest Infineon Technologies Office (www.infineon.com).
+
+      Warnings
+      Due to technical requirements, components may contain dangerous substances. For information
+      on the types in question, please contact the nearest Infineon Technologies Office.
+      Infineon Technologies components may be used in life-support devices or systems only with
+      the express written approval of Infineon Technologies, if a failure of such components can
+      reasonably be expected to cause the failure of that life-support device or system or to affect
+      the safety or effectiveness of that device or system. Life support devices or systems are
+      intended to be implanted in the human body or to support and/or maintain and sustain
+      and/or protect human life. If they fail, it is reasonable to assume that the health of the user
+      or other persons may be endangered.
+
+
+
+
+Rev 2.3                                                        page 9                                       2011-07-11
+

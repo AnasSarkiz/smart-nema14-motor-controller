@@ -1,0 +1,916 @@
+                    2N7002BKS
+                    60 V, 300 mA dual N-channel Trench MOSFET
+                    Rev. 2 — 23 September 2010                                                     Product data sheet
+
+
+
+
+1. Product profile
+
+          1.1 General description
+              Dual N-channel enhancement mode Field-Effect Transistor (FET) in a very small
+              SOT363 (SC-88) Surface-Mounted Device (SMD) plastic package using Trench MOSFET
+              technology.
+
+          1.2 Features and benefits
+                   Logic-level compatible
+                   Very fast switching
+                   Trench MOSFET technology
+                   ESD protection up to 2 kV
+                   AEC-Q101 qualified
+
+          1.3 Applications
+                   Relay driver
+                   High-speed line driver
+                   Low-side loadswitch
+                   Switching circuits
+
+          1.4 Quick reference data
+              Table 1.      Quick reference data
+              Symbol       Parameter                    Conditions                     Min    Typ       Max        Unit
+              VDS          drain-source voltage         Tamb = 25 °C                   -       -        60         V
+              VGS          gate-source voltage          Tamb = 25 °C                   -       -        ±20        V
+              ID           drain current                Tamb = 25 °C;            [1]   -      -         300        mA
+                                                        VGS = 10 V
+              RDSon        drain-source on-state        Tj = 25 °C;                    -      1         1.6        Ω
+                           resistance                   VGS = 10 V;
+                                                        ID = 500 mA
+
+              [1]   Device mounted on an FR4 PCB, single-sided copper, tin-plated, mounting pad for drain 1 cm2.
+Nexperia                                                                                                                            2N7002BKS
+                                                                                             60 V, 300 mA dual N-channel Trench MOSFET
+
+
+
+2. Pinning information
+                     Table 2.      Pinning
+                     Pin           Symbol             Description                                             Simplified outline         Graphic symbol
+                     1             S1                 source 1
+                                                                                                                      6   5         4
+                     2             G1                 gate 1
+                                                                                                                                             1                            6
+                     3             D2                 drain 2
+                     4             S2                 source 2
+                     5             G2                 gate 2                                                          1   2         3        2                            5
+
+                     6             D1                 drain 1
+
+
+                                                                                                                                             3                            4
+
+
+
+                                                                                                                                                             017aaa055
+
+
+
+
+3. Ordering information
+                     Table 3.      Ordering information
+                     Type number        Package
+                                        Name                   Description                                                                                   Version
+                     2N7002BKS          SC-88                  plastic surface-mounted package; 6 leads                                                      SOT363
+
+
+4. Marking
+                     Table 4.      Marking codes
+                     Type number                                                                      Marking code[1]
+                     2N7002BKS                                                                        ZT*
+
+                     [1]   * = -: made in Hong Kong
+                           * = p: made in Hong Kong
+                           * = t: made in Malaysia
+                           * = W: made in China
+
+
+5. Limiting values
+                     Table 5.   Limiting values
+                     In accordance with the Absolute Maximum Rating System (IEC 60134).
+                     Symbol        Parameter                                    Conditions                                      Min          Max               Unit
+                     Per transistor
+                     VDS           drain-source voltage                         Tamb = 25 °C                                    -            60                V
+                     VGS           gate-source voltage                          Tamb = 25 °C                                    -            ±20               V
+                     ID            drain current                                VGS = 10 V                                [1]
+
+                                                                                    Tamb = 25 °C                                -            300               mA
+                                                                                    Tamb = 100 °C                               -            215               mA
+
+2N7002BKS                                All information provided in this document is subject to legal disclaimers.                     © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                  Rev. 2 — 23 September 2010                                                                                       2 of 16
+Nexperia                                                                                                                                                        2N7002BKS
+                                                                                                                     60 V, 300 mA dual N-channel Trench MOSFET
+
+
+                                        Table 5.   Limiting values …continued
+                                        In accordance with the Absolute Maximum Rating System (IEC 60134).
+                                         Symbol             Parameter                                   Conditions                                          Min           Max               Unit
+                                         IDM                peak drain current                          Tamb = 25 °C;                                       -             1.2               A
+                                                                                                        single pulse; tp ≤ 10 μs
+                                         Ptot               total power dissipation                     Tamb = 25 °C                                  [2]   -             295               mW
+                                                                                                                                                      [1]   -             340               mW
+                                                                                                        Tsp = 25 °C                                         -             1040              mW
+                                         Source-drain diode
+                                         IS                 source current                              Tamb = 25 °C                                  [1]   -             300               mA
+                                         ESD maximum rating
+                                         VESD               electrostatic discharge                     human body model                              [3]   -             2000              V
+                                                            voltage
+                                         Per device
+                                         Ptot               total power dissipation                     Tamb = 25 °C                                  [2]   -             445               mW
+                                         Tj                 junction temperature                                                                                          150               °C
+                                         Tamb               ambient temperature                                                                             −55           +150              °C
+                                         Tstg               storage temperature                                                                             −65           +150              °C
+
+                                        [1]     Device mounted on an FR4 PCB, single-sided copper, tin-plated, mounting pad for drain 1 cm2.
+                                        [2]     Device mounted on an FR4 Printed-Circuit Board (PCB), single-sided copper, tin-plated and standard
+                                                footprint.
+                                        [3]     Measured between all pins.
+
+
+
+
+                                                                   017aaa001                                                                                                017aaa002
+            120                                                                                                    120
+
+
+      Pder                                                                                                      Ider
+      (%)                                                                                                       (%)
+
+
+             80                                                                                                      80
+
+
+
+
+             40                                                                                                      40
+
+
+
+
+              0                                                                                                        0
+               −75          −25          25           75        125      175                                            −75           −25        25             75       125      175
+                                                                  Tamb (°C)                                                                                                Tamb (°C)
+
+
+                                 P tot                                                                                                   ID
+                  P der = ----------------------- × 100 %                                                                 I der = ------------------- × 100 %
+                          P tot ( 25°C )                                                                                          I D ( 25°C )
+
+ Fig 1.           Normalized total power dissipation as a                                               Fig 2.            Normalized continuous drain current as a
+                  function of ambient temperature                                                                         function of ambient temperature
+
+
+
+
+2N7002BKS                                                        All information provided in this document is subject to legal disclaimers.                          © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                          Rev. 2 — 23 September 2010                                                                                            3 of 16
+Nexperia                                                                                                                                    2N7002BKS
+                                                                                                        60 V, 300 mA dual N-channel Trench MOSFET
+
+
+
+
+                                                                                                                                                        017aaa056
+            10
+
+        ID
+       (A)
+                                                    Limit RDSon = VDS/ID
+             1
+                                                                                                                                                          (1)
+
+                                                                                                                                                          (2)
+
+        10−1
+                                                                                                                                                          (3)
+
+
+                                                                                                                                                          (4)
+                                                                                                                                                          (5)
+        10−2
+                                                                                                                                                          (6)
+
+
+
+
+        10−3
+           10−1                                         1                                                              10                                          102
+                                                                                                                                       VDS (V)
+
+
+                 IDM = single pulse
+        (1) tp = 100 μs
+        (2) tp = 1 ms
+        (3) tp = 10 ms
+        (4) DC; Tsp = 25 °C
+        (5) tp = 100 ms
+        (6) DC; Tamb = 25 °C; drain mounting pad 1 cm2
+ Fig 3.          Safe operating area; junction to ambient; continuous and peak drain currents as a function of
+                 drain-source voltage
+
+
+6. Thermal characteristics
+                                 Table 6.      Thermal characteristics
+                                  Symbol         Parameter                                            Conditions                        Min       Typ           Max          Unit
+                                  Per transistor
+                                  Rth(j-a)       thermal resistance from                              in free air                [1]    -         370           425          K/W
+                                                 junction to ambient                                                             [2]    -         320           370          K/W
+                                  Rth(j-sp)      thermal resistance from                                                                -         -             120          K/W
+                                                 junction to solder point
+                                  Per device
+                                  Rth(j-a)       thermal resistance from                              in free air                [1]    -         -             275          K/W
+                                                 junction to ambient
+
+                                 [1]   Device mounted on an FR4 PCB, single-sided copper, tin-plated and standard footprint.
+                                 [2]   Device mounted on an FR4 PCB, single-sided copper, tin-plated, mounting pad for drain 1 cm2.
+
+
+
+
+2N7002BKS                                           All information provided in this document is subject to legal disclaimers.                   © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                             Rev. 2 — 23 September 2010                                                                                     4 of 16
+Nexperia                                                                                                                         2N7002BKS
+                                                                                                       60 V, 300 mA dual N-channel Trench MOSFET
+
+
+
+
+                                                                                                                                             017aaa057
+            103
+
+                    duty cycle = 1
+     Zth(j-a)
+     (K/W)                     0.75
+                      0.5
+                               0.33
+            102      0.25
+                               0.2
+                      0.1      0.05
+
+
+                               0.02
+            10         0       0.01
+
+
+
+
+             1
+             10−3                     10−2          10−1                               1                              10        102                     103
+                                                                                                                                        tp (s)
+
+
+                  FR4 PCB, standard footprint
+ Fig 4.           Transient thermal impedance from junction to ambient as a function of pulse duration; typical values
+
+                                                                                                                                             017aaa058
+            103
+
+                    duty cycle = 1
+     Zth(j-a)
+     (K/W)                     0.75
+                      0.5
+                               0.33
+            102      0.25      0.2
+                      0.1      0.05
+
+
+                               0.02
+            10         0       0.01
+
+
+
+
+             1
+             10−3                     10−2          10−1                               1                              10        102                     103
+                                                                                                                                        tp (s)
+
+
+                  FR4 PCB, mounting pad for drain 1 cm2
+ Fig 5.           Transient thermal impedance from junction to ambient as a function of pulse duration; typical values
+
+
+
+
+2N7002BKS                                          All information provided in this document is subject to legal disclaimers.         © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                            Rev. 2 — 23 September 2010                                                                           5 of 16
+Nexperia                                                                                                                          2N7002BKS
+                                                                                               60 V, 300 mA dual N-channel Trench MOSFET
+
+
+
+7. Characteristics
+                     Table 7.    Characteristics
+                     Tj = 25 °C unless otherwise specified.
+                     Symbol           Parameter                                     Conditions                                Min     Typ          Max           Unit
+                     Static characteristics
+                     V(BR)DSS         drain-source breakdown ID = 10 μA; VGS = 0 V                                            60      -            -             V
+                                      voltage
+                     VGS(th)          gate-source threshold                         ID = 250 μA; VDS = VGS                    1.1     1.6          2.1           V
+                                      voltage
+                     IDSS             drain leakage current                         VDS = 60 V; VGS = 0 V
+                                                                                        Tj = 25 °C                            -       -            1             μA
+                                                                                        Tj = 150 °C                           -       -            10            μA
+                     IGSS             gate leakage current                          VGS = ±20 V; VDS = 0 V                    -       -            10            μA
+                     RDSon            drain-source on-state                                                             [1]
+
+                                      resistance                                    VGS = 5 V; ID = 50 mA                     -       1.3          2             Ω
+                                                                                    VGS = 10 V; ID = 500 mA                   -       1            1.6           Ω
+                     gfs              forward                                       VDS = 10 V; ID = 200 mA             [1]   -       550          -             mS
+                                      transconductance
+                     Dynamic characteristics
+                     QG(tot)          total gate charge                             ID = 300 mA;                              -       0.5          0.6           nC
+                     QGS              gate-source charge                            VDS = 30 V;                               -       0.2          -             nC
+                                                                                    VGS = 4.5 V
+                     QGD              gate-drain charge                                                                       -       0.1          -             nC
+                     Ciss             input capacitance                             VGS = 0 V; VDS = 10 V;                    -       33           50            pF
+                     Coss             output capacitance                            f = 1 MHz                                 -       7            -             pF
+                     Crss             reverse transfer                                                                        -       4            -             pF
+                                      capacitance
+                     td(on)           turn-on delay time                            VDD = 50 V;                               -       5            10            ns
+                     tr               rise time                                     RL = 250 Ω;                               -       6            -             ns
+                                                                                    VGS = 10 V;
+                     td(off)          turn-off delay time                           RG = 6 Ω                                  -       12           24            ns
+                     tf               fall time                                                                               -       7            -             ns
+                     Source-drain diode
+                     VSD              source-drain voltage                          IS = 115 mA; VGS = 0 V                    0.47    0.75         1.1           V
+
+                     [1]    Pulse test: tp ≤ 300 μs; δ ≤ 0.01.
+
+
+
+
+2N7002BKS                                  All information provided in this document is subject to legal disclaimers.                © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                    Rev. 2 — 23 September 2010                                                                                  6 of 16
+Nexperia                                                                                                                                                    2N7002BKS
+                                                                                                                 60 V, 300 mA dual N-channel Trench MOSFET
+
+
+
+
+                                                               017aaa039                                                                                                       017aaa040
+          0.7                                                                                                10−3
+        ID    VGS = 4.0 V
+       (A)                             3.5 V
+          0.6                                                                                                ID
+                                                                                                            (A)
+                                                      3.25 V
+            0.5
+                                                                                                             10−4
+                                                                                                                                           (1)        (2)          (3)
+            0.4
+                                                      3.0 V
+
+            0.3
+
+                                                      2.75 V                                                 10−5
+            0.2
+
+                                                      2.5 V
+            0.1
+
+
+            0.0                                                                                              10−6
+               0.0         1.0         2.0             3.0                 4.0                                   0.0                      1.0                     2.0                     3.0
+                                                              VDS (V)                                                                                                      VGS (V)
+
+
+                  Tamb = 25 °C                                                                                        Tamb = 25 °C; VDS = 5 V
+                                                                                                             (1) minimum values
+                                                                                                             (2) typical values
+                                                                                                             (3) maximum values
+ Fig 6.           Output characteristics: drain current as a                                        Fig 7.            Sub-threshold drain current as a function of
+                  function of drain-source voltage; typical                                                           gate-source voltage
+                  values
+
+                                                               017aaa041                                                                                                       017aaa042
+            6.0                                                                                                 6.0
+
+
+     RDSon                                                                                                RDSon
+      (Ω)                                                                                                  (Ω)
+                                       (1)
+            4.0                                                                                                 4.0
+                                                (2)
+
+
+                                                                  (3)                                                                                                    (1)
+
+            2.0                                                         (4)                                     2.0
+
+                                                                                                                                                                         (2)
+                                                                        (5)
+
+
+
+            0.0                                                                                                 0.0
+               0.0       0.2     0.4           0.6       0.8               1.0                                     0.0             2.0          4.0         6.0             8.0      10.0
+                                                                 ID (A)                                                                                                        VGS (V)
+
+
+                  Tamb = 25 °C                                                                                        ID = 500 mA
+        (1) VGS = 3.25 V                                                                                     (1) Tamb = 150 °C
+        (2) VGS = 3.5 V                                                                                      (2) Tamb = 25 °C
+        (3) VGS = 4 V
+        (4) VGS = 5 V
+        (5) VGS = 10 V
+ Fig 8.           Drain-source on-state resistance as a function                                    Fig 9.            Drain-source on-state resistance as a function
+                  of drain current; typical values                                                                    of gate-source voltage; typical values
+
+
+
+2N7002BKS                                                    All information provided in this document is subject to legal disclaimers.                                 © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                      Rev. 2 — 23 September 2010                                                                                                   7 of 16
+Nexperia                                                                                                                                                         2N7002BKS
+                                                                                                                 60 V, 300 mA dual N-channel Trench MOSFET
+
+
+
+
+                                                                017aaa043                                                                                                    017aaa044
+            1.0                                                                                                  2.4
+        ID
+                                                                                                             a
+       (A)
+            0.8
+                                                   (1)    (2)                                                    1.8
+
+
+            0.6
+
+                                                                                                                 1.2
+
+            0.4
+
+
+                                                                                                                 0.6
+            0.2
+
+
+
+            0.0                                                                                                  0.0
+               0.0       1.0         2.0          3.0      4.0      5.0                                             −60                    0                60        120         180
+                                                              VGS (V)                                                                                                    Tamb (°C)
+
+
+                  VDS > ID × RDSon                                                                                                R DSon
+        (1) Tamb = 25 °C                                                                                               a = -----------------------------
+                                                                                                                           R DSon ( 25°C )
+        (2) Tamb = 150 °C
+ Fig 10. Transfer characteristics: drain current as a                                              Fig 11. Normalized drain-source on-state resistance
+         function of gate-source voltage; typical values                                                   as a function of ambient temperature; typical
+                                                                                                           values
+
+                                                                017aaa045                                                                                                    017aaa046
+            3.0                                                                                               102
+
+
+     VGS(th)
+      (V)                                                                                                                                             (1)
+                                                                                                            C
+                                       (1)                                                                 (pF)
+            2.0
+                                                                                                                                                      (2)
+                                       (2)
+                                                                                                                 10
+
+                                       (3)                                                                                                            (3)
+            1.0
+
+
+
+
+            0.0                                                                                                   1
+               −60             0             60          120         180                                          10−1                            1              10                     102
+                                                            Tamb (°C)                                                                                                    VDS (V)
+
+
+                  ID = 0.25 mA; VDS = VGS                                                                              f = 1 MHz; VGS = 0 V
+        (1) maximum values                                                                                  (1) Ciss
+        (2) typical values                                                                                  (2) Coss
+        (3) minimum values                                                                                  (3) Crss
+ Fig 12. Gate-source threshold voltage as a function of                                            Fig 13. Input, output and reverse transfer
+         ambient temperature                                                                               capacitances as a function of drain-source
+                                                                                                           voltage; typical values
+
+
+
+
+2N7002BKS                                                   All information provided in this document is subject to legal disclaimers.                                © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                     Rev. 2 — 23 September 2010                                                                                                  8 of 16
+Nexperia                                                                                                                                              2N7002BKS
+                                                                                                               60 V, 300 mA dual N-channel Trench MOSFET
+
+
+
+                                                            017aaa047
+            5.0
+      VGS
+      (V)
+            4.0
+                                                                                                                     VDS
+
+
+                                                                                                                                          ID
+            3.0
+
+                                                                                                                   VGS(pl)
+            2.0
+                                                                                                                     VGS(th)
+
+                                                                                                                     VGS
+            1.0
+                                                                                                                                       QGS1    QGS2
+
+                                                                                                                                          QGS          QGD
+            0.0                                                                                                                                   QG(tot)
+               0.0            0.2     0.4           0.6                 0.8
+                                                          QG (nC)                                                                                                   003aaa508
+
+
+                  ID = 300 mA; VDD = 6 V; Tamb = 25 °C
+ Fig 14. Gate-source voltage as a function of gate                                               Fig 15. Gate charge waveform definitions
+         charge; typical values
+
+                                                                                                                        017aaa048
+                                                1.2
+
+
+                                               IS
+                                              (A)
+
+
+                                                0.8
+                                                                                                   (1)            (2)
+
+
+
+
+                                                0.4
+
+
+
+
+                                                0.0
+                                                   0.0                          0.4                      0.8                      1.2
+                                                                                                                  VSD (V)
+
+
+                  VGS = 0 V
+        (1) Tamb = 150 °C
+        (2) Tamb = 25 °C
+ Fig 16. Source current as a function of source-drain voltage; typical values
+
+
+
+
+2N7002BKS                                                 All information provided in this document is subject to legal disclaimers.                         © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                   Rev. 2 — 23 September 2010                                                                                           9 of 16
+Nexperia                                                                                                                2N7002BKS
+                                                                                       60 V, 300 mA dual N-channel Trench MOSFET
+
+
+
+8. Test information
+
+
+                                                                  P                                               t1
+                                                                                                duty cycle δ =
+                                                                                          t2                      t2
+
+                                                                                 t1
+
+
+
+
+                                                                                                                  t
+                                                                                                            006aaa812
+
+
+                     Fig 17. Duty cycle definition
+
+
+
+
+2N7002BKS                          All information provided in this document is subject to legal disclaimers.            © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                            Rev. 2 — 23 September 2010                                                                            10 of 16
+Nexperia                                                                                                                                                         2N7002BKS
+                                                                                                                    60 V, 300 mA dual N-channel Trench MOSFET
+
+
+
+9. Package outline
+
+   Plastic surface-mounted package; 6 leads                                                                                                                                                     SOT363
+
+
+
+
+                                                      D                                B                                                     E                    A                X
+
+
+
+
+                                     y                                                                                                       HE                                    v M A
+
+
+
+
+                                6                         5               4
+
+
+
+                                                                                                                                                             Q
+
+
+                                         pin 1
+                                         index                                                                  A
+
+
+                                                                                                                      A1
+                                1                         2               3                                                                                            c
+
+
+                                           e1             bp                       w M B                                                                    Lp
+
+                                                      e
+                                                                                                                                                 detail X
+
+
+
+
+                                                                           0                        1                        2 mm
+
+                                                                                                  scale
+
+
+
+      DIMENSIONS (mm are the original dimensions)
+                          A1
+        UNIT        A               bp           c        D           E           e          e1           HE         Lp           Q           v         w         y
+                          max
+                    1.1             0.30       0.25       2.2       1.35                                  2.2       0.45        0.25
+            mm            0.1                                                    1.3        0.65                                             0.2       0.2       0.1
+                    0.8             0.20       0.10       1.8       1.15                                  2.0       0.15        0.15
+
+
+
+
+             OUTLINE                                                       REFERENCES                                                                   EUROPEAN
+                                                                                                                                                                                   ISSUE DATE
+             VERSION                     IEC                     JEDEC                          JEITA                                                  PROJECTION
+
+                                                                                                                                                                                       04-11-08
+                 SOT363                                                                         SC-88
+                                                                                                                                                                                       06-03-16
+
+
+
+Fig 18. Package outline SOT363 (SC-88)
+2N7002BKS                                                       All information provided in this document is subject to legal disclaimers.                                 © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                         Rev. 2 — 23 September 2010                                                                                                 11 of 16
+Nexperia                                                                                                             2N7002BKS
+                                                                                           60 V, 300 mA dual N-channel Trench MOSFET
+
+
+
+10. Soldering
+
+                                                                          2.65
+
+
+
+
+                                                                                                                               solder lands
+                            2.35 1.5     0.6 0.5                                                          0.4 (2×)
+                                        (4×) (4×)                                                                              solder resist
+
+
+                                                                                                                               solder paste
+
+                                                               0.5                      0.6                                    occupied area
+                                                              (4×)                     (2×)
+                                                               0.6                                                   Dimensions in mm
+                                                              (4×)
+                                                                           1.8                                                          sot363_fr
+
+
+                     Fig 19. Reflow soldering footprint SOT363 (SC-88)
+
+
+
+
+                                                                                                    1.5
+
+
+                                                                                                                                          solder lands
+                      4.5                                                                                  0.3 2.5
+                                                                                                                                          solder resist
+
+
+                                                                                                                                          occupied area
+                                                                                                    1.5
+                                                                                                                           Dimensions in mm
+
+
+                                                                                                                               preferred transport
+                                       1.3                               1.3                                               direction during soldering
+
+                                                       2.45
+
+                                                        5.3                                                                                       sot363_fw
+
+
+                     Fig 20. Wave soldering footprint SOT363 (SC-88)
+
+
+
+
+2N7002BKS                              All information provided in this document is subject to legal disclaimers.          © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                Rev. 2 — 23 September 2010                                                                          12 of 16
+Nexperia                                                                                                                   2N7002BKS
+                                                                                              60 V, 300 mA dual N-channel Trench MOSFET
+
+
+
+11. Revision history
+Table 8.    Revision history
+Document ID               Release date            Data sheet status                                        Change notice   Supersedes
+2N7002BKS v.2             20100923                Product data sheet                                       -               2N7002BKS v.1
+Modifications:                 • Table 2 “Pinning”: graphic symbol amended
+2N7002BKS v.1             20100617                Product data sheet                                       -               -
+
+
+
+
+2N7002BKS                                 All information provided in this document is subject to legal disclaimers.           © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                   Rev. 2 — 23 September 2010                                                                           13 of 16
+Nexperia                                                                                                                                             2N7002BKS
+                                                                                                                      60 V, 300 mA dual N-channel Trench MOSFET
+
+
+
+12. Legal information
+
+12.1 Data sheet status
+Document status[1][2]                  Product status[3]                    Definition
+Objective [short] data sheet           Development                          This document contains data from the objective specification for product development.
+Preliminary [short] data sheet         Qualification                        This document contains data from the preliminary specification.
+Product [short] data sheet             Production                           This document contains the product specification.
+
+[1]   Please consult the most recently issued document before initiating or completing a design.
+[2]   The term ‘short data sheet’ is explained in section “Definitions”.
+[3]   The product status of device(s) described in this document may have changed since this document was published and may differ in case of multiple devices. The latest product status
+      information is available on the Internet at URL http://www.nexperia.com.
+
+
+
+12.2 Definitions                                                                                           malfunction of a Nexperia product can reasonably be expected
+                                                                                                           to result in personal injury, death or severe property or environmental
+                                                                                                           damage. Nexperia accepts no liability for inclusion and/or use of
+Draft — The document is a draft version only. The content is still under
+                                                                                                           Nexperia products in such equipment or applications and
+internal review and subject to formal approval, which may result in
+                                                                                                           therefore such inclusion and/or use is at the customer’s own risk.
+modifications or additions. Nexperia does not give any
+representations or warranties as to the accuracy or completeness of                                        Applications — Applications that are described herein for any of these
+information included herein and shall have no liability for the consequences of                            products are for illustrative purposes only. Nexperia makes no
+use of such information.                                                                                   representation or warranty that such applications will be suitable for the
+                                                                                                           specified use without further testing or modification.
+Short data sheet — A short data sheet is an extract from a full data sheet
+with the same product type number(s) and title. A short data sheet is intended                             Customers are responsible for the design and operation of their applications
+for quick reference only and should not be relied upon to contain detailed and                             and products using Nexperia products, and Nexperia
+full information. For detailed and full information see the relevant full data                             accepts no liability for any assistance with applications or customer product
+sheet, which is available on request via the local Nexperia sales                                          design. It is customer’s sole responsibility to determine whether the Nexperia
+office. In case of any inconsistency or conflict with the short data sheet, the                            product is suitable and fit for the customer’s applications and
+full data sheet shall prevail.                                                                             products planned, as well as for the planned application and use of
+                                                                                                           customer’s third party customer(s). Customers should provide appropriate
+Product specification — The information and data provided in a Product                                     design and operating safeguards to minimize the risks associated with their
+data sheet shall define the specification of the product as agreed between                                 applications and products.
+Nexperia and its customer, unless Nexperia and
+customer have explicitly agreed otherwise in writing. In no event however,                                 Nexperia does not accept any liability related to any default,
+shall an agreement be valid in which the Nexperia product is                                               damage, costs or problem which is based on any weakness or default in the
+deemed to offer functions and qualities beyond those described in the                                      customer’s applications or products, or the application or use by customer’s
+Product data sheet.                                                                                        third party customer(s). Customer is responsible for doing all necessary
+                                                                                                           testing for the customer’s applications and products using Nexperia
+                                                                                                           products in order to avoid a default of the applications and
+12.3 Disclaimers                                                                                           the products or of the application or use by customer’s third party
+                                                                                                           customer(s). Nexperia does not accept any liability in this respect.
+
+Limited warranty and liability — Information in this document is believed to                               Limiting values — Stress above one or more limiting values (as defined in
+be accurate and reliable. However, Nexperia does not give any                                              the Absolute Maximum Ratings System of IEC 60134) will cause permanent
+representations or warranties, expressed or implied, as to the accuracy or                                 damage to the device. Limiting values are stress ratings only and (proper)
+completeness of such information and shall have no liability for the                                       operation of the device at these or any other conditions above those given in
+consequences of use of such information.                                                                   the Recommended operating conditions section (if present) or the
+                                                                                                           Characteristics sections of this document is not warranted. Constant or
+In no event shall Nexperia be liable for any indirect, incidental,
+                                                                                                           repeated exposure to limiting values will permanently and irreversibly affect
+punitive, special or consequential damages (including - without limitation - lost
+                                                                                                           the quality and reliability of the device.
+profits, lost savings, business interruption, costs related to the removal or
+replacement of any products or rework charges) whether or not such                                         Terms and conditions of commercial sale — Nexperia
+damages are based on tort (including negligence), warranty, breach of                                      products are sold subject to the general terms and conditions of commercial
+contract or any other legal theory.                                                                        sale, as published at http://www.nexperia.com/profile/terms, unless otherwise
+Notwithstanding any damages that customer might incur for any reason                                       agreed in a valid written individual agreement. In case an individual
+whatsoever, Nexperia’s aggregate and cumulative liability towards                                          agreement is concluded only the terms and conditions of the respective
+customer for the products described herein shall be limited in accordance                                  agreement shall apply. Nexperia hereby expressly objects to
+with the Terms and conditions of commercial sale of Nexperia.                                              applying the customer’s general terms and conditions with regard to the
+                                                                                                           purchase of Nexperia products by customer.
+Right to make changes — Nexperia reserves the right to make
+changes to information published in this document, including without                                       No offer to sell or license — Nothing in this document may be interpreted or
+limitation specifications and product descriptions, at any time and without                                construed as an offer to sell products that is open for acceptance or the grant,
+notice. This document supersedes and replaces all information supplied prior                               conveyance or implication of any license under any copyrights, patents or
+to the publication hereof.                                                                                 other industrial or intellectual property rights.
+
+Suitability for use — Nexperia products are not designed,                                                  Export control — This document as well as the item(s) described herein
+authorized or warranted to be suitable for use in life support, life-critical or                           may be subject to export control regulations. Export might require a prior
+safety-critical systems or equipment, nor in applications where failure or                                 authorization from national authorities.
+
+
+2N7002BKS                                                         All information provided in this document is subject to legal disclaimers.                © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                           Rev. 2 — 23 September 2010                                                                                14 of 16
+Nexperia                                                                                                                                2N7002BKS
+                                                                                                            60 V, 300 mA dual N-channel Trench MOSFET
+
+
+Quick reference data — The Quick reference data is an extract of the
+product data given in the Limiting values and Characteristics sections of this
+                                                                                                 12.4 Trademarks
+document, and as such is not complete, exhaustive or legally binding.                            Notice: All referenced brands, product names, service names and trademarks
+                                                                                                 are the property of their respective owners.
+
+
+
+13. Contact information
+For more information, please visit: http://www.nexperia.com
+For sales office addresses, please send an email to: salesaddresses@nexperia.com
+
+
+
+
+2N7002BKS                                               All information provided in this document is subject to legal disclaimers.             © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                 Rev. 2 — 23 September 2010                                                                             15 of 16
+Nexperia                                                                                                   2N7002BKS
+                                                                                        60 V, 300 mA dual N-channel Trench MOSFET
+
+
+
+14. Contents
+1           Product profile . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.1           General description . . . . . . . . . . . . . . . . . . . . . 1
+1.2           Features and benefits . . . . . . . . . . . . . . . . . . . . 1
+1.3           Applications . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.4           Quick reference data . . . . . . . . . . . . . . . . . . . . 1
+2           Pinning information . . . . . . . . . . . . . . . . . . . . . . 2
+3           Ordering information . . . . . . . . . . . . . . . . . . . . . 2
+4           Marking . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+5           Limiting values. . . . . . . . . . . . . . . . . . . . . . . . . . 2
+6           Thermal characteristics . . . . . . . . . . . . . . . . . . 4
+7           Characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+8           Test information . . . . . . . . . . . . . . . . . . . . . . . . 10
+9           Package outline . . . . . . . . . . . . . . . . . . . . . . . . 11
+10          Soldering . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+11          Revision history . . . . . . . . . . . . . . . . . . . . . . . . 13
+12          Legal information. . . . . . . . . . . . . . . . . . . . . . . 14
+12.1          Data sheet status . . . . . . . . . . . . . . . . . . . . . . 14
+12.2          Definitions . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+12.3          Disclaimers . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+12.4          Trademarks. . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+13          Contact information. . . . . . . . . . . . . . . . . . . . . 15
+14          Contents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+
+
+
+
+© Nexperia B.V. 2017. All rights reserved
+
+For more information, please visit: http://www.nexperia.com
+For sales office addresses, please send an email to: salesaddresses@nexperia.com
+Date of release: 23 September 2010
+

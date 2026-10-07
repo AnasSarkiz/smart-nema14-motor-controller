@@ -1,0 +1,904 @@
+                                PMV30UN2
+                                20 V, N-channel Trench MOSFET
+                                24 April 2014                                                               Product data sheet
+
+
+
+
+1. General description
+                          N-channel enhancement mode Field-Effect Transistor (FET) in a small SOT23
+                          (TO-236AB) Surface-Mounted Device (SMD) plastic package using Trench MOSFET
+                          technology.
+
+
+2. Features and benefits
+                          •     Trench MOSFET technology
+                          •     Low threshold voltage
+                          •     Very fast switching
+                          •     Enhanced power dissipation capability of 1000 mW
+
+
+3. Applications
+                          •     LED driver
+                          •     Power management
+                          •     Low-side load switch
+                          •     Switching circuits
+
+
+4. Quick reference data
+Table 1.   Quick reference data
+Symbol          Parameter                      Conditions                                           Min      Typ      Max      Unit
+ VDS             drain-source voltage          Tj = 25 °C                                           -        -         20       V
+
+ VGS             gate-source voltage                                                                -12      -         12       V
+
+ ID              drain current                 VGS = 4.5 V; Tamb = 25 °C; t ≤ 5 s          [1]      -        -         5.4      A
+
+ Static characteristics
+ RDSon           drain-source on-state         VGS = 4.5 V; ID = 4.2 A; Tj = 25 °C                  -        24        32       mΩ
+                 resistance
+
+                          [1]   Device mounted on an FR4 Printed-Circuit Board (PCB), single-sided copper, tin-plated, mounting pad for
+                                          2
+                                drain 6 cm .
+Nexperia                                                                                                                                    PMV30UN2
+                                                                                                                         20 V, N-channel Trench MOSFET
+
+
+
+
+5. Pinning information
+Table 2.    Pinning information
+Pin        Symbol Description                                Simplified outline                                         Graphic symbol
+ 1         G         gate                                                                   3                                                  D
+
+ 2         S         source
+                                                                                                                                   G
+ 3         D         drain                                                   1                     2
+                                                                      TO-236AB (SOT23)                                                         S
+                                                                                                                                         017aaa253
+
+
+
+
+6. Ordering information
+Table 3.    Ordering information
+Type number             Package
+                        Name               Description                                                                                                Version
+ PMV30UN2                TO-236AB           plastic surface-mounted package; 3 leads                                                                  SOT23
+
+
+
+7. Marking
+Table 4.    Marking codes
+Type number                                                                      Marking code
+                                                                                 [1]
+
+ PMV30UN2                                                                        %K6
+
+                        [1]   % = placeholder for manufacturing site code
+
+
+
+
+PMV30UN2                                   All information provided in this document is subject to legal disclaimers.                     © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                  24 April 2014                                                                                        2 / 15
+Nexperia                                                                                                                                  PMV30UN2
+                                                                                                                         20 V, N-channel Trench MOSFET
+
+
+
+
+8. Limiting values
+Table 5.   Limiting values
+In accordance with the Absolute Maximum Rating System (IEC 60134).
+Symbol           Parameter                                Conditions                                                               Min              Max            Unit
+ VDS             drain-source voltage                      Tj = 25 °C                                                               -               20             V
+
+ VGS             gate-source voltage                                                                                                -12             12             V
+
+ ID              drain current                             VGS = 4.5 V; Tamb = 25 °C; t ≤ 5 s                                [1]    -               5.4            A
+
+                                                           VGS = 4.5 V; Tamb = 25 °C                                         [1]    -               4.2            A
+
+                                                           VGS = 4.5 V; Tamb = 100 °C                                        [1]    -               2.7            A
+
+ IDM             peak drain current                        Tamb = 25 °C; single pulse; tp ≤ 10 µs                                   -               18             A
+
+ Ptot            total power dissipation                   Tamb = 25 °C                                                      [2]    -               490            mW
+                                                                                                                             [1]    -               1000           mW
+                                                           Tsp = 25 °C                                                              -               5000           mW
+
+ Tj              junction temperature                                                                                               -55             150            °C
+
+ Tamb            ambient temperature                                                                                                -55             150            °C
+
+ Tstg            storage temperature                                                                                                -65             150            °C
+
+ Source-drain diode
+ IS              source current                            Tamb = 25 °C                                                      [1]    -               0.9            A
+
+                        [1]   Device mounted on an FR4 Printed-Circuit Board (PCB), single-sided copper, tin-plated, mounting pad for
+                                        2
+                              drain 6 cm .
+                        [2]   Device mounted on an FR4 Printed Circuit Board (PCB), single-sided copper, tin-plated and standard
+                              footprint.
+
+
+
+
+PMV30UN2                                    All information provided in this document is subject to legal disclaimers.                  © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                   24 April 2014                                                                                     3 / 15
+Nexperia                                                                                                                                                           PMV30UN2
+                                                                                                                                     20 V, N-channel Trench MOSFET
+
+
+                                                        017aaa123                                                                                                     017aaa124
+           120                                                                                          120
+
+
+      Pder                                                                                           Ider
+      (%)                                                                                            (%)
+
+
+            80                                                                                           80
+
+
+
+
+            40                                                                                           40
+
+
+
+
+              0                                                                                             0
+               - 75     - 25      25        75       125             175                                     - 75          - 25          25            75          125             175
+                                                           Tj (°C)                                                                                                       Tj (°C)
+
+Fig. 1.        MOSFET transistor: Normalized total                                          Fig. 2.          MOSFET transistor: Normalized continuous
+               power dissipation as a function of junction                                                   drain current as a function of junction
+               temperature                                                                                   temperature
+
+
+
+
+                                                                                                                                                                     aaa-012418
+            102
+
+        ID
+       (A)
+                  Limit RDSon = VDS/ID                                                                                                        tp = 10 µs
+            10
+
+
+                                                                                                                                              tp = 100 µs
+
+             1
+                                                                                                                                              tp = 1 ms
+
+                                                                                                                                              tp = 10 ms
+                          DC; Tamb = 25 °C; drain mounting pad 6 cm2
+                                                                                                                                              tp = 100 ms
+        10-1                                                    DC; Tsp = 25 °C
+
+
+
+
+        10-2
+           10-1                                            1                                                             10                                                        102
+                                                                                                                                                    VDS (V)
+
+               IDM = single pulse
+Fig. 3.        Safe operating area; junction to ambient; continuous and peak drain currents as a function of drain-
+               source voltage
+
+
+
+9. Thermal characteristics
+Table 6.          Thermal characteristics
+Symbol                  Parameter                    Conditions                                                                                Min            Typ          Max            Unit
+ Rth(j-a)               thermal resistance            in free air                                                                  [1]          -             217          255            K/W
+                        from junction to                                                                                           [2]          -             105          124            K/W
+                        ambient
+                                                      t≤5s                                                                         [2]          -             73           86             K/W
+
+PMV30UN2                                              All information provided in this document is subject to legal disclaimers.                               © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                             24 April 2014                                                                                                  4 / 15
+Nexperia                                                                                                                                                PMV30UN2
+                                                                                                                                     20 V, N-channel Trench MOSFET
+
+
+Symbol                    Parameter                     Conditions                                                                       Min       Typ          Max            Unit
+ Rth(j-sp)                thermal resistance                                                                                             -         20           25             K/W
+                          from junction to solder
+                          point
+
+                                     [1]   Device mounted on an FR4 Printed-Circuit Board (PCB), single-sided copper, tin-plated and standard
+                                           footprint.
+                                     [2]   Device mounted on an FR4 PCB, single-sided copper, tin-plated, mounting pad for drain 6 cm .
+                                                                                                                                                                       2
+
+
+
+                                                                                                                                                          aaa-012832
+           103
+
+
+     Zth(j-a)
+     (K/W)        duty cycle = 1
+
+                            0.75
+           102    0.5
+                            0.33
+                  0.25
+                             0.2
+                  0.1       0.05
+                  0.02
+             10
+                      0
+                              0.01
+
+
+
+
+              1
+              10- 3                   10- 2              10- 1                              1                              10                102                      103
+                                                                                                                                                      tp (s)
+
+                FR4 PCB, standard footprint
+Fig. 4.         Transient thermal impedance from junction to ambient as a function of pulse duration; typical values
+                                                                                                                                                          aaa-012833
+           103
+
+
+     Zth(j-a)
+     (K/W)
+
+                  duty cycle = 1
+           102
+                  0.75
+                             0.5
+                  0.33       0.2
+                  0.25
+                  0.1
+             10               0.05
+                      0
+                              0.02
+                              0.01
+
+
+
+              1
+              10- 3                   10- 2              10- 1                              1                              10                102                      103
+                                                                                                                                                      tp (s)
+                                                                   2
+                FR4 PCB, mounting pad for drain 6 cm
+Fig. 5.         Transient thermal impedance from junction to ambient as a function of pulse duration; typical values
+
+
+
+
+PMV30UN2                                                All information provided in this document is subject to legal disclaimers.                  © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                               24 April 2014                                                                                     5 / 15
+Nexperia                                                                                                                               PMV30UN2
+                                                                                                                      20 V, N-channel Trench MOSFET
+
+
+
+
+10. Characteristics
+Table 7.    Characteristics
+Symbol           Parameter               Conditions                                                                       Min   Typ              Max            Unit
+ Static characteristics
+ V(BR)DSS        drain-source            ID = 250 µA; VGS = 0 V; Tj = 25 °C                                               20     -               -              V
+                 breakdown voltage
+ VGSth           gate-source threshold   ID = 250 µA; VDS = VGS; Tj = 25 °C                                               0.4    0.65            0.9            V
+                 voltage
+ IDSS            drain leakage current   VDS = 20 V; VGS = 0 V; Tj = 25 °C                                                -      -               1              µA
+
+ IGSS            gate leakage current    VGS = 12 V; VDS = 0 V; Tj = 25 °C                                                -      -               100            nA
+
+                                         VGS = -12 V; VDS = 0 V; Tj = 25 °C                                               -      -               -100           nA
+
+ RDSon           drain-source on-state   VGS = 4.5 V; ID = 4.2 A; Tj = 25 °C                                              -      24              32             mΩ
+                 resistance
+                                         VGS = 4.5 V; ID = 4.2 A; Tj = 150 °C                                             -      37              50             mΩ
+
+                                         VGS = 2.5 V; ID = 3.7 A; Tj = 25 °C                                              -      30              43             mΩ
+
+                                         VGS = 1.8 V; ID = 1.0 A; Tj = 25 °C                                              -      40              59             mΩ
+
+                                         VGS = 1.5 V; ID = 0.1 A; Tj = 25 °C                                              -      56              100            mΩ
+
+                                         VGS = 1.2 V; ID = 10 mA; Tj = 25 °C                                              -      160             -              mΩ
+
+ gfs             forward                 VDS = 10 V; ID = 2 A; Tj = 25 °C                                                 -      15.8            -              S
+                 transconductance
+ RG              gate resistance         f = 1 MHz; Tj = 25 °C                                                            -      7.6             -              Ω
+
+ Dynamic characteristics
+ QG(tot)         total gate charge       VDS = 10 V; ID = 4.2 A; VGS = 4.5 V;                                             -      6.2             11             nC
+
+ QGS             gate-source charge      Tj = 25 °C                                                                       -      0.8             -              nC
+
+ QGD             gate-drain charge                                                                                        -      1.4             -              nC
+
+ Ciss            input capacitance       VDS = 10 V; f = 1 MHz; VGS = 0 V;                                                -      655             -              pF
+
+ Coss            output capacitance      Tj = 25 °C                                                                       -      70              -              pF
+
+ Crss            reverse transfer                                                                                         -      62              -              pF
+                 capacitance
+ td(on)          turn-on delay time      VDS = 10 V; ID = 4.2 A; VGS = 4.5 V;                                             -      7               -              ns
+
+ tr              rise time               RG(ext) = 6 Ω; Tj = 25 °C                                                        -      26              -              ns
+
+ td(off)         turn-off delay time                                                                                      -      35              -              ns
+
+ tf              fall time                                                                                                -      10              -              ns
+
+ Source-drain diode
+ VSD             source-drain voltage    IS = 0.9 A; VGS = 0 V; Tj = 25 °C                                                -      0.7             1.2            V
+
+
+
+
+PMV30UN2                                 All information provided in this document is subject to legal disclaimers.                  © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                24 April 2014                                                                                     6 / 15
+Nexperia                                                                                                                                                                 PMV30UN2
+                                                                                                                                              20 V, N-channel Trench MOSFET
+
+
+                                                                aaa-012419                                                                                                   aaa-012420
+            18                                                                                                  10-3
+                              4.5 V
+                                          2.0 V                                                                ID
+       ID
+      (A)                                 2.5 V                      1.8 V                                    (A)
+
+                                                                                                                                            min        typ     max
+            12                                                                                                  10-4
+
+
+
+                                                                    1.5 V
+
+
+             6                                                                                                  10-5
+
+
+
+                                                           VGS = 1.2 V
+
+
+             0                                                                                                  10-6
+                  0             1                 2        3                  4                                         0                    0.5                   1                     1.5
+                                                                VDS (V)                                                                                                   VGS (V)
+
+              Tj = 25 °C                                                                                              Tj = 25 °C; VDS = 5 V
+Fig. 6.       Output characteristics: drain current as a       Fig. 7.                                                Sub-threshold drain current as a function of
+              function of drain-source voltage; typical values                                                        gate-source voltage
+                                                                aaa-012421                                                                                                   aaa-012422
+           0.20                                                                                                   0.3
+                      1.2 V           1.5 V
+     RDSon
+      (Ω)                                                                                                   RDSon
+                                                                                                             (Ω)
+           0.15
+                                                      1.8 V
+                                                                                                                  0.2
+                                                                     2.0 V
+
+           0.10
+
+
+                                                                                                                  0.1
+           0.05
+                                                                     3.0 V                                                                                   Tj = 150 °C
+
+                                                           VGS = 4.5 V
+                                                                                                                                                              Tj = 25 °C
+             0                                                                                                      0
+                  0                   6               12                     18                                         0             1            2           3            4              5
+                                                               ID (A)                                                                                                           VGS (V)
+
+              Tj = 25 °C                                                                                              ID = 4.2 A
+Fig. 8.       Drain-source on-state resistance as a function                                         Fig. 9.          Drain-source on-state resistance as a function
+              of drain current; typical values                                                                        of gate-source voltage; typical values
+
+
+
+
+PMV30UN2                                                       All information provided in this document is subject to legal disclaimers.                              © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                                      24 April 2014                                                                                                 7 / 15
+Nexperia                                                                                                                                                 PMV30UN2
+                                                                                                                                         20 V, N-channel Trench MOSFET
+
+
+                                                            aaa-012423                                                                                       aaa-012424
+           18                                                                                                 2
+
+                                                                                                         a
+        ID
+       (A)
+                                                                                                             1.5
+           12
+
+
+                                                                                                              1
+
+
+             6
+                     Tj = 150 °C
+                                                                                                             0.5
+
+
+
+                                     Tj = 25 °C
+             0                                                                                                0
+                 0            1                   2                    3                                       -60                   0       60        120               180
+                                                       VGS (V)                                                                                                Tj (°C)
+
+               VDS > ID × RDSon                                                               Fig. 11. Normalized drain-source on-state resistance
+Fig. 10. Transfer characteristics: drain current as a                                                  as a function of junction temperature; typical
+         function of gate-source voltage; typical values                                               values
+
+
+
+
+                                                            aaa-012425                                                                                       aaa-012427
+           1.5                                                                                            103
+
+                                                                                                                                                            Ciss
+     VGS(th)
+      (V)
+                                                                                                        C
+                                                                                                       (pF)
+           1.0
+                                   min
+
+                                                                                                          102
+                                   typ
+                                                                                                                                                            Coss
+           0.5                                                                                                                                               Crss
+                                   max
+
+
+
+
+             0                                                                                               10
+              -60        0               60           120             180                                     10-1                       1        10                     102
+                                                            Tj (°C)                                                                                       VDS (V)
+
+               ID = 250 µA; VDS = VGS                                                                          f = 1 MHz; VGS = 0 V
+Fig. 12. Gate-source threshold voltage as a function of                                       Fig. 13. Input, output and reverse transfer capacitances
+         junction temperature                                                                          as a function of drain-source voltage; typical
+                                                                                                       values
+
+
+
+
+PMV30UN2                                                All information provided in this document is subject to legal disclaimers.                     © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                               24 April 2014                                                                                        8 / 15
+Nexperia                                                                                                                                              PMV30UN2
+                                                                                                                                 20 V, N-channel Trench MOSFET
+
+
+                                                         aaa-012428
+                 5
+                                                                                                            VDS
+           VGS
+           (V)
+                 4                                                                                                               ID
+
+
+                                                                                                          VGS(pl)
+                 3
+                                                                                                            VGS(th)
+
+                 2                                                                                          VGS
+                                                                                                                              QGS1    QGS2
+
+                                                                                                                                 QGS          QGD
+                 1
+                                                                                                                                         QG(tot)
+
+                                                                                                                                                           003aaa508
+                 0
+                     0   2         4                 6               8                 Fig. 15. MOSFET transistor: Gate charge waveform
+                                                         QG (nC)
+                                                                                                definitions
+            ID = 4.2 A; VDS = 10 V; Tamb = 25 °C
+Fig. 14. Gate-source voltage as a function of gate
+         charge; typical values
+                                                                                                            aaa-012429
+                                             5
+                                        IS
+                                       (A)
+                                             4
+
+
+                                                                         Tj = 150 °C
+                                             3
+
+
+
+                                             2
+
+
+                                                                                                Tj = 25 °C
+                                             1
+
+
+
+                                             0
+                                                 0                     0.4                      0.8                      1.2
+                                                                                                         VSD (V)
+
+            VGS = 0 V
+Fig. 16. Source current as a function of source-drain voltage; typical values
+
+
+
+11. Test information
+
+                                                          P                                                  t1
+                                                                                       duty cycle δ =
+                                                                                 t2                          t2
+
+                                                                         t1
+
+
+
+
+                                                                                                             t
+                                                                                                   006aaa812
+
+Fig. 17. Duty cycle definition
+
+PMV30UN2                                         All information provided in this document is subject to legal disclaimers.                         © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                            24 April 2014                                                                                        9 / 15
+Nexperia                                                                                                                                                       PMV30UN2
+                                                                                                                                          20 V, N-channel Trench MOSFET
+
+
+
+
+12. Package outline
+
+   Plastic surface-mounted package; 3 leads                                                                                                                                       SOT23
+
+
+
+
+                                             D                                    B                                                 E                A         X
+
+
+
+
+                                                                                                                                    HE                             v M A
+
+
+
+
+                                                  3
+
+
+
+
+                                                                                                                                                      Q
+
+
+                                                                                                             A
+
+                                                                                                                    A1
+
+                       1                                               2                                                                                   c
+
+                                    e1            bp                           w M B                                                                 Lp
+
+                                             e
+                                                                                                                                        detail X
+
+
+
+
+                                                                     0                    1                     2 mm
+
+                                                                                         scale
+
+
+
+     DIMENSIONS (mm are the original dimensions)
+                       A1
+       UNIT      A           bp          c       D          E            e          e1           HE        Lp            Q           v         w
+                      max.
+                1.1          0.48     0.15       3.0       1.4                                   2.5      0.45        0.55
+       mm             0.1                                                1.9      0.95                                              0.2        0.1
+                0.9          0.38     0.09       2.8       1.2                                   2.1      0.15        0.45
+
+
+
+
+           OUTLINE                                               REFERENCES                                                                    EUROPEAN
+                                                                                                                                                                   ISSUE DATE
+           VERSION              IEC                     JEDEC                          JEITA                                                  PROJECTION
+
+                                                                                                                                                                     04-11-04
+              SOT23                                    TO-236AB
+                                                                                                                                                                     06-03-16
+
+
+
+Fig. 18. Package outline TO-236AB (SOT23)
+PMV30UN2                                               All information provided in this document is subject to legal disclaimers.                          © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                              24 April 2014                                                                                           10 / 15
+Nexperia                                                                                                                                  PMV30UN2
+                                                                                                                      20 V, N-channel Trench MOSFET
+
+
+
+
+13. Soldering
+                                            3.3
+
+                                            2.9
+
+                                            1.9
+
+
+
+
+                                                                                                                                  solder lands
+
+
+                                                                                                                                  solder resist
+               3     1.7                                                                      2
+
+                                                                                                                                  solder paste
+
+
+                            0.7                                                      0.6                                          occupied area
+                           (3×)                                                     (3×)
+                                                                                                                        Dimensions in mm
+
+                                             0.5
+                                            (3×)
+                                             0.6
+                                            (3×)
+
+                                              1                                                                                          sot023_fr
+
+Fig. 19. Reflow soldering footprint for TO-236AB (SOT23)
+                                                     2.2
+                                   1.2
+                                  (2×)
+
+
+
+
+                            1.4
+                           (2×)
+
+
+                                                                                                                                   solder lands
+
+
+              4.6    2.6                                                                                                           solder resist
+
+                                                                                                                                   occupied area
+
+
+                                                                                                                         Dimensions in mm
+                           1.4
+
+
+
+
+                                                                                                  preferred transport direction during soldering
+
+                                                     2.8
+
+                                                     4.5                                                                                 sot023_fw
+
+Fig. 20. Wave soldering footprint for TO-236AB (SOT23)
+
+
+
+
+PMV30UN2                                 All information provided in this document is subject to legal disclaimers.                     © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                24 April 2014                                                                                      11 / 15
+Nexperia                                                                                                                             PMV30UN2
+                                                                                                                    20 V, N-channel Trench MOSFET
+
+
+
+
+14. Revision history
+Table 8.    Revision history
+Data sheet ID           Release date                 Data sheet status                              Change notice             Supersedes
+ PMV30UN2 v.1           20140424                      Product data sheet                             -                         -
+
+
+
+
+PMV30UN2                               All information provided in this document is subject to legal disclaimers.                  © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                              24 April 2014                                                                                   12 / 15
+Nexperia                                                                                                                                             PMV30UN2
+                                                                                                                                     20 V, N-channel Trench MOSFET
+
+
+                                                                                                In no event shall Nexperia be liable for any indirect, incidental,
+                                                                                                punitive, special or consequential damages (including - without limitation -
+15. Legal information                                                                           lost profits, lost savings, business interruption, costs related to the removal
+                                                                                                or replacement of any products or rework charges) whether or not such
+                                                                                                damages are based on tort (including negligence), warranty, breach of
+                                                                                                contract or any other legal theory.
+
+      15.1 Data sheet status                                                                    Notwithstanding any damages that customer might incur for any reason
+                                                                                                whatsoever, Nexperia’s aggregate and cumulative liability towards
+Document         Product          Definition                                                    customer for the products described herein shall be limited in accordance
+status [1][2]    status [3]                                                                     with the Terms and conditions of commercial sale of Nexperia.
+
+ Objective        Development This document contains data from                                  Right to make changes — Nexperia reserves the right to
+ [short] data                 the objective specification for product                           make changes to information published in this document, including without
+ sheet                        development.                                                      limitation specifications and product descriptions, at any time and without
+ Preliminary      Qualification   This document contains data from the                          notice. This document supersedes and replaces all information supplied prior
+ [short] data                     preliminary specification.                                    to the publication hereof.
+ sheet
+                                                                                                Suitability for use in automotive applications — This Nexperia
+ Product          Production      This document contains the product                            product has been qualified for use in automotive
+ [short] data                     specification.                                                applications. Unless otherwise agreed in writing, the product is not designed,
+ sheet                                                                                          authorized or warranted to be suitable for use in life support, life-critical or
+                                                                                                safety-critical systems or equipment, nor in applications where failure or
+[1]    Please consult the most recently issued document before initiating or                    malfunction of a Nexperia product can reasonably be expected
+       completing a design.                                                                     to result in personal injury, death or severe property or environmental
+[2]    The term 'short data sheet' is explained in section "Definitions".                       damage. Nexperia and its suppliers accept no liability for
+[3]    The product status of device(s) described in this document may have                      inclusion and/or use of Nexperia products in such equipment or
+       changed since this document was published and may differ in case of                      applications and therefore such inclusion and/or use is at the customer's own
+       multiple devices. The latest product status information is available on                  risk.
+       the Internet at URL http://www.nexperia.com.
+                                                                                                Quick reference data — The Quick reference data is an extract of the
+                                                                                                product data given in the Limiting values and Characteristics sections of this
+                                                                                                document, and as such is not complete, exhaustive or legally binding.
+      15.2 Definitions
+                                                                                                Applications — Applications that are described herein for any of these
+Preview — The document is a preview version only. The document is still                         products are for illustrative purposes only. Nexperia makes no
+subject to formal approval, which may result in modifications or additions.                     representation or warranty that such applications will be suitable for the
+Nexperia does not give any representations or warranties as to                                  specified use without further testing or modification.
+the accuracy or completeness of information included herein and shall have
+no liability for the consequences of use of such information.                                   Customers are responsible for the design and operation of their
+                                                                                                applications and products using Nexperia products, and Nexperia
+Draft — The document is a draft version only. The content is still under                        accepts no liability for any assistance with applications or
+internal review and subject to formal approval, which may result in                             customer product design. It is customer’s sole responsibility to determine
+modifications or additions. Nexperia does not give any                                          whether the Nexperia product is suitable and fit for the
+representations or warranties as to the accuracy or completeness of                             customer’s applications and products planned, as well as for the planned
+information included herein and shall have no liability for the consequences                    application and use of customer’s third party customer(s). Customers should
+of use of such information.                                                                     provide appropriate design and operating safeguards to minimize the risks
+                                                                                                associated with their applications and products.
+Short data sheet — A short data sheet is an extract from a full data sheet
+with the same product type number(s) and title. A short data sheet is                           Nexperia does not accept any liability related to any default,
+intended for quick reference only and should not be relied upon to contain                      damage, costs or problem which is based on any weakness or default
+detailed and full information. For detailed and full information see the                        in the customer’s applications or products, or the application or use by
+relevant full data sheet, which is available on request via the local Nexperia                  customer’s third party customer(s). Customer is responsible for doing all
+sales office. In case of any inconsistency or conflict with the                                 necessary testing for the customer’s applications and products using Nexperia
+short data sheet, the full data sheet shall prevail.                                            products in order to avoid a default of the applications
+                                                                                                and the products or of the application or use by customer’s third party
+Product specification — The information and data provided in a Product                          customer(s). Nexperia does not accept any liability in this respect.
+data sheet shall define the specification of the product as agreed between
+Nexperia and its customer, unless Nexperia and                                                  Limiting values — Stress above one or more limiting values (as defined in
+customer have explicitly agreed otherwise in writing. In no event however,                      the Absolute Maximum Ratings System of IEC 60134) will cause permanent
+shall an agreement be valid in which the Nexperia product                                       damage to the device. Limiting values are stress ratings only and (proper)
+is deemed to offer functions and qualities beyond those described in the                        operation of the device at these or any other conditions above those
+Product data sheet.                                                                             given in the Recommended operating conditions section (if present) or the
+                                                                                                Characteristics sections of this document is not warranted. Constant or
+                                                                                                repeated exposure to limiting values will permanently and irreversibly affect
+                                                                                                the quality and reliability of the device.
+      15.3 Disclaimers
+                                                                                                Terms and conditions of commercial sale — Nexperia
+Limited warranty and liability — Information in this document is believed                       products are sold subject to the general terms and conditions of commercial
+to be accurate and reliable. However, Nexperia does not give                                    sale, as published at http://www.nexperia.com/profile/terms, unless otherwise
+any representations or warranties, expressed or implied, as to the accuracy                     agreed in a valid written individual agreement. In case an individual
+or completeness of such information and shall have no liability for the                         agreement is concluded only the terms and conditions of the respective
+consequences of use of such information. Nexperia takes no                                      agreement shall apply. Nexperia hereby expressly objects to
+responsibility for the content in this document if provided by an information                   applying the customer’s general terms and conditions with regard to the
+source outside of Nexperia.                                                                     purchase of Nexperia products by customer.
+
+
+PMV30UN2                                                All information provided in this document is subject to legal disclaimers.                 © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                               24 April 2014                                                                                  13 / 15
+Nexperia                                                                                                                                         PMV30UN2
+                                                                                                                                    20 V, N-channel Trench MOSFET
+
+
+No offer to sell or license — Nothing in this document may be interpreted
+or construed as an offer to sell products that is open for acceptance or the
+grant, conveyance or implication of any license under any copyrights, patents
+or other industrial or intellectual property rights.
+
+Export control — This document as well as the item(s) described herein
+may be subject to export control regulations. Export might require a prior
+authorization from competent authorities.
+
+Translations — A non-English (translated) version of a document is for
+reference only. The English version shall prevail in case of any discrepancy
+between the translated and English versions.
+
+
+
+  15.4 Trademarks
+Notice: All referenced brands, product names, service names and
+trademarks are the property of their respective owners.
+
+
+
+
+PMV30UN2                                               All information provided in this document is subject to legal disclaimers.              © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                              24 April 2014                                                                               14 / 15
+Nexperia                                                                                                                                                PMV30UN2
+                                                                                                                                           20 V, N-channel Trench MOSFET
+
+
+
+
+16. Contents
+1          General description ............................................... 1
+2          Features and benefits ............................................1
+3          Applications ........................................................... 1
+4          Quick reference data ............................................. 1
+5          Pinning information ............................................... 2
+6          Ordering information ............................................. 2
+7          Marking ................................................................... 2
+8          Limiting values .......................................................3
+9          Thermal characteristics .........................................4
+10         Characteristics ....................................................... 6
+11         Test information ..................................................... 9
+12         Package outline ................................................... 10
+13         Soldering .............................................................. 11
+14         Revision history ................................................... 12
+15         Legal information .................................................13
+15.1         Data sheet status ............................................... 13
+15.2         Definitions ...........................................................13
+15.3         Disclaimers .........................................................13
+15.4         Trademarks ........................................................ 14
+
+© Nexperia B.V. 2017. All rights reserved
+
+For more information, please visit: http://www.nexperia.com
+For sales office addresses, please send an email to: salesaddresses@nexperia.com
+Date of release: 24 April 2014
+
+
+
+
+PMV30UN2                                                      All information provided in this document is subject to legal disclaimers.              © Nexperia B.V. 2017. All rights reserved
+
+
+Product data sheet                                                                     24 April 2014                                                                               15 / 15
+

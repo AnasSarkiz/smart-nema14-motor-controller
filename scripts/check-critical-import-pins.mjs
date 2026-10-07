@@ -5,6 +5,54 @@ import ts from "typescript"
 // This is a limited audit, not full footprint or schematic qualification.
 const criticalPinChecks = [
   {
+    partNumber: "C668868",
+    path: "imports/BAT54WS_TP/BAT54WS_TP.tsx",
+    datasheet:
+      "MCC BAT54WS Rev3-3 SOD323 cathode mark and original supplier polarized terminals",
+    pins: { pin1: "cathode", pin2: "anode" },
+  },
+  {
+    partNumber: "C485081",
+    path: "imports/SN74LVC1G98DCKR/SN74LVC1G98DCKR.tsx",
+    datasheet: "TI SCES417L p1/p2, DCK top view and NAND configuration",
+    pins: {
+      pin1: "IN1",
+      pin2: "GND",
+      pin3: "IN0",
+      pin4: "Y1",
+      pin5: "VCC",
+      pin6: "IN2",
+    },
+  },
+  {
+    partNumber: "C128410",
+    path: "imports/SN74LVC1G27DBVR/SN74LVC1G27DBVR.tsx",
+    datasheet: "TI SCES488E top-view pinout; original SN74LVC1G27 PDF",
+    pins: {
+      pin1: "A",
+      pin2: "GND",
+      pin3: "B",
+      pin4: "Y",
+      pin5: "VCC",
+      pin6: "C",
+    },
+  },
+  {
+    partNumber: "C68245",
+    path: "imports/SN74LVC3G17DCUR/SN74LVC3G17DCUR.tsx",
+    datasheet: "TI SCES470F section 5, p.3, DCU top view",
+    pins: {
+      pin1: "1A",
+      pin2: "3Y",
+      pin3: "2A",
+      pin4: "GND",
+      pin5: "2Y",
+      pin6: "3A",
+      pin7: "1Y",
+      pin8: "VCC",
+    },
+  },
+  {
     partNumber: "C22624",
     path: "imports/B5819WS/B5819WS.tsx",
     datasheet:
@@ -56,6 +104,7 @@ const criticalPinChecks = [
       pin16: "VBUS_EN_SNK",
       pin18: "VBUS_VS_DISCH",
       pin19: "ALERT",
+      pin20: "POWER_OK2",
       pin21: "VREG_1V2",
       pin22: "VSYS",
       pin23: "VREG_2V7",

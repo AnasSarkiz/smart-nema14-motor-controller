@@ -1,0 +1,62 @@
+{
+  "scope": "Exact physical geometry and original local model-byte comparison. Native outputs are unchanged; normal CLI metadata adds supplier pin-1 maps, relative model URLs and serialized via IDs/route endpoint metadata. All canonical copper is independently rechecked.",
+  "comparison": {
+    "pcb_component": {
+      "count": 175,
+      "native_metadata_fields_changed": {
+        "supplier_pin1_location_map": 160
+      },
+      "physical_geometry_identical": true,
+      "model_bytes_identical": null
+    },
+    "cad_component": {
+      "count": 165,
+      "native_metadata_fields_changed": {
+        "model_obj_url": 160,
+        "model_step_url": 160
+      },
+      "physical_geometry_identical": true,
+      "model_bytes_identical": true
+    },
+    "pcb_smtpad": {
+      "count": 622,
+      "native_metadata_fields_changed": {},
+      "physical_geometry_identical": true,
+      "model_bytes_identical": null
+    },
+    "pcb_hole": {
+      "count": 8,
+      "native_metadata_fields_changed": {},
+      "physical_geometry_identical": true,
+      "model_bytes_identical": null
+    },
+    "pcb_keepout": {
+      "count": 4,
+      "native_metadata_fields_changed": {},
+      "physical_geometry_identical": true,
+      "model_bytes_identical": null
+    },
+    "pcb_trace": {
+      "count": 81,
+      "native_metadata_fields_changed": {
+        "route": 81
+      },
+      "physical_geometry_identical": true,
+      "model_bytes_identical": null
+    },
+    "pcb_via": {
+      "count": 62,
+      "native_metadata_fields_changed": {
+        "pcb_via_id": 53
+      },
+      "physical_geometry_identical": true,
+      "model_bytes_identical": null
+    },
+    "pcb_copper_pour": {
+      "count": 6,
+      "native_metadata_fields_changed": {},
+      "physical_geometry_identical": true,
+      "model_bytes_identical": null
+    }
+  }
+}

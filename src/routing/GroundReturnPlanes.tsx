@@ -5,7 +5,7 @@ export function GroundReturnPlanes() {
   return (
     <>
       {[
-        { name: "GND_STITCH_NORTH", pcbX: 0, pcbY: 15.5 },
+        { name: "GND_STITCH_NORTH", pcbX: -0.05, pcbY: 15.5 },
         { name: "GND_STITCH_IO2", pcbX: 2.75, pcbY: 1.05 },
         { name: "GND_STITCH_TMP", pcbX: -9, pcbY: 5.8 },
         { name: "GND_STITCH_CORE", pcbX: 10.56, pcbY: 1.5 },
@@ -13,6 +13,7 @@ export function GroundReturnPlanes() {
         { name: "GND_STITCH_PD_VDD", pcbX: -6.2, pcbY: 10.55 },
         { name: "GND_STITCH_FLASH_IO", pcbX: 10.8, pcbY: 9.5 },
         { name: "GND_STITCH_RESET_RETURN", pcbX: 11.8, pcbY: -4.1 },
+        { name: "GND_STITCH_VM_BOOT", pcbX: -14.5, pcbY: 0.4 },
       ].map((position) => (
         <Fragment key={position.name}>
           <via

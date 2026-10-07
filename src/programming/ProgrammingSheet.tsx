@@ -5,7 +5,6 @@ import { TMUX1511RSVR } from "../../imports/TMUX1511RSVR/TMUX1511RSVR"
 import { TLV803EA30DBZR } from "../../imports/TLV803EA30DBZR/TLV803EA30DBZR"
 import { CL05B104KO5NNNC } from "../../imports/CL05B104KO5NNNC/CL05B104KO5NNNC"
 import { A_0402WGF1000TCE } from "../../imports/A_0402WGF1000TCE/A_0402WGF1000TCE"
-import { A_0402WGF1002TCE } from "../../imports/A_0402WGF1002TCE/A_0402WGF1002TCE"
 import {
   type BoardViewProps,
   previewPlacement,
@@ -98,7 +97,7 @@ export function ProgrammingSheet({
         schY={-4.3}
         anchorSide="bottom"
       />
-      <A_0402WGF1002TCE
+      <RT0402BRD07100KL
         name="R19"
         {...previewPlacement("R19", mechanicalPreview)}
         schX={-5.2}

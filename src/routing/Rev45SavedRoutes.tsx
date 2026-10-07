@@ -1,5 +1,5 @@
 import { fanoutTracePath } from "@tscircuit/props"
-import savedRoutes from "./rev45-saved-paths.json"
+import savedRoutes from "./rev50-saved-paths.json"
 import type { FanoutTracePath } from "@tscircuit/props"
 
 const paths = savedRoutes.paths.map((path) => fanoutTracePath.parse(path))

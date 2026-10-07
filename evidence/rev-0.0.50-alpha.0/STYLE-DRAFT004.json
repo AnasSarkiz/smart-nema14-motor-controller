@@ -1,0 +1,199 @@
+{
+  "canonical_sha256": "45c7094e22922001c29594d610129a4e3929492f4ebc327ffa8647a8b889eadd",
+  "analyzer_module_sha256": "d4b7028ac5c07f5d2a999e9949ad0786116817cd0bf56e3f8958f0525173c728",
+  "issue_counts": {
+    "FlybackDiodeSeparatedFromRelayCoil": 0,
+    "ComponentOverlap": 0,
+    "SchematicBoxHasALotOfSurroundingWhitespace": 0,
+    "CapacitorSymbolHorizontal": 0,
+    "VerboseSchematicNetLabel": 0,
+    "PinHeaderSchematicBoxTooWide": 0,
+    "GenericSchematicBoxTooWide": 0,
+    "SchematicBoxInnerLabelCollision": 0,
+    "SchematicPinPaddingToEdgeTooLarge": 0,
+    "DiodeResistorNotAligned": 0,
+    "ParallelDiodeResistorNotAligned": 0,
+    "ComponentPinsWouldAlignWithVerticalShift": 0,
+    "TraceCanBeSimplifiedByMovingComponent": 0,
+    "CrystalNotCenteredOverLoadCapacitors": 0,
+    "ComponentNetLabelCollision": 0,
+    "ComponentBoxNetLabelCollision": 0,
+    "NetLabelCollision": 1,
+    "FeedbackNetworkNotCompact": 0,
+    "PullResistorOnWrongSide": 0,
+    "SchematicTextCollision": 1,
+    "ResetNetworkNotGrouped": 0,
+    "TwoPinComponentCouldBeFlipped": 0,
+    "TwoPinComponentShouldBeVertical": 2,
+    "TwoPinComponentHasInvertedRails": 0,
+    "DecouplingCapacitorsNotCloseTogether": 1,
+    "ConnectorPositionCausesTraceDetours": 0,
+    "LowSideTransistorNotAlignedWithLoad": 0,
+    "UsbSeriesResistorsNotAligned": 0,
+    "RegulatorCapacitorsOnWrongSides": 0,
+    "VoltageDividerSupplyResistorBelowGroundResistor": 0,
+    "CurrentSenseShuntSeparatedFromInputs": 0,
+    "PiFilterComponentsNotGrouped": 0,
+    "MosfetGateNetworkNotGrouped": 0,
+    "CapacitorSeparatedFromChipPins": 0,
+    "RailPathTooSpreadOut": 0
+  },
+  "issue_count": 5,
+  "issues": [
+    {
+      "lineItemType": "SchematicTextCollision",
+      "schematicSheetId": "schematic_sheet_5",
+      "schematicSheetName": "MotorInterlock",
+      "schematicTextId": "schematic_text_363",
+      "text": "MOTOR_ENABLE_GATE",
+      "collidingObject": {
+        "type": "trace",
+        "id": "schematic_trace_215"
+      },
+      "textBounds": {
+        "left": -1.814,
+        "right": -1.706,
+        "top": 1.759,
+        "bottom": 0.391
+      },
+      "collidingObjectBounds": {
+        "left": -5.01,
+        "right": -1.7289999999999999,
+        "top": 2.01,
+        "bottom": -1.7
+      },
+      "message": "Text \"MOTOR_ENABLE_GATE\" overlaps trace; adjust the owning trace's label placement or remove stale duplicates to leave the visible text area clear."
+    },
+    {
+      "lineItemType": "TwoPinComponentShouldBeVertical",
+      "schematicBox": {
+        "lineItemType": "SchematicBoxPlacement",
+        "positionAnchor": "center",
+        "schX": -4.6,
+        "schY": -3.3,
+        "width": 0.20000000000000018,
+        "height": 0.28000000000000025,
+        "sourceComponentId": "source_component_98",
+        "sourceComponentName": "D_VBUS",
+        "schematicComponentId": "schematic_component_98",
+        "schematicSheetId": "schematic_sheet_6",
+        "schematicSheetName": "UsbPd"
+      },
+      "railSourcePortId": "source_port_389",
+      "railPinName": "pin1",
+      "railType": "power",
+      "deltaSchRotation": -90,
+      "suggestedRailFacingDirection": "up",
+      "message": "rotate D_VBUS by -90° so its power-connected pin faces up and the component is vertical"
+    },
+    {
+      "lineItemType": "TwoPinComponentShouldBeVertical",
+      "schematicBox": {
+        "lineItemType": "SchematicBoxPlacement",
+        "positionAnchor": "center",
+        "schX": -3,
+        "schY": 4,
+        "width": 0.6,
+        "height": 0.65,
+        "sourceComponentId": "source_component_109",
+        "sourceComponentName": "R_DATA_SENSE_TOP",
+        "schematicComponentId": "schematic_component_109",
+        "schematicSheetId": "schematic_sheet_7",
+        "schematicSheetName": "UsbData"
+      },
+      "railSourcePortId": "source_port_426",
+      "railPinName": "pin1",
+      "railType": "power",
+      "deltaSchRotation": -90,
+      "suggestedRailFacingDirection": "up",
+      "message": "rotate R_DATA_SENSE_TOP by -90° so its power-connected pin faces up and the component is vertical"
+    },
+    {
+      "lineItemType": "NetLabelCollision",
+      "schematicSheetId": "schematic_sheet_5",
+      "schematicSheetName": "MotorInterlock",
+      "pairs": [
+        {
+          "comp1Name": "C_PD_SCHMITT",
+          "comp2Name": "U_PD_SCHMITT"
+        }
+      ],
+      "collisionBounds": [
+        {
+          "left": -10.45,
+          "right": -9.55,
+          "top": -4.7,
+          "bottom": -4.8
+        },
+        {
+          "left": -9.58,
+          "right": -9.55,
+          "top": -5.2,
+          "bottom": -5.3
+        },
+        {
+          "left": -10.45,
+          "right": -9.55,
+          "top": -4.800000000000001,
+          "bottom": -5
+        },
+        {
+          "left": -10.45,
+          "right": -9.55,
+          "top": -5,
+          "bottom": -5.199999999999999
+        }
+      ],
+      "moves": [
+        {
+          "componentName": "C_PD_SCHMITT",
+          "newSchX": -11.26,
+          "newSchY": -5
+        },
+        {
+          "componentName": "U_PD_SCHMITT",
+          "newSchX": -6.74,
+          "newSchY": -5
+        }
+      ]
+    },
+    {
+      "lineItemType": "DecouplingCapacitorsNotCloseTogether",
+      "railName": "V3V3",
+      "groundName": "GND",
+      "capacitorSchematicBoxes": [
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -10,
+          "schY": -5,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_78",
+          "sourceComponentName": "C_PD_SCHMITT",
+          "schematicComponentId": "schematic_component_78",
+          "schematicSheetId": "schematic_sheet_5",
+          "schematicSheetName": "MotorInterlock"
+        },
+        {
+          "lineItemType": "SchematicBoxPlacement",
+          "positionAnchor": "center",
+          "schX": -5,
+          "schY": -2,
+          "width": 0.9,
+          "height": 0.6,
+          "sourceComponentId": "source_component_79",
+          "sourceComponentName": "C_MOTOR_INTERLOCK",
+          "schematicComponentId": "schematic_component_79",
+          "schematicSheetId": "schematic_sheet_5",
+          "schematicSheetName": "MotorInterlock"
+        }
+      ],
+      "maxBodyGap": 4.750789408087881,
+      "maxRecommendedBodyGap": 1,
+      "message": "Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections."
+    }
+  ],
+  "description_xml": "<SchematicSheet name=\"MotorInterlock\" id=\"schematic_sheet_5\">\n<SchematicBoxPositions>\n<SchematicBoxPlacement componentName=\"U_MOTOR_INTERLOCK\" positionAnchor=\"center\" schX=\"-5\" schY=\"2\" width=\"1.2\" height=\"0.8\" />\n<SchematicBoxPlacement componentName=\"U_PD_SCHMITT\" positionAnchor=\"center\" schX=\"-8\" schY=\"-5\" width=\"1.2\" height=\"1\" />\n<SchematicBoxPlacement componentName=\"C_PD_SCHMITT\" positionAnchor=\"center\" schX=\"-10\" schY=\"-5\" width=\"0.9\" height=\"0.6\" />\n<SchematicBoxPlacement componentName=\"C_MOTOR_INTERLOCK\" positionAnchor=\"center\" schX=\"-5\" schY=\"-2\" width=\"0.9\" height=\"0.6\" />\n</SchematicBoxPositions>\n<SchematicPlacementIssues>\n<SchematicTextCollision text=\"MOTOR_ENABLE_GATE\" collidingObjectType=\"trace\" message=\"Text &quot;MOTOR_ENABLE_GATE&quot; overlaps trace; adjust the owning trace's label placement or remove stale duplicates to leave the visible text area clear.\" />\n<ComponentNetLabelCollision pair1=\"C_PD_SCHMITT/U_PD_SCHMITT\">\n  <SuggestedFix note=\"Apply all moves simultaneously. Set schAutoLayoutEnabled on your circuit.\">\n    <Move componentName=\"C_PD_SCHMITT\" newSchX=\"-11.26\" newSchY=\"-5\" />\n    <Move componentName=\"U_PD_SCHMITT\" newSchX=\"-6.74\" newSchY=\"-5\" />\n  </SuggestedFix>\n</ComponentNetLabelCollision>\n<DecouplingCapacitorsNotCloseTogether rail=\"V3V3\" ground=\"GND\" capacitorNames=\"C_PD_SCHMITT, C_MOTOR_INTERLOCK\" maxBodyGap=\"4.751\" maxRecommendedBodyGap=\"1\" message=\"Group the decoupling capacitors between V3V3 and GND closer together in this schematic block. Preserve their net connections.\" />\n</SchematicPlacementIssues>\n</SchematicSheet>\n<SchematicSheet name=\"UsbPd\" id=\"schematic_sheet_6\">\n<SchematicBoxPositions>\n<SchematicBoxPlacement componentName=\"D_VBUS\" positionAnchor=\"center\" schX=\"-4.6\" schY=\"-3.3\" width=\"0.2\" height=\"0.28\" />\n</SchematicBoxPositions>\n<SchematicPlacementIssues>\n<TwoPinComponentShouldBeVertical componentName=\"D_VBUS\" railPin=\"pin1\" railType=\"power\" deltaSchRotation=\"-90\" suggestedRailFacingDirection=\"up\" message=\"rotate D_VBUS by -90° so its power-connected pin faces up and the component is vertical\" />\n</SchematicPlacementIssues>\n</SchematicSheet>\n<SchematicSheet name=\"UsbData\" id=\"schematic_sheet_7\">\n<SchematicBoxPositions>\n<SchematicBoxPlacement componentName=\"R_DATA_SENSE_TOP\" positionAnchor=\"center\" schX=\"-3\" schY=\"4\" width=\"0.6\" height=\"0.65\" />\n</SchematicBoxPositions>\n<SchematicPlacementIssues>\n<TwoPinComponentShouldBeVertical componentName=\"R_DATA_SENSE_TOP\" railPin=\"pin1\" railType=\"power\" deltaSchRotation=\"-90\" suggestedRailFacingDirection=\"up\" message=\"rotate R_DATA_SENSE_TOP by -90° so its power-connected pin faces up and the component is vertical\" />\n</SchematicPlacementIssues>\n</SchematicSheet>",
+  "passed": false
+}

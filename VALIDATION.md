@@ -1,3 +1,68 @@
+# Revision 0.0.50-alpha.0 — two-port WIP implementation
+
+**PROTOTYPE FABRICATION READY: NO. No hardware testing or fabrication order.**
+
+RP2040, STUSB4500 and MCP2515 remain selected. Separate official USB-C POWER
+and DATA connectors, 15 V NVM programming/readback procedure, isolated computer
+VBUS sensing and hardware motor interlock are implemented. Active requirements
+and qualification scope are in [REV50-TWO-PORT-ROUTING.md](docs/REV50-TWO-PORT-ROUTING.md).
+
+The fresh native CLI canonical JSON has SHA-256
+`88d464e298e7194c9e02f2b7e8bfce4fc0bb1954a5d70f8daff16cd335f70df6`.
+All three canonical mirrors match. Its checked power038 baseline has 53/120
+physical networks complete, 298 open ports, 81 tracks, 62 ordinary 0.30/0.45 mm
+through vias and six filled GND regions. All twelve raw PD VBUS terminals and
+GND each form one physical network. Every required network was physically
+inspected; the remaining 67 remain failures. Strict copper and filled-copper
+clearances pass unchanged, as does the official all-layer shorts check.
+Native canonical build exits 1 solely for the 298 opens.
+
+Stage 1 requirements and Stage 2 exact imported identities/manufacturer pin
+review are recorded; customer stock allocation/PCBA quote remain pending.
+Stage 3 static assembly/model/carrier/cable checks pass for 165 fitted models,
+with bounded cable-envelope assumptions. Official schematic analysis leaves
+one unchanged imported TVS orientation finding. CLI placement retains six
+orientation suggestions and exits 1; it reports zero native placement errors.
+Stage 4 routing is in progress. Stage 5 loaded power/USB/thermal and complete
+fresh CAM remain incomplete. Stage 6 NVM/hardware/programming tests are pending.
+
+The coherent lockfile pins Bun1.3.9, tscircuit0.0.2757, CLI0.1.2257, core0.0.2107,
+router0.0.962, props0.0.695, checks0.0.242, circuit-json0.0.520, svg0.0.445 and
+easyeda0.0.374. Formatting and TypeScript checks pass. Critical imported pins,
+the unrouted draft's explicit two-port pin/net isolation checks, both standard
+USB-C schematic symbols, 166 purpose notes, motor-interlock static corners and
+38 standard-JST-programmer wiring checks pass. Physical flashing is untested.
+
+Mandatory CLI inspection uses the exact native canonical Circuit JSON where
+supported. Netlist inspection uses the explicit unrouted source preview: zero
+errors/warnings, with every electrical source partition identical to canonical.
+Direct routed-source netlist logs preserve the released PCB-disabled routing
+update error; it was not suppressed or claimed successful. Pin specification
+has zero errors/35 warnings; source has zero errors/23 warnings, including
+external datasheet lookups and the branched reversible USB pair. Actual USB
+pair geometry/return-path qualification remains required. The build also
+discloses an optional autorouting-cache serialization warning for Q_BUZZ;
+qualified source paths and actual emitted copper remain independently verified.
+
+Evidence is in `evidence/rev-0.0.50-alpha.0/CANONICAL-*`, `CLI50-*`,
+`BAT54WS-TP-QUALIFICATION.json`, the actual assembly audits and routing/power038.
+Failed routing candidates are retained as unqualified; none is accepted copper.
+The diode replacement fixes missing polarized schematic aliases using an
+unchanged official import with identical original pad/model geometry. J_SWD's
+bottom-side repair removes the verified DATA-port mating-envelope collision.
+All four fresh copper renders and the updated interlock sheet were viewed.
+
+This completed implementation step is authorized for public WIP publication
+with this accepted copper baseline. Only an anonymous exact-byte receipt proves
+publication; local version numbers or ready_to_build do not prove a hosted
+build, hardware result or fabrication approval. Continue protected VBUS/common
+FET source/VM, logic power, PD controls, USB and all remaining nets immediately
+after this publication.
+
+---
+
+## Historical revision 48 record
+
 # Routing checkpoint — 0.0.48-alpha.0, 2026-10-07
 
 Public verification completed at 2026-10-07T14:29:42.731Z. GitHub main implementation commit

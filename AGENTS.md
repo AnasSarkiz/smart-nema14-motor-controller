@@ -1,3 +1,37 @@
+# Active owner requirement — two USB-C ports / 15 V motor power
+
+Current implementation, electrical interlock and routing evidence are in
+`docs/REV50-TWO-PORT-ROUTING.md`. Read it before continuing. Finish raw/protected
+VBUS and VM power first, then PD/eFuse controls, then USB data with its return
+path, then all remaining required nets. Revision48 is historical;
+exact publication status is recorded by the receipts in VALIDATION.md.
+
+Revision0.0.50-alpha.0 continues the RP2040/STUSB4500/MCP2515 board. The latest
+owner instruction requires separate USB-C motor PD POWER and COMPUTER DATA ports.
+Motor power must prefer exactly15V (remove the active20V PDO in STUSB4500 NVM,
+program/read back and document the procedure). Data-port5V must stay electrically
+isolated from high-voltage PD VBUS and must never energize the motor. Verify
+RP2040 data VBUS sensing, logic startup and hardware motor inhibition until a
+valid15V contract. Use additional official imported parts and necessary connector
+placement changes, retaining35x35mm4layers, motor and front carrier where possible.
+Requalify electrical pin tables, exact models, actual assembly/cable/hole fit and
+placement before dependent routing. Earlier one-port/four-connector freezes below
+are historical and superseded only as needed for this two-port architecture.
+
+The pre-change routing is preserved in evidence/rev-0.0.49-alpha.0/qualified-source
+and routing/manual160:69/108 networks,102 source paths,92 ordinary0.30/0.45mm vias,
+nine pours,217 opens,zero other native/strict errors,all69 includingGND physically
+joined. Do not throw away unchanged qualified work or replay legacy STM32 copper.
+Finish every required connection using one bounded nativePipeline9 job at a time
+and supported manual source paths. No unchanged repetitive timeouts, generated
+JSON edits, vendor patches, lowered DRC or substitute routers. Verify/install latest
+released coherent tscircuit/CLI/core/router/converter with Bun lockfile. Preserve
+all imports/models/evidence. Complete power/USB/thermal/freshCAM/stock/assemblyquote
+gates and matching public GitHub/tscircuit source/JSON/CAD publication. Do not stop
+at a partial checkpoint. PROTOTYPE FABRICATION READY:NO; no fabrication order.
+
+---
+
 # Active routing — 0.0.48-alpha.0
 
 Read docs/REV48-ROUTING-CHECKPOINT.md, VALIDATION.md and the manufacturer review

@@ -45,7 +45,6 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
             30, 31, 32, 34, 35, 36, 37, 38, 39, 40,
           ],
         }}
-        noConnect={["GPIO29_ADC3"]}
         connections={{
           IOVDD1: "net.V3V3",
           IOVDD2: "net.V3V3",
@@ -78,7 +77,7 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           GPIO1: "net.TMC_UART_RX",
           GPIO2: "net.TMC_STEP",
           GPIO3: "net.TMC_DIR",
-          GPIO4: "net.TMC_ENABLE_N",
+          GPIO4: "net.MOTOR_REQUEST_N",
           GPIO5: "net.TMC_DIAG",
           GPIO6: "net.I2C_SDA",
           GPIO7: "net.I2C_SCL",
@@ -101,8 +100,9 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           GPIO24: "net.LED_FAULT_DRIVE",
           GPIO25: "net.BUZZER_PWM",
           GPIO26_ADC0: "net.VBUS_ADC",
-          GPIO27_ADC1: "net.PD_POWER_OK3",
+          GPIO27_ADC1: "net.PD_CONTRACT_15_N",
           GPIO28_ADC2: "net.TEMP_ALERT_N",
+          GPIO29_ADC3: "net.USB_DATA_ABSENT_N",
         }}
       />
       <TLV803EA30DBZR

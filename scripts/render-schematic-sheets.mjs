@@ -17,6 +17,8 @@ const expectedSheets = [
   "LogicPower",
   "MotorDriver",
   "UsbPd",
+  "UsbData",
+  "MotorInterlock",
   "Programming",
   "Interfaces",
   "InputPower",

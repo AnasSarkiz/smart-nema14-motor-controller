@@ -1,11 +1,13 @@
 import assert from "node:assert/strict"
 import { readFileSync, writeFileSync } from "node:fs"
 const revision = JSON.parse(readFileSync("package.json", "utf8")).version
-const circuit = JSON.parse(readFileSync("dist/index/circuit.json", "utf8"))
+const circuit = JSON.parse(
+  readFileSync(process.argv[2] ?? "dist/index/circuit.json", "utf8"),
+)
 const components = circuit.filter(
   (element) => element.type === "source_component",
 )
-assert.equal(components.length, 147)
+assert.equal(components.length, 166)
 const optionalPopulation = {
   R50: "CAN termination link: omit except on bus endpoints",
 }

@@ -1,0 +1,100 @@
+Building 1 file(s)...
+Building mounted-assembly.circuit.tsx...
+Generating circuit JSON...
+Circuit JSON written to dist/mounted-assembly/circuit.json
+The "Y" prefix is being used with a <chip />, try using it with a <crystal />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+Differential pair "USB_RECEPTACLE_PAIR" positiveConnection=".R_USB_DP > port.pin1" is not point-to-point: expected exactly 2 terminal pins, found 4: .D_USB > .pin1, .J_DATA > .DP1, .J_DATA > .DP2, and .R_USB_DP > .pin1.
+Differential pair "USB_RECEPTACLE_PAIR" negativeConnection=".R_USB_DM > port.pin1" is not point-to-point: expected exactly 2 terminal pins, found 4: .D_USB > .pin2, .J_DATA > .DN1, .J_DATA > .DN2, and .R_USB_DM > .pin1.
+Y_RP has no pin with requires_power=true
+U9 has no pin with requires_power=true
+BZ1 has no pin with requires_power=true
+BZ1 has no pin with requires_ground=true
+Q_BUZZ has no pin with requires_power=true
+Q_BUZZ has no pin with requires_ground=true
+All pins on Q_BUZZ are underspecified (no pinAttributes set)
+Q_MOTOR_ENABLE has no pin with requires_power=true
+Q_MOTOR_ENABLE has no pin with requires_ground=true
+All pins on Q_MOTOR_ENABLE are underspecified (no pinAttributes set)
+Q_MOTOR_POWER_GOOD has no pin with requires_power=true
+Q_MOTOR_POWER_GOOD has no pin with requires_ground=true
+All pins on Q_MOTOR_POWER_GOOD are underspecified (no pinAttributes set)
+Q_PD_IN has no pin with requires_power=true
+Q_PD_IN has no pin with requires_ground=true
+All pins on Q_PD_IN are underspecified (no pinAttributes set)
+Q_PD_OUT has no pin with requires_power=true
+Q_PD_OUT has no pin with requires_ground=true
+All pins on Q_PD_OUT are underspecified (no pinAttributes set)
+D_VBUS has no pin with requires_power=true
+D_VBUS has no pin with requires_ground=true
+All pins on D_VBUS are underspecified (no pinAttributes set)
+D_USB has no pin with requires_power=true
+Q_DATA_PRESENT has no pin with requires_power=true
+Q_DATA_PRESENT has no pin with requires_ground=true
+All pins on Q_DATA_PRESENT are underspecified (no pinAttributes set)
+J_IO has no pin with requires_power=true
+J_IO has no pin with requires_ground=true
+All pins on J_IO are underspecified (no pinAttributes set)
+J_MOTOR has no pin with requires_power=true
+J_MOTOR has no pin with requires_ground=true
+All pins on J_MOTOR are underspecified (no pinAttributes set)
+D_IO1 has no pin with requires_power=true
+D_IO2 has no pin with requires_power=true
+D_CAN has no pin with requires_power=true
+D_CAN has no pin with requires_ground=true
+All pins on D_CAN are underspecified (no pinAttributes set)
+U10 has no pin with requires_power=true
+Q_ILIM has no pin with requires_power=true
+Q_ILIM has no pin with requires_ground=true
+All pins on Q_ILIM are underspecified (no pinAttributes set)
+J_SWD is inferred to face y- from its cable insertion center because no explicit footprint insertionDirection is defined, but should face x+ so the connector is accessible from the board edge. Set insertionDirection on the <footprint> to specify the actual direction in the footprint's unrotated orientation; for example, <footprint insertionDirection="from_above"> for a connector accessed from above the PCB (+Z).
+Q_MOTOR_ENABLE is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q_MOTOR_POWER_GOOD is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Q_DATA_PRESENT is missing schematic reference designator text. For a custom symbol, add name="{REFDES}" inside the symbol.
+Datasheet information for chip "U10" could not be fetched: Datasheet lookup failed (403) for tps26600rhfr. Pin attributes may not be populated.
+Datasheet information for chip "U_MOTOR_INTERLOCK" could not be fetched: Datasheet lookup failed (403) for sn74lvc1g27dbvr. Pin attributes may not be populated.
+Datasheet information for chip "U_RESET" could not be fetched: Datasheet lookup failed (403) for tlv803ea30dbzr. Pin attributes may not be populated.
+Datasheet information for chip "U_MOTOR_SUPERVISOR" could not be fetched: Datasheet lookup failed (403) for tlv803ea30dbzr. Pin attributes may not be populated.
+Datasheet information for chip "U8" could not be fetched: Datasheet lookup failed (403) for tlv803ea30dbzr. Pin attributes may not be populated.
+Datasheet information for chip "U9" could not be fetched: Datasheet lookup failed (403) for tmp112aidrlr. Pin attributes may not be populated.
+Datasheet information for chip "U_FLASH" could not be fetched: Datasheet lookup failed (403) for gd25q16eeigr. Pin attributes may not be populated.
+Datasheet information for chip "U2" could not be fetched: Datasheet lookup failed (403) for tmc2209-la-t. Pin attributes may not be populated.
+Datasheet information for chip "Y_RP" could not be fetched: Datasheet lookup failed (403) for abm8-272-t3. Pin attributes may not be populated.
+Datasheet information for chip "BZ1" could not be fetched: Datasheet lookup failed (403) for mlt-5020. Pin attributes may not be populated.
+Datasheet information for chip "U5" could not be fetched: Datasheet lookup failed (403) for ap63203wu-7. Pin attributes may not be populated.
+Datasheet information for chip "U_PD_SCHMITT" could not be fetched: Datasheet lookup failed (403) for sn74lvc3g17dcur. Pin attributes may not be populated.
+Datasheet information for chip "D_USB" could not be fetched: Datasheet lookup failed (403) for tpd2eusb30drtr. Pin attributes may not be populated.
+Datasheet information for chip "U1" could not be fetched: Datasheet lookup failed (403) for rp2040. Pin attributes may not be populated.
+Datasheet information for chip "U_CAN" could not be fetched: Datasheet lookup failed (403) for mcp2515t-iml. Pin attributes may not be populated.
+Datasheet information for chip "U7" could not be fetched: Datasheet lookup failed (403) for tmux1511rsvr. Pin attributes may not be populated.
+Datasheet information for chip "U6" could not be fetched: Datasheet lookup failed (403) for sn65hvd230dr. Pin attributes may not be populated.
+Datasheet information for chip "U3" could not be fetched: Datasheet lookup failed (403) for stusb4500qtr. Pin attributes may not be populated.
+Datasheet information for chip "D_IO1" could not be fetched: Datasheet lookup failed (403) for tpd4e05u06dqar. Pin attributes may not be populated.
+Datasheet information for chip "D_IO2" could not be fetched: Datasheet lookup failed (403) for tpd4e05u06dqar. Pin attributes may not be populated.
+Courtyard of U_MOTOR_SUPERVISOR overlaps with courtyard of R_MOTOR_BOOT_PULLUP
+Generating preview images...
+[mounted-assembly] Generating PCB SVG...
+[mounted-assembly] Written pcb.svg
+[mounted-assembly] Generating schematic SVG...
+[mounted-assembly] Written schematic.svg
+[mounted-assembly] Generating 3D PNG...
+[mounted-assembly] Written 3d.png
+Generating GLB models for all builds...
+[mounted-assembly] Converting circuit to GLB...
+[mounted-assembly] Written 3d.glb
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   3d-png, glbs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: circuit build errors occurred

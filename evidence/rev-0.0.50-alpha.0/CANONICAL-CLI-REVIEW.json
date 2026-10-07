@@ -1,0 +1,53 @@
+{
+  "revision": "0.0.50-alpha.0",
+  "canonical_sha256": "88d464e298e7194c9e02f2b7e8bfce4fc0bb1954a5d70f8daff16cd335f70df6",
+  "source_netlist": {
+    "command": "tsci check netlist controller-preview.circuit.tsx",
+    "exit": 0,
+    "errors": 0,
+    "warnings": 0,
+    "electrical_partitions_equal_to_canonical": true
+  },
+  "canonical_build": {
+    "command": "tsci build index.circuit.tsx --pcb-png --pcb-svgs --schematic-svgs",
+    "exit": 1,
+    "open_ports": 298,
+    "other_native_errors": 0,
+    "cache_warning": "Could not save autorouting paths: Q_BUZZ pin selector not unique. Actual saved source copper and emitted geometry verified independently."
+  },
+  "checks": [
+    {
+      "command": "tsci check pin_specification dist/index/circuit.json",
+      "exit": 0
+    },
+    {
+      "command": "tsci check source dist/index/circuit.json",
+      "exit": 0
+    },
+    {
+      "command": "tsci check schematic-placement dist/index/circuit.json",
+      "exit": 0
+    },
+    {
+      "command": "tsci check placement dist/index/circuit.json",
+      "exit": 1
+    },
+    {
+      "command": "tsci check shorts dist/index/circuit.json",
+      "exit": 0
+    }
+  ],
+  "unresolved": {
+    "pin_attribute_warnings": 35,
+    "source_warnings": 23,
+    "schematic_rotation_findings": 1,
+    "placement_orientation_suggestions": 6,
+    "remaining_required_nets": 67
+  },
+  "format_passed": true,
+  "typecheck_passed": true,
+  "all_four_copper_layers_and_updated_interlock_sheet_viewed": true,
+  "hardware_tested": false,
+  "prototype_fabrication_ready": false,
+  "direct_routed_source_netlist_status": "Failed released-core PCB-disabled routing update. Original failure logs retained. Explicit native unrouted preview has identical purchased-pin/net partitions; no analyzer or check was modified."
+}

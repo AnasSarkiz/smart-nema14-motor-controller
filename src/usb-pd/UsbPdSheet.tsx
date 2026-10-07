@@ -6,7 +6,6 @@ import {
 import { StandardUsbCConnector } from "./StandardUsbCConnector"
 import { STUSB4500QTR } from "../../imports/STUSB4500QTR/STUSB4500QTR"
 import { STL8P4LLF6 } from "../../imports/STL8P4LLF6/STL8P4LLF6"
-import { TPD2EUSB30DRTR } from "../../imports/TPD2EUSB30DRTR/TPD2EUSB30DRTR"
 import { ESDA25P35_1U1M } from "../../imports/ESDA25P35_1U1M/ESDA25P35_1U1M"
 import { UMK107BBJ225KA_T } from "../../imports/UMK107BBJ225KA_T/UMK107BBJ225KA_T"
 import { CC0603KRX7R9BB104 } from "../../imports/CC0603KRX7R9BB104/CC0603KRX7R9BB104"
@@ -33,7 +32,7 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schX={-6.5}
         schY={8.7}
         fontSize={0.22}
-        text="STUSB4500 negotiates USB-PD on CC1/CC2, independently of RP2040 firmware. D+/D- remain USB data only."
+        text="STUSB4500 negotiates USB-PD on CC1/CC2, independently of RP2040 firmware. POWER port has no USB data; the independent DATA port connects to RP2040."
       />
       <StandardUsbCConnector
         name="J_USB"
@@ -43,11 +42,11 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         cadModel={{
           stepUrl: "./references/usb4110-external-model/usb4110-gf-a.stp",
           modelOriginPosition: { x: 0, y: 0, z: -4.89 },
-          rotationOffset: { x: 90, y: 0, z: 0 },
+          rotationOffset: { x: -90, y: 0, z: 0 },
           modelUnitToMmScale: 1,
           modelBoardNormalDirection: "z+",
         }}
-        noConnect={["SBU1", "SBU2"]}
+        noConnect={["SBU1", "SBU2", "DP1", "DP2", "DN1", "DN2"]}
         connections={{
           SHELL1: "net.GND",
           SHELL2: "net.GND",
@@ -59,10 +58,6 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           VBUS2: "net.VBUS_CONN",
           CC1: "net.PD_CC1_CONN",
           CC2: "net.PD_CC2_CONN",
-          DP1: "net.USB_DP",
-          DP2: "net.USB_DP",
-          DN1: "net.USB_DM",
-          DN2: "net.USB_DM",
         }}
       />
       <STUSB4500QTR
@@ -71,7 +66,7 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schX={-7.5}
         schY={0}
         schWidth={2.5}
-        noConnect={["NC", "ATTACH", "GPIO", "A_B_SIDE", "POWER_OK2"]}
+        noConnect={["NC", "ATTACH", "GPIO", "A_B_SIDE", "POWER_OK3"]}
         connections={{
           CC1DB: "net.PD_CC1_CONN",
           CC1: "net.PD_CC1_CONN",
@@ -84,7 +79,7 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           GND: "net.GND",
           ADDR0: "net.GND",
           ADDR1: "net.GND",
-          POWER_OK3: "net.PD_POWER_OK3",
+          POWER_OK2: "net.PD_CONTRACT_15_N",
           VBUS_EN_SNK: "net.PD_LOAD_ENABLE_N",
           VBUS_VS_DISCH: "net.PD_VBUS_SENSE",
           ALERT: "net.PD_ALERT_N",
@@ -199,7 +194,7 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schX={2.8}
         schY={1}
         schRotation={270}
-        connections={{ pin1: "net.V3V3", pin2: "net.PD_POWER_OK3" }}
+        connections={{ pin1: "net.V3V3", pin2: "net.PD_CONTRACT_15_N" }}
       />
       <ERJ_P08F1001V
         name="R_PD_SENSE"
@@ -224,17 +219,6 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schY={-7}
         schRotation={270}
         connections={{ pin1: "net.VM", pin2: "net.PD_DISCH" }}
-      />
-      <TPD2EUSB30DRTR
-        name="D_USB"
-        {...previewPlacement("D_USB", mechanicalPreview)}
-        schX={-13}
-        schY={-5.04}
-        connections={{
-          D_POS: "net.USB_DP",
-          D_NEG: "net.USB_DM",
-          GND: "net.GND",
-        }}
       />
       <ESDA25P35_1U1M
         name="D_VBUS"
@@ -304,13 +288,13 @@ export function UsbPdSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schX={-6.5}
         schY={-8.9}
         fontSize={0.22}
-        text="Factory PDOs: 5 V/1.5 A, 15 V/1.5 A, 20 V/1 A. Read the actual RDO before high-current mode; reset leaves motor disabled."
+        text="Required NVM: two active PDOs,5V/1.5A and15V/1.5A;20V PDO inactive. PWR_OK_CFG=10b. Program and cold-reset/read back before motor operation."
       />
       <schematictext
         schX={-6.5}
         schY={-9.6}
         fontSize={0.22}
-        text="U3 I2C address 0x28. Gate divider defaults off. Discharge, transient/ESD, firmware and physical PD testing remain qualification gates."
+        text="U3 I2C address0x28. Factory20V preference is not acceptable. Validate RDO and measured15V before MCU requests motor enable; hardware also checks POWER_OK2 and live VBUS_EN_SNK."
       />
       <ComponentNotes sheet="UsbPd" />
     </schematicsheet>

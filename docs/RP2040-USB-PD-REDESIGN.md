@@ -1,3 +1,12 @@
+# Active two-port continuation
+
+The current RP2040 design requires separate 15 V motor POWER and COMPUTER
+DATA USB-C ports. See [revision50](REV50-TWO-PORT-ROUTING.md) and the
+[STUSB4500 programming procedure](STUSB4500-15V-PROGRAMMING.md). Earlier
+one-port factory-PDO statements below are historical.
+
+---
+
 # Active routing — 0.0.47-alpha.0
 
 Read docs/REV47-ROUTING-CHECKPOINT.md, VALIDATION.md and the manufacturer review

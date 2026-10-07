@@ -1,0 +1,359 @@
+{
+  "revision": "0.0.50-alpha.0",
+  "input": "evidence/rev-0.0.50-alpha.0/routing/replay018/circuit.json",
+  "input_sha256": "f89bc0d5baa75963b9d0b7145bfd4afdc95c0b1993ac444af4cda9b675d54938",
+  "scope": "Actual tracks, drills, component/test pads, board edges, NPTH and mechanical keepouts. USB path length is independently measured by measure-usb-paths.py; absent legacy trace-name lengths below are not a USB pass. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 70,
+  "segment_count": 523,
+  "via_count": 58,
+  "thermal_manifest_sha256": null,
+  "reviewed_thermal_drill_contacts": [],
+  "filled_manifest_sha256": null,
+  "reviewed_filled_contacts": [],
+  "filled_features_matched": [],
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": {
+      "via": "pcb_via_40",
+      "reference": "U_MOTOR_ENN",
+      "pad": "pcb_smtpad_301",
+      "same_net": false,
+      "actual_mm": -0.15,
+      "required_mm": 0.35
+    },
+    "track_to_pad_mm": {
+      "track": "saved_phase_null_0_40",
+      "segment": 1,
+      "pad": "pcb_smtpad_283",
+      "reference": "U_MOTOR_INTERLOCK",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    "track_to_track_mm": {
+      "first": "saved_phase_null_0_41",
+      "first_segment": 1,
+      "second": "saved_phase_null_0_67",
+      "second_segment": 5,
+      "layer": "top",
+      "actual_mm": 0.15499999999999936,
+      "required_mm": 0.15
+    },
+    "via_to_track_mm": {
+      "via": "pcb_via_6",
+      "track": "saved_phase_null_0_46",
+      "segment": 16,
+      "layer": "inner1",
+      "actual_mm": 0.15172591095042479,
+      "required_mm": 0.15
+    },
+    "via_to_via_mm": {
+      "first": "pcb_via_11",
+      "second": "pcb_via_32",
+      "actual_mm": 0.217466126976882,
+      "required_mm": 0.15
+    },
+    "via_hole_to_via_hole_mm": {
+      "first": "pcb_via_11",
+      "second": "pcb_via_32",
+      "actual_mm": 0.367466126976882,
+      "required_mm": 0.35
+    }
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 36076,
+    "track_to_pad_mm": 135877,
+    "track_to_track_mm": 50008,
+    "via_to_track_mm": 29701,
+    "via_to_via_mm": 1653,
+    "via_hole_to_via_hole_mm": 1653
+  },
+  "violations": [
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_27",
+      "segment": 1,
+      "pad": "pcb_smtpad_297",
+      "reference": "C_MOTOR_INTERLOCK",
+      "actual_mm": 0.032587151230589195,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_27",
+      "segment": 2,
+      "pad": "pcb_smtpad_297",
+      "reference": "C_MOTOR_INTERLOCK",
+      "actual_mm": 0.010398453878342734,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_40",
+      "segment": 1,
+      "pad": "pcb_smtpad_283",
+      "reference": "U_MOTOR_INTERLOCK",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_40",
+      "segment": 1,
+      "pad": "pcb_smtpad_302",
+      "reference": "U_MOTOR_ENN",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_40",
+      "segment": 1,
+      "pad": "pcb_smtpad_304",
+      "reference": "U_MOTOR_ENN",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_61",
+      "segment": 14,
+      "pad": "pcb_smtpad_82",
+      "reference": "C_XIN",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_61",
+      "segment": 15,
+      "pad": "pcb_smtpad_82",
+      "reference": "C_XIN",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_62",
+      "segment": 2,
+      "pad": "pcb_smtpad_82",
+      "reference": "C_XIN",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_62",
+      "segment": 3,
+      "pad": "pcb_smtpad_82",
+      "reference": "C_XIN",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_62",
+      "segment": 9,
+      "pad": "pcb_smtpad_616",
+      "reference": "C33",
+      "actual_mm": 0.0537379427594502,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_62",
+      "segment": 11,
+      "pad": "pcb_smtpad_617",
+      "reference": "C33",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "track_to_pad_mm",
+      "track": "saved_phase_null_0_63",
+      "segment": 13,
+      "pad": "pcb_smtpad_417",
+      "reference": "J_DATA",
+      "actual_mm": 0.0,
+      "required_mm": 0.1
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_0",
+      "reference": "U_MOTOR_SUPERVISOR",
+      "pad": "pcb_smtpad_308",
+      "same_net": false,
+      "actual_mm": 0.3431081587091097,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_16",
+      "reference": "D_PD_VALID",
+      "pad": "pcb_smtpad_275",
+      "same_net": false,
+      "actual_mm": -0.07753499999999977,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_annulus_to_other_net_pad",
+      "via": "pcb_via_16",
+      "pad": "pcb_smtpad_275",
+      "reference": "D_PD_VALID"
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_19",
+      "reference": "C_MOTOR_INTERLOCK",
+      "pad": "pcb_smtpad_297",
+      "same_net": false,
+      "actual_mm": -0.06462377764125404,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_annulus_to_other_net_pad",
+      "via": "pcb_via_19",
+      "pad": "pcb_smtpad_297",
+      "reference": "C_MOTOR_INTERLOCK"
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_21",
+      "reference": "R_MOTOR_REQUEST",
+      "pad": "pcb_smtpad_280",
+      "same_net": false,
+      "actual_mm": -0.0629371145148519,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_annulus_to_other_net_pad",
+      "via": "pcb_via_21",
+      "pad": "pcb_smtpad_280",
+      "reference": "R_MOTOR_REQUEST"
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_26",
+      "reference": "C_PD_SCHMITT",
+      "pad": "pcb_smtpad_296",
+      "same_net": false,
+      "actual_mm": 0.07399280139832637,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_annulus_to_other_net_pad",
+      "via": "pcb_via_26",
+      "pad": "pcb_smtpad_296",
+      "reference": "C_PD_SCHMITT"
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_40",
+      "reference": "U_MOTOR_ENN",
+      "pad": "pcb_smtpad_300",
+      "same_net": false,
+      "actual_mm": 0.22097565524838272,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_annulus_to_other_net_pad",
+      "via": "pcb_via_40",
+      "pad": "pcb_smtpad_300",
+      "reference": "U_MOTOR_ENN"
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_40",
+      "reference": "U_MOTOR_ENN",
+      "pad": "pcb_smtpad_301",
+      "same_net": false,
+      "actual_mm": -0.15,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_annulus_to_other_net_pad",
+      "via": "pcb_via_40",
+      "pad": "pcb_smtpad_301",
+      "reference": "U_MOTOR_ENN"
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_45",
+      "reference": "C33",
+      "pad": "pcb_smtpad_616",
+      "same_net": false,
+      "actual_mm": 0.3499768000000002,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_47",
+      "reference": "J_DATA",
+      "pad": "pcb_smtpad_417",
+      "same_net": false,
+      "actual_mm": -0.15,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_annulus_to_other_net_pad",
+      "via": "pcb_via_47",
+      "pad": "pcb_smtpad_417",
+      "reference": "J_DATA"
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_48",
+      "reference": "D_USB",
+      "pad": "pcb_smtpad_435",
+      "same_net": false,
+      "actual_mm": 0.253124124991956,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_48",
+      "reference": "D_USB",
+      "pad": "pcb_smtpad_436",
+      "same_net": false,
+      "actual_mm": 0.1000083601612756,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_annulus_to_other_net_pad",
+      "via": "pcb_via_48",
+      "pad": "pcb_smtpad_436",
+      "reference": "D_USB"
+    },
+    {
+      "check": "track_npth",
+      "name": "saved_phase_null_0_38",
+      "index": 0,
+      "layer": "bottom",
+      "net": "source_port_427",
+      "width_mm": 0.15,
+      "hole": "pcb_hole_7",
+      "clearance_mm": -0.324993
+    },
+    {
+      "check": "track_npth",
+      "name": "saved_phase_null_0_38",
+      "index": 1,
+      "layer": "bottom",
+      "net": "source_port_427",
+      "width_mm": 0.15,
+      "hole": "pcb_hole_7",
+      "clearance_mm": -0.14259677458956255
+    },
+    {
+      "check": "track_npth",
+      "name": "saved_phase_null_0_65",
+      "index": 9,
+      "layer": "inner2",
+      "net": "source_port_481",
+      "width_mm": 0.15,
+      "hole": "pcb_hole_7",
+      "clearance_mm": 0.3075006517994576
+    }
+  ],
+  "passed": false
+}
