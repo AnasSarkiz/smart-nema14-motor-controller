@@ -3,6 +3,8 @@ import { BoardLegend } from "./BoardLegend"
 import { GroundReturnPlanes } from "./routing/GroundReturnPlanes"
 import { TmcThermalSpreadingTrial } from "./routing/TmcThermalSpreadingTrial"
 import { TmcThermalVias } from "./routing/TmcThermalVias"
+import { VmDistributionPlane } from "./routing/VmDistributionPlane"
+import { resolvePowerFanouts } from "./routing/VmPowerRoutes"
 import type { FanoutTracePath } from "@tscircuit/props"
 import { type BoardViewProps } from "./mechanics/preview-placement"
 import { InterfacesSheet } from "./interfaces/InterfacesSheet"
@@ -38,6 +40,7 @@ export default function SmartNema14MotorController({
   nativeGroundPourTrial = true,
   nativeThermalSpreadingTrial = false,
   nativeThermalViasTrial = true,
+  nativeVmPlaneTrial = true,
   nativeSavedRouteReplacement,
 }: BoardViewProps & {
   usbRoutesEnabled?: boolean
@@ -56,6 +59,7 @@ export default function SmartNema14MotorController({
   nativeGroundPourTrial?: boolean
   nativeThermalSpreadingTrial?: boolean
   nativeThermalViasTrial?: boolean
+  nativeVmPlaneTrial?: boolean
   nativeSavedRouteReplacement?: { netNames: string[]; pathSelectors: string[] }
 } = {}) {
   if (savedRoutesEnabled || usbRoutesEnabled || nativePartialSignalBranches) {
@@ -65,11 +69,15 @@ export default function SmartNema14MotorController({
   }
   const copperEnabled =
     freshRoutesEnabled || routeRemaining || nativeRoutingTargets.length > 0
+  const fanouts = resolvePowerFanouts(
+    copperEnabled && nativeVmPlaneTrial,
+    nativeFanoutTrial,
+  )
   const routingContext = {
     freshRoutesEnabled,
     nativeRoutingNetNames,
     trialNetNames: nativeSavedRouteTrial?.netNames,
-    fanoutTrialNetNames: nativeFanoutTrial?.netNames,
+    fanoutTrialNetNames: fanouts?.netNames,
   }
   return (
     <board
@@ -740,7 +748,7 @@ export default function SmartNema14MotorController({
       {nativeRoutingTargets.length > 0 && (
         <autoroutingphase
           name="Bounded RP2040 connection"
-          phaseIndex={1}
+          phaseIndex={3}
           minViaHoleDiameter="0.30mm"
           minViaPadDiameter="0.45mm"
           autorouter={{
@@ -751,7 +759,7 @@ export default function SmartNema14MotorController({
           connections={nativeRoutingTargets}
         />
       )}
-      {nativeFanoutTrial && (
+      {fanouts && (
         <autoroutingphase
           name="Native component escapes with Pipeline9 continuation"
           phaseIndex={2}
@@ -760,9 +768,13 @@ export default function SmartNema14MotorController({
             traceClearance: "0.15mm",
             allowViaInPad: false,
           }}
-          connections={nativeFanoutTrial.netNames.map((name) => `net.${name}`)}
-          pcbTracePaths={nativeFanoutTrial.paths}
-          fanoutPourNetMap={{ inner1: "GND" }}
+          connections={fanouts.netNames.map((name) => `net.${name}`)}
+          pcbTracePaths={fanouts.paths}
+          fanoutPourNetMap={
+            nativeVmPlaneTrial
+              ? { inner1: "GND", inner2: "VM" }
+              : { inner1: "GND" }
+          }
           minViaHoleDiameter="0.30mm"
           minViaPadDiameter="0.45mm"
         />
@@ -779,6 +791,7 @@ export default function SmartNema14MotorController({
         />
       )}
       {copperEnabled && nativeGroundPourTrial && <GroundReturnPlanes />}
+      {copperEnabled && nativeVmPlaneTrial && <VmDistributionPlane />}
       {copperEnabled && nativeThermalSpreadingTrial && (
         <TmcThermalSpreadingTrial />
       )}

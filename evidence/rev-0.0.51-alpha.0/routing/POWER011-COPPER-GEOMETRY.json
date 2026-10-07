@@ -1,0 +1,97 @@
+{
+  "revision": "0.0.51-alpha.0",
+  "input": "evidence/rev-0.0.51-alpha.0/routing/power011-replay/circuit.json",
+  "input_sha256": "e8a3505d59510b8ccced83d50932898c33bc24791cb7fcca93d87d37b04e4dab",
+  "scope": "Actual tracks, drills, component/test pads, board edges, NPTH and mechanical keepouts. USB path length is independently measured by measure-usb-paths.py; absent legacy trace-name lengths below are not a USB pass. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 0,
+  "segment_count": 0,
+  "via_count": 14,
+  "thermal_manifest_sha256": "ed03b4f22813a5978cc151e3616e2d93c740ae977a4f64bd0503c8f1110d03b5",
+  "reviewed_thermal_drill_contacts": [
+    {
+      "name": "TMC_THERMAL_SW",
+      "via": "pcb_via_9",
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_S",
+      "via": "pcb_via_10",
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_SE",
+      "via": "pcb_via_11",
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_NW",
+      "via": "pcb_via_12",
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_NE",
+      "via": "pcb_via_13",
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    }
+  ],
+  "filled_manifest_sha256": null,
+  "reviewed_filled_contacts": [],
+  "filled_features_matched": [],
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": {
+      "via": "pcb_via_2",
+      "reference": "C_PD_2V7",
+      "pad": "pcb_smtpad_387",
+      "same_net": true,
+      "actual_mm": 0.35000089999999984,
+      "required_mm": 0.35
+    },
+    "track_to_pad_mm": null,
+    "track_to_track_mm": null,
+    "via_to_track_mm": null,
+    "via_to_via_mm": {
+      "first": "pcb_via_9",
+      "second": "pcb_via_10",
+      "actual_mm": 0.3,
+      "required_mm": 0.15
+    },
+    "via_hole_to_via_hole_mm": {
+      "first": "pcb_via_9",
+      "second": "pcb_via_10",
+      "actual_mm": 0.45,
+      "required_mm": 0.35
+    }
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 8703,
+    "track_to_pad_mm": 0,
+    "track_to_track_mm": 0,
+    "via_to_track_mm": 0,
+    "via_to_via_mm": 91,
+    "via_hole_to_via_hole_mm": 91
+  },
+  "violations": [],
+  "passed": true
+}

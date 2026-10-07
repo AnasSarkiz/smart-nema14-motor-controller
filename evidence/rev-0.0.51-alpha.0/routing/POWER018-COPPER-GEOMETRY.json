@@ -1,0 +1,140 @@
+{
+  "revision": "0.0.51-alpha.0",
+  "input": "evidence/rev-0.0.51-alpha.0/routing/power018-replay/circuit.json",
+  "input_sha256": "8014faeaff18f0d132b63f98b176e40c195d89e137ad3acd5f1cc0c16396eb5d",
+  "scope": "Actual tracks, drills, component/test pads, board edges, NPTH and mechanical keepouts. USB path length is independently measured by measure-usb-paths.py; absent legacy trace-name lengths below are not a USB pass. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 112,
+  "segment_count": 972,
+  "via_count": 84,
+  "thermal_manifest_sha256": "ed03b4f22813a5978cc151e3616e2d93c740ae977a4f64bd0503c8f1110d03b5",
+  "reviewed_thermal_drill_contacts": [
+    {
+      "name": "TMC_THERMAL_SW",
+      "via": "pcb_via_10",
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_S",
+      "via": "pcb_via_11",
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_SE",
+      "via": "pcb_via_12",
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_NW",
+      "via": "pcb_via_13",
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    },
+    {
+      "name": "TMC_THERMAL_NE",
+      "via": "pcb_via_14",
+      "reference": "U2",
+      "pin_number": 29,
+      "net": "GND",
+      "actual_drill_to_owner_pad_mm": -0.15,
+      "reason": "Direct exposed-pad thermal conduction to the four-layer solid GND plane; Type VII filled/capped construction."
+    }
+  ],
+  "filled_manifest_sha256": null,
+  "reviewed_filled_contacts": [],
+  "filled_features_matched": [],
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": {
+      "via": "pcb_via_37",
+      "reference": "U_MOTOR_INTERLOCK",
+      "pad": "pcb_smtpad_284",
+      "same_net": false,
+      "actual_mm": 0.34999110000000033,
+      "required_mm": 0.35
+    },
+    "track_to_pad_mm": {
+      "track": "saved_phase_null_0_70",
+      "segment": 21,
+      "pad": "pcb_smtpad_618",
+      "reference": "C34",
+      "actual_mm": 0.10000090000000127,
+      "required_mm": 0.1
+    },
+    "track_to_track_mm": {
+      "first": "saved_phase_null_0_90",
+      "first_segment": 4,
+      "second": "saved_phase_null_2_4",
+      "second_segment": 1,
+      "layer": "top",
+      "actual_mm": 0.11066915610858634,
+      "required_mm": 0.15
+    },
+    "via_to_track_mm": {
+      "via": "pcb_via_6",
+      "track": "saved_phase_null_0_43",
+      "segment": 16,
+      "layer": "inner1",
+      "actual_mm": 0.15172591095042479,
+      "required_mm": 0.15
+    },
+    "via_to_via_mm": {
+      "first": "pcb_via_17",
+      "second": "pcb_via_36",
+      "actual_mm": 0.217466126976882,
+      "required_mm": 0.15
+    },
+    "via_hole_to_via_hole_mm": {
+      "first": "pcb_via_17",
+      "second": "pcb_via_36",
+      "actual_mm": 0.367466126976882,
+      "required_mm": 0.35
+    }
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 52243,
+    "track_to_pad_mm": 264177,
+    "track_to_track_mm": 171480,
+    "via_to_track_mm": 78300,
+    "via_to_via_mm": 3486,
+    "via_hole_to_via_hole_mm": 3486
+  },
+  "violations": [
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_90",
+      "first_segment": 4,
+      "second": "saved_phase_null_2_4",
+      "second_segment": 1,
+      "layer": "top",
+      "actual_mm": 0.11066915610858634,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_90",
+      "first_segment": 5,
+      "second": "saved_phase_null_2_4",
+      "second_segment": 1,
+      "layer": "top",
+      "actual_mm": 0.11066915610858634,
+      "required_mm": 0.15
+    }
+  ],
+  "passed": false
+}

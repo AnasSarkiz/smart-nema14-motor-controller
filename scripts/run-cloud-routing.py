@@ -66,7 +66,12 @@ def main():
     parser.add_argument('--min-node-area', type=float, default=.01)
     parser.add_argument('--capture-before-repair', action='store_true', help='Save a clearly unqualified candidate through Pipeline9 public pre-expansion API; all qualification checks remain mandatory.')
     parser.add_argument('--capture-native-input-only', action='store_true', help='Capture the exact supported core routing-start event without spending a default-mesh routing attempt; exits nonzero because routing is incomplete.')
+    parser.add_argument('--capture-routing-phase-index', type=int, default=1, help='Exact native phase to capture; use 3 after accepted phase-2 power fanouts.')
     arguments = parser.parse_args()
+    if arguments.capture_routing_phase_index < 0:
+        parser.error('Capture routing phase index must be nonnegative.')
+    if arguments.capture_routing_phase_index != 1 and not arguments.capture_native_input_only:
+        parser.error('Capture phase selection requires native input capture.')
     if arguments.capture_native_input_only and arguments.native_pipeline9_input:
         parser.error('Input capture and SDK routing are separate sequential operations.')
     if sys.platform != 'linux':
@@ -110,6 +115,7 @@ def main():
         command = [bun, 'scripts/run-native-routing.mjs', str(source), str(output)]
         if arguments.capture_native_input_only:
             command.append('capture-input-only')
+            command.append(str(arguments.capture_routing_phase_index))
         if native_input is not None:
             command = [bun, 'scripts/run-pipeline9-sdk-routing.ts', str(native_input),
                        str(output), str(arguments.max_node_dimension),

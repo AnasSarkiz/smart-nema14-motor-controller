@@ -6,6 +6,13 @@ import { createElement } from "react"
 const circuitPath = process.argv[2]
 const outputFolder = process.argv[3]
 const captureNativeInputOnly = process.argv[4] === "capture-input-only"
+const captureRoutingPhaseIndex = Number(process.argv[5] ?? 1)
+if (
+  !Number.isInteger(captureRoutingPhaseIndex) ||
+  captureRoutingPhaseIndex < 0
+) {
+  throw new Error("Capture routing phase index must be a nonnegative integer")
+}
 if (!circuitPath || !outputFolder) {
   throw new Error("Supply a circuit source path and evidence folder")
 }
@@ -46,7 +53,10 @@ circuit.on("autorouting:start", (event) => {
     event.obstacleCount,
     "obstacles",
   )
-  if (captureNativeInputOnly && event.routingPhaseIndex === 1) {
+  if (
+    captureNativeInputOnly &&
+    event.routingPhaseIndex === captureRoutingPhaseIndex
+  ) {
     writeFileSync(
       `${outputFolder}/BASELINE-AT-ROUTING-START.json`,
       JSON.stringify(circuit.getCircuitJson(), null, 2),

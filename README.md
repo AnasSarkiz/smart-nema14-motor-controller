@@ -1,3 +1,19 @@
+# Active routing — 0.0.52-alpha.0
+
+Read `docs/REV52-VM-POWER-ROUTING.md`. Qualified power019 joins56/120 required
+nets, including every RAW/protected-VBUS/VM terminal and all prior54 nets.
+265 opens,112 tracks,79 ordinary0.30/0.45mm full through vias,five manifested
+TypeVII thermal vias,eight native filled regions. Native other-errors:0; strict
+and filled-copper clearance failures:0; GND remains one physical network.
+Keep all supplier imports/models/placement unchanged. Continue3.3V and core
+power,PD/eFuse controls,USB pair with return path,then ALL remaining connections.
+Accepted main routes are phase0; VM fanouts phase2; new selected-net routing
+is phase3 so existing power copper is a frozen obstacle. Publication is WIP;
+loaded power/USB/thermal,complete CAM,assembly quote and hardware tests pending.
+Do not stop at this checkpoint. PROTOTYPE FABRICATION READY:NO. No board order.
+
+---
+
 # Smart NEMA 14 Motor Controller
 
 Revision **0.0.51-alpha.0 — WIP prototype** uses **RP2040** and **two USB-C ports**:

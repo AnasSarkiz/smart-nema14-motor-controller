@@ -1,3 +1,34 @@
+# Revision 0.0.52-alpha.0 — protected VBUS and VM connected
+
+**PROTOTYPE FABRICATION READY: NO. Routing continues; hardware tests pending.**
+
+The native power019 replay physically joins all protected-VBUS and all fifteen
+VM terminals, preserving every prior54 complete net. 56/120 nets complete,265
+open ports,112 tracks,79 ordinary full through0.30/0.45mm vias,five unchanged
+manifested TypeVII thermal vias,eight native filled regions. Native errors other
+than opens:0; unchanged strict copper/drill and filled-copper violations:0.
+GND remains one physical network. All four actual copper layers were viewed.
+Five previous source paths change to clear power escapes;82/87 remain exact.
+Official purchased footprints/models/placement/electrical pin partitions remain
+unchanged. The native inner2 VM plane and one ordinary ground stitch cost no
+extra layers. Short terminal leads require loaded current review; no hardware
+or complete routing claim. Accepted source paths freeze before new phase3
+selected-net routing. Failed candidates are preserved as unqualified evidence.
+
+Fresh isolated native CLI build completed in68.3seconds and reproduces the
+qualified native copper exactly. Three canonical JSON mirrors match SHA-256
+`6ce4133d8c7ae11d6cf7aa9c90e90893a18175516f507eb7122a462654a991ef`. Strict copper,all120 physical-net tests,thermal-owner
+guard,38 programmer pin checks,16 interlock truth/static corners,166 schematic
+notes/11A4 sheets,seven synthetic PDO tests,format/TypeScript/frozen lockfile
+and CLI shorts pass their stated scopes. All165 fitted model transforms/assets
+remain exact. Required CLI stage checks ran:0netlist errors;0pin/source errors
+with35/23 retained warnings;one unchanged imported D_VBUS schematic rotation
+suggestion;six orientation suggestions and zero native placement DRC.
+No total-board clean result is claimed. Stage4/5/6 remain in progress.
+Exact public source/JSON/CAD publication is in progress. See [REV52-VM-POWER-ROUTING.md](docs/REV52-VM-POWER-ROUTING.md).
+
+---
+
 # Revision 0.0.51-alpha.0 — checked FET-source copper and direct thermal vias
 
 **PROTOTYPE FABRICATION READY: NO. Routing continues; no physical hardware test.**

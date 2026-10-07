@@ -14,7 +14,7 @@ export function rev45RoutingPhaseIndex(
   },
 ) {
   if (context.fanoutTrialNetNames?.includes(netName)) return 2
-  if (context.nativeRoutingNetNames.includes(netName)) return 1
+  if (context.nativeRoutingNetNames.includes(netName)) return 3
   return (context.freshRoutesEnabled &&
     savedRoutes.net_names.includes(netName)) ||
     context.trialNetNames?.includes(netName)
