@@ -1,15 +1,17 @@
-# Active user redesign — 0.0.44-alpha.0
+# Active user redesign — 0.0.45-alpha.0
 
-The latest user request explicitly authorizes RP2040, dedicated USB-PD,
-functional buzzer and all review fixes. Read docs/RP2040-USB-PD-REDESIGN.md.
-The former STM32/TCPP01 selection-preservation instruction is superseded for
-these replacements only. Preserve official imported definitions, historical
-copper/models/evidence and the exact motor, outline, connectors and carrier.
-The canonical entry is now UNROUTED: never replay legacy STM32 saved routes.
-Stage 2 manufacturer/BOM and Stage 3 mechanical/placement qualification are
-in progress; resolve them before routing. All prior fabrication metrics and
-filled-via manifests describe historical boards, not this new architecture.
-PROTOTYPE FABRICATION READY: NO.
+The user authorizes RP2040, dedicated USB-PD, functional buzzer and all review
+fixes. Read docs/REV45-PRE-ROUTING-REVIEW.md and docs/RP2040-USB-PD-REDESIGN.md.
+Stage2 static manufacturer/BOM and Stage3 initial placement/CadQuery review now
+permit bounded selected-net Pipeline9 routing. Exact saved stock snapshots are
+positive for all 53 current identities; the exact official GET refresh at
+2026-10-07 06:47UTC passes all53. PCBA quote/allocation remain pending. The unchanged imported TVS schematic-rotation finding is retained and
+must not block independent PCB work under the user's explicit instruction.
+The canonical source now includes checked partial RP2040 routes; generated
+canonical JSON must be rebuilt before publication. Never replay historical STM32 routes. Preserve official imports,
+historical copper/models/evidence, exact motor, outline, connectors and carrier.
+All 12 ICs / 148 fitted genuine STEP models pass CadQuery. Stage4/5/6 remain
+unfinished. PROTOTYPE FABRICATION READY: NO.
 
 ---
 
@@ -55,8 +57,8 @@ are allowed only when individually declared in the reviewed manufacturing
 manifests with exact owners. The user's latest requested ordinary via size is
 0.30 mm drill / 0.45 mm pad / 0.075 mm radial annular ring, matching JLCPCB's
 published preferred diameter difference. Preserve every independent spacing
-check. The 66 existing small filled features still require relocation/rerouting
-before uniform sizing can be claimed. Do not let the autorouter's board-wide
+check. The 66 small filled features belong to the historical STM32 board; the current
+RP2040 candidate uses only ordinary 0.30/0.45 mm through vias. Do not let the autorouter's board-wide
 minimum for named filled features become an undeclared blanket exception.
 
 Finish the remaining nets, then run every qualification gate in the task and

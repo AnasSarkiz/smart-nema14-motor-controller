@@ -1,0 +1,1213 @@
+{
+  "input": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/circuit.json",
+  "sha256": "62bbe80d1e05cd7749e988b1d6ae6edbcb47c0e132b69e1bcf6b7bf999e42118",
+  "scope": "Native filled BRep against actual pads, traces, via annuli and other pours; physical same-net conductors joined across full through-via spans. No net-name-only connectivity assumption. Impedance, thermal/current limits and CAM remain separate.",
+  "mechanical_constraints_sha256": "28044e448bd8c9cb70581f734682c0899778c35f9b45e4c74eb1e75448f9e9bb",
+  "pour_count": 0,
+  "minimum_clearances": {},
+  "clearance_violations": [],
+  "physical_islands": {
+    "BUCK_SW": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 16.989861443247946,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C10.2",
+            "L1.1",
+            "U5.5"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -16.6000232,
+                -10.1999991,
+                -6.9000065,
+                -5.7
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "BUCK_BST": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.5751762140423162,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C10.1",
+            "U5.6"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -15.1999752,
+                -10.1999991,
+                -14.275034199999999,
+                -6.6498971000000004
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "TMC_CPI": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 0.6949972779097,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C13.2",
+            "U2.5"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -8.639751799999999,
+                -3.770002,
+                -8.0798845,
+                -1.3499959000000004
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "XTAL_OUT": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 3.230381263924826,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C_XOUT.1",
+            "R_XOUT.2",
+            "Y_RP.3"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                3.979998,
+                -7.4201155000000005,
+                8.8000726,
+                -3.229998
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "XIN": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 3.301801948517937,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C_XIN.1",
+            "U1.20",
+            "Y_RP.1"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                5.1999274,
+                -7.4500098,
+                10.394805475941883,
+                -1.7000575
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "QSPI_CLK": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.5897866295543481,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "U1.52",
+            "U_FLASH.6"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                7.4000022,
+                4.3000575,
+                13.6267993,
+                9.15022145
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "QSPI_IO3": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.489323977037343,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "U1.51",
+            "U_FLASH.7"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                7.8000522,
+                4.3000575,
+                13.6267993,
+                8.65034945
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "QSPI_IO1": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 2.7903075161552806,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "U1.55",
+            "U_FLASH.2"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                5.0969999999999995,
+                4.3000575,
+                16.5731993,
+                10.434671672336673
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "QSPI_IO2": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 3.099232838374336,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "U1.54",
+            "U_FLASH.3"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                6.5999022,
+                3.508,
+                9.185,
+                5.150068500000001
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                15.218,
+                8.85022205,
+                16.5731993,
+                11.145215799999999
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                8.735000000000001,
+                3.508,
+                9.185,
+                3.958
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                15.218,
+                10.6952158,
+                15.668,
+                11.145215799999999
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                8.735000000000001,
+                3.508,
+                15.668,
+                11.145215799999999
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                8.735000000000001,
+                3.508,
+                9.185,
+                3.958
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                15.218,
+                10.6952158,
+                15.668,
+                11.145215799999999
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "QSPI_CS": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 3.418247499075139,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "R_FLASH_CS.2",
+            "U1.56",
+            "U_FLASH.1"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                4.5367450546647765,
+                4.3000575,
+                6.0000558,
+                5.150068500000001
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                14.865,
+                5.636,
+                16.770002,
+                8.14996945
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                4.5367450546647765,
+                4.515,
+                15.315,
+                6.085999999999999
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                4.5367450546647765,
+                4.564509328524043,
+                4.986745054664776,
+                5.014509328524042
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                14.865,
+                5.636,
+                15.315,
+                6.085999999999999
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                4.5367450546647765,
+                4.564509328524043,
+                4.986745054664776,
+                5.014509328524042
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                14.865,
+                5.636,
+                15.315,
+                6.085999999999999
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "PD_VREG_1V2": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.614911885209323,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "C_PD_1V2.1",
+            "U3.21"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -9.850023199999999,
+                10.714,
+                -7.655004700000001,
+                13.4499991
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -8.1050047,
+                10.714,
+                -7.655004700000001,
+                11.164
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -8.1050047,
+                10.714,
+                -7.655004700000001,
+                11.164
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -9.100003300000001,
+                10.3599312,
+                -7.655004700000001,
+                11.164
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "PD_VDD": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 2.5796782211304246,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "C_PD_VDD.1",
+            "R14.2",
+            "U3.24"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -12.270002,
+                6.649986999999999,
+                -6.0217219023671955,
+                9.9499991
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "PD_VBUS_SENSE": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 3.320623725535843,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "R_PD_SENSE.2",
+            "U3.18"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -7.87497,
+                14.1494937,
+                -5.937454000000001,
+                15.8505063
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -6.387454,
+                15.275,
+                -5.937454000000001,
+                15.725
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -6.387454,
+                15.275,
+                -5.937454000000001,
+                15.725
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -9.6400708,
+                11.899996699999999,
+                -5.937454000000001,
+                15.725
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "PD_GATE": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 4.633649492231654,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "Q_PD_IN.4",
+            "Q_PD_OUT.4",
+            "R13.2",
+            "R_PD_GATE.1"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -15.408789324587016,
+                -4.783545527667077,
+                -7.229998,
+                5.149
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "EFUSE_OVP_TOP_1": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 2.0434742765307297,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "R40.2",
+            "R41.1"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -13.100012999999999,
+                -7.770002,
+                -6.149986999999999,
+                -0.9799979999999999
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "EFUSE_OVP": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 2.9760693678541963,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "R42.2",
+            "R43.1",
+            "U10.12"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -8.247905372635849,
+                -16.120002,
+                0.270002,
+                -6.6099972000000005
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "EFUSE_ILIM": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 3.8403409259728702,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "R44.1",
+            "R45.1",
+            "U10.19"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -3.864958839462878,
+                -16.47000944026358,
+                -3.414958839462878,
+                -16.02000944026358
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -2.2099633,
+                -5.5099602999999995,
+                -1.7599633,
+                -5.0599603
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -3.864958839462878,
+                -16.47000944026358,
+                -1.7599633,
+                -5.0599603
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -3.864958839462878,
+                -16.47000944026358,
+                -3.414958839462878,
+                -16.02000944026358
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -2.2099633,
+                -5.5099602999999995,
+                -1.7599633,
+                -5.0599603
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -3.864958839462878,
+                -16.47000944026358,
+                -1.999987,
+                -15.919998000000001
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -3.1400078,
+                -6.1749587,
+                0.465645,
+                -4.6870817793136945
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "EFUSE_EN": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 2.597966002311553,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "R38.2",
+            "R39.1",
+            "U10.10"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -5.978999999999999,
+                -12.555009399999998,
+                -5.529,
+                -12.105009399999998
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -7.8799270190366855,
+                -9.428478242338432,
+                -7.429927019036686,
+                -8.978478242338433
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -5.978999999999999,
+                -12.555009399999998,
+                -5.529,
+                -12.105009399999998
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -7.8799270190366855,
+                -9.428478242338432,
+                -7.429927019036686,
+                -8.978478242338433
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -7.8799270190366855,
+                -12.555009399999998,
+                -5.529,
+                -8.978478242338433
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -5.978999999999999,
+                -13.470002,
+                -4.399986999999999,
+                -10.979998
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -7.8799270190366855,
+                -9.428478242338432,
+                -6.5750402999999995,
+                -7.6099952
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "BUZZER_GATE": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.270805666506273,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "Q_BUZZ.1",
+            "R_BUZZ_GATE.2",
+            "R_BUZZ_OFF.1"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -1.1549893,
+                7.800001399999999,
+                2.020002,
+                10.100012999999999
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "BUZZER_NEG": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 5.187681743862992,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "BZ1.2",
+            "D_BUZZ.2",
+            "Q_BUZZ.3"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -6.8999683,
+                7.077537,
+                0.6549893,
+                12.3500663
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "TMC_CPO": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 0.6933159648188215,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C13.1",
+            "U2.4"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -9.4201155,
+                -3.770002,
+                -8.860122200000001,
+                -1.3499959000000004
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "TMC_VCP": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.195791228475789,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C14.1",
+            "U2.6"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -8.1393718,
+                -3.9499991,
+                -6.0500248,
+                -1.3499959000000004
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "TMC_5VOUT": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 3.863963538933481,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C15.1",
+            "R10.1",
+            "U2.8"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -6.950004099999999,
+                -2.2050004000000003,
+                -2.824995,
+                6.270002
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "XOUT": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.783016789465097,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "R_XOUT.1",
+            "U1.21"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                5.125,
+                -3.770002,
+                6.350013000000001,
+                -2.625
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                7.203279103365397,
+                -2.5500685,
+                8.399847800000002,
+                -0.8468464719848344
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                5.125,
+                -3.075,
+                5.574999999999999,
+                -2.625
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                7.203279103365397,
+                -1.2968464719848345,
+                7.653279103365397,
+                -0.8468464719848344
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                5.125,
+                -3.075,
+                5.574999999999999,
+                -2.625
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                7.203279103365397,
+                -1.2968464719848345,
+                7.653279103365397,
+                -0.8468464719848344
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                5.125,
+                -3.075,
+                7.653279103365397,
+                -0.8468464719848344
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "LED_POWER_A": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.6012423407314693,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "LED_POWER.2",
+            "R35.2"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -1.141,
+                1.6034298000000002,
+                0.19946419999999998,
+                3.6670000000000003
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                -1.141,
+                3.217,
+                -0.6910000000000001,
+                3.6670000000000003
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                -1.141,
+                3.217,
+                -0.6910000000000001,
+                3.6670000000000003
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -1.7156449999999999,
+                3.217,
+                -0.6910000000000001,
+                5.020002
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "LED_STATUS_A": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.7036247177448056,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "LED_STATUS.2",
+            "R36.2"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                0.219,
+                3.6034298,
+                2.1994642,
+                5.1415702
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                0.219,
+                4.691570200000001,
+                0.669,
+                5.1415702
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                0.219,
+                4.691570200000001,
+                0.669,
+                5.1415702
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                -1.7156449999999999,
+                4.691570200000001,
+                0.669,
+                6.270002
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "CAN_TERM_LINK": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.3110603755725634,
+          "layers": [
+            "bottom"
+          ],
+          "pads": [
+            "R49.2",
+            "R50.1"
+          ],
+          "regions": [
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                7.149986999999999,
+                12.479998,
+                10.600012999999999,
+                16.770002
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "MCU_USB_DP": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 0.6169974060299735,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "R_USB_DP.2",
+            "U1.47"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                9.124998000000001,
+                4.3000575,
+                9.770002,
+                6.250013000000001
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "MCU_USB_DM": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 0.6581800598958497,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "R_USB_DM.2",
+            "U1.46"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                9.800048199999999,
+                4.3000575,
+                10.870002,
+                6.250013000000001
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    }
+  },
+  "clearances_passed": true
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "check": "netlist",
+    "command": [
+      "bun",
+      "/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js",
+      "check",
+      "netlist",
+      "index.circuit.tsx"
+    ],
+    "cwd": "/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/build-packet",
+    "exit_code": 0,
+    "elapsed_seconds": 8.318846897003823,
+    "log": "evidence/rev-0.0.45-alpha.0/PARTIAL-NATIVE-netlist.log"
+  },
+  {
+    "check": "pin_specification",
+    "command": [
+      "bun",
+      "/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js",
+      "check",
+      "pin_specification",
+      "index.circuit.tsx"
+    ],
+    "cwd": "/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/build-packet",
+    "exit_code": 0,
+    "elapsed_seconds": 5.589606327994261,
+    "log": "evidence/rev-0.0.45-alpha.0/PARTIAL-NATIVE-pin_specification.log"
+  },
+  {
+    "check": "source",
+    "command": [
+      "bun",
+      "/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js",
+      "check",
+      "source",
+      "index.circuit.tsx"
+    ],
+    "cwd": "/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/build-packet",
+    "exit_code": 0,
+    "elapsed_seconds": 5.767705167003442,
+    "log": "evidence/rev-0.0.45-alpha.0/PARTIAL-NATIVE-source.log"
+  },
+  {
+    "check": "schematic-placement",
+    "command": [
+      "bun",
+      "/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ],
+    "cwd": "/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/build-packet",
+    "exit_code": 0,
+    "elapsed_seconds": 7.504004229005659,
+    "log": "evidence/rev-0.0.45-alpha.0/PARTIAL-NATIVE-schematic-placement.log"
+  },
+  {
+    "check": "placement",
+    "command": [
+      "bun",
+      "/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js",
+      "check",
+      "placement",
+      "index.circuit.tsx"
+    ],
+    "cwd": "/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/build-packet",
+    "exit_code": 0,
+    "elapsed_seconds": 20.58087261000037,
+    "log": "evidence/rev-0.0.45-alpha.0/PARTIAL-NATIVE-placement.log"
+  },
+  {
+    "check": "shorts",
+    "command": [
+      "bun",
+      "/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/cli/dist/cli/main.js",
+      "check",
+      "shorts",
+      "dist/index/circuit.json"
+    ],
+    "cwd": "/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/build-packet",
+    "exit_code": 0,
+    "elapsed_seconds": 7.547062615005416,
+    "log": "evidence/rev-0.0.45-alpha.0/PARTIAL-NATIVE-shorts.log"
+  }
+]

@@ -1,3 +1,95 @@
+# RP2040 / USB-PD continuation — 0.0.45-alpha.0, 2026-10-07
+
+**PROTOTYPE FABRICATION READY: NO.** Bounded Pipeline9 routing is now active.
+Read docs/REV45-PRE-ROUTING-REVIEW.md for the manufacturer review and exact gate
+limits. Prior revision44 blocked flash/model/toolchain results are historical.
+The original imports/models/copper/evidence remain preserved.
+
+The genuine GD25Q16EEIGR flash, 27 ohm USB resistors, reset supervisor and
+higher-current same-land B5819WS flyback diode address the identified faults.
+Latest released tscircuit2750 / CLI2254 / core2105 / capacity962 / props694 /
+checks242 / runframe2923 / modelprinter14 / easyeda373 are installed and the
+new lockfile passes frozen installation, TypeScript and formatting. The official
+npm mirror resolved the failing default-registry requests; TLS and integrity
+verification remain enabled. No substitute router or dependency patch is used.
+
+149 purchased references / 148 fitted / 53 unique parts are recorded. The
+2026-10-07 06:47 UTC exact official product-page/detail-API check succeeds for
+all53 identities: positive stock, SMT assembly, Economic and Standard service.
+The previously failed POST refreshes remain preserved. The minimum stock is
+70 C222138 power MOSFETs, two per board. Customer assembly allocation/quote and
+supplier losses/minimum quantities remain unconfirmed. All53 exact product
+offers explicitly identify USD. The fitted component baseline for5 boards is
+$136.353 total / $27.2706 per board, before PCB, assembly/extended/loading fees,
+losses/minimum allocations, shipping/tax, carrier and motor. There are52 fitted
+SKUs and38 extended types; these can dominate small-batch assembly costs.
+
+The current PCB-disabled physical-pin draft, native netlist/source/placement,
+38 programmer assertions, standard USB16groups and149 component purposes pass.
+All12 ICs /148 fitted STEP models pass actual CadQuery solid/export/reimport
+checks. Current STEP URLs and byte hashes are independently bridged to those
+actual results after a contextual note edit. Actual148-mesh mounted, constrained
+carrier/tolerance and connector access checks pass within documented bounds.
+Nine A4 schematic sheets were viewed. The official TVS custom-symbol rotation
+finding remains explicit; it does not stop independent PCB routing under the
+user's instruction. Stage5 schematic qualification remains incomplete.
+
+The latest USB physical scope correction preserves all length limits. Native
+DifferentialPair expands the reversible four-terminal receptacle into multiple
+source traces, so its aggregate bus compared short branches with long trunks
+(21.82mm false metric). The supported native Bus now binds exactly the two
+ESD-to-resistor trunk traces at the unchanged0.25mm maximum. Independent actual
+copper traversal additionally enforces that0.25mm trunk limit,0.25mm MCUstub
+limit and0.5mm for BOTH reversible plug paths. Current results are0.19510mm,
+0.09995mm and0.40879mm respectively. No checker or generated JSON was patched.
+The common inner2 long pair has no remaining native DRC/strict clearance
+violation; via-barrel delay, coupling, reference continuity and actual impedance
+remain explicit gates. This is connected USB copper, not USB certification.
+
+Six further internal changes (rotated genuine ESD; CAN crystal, its two top
+loads, second input load and R15) make room for ordinary connector escape vias.
+The initial three placements failed native courtyards and are preserved in
+usb017/018/019 evidence. Final usb020 has zero placement findings, and the fresh
+mounted148 meshes pass actual nominal envelope checks with minimum pair0.6mm
+and carrier/fastener0.9123mm clearance. EFUSE_DVDT was manually rerouted around
+the relocated genuine capacitor; all41 copper islands were then rechecked.
+
+Routing started from108 required nets /509 explicit open-port errors, with
+no historical STM32 routes replayed. The fresh partial canonical build now has
+44 physically joined nets (43 saved signals plus GND),63 traces,36 ordinary
+0.30/0.45 four-layer through vias and7 pours. Native reports283 remaining open-port errors and no
+other errors; strict copper/drill/edge/keepout checks report0 violations.
+Every selected net has exactly one physical island. Native Pipeline9 supplied the local trees and board-owned manual USB paths
+complete the difficult pair; one XOUT escape was explicitly moved0.08/0.067 mm in board-owned
+saved-path source to clear its own pad, then revalidated with all other copper.
+No importer, router, generated Circuit JSON or checker was patched. All four
+actual layer images were viewed. Buzzer return measures0.35 mm; buck switch
+measures0.6 mm with a0.5500116 mm pad neck. Complete width/current qualification
+remains pending. Failed USB and clock/control candidates were not adopted.
+The initial native paired trial rejected multi-terminal USB connector nets;
+that failure and every rejected candidate remain preserved. The explicit
+manual tree and correctly scoped native trunk bus now pass as described above.
+Three interface trees and two short MCU USB stubs were subsequently saved.
+Four internal USB/bypass movements pass renewed native placement and actual
+148-mesh nominal envelope checks. QSPI_IO3 was manually drawn around a moved
+termination, then jointly requalified. MCU stub planar skew is0.09995mm.
+The solved finer-mesh long USB candidate is rejected: different inner layers,
+self-short, native skew error and branch pad-clearance defect. It is not
+canonical. Native netlist/pin/source/placement and shorts checks pass;
+schematic-placement exit0 still prints the one TVS style finding. The full
+style analyzer correctly fails that finding. The physical-pin helper requires
+PCB-disabled JSON; its mistaken PCB-JSON invocation is retained and corrected
+without weakening the check.
+Further selected jobs and complete current-width/USB/return/thermal/CAM review
+remain necessary. Stage2/3 initial reviews permit routing; Stage4/5 in progress,
+Stage6/7 not passed. No order is authorized by these intermediate results.
+
+Evidence: evidence/rev-0.0.45-alpha.0/. All three partial canonical mirrors are
+freshly regenerated. Exact publication/model bytes still require public checks; no
+revision45 publication success is claimed yet.
+
+# Historical records below
+
 # RP2040 and dedicated USB-PD redesign — 0.0.44-alpha.0, 2026-10-06
 
 ## CadQuery and connection audit — 2026-10-07
@@ -2818,3 +2910,11 @@ official STEP provenance link; formatting and viewer build were rerun successful
 The user-provided HOLRY 35HBSG lead-screw image is a different model, and does
 not change the accepted Phidgets motor lock. Exact ZIP-member equality and
 current native model references are preserved in MOTOR-PROVENANCE.json.
+
+## Qualified partial copper checkpoint — 44/108 nets
+
+The fresh canonical native CLI build has SHA-256 `4e15aa8be90488f9de498393835c2e03fe39c311ffbe09836e71e5fd665d7b21`: 63 traces, 36 ordinary 0.30/0.45 mm through vias, seven native GND pours, and 283 unconnected-port errors. Every one of the 43 saved signal nets and the entire GND network is physically one copper island after removing actual drills. Native shorts/clearance errors and independent copper/fill clearance violations are zero. Six outside-pad ground stitches and shorter local QSPI_CLK, PD_VDD, PD_VREG_2V7 and BUZZER_PWM paths were checked against the full board. Original C_FLASH placement and supplier bytes are preserved.
+
+Fresh CLI netlist, pin_specification, source, schematic-placement, placement and shorts checks pass. The first pin check used an invalid hyphenated spelling; its invocation error is retained and the supported underscore spelling was rerun successfully. Fresh PCB-disabled manufacturer-pin partition checks, 38 programmer assertions, standard USB-C sixteen pad groups, 149 schematic purposes, and TypeScript pass. The official style analyzer still reports the same single unchanged D_VBUS supplier-symbol rotation issue; it is not suppressed. Current genuine STEP bytes are linked to all 148 actual CadQuery results and the checked mounted envelope. USB trunk, MCU-stub and complete plug-path length bounds pass unchanged; coupling, reference coverage, impedance and barrel delay remain unfinished.
+
+Evidence: `evidence/rev-0.0.45-alpha.0/PARTIAL-44-READINESS.json` and its referenced reports. The minimum publication runtime contains 303 files, including original model assets and all three literal assembly STEP dependencies. This checkpoint is partial; remaining signals and power, loaded widths/thermal, full CAM and fabrication qualification are still required. Public matching-revision publication is being verified under the standing authorization. **PROTOTYPE FABRICATION READY: NO.**

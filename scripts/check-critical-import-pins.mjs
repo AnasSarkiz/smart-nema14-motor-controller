@@ -5,10 +5,17 @@ import ts from "typescript"
 // This is a limited audit, not full footprint or schematic qualification.
 const criticalPinChecks = [
   {
+    partNumber: "C22624",
+    path: "imports/B5819WS/B5819WS.tsx",
+    datasheet:
+      "CJ B5819WS manufacturer datasheet; SOD323 pin 1 cathode / pin 2 anode",
+    pins: { pin1: "cathode", pin2: "anode" },
+  },
+  {
     partNumber: "C2040",
     path: "imports/RP2040/RP2040.tsx",
     datasheet:
-      "Raspberry Pi RP2040 physical pin allocation; manufacturer PDF verification pending network activation",
+      "Raspberry Pi RP2040 datasheet build dea0a54-clean, Tables 620-626, pp. 629-630; original manufacturer PDF distributed by JLCPCB",
     pins: {
       pin1: "IOVDD6",
       pin19: "TESTEN",
@@ -77,7 +84,7 @@ const criticalPinChecks = [
     partNumber: "C96140",
     path: "imports/MCP2515T_I_ML/MCP2515T_I_ML.tsx",
     datasheet:
-      "Microchip MCP2515 QFN allocation; manufacturer PDF verification pending network activation",
+      "Microchip MCP2515 DS20001801H, Table 1-1 p. 4; original manufacturer PDF distributed by JLCPCB",
     pins: {
       pin6: "OSC2",
       pin7: "OSC1",
@@ -95,10 +102,27 @@ const criticalPinChecks = [
     },
   },
   {
+    partNumber: "C2986331",
+    path: "imports/GD25Q16EEIGR/GD25Q16EEIGR.tsx",
+    datasheet:
+      "GigaDevice GD25Q16E Rev 1.2, Table 1 p. 5, USON8 drawing p. 53; exposed metal is internally floating",
+    pins: {
+      pin1: "N_CS",
+      pin2: "SO_IO1",
+      pin3: "WP__IO2",
+      pin4: "VSS",
+      pin5: "SI_IO0",
+      pin6: "SCLK",
+      pin7: "HOLD__IO3",
+      pin8: "VCC",
+      pin9: "EP",
+    },
+  },
+  {
     partNumber: "C2843335",
     path: "imports/W25Q16JVUXIQ/W25Q16JVUXIQ.tsx",
     datasheet:
-      "Winbond W25Q16JV USON allocation; manufacturer PDF verification pending network activation",
+      "Historical Winbond W25Q16JV Rev G, Figure 1b / pin table p. 5; original manufacturer PDF distributed by JLCPCB; historical import retained",
     pins: {
       pin1: "N_CS",
       pin2: "DO_IO1",

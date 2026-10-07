@@ -10,6 +10,7 @@ export default function MountedControllerStudy() {
         mechanicalPreview
         usbRoutesEnabled={false}
         savedRoutesEnabled={false}
+        freshRoutesEnabled={false}
       />
       <assembly.subassembly
         name="OfficialStepperOnline14hm11Motor"

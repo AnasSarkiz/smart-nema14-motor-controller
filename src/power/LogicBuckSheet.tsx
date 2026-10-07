@@ -98,7 +98,7 @@ export function LogicBuckSheet({
       <schematictext
         fontSize={0.18}
         text={
-          "0.3 A logic budget proposed; effective capacitance, startup, ripple and thermal tests pending"
+          "0.5 A logic budget proposed; effective capacitance, startup, ripple and thermal tests pending"
         }
         schX={-6.5}
         schY={-9.26}

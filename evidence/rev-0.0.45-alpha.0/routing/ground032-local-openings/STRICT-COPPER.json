@@ -1,0 +1,254 @@
+{
+  "revision": "0.0.45-alpha.0",
+  "input": "evidence/rev-0.0.45-alpha.0/routing/ground032-local-openings/circuit.json",
+  "input_sha256": "4dc41a77682707d7ff495c43baeec09a7671b20a3a45d0dfc1a6dc9ec4c4d366",
+  "scope": "Actual tracks, drills, component/test pads, board edges, NPTH and mechanical keepouts. USB path length is independently measured by measure-usb-paths.py; absent legacy trace-name lengths below are not a USB pass. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 63,
+  "segment_count": 433,
+  "via_count": 35,
+  "thermal_manifest_sha256": null,
+  "reviewed_thermal_drill_contacts": [],
+  "filled_manifest_sha256": null,
+  "reviewed_filled_contacts": [],
+  "filled_features_matched": [],
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": {
+      "via": "pcb_via_2",
+      "reference": "C_PD_2V7",
+      "pad": "pcb_smtpad_352",
+      "same_net": true,
+      "actual_mm": 0.35000089999999984,
+      "required_mm": 0.35
+    },
+    "track_to_pad_mm": {
+      "track": "saved_phase_null_0_24",
+      "segment": 2,
+      "pad": "pcb_smtpad_548",
+      "reference": "R45",
+      "actual_mm": 0.1066706451350527,
+      "required_mm": 0.1
+    },
+    "track_to_track_mm": {
+      "first": "saved_phase_null_0_31",
+      "first_segment": 3,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 5,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    "via_to_track_mm": {
+      "via": "pcb_via_30",
+      "track": "saved_phase_null_0_60",
+      "segment": 6,
+      "layer": "inner2",
+      "actual_mm": 0.1596194077712557,
+      "required_mm": 0.15
+    },
+    "via_to_via_mm": {
+      "first": "pcb_via_30",
+      "second": "pcb_via_32",
+      "actual_mm": 0.20000000000000034,
+      "required_mm": 0.15
+    },
+    "via_hole_to_via_hole_mm": {
+      "first": "pcb_via_30",
+      "second": "pcb_via_32",
+      "actual_mm": 0.35000000000000037,
+      "required_mm": 0.35
+    }
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 19530,
+    "track_to_pad_mm": 105464,
+    "track_to_track_mm": 37603,
+    "via_to_track_mm": 14721,
+    "via_to_via_mm": 595,
+    "via_hole_to_via_hole_mm": 595
+  },
+  "violations": [
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 2,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 5,
+      "layer": "bottom",
+      "actual_mm": 0.04881461184020708,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 3,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 5,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 3,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 6,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 4,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 5,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 4,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 6,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 4,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 7,
+      "layer": "bottom",
+      "actual_mm": 0.026654953971778764,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 5,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 5,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 5,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 6,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 5,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 7,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 6,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 6,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 6,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 7,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 7,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 7,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 8,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 7,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 8,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 8,
+      "layer": "bottom",
+      "actual_mm": 0.030896973159126435,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 9,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 7,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 9,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 8,
+      "layer": "bottom",
+      "actual_mm": 0.0,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 10,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 7,
+      "layer": "bottom",
+      "actual_mm": 0.011018675752702498,
+      "required_mm": 0.15
+    },
+    {
+      "check": "track_to_track_mm",
+      "first": "saved_phase_null_0_31",
+      "first_segment": 10,
+      "second": "saved_phase_null_0_50",
+      "second_segment": 8,
+      "layer": "bottom",
+      "actual_mm": 0.011018675752702498,
+      "required_mm": 0.15
+    }
+  ],
+  "passed": false
+}

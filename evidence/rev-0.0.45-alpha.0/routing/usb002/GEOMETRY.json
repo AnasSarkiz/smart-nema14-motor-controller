@@ -1,0 +1,202 @@
+{
+  "revision": "0.0.45-alpha.0",
+  "input": "evidence/rev-0.0.45-alpha.0/routing/usb002/circuit.json",
+  "input_sha256": "9ed330d73b44ae6163f7096fe211e0cea9b2b9260b5a26ae0d1605eb9d6218e6",
+  "scope": "Actual tracks, drills, component/test pads, board edges, NPTH and mechanical keepouts. USB path length is independently measured by measure-usb-paths.py; absent legacy trace-name lengths below are not a USB pass. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 12,
+  "segment_count": 277,
+  "via_count": 8,
+  "thermal_manifest_sha256": null,
+  "reviewed_thermal_drill_contacts": [],
+  "filled_manifest_sha256": null,
+  "reviewed_filled_contacts": [],
+  "filled_features_matched": [],
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": {
+      "via": "pcb_via_5",
+      "reference": "D_USB",
+      "pad": "pcb_smtpad_367",
+      "same_net": true,
+      "actual_mm": 0.1338801926333101,
+      "required_mm": 0.35
+    },
+    "track_to_pad_mm": {
+      "track": "saved_phase_null_0_0",
+      "segment": 1,
+      "pad": "pcb_smtpad_239",
+      "reference": "U2",
+      "actual_mm": 0.10906205724306517,
+      "required_mm": 0.1
+    },
+    "track_to_track_mm": {
+      "first": "source_net_33_mst1_0",
+      "first_segment": 2,
+      "second": "source_net_32_mst0_0",
+      "second_segment": 23,
+      "layer": "top",
+      "actual_mm": 0.16100657932178955,
+      "required_mm": 0.15
+    },
+    "via_to_track_mm": {
+      "via": "pcb_via_2",
+      "track": "source_net_87_0",
+      "segment": 1,
+      "layer": "top",
+      "actual_mm": 0.10999999999999985,
+      "required_mm": 0.15
+    },
+    "via_to_via_mm": {
+      "first": "pcb_via_0",
+      "second": "pcb_via_2",
+      "actual_mm": 0.1217700811919104,
+      "required_mm": 0.15
+    },
+    "via_hole_to_via_hole_mm": {
+      "first": "pcb_via_0",
+      "second": "pcb_via_2",
+      "actual_mm": 0.27177008119191043,
+      "required_mm": 0.35
+    }
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 4464,
+    "track_to_pad_mm": 46095,
+    "track_to_track_mm": 10572,
+    "via_to_track_mm": 1702,
+    "via_to_via_mm": 28,
+    "via_hole_to_via_hole_mm": 28
+  },
+  "violations": [
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_1",
+      "reference": "R_USB_DP",
+      "pad": "pcb_smtpad_88",
+      "same_net": false,
+      "actual_mm": 0.23362718624857634,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_to_track_mm",
+      "via": "pcb_via_1",
+      "track": "source_net_32_mst2_0",
+      "segment": 0,
+      "layer": "top",
+      "actual_mm": 0.14699999999999994,
+      "required_mm": 0.15
+    },
+    {
+      "check": "via_to_track_mm",
+      "via": "pcb_via_2",
+      "track": "source_net_87_0",
+      "segment": 1,
+      "layer": "top",
+      "actual_mm": 0.10999999999999985,
+      "required_mm": 0.15
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_3",
+      "reference": "R_USB_DM",
+      "pad": "pcb_smtpad_85",
+      "same_net": true,
+      "actual_mm": 0.3315386339942,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_3",
+      "reference": "R_USB_DP",
+      "pad": "pcb_smtpad_87",
+      "same_net": false,
+      "actual_mm": 0.3315386339942,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_4",
+      "reference": "R_USB_DM",
+      "pad": "pcb_smtpad_86",
+      "same_net": true,
+      "actual_mm": 0.33735499999999996,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_5",
+      "reference": "D_USB",
+      "pad": "pcb_smtpad_367",
+      "same_net": true,
+      "actual_mm": 0.1338801926333101,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_5",
+      "reference": "C33",
+      "pad": "pcb_smtpad_552",
+      "same_net": false,
+      "actual_mm": 0.3487402093412316,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_6",
+      "reference": "Y_CAN",
+      "pad": "pcb_smtpad_181",
+      "same_net": false,
+      "actual_mm": 0.2966926196153604,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_7",
+      "reference": "Y_CAN",
+      "pad": "pcb_smtpad_180",
+      "same_net": false,
+      "actual_mm": 0.3097944262983572,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_7",
+      "reference": "C_CAN_XIN",
+      "pad": "pcb_smtpad_185",
+      "same_net": false,
+      "actual_mm": 0.2854638184382352,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_drill_to_pad_mm",
+      "via": "pcb_via_7",
+      "reference": "C_CAN_XIN2",
+      "pad": "pcb_smtpad_194",
+      "same_net": false,
+      "actual_mm": 0.14545095209596806,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_annulus_to_other_net_pad",
+      "via": "pcb_via_7",
+      "pad": "pcb_smtpad_194",
+      "reference": "C_CAN_XIN2"
+    },
+    {
+      "check": "via_hole_to_via_hole_mm",
+      "first": "pcb_via_0",
+      "second": "pcb_via_2",
+      "actual_mm": 0.27177008119191043,
+      "required_mm": 0.35
+    },
+    {
+      "check": "via_to_via_mm",
+      "first": "pcb_via_0",
+      "second": "pcb_via_2",
+      "actual_mm": 0.1217700811919104,
+      "required_mm": 0.15
+    }
+  ],
+  "passed": false
+}

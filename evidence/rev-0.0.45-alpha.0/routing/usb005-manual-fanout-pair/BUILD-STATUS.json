@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/workspace/smart-nema14-motor-controller/.cloud-tools/bun/bin/bun",
+    "scripts/run-native-routing.mjs",
+    "/workspace/smart-nema14-motor-controller/scripts/native45-usb005.circuit.tsx",
+    "/workspace/smart-nema14-motor-controller/evidence/rev-0.0.45-alpha.0/routing/usb005-manual-fanout-pair"
+  ],
+  "exit_code": -15,
+  "termination": "timeout",
+  "memory_budget_mb": 16000,
+  "peak_sampled_group_rss_mb": 2314.59765625,
+  "elapsed_seconds": 300.9692061280002,
+  "sampling_note": "One-second RSS samples; shared pages can be counted more than once. This is a conservative process guard, not an OS memory reservation."
+}

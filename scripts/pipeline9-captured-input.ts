@@ -80,7 +80,8 @@ export function parseCapturedPipeline9Input(capturedEventText: string) {
   // Passthrough validation must preserve every producer field and coordinate.
   assert.deepStrictEqual(routingEvent, capturedEvent)
   const srj = routingEvent.simpleRouteJson
-  assert.ok(srj.minViaHoleDiameter >= 0.3 && srj.minViaPadDiameter >= 0.6)
+  assert.equal(srj.minViaHoleDiameter, 0.3)
+  assert.equal(srj.minViaPadDiameter, 0.45)
   assert.equal(srj.min_via_hole_diameter, srj.minViaHoleDiameter)
   assert.equal(srj.min_via_pad_diameter, srj.minViaPadDiameter)
   assert.ok(srj.minViaHoleEdgeToViaHoleEdgeClearance >= 0.35)

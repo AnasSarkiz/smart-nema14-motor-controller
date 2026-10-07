@@ -1,0 +1,315 @@
+{
+  "all_148_fitted_component_placements_and_cad_registrations_unchanged": true,
+  "scope": "Actual native exported connector meshes; verify old mounted view against current diagnostic placement, CAD registration and every connector SMT land",
+  "inputs": {
+    "current_circuit": {
+      "path": "dist/index/circuit.json",
+      "sha256": "be519710b71e651db0554b7c9a28d08e1a0db068e5175f640d0cc3249bd0a61a"
+    },
+    "mounted_circuit": {
+      "path": ".publication/readiness-2026-10-07/build-packet/dist/mounted-assembly/circuit.json",
+      "sha256": "074d30827801dbf5989dd55b4767b21313f78c911dc99e7c4affc85e1c81f30f"
+    },
+    "mounted_glb": {
+      "path": ".publication/readiness-2026-10-07/build-packet/dist/mounted-assembly/3d.glb",
+      "sha256": "ba3c1e15cce226ff72740d1a4122d48272139fec93e2df3f83356f65b3453e6b"
+    }
+  },
+  "result": "passed unchanged placement/land correspondence; mouth direction requires visual review",
+  "connectors": [
+    {
+      "reference": "J_USB",
+      "mpn": "USB4110-GF-A",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C5143397"
+        ]
+      },
+      "pcb": {
+        "type": "pcb_component",
+        "pcb_component_id": "pcb_component_75",
+        "center": {
+          "x": 0,
+          "y": -12.7
+        },
+        "width": 12.4000006,
+        "height": 6.079998,
+        "layer": "top",
+        "rotation": 0,
+        "source_component_id": "source_component_75",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "do_not_place": false,
+        "obstructs_within_bounds": true,
+        "is_allowed_to_be_off_board": false,
+        "cable_insertion_center": {
+          "x": 0,
+          "y": -18.22169279200004
+        },
+        "position_mode": "relative_to_group_anchor",
+        "positioned_relative_to_pcb_board_id": "pcb_board_0",
+        "display_offset_x": 0,
+        "display_offset_y": -12.7
+      },
+      "cad": {
+        "type": "cad_component",
+        "cad_component_id": "cad_component_74",
+        "position": {
+          "x": 0,
+          "y": -12.7,
+          "z": 0.8
+        },
+        "rotation": {
+          "x": 90,
+          "y": 0,
+          "z": 0
+        },
+        "pcb_component_id": "pcb_component_75",
+        "source_component_id": "source_component_75",
+        "model_step_url": "./references/usb4110-external-model/usb4110-gf-a.stp",
+        "model_unit_to_mm_scale_factor": 1,
+        "model_board_normal_direction": "z+",
+        "model_origin_alignment": "center_of_component_on_board_surface",
+        "anchor_alignment": "center_of_component_on_board_surface",
+        "model_origin_position": {
+          "x": 0,
+          "y": 0,
+          "z": -4.89
+        }
+      },
+      "rendered_bounds_mm": [
+        [
+          -5.650000095367432,
+          -17.589999866485595,
+          0.17500000000000004
+        ],
+        [
+          5.650000095367432,
+          -9.890000057220458,
+          4.060213851928711
+        ]
+      ],
+      "unchanged_native_placement_and_lands": true
+    },
+    {
+      "reference": "J_MOTOR",
+      "mpn": "SM04B-GHS-TB(LF)(SN)",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C189895"
+        ]
+      },
+      "pcb": {
+        "type": "pcb_component",
+        "pcb_component_id": "pcb_component_112",
+        "center": {
+          "x": -1.7499999999999996,
+          "y": 11.900000000000002
+        },
+        "width": 8.44931,
+        "height": 5.3991256,
+        "layer": "top",
+        "rotation": 180,
+        "source_component_id": "source_component_112",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "do_not_place": false,
+        "obstructs_within_bounds": true,
+        "is_allowed_to_be_off_board": false,
+        "position_mode": "relative_to_group_anchor",
+        "positioned_relative_to_pcb_board_id": "pcb_board_0",
+        "display_offset_x": -1.75,
+        "display_offset_y": 11.9,
+        "pin1_location": "topside_left",
+        "supplier_pin1_location_map": {
+          "jlcpcb": "topside_left"
+        }
+      },
+      "cad": {
+        "type": "cad_component",
+        "cad_component_id": "cad_component_111",
+        "position": {
+          "x": -1.7499999999999996,
+          "y": 11.900000000000002,
+          "z": 0.8
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 180
+        },
+        "pcb_component_id": "pcb_component_112",
+        "source_component_id": "source_component_112",
+        "model_obj_url": "./imports/SM04B_GHS_TB_LF__SN_/SM04B_GHS_TB_LF__SN_.obj",
+        "model_step_url": "./imports/SM04B_GHS_TB_LF__SN_/SM04B_GHS_TB_LF__SN_.step",
+        "model_origin_alignment": "center_of_component_on_board_surface",
+        "anchor_alignment": "center_of_component_on_board_surface",
+        "model_origin_position": {
+          "x": 1.8750126999999566,
+          "y": -0.7145026000001098,
+          "z": -0.01
+        }
+      },
+      "rendered_bounds_mm": [
+        [
+          -5.8749871253967285,
+          9.372997426986696,
+          0.8
+        ],
+        [
+          2.375012874603272,
+          14.232997322082522,
+          5.060000228881836
+        ]
+      ],
+      "unchanged_native_placement_and_lands": true
+    },
+    {
+      "reference": "J_IO",
+      "mpn": "SM10B-SRSS-TB(LF)(SN)",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C160409"
+        ]
+      },
+      "pcb": {
+        "type": "pcb_component",
+        "pcb_component_id": "pcb_component_111",
+        "center": {
+          "x": 14,
+          "y": 4
+        },
+        "width": 5.6255285,
+        "height": 12.8004316,
+        "layer": "bottom",
+        "rotation": 90,
+        "source_component_id": "source_component_111",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "do_not_place": false,
+        "obstructs_within_bounds": true,
+        "is_allowed_to_be_off_board": false,
+        "position_mode": "relative_to_group_anchor",
+        "positioned_relative_to_pcb_board_id": "pcb_board_0",
+        "display_offset_x": 14,
+        "display_offset_y": 4,
+        "pin1_location": "topside_left",
+        "supplier_pin1_location_map": {
+          "jlcpcb": "topside_left"
+        }
+      },
+      "cad": {
+        "type": "cad_component",
+        "cad_component_id": "cad_component_110",
+        "position": {
+          "x": 14,
+          "y": 4,
+          "z": -0.8
+        },
+        "rotation": {
+          "x": 0,
+          "y": 180,
+          "z": 270
+        },
+        "pcb_component_id": "pcb_component_111",
+        "source_component_id": "source_component_111",
+        "model_obj_url": "./imports/SM10B_SRSS_TB_LF__SN_/SM10B_SRSS_TB_LF__SN_.obj",
+        "model_step_url": "./imports/SM10B_SRSS_TB_LF__SN_/SM10B_SRSS_TB_LF__SN_.step",
+        "model_origin_alignment": "center_of_component_on_board_surface",
+        "anchor_alignment": "center_of_component_on_board_surface",
+        "model_origin_position": {
+          "x": 1.2699999956566899e-05,
+          "y": 0.5129918499999349,
+          "z": -0.01
+        }
+      },
+      "rendered_bounds_mm": [
+        [
+          11.637991905212402,
+          -1.7499871253967285,
+          -3.2500000476837156
+        ],
+        [
+          16.637991905212402,
+          9.750012874603271,
+          -0.7999999999999997
+        ]
+      ],
+      "unchanged_native_placement_and_lands": true
+    },
+    {
+      "reference": "J_SWD",
+      "mpn": "SM05B-SRSS-TB(LF)(SN)",
+      "supplier_part_numbers": {
+        "jlcpcb": [
+          "C136657"
+        ]
+      },
+      "pcb": {
+        "type": "pcb_component",
+        "pcb_component_id": "pcb_component_99",
+        "center": {
+          "x": 14.4,
+          "y": -8.4
+        },
+        "width": 5.549772999999998,
+        "height": 7.8001876,
+        "layer": "top",
+        "rotation": 90,
+        "source_component_id": "source_component_99",
+        "subcircuit_id": "subcircuit_source_group_0",
+        "do_not_place": false,
+        "obstructs_within_bounds": true,
+        "is_allowed_to_be_off_board": false,
+        "cable_insertion_center": {
+          "x": 17.61886834,
+          "y": -8.4
+        },
+        "position_mode": "relative_to_group_anchor",
+        "positioned_relative_to_pcb_board_id": "pcb_board_0",
+        "display_offset_x": 14.4,
+        "display_offset_y": -8.4,
+        "pin1_location": "topside_left",
+        "supplier_pin1_location_map": {
+          "jlcpcb": "topside_left"
+        }
+      },
+      "cad": {
+        "type": "cad_component",
+        "cad_component_id": "cad_component_98",
+        "position": {
+          "x": 14.4,
+          "y": -8.4,
+          "z": 0.8
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 90
+        },
+        "pcb_component_id": "pcb_component_99",
+        "source_component_id": "source_component_99",
+        "model_step_url": "./references/programming-connector-official/C136657.step",
+        "model_origin_alignment": "center_of_component_on_board_surface",
+        "anchor_alignment": "center_of_component_on_board_surface",
+        "model_origin_position": {
+          "x": 2,
+          "y": 0.5124965000000032,
+          "z": -0.01
+        }
+      },
+      "rendered_bounds_mm": [
+        [
+          12.087496423721314,
+          -11.9,
+          0.8
+        ],
+        [
+          17.037496471405028,
+          -4.9,
+          3.7110000133514403
+        ]
+      ],
+      "unchanged_native_placement_and_lands": true
+    }
+  ],
+  "physical_mating_fit_tested": false,
+  "fabrication_ready": false
+}

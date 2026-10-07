@@ -1,0 +1,17 @@
+{
+  "passed": false,
+  "scope": "Actual official solver output, not a configuration claim",
+  "input_bus_allowed_layers": [
+    "top",
+    "bottom"
+  ],
+  "differential_pair_metadata_preserved": true,
+  "output_traces_identical_to_unrestricted_bad_candidate": true,
+  "actual_signal_wire_layers": [
+    "inner1",
+    "inner2",
+    "top"
+  ],
+  "adopted": false,
+  "reason": "Declared outer-layer bus hints did not prevent the same bad inner-layer pair; canonical source does not include these routes."
+}

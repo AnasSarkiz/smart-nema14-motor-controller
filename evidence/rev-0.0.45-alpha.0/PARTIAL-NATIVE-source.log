@@ -1,0 +1,4 @@
+Errors: 0
+Warnings: 2
+- source_property_ignored_warning: Differential pair "USB_RECEPTACLE_PAIR" positiveConnection=".R_USB_DP > port.pin1" is not point-to-point: expected exactly 2 terminal pins, found 4: .D_USB > .pin1, .J_USB > .DP1, .J_USB > .DP2, and .R_USB_DP > .pin1.
+- source_property_ignored_warning: Differential pair "USB_RECEPTACLE_PAIR" negativeConnection=".R_USB_DM > port.pin1" is not point-to-point: expected exactly 2 terminal pins, found 4: .D_USB > .pin2, .J_USB > .DN1, .J_USB > .DN2, and .R_USB_DM > .pin1.

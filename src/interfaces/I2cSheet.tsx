@@ -12,7 +12,7 @@ import { CL10A105KB8NNNC } from "../../imports/CL10A105KB8NNNC/CL10A105KB8NNNC"
 import { TMP112AIDRLR } from "../../imports/TMP112AIDRLR/TMP112AIDRLR"
 import { DMG1012T_7 } from "../../imports/DMG1012T_7/DMG1012T_7"
 import { MLT_5020 } from "../../imports/MLT_5020/MLT_5020"
-import { A_1N4148WS } from "../../imports/A_1N4148WS/A_1N4148WS"
+import { B5819WS } from "../../imports/B5819WS/B5819WS"
 
 export function I2cSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
   return (
@@ -82,8 +82,14 @@ export function I2cSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         noConnect={["NC"]}
         connections={{ pin1: "net.V3V3", pin2: "net.BUZZER_NEG" }}
       />
-      <A_1N4148WS
+      <B5819WS
         name="D_BUZZ"
+        cadModel={{
+          objUrl: "./imports/B5819WS/B5819WS.obj",
+          stepUrl: "./imports/B5819WS/B5819WS.step",
+          pcbRotationOffset: 0,
+          modelOriginPosition: { x: 0, y: 0.00011430000006384944, z: 0 },
+        }}
         {...previewPlacement("D_BUZZ", mechanicalPreview)}
         schX={-7}
         schY={-2}
@@ -136,7 +142,7 @@ export function I2cSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         fontSize={0.22}
         schX={-6.5}
         schY={-8.7}
-        text="BZ1 is externally driven: GPIO25 PWM through Q_BUZZ, with flyback clamp and default-off pull-down. Driver/mechanical qualification pending."
+        text="GPIO25 drives BZ1 at 4 kHz / 50% PWM; B5819WS flyback clamp; default off. Enable only after PD contract/current qualification."
       />
       <schematictext
         fontSize={0.22}

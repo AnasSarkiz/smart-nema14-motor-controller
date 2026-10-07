@@ -1,4 +1,39 @@
-# RP2040 and autonomous USB-PD — revision 0.0.44-alpha.0
+# Current RP2040 and autonomous USB-PD — 0.0.45-alpha.0
+
+Read [the current manufacturer and routing review](REV45-PRE-ROUTING-REVIEW.md)
+and [validation](../VALIDATION.md). Revision45 corrects the flash selection to
+GD25Q16EEIGR/C2986331, USB terminations to27 ohm/C25100, adds the qualified-delay
+RUN supervisor, and uses the correctly rated genuine B5819WS flyback clamp.
+The coherent latest released toolchain installs and passes TypeScript. All53
+exact JLCPCB identities have positive official stock/SMT snapshots; all12 ICs
+and148 fitted genuine STEP models pass actual CadQuery validity/export checks.
+
+The checked partial board has41/108 physically joined nets,61 tracks,28 ordinary
+0.30/0.45mm through vias,0 pours and407 open-port errors. No other native error
+or independent copper-clearance violation remains in this partial packet.
+Both actual USB plug-orientation paths are connected; planar skew is0.409mm,
+the ESD-to-termination trunk skew is0.195mm and MCUstub skew is0.100mm.
+A supported native Bus applies the unchanged0.25mm limit to the actual two
+trunks. Full plug paths retain the independent0.5mm limit. A branched connector
+must not compare its short stub length with a different signal's entire trunk.
+The long pair uses one common inner2 layer; actual coupling, via-barrel delay,
+ground reference/impedance and complete routing/CAM remain unqualified.
+
+The exact motor, four connectors, 35×35mm four-layer outline and carrier stay
+unchanged. Only internal parts move for real USB escape/clearance defects;
+original purchased definitions and model bytes are preserved. All149 references
+have purpose notes on9 A4 sheets. The disclosed imported TVS orientation style
+finding remains visible. The5-board fitted parts baseline is$27.27 per board,
+excluding PCB/assembly/loading/supplier losses/shipping/tax/carrier/motor.
+**PROTOTYPE FABRICATION READY: NO.** No order or hardware result is claimed.
+
+The following revision44 description is preserved as historical evidence;
+its old flash,33 ohm resistors, flyback, blocked toolchain and unrouted counts
+are superseded by the current review above.
+
+---
+
+# Historical RP2040 and autonomous USB-PD — revision 0.0.44-alpha.0
 
 This is a new, **unrouted prototype**, replacing the revision 43 STM32 MCU and
 TCPP01 protection architecture at the user's request. The former STM32 had a

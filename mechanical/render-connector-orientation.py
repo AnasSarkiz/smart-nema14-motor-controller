@@ -69,15 +69,18 @@ def node_primitives(reference):
 
 
 all_references = [e['name'] for e in current if e['type'] == 'source_component']
-assert len(all_references) == 109
-for reference in all_references:
+assert len(all_references) == 149
+fitted_source_ids = {part["source_component_id"] for part in current if part["type"] == "pcb_component" and not part.get("do_not_place", False)}
+fitted_references = [src["name"] for src in current if src["type"] == "source_component" and src["source_component_id"] in fitted_source_ids]
+assert len(fitted_references) == 148
+for reference in fitted_references:
     _, current_pcb, current_cad = component_entries(current, reference)
     _, mounted_pcb, mounted_cad = component_entries(mounted, reference)
     for field in ['center', 'rotation', 'layer', 'width', 'height']:
         assert current_pcb[field] == mounted_pcb[field], (reference, field)
     for field in ['position', 'rotation', 'model_step_url', 'model_origin_position']:
         assert current_cad.get(field) == mounted_cad.get(field), (reference, field)
-meshes = {reference: node_primitives(reference) for reference in all_references + ['Box0', 'ProposedFrontFlangeCarrier', 'ProposedFastenerEnvelopes']}
+meshes = {reference: node_primitives(reference) for reference in fitted_references + ['Box0', 'ProposedFrontFlangeCarrier', 'ProposedFastenerEnvelopes']}
 rows = []
 for reference in references:
     source, pcb, cad = component_entries(current, reference)
@@ -144,13 +147,13 @@ for index, elevation in enumerate([70, -70]):
     ax.set_box_aspect((57, 58, 16))
     ax.view_init(elev=elevation, azim=-90)
     ax.set_title('Top / outward cable exits' if index == 0 else 'Underside / outward cable exits')
-fig.suptitle('Actual native PCB, 109 component meshes, carrier and fastener envelopes')
+fig.suptitle('Actual native PCB, 148 fitted component meshes, carrier and fastener envelopes')
 fig.text(0.5, 0.025, 'Motor omitted here to expose the underside; plug envelopes and physical fit have separate qualification limits.', ha='center', fontsize=9)
 fig.tight_layout()
 fig.savefig(output / 'connector-access-overview.png', dpi=150)
 plt.close(fig)
 
-report = {'all_109_component_placements_and_cad_registrations_unchanged': True, 'scope': 'Actual native exported connector meshes; verify old mounted view against current diagnostic placement, CAD registration and every connector SMT land',
+report = {'all_148_fitted_component_placements_and_cad_registrations_unchanged': True, 'scope': 'Actual native exported connector meshes; verify old mounted view against current diagnostic placement, CAD registration and every connector SMT land',
           'inputs': {name: {'path': path, 'sha256': hashlib.sha256(Path(path).read_bytes()).hexdigest()}
                      for name, path in [('current_circuit', args.current_circuit), ('mounted_circuit', args.mounted_circuit), ('mounted_glb', args.glb)]},
           'result': 'passed unchanged placement/land correspondence; mouth direction requires visual review',

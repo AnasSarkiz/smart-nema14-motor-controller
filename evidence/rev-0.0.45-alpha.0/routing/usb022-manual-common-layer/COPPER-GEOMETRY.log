@@ -1,0 +1,34 @@
+{
+  "revision": "0.0.45-alpha.0",
+  "input": "evidence/rev-0.0.45-alpha.0/routing/usb022-manual-common-layer/circuit.json",
+  "input_sha256": "89d9165c848e0c294cf06a34ce751f09deba4259f4d6807fd6f0aa32fc5ddb78",
+  "scope": "Actual tracks, drills, component/test pads, board edges, NPTH and mechanical keepouts. USB path length is independently measured by measure-usb-paths.py; absent legacy trace-name lengths below are not a USB pass. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 0,
+  "segment_count": 0,
+  "via_count": 0,
+  "thermal_manifest_sha256": null,
+  "reviewed_thermal_drill_contacts": [],
+  "filled_manifest_sha256": null,
+  "reviewed_filled_contacts": [],
+  "filled_features_matched": [],
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": null,
+    "track_to_pad_mm": null,
+    "track_to_track_mm": null,
+    "via_to_track_mm": null,
+    "via_to_via_mm": null,
+    "via_hole_to_via_hole_mm": null
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 0,
+    "track_to_pad_mm": 0,
+    "track_to_track_mm": 0,
+    "via_to_track_mm": 0,
+    "via_to_via_mm": 0,
+    "via_hole_to_via_hole_mm": 0
+  },
+  "violations": [],
+  "passed": true
+}

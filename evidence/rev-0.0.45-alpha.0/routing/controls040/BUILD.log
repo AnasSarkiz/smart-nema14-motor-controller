@@ -1,0 +1,17 @@
+{"phase":"topologyMergingSolver","progress":0.2,"elapsed_seconds":3.337918855,"solved":false,"failed":false,"error":null}
+{"phase":"topologyMergingSolver","progress":0.22900051255766274,"elapsed_seconds":8.339119847000001,"solved":false,"failed":false,"error":null}
+{"phase":"nodeDimensionSubdivisionSolver","progress":0.24,"node_count":31401,"elapsed_seconds":79.793119932,"solved":false,"failed":false,"error":null}
+{"phase":"edgeSolver","progress":0.28,"node_count":31991,"elapsed_seconds":94.605950585,"solved":false,"failed":false,"error":null}
+{"phase":"availableSegmentPointSolver","progress":0.32,"node_count":31991,"edge_count":95538,"elapsed_seconds":111.52716197400001,"solved":false,"failed":false,"error":null}
+{"phase":"portPointPathingSolver","progress":0.44,"node_count":31991,"edge_count":95538,"elapsed_seconds":114.71054403999999,"solved":false,"failed":true,"error":"Static reachability precheck failed: 1 route(s) have no legal path under the current reservation and start-region rules source_net_3_mst4 (pcb_port_187->pcb_port_37)"}
+86 |     )
+87 |     console.log(JSON.stringify(progress))
+88 |     await new Promise((resume) => setTimeout(resume, 0))
+89 |   }
+90 | }
+91 | if (solver.failed) throw new Error(solver.error || "Native Pipeline9 failed")
+                                  ^
+error: Static reachability precheck failed: 1 route(s) have no legal path under the current reservation and start-region rules source_net_3_mst4 (pcb_port_187->pcb_port_37)
+      at /workspace/smart-nema14-motor-controller/scripts/run-pipeline9-sdk-routing.ts:91:30
+
+Bun v1.3.9 (Linux x64)

@@ -1,0 +1,484 @@
+{
+  "input": "evidence/rev-0.0.45-alpha.0/routing/clock007-manual-escape/circuit.json",
+  "sha256": "62a76c129c14ba7d67e28fd0baf6408de3589ecdba19382c80907af5f15963e1",
+  "scope": "Native filled BRep against actual pads, traces, via annuli and other pours; physical same-net conductors joined across full through-via spans. No net-name-only connectivity assumption. Impedance, thermal/current limits and CAM remain separate.",
+  "mechanical_constraints_sha256": "28044e448bd8c9cb70581f734682c0899778c35f9b45e4c74eb1e75448f9e9bb",
+  "pour_count": 0,
+  "minimum_clearances": {},
+  "clearance_violations": [],
+  "physical_islands": {
+    "BUCK_SW": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 16.989861443247946,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C10.2",
+            "L1.1",
+            "U5.5"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -16.6000232,
+                -10.1999991,
+                -6.9000065,
+                -5.7
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "BUCK_BST": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.5751762140423162,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C10.1",
+            "U5.6"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -15.1999752,
+                -10.1999991,
+                -14.275034199999999,
+                -6.6498971000000004
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "TMC_CPI": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 0.6949972779097,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C13.2",
+            "U2.5"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -8.639751799999999,
+                -3.770002,
+                -8.0798845,
+                -1.3499959000000004
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "XTAL_OUT": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 3.230381263924826,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C_XOUT.1",
+            "R_XOUT.2",
+            "Y_RP.3"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                3.979998,
+                -7.4201155000000005,
+                8.8000726,
+                -3.229998
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "XIN": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 3.301801948517937,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C_XIN.1",
+            "U1.20",
+            "Y_RP.1"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                5.1999274,
+                -7.4500098,
+                10.394805475941883,
+                -1.7000575
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "QSPI_CLK": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.5897866295543481,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "U1.52",
+            "U_FLASH.6"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                7.4000022,
+                4.3000575,
+                13.6267993,
+                9.15022145
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "QSPI_IO3": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.418714744315412,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "U1.51",
+            "U_FLASH.7"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                7.8000522,
+                4.3000575,
+                13.6267993,
+                8.65034945
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "QSPI_IO1": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 2.7903075161552806,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "U1.55",
+            "U_FLASH.2"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                5.0969999999999995,
+                4.3000575,
+                16.5731993,
+                10.434671672336673
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "QSPI_IO2": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 3.099232838374336,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "U1.54",
+            "U_FLASH.3"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                6.5999022,
+                3.508,
+                9.185,
+                5.150068500000001
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                15.218,
+                8.85022205,
+                16.5731993,
+                11.145215799999999
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                8.735000000000001,
+                3.508,
+                9.185,
+                3.958
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                15.218,
+                10.6952158,
+                15.668,
+                11.145215799999999
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                8.735000000000001,
+                3.508,
+                15.668,
+                11.145215799999999
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                8.735000000000001,
+                3.508,
+                9.185,
+                3.958
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                15.218,
+                10.6952158,
+                15.668,
+                11.145215799999999
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "QSPI_CS": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 3.418247499075139,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "R_FLASH_CS.2",
+            "U1.56",
+            "U_FLASH.1"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                4.5367450546647765,
+                4.3000575,
+                6.0000558,
+                5.150068500000001
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                14.865,
+                5.636,
+                16.770002,
+                8.14996945
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                4.5367450546647765,
+                4.515,
+                15.315,
+                6.085999999999999
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                4.5367450546647765,
+                4.564509328524043,
+                4.986745054664776,
+                5.014509328524042
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                14.865,
+                5.636,
+                15.315,
+                6.085999999999999
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                4.5367450546647765,
+                4.564509328524043,
+                4.986745054664776,
+                5.014509328524042
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                14.865,
+                5.636,
+                15.315,
+                6.085999999999999
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "XOUT": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.783016789465097,
+          "layers": [
+            "bottom",
+            "inner1",
+            "inner2",
+            "top"
+          ],
+          "pads": [
+            "R_XOUT.1",
+            "U1.21"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                5.125,
+                -3.770002,
+                6.350013000000001,
+                -2.625
+              ]
+            },
+            {
+              "layer": "top",
+              "bounds_mm": [
+                7.203279103365397,
+                -2.5500685,
+                8.399847800000002,
+                -0.8468464719848344
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                5.125,
+                -3.075,
+                5.574999999999999,
+                -2.625
+              ]
+            },
+            {
+              "layer": "inner1",
+              "bounds_mm": [
+                7.203279103365397,
+                -1.2968464719848345,
+                7.653279103365397,
+                -0.8468464719848344
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                5.125,
+                -3.075,
+                5.574999999999999,
+                -2.625
+              ]
+            },
+            {
+              "layer": "inner2",
+              "bounds_mm": [
+                7.203279103365397,
+                -1.2968464719848345,
+                7.653279103365397,
+                -0.8468464719848344
+              ]
+            },
+            {
+              "layer": "bottom",
+              "bounds_mm": [
+                5.125,
+                -3.075,
+                7.653279103365397,
+                -0.8468464719848344
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    }
+  },
+  "clearances_passed": true
+}

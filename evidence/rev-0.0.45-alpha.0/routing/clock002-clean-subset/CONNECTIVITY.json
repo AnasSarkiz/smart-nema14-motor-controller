@@ -1,0 +1,204 @@
+{
+  "input": "evidence/rev-0.0.45-alpha.0/routing/clock002-clean-subset/circuit.json",
+  "sha256": "d266f78970fd636e3957f35012fe61229d1ea293e5f9ac45165cedd3b6c82dc6",
+  "scope": "Native filled BRep against actual pads, traces, via annuli and other pours; physical same-net conductors joined across full through-via spans. No net-name-only connectivity assumption. Impedance, thermal/current limits and CAM remain separate.",
+  "mechanical_constraints_sha256": "28044e448bd8c9cb70581f734682c0899778c35f9b45e4c74eb1e75448f9e9bb",
+  "pour_count": 0,
+  "minimum_clearances": {},
+  "clearance_violations": [],
+  "physical_islands": {
+    "BUCK_SW": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 16.989861443247946,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C10.2",
+            "L1.1",
+            "U5.5"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -16.6000232,
+                -10.1999991,
+                -6.9000065,
+                -5.7
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "BUCK_BST": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.5751762140423162,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C10.1",
+            "U5.6"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -15.1999752,
+                -10.1999991,
+                -14.275034199999999,
+                -6.6498971000000004
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "TMC_CPI": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 0.6949972779097,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C13.2",
+            "U2.5"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -8.639751799999999,
+                -3.770002,
+                -8.0798845,
+                -1.3499959000000004
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "XTAL_OUT": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 3.230381263924826,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C_XOUT.1",
+            "R_XOUT.2",
+            "Y_RP.3"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                3.979998,
+                -7.4201155000000005,
+                8.8000726,
+                -3.229998
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "XIN": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 3.301801948517937,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C_XIN.1",
+            "U1.20",
+            "Y_RP.1"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                5.1999274,
+                -7.4500098,
+                10.394805475941883,
+                -1.7000575
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "QSPI_CLK": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.5897866295543481,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "U1.52",
+            "U_FLASH.6"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                7.4000022,
+                4.3000575,
+                13.6267993,
+                9.15022145
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "QSPI_IO3": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.418714744315412,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "U1.51",
+            "U_FLASH.7"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                7.8000522,
+                4.3000575,
+                13.6267993,
+                8.65034945
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    }
+  },
+  "clearances_passed": true
+}

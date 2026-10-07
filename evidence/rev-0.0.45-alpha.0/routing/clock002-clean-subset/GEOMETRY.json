@@ -1,0 +1,49 @@
+{
+  "revision": "0.0.45-alpha.0",
+  "input": "evidence/rev-0.0.45-alpha.0/routing/clock002-clean-subset/circuit.json",
+  "input_sha256": "d266f78970fd636e3957f35012fe61229d1ea293e5f9ac45165cedd3b6c82dc6",
+  "scope": "Actual tracks, drills, component/test pads, board edges, NPTH and mechanical keepouts. USB path length is independently measured by measure-usb-paths.py; absent legacy trace-name lengths below are not a USB pass. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 10,
+  "segment_count": 51,
+  "via_count": 0,
+  "thermal_manifest_sha256": null,
+  "reviewed_thermal_drill_contacts": [],
+  "filled_manifest_sha256": null,
+  "reviewed_filled_contacts": [],
+  "filled_features_matched": [],
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": null,
+    "track_to_pad_mm": {
+      "track": "saved_phase_null_0_0",
+      "segment": 1,
+      "pad": "pcb_smtpad_239",
+      "reference": "U2",
+      "actual_mm": 0.10906205724306517,
+      "required_mm": 0.1
+    },
+    "track_to_track_mm": {
+      "first": "saved_phase_null_0_8",
+      "first_segment": 0,
+      "second": "saved_phase_null_0_9",
+      "second_segment": 0,
+      "layer": "top",
+      "actual_mm": 0.22515980118380607,
+      "required_mm": 0.15
+    },
+    "via_to_track_mm": null,
+    "via_to_via_mm": null,
+    "via_hole_to_via_hole_mm": null
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 0,
+    "track_to_pad_mm": 12970,
+    "track_to_track_mm": 1045,
+    "via_to_track_mm": 0,
+    "via_to_via_mm": 0,
+    "via_hole_to_via_hole_mm": 0
+  },
+  "violations": [],
+  "passed": true
+}

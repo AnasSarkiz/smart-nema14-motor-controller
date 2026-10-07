@@ -1,12 +1,12 @@
 {
-  "revision": "0.0.44-alpha.0",
+  "revision": "0.0.45-alpha.0",
   "source_identity": "The Git commit containing this manifest identifies the source, evidence and checked build.",
   "scope": "Every tracked file except this self-referential manifest; archived routing evidence has its own per-file inventory.",
   "circuit_counts": {
-    "pcb_trace": 0,
-    "pcb_via": 0,
-    "pcb_copper_pour": 0,
-    "pcb_port_not_connected_error": 0,
+    "pcb_trace": 63,
+    "pcb_via": 36,
+    "pcb_copper_pour": 7,
+    "pcb_port_not_connected_error": 283,
     "pcb_trace_error": 0
   },
   "files": [
@@ -512,8 +512,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 5678,
-      "sha256": "277c978de263305a18f2c43f3f92d75e205eb754f5cb3c68dc44e6c8cdda18c8"
+      "bytes": 5996,
+      "sha256": "1e8ec19777f56cbac1d307f61d6328baaa91bf2ac3682af3b810625a058317b0"
     },
     {
       "path": "ARCHITECTURE.md",
@@ -532,18 +532,18 @@
     },
     {
       "path": "CLOUD_HANDOFF.md",
-      "bytes": 70353,
-      "sha256": "79f7728721ead83b4c5a3aaab615da2b3c6dece2ad7efec92c318776b0a45838"
+      "bytes": 72095,
+      "sha256": "1403a945bba78b819e222d9d3ce033950793a08ba9cc0c49670db67ef5e9aaa5"
     },
     {
       "path": "README.md",
-      "bytes": 4387,
-      "sha256": "969bad3d78d8a73a9f8b8450835d1aec3c377c752343559720c22b342759c44d"
+      "bytes": 4989,
+      "sha256": "b066c48bff8eca1d96f9ee7d18e167a48b77954b491c04bf9299c219b1943e1c"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 236169,
-      "sha256": "b9e0055dd2a3c9c01e10bfb7246bccb8fc57d944145a53b1ea8973550ed9bbc3"
+      "bytes": 244436,
+      "sha256": "33baaf7376fe82cae454921e32a1b4d20031527e6b615faa02abe55ef88d3834"
     },
     {
       "path": "assembly.circuit.tsx",
@@ -567,13 +567,13 @@
     },
     {
       "path": "build/routing-review/circuit.json",
-      "bytes": 2831264,
-      "sha256": "b72ed0cd13e08f93fcbbcd0f7d49c503667c058619a8498f8bdd809a6794a087"
+      "bytes": 3597753,
+      "sha256": "4e15aa8be90488f9de498393835c2e03fe39c311ffbe09836e71e5fd665d7b21"
     },
     {
       "path": "bun.lock",
-      "bytes": 87351,
-      "sha256": "9d33c31a95a4f049d48f0d5f03fc025c603d2d9e5fccfdd3650d120fc2f3ec18"
+      "bytes": 89231,
+      "sha256": "0ae39d64fb9e22c0f7dffa09b8c8c9439cd925ab3d435300944841934a3da173"
     },
     {
       "path": "controller-preview.circuit.tsx",
@@ -582,13 +582,13 @@
     },
     {
       "path": "dist/index/circuit.json",
-      "bytes": 2831264,
-      "sha256": "b72ed0cd13e08f93fcbbcd0f7d49c503667c058619a8498f8bdd809a6794a087"
+      "bytes": 3597753,
+      "sha256": "4e15aa8be90488f9de498393835c2e03fe39c311ffbe09836e71e5fd665d7b21"
     },
     {
       "path": "dist/routing-review/circuit.json",
-      "bytes": 2831264,
-      "sha256": "b72ed0cd13e08f93fcbbcd0f7d49c503667c058619a8498f8bdd809a6794a087"
+      "bytes": 3597753,
+      "sha256": "4e15aa8be90488f9de498393835c2e03fe39c311ffbe09836e71e5fd665d7b21"
     },
     {
       "path": "docs/BOARD-REVIEW-39.md",
@@ -631,9 +631,14 @@
       "sha256": "f7b566def35b96d7e99734bc5a528f45b73c802cccdf5b85d30a85ae0e7dfb46"
     },
     {
+      "path": "docs/REV45-PRE-ROUTING-REVIEW.md",
+      "bytes": 11664,
+      "sha256": "5c0a7011073d1a06840ab32d541e03546d38609a63ca192c5a19faf792bb3015"
+    },
+    {
       "path": "docs/RP2040-USB-PD-REDESIGN.md",
-      "bytes": 8618,
-      "sha256": "87ff97f9bbcf7cb4a42d6640d0b8a3fd5462d35d56ae04f9fd30b0ce4f637a1e"
+      "bytes": 10757,
+      "sha256": "5a70a90bdc031008d5d53d281e1559babc1a3b39ea006b24ac74065a86b9ef49"
     },
     {
       "path": "docs/SCHEMATIC-NOTES.md",
@@ -662,8 +667,8 @@
     },
     {
       "path": "docs/cloud/TASK.md",
-      "bytes": 4805,
-      "sha256": "1535d81f92391b49f74eb7af598b2a989b9250bbaebfb696ab0e4603c7bc9d8d"
+      "bytes": 6547,
+      "sha256": "385377a76c0a8f17641e3f30b29c10273c21a532a49b99e23f0d3963b65da994"
     },
     {
       "path": "docs/cloud/routing-history-rev20.tar.gz.001",
@@ -25121,6 +25126,3936 @@
       "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
     },
     {
+      "path": "evidence/rev-0.0.45-alpha.0/C22624-IMPORT-PROVENANCE.json",
+      "bytes": 955,
+      "sha256": "a6e04b0ceefefedf86606b081c4a70902c98db798e8d0618bda5c0bd0f5c3183"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/C22624-STOCK-SNAPSHOT.json",
+      "bytes": 1361,
+      "sha256": "832b7971d0b83d84134716a6e5c23cb510f20b02b6761254e2aa606042017076"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/C22624.raweasy.json",
+      "bytes": 15938,
+      "sha256": "b2396d54dbbf10910549fdaae94345c6a8893be51dcd543c669e8297ac0928d9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/CADQUERY-CURRENT-INPUT-BRIDGE.json",
+      "bytes": 641,
+      "sha256": "4dcc617527e6fbc828f0103e61e7aca63470e2b8788d2741ed08d5ef27f78d6c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/CADQUERY-LATEST.json",
+      "bytes": 85026,
+      "sha256": "e407a53c4f7580bdb31af774cafadc77014ea5adbe335dc4c953312090d9e97f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/CADQUERY.json",
+      "bytes": 85031,
+      "sha256": "d3085fc3767528e4e30cb92f744a5741d8519ead8d5eb14f17bb83515aed4008"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/CARRIER-TOLERANCE-SCREEN.json",
+      "bytes": 1519,
+      "sha256": "644eefacce8095623de3f5f01fbeeebfab47bcaa2b9e07e1156418e7449cc15e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/CURRENT-CLOUD-RESOURCES.json",
+      "bytes": 346,
+      "sha256": "cc6ad8293ed8a9df397f435a5fb822906056131b4008996003342627f02b3185"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/FORMAT-GROUND-TRIAL.log",
+      "bytes": 3729,
+      "sha256": "512de1915d122ae2ecc423e21c5dcd2cfe37d9b3caf3ab3fa5a37ae5062df596"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/FORMAT-GROUND35.log",
+      "bytes": 321,
+      "sha256": "c9520210f8af97f46c773f369f8172c0c7abfd4cbde1712a20b928366ce4709a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/FORMAT-GROUND36.log",
+      "bytes": 325,
+      "sha256": "ff823721495ff43558201adc522a31a78139f9253b829b3d1aafd7caae09824e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/FORMAT-PARTIAL-41.log",
+      "bytes": 322,
+      "sha256": "42435772e18539049a3be232942f67e83056a5f82572476bff10c5fb81301c7f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/FORMAT-PARTIAL-44.log",
+      "bytes": 321,
+      "sha256": "197950f7766ba7dbd95354c24d779c0ca0bb2d5c9daffbd99b822a350fcfbc15"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/FORMAT-ROUTING-PROGRESS.log",
+      "bytes": 322,
+      "sha256": "6f40ec88c11cd63a27cfcbe6ed9e2f94715b2029f85988cf6bdab28ff1a6ac45"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/FORMAT-ROUTING-WORK.log",
+      "bytes": 322,
+      "sha256": "d5657c2beb59166cd757d3fc84260ec1cb36013e025faf04a91914beecbb6e49"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/FORMAT-USB020.log",
+      "bytes": 322,
+      "sha256": "404682f38c17050f1022cc91f5d5b2f937af0345e7e9a14bfa23ff8af84b7f5d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/FRONT-CARRIER-AUDIT.json",
+      "bytes": 55590,
+      "sha256": "36beb8c5e25d9595e2ed2368e6e5d09e37a1f98ff230a8307aefaaa0486f1028"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/J_SWD-LOCAL-MODEL.json",
+      "bytes": 499,
+      "sha256": "ef12224a33717d2ee032961af6416f19fe819d89ac3a61f320c25c4f6db3f104"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/LATEST-TOOLCHAIN.json",
+      "bytes": 1014,
+      "sha256": "d4ef8d8cf722ba94a88165872fa97192f3a375720df34b841c4f54b5883cda29"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/MATING-ENVELOPE-AUDIT.json",
+      "bytes": 3416,
+      "sha256": "b274c7561fbdc2fa0c27bff8908ea6266a8f16ae7a1b3520c03a3d3c469c21d5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/OFFICIAL-JLC-PART-DETAILS.json",
+      "bytes": 171383,
+      "sha256": "825b0f0bc93bc3683e11e6dae445cd20196cbd32464f2671f29bce882c4c72bf"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/OFFICIAL-JLC-PARTS-CURRENT.json",
+      "bytes": 20298,
+      "sha256": "ed0e4036a74cd53339473c24bc135421b02084a17585bcfbc6afa6d6b4fd1aff"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/OFFICIAL-JLC-PARTS-PRICING.json",
+      "bytes": 7560,
+      "sha256": "6f6b4340f6ff30ee751b46a3ced2af800b926ad08f7ee5d4fb76e16ca79c55ec"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/OFFICIAL-JLC-PARTS.json",
+      "bytes": 45538,
+      "sha256": "0c95b1c7f699876587d17c1076b6c823c1a920f6ce52a0ca1f1e15b511e3a841"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/OFFICIAL-JLC-PRICE-CURRENCY.json",
+      "bytes": 17661,
+      "sha256": "7099f10a32f72a16e95f13d6d762d2c549504a57c3cae2ce45cf12bb96198cd2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/OFFICIAL-PART-SLUGS.json",
+      "bytes": 2511,
+      "sha256": "2b20b0232222b29bafc6ec43ce480577559f1c522aeba8684ae1da6d3a5a8a67"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-CADQUERY-INPUT-BRIDGE.json",
+      "bytes": 29949,
+      "sha256": "81a0ec432195a6792ffefaed5205c07c3a36ad51bdc08faf8f80bc4ec0429e2e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-CANONICAL-BUILD.log",
+      "bytes": 30318,
+      "sha256": "62044737cfc207be5665bc7ef8f52d35f96eb502be836396a3b25d2ed1382965"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-CLI-netlist.log",
+      "bytes": 33480,
+      "sha256": "79c015eace7a8963fe267a028f35a249705afe0e1f78e86ed7b00db9c5ff5541"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-CLI-pin_specification.log",
+      "bytes": 2866,
+      "sha256": "7a9f8fbde620e2afef9274b643a376179041b665953f9ffdb6acd8ae5806f870"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-CLI-placement.log",
+      "bytes": 5206,
+      "sha256": "e46ef4f02f8bd854dfa50a186130170a3e29ce5fd7442cb05af89e5379b9fb73"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-CLI-schematic-placement.log",
+      "bytes": 545,
+      "sha256": "7e4f622b173d2cd517de72278e6d2cf17c20ecf474c61c06380165af7abad0a1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-CLI-shorts.log",
+      "bytes": 40,
+      "sha256": "c20f4cdf9ff8d90d6bdcfdb559dbb705ed7e5ee595faeab588b1c5cc21d5ef54"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-CLI-source.log",
+      "bytes": 528,
+      "sha256": "1a521f5e90f5c6a9b45118c2152faed006f799260e14c4d092b880415abe650e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-NATIVE-CHECKS.json",
+      "bytes": 773,
+      "sha256": "708ae8a6566ea8659bff0ac7e23737b39838fda9c61ed0547a707e3ffef6888c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-PROGRAMMER-COMPATIBILITY.json",
+      "bytes": 5526,
+      "sha256": "34b0e3c86984e28d32035555653c9a2cebe987260ee3a05ccfe25873735247e5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-PROGRAMMER-COMPATIBILITY.log",
+      "bytes": 124,
+      "sha256": "8d811ec40b3420e0fc404d60a368f04ff271170753ee68b1e611e3aff86aa17b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-PUBLICATION-MODEL-COVERAGE.json",
+      "bytes": 498,
+      "sha256": "b0a691c7df6e8bb55567b7fbd72c2932e4f2ea922eb34e61b457750e0993ccf0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-ROUTING-STATUS.json",
+      "bytes": 573,
+      "sha256": "4e986848ba87775865438ee18b6b8958aa028593d6d21c23ddef0a43eb6585d9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-SCHEMATIC-NOTES.log",
+      "bytes": 67,
+      "sha256": "7d300728dffae769d140e5fe502286a4b03434dfbeadb81d18c9a112b668808a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-SCHEMATIC-RENDER.log",
+      "bytes": 699,
+      "sha256": "9e813a1ff68f01416b770480d73462cf85d054fa771b7a32978aacddc6e5eba7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-SCHEMATIC-STYLE.json",
+      "bytes": 3124,
+      "sha256": "0b8c4dde51d7f0f685454038862503051677a5481b9f4144038a648c0c3bb3f9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-SCHEMATIC-STYLE.log",
+      "bytes": 545,
+      "sha256": "7e4f622b173d2cd517de72278e6d2cf17c20ecf474c61c06380165af7abad0a1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-SCHEMATIC-VISUAL-REVIEW.json",
+      "bytes": 1944,
+      "sha256": "33554fa6785a47d8d1e7a808b98177a8c33420517750b6a4b8ad1fc714079240"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-41-STANDARD-USB.log",
+      "bytes": 81,
+      "sha256": "3c06824b5b44f93995c75b01529867e8a46617814a7953e9e4dcbf447680c44f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-CADQUERY-INPUT-BRIDGE.json",
+      "bytes": 29949,
+      "sha256": "b8aec813f52dccc8ff766120c6f5645a5a5725b27b11946f482b478dcd7c403e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-CANONICAL-BUILD-CLI.log",
+      "bytes": 22282,
+      "sha256": "c462f340c682eaa3f39c702b6aa7d95a7ad1db11cd07c76fcacea50aa9d217d7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-CANONICAL-BUILD.log",
+      "bytes": 67,
+      "sha256": "c2005b47b5a2372190931b32d849c2724044e9ce6a75f03d161a137bc11bc4f1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-CLI-CHECKS.json",
+      "bytes": 1113,
+      "sha256": "81f7f4e83f0ebd7cb1bb757118a568aa708eeaaffddf7829f49b6f9c8a082488"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-CLOUD-SMOKE.log",
+      "bytes": 434,
+      "sha256": "c25e5fd7a9850460ca34fff16f2cd5f610d9ef26fd8710f520547db020096b01"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-COPPER-GEOMETRY.json",
+      "bytes": 2282,
+      "sha256": "4a6952f2a89417fe261932bdd77f36fcdaf931ef2323733725d79cfd24789440"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-COPPER.log",
+      "bytes": 2282,
+      "sha256": "4a6952f2a89417fe261932bdd77f36fcdaf931ef2323733725d79cfd24789440"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-DRAFT-BUILD.log",
+      "bytes": 5683,
+      "sha256": "109c3af7c70d46476f5ad5b66fd9f45ddcc7603606900480a21b507f535733e6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-DRAFT-PINS.log",
+      "bytes": 207,
+      "sha256": "b7c19f1395ac4d99d57e1783897bfb1a65aef3a7801516eaeb153a53383e47b3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-FILLED-COPPER.json",
+      "bytes": 53761,
+      "sha256": "140b6eeffe131f0127626577dde8d890127233511f44d765f781043820a9d781"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-FILLED.log",
+      "bytes": 780,
+      "sha256": "69a00079382a9d80444ca7fe5647f0ce59edde69e55bde3a86cfeaa348b52ba8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-FORMAT.log",
+      "bytes": 321,
+      "sha256": "5145483717b1b5e80909497011566827ccfd5fd7cc90ad3c0ee3ce22d39ccee1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-NETLIST-CLI.log",
+      "bytes": 36377,
+      "sha256": "fbeddc63b6ae93a76929e1e063ab617b0c98d4fda4f721209b932211f65c482f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-NOTES.log",
+      "bytes": 67,
+      "sha256": "7d300728dffae769d140e5fe502286a4b03434dfbeadb81d18c9a112b668808a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-PIN-SPECIFICATION-CLI.log",
+      "bytes": 2866,
+      "sha256": "7a9f8fbde620e2afef9274b643a376179041b665953f9ffdb6acd8ae5806f870"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-PIN-SPECIFICATION-INVOCATION-ERROR.log",
+      "bytes": 70,
+      "sha256": "f41294f3da280eb921daccd89c68dd63ff48dc9350aca72dfddff90cb4501177"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-PLACEMENT-CLI.log",
+      "bytes": 5321,
+      "sha256": "674490e8521c3672d5be204da716e0b7cc136c2b2f24da3d29f8ca2721b9d8b6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-PROGRAMMER.json",
+      "bytes": 5526,
+      "sha256": "1525ff90b92cff64d03a498b7b5f3f6c51f9692f9604642d8f745973ea103202"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-PROGRAMMER.log",
+      "bytes": 124,
+      "sha256": "8d811ec40b3420e0fc404d60a368f04ff271170753ee68b1e611e3aff86aa17b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-PUBLICATION-CAD-ASSETS.json",
+      "bytes": 498,
+      "sha256": "97937dbbb4d94f94952abc8acfd6de2c08db40a0d8746d0c7d4a918f4b6ae679"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-READINESS.json",
+      "bytes": 1651,
+      "sha256": "9109039151987b78881fdd0c03d9c5e00ebc227baba518b084a4ff02b288d593"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-SCHEMATIC-PLACEMENT-CLI.log",
+      "bytes": 3617,
+      "sha256": "b6186bf17072612d65201c8d8eee396cb991f32f7fbfd29cdef592de6b73e061"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-SCHEMATIC-STYLE.json",
+      "bytes": 3124,
+      "sha256": "47c056684605ed659e28eb337ef42f0ebf1ae2a23344c115ca6f9cb08890b709"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-SCHEMATIC-STYLE.log",
+      "bytes": 545,
+      "sha256": "7e4f622b173d2cd517de72278e6d2cf17c20ecf474c61c06380165af7abad0a1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-SHORTS-CLI.log",
+      "bytes": 40,
+      "sha256": "c20f4cdf9ff8d90d6bdcfdb559dbb705ed7e5ee595faeab588b1c5cc21d5ef54"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-SOURCE-CLI.log",
+      "bytes": 3600,
+      "sha256": "af818c5e38dc9f964db195b0b75e1eb592b51a78d01c056264d1310a2d308617"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-STANDARD-USB.log",
+      "bytes": 81,
+      "sha256": "3c06824b5b44f93995c75b01529867e8a46617814a7953e9e4dcbf447680c44f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-TYPECHECK.log",
+      "bytes": 15,
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-USB-PATHS.json",
+      "bytes": 2055,
+      "sha256": "39c1920b48264d9a99917b5e3b1b4e0f5e163c3bb41a2c80e220fc38852f20cb"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-44-USB.log",
+      "bytes": 1755,
+      "sha256": "85ef26e2a7c3f33730fd9ba16ee94cd0224cf07b8ce03b09f822e7296682fd1a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-CANONICAL-BUILD.log",
+      "bytes": 32466,
+      "sha256": "03bd614b35cd73813be67fee29183666f4c4dd61703d9c36feddb02c8ee99e99"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-CANONICAL-WITH-LAYER-HINTS-BUILD.log",
+      "bytes": 32466,
+      "sha256": "03bd614b35cd73813be67fee29183666f4c4dd61703d9c36feddb02c8ee99e99"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-CONNECTIVITY.json",
+      "bytes": 27828,
+      "sha256": "494cb1631136b1a819dcff82af07f1b3fb7f5c4695aa081a189f04f21bab1836"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-CONNECTIVITY.log",
+      "bytes": 528,
+      "sha256": "beb06865a8432caadacb8b505c89b82ec3d2754b948683eb282becc7b2a05f0b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-COPPER-GEOMETRY.json",
+      "bytes": 2273,
+      "sha256": "e448a21863694e72e33558f83500a08f8d20cec553624cdfc7c1030cca773cd7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-COPPER-GEOMETRY.log",
+      "bytes": 2273,
+      "sha256": "e448a21863694e72e33558f83500a08f8d20cec553624cdfc7c1030cca773cd7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-DRAFT-CONNECTIVITY-CORRECTED.log",
+      "bytes": 207,
+      "sha256": "b7c19f1395ac4d99d57e1783897bfb1a65aef3a7801516eaeb153a53383e47b3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-DRAFT-CONNECTIVITY.log",
+      "bytes": 648,
+      "sha256": "14beb22969a26952381a062e06ac127480db9719a1a9fdd32cbf458f9eacf603"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-LOGIC-DRAFT-BUILD.log",
+      "bytes": 3026,
+      "sha256": "8e33453849d00e3977dcd8d02eca14ccdf98377014b5fe6cec49f29fe5580c51"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-LOGIC-DRAFT-PORT-SELECTORS-BUILD.log",
+      "bytes": 5805,
+      "sha256": "ae2841b3700856adddbbe2b74199be64a4ad8906efbdc1be36d62d6666ba4eb6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-LOGIC-DRAFT.circuit.json",
+      "bytes": 1488992,
+      "sha256": "918100e9f8c33a2099787d5a1bec6fdff881b9e87da84e7eae446558121cd564"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-NATIVE-CHECKS.json",
+      "bytes": 2805,
+      "sha256": "a77425ce73f262246edcdedccc93ddc716c09425f17332efeb149e132faad60c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-NATIVE-netlist.log",
+      "bytes": 33480,
+      "sha256": "79c015eace7a8963fe267a028f35a249705afe0e1f78e86ed7b00db9c5ff5541"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-NATIVE-pin_specification.log",
+      "bytes": 2866,
+      "sha256": "7a9f8fbde620e2afef9274b643a376179041b665953f9ffdb6acd8ae5806f870"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-NATIVE-placement.log",
+      "bytes": 5207,
+      "sha256": "07f9e83a9095334aca4575f1bdac2c3b97f91a21da69fb8547f0de6e2c8f875b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-NATIVE-schematic-placement.log",
+      "bytes": 545,
+      "sha256": "7e4f622b173d2cd517de72278e6d2cf17c20ecf474c61c06380165af7abad0a1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-NATIVE-shorts.log",
+      "bytes": 35,
+      "sha256": "8e3d7b2a26a566cd20d9a5d8e85b5287ed77629ebcae400a4ae9e0863d848dca"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-NATIVE-source.log",
+      "bytes": 528,
+      "sha256": "1a521f5e90f5c6a9b45118c2152faed006f799260e14c4d092b880415abe650e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-SCHEMATIC-NOTES.log",
+      "bytes": 67,
+      "sha256": "7d300728dffae769d140e5fe502286a4b03434dfbeadb81d18c9a112b668808a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-SCHEMATIC-STYLE.json",
+      "bytes": 3124,
+      "sha256": "8215da3bfe9d6926c9ef6494d694a330f0bec154637efa20339f93a2cfb67adf"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-SCHEMATIC-STYLE.log",
+      "bytes": 545,
+      "sha256": "7e4f622b173d2cd517de72278e6d2cf17c20ecf474c61c06380165af7abad0a1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PARTIAL-STANDARD-USB.log",
+      "bytes": 81,
+      "sha256": "3c06824b5b44f93995c75b01529867e8a46617814a7953e9e4dcbf447680c44f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/POWER-CORNER-SCREEN.json",
+      "bytes": 3991,
+      "sha256": "d321f2b8814d549ca4fbdff0185e144e9c1f3e1953e35ad919a93a60d434c7c5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PRE-ROUTING-SOURCE-MANIFEST.json",
+      "bytes": 10093,
+      "sha256": "8f944e3c0f12b86f919bc0c518397de9ab97bcddd187add3d57d498736890a61"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PROGRAMMER-COMPATIBILITY.json",
+      "bytes": 5526,
+      "sha256": "1d16d8536bbcf6076bcb35b5bc9e0b9780e270956205986f6eda176c631346a2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/PROTOTYPE-PARTS-BUDGET.json",
+      "bytes": 54968,
+      "sha256": "0fac00f13a4cb3d0fd97242619296dcae932044a19d857965b719664746b97c1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/REMAINING-NET-QUEUE.json",
+      "bytes": 65674,
+      "sha256": "38c5a0c3e1866ccedd951bf9d2eb5facec4b1459ac6df0a13c1b7482090bb38b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/REVIEW-BOM.csv",
+      "bytes": 8628,
+      "sha256": "a064785508d99562fc42847bdcaff4cb8c8b44f5d805c58f0debc0c1f4154c37"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/REVIEW-BOM.json",
+      "bytes": 41648,
+      "sha256": "80ec0b045bf3337e0d1153b44baec3b2fff7fec96d2569a6bcfcb8d75eaac271"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/SCHEMATIC-STYLE-LATEST.json",
+      "bytes": 3124,
+      "sha256": "e11f3a3174b14c4033b8d9da99d7da93561aa206e41c314fa078a5f8f1f32e90"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/SCHEMATIC-STYLE.json",
+      "bytes": 3124,
+      "sha256": "6b3f59ced2d658d163c29591d0e399d1b37cf22d21c11a40d6df332f9fde08da"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/STANDARD-USB-C.json",
+      "bytes": 304,
+      "sha256": "91288ffdaefba2d125c4f183172318f06b8cb77dee058c231a2da8e573ec8b84"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/STANDARD-USB.json",
+      "bytes": 304,
+      "sha256": "2836ae8ba9a931f508cdf0040c41efcd831ff9e07e57037baae9727c5bf4dbae"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/TYPECHECK-GROUND35.log",
+      "bytes": 676,
+      "sha256": "70f8d0c8e64419f93baff39a80a499f03616a6e041e8c849f1148a934d973b0a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/TYPECHECK-GROUND36.log",
+      "bytes": 15,
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/TYPECHECK-PARTIAL-41.log",
+      "bytes": 15,
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/TYPECHECK-PARTIAL-44.log",
+      "bytes": 15,
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/TYPECHECK-ROUTING-PROGRESS.log",
+      "bytes": 15,
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/TYPECHECK-USB020.log",
+      "bytes": 15,
+      "sha256": "8366207267355d3e3d5bf3bf6e8c94c5f93f6078c34f08973fa2b38cdda6cc92"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/UNROUTED-LATEST.json",
+      "bytes": 211511,
+      "sha256": "ab90ba96d7fbb73f68907745ad1892e74c776e3c95f8eed9d5f7be9e777b0a7a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/UNROUTED-REVIEW.json",
+      "bytes": 211511,
+      "sha256": "284bd076fc068231714861d101daf2a5277a7b59c481e8c2203e8b533f550ac5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/USB-PLACEMENT-CHECK.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/USB-PLACEMENT-CLEAR-BYPASS-CHECK.log",
+      "bytes": 5322,
+      "sha256": "b772e1af9197828314f46b2d443673b763c656a3405fc1f675bbb422dfce4260"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/USB-PLACEMENT-FRONT-CARRIER-AUDIT.json",
+      "bytes": 55587,
+      "sha256": "69476e15a8f48af418ef50445eba8f71b0d4eb4cc77124aad3e5940f50d5c8f1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/USB-PLACEMENT-FRONT-CARRIER.log",
+      "bytes": 129,
+      "sha256": "0b001d3fa3fe17d1f3ff43bf292f44cdd932328b17fa1668c6f87807c0fde780"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/USB-PLACEMENT-MOUNTED-BUILD.log",
+      "bytes": 2947,
+      "sha256": "e04790d02c71d124b85c8d547dba727e80fe6eb1a95790577fbf2367439bd83d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/USB-PLACEMENT-PACKET-CHECK.log",
+      "bytes": 8612,
+      "sha256": "72a68889cae5648b20f444c08fc860eadbcef718f8490393cc842c6f74b239d6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/USB-PLACEMENT-REVISED-CHECK.log",
+      "bytes": 6160,
+      "sha256": "237a8b41dfcb5625342aecd26f104342839851ba25a7caaf5393c226c4fb03da"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/USB020-FRONT-CARRIER-AUDIT.json",
+      "bytes": 55587,
+      "sha256": "69476e15a8f48af418ef50445eba8f71b0d4eb4cc77124aad3e5940f50d5c8f1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/USB020-FRONT-CARRIER-AUDIT.log",
+      "bytes": 129,
+      "sha256": "0b001d3fa3fe17d1f3ff43bf292f44cdd932328b17fa1668c6f87807c0fde780"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/USB020-MOUNTED-BUILD.log",
+      "bytes": 3090,
+      "sha256": "1488cba5a942753948e9b7e98d90fd36310e4644ae8f8c9c7be505ca633b62c4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/connector-access/J_IO.png",
+      "bytes": 269341,
+      "sha256": "fc4d5a4a0addbfc1883b641e735e57181db32ec7a294a5aa6a575b2ac19d86ed"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/connector-access/J_MOTOR.png",
+      "bytes": 257491,
+      "sha256": "51a64ceb415f4e6bc94d7744c8ec5f0df5a4d8edd69308b9265ae3f1d43ca703"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/connector-access/J_SWD.png",
+      "bytes": 237063,
+      "sha256": "6a69b09d210dab7537ff8d2c813206b9701904f5bb176391a2251f99d4b0af3b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/connector-access/J_USB.png",
+      "bytes": 277809,
+      "sha256": "add3491678c610fcf23c478e7d9dfb371ae34e8022d81c3b1bc981cb9618a802"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/connector-access/MESH-CORRESPONDENCE.json",
+      "bytes": 9499,
+      "sha256": "076a69e4fa610d7e542cd0a5c6064cda8f54510646a60b6eabffd6ac3744e55d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/connector-access/connector-access-overview.png",
+      "bytes": 329095,
+      "sha256": "6f01783d306a4b3ded2af030f9032c8794e6b06c6681ef3732e10efaa4ebb6a3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/draft-build.log",
+      "bytes": 2472,
+      "sha256": "eed4b8ae4f16625941e488e904ce693a2b11f7847d637bafe7d25255387517e2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/draft-check.log",
+      "bytes": 207,
+      "sha256": "b7c19f1395ac4d99d57e1783897bfb1a65aef3a7801516eaeb153a53383e47b3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/fabricator/JLCPCB-capabilities-2026-10-07.html",
+      "bytes": 136449,
+      "sha256": "78d54d90415a21bccf8aa75cd579b3b0542047492eab5a51c623fc319b08cdd5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/fabricator/JLCPCB-capabilities-2026-10-07.txt",
+      "bytes": 18257,
+      "sha256": "64d9d29d770689b66de8f632e45d6761398396d65084f738618b9840f75926e3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/fabricator/OFFICIAL-CAPABILITY-SOURCE.json",
+      "bytes": 975,
+      "sha256": "6fc8042aa8cf564894905a65f54b5fbe9cefa119c754162846f8386417b977ae"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/ABM8-FAMILY-DATASHEET-SOURCES.json",
+      "bytes": 912,
+      "sha256": "b6cc4480e9d65a20b902deeb923e7e4a0ef2990c06230215f14bd7740fbc928d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/C1985300.pdf",
+      "bytes": 1535935,
+      "sha256": "564ac331d8bf38b4ae1222444b0d9cfea3a6ba29148a8be906b2e0ffe40471d8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/C2040.pdf",
+      "bytes": 4920747,
+      "sha256": "8ca7cede0476b9a7dcb4e5f7669e2dc249c55ea6f9782a63cdd0fae228580724"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/C20625731.pdf",
+      "bytes": 691102,
+      "sha256": "f4b5787cbc51e7f6366333491ec09884ad406dd348fe540040f0fc043ab5457f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/C2128-DATASHEET-SOURCE.json",
+      "bytes": 320,
+      "sha256": "d1151bba30aa2356da19983baca3a3051a5eb2b9f9dff2aa2dc0f8577a1b7b35"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/C2128.pdf",
+      "bytes": 774532,
+      "sha256": "59e951bd3155eb4a94e958d10edc3b7d17325f38cf06784cac07fbcc9fcabf2e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/C22624-DATASHEET-SOURCE.json",
+      "bytes": 301,
+      "sha256": "3a1123d3f088b4d473b0291c9bd5bab6ba4b14f515e4cda90ecd934cb9e763aa"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/C22624.pdf",
+      "bytes": 670401,
+      "sha256": "830776b9d47e7e2a7bbe5fea9bc5deb8dbfb1e5159dee0c387795b51bebe90e9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/C25100.pdf",
+      "bytes": 467557,
+      "sha256": "11cd644d5d8a34a6d12775afb80bf58d8fc11f0c3b700dbd0f7a59942ceaa5ef"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/C2986331.pdf",
+      "bytes": 2281415,
+      "sha256": "cde85a649968cd40df2421bbae92f25ab0c4033b88b3d05447822c79786eef6e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/C596894.pdf",
+      "bytes": 1535935,
+      "sha256": "564ac331d8bf38b4ae1222444b0d9cfea3a6ba29148a8be906b2e0ffe40471d8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/C94598.pdf",
+      "bytes": 492825,
+      "sha256": "db73c860afd42abdf9a2e69c4a34ac915d68e07108a2188d6ee0a9c02f723be9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/C96140.pdf",
+      "bytes": 1443440,
+      "sha256": "ebc5d10ac8a48bb105b5d3967a7e1f868b1a27e15c0db9901bcba589cfd59403"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/CANDIDATE-DATASHEET-SOURCES.json",
+      "bytes": 1967,
+      "sha256": "2511cd74c3188fc15b4f8e75b944641af0d03fa73f9ed2ec79141dcb01508079"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/manufacturer-documents/DATASHEET-SOURCES.json",
+      "bytes": 1260,
+      "sha256": "0bb1096eb5814020e13e006b90ae94cc3c321f0e2726558c54af2ad0bd4c7115"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/BUILD-STATUS.json",
+      "bytes": 626,
+      "sha256": "c224b6841720700813258ed4e46b612281d2269adc16823a705e4b2402171057"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/BUILD.log",
+      "bytes": 263,
+      "sha256": "370c9df1966ee9a3149a647e95ec549a3628cf0da751dfcc8b29cca40cfe0191"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/GEOMETRY.json",
+      "bytes": 4792,
+      "sha256": "c441c22f691212d680670205277fac4c2cec5e5ad9c1ba0d2e61663004dc0895"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/circuit.json",
+      "bytes": 3006099,
+      "sha256": "39235d0103b685a756fb5b538007e17c192f91685b3ac9bd84fe249914829a05"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/good-candidates.json",
+      "bytes": 7075,
+      "sha256": "1a611bd0357fb3e146bfdd19b1b5e7fab5564e77513a47ab6c61781b943085e6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/phase-0-input.json",
+      "bytes": 2438405,
+      "sha256": "f5fd49cca11bae96581fb5778e2a57e9184f0cddf44b42a3cfb67b7d4ef46fa5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/phase-0-output.json",
+      "bytes": 2447769,
+      "sha256": "223c5d67d6a11ba885dbcf2bd2e95ddc83637e1fa550ee8252271f3b1f857db4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/phase-0-stage-0-input.json",
+      "bytes": 2438405,
+      "sha256": "f5fd49cca11bae96581fb5778e2a57e9184f0cddf44b42a3cfb67b7d4ef46fa5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/phase-0-stage-0-output.json",
+      "bytes": 2447769,
+      "sha256": "223c5d67d6a11ba885dbcf2bd2e95ddc83637e1fa550ee8252271f3b1f857db4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/phase-1-input.json",
+      "bytes": 2452131,
+      "sha256": "a2bfcc1b8cc64f3a586b5077a51098ed2790fac266b00a051dee9c4c308b98f2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/phase-1-output.json",
+      "bytes": 2478446,
+      "sha256": "7460ddb1ac2826d08d1babccf2fb620c3dd6fd02a9b8e37709a28ebd98858ca2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/phase-1-progress.json",
+      "bytes": 751,
+      "sha256": "d211a98a857a02fec5d2d289450237e7d792e4d93a97041aef2aaf5df8c7c7a8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/phase-1-stage-0-input.json",
+      "bytes": 2452131,
+      "sha256": "a2bfcc1b8cc64f3a586b5077a51098ed2790fac266b00a051dee9c4c308b98f2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/phase-1-stage-0-output.json",
+      "bytes": 2478446,
+      "sha256": "7460ddb1ac2826d08d1babccf2fb620c3dd6fd02a9b8e37709a28ebd98858ca2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock001/phase-1-stage-0-progress.json",
+      "bytes": 751,
+      "sha256": "d211a98a857a02fec5d2d289450237e7d792e4d93a97041aef2aaf5df8c7c7a8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock002-clean-subset/BUILD-STATUS.json",
+      "bytes": 636,
+      "sha256": "04794c163ab5c385eddf0c6f5ac02f2ec5933a6bdd8cb4594eab237bdcd854c8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock002-clean-subset/BUILD.log",
+      "bytes": 100,
+      "sha256": "9920609d1d4f4dd34ae023f1319753b9d6fa43ccba454235eb2ac82291880235"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock002-clean-subset/CONNECTIVITY.json",
+      "bytes": 4708,
+      "sha256": "0254ae952dde1189f8b449c5866c5092b38745f158cc55d0ac7498799b243b5e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock002-clean-subset/GEOMETRY.json",
+      "bytes": 1690,
+      "sha256": "49d0826f707cc3fdfd945c4959a815857f96f62aa5189e1c78cd66c8db35b6c7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock002-clean-subset/circuit.json",
+      "bytes": 2987821,
+      "sha256": "d266f78970fd636e3957f35012fe61229d1ea293e5f9ac45165cedd3b6c82dc6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock002-clean-subset/phase-0-input.json",
+      "bytes": 2440864,
+      "sha256": "50af816ff68f492400ba08002915c649fb4efb147d76549b3b1168e26f05b8aa"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock002-clean-subset/phase-0-output.json",
+      "bytes": 2454336,
+      "sha256": "5d403052599492eb131e0bee15f88343f09c9597165be220151f1d5239ea6046"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock002-clean-subset/phase-0-stage-0-input.json",
+      "bytes": 2440864,
+      "sha256": "50af816ff68f492400ba08002915c649fb4efb147d76549b3b1168e26f05b8aa"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock002-clean-subset/phase-0-stage-0-output.json",
+      "bytes": 2454336,
+      "sha256": "5d403052599492eb131e0bee15f88343f09c9597165be220151f1d5239ea6046"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/BUILD-STATUS.json",
+      "bytes": 642,
+      "sha256": "3242f218065d4448553500f6aceac387ae161f10567963fab10b005b67c8e16a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/BUILD.log",
+      "bytes": 263,
+      "sha256": "24352b5ec2bebd5ac151389f5d0d5752745e530eb420e241589ed9a659408a61"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/GEOMETRY.json",
+      "bytes": 4571,
+      "sha256": "2478fd18835d13d05bf27033c4b38e23b10cd7f6f6729ea1bccb879b3ec44243"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/all-candidates.json",
+      "bytes": 16041,
+      "sha256": "b3fdad90fc9812b34ddce81a60218c7a035454b98e97db800b36c05e8a59e2be"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/circuit.json",
+      "bytes": 3004846,
+      "sha256": "b925fa0e95b45c9e2e4ec06ecbeec8b54bd70870ec062fb1d14877eb2fc777f7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/phase-0-input.json",
+      "bytes": 2440864,
+      "sha256": "5d223bd7679131cf239841b784d29a0f6708d6456b48bbc32805431c6cb0b7fd"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/phase-0-output.json",
+      "bytes": 2454336,
+      "sha256": "fba5e305f9e54d8abd1fcaf52404943309ef8e5867eec43835595217c4d1957a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/phase-0-stage-0-input.json",
+      "bytes": 2440864,
+      "sha256": "5d223bd7679131cf239841b784d29a0f6708d6456b48bbc32805431c6cb0b7fd"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/phase-0-stage-0-output.json",
+      "bytes": 2454336,
+      "sha256": "fba5e305f9e54d8abd1fcaf52404943309ef8e5867eec43835595217c4d1957a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/phase-1-input.json",
+      "bytes": 2517851,
+      "sha256": "a443ce6bdf8308c5c7b2f03c2a87beb9a775fe5032d9b2504fa7a52771daabfa"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/phase-1-output.json",
+      "bytes": 2551013,
+      "sha256": "0fae6cf4e8ceffa0c4c05f92767f980954a9cfc089170d901e1ffe71f33f5269"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/phase-1-progress.json",
+      "bytes": 762,
+      "sha256": "bb6fbf0e961685337cd89df7aa98352466f41edba0bd8796ffb5707546b91429"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/phase-1-stage-0-input.json",
+      "bytes": 2517851,
+      "sha256": "a443ce6bdf8308c5c7b2f03c2a87beb9a775fe5032d9b2504fa7a52771daabfa"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/phase-1-stage-0-output.json",
+      "bytes": 2551013,
+      "sha256": "0fae6cf4e8ceffa0c4c05f92767f980954a9cfc089170d901e1ffe71f33f5269"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/phase-1-stage-0-progress.json",
+      "bytes": 762,
+      "sha256": "bb6fbf0e961685337cd89df7aa98352466f41edba0bd8796ffb5707546b91429"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock003-fixed-obstacles/xout-manual-candidate.json",
+      "bytes": 3210,
+      "sha256": "17e150a20c7e18016cb94e60bb4c90116f984744ab2ea6ce3086cdcd709fd058"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock004-mesh3/BUILD-STATUS.json",
+      "bytes": 699,
+      "sha256": "87e63126f008616b32f36bed810d3942f658724ba3a58384d1de4de1a38c0f16"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock004-mesh3/BUILD.log",
+      "bytes": 619,
+      "sha256": "1c5a01afd34ed53ce0f8dbb20517322be09871b16e571f99d90b00468c5cf208"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock004-mesh3/INPUT-PROVENANCE.json",
+      "bytes": 892,
+      "sha256": "4e3877d8a49f3cd8218c94e6860bc64dd4e7da88fd2296db66e8af692e5a6c75"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock004-mesh3/OUTPUT-SIMPLE-ROUTE.json",
+      "bytes": 2409996,
+      "sha256": "f9d115e3c7ec56a4d4b4ce81ae5a3eabbeddebf6b6e9a08ee69b40add7dbfa3e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock004-mesh3/PROGRESS.json",
+      "bytes": 173,
+      "sha256": "a6c7a0a399abfc9965c21d7504c859461450184b2469b262872d3fcc2afaabd0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock004-mesh3/candidates.json",
+      "bytes": 15924,
+      "sha256": "5230e9eb8449e052ce7b93d2c097d53fb572a3f7d73344f6077380480bffda2b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock004-mesh3/clean-candidates.json",
+      "bytes": 9320,
+      "sha256": "30374c0a6b938944ae78ca0bf60c264be6b2862953e7bd0209fbdf5b106db8c7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock005-native-mesh3/BUILD-STATUS.json",
+      "bytes": 638,
+      "sha256": "cb6769aa8a9a53e66353830696b7799f554b10cf5497a1bcf4417179a9390ede"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock005-native-mesh3/BUILD.log",
+      "bytes": 101,
+      "sha256": "ea2eabf050a5a7bfe3fcc9f4f7065da18a23e9e5514aa56ce002151662e4ddec"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock005-native-mesh3/GEOMETRY.json",
+      "bytes": 4231,
+      "sha256": "23ff019699f6a9ae7ebcb2e8fa3c7e2710fbfb91357aaac168d266cb0aa6fef5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock005-native-mesh3/circuit.json",
+      "bytes": 3007333,
+      "sha256": "1eb82392adf2d10d2a16653798a960ce82ebb984c753177594363c7ab04aefb5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock005-native-mesh3/phase-0-input.json",
+      "bytes": 2443678,
+      "sha256": "1849270e5d063945a984c86b16019cfcde161c32dc492d86acdc94a3a80099e0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock005-native-mesh3/phase-0-output.json",
+      "bytes": 2477982,
+      "sha256": "e5fecc9d9a1791e65ea61cafa9fe4e29065fd52e9b23943cea43084c6b42ef47"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock005-native-mesh3/phase-0-stage-0-input.json",
+      "bytes": 2443678,
+      "sha256": "1849270e5d063945a984c86b16019cfcde161c32dc492d86acdc94a3a80099e0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock005-native-mesh3/phase-0-stage-0-output.json",
+      "bytes": 2477982,
+      "sha256": "e5fecc9d9a1791e65ea61cafa9fe4e29065fd52e9b23943cea43084c6b42ef47"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock006-clean-subset/BUILD-STATUS.json",
+      "bytes": 635,
+      "sha256": "71c9dcae492a9e30a489df8ae16472a74a0f46c3eb5d5efe58df1653f5719bed"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock006-clean-subset/BUILD.log",
+      "bytes": 101,
+      "sha256": "3c3f6b140d6623e2052f16f864ca2dac7a16349bf4f472200dd934d27184dcb0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock006-clean-subset/CONNECTIVITY.json",
+      "bytes": 9236,
+      "sha256": "6c7e5a212b5267e306b4fcb4229bb2aa412b7f387093eacb5b7bdbfc02eb91fc"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock006-clean-subset/GEOMETRY.json",
+      "bytes": 2302,
+      "sha256": "55539b2b42ecd643d964a48090348a1923ce05424cc173c6b7a0020118500aa4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock006-clean-subset/circuit.json",
+      "bytes": 2997594,
+      "sha256": "17ea7f4287a1278971d2480316b61979a2a20a72cbf8eb8c2a35c98e8ce6a643"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock006-clean-subset/phase-0-input.json",
+      "bytes": 2442634,
+      "sha256": "33e2ece4e1ee7ceca5029de42772667b5b8fe6f7b3fdeb4cda767d01f8bf0005"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock006-clean-subset/phase-0-output.json",
+      "bytes": 2467666,
+      "sha256": "3d93421fbb7fb92f29f69f35328ac40958a5aac841aa29cf5243a0365d5c5c21"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock006-clean-subset/phase-0-stage-0-input.json",
+      "bytes": 2442634,
+      "sha256": "33e2ece4e1ee7ceca5029de42772667b5b8fe6f7b3fdeb4cda767d01f8bf0005"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock006-clean-subset/phase-0-stage-0-output.json",
+      "bytes": 2467666,
+      "sha256": "3d93421fbb7fb92f29f69f35328ac40958a5aac841aa29cf5243a0365d5c5c21"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock007-manual-escape/BUILD-STATUS.json",
+      "bytes": 637,
+      "sha256": "f47aeb00054d5706b635750e51758c85634371389641f8cc1b85a2f9bb1830da"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock007-manual-escape/BUILD.log",
+      "bytes": 101,
+      "sha256": "85249ebcbc81472712b60bd851a75be6f50b033b61cad1671e2cd6ab7672e03a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock007-manual-escape/CONNECTIVITY.json",
+      "bytes": 11248,
+      "sha256": "5dd1896fb1f703714c39f2b312b832c15089aa9eafbc79d435e68683fdcba679"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock007-manual-escape/GEOMETRY.json",
+      "bytes": 2306,
+      "sha256": "9b83e3da0422d7a62201ca0561ad4c7d3b1a27dd2e43fe3297a9ba1a2566925b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock007-manual-escape/circuit.json",
+      "bytes": 3001223,
+      "sha256": "62a76c129c14ba7d67e28fd0baf6408de3589ecdba19382c80907af5f15963e1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock007-manual-escape/phase-0-input.json",
+      "bytes": 2443149,
+      "sha256": "6d633f00e4ffed03a16355e95d69325325885d65490c343925f7096eff8ac1be"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock007-manual-escape/phase-0-output.json",
+      "bytes": 2471971,
+      "sha256": "9a90fd4e303877d2d556acc9733c0c3281955da58b37128be467d896dfa98c79"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock007-manual-escape/phase-0-stage-0-input.json",
+      "bytes": 2443149,
+      "sha256": "6d633f00e4ffed03a16355e95d69325325885d65490c343925f7096eff8ac1be"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/clock007-manual-escape/phase-0-stage-0-output.json",
+      "bytes": 2471971,
+      "sha256": "9a90fd4e303877d2d556acc9733c0c3281955da58b37128be467d896dfa98c79"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/BUILD-STATUS.json",
+      "bytes": 632,
+      "sha256": "ce5b3930226efc1a2923d0c3addcc5b9c4c0b98e46e932684278e449a6366023"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/BUILD.log",
+      "bytes": 423,
+      "sha256": "1ebc30163af6c841a292144999fcd7dbd0af50504e78e3c1ca1250b60ccaa57d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/GEOMETRY.json",
+      "bytes": 6153,
+      "sha256": "4fe6db1cf31e9f79cbe03cd01137bf1a78582b14d42ee891d8f94945de5e58bc"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/circuit.json",
+      "bytes": 3051365,
+      "sha256": "39214585f8df41267bf536db46d7c2837aa12973e803c2b9dac8762fc81d6e4b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/clean-candidates.json",
+      "bytes": 31076,
+      "sha256": "44574c53bc34a412feb9380069745e1e918c751ad266db3d0e3020367a20bb32"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/phase-0-input.json",
+      "bytes": 2442634,
+      "sha256": "8e79d2e7c91f91287379f40fb9b7d41e7aa6ae312b61c15515ab81b1beb28632"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/phase-0-output.json",
+      "bytes": 2467666,
+      "sha256": "2ae7ed6ad22124de9a2dd1e8cf6cb62f5e4a83701377ed586fcdccdf7a4393d0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/phase-0-stage-0-input.json",
+      "bytes": 2442634,
+      "sha256": "8e79d2e7c91f91287379f40fb9b7d41e7aa6ae312b61c15515ab81b1beb28632"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/phase-0-stage-0-output.json",
+      "bytes": 2467666,
+      "sha256": "2ae7ed6ad22124de9a2dd1e8cf6cb62f5e4a83701377ed586fcdccdf7a4393d0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/phase-1-input.json",
+      "bytes": 2628201,
+      "sha256": "9a3d07b578595284bbb77dd682855318f4bf68b561a0eb630692457d548abe6e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/phase-1-output.json",
+      "bytes": 2693413,
+      "sha256": "7f1d414666cc348decd4f52a2de16bd0c0a28b31f7f93aa57b64700998dbaae2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/phase-1-progress.json",
+      "bytes": 780,
+      "sha256": "97c69e51fcc6aa38c3437ba6f0c7aae5775228e0dd61a5425945bf6ed2ffceab"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/phase-1-stage-0-input.json",
+      "bytes": 2628201,
+      "sha256": "9a3d07b578595284bbb77dd682855318f4bf68b561a0eb630692457d548abe6e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/phase-1-stage-0-output.json",
+      "bytes": 2693413,
+      "sha256": "7f1d414666cc348decd4f52a2de16bd0c0a28b31f7f93aa57b64700998dbaae2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls001/phase-1-stage-0-progress.json",
+      "bytes": 780,
+      "sha256": "97c69e51fcc6aa38c3437ba6f0c7aae5775228e0dd61a5425945bf6ed2ffceab"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls002-clean-subset/BUILD-STATUS.json",
+      "bytes": 643,
+      "sha256": "c9d3fb396c69dfbd14adea16903e0c3ab084f169b771d9728545cf22b95d2653"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls002-clean-subset/BUILD.log",
+      "bytes": 101,
+      "sha256": "d416edcdb4d7eed8bed358fcf01251d4f57dfe2b06f25fde4a2c0217ad9b1fdf"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls002-clean-subset/CONNECTIVITY.json",
+      "bytes": 21490,
+      "sha256": "9a46ae1f5b644280a193695e75613b937d13614ae216ae26123c8de717d0f0e4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls002-clean-subset/GEOMETRY.json",
+      "bytes": 2317,
+      "sha256": "146a147fa4c60e064603992096786ecd6db3cb49c83f425991bfa2ba41ec1cfd"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls002-clean-subset/circuit.json",
+      "bytes": 3024617,
+      "sha256": "f4168b657e6c3574d66c539338139f25765ecf1cbed70a090a09b85220e7b641"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls002-clean-subset/combined-candidates.json",
+      "bytes": 33505,
+      "sha256": "9b31ceb70da61e5d50fcdb08761a5839a4531d3d86a34225313ce91dfedd3576"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls002-clean-subset/phase-0-input.json",
+      "bytes": 2451274,
+      "sha256": "2c91d43f00a68a7fe28bc4d4de8c796155c6d5e746d2d114f8962088e1cb6e42"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls002-clean-subset/phase-0-output.json",
+      "bytes": 2515581,
+      "sha256": "b10e8e3b447dd74dfc950b34484014a778c2f563eddaff0dab8b2a622b8f4ca0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls002-clean-subset/phase-0-stage-0-input.json",
+      "bytes": 2451274,
+      "sha256": "2c91d43f00a68a7fe28bc4d4de8c796155c6d5e746d2d114f8962088e1cb6e42"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls002-clean-subset/phase-0-stage-0-output.json",
+      "bytes": 2515581,
+      "sha256": "b10e8e3b447dd74dfc950b34484014a778c2f563eddaff0dab8b2a622b8f4ca0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/BUILD-STATUS.json",
+      "bytes": 641,
+      "sha256": "5c38fcfa5723f3741730e09d002d892922756d7c82a2ffe58b13ffc4b6669aed"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/BUILD.log",
+      "bytes": 101,
+      "sha256": "97adc57798cc9e287da44e3d05d7ec4483aab77bcd95fefee0a504f3ac9c8cb4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/CONNECTIVITY.json",
+      "bytes": 23497,
+      "sha256": "cacda05fd6dfe52798f9a7a6b2c9def6b89eeaf95af330d2aa047585ad2d5b45"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/GEOMETRY.json",
+      "bytes": 2318,
+      "sha256": "d41c655d1bd0b886a0de7f7c9e0c01da4b9e7b6791c8ca52e2d4dbc0a13c8c10"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/bottom.png",
+      "bytes": 112162,
+      "sha256": "da219500065ce9fa8e50d63fc0afd588524ef9a9c7d6c49539b5f9a6043f9e44"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/bottom.svg",
+      "bytes": 349243,
+      "sha256": "b2f3a97c9e280354f3c84e474cd05e22bc7b63797ecf4842cb9e4f3fbc6c16ca"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/circuit.json",
+      "bytes": 3028248,
+      "sha256": "3f1f92ea9867733f6474b30f90084162dddfb5205f486f3597854c669ffb6d93"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/inner1.png",
+      "bytes": 54133,
+      "sha256": "0ea7a2dadaf1556a1d2a0652f5eeb5a806a627bf494c9d14198a7146ea0f5094"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/inner1.svg",
+      "bytes": 60265,
+      "sha256": "a05b52571914f6b47a00c6843489ae7b29ecd5f8443b7648366af53c0f17a0d5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/inner2.png",
+      "bytes": 54369,
+      "sha256": "4c212445f77e9ec26654d704a2c8ffc9d024c89f804c34e543330a919bc739fd"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/inner2.svg",
+      "bytes": 60262,
+      "sha256": "7eafb237636032f6128e385878b8026a64bad4fa164ebf413fd8af843262f3d1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/phase-0-input.json",
+      "bytes": 2451789,
+      "sha256": "7d92452f998a49abada78dc077eb0b02ebcbc697c3ef477ff12e4d76f0701a18"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/phase-0-output.json",
+      "bytes": 2519886,
+      "sha256": "a425604758e2b907cbc2ad2845e78a18a24f790713674ead823d4a2ca3c71031"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/phase-0-stage-0-input.json",
+      "bytes": 2451789,
+      "sha256": "7d92452f998a49abada78dc077eb0b02ebcbc697c3ef477ff12e4d76f0701a18"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/phase-0-stage-0-output.json",
+      "bytes": 2519886,
+      "sha256": "a425604758e2b907cbc2ad2845e78a18a24f790713674ead823d4a2ca3c71031"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/top.png",
+      "bytes": 114784,
+      "sha256": "85fa1fb120cb54a79cbf1aa7cc8289a36516a97a5a3b29c0bebc5786cc5a647b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls003-combined/top.svg",
+      "bytes": 312584,
+      "sha256": "a4ff42e9053510b19c30a7370afe128d469620d09f42f9b4389e19f24f4efb6e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls039/BUILD-STATUS.json",
+      "bytes": 633,
+      "sha256": "6fac21de2db9b616090aac3841340b5de1384dd6a30a6df5553ce2b49a90162a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls039/BUILD.log",
+      "bytes": 1113,
+      "sha256": "6082ad4449b40004e6d0a9ee578609072fb9c1f9d399f54b570a17f66ab610a4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls039/circuit.json",
+      "bytes": 3228486,
+      "sha256": "ac03861d725ffea011257b5f2b6bb53a680aa2191232aad67b7555f064659cc8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls039/phase-0-input.json",
+      "bytes": 2642859,
+      "sha256": "42ebaeafe41653214d2e0db7198fa98ad69bd441d8dc45a7a566dc607f47df9c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls039/phase-0-output.json",
+      "bytes": 2770780,
+      "sha256": "78b52d1ae177292705d820a28a631143794f7e5ba5d04168fb7c86e58fd39885"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls039/phase-0-stage-0-input.json",
+      "bytes": 2642859,
+      "sha256": "42ebaeafe41653214d2e0db7198fa98ad69bd441d8dc45a7a566dc607f47df9c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls039/phase-0-stage-0-output.json",
+      "bytes": 2770780,
+      "sha256": "78b52d1ae177292705d820a28a631143794f7e5ba5d04168fb7c86e58fd39885"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls039/phase-1-input.json",
+      "bytes": 3372492,
+      "sha256": "baeb795855286b564d688326d94c24de7dc31e8a30e3f721a2c4492912912106"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls039/phase-1-progress.json",
+      "bytes": 771,
+      "sha256": "891f5b07d5fbc0910f94bff97937ae44cecc4b67601fa9c71ea91ee3688a3515"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls039/phase-1-stage-0-error.json",
+      "bytes": 3372723,
+      "sha256": "97bd42c030e92ef91f5626b790d703029fb81c0d29d3d9dfa0cc39ccb7872efe"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls039/phase-1-stage-0-input.json",
+      "bytes": 3372492,
+      "sha256": "baeb795855286b564d688326d94c24de7dc31e8a30e3f721a2c4492912912106"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls039/phase-1-stage-0-progress.json",
+      "bytes": 771,
+      "sha256": "891f5b07d5fbc0910f94bff97937ae44cecc4b67601fa9c71ea91ee3688a3515"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls039/routing-error.json",
+      "bytes": 3372723,
+      "sha256": "97bd42c030e92ef91f5626b790d703029fb81c0d29d3d9dfa0cc39ccb7872efe"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls040/BUILD-STATUS.json",
+      "bytes": 696,
+      "sha256": "72f4aa6ebf54f6235a1187730aa2959100fa267abe682cdae9a7125572a55d2b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls040/BUILD.log",
+      "bytes": 1600,
+      "sha256": "3651eb92430536bcff971cf1f7b64a1e5c0203af2330a1447989bb3abc485d90"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls040/INPUT-PROVENANCE.json",
+      "bytes": 888,
+      "sha256": "c58a712989db923f41cbf5467781b40ff206eb54b846c664b3270f88e1c9b166"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/controls040/PROGRESS.json",
+      "bytes": 364,
+      "sha256": "7307e15b0e1e933488f8812fd45c9a2cbc1d38704debfb1658954f9ffb200862"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground027/BUILD-STATUS.json",
+      "bytes": 627,
+      "sha256": "cb28d7bafbb96bc379a6054c181bd3689fd793f2d1ec37ee78929c23611fdb72"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground027/BUILD.log",
+      "bytes": 1661,
+      "sha256": "9af39a4c17f1aee344a72e475b932be5b59e4c26c526745f3a3381fcb14266ce"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground027/circuit.json",
+      "bytes": 2997199,
+      "sha256": "7c742d7fe88d462268af64633e5bdc37b00afeb7e2c7b6e37f3094287720080d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground027/phase-0-input.json",
+      "bytes": 2462814,
+      "sha256": "60ea274a95ba2251b54305039b53cc2109bde5feb498f854a84720410497e227"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground027/phase-0-output.json",
+      "bytes": 2583455,
+      "sha256": "ec85caa437010e75aa0fd918a750a29a37633cd0ab0f85eda79d5c2d348ff30e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground027/phase-0-stage-0-input.json",
+      "bytes": 2462814,
+      "sha256": "60ea274a95ba2251b54305039b53cc2109bde5feb498f854a84720410497e227"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground027/phase-0-stage-0-output.json",
+      "bytes": 2583455,
+      "sha256": "ec85caa437010e75aa0fd918a750a29a37633cd0ab0f85eda79d5c2d348ff30e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground027/phase-2-input.json",
+      "bytes": 3213913,
+      "sha256": "753ce123aea620fbb46cc06368d221c4f5772b1022e22681f306dce4cadba618"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground027/phase-2-stage-0-error.json",
+      "bytes": 3214029,
+      "sha256": "8d641192cb62cc86388bd4bfc508164ba1732565e3e8ba3aa1d2deb286820bf7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground027/phase-2-stage-0-input.json",
+      "bytes": 3213913,
+      "sha256": "753ce123aea620fbb46cc06368d221c4f5772b1022e22681f306dce4cadba618"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground027/routing-error.json",
+      "bytes": 3214029,
+      "sha256": "8d641192cb62cc86388bd4bfc508164ba1732565e3e8ba3aa1d2deb286820bf7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground029/BUILD-STATUS.json",
+      "bytes": 625,
+      "sha256": "693714a38c04dc952a370e45e74af11c162feeb1461a65e5001b99be5d3f1190"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground029/BUILD.log",
+      "bytes": 2576,
+      "sha256": "c385272ab9a53386ab1cd422d0cacc6be29cd938920c71366d8bf658fa08dbca"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground029/circuit.json",
+      "bytes": 2998168,
+      "sha256": "94e14de423c7ffb827fafbdfb9c27239ad820af541a3de818efe89f0d76350c9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground029/phase-0-input.json",
+      "bytes": 2462814,
+      "sha256": "60ea274a95ba2251b54305039b53cc2109bde5feb498f854a84720410497e227"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground029/phase-0-output.json",
+      "bytes": 2583455,
+      "sha256": "ec85caa437010e75aa0fd918a750a29a37633cd0ab0f85eda79d5c2d348ff30e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground029/phase-0-stage-0-input.json",
+      "bytes": 2462814,
+      "sha256": "60ea274a95ba2251b54305039b53cc2109bde5feb498f854a84720410497e227"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground029/phase-0-stage-0-output.json",
+      "bytes": 2583455,
+      "sha256": "ec85caa437010e75aa0fd918a750a29a37633cd0ab0f85eda79d5c2d348ff30e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground029/phase-2-input.json",
+      "bytes": 3213952,
+      "sha256": "1a1d5498999e4e1a412001efb4cb08ce383afe3de7455bf9c6f56493d7e452c6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground029/phase-2-stage-0-error.json",
+      "bytes": 3214985,
+      "sha256": "3202bbe799c531bc9134e462b465e36e60aba69017c0100315a396c36b9d6115"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground029/phase-2-stage-0-input.json",
+      "bytes": 3213952,
+      "sha256": "1a1d5498999e4e1a412001efb4cb08ce383afe3de7455bf9c6f56493d7e452c6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground029/routing-error.json",
+      "bytes": 3214985,
+      "sha256": "3202bbe799c531bc9134e462b465e36e60aba69017c0100315a396c36b9d6115"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-input/via-inspection.json",
+      "bytes": 116,
+      "sha256": "45675f18d676d142cda8655e016751706b26a7185f964254905f6a2655fc90e4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/BUILD-STATUS.json",
+      "bytes": 639,
+      "sha256": "e18f56f203a91c4e5833a2810c4d993919bcc5fe035de525d92e96694b578468"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/BUILD.log",
+      "bytes": 101,
+      "sha256": "7255430ac8e58aff9f8bd958e5e4216ad553dcb57a2652d7421748daeb26edba"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/PHYSICAL-GROUND.json",
+      "bytes": 11377,
+      "sha256": "9812c0ff7fa820ccbdd35f6c92a9aa16b7f6ee75475ad61b76f231a1e2be54b7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/STRICT-COPPER.json",
+      "bytes": 2330,
+      "sha256": "ede5b0e3f85fb0d8ea5bc35944af79025b04a956d1f8df2ba7317f3a18ef61a2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/bottom.png",
+      "bytes": 141900,
+      "sha256": "2d69a54ccafc03379c239749d814ef736b53f01cc33cee6d4546c1f3467d9d59"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/bottom.svg",
+      "bytes": 550996,
+      "sha256": "87ea882930faae38c00a8d5dccc72e5355691047b95661bd3b4a2d7464762112"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/circuit.json",
+      "bytes": 3605822,
+      "sha256": "9331f2c1c4552cbbc1b46c9406240c61ce68997aaf74bf72b0c41bac86a962be"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/inner1.png",
+      "bytes": 72038,
+      "sha256": "335025c8acb5239853cabc18fa64807fdac4b43a3181163ae22010683173af0a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/inner1.svg",
+      "bytes": 146143,
+      "sha256": "cd113807e76d7b8e0c97ba933ebd917934a2ccea43ef0427f83fc389eb0d0319"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/inner2.png",
+      "bytes": 62100,
+      "sha256": "016717b0d2860a75e1ef855629f76355aa61b87b4e89d76547bb6df677b25318"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/inner2.svg",
+      "bytes": 73228,
+      "sha256": "626b12f48580437f8c5017551e7be1d6c38afd1fe7f0fdf673b6aad97db877c3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/phase-0-input.json",
+      "bytes": 2492103,
+      "sha256": "204a39217c2b76a0064b7f1648ed721fcb72fc2facf79f6de919fdaaad4b0024"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/phase-0-output.json",
+      "bytes": 2612744,
+      "sha256": "4f54012e067c8e3fc63f258d2538a9aa3fd6428479bc8c298d8a2ff898cc4f95"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/phase-0-stage-0-input.json",
+      "bytes": 2492103,
+      "sha256": "204a39217c2b76a0064b7f1648ed721fcb72fc2facf79f6de919fdaaad4b0024"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/phase-0-stage-0-output.json",
+      "bytes": 2612744,
+      "sha256": "4f54012e067c8e3fc63f258d2538a9aa3fd6428479bc8c298d8a2ff898cc4f95"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/top.png",
+      "bytes": 137549,
+      "sha256": "4d50846f7327379612186484a68bf49d4b161c6e59b915ab9bf0695d3d156606"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground030-outer-pours/top.svg",
+      "bytes": 488785,
+      "sha256": "16fcfa83d79ee36a4c71ae7e17fc0f9ab1c0f5d84a244f17596c78b531c37b61"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-input/thermal-inspection.json",
+      "bytes": 458,
+      "sha256": "bcb93c07414883634670f27d97c85f02d110fe84996131d9f733d46887ce9045"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-input/via-final-three.json",
+      "bytes": 348,
+      "sha256": "773a85fe4cfc22e3cbabfca02bee9ecf09e8d6e41f25b677f429ea4fb1ba106d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-input/via-inspection-five.json",
+      "bytes": 922,
+      "sha256": "2a01d7d8a22c173b083c7ed85233dd716295fc957f2b71a02df56e650cdfa6fa"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-input/via-inspection-four.json",
+      "bytes": 1145,
+      "sha256": "9117204d7e1e2018f8d8f5fc68b97f9ee18cc8704fb8f11d819195c7a1120d6a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-input/via-inspection-seven.json",
+      "bytes": 920,
+      "sha256": "057710dce31c86726a432537d997c2d0d7f584e3e1565299e0d046a574918e7d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-input/via-inspection-six.json",
+      "bytes": 687,
+      "sha256": "07316803c115b9c50fed0fc3bae2241ae6e24b46f759016098b0ec98bdd13b13"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-input/via-inspection-three.json",
+      "bytes": 1038,
+      "sha256": "8b306a16d75eccb305516e85ba84203c1221864d47654b8a02a10463c2a5f72d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-input/via-inspection-two.json",
+      "bytes": 804,
+      "sha256": "985ba8b288c08b8a726579f501fc2f866680cac2925e08392dee4c9d7ed2ab15"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-input/via-inspection.json",
+      "bytes": 682,
+      "sha256": "b09e5844e6102ec6e4a327ed60116b9d195ece48fe6c9595378c8ff80407e6b5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-stitches/BUILD-STATUS.json",
+      "bytes": 637,
+      "sha256": "43d7c20bbd10e38e5792993af03f99784cfdf10cf3aa4d3274d5e0d2eeb335ca"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-stitches/BUILD.log",
+      "bytes": 101,
+      "sha256": "a06ebc01dcb0316093561ea5c3fcc0771b2d6a5640507f76c8008e526c8a2415"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-stitches/PHYSICAL-GROUND.json",
+      "bytes": 8651,
+      "sha256": "020a6688c478ca242f7c5236cc18a397dd90bccaf137533730966ff58e466168"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-stitches/circuit.json",
+      "bytes": 3633833,
+      "sha256": "cbe6a32074de2d0dd4ce1c7cc74ff65c933ff163bcea4bb394871d1e46dd999a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-stitches/phase-0-input.json",
+      "bytes": 2582214,
+      "sha256": "f7444d3d87e56183da2956ba5ce6b499579771672481d252e867b4787e6f9887"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-stitches/phase-0-output.json",
+      "bytes": 2710374,
+      "sha256": "5351f846fa3da0440e4c1ebdecbbd78275efe8d287250d0ecab657368d5d551b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-stitches/phase-0-stage-0-input.json",
+      "bytes": 2582214,
+      "sha256": "f7444d3d87e56183da2956ba5ce6b499579771672481d252e867b4787e6f9887"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground031-stitches/phase-0-stage-0-output.json",
+      "bytes": 2710374,
+      "sha256": "5351f846fa3da0440e4c1ebdecbbd78275efe8d287250d0ecab657368d5d551b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground032-input/before-manual-local-paths.json",
+      "bytes": 104473,
+      "sha256": "0aa97359ee878fbfed783151a65cefea6acec1514d8769a58c94fe1e47142202"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground032-input/manual-local-route-candidates.json",
+      "bytes": 3527,
+      "sha256": "74ff9a6cd6b38d01e8ae90f81de5fda1da2d0cc672cdfd5285eb00c2eb4036a3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground032-input/via-inspection.json",
+      "bytes": 234,
+      "sha256": "6e02238ca9bd7e0740f0e71b39bf58df61d3b4b8623bc117bc0caba04483b845"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground032-local-openings/BUILD-STATUS.json",
+      "bytes": 642,
+      "sha256": "9650b52e26d36e22009cdd588bbd3b4caf34359399602bfd3eddadaab8ea3d4c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground032-local-openings/BUILD.log",
+      "bytes": 101,
+      "sha256": "4ce03deba63e50caa613edece52c87d3050bb6b1431d815085e1bd4ea07aa91a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground032-local-openings/PHYSICAL-GROUND.json",
+      "bytes": 8115,
+      "sha256": "bf8ecc2584f4c45b0fcc924f57075f9d3fd3660bd9503d36122e70727e08ca11"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground032-local-openings/STRICT-COPPER.json",
+      "bytes": 7049,
+      "sha256": "c5772674313e7c69bb39fc1c52443575d1c83edbcc301df579800dc86637f9ac"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground032-local-openings/STRICT-COPPER.log",
+      "bytes": 7049,
+      "sha256": "c5772674313e7c69bb39fc1c52443575d1c83edbcc301df579800dc86637f9ac"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground032-local-openings/circuit.json",
+      "bytes": 3635134,
+      "sha256": "4dc41a77682707d7ff495c43baeec09a7671b20a3a45d0dfc1a6dc9ec4c4d366"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground032-local-openings/phase-0-input.json",
+      "bytes": 2642859,
+      "sha256": "1db68f1cc8b21ef527042ff4f3f7bc848d6680d29a182642709cea841d360c2c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground032-local-openings/phase-0-output.json",
+      "bytes": 2770762,
+      "sha256": "4a163a639e092434f9babcf0d242df32a4c47dc412812977559cc82b823ffb03"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground032-local-openings/phase-0-stage-0-input.json",
+      "bytes": 2642859,
+      "sha256": "1db68f1cc8b21ef527042ff4f3f7bc848d6680d29a182642709cea841d360c2c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground032-local-openings/phase-0-stage-0-output.json",
+      "bytes": 2770762,
+      "sha256": "4a163a639e092434f9babcf0d242df32a4c47dc412812977559cc82b823ffb03"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground033-flash-and-pd/BUILD-STATUS.json",
+      "bytes": 640,
+      "sha256": "11b4e76fcee7178110decf2a266828b763d3f164a0131262456116ced79d930f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground033-flash-and-pd/BUILD.log",
+      "bytes": 1662,
+      "sha256": "618312f7b1e2b04419dc78d03703d56fc454251d390f7f2327f9483650fb5452"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground033-flash-and-pd/PHYSICAL-GROUND.json",
+      "bytes": 11307,
+      "sha256": "f07959cd3a11e446f08c83806e267793ba7e9e1527f45b54b54f4fd23b692922"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground033-flash-and-pd/STRICT-COPPER.json",
+      "bytes": 1944,
+      "sha256": "880876cebb3be09528d2f547c53a0ceac42d0d99d90eb95793fa63a47601610b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground033-flash-and-pd/STRICT-COPPER.log",
+      "bytes": 1944,
+      "sha256": "880876cebb3be09528d2f547c53a0ceac42d0d99d90eb95793fa63a47601610b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground033-flash-and-pd/circuit.json",
+      "bytes": 3229974,
+      "sha256": "e36c3c824fbf9a786d90e91963635e4bfd2e6792f44b9b60f1241cd7188ba9bd"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground033-flash-and-pd/phase-0-input.json",
+      "bytes": 2696339,
+      "sha256": "e9bb9169e638df9d2ba2007309d12bff0cf1e73cea50992cee8292fc7160f723"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground033-flash-and-pd/phase-0-stage-0-error.json",
+      "bytes": 2696486,
+      "sha256": "d6443e2d3494b32eaecae1d84f2bfc55c40cd65004f397ade06ad6ae3cd150ce"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground033-flash-and-pd/phase-0-stage-0-input.json",
+      "bytes": 2696339,
+      "sha256": "e9bb9169e638df9d2ba2007309d12bff0cf1e73cea50992cee8292fc7160f723"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground033-flash-and-pd/routing-error.json",
+      "bytes": 2696486,
+      "sha256": "d6443e2d3494b32eaecae1d84f2bfc55c40cd65004f397ade06ad6ae3cd150ce"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground033-input/before-path50.json",
+      "bytes": 1788,
+      "sha256": "9b5c46cab88496136eef47445e9da4860a0e257d6b59f16c869e7e894e249e7a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground033-input/ground-flash-candidate.json",
+      "bytes": 589,
+      "sha256": "6a37df142eefdd1154869319efd9db0786cfd3d3e591f740d10206e618bfb183"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground033-input/manual-route-inspection.json",
+      "bytes": 1157,
+      "sha256": "38675117009e6f6d70e32a94710d95cb466ee0a6904ebbb10f8bd4d52cd1f589"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground033-input/via-inspection.json",
+      "bytes": 116,
+      "sha256": "916589c6c14b57422f8b15e1dae4b84c9e46349c6929d19d4adf3f2b55f96efb"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground034-ground-tree/BUILD-STATUS.json",
+      "bytes": 638,
+      "sha256": "a22f213abdddfe06107d1a72c5fd74b0c2246275204fbefef8c07a12774a8f9d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground034-ground-tree/BUILD.log",
+      "bytes": 101,
+      "sha256": "96df0671456a115fa664c6fdf3af7766fdb6301bdfb26f9445bb9373339ee54b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground034-ground-tree/circuit.json",
+      "bytes": 3599298,
+      "sha256": "29736630f9519a205b3325c4d85c69152221471d4db230805c60e85dd3d511e3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground034-ground-tree/phase-0-input.json",
+      "bytes": 2712866,
+      "sha256": "bc961ab6519a8f651173b14dca76b28ec65ee55115dd8ff1a0ab433c2075d550"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground034-ground-tree/phase-0-output.json",
+      "bytes": 2840846,
+      "sha256": "55253b23992460d8ca0d7404ddef211c112e4a86d794d38af5fe43ac4679e19c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground034-ground-tree/phase-0-stage-0-input.json",
+      "bytes": 2712866,
+      "sha256": "bc961ab6519a8f651173b14dca76b28ec65ee55115dd8ff1a0ab433c2075d550"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground034-ground-tree/phase-0-stage-0-output.json",
+      "bytes": 2840846,
+      "sha256": "55253b23992460d8ca0d7404ddef211c112e4a86d794d38af5fe43ac4679e19c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground034-input/explicit-ground-link-inspection.json",
+      "bytes": 625,
+      "sha256": "944e2e43672436fe956207b0fb7b8b275e51ee0d3af14a621a3de5b789a6ba53"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground034-input/next-via-inspection.json",
+      "bytes": 696,
+      "sha256": "e8bb270bd8fffb9fb54440ba652ea35791719a2b2e0dbcf85165f80018b7266b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground034-input/via-inspection.json",
+      "bytes": 351,
+      "sha256": "5678d3d7fdee4a85ff9c46ee7295f59d038beb95626276309ca6f8b36f38748d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground035-input/before-path12-and-placement.json",
+      "bytes": 11030,
+      "sha256": "3b3897c5f069ae565901283de9f1c138bef780095e62f6f0f8685042ada49cbe"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground035-input/via-inspection.json",
+      "bytes": 233,
+      "sha256": "c81893d285082292367feb86926d25dd91ba2a6e849de86efb3fcdca71876528"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground035-legal-flash-escape/BUILD-STATUS.json",
+      "bytes": 647,
+      "sha256": "4146e65aa32953d8ede3ca87280704d092d1e75ed42cdce9453fa3bf9cb2ab44"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground035-legal-flash-escape/BUILD.log",
+      "bytes": 46,
+      "sha256": "62cd1ea10965aa1d6968c8ebdf444b00fd331f96175aed881566f49820a019de"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground035-legal-flash-escape/PHYSICAL-NETS.json",
+      "bytes": 62607,
+      "sha256": "30571907927a2f8f0abee75ca10cdada2197b79f3d328113ec7713af1aacbf48"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground035-legal-flash-escape/STRICT-COPPER.json",
+      "bytes": 1898,
+      "sha256": "507bbdfa88a6e78b6fabaecd31e63ab13997ce49ed468c9ea66502fa4a9f5b98"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground035-legal-flash-escape/STRICT-COPPER.log",
+      "bytes": 1898,
+      "sha256": "507bbdfa88a6e78b6fabaecd31e63ab13997ce49ed468c9ea66502fa4a9f5b98"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground035-legal-flash-escape/circuit.json",
+      "bytes": 3235673,
+      "sha256": "be45f9093e3465087af7c15cb501e80c433848a17f61e2c783804ee3260b9892"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground036-courtyard-correction/BUILD-STATUS.json",
+      "bytes": 649,
+      "sha256": "742493a3923ccd50d5487ed9f5a0db75459fdc995c91f4abd786d66812862ab5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground036-courtyard-correction/BUILD.log",
+      "bytes": 46,
+      "sha256": "c9a638e52b4971a8bd3a706b68b35515af5d2461653b9f3a21f8d03034a0316c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground036-courtyard-correction/PHYSICAL-NETS.json",
+      "bytes": 62608,
+      "sha256": "3f8763aecbde61fe927d4f05a56aed58ab76b9d075d672bc1de3916457dd2076"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground036-courtyard-correction/STRICT-COPPER.json",
+      "bytes": 1900,
+      "sha256": "7c1a0b836060d5377a42313e37b38f77489e2e35218f40c3c05ae3f5f6515faf"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground036-courtyard-correction/STRICT-COPPER.log",
+      "bytes": 1900,
+      "sha256": "7c1a0b836060d5377a42313e37b38f77489e2e35218f40c3c05ae3f5f6515faf"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground036-courtyard-correction/USB-LENGTHS.json",
+      "bytes": 2206,
+      "sha256": "7929597d8970669f31cd4bc92c5c0c61a03ba78e7dc5ba889d2b3fd77626194f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground036-courtyard-correction/USB-LENGTHS.log",
+      "bytes": 1926,
+      "sha256": "9d14c22810aa0030b527c56a64e6f96fa85812a10b8befd44396419fbe6ec58b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground036-courtyard-correction/circuit.json",
+      "bytes": 3235011,
+      "sha256": "39aa7e3a795faea4fd06f82d358c2f3dbcb868cc5c4a91f6555b6ea7aed4f61b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground037-input/before-buzzer-pwm-path.json",
+      "bytes": 2945,
+      "sha256": "91afb943652b139a8b71d57c5b877e925662494e6859cdb819043e46137143c7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground037-input/before-horizontal-core-clearance.json",
+      "bytes": 2727,
+      "sha256": "a85354e4b5400942df7f25900e00c53f4d795fe716497a9569e22afb368711dc"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground037-input/trace-inspection-three.json",
+      "bytes": 357,
+      "sha256": "d6e01276835463aae24ac1cdffabfae901716d0eeab7b104d320f5fea6d96a07"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground037-input/trace-inspection-two.json",
+      "bytes": 355,
+      "sha256": "9bb04e7d7e0eb3ecf0705a643c0b5f0c0fa42c9aa2e107083bd60c77d8808875"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground037-input/trace-inspection.json",
+      "bytes": 1071,
+      "sha256": "502c5fd59f6ef7c57c60a1d90d28c339115d4827e31e4fad7a088dfce1d7501e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground037-input/via-inspection.json",
+      "bytes": 249,
+      "sha256": "0d06f744bf2968ff2ce1c894f19ffd887cbddc3c9003b9e8602721e94ded99a5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground037-short-buzzer-route/BUILD-STATUS.json",
+      "bytes": 646,
+      "sha256": "38cc6acd1d2132d8c31fdeb3a0e94936ac2a92031a0885e40d6c8ff5d58f0470"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground037-short-buzzer-route/BUILD.log",
+      "bytes": 101,
+      "sha256": "0ef8cc6e02261def64ce06f2e6b6655e6e7f1b5641e6e3bc1f75482ec1d45b3b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground037-short-buzzer-route/circuit.json",
+      "bytes": 3604286,
+      "sha256": "1186f4346b36df45d88156986ec646a5a37b44e776a2d60344658b7ac1656756"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground037-short-buzzer-route/phase-0-input.json",
+      "bytes": 2642859,
+      "sha256": "0d3959a732c9486124567b5b3abba63b42705d06518eb8e6d4577e31976aebc2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground037-short-buzzer-route/phase-0-output.json",
+      "bytes": 2770778,
+      "sha256": "0fea347c68294a0db599e40fa2faaad5dcaef97d7b6fb4b46f179adc379bfa4f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground037-short-buzzer-route/phase-0-stage-0-input.json",
+      "bytes": 2642859,
+      "sha256": "0d3959a732c9486124567b5b3abba63b42705d06518eb8e6d4577e31976aebc2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground037-short-buzzer-route/phase-0-stage-0-output.json",
+      "bytes": 2770778,
+      "sha256": "0fea347c68294a0db599e40fa2faaad5dcaef97d7b6fb4b46f179adc379bfa4f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/BUILD-STATUS.json",
+      "bytes": 644,
+      "sha256": "815a22fd6109232cb8e1a22976350e591d3dacd0fdfd9119a578d2c5226a006e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/BUILD.log",
+      "bytes": 101,
+      "sha256": "f9e7b4fb9cba6c34414c5e2534f9f885dec683873201f03466b5708719cabe37"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/PHYSICAL-NETS.json",
+      "bytes": 53811,
+      "sha256": "7c7285ae0622b3b15ffa42936ddb8cf66ff0cfe8a6d4dbbf9fdd7f4552ed0a4b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/STRICT-COPPER.json",
+      "bytes": 2332,
+      "sha256": "7e61a3b7aab1494d5e46017da039e7a7c5ddff444d85f798d5efff1d044cb7f6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/STRICT-COPPER.log",
+      "bytes": 2332,
+      "sha256": "7e61a3b7aab1494d5e46017da039e7a7c5ddff444d85f798d5efff1d044cb7f6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/USB-LENGTHS.json",
+      "bytes": 2105,
+      "sha256": "abadb51d22b7799cd81ba7dff3283cd1fe7b54c14611a508e97d37228fe95329"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/USB-LENGTHS.log",
+      "bytes": 1805,
+      "sha256": "a7408afd2c9b62e8481ce93ea0ac77bb01605bd8818b75a7b89f19df54678c05"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/bottom.png",
+      "bytes": 144480,
+      "sha256": "1affb51188fe6f073ecdf5f47d11bc3c9fc64360d106e447ae83ae4e805a9faf"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/bottom.svg",
+      "bytes": 557107,
+      "sha256": "76624b2189d2bc4d0244e6f490c34ae54308bea940dc196959f300499c102fb6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/circuit.json",
+      "bytes": 3603816,
+      "sha256": "eac60e82e41b0011977e44d40f155272f87c39948d8b7dc995d3a8e8b3e3749a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/inner1.png",
+      "bytes": 74880,
+      "sha256": "626e367c52d10481a53a35e852cb6e38bc500d3c2eb19dd024d9d4aa2851ece6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/inner1.svg",
+      "bytes": 153873,
+      "sha256": "c8ab4aa2654de0d67392f6e21af218d72e29542b63fba03899c27084325a875d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/inner2.png",
+      "bytes": 64397,
+      "sha256": "d9e8838afecdb3296c85695d11c52e96a4ae3473976f487932729904283f1dc7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/inner2.svg",
+      "bytes": 77364,
+      "sha256": "5f94ae8e7745c27e4154a3fd15c79dfcdd63172daa68ed99aeeeef5e57fc167b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/phase-0-input.json",
+      "bytes": 2642859,
+      "sha256": "0d3959a732c9486124567b5b3abba63b42705d06518eb8e6d4577e31976aebc2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/phase-0-output.json",
+      "bytes": 2770780,
+      "sha256": "bb9aecfda4122f13a287b472ff96389d09a025a242df56f7ada06c9785f50c31"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/phase-0-stage-0-input.json",
+      "bytes": 2642859,
+      "sha256": "0d3959a732c9486124567b5b3abba63b42705d06518eb8e6d4577e31976aebc2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/phase-0-stage-0-output.json",
+      "bytes": 2770780,
+      "sha256": "bb9aecfda4122f13a287b472ff96389d09a025a242df56f7ada06c9785f50c31"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/top.png",
+      "bytes": 141319,
+      "sha256": "2f52c81d76fa72c5f0003d5f057d4b6dfb3a1d2733a847f5f40a16b71389732d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/ground038-core-clearance/top.svg",
+      "bytes": 507502,
+      "sha256": "181727c3fc70ae863f5fb9bbb887d471204257e518029f5c5765371a9506f619"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces001/BUILD-STATUS.json",
+      "bytes": 636,
+      "sha256": "5ed3552085778e2adcffce48b82726b854f880b4b12ffd69c864a5e720caceab"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces001/BUILD.log",
+      "bytes": 1079,
+      "sha256": "891d7070d1043b6be10132843e66f733ed805e56503ec8d6809f1b3eefee235e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces001/circuit.json",
+      "bytes": 2997088,
+      "sha256": "5e105cda7a240deccb2340f75f8dd024643e1be6741bded42f26dfc905d0ecff"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces001/phase-0-input.json",
+      "bytes": 2451789,
+      "sha256": "3bc107b7067b92b7cf77887c6d86f41fc342772fb19ef5111ddbe9ca5ea64cf3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces001/phase-0-output.json",
+      "bytes": 2519886,
+      "sha256": "23532d265af699d5a4bcd1940ff2bd5bbad5eacd2f79828e757b806f76b1bc79"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces001/phase-0-stage-0-input.json",
+      "bytes": 2451789,
+      "sha256": "3bc107b7067b92b7cf77887c6d86f41fc342772fb19ef5111ddbe9ca5ea64cf3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces001/phase-0-stage-0-output.json",
+      "bytes": 2519886,
+      "sha256": "23532d265af699d5a4bcd1940ff2bd5bbad5eacd2f79828e757b806f76b1bc79"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces001/phase-1-input.json",
+      "bytes": 2893177,
+      "sha256": "607d732b3682676fc1e0e5cc0aa7e33d6e1415d2d2f5cf43aa5f664f8f3cb8f7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces001/phase-1-progress.json",
+      "bytes": 772,
+      "sha256": "50ac6dcefd92556226650527f1abcb3583ade8f53127944a4a6ac8dfb1ef3229"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces001/phase-1-stage-0-error.json",
+      "bytes": 2893410,
+      "sha256": "fef4976b912bdf09561bb497f589bc146e257860e51cf91fce9b0caeaac064a0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces001/phase-1-stage-0-input.json",
+      "bytes": 2893177,
+      "sha256": "607d732b3682676fc1e0e5cc0aa7e33d6e1415d2d2f5cf43aa5f664f8f3cb8f7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces001/phase-1-stage-0-progress.json",
+      "bytes": 772,
+      "sha256": "50ac6dcefd92556226650527f1abcb3583ade8f53127944a4a6ac8dfb1ef3229"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces001/routing-error.json",
+      "bytes": 2893410,
+      "sha256": "fef4976b912bdf09561bb497f589bc146e257860e51cf91fce9b0caeaac064a0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces002-mesh3/BUILD-STATUS.json",
+      "bytes": 692,
+      "sha256": "68c72eaf0316f7a548c1525c3338341c0f619a1378e48fd9e4737ce7f24a34e5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces002-mesh3/BUILD.log",
+      "bytes": 2166,
+      "sha256": "3f794c19ce0d367843f18e15531e427393e530a5f263c3894b7763a3e7351c18"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces002-mesh3/INPUT-PROVENANCE.json",
+      "bytes": 883,
+      "sha256": "30b39ada221af67b26113cb85b4771e26824e655974ad447c9bc93a536dfd196"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces002-mesh3/OUTPUT-SIMPLE-ROUTE.json",
+      "bytes": 2911339,
+      "sha256": "97406aa1c68f9345fd5d72af296fea5165f7efea025bd47a115221b708f7e263"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces002-mesh3/PROGRESS.json",
+      "bytes": 174,
+      "sha256": "ad45a9ada70882ceb50a2c953ecb9b14d1b8fa24a4cae89003b6c51189ed84fe"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces002-mesh3/candidates.json",
+      "bytes": 98582,
+      "sha256": "ea49a3ae2568696c72396e595eee2a03915192e2a4a6a1437d60fdd0c5432a6f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces003-native-mesh3/BUILD-STATUS.json",
+      "bytes": 648,
+      "sha256": "58b330d9a8ba686a9f646ecbda29febf5cb6caaeb896fbb3b5fdcd16a0c16b55"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces003-native-mesh3/BUILD.log",
+      "bytes": 101,
+      "sha256": "0b4bea98845a8a371f0f50b0a9aabeb55af1ff80a9ccda14c48386b3b6d0c0b5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces003-native-mesh3/CANDIDATE-NET-TRIAGE.json",
+      "bytes": 620,
+      "sha256": "5ab90418277e3eb21281ed10e10af429a53a8a2faea0d52978f6a5b3ca22062d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces003-native-mesh3/GEOMETRY.json",
+      "bytes": 33831,
+      "sha256": "bc6e89db85f03271ad2d56a8ae1a68b341beb196322c09543aac6edfda820b5e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces003-native-mesh3/circuit.json",
+      "bytes": 3149188,
+      "sha256": "e2a542f2be28a929c0018f3c29e92dcf0d51752151d47588578ca2f012ea8147"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces003-native-mesh3/clean-candidates.json",
+      "bytes": 4725,
+      "sha256": "0ea350a7aae6e1f9bf3d1e8a5326dd31a3bdc12030f22c8f51112bae6da44c16"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces003-native-mesh3/phase-0-input.json",
+      "bytes": 2465423,
+      "sha256": "63d44662856655044498486a25da7f745b2383af7ffc958ea9d4c4c4dd2aca2b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces003-native-mesh3/phase-0-output.json",
+      "bytes": 2661745,
+      "sha256": "31659e9f5c872a6e06bb23c7b60e3d70e4f1ff81fb1f56cdbd1388d0819caf61"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces003-native-mesh3/phase-0-stage-0-input.json",
+      "bytes": 2465423,
+      "sha256": "63d44662856655044498486a25da7f745b2383af7ffc958ea9d4c4c4dd2aca2b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces003-native-mesh3/phase-0-stage-0-output.json",
+      "bytes": 2661745,
+      "sha256": "31659e9f5c872a6e06bb23c7b60e3d70e4f1ff81fb1f56cdbd1388d0819caf61"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/BUILD-STATUS.json",
+      "bytes": 646,
+      "sha256": "6a1a2f933d4a39f414e18a23da0a26fce62f404985c77b861c282f4acf9ff7cb"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/BUILD.log",
+      "bytes": 101,
+      "sha256": "c311cefaf75a1271ef2e7812e5bc189a0aff916b8e1e18ce727dce7486830979"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/CONNECTIVITY.json",
+      "bytes": 26717,
+      "sha256": "620a66c88dcef7768d925e2da5ddadd6eb1c4e0dbbc6eaff9f6e5dd9410e234a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/CONNECTIVITY.log",
+      "bytes": 494,
+      "sha256": "298a2b211dfc7d41baf52289f30463f900bf1c3994c726124c773cef06cbf7ef"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/GEOMETRY.json",
+      "bytes": 2324,
+      "sha256": "5987d46292c961aaff03d4b8fa126a256c76e5ffbf224e871672594ee8498e4b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/GEOMETRY.log",
+      "bytes": 2324,
+      "sha256": "5987d46292c961aaff03d4b8fa126a256c76e5ffbf224e871672594ee8498e4b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/USB-LENGTHS-NEGATIVE.json",
+      "bytes": 2034,
+      "sha256": "5b63711cefe2502ce831af26f4144bfba34c4468e4a3092732e045dd2c52d326"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/USB-LENGTHS-NEGATIVE.log",
+      "bytes": 1772,
+      "sha256": "ee40469824969bc2e1831c4e3bc9ef9dd80db2bc59ea3a9e26b2dfaf59d9ed6c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/circuit.json",
+      "bytes": 3032276,
+      "sha256": "96e6ed4cb657347507fc0a243eb9be3c3b8f8183b6a5bfcdaaa4595940dc7e67"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/phase-0-input.json",
+      "bytes": 2453384,
+      "sha256": "5a7bc619371c3ccace5b6af426499ed030501bfd165dee8a4d4e269943e49309"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/phase-0-output.json",
+      "bytes": 2527148,
+      "sha256": "3746d9249c9190e2edd6294f12e8acaa246023fc107e94ea8e097295949d6606"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/phase-0-stage-0-input.json",
+      "bytes": 2453384,
+      "sha256": "5a7bc619371c3ccace5b6af426499ed030501bfd165dee8a4d4e269943e49309"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/phase-0-stage-0-output.json",
+      "bytes": 2527148,
+      "sha256": "3746d9249c9190e2edd6294f12e8acaa246023fc107e94ea8e097295949d6606"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015-clean-candidates.json",
+      "bytes": 24867,
+      "sha256": "613d23ef14738e883b1152e0db3d15b173362ed232beb9431e9ca217d3cae923"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/BUILD-STATUS.json",
+      "bytes": 624,
+      "sha256": "c29d67b98d4f298cc12abcb5e3e9fd0f92f74fba05baee40ecb158826662a4f0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/BUILD.log",
+      "bytes": 447,
+      "sha256": "0d78a1345c3f4f6d7f56278967a0e0bc669f1e9f5d882d6afd650b87823fef52"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/COPPER-GEOMETRY.json",
+      "bytes": 8085,
+      "sha256": "0860fa2ab37b00fe26fe649e8400aa305d09f81be8701435fc73b74002632ae6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/COPPER-GEOMETRY.log",
+      "bytes": 8085,
+      "sha256": "0860fa2ab37b00fe26fe649e8400aa305d09f81be8701435fc73b74002632ae6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/circuit.json",
+      "bytes": 3083733,
+      "sha256": "e54e8d114d74c88ec473883fb00f8ce41e6687f97648bf3a89125c77c65e3068"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/phase-0-input.json",
+      "bytes": 2454682,
+      "sha256": "4fa20a6fa546af9bf0eb5dc59930a0c265e9c89bf28535c9e17cb863a2826c48"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/phase-0-output.json",
+      "bytes": 2530738,
+      "sha256": "53b96e5f7dceb0e72ca00515b9c6a60acdd4ffcfd8f5eccb6672f73c159d34fb"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/phase-0-stage-0-input.json",
+      "bytes": 2454682,
+      "sha256": "4fa20a6fa546af9bf0eb5dc59930a0c265e9c89bf28535c9e17cb863a2826c48"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/phase-0-stage-0-output.json",
+      "bytes": 2530738,
+      "sha256": "53b96e5f7dceb0e72ca00515b9c6a60acdd4ffcfd8f5eccb6672f73c159d34fb"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/phase-1-input.json",
+      "bytes": 2911592,
+      "sha256": "902eba94dba73031dfd2add87855a8fb4a7c5d33b51214e9a47e557b4516400b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/phase-1-output.json",
+      "bytes": 2966901,
+      "sha256": "b5ea52a0c20f5683bea4619505c3973ab4bd61b56c98124b222cf845dc45ff3e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/phase-1-progress.json",
+      "bytes": 781,
+      "sha256": "7fa38bfb2bdb965d2be4f7ee13ac9c8d214951b7c319e3f3fdb011f0515825ce"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/phase-1-stage-0-input.json",
+      "bytes": 2911592,
+      "sha256": "902eba94dba73031dfd2add87855a8fb4a7c5d33b51214e9a47e557b4516400b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/phase-1-stage-0-output.json",
+      "bytes": 2966901,
+      "sha256": "b5ea52a0c20f5683bea4619505c3973ab4bd61b56c98124b222cf845dc45ff3e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local015/phase-1-stage-0-progress.json",
+      "bytes": 781,
+      "sha256": "7fa38bfb2bdb965d2be4f7ee13ac9c8d214951b7c319e3f3fdb011f0515825ce"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local016-clean-subset/BUILD-STATUS.json",
+      "bytes": 639,
+      "sha256": "0e0490a38c798f917cc2120c55e34555156f9e1ebfa9e1a4b35c92d5c0628c05"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local016-clean-subset/BUILD.log",
+      "bytes": 101,
+      "sha256": "3b9f4f0a3e36c4773f5a2a676b304defcccd0a8eea3fa33f04dff0e6a707135d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local016-clean-subset/CONNECTIVITY.json",
+      "bytes": 38961,
+      "sha256": "9f3d64737084a05a7fcea2453722bca9dddb2e0f426e5ecfa088b5785d8d61bf"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local016-clean-subset/COPPER-GEOMETRY.json",
+      "bytes": 2319,
+      "sha256": "a398249d2e78d0dd88e1cb627fb6204e6be530eb4c255201f96d3d6cb2477e6b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local016-clean-subset/COPPER-GEOMETRY.log",
+      "bytes": 2319,
+      "sha256": "a398249d2e78d0dd88e1cb627fb6204e6be530eb4c255201f96d3d6cb2477e6b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local016-clean-subset/circuit.json",
+      "bytes": 3056724,
+      "sha256": "6173ca2da5ad90cd9bc3ecd3e309cc2bc607f22ad606a6dc402374168c4d56b9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local016-clean-subset/phase-0-input.json",
+      "bytes": 2460566,
+      "sha256": "458ac1320ffb2c79e844926aef33dcec8158cdc8a69cda258b0c39f70328616d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local016-clean-subset/phase-0-output.json",
+      "bytes": 2567724,
+      "sha256": "e2321496273a0732b4e8d09dac65495171ceb8ec163b564345a4d4cd9ff318c9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local016-clean-subset/phase-0-stage-0-input.json",
+      "bytes": 2460566,
+      "sha256": "458ac1320ffb2c79e844926aef33dcec8158cdc8a69cda258b0c39f70328616d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/local016-clean-subset/phase-0-stage-0-output.json",
+      "bytes": 2567724,
+      "sha256": "e2321496273a0732b4e8d09dac65495171ceb8ec163b564345a4d4cd9ff318c9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/BUILD-STATUS.json",
+      "bytes": 626,
+      "sha256": "36f2a30510ce66fcc8b006abae024a50986a1a4e04820187487a3e62d1675299"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/BUILD.log",
+      "bytes": 185,
+      "sha256": "92c3b337a9f2a8bfd4e73ddb3abc44ac006d24913ba09fc2e095201d105b7545"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/FILLED-COPPER.json",
+      "bytes": 2383,
+      "sha256": "135b7fac640fc2258d0c91e4176e0cb19ed653291f1513dc0fc73018c95aa708"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/GEOMETRY.json",
+      "bytes": 1662,
+      "sha256": "90dbfa9f6ddbe40fadd1ebac0dbe0a55e95ab2b19a65fe23d6c35a601ccce1d8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/bottom.png",
+      "bytes": 105459,
+      "sha256": "830c70dbb79bce616800ec32887c22385ff16ddc7abe1bce691e00cff89cac23"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/bottom.svg",
+      "bytes": 311637,
+      "sha256": "f118d4fdc02d5f2dc8caacf11e62056903f2b0bc1323a4aca177e73ccfc9fc0f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/circuit.json",
+      "bytes": 2981692,
+      "sha256": "7ded6a4685f33f2e1c82112a35f1718ee9bc85dfed78c0306f382de1f26026e5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/inner1.png",
+      "bytes": 48451,
+      "sha256": "d7fa81c9ebf22f6a4675235a8131c8eeb5e530781cef5d882406e3712df18054"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/inner1.svg",
+      "bytes": 53355,
+      "sha256": "6bcce472b7e6494001e70c24be444b67a826fd2bbefffa83a6d8d60f4ac2f07d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/inner2.png",
+      "bytes": 48451,
+      "sha256": "d7fa81c9ebf22f6a4675235a8131c8eeb5e530781cef5d882406e3712df18054"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/inner2.svg",
+      "bytes": 53355,
+      "sha256": "b8fff84a89bbe70c1be32b53bf31ae0154e2d050381c83a9b6a30318cfdd49f4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/phase-1-input.json",
+      "bytes": 2438477,
+      "sha256": "4ee30549a235d0d743b3eeaca1c77c0513a1961472a6ee2a3be8db6e332d1db0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/phase-1-output.json",
+      "bytes": 2447779,
+      "sha256": "5aceb59c43bda13b9d81fb20dedacfe153e6347eee6beb55ade534a914bf2a33"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/phase-1-progress.json",
+      "bytes": 779,
+      "sha256": "8bb8d86f51230ae045b42bf5d91997324145fa838cf60f546bf75ceaf050b8aa"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/phase-1-stage-0-input.json",
+      "bytes": 2438477,
+      "sha256": "4ee30549a235d0d743b3eeaca1c77c0513a1961472a6ee2a3be8db6e332d1db0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/phase-1-stage-0-output.json",
+      "bytes": 2447779,
+      "sha256": "5aceb59c43bda13b9d81fb20dedacfe153e6347eee6beb55ade534a914bf2a33"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/phase-1-stage-0-progress.json",
+      "bytes": 779,
+      "sha256": "8bb8d86f51230ae045b42bf5d91997324145fa838cf60f546bf75ceaf050b8aa"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/top.png",
+      "bytes": 108822,
+      "sha256": "0cc8facf56c45bc32b91b6dfdf3fccb70947b6ea4d91ca85c2b6bc4e4f6bfb97"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/power001/top.svg",
+      "bytes": 282318,
+      "sha256": "789b0d10434dd34058ea221a52c8ef638e8f5f195dcbea85706311a34dbc6c61"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals025/BUILD-STATUS.json",
+      "bytes": 637,
+      "sha256": "70bbaa22d8b42512d5bf6241095561a5a5c8578fcc435c3ec099b91ca0103bb9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals025/BUILD.log",
+      "bytes": 1071,
+      "sha256": "5ca3abbf698e6563515d1eccaa2b406790a452c2985505b24c52f93174a5cfaf"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals025/phase-0-input.json",
+      "bytes": 2462814,
+      "sha256": "f23023374786f28941a3e63183b0fd9bdc7c01d76cfa75b6196c0c21beb2ba93"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals025/phase-0-output.json",
+      "bytes": 2583455,
+      "sha256": "5cfe77bbf6e143c99184f07e9191505cd743fd4829fd0305978086ccdca88fec"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals025/phase-0-stage-0-input.json",
+      "bytes": 2462814,
+      "sha256": "f23023374786f28941a3e63183b0fd9bdc7c01d76cfa75b6196c0c21beb2ba93"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals025/phase-0-stage-0-output.json",
+      "bytes": 2583455,
+      "sha256": "5cfe77bbf6e143c99184f07e9191505cd743fd4829fd0305978086ccdca88fec"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals025/phase-1-input.json",
+      "bytes": 3149095,
+      "sha256": "6ba18f6e90fde76a393d7454f2573b1a418bf216e90655749b09c139baece7de"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals025/phase-1-progress.json",
+      "bytes": 778,
+      "sha256": "e57466ac7c31f5bde32507a929da8adc6890f5847f73116ff2a8012780165d3b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals025/phase-1-stage-0-input.json",
+      "bytes": 3149095,
+      "sha256": "6ba18f6e90fde76a393d7454f2573b1a418bf216e90655749b09c139baece7de"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals025/phase-1-stage-0-progress.json",
+      "bytes": 778,
+      "sha256": "e57466ac7c31f5bde32507a929da8adc6890f5847f73116ff2a8012780165d3b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals026-mesh3/BUILD-STATUS.json",
+      "bytes": 699,
+      "sha256": "cc7af03c9eae6671e5667d4c329a60b791ef2db052194b9161b043f187a6a3e8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals026-mesh3/BUILD.log",
+      "bytes": 6914,
+      "sha256": "b28529622836eba3b4663c42e5cf90d67502e6eda9bf00771882b2827b1f024d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals026-mesh3/INPUT-PROVENANCE.json",
+      "bytes": 888,
+      "sha256": "41e84f3c5c89cd8cefe0ee75a88f6a1dde6b11a919a433c1c349af26ab9dc35d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals026-mesh3/OUTPUT-SIMPLE-ROUTE.json",
+      "bytes": 3178704,
+      "sha256": "725cf50569f855c22faa75eaf935ed0db04de9cc59066763e3a077fccc121071"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals026-mesh3/PROGRESS.json",
+      "bytes": 175,
+      "sha256": "9abf2593afda4a63201a11e583b8d2b6d07571b7b24c65464f5e8158f236a7f3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals026-mesh3/clean-two-candidates.json",
+      "bytes": 6829,
+      "sha256": "0d8dcf6a8068c134604d6415926db104478905e95c4f6a7f91a63995ca024a2d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals026-mesh3/native-candidates.json",
+      "bytes": 82665,
+      "sha256": "821f79e8725e726fb50ef1a966c5de3d0991af25ac90189eee4630cbf1acd1df"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals028-native-replay/BUILD-STATUS.json",
+      "bytes": 641,
+      "sha256": "c34ef886267d4089bff1bbd03a91af9f6dba09a953f949ef2eafeda0d30b1c16"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals028-native-replay/BUILD.log",
+      "bytes": 101,
+      "sha256": "f5cf06708734a7f85e359321704235cf399fba583f8b782b37fca58e50fe7a3f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals028-native-replay/CANDIDATE-CLASSIFICATION.json",
+      "bytes": 46899,
+      "sha256": "9e30c69684150d49c854c6066e8e16e82c4482d1362020a3def43f593375f463"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals028-native-replay/COPPER-GEOMETRY.json",
+      "bytes": 24102,
+      "sha256": "cdf691b347797c9feeca8e52d1eda06d0325bc69f2571e0eb28351f040dfba57"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals028-native-replay/COPPER-GEOMETRY.log",
+      "bytes": 24102,
+      "sha256": "cdf691b347797c9feeca8e52d1eda06d0325bc69f2571e0eb28351f040dfba57"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals028-native-replay/circuit.json",
+      "bytes": 3176014,
+      "sha256": "6c32c872c7a326c1f928169b45861bfc50a791364d6bb41896f2346b9afe85c7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals028-native-replay/phase-0-input.json",
+      "bytes": 2474207,
+      "sha256": "f2ab6ad6db6d025ca36667ae4bb56f2d8649045ad5a6de021db0382184b43345"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals028-native-replay/phase-0-output.json",
+      "bytes": 2702755,
+      "sha256": "2ea27b45e41576c2b236c23f2d38de05b1efa7afc7e295ddcda55447ef7eb423"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals028-native-replay/phase-0-stage-0-input.json",
+      "bytes": 2474207,
+      "sha256": "f2ab6ad6db6d025ca36667ae4bb56f2d8649045ad5a6de021db0382184b43345"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals028-native-replay/phase-0-stage-0-output.json",
+      "bytes": 2702755,
+      "sha256": "2ea27b45e41576c2b236c23f2d38de05b1efa7afc7e295ddcda55447ef7eb423"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals030-clean-two/BUILD-STATUS.json",
+      "bytes": 636,
+      "sha256": "1fb208d43fc1add6c86abf9b34110c0d60980f4debcbcf49c0dce544868c8466"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals030-clean-two/BUILD.log",
+      "bytes": 101,
+      "sha256": "5406b56592b0d0e627c6661dc116c056804c925e9b83e22786a20116777e00a0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals030-clean-two/PHYSICAL-NETS.json",
+      "bytes": 46632,
+      "sha256": "54da528a987281bd135ce34fc00ef1427568fdd351dfff2312c47d86f59778d2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals030-clean-two/STRICT-COPPER.json",
+      "bytes": 2330,
+      "sha256": "f5129db2eb84aada9eefb236605e7a0ac1ac4089fc24b5cde41d44c16f6e71c9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals030-clean-two/USB-LENGTHS.json",
+      "bytes": 2101,
+      "sha256": "44adf3c25b86114df7f944891b20deefd6c6f871e3af8f10bd116102fb2833a0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals030-clean-two/circuit.json",
+      "bytes": 3075014,
+      "sha256": "a5b4e161dc28adfe2e88a5791a50bfcb127081487dccd3f5e6818d9e6b5c54f8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals030-clean-two/phase-0-input.json",
+      "bytes": 2463877,
+      "sha256": "29a1c4d2bd91aeec090b9761c81074467f0b0b8e59417ce5bd7f70c2d0cb7a3e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals030-clean-two/phase-0-output.json",
+      "bytes": 2592037,
+      "sha256": "50a079cbb20f5f4fc0bfe1f6eaa9d0d2f81c01bef2fe8cadbe94153b53c64f93"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals030-clean-two/phase-0-stage-0-input.json",
+      "bytes": 2463877,
+      "sha256": "29a1c4d2bd91aeec090b9761c81074467f0b0b8e59417ce5bd7f70c2d0cb7a3e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/signals030-clean-two/phase-0-stage-0-output.json",
+      "bytes": 2592037,
+      "sha256": "50a079cbb20f5f4fc0bfe1f6eaa9d0d2f81c01bef2fe8cadbe94153b53c64f93"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb001/BUILD-STATUS.json",
+      "bytes": 622,
+      "sha256": "84540435cc87f838c4020b0635856fde819907fda53f8254f568eb8c77e1b1a9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb001/BUILD.log",
+      "bytes": 1613,
+      "sha256": "7d241984df0a70c858c33736bd87e17231239e616ae7b0100bef6014a8dffa25"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb001/circuit.json",
+      "bytes": 2994787,
+      "sha256": "6ec4f83a3d8d7ce52f8173b4a7172723258d702c790eecced43cdbde4fbaf24f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb001/phase-0-input.json",
+      "bytes": 2436625,
+      "sha256": "4b87f31d1911813070a766569852f57d49b687646db2a004e3932c05f2b276e7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb001/phase-0-stage-0-error.json",
+      "bytes": 2436747,
+      "sha256": "abf06d0433d5115c04240aeae3138b588f0ee6ba2a9450a417170f7b89af6358"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb001/phase-0-stage-0-input.json",
+      "bytes": 2436625,
+      "sha256": "4b87f31d1911813070a766569852f57d49b687646db2a004e3932c05f2b276e7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb001/routing-error.json",
+      "bytes": 2436747,
+      "sha256": "abf06d0433d5115c04240aeae3138b588f0ee6ba2a9450a417170f7b89af6358"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb002/BUILD-STATUS.json",
+      "bytes": 621,
+      "sha256": "ac6b0f7793db8fa391729259f47a20adcd1308bdf30cbf9bf4bea4001bef5fc1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb002/BUILD.log",
+      "bytes": 287,
+      "sha256": "7b4802bdf230b6b72afb0e85e1c0802259aee61a4c4bb33fe5037d8bff9fead3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb002/GEOMETRY.json",
+      "bytes": 5486,
+      "sha256": "7ac4a8e1c8fa129ac8d8d2fa931bb85c9ad6b6a4946dbd2398c2cbd5210d3a44"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb002/circuit.json",
+      "bytes": 3026161,
+      "sha256": "9ed330d73b44ae6163f7096fe211e0cea9b2b9260b5a26ae0d1605eb9d6218e6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb002/phase-0-input.json",
+      "bytes": 2438405,
+      "sha256": "2a7138e10e8fcb93008bf6c55f65017d802f262aa9d399e60c9e07e6188c5bbe"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb002/phase-0-output.json",
+      "bytes": 2447769,
+      "sha256": "7d0ae17c51b93bbf2443e30eb236330cfddc082dab4b5ff84e545f1613f941ae"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb002/phase-0-stage-0-input.json",
+      "bytes": 2438405,
+      "sha256": "2a7138e10e8fcb93008bf6c55f65017d802f262aa9d399e60c9e07e6188c5bbe"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb002/phase-0-stage-0-output.json",
+      "bytes": 2447769,
+      "sha256": "7d0ae17c51b93bbf2443e30eb236330cfddc082dab4b5ff84e545f1613f941ae"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb002/phase-1-input.json",
+      "bytes": 2449757,
+      "sha256": "7ada8ac393b8fe1be7311b1604ac160e667ed22bd2037e4e99b1359f714ffc57"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb002/phase-1-output.json",
+      "bytes": 2499907,
+      "sha256": "ab5a9e2f051809451c9bd2796997a22dfd0d8837a84157641bd1f7c4f04b5862"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb002/phase-1-progress.json",
+      "bytes": 777,
+      "sha256": "e3b8a0927f11b5777b8e7e4ba97d5c772dac52da7b6db952face9e9246378fcb"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb002/phase-1-stage-0-input.json",
+      "bytes": 2449757,
+      "sha256": "7ada8ac393b8fe1be7311b1604ac160e667ed22bd2037e4e99b1359f714ffc57"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb002/phase-1-stage-0-output.json",
+      "bytes": 2499907,
+      "sha256": "ab5a9e2f051809451c9bd2796997a22dfd0d8837a84157641bd1f7c4f04b5862"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb002/phase-1-stage-0-progress.json",
+      "bytes": 777,
+      "sha256": "e3b8a0927f11b5777b8e7e4ba97d5c772dac52da7b6db952face9e9246378fcb"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb003-mesh3/BUILD-STATUS.json",
+      "bytes": 678,
+      "sha256": "9870a28bf0433f7ec68de49d8fa323d1bdc6c1ee79d83ad1a4f339512070b306"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb003-mesh3/BUILD.log",
+      "bytes": 306,
+      "sha256": "01454655841c172555c6d3aa9263ceab54778732351f0c78dff207dbd45e5711"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb003-mesh3/INPUT-PROVENANCE.json",
+      "bytes": 874,
+      "sha256": "fe7a370a510a6d4de36bbe51e7c0ea35f4111ef3fc2872236330d6a3478488e6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb003-mesh3/OUTPUT-SIMPLE-ROUTE.json",
+      "bytes": 2359438,
+      "sha256": "ebafd832c29a6d054c1c1d1420d9034aa5c3e7a9314dcba68659ecf96041b474"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb003-mesh3/PROGRESS.json",
+      "bytes": 178,
+      "sha256": "6677f945bdeea14c6066b5e8af2150ccf08430bcf16de67da27ce6331108aba9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb004-coupled-clearance/BUILD-STATUS.json",
+      "bytes": 640,
+      "sha256": "e7f5994faecf6f8ec9b7b87086b26143862828ad71c30e3baaa52c51b07e65ad"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb004-coupled-clearance/BUILD.log",
+      "bytes": 1030,
+      "sha256": "8ec8699750c5d717cb61e8c8a6cb7366392bf0a9927ea2cd4fac14036dd26930"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb004-coupled-clearance/circuit.json",
+      "bytes": 2997041,
+      "sha256": "777b93daba70bc867919cd9bfe129a2308d09f2135a1319115f4b8ceef32d3f7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb004-coupled-clearance/manual-branches.json",
+      "bytes": 3750,
+      "sha256": "3de30d137455860695d7102d914d359d3f98c3882bea6bb99ab9b4f46ba656a4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb004-coupled-clearance/phase-0-input.json",
+      "bytes": 2438405,
+      "sha256": "f5fd49cca11bae96581fb5778e2a57e9184f0cddf44b42a3cfb67b7d4ef46fa5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb004-coupled-clearance/phase-0-output.json",
+      "bytes": 2447769,
+      "sha256": "223c5d67d6a11ba885dbcf2bd2e95ddc83637e1fa550ee8252271f3b1f857db4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb004-coupled-clearance/phase-0-stage-0-input.json",
+      "bytes": 2438405,
+      "sha256": "f5fd49cca11bae96581fb5778e2a57e9184f0cddf44b42a3cfb67b7d4ef46fa5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb004-coupled-clearance/phase-0-stage-0-output.json",
+      "bytes": 2447769,
+      "sha256": "223c5d67d6a11ba885dbcf2bd2e95ddc83637e1fa550ee8252271f3b1f857db4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb004-coupled-clearance/phase-1-input.json",
+      "bytes": 2450192,
+      "sha256": "d494fccc1b97c3bb126d399941983543bb0a640f72db8e776d762955d29045ec"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb004-coupled-clearance/phase-1-progress.json",
+      "bytes": 778,
+      "sha256": "9e165eef659f1b59611cc75c4fc0bb4ebeb982225e0b15b5b7f38fbe1ceb4113"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb004-coupled-clearance/phase-1-stage-0-error.json",
+      "bytes": 2450378,
+      "sha256": "8470e35448ff0aa09e3cccf760abe7fef53bbf03173a8cd7e249fd0425a34404"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb004-coupled-clearance/phase-1-stage-0-input.json",
+      "bytes": 2450192,
+      "sha256": "d494fccc1b97c3bb126d399941983543bb0a640f72db8e776d762955d29045ec"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb004-coupled-clearance/phase-1-stage-0-progress.json",
+      "bytes": 778,
+      "sha256": "9e165eef659f1b59611cc75c4fc0bb4ebeb982225e0b15b5b7f38fbe1ceb4113"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb004-coupled-clearance/routing-error.json",
+      "bytes": 2450378,
+      "sha256": "8470e35448ff0aa09e3cccf760abe7fef53bbf03173a8cd7e249fd0425a34404"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb005-manual-fanout-pair/BUILD-STATUS.json",
+      "bytes": 648,
+      "sha256": "3c59fd7453367c2936ac3287565cd682aa2a8dbd906f0214f2fd515c811f7016"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb005-manual-fanout-pair/BUILD.log",
+      "bytes": 1183,
+      "sha256": "f1d3d80a4dceef9d444aa8e248ce07d40c280dd9aa14828cf9bec4fb7fee1236"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb005-manual-fanout-pair/phase-0-input.json",
+      "bytes": 2451789,
+      "sha256": "340bfa71f9d9261afe941e0d1bb8b6490c8e5eaeb3317d1e283e917fc8c8768c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb005-manual-fanout-pair/phase-0-output.json",
+      "bytes": 2519886,
+      "sha256": "b2026061b25d320359b10c60279501c79a10323a42c63ef1e31b63198005c9a6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb005-manual-fanout-pair/phase-0-stage-0-input.json",
+      "bytes": 2451789,
+      "sha256": "340bfa71f9d9261afe941e0d1bb8b6490c8e5eaeb3317d1e283e917fc8c8768c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb005-manual-fanout-pair/phase-0-stage-0-output.json",
+      "bytes": 2519886,
+      "sha256": "b2026061b25d320359b10c60279501c79a10323a42c63ef1e31b63198005c9a6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb005-manual-fanout-pair/phase-1-input.json",
+      "bytes": 2880823,
+      "sha256": "8f225f11783a36588c52d277dbc8f76148f8fea63517ad4032360e70fe0aea7b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb005-manual-fanout-pair/phase-1-progress.json",
+      "bytes": 785,
+      "sha256": "a96a18f7916c0403803e6217f30b57cbceabb9b475ea7d246798d08f136a395d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb005-manual-fanout-pair/phase-1-stage-0-input.json",
+      "bytes": 2880823,
+      "sha256": "8f225f11783a36588c52d277dbc8f76148f8fea63517ad4032360e70fe0aea7b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb005-manual-fanout-pair/phase-1-stage-0-progress.json",
+      "bytes": 785,
+      "sha256": "a96a18f7916c0403803e6217f30b57cbceabb9b475ea7d246798d08f136a395d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-native-short-stubs/BUILD-STATUS.json",
+      "bytes": 639,
+      "sha256": "6acc0a23f60dd0ace7062e99a7bfa094eec08009118cb6639ff8f4d00cd47709"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-native-short-stubs/BUILD.log",
+      "bytes": 101,
+      "sha256": "5eb6b40f661f70eb5da5c0ba43b06132cf6d0d4bdba563a8a5ee0ea3f1776edc"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-native-short-stubs/CONNECTIVITY.json",
+      "bytes": 27870,
+      "sha256": "8325ea4647ad24f5f4447deba6b1dfa272406a03d9bfce9e6f8a5a230d93cf59"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-native-short-stubs/CONNECTIVITY.log",
+      "bytes": 528,
+      "sha256": "beb06865a8432caadacb8b505c89b82ec3d2754b948683eb282becc7b2a05f0b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-native-short-stubs/GEOMETRY.json",
+      "bytes": 3610,
+      "sha256": "4856e6958cb4320c05b1f05bec14a4f17ec8ae3333c5d5244ceceefa59364b27"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-native-short-stubs/GEOMETRY.log",
+      "bytes": 3610,
+      "sha256": "4856e6958cb4320c05b1f05bec14a4f17ec8ae3333c5d5244ceceefa59364b27"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-native-short-stubs/USB-LENGTHS.json",
+      "bytes": 1932,
+      "sha256": "1c6f6f96aab88c7f7dcbaa8ab6113c9089f224c30d5810b0ed9a4bb14289fb0f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-native-short-stubs/USB-LENGTHS.log",
+      "bytes": 1682,
+      "sha256": "9902ff89547628929131f3aba85e94c7a892d0df1fc3beacc63b52820d85a955"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-native-short-stubs/circuit.json",
+      "bytes": 3033438,
+      "sha256": "73bda645b0b8374752c2a7357aebeb0cc7f0fa3138543e45deb15cfc56ea7536"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-native-short-stubs/phase-0-input.json",
+      "bytes": 2454682,
+      "sha256": "b51f8ae551f1ad6bdd9e17b6aed93631810b2f226a873acf74e266d54a85c06f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-native-short-stubs/phase-0-output.json",
+      "bytes": 2530574,
+      "sha256": "cb34c9e68856bf8fd58622575e5ddfa3e984ad4b193f84cf2de445b9d17f4b1e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-native-short-stubs/phase-0-stage-0-input.json",
+      "bytes": 2454682,
+      "sha256": "b51f8ae551f1ad6bdd9e17b6aed93631810b2f226a873acf74e266d54a85c06f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-native-short-stubs/phase-0-stage-0-output.json",
+      "bytes": 2530574,
+      "sha256": "cb34c9e68856bf8fd58622575e5ddfa3e984ad4b193f84cf2de445b9d17f4b1e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-short-mcu-pair/manual-candidates.json",
+      "bytes": 1918,
+      "sha256": "7a54a68d628d8c5ac5f9edfb856e2aef0bb0fab2adc87bff04bddf44053c7e39"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-short-mcu-pair/manual-qspi-io3-clearance-candidate.json",
+      "bytes": 1295,
+      "sha256": "658ff8bce037d544463a21834e094628e54580dd7fe9d5c787f3134801ee46f9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb006-short-mcu-pair/original-qspi-io3-path.json",
+      "bytes": 1173,
+      "sha256": "f34703b7c6e8ffe64dd2a4fc4ffc441d89bce033cfd1946d4fcd14e8e76317e4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/BUILD-STATUS.json",
+      "bytes": 635,
+      "sha256": "7c5d2e6e8e486f45b6a0b9ca06d06c35cd697a30012f9a23a924ce1a534c4d6c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/BUILD.log",
+      "bytes": 101,
+      "sha256": "a1f30ce658a462fd54dd95c9b23c978fba4874b4ac5be5a4ceca92bd95ac4af2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/CONNECTIVITY.json",
+      "bytes": 27874,
+      "sha256": "0114d1ec377973cb1b7e247cc6def938695880aa58f05ddfe2539d1806e844af"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/CONNECTIVITY.log",
+      "bytes": 528,
+      "sha256": "beb06865a8432caadacb8b505c89b82ec3d2754b948683eb282becc7b2a05f0b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/GEOMETRY.json",
+      "bytes": 2317,
+      "sha256": "2a32fe6d342aa92cfd8cc66c451e56cc3f5b579a3a0c7d1d3cf1e31790d21eaa"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/GEOMETRY.log",
+      "bytes": 2317,
+      "sha256": "2a32fe6d342aa92cfd8cc66c451e56cc3f5b579a3a0c7d1d3cf1e31790d21eaa"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/USB-LENGTHS.json",
+      "bytes": 1925,
+      "sha256": "35bcf7e8ae747f550cc4f7f18463f98f341e8efa97c25dd355d95aeed3b2518c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/USB-LENGTHS.log",
+      "bytes": 1675,
+      "sha256": "f857fc930fb0de1f0232d971f798706e316ced8829fcb1c2c2e547371c489e09"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/bottom.png",
+      "bytes": 113145,
+      "sha256": "2ee64e526b6a9fbfa7127c0a28919ef1205bc557f43acd1cbdc8befabf8005cc"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/bottom.svg",
+      "bytes": 353607,
+      "sha256": "0f475a259e3e758c290638835d0bd702cd2d6e24e0874154e3d6432d0b528993"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/circuit.json",
+      "bytes": 3033034,
+      "sha256": "62bbe80d1e05cd7749e988b1d6ae6edbcb47c0e132b69e1bcf6b7bf999e42118"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/inner1.png",
+      "bytes": 54811,
+      "sha256": "9896f99e209accbb5b66e434423b6d24efc2cb842ed07747cbbe0522aeae097d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/inner1.svg",
+      "bytes": 61017,
+      "sha256": "9d96029229f4ff204831c7f20d8fb0af5331b8919a4ace2bc178a5972a9073fb"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/inner2.png",
+      "bytes": 55025,
+      "sha256": "f389fc23456c74a6de2bf72a1ec05a9dadb6e93b5e90969408011f833074d2ea"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/inner2.svg",
+      "bytes": 61014,
+      "sha256": "b39e467ed7444be9fbf72ffc91dea9f79b77f04a087d90ee01019874865ea30e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/phase-0-input.json",
+      "bytes": 2454682,
+      "sha256": "b51f8ae551f1ad6bdd9e17b6aed93631810b2f226a873acf74e266d54a85c06f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/phase-0-output.json",
+      "bytes": 2530738,
+      "sha256": "0d22c185db29b362cb259fc1bd5a1c4c8c89584fde8446ed13f11153df04d8bb"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/phase-0-stage-0-input.json",
+      "bytes": 2454682,
+      "sha256": "b51f8ae551f1ad6bdd9e17b6aed93631810b2f226a873acf74e266d54a85c06f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/phase-0-stage-0-output.json",
+      "bytes": 2530738,
+      "sha256": "0d22c185db29b362cb259fc1bd5a1c4c8c89584fde8446ed13f11153df04d8bb"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/top.png",
+      "bytes": 115336,
+      "sha256": "61fe551743d4fb2a8305673651e8f317b2f6f58eaffaa2b3c664e3ec3c53b288"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb007-io3-clearance/top.svg",
+      "bytes": 317214,
+      "sha256": "34284b2e6b2f9257615f3f95e0cf5bd8c6b8fbb53b66cc8ab8fab2f06c25fb3e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb008-prejoined-receptacle/BUILD-STATUS.json",
+      "bytes": 650,
+      "sha256": "773e8655d0dcb6723ae5e28ee33ebd1808d171ff8e58d9a29c2978f1537e46c7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb008-prejoined-receptacle/BUILD.log",
+      "bytes": 1104,
+      "sha256": "a9eaf02970ffbef7ec356657bf8810c5e1ddb5a2dd3a4ce073735addf6f07e4d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb008-prejoined-receptacle/phase-0-input.json",
+      "bytes": 2454682,
+      "sha256": "6e7432502f8b6b7f3e55d50cb2f4bae417fdf3502bf6d61cb62a720618e59863"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb008-prejoined-receptacle/phase-0-output.json",
+      "bytes": 2530738,
+      "sha256": "3f3dfb551346f2a6d947a7b0493ac116883d88759bc5255eaa7b4f555ba8325f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb008-prejoined-receptacle/phase-0-stage-0-input.json",
+      "bytes": 2454682,
+      "sha256": "6e7432502f8b6b7f3e55d50cb2f4bae417fdf3502bf6d61cb62a720618e59863"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb008-prejoined-receptacle/phase-0-stage-0-output.json",
+      "bytes": 2530738,
+      "sha256": "3f3dfb551346f2a6d947a7b0493ac116883d88759bc5255eaa7b4f555ba8325f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb008-prejoined-receptacle/phase-2-input.json",
+      "bytes": 2930878,
+      "sha256": "2de2ffd851575188688d95f7735c67206a32de9c25e0b168662a2f664eb155d6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb008-prejoined-receptacle/phase-2-output.json",
+      "bytes": 2911194,
+      "sha256": "19726d2bcaccc871104352a3a6880151b7beaf09a1f0ed780f6f88bca94a3945"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb008-prejoined-receptacle/phase-2-progress.json",
+      "bytes": 812,
+      "sha256": "dd10c68081e701d238286f88c36902032186b85ac6e20a15522bebfad55482e0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb008-prejoined-receptacle/phase-2-stage-0-input.json",
+      "bytes": 2903929,
+      "sha256": "a4b81bba46ccb3c939bbd5e0fd0f84915077b07bf4dc5e9717ed7fe16daf5653"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb008-prejoined-receptacle/phase-2-stage-0-output.json",
+      "bytes": 2911194,
+      "sha256": "19726d2bcaccc871104352a3a6880151b7beaf09a1f0ed780f6f88bca94a3945"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb008-prejoined-receptacle/phase-2-stage-1-input.json",
+      "bytes": 2930878,
+      "sha256": "2de2ffd851575188688d95f7735c67206a32de9c25e0b168662a2f664eb155d6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb008-prejoined-receptacle/phase-2-stage-1-progress.json",
+      "bytes": 812,
+      "sha256": "dd10c68081e701d238286f88c36902032186b85ac6e20a15522bebfad55482e0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb009-mesh2/BUILD-STATUS.json",
+      "bytes": 713,
+      "sha256": "e342015fd9591d413afbc936f3ceef1410c8284bbc6f8685ae6b7b8837a16606"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb009-mesh2/BUILD.log",
+      "bytes": 1562,
+      "sha256": "192f3629fc0f9d7c1790967db14f92be3412361bdf09ef2f4290af1c608dbdd3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb009-mesh2/INPUT-PROVENANCE.json",
+      "bytes": 903,
+      "sha256": "2ae441e006504f4988725be119caf0dd4d2b4dd2ff1e228fa4a70a5e10bb8813"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb009-mesh2/OUTPUT-SIMPLE-ROUTE.json",
+      "bytes": 2885877,
+      "sha256": "639e8728d31f8c0d7106bd54cfc3fa7ffa937d29afe4d6b1bd8f9dd5457cc573"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb009-mesh2/PROGRESS.json",
+      "bytes": 174,
+      "sha256": "3054dda8c02eb17018b317841d40ac66ed8a60f2369fc36ebf9c2411b699859e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb009-mesh2/combined-candidates.json",
+      "bytes": 37356,
+      "sha256": "a7ce268f8ed42f9df2de983c9ce5303912949e79b1215d7b5399298287c3708f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb009-mesh2/native-candidates.json",
+      "bytes": 33820,
+      "sha256": "ee3c5738d609a2b5dce5ef5a9f75bb7ca310bdf84def57273dd30279df69ccb8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb010-native-pair/BUILD-STATUS.json",
+      "bytes": 634,
+      "sha256": "cde41bd12ec2f5f9eff247109126b7ff558b8d6705146e9c19b57c25d66d216e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb010-native-pair/BUILD.log",
+      "bytes": 101,
+      "sha256": "ed063ab2383634216d9814e32972ba1b5dbe24edbea6f4bdd435811ae019bd83"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb010-native-pair/GEOMETRY.json",
+      "bytes": 2793,
+      "sha256": "5124aa85be6ad7d8e07ba788b78dfe89545c9eb6230035bb44ca1d09bfc0f053"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb010-native-pair/GEOMETRY.log",
+      "bytes": 2793,
+      "sha256": "5124aa85be6ad7d8e07ba788b78dfe89545c9eb6230035bb44ca1d09bfc0f053"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb010-native-pair/USB-LENGTHS-UNIT-CORRECTION.json",
+      "bytes": 1884,
+      "sha256": "779d42f02e4aa80947d86253a141e89cad1780876bfbb935e1889272dded7f6a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb010-native-pair/USB-LENGTHS-UNIT-CORRECTION.log",
+      "bytes": 1602,
+      "sha256": "877a503b3c10afc9260372ada19fd4159604619e711af4f7cf6f617c7e9594da"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb010-native-pair/USB-LENGTHS.json",
+      "bytes": 1915,
+      "sha256": "1123e6fe0c2fd3b0f5548424e55f9333458a1c389e43196b2fffbc543ca096ca"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb010-native-pair/USB-LENGTHS.log",
+      "bytes": 1665,
+      "sha256": "78b96fd9a1831e9e60850fc88a212061d140a3740cc3afabe540a23889ee378e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb010-native-pair/circuit.json",
+      "bytes": 3070778,
+      "sha256": "940f3fb96ab36b29cfe4925fe735cc933ef13a80b6e6849eb1fab002eb195418"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb010-native-pair/phase-0-input.json",
+      "bytes": 2456734,
+      "sha256": "b344fd5365aeb629f04e8ffcda976c878ef7381c4077d6f5a0e34ab83ed85533"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb010-native-pair/phase-0-output.json",
+      "bytes": 2575531,
+      "sha256": "17f7c7dfc86c7a1454b069c5748b854bbd051748f8c479df5a58198eef68e8c4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb010-native-pair/phase-0-stage-0-input.json",
+      "bytes": 2456734,
+      "sha256": "b344fd5365aeb629f04e8ffcda976c878ef7381c4077d6f5a0e34ab83ed85533"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb010-native-pair/phase-0-stage-0-output.json",
+      "bytes": 2575531,
+      "sha256": "17f7c7dfc86c7a1454b069c5748b854bbd051748f8c479df5a58198eef68e8c4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb011-outer-layer-input/BUILD-STATUS.json",
+      "bytes": 640,
+      "sha256": "be0e9cca72733c6f608d8473ecd7ff249c7018f2c9109ffe6c6a998a10a3a10b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb011-outer-layer-input/BUILD.log",
+      "bytes": 1674,
+      "sha256": "ef07074fd357d425aed7e3f4ffd11bb59e8eaef3d7664001c9c84dfa9d9e8fd1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb012-outer-port-selectors/BUILD-STATUS.json",
+      "bytes": 650,
+      "sha256": "65c4aab532325ad1b67f3644086bfc6843a7cbae7feff63794f44b87dc4acb48"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb012-outer-port-selectors/BUILD.log",
+      "bytes": 265,
+      "sha256": "a9a4cb73049423a6d577132c862329e3ef7e5185fa76fc0fc3e240f03d3ac447"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb012-outer-port-selectors/phase-0-input.json",
+      "bytes": 2454682,
+      "sha256": "421f7bb543a5cca428a90c3b1021805b336ff18abb0f97b786bcda3d10df785b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb012-outer-port-selectors/phase-0-output.json",
+      "bytes": 2530738,
+      "sha256": "31488b5bd57d67eb30b2eb91b3834bb3b36dc40e5b7e815cde29d80987913849"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb012-outer-port-selectors/phase-0-stage-0-input.json",
+      "bytes": 2454682,
+      "sha256": "421f7bb543a5cca428a90c3b1021805b336ff18abb0f97b786bcda3d10df785b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb012-outer-port-selectors/phase-0-stage-0-output.json",
+      "bytes": 2530738,
+      "sha256": "31488b5bd57d67eb30b2eb91b3834bb3b36dc40e5b7e815cde29d80987913849"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb012-outer-port-selectors/phase-2-input.json",
+      "bytes": 2931210,
+      "sha256": "ab66f675e9e6889eaa0c4116c50ed5412170c409a547e51b0f5f75dd95107c88"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb012-outer-port-selectors/phase-2-output.json",
+      "bytes": 2911526,
+      "sha256": "c0d4eb65b538520f7c547d8d901a3a160a67bb2163b03f88bdbd6e7c2fa1941f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb012-outer-port-selectors/phase-2-progress.json",
+      "bytes": 797,
+      "sha256": "f81ddd3171ca593a46d6ad7df3250918976255736c3ce1167f53ced8328590ec"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb012-outer-port-selectors/phase-2-stage-0-input.json",
+      "bytes": 2904261,
+      "sha256": "cece5ef717f4bd8da2c3eb3d49672637ae640d53a8416d726e909a4596cb18d0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb012-outer-port-selectors/phase-2-stage-0-output.json",
+      "bytes": 2911526,
+      "sha256": "c0d4eb65b538520f7c547d8d901a3a160a67bb2163b03f88bdbd6e7c2fa1941f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb012-outer-port-selectors/phase-2-stage-1-input.json",
+      "bytes": 2931210,
+      "sha256": "ab66f675e9e6889eaa0c4116c50ed5412170c409a547e51b0f5f75dd95107c88"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb012-outer-port-selectors/phase-2-stage-1-progress.json",
+      "bytes": 797,
+      "sha256": "f81ddd3171ca593a46d6ad7df3250918976255736c3ce1167f53ced8328590ec"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb013-outer-mesh2/BUILD-STATUS.json",
+      "bytes": 714,
+      "sha256": "2e11e1cbad0b989ac4dfaa22c405eece3b95154e0090b6241b2f77aa41ba7009"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb013-outer-mesh2/BUILD.log",
+      "bytes": 1061,
+      "sha256": "07c81320a73ae78a9040234de2f544b02fd42efbd7b4202721b35db24265de12"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb013-outer-mesh2/INPUT-PROVENANCE.json",
+      "bytes": 903,
+      "sha256": "49c3e236c94feb46b83bd8b2c033de4d62ceb29898f48e2caf9789e62cdf0434"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb013-outer-mesh2/LAYER-CONSTRAINT-REJECTION.json",
+      "bytes": 504,
+      "sha256": "eda10b6baad86ec27a7d184a6eb0a31550b157cddaf5230b6aaf94c550be4aab"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb013-outer-mesh2/OUTPUT-SIMPLE-ROUTE.json",
+      "bytes": 2886179,
+      "sha256": "187b029159f9fab762ffbefde6e002a8fce3793f2db4734a073e0ecc6ab737b7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb013-outer-mesh2/PROGRESS.json",
+      "bytes": 174,
+      "sha256": "221eb9ccea4d974e886c5e705100db8cb7430f61a7b83bc086452fb865871142"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb017-input/preview-placement.ts",
+      "bytes": 10041,
+      "sha256": "cbac179dbd88cd4735c7431a246bf43ff9132f38969a387c0b725d7b6c914ae5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb017-input/proposed-placement-changes.json",
+      "bytes": 620,
+      "sha256": "2bed29ec5b1f64aec8924d5153e6f23f1a6b8f361c2d6793c32847d1926008b3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb017-input/rev45-saved-paths.json",
+      "bytes": 62338,
+      "sha256": "1c2e3a0ad6c976b6c626c72e32486ee9c40263642fe471d1fb0355ed45cbe5e8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb017-input/via-inspection.json",
+      "bytes": 613,
+      "sha256": "80e46b94c165c64336fc47b03a1df0c381d0fedbf41e837f29a58edd29077604"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb017-placement-only/BUILD-STATUS.json",
+      "bytes": 637,
+      "sha256": "7ca7f8c65bb3e1447a0675271f62282800b7582cee0bf5954f45b5d8ef4142f9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb017-placement-only/BUILD.log",
+      "bytes": 44,
+      "sha256": "2dee9300ab7e4f24096d8627adc7294ca0fb0de5b9773661d0750eb711756be7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb017-placement-only/circuit.json",
+      "bytes": 2793274,
+      "sha256": "c8920292b8e4bc0b7280aa0bc02566b8528c9fc6420925bf4500860925c963d0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb018-manual-input/manual-candidates.json",
+      "bytes": 7544,
+      "sha256": "6ffb2b3966d0a69a01833c041e09646bf979bb5a64d638037c0d6022ef15d1f9"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb018-manual-input/new-via-inspection.json",
+      "bytes": 717,
+      "sha256": "4d4d78f1f9b965a91d9dc65b9e2dcd0b217f6918f85923f0ed1e566e5862ce0f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb018-manual-input/route-inspection.json",
+      "bytes": 3058,
+      "sha256": "7c83562a2554fddd795f06fe5bc862c98ca1c44b640b9b29b414647f499a1fee"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb018-manual-input/route-inspection.log",
+      "bytes": 1623,
+      "sha256": "4a12297c30da55d76d1ac521218fec51918590b95fe3dab8662951316dc1adbb"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb018-manual-input/through-escaped-via-inspection.json",
+      "bytes": 717,
+      "sha256": "6c4fd1319104c54456e64c9234f600bc38fadef03cda29ded547a63e69eefae3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb018-manual-input/usb-end-vias-inspection.json",
+      "bytes": 240,
+      "sha256": "c03b956da1c7898df104728d4209e548f74064e091340d3f8c61be26c2cd0624"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb018-placement-only/BUILD-STATUS.json",
+      "bytes": 636,
+      "sha256": "457f0a7a8ae6253346fcf627a5bfbf0f93e878ab29b0e70e2dbd0fe931453fad"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb018-placement-only/BUILD.log",
+      "bytes": 44,
+      "sha256": "2dee9300ab7e4f24096d8627adc7294ca0fb0de5b9773661d0750eb711756be7"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb018-placement-only/circuit.json",
+      "bytes": 2793334,
+      "sha256": "6ec45b590a46db6f0dc4c09ad87a2e2053b030f06f53ed9b74b15fa48a99e9aa"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb019-placement-only/BUILD-STATUS.json",
+      "bytes": 635,
+      "sha256": "c62dd6e041eaa41e2c641ca64a873fdf3ca128a01d9a0a75a7ae4198c3867456"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb019-placement-only/BUILD.log",
+      "bytes": 44,
+      "sha256": "dab496f7171653ce9f3346160375b6b0ddc599f32b17ecc922cfcfcde24c79ce"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb019-placement-only/circuit.json",
+      "bytes": 2794063,
+      "sha256": "c6d4d4cd7663d1bd059d784a6ba7e7306aa159e0e1c46f6e412741a367264b88"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb020-placement-only/BUILD-STATUS.json",
+      "bytes": 636,
+      "sha256": "83601c64e56a39e270899871cd50448a0ad0e51c7e5f5853dc6c89740c1673a5"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb020-placement-only/BUILD.log",
+      "bytes": 44,
+      "sha256": "d550bcbb4316e177119cad134d01825bbab53dac8d5a7cebb6b8de6f038c8cc8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb020-placement-only/circuit.json",
+      "bytes": 2792513,
+      "sha256": "67cc7af6f4e878177c28d29e7bd5e345623ee58c18058ea66266657e62313289"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb021-input/manual-candidates.json",
+      "bytes": 10191,
+      "sha256": "1e3af8fce082ac6aaa406506c0882eb61d32d2a369f3e2ea2edd8f460f3270b6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb021-input/route-inspection-existing.log",
+      "bytes": 3030,
+      "sha256": "7aede1b2d9117f7b629988afe08ac26200bd52ab2dcaf0c8a743a9fc5cb5849c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb021-input/route-inspection-placement.log",
+      "bytes": 1925,
+      "sha256": "4d8ad6252d910c23c52ec3bac4317927fd083eabb10c0726d0547f46529aa2f4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb021-input/route-inspection.json",
+      "bytes": 4062,
+      "sha256": "537767caeeceb812edfa7144263488e5ced0fe9230677fac5b67d299dad2832d"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb022-input/manual-candidates.json",
+      "bytes": 10457,
+      "sha256": "e7345d4a2fc266e38730a2294bd0c387ce4ef13824cac7e73287c24fc1309e45"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb022-manual-common-layer/BUILD-STATUS.json",
+      "bytes": 638,
+      "sha256": "6983df690bef907ce5574bfbaa5ca2320ca42c34f397326c81bdfa5c1768ff50"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb022-manual-common-layer/BUILD.log",
+      "bytes": 1686,
+      "sha256": "a9b88879fa2f50980a5ef4e8f47f806950eeabe93fd305d8580c134610c26304"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb022-manual-common-layer/COPPER-GEOMETRY.json",
+      "bytes": 1280,
+      "sha256": "738fcb47daacbe5b6f0f3f9b84c441400a10248c5cf5922750d0e292a4796348"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb022-manual-common-layer/COPPER-GEOMETRY.log",
+      "bytes": 1280,
+      "sha256": "738fcb47daacbe5b6f0f3f9b84c441400a10248c5cf5922750d0e292a4796348"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb022-manual-common-layer/circuit.json",
+      "bytes": 2996312,
+      "sha256": "89d9165c848e0c294cf06a34ce751f09deba4259f4d6807fd6f0aa32fc5ddb78"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb022-manual-common-layer/phase-0-input.json",
+      "bytes": 2462559,
+      "sha256": "224d56e52e9a70528bbbafc0ff26ee64eab12eb8aa1e923a34e1514cec7e78f3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb022-manual-common-layer/phase-0-stage-0-error.json",
+      "bytes": 2462718,
+      "sha256": "209e4fec0dd6c156444b40491ef3ae1455861f142b2727f3f1e9042bc1380ed1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb022-manual-common-layer/phase-0-stage-0-input.json",
+      "bytes": 2462559,
+      "sha256": "224d56e52e9a70528bbbafc0ff26ee64eab12eb8aa1e923a34e1514cec7e78f3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb022-manual-common-layer/routing-error.json",
+      "bytes": 2462718,
+      "sha256": "209e4fec0dd6c156444b40491ef3ae1455861f142b2727f3f1e9042bc1380ed1"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb023-input/manual-candidates.json",
+      "bytes": 10770,
+      "sha256": "83b3b23e5150fd195b413b7915cd1f0e61233312c83d71492da03c07f59527ff"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb023-manual-common-layer/BUILD-STATUS.json",
+      "bytes": 642,
+      "sha256": "0c79f11e7450cfbc65bdfa990bc24c0f3112e6a98bca6ddc2d2a979ebd67d2bf"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb023-manual-common-layer/BUILD.log",
+      "bytes": 101,
+      "sha256": "133dc10e6993bbe764e403d4d97bd95b0b1c4ee4f4aad1f4cd380c035ba6c623"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb023-manual-common-layer/COPPER-GEOMETRY.json",
+      "bytes": 3886,
+      "sha256": "789a4fecc3c918a190a7658a50808f26fbb5cf51025aed7ece7701cdbd74b83e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb023-manual-common-layer/COPPER-GEOMETRY.log",
+      "bytes": 3886,
+      "sha256": "789a4fecc3c918a190a7658a50808f26fbb5cf51025aed7ece7701cdbd74b83e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb023-manual-common-layer/USB-LENGTHS.json",
+      "bytes": 1895,
+      "sha256": "385130b5647f200cf4aad82553bf1b7dad3c73502f1aed77be2c492d35dbbffe"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb023-manual-common-layer/circuit.json",
+      "bytes": 3071774,
+      "sha256": "1a4a532a65551208963ee07e5deb24714b8df603e92be12f7655695d92b0b4c0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb023-manual-common-layer/phase-0-input.json",
+      "bytes": 2462559,
+      "sha256": "224d56e52e9a70528bbbafc0ff26ee64eab12eb8aa1e923a34e1514cec7e78f3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb023-manual-common-layer/phase-0-output.json",
+      "bytes": 2584819,
+      "sha256": "623638a16e0f35e6ba682e324054f35061b7fad99b8391ac4bd8f28ea553dcbe"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb023-manual-common-layer/phase-0-stage-0-input.json",
+      "bytes": 2462559,
+      "sha256": "224d56e52e9a70528bbbafc0ff26ee64eab12eb8aa1e923a34e1514cec7e78f3"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb023-manual-common-layer/phase-0-stage-0-output.json",
+      "bytes": 2584819,
+      "sha256": "623638a16e0f35e6ba682e324054f35061b7fad99b8391ac4bd8f28ea553dcbe"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-input/before-dvdt-clearance-path.json",
+      "bytes": 1960,
+      "sha256": "1817c6ee75278915c8acb58523c282bb33c0ecb702704f98e13cefaeb6468ffe"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-input/manual-candidates.json",
+      "bytes": 10775,
+      "sha256": "d3cdcad8d3d661256917806f09d8646255ddaea81d128c2a6b46626a1d798449"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/BUILD-STATUS.json",
+      "bytes": 641,
+      "sha256": "a7512bfb6f81c46a26f6c274971ed2f837b0bdb310e74870a9b87717d33180c6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/BUILD.log",
+      "bytes": 101,
+      "sha256": "c3320fbed08d441585f224a54eaf7fbecb7bcfe2de1ac6ce0fa4a32dcfad0607"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/CONNECTIVITY.json",
+      "bytes": 44682,
+      "sha256": "a1362134a1694bea13d18524a21dd5e40de0662b090db8b4fb69fa9e7d17b81f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/CONNECTIVITY.log",
+      "bytes": 735,
+      "sha256": "5a3758ff4139343da540cd31429f41922f0e258a44a7d51262a27c93b919c23c"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/COPPER-GEOMETRY.json",
+      "bytes": 2334,
+      "sha256": "222bcf5e63d08c9a9e3fa46aeff57c09e5c9ad0d54db082e8eaaeebe410a3a49"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/COPPER-GEOMETRY.log",
+      "bytes": 2334,
+      "sha256": "222bcf5e63d08c9a9e3fa46aeff57c09e5c9ad0d54db082e8eaaeebe410a3a49"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/USB-LENGTHS-WITH-TRUNK-SCOPE.json",
+      "bytes": 2106,
+      "sha256": "48fa3c8ff7ba073385adb544dd7553d2a2900701d66386fa74b8e0393412934b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/USB-LENGTHS-WITH-TRUNK-SCOPE.log",
+      "bytes": 1806,
+      "sha256": "0b3c001ac3783b679fe5ea46c62039f261d386d1d75c2665908a130510b7c6c0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/USB-LENGTHS.json",
+      "bytes": 1895,
+      "sha256": "41e460106f5144ac8c953b702f815c5ba4e01e346029f5ea8121a29df65e0657"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/USB-LENGTHS.log",
+      "bytes": 1613,
+      "sha256": "e840bc3ed230277ee6155cbc5a7cf240fb1a62184d229347017891e0ad835b46"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/bottom.png",
+      "bytes": 118181,
+      "sha256": "4c2c82ad419c0119fb5b8c0f92f3b66b28fa3c9b60ae176570810f3379662564"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/bottom.svg",
+      "bytes": 367610,
+      "sha256": "518ed65e15bbc3f52ea1cffab125c61f546e7a46c9e6d672110272621f600f42"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/circuit.json",
+      "bytes": 3069299,
+      "sha256": "2e72df2bc9fe69cab4781509a5472c3ac8cf0cb53b49e432687c7b211531a3a2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/inner1.png",
+      "bytes": 60199,
+      "sha256": "adb6a9c303d0755d3d776ca5ec496d31a5834c54ba380fc73d82da35f0224ca0"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/inner1.svg",
+      "bytes": 68389,
+      "sha256": "e977d8252da84d08f2b36e47d0fd83fe2bfe2a0bf9321f41864996b0eab1787e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/inner2.png",
+      "bytes": 61800,
+      "sha256": "6dd5b7ed3bf4578d6762ed01835f70adfb6d1a6e86b4b569f5dea51866159709"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/inner2.svg",
+      "bytes": 72880,
+      "sha256": "8bc09c79a7eeb42eeea6f2fad23487af6439cae761c936a1a08904e1375baf53"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/phase-0-input.json",
+      "bytes": 2462814,
+      "sha256": "22441e2ca3cb634e2cd53bc99d41f55eefed098fe690f2ae45e98fd8a107b35b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/phase-0-output.json",
+      "bytes": 2583455,
+      "sha256": "f7156d1b35da3253b3441c6906c89bb7e2e71e9f0909f2768ac880946fb76d72"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/phase-0-stage-0-input.json",
+      "bytes": 2462814,
+      "sha256": "22441e2ca3cb634e2cd53bc99d41f55eefed098fe690f2ae45e98fd8a107b35b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/phase-0-stage-0-output.json",
+      "bytes": 2583455,
+      "sha256": "f7156d1b35da3253b3441c6906c89bb7e2e71e9f0909f2768ac880946fb76d72"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/top.png",
+      "bytes": 120363,
+      "sha256": "0789ce56f2d8df2d582f377bc17f00ad7572cda568993376afbc929a1aaa0b90"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches/top.svg",
+      "bytes": 347702,
+      "sha256": "3cee00482b84f92b09b274449de93808032dd141966af48b1ca35252bb0fc8d4"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-CAN.png",
+      "bytes": 267738,
+      "sha256": "2c37565eb4b7826e9093d9b7dfacfcadb84d5f9e719592bf1fc4261d7505efba"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-CAN.svg",
+      "bytes": 163742,
+      "sha256": "37c98f7ff21fd4517189a57e93ca25a2060d167d66ed897554292fd5a2acbeb6"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-I2C.png",
+      "bytes": 233850,
+      "sha256": "fcbac6b595cb49dd3f2e9ce25b89c74dbc3f0ba0fbbe5a58f42a5c8f4e877fd8"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-I2C.svg",
+      "bytes": 114434,
+      "sha256": "52289606aaad6776c3ebc70423163fb15e6f140106b8af98ee35c465080ad4fe"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-InputPower.png",
+      "bytes": 284130,
+      "sha256": "5b1a81c05b1764a8e1e3f580fcd122c7b3a95f17e0307197ba271f687a1412ff"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-InputPower.svg",
+      "bytes": 157204,
+      "sha256": "86d9f5520de4b5ff1fe1b9acca4b7f1546926f062d99703b70bebbc6494f9141"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-Interfaces.png",
+      "bytes": 340223,
+      "sha256": "1a9f3cd917461b955c53618bfd3c052dec4c36aae2313db01421c243fbda3856"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-Interfaces.svg",
+      "bytes": 232415,
+      "sha256": "758228efa9347f1adb59f7d360af584db940023b2a1e7d478f032130ce2b0db2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-LogicPower.png",
+      "bytes": 188473,
+      "sha256": "d48b0ccaefd828cbc8e2a98956d8d260a5edd731beef5a95471177cade35e334"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-LogicPower.svg",
+      "bytes": 100139,
+      "sha256": "7f662c2680beaa5e21e0d343890d97b6f180a68fcdc94d940090fa008814a911"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-MCU.png",
+      "bytes": 408474,
+      "sha256": "adea68c565c86cee807876ceb25d8a8521ebc0ff4d3e31a7e4ade29b08bcb08f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-MCU.svg",
+      "bytes": 335116,
+      "sha256": "317824ab7de40b6b1c824c33834db7f0cd88d5fa54273b664c17caa09e22b681"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-MotorDriver.png",
+      "bytes": 301430,
+      "sha256": "72fad2e10fd40f3c5d4f8a0db70537b8a34d882647d8e6d058be23e986f1c84b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-MotorDriver.svg",
+      "bytes": 206633,
+      "sha256": "e38d9b2a8f8fcf4bf3bacf882cc87f18fd5d42844d8a9b8db63b23411f9ac598"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-Programming.png",
+      "bytes": 262478,
+      "sha256": "0123504d685d98c90393751078f8ea3e3afd895bb43a5451b9c7589f3391394b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-Programming.svg",
+      "bytes": 146662,
+      "sha256": "456a1b4ebf5a635bcee5de732a0246436c4db18ff9c50b38147c7aad92045a95"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-UsbPd.png",
+      "bytes": 409731,
+      "sha256": "3559585d943b8d9ee1595f96a7b2ede2e23681e4fc8826539c9e562437a06ef2"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-UsbPd.svg",
+      "bytes": 310523,
+      "sha256": "c5f230a645916a41e855d10b721fff7943006581771c6f05f013d54d1868fa9b"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-draft-latest.circuit.json",
+      "bytes": 1486848,
+      "sha256": "ae2045a5cc7e3a3ded6eb54af01ff1547a73187b86672849b660f500e5f5002e"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/schematic-draft.circuit.json",
+      "bytes": 1487044,
+      "sha256": "909a4d761a49ecf9bfe8cfc1c758d71b3e2c8376e3639acb810072113a594e6f"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/unrouted-placement-latest.circuit.json",
+      "bytes": 2859700,
+      "sha256": "6a81bb9e69aa37d9fb1bda9d39e35d244648922e792c14adcea0d3660c9bdf8a"
+    },
+    {
+      "path": "evidence/rev-0.0.45-alpha.0/unrouted-placement.circuit.json",
+      "bytes": 2847266,
+      "sha256": "98b858ef94865b5551bd61563c69b953e4188df6b4145e840d59d40999a26104"
+    },
+    {
       "path": "evidence/rev-0.0.5-alpha.0/BLOCKER-RECHECK.md",
       "bytes": 3786,
       "sha256": "ddd0e1ba69ae3a6b296e933f8517d8567bc1a5803f7f39cb75f907cf158336aa"
@@ -27091,6 +31026,21 @@
       "sha256": "70def62a4f3fba3f2096a4a20cef27235b726a3921911fcc015772c057cb8aab"
     },
     {
+      "path": "imports/A_0402WGF270JTCE/A_0402WGF270JTCE.obj",
+      "bytes": 18730,
+      "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
+    },
+    {
+      "path": "imports/A_0402WGF270JTCE/A_0402WGF270JTCE.step",
+      "bytes": 1068271,
+      "sha256": "055d10977e0e0b859b0b263328e4e4bfd98261ad252688cb3736f72f67aa4729"
+    },
+    {
+      "path": "imports/A_0402WGF270JTCE/A_0402WGF270JTCE.tsx",
+      "bytes": 1776,
+      "sha256": "e66d6a8730a21635ace12813a5d66da8daff112cf43dabb48f7aa26d6207d803"
+    },
+    {
       "path": "imports/A_0402WGF3300TCE/A_0402WGF3300TCE.obj",
       "bytes": 18730,
       "sha256": "658e8980a1ff78ad44b1f30b6de0c63023cfd0b883902f3c1333902984d7bfe4"
@@ -27179,6 +31129,21 @@
       "path": "imports/A_1N4148WS/A_1N4148WS.tsx",
       "bytes": 2936,
       "sha256": "168f49ee1f26a2f140c184fa685a233ec13231da9600ff1fc1d69057ac58c4c8"
+    },
+    {
+      "path": "imports/B5819WS/B5819WS.obj",
+      "bytes": 130036,
+      "sha256": "d80b1280ab715ab64d8d0d839353d728435d675c64844a6df39248f1918a22c9"
+    },
+    {
+      "path": "imports/B5819WS/B5819WS.step",
+      "bytes": 1128708,
+      "sha256": "9d3d6f4ee4b582bb1ba7152befc7da6217084253623b730b996aacec436ec089"
+    },
+    {
+      "path": "imports/B5819WS/B5819WS.tsx",
+      "bytes": 3115,
+      "sha256": "c032eadabefd78c270925261ca97f88956b7ee45132e854ea90a0449fb554e77"
     },
     {
       "path": "imports/BSS138LT1G/BSS138LT1G.obj",
@@ -27479,6 +31444,21 @@
       "path": "imports/ESDA25P35_1U1M/ESDA25P35_1U1M.tsx",
       "bytes": 3382,
       "sha256": "fcb9d07b050652a99afa813fe63a7926b3ba33830da8e578f4c72f989aaa5041"
+    },
+    {
+      "path": "imports/GD25Q16EEIGR/GD25Q16EEIGR.obj",
+      "bytes": 86770,
+      "sha256": "a0a193afc869824c333a2720df80d5266114ac8f11734b8a5ef0e93a325f83ed"
+    },
+    {
+      "path": "imports/GD25Q16EEIGR/GD25Q16EEIGR.step",
+      "bytes": 1087615,
+      "sha256": "2dd22ac0001afff0442bc446a8b088ace9dc27630dd4d061bd9837e310011c20"
+    },
+    {
+      "path": "imports/GD25Q16EEIGR/GD25Q16EEIGR.tsx",
+      "bytes": 2836,
+      "sha256": "03b818859cac4e2937b908b02216b992a882ea16fb7db48bb488cfb84e49d5dd"
     },
     {
       "path": "imports/HoLRT1206_1W_150mR_1_.tsx",
@@ -28178,7 +32158,7 @@
     {
       "path": "mechanical/check-front-carrier.py",
       "bytes": 7742,
-      "sha256": "eb2c2292d0221a103d01df1710f13a8eb0184d518f57857d6c6d03d797800d0e"
+      "sha256": "9626f5e5bca530b0a74722696e69ace8afe2be8f8fe3b492366f5430e2ce3b9b"
     },
     {
       "path": "mechanical/check-mating-envelopes.py",
@@ -28227,8 +32207,8 @@
     },
     {
       "path": "mechanical/render-connector-orientation.py",
-      "bytes": 9141,
-      "sha256": "d3f95dd927a95d9118b0dcd976712f5a41ec66e7743f9fa668ee5cee2371d081"
+      "bytes": 9485,
+      "sha256": "3268bb4893856bf2932326c2a5ae6ad016f7a8de835c4ce8949939a80a376ab9"
     },
     {
       "path": "mechanical/requirements.lock.txt",
@@ -28242,13 +32222,13 @@
     },
     {
       "path": "mounted-assembly.circuit.tsx",
-      "bytes": 1347,
-      "sha256": "e30cc2b33cd71e8ffd869c2e0ab3044b739c0eb9b5f92ecc255711fa2b6b7618"
+      "bytes": 1382,
+      "sha256": "a9388523c88b1c4fd16691e69ebcaf2c965e84ca155b425a677ad30ad3401025"
     },
     {
       "path": "package.json",
-      "bytes": 4463,
-      "sha256": "f8a716772b721087078b084727fac237ab31ded0561c05fb0c9a555d8f95ed68"
+      "bytes": 4464,
+      "sha256": "7b5d01cf6e6408853735307e6b99da7ef40e6b7f5de6bb3fcf56ef6e41620507"
     },
     {
       "path": "references/AP63203.pdf",
@@ -28626,6 +32606,11 @@
       "sha256": "65b66abb023ddd28afba20e3424f273c0b871049f31e97610df106f20f20734d"
     },
     {
+      "path": "references/programming-connector-official/C136657.step",
+      "bytes": 1889623,
+      "sha256": "ab33b622e6a54b6ebafffcb21fec230bef83d56353a914c847e89a277b40f8a6"
+    },
+    {
       "path": "references/tps26600-cad/RHF0024A.stp",
       "bytes": 520644,
       "sha256": "3b1cdf1034f9434010f7c2a32ca0686c80f56c0328a38be2e6f7f67ed7f78a41"
@@ -28742,13 +32727,13 @@
     },
     {
       "path": "scripts/check-critical-import-pins.mjs",
-      "bytes": 6959,
-      "sha256": "21e3cabd5584942f070a5516c73fbfeb787a5946f47b9a8cc4dbe10eebd4fb41"
+      "bytes": 7673,
+      "sha256": "4631a881c48adcaf97b0dd98c617a5a00071ce106e5779a57ffa69e66588c5d6"
     },
     {
       "path": "scripts/check-draft-connectivity.mjs",
-      "bytes": 15742,
-      "sha256": "bb9bc923d67817c68090be6ca11b537cf5fb2a0970e29677de8c6ea4cf8ab923"
+      "bytes": 16763,
+      "sha256": "f6bce0de63003f9fc85bf4baf4bf301ada173939c5ae0ebdd1b03fc24ebe0cc4"
     },
     {
       "path": "scripts/check-fabrication-width-tolerance.py",
@@ -28778,12 +32763,17 @@
     {
       "path": "scripts/check-mechanical-assembly.mjs",
       "bytes": 4093,
-      "sha256": "30eb9b9fdb628acaa5e2bd4f1384222535351e7e53f6db3f0b25d1b1988600d6"
+      "sha256": "2a9a715d0043601acee2709e3de21f459f1d6e43024cab975e2b4ccd97c98530"
     },
     {
       "path": "scripts/check-motor-connector-footprint.mjs",
       "bytes": 3179,
       "sha256": "7444a695213c5351368bf6dcb5b7c3b8a2db4af1f50e2c16d62b46351d1f3ec2"
+    },
+    {
+      "path": "scripts/check-official-part-pages.py",
+      "bytes": 6963,
+      "sha256": "01b4c7875a6e62814ecab098598717e6e46726dc5e6712c5d5e094b05f217b08"
     },
     {
       "path": "scripts/check-part-replacement.py",
@@ -28828,7 +32818,7 @@
     {
       "path": "scripts/check-schematic-notes.mjs",
       "bytes": 3973,
-      "sha256": "0c67d974376df4e37cfc5a33ba947eecc472f1d604126ee0e72138ed98db5e3d"
+      "sha256": "15e29a351e0237d6c5edf887bc9fcef2c6d2798293deecc125d48d75fe6fb6a7"
     },
     {
       "path": "scripts/check-schematic-preservation.py",
@@ -28896,6 +32886,11 @@
       "sha256": "8377c336d67967ff5863d690f942302c8668e8365409f19bfc1376d0e7b61b0e"
     },
     {
+      "path": "scripts/export-native-route-candidates.py",
+      "bytes": 4113,
+      "sha256": "311d62537a38acb23946e2c37b3184dbc9f25b79f5260acc10e6cd640c03f8c7"
+    },
+    {
       "path": "scripts/export-routing-interchange.py",
       "bytes": 12295,
       "sha256": "911b472f59a680d209837aec7278798aad58fdfacc51af0464cf3d59137129a1"
@@ -28908,7 +32903,7 @@
     {
       "path": "scripts/generate-review-bom.mjs",
       "bytes": 2636,
-      "sha256": "898dfa5be6b64c43ff8c509b29a1c26ee46102b3822b09fcfabbae8f01de3387"
+      "sha256": "6a365fc16b525827022400ca8ccd736ec400b36c46ec1eae2d96cc07e172644b"
     },
     {
       "path": "scripts/ground-plane-trial.circuit.tsx",
@@ -28967,8 +32962,8 @@
     },
     {
       "path": "scripts/measure-usb-paths.py",
-      "bytes": 6165,
-      "sha256": "086f0c3a3507d39dd9aa72a2a70ac90fa251c25c00308d299faee57701c662d4"
+      "bytes": 10824,
+      "sha256": "2efca4544605b800ce9295fccee1f3c4a535dfd75722aa2e12f5783ae3711f40"
     },
     {
       "path": "scripts/motor-bounded57.circuit.tsx",
@@ -29126,6 +33121,206 @@
       "sha256": "d5b55896019f40c192c9c4528c60a1fe73f4b0f05ba9b423cfee325e5c972351"
     },
     {
+      "path": "scripts/native45-clock001.circuit.tsx",
+      "bytes": 569,
+      "sha256": "aa3b6fd5e3cac8691ac1cc1b4786d9953c56e17a93673e537058a6d1605667f1"
+    },
+    {
+      "path": "scripts/native45-clock002.circuit.tsx",
+      "bytes": 561,
+      "sha256": "c28a8a3743b3464f3fafbb1ffeb5286da007b6738a7c0fe9a609bc3eb63faf28"
+    },
+    {
+      "path": "scripts/native45-clock003.circuit.tsx",
+      "bytes": 435,
+      "sha256": "dedcd194c99e71ffbd35f1ef0ba67bbff43c159a704694b476f37933d9e27fac"
+    },
+    {
+      "path": "scripts/native45-clock005.circuit.tsx",
+      "bytes": 550,
+      "sha256": "4f2c75a574d7abaf618069606cc860820e9e49fb5fef213873a1c931d9a32fed"
+    },
+    {
+      "path": "scripts/native45-clock006.circuit.tsx",
+      "bytes": 566,
+      "sha256": "b1c3da212825f7cd88fcf124c9108eafcfbca9e29331c937c2f14b3b2681d6cb"
+    },
+    {
+      "path": "scripts/native45-clock007.circuit.tsx",
+      "bytes": 569,
+      "sha256": "d756ad51aa8fda3de6feee3004e5ee1b0eabf7d34b0d87dceaf7078f82e72826"
+    },
+    {
+      "path": "scripts/native45-controls001.circuit.tsx",
+      "bytes": 765,
+      "sha256": "ead6dbd614bc10ff19eaa65055c877106e8051b80b8d613c7888fdcfcf9d8709"
+    },
+    {
+      "path": "scripts/native45-controls002.circuit.tsx",
+      "bytes": 548,
+      "sha256": "0a3fec1c0ba27591e0d349e08f54a652725ba3b0ce1fcd4f239a49c1c8a61246"
+    },
+    {
+      "path": "scripts/native45-controls003.circuit.tsx",
+      "bytes": 571,
+      "sha256": "39373a88135e72cf2ff0cc707207e810ea0cb9b0468664a3c2cd320fc5235b0d"
+    },
+    {
+      "path": "scripts/native45-controls039.circuit.tsx",
+      "bytes": 418,
+      "sha256": "d31aefb8df69324f02fd8d0fc0068b3a2a5ca672192d23b9a29f2dde5644b5cf"
+    },
+    {
+      "path": "scripts/native45-controls041.circuit.tsx",
+      "bytes": 406,
+      "sha256": "b957320c73d0c34a4cd803dce1fa35c5be6b050a535e67db6f134de0e5c9ea86"
+    },
+    {
+      "path": "scripts/native45-ground027.circuit.tsx",
+      "bytes": 320,
+      "sha256": "a7932d48bdea9a302be77bd8f643bca7fdaaa38f03e93b1ced6e3cdbab317ff8"
+    },
+    {
+      "path": "scripts/native45-ground029.circuit.tsx",
+      "bytes": 283,
+      "sha256": "edad03970b0a89e2aa3e05652fed370c6a94bf101fb76da2e25f4cfaac790d24"
+    },
+    {
+      "path": "scripts/native45-ground030.circuit.tsx",
+      "bytes": 186,
+      "sha256": "10352c2675c00a2f9673965133b1320fa47653ce1546cfc23e65ab4bc16a2f38"
+    },
+    {
+      "path": "scripts/native45-ground031.circuit.tsx",
+      "bytes": 186,
+      "sha256": "89cec6bc866647433afdbca2d7beb8e0e49f1fcd7d65b7999155ccbbbe6443ee"
+    },
+    {
+      "path": "scripts/native45-ground032.circuit.tsx",
+      "bytes": 186,
+      "sha256": "049b42f1ba52d2172990d3745864f6206551fa05d4f40e7b2975590a01b1ab72"
+    },
+    {
+      "path": "scripts/native45-ground033.circuit.tsx",
+      "bytes": 521,
+      "sha256": "a514f15e7c3cbef88c27b93e7d63586c5cd2a529032013ec7c9a14c9eab7f8ba"
+    },
+    {
+      "path": "scripts/native45-ground034.circuit.tsx",
+      "bytes": 186,
+      "sha256": "b9058a0ad83d72b4bb96c90e050f05e07d5777ee26fbd41656d19593b19d96cb"
+    },
+    {
+      "path": "scripts/native45-ground035.circuit.tsx",
+      "bytes": 186,
+      "sha256": "af20576c17a400563473153f927da41de755a3db0b9f9402b50a6290b5be0fe6"
+    },
+    {
+      "path": "scripts/native45-ground036.circuit.tsx",
+      "bytes": 186,
+      "sha256": "6e16af282e32c7533ae05d84a0b0aed4b49f9752035e93009e777f11e87dc7d0"
+    },
+    {
+      "path": "scripts/native45-ground037.circuit.tsx",
+      "bytes": 186,
+      "sha256": "c48731be77e1aac0a46bc0005730c5572ac8e862331d07dd84200a2ed75a4748"
+    },
+    {
+      "path": "scripts/native45-ground038.circuit.tsx",
+      "bytes": 186,
+      "sha256": "9e4857641001845f3a610569e23b91eb6fcf6a393cc3905249d00eec16a11309"
+    },
+    {
+      "path": "scripts/native45-interfaces001.circuit.tsx",
+      "bytes": 761,
+      "sha256": "561846f8e106d83d243d9b3d5f8812979a53b427e250331b264ed626e1c1e6d9"
+    },
+    {
+      "path": "scripts/native45-interfaces003.circuit.tsx",
+      "bytes": 574,
+      "sha256": "5f92c0b3e6bba78c163ea4e66b50f95eb26de4df364118add7a381fb2f50dee1"
+    },
+    {
+      "path": "scripts/native45-interfaces004.circuit.tsx",
+      "bytes": 565,
+      "sha256": "161e5de1c976e174ca702c02e301943accf408378ea8e6386686b4ad4b0ffb66"
+    },
+    {
+      "path": "scripts/native45-local015.circuit.tsx",
+      "bytes": 659,
+      "sha256": "85d8a999ac3268f00ec5d6d761e749f08b6ca13f442842b6d2ab6fdbf0e92428"
+    },
+    {
+      "path": "scripts/native45-local016.circuit.tsx",
+      "bytes": 555,
+      "sha256": "f9a9f3c3d8f4a83d2650301d43ed081e33f7e9ef4073bafd13316416f23e269f"
+    },
+    {
+      "path": "scripts/native45-power001.circuit.tsx",
+      "bytes": 447,
+      "sha256": "415c52f790f0c1cbda4083df1262890a384a1f5ecb5ae857ac064455a7ae391e"
+    },
+    {
+      "path": "scripts/native45-signals025.circuit.tsx",
+      "bytes": 769,
+      "sha256": "82e15370bdd3facb99f10968bbad30e61bd8b2aabc48c219e6d25b59b2756a95"
+    },
+    {
+      "path": "scripts/native45-signals028.circuit.tsx",
+      "bytes": 572,
+      "sha256": "19332e978667ca53dee800daed6891da162f65e1d44a7aa07ba62c6331198b48"
+    },
+    {
+      "path": "scripts/native45-signals030.circuit.tsx",
+      "bytes": 493,
+      "sha256": "f0dda840a0fb6ec20d6c46fe2e0ace65ac726a01d6c0e2c79780bf2033ba7a8e"
+    },
+    {
+      "path": "scripts/native45-usb001.circuit.tsx",
+      "bytes": 515,
+      "sha256": "360bc1d0da5b522aa56d8463dacc0d80d4f1c0c2192339aaa7e42e3f0c8ea0c7"
+    },
+    {
+      "path": "scripts/native45-usb005.circuit.tsx",
+      "bytes": 687,
+      "sha256": "e8629463db4b4c5bef51e0f985b6ef3fee327bb1eeab94ef89d46e8058d61f94"
+    },
+    {
+      "path": "scripts/native45-usb006.circuit.tsx",
+      "bytes": 572,
+      "sha256": "51686080aa439013e4a392507e9e4173a17048832d34dc8739a309f7a946133a"
+    },
+    {
+      "path": "scripts/native45-usb008.circuit.tsx",
+      "bytes": 559,
+      "sha256": "80aa622a269f17bbbeda5991de84296c9f4adee6078ad2e35528587c2e3e4049"
+    },
+    {
+      "path": "scripts/native45-usb010.circuit.tsx",
+      "bytes": 558,
+      "sha256": "2b633fa0c9baf9b5d828185fd12d832df353f55039a708cea7c81666a43e685d"
+    },
+    {
+      "path": "scripts/native45-usb017.circuit.tsx",
+      "bytes": 263,
+      "sha256": "ba2b2eb98399e15ab9f7eb039465c5fe6a7ab34279c708025e571947cf17fdbc"
+    },
+    {
+      "path": "scripts/native45-usb022.circuit.tsx",
+      "bytes": 563,
+      "sha256": "7b6431660836e677a71d1c9ad99ea0eed0bcf602f7912a7b51b1cdb9101cd7b1"
+    },
+    {
+      "path": "scripts/native45-usb023.circuit.tsx",
+      "bytes": 562,
+      "sha256": "2f3e6d3f683cb9be8f8ec8cd52b2e5ab5b1ff65aa37911e4d43a468301960811"
+    },
+    {
+      "path": "scripts/native45-usb024.circuit.tsx",
+      "bytes": 561,
+      "sha256": "d76f615423c2cff56134114634d6ffd835c7896f045dc67dafd48257f18d9402"
+    },
+    {
       "path": "scripts/outer-ground-islands.circuit.tsx",
       "bytes": 22424,
       "sha256": "38344d8dd4e685407ffc9f4a81356f7317cb40c12cdeb172f0569cdf19ef3266"
@@ -29142,8 +33337,8 @@
     },
     {
       "path": "scripts/pipeline9-captured-input.ts",
-      "bytes": 2918,
-      "sha256": "98f0097cb5c38b1ea7e1bb368d06672995577100e519ccb846911e8b714d54ad"
+      "bytes": 2931,
+      "sha256": "c1001e7736d24f9a1d558c8efa45b50fd5e933938c54cee15ed6242d0df5285e"
     },
     {
       "path": "scripts/pipeline9-full.circuit.tsx",
@@ -29718,7 +33913,7 @@
     {
       "path": "scripts/review-unrouted-board.mjs",
       "bytes": 3060,
-      "sha256": "02667f62de10c493f9d062be262e76e85724120965886517d41e319ca1fe9771"
+      "sha256": "ead8e5a9478f796a3ebc29e1d475b3f224c5afa382ef53c6222fa9c27e8778d8"
     },
     {
       "path": "scripts/review-usb-return.py",
@@ -29792,8 +33987,8 @@
     },
     {
       "path": "src/SmartNema14MotorController.tsx",
-      "bytes": 20916,
-      "sha256": "488e6ffa11c152b644274abafd9b41b6292708ed55e78e123d941e11da1ee810"
+      "bytes": 21968,
+      "sha256": "f79568c42fcddd49ce74a45ad03976250d2dd41d0033d10200d4fa2f8ad0cb4b"
     },
     {
       "path": "src/can/CanSheet.tsx",
@@ -29802,8 +33997,8 @@
     },
     {
       "path": "src/interfaces/I2cSheet.tsx",
-      "bytes": 4823,
-      "sha256": "eeb03600c47fb2322b08723ee8a53a1b32f7e30f2b13afc3c5384a02a6761d5e"
+      "bytes": 5039,
+      "sha256": "429c6ddb220481635108bcc066c6e42c46b2e9356ccdb00d0d8eb38bf0cf6ca3"
     },
     {
       "path": "src/interfaces/InterfacesSheet.tsx",
@@ -29812,8 +34007,8 @@
     },
     {
       "path": "src/mcu/McuSheet.tsx",
-      "bytes": 8086,
-      "sha256": "9c0bd37c2d98adaa300a9ef00aa4d25cc877b08105dcf2e3d8363cef3745cd95"
+      "bytes": 8684,
+      "sha256": "6b012c0cf92f24fbea138c137d2de50ec529948cc7716d2ce91aad5c4044a2bb"
     },
     {
       "path": "src/mechanics/ControllerMount.tsx",
@@ -29837,8 +34032,8 @@
     },
     {
       "path": "src/mechanics/preview-placement.ts",
-      "bytes": 9756,
-      "sha256": "64596f2e02f4193cb9aff23953e5f15b360a7b1a1057827cabce06f117f0645e"
+      "bytes": 10061,
+      "sha256": "e15b47a25147ba63b0853141628246ac466872bd91101b70a03f6d43f5da34ce"
     },
     {
       "path": "src/mechanics/selected-motor.ts",
@@ -29858,12 +34053,12 @@
     {
       "path": "src/power/LogicBuckSheet.tsx",
       "bytes": 3418,
-      "sha256": "ccb5abcd1d9eac96ddd247e514f005bf63ec6311505797ae30a2b9a8757c05f3"
+      "sha256": "fd8fe2cda6494e800304f69db83eb49d03e0c4cc2a39053d359cfe75effc613a"
     },
     {
       "path": "src/programming/ProgrammingSheet.tsx",
-      "bytes": 5666,
-      "sha256": "adf534530772f63585fefae176dfdb2630461aaaa5297935f0983bbf96c117c3"
+      "bytes": 5882,
+      "sha256": "c6f46d5f22f21998dfd3bbac3641521fec34a75ec995ba27d91d610039d349d1"
     },
     {
       "path": "src/routing/EfuseEnableSavedRoutes.tsx",
@@ -29884,6 +34079,11 @@
       "path": "src/routing/GroundPhaseRoutes.tsx",
       "bytes": 937,
       "sha256": "ec7dba3e15814c31132adc1b1b74d9bb193bbc11d7ae779d0ddccb86acc5d7a5"
+    },
+    {
+      "path": "src/routing/GroundReturnPlanes.tsx",
+      "bytes": 1264,
+      "sha256": "3cf1d9e4517ba4bb9d48f9efa95f8cb767349309b329ad2df49bc473d5b4c746"
     },
     {
       "path": "src/routing/GroundReturns.tsx",
@@ -29929,6 +34129,11 @@
       "path": "src/routing/PowerSavedRoutesTrial.tsx",
       "bytes": 1988,
       "sha256": "cbc0a58364b86c53421e7ecd8a4caeafb84288c6dab50e7795ccfa5f5e04f517"
+    },
+    {
+      "path": "src/routing/Rev45SavedRoutes.tsx",
+      "bytes": 1263,
+      "sha256": "8d262eb7109dd2a5cc3196594708c7caef8f726232790dae9213291cf6e0d25d"
     },
     {
       "path": "src/routing/SavedRoutes.tsx",
@@ -30011,6 +34216,11 @@
       "sha256": "f2de4883832cbf8c1be31bbd85d87e52f988eee8d398b50c54891d6c01bf5e63"
     },
     {
+      "path": "src/routing/rev45-saved-paths.json",
+      "bytes": 104889,
+      "sha256": "8bcbef40ea2d1335f3753401903e2ef86ff0d1dd5cea85367a440b549f1f63c2"
+    },
+    {
       "path": "src/routing/rtn-return-trial.json",
       "bytes": 1423,
       "sha256": "6c06e3c677f3e6798e00094ac29f4f3e662f27fa0bd17738003b6701e47cade9"
@@ -30047,8 +34257,8 @@
     },
     {
       "path": "src/schematic/ComponentNotes.tsx",
-      "bytes": 9239,
-      "sha256": "cfb01033d0d0ce01b579b3415c5c97cb723e4900dc8e3a6522311aa43f8ea3db"
+      "bytes": 9378,
+      "sha256": "006c8788dae3ff198c6d5a070226973341fab8b32f9d50c6d20d4173cd2a3dbc"
     },
     {
       "path": "src/usb-pd/StandardUsbCConnector.tsx",

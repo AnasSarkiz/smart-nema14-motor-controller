@@ -1,0 +1,59 @@
+$ biome format index.circuit.tsx routing-review.circuit.tsx assembly.circuit.tsx mounted-assembly.circuit.tsx controller-preview.circuit.tsx src scripts mechanical/viewer.js mechanical/design-constraints.json package.json tsconfig.json tscircuit.config.json biome.json
+src/SmartNema14MotorController.tsx format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    741 741 │           />
+    742 742 │         )}
+    743     │ - ······{nativeGroundPourTrial·&&·(
+    744     │ - ········<GroundReturnPlanes·/>
+    745     │ - ······)}
+        743 │ + ······{nativeGroundPourTrial·&&·<GroundReturnPlanes·/>}
+    746 744 │         <ControllerMount />
+    747 745 │         <McuSheet mechanicalPreview={mechanicalPreview} />
+  
+
+src/routing/rev45-saved-paths.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    4391 4391 │         "strict_geometry": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/GEOMETRY.json",
+    4392 4392 │         "physical_connectivity": "evidence/rev-0.0.45-alpha.0/routing/interfaces004-clean-subset/CONNECTIVITY.json",
+    4393      │ - ······"nets":·[
+    4394      │ - ········"LED_POWER_A",
+    4395      │ - ········"LED_STATUS_A",
+    4396      │ - ········"CAN_TERM_LINK"
+    4397      │ - ······]
+         4393 │ + ······"nets":·["LED_POWER_A",·"LED_STATUS_A",·"CAN_TERM_LINK"]
+    4398 4394 │       },
+    4399 4395 │       {
+    ········· │ 
+    4422 4418 │       {
+    4423 4419 │         "evidence": "evidence/rev-0.0.45-alpha.0/routing/usb024-trunk-and-branches",
+    4424      │ - ······"net_names":·[
+    4425      │ - ········"USB_DP",
+    4426      │ - ········"USB_DM"
+    4427      │ - ······],
+         4420 │ + ······"net_names":·["USB_DP",·"USB_DM"],
+    4428 4421 │         "native_circuit_sha256": "2e72df2bc9fe69cab4781509a5472c3ac8cf0cb53b49e432687c7b211531a3a2",
+    4429 4422 │         "qualification": "Fresh native407 opens and zero other errors; strict clearance0 violations; all41 selected nets actual one copper island; both plug orientations planar skew .40879mm, MCUstubs .09995mm; supported native bus enforces .25mm on the actual two trunk traces. Via barrel delays, coupling, actual reference/impedance and fabrication remain pending.",
+    ········· │ 
+    4432 4425 │       },
+    4433 4426 │       {
+    4434      │ - ······"net_names":·[
+    4435      │ - ········"BUZZER_PWM",
+    4436      │ - ········"TMC_UART_TX"
+    4437      │ - ······],
+         4427 │ + ······"net_names":·["BUZZER_PWM",·"TMC_UART_TX"],
+    4438 4428 │         "path_count": 2,
+    4439 4429 │         "native_evidence": "evidence/rev-0.0.45-alpha.0/routing/signals030-clean-two",
+  
+
+Checked 281 files in 297ms. No fixes applied.
+Found 2 errors.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
+error: script "format:check" exited with code 1

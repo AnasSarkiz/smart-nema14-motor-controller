@@ -1,0 +1,19 @@
+Routing phase 0 undefined 41 connections 568 obstacles
+Routing phase 2 undefined 120 connections 2365 obstacles
+{
+  message: "pcbTracePaths must cover every connection in the phase; missing: source_trace_12",
+}
+Async effect error in PcbTraceRender "autorouting":
+Error: pcbTracePaths must cover every connection in the phase; missing: source_trace_12
+    at getSavedAutoroutingPhaseTracesFromPaths (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:21163:17)
+    at _runLocalAutorouting (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:120346:26)
+    at <anonymous> (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:120601:26)
+    at _queueAsyncEffect (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:1224:16)
+    at _startAsyncAutorouting (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:120599:12)
+    at doInitialPcbTraceRender (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:120639:10)
+    at runRenderPhase (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:1391:24)
+    at runRenderCycle (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:1340:12)
+    at render (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:122702:16)
+    at renderUntilSettled (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:122727:14)
+    at processTicksAndRejections (native:7:39)
+Native render complete: 510 unresolved errors

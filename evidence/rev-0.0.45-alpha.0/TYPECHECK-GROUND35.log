@@ -1,0 +1,5 @@
+$ tsc --noEmit
+src/routing/GroundReturnPlanes.tsx(16,11): error TS2322: Type '{ fromLayer: "top"; toLayer: "bottom"; holeDiameter: string; outerDiameter: string; connectsTo: string; name: string; pcbX: number; pcbY: number; key: string; }' is not assignable to type 'ViaProps'.
+  Property 'key' does not exist on type 'ViaProps'.
+src/routing/GroundReturnPlanes.tsx(37,11): error TS2322: Type '{ key: "top" | "bottom"; name: string; layer: "top" | "bottom"; connectsTo: string; clearance: string; boardEdgeMargin: string; cutoutMargin: string; useThermalReliefs: false; }' is not assignable to type 'CopperPourProps'.
+  Property 'key' does not exist on type 'CopperPourProps'.

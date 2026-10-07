@@ -1,0 +1,70 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+Async effect error in PcbTraceRender "autorouting":
+Error: Could not find an SRJ connection for trace name or port selector ".R_USB_DP > port.pin1" in differential pair "USB_RECEPTACLE_PAIR"
+    at getDifferentialPairSrjConnectionNamesByCohortOrThrow (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:108677:15)
+    at getDifferentialPairsForSimpleRouteJson (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:108722:48)
+    at getSimpleRouteJsonFromCircuitJson (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:109485:32)
+    at _runLocalAutorouting (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:119939:52)
+    at <anonymous> (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:120601:26)
+    at _queueAsyncEffect (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:1224:16)
+    at _startAsyncAutorouting (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:120599:12)
+    at updatePcbTraceRender (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:120672:14)
+    at runRenderPhase (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:1384:25)
+    at runRenderCycle (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:1340:12)
+    at render (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:122702:16)
+    at generateCircuitJson (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/cli/dist/cli/main.js:186087:12)
+    at async <anonymous> (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/cli/dist/cli/main.js:186194:28)
+    at async <anonymous> (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/cli/dist/cli/main.js:201188:38)
+    at async <anonymous> (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/cli/dist/cli/main.js:201310:15)
+    at processTicksAndRejections (native:7:39)
+Circuit JSON written to dist/index/circuit.json
+The "Y" prefix is being used with a <chip />, try using it with a <crystal />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "J" prefix is being used with a <chip />, try using it with a <connector /> or <jumper />
+The "Q" prefix is being used with a <chip />, try using it with a <transistor />
+Differential pair "USB_RECEPTACLE_PAIR" positiveConnection=".R_USB_DP > port.pin1" is not point-to-point: expected exactly 2 terminal pins, found 4: .D_USB > .pin1, .J_USB > .DP1, .J_USB > .DP2, and .R_USB_DP > .pin1.
+Differential pair "USB_RECEPTACLE_PAIR" negativeConnection=".R_USB_DM > port.pin1" is not point-to-point: expected exactly 2 terminal pins, found 4: .D_USB > .pin2, .J_USB > .DN1, .J_USB > .DN2, and .R_USB_DM > .pin1.
+Y_RP has no pin with requires_power=true
+U9 has no pin with requires_power=true
+BZ1 has no pin with requires_power=true
+BZ1 has no pin with requires_ground=true
+Q_BUZZ has no pin with requires_power=true
+Q_BUZZ has no pin with requires_ground=true
+All pins on Q_BUZZ are underspecified (no pinAttributes set)
+Q_PD_IN has no pin with requires_power=true
+Q_PD_IN has no pin with requires_ground=true
+All pins on Q_PD_IN are underspecified (no pinAttributes set)
+Q_PD_OUT has no pin with requires_power=true
+Q_PD_OUT has no pin with requires_ground=true
+All pins on Q_PD_OUT are underspecified (no pinAttributes set)
+D_USB has no pin with requires_power=true
+D_VBUS has no pin with requires_power=true
+D_VBUS has no pin with requires_ground=true
+All pins on D_VBUS are underspecified (no pinAttributes set)
+J_IO has no pin with requires_power=true
+J_IO has no pin with requires_ground=true
+All pins on J_IO are underspecified (no pinAttributes set)
+J_MOTOR has no pin with requires_power=true
+J_MOTOR has no pin with requires_ground=true
+All pins on J_MOTOR are underspecified (no pinAttributes set)
+D_IO1 has no pin with requires_power=true
+D_IO2 has no pin with requires_power=true
+D_CAN has no pin with requires_power=true
+D_CAN has no pin with requires_ground=true
+All pins on D_CAN are underspecified (no pinAttributes set)
+U10 has no pin with requires_power=true
+Q_ILIM has no pin with requires_power=true
+Q_ILIM has no pin with requires_ground=true
+All pins on Q_ILIM are underspecified (no pinAttributes set)
+
+Build complete
+  Circuits  1 passed
+  Output    dist
+
+✓ Done
+Build exiting with code 0: build finished successfully

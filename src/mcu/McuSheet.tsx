@@ -1,12 +1,13 @@
+import { TLV803EA30DBZR } from "../../imports/TLV803EA30DBZR/TLV803EA30DBZR"
 import { RP2040 } from "../../imports/RP2040/RP2040"
-import { W25Q16JVUXIQ } from "../../imports/W25Q16JVUXIQ/W25Q16JVUXIQ"
+import { GD25Q16EEIGR } from "../../imports/GD25Q16EEIGR/GD25Q16EEIGR"
 import { ABM8_272_T3 } from "../../imports/ABM8_272_T3/ABM8_272_T3"
 import { CL05B104KO5NNNC } from "../../imports/CL05B104KO5NNNC/CL05B104KO5NNNC"
 import { CL10A105KB8NNNC } from "../../imports/CL10A105KB8NNNC/CL10A105KB8NNNC"
 import { A_0402CG150J500NT } from "../../imports/A_0402CG150J500NT/A_0402CG150J500NT"
 import { A_0402WGF1001TCE } from "../../imports/A_0402WGF1001TCE/A_0402WGF1001TCE"
 import { A_0402WGF1002TCE } from "../../imports/A_0402WGF1002TCE/A_0402WGF1002TCE"
-import { A_0402WGF3300TCE } from "../../imports/A_0402WGF3300TCE/A_0402WGF3300TCE"
+import { A_0402WGF270JTCE } from "../../imports/A_0402WGF270JTCE/A_0402WGF270JTCE"
 import { ComponentNotes } from "../schematic/ComponentNotes"
 import {
   type BoardViewProps,
@@ -33,14 +34,15 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schX={-10}
         schY={0}
         schWidth={3.0}
+        schHeight={5.8}
         schPinArrangement={{
           leftSide: [
             1, 10, 22, 33, 42, 43, 44, 48, 49, 23, 45, 50, 19, 57, 20, 21, 46,
-            47, 51, 52, 53, 54, 55, 56, 24, 25, 26,
+            47, 51, 52, 53, 54, 55, 56, 24, 25, 26, 41,
           ],
           rightSide: [
             2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 27, 28, 29,
-            30, 31, 32, 34, 35, 36, 37, 38, 39, 40, 41,
+            30, 31, 32, 34, 35, 36, 37, 38, 39, 40,
           ],
         }}
         noConnect={["GPIO29_ADC3"]}
@@ -103,19 +105,35 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           GPIO28_ADC2: "net.TEMP_ALERT_N",
         }}
       />
-      <W25Q16JVUXIQ
+      <TLV803EA30DBZR
+        name="U_RESET"
+        {...previewPlacement("U_RESET", mechanicalPreview)}
+        schX={-15.2}
+        schY={1.0}
+        schWidth={1.8}
+        connections={{ VDD: "net.V3V3", GND: "net.GND", N_RESET: "net.NRST" }}
+      />
+      <CL05B104KO5NNNC
+        name="C_RESET"
+        {...previewPlacement("C_RESET", mechanicalPreview)}
+        schX={-11.1}
+        schY={-9.3}
+        schRotation={270}
+        connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
+      />
+      <GD25Q16EEIGR
         name="U_FLASH"
         {...previewPlacement("U_FLASH", mechanicalPreview)}
         schX={-3.3}
         schY={4.5}
         connections={{
           N_CS: "net.QSPI_CS",
-          DO_IO1: "net.QSPI_IO1",
+          SO_IO1: "net.QSPI_IO1",
           WP__IO2: "net.QSPI_IO2",
-          GND: "net.GND",
-          DI_IO0: "net.QSPI_IO0",
-          CLK: "net.QSPI_CLK",
-          HOLD_orRESET__IO3: "net.QSPI_IO3",
+          VSS: "net.GND",
+          SI_IO0: "net.QSPI_IO0",
+          SCLK: "net.QSPI_CLK",
+          HOLD__IO3: "net.QSPI_IO3",
           VCC: "net.V3V3",
           EP: "net.GND",
         }}
@@ -131,8 +149,8 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
       <CL05B104KO5NNNC
         name="C_FLASH"
         {...previewPlacement("C_FLASH", mechanicalPreview)}
-        schX={-7.5}
-        schY={-8.4}
+        schX={-12.3}
+        schY={-9.3}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
       />
@@ -171,14 +189,14 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
         schRotation={270}
         connections={{ pin1: "net.XTAL_OUT", pin2: "net.GND" }}
       />
-      <A_0402WGF3300TCE
+      <A_0402WGF270JTCE
         name="R_USB_DM"
         {...previewPlacement("R_USB_DM", mechanicalPreview)}
         schX={-3.5}
         schY={-3}
         connections={{ pin1: "net.USB_DM", pin2: "net.MCU_USB_DM" }}
       />
-      <A_0402WGF3300TCE
+      <A_0402WGF270JTCE
         name="R_USB_DP"
         {...previewPlacement("R_USB_DP", mechanicalPreview)}
         schX={-3.5}
@@ -217,8 +235,8 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           key={name}
           name={name}
           {...previewPlacement(name, mechanicalPreview)}
-          schX={-13.5 + (index % 5) * 1.5}
-          schY={-7 - Math.floor(index / 5) * 1.4}
+          schX={-13.5 + (index % 4) * 1.2}
+          schY={-6.5 - Math.floor(index / 4) * 1.4}
           schRotation={270}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
@@ -226,8 +244,8 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
       <CL10A105KB8NNNC
         name="C2"
         {...previewPlacement("C2", mechanicalPreview)}
-        schX={-9}
-        schY={-8.4}
+        schX={-13.5}
+        schY={-9.3}
         schRotation={270}
         connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
       />

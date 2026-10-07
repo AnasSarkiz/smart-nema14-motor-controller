@@ -31,6 +31,11 @@ export function ProgrammingSheet({
       />
       <StandardJstSwdResetSide
         name="J_SWD"
+        cadModel={{
+          stepUrl: "./references/programming-connector-official/C136657.step",
+          pcbRotationOffset: 0,
+          modelOriginPosition: { x: 2, y: 0.5124965000000032, z: -0.01 },
+        }}
         {...previewPlacement("J_SWD", mechanicalPreview)}
         schX={-13}
         schY={1.44}

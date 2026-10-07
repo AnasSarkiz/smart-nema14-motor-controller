@@ -1,0 +1,63 @@
+{
+  "input": "evidence/rev-0.0.45-alpha.0/routing/ground036-courtyard-correction/circuit.json",
+  "sha256": "39aa7e3a795faea4fd06f82d358c2f3dbcb868cc5c4a91f6555b6ea7aed4f61b",
+  "measured_paths": "Both actual reversible J_USB contact pairs through D_USB and C25100 series terminations to RP2040 USB_DP pin47 / USB_DM pin46.",
+  "precision": "Centerline nodes rounded to 0.00001 mm; 0.00001 mm collinearity tolerance permits serialization rounding only.",
+  "scope": "Planar copper length plus disclosed resistor pad separation. Via barrel delay, impedance, coupling, return continuity, physical programming and USB compliance are separate gates; no free-space copper is inferred.",
+  "segments": {
+    "DP": {
+      "mcu_pin": 47,
+      "series_resistor": "R_USB_DP",
+      "series_pad_separation_mm": 0.8656319999999997,
+      "connector_paths_mm": {},
+      "main_trunk_mm": null,
+      "mcu_stub_mm": null,
+      "via_counts": {}
+    },
+    "DM": {
+      "mcu_pin": 46,
+      "series_resistor": "R_USB_DM",
+      "series_pad_separation_mm": 0.8656319999999997,
+      "connector_paths_mm": {},
+      "main_trunk_mm": null,
+      "mcu_stub_mm": null,
+      "via_counts": {}
+    }
+  },
+  "path_lengths_mm": {},
+  "orientation_skew_mm": {},
+  "mcu_stub_skew_mm": null,
+  "maximum_mcu_stub_skew_mm": 0.25,
+  "main_trunk_skew_mm": null,
+  "maximum_main_trunk_skew_mm": 0.25,
+  "native_trunk_constraint_passed": true,
+  "skew_mm": null,
+  "maximum_skew_mm": 0.5,
+  "missing_paths": [
+    {
+      "path": "MCU_USB_DP",
+      "reason": "USB endpoint missing from physical copper"
+    },
+    {
+      "path": "J_USB.16 via D_USB.1 to R_USB_DP.1",
+      "reason": "USB endpoint missing from physical copper"
+    },
+    {
+      "path": "J_USB.13 via D_USB.1 to R_USB_DP.1",
+      "reason": "USB endpoint missing from physical copper"
+    },
+    {
+      "path": "MCU_USB_DM",
+      "reason": "USB endpoint missing from physical copper"
+    },
+    {
+      "path": "J_USB.12 via D_USB.2 to R_USB_DM.1",
+      "reason": "USB endpoint missing from physical copper"
+    },
+    {
+      "path": "J_USB.17 via D_USB.2 to R_USB_DM.1",
+      "reason": "USB endpoint missing from physical copper"
+    }
+  ],
+  "passed": false
+}

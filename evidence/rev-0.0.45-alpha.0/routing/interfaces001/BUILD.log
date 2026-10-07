@@ -1,0 +1,16 @@
+Routing phase 0 undefined 24 connections 568 obstacles
+Routing phase 1 AutoroutingPipelineSolver9_PreloadedTraceGraph 20 connections 1699 obstacles
+Routing progress 1 0.16
+Routing progress 1 0.2206865333836288
+Routing progress 1 0.24
+Routing progress 1 0.28
+Routing progress 1 0.32
+Routing progress 1 0.44
+{
+  message: "Static reachability precheck failed: 1 route(s) have no legal path under the current reservation and start-region rules source_net_56_mst1 (pcb_port_472->pcb_port_451) (capacity-autorouter@0.0.962)",
+}
+Async effect error in PcbTraceRender "autorouting":
+AutorouterError: Static reachability precheck failed: 1 route(s) have no legal path under the current reservation and start-region rules source_net_56_mst1 (pcb_port_472->pcb_port_451) (capacity-autorouter@0.0.962)
+    at runCycleAndQueueNextCycle (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:107790:24)
+    at <anonymous> (/workspace/smart-nema14-motor-controller/node_modules/@tscircuit/core/dist/index.js:107825:27)
+Native render complete: 510 unresolved errors

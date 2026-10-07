@@ -5,7 +5,7 @@ const circuit = JSON.parse(readFileSync("dist/index/circuit.json", "utf8"))
 const components = circuit.filter(
   (element) => element.type === "source_component",
 )
-assert.equal(components.length, 147)
+assert.equal(components.length, 149)
 const optionalPopulation = {
   R50: "CAN termination link: omit except on bus endpoints",
 }

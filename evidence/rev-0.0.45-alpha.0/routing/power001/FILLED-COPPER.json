@@ -1,0 +1,94 @@
+{
+  "input": "evidence/rev-0.0.45-alpha.0/routing/power001/circuit.json",
+  "sha256": "7ded6a4685f33f2e1c82112a35f1718ee9bc85dfed78c0306f382de1f26026e5",
+  "scope": "Native filled BRep against actual pads, traces, via annuli and other pours; physical same-net conductors joined across full through-via spans. No net-name-only connectivity assumption. Impedance, thermal/current limits and CAM remain separate.",
+  "mechanical_constraints_sha256": "28044e448bd8c9cb70581f734682c0899778c35f9b45e4c74eb1e75448f9e9bb",
+  "pour_count": 0,
+  "minimum_clearances": {},
+  "clearance_violations": [],
+  "physical_islands": {
+    "BUCK_SW": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 16.989861443247946,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C10.2",
+            "L1.1",
+            "U5.5"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -16.6000232,
+                -10.1999991,
+                -6.9000065,
+                -5.7
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "BUCK_BST": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 1.5751762140423162,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C10.1",
+            "U5.6"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -15.1999752,
+                -10.1999991,
+                -14.275034199999999,
+                -6.6498971000000004
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    },
+    "TMC_CPI": {
+      "physical_components": 1,
+      "components": [
+        {
+          "area_mm2": 0.6949972779097,
+          "layers": [
+            "top"
+          ],
+          "pads": [
+            "C13.2",
+            "U2.5"
+          ],
+          "regions": [
+            {
+              "layer": "top",
+              "bounds_mm": [
+                -8.639751799999999,
+                -3.770002,
+                -8.0798845,
+                -1.3499959000000004
+              ]
+            }
+          ]
+        }
+      ],
+      "complete_plane_network": true
+    }
+  },
+  "clearances_passed": true
+}

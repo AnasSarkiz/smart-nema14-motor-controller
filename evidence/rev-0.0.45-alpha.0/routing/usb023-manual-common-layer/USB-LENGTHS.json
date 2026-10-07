@@ -1,0 +1,57 @@
+{
+  "input": "evidence/rev-0.0.45-alpha.0/routing/usb023-manual-common-layer/circuit.json",
+  "sha256": "1a4a532a65551208963ee07e5deb24714b8df603e92be12f7655695d92b0b4c0",
+  "measured_paths": "Both actual reversible J_USB contact pairs through D_USB and C25100 series terminations to RP2040 USB_DP pin47 / USB_DM pin46.",
+  "precision": "Centerline nodes rounded to 0.00001 mm; 0.00001 mm collinearity tolerance permits serialization rounding only.",
+  "scope": "Planar copper length plus disclosed resistor pad separation. Via barrel delay, impedance, coupling, return continuity, physical programming and USB compliance are separate gates; no free-space copper is inferred.",
+  "segments": {
+    "DP": {
+      "mcu_pin": 47,
+      "series_resistor": "R_USB_DP",
+      "series_pad_separation_mm": 0.8656319999999997,
+      "connector_paths_mm": {
+        "16": 32.86210799255646,
+        "13": 33.86210799255646
+      },
+      "mcu_stub_mm": 1.8421200000000013,
+      "via_counts": {
+        "mcu_net": 0,
+        "receptacle_net": 5
+      }
+    },
+    "DM": {
+      "mcu_pin": 46,
+      "series_resistor": "R_USB_DM",
+      "series_pad_separation_mm": 0.8656319999999997,
+      "connector_paths_mm": {
+        "12": 32.452780414270585,
+        "17": 33.452780414270585
+      },
+      "mcu_stub_mm": 1.9420699999999993,
+      "via_counts": {
+        "mcu_net": 0,
+        "receptacle_net": 2
+      }
+    }
+  },
+  "path_lengths_mm": {
+    "DP1_DN1": {
+      "DP": 35.56985999255646,
+      "DM": 35.260482414270584
+    },
+    "DP2_DN2": {
+      "DP": 36.56985999255646,
+      "DM": 36.260482414270584
+    }
+  },
+  "orientation_skew_mm": {
+    "DP1_DN1": 0.30937757828587564,
+    "DP2_DN2": 0.30937757828587564
+  },
+  "mcu_stub_skew_mm": 0.09994999999999798,
+  "maximum_mcu_stub_skew_mm": 0.25,
+  "skew_mm": 0.30937757828587564,
+  "maximum_skew_mm": 0.5,
+  "missing_paths": [],
+  "passed": true
+}

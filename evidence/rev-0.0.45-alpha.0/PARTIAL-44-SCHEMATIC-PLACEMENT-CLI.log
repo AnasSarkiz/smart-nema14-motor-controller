@@ -1,0 +1,27 @@
+Async effect error in PcbTraceRender "autorouting":
+Error: Could not find an SRJ connection for trace name or port selector ".R_USB_DP > port.pin1" in differential pair "USB_RECEPTACLE_PAIR"
+    at getDifferentialPairSrjConnectionNamesByCohortOrThrow (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:108677:15)
+    at getDifferentialPairsForSimpleRouteJson (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:108722:48)
+    at getSimpleRouteJsonFromCircuitJson (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:109485:32)
+    at _runLocalAutorouting (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:119939:52)
+    at <anonymous> (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:120601:26)
+    at _queueAsyncEffect (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:1224:16)
+    at _startAsyncAutorouting (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:120599:12)
+    at updatePcbTraceRender (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:120672:14)
+    at runRenderPhase (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:1384:25)
+    at runRenderCycle (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:1340:12)
+    at render (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:122702:16)
+    at generateCircuitJson (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/cli/dist/cli/main.js:186087:12)
+    at async <anonymous> (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/cli/dist/cli/main.js:201807:27)
+    at async <anonymous> (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/cli/dist/cli/main.js:201919:33)
+    at async <anonymous> (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/cli/dist/cli/main.js:355121:29)
+    at async <anonymous> (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/cli/dist/cli/main.js:355135:28)
+    at processTicksAndRejections (native:7:39)
+<SchematicSheet name="UsbPd" id="schematic_sheet_5">
+<SchematicBoxPositions>
+<SchematicBoxPlacement componentName="D_VBUS" positionAnchor="center" schX="-4.6" schY="-3.3" width="0.2" height="0.28" />
+</SchematicBoxPositions>
+<SchematicPlacementIssues>
+<TwoPinComponentShouldBeVertical componentName="D_VBUS" railPin="pin1" railType="power" deltaSchRotation="-90" suggestedRailFacingDirection="up" message="rotate D_VBUS by -90° so its power-connected pin faces up and the component is vertical" />
+</SchematicPlacementIssues>
+</SchematicSheet>

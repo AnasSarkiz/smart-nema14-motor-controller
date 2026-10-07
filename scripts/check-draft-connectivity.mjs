@@ -16,6 +16,7 @@ const traces = circuitJson.filter((element) => element.type === "source_trace")
 for (const [reference, part, manufacturerPartNumber] of [
   ["U2", "C2150710", "TMC2209-LA-T"],
   ["D_USB", "C97502", "TPD2EUSB30DRTR"],
+  ["D_BUZZ", "C22624", "B5819WS"],
 ]) {
   const component = components.find((candidate) => candidate.name === reference)
   assert.ok(component, `Missing replacement ${reference}`)
@@ -395,7 +396,7 @@ for (const [ref, pin, net] of [
 
 assert.equal(
   components.length,
-  147,
+  149,
   "Do not validate an empty or unexpected draft",
 )
 assert.ok(
@@ -410,6 +411,37 @@ for (const reference of ["U4", "C6"]) {
     `${reference} encoder part must remain removed`,
   )
 }
+for (const [pin, net] of [
+  [1, "GND"],
+  [2, "NRST"],
+  [3, "V3V3"],
+])
+  checkPinNet({ ref: "U_RESET", pin }, net)
+checkPinNet({ ref: "C_RESET", pin: 1 }, "V3V3")
+checkPinNet({ ref: "C_RESET", pin: 2 }, "GND")
+assert.deepEqual(
+  components.find((component) => component.name === "U_RESET")
+    ?.supplier_part_numbers.jlcpcb,
+  ["C5218924"],
+)
+assert.equal(
+  components.find((component) => component.name === "C_RESET")?.capacitance,
+  100e-9,
+)
+
+for (const reference of ["R_USB_DM", "R_USB_DP"]) {
+  const component = components.find((candidate) => candidate.name === reference)
+  assert.equal(
+    component?.resistance,
+    27,
+    `${reference}: RP2040 Table 625 requires 27 ohm`,
+  )
+  assert.deepEqual(component?.supplier_part_numbers.jlcpcb, ["C25100"])
+}
+const bootFlash = components.find((candidate) => candidate.name === "U_FLASH")
+assert.equal(bootFlash?.manufacturer_part_number, "GD25Q16EEIGR")
+assert.deepEqual(bootFlash?.supplier_part_numbers.jlcpcb, ["C2986331"])
+
 for (const reference of ["R2", "R3"]) {
   assert.equal(
     components.find((component) => component.name === reference)?.resistance,

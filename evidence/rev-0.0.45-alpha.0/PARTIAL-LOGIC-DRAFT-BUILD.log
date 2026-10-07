@@ -1,0 +1,35 @@
+Building 1 file(s)...
+Building index.circuit.tsx...
+Generating circuit JSON...
+108220 |   const selectedSourcePortId = selectedPort?.source_port_id ?? void 0;
+108221 |   const matchingSourceTraces = selectedSourcePortId ? busSourceTraces.filter(
+108222 |     (sourceTrace2) => sourceTrace2.connected_source_port_ids.includes(selectedSourcePortId)
+108223 |   ) : sourceTracesWithMatchingName;
+108224 |   if (matchingSourceTraces.length === 0) {
+108225 |     throw new Error(
+                       ^
+error: Could not find source trace for trace name or port selector "net.USB_DP" in bus "USB_RECEPTACLE_OUTER_LAYERS"
+      at getBusSourceTraceIdOrThrow (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:108225:15)
+      at map (1:11)
+      at doInitialSourceAddConnectivityMapKey (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:108254:60)
+      at runRenderPhase (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:1391:24)
+      at runRenderPhaseForChildren (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:1401:13)
+      at runRenderPhaseForChildren (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:124041:11)
+      at runRenderCycle (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:1339:12)
+      at render (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/core/dist/index.js:122702:16)
+      at generateCircuitJson (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/cli/dist/cli/main.js:186074:10)
+      at async <anonymous> (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/cli/dist/cli/main.js:186194:28)
+      at async <anonymous> (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/cli/dist/cli/main.js:201188:38)
+      at async <anonymous> (/workspace/smart-nema14-motor-controller/.publication/readiness-2026-10-07/toolchain-upgrade/node_modules/@tscircuit/cli/dist/cli/main.js:201310:15)
+
+Fatal error [circuit_generation_failed]: Could not find source trace for trace name or port selector "net.USB_DP" in bus "USB_RECEPTACLE_OUTER_LAYERS"
+Generating preview images...
+No successful build output available for preview image generation.
+
+Build complete
+  Circuits  0 passed 1 failed
+  Options   schematic-svgs
+  Output    dist
+
+⚠ Build completed with errors
+Build exiting with code 1: fatal circuit build errors occurred

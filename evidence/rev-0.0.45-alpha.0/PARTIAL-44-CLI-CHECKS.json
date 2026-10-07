@@ -1,0 +1,69 @@
+[
+  {
+    "check": "NETLIST",
+    "exit_code": 0,
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "netlist",
+      "index.circuit.tsx"
+    ]
+  },
+  {
+    "check": "PIN-SPECIFICATION",
+    "exit_code": 0,
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "pin_specification",
+      "index.circuit.tsx"
+    ],
+    "prior_wrong_cli_spelling_retained": "PARTIAL-44-PIN-SPECIFICATION-INVOCATION-ERROR.log"
+  },
+  {
+    "check": "SOURCE",
+    "exit_code": 0,
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "source",
+      "index.circuit.tsx"
+    ]
+  },
+  {
+    "check": "SCHEMATIC-PLACEMENT",
+    "exit_code": 0,
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "schematic-placement",
+      "index.circuit.tsx"
+    ]
+  },
+  {
+    "check": "PLACEMENT",
+    "exit_code": 0,
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "placement",
+      "index.circuit.tsx"
+    ]
+  },
+  {
+    "check": "SHORTS",
+    "exit_code": 0,
+    "command": [
+      "bunx",
+      "tsci",
+      "check",
+      "shorts",
+      "index.circuit.tsx"
+    ]
+  }
+]

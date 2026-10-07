@@ -1,4 +1,33 @@
-# Active redesign — 0.0.44-alpha.0
+# Active RP2040 / autonomous USB-PD continuation — revision45
+
+Read root AGENTS.md, VALIDATION.md and docs/REV45-PRE-ROUTING-REVIEW.md.
+The partial canonical build has44/108 physically joined nets,63 traces,
+36 uniform0.30/0.45 ordinary through vias,7 pours and283 native open-port errors.
+There are zero other native errors or strict copper violations in that partial
+build; full connectivity and fabrication qualification remain incomplete.
+
+All53 exact parts have fresh positive official JLCPCB stock/SMT checks.
+Quote/allocation remain pending. All12 ICs /148 genuine STEP models pass actual
+CadQuery checks. Ten moved USB/bypass/crystal parts pass renewed native placement
+and actual mounted148-mesh nominal envelope clearance. The coherent latest
+released tscircuit2750/CLI2254/core2105/Pipeline9 962 toolchain installs with
+frozen Bun dependencies through the official registry mirror and normal TLS.
+
+Keep routing one changed selected-net native job at a time until every net is
+physically complete. Never replay STM32 copper or patch supplier definitions,
+models, generated JSON, dependencies or checks. Preserve failed candidates.
+The solved finer-mesh USB candidate is rejected for different inner layers,
+self-short, skew and pad clearance; solver success is not qualification.
+Prefer outer power, and finish isolatedEFUSE_RTN, ground, USB coupling/return,
+loaded widths, thermal and fresh CAM/assembly review. The disclosed TVS style
+finding must not stop independent PCB work. Keep the exact motor, outline,
+four connectors and carrier. Publish completed prototype steps with exact
+matching fresh JSON and original CAD bytes under the standing authorization.
+PROTOTYPE FABRICATION READY: NO. No order is authorized.
+
+---
+
+# Historical redesign — 0.0.44-alpha.0
 
 User requested RP2040 and actual dedicated USB-PD plus all review corrections.
 U1 is C2040 with flash/crystal; U3 is C2678061 STUSB4500 with genuine C222138
