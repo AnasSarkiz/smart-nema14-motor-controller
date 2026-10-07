@@ -1,5 +1,14 @@
 # Routing checkpoint — 0.0.48-alpha.0, 2026-10-07
 
+Public verification completed at 2026-10-07T14:29:42.731Z. GitHub main implementation commit
+`91ab2a97bbe3bc41eac98e19b2dfe1f5c7032ac5` and public tscircuit release
+`8ab4eea9-cdce-4c8c-b9cc-162bb01a0d2f` contain matching revision0.0.48-alpha.0. All309
+package files and all309 immutable GitHub files pass anonymous exact SHA-256
+verification, including fresh Circuit JSON and103 original local CAD assets.
+The official release reports ready_to_build:true; no hosted build success,
+hardware result or fabrication readiness is claimed. See
+`evidence/rev-0.0.48-alpha.0/PUBLICATION.json`.
+
 **PROTOTYPE FABRICATION READY: NO. Routing continues.**
 
 Native source replay now connects 64/108 physical networks including all 118
