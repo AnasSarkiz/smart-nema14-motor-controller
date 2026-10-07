@@ -48,7 +48,15 @@ exact build and pin audit passed that dependency stage. The early draft test was
 invoked against routed geometry and correctly rejected it; a fresh --disable-pcb
 draft passes. Original failure/repair records remain explicit.
 
-Matching public GitHub/tscircuit publication for this revision is in progress.
+Matching public GitHub/tscircuit publication completed at2026-10-07T21:37:26.097Z.
+Implementation commit`6919a5874da51a3c359b4b700aea453fdeaf3026` and public release
+`1b8346be-2413-4489-8ab5-606ceadd5161` contain revision0.0.51-alpha.0. All742 package
+files and all742 immutable GitHub files passed anonymous exact-byte SHA-256
+verification, including the three canonical Circuit JSON mirrors and every
+referenced original CAD dependency. The release reports ready_to_build:true;
+hosted build success is not claimed. Receipt:
+`evidence/rev-0.0.51-alpha.0/PUBLICATION.json`. Routing continues from the accepted
+54/120-net baseline; later power candidates remain unqualified until checked.
 Prior public revision50 receipts below remain valid.
 See [the current routing record](docs/REV51-POWER-THERMAL-ROUTING.md).
 
