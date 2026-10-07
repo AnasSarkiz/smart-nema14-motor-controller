@@ -62,7 +62,12 @@ def main():
     parser.add_argument('--native-pipeline9-input', help='Replay an unchanged captured core Pipeline9 event with public SDK mesh options.')
     parser.add_argument('--max-node-dimension', type=float, default=3)
     parser.add_argument('--max-node-ratio', type=float, default=30)
+    parser.add_argument('--min-node-area', type=float, default=.01)
+    parser.add_argument('--capture-before-repair', action='store_true', help='Save a clearly unqualified candidate through Pipeline9 public pre-expansion API; all qualification checks remain mandatory.')
+    parser.add_argument('--capture-native-input-only', action='store_true', help='Capture the exact supported core routing-start event without spending a default-mesh routing attempt; exits nonzero because routing is incomplete.')
     arguments = parser.parse_args()
+    if arguments.capture_native_input_only and arguments.native_pipeline9_input:
+        parser.error('Input capture and SDK routing are separate sequential operations.')
     if sys.platform != 'linux':
         parser.error('Routing is Cloud/Linux only; local Mac routing is disabled.')
     if arguments.timeout_seconds <= 0:
@@ -84,6 +89,8 @@ def main():
             parser.error('Maximum node dimension must be finite and positive.')
         if not math.isfinite(arguments.max_node_ratio) or arguments.max_node_ratio < 1:
             parser.error('Maximum node ratio must be finite and at least 1.')
+        if not math.isfinite(arguments.min_node_area) or arguments.min_node_area <= 0:
+            parser.error('Minimum node area must be finite and positive.')
     output = Path(arguments.evidence_folder).resolve()
     output.relative_to(repository)
     output.mkdir(parents=True, exist_ok=True)
@@ -100,10 +107,13 @@ def main():
     with open('.cloud-routing.lock', 'w') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         command = [bun, 'scripts/run-native-routing.mjs', str(source), str(output)]
+        if arguments.capture_native_input_only:
+            command.append('capture-input-only')
         if native_input is not None:
             command = [bun, 'scripts/run-pipeline9-sdk-routing.ts', str(native_input),
                        str(output), str(arguments.max_node_dimension),
-                       str(arguments.max_node_ratio)]
+                       str(arguments.max_node_ratio), str(arguments.min_node_area),
+                       'capture-before-repair' if arguments.capture_before_repair else 'full-pipeline-only']
         started = time.monotonic()
         peak_rss = 0
         termination = None

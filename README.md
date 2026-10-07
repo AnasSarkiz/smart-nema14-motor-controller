@@ -1,6 +1,6 @@
 # Smart NEMA 14 Motor Controller
 
-Revision **0.0.46-alpha.0** — **RP2040 + autonomous STUSB4500 USB-PD**.
+Revision **0.0.47-alpha.0** — **RP2040 + autonomous STUSB4500 USB-PD**.
 **Partially routed prototype. PROTOTYPE FABRICATION READY: NO. Not hardware tested.**
 
 The user-requested redesign replaces STM32/TCPP01 with official RP2040,
@@ -21,17 +21,17 @@ connectors, front carrier and exact **STEPPERONLINE 14HM11-0404S** single-front-
 shaft motor. AS5600 stays removed; motor control is open loop.
 
 See [the complete redesign and every review request](docs/RP2040-USB-PD-REDESIGN.md),
-[current routing checkpoint](docs/REV46-ROUTING-CHECKPOINT.md),
+[current routing checkpoint](docs/REV47-ROUTING-CHECKPOINT.md),
 [current validation](VALIDATION.md) and [Cloud task](docs/cloud/TASK.md).
 Manufacturer pin/BOM and initial placement/model reviews permit routing.
 Complete copper, power/USB/thermal/CAM qualification and hardware tests remain.
 The full official schematic analyzer leaves one imported TVS rotation defect.
 No purchased import, pad mapping, model, DRC or TypeScript rule is patched.
 
-Fresh native [Circuit JSON](dist/index/circuit.json) contains **82 traces,
-52 ordinary through vias and9 native ground pours**. **51 of108 required nets** have
+Fresh native [Circuit JSON](dist/index/circuit.json) contains **85 traces,
+56 ordinary through vias and9 native ground pours**. **54 of108 required nets** have
 one independently measured physical copper island. Native checking still
-reports **255 open-port errors**, with zero other native errors and zero strict
+reports **249 open-port errors**, with zero other native errors and zero strict
 copper/drill/edge/keepout violations in this partial build. The build exits1
 because connectivity remains incomplete. It is not ready to order.
 Old STM32 copper is preserved historically and deliberately cannot be replayed
@@ -62,7 +62,7 @@ bun run typecheck
 
 Installation/startup do not route. Routing uses one bounded selected-net
 native Pipeline9 job at a time on Linux through scripts/run-cloud-routing.py,
-plus supported native saved manual paths. All52 current vias measure0.30mm
+plus supported native saved manual paths. All56 current vias measure0.30mm
 drill /0.45mm pad and span all four layers. Via-in-pad is disabled. Outer power,
 complete loaded widths and USB coupling/return require copper qualification.
 

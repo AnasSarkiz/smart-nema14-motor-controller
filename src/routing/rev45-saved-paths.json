@@ -1,5 +1,5 @@
 {
-  "revision": "0.0.45-alpha.0",
+  "revision": "0.0.47-alpha.0",
   "net_names": [
     "BUCK_SW",
     "BUCK_BST",
@@ -50,7 +50,10 @@
     "NRST",
     "CAN_XIN",
     "CAN_XOUT",
-    "SWCLK"
+    "SWCLK",
+    "CAN_TX",
+    "CAN_RX",
+    "MOTOR_A1"
   ],
   "connections": [
     "net.BUCK_SW",
@@ -102,7 +105,10 @@
     "net.NRST",
     "net.CAN_XIN",
     "net.CAN_XOUT",
-    "net.SWCLK"
+    "net.SWCLK",
+    "net.CAN_TX",
+    "net.CAN_RX",
+    "net.MOTOR_A1"
   ],
   "paths": [
     {
@@ -5383,14 +5389,14 @@
           "layer": "top",
           "width": 0.15,
           "x": 1.000126,
-          "y": -1.0
+          "y": -0.75
         },
         {
           "route_type": "wire",
           "layer": "top",
           "width": 0.15,
           "x": -1.8,
-          "y": -1.0
+          "y": -0.75
         },
         {
           "route_type": "wire",
@@ -5772,6 +5778,351 @@
           "layer": "bottom"
         }
       ]
+    },
+    {
+      "connection": ".U6 port.pin4",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 4.595,
+          "y": 9.400056,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 4,
+          "y": 9.400056,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 3.7,
+          "y": 9.7,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 3.7,
+          "y": 10.25,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "via",
+          "x": 3.7,
+          "y": 10.25,
+          "from_layer": "bottom",
+          "to_layer": "inner1",
+          "via_diameter": 0.45,
+          "via_hole_diameter": 0.3
+        },
+        {
+          "route_type": "wire",
+          "x": 3.7,
+          "y": 10.25,
+          "width": 0.15,
+          "layer": "inner1"
+        },
+        {
+          "route_type": "wire",
+          "x": 3.35,
+          "y": 10.25,
+          "width": 0.15,
+          "layer": "inner1"
+        },
+        {
+          "route_type": "wire",
+          "x": -2.817961876396649,
+          "y": 4.08203812360335,
+          "width": 0.15,
+          "layer": "inner1"
+        },
+        {
+          "route_type": "wire",
+          "x": -2.817961876396649,
+          "y": -3.7166221162693462,
+          "width": 0.15,
+          "layer": "inner1"
+        },
+        {
+          "route_type": "wire",
+          "x": -2.785799188280752,
+          "y": -3.7166221162693462,
+          "width": 0.15,
+          "layer": "inner1"
+        },
+        {
+          "route_type": "wire",
+          "x": -2.752979355248383,
+          "y": -3.749441949301715,
+          "width": 0.15,
+          "layer": "inner1"
+        },
+        {
+          "route_type": "via",
+          "x": -2.752979355248383,
+          "y": -3.749441949301715,
+          "from_layer": "inner1",
+          "to_layer": "top",
+          "via_diameter": 0.45,
+          "via_hole_diameter": 0.3
+        },
+        {
+          "route_type": "wire",
+          "x": -2.752979355248383,
+          "y": -3.749441949301715,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -2.752979355248383,
+          "y": -3.1231019360831906,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -1.7786433218067763,
+          "y": -2.148765902641584,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -1.2218774191651922,
+          "y": -1.592,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -0.49999800000000005,
+          "y": -1.59246,
+          "width": 0.15,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "connection": ".U6 port.pin1",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": 8.405,
+          "y": 9.400056,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 8.405,
+          "y": 10.172058066274653,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 5.7689757089045415,
+          "y": 12.808082357370111,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 5.65691764262989,
+          "y": 12.808082357370111,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "wire",
+          "x": 5.565,
+          "y": 12.9,
+          "width": 0.15,
+          "layer": "bottom"
+        },
+        {
+          "route_type": "via",
+          "x": 5.565,
+          "y": 12.9,
+          "from_layer": "bottom",
+          "to_layer": "inner2",
+          "via_diameter": 0.45,
+          "via_hole_diameter": 0.3
+        },
+        {
+          "route_type": "wire",
+          "x": 5.565,
+          "y": 12.9,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": 4.875281103908396,
+          "y": 12.9,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": -3.8281310516685108,
+          "y": 4.196587844423094,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": -3.8281310516685108,
+          "y": -3.5060458686254186,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": -3.806007504980316,
+          "y": -3.5281694153136134,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": -3.806007504980316,
+          "y": -3.593992495019684,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "wire",
+          "x": -3.8,
+          "y": -3.6,
+          "width": 0.15,
+          "layer": "inner2"
+        },
+        {
+          "route_type": "via",
+          "x": -3.8,
+          "y": -3.65,
+          "from_layer": "inner2",
+          "to_layer": "top",
+          "via_diameter": 0.45,
+          "via_hole_diameter": 0.3
+        },
+        {
+          "route_type": "wire",
+          "x": -3.8,
+          "y": -3.65,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -2.6,
+          "y": -2.45,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -2.6,
+          "y": -1.35,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -1.6,
+          "y": -1.075,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 0.000128,
+          "y": -1.075,
+          "width": 0.15,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 0.000128,
+          "y": -1.59246,
+          "width": 0.15,
+          "layer": "top"
+        }
+      ]
+    },
+    {
+      "connection": ".U2 port.pin24",
+      "route": [
+        {
+          "route_type": "wire",
+          "x": -11.499995,
+          "y": 1.200253,
+          "width": 0.3,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -14.5,
+          "y": 1.200253,
+          "width": 0.4,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -14.5,
+          "y": 5,
+          "width": 0.4,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -16.9,
+          "y": 5,
+          "width": 0.4,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -16.9,
+          "y": 9.7,
+          "width": 0.4,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -6.2,
+          "y": 9.7,
+          "width": 0.4,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": -6.2,
+          "y": 8.85,
+          "width": 0.4,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 0.125536,
+          "y": 8.85,
+          "width": 0.4,
+          "layer": "top"
+        },
+        {
+          "route_type": "wire",
+          "x": 0.125536,
+          "y": 10.0504355,
+          "width": 0.4,
+          "layer": "top"
+        }
+      ]
     }
   ],
   "adoptions": [
@@ -5874,6 +6225,19 @@
       "source": "evidence/rev-0.0.46-alpha.0/routing/controls065/circuit.json",
       "sha256": "f9c6b584541e1994a35d297ac1cb753cad5c9e44e6f448d7c9d0b25d3b694953",
       "qualification": "Native255 open ports on remaining nets only; zero other native errors; strict copper0 violations; all51 physical nets connected inclGND; original10mm/zero-via clock rules retained. Two genuine C1570 loads replace parallel pairs; manually corrected SWCLK and SWDIO and reset vias."
+    },
+    {
+      "checked_at_utc": "2026-10-07T12:35:22.220648+00:00",
+      "qualified_native_circuit": "evidence/rev-0.0.47-alpha.0/routing/can075/circuit.json",
+      "qualified_native_circuit_sha256": "739ac1e387a178eb9b15a23d4b6e87a4b7a7cf413befcbc96363c5e76b560ba3",
+      "source_candidate": "evidence/rev-0.0.47-alpha.0/routing/can074-candidates.json",
+      "added_nets": ["CAN_TX", "CAN_RX", "MOTOR_A1"],
+      "physical_complete_networks_including_ground": 54,
+      "open_ports": 249,
+      "other_native_errors": 0,
+      "strict_copper_violations": 0,
+      "manual_nrst_row_mm": -0.75,
+      "method": "Pipeline9 public pre-repair candidate plus explicit board-owned manual DRC fixes. No original supplier, generated JSON or qualification threshold changed."
     }
   ],
   "ground_return_qualification": {
@@ -5881,6 +6245,9 @@
     "filled_report": "evidence/rev-0.0.46-alpha.0/routing/controls065/FILLED-COPPER.json",
     "physical_components": 1,
     "ordinary_stitches": 8,
-    "qualification": "All118 current GND endpoints in one actual native filled-copper network. Requalify after copper changes."
+    "qualification": "All118 current GND endpoints in one actual native filled-copper network. Requalify after copper changes.",
+    "evidence_folder": "evidence/rev-0.0.47-alpha.0/routing/can075",
+    "ground_port_count": 118,
+    "ordinary_stitching_vias": 8
   }
 }

@@ -5,6 +5,7 @@ import { createElement } from "react"
 
 const circuitPath = process.argv[2]
 const outputFolder = process.argv[3]
+const captureNativeInputOnly = process.argv[4] === "capture-input-only"
 if (!circuitPath || !outputFolder) {
   throw new Error("Supply a circuit source path and evidence folder")
 }
@@ -45,6 +46,27 @@ circuit.on("autorouting:start", (event) => {
     event.obstacleCount,
     "obstacles",
   )
+  if (captureNativeInputOnly && event.routingPhaseIndex === 1) {
+    writeFileSync(
+      `${outputFolder}/BASELINE-AT-ROUTING-START.json`,
+      JSON.stringify(circuit.getCircuitJson(), null, 2),
+    )
+    writeFileSync(
+      `${outputFolder}/INPUT-CAPTURE-STATUS.json`,
+      JSON.stringify(
+        {
+          scope:
+            "Exact native core routing-start event and native baseline only. No source input fields or coordinates changed. No selected-net solve or copper qualification claimed.",
+          routing_complete: false,
+          next_step:
+            "Run the official Pipeline9 SDK against the exact captured event, then qualify saved source routes.",
+        },
+        null,
+        2,
+      ) + "\n",
+    )
+    process.exit(2)
+  }
 })
 circuit.on("autorouting:end", (event) => {
   recordRoutingStage(event, "output")

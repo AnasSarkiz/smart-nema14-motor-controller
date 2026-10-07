@@ -1,3 +1,23 @@
+# Active routing — 0.0.47-alpha.0
+
+Read docs/REV47-ROUTING-CHECKPOINT.md, VALIDATION.md and the manufacturer review
+in docs/REV45-PRE-ROUTING-REVIEW.md. Current canonical copper connects54/108 nets:
+85 tracks,56 ordinary0.30/0.45mm through vias,nine pours and249 open ports;
+zero other native errors, native shorts or strict copper violations. GND has
+one physical network. CAN TX/RX and one top-only motor winding are now saved.
+Continue one bounded selected-net Pipeline9 job at a time, save qualified source
+paths and correct actual DRC manually. Input-only diagnostics and public SDK
+pre-repair capture never imply solved or qualified routes. All remaining54 nets,
+loaded widths/USB/reference/thermal/fresh CAM and assembly quote remain open.
+147 references/146 fitted genuine CAD records are unchanged from revision46.
+Preserve original supplier imports/models/evidence, exact motor, connectors,
+outline and carrier. Publish completed prototype steps with exact Circuit JSON
+and CAD bytes under standing authorization. PROTOTYPE FABRICATION READY: NO.
+
+---
+
+# Historical revision46 continuation
+
 # Active continuation — 0.0.46-alpha.0
 
 Read docs/REV46-ROUTING-CHECKPOINT.md, VALIDATION.md and the manufacturer review

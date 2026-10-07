@@ -1,0 +1,73 @@
+{
+  "revision": "0.0.46-alpha.0",
+  "input": "evidence/rev-0.0.47-alpha.0/routing/can075/circuit.json",
+  "input_sha256": "739ac1e387a178eb9b15a23d4b6e87a4b7a7cf413befcbc96363c5e76b560ba3",
+  "scope": "Actual tracks, drills, component/test pads, board edges, NPTH and mechanical keepouts. USB path length is independently measured by measure-usb-paths.py; absent legacy trace-name lengths below are not a USB pass. Pour geometry, silkscreen, paste, impedance CAM and full connectivity remain separate checks.",
+  "track_count": 85,
+  "segment_count": 600,
+  "via_count": 56,
+  "thermal_manifest_sha256": null,
+  "reviewed_thermal_drill_contacts": [],
+  "filled_manifest_sha256": null,
+  "reviewed_filled_contacts": [],
+  "filled_features_matched": [],
+  "usb_path_lengths_mm": {},
+  "usb_length_skew_mm": null,
+  "minimum_clearances": {
+    "via_drill_to_pad_mm": {
+      "via": "pcb_via_2",
+      "reference": "C_PD_2V7",
+      "pad": "pcb_smtpad_348",
+      "same_net": true,
+      "actual_mm": 0.35000089999999984,
+      "required_mm": 0.35
+    },
+    "track_to_pad_mm": {
+      "track": "saved_phase_null_0_82",
+      "segment": 17,
+      "pad": "pcb_smtpad_159",
+      "reference": "U_CAN",
+      "actual_mm": 0.10166067262568172,
+      "required_mm": 0.1
+    },
+    "track_to_track_mm": {
+      "first": "saved_phase_null_0_59",
+      "first_segment": 8,
+      "second": "saved_phase_null_0_60",
+      "second_segment": 8,
+      "layer": "inner2",
+      "actual_mm": 0.14999995141332773,
+      "required_mm": 0.15
+    },
+    "via_to_track_mm": {
+      "via": "pcb_via_52",
+      "track": "saved_phase_null_0_60",
+      "segment": 9,
+      "layer": "inner2",
+      "actual_mm": 0.15,
+      "required_mm": 0.15
+    },
+    "via_to_via_mm": {
+      "first": "pcb_via_32",
+      "second": "pcb_via_34",
+      "actual_mm": 0.20000000000000034,
+      "required_mm": 0.15
+    },
+    "via_hole_to_via_hole_mm": {
+      "first": "pcb_via_32",
+      "second": "pcb_via_34",
+      "actual_mm": 0.35000000000000037,
+      "required_mm": 0.35
+    }
+  },
+  "measurement_counts": {
+    "via_drill_to_pad_mm": 31024,
+    "track_to_pad_mm": 140112,
+    "track_to_track_mm": 66116,
+    "via_to_track_mm": 32745,
+    "via_to_via_mm": 1540,
+    "via_hole_to_via_hole_mm": 1540
+  },
+  "violations": [],
+  "passed": true
+}

@@ -5,17 +5,26 @@ import { readFileSync, writeFileSync } from "node:fs"
 import { resolve } from "node:path"
 import { parseCapturedPipeline9Input } from "./pipeline9-captured-input"
 
-const [inputPath, outputFolder, maxNodeDimensionText, maxNodeRatioText] =
-  process.argv.slice(2)
+const [
+  inputPath,
+  outputFolder,
+  maxNodeDimensionText,
+  maxNodeRatioText,
+  minNodeAreaText,
+  candidateCaptureMode,
+] = process.argv.slice(2)
 if (!inputPath || !outputFolder)
   throw new Error("Supply captured input and output")
 const maxNodeDimension = Number(maxNodeDimensionText)
 const maxNodeRatio = Number(maxNodeRatioText)
+const minNodeArea = Number(minNodeAreaText ?? "0.01")
 if (
   !Number.isFinite(maxNodeDimension) ||
   maxNodeDimension <= 0 ||
   !Number.isFinite(maxNodeRatio) ||
-  maxNodeRatio < 1
+  maxNodeRatio < 1 ||
+  !Number.isFinite(minNodeArea) ||
+  minNodeArea <= 0
 ) {
   throw new Error("Mesh dimension must be positive and aspect ratio at least 1")
 }
@@ -25,7 +34,7 @@ const options = {
   effort: routingEvent.effort,
   maxNodeDimension,
   maxNodeRatio,
-  minNodeArea: 0.01,
+  minNodeArea,
 }
 const solver = new AutoroutingPipelineSolver9_PreloadedTraceGraph(
   routingEvent.simpleRouteJson,
@@ -50,6 +59,7 @@ writeFileSync(
         .digest("hex"),
       input_forwarded_without_field_or_coordinate_changes: true,
       options,
+      candidate_capture_mode: candidateCaptureMode ?? "full-pipeline-only",
       previous_mesh_options: { maxNodeDimension: 15, maxNodeRatio: 6 },
       obstacle_count: routingEvent.simpleRouteJson.obstacles.length,
       connection_count: routingEvent.simpleRouteJson.connections.length,
@@ -65,8 +75,35 @@ writeFileSync(
 )
 const startedAt = performance.now()
 let lastRecordedAt = 0
+let candidateCaptured = false
 while (!solver.solved && !solver.failed) {
   solver.step()
+  if (
+    candidateCaptureMode === "capture-before-repair" &&
+    !candidateCaptured &&
+    solver.getCurrentPhase() === "globalDrcForceImproveSolver"
+  ) {
+    const traces = solver.getNewTracesBeforePowerExpansion()
+    writeFileSync(
+      resolve(outputFolder, "UNQUALIFIED-PRE-REPAIR-CANDIDATE.json"),
+      JSON.stringify(
+        {
+          solver_complete: false,
+          qualified: false,
+          public_api: "getNewTracesBeforePowerExpansion",
+          captured_phase: solver.getCurrentPhase(),
+          note: "Diagnostic source-route candidate only. Native source replay, unchanged strict copper/drill checks and all-net physical fill checks are required before adoption. Full Pipeline9 continues after capture.",
+          traces,
+        },
+        null,
+        2,
+      ) + "\n",
+    )
+    candidateCaptured = true
+    console.log(
+      "Saved unqualified pre-repair candidate through public Pipeline9 API; full pipeline continues",
+    )
+  }
   const now = performance.now()
   if (now - lastRecordedAt >= 5000 || solver.solved || solver.failed) {
     lastRecordedAt = now
