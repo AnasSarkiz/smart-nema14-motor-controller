@@ -25,7 +25,13 @@ remain exact. Required CLI stage checks ran:0netlist errors;0pin/source errors
 with35/23 retained warnings;one unchanged imported D_VBUS schematic rotation
 suggestion;six orientation suggestions and zero native placement DRC.
 No total-board clean result is claimed. Stage4/5/6 remain in progress.
-Exact public source/JSON/CAD publication is in progress. See [REV52-VM-POWER-ROUTING.md](docs/REV52-VM-POWER-ROUTING.md).
+Public WIP publication verified at2026-10-07T23:08:01.175Z. Source commit
+`cf5e21862549243ef36da926d338904cbc8936d2`,release`f1f1e3f0-735d-4eac-b04d-6e000382af50`.
+All815 package files and815 immutable GitHub files match exact frozen-packet
+checksums anonymously. Circuit JSON SHA-256 is the value above; every original
+referenced CAD asset is included. ready_to_build:true,hosted build/hardware
+success not claimed. Receipt:`evidence/rev-0.0.52-alpha.0/PUBLICATION.json`.
+Routing continues. New logic candidates are unqualified until full replay. See [REV52-VM-POWER-ROUTING.md](docs/REV52-VM-POWER-ROUTING.md).
 
 ---
 
