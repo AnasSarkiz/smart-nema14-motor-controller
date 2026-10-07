@@ -1,5 +1,72 @@
 # RP2040 and dedicated USB-PD redesign — 0.0.44-alpha.0, 2026-10-06
 
+## CadQuery and connection audit — 2026-10-07
+
+The user requires actual CadQuery-compatible chip models and no missing PCB
+connections. The current board does **not** meet either complete requirement.
+`mechanical/check-cadquery-components.py` now checks every default-fitted
+component: actual STEP import, valid positive-volume solids, unchanged source
+bytes, STEP export/reimport and preserved solid count, volume and bounds.
+It returns exit1 for any missing or invalid fitted model; no bounding-box or
+OBJ-display success substitutes for STEP compatibility. Remote inputs require
+an explicit exact-URL/download-status/checksum manifest.
+
+CadQuery2.8.0 tested52 unique STEP dependencies across146 fitted components.
+**10/11 ICs and145/146 fitted component models pass. U_FLASH fails.** Its
+official `W25Q16JVUXIQ / C2843335` STEP file is15 bytes containing only
+`Model not found`. A fresh supported official import reproduces those exact
+bytes. Original imported pin/pad/symbol definitions and model files remain
+untouched. The earlier filename-based dependency coverage is not a valid
+CadQuery or genuine-STEP claim for this asset. Obtain the exact-part STEP or
+resolve the official upstream source/importer defect before claiming all chips
+are CadQuery friendly. A generic replacement model is not adopted.
+
+Both official C136657 programmer model downloads now return200. The STEP
+passes CadQuery import/export/reimport as14 solids. A fresh native mounted
+build contains4674 J_SWD vertices; all146 fitted meshes pass nominal carrier,
+fastener and component-pair envelope checks. This resolves the previously empty
+programmer mesh for this run; remote availability, supplier registration,
+mating plugs, manufacturing tolerances and hardware fit remain separate.
+The native mounted3D image was actually viewed. Historical failed mesh and
+inventory reports are retained unchanged.
+
+The correct PCB-disabled physical-pin draft and critical-import assertions
+pass. All108 declared source-net partitions are separate, with no unintended
+named-net bridges; EFUSE_RTN remains separate from GND. These source graph
+checks do not establish copper connectivity or fully qualified hardware.
+Explicit native PCB checks still report **504 unconnected ports,0/108 completed
+routed nets,0 traces/0 vias/0 pours**. Placement/native short screens report0;
+routed DRC, widths, power, USB, thermal and fabrication checks are incomplete.
+Routing remains gated by manufacturer/BOM and actual model qualification.
+
+The official converter identifies the flash STEP origin as
+`https://modules.easyeda.com/qAxj6KHrDKw4blvCG8QJPs7Y/2b35e1c3dcc44b77887d4f445b51370a`.
+Its request returns403; this exact host is absent from the active policy.
+Confirmed Cloud draft16 adds only `modules.easyeda.com` to the preserved31
+custom hosts, leaving install/start instructions, credentials and presets intact.
+Review/save the draft in environment settings, then publish the environment
+and verify actual origin/manufacturer access. A saved draft does not activate
+the current VM or prove the missing flash model exists at its origin.
+
+Evidence and a checksummed genuine programmer STEP are retained under
+`evidence/rev-0.0.44-alpha.0/cad-connectivity-2026-10-07/`. To reproduce the
+CadQuery qualification after initializing the documented Cloud tool paths:
+
+```sh
+.mechanical-venv/bin/python mechanical/check-cadquery-components.py \
+  dist/index/circuit.json /tmp/nema-cadquery-review.json \
+  evidence/rev-0.0.44-alpha.0/cad-connectivity-2026-10-07/REMOTE-STEP-MANIFEST.json
+```
+
+Expected current result is exit1 naming U_FLASH. No check is disabled or weakened.
+All454 board runtime files and all three canonical JSON mirrors remain exact
+to source2765e4c and SHA256`b72ed0cd13e08f93fcbbcd0f7d49c503667c058619a8498f8bdd809a6794a087`.
+The public44 release is independently read back with `ready_to_build:false`;
+complete publication verification and CadQuery qualification remain blocked.
+**PROTOTYPE FABRICATION READY: NO.**
+
+## Original redesign record
+
 **UNROUTED PROTOTYPE. PROTOTYPE FABRICATION READY: NO.**
 The latest user request replaces STM32/TCPP01 with RP2040/STUSB4500 and adds
 functional buzzer circuitry. Read docs/RP2040-USB-PD-REDESIGN.md for every

@@ -16,7 +16,7 @@ import cadquery as cq
 import numpy as np
 
 revision = json.loads(Path("package.json").read_text())["version"]
-evidence_path = Path(f"evidence/rev-{revision}/FRONT-CARRIER-AUDIT.json")
+evidence_path = Path(sys.argv[2]) if len(sys.argv) > 2 else Path(f"evidence/rev-{revision}/FRONT-CARRIER-AUDIT.json")
 input_directory = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("dist/mounted-assembly")
 circuit = json.loads((input_directory / "circuit.json").read_text())
 glb_bytes = (input_directory / "3d.glb").read_bytes()
