@@ -1,0 +1,239 @@
+[
+  {
+    "check": "STRICT-COPPER",
+    "command": [
+      ".mechanical-venv/bin/python",
+      "scripts/check-copper-geometry.py",
+      "dist/index/circuit.json",
+      "evidence/rev-0.0.53-alpha.0/STRICT-COPPER.json",
+      "src/routing/tmc2209-thermal-vias.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "ALL-PHYSICAL-NETS",
+    "command": [
+      ".mechanical-venv/bin/python",
+      "scripts/check-filled-copper.py",
+      "dist/index/circuit.json",
+      "evidence/rev-0.0.53-alpha.0/ALL-PHYSICAL-NETS.json",
+      "USB_DATA_VBUS",
+      "USB_DATA_CC1",
+      "USB_DATA_CC2",
+      "USB_DATA_SENSE_GATE",
+      "USB_DATA_ABSENT_N",
+      "MOTOR_REQUEST_N",
+      "MOTOR_ENABLE_DRIVE",
+      "MOTOR_POWER_GOOD",
+      "PD_PATH_INVALID_N",
+      "MOTOR_REQUEST_CLEAN_N",
+      "PD_CONTRACT_15_CLEAN_N",
+      "PD_PATH_INVALID_CLEAN_N",
+      "PD_LOAD_ENABLE_N",
+      "GND",
+      "V3V3",
+      "NRST",
+      "I2C_SCL",
+      "I2C_SDA",
+      "CAN_TX",
+      "CAN_RX",
+      "CAN_H",
+      "CAN_L",
+      "BUCK_SW",
+      "BUCK_BST",
+      "VM",
+      "TMC_ENABLE_N",
+      "TMC_STEP",
+      "TMC_DIR",
+      "TMC_DIAG",
+      "TMC_UART_TX",
+      "TMC_UART_RX",
+      "TMC_CPO",
+      "TMC_CPI",
+      "TMC_VCP",
+      "TMC_5VOUT",
+      "TMC_VREF",
+      "TMC_SENSE_A",
+      "TMC_SENSE_B",
+      "MOTOR_A1",
+      "MOTOR_A2",
+      "MOTOR_B1",
+      "MOTOR_B2",
+      "VBUS_CONN",
+      "VBUS_PROTECTED",
+      "USB_DP",
+      "USB_DM",
+      "PD_CC1_CONN",
+      "PD_CC2_CONN",
+      "VBUS_DIV",
+      "VBUS_ADC",
+      "SWDIO_GUARDED",
+      "SWCLK_GUARDED",
+      "NRST_GUARDED",
+      "SWDIO",
+      "SWCLK",
+      "SWDIO_CONN",
+      "SWCLK_CONN",
+      "NRST_CONN",
+      "POWER_GOOD",
+      "VBUS_ADC_PRE_GUARD",
+      "TEMP_ALERT_N",
+      "EXT_STEP_CONN",
+      "EXT_DIR_CONN",
+      "EXT_ENABLE_N_CONN",
+      "EXT_STEP",
+      "EXT_DIR",
+      "EXT_ENABLE_N",
+      "LIMIT1_CONN",
+      "LIMIT2_CONN",
+      "LIMIT1",
+      "LIMIT2",
+      "LED_POWER_A",
+      "LED_STATUS_A",
+      "LED_FAULT_A",
+      "LED_STATUS_DRIVE",
+      "LED_FAULT_DRIVE",
+      "CAN_RS",
+      "EFUSE_FLT_N",
+      "POWER_HIGH_CURRENT",
+      "EFUSE_EN",
+      "EFUSE_OVP_TOP_1",
+      "EFUSE_OVP_TOP_2",
+      "EFUSE_OVP",
+      "EFUSE_ILIM",
+      "EFUSE_ILIM_SWITCH",
+      "EFUSE_DVDT",
+      "EFUSE_RTN",
+      "CAN_TERM_LINK",
+      "VCORE",
+      "QSPI_IO0",
+      "QSPI_IO1",
+      "QSPI_IO2",
+      "QSPI_IO3",
+      "QSPI_CLK",
+      "QSPI_CS",
+      "XIN",
+      "XOUT",
+      "XTAL_OUT",
+      "MCU_USB_DM",
+      "MCU_USB_DP",
+      "CAN_SPI_MISO",
+      "CAN_SPI_MOSI",
+      "CAN_SPI_CS",
+      "CAN_SPI_CLK",
+      "CAN_INT_N",
+      "CAN_XIN",
+      "CAN_XOUT",
+      "PD_ALERT_N",
+      "PD_RESET",
+      "PD_CONTRACT_15_N",
+      "PD_VREG_1V2",
+      "PD_VREG_2V7",
+      "PD_VDD",
+      "PD_FET_SOURCE",
+      "PD_GATE",
+      "PD_DISCH",
+      "PD_VBUS_SENSE",
+      "BUZZER_PWM",
+      "BUZZER_GATE",
+      "BUZZER_NEG"
+    ],
+    "exit_code": 1
+  },
+  {
+    "check": "USB-DECOUPLING",
+    "command": [
+      ".mechanical-venv/bin/python",
+      "scripts/check-rp2040-usb-decoupling.py",
+      "dist/index/circuit.json",
+      "evidence/rev-0.0.53-alpha.0/ALL-PHYSICAL-NETS.json",
+      "evidence/rev-0.0.53-alpha.0/USB-DECOUPLING.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "THERMAL-VIAS",
+    "command": [
+      "node",
+      "scripts/check-tmc-thermal-vias.mjs",
+      "dist/index/circuit.json",
+      "src/routing/tmc2209-thermal-vias.json",
+      "evidence/rev-0.0.53-alpha.0/THERMAL-VIAS.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "PROGRAMMER",
+    "command": [
+      ".mechanical-venv/bin/python",
+      "scripts/check-programmer-compatibility.py",
+      "dist/index/circuit.json",
+      "evidence/rev-0.0.53-alpha.0/PROGRAMMER.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "MOTOR-INTERLOCK",
+    "command": [
+      ".mechanical-venv/bin/python",
+      "scripts/check-motor-interlock.py",
+      "dist/index/circuit.json",
+      "evidence/rev-0.0.53-alpha.0/MOTOR-INTERLOCK.json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "DRAFT",
+    "command": [
+      "bun",
+      "run",
+      "test:draft"
+    ],
+    "exit_code": 1
+  },
+  {
+    "check": "SCHEMATIC-NOTES",
+    "command": [
+      "bun",
+      "run",
+      "test:schematic-notes"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "SYNTHETIC-PDO-READBACK",
+    "command": [
+      "bun",
+      "run",
+      "test:stusb4500-readback"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "FORMAT",
+    "command": [
+      "bun",
+      "run",
+      "format:check"
+    ],
+    "exit_code": 1
+  },
+  {
+    "check": "TYPECHECK",
+    "command": [
+      "bun",
+      "run",
+      "typecheck"
+    ],
+    "exit_code": 0
+  },
+  {
+    "check": "FROZEN-INSTALL",
+    "command": [
+      "bun",
+      "install",
+      "--frozen-lockfile"
+    ],
+    "exit_code": 0
+  }
+]

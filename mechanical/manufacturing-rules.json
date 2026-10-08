@@ -1,9 +1,9 @@
 {
-  "status": "Routed prototype targets and measured native copper; selected process and fabricator CAM not approved",
+  "status": "Current RP2040 two-port15V prototype targets; all routing, loaded power/USB/thermal and selected CAM/quote checks remain required",
   "manufacturer": "JLCPCB",
   "capabilities_reference": "https://jlcpcb.com/capabilities/pcb-capabilities",
   "stackup_reference": "https://jlcpcb.com/pcb-impedance-calculator",
-  "checked_date": "2026-10-06",
+  "checked_date": "2026-10-07",
   "stackup": {
     "name": "JLC04161H-3313",
     "layers": 4,
@@ -29,8 +29,8 @@
     "fine_pitch_pad_to_track_clearance_mm": 0.1,
     "different_net_smd_pad_to_pad_clearance_mm": 0.15,
     "through_via_drill_mm": 0.3,
-    "through_via_pad_mm": 0.6,
-    "through_via_annular_ring_mm": 0.15,
+    "through_via_pad_mm": 0.45,
+    "through_via_annular_ring_mm": 0.075,
     "ordinary_hole_to_track_clearance_mm": 0.35,
     "npth_to_copper_clearance_mm": 0.3,
     "copper_to_board_edge_mm": 0.3,
@@ -44,8 +44,15 @@
       "scope": "Manufacturer calculator nominal geometry; actual routes and CAM confirmation pending"
     }
   },
-  "exceptions": "Official imported pads retained unchanged. Exactly 66 source-manifested filled/capped features use their named owners and process, including five exposed-pad thermal vias. Ordinary routing vias are 0.30mm drill / 0.60mm pad / 0.15mm ring; no blanket same-net drill exception. JLC published 18um average hole plating is not a guaranteed minimum.",
+  "exceptions": "Only five exact manifest-owned U2.29 TypeVII filled/capped thermal0.30/0.45mm full through vias. Ordinary vias use0.30mm drill/0.45mm pad/0.075mm ring with unchanged all-pad0.35mm drill gap and all hole/copper spacing checks. The historical66 filled/capped STM32 features are not selected in the RP2040 board. Published hole-plating averages are not guaranteed minimums; final CAM/process confirmation remains required.",
   "native_routing_configuration_applied": true,
-  "actual_copper_measurements": "82/82 native copper networks connected. Strict actual geometry reports are revision-specific; selected widths, filled/capped features and stackup must be qualified against final CAM.",
+  "ordinary_via_manufacturer_basis": {
+    "reference": "https://jlcpcb.com/capabilities/pcb-capabilities/",
+    "published_statement": "Via diameter should be 0.1mm(0.15mm preferred) larger than Via hole size.",
+    "chosen_diameter_difference_mm": 0.15,
+    "resulting_nominal_radial_annular_ring_mm": 0.075,
+    "scope": "Nominal preferred geometry, not a guaranteed finished minimum; drill registration, finished process and five selective TypeVII features require final CAM/quote confirmation"
+  },
+  "actual_copper_measurements": "Revision53 physically connects56/120 nets with240 opens,128 tracks,82 ordinary+five thermal0.30/0.45mm full through vias and seven native filled regions. Zero other native/strict/fill failures; all prior56 complete nets survive. Remaining64 nets and loaded-width/return/thermal/CAM qualification are incomplete.",
   "fabrication_ready": false
 }

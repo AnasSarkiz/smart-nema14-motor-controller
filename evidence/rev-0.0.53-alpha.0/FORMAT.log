@@ -1,0 +1,55 @@
+$ biome format index.circuit.tsx routing-review.circuit.tsx assembly.circuit.tsx mounted-assembly.circuit.tsx controller-preview.circuit.tsx src scripts mechanical/viewer.js mechanical/design-constraints.json package.json tsconfig.json tscircuit.config.json biome.json
+src/routing/rev50-saved-paths.json format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+
+    8792 8792 │     "manual_correction019": {
+    8793 8793 │       "scope": "Supported board-owned source path corrections for actual new-part, via and connector-hole conflicts; no generated Circuit JSON edits. Native and strict requalification required.",
+    8794      │ - ····"paths":·[
+    8795      │ - ······25,
+    8796      │ - ······27,
+    8797      │ - ······33,
+    8798      │ - ······38,
+    8799      │ - ······40,
+    8800      │ - ······56,
+    8801      │ - ······61,
+    8802      │ - ······62,
+    8803      │ - ······63,
+    8804      │ - ······64,
+    8805      │ - ······65
+    8806      │ - ····]
+         8794 │ + ····"paths":·[25,·27,·33,·38,·40,·56,·61,·62,·63,·64,·65]
+    8807 8795 │     },
+    8808 8796 │     "manual_correction020": {
+    8809 8797 │       "scope": "Supported manual source corrections after explicit native/independent measurements. Rerender and full copper qualification required.",
+    8810      │ - ····"paths":·[
+    8811      │ - ······27,
+    8812      │ - ······33,
+    8813      │ - ······40,
+    8814      │ - ······56,
+    8815      │ - ······62,
+    8816      │ - ······63,
+    8817      │ - ······64
+    8818      │ - ····]
+         8798 │ + ····"paths":·[27,·33,·40,·56,·62,·63,·64]
+    8819 8799 │     },
+    8820 8800 │     "manual_correction021": {
+    8821 8801 │       "scope": "Separate CAN TX and RX north of MCP2515; move adjacent LED anode bend to preserve clearance. Supported source paths only; full native and strict requalification required.",
+    8822      │ - ····"paths":·[
+    8823      │ - ······57,
+    8824      │ - ······66
+    8825      │ - ····]
+         8802 │ + ····"paths":·[57,·66]
+    8826 8803 │     },
+    8827 8804 │     "power038_adoption": {
+
+
+Checked 415 files in 221ms. No fixes applied.
+Found 1 error.
+format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+
+
+error: script "format:check" exited with code 1
+Captured terminal whitespace normalized for Git; diagnostics and exit status retained.

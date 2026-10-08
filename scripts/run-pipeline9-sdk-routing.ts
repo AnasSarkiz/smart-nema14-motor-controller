@@ -135,7 +135,47 @@ while (!solver.solved && !solver.failed) {
     await new Promise((resume) => setTimeout(resume, 0))
   }
 }
-if (solver.failed) throw new Error(solver.error || "Native Pipeline9 failed")
+if (solver.failed) {
+  const pathing = solver.portPointPathingSolver
+  const parameters = pathing?.getConstructorParams()[0]
+  writeFileSync(
+    resolve(outputFolder, "FAILURE-DIAGNOSTIC.json"),
+    JSON.stringify(
+      {
+        phase: solver.getCurrentPhase(),
+        error: solver.error,
+        scope:
+          "Read-only public solver parameters/metrics; no candidate or qualification",
+        pathing_flags: parameters?.flags,
+        pathing_weights: parameters?.weights,
+        pathing_benchmark: pathing?.getSolveGraphBenchmarkMetrics(),
+        connections: parameters?.connections.map((connection) => ({
+          original_connection: connection.simpleRouteConnection,
+          start_node_id: connection.startRegion.d.capacityMeshNodeId,
+          end_node_id: connection.endRegion.d.capacityMeshNodeId,
+          start_node: connection.startRegion.d,
+          end_node: connection.endRegion.d,
+        })),
+        native_port_region_links: parameters?.graph.ports.map((port) => ({
+          port_id: port.d.portId,
+          layer_index: port.d.z,
+          region_node_ids: port.d.regions.map(
+            (region) => region.d.capacityMeshNodeId,
+          ),
+        })),
+      },
+      null,
+      2,
+    ) + "\n",
+  )
+  if (pathing) {
+    writeFileSync(
+      resolve(outputFolder, "FAILURE-PUBLIC-GRAPHICS.json"),
+      JSON.stringify(pathing.visualize()) + "\n",
+    )
+  }
+  throw new Error(solver.error || "Native Pipeline9 failed")
+}
 writeFileSync(
   resolve(outputFolder, "OUTPUT-SIMPLE-ROUTE.json"),
   JSON.stringify(solver.getOutputSimpleRouteJson(), null, 2) + "\n",

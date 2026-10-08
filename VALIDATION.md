@@ -1,3 +1,31 @@
+# Active routing — 0.0.53-alpha.0
+
+Read `docs/REV53-LOGIC-POWER-ESCAPES.md`. The canonical native replay retains
+all56/120 complete nets, with240 required opens,128 tracks,82 ordinary0.30/0.45mm
+full through vias,five manifested TypeVII thermal vias and seven filled regions.
+Native other-errors:0; unchanged strict and filled-copper clearance failures:0;
+GND remains one physical network. Original purchased definitions, all165 fitted
+model transforms, capacitor placement, motor and carrier are preserved.
+The complete USB_VDD bypass/return geometry is screened; V3V3 remains incomplete.
+Continue3.3V/core power,PD/eFuse controls,USB pair and ALL remaining physical nets.
+Publication is WIP; loaded power/USB/thermal,complete CAM,quote and hardware tests
+remain pending. Do not stop at this step. PROTOTYPE FABRICATION READY:NO.
+
+Revision53's same-source native CLI build completed in59.47seconds with240
+opens only. Three canonical Circuit JSON mirrors match SHA-256`69cb21a1bf916829317d38fc030a85cb0812607d69204dfe7ab4e31a08c6ac6d`.
+Strict copper,all120 physical-net/filled-clearance checks,USB decoupling geometry,
+five thermal owners,programmer pin mapping,interlock truth/static corners,
+166notes/11A4 sheets and seven synthetic PDO tests pass their stated scopes.
+Same-source schematic-only draft pin checks,format,TypeScript and frozen319-package
+install pass. All165 fitted transforms/asset URLs remain exact. Required CLI
+checks report0netlist/source/pin errors,23source and35pin warnings;one retained
+D_VBUS schematic rotation finding;six orientation suggestions,zero native
+placement DRC. Source automatic datasheet lookups remain403; retained genuine
+manufacturer pin/datasheet reviews are independent. Exact public publication
+is in progress. Stage4/5/6 and hardware validation remain incomplete.
+
+---
+
 # Revision 0.0.52-alpha.0 — protected VBUS and VM connected
 
 **PROTOTYPE FABRICATION READY: NO. Routing continues; hardware tests pending.**

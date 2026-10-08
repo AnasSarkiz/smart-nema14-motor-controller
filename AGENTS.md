@@ -1,3 +1,18 @@
+# Active routing — 0.0.53-alpha.0
+
+Read `docs/REV53-LOGIC-POWER-ESCAPES.md`. The canonical native replay retains
+all56/120 complete nets, with240 required opens,128 tracks,82 ordinary0.30/0.45mm
+full through vias,five manifested TypeVII thermal vias and seven filled regions.
+Native other-errors:0; unchanged strict and filled-copper clearance failures:0;
+GND remains one physical network. Original purchased definitions, all165 fitted
+model transforms, capacitor placement, motor and carrier are preserved.
+The complete USB_VDD bypass/return geometry is screened; V3V3 remains incomplete.
+Continue3.3V/core power,PD/eFuse controls,USB pair and ALL remaining physical nets.
+Publication is WIP; loaded power/USB/thermal,complete CAM,quote and hardware tests
+remain pending. Do not stop at this step. PROTOTYPE FABRICATION READY:NO.
+
+---
+
 # Active routing — 0.0.52-alpha.0
 
 Read `docs/REV52-VM-POWER-ROUTING.md`. Qualified power019 joins56/120 required

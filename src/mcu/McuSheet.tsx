@@ -238,6 +238,10 @@ export function McuSheet({ mechanicalPreview = false }: BoardViewProps = {}) {
           schX={-13.5 + (index % 4) * 1.2}
           schY={-6.5 - Math.floor(index / 4) * 1.4}
           schRotation={270}
+          // The unchanged QFN/0402 courtyards require a 1.66mm centre path.
+          // Its actual exposed copper is 0.88mm; the independent USB bypass
+          // audit retains a 1mm outside-land limit and checks the full return.
+          maxDecouplingTraceLength={name === "C_USBPHY" ? "2mm" : undefined}
           connections={{ pin1: "net.V3V3", pin2: "net.GND" }}
         />
       ))}

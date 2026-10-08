@@ -1,11 +1,12 @@
-import { Fragment } from "react"
+import { Fragment, type ReactNode } from "react"
 import { BoardLegend } from "./BoardLegend"
 import { GroundReturnPlanes } from "./routing/GroundReturnPlanes"
 import { TmcThermalSpreadingTrial } from "./routing/TmcThermalSpreadingTrial"
 import { TmcThermalVias } from "./routing/TmcThermalVias"
 import { VmDistributionPlane } from "./routing/VmDistributionPlane"
+import { LogicPowerLocalRoutes } from "./routing/LogicPowerLocalRoutes"
 import { resolvePowerFanouts } from "./routing/VmPowerRoutes"
-import type { FanoutTracePath } from "@tscircuit/props"
+import type { BoardProps, FanoutTracePath } from "@tscircuit/props"
 import { type BoardViewProps } from "./mechanics/preview-placement"
 import { InterfacesSheet } from "./interfaces/InterfacesSheet"
 import { ProgrammingSheet } from "./programming/ProgrammingSheet"
@@ -34,6 +35,7 @@ export default function SmartNema14MotorController({
   nativeRoutingNetNames = [],
   nativePartialSignalBranches = false,
   nativeAutorouterVersion = "beta_pipeline9",
+  nativeAutorouterEffortLevel = "1x",
   freshRoutesEnabled = true,
   nativeSavedRouteTrial,
   nativeFanoutTrial,
@@ -42,6 +44,7 @@ export default function SmartNema14MotorController({
   nativeThermalViasTrial = true,
   nativeVmPlaneTrial = true,
   nativeSavedRouteReplacement,
+  nativeCopperTrial = <LogicPowerLocalRoutes />,
 }: BoardViewProps & {
   usbRoutesEnabled?: boolean
   savedRoutesEnabled?: boolean
@@ -53,6 +56,7 @@ export default function SmartNema14MotorController({
     | "beta_pipeline4"
     | "beta_pipeline7"
     | "beta_pipeline9"
+  nativeAutorouterEffortLevel?: BoardProps["autorouterEffortLevel"]
   freshRoutesEnabled?: boolean
   nativeSavedRouteTrial?: { netNames: string[]; paths: FanoutTracePath[] }
   nativeFanoutTrial?: { netNames: string[]; paths?: FanoutTracePath[] }
@@ -61,6 +65,7 @@ export default function SmartNema14MotorController({
   nativeThermalViasTrial?: boolean
   nativeVmPlaneTrial?: boolean
   nativeSavedRouteReplacement?: { netNames: string[]; pathSelectors: string[] }
+  nativeCopperTrial?: ReactNode
 } = {}) {
   if (savedRoutesEnabled || usbRoutesEnabled || nativePartialSignalBranches) {
     throw new Error(
@@ -95,7 +100,7 @@ export default function SmartNema14MotorController({
         viaPadDiameter: "0.45mm",
         silkscreenTextVisibility: "hidden",
       }}
-      autorouterEffortLevel="1x"
+      autorouterEffortLevel={nativeAutorouterEffortLevel}
       autorouterVersion={nativeAutorouterVersion}
       defaultTraceWidth="0.15mm"
       minTraceWidth="0.15mm"
@@ -792,6 +797,7 @@ export default function SmartNema14MotorController({
       )}
       {copperEnabled && nativeGroundPourTrial && <GroundReturnPlanes />}
       {copperEnabled && nativeVmPlaneTrial && <VmDistributionPlane />}
+      {copperEnabled && nativeCopperTrial}
       {copperEnabled && nativeThermalSpreadingTrial && (
         <TmcThermalSpreadingTrial />
       )}
