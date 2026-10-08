@@ -22,7 +22,7 @@ checks report0netlist/source/pin errors,23source and35pin warnings;one retained
 D_VBUS schematic rotation finding;six orientation suggestions,zero native
 placement DRC. Source automatic datasheet lookups remain403; retained genuine
 manufacturer pin/datasheet reviews are independent. Exact public publication
-is in progress. Stage4/5/6 and hardware validation remain incomplete.
+passed: implementation377c9515dd0a311783a5db1ff1395c53010079f6 and public tscircuit0.0.53-alpha.0 release37065d22-1a1c-4c96-8927-f75a9dd03d62 each have838 exact HTTP200 anonymous checksum records in evidence/rev-0.0.53-alpha.0/PUBLICATION.json. The checksummed Circuit JSON is69cb21a1bf916829317d38fc030a85cb0812607d69204dfe7ab4e31a08c6ac6d. Stage4/5/6 and hardware validation remain incomplete. Continue routing.
 
 ---
 
